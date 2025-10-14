@@ -1,0 +1,10 @@
+[90m/Users/admin/workspace/cardium/libs/tcgdex-kmp-sdk/src/iosMain/kotlin/http/[0mHttpClientFactory.ios.kt[90m:[0m9[90m:53:[0m A multiline expression should start on a new line [90m(standard:multiline-expression-wrapping)[0m
+[90m/Users/admin/workspace/cardium/libs/tcgdex-kmp-sdk/src/iosMain/kotlin/http/[0mHttpClientFactory.ios.kt[90m:[0m9[90m:53:[0m Newline expected before expression body [90m(standard:function-signature)[0m
+[90m/Users/admin/workspace/cardium/libs/tcgdex-kmp-sdk/src/iosMain/kotlin/http/[0mHttpClientFactory.ios.kt[90m:[0m16[90m:14:[0m Missing trailing comma before ")" [90m(standard:trailing-comma-on-call-site)[0m
+[90m/Users/admin/workspace/cardium/libs/tcgdex-kmp-sdk/src/iosMain/kotlin/http/[0mHttpClientFactory.ios.kt[90m:[0m21[90m:1:[0m Needless blank line(s) [90m(standard:no-consecutive-blank-lines)[0m
+
+Summary error count (descending) by rule:
+  standard:function-signature: 1
+  standard:multiline-expression-wrapping: 1
+  standard:no-consecutive-blank-lines: 1
+  standard:trailing-comma-on-call-site: 1

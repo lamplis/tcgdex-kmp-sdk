@@ -26,6 +26,9 @@ kotlin {
         }
     }
 
+    // Add JVM target to support shared:jvm consumption
+    jvm()
+
     listOf(
         iosArm64(),
         iosSimulatorArm64(),
@@ -42,6 +45,9 @@ kotlin {
             implementation(libs.kotlin.test)
         }
         androidMain.dependencies {
+            implementation(libs.ktor.client.cio)
+        }
+        jvmMain.dependencies {
             implementation(libs.ktor.client.cio)
         }
         iosMain.dependencies {
