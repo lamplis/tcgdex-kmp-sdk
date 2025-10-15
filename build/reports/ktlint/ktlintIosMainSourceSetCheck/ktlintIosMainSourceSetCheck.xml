@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<checkstyle version="8.0">
-    <file name="/Users/admin/workspace/cardium/libs/tcgdex-kmp-sdk/src/iosMain/kotlin/http/HttpClientFactory.ios.kt">
-        <error line="9" column="53" severity="error" message="A multiline expression should start on a new line" source="standard:multiline-expression-wrapping" />
-        <error line="9" column="53" severity="error" message="Newline expected before expression body" source="standard:function-signature" />
-        <error line="16" column="14" severity="error" message="Missing trailing comma before &quot;)&quot;" source="standard:trailing-comma-on-call-site" />
-        <error line="21" column="1" severity="error" message="Needless blank line(s)" source="standard:no-consecutive-blank-lines" />
-    </file>
-</checkstyle>
