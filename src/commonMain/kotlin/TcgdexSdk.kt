@@ -67,6 +67,14 @@ interface TcgDexClient {
 
     // Maintenance: clear internal caches (sets/series/pocket registry)
     fun clearCaches(language: String? = null)
+
+    // REST: search by localId token (e.g., "075", "75", "TG09")
+    suspend fun searchCardsByLocalId(
+        language: String = "en",
+        localId: String,
+        page: Int = 1,
+        pageSize: Int = 50,
+    ): Result<TcgdxSearchResponse>
 }
 @Serializable
 data class TcgdxSerieWithSets(
@@ -188,13 +196,12 @@ class TcgDexClientImpl(
                 MinimalCard(id = id, localId = local, name = nm)
             }
             val total = items.size
-            val start = (page - 1) * pageSize
-            val end = minOf(start + pageSize, total)
-            val slice = if (start < total) items.subList(start, end) else emptyList()
+            // No paging for localId search; return all
+            val slice = items
             val cards: List<TcgdxCard> = slice.mapNotNull { minimal ->
                 runCatching { httpClient.get("https://api.tcgdex.net/v2/$language/cards/${minimal.id}").body<TcgdxCard>() }.getOrNull()
             }
-            TcgdxSearchResponse(data = cards, total = total, page = page, pageSize = pageSize)
+            TcgdxSearchResponse(data = cards, total = total, page = 1, pageSize = total)
         }
 
     override suspend fun getSeries(
@@ -397,6 +404,34 @@ class TcgDexClientImpl(
             app.cardium.tcgdex.sdk.model.PocketRegistry.clear(language)
         }
     }
+
+    override suspend fun searchCardsByLocalId(
+        language: String,
+        localId: String,
+        page: Int,
+        pageSize: Int,
+    ): Result<TcgdxSearchResponse> =
+        runCatching {
+            val arr: JsonArray = httpClient.get("https://api.tcgdex.net/v2/$language/cards") {
+                url { parameters.append("localId", localId) }
+            }.body()
+            val items: List<MinimalCard> = arr.mapNotNull { el ->
+                val obj = el as? JsonObject ?: return@mapNotNull null
+                val id = obj["id"]?.jsonPrimitive?.content ?: return@mapNotNull null
+                val local = obj["localId"]?.jsonPrimitive?.content
+                val nm = obj["name"]?.jsonPrimitive?.content ?: ""
+                if (app.cardium.tcgdex.sdk.model.PocketFilter.isPocketId(id)) return@mapNotNull null
+                MinimalCard(id = id, localId = local, name = nm)
+            }
+            val total = items.size
+            val start = (page - 1) * pageSize
+            val end = minOf(start + pageSize, total)
+            val slice = if (start < total) items.subList(start, end) else emptyList()
+            val cards: List<TcgdxCard> = slice.mapNotNull { minimal ->
+                runCatching { httpClient.get("https://api.tcgdex.net/v2/$language/cards/${minimal.id}").body<TcgdxCard>() }.getOrNull()
+            }
+            TcgdxSearchResponse(data = cards, total = total, page = page, pageSize = pageSize)
+        }
 }
 
 object TcgDex {
