@@ -38,5 +38,3 @@ class PocketFilterTest {
         assertFalse(PocketFilter.isPocket(regularCard))
     }
 }
-
-
