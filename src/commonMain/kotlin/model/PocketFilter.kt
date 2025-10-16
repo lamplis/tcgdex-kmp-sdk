@@ -18,7 +18,10 @@ object PocketFilter {
     private val pocketRefRegex: Regex = Regex("(?i)^p-[a-z]+-\\d{3}(?:/\\d{3})?$")
 
     /** Returns true if the provided inputs identify a Pocket card. */
-    fun isPocket(seriesId: String?, numberOrRef: String?): Boolean {
+    fun isPocket(
+        seriesId: String?,
+        numberOrRef: String?,
+    ): Boolean {
         if (seriesId?.equals(POCKET_SERIE_ID, ignoreCase = true) == true) return true
         val ref = numberOrRef?.trim()
         if (ref != null && pocketRefRegex.matches(ref)) return true
@@ -32,8 +35,7 @@ object PocketFilter {
     fun isPocketSetId(setId: String?): Boolean = setId?.let { pocketSetIdRegex.matches(it.trim()) } == true
 
     /** Quick predicate based on series id and card/promo id formats (no network). */
-    fun isPocketBySeriesOrId(card: TcgdxCard): Boolean =
-        isPocket(card.set?.serie?.id, card.number) || isPocketId(card.id)
+    fun isPocketBySeriesOrId(card: TcgdxCard): Boolean = isPocket(card.set?.serie?.id, card.number) || isPocketId(card.id)
 
     /** Network-backed variant using tcgp registry (non-breaking: new name). */
     suspend fun isPocketSetIdByRegistry(
@@ -54,5 +56,3 @@ object PocketFilter {
     fun isPocket(card: TcgdxCard): Boolean =
         isPocket(card.set?.serie?.id, card.number) || isPocketId(card.id) || isPocketSetId(card.set?.id)
 }
-
-

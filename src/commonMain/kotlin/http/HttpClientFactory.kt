@@ -7,5 +7,3 @@ import io.ktor.client.HttpClient
  * Actual implementations live in androidMain and iosMain.
  */
 expect fun createPlatformHttpClient(): HttpClient
-
-

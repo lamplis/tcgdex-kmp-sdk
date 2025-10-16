@@ -9,5 +9,3 @@ data class TcgdxSearchResponse(
     val page: Int? = null,
     val pageSize: Int? = null,
 )
-
-

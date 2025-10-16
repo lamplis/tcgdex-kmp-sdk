@@ -32,5 +32,3 @@ data class TcgdxSetResponse(
     val page: Int? = null,
     val pageSize: Int? = null,
 )
-
-

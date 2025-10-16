@@ -10,10 +10,14 @@ import kotlinx.datetime.Clock
  */
 object PocketRegistry {
     private data class Cache(val ids: Set<String>, val fetchedAtMs: Long)
+
     private val cacheByLanguage: MutableMap<String, Cache> = mutableMapOf()
     private const val TTL_MS: Long = 24L * 60L * 60L * 1000L
 
-    suspend fun getTcgpSetIds(client: TcgDexClient, language: String): Set<String> {
+    suspend fun getTcgpSetIds(
+        client: TcgDexClient,
+        language: String,
+    ): Set<String> {
         val lang = language.lowercase()
         val now = Clock.System.now().toEpochMilliseconds()
         val cached = cacheByLanguage[lang]
@@ -21,18 +25,31 @@ object PocketRegistry {
 
         // Prefer GraphQL series -> sets
         val gql = runCatching { client.getSeriesWithSetsGraphQL().getOrNull() }.getOrNull().orEmpty()
-        val fromGql: Set<String>? = gql.firstOrNull { it.id.equals("tcgp", ignoreCase = true) }
-            ?.sets
-            ?.map { it.id.lowercase() }
-            ?.toSet()
+        val fromGql: Set<String>? =
+            gql.firstOrNull { it.id.equals("tcgp", ignoreCase = true) }
+                ?.sets
+                ?.map { it.id.lowercase() }
+                ?.toSet()
 
-        val ids: Set<String> = if (fromGql != null && fromGql.isNotEmpty()) fromGql else run {
-            // Fallback to REST sets by language, filter serie.id == tcgp
-            val sets = runCatching { client.getSets(language = lang, page = 1, pageSize = 2000).getOrNull()?.data.orEmpty() }.getOrElse { emptyList() }
-            sets.filter { it.serie?.id?.equals("tcgp", ignoreCase = true) == true }
-                .map { it.id.lowercase() }
-                .toSet()
-        }
+        val ids: Set<String> =
+            if (fromGql != null && fromGql.isNotEmpty()) {
+                fromGql
+            } else {
+                run {
+                    // Fallback to REST sets by language, filter serie.id == tcgp
+                    val sets =
+                        runCatching {
+                            client.getSets(
+                                language = lang,
+                                page = 1,
+                                pageSize = 2000,
+                            ).getOrNull()?.data.orEmpty()
+                        }.getOrElse { emptyList() }
+                    sets.filter { it.serie?.id?.equals("tcgp", ignoreCase = true) == true }
+                        .map { it.id.lowercase() }
+                        .toSet()
+                }
+            }
 
         val stored = ids.ifEmpty { emptySet() }
         cacheByLanguage[lang] = Cache(stored, now)
@@ -48,5 +65,3 @@ object PocketRegistry {
         }
     }
 }
-
-

@@ -114,7 +114,6 @@ data class TcgdxCardMarketPrices(
     val reverseHoloAvg30: Double? = null,
 )
 
-
 // ===== v2 REST pricing container =====
 
 @Serializable
@@ -158,5 +157,3 @@ data class TcgdxV2PriceInfo(
     @SerialName("marketPrice") val marketPrice: Double? = null,
     @SerialName("directLowPrice") val directLowPrice: Double? = null,
 )
-
-
