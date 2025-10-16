@@ -62,6 +62,9 @@ val sets = tcgdex.getSets(language = "en", page = 1, pageSize = 50).getOrThrow()
 // Load a specific set by id (e.g., "A1")
 val baseSet = tcgdex.getSetById(language = "en", setId = "A1").getOrThrow()
 
+// Get distinct series (derived from sets) with 12h in-memory caching
+val series = tcgdex.getSeries(language = "en", page = 1, pageSize = 50).getOrThrow()
+
 // Fetch a card by id
 val card = tcgdex.getCardById(language = "en", cardId = "A1-001").getOrThrow()
 
@@ -128,6 +131,23 @@ val client = HttpClient(engine)
 ```
 
 Real network tests require internet access and are best marked as integration tests.
+
+## Caching
+
+This SDK caches the list of sets per language in memory for 12 hours to improve performance and reduce network calls:
+
+- When calling `getSets(language, ...)`, the SDK fetches all sets for the given language on the first call and stores them with a 12h TTL. Subsequent calls within 12h reuse the cached list and apply pagination in-memory.
+- `getSetById(language, setId)` will return a set from the in-memory cache when it is fresh; otherwise it will fetch from the network.
+
+Series:
+
+- `getSeries(language, ...)` returns distinct series derived from the cached sets, also cached per language for 12h. If the series cache is cold or expired, the SDK ensures sets are fresh and regenerates the series list.
+
+Notes:
+
+- The cache is in-memory only and scoped to the `TcgDexClient` instance. Recreating the client clears the cache.
+- Series data is embedded in each set (`TcgdxSet.serie`); there is no separate series endpoint. The SDK derives series from the sets collection.
+
 
 ## Versioning
 

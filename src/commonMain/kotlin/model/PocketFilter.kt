@@ -11,10 +11,11 @@ object PocketFilter {
 
     // Example formats:
     //  - P-A-071/000 or P-A-009 (Pocket promo-like)
+    //  - P-AB-030 (multi-letter set code)
     //  - A1-094, A2b-082 (Pocket set numbering)
-    private val pocketIdRegex: Regex = Regex("(?i)^(p-[a-z]-\\d{3}(?:/\\d{3})?|a\\d+[a-z]?-[0-9]{3})$")
+    private val pocketIdRegex: Regex = Regex("(?i)^(p-[a-z]+-\\d{3}(?:/\\d{3})?|a\\d+[a-z]?-[0-9]{3})$")
     private val pocketSetIdRegex: Regex = Regex("(?i)^a\\d+[a-z]?$")
-    private val pocketRefRegex: Regex = Regex("(?i)^p-[a-z]-\\d{3}(?:/\\d{3})?$")
+    private val pocketRefRegex: Regex = Regex("(?i)^p-[a-z]+-\\d{3}(?:/\\d{3})?$")
 
     /** Returns true if the provided inputs identify a Pocket card. */
     fun isPocket(seriesId: String?, numberOrRef: String?): Boolean {
@@ -29,6 +30,22 @@ object PocketFilter {
 
     /** Returns true if the given set id looks like a Pocket set id (e.g., A1, A2b). */
     fun isPocketSetId(setId: String?): Boolean = setId?.let { pocketSetIdRegex.matches(it.trim()) } == true
+
+    /** Quick predicate based on series id and card/promo id formats (no network). */
+    fun isPocketBySeriesOrId(card: TcgdxCard): Boolean =
+        isPocket(card.set?.serie?.id, card.number) || isPocketId(card.id)
+
+    /** Network-backed variant using tcgp registry (non-breaking: new name). */
+    suspend fun isPocketSetIdByRegistry(
+        setId: String?,
+        client: app.cardium.tcgdex.sdk.TcgDexClient,
+        language: String = "en",
+    ): Boolean {
+        val id = setId?.trim()?.lowercase() ?: return false
+        if (pocketSetIdRegex.matches(id)) return true
+        val tcgpSetIds = PocketRegistry.getTcgpSetIds(client, language)
+        return id in tcgpSetIds
+    }
 
     /** Returns true if the given set belongs to the Pocket series. */
     fun isPocket(set: TcgdxSet?): Boolean = isPocket(set?.serie?.id, null)

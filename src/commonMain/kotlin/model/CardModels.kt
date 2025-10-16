@@ -33,7 +33,7 @@ data class TcgdxCard(
 
 @Serializable
 data class TcgdxAttack(
-    val name: String,
+    val name: String = "",
     val cost: List<String>? = null,
     val effect: String? = null,
     val damage: String? = null,
@@ -41,7 +41,7 @@ data class TcgdxAttack(
 
 @Serializable
 data class TcgdxAbility(
-    val name: String,
+    val name: String = "",
     val type: String? = null,
     val effect: String? = null,
 )
