@@ -13,6 +13,9 @@ import io.ktor.client.request.post
 import io.ktor.client.request.setBody
 import io.ktor.http.ContentType
 import io.ktor.http.contentType
+import kotlinx.coroutines.async
+import kotlinx.coroutines.coroutineScope
+import kotlinx.coroutines.withTimeout
 import kotlinx.datetime.Clock
 import kotlinx.serialization.json.JsonArray
 import kotlinx.serialization.json.JsonObject
@@ -88,6 +91,20 @@ interface TcgDexClient {
         page: Int = 1,
         pageSize: Int = 50,
     ): Result<TcgdxSearchResponse>
+
+    // Reference-aware search (promos and exact ids).
+    suspend fun searchCardByReference(
+        language: String = "en",
+        input: String,
+        timeoutMs: Long = 20_000,
+    ): Result<TcgdxCard?>
+
+    // Numeric ref search: "<number>/<officialCount>", e.g., "159/086"
+    suspend fun searchCardsByNumericReference(
+        language: String = "en",
+        input: String,
+        timeoutMs: Long = 20_000,
+    ): Result<List<TcgdxCard>>
 }
 
 @Serializable
@@ -476,6 +493,112 @@ class TcgDexClientImpl(
                     runCatching { httpClient.get("https://api.tcgdex.net/v2/$language/cards/${minimal.id}").body<TcgdxCard>() }.getOrNull()
                 }
             TcgdxSearchResponse(data = cards, total = total, page = page, pageSize = pageSize)
+        }
+
+    private fun detectPromoTokens(raw: String): Pair<String, String>? {
+        val m = Regex("""(?i)^\s*([a-z]{2,4})\s*[-/\s]?\s*(\d{1,3})\s*$""").matchEntire(raw.trim()) ?: return null
+        return m.groupValues[1].lowercase() to m.groupValues[2]
+    }
+
+    private fun resolvePromoExactId(prefix: String, digits: String): String? {
+        val pad = digits.padStart(3, '0')
+        return when (prefix.lowercase()) {
+            "svp" -> "svp-$pad"
+            "swsh" -> "swshp-SWSH$pad"
+            "sm" -> "smp-SM$pad"
+            "xy" -> "xyp-XY$pad"
+            "bw" -> "bwp-BW$pad"
+            "hgss" -> "hsp-HGSS$pad"
+            "dp" -> "dpp-DP$pad"
+            else -> null
+        }
+    }
+
+    override suspend fun searchCardByReference(
+        language: String,
+        input: String,
+        timeoutMs: Long,
+    ): Result<TcgdxCard?> =
+        runCatching {
+            val trimmed = input.trim()
+            val promo = detectPromoTokens(trimmed) ?: return@runCatching null
+            val (prefix, digits) = promo
+            if (digits.length < 3) return@runCatching null
+            // Exact id fast path
+            resolvePromoExactId(prefix, digits)?.let { exactId ->
+                try {
+                    return@runCatching kotlinx.coroutines.withTimeout(timeoutMs) { getCardById(language, exactId).getOrThrow() }
+                } catch (_: Throwable) {
+                }
+            }
+
+            // Fallback: try localId variants
+            val padded = digits.padStart(3, '0')
+            val tries = listOf("$prefix$padded", "$prefix$digits", "$prefix $padded", "$prefix $digits", padded, digits)
+            for (tok in tries) {
+                val resp = try {
+                    kotlinx.coroutines.withTimeout(timeoutMs) { searchCardsByLocalId(language, tok, 1, 1000).getOrThrow() }
+                } catch (_: Throwable) {
+                    null
+                }
+                val list = resp?.data.orEmpty()
+                if (list.isNotEmpty()) {
+                    // Choose best match: same localId and promo set id suffix 'p'
+                    val best =
+                        list.firstOrNull { card ->
+                            val lid = card.localId?.replace(" ", "")?.uppercase()
+                            (lid == (prefix.uppercase() + padded) || lid == (prefix.uppercase() + digits.uppercase())) &&
+                                (card.set?.id?.endsWith("p", ignoreCase = true) == true)
+                        } ?: list.first()
+                    return@runCatching best
+                }
+            }
+            null
+        }
+
+    override suspend fun searchCardsByNumericReference(
+        language: String,
+        input: String,
+        timeoutMs: Long,
+    ): Result<List<TcgdxCard>> =
+        runCatching {
+            // Accept strictly numeric localId and official count: X/Y
+            val m = Regex("""^\s*(\d+)\s*/\s*(\d+)\s*$""").matchEntire(input.trim()) ?: return@runCatching emptyList()
+            val localIdNum = m.groupValues[1].toIntOrNull() ?: return@runCatching emptyList()
+            val official = m.groupValues[2].toIntOrNull() ?: return@runCatching emptyList()
+
+            // Ensure we have sets; use cached when possible
+            val setsResp = getSets(language = language, page = 1, pageSize = 2000).getOrThrow()
+            val candidateSets: List<TcgdxSet> =
+                setsResp.data.orEmpty().filter { s -> (s.cardCount?.official == official) }
+
+            if (candidateSets.isEmpty()) return@runCatching emptyList()
+
+            // Build direct ids and resolve in parallel with per-call timeout
+            val ids: List<String> = candidateSets.map { s -> "${s.id}-${localIdNum}" }
+            val results = mutableListOf<TcgdxCard>()
+
+            kotlinx.coroutines.coroutineScope {
+                val jobs = ids.map { cid ->
+                    async {
+                        try {
+                            kotlinx.coroutines.withTimeout(timeoutMs) {
+                                getCardById(language, cid).getOrThrow()
+                            }
+                        } catch (_: Throwable) {
+                            null
+                        }
+                    }
+                }
+                jobs.forEach { d ->
+                    d.await()?.let { card ->
+                        if (!app.cardium.tcgdex.sdk.model.PocketFilter.isPocketBySeriesOrId(card)) {
+                            results.add(card)
+                        }
+                    }
+                }
+            }
+            results
         }
 }
 
