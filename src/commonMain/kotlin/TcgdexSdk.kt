@@ -500,7 +500,10 @@ class TcgDexClientImpl(
         return m.groupValues[1].lowercase() to m.groupValues[2]
     }
 
-    private fun resolvePromoExactId(prefix: String, digits: String): String? {
+    private fun resolvePromoExactId(
+        prefix: String,
+        digits: String,
+    ): String? {
         val pad = digits.padStart(3, '0')
         return when (prefix.lowercase()) {
             "svp" -> "svp-$pad"
@@ -536,11 +539,12 @@ class TcgDexClientImpl(
             val padded = digits.padStart(3, '0')
             val tries = listOf("$prefix$padded", "$prefix$digits", "$prefix $padded", "$prefix $digits", padded, digits)
             for (tok in tries) {
-                val resp = try {
-                    kotlinx.coroutines.withTimeout(timeoutMs) { searchCardsByLocalId(language, tok, 1, 1000).getOrThrow() }
-                } catch (_: Throwable) {
-                    null
-                }
+                val resp =
+                    try {
+                        kotlinx.coroutines.withTimeout(timeoutMs) { searchCardsByLocalId(language, tok, 1, 1000).getOrThrow() }
+                    } catch (_: Throwable) {
+                        null
+                    }
                 val list = resp?.data.orEmpty()
                 if (list.isNotEmpty()) {
                     // Choose best match: same localId and promo set id suffix 'p'
@@ -575,21 +579,26 @@ class TcgDexClientImpl(
             if (candidateSets.isEmpty()) return@runCatching emptyList()
 
             // Build direct ids and resolve in parallel with per-call timeout
-            val ids: List<String> = candidateSets.map { s -> "${s.id}-${localIdNum}" }
+            val leftPadded = localIdNum.toString().padStart(3, '0')
+            val ids: List<String> =
+                candidateSets.flatMap { s ->
+                    listOf("${s.id}-$localIdNum", "${s.id}-$leftPadded")
+                }.distinct()
             val results = mutableListOf<TcgdxCard>()
 
             kotlinx.coroutines.coroutineScope {
-                val jobs = ids.map { cid ->
-                    async {
-                        try {
-                            kotlinx.coroutines.withTimeout(timeoutMs) {
-                                getCardById(language, cid).getOrThrow()
+                val jobs =
+                    ids.map { cid ->
+                        async {
+                            try {
+                                kotlinx.coroutines.withTimeout(timeoutMs) {
+                                    getCardById(language, cid).getOrThrow()
+                                }
+                            } catch (_: Throwable) {
+                                null
                             }
-                        } catch (_: Throwable) {
-                            null
                         }
                     }
-                }
                 jobs.forEach { d ->
                     d.await()?.let { card ->
                         if (!app.cardium.tcgdex.sdk.model.PocketFilter.isPocketBySeriesOrId(card)) {
