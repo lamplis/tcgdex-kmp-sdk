@@ -1,66 +1,82 @@
 [
     {
         "id": "base",
-        "name": "Base"
-    },
-    {
-        "id": "neo",
-        "name": "Neo"
-    },
-    {
-        "id": "ex",
-        "name": "EX"
-    },
-    {
-        "id": "pop",
-        "name": "POP"
-    },
-    {
-        "id": "tk",
-        "name": "Trainer kits"
-    },
-    {
-        "id": "dp",
-        "name": "Diamond & Pearl"
-    },
-    {
-        "id": "pl",
-        "name": "Platinum"
-    },
-    {
-        "id": "hgss",
-        "name": "HeartGold & SoulSilver"
+        "name": "Clásica",
+        "releaseDate": "1999-01-09"
     },
     {
         "id": "bw",
-        "name": "Black & White"
+        "name": "Negro y Blanco",
+        "releaseDate": "2011-04-25"
+    },
+    {
+        "id": "dp",
+        "name": "Diamante & Perla",
+        "releaseDate": "2007-05-01"
+    },
+    {
+        "id": "ex",
+        "name": "ex",
+        "releaseDate": "2003-07-01"
+    },
+    {
+        "id": "hgss",
+        "name": "HeartGold SoulSilver",
+        "releaseDate": "2010-02-10"
     },
     {
         "id": "mc",
-        "name": "McDonald's Collection"
-    },
-    {
-        "id": "xy",
-        "name": "XY"
-    },
-    {
-        "id": "sm",
-        "name": "Sun & Moon"
-    },
-    {
-        "id": "swsh",
-        "name": "Sword & Shield"
-    },
-    {
-        "id": "sv",
-        "name": "Scarlet & Violet"
-    },
-    {
-        "id": "tcgp",
-        "name": "Pokémon TCG Pocket"
+        "name": "Colección de McDonald's",
+        "releaseDate": "2011-06-17"
     },
     {
         "id": "me",
-        "name": "Mega Evolution"
+        "name": "Megaevolución",
+        "releaseDate": "2025-09-26"
+    },
+    {
+        "id": "neo",
+        "name": "Neo",
+        "releaseDate": "2000-12-16"
+    },
+    {
+        "id": "pl",
+        "name": "Platino",
+        "releaseDate": "2009-02-11"
+    },
+    {
+        "id": "pop",
+        "name": "POP",
+        "releaseDate": "2003-10-01"
+    },
+    {
+        "id": "sm",
+        "name": "Sol y Luna",
+        "releaseDate": "2017-02-03"
+    },
+    {
+        "id": "sv",
+        "name": "Escarlata y Púrpura",
+        "releaseDate": "2023-03-31"
+    },
+    {
+        "id": "swsh",
+        "name": "Espada y Escudo",
+        "releaseDate": "2019-11-15"
+    },
+    {
+        "id": "tcgp",
+        "name": "Juego de Cartas Coleccionables Pokémon Pocket",
+        "releaseDate": "2024-10-30"
+    },
+    {
+        "id": "tk",
+        "name": "Kits de Entrenador",
+        "releaseDate": "2004-07-01"
+    },
+    {
+        "id": "xy",
+        "name": "XY",
+        "releaseDate": "2013-10-12"
     }
 ]

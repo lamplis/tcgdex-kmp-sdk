@@ -1,1 +1,0 @@
-{"type":"https://tcgdex.dev/errors/language-invalid","title":"The chosen language is not available in the database","status":404,"endpoint":"/$%7Blang%7D/sets/$%7Bfull.id%7D","method":"GET","lang":"${lang}","details":"You must use one of the following languages (en, fr, es, es-mx, it, pt, pt-br, pt-pt, de, nl, pl, ru, ja, ko, zh-tw, id, th, zh-cn) while you used \"${lang}\""}

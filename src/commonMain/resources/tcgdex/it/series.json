@@ -1,74 +1,92 @@
 [
     {
         "id": "base",
-        "name": "Base"
-    },
-    {
-        "id": "neo",
-        "name": "Neo"
-    },
-    {
-        "id": "ecard",
-        "name": "E-Card"
-    },
-    {
-        "id": "ex",
-        "name": "EX"
-    },
-    {
-        "id": "pop",
-        "name": "POP"
-    },
-    {
-        "id": "tk",
-        "name": "Trainer kits"
-    },
-    {
-        "id": "dp",
-        "name": "Diamond & Pearl"
-    },
-    {
-        "id": "pl",
-        "name": "Platinum"
-    },
-    {
-        "id": "hgss",
-        "name": "HeartGold & SoulSilver"
-    },
-    {
-        "id": "col",
-        "name": "Call of Legends"
+        "name": "Originale",
+        "releaseDate": "1999-01-09"
     },
     {
         "id": "bw",
-        "name": "Black & White"
+        "name": "Nero e Bianco",
+        "releaseDate": "2011-04-25"
+    },
+    {
+        "id": "col",
+        "name": "Richiamo delle Leggende",
+        "releaseDate": "2011-02-09"
+    },
+    {
+        "id": "dp",
+        "name": "Diamante & Perla",
+        "releaseDate": "2007-05-01"
+    },
+    {
+        "id": "ecard",
+        "name": "e-Series",
+        "releaseDate": "2002-09-15"
+    },
+    {
+        "id": "ex",
+        "name": "EX",
+        "releaseDate": "2003-07-01"
+    },
+    {
+        "id": "hgss",
+        "name": "HeartGold SoulSilver",
+        "releaseDate": "2010-02-10"
     },
     {
         "id": "mc",
-        "name": "McDonald's Collection"
-    },
-    {
-        "id": "xy",
-        "name": "XY"
-    },
-    {
-        "id": "sm",
-        "name": "Sun & Moon"
-    },
-    {
-        "id": "swsh",
-        "name": "Sword & Shield"
-    },
-    {
-        "id": "sv",
-        "name": "Scarlet & Violet"
-    },
-    {
-        "id": "tcgp",
-        "name": "Pokémon TCG Pocket"
+        "name": "McDonald's Collection",
+        "releaseDate": "2011-06-17"
     },
     {
         "id": "me",
-        "name": "Mega Evolution"
+        "name": "Megaevoluzione",
+        "releaseDate": "2025-09-26"
+    },
+    {
+        "id": "neo",
+        "name": "Neo",
+        "releaseDate": "2000-12-16"
+    },
+    {
+        "id": "pl",
+        "name": "Platino",
+        "releaseDate": "2009-02-11"
+    },
+    {
+        "id": "pop",
+        "name": "POP",
+        "releaseDate": "2003-10-01"
+    },
+    {
+        "id": "sm",
+        "name": "Sole e Luna",
+        "releaseDate": "2017-02-03"
+    },
+    {
+        "id": "sv",
+        "name": "Scarlatto e Violetto",
+        "releaseDate": "2023-03-31"
+    },
+    {
+        "id": "swsh",
+        "name": "Spada e Scudo",
+        "releaseDate": "2019-11-15"
+    },
+    {
+        "id": "tcgp",
+        "name": "Gioco di Carte Collezionabili Pokémon Pocket",
+        "releaseDate": "2024-10-30"
+    },
+    {
+        "id": "tk",
+        "name": "Trainer Kit",
+        "releaseDate": "2004-07-01"
+    },
+    {
+        "id": "xy",
+        "name": "XY",
+        "releaseDate": "2013-10-12"
     }
 ]

@@ -1,50 +1,62 @@
 [
     {
         "id": "base",
-        "name": "Base"
-    },
-    {
-        "id": "ex",
-        "name": "EX"
-    },
-    {
-        "id": "dp",
-        "name": "Diamond & Pearl"
-    },
-    {
-        "id": "hgss",
-        "name": "HeartGold & SoulSilver"
-    },
-    {
-        "id": "col",
-        "name": "Call of Legends"
+        "name": "Coleção Básica",
+        "releaseDate": "1999-01-09"
     },
     {
         "id": "bw",
-        "name": "Black & White"
+        "name": "Black & White",
+        "releaseDate": "2011-04-25"
     },
     {
-        "id": "xy",
-        "name": "XY"
+        "id": "col",
+        "name": "Chamado das Lendas",
+        "releaseDate": "2011-02-09"
     },
     {
-        "id": "sm",
-        "name": "Sun & Moon"
+        "id": "dp",
+        "name": "Diamante & Pérola",
+        "releaseDate": "2007-05-01"
     },
     {
-        "id": "swsh",
-        "name": "Sword & Shield"
+        "id": "ex",
+        "name": "EX",
+        "releaseDate": "2003-07-01"
     },
     {
-        "id": "sv",
-        "name": "Scarlet & Violet"
-    },
-    {
-        "id": "tcgp",
-        "name": "Pokémon TCG Pocket"
+        "id": "hgss",
+        "name": "HeartGold SoulSilver",
+        "releaseDate": "2010-02-10"
     },
     {
         "id": "me",
-        "name": "Mega Evolution"
+        "name": "Megaevolução",
+        "releaseDate": "2025-09-26"
+    },
+    {
+        "id": "sm",
+        "name": "Sol e Lua",
+        "releaseDate": "2017-02-03"
+    },
+    {
+        "id": "sv",
+        "name": "Escarlate e Violeta",
+        "releaseDate": "2023-03-31"
+    },
+    {
+        "id": "swsh",
+        "name": "Espada e Escudo",
+        "releaseDate": "2019-11-15"
+    },
+    {
+        "id": "tcgp",
+        "name": "Pokémon Estampas Ilustradas Pocket",
+        "releaseDate": "2024-10-30"
+    },
+    {
+        "id": "xy",
+        "name": "XY",
+        "releaseDate": "2013-11-08"
     }
 ]
