@@ -79,3 +79,15 @@ android {
         }
     }
 }
+
+// Generator: fetch catalog via SDK and write JSON to src/commonMain/resources/tcgdex/<lang>/
+tasks.register<JavaExec>("generateEmbeddedCatalog") {
+    group = "tcgdex"
+    description = "Generate embedded TCGdex catalog JSONs for all languages"
+    mainClass.set("tools.GenerateEmbeddedCatalog")
+    val jvmMain = kotlin.targets.getByName("jvm").compilations.getByName("main")
+    dependsOn(jvmMain.compileTaskProvider)
+    classpath = files(jvmMain.output.allOutputs, jvmMain.runtimeDependencyFiles)
+    // Write under module resources by default
+    systemProperty("outputDir", project.projectDir.resolve("src/commonMain/resources/tcgdex").absolutePath)
+}

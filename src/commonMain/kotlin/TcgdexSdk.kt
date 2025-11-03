@@ -207,7 +207,16 @@ class TcgDexClientImpl(
                     val fresh = (nowMs - cache.fetchedAtMs) < setsCacheTtlMs
                     if (fresh) cache.sets.firstOrNull { it.id == setId } else null
                 }
-            cachedHit ?: httpClient.get("https://api.tcgdex.net/v2/$language/sets/$setId").body()
+            // If cached hit lacks details (e.g., releaseDate from list endpoint), fetch detail endpoint
+            if (cachedHit != null &&
+                cachedHit.releaseDate != null &&
+                cachedHit.logo != null &&
+                cachedHit.symbol != null
+            ) {
+                cachedHit
+            } else {
+                httpClient.get("https://api.tcgdex.net/v2/$language/sets/$setId").body()
+            }
         }
 
     override suspend fun getCardById(
