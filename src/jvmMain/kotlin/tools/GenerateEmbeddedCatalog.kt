@@ -27,6 +27,7 @@ data class SetOut(
     val symbol: String? = null,
     val serieId: String? = null,
     val official: Int? = null,
+    val total: Int? = null,
 )
 
 private fun toKotlinTripleQuoted(s: String): String {
@@ -74,11 +75,11 @@ runBlocking {
         println("[gen] Generating catalog for lang=$lang …")
         try {
             val setsResp = sdk.getSets(language = lang, page = 1, pageSize = 2000).getOrThrow()
-            val baseSets = setsResp.data.orEmpty()
+            val fullSets = setsResp.data.orEmpty()
             val langDir = outBasePath.resolve(lang)
             Files.createDirectories(langDir)
             val detailed = mutableListOf<SetOut>()
-            for (s in baseSets) {
+            for (s in fullSets) {
                 val full = sdk.getSetById(language = lang, setId = s.id).getOrThrow()
                 val serieId = full.serie?.id ?: setIdToSerieId[s.id] ?: extractSerieIdFromSetId(s.id)
                 detailed += SetOut(
@@ -89,6 +90,7 @@ runBlocking {
                     symbol = full.symbol,
                     serieId = serieId,
                     official = full.cardCount?.official,
+                    total = full.cardCount?.total ?: full.cardCount?.official,
                 )
                 // Also persist full REST detail JSON for this set for offline enrichment
                 try {
@@ -105,7 +107,7 @@ runBlocking {
                 }
             }
             val series: List<SeriesOut> = detailed
-                .mapNotNull { it.serieId?.let { id -> id to (baseSets.firstOrNull { b -> b.serie?.id == id }?.serie?.name ?: (serieIdToName[id] ?: id)) } }
+                .mapNotNull { it.serieId?.let { id -> id to (fullSets.firstOrNull { b -> b.serie?.id == id }?.serie?.name ?: (serieIdToName[id] ?: id)) } }
                 .distinctBy { it.first }
                 .map { SeriesOut(id = it.first, name = it.second) }
 
