@@ -1,1 +1,221 @@
-{"cardCount":{"firstEd":0,"holo":0,"normal":0,"official":30,"reverse":0,"total":30},"cards":[{"id":"tk-xy-sy-1","localId":"1","name":"Fletchling"},{"id":"tk-xy-sy-2","localId":"2","name":"Fairy Energy"},{"id":"tk-xy-sy-3","localId":"3","name":"Fairy Energy"},{"id":"tk-xy-sy-4","localId":"4","name":"Switch"},{"id":"tk-xy-sy-5","localId":"5","name":"Fairy Energy"},{"id":"tk-xy-sy-6","localId":"6","name":"Fairy Energy"},{"id":"tk-xy-sy-7","localId":"7","name":"Fairy Energy"},{"id":"tk-xy-sy-8","localId":"8","name":"Fairy Energy"},{"id":"tk-xy-sy-9","localId":"9","name":"Fairy Energy"},{"id":"tk-xy-sy-10","localId":"10","name":"Fairy Energy"},{"id":"tk-xy-sy-11","localId":"11","name":"Snubbull"},{"id":"tk-xy-sy-12","localId":"12","name":"Fairy Energy"},{"id":"tk-xy-sy-13","localId":"13","name":"Eevee"},{"id":"tk-xy-sy-14","localId":"14","name":"Granbull"},{"id":"tk-xy-sy-15","localId":"15","name":"Sylveon"},{"id":"tk-xy-sy-16","localId":"16","name":"Furfrou"},{"id":"tk-xy-sy-17","localId":"17","name":"Fairy Energy"},{"id":"tk-xy-sy-18","localId":"18","name":"Fairy Energy"},{"id":"tk-xy-sy-19","localId":"19","name":"Fletchling"},{"id":"tk-xy-sy-20","localId":"20","name":"Potion"},{"id":"tk-xy-sy-21","localId":"21","name":"Eevee"},{"id":"tk-xy-sy-22","localId":"22","name":"Furfrou"},{"id":"tk-xy-sy-23","localId":"23","name":"Pokémon Catcher"},{"id":"tk-xy-sy-24","localId":"24","name":"Potion"},{"id":"tk-xy-sy-25","localId":"25","name":"Fairy Energy"},{"id":"tk-xy-sy-26","localId":"26","name":"Poké Ball"},{"id":"tk-xy-sy-27","localId":"27","name":"Snubbull"},{"id":"tk-xy-sy-28","localId":"28","name":"Professor’s Letter"},{"id":"tk-xy-sy-29","localId":"29","name":"Granbull"},{"id":"tk-xy-sy-30","localId":"30","name":"Sylveon"}],"id":"tk-xy-sy","legal":{"expanded":false,"standard":false},"name":"XY trainer Kit (Sylveon)","releaseDate":"2014-03-12","serie":{"id":"tk","name":"Trainer kits"},"symbol":"https://assets.tcgdex.net/univ/tk/tk-xy-sy/symbol","abbreviation":{"official":"TK6S"}}
+{
+    "id": "tk-xy-sy",
+    "serieId": "tk",
+    "name": "XY trainer Kit (Sylveon)",
+    "releaseDate": "2014-03-12",
+    "cardCount": 30,
+    "logo": "https://assets.tcgdex.net/en/tk/tk-xy-sy/logo",
+    "symbol": "https://assets.tcgdex.net/en/tk/tk-xy-sy/symbol",
+    "cards": [
+        {
+            "id": "tk-xy-sy-1",
+            "number": "1",
+            "name": "Fletchling",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-xy-sy/1"
+        },
+        {
+            "id": "tk-xy-sy-2",
+            "number": "2",
+            "name": "Fairy Energy",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-xy-sy/2"
+        },
+        {
+            "id": "tk-xy-sy-3",
+            "number": "3",
+            "name": "Fairy Energy",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-xy-sy/3"
+        },
+        {
+            "id": "tk-xy-sy-4",
+            "number": "4",
+            "name": "Switch",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-xy-sy/4"
+        },
+        {
+            "id": "tk-xy-sy-5",
+            "number": "5",
+            "name": "Fairy Energy",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-xy-sy/5"
+        },
+        {
+            "id": "tk-xy-sy-6",
+            "number": "6",
+            "name": "Fairy Energy",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-xy-sy/6"
+        },
+        {
+            "id": "tk-xy-sy-7",
+            "number": "7",
+            "name": "Fairy Energy",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-xy-sy/7"
+        },
+        {
+            "id": "tk-xy-sy-8",
+            "number": "8",
+            "name": "Fairy Energy",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-xy-sy/8"
+        },
+        {
+            "id": "tk-xy-sy-9",
+            "number": "9",
+            "name": "Fairy Energy",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-xy-sy/9"
+        },
+        {
+            "id": "tk-xy-sy-10",
+            "number": "10",
+            "name": "Fairy Energy",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-xy-sy/10"
+        },
+        {
+            "id": "tk-xy-sy-11",
+            "number": "11",
+            "name": "Snubbull",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-xy-sy/11"
+        },
+        {
+            "id": "tk-xy-sy-12",
+            "number": "12",
+            "name": "Fairy Energy",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-xy-sy/12"
+        },
+        {
+            "id": "tk-xy-sy-13",
+            "number": "13",
+            "name": "Eevee",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-xy-sy/13"
+        },
+        {
+            "id": "tk-xy-sy-14",
+            "number": "14",
+            "name": "Granbull",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-xy-sy/14"
+        },
+        {
+            "id": "tk-xy-sy-15",
+            "number": "15",
+            "name": "Sylveon",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-xy-sy/15"
+        },
+        {
+            "id": "tk-xy-sy-16",
+            "number": "16",
+            "name": "Furfrou",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-xy-sy/16"
+        },
+        {
+            "id": "tk-xy-sy-17",
+            "number": "17",
+            "name": "Fairy Energy",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-xy-sy/17"
+        },
+        {
+            "id": "tk-xy-sy-18",
+            "number": "18",
+            "name": "Fairy Energy",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-xy-sy/18"
+        },
+        {
+            "id": "tk-xy-sy-19",
+            "number": "19",
+            "name": "Fletchling",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-xy-sy/19"
+        },
+        {
+            "id": "tk-xy-sy-20",
+            "number": "20",
+            "name": "Potion",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-xy-sy/20"
+        },
+        {
+            "id": "tk-xy-sy-21",
+            "number": "21",
+            "name": "Eevee",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-xy-sy/21"
+        },
+        {
+            "id": "tk-xy-sy-22",
+            "number": "22",
+            "name": "Furfrou",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-xy-sy/22"
+        },
+        {
+            "id": "tk-xy-sy-23",
+            "number": "23",
+            "name": "Pokémon Catcher",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-xy-sy/23"
+        },
+        {
+            "id": "tk-xy-sy-24",
+            "number": "24",
+            "name": "Potion",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-xy-sy/24"
+        },
+        {
+            "id": "tk-xy-sy-25",
+            "number": "25",
+            "name": "Fairy Energy",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-xy-sy/25"
+        },
+        {
+            "id": "tk-xy-sy-26",
+            "number": "26",
+            "name": "Poké Ball",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-xy-sy/26"
+        },
+        {
+            "id": "tk-xy-sy-27",
+            "number": "27",
+            "name": "Snubbull",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-xy-sy/27"
+        },
+        {
+            "id": "tk-xy-sy-28",
+            "number": "28",
+            "name": "Professor’s Letter",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-xy-sy/28"
+        },
+        {
+            "id": "tk-xy-sy-29",
+            "number": "29",
+            "name": "Granbull",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-xy-sy/29"
+        },
+        {
+            "id": "tk-xy-sy-30",
+            "number": "30",
+            "name": "Sylveon",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-xy-sy/30"
+        }
+    ]
+}

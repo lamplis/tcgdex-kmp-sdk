@@ -1,1 +1,494 @@
-{"cardCount":{"firstEd":0,"holo":0,"normal":0,"official":68,"reverse":0,"total":69},"cards":[{"id":"sm115-1","localId":"1","name":"Chenipan"},{"id":"sm115-2","localId":"2","name":"Chrysacier"},{"id":"sm115-3","localId":"3","name":"Papilusion"},{"id":"sm115-4","localId":"4","name":"Paras"},{"id":"sm115-5","localId":"5","name":"Insécateur"},{"id":"sm115-6","localId":"6","name":"Scarabrute-GX"},{"id":"sm115-7","localId":"7","name":"Salamèche"},{"id":"sm115-8","localId":"8","name":"Reptincel"},{"id":"sm115-9","localId":"9","name":"Dracaufeu-GX"},{"id":"sm115-10","localId":"10","name":"Magmar"},{"id":"sm115-11","localId":"11","name":"Psykokwak"},{"id":"sm115-12","localId":"12","name":"Ramoloss"},{"id":"sm115-13","localId":"13","name":"Stari"},{"id":"sm115-14","localId":"14","name":"Staross-GX"},{"id":"sm115-15","localId":"15","name":"Magicarpe"},{"id":"sm115-16","localId":"16","name":"Léviator-GX"},{"id":"sm115-17","localId":"17","name":"Lokhlass"},{"id":"sm115-18","localId":"18","name":"Aquali"},{"id":"sm115-19","localId":"19","name":"Pikachu"},{"id":"sm115-20","localId":"20","name":"Raichu-GX"},{"id":"sm115-21","localId":"21","name":"Voltorbe"},{"id":"sm115-22","localId":"22","name":"Électrode"},{"id":"sm115-23","localId":"23","name":"Voltali"},{"id":"sm115-24","localId":"24","name":"Électhor"},{"id":"sm115-25","localId":"25","name":"Abo"},{"id":"sm115-26","localId":"26","name":"Abo"},{"id":"sm115-27","localId":"27","name":"Arbok"},{"id":"sm115-28","localId":"28","name":"Smogo"},{"id":"sm115-29","localId":"29","name":"Smogogo"},{"id":"sm115-30","localId":"30","name":"Lippoutou"},{"id":"sm115-31","localId":"31","name":"Mewtwo-GX"},{"id":"sm115-32","localId":"32","name":"Mew"},{"id":"sm115-33","localId":"33","name":"Racaillou"},{"id":"sm115-34","localId":"34","name":"Gravalanch"},{"id":"sm115-35","localId":"35","name":"Grolem"},{"id":"sm115-36","localId":"36","name":"Onix-GX"},{"id":"sm115-37","localId":"37","name":"Osselait"},{"id":"sm115-38","localId":"38","name":"Mélofée"},{"id":"sm115-39","localId":"39","name":"Mélofée"},{"id":"sm115-40","localId":"40","name":"Mélodelfe"},{"id":"sm115-41","localId":"41","name":"Rondoudou"},{"id":"sm115-42","localId":"42","name":"Grodoudou-GX"},{"id":"sm115-43","localId":"43","name":"M. Mime"},{"id":"sm115-44","localId":"44","name":"Sulfura, Électhor et Artikodin-GX"},{"id":"sm115-45","localId":"45","name":"Canarticho"},{"id":"sm115-46","localId":"46","name":"Leveinard"},{"id":"sm115-47","localId":"47","name":"Kangourex"},{"id":"sm115-48","localId":"48","name":"Évoli"},{"id":"sm115-49","localId":"49","name":"Évoli"},{"id":"sm115-50","localId":"50","name":"Ronflex"},{"id":"sm115-51","localId":"51","name":"Analyse de Léo"},{"id":"sm115-52","localId":"52","name":"Dernière Chance d’Auguste"},{"id":"sm115-53","localId":"53","name":"Vaillance de Pierre"},{"id":"sm115-54","localId":"54","name":"Arène d’Argenta de Pierre"},{"id":"sm115-55","localId":"55","name":"Entraînement de Pierre"},{"id":"sm115-56","localId":"56","name":"Hospitalité d’Erika"},{"id":"sm115-57","localId":"57","name":"Exil de Giovanni"},{"id":"sm115-58","localId":"58","name":"Jessie et James"},{"id":"sm115-59","localId":"59","name":"Piège de Koga"},{"id":"sm115-60","localId":"60","name":"Stratégie de Major Bob"},{"id":"sm115-61","localId":"61","name":"Arène d’Azuria d’Ondine"},{"id":"sm115-62","localId":"62","name":"Détermination d’Ondine"},{"id":"sm115-63","localId":"63","name":"Maîtrise Aquatique d’Ondine"},{"id":"sm115-64","localId":"64","name":"Dame du Centre Pokémon"},{"id":"sm115-65","localId":"65","name":"Suggestion de Morgane"},{"id":"sm115-66","localId":"66","name":"Sulfura, Électhor et Artikodin-GX"},{"id":"sm115-67","localId":"67","name":"Exil de Giovanni"},{"id":"sm115-68","localId":"68","name":"Jessie et James"},{"id":"sm115-69","localId":"69","name":"Sulfura, Électhor et Artikodin-GX"}],"id":"sm115","legal":{"expanded":true,"standard":false},"logo":"https://assets.tcgdex.net/fr/sm/sm115/logo","name":"Destinées Occultes","releaseDate":"2019-08-23","serie":{"id":"sm","name":"Soleil et Lune"},"symbol":"https://assets.tcgdex.net/univ/sm/sm115/symbol","tcgOnline":"HIF","abbreviation":{"official":"HIF","localized":"DOC"}}
+{
+    "id": "sm115",
+    "serieId": "sm",
+    "name": "Destinées Occultes",
+    "releaseDate": "2019-08-23",
+    "cardCount": 68,
+    "logo": "https://assets.tcgdex.net/fr/sm/sm115/logo",
+    "symbol": "https://assets.tcgdex.net/fr/sm/sm115/symbol",
+    "cards": [
+        {
+            "id": "sm115-1",
+            "number": "1",
+            "name": "Chenipan",
+            "illustrator": "tetsuya koizumi",
+            "imageBase": "https://assets.tcgdex.net/fr/sm/sm115/1"
+        },
+        {
+            "id": "sm115-2",
+            "number": "2",
+            "name": "Chrysacier",
+            "illustrator": "Shibuzoh.",
+            "imageBase": "https://assets.tcgdex.net/fr/sm/sm115/2"
+        },
+        {
+            "id": "sm115-3",
+            "number": "3",
+            "name": "Papilusion",
+            "illustrator": "Masakazu Fukuda",
+            "imageBase": "https://assets.tcgdex.net/fr/sm/sm115/3"
+        },
+        {
+            "id": "sm115-4",
+            "number": "4",
+            "name": "Paras",
+            "illustrator": "OOYAMA",
+            "imageBase": "https://assets.tcgdex.net/fr/sm/sm115/4"
+        },
+        {
+            "id": "sm115-5",
+            "number": "5",
+            "name": "Insécateur",
+            "illustrator": "Hasuno",
+            "imageBase": "https://assets.tcgdex.net/fr/sm/sm115/5"
+        },
+        {
+            "id": "sm115-6",
+            "number": "6",
+            "name": "Scarabrute-GX",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/sm/sm115/6"
+        },
+        {
+            "id": "sm115-7",
+            "number": "7",
+            "name": "Salamèche",
+            "illustrator": "Megumi Mizutani",
+            "imageBase": "https://assets.tcgdex.net/fr/sm/sm115/7"
+        },
+        {
+            "id": "sm115-8",
+            "number": "8",
+            "name": "Reptincel",
+            "illustrator": "Shin Nagasawa",
+            "imageBase": "https://assets.tcgdex.net/fr/sm/sm115/8"
+        },
+        {
+            "id": "sm115-9",
+            "number": "9",
+            "name": "Dracaufeu-GX",
+            "illustrator": "aky CG Works",
+            "imageBase": "https://assets.tcgdex.net/fr/sm/sm115/9"
+        },
+        {
+            "id": "sm115-10",
+            "number": "10",
+            "name": "Magmar",
+            "illustrator": "Satoshi Shirai",
+            "imageBase": "https://assets.tcgdex.net/fr/sm/sm115/10"
+        },
+        {
+            "id": "sm115-11",
+            "number": "11",
+            "name": "Psykokwak",
+            "illustrator": "nagimiso",
+            "imageBase": "https://assets.tcgdex.net/fr/sm/sm115/11"
+        },
+        {
+            "id": "sm115-12",
+            "number": "12",
+            "name": "Ramoloss",
+            "illustrator": "Misa Tsutsui",
+            "imageBase": "https://assets.tcgdex.net/fr/sm/sm115/12"
+        },
+        {
+            "id": "sm115-13",
+            "number": "13",
+            "name": "Stari",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/sm/sm115/13"
+        },
+        {
+            "id": "sm115-14",
+            "number": "14",
+            "name": "Staross-GX",
+            "illustrator": "PLANETA Otani",
+            "imageBase": "https://assets.tcgdex.net/fr/sm/sm115/14"
+        },
+        {
+            "id": "sm115-15",
+            "number": "15",
+            "name": "Magicarpe",
+            "illustrator": "Shigenori Negishi",
+            "imageBase": "https://assets.tcgdex.net/fr/sm/sm115/15"
+        },
+        {
+            "id": "sm115-16",
+            "number": "16",
+            "name": "Léviator-GX",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/sm/sm115/16"
+        },
+        {
+            "id": "sm115-17",
+            "number": "17",
+            "name": "Lokhlass",
+            "illustrator": "kodama",
+            "imageBase": "https://assets.tcgdex.net/fr/sm/sm115/17"
+        },
+        {
+            "id": "sm115-18",
+            "number": "18",
+            "name": "Aquali",
+            "illustrator": "Masakazu Fukuda",
+            "imageBase": "https://assets.tcgdex.net/fr/sm/sm115/18"
+        },
+        {
+            "id": "sm115-19",
+            "number": "19",
+            "name": "Pikachu",
+            "illustrator": "Kagemaru Himeno",
+            "imageBase": "https://assets.tcgdex.net/fr/sm/sm115/19"
+        },
+        {
+            "id": "sm115-20",
+            "number": "20",
+            "name": "Raichu-GX",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/sm/sm115/20"
+        },
+        {
+            "id": "sm115-21",
+            "number": "21",
+            "name": "Voltorbe",
+            "illustrator": "SATOSHI NAKAI",
+            "imageBase": "https://assets.tcgdex.net/fr/sm/sm115/21"
+        },
+        {
+            "id": "sm115-22",
+            "number": "22",
+            "name": "Électrode",
+            "illustrator": "Anesaki Dynamic",
+            "imageBase": "https://assets.tcgdex.net/fr/sm/sm115/22"
+        },
+        {
+            "id": "sm115-23",
+            "number": "23",
+            "name": "Voltali",
+            "illustrator": "Kouki Saitou",
+            "imageBase": "https://assets.tcgdex.net/fr/sm/sm115/23"
+        },
+        {
+            "id": "sm115-24",
+            "number": "24",
+            "name": "Électhor",
+            "illustrator": "Shin Nagasawa",
+            "imageBase": "https://assets.tcgdex.net/fr/sm/sm115/24"
+        },
+        {
+            "id": "sm115-25",
+            "number": "25",
+            "name": "Abo",
+            "illustrator": "MAHOU",
+            "imageBase": "https://assets.tcgdex.net/fr/sm/sm115/25"
+        },
+        {
+            "id": "sm115-26",
+            "number": "26",
+            "name": "Abo",
+            "illustrator": "Masakazu Fukuda",
+            "imageBase": "https://assets.tcgdex.net/fr/sm/sm115/26"
+        },
+        {
+            "id": "sm115-27",
+            "number": "27",
+            "name": "Arbok",
+            "illustrator": "kirisAki",
+            "imageBase": "https://assets.tcgdex.net/fr/sm/sm115/27"
+        },
+        {
+            "id": "sm115-28",
+            "number": "28",
+            "name": "Smogo",
+            "illustrator": "Saya Tsuruta",
+            "imageBase": "https://assets.tcgdex.net/fr/sm/sm115/28"
+        },
+        {
+            "id": "sm115-29",
+            "number": "29",
+            "name": "Smogogo",
+            "illustrator": "Hideki Ishikawa",
+            "imageBase": "https://assets.tcgdex.net/fr/sm/sm115/29"
+        },
+        {
+            "id": "sm115-30",
+            "number": "30",
+            "name": "Lippoutou",
+            "illustrator": "Kouki Saitou",
+            "imageBase": "https://assets.tcgdex.net/fr/sm/sm115/30"
+        },
+        {
+            "id": "sm115-31",
+            "number": "31",
+            "name": "Mewtwo-GX",
+            "illustrator": "aky CG Works",
+            "imageBase": "https://assets.tcgdex.net/fr/sm/sm115/31"
+        },
+        {
+            "id": "sm115-32",
+            "number": "32",
+            "name": "Mew",
+            "illustrator": "Atsuko Nishida",
+            "imageBase": "https://assets.tcgdex.net/fr/sm/sm115/32"
+        },
+        {
+            "id": "sm115-33",
+            "number": "33",
+            "name": "Racaillou",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/sm/sm115/33"
+        },
+        {
+            "id": "sm115-34",
+            "number": "34",
+            "name": "Gravalanch",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/sm/sm115/34"
+        },
+        {
+            "id": "sm115-35",
+            "number": "35",
+            "name": "Grolem",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/sm/sm115/35"
+        },
+        {
+            "id": "sm115-36",
+            "number": "36",
+            "name": "Onix-GX",
+            "illustrator": "PLANETA Igarashi",
+            "imageBase": "https://assets.tcgdex.net/fr/sm/sm115/36"
+        },
+        {
+            "id": "sm115-37",
+            "number": "37",
+            "name": "Osselait",
+            "illustrator": "Hasuno",
+            "imageBase": "https://assets.tcgdex.net/fr/sm/sm115/37"
+        },
+        {
+            "id": "sm115-38",
+            "number": "38",
+            "name": "Mélofée",
+            "illustrator": "Saya Tsuruta",
+            "imageBase": "https://assets.tcgdex.net/fr/sm/sm115/38"
+        },
+        {
+            "id": "sm115-39",
+            "number": "39",
+            "name": "Mélofée",
+            "illustrator": "kirisAki",
+            "imageBase": "https://assets.tcgdex.net/fr/sm/sm115/39"
+        },
+        {
+            "id": "sm115-40",
+            "number": "40",
+            "name": "Mélodelfe",
+            "illustrator": "sui",
+            "imageBase": "https://assets.tcgdex.net/fr/sm/sm115/40"
+        },
+        {
+            "id": "sm115-41",
+            "number": "41",
+            "name": "Rondoudou",
+            "illustrator": "Mizue",
+            "imageBase": "https://assets.tcgdex.net/fr/sm/sm115/41"
+        },
+        {
+            "id": "sm115-42",
+            "number": "42",
+            "name": "Grodoudou-GX",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/sm/sm115/42"
+        },
+        {
+            "id": "sm115-43",
+            "number": "43",
+            "name": "M. Mime",
+            "illustrator": "Hideki Ishikawa",
+            "imageBase": "https://assets.tcgdex.net/fr/sm/sm115/43"
+        },
+        {
+            "id": "sm115-44",
+            "number": "44",
+            "name": "Sulfura, Électhor et Artikodin-GX",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/fr/sm/sm115/44"
+        },
+        {
+            "id": "sm115-45",
+            "number": "45",
+            "name": "Canarticho",
+            "illustrator": "Eri Yamaki",
+            "imageBase": "https://assets.tcgdex.net/fr/sm/sm115/45"
+        },
+        {
+            "id": "sm115-46",
+            "number": "46",
+            "name": "Leveinard",
+            "illustrator": "sowsow",
+            "imageBase": "https://assets.tcgdex.net/fr/sm/sm115/46"
+        },
+        {
+            "id": "sm115-47",
+            "number": "47",
+            "name": "Kangourex",
+            "illustrator": "You Iribi",
+            "imageBase": "https://assets.tcgdex.net/fr/sm/sm115/47"
+        },
+        {
+            "id": "sm115-48",
+            "number": "48",
+            "name": "Évoli",
+            "illustrator": "Kagemaru Himeno",
+            "imageBase": "https://assets.tcgdex.net/fr/sm/sm115/48"
+        },
+        {
+            "id": "sm115-49",
+            "number": "49",
+            "name": "Évoli",
+            "illustrator": "Hitoshi Ariga",
+            "imageBase": "https://assets.tcgdex.net/fr/sm/sm115/49"
+        },
+        {
+            "id": "sm115-50",
+            "number": "50",
+            "name": "Ronflex",
+            "illustrator": "Akira Komayama",
+            "imageBase": "https://assets.tcgdex.net/fr/sm/sm115/50"
+        },
+        {
+            "id": "sm115-51",
+            "number": "51",
+            "name": "Analyse de Léo",
+            "illustrator": "Naoki Saito",
+            "imageBase": "https://assets.tcgdex.net/fr/sm/sm115/51"
+        },
+        {
+            "id": "sm115-52",
+            "number": "52",
+            "name": "Dernière Chance d’Auguste",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/sm/sm115/52"
+        },
+        {
+            "id": "sm115-53",
+            "number": "53",
+            "name": "Vaillance de Pierre",
+            "illustrator": "Megumi Mizutani",
+            "imageBase": "https://assets.tcgdex.net/fr/sm/sm115/53"
+        },
+        {
+            "id": "sm115-54",
+            "number": "54",
+            "name": "Arène d’Argenta de Pierre",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/sm/sm115/54"
+        },
+        {
+            "id": "sm115-55",
+            "number": "55",
+            "name": "Entraînement de Pierre",
+            "illustrator": "TOKIYA",
+            "imageBase": "https://assets.tcgdex.net/fr/sm/sm115/55"
+        },
+        {
+            "id": "sm115-56",
+            "number": "56",
+            "name": "Hospitalité d’Erika",
+            "illustrator": "Sanosuke Sakuma",
+            "imageBase": "https://assets.tcgdex.net/fr/sm/sm115/56"
+        },
+        {
+            "id": "sm115-57",
+            "number": "57",
+            "name": "Exil de Giovanni",
+            "illustrator": "Megumi Mizutani",
+            "imageBase": "https://assets.tcgdex.net/fr/sm/sm115/57"
+        },
+        {
+            "id": "sm115-58",
+            "number": "58",
+            "name": "Jessie et James",
+            "illustrator": "Megumi Mizutani",
+            "imageBase": "https://assets.tcgdex.net/fr/sm/sm115/58"
+        },
+        {
+            "id": "sm115-59",
+            "number": "59",
+            "name": "Piège de Koga",
+            "illustrator": "Megumi Mizutani",
+            "imageBase": "https://assets.tcgdex.net/fr/sm/sm115/59"
+        },
+        {
+            "id": "sm115-60",
+            "number": "60",
+            "name": "Stratégie de Major Bob",
+            "illustrator": "Megumi Mizutani",
+            "imageBase": "https://assets.tcgdex.net/fr/sm/sm115/60"
+        },
+        {
+            "id": "sm115-61",
+            "number": "61",
+            "name": "Arène d’Azuria d’Ondine",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/sm/sm115/61"
+        },
+        {
+            "id": "sm115-62",
+            "number": "62",
+            "name": "Détermination d’Ondine",
+            "illustrator": "Megumi Mizutani",
+            "imageBase": "https://assets.tcgdex.net/fr/sm/sm115/62"
+        },
+        {
+            "id": "sm115-63",
+            "number": "63",
+            "name": "Maîtrise Aquatique d’Ondine",
+            "illustrator": "TOKIYA",
+            "imageBase": "https://assets.tcgdex.net/fr/sm/sm115/63"
+        },
+        {
+            "id": "sm115-64",
+            "number": "64",
+            "name": "Dame du Centre Pokémon",
+            "illustrator": "TOKIYA",
+            "imageBase": "https://assets.tcgdex.net/fr/sm/sm115/64"
+        },
+        {
+            "id": "sm115-65",
+            "number": "65",
+            "name": "Suggestion de Morgane",
+            "illustrator": "Hitoshi Ariga",
+            "imageBase": "https://assets.tcgdex.net/fr/sm/sm115/65"
+        },
+        {
+            "id": "sm115-66",
+            "number": "66",
+            "name": "Sulfura, Électhor et Artikodin-GX",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/sm/sm115/66"
+        },
+        {
+            "id": "sm115-67",
+            "number": "67",
+            "name": "Exil de Giovanni",
+            "illustrator": "TOKIYA",
+            "imageBase": "https://assets.tcgdex.net/fr/sm/sm115/67"
+        },
+        {
+            "id": "sm115-68",
+            "number": "68",
+            "name": "Jessie et James",
+            "illustrator": "Megumi Mizutani",
+            "imageBase": "https://assets.tcgdex.net/fr/sm/sm115/68"
+        },
+        {
+            "id": "sm115-69",
+            "number": "69",
+            "name": "Sulfura, Électhor et Artikodin-GX",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/sm/sm115/69"
+        }
+    ]
+}

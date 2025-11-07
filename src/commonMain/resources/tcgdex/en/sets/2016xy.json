@@ -1,1 +1,95 @@
-{"cardCount":{"firstEd":0,"holo":0,"normal":0,"official":12,"reverse":0,"total":12},"cards":[{"id":"2016xy-1","localId":"1","name":"Vulpix"},{"id":"2016xy-2","localId":"2","name":"Torchic"},{"id":"2016xy-3","localId":"3","name":"Fennekin"},{"id":"2016xy-4","localId":"4","name":"Magikarp"},{"id":"2016xy-5","localId":"5","name":"Totodile"},{"id":"2016xy-6","localId":"6","name":"Pikachu"},{"id":"2016xy-7","localId":"7","name":"Scraggy"},{"id":"2016xy-8","localId":"8","name":"Jigglypuff"},{"id":"2016xy-9","localId":"9","name":"Togepi"},{"id":"2016xy-10","localId":"10","name":"Dedenne"},{"id":"2016xy-11","localId":"11","name":"Meowth"},{"id":"2016xy-12","localId":"12","name":"Eevee"}],"id":"2016xy","legal":{"expanded":false,"standard":false},"name":"Macdonald's Collection 2016","releaseDate":"2016-08-20","serie":{"id":"mc","name":"McDonald's Collection"},"abbreviation":{"official":"MCD16"}}
+{
+    "id": "2016xy",
+    "serieId": "mc",
+    "name": "Macdonald's Collection 2016",
+    "releaseDate": "2016-08-20",
+    "cardCount": 12,
+    "logo": "https://assets.tcgdex.net/en/mc/2016xy/logo",
+    "symbol": "https://assets.tcgdex.net/en/mc/2016xy/symbol",
+    "cards": [
+        {
+            "id": "2016xy-1",
+            "number": "1",
+            "name": "Roar",
+            "illustrator": "kirisAki",
+            "imageBase": "https://assets.tcgdex.net/en/mc/2016xy/1"
+        },
+        {
+            "id": "2016xy-2",
+            "number": "2",
+            "name": "Ember",
+            "illustrator": "sui",
+            "imageBase": "https://assets.tcgdex.net/en/mc/2016xy/2"
+        },
+        {
+            "id": "2016xy-3",
+            "number": "3",
+            "name": "Will-O-Wisp",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/en/mc/2016xy/3"
+        },
+        {
+            "id": "2016xy-4",
+            "number": "4",
+            "name": "Epic Splash",
+            "illustrator": "Akira Komayama",
+            "imageBase": "https://assets.tcgdex.net/en/mc/2016xy/4"
+        },
+        {
+            "id": "2016xy-5",
+            "number": "5",
+            "name": "Fury Strikes",
+            "illustrator": "Kagemaru Himeno",
+            "imageBase": "https://assets.tcgdex.net/en/mc/2016xy/5"
+        },
+        {
+            "id": "2016xy-6",
+            "number": "6",
+            "name": "Tail Whip",
+            "illustrator": "Naoki Saito",
+            "imageBase": "https://assets.tcgdex.net/en/mc/2016xy/6"
+        },
+        {
+            "id": "2016xy-7",
+            "number": "7",
+            "name": "Corkscrew Punch",
+            "illustrator": "Tomokazu Komiya",
+            "imageBase": "https://assets.tcgdex.net/en/mc/2016xy/7"
+        },
+        {
+            "id": "2016xy-8",
+            "number": "8",
+            "name": "Rollout",
+            "illustrator": "Kanako Eo",
+            "imageBase": "https://assets.tcgdex.net/en/mc/2016xy/8"
+        },
+        {
+            "id": "2016xy-9",
+            "number": "9",
+            "name": "Sweet Kiss",
+            "illustrator": "HiRON",
+            "imageBase": "https://assets.tcgdex.net/en/mc/2016xy/9"
+        },
+        {
+            "id": "2016xy-10",
+            "number": "10",
+            "name": "Nuzzle",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/en/mc/2016xy/10"
+        },
+        {
+            "id": "2016xy-11",
+            "number": "11",
+            "name": "Act Tough",
+            "illustrator": "Kanako Eo",
+            "imageBase": "https://assets.tcgdex.net/en/mc/2016xy/11"
+        },
+        {
+            "id": "2016xy-12",
+            "number": "12",
+            "name": "Tackle",
+            "illustrator": "Kouki Saitou",
+            "imageBase": "https://assets.tcgdex.net/en/mc/2016xy/12"
+        }
+    ]
+}

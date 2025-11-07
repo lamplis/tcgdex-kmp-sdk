@@ -1,1 +1,221 @@
-{"cardCount":{"firstEd":0,"holo":0,"normal":0,"official":30,"reverse":0,"total":30},"cards":[{"id":"tk-xy-b-1","localId":"1","name":"Fletchling"},{"id":"tk-xy-b-2","localId":"2","name":"Metal Energy"},{"id":"tk-xy-b-3","localId":"3","name":"Metal Energy"},{"id":"tk-xy-b-4","localId":"4","name":"Vigoroth"},{"id":"tk-xy-b-5","localId":"5","name":"Metal Energy"},{"id":"tk-xy-b-6","localId":"6","name":"Metal Energy"},{"id":"tk-xy-b-7","localId":"7","name":"Metal Energy"},{"id":"tk-xy-b-8","localId":"8","name":"Metal Energy"},{"id":"tk-xy-b-9","localId":"9","name":"Metal Energy"},{"id":"tk-xy-b-10","localId":"10","name":"Metal Energy"},{"id":"tk-xy-b-11","localId":"11","name":"Honedge"},{"id":"tk-xy-b-12","localId":"12","name":"Bidoof"},{"id":"tk-xy-b-13","localId":"13","name":"Pawniard"},{"id":"tk-xy-b-14","localId":"14","name":"Doublade"},{"id":"tk-xy-b-15","localId":"15","name":"Slakoth"},{"id":"tk-xy-b-16","localId":"16","name":"Bisharp"},{"id":"tk-xy-b-17","localId":"17","name":"Patrat"},{"id":"tk-xy-b-18","localId":"18","name":"Metal Energy"},{"id":"tk-xy-b-19","localId":"19","name":"Tierno"},{"id":"tk-xy-b-20","localId":"20","name":"Trevor"},{"id":"tk-xy-b-21","localId":"21","name":"Pawniard"},{"id":"tk-xy-b-22","localId":"22","name":"Metal Energy"},{"id":"tk-xy-b-23","localId":"23","name":"Doublade"},{"id":"tk-xy-b-24","localId":"24","name":"Metal Energy"},{"id":"tk-xy-b-25","localId":"25","name":"Potion"},{"id":"tk-xy-b-26","localId":"26","name":"Slakoth"},{"id":"tk-xy-b-27","localId":"27","name":"Honedge"},{"id":"tk-xy-b-28","localId":"28","name":"Vigoroth"},{"id":"tk-xy-b-29","localId":"29","name":"Potion"},{"id":"tk-xy-b-30","localId":"30","name":"Bisharp"}],"id":"tk-xy-b","legal":{"expanded":false,"standard":false},"name":"XY trainer Kit (Bisharp)","releaseDate":"2014-11-01","serie":{"id":"tk","name":"Trainer kits"},"symbol":"https://assets.tcgdex.net/univ/tk/tk-xy-b/symbol","abbreviation":{"official":"TK7A"}}
+{
+    "id": "tk-xy-b",
+    "serieId": "tk",
+    "name": "XY trainer Kit (Bisharp)",
+    "releaseDate": "2014-11-01",
+    "cardCount": 30,
+    "logo": "https://assets.tcgdex.net/en/tk/tk-xy-b/logo",
+    "symbol": "https://assets.tcgdex.net/en/tk/tk-xy-b/symbol",
+    "cards": [
+        {
+            "id": "tk-xy-b-1",
+            "number": "1",
+            "name": "Fletchling",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-xy-b/1"
+        },
+        {
+            "id": "tk-xy-b-2",
+            "number": "2",
+            "name": "Metal Energy",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-xy-b/2"
+        },
+        {
+            "id": "tk-xy-b-3",
+            "number": "3",
+            "name": "Metal Energy",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-xy-b/3"
+        },
+        {
+            "id": "tk-xy-b-4",
+            "number": "4",
+            "name": "Vigoroth",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-xy-b/4"
+        },
+        {
+            "id": "tk-xy-b-5",
+            "number": "5",
+            "name": "Metal Energy",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-xy-b/5"
+        },
+        {
+            "id": "tk-xy-b-6",
+            "number": "6",
+            "name": "Metal Energy",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-xy-b/6"
+        },
+        {
+            "id": "tk-xy-b-7",
+            "number": "7",
+            "name": "Metal Energy",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-xy-b/7"
+        },
+        {
+            "id": "tk-xy-b-8",
+            "number": "8",
+            "name": "Metal Energy",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-xy-b/8"
+        },
+        {
+            "id": "tk-xy-b-9",
+            "number": "9",
+            "name": "Metal Energy",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-xy-b/9"
+        },
+        {
+            "id": "tk-xy-b-10",
+            "number": "10",
+            "name": "Metal Energy",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-xy-b/10"
+        },
+        {
+            "id": "tk-xy-b-11",
+            "number": "11",
+            "name": "Honedge",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-xy-b/11"
+        },
+        {
+            "id": "tk-xy-b-12",
+            "number": "12",
+            "name": "Bidoof",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-xy-b/12"
+        },
+        {
+            "id": "tk-xy-b-13",
+            "number": "13",
+            "name": "Pawniard",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-xy-b/13"
+        },
+        {
+            "id": "tk-xy-b-14",
+            "number": "14",
+            "name": "Doublade",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-xy-b/14"
+        },
+        {
+            "id": "tk-xy-b-15",
+            "number": "15",
+            "name": "Slakoth",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-xy-b/15"
+        },
+        {
+            "id": "tk-xy-b-16",
+            "number": "16",
+            "name": "Bisharp",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-xy-b/16"
+        },
+        {
+            "id": "tk-xy-b-17",
+            "number": "17",
+            "name": "Patrat",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-xy-b/17"
+        },
+        {
+            "id": "tk-xy-b-18",
+            "number": "18",
+            "name": "Metal Energy",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-xy-b/18"
+        },
+        {
+            "id": "tk-xy-b-19",
+            "number": "19",
+            "name": "Tierno",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-xy-b/19"
+        },
+        {
+            "id": "tk-xy-b-20",
+            "number": "20",
+            "name": "Trevor",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-xy-b/20"
+        },
+        {
+            "id": "tk-xy-b-21",
+            "number": "21",
+            "name": "Pawniard",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-xy-b/21"
+        },
+        {
+            "id": "tk-xy-b-22",
+            "number": "22",
+            "name": "Metal Energy",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-xy-b/22"
+        },
+        {
+            "id": "tk-xy-b-23",
+            "number": "23",
+            "name": "Doublade",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-xy-b/23"
+        },
+        {
+            "id": "tk-xy-b-24",
+            "number": "24",
+            "name": "Metal Energy",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-xy-b/24"
+        },
+        {
+            "id": "tk-xy-b-25",
+            "number": "25",
+            "name": "Potion",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-xy-b/25"
+        },
+        {
+            "id": "tk-xy-b-26",
+            "number": "26",
+            "name": "Slakoth",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-xy-b/26"
+        },
+        {
+            "id": "tk-xy-b-27",
+            "number": "27",
+            "name": "Honedge",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-xy-b/27"
+        },
+        {
+            "id": "tk-xy-b-28",
+            "number": "28",
+            "name": "Vigoroth",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-xy-b/28"
+        },
+        {
+            "id": "tk-xy-b-29",
+            "number": "29",
+            "name": "Potion",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-xy-b/29"
+        },
+        {
+            "id": "tk-xy-b-30",
+            "number": "30",
+            "name": "Bisharp",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-xy-b/30"
+        }
+    ]
+}

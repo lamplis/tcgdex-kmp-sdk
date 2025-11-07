@@ -1,1 +1,46 @@
-{"cardCount":{"firstEd":0,"holo":0,"normal":0,"official":5,"reverse":0,"total":5},"cards":[{"id":"ex5.5-1","localId":"1","name":"Treecko"},{"id":"ex5.5-2","localId":"2","name":"Wurmple"},{"id":"ex5.5-3","localId":"3","name":"Torchic"},{"id":"ex5.5-4","localId":"4","name":"Mudkip"},{"id":"ex5.5-5","localId":"5","name":"Pikachu"}],"id":"ex5.5","legal":{"expanded":false,"standard":false},"name":"Poké Card Creator Pack","releaseDate":"2004-07-01","serie":{"id":"ex","name":"EX"}}
+{
+    "id": "ex5.5",
+    "serieId": "ex",
+    "name": "Poké Card Creator Pack",
+    "releaseDate": "2004-07-01",
+    "cardCount": 5,
+    "logo": "https://assets.tcgdex.net/en/ex/ex5.5/logo",
+    "symbol": "https://assets.tcgdex.net/en/ex/ex5.5/symbol",
+    "cards": [
+        {
+            "id": "ex5.5-1",
+            "number": "1",
+            "name": "Treecko",
+            "illustrator": "Mark Kraus",
+            "imageBase": "https://assets.tcgdex.net/en/ex/ex5.5/1"
+        },
+        {
+            "id": "ex5.5-2",
+            "number": "2",
+            "name": "Wurmple",
+            "illustrator": "Katie Gross",
+            "imageBase": "https://assets.tcgdex.net/en/ex/ex5.5/2"
+        },
+        {
+            "id": "ex5.5-3",
+            "number": "3",
+            "name": "Torchic",
+            "illustrator": "May Do",
+            "imageBase": "https://assets.tcgdex.net/en/ex/ex5.5/3"
+        },
+        {
+            "id": "ex5.5-4",
+            "number": "4",
+            "name": "Mudkip",
+            "illustrator": "Rowan Laidlaw",
+            "imageBase": "https://assets.tcgdex.net/en/ex/ex5.5/4"
+        },
+        {
+            "id": "ex5.5-5",
+            "number": "5",
+            "name": "Pikachu",
+            "illustrator": "Sylvia Forrest",
+            "imageBase": "https://assets.tcgdex.net/en/ex/ex5.5/5"
+        }
+    ]
+}

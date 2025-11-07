@@ -1,1 +1,445 @@
-{"cardCount":{"firstEd":0,"holo":0,"normal":0,"official":62,"reverse":0,"total":62},"cards":[],"id":"base3","legal":{"expanded":false,"standard":false},"name":"Fossil","releaseDate":"1999-10-10","serie":{"id":"base","name":"Originale"},"symbol":"https://assets.tcgdex.net/univ/base/base3/symbol","tcgOnline":"FO","abbreviation":{"official":"FO"}}
+{
+    "id": "base3",
+    "serieId": "base",
+    "name": "Fossil",
+    "releaseDate": "1999-10-10",
+    "cardCount": 62,
+    "logo": "https://assets.tcgdex.net/it/base/base3/logo",
+    "symbol": "https://assets.tcgdex.net/it/base/base3/symbol",
+    "cards": [
+        {
+            "id": "base3-1",
+            "number": "1",
+            "name": "Aerodactyl",
+            "illustrator": "Kagemaru Himeno",
+            "imageBase": "https://assets.tcgdex.net/it/base/base3/1"
+        },
+        {
+            "id": "base3-2",
+            "number": "2",
+            "name": "Articuno",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/it/base/base3/2"
+        },
+        {
+            "id": "base3-3",
+            "number": "3",
+            "name": "Ditto",
+            "illustrator": "Keiji Kinebuchi",
+            "imageBase": "https://assets.tcgdex.net/it/base/base3/3"
+        },
+        {
+            "id": "base3-4",
+            "number": "4",
+            "name": "Dragonite",
+            "illustrator": "Kagemaru Himeno",
+            "imageBase": "https://assets.tcgdex.net/it/base/base3/4"
+        },
+        {
+            "id": "base3-5",
+            "number": "5",
+            "name": "Gengar",
+            "illustrator": "Keiji Kinebuchi",
+            "imageBase": "https://assets.tcgdex.net/it/base/base3/5"
+        },
+        {
+            "id": "base3-6",
+            "number": "6",
+            "name": "Haunter",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/it/base/base3/6"
+        },
+        {
+            "id": "base3-7",
+            "number": "7",
+            "name": "Hitmonlee",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/it/base/base3/7"
+        },
+        {
+            "id": "base3-8",
+            "number": "8",
+            "name": "Hypno",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/it/base/base3/8"
+        },
+        {
+            "id": "base3-9",
+            "number": "9",
+            "name": "Kabutops",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/it/base/base3/9"
+        },
+        {
+            "id": "base3-10",
+            "number": "10",
+            "name": "Lapras",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/it/base/base3/10"
+        },
+        {
+            "id": "base3-11",
+            "number": "11",
+            "name": "Magneton",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/it/base/base3/11"
+        },
+        {
+            "id": "base3-12",
+            "number": "12",
+            "name": "Moltres",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/it/base/base3/12"
+        },
+        {
+            "id": "base3-13",
+            "number": "13",
+            "name": "Muk",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/it/base/base3/13"
+        },
+        {
+            "id": "base3-14",
+            "number": "14",
+            "name": "Raichu",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/it/base/base3/14"
+        },
+        {
+            "id": "base3-15",
+            "number": "15",
+            "name": "Zapdos",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/it/base/base3/15"
+        },
+        {
+            "id": "base3-16",
+            "number": "16",
+            "name": "Aerodactyl",
+            "illustrator": "Kagemaru Himeno",
+            "imageBase": "https://assets.tcgdex.net/it/base/base3/16"
+        },
+        {
+            "id": "base3-17",
+            "number": "17",
+            "name": "Articuno",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/it/base/base3/17"
+        },
+        {
+            "id": "base3-18",
+            "number": "18",
+            "name": "Ditto",
+            "illustrator": "Keiji Kinebuchi",
+            "imageBase": "https://assets.tcgdex.net/it/base/base3/18"
+        },
+        {
+            "id": "base3-19",
+            "number": "19",
+            "name": "Dragonite",
+            "illustrator": "Kagemaru Himeno",
+            "imageBase": "https://assets.tcgdex.net/it/base/base3/19"
+        },
+        {
+            "id": "base3-20",
+            "number": "20",
+            "name": "Gengar",
+            "illustrator": "Keiji Kinebuchi",
+            "imageBase": "https://assets.tcgdex.net/it/base/base3/20"
+        },
+        {
+            "id": "base3-21",
+            "number": "21",
+            "name": "Haunter",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/it/base/base3/21"
+        },
+        {
+            "id": "base3-22",
+            "number": "22",
+            "name": "Hitmonlee",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/it/base/base3/22"
+        },
+        {
+            "id": "base3-23",
+            "number": "23",
+            "name": "Hypno",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/it/base/base3/23"
+        },
+        {
+            "id": "base3-24",
+            "number": "24",
+            "name": "Kabutops",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/it/base/base3/24"
+        },
+        {
+            "id": "base3-25",
+            "number": "25",
+            "name": "Lapras",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/it/base/base3/25"
+        },
+        {
+            "id": "base3-26",
+            "number": "26",
+            "name": "Magneton",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/it/base/base3/26"
+        },
+        {
+            "id": "base3-27",
+            "number": "27",
+            "name": "Moltres",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/it/base/base3/27"
+        },
+        {
+            "id": "base3-28",
+            "number": "28",
+            "name": "Muk",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/it/base/base3/28"
+        },
+        {
+            "id": "base3-29",
+            "number": "29",
+            "name": "Raichu",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/it/base/base3/29"
+        },
+        {
+            "id": "base3-30",
+            "number": "30",
+            "name": "Zapdos",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/it/base/base3/30"
+        },
+        {
+            "id": "base3-31",
+            "number": "31",
+            "name": "Arbok",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/it/base/base3/31"
+        },
+        {
+            "id": "base3-32",
+            "number": "32",
+            "name": "Cloyster",
+            "illustrator": "Kagemaru Himeno",
+            "imageBase": "https://assets.tcgdex.net/it/base/base3/32"
+        },
+        {
+            "id": "base3-33",
+            "number": "33",
+            "name": "Gastly",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/it/base/base3/33"
+        },
+        {
+            "id": "base3-34",
+            "number": "34",
+            "name": "Golbat",
+            "illustrator": "Kagemaru Himeno",
+            "imageBase": "https://assets.tcgdex.net/it/base/base3/34"
+        },
+        {
+            "id": "base3-35",
+            "number": "35",
+            "name": "Golduck",
+            "illustrator": "Kagemaru Himeno",
+            "imageBase": "https://assets.tcgdex.net/it/base/base3/35"
+        },
+        {
+            "id": "base3-36",
+            "number": "36",
+            "name": "Golem",
+            "illustrator": "Kagemaru Himeno",
+            "imageBase": "https://assets.tcgdex.net/it/base/base3/36"
+        },
+        {
+            "id": "base3-37",
+            "number": "37",
+            "name": "Graveler",
+            "illustrator": "Kagemaru Himeno",
+            "imageBase": "https://assets.tcgdex.net/it/base/base3/37"
+        },
+        {
+            "id": "base3-38",
+            "number": "38",
+            "name": "Kingler",
+            "illustrator": "Kagemaru Himeno",
+            "imageBase": "https://assets.tcgdex.net/it/base/base3/38"
+        },
+        {
+            "id": "base3-39",
+            "number": "39",
+            "name": "Magmar",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/it/base/base3/39"
+        },
+        {
+            "id": "base3-40",
+            "number": "40",
+            "name": "Omastar",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/it/base/base3/40"
+        },
+        {
+            "id": "base3-41",
+            "number": "41",
+            "name": "Sandslash",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/it/base/base3/41"
+        },
+        {
+            "id": "base3-42",
+            "number": "42",
+            "name": "Seadra",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/it/base/base3/42"
+        },
+        {
+            "id": "base3-43",
+            "number": "43",
+            "name": "Slowbro",
+            "illustrator": "Kagemaru Himeno",
+            "imageBase": "https://assets.tcgdex.net/it/base/base3/43"
+        },
+        {
+            "id": "base3-44",
+            "number": "44",
+            "name": "Tentacruel",
+            "illustrator": "Kagemaru Himeno",
+            "imageBase": "https://assets.tcgdex.net/it/base/base3/44"
+        },
+        {
+            "id": "base3-45",
+            "number": "45",
+            "name": "Weezing",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/it/base/base3/45"
+        },
+        {
+            "id": "base3-46",
+            "number": "46",
+            "name": "Ekans",
+            "illustrator": "Kagemaru Himeno",
+            "imageBase": "https://assets.tcgdex.net/it/base/base3/46"
+        },
+        {
+            "id": "base3-47",
+            "number": "47",
+            "name": "Geodude",
+            "illustrator": "Kagemaru Himeno",
+            "imageBase": "https://assets.tcgdex.net/it/base/base3/47"
+        },
+        {
+            "id": "base3-48",
+            "number": "48",
+            "name": "Grimer",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/it/base/base3/48"
+        },
+        {
+            "id": "base3-49",
+            "number": "49",
+            "name": "Horsea",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/it/base/base3/49"
+        },
+        {
+            "id": "base3-50",
+            "number": "50",
+            "name": "Kabuto",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/it/base/base3/50"
+        },
+        {
+            "id": "base3-51",
+            "number": "51",
+            "name": "Krabby",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/it/base/base3/51"
+        },
+        {
+            "id": "base3-52",
+            "number": "52",
+            "name": "Omanyte",
+            "illustrator": "Kagemaru Himeno",
+            "imageBase": "https://assets.tcgdex.net/it/base/base3/52"
+        },
+        {
+            "id": "base3-53",
+            "number": "53",
+            "name": "Psyduck",
+            "illustrator": "Kagemaru Himeno",
+            "imageBase": "https://assets.tcgdex.net/it/base/base3/53"
+        },
+        {
+            "id": "base3-54",
+            "number": "54",
+            "name": "Shellder",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/it/base/base3/54"
+        },
+        {
+            "id": "base3-55",
+            "number": "55",
+            "name": "Slowpoke",
+            "illustrator": "Miki Tanaka",
+            "imageBase": "https://assets.tcgdex.net/it/base/base3/55"
+        },
+        {
+            "id": "base3-56",
+            "number": "56",
+            "name": "Tentacool",
+            "illustrator": "Kagemaru Himeno",
+            "imageBase": "https://assets.tcgdex.net/it/base/base3/56"
+        },
+        {
+            "id": "base3-57",
+            "number": "57",
+            "name": "Zubat",
+            "illustrator": "Kagemaru Himeno",
+            "imageBase": "https://assets.tcgdex.net/it/base/base3/57"
+        },
+        {
+            "id": "base3-58",
+            "number": "58",
+            "name": "Mr. Fuji",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/it/base/base3/58"
+        },
+        {
+            "id": "base3-59",
+            "number": "59",
+            "name": "Energy Search",
+            "illustrator": "Keiji Kinebuchi",
+            "imageBase": "https://assets.tcgdex.net/it/base/base3/59"
+        },
+        {
+            "id": "base3-60",
+            "number": "60",
+            "name": "Gambler",
+            "illustrator": "Keiji Kinebuchi",
+            "imageBase": "https://assets.tcgdex.net/it/base/base3/60"
+        },
+        {
+            "id": "base3-61",
+            "number": "61",
+            "name": "Recycle",
+            "illustrator": "Keiji Kinebuchi",
+            "imageBase": "https://assets.tcgdex.net/it/base/base3/61"
+        },
+        {
+            "id": "base3-62",
+            "number": "62",
+            "name": "Mysterious Fossil",
+            "illustrator": "Keiji Kinebuchi",
+            "imageBase": "https://assets.tcgdex.net/it/base/base3/62"
+        }
+    ]
+}

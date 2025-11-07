@@ -1,0 +1,935 @@
+{
+    "id": "gym1",
+    "serieId": "gym",
+    "name": "Gym Heroes",
+    "releaseDate": "2000-08-14",
+    "cardCount": 132,
+    "logo": "https://assets.tcgdex.net/zh/gym/gym1/logo",
+    "symbol": "https://assets.tcgdex.net/zh/gym/gym1/symbol",
+    "cards": [
+        {
+            "id": "gym1-1",
+            "number": "1",
+            "name": "Blaine's Moltres",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/1"
+        },
+        {
+            "id": "gym1-2",
+            "number": "2",
+            "name": "Brock's Rhydon",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/2"
+        },
+        {
+            "id": "gym1-3",
+            "number": "3",
+            "name": "Erika's Clefable",
+            "illustrator": "Atsuko Nishida",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/3"
+        },
+        {
+            "id": "gym1-4",
+            "number": "4",
+            "name": "Erika's Dragonair",
+            "illustrator": "Atsuko Nishida",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/4"
+        },
+        {
+            "id": "gym1-5",
+            "number": "5",
+            "name": "Erika's Vileplume",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/5"
+        },
+        {
+            "id": "gym1-6",
+            "number": "6",
+            "name": "Lt. Surge's Electabuzz",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/6"
+        },
+        {
+            "id": "gym1-7",
+            "number": "7",
+            "name": "Lt. Surge's Fearow",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/7"
+        },
+        {
+            "id": "gym1-8",
+            "number": "8",
+            "name": "Lt. Surge's Magneton",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/8"
+        },
+        {
+            "id": "gym1-9",
+            "number": "9",
+            "name": "Misty's Seadra",
+            "illustrator": "Atsuko Nishida",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/9"
+        },
+        {
+            "id": "gym1-10",
+            "number": "10",
+            "name": "Misty's Tentacruel",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/10"
+        },
+        {
+            "id": "gym1-11",
+            "number": "11",
+            "name": "Rocket's Hitmonchan",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/11"
+        },
+        {
+            "id": "gym1-12",
+            "number": "12",
+            "name": "Rocket's Moltres",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/12"
+        },
+        {
+            "id": "gym1-13",
+            "number": "13",
+            "name": "Rocket's Scyther",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/13"
+        },
+        {
+            "id": "gym1-14",
+            "number": "14",
+            "name": "Sabrina's Gengar",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/14"
+        },
+        {
+            "id": "gym1-15",
+            "number": "15",
+            "name": "Brock",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/15"
+        },
+        {
+            "id": "gym1-16",
+            "number": "16",
+            "name": "Erika",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/16"
+        },
+        {
+            "id": "gym1-17",
+            "number": "17",
+            "name": "Lt. Surge",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/17"
+        },
+        {
+            "id": "gym1-18",
+            "number": "18",
+            "name": "Misty",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/18"
+        },
+        {
+            "id": "gym1-19",
+            "number": "19",
+            "name": "The Rocket's Trap",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/19"
+        },
+        {
+            "id": "gym1-20",
+            "number": "20",
+            "name": "Brock's Golem",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/20"
+        },
+        {
+            "id": "gym1-21",
+            "number": "21",
+            "name": "Brock's Onix",
+            "illustrator": "Benimaru Itoh",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/21"
+        },
+        {
+            "id": "gym1-22",
+            "number": "22",
+            "name": "Brock's Rhyhorn",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/22"
+        },
+        {
+            "id": "gym1-23",
+            "number": "23",
+            "name": "Brock's Sandslash",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/23"
+        },
+        {
+            "id": "gym1-24",
+            "number": "24",
+            "name": "Brock's Zubat",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/24"
+        },
+        {
+            "id": "gym1-25",
+            "number": "25",
+            "name": "Erika's Clefairy",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/25"
+        },
+        {
+            "id": "gym1-26",
+            "number": "26",
+            "name": "Erika's Victreebel",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/26"
+        },
+        {
+            "id": "gym1-27",
+            "number": "27",
+            "name": "Lt. Surge's Electabuzz",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/27"
+        },
+        {
+            "id": "gym1-28",
+            "number": "28",
+            "name": "Lt. Surge's Raichu",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/28"
+        },
+        {
+            "id": "gym1-29",
+            "number": "29",
+            "name": "Misty's Cloyster",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/29"
+        },
+        {
+            "id": "gym1-30",
+            "number": "30",
+            "name": "Misty's Goldeen",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/30"
+        },
+        {
+            "id": "gym1-31",
+            "number": "31",
+            "name": "Misty's Poliwrath",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/31"
+        },
+        {
+            "id": "gym1-32",
+            "number": "32",
+            "name": "Misty's Tentacool",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/32"
+        },
+        {
+            "id": "gym1-33",
+            "number": "33",
+            "name": "Rocket's Snorlax",
+            "illustrator": "Shin-ichi Yoshida",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/33"
+        },
+        {
+            "id": "gym1-34",
+            "number": "34",
+            "name": "Sabrina's Venomoth",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/34"
+        },
+        {
+            "id": "gym1-35",
+            "number": "35",
+            "name": "Blaine's Growlithe",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/35"
+        },
+        {
+            "id": "gym1-36",
+            "number": "36",
+            "name": "Blaine's Kangaskhan",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/36"
+        },
+        {
+            "id": "gym1-37",
+            "number": "37",
+            "name": "Blaine's Magmar",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/37"
+        },
+        {
+            "id": "gym1-38",
+            "number": "38",
+            "name": "Brock's Geodude",
+            "illustrator": "Atsuko Nishida",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/38"
+        },
+        {
+            "id": "gym1-39",
+            "number": "39",
+            "name": "Brock's Golbat",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/39"
+        },
+        {
+            "id": "gym1-40",
+            "number": "40",
+            "name": "Brock's Graveler",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/40"
+        },
+        {
+            "id": "gym1-41",
+            "number": "41",
+            "name": "Brock's Lickitung",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/41"
+        },
+        {
+            "id": "gym1-42",
+            "number": "42",
+            "name": "Erika's Dratini",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/42"
+        },
+        {
+            "id": "gym1-43",
+            "number": "43",
+            "name": "Erika's Exeggcute",
+            "illustrator": "Atsuko Nishida",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/43"
+        },
+        {
+            "id": "gym1-44",
+            "number": "44",
+            "name": "Erika's Exeggutor",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/44"
+        },
+        {
+            "id": "gym1-45",
+            "number": "45",
+            "name": "Erika's Gloom",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/45"
+        },
+        {
+            "id": "gym1-46",
+            "number": "46",
+            "name": "Erika's Gloom",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/46"
+        },
+        {
+            "id": "gym1-47",
+            "number": "47",
+            "name": "Erika's Oddish",
+            "illustrator": "Atsuko Nishida",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/47"
+        },
+        {
+            "id": "gym1-48",
+            "number": "48",
+            "name": "Erika's Weepinbell",
+            "illustrator": "Atsuko Nishida",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/48"
+        },
+        {
+            "id": "gym1-49",
+            "number": "49",
+            "name": "Erika's Weepinbell",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/49"
+        },
+        {
+            "id": "gym1-50",
+            "number": "50",
+            "name": "Lt. Surge's Magnemite",
+            "illustrator": "Atsuko Nishida",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/50"
+        },
+        {
+            "id": "gym1-51",
+            "number": "51",
+            "name": "Lt. Surge's Raticate",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/51"
+        },
+        {
+            "id": "gym1-52",
+            "number": "52",
+            "name": "Lt. Surge's Spearow",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/52"
+        },
+        {
+            "id": "gym1-53",
+            "number": "53",
+            "name": "Misty's Poliwhirl",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/53"
+        },
+        {
+            "id": "gym1-54",
+            "number": "54",
+            "name": "Misty's Psyduck",
+            "illustrator": "Atsuko Nishida",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/54"
+        },
+        {
+            "id": "gym1-55",
+            "number": "55",
+            "name": "Misty's Seaking",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/55"
+        },
+        {
+            "id": "gym1-56",
+            "number": "56",
+            "name": "Misty's Starmie",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/56"
+        },
+        {
+            "id": "gym1-57",
+            "number": "57",
+            "name": "Misty's Tentacool",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/57"
+        },
+        {
+            "id": "gym1-58",
+            "number": "58",
+            "name": "Sabrina's Haunter",
+            "illustrator": "Atsuko Nishida",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/58"
+        },
+        {
+            "id": "gym1-59",
+            "number": "59",
+            "name": "Sabrina's Jynx",
+            "illustrator": "Atsuko Nishida",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/59"
+        },
+        {
+            "id": "gym1-60",
+            "number": "60",
+            "name": "Sabrina's Slowbro",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/60"
+        },
+        {
+            "id": "gym1-61",
+            "number": "61",
+            "name": "Blaine's Charmander",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/61"
+        },
+        {
+            "id": "gym1-62",
+            "number": "62",
+            "name": "Blaine's Growlithe",
+            "illustrator": "Atsuko Nishida",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/62"
+        },
+        {
+            "id": "gym1-63",
+            "number": "63",
+            "name": "Blaine's Ponyta",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/63"
+        },
+        {
+            "id": "gym1-64",
+            "number": "64",
+            "name": "Blaine's Tauros",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/64"
+        },
+        {
+            "id": "gym1-65",
+            "number": "65",
+            "name": "Blaine's Vulpix",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/65"
+        },
+        {
+            "id": "gym1-66",
+            "number": "66",
+            "name": "Brock's Geodude",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/66"
+        },
+        {
+            "id": "gym1-67",
+            "number": "67",
+            "name": "Brock's Mankey",
+            "illustrator": "Atsuko Nishida",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/67"
+        },
+        {
+            "id": "gym1-68",
+            "number": "68",
+            "name": "Brock's Mankey",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/68"
+        },
+        {
+            "id": "gym1-69",
+            "number": "69",
+            "name": "Brock's Onix",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/69"
+        },
+        {
+            "id": "gym1-70",
+            "number": "70",
+            "name": "Brock's Rhyhorn",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/70"
+        },
+        {
+            "id": "gym1-71",
+            "number": "71",
+            "name": "Brock's Sandshrew",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/71"
+        },
+        {
+            "id": "gym1-72",
+            "number": "72",
+            "name": "Brock's Sandshrew",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/72"
+        },
+        {
+            "id": "gym1-73",
+            "number": "73",
+            "name": "Brock's Vulpix",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/73"
+        },
+        {
+            "id": "gym1-74",
+            "number": "74",
+            "name": "Brock's Zubat",
+            "illustrator": "Atsuko Nishida",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/74"
+        },
+        {
+            "id": "gym1-75",
+            "number": "75",
+            "name": "Erika's Bellsprout",
+            "illustrator": "Atsuko Nishida",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/75"
+        },
+        {
+            "id": "gym1-76",
+            "number": "76",
+            "name": "Erika's Bellsprout",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/76"
+        },
+        {
+            "id": "gym1-77",
+            "number": "77",
+            "name": "Erika's Exeggcute",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/77"
+        },
+        {
+            "id": "gym1-78",
+            "number": "78",
+            "name": "Erika's Oddish",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/78"
+        },
+        {
+            "id": "gym1-79",
+            "number": "79",
+            "name": "Erika's Tangela",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/79"
+        },
+        {
+            "id": "gym1-80",
+            "number": "80",
+            "name": "Lt. Surge's Magnemite",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/80"
+        },
+        {
+            "id": "gym1-81",
+            "number": "81",
+            "name": "Lt. Surge's Pikachu",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/81"
+        },
+        {
+            "id": "gym1-82",
+            "number": "82",
+            "name": "Lt. Surge's Rattata",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/82"
+        },
+        {
+            "id": "gym1-83",
+            "number": "83",
+            "name": "Lt. Surge's Spearow",
+            "illustrator": "Atsuko Nishida",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/83"
+        },
+        {
+            "id": "gym1-84",
+            "number": "84",
+            "name": "Lt. Surge's Voltorb",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/84"
+        },
+        {
+            "id": "gym1-85",
+            "number": "85",
+            "name": "Misty's Goldeen",
+            "illustrator": "Atsuko Nishida",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/85"
+        },
+        {
+            "id": "gym1-86",
+            "number": "86",
+            "name": "Misty's Horsea",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/86"
+        },
+        {
+            "id": "gym1-87",
+            "number": "87",
+            "name": "Misty's Poliwag",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/87"
+        },
+        {
+            "id": "gym1-88",
+            "number": "88",
+            "name": "Misty's Seel",
+            "illustrator": "Atsuko Nishida",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/88"
+        },
+        {
+            "id": "gym1-89",
+            "number": "89",
+            "name": "Misty's Shellder",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/89"
+        },
+        {
+            "id": "gym1-90",
+            "number": "90",
+            "name": "Misty's Staryu",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/90"
+        },
+        {
+            "id": "gym1-91",
+            "number": "91",
+            "name": "Sabrina's Abra",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/91"
+        },
+        {
+            "id": "gym1-92",
+            "number": "92",
+            "name": "Sabrina's Drowzee",
+            "illustrator": "Atsuko Nishida",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/92"
+        },
+        {
+            "id": "gym1-93",
+            "number": "93",
+            "name": "Sabrina's Gastly",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/93"
+        },
+        {
+            "id": "gym1-94",
+            "number": "94",
+            "name": "Sabrina's Mr. Mime",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/94"
+        },
+        {
+            "id": "gym1-95",
+            "number": "95",
+            "name": "Sabrina's Slowpoke",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/95"
+        },
+        {
+            "id": "gym1-96",
+            "number": "96",
+            "name": "Sabrina's Venonat",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/96"
+        },
+        {
+            "id": "gym1-97",
+            "number": "97",
+            "name": "Blaine's Quiz #1",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/97"
+        },
+        {
+            "id": "gym1-98",
+            "number": "98",
+            "name": "Brock",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/98"
+        },
+        {
+            "id": "gym1-99",
+            "number": "99",
+            "name": "Charity",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/99"
+        },
+        {
+            "id": "gym1-100",
+            "number": "100",
+            "name": "Erika",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/100"
+        },
+        {
+            "id": "gym1-101",
+            "number": "101",
+            "name": "Lt. Surge",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/101"
+        },
+        {
+            "id": "gym1-102",
+            "number": "102",
+            "name": "Misty",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/102"
+        },
+        {
+            "id": "gym1-103",
+            "number": "103",
+            "name": "No Removal Gym",
+            "illustrator": "Keiji Kinebuchi",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/103"
+        },
+        {
+            "id": "gym1-104",
+            "number": "104",
+            "name": "The Rocket's Training Gym",
+            "illustrator": "Keiji Kinebuchi",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/104"
+        },
+        {
+            "id": "gym1-105",
+            "number": "105",
+            "name": "Blaine's Last Resort",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/105"
+        },
+        {
+            "id": "gym1-106",
+            "number": "106",
+            "name": "Brock's Training Method",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/106"
+        },
+        {
+            "id": "gym1-107",
+            "number": "107",
+            "name": "Celadon City Gym",
+            "illustrator": "Keiji Kinebuchi",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/107"
+        },
+        {
+            "id": "gym1-108",
+            "number": "108",
+            "name": "Cerulean City Gym",
+            "illustrator": "Keiji Kinebuchi",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/108"
+        },
+        {
+            "id": "gym1-109",
+            "number": "109",
+            "name": "Erika's Maids",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/109"
+        },
+        {
+            "id": "gym1-110",
+            "number": "110",
+            "name": "Erika's Perfume",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/110"
+        },
+        {
+            "id": "gym1-111",
+            "number": "111",
+            "name": "Good Manners",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/111"
+        },
+        {
+            "id": "gym1-112",
+            "number": "112",
+            "name": "Lt. Surge's Treaty",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/112"
+        },
+        {
+            "id": "gym1-113",
+            "number": "113",
+            "name": "Minion of Team Rocket",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/113"
+        },
+        {
+            "id": "gym1-114",
+            "number": "114",
+            "name": "Misty's Wrath",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/114"
+        },
+        {
+            "id": "gym1-115",
+            "number": "115",
+            "name": "Pewter City Gym",
+            "illustrator": "Keiji Kinebuchi",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/115"
+        },
+        {
+            "id": "gym1-116",
+            "number": "116",
+            "name": "Recall",
+            "illustrator": "Sumiyoshi Kizuki",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/116"
+        },
+        {
+            "id": "gym1-117",
+            "number": "117",
+            "name": "Sabrina's ESP",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/117"
+        },
+        {
+            "id": "gym1-118",
+            "number": "118",
+            "name": "Secret Mission",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/118"
+        },
+        {
+            "id": "gym1-119",
+            "number": "119",
+            "name": "Tickling Machine",
+            "illustrator": "Sumiyoshi Kizuki",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/119"
+        },
+        {
+            "id": "gym1-120",
+            "number": "120",
+            "name": "Vermilion City Gym",
+            "illustrator": "Keiji Kinebuchi",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/120"
+        },
+        {
+            "id": "gym1-121",
+            "number": "121",
+            "name": "Blaine's Gamble",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/121"
+        },
+        {
+            "id": "gym1-122",
+            "number": "122",
+            "name": "Energy Flow",
+            "illustrator": "Keiji Kinebuchi",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/122"
+        },
+        {
+            "id": "gym1-123",
+            "number": "123",
+            "name": "Misty's Duel",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/123"
+        },
+        {
+            "id": "gym1-124",
+            "number": "124",
+            "name": "Narrow Gym",
+            "illustrator": "Keiji Kinebuchi",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/124"
+        },
+        {
+            "id": "gym1-125",
+            "number": "125",
+            "name": "Sabrina's Gaze",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/125"
+        },
+        {
+            "id": "gym1-126",
+            "number": "126",
+            "name": "Trash Exchange",
+            "illustrator": "Keiji Kinebuchi",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/126"
+        },
+        {
+            "id": "gym1-127",
+            "number": "127",
+            "name": "Fighting Energy",
+            "illustrator": "Keiji Kinebuchi",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/127"
+        },
+        {
+            "id": "gym1-128",
+            "number": "128",
+            "name": "Fire Energy",
+            "illustrator": "Keiji Kinebuchi",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/128"
+        },
+        {
+            "id": "gym1-129",
+            "number": "129",
+            "name": "Grass Energy",
+            "illustrator": "Keiji Kinebuchi",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/129"
+        },
+        {
+            "id": "gym1-130",
+            "number": "130",
+            "name": "Lightning Energy",
+            "illustrator": "Keiji Kinebuchi",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/130"
+        },
+        {
+            "id": "gym1-131",
+            "number": "131",
+            "name": "Psychic Energy",
+            "illustrator": "Keiji Kinebuchi",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/131"
+        },
+        {
+            "id": "gym1-132",
+            "number": "132",
+            "name": "Water Energy",
+            "illustrator": "Keiji Kinebuchi",
+            "imageBase": "https://assets.tcgdex.net/zh/gym/gym1/132"
+        }
+    ]
+}

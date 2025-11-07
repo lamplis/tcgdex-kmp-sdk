@@ -1,1 +1,130 @@
-{"cardCount":{"firstEd":0,"holo":0,"normal":0,"official":17,"reverse":0,"total":17},"cards":[{"id":"pop1-1","image":"https://assets.tcgdex.net/fr/pop/pop1/1","localId":"1","name":"Brasegali"},{"id":"pop1-2","image":"https://assets.tcgdex.net/fr/pop/pop1/2","localId":"2","name":"Metalosse"},{"id":"pop1-3","image":"https://assets.tcgdex.net/fr/pop/pop1/3","localId":"3","name":"Rayquaza"},{"id":"pop1-5","image":"https://assets.tcgdex.net/fr/pop/pop1/5","localId":"5","name":"Laggron"},{"id":"pop1-6","image":"https://assets.tcgdex.net/fr/pop/pop1/6","localId":"6","name":"Charmillon"},{"id":"pop1-7","image":"https://assets.tcgdex.net/fr/pop/pop1/7","localId":"7","name":"Maskadra"},{"id":"pop1-8","image":"https://assets.tcgdex.net/fr/pop/pop1/8","localId":"8","name":"Cornèbre"},{"id":"pop1-9","image":"https://assets.tcgdex.net/fr/pop/pop1/9","localId":"9","name":"Ymphect"},{"id":"pop1-10","image":"https://assets.tcgdex.net/fr/pop/pop1/10","localId":"10","name":"Chartor"},{"id":"pop1-11","image":"https://assets.tcgdex.net/fr/pop/pop1/11","localId":"11","name":"Embrylex"},{"id":"pop1-12","image":"https://assets.tcgdex.net/fr/pop/pop1/12","localId":"12","name":"Negapi"},{"id":"pop1-13","image":"https://assets.tcgdex.net/fr/pop/pop1/13","localId":"13","name":"Posipi"},{"id":"pop1-14","image":"https://assets.tcgdex.net/fr/pop/pop1/14","localId":"14","name":"Arakdo"},{"id":"pop1-15","image":"https://assets.tcgdex.net/fr/pop/pop1/15","localId":"15","name":"Heledelle"},{"id":"pop1-16","image":"https://assets.tcgdex.net/fr/pop/pop1/16","localId":"16","name":"Armaldo ex"},{"id":"pop1-17","image":"https://assets.tcgdex.net/fr/pop/pop1/17","localId":"17","name":"Tyranocif ex"}],"id":"pop1","legal":{"expanded":false,"standard":false},"name":"POP Série 1","releaseDate":"2004-09-01","serie":{"id":"pop","name":"POP"},"symbol":"https://assets.tcgdex.net/univ/pop/pop1/symbol","abbreviation":{"official":"P1","localized":"P01"}}
+{
+    "id": "pop1",
+    "serieId": "pop",
+    "name": "POP Série 1",
+    "releaseDate": "2004-09-01",
+    "cardCount": 17,
+    "logo": "https://assets.tcgdex.net/fr/pop/pop1/logo",
+    "symbol": "https://assets.tcgdex.net/fr/pop/pop1/symbol",
+    "cards": [
+        {
+            "id": "pop1-1",
+            "number": "1",
+            "name": "Brasegali",
+            "illustrator": "Katsura Tabata",
+            "imageBase": "https://assets.tcgdex.net/fr/pop/pop1/1"
+        },
+        {
+            "id": "pop1-2",
+            "number": "2",
+            "name": "Metalosse",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/pop/pop1/2"
+        },
+        {
+            "id": "pop1-3",
+            "number": "3",
+            "name": "Rayquaza",
+            "illustrator": "Katsura Tabata",
+            "imageBase": "https://assets.tcgdex.net/fr/pop/pop1/3"
+        },
+        {
+            "id": "pop1-4",
+            "number": "4",
+            "name": "Sceptile",
+            "illustrator": "Hiromichi Sugiyama",
+            "imageBase": "https://assets.tcgdex.net/fr/pop/pop1/4"
+        },
+        {
+            "id": "pop1-5",
+            "number": "5",
+            "name": "Laggron",
+            "illustrator": "Hiromichi Sugiyama",
+            "imageBase": "https://assets.tcgdex.net/fr/pop/pop1/5"
+        },
+        {
+            "id": "pop1-6",
+            "number": "6",
+            "name": "Charmillon",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/pop/pop1/6"
+        },
+        {
+            "id": "pop1-7",
+            "number": "7",
+            "name": "Maskadra",
+            "illustrator": "Kagemaru Himeno",
+            "imageBase": "https://assets.tcgdex.net/fr/pop/pop1/7"
+        },
+        {
+            "id": "pop1-8",
+            "number": "8",
+            "name": "Cornèbre",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/pop/pop1/8"
+        },
+        {
+            "id": "pop1-9",
+            "number": "9",
+            "name": "Ymphect",
+            "illustrator": "Hisao Nakamura",
+            "imageBase": "https://assets.tcgdex.net/fr/pop/pop1/9"
+        },
+        {
+            "id": "pop1-10",
+            "number": "10",
+            "name": "Chartor",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/pop/pop1/10"
+        },
+        {
+            "id": "pop1-11",
+            "number": "11",
+            "name": "Embrylex",
+            "illustrator": "Hisao Nakamura",
+            "imageBase": "https://assets.tcgdex.net/fr/pop/pop1/11"
+        },
+        {
+            "id": "pop1-12",
+            "number": "12",
+            "name": "Negapi",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/pop/pop1/12"
+        },
+        {
+            "id": "pop1-13",
+            "number": "13",
+            "name": "Posipi",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/pop/pop1/13"
+        },
+        {
+            "id": "pop1-14",
+            "number": "14",
+            "name": "Arakdo",
+            "illustrator": "Kagemaru Himeno",
+            "imageBase": "https://assets.tcgdex.net/fr/pop/pop1/14"
+        },
+        {
+            "id": "pop1-15",
+            "number": "15",
+            "name": "Heledelle",
+            "illustrator": "Kagemaru Himeno",
+            "imageBase": "https://assets.tcgdex.net/fr/pop/pop1/15"
+        },
+        {
+            "id": "pop1-16",
+            "number": "16",
+            "name": "Armaldo ex",
+            "illustrator": "Hikaru Koike",
+            "imageBase": "https://assets.tcgdex.net/fr/pop/pop1/16"
+        },
+        {
+            "id": "pop1-17",
+            "number": "17",
+            "name": "Tyranocif ex",
+            "illustrator": "Hisao Nakamura",
+            "imageBase": "https://assets.tcgdex.net/fr/pop/pop1/17"
+        }
+    ]
+}

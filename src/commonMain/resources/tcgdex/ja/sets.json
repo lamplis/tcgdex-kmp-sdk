@@ -1,1056 +1,1862 @@
 [
     {
-        "id": "PMCG1",
-        "name": "拡張パック",
-        "serieId": "PMCG",
-        "official": 102
+        "id": "bw8",
+        "name": "Plasma Storm",
+        "releaseDate": "2013-02-06",
+        "logo": "https://assets.tcgdex.net/ja/bw/bw8/logo",
+        "symbol": "https://assets.tcgdex.net/ja/bw/bw8/symbol",
+        "serieId": "bw",
+        "official": 135,
+        "total": 135
     },
     {
-        "id": "PMCG2",
-        "name": "ポケモンジャングル",
-        "serieId": "PMCG",
-        "official": 48
+        "id": "bw5",
+        "name": "Dark Explorers",
+        "releaseDate": "2012-05-09",
+        "logo": "https://assets.tcgdex.net/ja/bw/bw5/logo",
+        "symbol": "https://assets.tcgdex.net/ja/bw/bw5/symbol",
+        "serieId": "bw",
+        "official": 108,
+        "total": 108
     },
     {
-        "id": "PMCG3",
-        "name": "化石の秘密",
-        "serieId": "PMCG",
-        "official": 48
+        "id": "bw1",
+        "name": "Black & White",
+        "releaseDate": "2011-04-25",
+        "logo": "https://assets.tcgdex.net/ja/bw/bw1/logo",
+        "symbol": "https://assets.tcgdex.net/ja/bw/bw1/symbol",
+        "serieId": "bw",
+        "official": 114,
+        "total": 114
     },
     {
-        "id": "PMCG4",
-        "name": "ロケット団",
-        "serieId": "PMCG",
-        "official": 65
+        "id": "bw7",
+        "name": "Boundaries Crossed",
+        "releaseDate": "2012-11-07",
+        "logo": "https://assets.tcgdex.net/ja/bw/bw7/logo",
+        "symbol": "https://assets.tcgdex.net/ja/bw/bw7/symbol",
+        "serieId": "bw",
+        "official": 149,
+        "total": 149
     },
     {
-        "id": "PMCG5",
-        "name": "リーダーズスタジアム",
-        "serieId": "PMCG",
-        "official": 96
+        "id": "bw2",
+        "name": "Emerging Powers",
+        "releaseDate": "2011-08-31",
+        "logo": "https://assets.tcgdex.net/ja/bw/bw2/logo",
+        "symbol": "https://assets.tcgdex.net/ja/bw/bw2/symbol",
+        "serieId": "bw",
+        "official": 98,
+        "total": 98
     },
     {
-        "id": "PMCG6",
-        "name": "闇からの挑戦",
-        "serieId": "PMCG",
-        "official": 98
+        "id": "bw9",
+        "name": "Plasma Freeze",
+        "releaseDate": "2013-05-08",
+        "logo": "https://assets.tcgdex.net/ja/bw/bw9/logo",
+        "symbol": "https://assets.tcgdex.net/ja/bw/bw9/symbol",
+        "serieId": "bw",
+        "official": 116,
+        "total": 116
     },
     {
-        "id": "neo1",
-        "name": "金、銀、新世界へ...",
-        "symbol": "https://assets.tcgdex.net/univ/neo/neo1/symbol",
-        "serieId": "neo",
-        "official": 96
+        "id": "bw3",
+        "name": "Noble Victories",
+        "releaseDate": "2011-11-16",
+        "logo": "https://assets.tcgdex.net/ja/bw/bw3/logo",
+        "symbol": "https://assets.tcgdex.net/ja/bw/bw3/symbol",
+        "serieId": "bw",
+        "official": 101,
+        "total": 101
     },
     {
-        "id": "neo2",
-        "name": "遺跡をこえて...",
-        "symbol": "https://assets.tcgdex.net/univ/neo/neo2/symbol",
-        "serieId": "neo",
-        "official": 56
+        "id": "bw10",
+        "name": "Plasma Blast",
+        "releaseDate": "2013-08-14",
+        "logo": "https://assets.tcgdex.net/ja/bw/bw10/logo",
+        "symbol": "https://assets.tcgdex.net/ja/bw/bw10/symbol",
+        "serieId": "bw",
+        "official": 101,
+        "total": 101
     },
     {
-        "id": "neo3",
-        "name": "めざめる伝説",
-        "symbol": "https://assets.tcgdex.net/univ/neo/neo3/symbol",
-        "serieId": "neo",
-        "official": 57
+        "id": "rc",
+        "name": "Radiant Collection",
+        "releaseDate": "2013-11-06",
+        "logo": "https://assets.tcgdex.net/ja/bw/rc/logo",
+        "symbol": "https://assets.tcgdex.net/ja/bw/rc/symbol",
+        "serieId": "bw",
+        "official": 25,
+        "total": 25
+    },
+    {
+        "id": "bw11",
+        "name": "Legendary Treasures",
+        "releaseDate": "2013-11-06",
+        "logo": "https://assets.tcgdex.net/ja/bw/bw11/logo",
+        "symbol": "https://assets.tcgdex.net/ja/bw/bw11/symbol",
+        "serieId": "bw",
+        "official": 113,
+        "total": 113
+    },
+    {
+        "id": "bw6",
+        "name": "Dragons Exalted",
+        "releaseDate": "2012-08-15",
+        "logo": "https://assets.tcgdex.net/ja/bw/bw6/logo",
+        "symbol": "https://assets.tcgdex.net/ja/bw/bw6/symbol",
+        "serieId": "bw",
+        "official": 124,
+        "total": 124
+    },
+    {
+        "id": "bwp",
+        "name": "BW Black Star Promos",
+        "releaseDate": "2011-04-26",
+        "logo": "https://assets.tcgdex.net/ja/bw/bwp/logo",
+        "symbol": "https://assets.tcgdex.net/ja/bw/bwp/symbol",
+        "serieId": "bw",
+        "official": 101,
+        "total": 101
+    },
+    {
+        "id": "bw4",
+        "name": "Next Destinies",
+        "releaseDate": "2012-02-08",
+        "logo": "https://assets.tcgdex.net/ja/bw/bw4/logo",
+        "symbol": "https://assets.tcgdex.net/ja/bw/bw4/symbol",
+        "serieId": "bw",
+        "official": 99,
+        "total": 99
+    },
+    {
+        "id": "dv1",
+        "name": "Dragon Vault",
+        "releaseDate": "2012-10-05",
+        "logo": "https://assets.tcgdex.net/ja/bw/dv1/logo",
+        "symbol": "https://assets.tcgdex.net/ja/bw/dv1/symbol",
+        "serieId": "bw",
+        "official": 20,
+        "total": 20
+    },
+    {
+        "id": "base2",
+        "name": "Jungle",
+        "releaseDate": "1999-06-16",
+        "logo": "https://assets.tcgdex.net/ja/base/base2/logo",
+        "symbol": "https://assets.tcgdex.net/ja/base/base2/symbol",
+        "serieId": "base",
+        "official": 64,
+        "total": 64
+    },
+    {
+        "id": "base5",
+        "name": "Team Rocket",
+        "releaseDate": "2000-04-24",
+        "logo": "https://assets.tcgdex.net/ja/base/base5/logo",
+        "symbol": "https://assets.tcgdex.net/ja/base/base5/symbol",
+        "serieId": "base",
+        "official": 82,
+        "total": 82
+    },
+    {
+        "id": "basep",
+        "name": "Wizards Black Star Promos",
+        "releaseDate": "1999-07-01",
+        "logo": "https://assets.tcgdex.net/ja/base/basep/logo",
+        "symbol": "https://assets.tcgdex.net/ja/base/basep/symbol",
+        "serieId": "base",
+        "official": 53,
+        "total": 53
+    },
+    {
+        "id": "base3",
+        "name": "Fossil",
+        "releaseDate": "1999-10-10",
+        "logo": "https://assets.tcgdex.net/ja/base/base3/logo",
+        "symbol": "https://assets.tcgdex.net/ja/base/base3/symbol",
+        "serieId": "base",
+        "official": 62,
+        "total": 62
+    },
+    {
+        "id": "base4",
+        "name": "Base Set 2",
+        "releaseDate": "2000-02-24",
+        "logo": "https://assets.tcgdex.net/ja/base/base4/logo",
+        "symbol": "https://assets.tcgdex.net/ja/base/base4/symbol",
+        "serieId": "base",
+        "official": 130,
+        "total": 130
+    },
+    {
+        "id": "base1",
+        "name": "Base Set",
+        "releaseDate": "1999-01-09",
+        "logo": "https://assets.tcgdex.net/ja/base/base1/logo",
+        "symbol": "https://assets.tcgdex.net/ja/base/base1/symbol",
+        "serieId": "base",
+        "official": 102,
+        "total": 102
+    },
+    {
+        "id": "wp",
+        "name": "W Promotional",
+        "releaseDate": "1999-09-01",
+        "logo": "https://assets.tcgdex.net/ja/base/wp/logo",
+        "symbol": "https://assets.tcgdex.net/ja/base/wp/symbol",
+        "serieId": "base",
+        "official": 7,
+        "total": 7
+    },
+    {
+        "id": "pop8",
+        "name": "POP Series 8",
+        "releaseDate": "2008-09-01",
+        "logo": "https://assets.tcgdex.net/ja/pop/pop8/logo",
+        "symbol": "https://assets.tcgdex.net/ja/pop/pop8/symbol",
+        "serieId": "pop",
+        "official": 17,
+        "total": 17
+    },
+    {
+        "id": "pop9",
+        "name": "POP Series 9",
+        "releaseDate": "2009-03-01",
+        "logo": "https://assets.tcgdex.net/ja/pop/pop9/logo",
+        "symbol": "https://assets.tcgdex.net/ja/pop/pop9/symbol",
+        "serieId": "pop",
+        "official": 17,
+        "total": 17
+    },
+    {
+        "id": "pop2",
+        "name": "POP Series 2",
+        "releaseDate": "2005-08-01",
+        "logo": "https://assets.tcgdex.net/ja/pop/pop2/logo",
+        "symbol": "https://assets.tcgdex.net/ja/pop/pop2/symbol",
+        "serieId": "pop",
+        "official": 17,
+        "total": 17
+    },
+    {
+        "id": "pop6",
+        "name": "POP Series 6",
+        "releaseDate": "2007-09-01",
+        "logo": "https://assets.tcgdex.net/ja/pop/pop6/logo",
+        "symbol": "https://assets.tcgdex.net/ja/pop/pop6/symbol",
+        "serieId": "pop",
+        "official": 17,
+        "total": 17
+    },
+    {
+        "id": "pop7",
+        "name": "POP Series 7",
+        "releaseDate": "2008-03-01",
+        "logo": "https://assets.tcgdex.net/ja/pop/pop7/logo",
+        "symbol": "https://assets.tcgdex.net/ja/pop/pop7/symbol",
+        "serieId": "pop",
+        "official": 17,
+        "total": 17
+    },
+    {
+        "id": "pop3",
+        "name": "POP Series 3",
+        "releaseDate": "2006-04-01",
+        "logo": "https://assets.tcgdex.net/ja/pop/pop3/logo",
+        "symbol": "https://assets.tcgdex.net/ja/pop/pop3/symbol",
+        "serieId": "pop",
+        "official": 17,
+        "total": 17
+    },
+    {
+        "id": "pop4",
+        "name": "POP Series 4",
+        "releaseDate": "2006-08-01",
+        "logo": "https://assets.tcgdex.net/ja/pop/pop4/logo",
+        "symbol": "https://assets.tcgdex.net/ja/pop/pop4/symbol",
+        "serieId": "pop",
+        "official": 17,
+        "total": 17
+    },
+    {
+        "id": "pop1",
+        "name": "POP Series 1",
+        "releaseDate": "2004-09-01",
+        "logo": "https://assets.tcgdex.net/ja/pop/pop1/logo",
+        "symbol": "https://assets.tcgdex.net/ja/pop/pop1/symbol",
+        "serieId": "pop",
+        "official": 17,
+        "total": 17
+    },
+    {
+        "id": "pop5",
+        "name": "POP Series 5",
+        "releaseDate": "2007-03-01",
+        "logo": "https://assets.tcgdex.net/ja/pop/pop5/logo",
+        "symbol": "https://assets.tcgdex.net/ja/pop/pop5/symbol",
+        "serieId": "pop",
+        "official": 17,
+        "total": 17
+    },
+    {
+        "id": "np",
+        "name": "Nintendo Black Star Promos",
+        "releaseDate": "2003-10-01",
+        "logo": "https://assets.tcgdex.net/ja/pop/np/logo",
+        "symbol": "https://assets.tcgdex.net/ja/pop/np/symbol",
+        "serieId": "pop",
+        "official": 40,
+        "total": 40
+    },
+    {
+        "id": "col1",
+        "name": "Call of Legends",
+        "releaseDate": "2011-02-09",
+        "logo": "https://assets.tcgdex.net/ja/col/col1/logo",
+        "symbol": "https://assets.tcgdex.net/ja/col/col1/symbol",
+        "serieId": "col",
+        "official": 95,
+        "total": 95
+    },
+    {
+        "id": "lc",
+        "name": "Legendary Collection",
+        "releaseDate": "2002-05-24",
+        "logo": "https://assets.tcgdex.net/ja/lc/lc/logo",
+        "symbol": "https://assets.tcgdex.net/ja/lc/lc/symbol",
+        "serieId": "lc",
+        "official": 110,
+        "total": 110
+    },
+    {
+        "id": "2021swsh",
+        "name": "Macdonald's Collection 2021",
+        "releaseDate": "2021-02-09",
+        "logo": "https://assets.tcgdex.net/ja/mc/2021swsh/logo",
+        "symbol": "https://assets.tcgdex.net/ja/mc/2021swsh/symbol",
+        "serieId": "mc",
+        "official": 25,
+        "total": 25
+    },
+    {
+        "id": "2015xy",
+        "name": "Macdonald's Collection 2015",
+        "releaseDate": "2015-11-27",
+        "logo": "https://assets.tcgdex.net/ja/mc/2015xy/logo",
+        "symbol": "https://assets.tcgdex.net/ja/mc/2015xy/symbol",
+        "serieId": "mc",
+        "official": 12,
+        "total": 12
+    },
+    {
+        "id": "2019sm-fr",
+        "name": "Promo McDonald's 2019",
+        "releaseDate": "2019-10-30",
+        "logo": "https://assets.tcgdex.net/ja/mc/2019sm-fr/logo",
+        "symbol": "https://assets.tcgdex.net/ja/mc/2019sm-fr/symbol",
+        "serieId": "mc",
+        "official": 40,
+        "total": 40
+    },
+    {
+        "id": "2011bw",
+        "name": "Macdonald's Collection 2011",
+        "releaseDate": "2011-06-17",
+        "logo": "https://assets.tcgdex.net/ja/mc/2011bw/logo",
+        "symbol": "https://assets.tcgdex.net/ja/mc/2011bw/symbol",
+        "serieId": "mc",
+        "official": 12,
+        "total": 12
+    },
+    {
+        "id": "2018sm-fr",
+        "name": "Promo McDonald's 2018",
+        "releaseDate": "2018-06-13",
+        "logo": "https://assets.tcgdex.net/ja/mc/2018sm-fr/logo",
+        "symbol": "https://assets.tcgdex.net/ja/mc/2018sm-fr/symbol",
+        "serieId": "mc",
+        "official": 40,
+        "total": 40
+    },
+    {
+        "id": "2014xy",
+        "name": "Macdonald's Collection 2014",
+        "releaseDate": "2014-05-23",
+        "logo": "https://assets.tcgdex.net/ja/mc/2014xy/logo",
+        "symbol": "https://assets.tcgdex.net/ja/mc/2014xy/symbol",
+        "serieId": "mc",
+        "official": 12,
+        "total": 12
+    },
+    {
+        "id": "2013bw",
+        "name": "Promo McDonald's 2013",
+        "releaseDate": "2013-11-01",
+        "logo": "https://assets.tcgdex.net/ja/mc/2013bw/logo",
+        "symbol": "https://assets.tcgdex.net/ja/mc/2013bw/symbol",
+        "serieId": "mc",
+        "official": 12,
+        "total": 12
+    },
+    {
+        "id": "2019sm",
+        "name": "Macdonald's Collection 2019",
+        "releaseDate": "2019-10-15",
+        "logo": "https://assets.tcgdex.net/ja/mc/2019sm/logo",
+        "symbol": "https://assets.tcgdex.net/ja/mc/2019sm/symbol",
+        "serieId": "mc",
+        "official": 12,
+        "total": 12
+    },
+    {
+        "id": "2018sm",
+        "name": "Macdonald's Collection 2018",
+        "releaseDate": "2018-10-19",
+        "logo": "https://assets.tcgdex.net/ja/mc/2018sm/logo",
+        "symbol": "https://assets.tcgdex.net/ja/mc/2018sm/symbol",
+        "serieId": "mc",
+        "official": 12,
+        "total": 12
+    },
+    {
+        "id": "2017sm",
+        "name": "Macdonald's Collection 2017",
+        "releaseDate": "2017-08-03",
+        "logo": "https://assets.tcgdex.net/ja/mc/2017sm/logo",
+        "symbol": "https://assets.tcgdex.net/ja/mc/2017sm/symbol",
+        "serieId": "mc",
+        "official": 12,
+        "total": 12
+    },
+    {
+        "id": "2016xy",
+        "name": "Macdonald's Collection 2016",
+        "releaseDate": "2016-08-20",
+        "logo": "https://assets.tcgdex.net/ja/mc/2016xy/logo",
+        "symbol": "https://assets.tcgdex.net/ja/mc/2016xy/symbol",
+        "serieId": "mc",
+        "official": 12,
+        "total": 12
+    },
+    {
+        "id": "2012bw",
+        "name": "Macdonald's Collection 2012",
+        "releaseDate": "2012-06-15",
+        "logo": "https://assets.tcgdex.net/ja/mc/2012bw/logo",
+        "symbol": "https://assets.tcgdex.net/ja/mc/2012bw/symbol",
+        "serieId": "mc",
+        "official": 12,
+        "total": 12
+    },
+    {
+        "id": "ex6",
+        "name": "FireRed & LeafGreen",
+        "releaseDate": "2004-09-01",
+        "logo": "https://assets.tcgdex.net/ja/ex/ex6/logo",
+        "symbol": "https://assets.tcgdex.net/ja/ex/ex6/symbol",
+        "serieId": "ex",
+        "official": 112,
+        "total": 112
+    },
+    {
+        "id": "ex4",
+        "name": "Team Magma vs Team Aqua",
+        "releaseDate": "2004-03-01",
+        "logo": "https://assets.tcgdex.net/ja/ex/ex4/logo",
+        "symbol": "https://assets.tcgdex.net/ja/ex/ex4/symbol",
+        "serieId": "ex",
+        "official": 95,
+        "total": 95
+    },
+    {
+        "id": "ex2",
+        "name": "Sandstorm",
+        "releaseDate": "2003-09-18",
+        "logo": "https://assets.tcgdex.net/ja/ex/ex2/logo",
+        "symbol": "https://assets.tcgdex.net/ja/ex/ex2/symbol",
+        "serieId": "ex",
+        "official": 100,
+        "total": 100
+    },
+    {
+        "id": "ex7",
+        "name": "Team Rocket Returns",
+        "releaseDate": "2004-11-01",
+        "logo": "https://assets.tcgdex.net/ja/ex/ex7/logo",
+        "symbol": "https://assets.tcgdex.net/ja/ex/ex7/symbol",
+        "serieId": "ex",
+        "official": 109,
+        "total": 109
+    },
+    {
+        "id": "ex12",
+        "name": "Legend Maker",
+        "releaseDate": "2006-02-13",
+        "logo": "https://assets.tcgdex.net/ja/ex/ex12/logo",
+        "symbol": "https://assets.tcgdex.net/ja/ex/ex12/symbol",
+        "serieId": "ex",
+        "official": 92,
+        "total": 92
+    },
+    {
+        "id": "ex15",
+        "name": "Dragon Frontiers",
+        "releaseDate": "2006-11-08",
+        "logo": "https://assets.tcgdex.net/ja/ex/ex15/logo",
+        "symbol": "https://assets.tcgdex.net/ja/ex/ex15/symbol",
+        "serieId": "ex",
+        "official": 101,
+        "total": 101
+    },
+    {
+        "id": "ex16",
+        "name": "Power Keepers",
+        "releaseDate": "2007-02-17",
+        "logo": "https://assets.tcgdex.net/ja/ex/ex16/logo",
+        "symbol": "https://assets.tcgdex.net/ja/ex/ex16/symbol",
+        "serieId": "ex",
+        "official": 108,
+        "total": 108
+    },
+    {
+        "id": "ex14",
+        "name": "Crystal Guardians",
+        "releaseDate": "2006-08-30",
+        "logo": "https://assets.tcgdex.net/ja/ex/ex14/logo",
+        "symbol": "https://assets.tcgdex.net/ja/ex/ex14/symbol",
+        "serieId": "ex",
+        "official": 100,
+        "total": 100
+    },
+    {
+        "id": "ex11",
+        "name": "Delta Species",
+        "releaseDate": "2005-10-31",
+        "logo": "https://assets.tcgdex.net/ja/ex/ex11/logo",
+        "symbol": "https://assets.tcgdex.net/ja/ex/ex11/symbol",
+        "serieId": "ex",
+        "official": 113,
+        "total": 113
+    },
+    {
+        "id": "ex10",
+        "name": "Unseen Forces",
+        "releaseDate": "2005-08-22",
+        "logo": "https://assets.tcgdex.net/ja/ex/ex10/logo",
+        "symbol": "https://assets.tcgdex.net/ja/ex/ex10/symbol",
+        "serieId": "ex",
+        "official": 115,
+        "total": 115
+    },
+    {
+        "id": "ex9",
+        "name": "Emerald",
+        "releaseDate": "2005-05-09",
+        "logo": "https://assets.tcgdex.net/ja/ex/ex9/logo",
+        "symbol": "https://assets.tcgdex.net/ja/ex/ex9/symbol",
+        "serieId": "ex",
+        "official": 106,
+        "total": 106
+    },
+    {
+        "id": "ex8",
+        "name": "Deoxys",
+        "releaseDate": "2005-02-01",
+        "logo": "https://assets.tcgdex.net/ja/ex/ex8/logo",
+        "symbol": "https://assets.tcgdex.net/ja/ex/ex8/symbol",
+        "serieId": "ex",
+        "official": 107,
+        "total": 107
+    },
+    {
+        "id": "ex5.5",
+        "name": "Poké Card Creator Pack",
+        "releaseDate": "2004-07-01",
+        "logo": "https://assets.tcgdex.net/ja/ex/ex5.5/logo",
+        "symbol": "https://assets.tcgdex.net/ja/ex/ex5.5/symbol",
+        "serieId": "ex",
+        "official": 5,
+        "total": 5
+    },
+    {
+        "id": "exu",
+        "name": "Unseen Forces Unown Collection",
+        "releaseDate": "2005-08-22",
+        "logo": "https://assets.tcgdex.net/ja/ex/exu/logo",
+        "symbol": "https://assets.tcgdex.net/ja/ex/exu/symbol",
+        "serieId": "ex",
+        "official": 28,
+        "total": 28
+    },
+    {
+        "id": "ex13",
+        "name": "Holon Phantoms",
+        "releaseDate": "2006-05-03",
+        "logo": "https://assets.tcgdex.net/ja/ex/ex13/logo",
+        "symbol": "https://assets.tcgdex.net/ja/ex/ex13/symbol",
+        "serieId": "ex",
+        "official": 110,
+        "total": 110
+    },
+    {
+        "id": "ex3",
+        "name": "Dragon",
+        "releaseDate": "2003-11-24",
+        "logo": "https://assets.tcgdex.net/ja/ex/ex3/logo",
+        "symbol": "https://assets.tcgdex.net/ja/ex/ex3/symbol",
+        "serieId": "ex",
+        "official": 97,
+        "total": 97
+    },
+    {
+        "id": "ex1",
+        "name": "Ruby & Sapphire",
+        "releaseDate": "2003-07-01",
+        "logo": "https://assets.tcgdex.net/ja/ex/ex1/logo",
+        "symbol": "https://assets.tcgdex.net/ja/ex/ex1/symbol",
+        "serieId": "ex",
+        "official": 109,
+        "total": 109
+    },
+    {
+        "id": "ex5",
+        "name": "Hidden Legends",
+        "releaseDate": "2004-06-01",
+        "logo": "https://assets.tcgdex.net/ja/ex/ex5/logo",
+        "symbol": "https://assets.tcgdex.net/ja/ex/ex5/symbol",
+        "serieId": "ex",
+        "official": 101,
+        "total": 101
+    },
+    {
+        "id": "jumbo",
+        "name": "Jumbo cards",
+        "releaseDate": "2000-02-01",
+        "logo": "https://assets.tcgdex.net/ja/misc/jumbo/logo",
+        "symbol": "https://assets.tcgdex.net/ja/misc/jumbo/symbol",
+        "serieId": "misc",
+        "official": 160,
+        "total": 160
+    },
+    {
+        "id": "dp6",
+        "name": "Legends Awakened",
+        "releaseDate": "2008-08-01",
+        "logo": "https://assets.tcgdex.net/ja/dp/dp6/logo",
+        "symbol": "https://assets.tcgdex.net/ja/dp/dp6/symbol",
+        "serieId": "dp",
+        "official": 146,
+        "total": 146
+    },
+    {
+        "id": "dpp",
+        "name": "DP Black Star Promos",
+        "releaseDate": "2007-05-01",
+        "logo": "https://assets.tcgdex.net/ja/dp/dpp/logo",
+        "symbol": "https://assets.tcgdex.net/ja/dp/dpp/symbol",
+        "serieId": "dp",
+        "official": 56,
+        "total": 56
+    },
+    {
+        "id": "dp1",
+        "name": "Diamond & Pearl",
+        "releaseDate": "2007-05-01",
+        "logo": "https://assets.tcgdex.net/ja/dp/dp1/logo",
+        "symbol": "https://assets.tcgdex.net/ja/dp/dp1/symbol",
+        "serieId": "dp",
+        "official": 130,
+        "total": 130
+    },
+    {
+        "id": "dp2",
+        "name": "Mysterious Treasures",
+        "releaseDate": "2007-08-01",
+        "logo": "https://assets.tcgdex.net/ja/dp/dp2/logo",
+        "symbol": "https://assets.tcgdex.net/ja/dp/dp2/symbol",
+        "serieId": "dp",
+        "official": 122,
+        "total": 122
+    },
+    {
+        "id": "dp4",
+        "name": "Great Encounters",
+        "releaseDate": "2008-02-01",
+        "logo": "https://assets.tcgdex.net/ja/dp/dp4/logo",
+        "symbol": "https://assets.tcgdex.net/ja/dp/dp4/symbol",
+        "serieId": "dp",
+        "official": 106,
+        "total": 106
+    },
+    {
+        "id": "dp3",
+        "name": "Secret Wonders",
+        "releaseDate": "2007-11-01",
+        "logo": "https://assets.tcgdex.net/ja/dp/dp3/logo",
+        "symbol": "https://assets.tcgdex.net/ja/dp/dp3/symbol",
+        "serieId": "dp",
+        "official": 132,
+        "total": 132
+    },
+    {
+        "id": "dp7",
+        "name": "Stormfront",
+        "releaseDate": "2008-11-01",
+        "logo": "https://assets.tcgdex.net/ja/dp/dp7/logo",
+        "symbol": "https://assets.tcgdex.net/ja/dp/dp7/symbol",
+        "serieId": "dp",
+        "official": 100,
+        "total": 100
+    },
+    {
+        "id": "dp5",
+        "name": "Majestic Dawn",
+        "releaseDate": "2008-05-01",
+        "logo": "https://assets.tcgdex.net/ja/dp/dp5/logo",
+        "symbol": "https://assets.tcgdex.net/ja/dp/dp5/symbol",
+        "serieId": "dp",
+        "official": 100,
+        "total": 100
     },
     {
         "id": "neo4",
-        "name": "闇、そして光へ...",
-        "symbol": "https://assets.tcgdex.net/univ/neo/neo4/symbol",
+        "name": "Neo Destiny",
+        "releaseDate": "2002-02-28",
+        "logo": "https://assets.tcgdex.net/ja/neo/neo4/logo",
+        "symbol": "https://assets.tcgdex.net/ja/neo/neo4/symbol",
         "serieId": "neo",
-        "official": 113
-    },
-    {
-        "id": "VS1",
-        "name": "ポケモンカード★VS",
-        "serieId": "VS",
-        "official": 141
-    },
-    {
-        "id": "web1",
-        "name": "ポケモンカード★web",
-        "serieId": "web",
-        "official": 48
-    },
-    {
-        "id": "E1",
-        "name": "基本拡張パック",
-        "serieId": "E",
-        "official": 128
-    },
-    {
-        "id": "E2",
-        "name": "地図にない町",
-        "serieId": "E",
-        "official": 92
-    },
-    {
-        "id": "E3",
-        "name": "海からの風",
-        "serieId": "E",
-        "official": 87
-    },
-    {
-        "id": "E4",
-        "name": "裂けた大地",
-        "serieId": "E",
-        "official": 88
-    },
-    {
-        "id": "E5",
-        "name": "神秘なる山",
-        "serieId": "E",
-        "official": 88
-    },
-    {
-        "id": "ADV1",
-        "name": "拡張パック",
-        "serieId": "ADV",
-        "official": 55
-    },
-    {
-        "id": "ADV2",
-        "name": "砂漠のきせき",
-        "serieId": "ADV",
-        "official": 53
-    },
-    {
-        "id": "ADV3",
-        "name": "天空の覇者",
-        "serieId": "ADV",
-        "official": 54
-    },
-    {
-        "id": "ADV4",
-        "name": "強化拡張パックex1マグマVSアクア ふたつの野望",
-        "serieId": "ADV",
-        "official": 80
-    },
-    {
-        "id": "ADV5",
-        "name": "とかれた封印",
-        "serieId": "ADV",
-        "official": 83
-    },
-    {
-        "id": "PCG1",
-        "name": "伝説の飛翔",
-        "serieId": "PCG",
-        "official": 82
-    },
-    {
-        "id": "PCG2",
-        "name": "蒼空の激突",
-        "serieId": "PCG",
-        "official": 82
-    },
-    {
-        "id": "PCG3",
-        "name": "ロケット団の逆襲",
-        "serieId": "PCG",
-        "official": 84
-    },
-    {
-        "id": "PCG4",
-        "name": "金の空、銀の海",
-        "serieId": "PCG",
-        "official": 106
-    },
-    {
-        "id": "PCG5",
-        "name": "まぼろしの森",
-        "serieId": "PCG",
-        "official": 86
-    },
-    {
-        "id": "PCG6",
-        "name": "ホロンの研究塔",
-        "serieId": "PCG",
-        "official": 86
-    },
-    {
-        "id": "PCG7",
-        "name": "ホロンの幻影",
-        "serieId": "PCG",
-        "official": 52
-    },
-    {
-        "id": "PCG8",
-        "name": "きせきの結晶",
-        "serieId": "PCG",
-        "official": 75
-    },
-    {
-        "id": "PCG9",
-        "name": "さいはての攻防",
-        "serieId": "PCG",
-        "official": 68
-    },
-    {
-        "id": "PCG10",
-        "name": "ワールドチャンピオンズパック",
-        "serieId": "PCG",
-        "official": 108
-    },
-    {
-        "id": "L1b",
-        "name": "ソウルシルバーコレクション",
-        "serieId": "L",
-        "official": 70
-    },
-    {
-        "id": "L1a",
-        "name": "ハートゴールドコレクション",
-        "serieId": "L",
-        "official": 70
-    },
-    {
-        "id": "L2",
-        "name": "よみがえる伝説",
-        "serieId": "L",
-        "official": 70
-    },
-    {
-        "id": "LL",
-        "name": "強化パック ロストリンク",
-        "serieId": "LL",
-        "official": 40
-    },
-    {
-        "id": "L3",
-        "name": "頂上大激突",
-        "serieId": "L",
-        "official": 70
-    },
-    {
-        "id": "XY1a",
-        "name": "コレクションX",
-        "serieId": "XY",
-        "official": 60
-    },
-    {
-        "id": "XY1b",
-        "name": "コレクションY",
-        "serieId": "XY",
-        "official": 60
-    },
-    {
-        "id": "XY2",
-        "name": "ワイルドブレイズ",
-        "serieId": "XY",
-        "official": 80
-    },
-    {
-        "id": "XY3",
-        "name": "ライジングフィスト",
-        "serieId": "XY",
-        "official": 96
-    },
-    {
-        "id": "XY4",
-        "name": "ファントムゲート",
-        "serieId": "XY",
-        "official": 88
-    },
-    {
-        "id": "XY5a",
-        "name": "タイダルストーム",
-        "serieId": "XY",
-        "official": 70
-    },
-    {
-        "id": "XY5a",
-        "name": "タイダルストーム",
-        "serieId": "XY",
-        "official": 70
-    },
-    {
-        "id": "CP1",
-        "name": "マグマ団VSアクア団 ダブルクライシス",
-        "serieId": "CP",
-        "official": 34
-    },
-    {
-        "id": "XY6",
-        "name": "エメラルドブレイク",
-        "serieId": "XY",
-        "official": 78
-    },
-    {
-        "id": "XY7",
-        "name": "バンデットリング",
-        "serieId": "XY",
-        "official": 81
-    },
-    {
-        "id": "CP2",
-        "name": "伝説キラコレクション",
-        "serieId": "CP",
-        "official": 27
-    },
-    {
-        "id": "XY8b",
-        "name": "赤い閃光",
-        "serieId": "XY",
-        "official": 59
-    },
-    {
-        "id": "XY8a",
-        "name": "青い衝撃",
-        "serieId": "XY",
-        "official": 59
-    },
-    {
-        "id": "XY9",
-        "name": "破天の怒り",
-        "serieId": "XY",
-        "official": 80
-    },
-    {
-        "id": "CP3",
-        "name": "ポケキュンコレクション",
-        "serieId": "CP",
-        "official": 32
-    },
-    {
-        "id": "XY10",
-        "name": "めざめる超王",
-        "serieId": "XY",
-        "official": 78
-    },
-    {
-        "id": "CP4",
-        "name": "プレミアムチャンピオンパック EX×M×BREAK",
-        "serieId": "CP",
-        "official": 131
-    },
-    {
-        "id": "XY11a",
-        "name": "冷酷の反逆者",
-        "serieId": "XY",
-        "official": 54
-    },
-    {
-        "id": "XY11a",
-        "name": "冷酷の反逆者",
-        "serieId": "XY",
-        "official": 54
-    },
-    {
-        "id": "CP5",
-        "name": "冷酷の反逆者",
-        "serieId": "CP",
-        "official": 36
-    },
-    {
-        "id": "CP6",
-        "name": "ポケットモンスターカードゲーム 拡張パック 20th Anniversary",
-        "serieId": "CP",
-        "official": 87
-    },
-    {
-        "id": "SM0",
-        "name": "ピカチュウと新しい仲間たち",
-        "serieId": "SM",
-        "official": 4
-    },
-    {
-        "id": "SM1S",
-        "name": "コレクションサン",
-        "serieId": "SM",
-        "official": 60
-    },
-    {
-        "id": "SM1M",
-        "name": "コレクションムーン",
-        "serieId": "SM",
-        "official": 60
-    },
-    {
-        "id": "SM1+",
-        "name": "サン＆ムーン",
-        "serieId": "SM",
-        "official": 51
-    },
-    {
-        "id": "SM2K",
-        "name": "キミを待つ島々",
-        "serieId": "SM",
-        "official": 50
-    },
-    {
-        "id": "SM2L",
-        "name": "アローラの月光",
-        "serieId": "SM",
-        "official": 50
-    },
-    {
-        "id": "s1a",
-        "name": "新たなる試練の向こう",
-        "serieId": "s",
-        "official": 49
-    },
-    {
-        "id": "SM3N",
-        "name": "光を喰らう闇",
-        "serieId": "SM",
-        "official": 51
-    },
-    {
-        "id": "SM3H",
-        "name": "闘う虹を見たか",
-        "serieId": "SM",
-        "official": 51
-    },
-    {
-        "id": "SM3+",
-        "name": "ひかる伝説",
-        "serieId": "SM",
-        "official": 72
-    },
-    {
-        "id": "SM4A",
-        "name": "超次元の暴獣",
-        "serieId": "SM",
-        "official": 50
-    },
-    {
-        "id": "SM4S",
-        "name": "覚醒の勇者",
-        "serieId": "SM",
-        "official": 50
-    },
-    {
-        "id": "SM4+",
-        "name": "GXバトルブースト",
-        "serieId": "SM",
-        "official": 114
-    },
-    {
-        "id": "SM5M",
-        "name": "ウルトラムーン",
-        "serieId": "SM",
-        "official": 66
-    },
-    {
-        "id": "SM5S",
-        "name": "ウルトラサン",
-        "serieId": "SM",
-        "official": 66
-    },
-    {
-        "id": "SM5+",
-        "name": "ウルトラフォース",
-        "serieId": "SM",
-        "official": 50
-    },
-    {
-        "id": "SM6",
-        "name": "禁断の光",
-        "serieId": "SM",
-        "official": 94
-    },
-    {
-        "id": "SM6a",
-        "name": "ドラゴンストーム",
-        "serieId": "SM",
-        "official": 53
-    },
-    {
-        "id": "SM6b",
-        "name": "チャンピオンロード",
-        "serieId": "SM",
-        "official": 66
-    },
-    {
-        "id": "SM7",
-        "name": "裂空のカリスマ",
-        "serieId": "SM",
-        "official": 96
-    },
-    {
-        "id": "SM7a",
-        "name": "迅雷スパーク",
-        "serieId": "SM",
-        "official": 50
-    },
-    {
-        "id": "SM7b",
-        "name": "フェアリーライズ",
-        "serieId": "SM",
-        "official": 50
-    },
-    {
-        "id": "SM8",
-        "name": "超爆インパクト",
-        "serieId": "SM",
-        "official": 95
-    },
-    {
-        "id": "SM8b",
-        "name": "GXウルトラシャイニ",
-        "serieId": "SM",
-        "official": 150
-    },
-    {
-        "id": "SM8a",
-        "name": "ダークオーダー",
-        "serieId": "SM",
-        "official": 52
-    },
-    {
-        "id": "SM9",
-        "name": "タッグボルト",
-        "serieId": "SM",
-        "official": 95
-    },
-    {
-        "id": "SM9a",
-        "name": "ナイトユニゾン",
-        "serieId": "SM",
-        "official": 55
-    },
-    {
-        "id": "SM9b",
-        "name": "フルメタルウォール",
-        "serieId": "SM",
-        "official": 54
-    },
-    {
-        "id": "SM10",
-        "name": "ダブルブレイズ",
-        "serieId": "SM",
-        "official": 95
-    },
-    {
-        "id": "sn10a",
-        "name": "ジージーエンド",
-        "serieId": "sn",
-        "official": 54
-    },
-    {
-        "id": "SM10b",
-        "name": "スカイレジェンド",
-        "serieId": "SM",
-        "official": 56
-    },
-    {
-        "id": "SMP2",
-        "name": "名探偵ピカチュウ",
-        "serieId": "SMP",
-        "official": 24
-    },
-    {
-        "id": "sn11",
-        "name": "ミラクルツイン",
-        "serieId": "sn",
-        "official": 94
-    },
-    {
-        "id": "SM11a",
-        "name": "リミックスバウト",
-        "serieId": "SM",
-        "official": 64
-    },
-    {
-        "id": "SM11b",
-        "name": "ドリームリーグ",
-        "serieId": "SM",
-        "official": 49
-    },
-    {
-        "id": "SM12",
-        "name": "オルタージェネシス",
-        "serieId": "SM",
-        "official": 95
-    },
-    {
-        "id": "SM12a",
-        "name": "TAG TEAM GX タッグオールスターズ",
-        "serieId": "SM",
-        "official": 173
-    },
-    {
-        "id": "S1H",
-        "name": "シールド",
-        "serieId": "S",
-        "official": 60
-    },
-    {
-        "id": "S1W",
-        "name": "ソード",
-        "serieId": "S",
-        "official": 60
-    },
-    {
-        "id": "S1a",
-        "name": "VMAXライジング",
-        "serieId": "S",
-        "official": 70
-    },
-    {
-        "id": "s1a",
-        "name": "新たなる試練の向こう",
-        "serieId": "s",
-        "official": 49
-    },
-    {
-        "id": "s1a",
-        "name": "新たなる試練の向こう",
-        "serieId": "s",
-        "official": 49
-    },
-    {
-        "id": "s1a",
-        "name": "新たなる試練の向こう",
-        "serieId": "s",
-        "official": 49
-    },
-    {
-        "id": "s1a",
-        "name": "新たなる試練の向こう",
-        "serieId": "s",
-        "official": 49
-    },
-    {
-        "id": "s1a",
-        "name": "新たなる試練の向こう",
-        "serieId": "s",
-        "official": 49
-    },
-    {
-        "id": "s1a",
-        "name": "新たなる試練の向こう",
-        "serieId": "s",
-        "official": 49
-    },
-    {
-        "id": "s1a",
-        "name": "新たなる試練の向こう",
-        "serieId": "s",
-        "official": 49
-    },
-    {
-        "id": "s1a",
-        "name": "新たなる試練の向こう",
-        "serieId": "s",
-        "official": 49
-    },
-    {
-        "id": "S2",
-        "name": "反逆クラッシュ",
-        "serieId": "S",
-        "official": 96
-    },
-    {
-        "id": "S3",
-        "name": "ムゲンゾーン",
-        "serieId": "S",
-        "official": 100
-    },
-    {
-        "id": "S3a",
-        "name": "伝説の鼓動",
-        "serieId": "S",
-        "official": 76
-    },
-    {
-        "id": "CS3.5",
-        "name": "トリプレットビート",
-        "serieId": "CS",
-        "official": 101
-    },
-    {
-        "id": "sv1a",
-        "name": "トリプレットビート",
+        "official": 105,
+        "total": 105
+    },
+    {
+        "id": "neo1",
+        "name": "Neo Genesis",
+        "releaseDate": "2000-12-16",
+        "logo": "https://assets.tcgdex.net/ja/neo/neo1/logo",
+        "symbol": "https://assets.tcgdex.net/ja/neo/neo1/symbol",
+        "serieId": "neo",
+        "official": 111,
+        "total": 111
+    },
+    {
+        "id": "neo2",
+        "name": "Neo Discovery",
+        "releaseDate": "2001-06-01",
+        "logo": "https://assets.tcgdex.net/ja/neo/neo2/logo",
+        "symbol": "https://assets.tcgdex.net/ja/neo/neo2/symbol",
+        "serieId": "neo",
+        "official": 75,
+        "total": 75
+    },
+    {
+        "id": "si1",
+        "name": "Southern Islands",
+        "releaseDate": "2001-07-31",
+        "logo": "https://assets.tcgdex.net/ja/neo/si1/logo",
+        "symbol": "https://assets.tcgdex.net/ja/neo/si1/symbol",
+        "serieId": "neo",
+        "official": 18,
+        "total": 18
+    },
+    {
+        "id": "neo3",
+        "name": "Neo Revelation",
+        "releaseDate": "2001-09-21",
+        "logo": "https://assets.tcgdex.net/ja/neo/neo3/logo",
+        "symbol": "https://assets.tcgdex.net/ja/neo/neo3/symbol",
+        "serieId": "neo",
+        "official": 64,
+        "total": 64
+    },
+    {
+        "id": "sm5",
+        "name": "Ultra Prism",
+        "releaseDate": "2018-02-02",
+        "logo": "https://assets.tcgdex.net/ja/sm/sm5/logo",
+        "symbol": "https://assets.tcgdex.net/ja/sm/sm5/symbol",
+        "serieId": "sm",
+        "official": 156,
+        "total": 156
+    },
+    {
+        "id": "sm10",
+        "name": "Unbroken Bonds",
+        "releaseDate": "2019-05-03",
+        "logo": "https://assets.tcgdex.net/ja/sm/sm10/logo",
+        "symbol": "https://assets.tcgdex.net/ja/sm/sm10/symbol",
+        "serieId": "sm",
+        "official": 214,
+        "total": 214
+    },
+    {
+        "id": "sm12",
+        "name": "Cosmic Eclipse",
+        "releaseDate": "2019-11-01",
+        "logo": "https://assets.tcgdex.net/ja/sm/sm12/logo",
+        "symbol": "https://assets.tcgdex.net/ja/sm/sm12/symbol",
+        "serieId": "sm",
+        "official": 236,
+        "total": 236
+    },
+    {
+        "id": "sma",
+        "name": "Yellow A Alternate",
+        "releaseDate": "2019-08-23",
+        "logo": "https://assets.tcgdex.net/ja/sm/sma/logo",
+        "symbol": "https://assets.tcgdex.net/ja/sm/sma/symbol",
+        "serieId": "sm",
+        "official": 94,
+        "total": 94
+    },
+    {
+        "id": "sm11",
+        "name": "Unified Minds",
+        "releaseDate": "2019-08-02",
+        "logo": "https://assets.tcgdex.net/ja/sm/sm11/logo",
+        "symbol": "https://assets.tcgdex.net/ja/sm/sm11/symbol",
+        "serieId": "sm",
+        "official": 236,
+        "total": 236
+    },
+    {
+        "id": "det1",
+        "name": "Detective Pikachu",
+        "releaseDate": "2019-03-29",
+        "logo": "https://assets.tcgdex.net/ja/sm/det1/logo",
+        "symbol": "https://assets.tcgdex.net/ja/sm/det1/symbol",
+        "serieId": "sm",
+        "official": 18,
+        "total": 18
+    },
+    {
+        "id": "sm1",
+        "name": "Sun & Moon",
+        "releaseDate": "2017-02-03",
+        "logo": "https://assets.tcgdex.net/ja/sm/sm1/logo",
+        "symbol": "https://assets.tcgdex.net/ja/sm/sm1/symbol",
+        "serieId": "sm",
+        "official": 149,
+        "total": 149
+    },
+    {
+        "id": "sm115",
+        "name": "Hidden Fates",
+        "releaseDate": "2019-08-23",
+        "logo": "https://assets.tcgdex.net/ja/sm/sm115/logo",
+        "symbol": "https://assets.tcgdex.net/ja/sm/sm115/symbol",
+        "serieId": "sm",
+        "official": 68,
+        "total": 68
+    },
+    {
+        "id": "sm6",
+        "name": "Forbidden Light",
+        "releaseDate": "2018-05-04",
+        "logo": "https://assets.tcgdex.net/ja/sm/sm6/logo",
+        "symbol": "https://assets.tcgdex.net/ja/sm/sm6/symbol",
+        "serieId": "sm",
+        "official": 131,
+        "total": 131
+    },
+    {
+        "id": "sm7",
+        "name": "Celestial Storm",
+        "releaseDate": "2018-08-03",
+        "logo": "https://assets.tcgdex.net/ja/sm/sm7/logo",
+        "symbol": "https://assets.tcgdex.net/ja/sm/sm7/symbol",
+        "serieId": "sm",
+        "official": 168,
+        "total": 168
+    },
+    {
+        "id": "sm7.5",
+        "name": "Dragon Majesty",
+        "releaseDate": "2018-09-07",
+        "logo": "https://assets.tcgdex.net/ja/sm/sm7.5/logo",
+        "symbol": "https://assets.tcgdex.net/ja/sm/sm7.5/symbol",
+        "serieId": "sm",
+        "official": 70,
+        "total": 70
+    },
+    {
+        "id": "sm3.5",
+        "name": "Shining Legends",
+        "releaseDate": "2017-10-06",
+        "logo": "https://assets.tcgdex.net/ja/sm/sm3.5/logo",
+        "symbol": "https://assets.tcgdex.net/ja/sm/sm3.5/symbol",
+        "serieId": "sm",
+        "official": 73,
+        "total": 73
+    },
+    {
+        "id": "sm9",
+        "name": "Team Up",
+        "releaseDate": "2019-01-31",
+        "logo": "https://assets.tcgdex.net/ja/sm/sm9/logo",
+        "symbol": "https://assets.tcgdex.net/ja/sm/sm9/symbol",
+        "serieId": "sm",
+        "official": 181,
+        "total": 181
+    },
+    {
+        "id": "sm8",
+        "name": "Lost Thunder",
+        "releaseDate": "2018-11-02",
+        "logo": "https://assets.tcgdex.net/ja/sm/sm8/logo",
+        "symbol": "https://assets.tcgdex.net/ja/sm/sm8/symbol",
+        "serieId": "sm",
+        "official": 214,
+        "total": 214
+    },
+    {
+        "id": "sm2",
+        "name": "Guardians Rising",
+        "releaseDate": "2017-05-05",
+        "logo": "https://assets.tcgdex.net/ja/sm/sm2/logo",
+        "symbol": "https://assets.tcgdex.net/ja/sm/sm2/symbol",
+        "serieId": "sm",
+        "official": 145,
+        "total": 145
+    },
+    {
+        "id": "sm4",
+        "name": "Crimson Invasion",
+        "releaseDate": "2017-11-03",
+        "logo": "https://assets.tcgdex.net/ja/sm/sm4/logo",
+        "symbol": "https://assets.tcgdex.net/ja/sm/sm4/symbol",
+        "serieId": "sm",
+        "official": 111,
+        "total": 111
+    },
+    {
+        "id": "sm3",
+        "name": "Burning Shadows",
+        "releaseDate": "2017-08-04",
+        "logo": "https://assets.tcgdex.net/ja/sm/sm3/logo",
+        "symbol": "https://assets.tcgdex.net/ja/sm/sm3/symbol",
+        "serieId": "sm",
+        "official": 147,
+        "total": 147
+    },
+    {
+        "id": "smp",
+        "name": "SM Black Star Promos",
+        "releaseDate": "2017-02-03",
+        "logo": "https://assets.tcgdex.net/ja/sm/smp/logo",
+        "symbol": "https://assets.tcgdex.net/ja/sm/smp/symbol",
+        "serieId": "sm",
+        "official": 236,
+        "total": 236
+    },
+    {
+        "id": "me01",
+        "name": "Mega Evolution",
+        "releaseDate": "2025-09-26",
+        "logo": "https://assets.tcgdex.net/ja/me/me01/logo",
+        "symbol": "https://assets.tcgdex.net/ja/me/me01/symbol",
+        "serieId": "me",
+        "official": 132,
+        "total": 132
+    },
+    {
+        "id": "hgss1",
+        "name": "HeartGold SoulSilver",
+        "releaseDate": "2010-02-10",
+        "logo": "https://assets.tcgdex.net/ja/hgss/hgss1/logo",
+        "symbol": "https://assets.tcgdex.net/ja/hgss/hgss1/symbol",
+        "serieId": "hgss",
+        "official": 123,
+        "total": 123
+    },
+    {
+        "id": "hgss2",
+        "name": "Unleashed",
+        "releaseDate": "2010-05-12",
+        "logo": "https://assets.tcgdex.net/ja/hgss/hgss2/logo",
+        "symbol": "https://assets.tcgdex.net/ja/hgss/hgss2/symbol",
+        "serieId": "hgss",
+        "official": 95,
+        "total": 95
+    },
+    {
+        "id": "hgss4",
+        "name": "Triumphant",
+        "releaseDate": "2010-11-03",
+        "logo": "https://assets.tcgdex.net/ja/hgss/hgss4/logo",
+        "symbol": "https://assets.tcgdex.net/ja/hgss/hgss4/symbol",
+        "serieId": "hgss",
+        "official": 102,
+        "total": 102
+    },
+    {
+        "id": "hgssp",
+        "name": "HGSS Black Star Promos",
+        "releaseDate": "2010-02-11",
+        "logo": "https://assets.tcgdex.net/ja/hgss/hgssp/logo",
+        "symbol": "https://assets.tcgdex.net/ja/hgss/hgssp/symbol",
+        "serieId": "hgss",
+        "official": 25,
+        "total": 25
+    },
+    {
+        "id": "hgss3",
+        "name": "Undaunted",
+        "releaseDate": "2010-08-18",
+        "logo": "https://assets.tcgdex.net/ja/hgss/hgss3/logo",
+        "symbol": "https://assets.tcgdex.net/ja/hgss/hgss3/symbol",
+        "serieId": "hgss",
+        "official": 90,
+        "total": 90
+    },
+    {
+        "id": "ecard3",
+        "name": "Skyridge",
+        "releaseDate": "2003-05-12",
+        "logo": "https://assets.tcgdex.net/ja/ecard/ecard3/logo",
+        "symbol": "https://assets.tcgdex.net/ja/ecard/ecard3/symbol",
+        "serieId": "ecard",
+        "official": 144,
+        "total": 144
+    },
+    {
+        "id": "ecard2",
+        "name": "Aquapolis",
+        "releaseDate": "2003-01-15",
+        "logo": "https://assets.tcgdex.net/ja/ecard/ecard2/logo",
+        "symbol": "https://assets.tcgdex.net/ja/ecard/ecard2/symbol",
+        "serieId": "ecard",
+        "official": 147,
+        "total": 147
+    },
+    {
+        "id": "sp",
+        "name": "Sample",
+        "releaseDate": "2002-08-01",
+        "logo": "https://assets.tcgdex.net/ja/ecard/sp/logo",
+        "symbol": "https://assets.tcgdex.net/ja/ecard/sp/symbol",
+        "serieId": "ecard",
+        "official": 10,
+        "total": 10
+    },
+    {
+        "id": "bog",
+        "name": "Best of game",
+        "releaseDate": "2002-12-01",
+        "logo": "https://assets.tcgdex.net/ja/ecard/bog/logo",
+        "symbol": "https://assets.tcgdex.net/ja/ecard/bog/symbol",
+        "serieId": "ecard",
+        "official": 9,
+        "total": 9
+    },
+    {
+        "id": "ecard1",
+        "name": "Expedition Base Set",
+        "releaseDate": "2002-09-15",
+        "logo": "https://assets.tcgdex.net/ja/ecard/ecard1/logo",
+        "symbol": "https://assets.tcgdex.net/ja/ecard/ecard1/symbol",
+        "serieId": "ecard",
+        "official": 165,
+        "total": 165
+    },
+    {
+        "id": "sv04.5",
+        "name": "Paldean Fates",
+        "releaseDate": "2024-01-26",
+        "logo": "https://assets.tcgdex.net/ja/sv/sv04.5/logo",
+        "symbol": "https://assets.tcgdex.net/ja/sv/sv04.5/symbol",
         "serieId": "sv",
-        "official": 101
+        "official": 91,
+        "total": 91
     },
     {
-        "id": "sv1a",
-        "name": "トリプレットビート",
+        "id": "sv06.5",
+        "name": "Shrouded Fable",
+        "releaseDate": "2024-08-02",
+        "logo": "https://assets.tcgdex.net/ja/sv/sv06.5/logo",
+        "symbol": "https://assets.tcgdex.net/ja/sv/sv06.5/symbol",
         "serieId": "sv",
-        "official": 101
+        "official": 64,
+        "total": 64
     },
     {
-        "id": "CS1b",
-        "name": "トリプレットビート",
-        "serieId": "CS",
-        "official": 101
-    },
-    {
-        "id": "sv1a",
-        "name": "トリプレットビート",
+        "id": "sv08.5",
+        "name": "Prismatic Evolutions",
+        "releaseDate": "2025-01-17",
+        "logo": "https://assets.tcgdex.net/ja/sv/sv08.5/logo",
+        "symbol": "https://assets.tcgdex.net/ja/sv/sv08.5/symbol",
         "serieId": "sv",
-        "official": 101
+        "official": 131,
+        "total": 131
     },
     {
-        "id": "sv1a",
-        "name": "トリプレットビート",
+        "id": "sv10.5w",
+        "name": "White Flare",
+        "releaseDate": "2025-07-17",
+        "logo": "https://assets.tcgdex.net/ja/sv/sv10.5w/logo",
+        "symbol": "https://assets.tcgdex.net/ja/sv/sv10.5w/symbol",
         "serieId": "sv",
-        "official": 101
+        "official": 86,
+        "total": 86
     },
     {
-        "id": "sv1a",
-        "name": "トリプレットビート",
+        "id": "sv02",
+        "name": "Paldea Evolved",
+        "releaseDate": "2023-06-09",
+        "logo": "https://assets.tcgdex.net/ja/sv/sv02/logo",
+        "symbol": "https://assets.tcgdex.net/ja/sv/sv02/symbol",
         "serieId": "sv",
-        "official": 101
+        "official": 193,
+        "total": 193
     },
     {
-        "id": "CS2a",
-        "name": "トリプレットビート",
-        "serieId": "CS",
-        "official": 101
-    },
-    {
-        "id": "CS2b",
-        "name": "トリプレットビート",
-        "serieId": "CS",
-        "official": 101
-    },
-    {
-        "id": "CS1a",
-        "name": "トリプレットビート",
-        "serieId": "CS",
-        "official": 101
-    },
-    {
-        "id": "CS1.5",
-        "name": "トリプレットビート",
-        "serieId": "CS",
-        "official": 101
-    },
-    {
-        "id": "sv1a",
-        "name": "トリプレットビート",
+        "id": "sv03.5",
+        "name": "151",
+        "releaseDate": "2023-09-22",
+        "logo": "https://assets.tcgdex.net/ja/sv/sv03.5/logo",
+        "symbol": "https://assets.tcgdex.net/ja/sv/sv03.5/symbol",
         "serieId": "sv",
-        "official": 101
+        "official": 165,
+        "total": 165
     },
     {
-        "id": "sv1a",
-        "name": "トリプレットビート",
+        "id": "sv10",
+        "name": "Destined Rivals",
+        "releaseDate": "2025-05-30",
+        "logo": "https://assets.tcgdex.net/ja/sv/sv10/logo",
+        "symbol": "https://assets.tcgdex.net/ja/sv/sv10/symbol",
         "serieId": "sv",
-        "official": 101
+        "official": 182,
+        "total": 182
     },
     {
-        "id": "sv1a",
-        "name": "トリプレットビート",
+        "id": "sv04",
+        "name": "Paradox Rift",
+        "releaseDate": "2023-11-03",
+        "logo": "https://assets.tcgdex.net/ja/sv/sv04/logo",
+        "symbol": "https://assets.tcgdex.net/ja/sv/sv04/symbol",
         "serieId": "sv",
-        "official": 101
+        "official": 182,
+        "total": 182
     },
     {
-        "id": "CS2.5",
-        "name": "トリプレットビート",
-        "serieId": "CS",
-        "official": 101
+        "id": "sv03",
+        "name": "Obsidian Flames",
+        "releaseDate": "2023-08-11",
+        "logo": "https://assets.tcgdex.net/ja/sv/sv03/logo",
+        "symbol": "https://assets.tcgdex.net/ja/sv/sv03/symbol",
+        "serieId": "sv",
+        "official": 197,
+        "total": 197
     },
     {
-        "id": "SV5K",
-        "name": "ワイルドフォース",
-        "serieId": "SV",
-        "official": 71
+        "id": "sv08",
+        "name": "Surging Sparks",
+        "releaseDate": "2024-11-08",
+        "logo": "https://assets.tcgdex.net/ja/sv/sv08/logo",
+        "symbol": "https://assets.tcgdex.net/ja/sv/sv08/symbol",
+        "serieId": "sv",
+        "official": 191,
+        "total": 191
     },
     {
-        "id": "SV9a",
-        "name": "熱風のアリーナ",
-        "serieId": "SV",
-        "official": 63
+        "id": "sv10.5b",
+        "name": "Black Bolt",
+        "releaseDate": "2025-07-17",
+        "logo": "https://assets.tcgdex.net/ja/sv/sv10.5b/logo",
+        "symbol": "https://assets.tcgdex.net/ja/sv/sv10.5b/symbol",
+        "serieId": "sv",
+        "official": 86,
+        "total": 86
     },
     {
-        "id": "SV11W",
-        "name": "ホワイトフレア",
-        "serieId": "SV",
-        "official": 174
+        "id": "sv06",
+        "name": "Twilight Masquerade",
+        "releaseDate": "2024-05-24",
+        "logo": "https://assets.tcgdex.net/ja/sv/sv06/logo",
+        "symbol": "https://assets.tcgdex.net/ja/sv/sv06/symbol",
+        "serieId": "sv",
+        "official": 167,
+        "total": 167
     },
     {
-        "id": "SV10",
-        "name": "ロケット団の栄光",
-        "serieId": "SV",
-        "official": 98
+        "id": "sv05",
+        "name": "Temporal Forces",
+        "releaseDate": "2024-03-22",
+        "logo": "https://assets.tcgdex.net/ja/sv/sv05/logo",
+        "symbol": "https://assets.tcgdex.net/ja/sv/sv05/symbol",
+        "serieId": "sv",
+        "official": 162,
+        "total": 162
     },
     {
-        "id": "SVK",
-        "name": "デッキビルドBOX ステラミラクル",
-        "serieId": "SVK",
-        "official": 44
+        "id": "sv07",
+        "name": "Stellar Crown",
+        "releaseDate": "2024-09-13",
+        "logo": "https://assets.tcgdex.net/ja/sv/sv07/logo",
+        "symbol": "https://assets.tcgdex.net/ja/sv/sv07/symbol",
+        "serieId": "sv",
+        "official": 142,
+        "total": 142
     },
     {
-        "id": "SV9",
-        "name": "バトルパートナーズ",
-        "serieId": "SV",
-        "official": 100
+        "id": "svp",
+        "name": "SVP Black Star Promos",
+        "releaseDate": "2023-03-31",
+        "logo": "https://assets.tcgdex.net/ja/sv/svp/logo",
+        "symbol": "https://assets.tcgdex.net/ja/sv/svp/symbol",
+        "serieId": "sv",
+        "official": 0,
+        "total": 0
     },
     {
-        "id": "SVLS",
-        "name": "スターターセット テラスタイプ：ステラ ソウブレイズex",
-        "serieId": "SVLS",
-        "official": 22
+        "id": "sv01",
+        "name": "Scarlet & Violet",
+        "releaseDate": "2023-03-31",
+        "logo": "https://assets.tcgdex.net/ja/sv/sv01/logo",
+        "symbol": "https://assets.tcgdex.net/ja/sv/sv01/symbol",
+        "serieId": "sv",
+        "official": 198,
+        "total": 198
     },
     {
-        "id": "SV1a",
-        "name": "トリプレットビート",
-        "serieId": "SV",
-        "official": 73
+        "id": "sv09",
+        "name": "Journey Together",
+        "releaseDate": "2025-03-28",
+        "logo": "https://assets.tcgdex.net/ja/sv/sv09/logo",
+        "symbol": "https://assets.tcgdex.net/ja/sv/sv09/symbol",
+        "serieId": "sv",
+        "official": 159,
+        "total": 159
     },
     {
-        "id": "SV5M",
-        "name": "サイバージャッジ",
-        "serieId": "SV",
-        "official": 71
+        "id": "xya",
+        "name": "Yello A Alternate",
+        "releaseDate": "2014-02-05",
+        "logo": "https://assets.tcgdex.net/ja/xy/xya/logo",
+        "symbol": "https://assets.tcgdex.net/ja/xy/xya/symbol",
+        "serieId": "xy",
+        "official": 6,
+        "total": 6
     },
     {
-        "id": "SV4K",
-        "name": "古代の咆哮",
-        "serieId": "SV",
-        "official": 66
+        "id": "xy6",
+        "name": "Roaring Skies",
+        "releaseDate": "2015-05-06",
+        "logo": "https://assets.tcgdex.net/ja/xy/xy6/logo",
+        "symbol": "https://assets.tcgdex.net/ja/xy/xy6/symbol",
+        "serieId": "xy",
+        "official": 108,
+        "total": 108
     },
     {
-        "id": "SV5a",
-        "name": "クリムゾンヘイズ",
-        "serieId": "SV",
-        "official": 66
+        "id": "xy7",
+        "name": "Ancient Origins",
+        "releaseDate": "2015-08-12",
+        "logo": "https://assets.tcgdex.net/ja/xy/xy7/logo",
+        "symbol": "https://assets.tcgdex.net/ja/xy/xy7/symbol",
+        "serieId": "xy",
+        "official": 98,
+        "total": 98
     },
     {
-        "id": "SV6",
-        "name": "変幻の仮面",
-        "serieId": "SV",
-        "official": 101
+        "id": "xy9",
+        "name": "BREAKpoint",
+        "releaseDate": "2016-02-03",
+        "logo": "https://assets.tcgdex.net/ja/xy/xy9/logo",
+        "symbol": "https://assets.tcgdex.net/ja/xy/xy9/symbol",
+        "serieId": "xy",
+        "official": 122,
+        "total": 122
     },
     {
-        "id": "SV8",
-        "name": "超電ブレイカー",
-        "serieId": "SV",
-        "official": 106
+        "id": "xy5",
+        "name": "Primal Clash",
+        "releaseDate": "2015-02-04",
+        "logo": "https://assets.tcgdex.net/ja/xy/xy5/logo",
+        "symbol": "https://assets.tcgdex.net/ja/xy/xy5/symbol",
+        "serieId": "xy",
+        "official": 160,
+        "total": 160
     },
     {
-        "id": "SV4M",
-        "name": "未来の一閃",
-        "serieId": "SV",
-        "official": 66
+        "id": "xyp",
+        "name": "XY Black Star Promos",
+        "releaseDate": "2013-10-12",
+        "logo": "https://assets.tcgdex.net/ja/xy/xyp/logo",
+        "symbol": "https://assets.tcgdex.net/ja/xy/xyp/symbol",
+        "serieId": "xy",
+        "official": 211,
+        "total": 211
     },
     {
-        "id": "SV3",
-        "name": "黒炎の支配者",
-        "serieId": "SV",
-        "official": 108
+        "id": "xy0",
+        "name": "Kalos Starter Set",
+        "releaseDate": "2013-11-08",
+        "logo": "https://assets.tcgdex.net/ja/xy/xy0/logo",
+        "symbol": "https://assets.tcgdex.net/ja/xy/xy0/symbol",
+        "serieId": "xy",
+        "official": 39,
+        "total": 39
     },
     {
-        "id": "SV3a",
-        "name": "レイジングサーフ",
-        "serieId": "SV",
-        "official": 62
+        "id": "xy2",
+        "name": "Flashfire",
+        "releaseDate": "2014-05-07",
+        "logo": "https://assets.tcgdex.net/ja/xy/xy2/logo",
+        "symbol": "https://assets.tcgdex.net/ja/xy/xy2/symbol",
+        "serieId": "xy",
+        "official": 106,
+        "total": 106
     },
     {
-        "id": "SV7a",
-        "name": "楽園ドラゴーナ",
-        "serieId": "SV",
-        "official": 64
+        "id": "xy8",
+        "name": "BREAKthrough",
+        "releaseDate": "2015-11-04",
+        "logo": "https://assets.tcgdex.net/ja/xy/xy8/logo",
+        "symbol": "https://assets.tcgdex.net/ja/xy/xy8/symbol",
+        "serieId": "xy",
+        "official": 162,
+        "total": 162
     },
     {
-        "id": "SV2P",
-        "name": "スノーハザード",
-        "serieId": "SV",
-        "official": 71
+        "id": "xy12",
+        "name": "Evolutions",
+        "releaseDate": "2016-11-02",
+        "logo": "https://assets.tcgdex.net/ja/xy/xy12/logo",
+        "symbol": "https://assets.tcgdex.net/ja/xy/xy12/symbol",
+        "serieId": "xy",
+        "official": 108,
+        "total": 108
     },
     {
-        "id": "SV7",
-        "name": "ステラミラクル",
-        "serieId": "SV",
-        "official": 102
+        "id": "dc1",
+        "name": "Double Crisis",
+        "releaseDate": "2015-03-25",
+        "logo": "https://assets.tcgdex.net/ja/xy/dc1/logo",
+        "symbol": "https://assets.tcgdex.net/ja/xy/dc1/symbol",
+        "serieId": "xy",
+        "official": 34,
+        "total": 34
     },
     {
-        "id": "SV6a",
-        "name": "ナイトワンダラー",
-        "serieId": "SV",
-        "official": 64
+        "id": "g1",
+        "name": "Generations",
+        "releaseDate": "2016-02-22",
+        "logo": "https://assets.tcgdex.net/ja/xy/g1/logo",
+        "symbol": "https://assets.tcgdex.net/ja/xy/g1/symbol",
+        "serieId": "xy",
+        "official": 83,
+        "total": 83
     },
     {
-        "id": "SV1V",
-        "name": "バイオレットex",
-        "serieId": "SV",
-        "official": 78
+        "id": "xy1",
+        "name": "XY",
+        "releaseDate": "2014-02-05",
+        "logo": "https://assets.tcgdex.net/ja/xy/xy1/logo",
+        "symbol": "https://assets.tcgdex.net/ja/xy/xy1/symbol",
+        "serieId": "xy",
+        "official": 146,
+        "total": 146
     },
     {
-        "id": "SV2D",
-        "name": "クレイバースト",
-        "serieId": "SV",
-        "official": 71
+        "id": "xy11",
+        "name": "Steam Siege",
+        "releaseDate": "2016-08-03",
+        "logo": "https://assets.tcgdex.net/ja/xy/xy11/logo",
+        "symbol": "https://assets.tcgdex.net/ja/xy/xy11/symbol",
+        "serieId": "xy",
+        "official": 114,
+        "total": 114
     },
     {
-        "id": "SVLN",
-        "name": "スターターセット テラスタイプ：ステラ ニンフィアex",
-        "serieId": "SVLN",
-        "official": 22
+        "id": "xy10",
+        "name": "Fates Collide",
+        "releaseDate": "2016-05-02",
+        "logo": "https://assets.tcgdex.net/ja/xy/xy10/logo",
+        "symbol": "https://assets.tcgdex.net/ja/xy/xy10/symbol",
+        "serieId": "xy",
+        "official": 124,
+        "total": 124
     },
     {
-        "id": "SV1S",
-        "name": "スカーレットex",
-        "serieId": "SV",
-        "official": 78
+        "id": "xy3",
+        "name": "Furious Fists",
+        "releaseDate": "2014-08-13",
+        "logo": "https://assets.tcgdex.net/ja/xy/xy3/logo",
+        "symbol": "https://assets.tcgdex.net/ja/xy/xy3/symbol",
+        "serieId": "xy",
+        "official": 111,
+        "total": 111
     },
     {
-        "id": "SV2a",
-        "name": "ポケモンカード151",
-        "serieId": "SV",
-        "official": 165
+        "id": "xy4",
+        "name": "Phantom Forces",
+        "releaseDate": "2014-11-05",
+        "logo": "https://assets.tcgdex.net/ja/xy/xy4/logo",
+        "symbol": "https://assets.tcgdex.net/ja/xy/xy4/symbol",
+        "serieId": "xy",
+        "official": 119,
+        "total": 119
     },
     {
-        "id": "SV8a",
-        "name": "テラスタルフェスex",
-        "serieId": "SV",
-        "official": 187
+        "id": "tk-hs-g",
+        "name": "HS trainer Kit (Gyarados)",
+        "releaseDate": "2010-05-01",
+        "logo": "https://assets.tcgdex.net/ja/tk/tk-hs-g/logo",
+        "symbol": "https://assets.tcgdex.net/ja/tk/tk-hs-g/symbol",
+        "serieId": "tk",
+        "official": 30,
+        "total": 30
     },
     {
-        "id": "SV4a",
-        "name": "レイジングサーフ",
-        "serieId": "SV",
-        "official": 190
+        "id": "tk-ex-p",
+        "name": "EX trainer Kit 2 (Plusle)",
+        "releaseDate": "2006-03-01",
+        "logo": "https://assets.tcgdex.net/ja/tk/tk-ex-p/logo",
+        "symbol": "https://assets.tcgdex.net/ja/tk/tk-ex-p/symbol",
+        "serieId": "tk",
+        "official": 12,
+        "total": 12
     },
     {
-        "id": "S12a",
-        "name": "VSTARユニバース",
-        "serieId": "S",
-        "official": 172
+        "id": "tk-ex-m",
+        "name": "EX trainer Kit 2 (Minun)",
+        "releaseDate": "2006-03-01",
+        "logo": "https://assets.tcgdex.net/ja/tk/tk-ex-m/logo",
+        "symbol": "https://assets.tcgdex.net/ja/tk/tk-ex-m/symbol",
+        "serieId": "tk",
+        "official": 12,
+        "total": 12
     },
     {
-        "id": "S4a",
-        "name": "シャイニースターV",
-        "serieId": "S",
-        "official": 190
+        "id": "tk-dp-l",
+        "name": "DP trainer Kit (Lucario)",
+        "releaseDate": "2007-09-01",
+        "logo": "https://assets.tcgdex.net/ja/tk/tk-dp-l/logo",
+        "symbol": "https://assets.tcgdex.net/ja/tk/tk-dp-l/symbol",
+        "serieId": "tk",
+        "official": 11,
+        "total": 11
     },
     {
-        "id": "S6H",
-        "name": "白銀のランス",
-        "serieId": "S",
-        "official": 70
+        "id": "tk-sm-r",
+        "name": "SM trainer Kit (Alolan Raichu)",
+        "releaseDate": "2017-04-21",
+        "logo": "https://assets.tcgdex.net/ja/tk/tk-sm-r/logo",
+        "symbol": "https://assets.tcgdex.net/ja/tk/tk-sm-r/symbol",
+        "serieId": "tk",
+        "official": 30,
+        "total": 30
     },
     {
-        "id": "S8b",
-        "name": "VMAXクライマックス",
-        "serieId": "S",
-        "official": 184
+        "id": "tk-xy-latia",
+        "name": "XY trainer Kit (Latias)",
+        "releaseDate": "2015-04-29",
+        "logo": "https://assets.tcgdex.net/ja/tk/tk-xy-latia/logo",
+        "symbol": "https://assets.tcgdex.net/ja/tk/tk-xy-latia/symbol",
+        "serieId": "tk",
+        "official": 30,
+        "total": 30
     },
     {
-        "id": "S5a",
-        "name": "双璧のファイター",
-        "serieId": "S",
-        "official": 70
+        "id": "tk-hs-r",
+        "name": "HS trainer Kit (Raichu)",
+        "releaseDate": "2010-05-01",
+        "logo": "https://assets.tcgdex.net/ja/tk/tk-hs-r/logo",
+        "symbol": "https://assets.tcgdex.net/ja/tk/tk-hs-r/symbol",
+        "serieId": "tk",
+        "official": 30,
+        "total": 30
     },
     {
-        "id": "S11",
-        "name": "トリプレットビート",
-        "serieId": "S",
-        "official": 100
+        "id": "tk-ex-latio",
+        "name": "EX trainer Kit (Latios)",
+        "releaseDate": "2004-07-01",
+        "logo": "https://assets.tcgdex.net/ja/tk/tk-ex-latio/logo",
+        "symbol": "https://assets.tcgdex.net/ja/tk/tk-ex-latio/symbol",
+        "serieId": "tk",
+        "official": 10,
+        "total": 10
     },
     {
-        "id": "S9",
-        "name": "スターバース",
-        "serieId": "S",
-        "official": 100
+        "id": "tk-bw-e",
+        "name": "BW trainer Kit (Excadrill)",
+        "releaseDate": "2011-09-01",
+        "logo": "https://assets.tcgdex.net/ja/tk/tk-bw-e/logo",
+        "symbol": "https://assets.tcgdex.net/ja/tk/tk-bw-e/symbol",
+        "serieId": "tk",
+        "official": 30,
+        "total": 30
     },
     {
-        "id": "S10b",
+        "id": "tk-xy-p",
+        "name": "XY trainer Kit (Pikachu Libre)",
+        "releaseDate": "2016-04-27",
+        "logo": "https://assets.tcgdex.net/ja/tk/tk-xy-p/logo",
+        "symbol": "https://assets.tcgdex.net/ja/tk/tk-xy-p/symbol",
+        "serieId": "tk",
+        "official": 30,
+        "total": 30
+    },
+    {
+        "id": "tk-xy-latio",
+        "name": "XY trainer Kit (Latios)",
+        "releaseDate": "2015-04-29",
+        "logo": "https://assets.tcgdex.net/ja/tk/tk-xy-latio/logo",
+        "symbol": "https://assets.tcgdex.net/ja/tk/tk-xy-latio/symbol",
+        "serieId": "tk",
+        "official": 30,
+        "total": 30
+    },
+    {
+        "id": "tk-sm-l",
+        "name": "SM trainer Kit (Lycanroc)",
+        "releaseDate": "2017-04-21",
+        "logo": "https://assets.tcgdex.net/ja/tk/tk-sm-l/logo",
+        "symbol": "https://assets.tcgdex.net/ja/tk/tk-sm-l/symbol",
+        "serieId": "tk",
+        "official": 30,
+        "total": 30
+    },
+    {
+        "id": "tk-ex-latia",
+        "name": "EX trainer Kit (Latias)",
+        "releaseDate": "2004-07-01",
+        "logo": "https://assets.tcgdex.net/ja/tk/tk-ex-latia/logo",
+        "symbol": "https://assets.tcgdex.net/ja/tk/tk-ex-latia/symbol",
+        "serieId": "tk",
+        "official": 10,
+        "total": 10
+    },
+    {
+        "id": "tk-xy-su",
+        "name": "XY trainer Kit (Suicune)",
+        "releaseDate": "2016-04-27",
+        "logo": "https://assets.tcgdex.net/ja/tk/tk-xy-su/logo",
+        "symbol": "https://assets.tcgdex.net/ja/tk/tk-xy-su/symbol",
+        "serieId": "tk",
+        "official": 30,
+        "total": 30
+    },
+    {
+        "id": "tk-dp-m",
+        "name": "DP trainer Kit (Manaphy)",
+        "releaseDate": "2007-09-01",
+        "logo": "https://assets.tcgdex.net/ja/tk/tk-dp-m/logo",
+        "symbol": "https://assets.tcgdex.net/ja/tk/tk-dp-m/symbol",
+        "serieId": "tk",
+        "official": 12,
+        "total": 12
+    },
+    {
+        "id": "tk-xy-w",
+        "name": "XY trainer Kit (Wigglytuff)",
+        "releaseDate": "2014-11-01",
+        "logo": "https://assets.tcgdex.net/ja/tk/tk-xy-w/logo",
+        "symbol": "https://assets.tcgdex.net/ja/tk/tk-xy-w/symbol",
+        "serieId": "tk",
+        "official": 30,
+        "total": 30
+    },
+    {
+        "id": "tk-bw-z",
+        "name": "BW trainer Kit (Zoroark)",
+        "releaseDate": "2011-09-01",
+        "logo": "https://assets.tcgdex.net/ja/tk/tk-bw-z/logo",
+        "symbol": "https://assets.tcgdex.net/ja/tk/tk-bw-z/symbol",
+        "serieId": "tk",
+        "official": 30,
+        "total": 30
+    },
+    {
+        "id": "tk-xy-n",
+        "name": "XY trainer Kit (Noivern)",
+        "releaseDate": "2014-03-12",
+        "logo": "https://assets.tcgdex.net/ja/tk/tk-xy-n/logo",
+        "symbol": "https://assets.tcgdex.net/ja/tk/tk-xy-n/symbol",
+        "serieId": "tk",
+        "official": 30,
+        "total": 30
+    },
+    {
+        "id": "tk-xy-sy",
+        "name": "XY trainer Kit (Sylveon)",
+        "releaseDate": "2014-03-12",
+        "logo": "https://assets.tcgdex.net/ja/tk/tk-xy-sy/logo",
+        "symbol": "https://assets.tcgdex.net/ja/tk/tk-xy-sy/symbol",
+        "serieId": "tk",
+        "official": 30,
+        "total": 30
+    },
+    {
+        "id": "tk-xy-b",
+        "name": "XY trainer Kit (Bisharp)",
+        "releaseDate": "2014-11-01",
+        "logo": "https://assets.tcgdex.net/ja/tk/tk-xy-b/logo",
+        "symbol": "https://assets.tcgdex.net/ja/tk/tk-xy-b/symbol",
+        "serieId": "tk",
+        "official": 30,
+        "total": 30
+    },
+    {
+        "id": "pl4",
+        "name": "Arceus",
+        "releaseDate": "2009-11-04",
+        "logo": "https://assets.tcgdex.net/ja/pl/pl4/logo",
+        "symbol": "https://assets.tcgdex.net/ja/pl/pl4/symbol",
+        "serieId": "pl",
+        "official": 99,
+        "total": 99
+    },
+    {
+        "id": "pl3",
+        "name": "Supreme Victors",
+        "releaseDate": "2009-08-19",
+        "logo": "https://assets.tcgdex.net/ja/pl/pl3/logo",
+        "symbol": "https://assets.tcgdex.net/ja/pl/pl3/symbol",
+        "serieId": "pl",
+        "official": 147,
+        "total": 147
+    },
+    {
+        "id": "pl2",
+        "name": "Rising Rivals",
+        "releaseDate": "2009-05-16",
+        "logo": "https://assets.tcgdex.net/ja/pl/pl2/logo",
+        "symbol": "https://assets.tcgdex.net/ja/pl/pl2/symbol",
+        "serieId": "pl",
+        "official": 111,
+        "total": 111
+    },
+    {
+        "id": "ru1",
+        "name": "Pokémon Rumble",
+        "releaseDate": "2009-12-02",
+        "logo": "https://assets.tcgdex.net/ja/pl/ru1/logo",
+        "symbol": "https://assets.tcgdex.net/ja/pl/ru1/symbol",
+        "serieId": "pl",
+        "official": 16,
+        "total": 16
+    },
+    {
+        "id": "pl1",
+        "name": "Platinum",
+        "releaseDate": "2009-02-11",
+        "logo": "https://assets.tcgdex.net/ja/pl/pl1/logo",
+        "symbol": "https://assets.tcgdex.net/ja/pl/pl1/symbol",
+        "serieId": "pl",
+        "official": 127,
+        "total": 127
+    },
+    {
+        "id": "gym2",
+        "name": "Gym Challenge",
+        "releaseDate": "2000-10-16",
+        "logo": "https://assets.tcgdex.net/ja/gym/gym2/logo",
+        "symbol": "https://assets.tcgdex.net/ja/gym/gym2/symbol",
+        "serieId": "gym",
+        "official": 132,
+        "total": 132
+    },
+    {
+        "id": "gym1",
+        "name": "Gym Heroes",
+        "releaseDate": "2000-08-14",
+        "logo": "https://assets.tcgdex.net/ja/gym/gym1/logo",
+        "symbol": "https://assets.tcgdex.net/ja/gym/gym1/symbol",
+        "serieId": "gym",
+        "official": 132,
+        "total": 132
+    },
+    {
+        "id": "swsh4.5",
+        "name": "Shining Fates",
+        "releaseDate": "2021-02-19",
+        "logo": "https://assets.tcgdex.net/ja/swsh/swsh4.5/logo",
+        "symbol": "https://assets.tcgdex.net/ja/swsh/swsh4.5/symbol",
+        "serieId": "swsh",
+        "official": 72,
+        "total": 72
+    },
+    {
+        "id": "swsh10",
+        "name": "Astral Radiance",
+        "releaseDate": "2022-05-27",
+        "logo": "https://assets.tcgdex.net/ja/swsh/swsh10/logo",
+        "symbol": "https://assets.tcgdex.net/ja/swsh/swsh10/symbol",
+        "serieId": "swsh",
+        "official": 189,
+        "total": 189
+    },
+    {
+        "id": "swsh8",
+        "name": "Fusion Strike",
+        "releaseDate": "2021-11-12",
+        "logo": "https://assets.tcgdex.net/ja/swsh/swsh8/logo",
+        "symbol": "https://assets.tcgdex.net/ja/swsh/swsh8/symbol",
+        "serieId": "swsh",
+        "official": 264,
+        "total": 264
+    },
+    {
+        "id": "swsh7",
+        "name": "Evolving Skies",
+        "releaseDate": "2021-08-27",
+        "logo": "https://assets.tcgdex.net/ja/swsh/swsh7/logo",
+        "symbol": "https://assets.tcgdex.net/ja/swsh/swsh7/symbol",
+        "serieId": "swsh",
+        "official": 203,
+        "total": 203
+    },
+    {
+        "id": "swsh12.5",
+        "name": "Crown Zenith",
+        "releaseDate": "2023-01-20",
+        "logo": "https://assets.tcgdex.net/ja/swsh/swsh12.5/logo",
+        "symbol": "https://assets.tcgdex.net/ja/swsh/swsh12.5/symbol",
+        "serieId": "swsh",
+        "official": 159,
+        "total": 159
+    },
+    {
+        "id": "swsh3.5",
+        "name": "Champion's Path",
+        "releaseDate": "2020-09-25",
+        "logo": "https://assets.tcgdex.net/ja/swsh/swsh3.5/logo",
+        "symbol": "https://assets.tcgdex.net/ja/swsh/swsh3.5/symbol",
+        "serieId": "swsh",
+        "official": 70,
+        "total": 70
+    },
+    {
+        "id": "cel25",
+        "name": "Celebrations",
+        "releaseDate": "2021-10-08",
+        "logo": "https://assets.tcgdex.net/ja/swsh/cel25/logo",
+        "symbol": "https://assets.tcgdex.net/ja/swsh/cel25/symbol",
+        "serieId": "swsh",
+        "official": 25,
+        "total": 25
+    },
+    {
+        "id": "swsh5",
+        "name": "Battle Styles",
+        "releaseDate": "2021-03-19",
+        "logo": "https://assets.tcgdex.net/ja/swsh/swsh5/logo",
+        "symbol": "https://assets.tcgdex.net/ja/swsh/swsh5/symbol",
+        "serieId": "swsh",
+        "official": 163,
+        "total": 163
+    },
+    {
+        "id": "swsh12",
+        "name": "Silver Tempest",
+        "releaseDate": "2022-11-11",
+        "logo": "https://assets.tcgdex.net/ja/swsh/swsh12/logo",
+        "symbol": "https://assets.tcgdex.net/ja/swsh/swsh12/symbol",
+        "serieId": "swsh",
+        "official": 195,
+        "total": 195
+    },
+    {
+        "id": "swsh4",
+        "name": "Vivid Voltage",
+        "releaseDate": "2020-11-13",
+        "logo": "https://assets.tcgdex.net/ja/swsh/swsh4/logo",
+        "symbol": "https://assets.tcgdex.net/ja/swsh/swsh4/symbol",
+        "serieId": "swsh",
+        "official": 185,
+        "total": 185
+    },
+    {
+        "id": "swsh6",
+        "name": "Chilling Reign",
+        "releaseDate": "2021-06-18",
+        "logo": "https://assets.tcgdex.net/ja/swsh/swsh6/logo",
+        "symbol": "https://assets.tcgdex.net/ja/swsh/swsh6/symbol",
+        "serieId": "swsh",
+        "official": 198,
+        "total": 198
+    },
+    {
+        "id": "swsh11",
+        "name": "Lost Origin",
+        "releaseDate": "2022-09-09",
+        "logo": "https://assets.tcgdex.net/ja/swsh/swsh11/logo",
+        "symbol": "https://assets.tcgdex.net/ja/swsh/swsh11/symbol",
+        "serieId": "swsh",
+        "official": 196,
+        "total": 196
+    },
+    {
+        "id": "swsh3",
+        "name": "Darkness Ablaze",
+        "releaseDate": "2020-08-14",
+        "logo": "https://assets.tcgdex.net/ja/swsh/swsh3/logo",
+        "symbol": "https://assets.tcgdex.net/ja/swsh/swsh3/symbol",
+        "serieId": "swsh",
+        "official": 189,
+        "total": 189
+    },
+    {
+        "id": "swsh2",
+        "name": "Rebel Clash",
+        "releaseDate": "2020-05-01",
+        "logo": "https://assets.tcgdex.net/ja/swsh/swsh2/logo",
+        "symbol": "https://assets.tcgdex.net/ja/swsh/swsh2/symbol",
+        "serieId": "swsh",
+        "official": 192,
+        "total": 192
+    },
+    {
+        "id": "swshp",
+        "name": "SWSH Black Star Promos",
+        "releaseDate": "2019-11-15",
+        "logo": "https://assets.tcgdex.net/ja/swsh/swshp/logo",
+        "symbol": "https://assets.tcgdex.net/ja/swsh/swshp/symbol",
+        "serieId": "swsh",
+        "official": 107,
+        "total": 107
+    },
+    {
+        "id": "fut2020",
+        "name": "Pokémon Futsal 2020",
+        "releaseDate": "2020-09-11",
+        "logo": "https://assets.tcgdex.net/ja/swsh/fut2020/logo",
+        "symbol": "https://assets.tcgdex.net/ja/swsh/fut2020/symbol",
+        "serieId": "swsh",
+        "official": 5,
+        "total": 5
+    },
+    {
+        "id": "swsh10.5",
         "name": "Pokémon GO",
-        "serieId": "S",
-        "official": 71
+        "releaseDate": "2022-07-01",
+        "logo": "https://assets.tcgdex.net/ja/swsh/swsh10.5/logo",
+        "symbol": "https://assets.tcgdex.net/ja/swsh/swsh10.5/symbol",
+        "serieId": "swsh",
+        "official": 78,
+        "total": 78
     },
     {
-        "id": "S12",
-        "name": "パラダイムトリガー",
-        "serieId": "S",
-        "official": 98
+        "id": "swsh9",
+        "name": "Brilliant Stars",
+        "releaseDate": "2022-02-25",
+        "logo": "https://assets.tcgdex.net/ja/swsh/swsh9/logo",
+        "symbol": "https://assets.tcgdex.net/ja/swsh/swsh9/symbol",
+        "serieId": "swsh",
+        "official": 172,
+        "total": 172
     },
     {
-        "id": "S4",
-        "name": "仰天のボルテッカー",
-        "serieId": "S",
-        "official": 100
-    },
-    {
-        "id": "S5R",
-        "name": "連撃マスター",
-        "serieId": "S",
-        "official": 70
-    },
-    {
-        "id": "S11a",
-        "name": "白熱のアルカナ",
-        "serieId": "S",
-        "official": 68
-    },
-    {
-        "id": "S6a",
-        "name": "イーブイヒーローズ",
-        "serieId": "S",
-        "official": 69
-    },
-    {
-        "id": "S8",
-        "name": "フュージョンアーツ",
-        "serieId": "S",
-        "official": 100
-    },
-    {
-        "id": "S2a",
-        "name": "爆炎ウォーカー",
-        "serieId": "S",
-        "official": 70
-    },
-    {
-        "id": "S10D",
-        "name": "タイムゲイザー",
-        "serieId": "S",
-        "official": 67
-    },
-    {
-        "id": "S9a",
-        "name": "バトルリージョン",
-        "serieId": "S",
-        "official": 67
-    },
-    {
-        "id": "S10a",
-        "name": "ダークファンタズマ",
-        "serieId": "S",
-        "official": 71
-    },
-    {
-        "id": "S7R",
-        "name": "蒼空ストリーム",
-        "serieId": "S",
-        "official": 67
-    },
-    {
-        "id": "S8a",
-        "name": "25th アニバーサリーコレクション",
-        "serieId": "S",
-        "official": 28
-    },
-    {
-        "id": "S6K",
-        "name": "漆黒のガイスト",
-        "serieId": "S",
-        "official": 70
-    },
-    {
-        "id": "S7D",
-        "name": "摩天パーフェクト",
-        "serieId": "S",
-        "official": 67
-    },
-    {
-        "id": "S5I",
-        "name": "一撃マスター",
-        "serieId": "S",
-        "official": 70
-    },
-    {
-        "id": "S10P",
-        "name": "スペースジャグラー",
-        "serieId": "S",
-        "official": 67
+        "id": "swsh1",
+        "name": "Sword & Shield",
+        "releaseDate": "2020-02-07",
+        "logo": "https://assets.tcgdex.net/ja/swsh/swsh1/logo",
+        "symbol": "https://assets.tcgdex.net/ja/swsh/swsh1/symbol",
+        "serieId": "swsh",
+        "official": 202,
+        "total": 202
     }
 ]

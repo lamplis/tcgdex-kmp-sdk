@@ -1,1 +1,130 @@
-{"cardCount":{"firstEd":0,"holo":6,"normal":16,"official":17,"reverse":0,"total":17},"cards":[{"id":"pop7-1","image":"https://assets.tcgdex.net/en/pop/pop7/1","localId":"1","name":"Ampharos"},{"id":"pop7-2","image":"https://assets.tcgdex.net/en/pop/pop7/2","localId":"2","name":"Gallade"},{"id":"pop7-3","image":"https://assets.tcgdex.net/en/pop/pop7/3","localId":"3","name":"Latias"},{"id":"pop7-4","image":"https://assets.tcgdex.net/en/pop/pop7/4","localId":"4","name":"Latios"},{"id":"pop7-5","image":"https://assets.tcgdex.net/en/pop/pop7/5","localId":"5","name":"Mothim"},{"id":"pop7-6","image":"https://assets.tcgdex.net/en/pop/pop7/6","localId":"6","name":"Delibird"},{"id":"pop7-7","image":"https://assets.tcgdex.net/en/pop/pop7/7","localId":"7","name":"Flaaffy"},{"id":"pop7-8","image":"https://assets.tcgdex.net/en/pop/pop7/8","localId":"8","name":"Kirlia"},{"id":"pop7-9","image":"https://assets.tcgdex.net/en/pop/pop7/9","localId":"9","name":"Stantler"},{"id":"pop7-10","image":"https://assets.tcgdex.net/en/pop/pop7/10","localId":"10","name":"Wormadam Sandy Cloak"},{"id":"pop7-11","image":"https://assets.tcgdex.net/en/pop/pop7/11","localId":"11","name":"Burmy Plant Cloak"},{"id":"pop7-12","image":"https://assets.tcgdex.net/en/pop/pop7/12","localId":"12","name":"Burmy Sandy Cloak"},{"id":"pop7-13","image":"https://assets.tcgdex.net/en/pop/pop7/13","localId":"13","name":"Corsola"},{"id":"pop7-14","image":"https://assets.tcgdex.net/en/pop/pop7/14","localId":"14","name":"Mareep"},{"id":"pop7-15","image":"https://assets.tcgdex.net/en/pop/pop7/15","localId":"15","name":"Ralts"},{"id":"pop7-16","image":"https://assets.tcgdex.net/en/pop/pop7/16","localId":"16","name":"Sentret"},{"id":"pop7-17","image":"https://assets.tcgdex.net/en/pop/pop7/17","localId":"17","name":"Spinda"}],"id":"pop7","legal":{"expanded":false,"standard":false},"logo":"https://assets.tcgdex.net/en/pop/pop7/logo","name":"POP Series 7","releaseDate":"2008-03-01","serie":{"id":"pop","name":"POP"},"symbol":"https://assets.tcgdex.net/univ/pop/pop7/symbol","abbreviation":{"official":"P7"}}
+{
+    "id": "pop7",
+    "serieId": "pop",
+    "name": "POP Series 7",
+    "releaseDate": "2008-03-01",
+    "cardCount": 17,
+    "logo": "https://assets.tcgdex.net/en/pop/pop7/logo",
+    "symbol": "https://assets.tcgdex.net/en/pop/pop7/symbol",
+    "cards": [
+        {
+            "id": "pop7-1",
+            "number": "1",
+            "name": "Ampharos",
+            "illustrator": "Kouki Saitou",
+            "imageBase": "https://assets.tcgdex.net/en/pop/pop7/1"
+        },
+        {
+            "id": "pop7-2",
+            "number": "2",
+            "name": "Gallade",
+            "illustrator": "Daisuke Ito",
+            "imageBase": "https://assets.tcgdex.net/en/pop/pop7/2"
+        },
+        {
+            "id": "pop7-3",
+            "number": "3",
+            "name": "Latias",
+            "illustrator": "Daisuke Ito",
+            "imageBase": "https://assets.tcgdex.net/en/pop/pop7/3"
+        },
+        {
+            "id": "pop7-4",
+            "number": "4",
+            "name": "Latios",
+            "illustrator": "Daisuke Ito",
+            "imageBase": "https://assets.tcgdex.net/en/pop/pop7/4"
+        },
+        {
+            "id": "pop7-5",
+            "number": "5",
+            "name": "Mothim",
+            "illustrator": "Kazuyuki Kano",
+            "imageBase": "https://assets.tcgdex.net/en/pop/pop7/5"
+        },
+        {
+            "id": "pop7-6",
+            "number": "6",
+            "name": "Delibird",
+            "illustrator": "Masakazu Fukuda",
+            "imageBase": "https://assets.tcgdex.net/en/pop/pop7/6"
+        },
+        {
+            "id": "pop7-7",
+            "number": "7",
+            "name": "Flaaffy",
+            "illustrator": "Kagemaru Himeno",
+            "imageBase": "https://assets.tcgdex.net/en/pop/pop7/7"
+        },
+        {
+            "id": "pop7-8",
+            "number": "8",
+            "name": "Kirlia",
+            "illustrator": "Masakazu Fukuda",
+            "imageBase": "https://assets.tcgdex.net/en/pop/pop7/8"
+        },
+        {
+            "id": "pop7-9",
+            "number": "9",
+            "name": "Stantler",
+            "illustrator": "Kouki Saitou",
+            "imageBase": "https://assets.tcgdex.net/en/pop/pop7/9"
+        },
+        {
+            "id": "pop7-10",
+            "number": "10",
+            "name": "Wormadam Sandy Cloak",
+            "illustrator": "Kagemaru Himeno",
+            "imageBase": "https://assets.tcgdex.net/en/pop/pop7/10"
+        },
+        {
+            "id": "pop7-11",
+            "number": "11",
+            "name": "Burmy Plant Cloak",
+            "illustrator": "Kouki Saitou",
+            "imageBase": "https://assets.tcgdex.net/en/pop/pop7/11"
+        },
+        {
+            "id": "pop7-12",
+            "number": "12",
+            "name": "Burmy Sandy Cloak",
+            "illustrator": "Midori Harada",
+            "imageBase": "https://assets.tcgdex.net/en/pop/pop7/12"
+        },
+        {
+            "id": "pop7-13",
+            "number": "13",
+            "name": "Corsola",
+            "illustrator": "Midori Harada",
+            "imageBase": "https://assets.tcgdex.net/en/pop/pop7/13"
+        },
+        {
+            "id": "pop7-14",
+            "number": "14",
+            "name": "Mareep",
+            "illustrator": "Atsuko Nishida",
+            "imageBase": "https://assets.tcgdex.net/en/pop/pop7/14"
+        },
+        {
+            "id": "pop7-15",
+            "number": "15",
+            "name": "Ralts",
+            "illustrator": "Sumiyoshi Kizuki",
+            "imageBase": "https://assets.tcgdex.net/en/pop/pop7/15"
+        },
+        {
+            "id": "pop7-16",
+            "number": "16",
+            "name": "Sentret",
+            "illustrator": "Midori Harada",
+            "imageBase": "https://assets.tcgdex.net/en/pop/pop7/16"
+        },
+        {
+            "id": "pop7-17",
+            "number": "17",
+            "name": "Spinda",
+            "illustrator": "Atsuko Nishida",
+            "imageBase": "https://assets.tcgdex.net/en/pop/pop7/17"
+        }
+    ]
+}

@@ -90,4 +90,27 @@ tasks.register<JavaExec>("generateEmbeddedCatalog") {
     classpath = files(jvmMain.output.allOutputs, jvmMain.runtimeDependencyFiles)
     // Write under module resources by default
     systemProperty("outputDir", project.projectDir.resolve("src/commonMain/resources/tcgdex").absolutePath)
+    // Pass-through optional tuning properties for faster debug runs and local mode
+    val keys = listOf("langs", "limitSets", "progressEvery", "skipDetails", "localDbPath", "offlineOnly", "verbose", "seriesFilter")
+    keys.forEach { key ->
+        val fromProject = project.findProperty(key)?.toString()
+        val fromSystem = System.getProperty(key)
+        val fromEnv = System.getenv(key.uppercase())
+        val value = fromProject ?: fromSystem ?: fromEnv
+        if (!value.isNullOrBlank()) {
+            systemProperty(key, value)
+        }
+    }
+}
+
+// Ensure the generator runs for release builds to refresh embedded resources & Kotlin data
+tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>().configureEach {
+    if (name.contains("Release")) {
+        dependsOn("generateEmbeddedCatalog")
+    }
+}
+
+// Also wire Android library assembleRelease to trigger generation
+tasks.matching { it.name == "assembleRelease" || it.name == "bundleReleaseAar" }.configureEach {
+    dependsOn("generateEmbeddedCatalog")
 }

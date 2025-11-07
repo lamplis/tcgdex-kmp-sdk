@@ -1,1 +1,95 @@
-{"cardCount":{"firstEd":0,"holo":0,"normal":0,"official":12,"reverse":0,"total":12},"cards":[{"id":"tk-ex-m-1","localId":"1","name":"Arcanine"},{"id":"tk-ex-m-2","localId":"2","name":"Charmander"},{"id":"tk-ex-m-3","localId":"3","name":"Charmeleon"},{"id":"tk-ex-m-4","localId":"4","name":"Growlithe"},{"id":"tk-ex-m-5","localId":"5","name":"Mareep"},{"id":"tk-ex-m-6","localId":"6","name":"Minun"},{"id":"tk-ex-m-7","localId":"7","name":"Vulpix"},{"id":"tk-ex-m-8","localId":"8","name":"Celio's Network"},{"id":"tk-ex-m-9","localId":"9","name":"Energy Search"},{"id":"tk-ex-m-10","localId":"10","name":"Potion"},{"id":"tk-ex-m-11","localId":"11","name":"Fire Energy"},{"id":"tk-ex-m-12","localId":"12","name":"Lightning Energy"}],"id":"tk-ex-m","legal":{"expanded":false,"standard":false},"name":"EX trainer Kit 2 (Minun)","releaseDate":"2006-03-01","serie":{"id":"tk","name":"Trainer kits"},"abbreviation":{"official":"TK2M"}}
+{
+    "id": "tk-ex-m",
+    "serieId": "tk",
+    "name": "EX trainer Kit 2 (Minun)",
+    "releaseDate": "2006-03-01",
+    "cardCount": 12,
+    "logo": "https://assets.tcgdex.net/en/tk/tk-ex-m/logo",
+    "symbol": "https://assets.tcgdex.net/en/tk/tk-ex-m/symbol",
+    "cards": [
+        {
+            "id": "tk-ex-m-1",
+            "number": "1",
+            "name": "Arcanine",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-ex-m/1"
+        },
+        {
+            "id": "tk-ex-m-2",
+            "number": "2",
+            "name": "Charmander",
+            "illustrator": "Midori Harada",
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-ex-m/2"
+        },
+        {
+            "id": "tk-ex-m-3",
+            "number": "3",
+            "name": "Charmeleon",
+            "illustrator": "Kouki Saitou",
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-ex-m/3"
+        },
+        {
+            "id": "tk-ex-m-4",
+            "number": "4",
+            "name": "Growlithe",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-ex-m/4"
+        },
+        {
+            "id": "tk-ex-m-5",
+            "number": "5",
+            "name": "Mareep",
+            "illustrator": "Naoyo Kimura",
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-ex-m/5"
+        },
+        {
+            "id": "tk-ex-m-6",
+            "number": "6",
+            "name": "Minun",
+            "illustrator": "Katsura Tabata",
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-ex-m/6"
+        },
+        {
+            "id": "tk-ex-m-7",
+            "number": "7",
+            "name": "Vulpix",
+            "illustrator": "Midori Harada",
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-ex-m/7"
+        },
+        {
+            "id": "tk-ex-m-8",
+            "number": "8",
+            "name": "Celio's Network",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-ex-m/8"
+        },
+        {
+            "id": "tk-ex-m-9",
+            "number": "9",
+            "name": "Energy Search",
+            "illustrator": "Kai Ishikawa",
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-ex-m/9"
+        },
+        {
+            "id": "tk-ex-m-10",
+            "number": "10",
+            "name": "Potion",
+            "illustrator": "Keiji Kinebuchi",
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-ex-m/10"
+        },
+        {
+            "id": "tk-ex-m-11",
+            "number": "11",
+            "name": "Fire Energy",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-ex-m/11"
+        },
+        {
+            "id": "tk-ex-m-12",
+            "number": "12",
+            "name": "Lightning Energy",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-ex-m/12"
+        }
+    ]
+}

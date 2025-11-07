@@ -1,0 +1,767 @@
+{
+    "id": "ex16",
+    "serieId": "ex",
+    "name": "Power Keepers",
+    "releaseDate": "2007-02-17",
+    "cardCount": 108,
+    "logo": "https://assets.tcgdex.net/pt/ex/ex16/logo",
+    "symbol": "https://assets.tcgdex.net/pt/ex/ex16/symbol",
+    "cards": [
+        {
+            "id": "ex16-1",
+            "number": "1",
+            "name": "Aggron",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/1"
+        },
+        {
+            "id": "ex16-2",
+            "number": "2",
+            "name": "Altaria",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/2"
+        },
+        {
+            "id": "ex16-3",
+            "number": "3",
+            "name": "Armaldo",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/3"
+        },
+        {
+            "id": "ex16-4",
+            "number": "4",
+            "name": "Banette",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/4"
+        },
+        {
+            "id": "ex16-5",
+            "number": "5",
+            "name": "Blaziken",
+            "illustrator": "Masakazu Fukuda",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/5"
+        },
+        {
+            "id": "ex16-6",
+            "number": "6",
+            "name": "Charizard",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/6"
+        },
+        {
+            "id": "ex16-7",
+            "number": "7",
+            "name": "Cradily",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/7"
+        },
+        {
+            "id": "ex16-8",
+            "number": "8",
+            "name": "Delcatty",
+            "illustrator": "Masakazu Fukuda",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/8"
+        },
+        {
+            "id": "ex16-9",
+            "number": "9",
+            "name": "Gardevoir",
+            "illustrator": "Midori Harada",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/9"
+        },
+        {
+            "id": "ex16-10",
+            "number": "10",
+            "name": "Kabutops",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/10"
+        },
+        {
+            "id": "ex16-11",
+            "number": "11",
+            "name": "Machamp",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/11"
+        },
+        {
+            "id": "ex16-12",
+            "number": "12",
+            "name": "Raichu",
+            "illustrator": "Hajime Kusajima",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/12"
+        },
+        {
+            "id": "ex16-13",
+            "number": "13",
+            "name": "Slaking",
+            "illustrator": "Midori Harada",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/13"
+        },
+        {
+            "id": "ex16-14",
+            "number": "14",
+            "name": "Dusclops",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/14"
+        },
+        {
+            "id": "ex16-15",
+            "number": "15",
+            "name": "Lanturn",
+            "illustrator": "Midori Harada",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/15"
+        },
+        {
+            "id": "ex16-16",
+            "number": "16",
+            "name": "Magneton",
+            "illustrator": "Masakazu Fukuda",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/16"
+        },
+        {
+            "id": "ex16-17",
+            "number": "17",
+            "name": "Mawile",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/17"
+        },
+        {
+            "id": "ex16-18",
+            "number": "18",
+            "name": "Mightyena",
+            "illustrator": "Midori Harada",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/18"
+        },
+        {
+            "id": "ex16-19",
+            "number": "19",
+            "name": "Ninetales",
+            "illustrator": "Tomoaki Imakuni",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/19"
+        },
+        {
+            "id": "ex16-20",
+            "number": "20",
+            "name": "Omastar",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/20"
+        },
+        {
+            "id": "ex16-21",
+            "number": "21",
+            "name": "Pichu",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/21"
+        },
+        {
+            "id": "ex16-22",
+            "number": "22",
+            "name": "Sableye",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/22"
+        },
+        {
+            "id": "ex16-23",
+            "number": "23",
+            "name": "Seviper",
+            "illustrator": "Midori Harada",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/23"
+        },
+        {
+            "id": "ex16-24",
+            "number": "24",
+            "name": "Wobbuffet",
+            "illustrator": "Masakazu Fukuda",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/24"
+        },
+        {
+            "id": "ex16-25",
+            "number": "25",
+            "name": "Zangoose",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/25"
+        },
+        {
+            "id": "ex16-26",
+            "number": "26",
+            "name": "Anorith",
+            "illustrator": "Midori Harada",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/26"
+        },
+        {
+            "id": "ex16-27",
+            "number": "27",
+            "name": "Cacturne",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/27"
+        },
+        {
+            "id": "ex16-28",
+            "number": "28",
+            "name": "Charmeleon",
+            "illustrator": "Midori Harada",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/28"
+        },
+        {
+            "id": "ex16-29",
+            "number": "29",
+            "name": "Combusken",
+            "illustrator": "Atsuko Nishida",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/29"
+        },
+        {
+            "id": "ex16-30",
+            "number": "30",
+            "name": "Glalie",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/30"
+        },
+        {
+            "id": "ex16-31",
+            "number": "31",
+            "name": "Kirlia",
+            "illustrator": "Sachiko Adachi",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/31"
+        },
+        {
+            "id": "ex16-32",
+            "number": "32",
+            "name": "Lairon",
+            "illustrator": "Sachiko Adachi",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/32"
+        },
+        {
+            "id": "ex16-33",
+            "number": "33",
+            "name": "Machoke",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/33"
+        },
+        {
+            "id": "ex16-34",
+            "number": "34",
+            "name": "Medicham",
+            "illustrator": "Tomoaki Imakuni",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/34"
+        },
+        {
+            "id": "ex16-35",
+            "number": "35",
+            "name": "Metang",
+            "illustrator": "Tomokazu Komiya",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/35"
+        },
+        {
+            "id": "ex16-36",
+            "number": "36",
+            "name": "Nuzleaf",
+            "illustrator": "Hajime Kusajima",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/36"
+        },
+        {
+            "id": "ex16-37",
+            "number": "37",
+            "name": "Sealeo",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/37"
+        },
+        {
+            "id": "ex16-38",
+            "number": "38",
+            "name": "Sharpedo",
+            "illustrator": "Midori Harada",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/38"
+        },
+        {
+            "id": "ex16-39",
+            "number": "39",
+            "name": "Shelgon",
+            "illustrator": "Midori Harada",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/39"
+        },
+        {
+            "id": "ex16-40",
+            "number": "40",
+            "name": "Vibrava",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/40"
+        },
+        {
+            "id": "ex16-41",
+            "number": "41",
+            "name": "Vigoroth",
+            "illustrator": "Hajime Kusajima",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/41"
+        },
+        {
+            "id": "ex16-42",
+            "number": "42",
+            "name": "Aron",
+            "illustrator": "Tomokazu Komiya",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/42"
+        },
+        {
+            "id": "ex16-43",
+            "number": "43",
+            "name": "Bagon",
+            "illustrator": "Midori Harada",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/43"
+        },
+        {
+            "id": "ex16-44",
+            "number": "44",
+            "name": "Baltoy",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/44"
+        },
+        {
+            "id": "ex16-45",
+            "number": "45",
+            "name": "Beldum",
+            "illustrator": "Midori Harada",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/45"
+        },
+        {
+            "id": "ex16-46",
+            "number": "46",
+            "name": "Cacnea",
+            "illustrator": "Hajime Kusajima",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/46"
+        },
+        {
+            "id": "ex16-47",
+            "number": "47",
+            "name": "Carvanha",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/47"
+        },
+        {
+            "id": "ex16-48",
+            "number": "48",
+            "name": "Charmander",
+            "illustrator": "Sachiko Adachi",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/48"
+        },
+        {
+            "id": "ex16-49",
+            "number": "49",
+            "name": "Chinchou",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/49"
+        },
+        {
+            "id": "ex16-50",
+            "number": "50",
+            "name": "Duskull",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/50"
+        },
+        {
+            "id": "ex16-51",
+            "number": "51",
+            "name": "Kabuto",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/51"
+        },
+        {
+            "id": "ex16-52",
+            "number": "52",
+            "name": "Lileep",
+            "illustrator": "Hajime Kusajima",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/52"
+        },
+        {
+            "id": "ex16-53",
+            "number": "53",
+            "name": "Machop",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/53"
+        },
+        {
+            "id": "ex16-54",
+            "number": "54",
+            "name": "Magnemite",
+            "illustrator": "Hajime Kusajima",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/54"
+        },
+        {
+            "id": "ex16-55",
+            "number": "55",
+            "name": "Meditite",
+            "illustrator": "Midori Harada",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/55"
+        },
+        {
+            "id": "ex16-56",
+            "number": "56",
+            "name": "Omanyte",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/56"
+        },
+        {
+            "id": "ex16-57",
+            "number": "57",
+            "name": "Pikachu",
+            "illustrator": "Kagemaru Himeno",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/57"
+        },
+        {
+            "id": "ex16-58",
+            "number": "58",
+            "name": "Poochyena",
+            "illustrator": "Midori Harada",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/58"
+        },
+        {
+            "id": "ex16-59",
+            "number": "59",
+            "name": "Ralts",
+            "illustrator": "Midori Harada",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/59"
+        },
+        {
+            "id": "ex16-60",
+            "number": "60",
+            "name": "Seedot",
+            "illustrator": "Midori Harada",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/60"
+        },
+        {
+            "id": "ex16-61",
+            "number": "61",
+            "name": "Shuppet",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/61"
+        },
+        {
+            "id": "ex16-62",
+            "number": "62",
+            "name": "Skitty",
+            "illustrator": "Tomokazu Komiya",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/62"
+        },
+        {
+            "id": "ex16-63",
+            "number": "63",
+            "name": "Slakoth",
+            "illustrator": "Tomokazu Komiya",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/63"
+        },
+        {
+            "id": "ex16-64",
+            "number": "64",
+            "name": "Snorunt",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/64"
+        },
+        {
+            "id": "ex16-65",
+            "number": "65",
+            "name": "Spheal",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/65"
+        },
+        {
+            "id": "ex16-66",
+            "number": "66",
+            "name": "Swablu",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/66"
+        },
+        {
+            "id": "ex16-67",
+            "number": "67",
+            "name": "Torchic",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/67"
+        },
+        {
+            "id": "ex16-68",
+            "number": "68",
+            "name": "Trapinch",
+            "illustrator": "Sachiko Adachi",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/68"
+        },
+        {
+            "id": "ex16-69",
+            "number": "69",
+            "name": "Vulpix",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/69"
+        },
+        {
+            "id": "ex16-70",
+            "number": "70",
+            "name": "Wynaut",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/70"
+        },
+        {
+            "id": "ex16-71",
+            "number": "71",
+            "name": "Battle Frontier",
+            "illustrator": "Midori Harada",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/71"
+        },
+        {
+            "id": "ex16-72",
+            "number": "72",
+            "name": "Drake's Stadium",
+            "illustrator": "Ryo Ueda",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/72"
+        },
+        {
+            "id": "ex16-73",
+            "number": "73",
+            "name": "Energy Recycle System",
+            "illustrator": "Zu-Ka",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/73"
+        },
+        {
+            "id": "ex16-74",
+            "number": "74",
+            "name": "Energy Removal 2",
+            "illustrator": "Keiji Kinebuchi",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/74"
+        },
+        {
+            "id": "ex16-75",
+            "number": "75",
+            "name": "Energy Switch",
+            "illustrator": "Ken Ikuji",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/75"
+        },
+        {
+            "id": "ex16-76",
+            "number": "76",
+            "name": "Glacia's Stadium",
+            "illustrator": "Ryo Ueda",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/76"
+        },
+        {
+            "id": "ex16-77",
+            "number": "77",
+            "name": "Great Ball",
+            "illustrator": "Nakaoka",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/77"
+        },
+        {
+            "id": "ex16-78",
+            "number": "78",
+            "name": "Master Ball",
+            "illustrator": "Keiji Kinebuchi",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/78"
+        },
+        {
+            "id": "ex16-79",
+            "number": "79",
+            "name": "Phoebe's Stadium",
+            "illustrator": "Ryo Ueda",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/79"
+        },
+        {
+            "id": "ex16-80",
+            "number": "80",
+            "name": "Professor Birch",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/80"
+        },
+        {
+            "id": "ex16-81",
+            "number": "81",
+            "name": "Scott",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/81"
+        },
+        {
+            "id": "ex16-82",
+            "number": "82",
+            "name": "Sidney's Stadium",
+            "illustrator": "Ryo Ueda",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/82"
+        },
+        {
+            "id": "ex16-83",
+            "number": "83",
+            "name": "Steven's Advice",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/83"
+        },
+        {
+            "id": "ex16-84",
+            "number": "84",
+            "name": "Claw Fossil",
+            "illustrator": "Ryo Ueda",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/84"
+        },
+        {
+            "id": "ex16-85",
+            "number": "85",
+            "name": "Mysterious Fossil",
+            "illustrator": "Ryo Ueda",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/85"
+        },
+        {
+            "id": "ex16-86",
+            "number": "86",
+            "name": "Root Fossil",
+            "illustrator": "Ryo Ueda",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/86"
+        },
+        {
+            "id": "ex16-87",
+            "number": "87",
+            "name": "Darkness Energy",
+            "illustrator": "Milky Isobe",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/87"
+        },
+        {
+            "id": "ex16-88",
+            "number": "88",
+            "name": "Metal Energy",
+            "illustrator": "Milky Isobe",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/88"
+        },
+        {
+            "id": "ex16-89",
+            "number": "89",
+            "name": "Multi Energy",
+            "illustrator": "Takumi Akabane",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/89"
+        },
+        {
+            "id": "ex16-90",
+            "number": "90",
+            "name": "Cyclone Energy",
+            "illustrator": "Shin-ichi Yoshikawa",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/90"
+        },
+        {
+            "id": "ex16-91",
+            "number": "91",
+            "name": "Warp Energy",
+            "illustrator": "Shin-ichi Yoshikawa",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/91"
+        },
+        {
+            "id": "ex16-92",
+            "number": "92",
+            "name": "Absol ex",
+            "illustrator": "Ryo Ueda",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/92"
+        },
+        {
+            "id": "ex16-93",
+            "number": "93",
+            "name": "Claydol ex",
+            "illustrator": "Ryo Ueda",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/93"
+        },
+        {
+            "id": "ex16-94",
+            "number": "94",
+            "name": "Flygon ex",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/94"
+        },
+        {
+            "id": "ex16-95",
+            "number": "95",
+            "name": "Metagross ex",
+            "illustrator": "Ryo Ueda",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/95"
+        },
+        {
+            "id": "ex16-96",
+            "number": "96",
+            "name": "Salamence ex",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/96"
+        },
+        {
+            "id": "ex16-97",
+            "number": "97",
+            "name": "Shiftry ex",
+            "illustrator": "Ryo Ueda",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/97"
+        },
+        {
+            "id": "ex16-98",
+            "number": "98",
+            "name": "Skarmory ex",
+            "illustrator": "Ryo Ueda",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/98"
+        },
+        {
+            "id": "ex16-99",
+            "number": "99",
+            "name": "Walrein ex",
+            "illustrator": "Ryo Ueda",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/99"
+        },
+        {
+            "id": "ex16-100",
+            "number": "100",
+            "name": "Flareon Star",
+            "illustrator": "Masakazu Fukuda",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/100"
+        },
+        {
+            "id": "ex16-101",
+            "number": "101",
+            "name": "Jolteon Star",
+            "illustrator": "Masakazu Fukuda",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/101"
+        },
+        {
+            "id": "ex16-102",
+            "number": "102",
+            "name": "Vaporeon Star",
+            "illustrator": "Masakazu Fukuda",
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/102"
+        },
+        {
+            "id": "ex16-103",
+            "number": "103",
+            "name": "Grass Energy",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/103"
+        },
+        {
+            "id": "ex16-104",
+            "number": "104",
+            "name": "Fire Energy",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/104"
+        },
+        {
+            "id": "ex16-105",
+            "number": "105",
+            "name": "Water Energy",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/105"
+        },
+        {
+            "id": "ex16-106",
+            "number": "106",
+            "name": "Lightning Energy",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/106"
+        },
+        {
+            "id": "ex16-107",
+            "number": "107",
+            "name": "Psychic Energy",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/107"
+        },
+        {
+            "id": "ex16-108",
+            "number": "108",
+            "name": "Fighting Energy",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/pt/ex/ex16/108"
+        }
+    ]
+}

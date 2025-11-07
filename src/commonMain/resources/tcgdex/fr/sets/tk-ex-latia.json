@@ -1,1 +1,81 @@
-{"cardCount":{"firstEd":0,"holo":0,"normal":0,"official":10,"reverse":0,"total":10},"cards":[],"id":"tk-ex-latia","legal":{"expanded":false,"standard":false},"name":"EX Kit dresseur (Latias)","releaseDate":"2004-07-01","serie":{"id":"tk","name":"Kits du dresseur"},"symbol":"https://assets.tcgdex.net/univ/tk/tk-ex-latia/symbol","abbreviation":{"official":"TK1A","localized":"KDA"}}
+{
+    "id": "tk-ex-latia",
+    "serieId": "tk",
+    "name": "EX Kit dresseur (Latias)",
+    "releaseDate": "2004-07-01",
+    "cardCount": 10,
+    "logo": "https://assets.tcgdex.net/fr/tk/tk-ex-latia/logo",
+    "symbol": "https://assets.tcgdex.net/fr/tk/tk-ex-latia/symbol",
+    "cards": [
+        {
+            "id": "tk-ex-latia-1",
+            "number": "1",
+            "name": "Bagon",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-ex-latia/1"
+        },
+        {
+            "id": "tk-ex-latia-2",
+            "number": "2",
+            "name": "Combusken",
+            "illustrator": "Kouki Saitou",
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-ex-latia/2"
+        },
+        {
+            "id": "tk-ex-latia-3",
+            "number": "3",
+            "name": "Delcatty",
+            "illustrator": "Midori Harada",
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-ex-latia/3"
+        },
+        {
+            "id": "tk-ex-latia-4",
+            "number": "4",
+            "name": "Latias",
+            "illustrator": "Nakaoka",
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-ex-latia/4"
+        },
+        {
+            "id": "tk-ex-latia-5",
+            "number": "5",
+            "name": "Numel",
+            "illustrator": "Yuka Morii",
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-ex-latia/5"
+        },
+        {
+            "id": "tk-ex-latia-6",
+            "number": "6",
+            "name": "Skitty",
+            "illustrator": "Atsuko Nishida",
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-ex-latia/6"
+        },
+        {
+            "id": "tk-ex-latia-7",
+            "number": "7",
+            "name": "Torchic",
+            "illustrator": "Hironobu Yoshida",
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-ex-latia/7"
+        },
+        {
+            "id": "tk-ex-latia-8",
+            "number": "8",
+            "name": "Potion",
+            "illustrator": "Keiji Kinebuchi",
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-ex-latia/8"
+        },
+        {
+            "id": "tk-ex-latia-9",
+            "number": "9",
+            "name": "Energy Search",
+            "illustrator": "Kai Ishikawa",
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-ex-latia/9"
+        },
+        {
+            "id": "tk-ex-latia-10",
+            "number": "10",
+            "name": "Fire Energy",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-ex-latia/10"
+        }
+    ]
+}

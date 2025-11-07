@@ -1,0 +1,921 @@
+{
+    "id": "base4",
+    "serieId": "base",
+    "name": "Base Set 2",
+    "releaseDate": "2000-02-24",
+    "cardCount": 130,
+    "logo": "https://assets.tcgdex.net/fr/base/base4/logo",
+    "symbol": "https://assets.tcgdex.net/fr/base/base4/symbol",
+    "cards": [
+        {
+            "id": "base4-1",
+            "number": "1",
+            "name": "Alakazam",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/1"
+        },
+        {
+            "id": "base4-2",
+            "number": "2",
+            "name": "Blastoise",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/2"
+        },
+        {
+            "id": "base4-3",
+            "number": "3",
+            "name": "Chansey",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/3"
+        },
+        {
+            "id": "base4-4",
+            "number": "4",
+            "name": "Charizard",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/4"
+        },
+        {
+            "id": "base4-5",
+            "number": "5",
+            "name": "Clefable",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/5"
+        },
+        {
+            "id": "base4-6",
+            "number": "6",
+            "name": "Clefairy",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/6"
+        },
+        {
+            "id": "base4-7",
+            "number": "7",
+            "name": "Gyarados",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/7"
+        },
+        {
+            "id": "base4-8",
+            "number": "8",
+            "name": "Hitmonchan",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/8"
+        },
+        {
+            "id": "base4-9",
+            "number": "9",
+            "name": "Magneton",
+            "illustrator": "Keiji Kinebuchi",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/9"
+        },
+        {
+            "id": "base4-10",
+            "number": "10",
+            "name": "Mewtwo",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/10"
+        },
+        {
+            "id": "base4-11",
+            "number": "11",
+            "name": "Nidoking",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/11"
+        },
+        {
+            "id": "base4-12",
+            "number": "12",
+            "name": "Nidoqueen",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/12"
+        },
+        {
+            "id": "base4-13",
+            "number": "13",
+            "name": "Ninetales",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/13"
+        },
+        {
+            "id": "base4-14",
+            "number": "14",
+            "name": "Pidgeot",
+            "illustrator": "Kagemaru Himeno",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/14"
+        },
+        {
+            "id": "base4-15",
+            "number": "15",
+            "name": "Poliwrath",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/15"
+        },
+        {
+            "id": "base4-16",
+            "number": "16",
+            "name": "Raichu",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/16"
+        },
+        {
+            "id": "base4-17",
+            "number": "17",
+            "name": "Scyther",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/17"
+        },
+        {
+            "id": "base4-18",
+            "number": "18",
+            "name": "Venusaur",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/18"
+        },
+        {
+            "id": "base4-19",
+            "number": "19",
+            "name": "Wigglytuff",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/19"
+        },
+        {
+            "id": "base4-20",
+            "number": "20",
+            "name": "Zapdos",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/20"
+        },
+        {
+            "id": "base4-21",
+            "number": "21",
+            "name": "Beedrill",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/21"
+        },
+        {
+            "id": "base4-22",
+            "number": "22",
+            "name": "Dragonair",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/22"
+        },
+        {
+            "id": "base4-23",
+            "number": "23",
+            "name": "Dugtrio",
+            "illustrator": "Keiji Kinebuchi",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/23"
+        },
+        {
+            "id": "base4-24",
+            "number": "24",
+            "name": "Electabuzz",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/24"
+        },
+        {
+            "id": "base4-25",
+            "number": "25",
+            "name": "Electrode",
+            "illustrator": "Keiji Kinebuchi",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/25"
+        },
+        {
+            "id": "base4-26",
+            "number": "26",
+            "name": "Kangaskhan",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/26"
+        },
+        {
+            "id": "base4-27",
+            "number": "27",
+            "name": "Mr. Mime",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/27"
+        },
+        {
+            "id": "base4-28",
+            "number": "28",
+            "name": "Pidgeotto",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/28"
+        },
+        {
+            "id": "base4-29",
+            "number": "29",
+            "name": "Pinsir",
+            "illustrator": "Kagemaru Himeno",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/29"
+        },
+        {
+            "id": "base4-30",
+            "number": "30",
+            "name": "Snorlax",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/30"
+        },
+        {
+            "id": "base4-31",
+            "number": "31",
+            "name": "Venomoth",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/31"
+        },
+        {
+            "id": "base4-32",
+            "number": "32",
+            "name": "Victreebel",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/32"
+        },
+        {
+            "id": "base4-33",
+            "number": "33",
+            "name": "Arcanine",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/33"
+        },
+        {
+            "id": "base4-34",
+            "number": "34",
+            "name": "Butterfree",
+            "illustrator": "Kagemaru Himeno",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/34"
+        },
+        {
+            "id": "base4-35",
+            "number": "35",
+            "name": "Charmeleon",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/35"
+        },
+        {
+            "id": "base4-36",
+            "number": "36",
+            "name": "Dewgong",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/36"
+        },
+        {
+            "id": "base4-37",
+            "number": "37",
+            "name": "Dodrio",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/37"
+        },
+        {
+            "id": "base4-38",
+            "number": "38",
+            "name": "Dratini",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/38"
+        },
+        {
+            "id": "base4-39",
+            "number": "39",
+            "name": "Exeggutor",
+            "illustrator": "Kagemaru Himeno",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/39"
+        },
+        {
+            "id": "base4-40",
+            "number": "40",
+            "name": "Farfetch'd",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/40"
+        },
+        {
+            "id": "base4-41",
+            "number": "41",
+            "name": "Fearow",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/41"
+        },
+        {
+            "id": "base4-42",
+            "number": "42",
+            "name": "Growlithe",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/42"
+        },
+        {
+            "id": "base4-43",
+            "number": "43",
+            "name": "Haunter",
+            "illustrator": "Keiji Kinebuchi",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/43"
+        },
+        {
+            "id": "base4-44",
+            "number": "44",
+            "name": "Ivysaur",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/44"
+        },
+        {
+            "id": "base4-45",
+            "number": "45",
+            "name": "Jynx",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/45"
+        },
+        {
+            "id": "base4-46",
+            "number": "46",
+            "name": "Kadabra",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/46"
+        },
+        {
+            "id": "base4-47",
+            "number": "47",
+            "name": "Kakuna",
+            "illustrator": "Keiji Kinebuchi",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/47"
+        },
+        {
+            "id": "base4-48",
+            "number": "48",
+            "name": "Lickitung",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/48"
+        },
+        {
+            "id": "base4-49",
+            "number": "49",
+            "name": "Machoke",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/49"
+        },
+        {
+            "id": "base4-50",
+            "number": "50",
+            "name": "Magikarp",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/50"
+        },
+        {
+            "id": "base4-51",
+            "number": "51",
+            "name": "Magmar",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/51"
+        },
+        {
+            "id": "base4-52",
+            "number": "52",
+            "name": "Marowak",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/52"
+        },
+        {
+            "id": "base4-53",
+            "number": "53",
+            "name": "Nidorina",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/53"
+        },
+        {
+            "id": "base4-54",
+            "number": "54",
+            "name": "Nidorino",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/54"
+        },
+        {
+            "id": "base4-55",
+            "number": "55",
+            "name": "Parasect",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/55"
+        },
+        {
+            "id": "base4-56",
+            "number": "56",
+            "name": "Persian",
+            "illustrator": "Kagemaru Himeno",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/56"
+        },
+        {
+            "id": "base4-57",
+            "number": "57",
+            "name": "Poliwhirl",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/57"
+        },
+        {
+            "id": "base4-58",
+            "number": "58",
+            "name": "Raticate",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/58"
+        },
+        {
+            "id": "base4-59",
+            "number": "59",
+            "name": "Rhydon",
+            "illustrator": "Kagemaru Himeno",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/59"
+        },
+        {
+            "id": "base4-60",
+            "number": "60",
+            "name": "Seaking",
+            "illustrator": "Kagemaru Himeno",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/60"
+        },
+        {
+            "id": "base4-61",
+            "number": "61",
+            "name": "Seel",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/61"
+        },
+        {
+            "id": "base4-62",
+            "number": "62",
+            "name": "Tauros",
+            "illustrator": "Kagemaru Himeno",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/62"
+        },
+        {
+            "id": "base4-63",
+            "number": "63",
+            "name": "Wartortle",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/63"
+        },
+        {
+            "id": "base4-64",
+            "number": "64",
+            "name": "Weepinbell",
+            "illustrator": "Kagemaru Himeno",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/64"
+        },
+        {
+            "id": "base4-65",
+            "number": "65",
+            "name": "Abra",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/65"
+        },
+        {
+            "id": "base4-66",
+            "number": "66",
+            "name": "Bellsprout",
+            "illustrator": "Kagemaru Himeno",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/66"
+        },
+        {
+            "id": "base4-67",
+            "number": "67",
+            "name": "Bulbasaur",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/67"
+        },
+        {
+            "id": "base4-68",
+            "number": "68",
+            "name": "Caterpie",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/68"
+        },
+        {
+            "id": "base4-69",
+            "number": "69",
+            "name": "Charmander",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/69"
+        },
+        {
+            "id": "base4-70",
+            "number": "70",
+            "name": "Cubone",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/70"
+        },
+        {
+            "id": "base4-71",
+            "number": "71",
+            "name": "Diglett",
+            "illustrator": "Keiji Kinebuchi",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/71"
+        },
+        {
+            "id": "base4-72",
+            "number": "72",
+            "name": "Doduo",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/72"
+        },
+        {
+            "id": "base4-73",
+            "number": "73",
+            "name": "Drowzee",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/73"
+        },
+        {
+            "id": "base4-74",
+            "number": "74",
+            "name": "Exeggcute",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/74"
+        },
+        {
+            "id": "base4-75",
+            "number": "75",
+            "name": "Gastly",
+            "illustrator": "Keiji Kinebuchi",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/75"
+        },
+        {
+            "id": "base4-76",
+            "number": "76",
+            "name": "Goldeen",
+            "illustrator": "Kagemaru Himeno",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/76"
+        },
+        {
+            "id": "base4-77",
+            "number": "77",
+            "name": "Jigglypuff",
+            "illustrator": "Kagemaru Himeno",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/77"
+        },
+        {
+            "id": "base4-78",
+            "number": "78",
+            "name": "Machop",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/78"
+        },
+        {
+            "id": "base4-79",
+            "number": "79",
+            "name": "Magnemite",
+            "illustrator": "Keiji Kinebuchi",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/79"
+        },
+        {
+            "id": "base4-80",
+            "number": "80",
+            "name": "Meowth",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/80"
+        },
+        {
+            "id": "base4-81",
+            "number": "81",
+            "name": "Metapod",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/81"
+        },
+        {
+            "id": "base4-82",
+            "number": "82",
+            "name": "Nidoran♀",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/82"
+        },
+        {
+            "id": "base4-83",
+            "number": "83",
+            "name": "Nidoran♂",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/83"
+        },
+        {
+            "id": "base4-84",
+            "number": "84",
+            "name": "Onix",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/84"
+        },
+        {
+            "id": "base4-85",
+            "number": "85",
+            "name": "Paras",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/85"
+        },
+        {
+            "id": "base4-86",
+            "number": "86",
+            "name": "Pidgey",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/86"
+        },
+        {
+            "id": "base4-87",
+            "number": "87",
+            "name": "Pikachu",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/87"
+        },
+        {
+            "id": "base4-88",
+            "number": "88",
+            "name": "Poliwag",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/88"
+        },
+        {
+            "id": "base4-89",
+            "number": "89",
+            "name": "Rattata",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/89"
+        },
+        {
+            "id": "base4-90",
+            "number": "90",
+            "name": "Rhyhorn",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/90"
+        },
+        {
+            "id": "base4-91",
+            "number": "91",
+            "name": "Sandshrew",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/91"
+        },
+        {
+            "id": "base4-92",
+            "number": "92",
+            "name": "Spearow",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/92"
+        },
+        {
+            "id": "base4-93",
+            "number": "93",
+            "name": "Squirtle",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/93"
+        },
+        {
+            "id": "base4-94",
+            "number": "94",
+            "name": "Starmie",
+            "illustrator": "Keiji Kinebuchi",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/94"
+        },
+        {
+            "id": "base4-95",
+            "number": "95",
+            "name": "Staryu",
+            "illustrator": "Keiji Kinebuchi",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/95"
+        },
+        {
+            "id": "base4-96",
+            "number": "96",
+            "name": "Tangela",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/96"
+        },
+        {
+            "id": "base4-97",
+            "number": "97",
+            "name": "Venonat",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/97"
+        },
+        {
+            "id": "base4-98",
+            "number": "98",
+            "name": "Voltorb",
+            "illustrator": "Keiji Kinebuchi",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/98"
+        },
+        {
+            "id": "base4-99",
+            "number": "99",
+            "name": "Vulpix",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/99"
+        },
+        {
+            "id": "base4-100",
+            "number": "100",
+            "name": "Weedle",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/100"
+        },
+        {
+            "id": "base4-101",
+            "number": "101",
+            "name": "Computer Search",
+            "illustrator": "Keiji Kinebuchi",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/101"
+        },
+        {
+            "id": "base4-102",
+            "number": "102",
+            "name": "Impostor Professor Oak",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/102"
+        },
+        {
+            "id": "base4-103",
+            "number": "103",
+            "name": "Item Finder",
+            "illustrator": "Keiji Kinebuchi",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/103"
+        },
+        {
+            "id": "base4-104",
+            "number": "104",
+            "name": "Lass",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/104"
+        },
+        {
+            "id": "base4-105",
+            "number": "105",
+            "name": "Pokémon Breeder",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/105"
+        },
+        {
+            "id": "base4-106",
+            "number": "106",
+            "name": "Pokémon Trader",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/106"
+        },
+        {
+            "id": "base4-107",
+            "number": "107",
+            "name": "Scoop Up",
+            "illustrator": "Keiji Kinebuchi",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/107"
+        },
+        {
+            "id": "base4-108",
+            "number": "108",
+            "name": "Super Energy Removal",
+            "illustrator": "Keiji Kinebuchi",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/108"
+        },
+        {
+            "id": "base4-109",
+            "number": "109",
+            "name": "Defender",
+            "illustrator": "Keiji Kinebuchi",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/109"
+        },
+        {
+            "id": "base4-110",
+            "number": "110",
+            "name": "Energy Retrieval",
+            "illustrator": "Keiji Kinebuchi",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/110"
+        },
+        {
+            "id": "base4-111",
+            "number": "111",
+            "name": "Full Heal",
+            "illustrator": "Keiji Kinebuchi",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/111"
+        },
+        {
+            "id": "base4-112",
+            "number": "112",
+            "name": "Maintenance",
+            "illustrator": "Keiji Kinebuchi",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/112"
+        },
+        {
+            "id": "base4-113",
+            "number": "113",
+            "name": "PlusPower",
+            "illustrator": "Keiji Kinebuchi",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/113"
+        },
+        {
+            "id": "base4-114",
+            "number": "114",
+            "name": "Pokémon Center",
+            "illustrator": "Keiji Kinebuchi",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/114"
+        },
+        {
+            "id": "base4-115",
+            "number": "115",
+            "name": "Pokédex",
+            "illustrator": "Keiji Kinebuchi",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/115"
+        },
+        {
+            "id": "base4-116",
+            "number": "116",
+            "name": "Professor Oak",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/116"
+        },
+        {
+            "id": "base4-117",
+            "number": "117",
+            "name": "Super Potion",
+            "illustrator": "Keiji Kinebuchi",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/117"
+        },
+        {
+            "id": "base4-118",
+            "number": "118",
+            "name": "Bill",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/118"
+        },
+        {
+            "id": "base4-119",
+            "number": "119",
+            "name": "Energy Removal",
+            "illustrator": "Keiji Kinebuchi",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/119"
+        },
+        {
+            "id": "base4-120",
+            "number": "120",
+            "name": "Gust of Wind",
+            "illustrator": "Keiji Kinebuchi",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/120"
+        },
+        {
+            "id": "base4-121",
+            "number": "121",
+            "name": "Poké Ball",
+            "illustrator": "Keiji Kinebuchi",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/121"
+        },
+        {
+            "id": "base4-122",
+            "number": "122",
+            "name": "Potion",
+            "illustrator": "Keiji Kinebuchi",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/122"
+        },
+        {
+            "id": "base4-123",
+            "number": "123",
+            "name": "Switch",
+            "illustrator": "Keiji Kinebuchi",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/123"
+        },
+        {
+            "id": "base4-124",
+            "number": "124",
+            "name": "Double Colorless Energy",
+            "illustrator": "Keiji Kinebuchi",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/124"
+        },
+        {
+            "id": "base4-125",
+            "number": "125",
+            "name": "Fighting Energy",
+            "illustrator": "Keiji Kinebuchi",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/125"
+        },
+        {
+            "id": "base4-126",
+            "number": "126",
+            "name": "Fire Energy",
+            "illustrator": "Keiji Kinebuchi",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/126"
+        },
+        {
+            "id": "base4-127",
+            "number": "127",
+            "name": "Grass Energy",
+            "illustrator": "Keiji Kinebuchi",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/127"
+        },
+        {
+            "id": "base4-128",
+            "number": "128",
+            "name": "Lightning Energy",
+            "illustrator": "Keiji Kinebuchi",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/128"
+        },
+        {
+            "id": "base4-129",
+            "number": "129",
+            "name": "Psychic Energy",
+            "illustrator": "Keiji Kinebuchi",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/129"
+        },
+        {
+            "id": "base4-130",
+            "number": "130",
+            "name": "Water Energy",
+            "illustrator": "Keiji Kinebuchi",
+            "imageBase": "https://assets.tcgdex.net/fr/base/base4/130"
+        }
+    ]
+}

@@ -1,1 +1,221 @@
-{"cardCount":{"firstEd":0,"holo":0,"normal":0,"official":30,"reverse":0,"total":30},"cards":[{"id":"tk-xy-latia-1","image":"https://assets.tcgdex.net/es/tk/tk-xy-latia/1","localId":"1","name":"Energía Planta"},{"id":"tk-xy-latia-2","image":"https://assets.tcgdex.net/es/tk/tk-xy-latia/2","localId":"2","name":"Energía Planta"},{"id":"tk-xy-latia-3","image":"https://assets.tcgdex.net/es/tk/tk-xy-latia/3","localId":"3","name":"Energía Planta"},{"id":"tk-xy-latia-4","image":"https://assets.tcgdex.net/es/tk/tk-xy-latia/4","localId":"4","name":"Fletchling"},{"id":"tk-xy-latia-5","image":"https://assets.tcgdex.net/es/tk/tk-xy-latia/5","localId":"5","name":"Energía Planta"},{"id":"tk-xy-latia-6","image":"https://assets.tcgdex.net/es/tk/tk-xy-latia/6","localId":"6","name":"Lombre"},{"id":"tk-xy-latia-7","image":"https://assets.tcgdex.net/es/tk/tk-xy-latia/7","localId":"7","name":"Treecko"},{"id":"tk-xy-latia-8","image":"https://assets.tcgdex.net/es/tk/tk-xy-latia/8","localId":"8","name":"Energía Psíquica"},{"id":"tk-xy-latia-9","image":"https://assets.tcgdex.net/es/tk/tk-xy-latia/9","localId":"9","name":"Energía Psíquica"},{"id":"tk-xy-latia-10","image":"https://assets.tcgdex.net/es/tk/tk-xy-latia/10","localId":"10","name":"Energía Psíquica"},{"id":"tk-xy-latia-11","image":"https://assets.tcgdex.net/es/tk/tk-xy-latia/11","localId":"11","name":"Lotad"},{"id":"tk-xy-latia-12","image":"https://assets.tcgdex.net/es/tk/tk-xy-latia/12","localId":"12","name":"Tangrowth"},{"id":"tk-xy-latia-13","image":"https://assets.tcgdex.net/es/tk/tk-xy-latia/13","localId":"13","name":"Tangela"},{"id":"tk-xy-latia-14","image":"https://assets.tcgdex.net/es/tk/tk-xy-latia/14","localId":"14","name":"Latias"},{"id":"tk-xy-latia-15","image":"https://assets.tcgdex.net/es/tk/tk-xy-latia/15","localId":"15","name":"Poción"},{"id":"tk-xy-latia-16","image":"https://assets.tcgdex.net/es/tk/tk-xy-latia/16","localId":"16","name":"Surskit"},{"id":"tk-xy-latia-17","image":"https://assets.tcgdex.net/es/tk/tk-xy-latia/17","localId":"17","name":"Energía Psíquica"},{"id":"tk-xy-latia-18","image":"https://assets.tcgdex.net/es/tk/tk-xy-latia/18","localId":"18","name":"Grovyle"},{"id":"tk-xy-latia-19","image":"https://assets.tcgdex.net/es/tk/tk-xy-latia/19","localId":"19","name":"Energía Planta"},{"id":"tk-xy-latia-20","image":"https://assets.tcgdex.net/es/tk/tk-xy-latia/20","localId":"20","name":"Bici Acrobática"},{"id":"tk-xy-latia-21","image":"https://assets.tcgdex.net/es/tk/tk-xy-latia/21","localId":"21","name":"Lombre"},{"id":"tk-xy-latia-22","image":"https://assets.tcgdex.net/es/tk/tk-xy-latia/22","localId":"22","name":"Energía Psíquica"},{"id":"tk-xy-latia-23","image":"https://assets.tcgdex.net/es/tk/tk-xy-latia/23","localId":"23","name":"Lotad"},{"id":"tk-xy-latia-24","image":"https://assets.tcgdex.net/es/tk/tk-xy-latia/24","localId":"24","name":"Treecko"},{"id":"tk-xy-latia-25","image":"https://assets.tcgdex.net/es/tk/tk-xy-latia/25","localId":"25","name":"Tangrowth"},{"id":"tk-xy-latia-26","image":"https://assets.tcgdex.net/es/tk/tk-xy-latia/26","localId":"26","name":"Tangela"},{"id":"tk-xy-latia-27","image":"https://assets.tcgdex.net/es/tk/tk-xy-latia/27","localId":"27","name":"Grovyle"},{"id":"tk-xy-latia-28","image":"https://assets.tcgdex.net/es/tk/tk-xy-latia/28","localId":"28","name":"Energía Psíquica"},{"id":"tk-xy-latia-29","image":"https://assets.tcgdex.net/es/tk/tk-xy-latia/29","localId":"29","name":"Bici Acrobática"},{"id":"tk-xy-latia-30","image":"https://assets.tcgdex.net/es/tk/tk-xy-latia/30","localId":"30","name":"Latias"}],"id":"tk-xy-latia","legal":{"expanded":false,"standard":false},"name":"Kit de Entrenador XY (Latias)","releaseDate":"2015-04-29","serie":{"id":"tk","name":"Kits de Entrenador"},"symbol":"https://assets.tcgdex.net/univ/tk/tk-xy-latia/symbol","abbreviation":{"official":"TK8A"}}
+{
+    "id": "tk-xy-latia",
+    "serieId": "tk",
+    "name": "Kit de Entrenador XY (Latias)",
+    "releaseDate": "2015-04-29",
+    "cardCount": 30,
+    "logo": "https://assets.tcgdex.net/es/tk/tk-xy-latia/logo",
+    "symbol": "https://assets.tcgdex.net/es/tk/tk-xy-latia/symbol",
+    "cards": [
+        {
+            "id": "tk-xy-latia-1",
+            "number": "1",
+            "name": "Energía Planta",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-xy-latia/1"
+        },
+        {
+            "id": "tk-xy-latia-2",
+            "number": "2",
+            "name": "Energía Planta",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-xy-latia/2"
+        },
+        {
+            "id": "tk-xy-latia-3",
+            "number": "3",
+            "name": "Energía Planta",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-xy-latia/3"
+        },
+        {
+            "id": "tk-xy-latia-4",
+            "number": "4",
+            "name": "Fletchling",
+            "illustrator": "Kyoko Umemoto",
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-xy-latia/4"
+        },
+        {
+            "id": "tk-xy-latia-5",
+            "number": "5",
+            "name": "Energía Planta",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-xy-latia/5"
+        },
+        {
+            "id": "tk-xy-latia-6",
+            "number": "6",
+            "name": "Lombre",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-xy-latia/6"
+        },
+        {
+            "id": "tk-xy-latia-7",
+            "number": "7",
+            "name": "Treecko",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-xy-latia/7"
+        },
+        {
+            "id": "tk-xy-latia-8",
+            "number": "8",
+            "name": "Energía Psíquica",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-xy-latia/8"
+        },
+        {
+            "id": "tk-xy-latia-9",
+            "number": "9",
+            "name": "Energía Psíquica",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-xy-latia/9"
+        },
+        {
+            "id": "tk-xy-latia-10",
+            "number": "10",
+            "name": "Energía Psíquica",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-xy-latia/10"
+        },
+        {
+            "id": "tk-xy-latia-11",
+            "number": "11",
+            "name": "Lotad",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-xy-latia/11"
+        },
+        {
+            "id": "tk-xy-latia-12",
+            "number": "12",
+            "name": "Tangrowth",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-xy-latia/12"
+        },
+        {
+            "id": "tk-xy-latia-13",
+            "number": "13",
+            "name": "Tangela",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-xy-latia/13"
+        },
+        {
+            "id": "tk-xy-latia-14",
+            "number": "14",
+            "name": "Latias",
+            "illustrator": "Masakazu Fukuda",
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-xy-latia/14"
+        },
+        {
+            "id": "tk-xy-latia-15",
+            "number": "15",
+            "name": "Poción",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-xy-latia/15"
+        },
+        {
+            "id": "tk-xy-latia-16",
+            "number": "16",
+            "name": "Surskit",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-xy-latia/16"
+        },
+        {
+            "id": "tk-xy-latia-17",
+            "number": "17",
+            "name": "Energía Psíquica",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-xy-latia/17"
+        },
+        {
+            "id": "tk-xy-latia-18",
+            "number": "18",
+            "name": "Grovyle",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-xy-latia/18"
+        },
+        {
+            "id": "tk-xy-latia-19",
+            "number": "19",
+            "name": "Energía Planta",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-xy-latia/19"
+        },
+        {
+            "id": "tk-xy-latia-20",
+            "number": "20",
+            "name": "Bici Acrobática",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-xy-latia/20"
+        },
+        {
+            "id": "tk-xy-latia-21",
+            "number": "21",
+            "name": "Lombre",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-xy-latia/21"
+        },
+        {
+            "id": "tk-xy-latia-22",
+            "number": "22",
+            "name": "Energía Psíquica",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-xy-latia/22"
+        },
+        {
+            "id": "tk-xy-latia-23",
+            "number": "23",
+            "name": "Lotad",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-xy-latia/23"
+        },
+        {
+            "id": "tk-xy-latia-24",
+            "number": "24",
+            "name": "Treecko",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-xy-latia/24"
+        },
+        {
+            "id": "tk-xy-latia-25",
+            "number": "25",
+            "name": "Tangrowth",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-xy-latia/25"
+        },
+        {
+            "id": "tk-xy-latia-26",
+            "number": "26",
+            "name": "Tangela",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-xy-latia/26"
+        },
+        {
+            "id": "tk-xy-latia-27",
+            "number": "27",
+            "name": "Grovyle",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-xy-latia/27"
+        },
+        {
+            "id": "tk-xy-latia-28",
+            "number": "28",
+            "name": "Energía Psíquica",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-xy-latia/28"
+        },
+        {
+            "id": "tk-xy-latia-29",
+            "number": "29",
+            "name": "Bici Acrobática",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-xy-latia/29"
+        },
+        {
+            "id": "tk-xy-latia-30",
+            "number": "30",
+            "name": "Latias",
+            "illustrator": "Masakazu Fukuda",
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-xy-latia/30"
+        }
+    ]
+}

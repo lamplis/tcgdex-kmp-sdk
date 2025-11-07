@@ -1,63 +1,13 @@
 [
     {
-        "id": "base",
-        "name": "Base",
-        "releaseDate": "1999-01-09"
-    },
-    {
         "id": "bw",
         "name": "Noir & Blanc",
         "releaseDate": "2011-04-25"
     },
     {
-        "id": "col",
-        "name": "L'appel des Légendes",
-        "releaseDate": "2011-02-09"
-    },
-    {
-        "id": "dp",
-        "name": "Diamant & Perle",
-        "releaseDate": "2007-05-01"
-    },
-    {
-        "id": "ecard",
-        "name": "e-cards",
-        "releaseDate": "2002-09-15"
-    },
-    {
-        "id": "ex",
-        "name": "EX",
-        "releaseDate": "2003-07-01"
-    },
-    {
-        "id": "hgss",
-        "name": "HeartGold SoulSilver",
-        "releaseDate": "2010-02-10"
-    },
-    {
-        "id": "mc",
-        "name": "Promo McDonald's",
-        "releaseDate": "2011-06-17"
-    },
-    {
-        "id": "me",
-        "name": "Méga-Évolution",
-        "releaseDate": "2025-09-26"
-    },
-    {
-        "id": "misc",
-        "name": "Autre",
-        "releaseDate": "2000-02-01"
-    },
-    {
-        "id": "neo",
-        "name": "Neo",
-        "releaseDate": "2000-12-16"
-    },
-    {
-        "id": "pl",
-        "name": "Platine",
-        "releaseDate": "2009-02-11"
+        "id": "base",
+        "name": "Base",
+        "releaseDate": "1999-01-09"
     },
     {
         "id": "pop",
@@ -65,9 +15,59 @@
         "releaseDate": "2003-10-01"
     },
     {
+        "id": "col",
+        "name": "L'appel des Légendes",
+        "releaseDate": "2011-02-09"
+    },
+    {
+        "id": "lc",
+        "name": "L'Appel des Légendes",
+        "releaseDate": "2002-05-24"
+    },
+    {
+        "id": "mc",
+        "name": "Promo McDonald's",
+        "releaseDate": "2011-06-17"
+    },
+    {
+        "id": "ex",
+        "name": "EX",
+        "releaseDate": "2003-07-01"
+    },
+    {
+        "id": "misc",
+        "name": "Autre",
+        "releaseDate": "2000-02-01"
+    },
+    {
+        "id": "dp",
+        "name": "Diamant & Perle",
+        "releaseDate": "2007-05-01"
+    },
+    {
+        "id": "neo",
+        "name": "Neo",
+        "releaseDate": "2000-12-16"
+    },
+    {
         "id": "sm",
         "name": "Soleil et Lune",
         "releaseDate": "2017-02-03"
+    },
+    {
+        "id": "me",
+        "name": "Méga-Évolution",
+        "releaseDate": "2025-09-26"
+    },
+    {
+        "id": "hgss",
+        "name": "HeartGold SoulSilver",
+        "releaseDate": "2010-02-10"
+    },
+    {
+        "id": "ecard",
+        "name": "e-cards",
+        "releaseDate": "2002-08-01"
     },
     {
         "id": "sv",
@@ -75,14 +75,9 @@
         "releaseDate": "2023-03-31"
     },
     {
-        "id": "swsh",
-        "name": "Épée et Bouclier",
-        "releaseDate": "2019-11-15"
-    },
-    {
-        "id": "tcgp",
-        "name": "Jeu de Cartes à Collectionner Pokémon Pocket",
-        "releaseDate": "2024-10-30"
+        "id": "xy",
+        "name": "XY",
+        "releaseDate": "2013-10-12"
     },
     {
         "id": "tk",
@@ -90,8 +85,18 @@
         "releaseDate": "2004-07-01"
     },
     {
-        "id": "xy",
-        "name": "XY",
-        "releaseDate": "2013-10-12"
+        "id": "pl",
+        "name": "Platine",
+        "releaseDate": "2009-02-11"
+    },
+    {
+        "id": "gym",
+        "name": "Gym",
+        "releaseDate": "2000-08-14"
+    },
+    {
+        "id": "swsh",
+        "name": "Épée et Bouclier",
+        "releaseDate": "2019-11-15"
     }
 ]

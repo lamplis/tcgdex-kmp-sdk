@@ -1,1 +1,95 @@
-{"cardCount":{"firstEd":0,"holo":0,"normal":0,"official":12,"reverse":0,"total":12},"cards":[],"id":"2019sm","legal":{"expanded":false,"standard":false},"name":"McDonald's Collection 2019","releaseDate":"2019-10-15","serie":{"id":"mc","name":"McDonald's Collection"},"abbreviation":{"official":"MCD19"}}
+{
+    "id": "2019sm",
+    "serieId": "mc",
+    "name": "McDonald's Collection 2019",
+    "releaseDate": "2019-10-15",
+    "cardCount": 12,
+    "logo": "https://assets.tcgdex.net/it/mc/2019sm/logo",
+    "symbol": "https://assets.tcgdex.net/it/mc/2019sm/symbol",
+    "cards": [
+        {
+            "id": "2019sm-1",
+            "number": "1",
+            "name": "Surprise Attack",
+            "illustrator": "Sekio",
+            "imageBase": "https://assets.tcgdex.net/it/mc/2019sm/1"
+        },
+        {
+            "id": "2019sm-2",
+            "number": "2",
+            "name": "Tropical Shake",
+            "illustrator": "Satoshi Shirai",
+            "imageBase": "https://assets.tcgdex.net/it/mc/2019sm/2"
+        },
+        {
+            "id": "2019sm-3",
+            "number": "3",
+            "name": "Controlled Burn",
+            "illustrator": "Yumi",
+            "imageBase": "https://assets.tcgdex.net/it/mc/2019sm/3"
+        },
+        {
+            "id": "2019sm-4",
+            "number": "4",
+            "name": "Fury Swipes",
+            "illustrator": "Shin Nagasawa",
+            "imageBase": "https://assets.tcgdex.net/it/mc/2019sm/4"
+        },
+        {
+            "id": "2019sm-5",
+            "number": "5",
+            "name": "Aqua Bullet",
+            "illustrator": "Saya Tsuruta",
+            "imageBase": "https://assets.tcgdex.net/it/mc/2019sm/5"
+        },
+        {
+            "id": "2019sm-6",
+            "number": "6",
+            "name": "Iron Tail",
+            "illustrator": "Kagemaru Himeno",
+            "imageBase": "https://assets.tcgdex.net/it/mc/2019sm/6"
+        },
+        {
+            "id": "2019sm-7",
+            "number": "7",
+            "name": "Ominous Eyes",
+            "illustrator": "Shibuzoh.",
+            "imageBase": "https://assets.tcgdex.net/it/mc/2019sm/7"
+        },
+        {
+            "id": "2019sm-8",
+            "number": "8",
+            "name": "Three-Step Strike",
+            "illustrator": "Miki Tanaka",
+            "imageBase": "https://assets.tcgdex.net/it/mc/2019sm/8"
+        },
+        {
+            "id": "2019sm-9",
+            "number": "9",
+            "name": "Screech",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/it/mc/2019sm/9"
+        },
+        {
+            "id": "2019sm-10",
+            "number": "10",
+            "name": "Spoil the Fun",
+            "illustrator": "Akira Komayama",
+            "imageBase": "https://assets.tcgdex.net/it/mc/2019sm/10"
+        },
+        {
+            "id": "2019sm-11",
+            "number": "11",
+            "name": "Gold Rush",
+            "illustrator": "Megumi Mizutani",
+            "imageBase": "https://assets.tcgdex.net/it/mc/2019sm/11"
+        },
+        {
+            "id": "2019sm-12",
+            "number": "12",
+            "name": "Gnaw",
+            "illustrator": "Atsuko Nishida",
+            "imageBase": "https://assets.tcgdex.net/it/mc/2019sm/12"
+        }
+    ]
+}

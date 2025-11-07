@@ -1,1 +1,95 @@
-{"cardCount":{"firstEd":0,"holo":0,"normal":0,"official":12,"reverse":0,"total":12},"cards":[],"id":"2012bw","legal":{"expanded":false,"standard":false},"name":"McDonald's Collection 2012","releaseDate":"2012-06-15","serie":{"id":"mc","name":"McDonald's Collection"},"abbreviation":{"official":"MCD12"}}
+{
+    "id": "2012bw",
+    "serieId": "mc",
+    "name": "McDonald's Collection 2012",
+    "releaseDate": "2012-06-15",
+    "cardCount": 12,
+    "logo": "https://assets.tcgdex.net/it/mc/2012bw/logo",
+    "symbol": "https://assets.tcgdex.net/it/mc/2012bw/symbol",
+    "cards": [
+        {
+            "id": "2012bw-1",
+            "number": "1",
+            "name": "Wrap",
+            "illustrator": "Kagemaru Himeno",
+            "imageBase": "https://assets.tcgdex.net/it/mc/2012bw/1"
+        },
+        {
+            "id": "2012bw-2",
+            "number": "2",
+            "name": "Collect",
+            "illustrator": "Kouki Saitou",
+            "imageBase": "https://assets.tcgdex.net/it/mc/2012bw/2"
+        },
+        {
+            "id": "2012bw-3",
+            "number": "3",
+            "name": "Withdraw",
+            "illustrator": "MAHOU",
+            "imageBase": "https://assets.tcgdex.net/it/mc/2012bw/3"
+        },
+        {
+            "id": "2012bw-4",
+            "number": "4",
+            "name": "Flame Charge",
+            "illustrator": "Kouki Saitou",
+            "imageBase": "https://assets.tcgdex.net/it/mc/2012bw/4"
+        },
+        {
+            "id": "2012bw-5",
+            "number": "5",
+            "name": "Water Gun",
+            "illustrator": "Masakazu Fukuda",
+            "imageBase": "https://assets.tcgdex.net/it/mc/2012bw/5"
+        },
+        {
+            "id": "2012bw-6",
+            "number": "6",
+            "name": "Thundershock",
+            "illustrator": "Kouki Saitou",
+            "imageBase": "https://assets.tcgdex.net/it/mc/2012bw/6"
+        },
+        {
+            "id": "2012bw-7",
+            "number": "7",
+            "name": "Psy Bolt",
+            "illustrator": "Masakazu Fukuda",
+            "imageBase": "https://assets.tcgdex.net/it/mc/2012bw/7"
+        },
+        {
+            "id": "2012bw-8",
+            "number": "8",
+            "name": "Hone Claws",
+            "illustrator": "match",
+            "imageBase": "https://assets.tcgdex.net/it/mc/2012bw/8"
+        },
+        {
+            "id": "2012bw-9",
+            "number": "9",
+            "name": "Knock Off",
+            "illustrator": "Atsuko Nishida",
+            "imageBase": "https://assets.tcgdex.net/it/mc/2012bw/9"
+        },
+        {
+            "id": "2012bw-10",
+            "number": "10",
+            "name": "Headbutt",
+            "illustrator": "Masakazu Fukuda",
+            "imageBase": "https://assets.tcgdex.net/it/mc/2012bw/10"
+        },
+        {
+            "id": "2012bw-11",
+            "number": "11",
+            "name": "Metal Sound",
+            "illustrator": "Kouki Saitou",
+            "imageBase": "https://assets.tcgdex.net/it/mc/2012bw/11"
+        },
+        {
+            "id": "2012bw-12",
+            "number": "12",
+            "name": "Dual Chop",
+            "illustrator": "Atsuko Nishida",
+            "imageBase": "https://assets.tcgdex.net/it/mc/2012bw/12"
+        }
+    ]
+}

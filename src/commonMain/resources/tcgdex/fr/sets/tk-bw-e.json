@@ -1,1 +1,221 @@
-{"cardCount":{"firstEd":0,"holo":0,"normal":0,"official":30,"reverse":0,"total":30},"cards":[{"id":"tk-bw-e-1","localId":"1","name":"Ponchiot"},{"id":"tk-bw-e-2","localId":"2","name":"Énergie Combat"},{"id":"tk-bw-e-3","localId":"3","name":"Énergie Combat"},{"id":"tk-bw-e-4","localId":"4","name":"Échange d’Énergie"},{"id":"tk-bw-e-5","localId":"5","name":"Énergie Combat"},{"id":"tk-bw-e-6","localId":"6","name":"Énergie Combat"},{"id":"tk-bw-e-7","localId":"7","name":"Énergie Combat"},{"id":"tk-bw-e-8","localId":"8","name":"Énergie Combat"},{"id":"tk-bw-e-9","localId":"9","name":"Énergie Combat"},{"id":"tk-bw-e-10","localId":"10","name":"Énergie Combat"},{"id":"tk-bw-e-11","localId":"11","name":"Charpenti"},{"id":"tk-bw-e-12","localId":"12","name":"Nanméouïe"},{"id":"tk-bw-e-13","localId":"13","name":"Rototaupe"},{"id":"tk-bw-e-14","localId":"14","name":"Ouvrifier"},{"id":"tk-bw-e-15","localId":"15","name":"Potion"},{"id":"tk-bw-e-16","localId":"16","name":"PlusPower"},{"id":"tk-bw-e-17","localId":"17","name":"Minotaupe"},{"id":"tk-bw-e-18","localId":"18","name":"Nanméouïe"},{"id":"tk-bw-e-19","localId":"19","name":"Ponchien"},{"id":"tk-bw-e-20","localId":"20","name":"Énergie Combat"},{"id":"tk-bw-e-21","localId":"21","name":"Recherche d’Énergie"},{"id":"tk-bw-e-22","localId":"22","name":"Énergie Combat"},{"id":"tk-bw-e-23","localId":"23","name":"Potion"},{"id":"tk-bw-e-24","localId":"24","name":"Communication Pokémon"},{"id":"tk-bw-e-25","localId":"25","name":"Rototaupe"},{"id":"tk-bw-e-26","localId":"26","name":"Énergie Combat"},{"id":"tk-bw-e-27","localId":"27","name":"Ponchiot"},{"id":"tk-bw-e-28","localId":"28","name":"Énergie Combat"},{"id":"tk-bw-e-29","localId":"29","name":"Charpenti"},{"id":"tk-bw-e-30","localId":"30","name":"Minotaupe"}],"id":"tk-bw-e","legal":{"expanded":false,"standard":false},"name":"BW Kit du dresseur (Minitaupe)","releaseDate":"2011-09-01","serie":{"id":"tk","name":"Kits du dresseur"},"abbreviation":{"official":"TK5E","localized":"MIN"}}
+{
+    "id": "tk-bw-e",
+    "serieId": "tk",
+    "name": "BW Kit du dresseur (Minitaupe)",
+    "releaseDate": "2011-09-01",
+    "cardCount": 30,
+    "logo": "https://assets.tcgdex.net/fr/tk/tk-bw-e/logo",
+    "symbol": "https://assets.tcgdex.net/fr/tk/tk-bw-e/symbol",
+    "cards": [
+        {
+            "id": "tk-bw-e-1",
+            "number": "1",
+            "name": "Ponchiot",
+            "illustrator": "Mosakazu Fukuda",
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-bw-e/1"
+        },
+        {
+            "id": "tk-bw-e-2",
+            "number": "2",
+            "name": "Énergie Combat",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-bw-e/2"
+        },
+        {
+            "id": "tk-bw-e-3",
+            "number": "3",
+            "name": "Énergie Combat",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-bw-e/3"
+        },
+        {
+            "id": "tk-bw-e-4",
+            "number": "4",
+            "name": "Échange d’Énergie",
+            "illustrator": "Kent Kanetsuna",
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-bw-e/4"
+        },
+        {
+            "id": "tk-bw-e-5",
+            "number": "5",
+            "name": "Énergie Combat",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-bw-e/5"
+        },
+        {
+            "id": "tk-bw-e-6",
+            "number": "6",
+            "name": "Énergie Combat",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-bw-e/6"
+        },
+        {
+            "id": "tk-bw-e-7",
+            "number": "7",
+            "name": "Énergie Combat",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-bw-e/7"
+        },
+        {
+            "id": "tk-bw-e-8",
+            "number": "8",
+            "name": "Énergie Combat",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-bw-e/8"
+        },
+        {
+            "id": "tk-bw-e-9",
+            "number": "9",
+            "name": "Énergie Combat",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-bw-e/9"
+        },
+        {
+            "id": "tk-bw-e-10",
+            "number": "10",
+            "name": "Énergie Combat",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-bw-e/10"
+        },
+        {
+            "id": "tk-bw-e-11",
+            "number": "11",
+            "name": "Charpenti",
+            "illustrator": "match",
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-bw-e/11"
+        },
+        {
+            "id": "tk-bw-e-12",
+            "number": "12",
+            "name": "Nanméouïe",
+            "illustrator": "MAHOU",
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-bw-e/12"
+        },
+        {
+            "id": "tk-bw-e-13",
+            "number": "13",
+            "name": "Rototaupe",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-bw-e/13"
+        },
+        {
+            "id": "tk-bw-e-14",
+            "number": "14",
+            "name": "Ouvrifier",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-bw-e/14"
+        },
+        {
+            "id": "tk-bw-e-15",
+            "number": "15",
+            "name": "Potion",
+            "illustrator": "Ayaka Yoshida",
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-bw-e/15"
+        },
+        {
+            "id": "tk-bw-e-16",
+            "number": "16",
+            "name": "PlusPower",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-bw-e/16"
+        },
+        {
+            "id": "tk-bw-e-17",
+            "number": "17",
+            "name": "Minotaupe",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-bw-e/17"
+        },
+        {
+            "id": "tk-bw-e-18",
+            "number": "18",
+            "name": "Nanméouïe",
+            "illustrator": "MAHOU",
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-bw-e/18"
+        },
+        {
+            "id": "tk-bw-e-19",
+            "number": "19",
+            "name": "Ponchien",
+            "illustrator": "Midori Harada",
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-bw-e/19"
+        },
+        {
+            "id": "tk-bw-e-20",
+            "number": "20",
+            "name": "Énergie Combat",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-bw-e/20"
+        },
+        {
+            "id": "tk-bw-e-21",
+            "number": "21",
+            "name": "Recherche d’Énergie",
+            "illustrator": "Ryo Ueda",
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-bw-e/21"
+        },
+        {
+            "id": "tk-bw-e-22",
+            "number": "22",
+            "name": "Énergie Combat",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-bw-e/22"
+        },
+        {
+            "id": "tk-bw-e-23",
+            "number": "23",
+            "name": "Potion",
+            "illustrator": "Ayaka Yoshida",
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-bw-e/23"
+        },
+        {
+            "id": "tk-bw-e-24",
+            "number": "24",
+            "name": "Communication Pokémon",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-bw-e/24"
+        },
+        {
+            "id": "tk-bw-e-25",
+            "number": "25",
+            "name": "Rototaupe",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-bw-e/25"
+        },
+        {
+            "id": "tk-bw-e-26",
+            "number": "26",
+            "name": "Énergie Combat",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-bw-e/26"
+        },
+        {
+            "id": "tk-bw-e-27",
+            "number": "27",
+            "name": "Ponchiot",
+            "illustrator": "Mosakazu Fukuda",
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-bw-e/27"
+        },
+        {
+            "id": "tk-bw-e-28",
+            "number": "28",
+            "name": "Énergie Combat",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-bw-e/28"
+        },
+        {
+            "id": "tk-bw-e-29",
+            "number": "29",
+            "name": "Charpenti",
+            "illustrator": "match",
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-bw-e/29"
+        },
+        {
+            "id": "tk-bw-e-30",
+            "number": "30",
+            "name": "Minotaupe",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-bw-e/30"
+        }
+    ]
+}

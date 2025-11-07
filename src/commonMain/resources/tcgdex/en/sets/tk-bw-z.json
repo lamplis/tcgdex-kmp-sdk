@@ -1,1 +1,221 @@
-{"cardCount":{"firstEd":0,"holo":0,"normal":0,"official":30,"reverse":0,"total":30},"cards":[{"id":"tk-bw-z-1","localId":"1","name":"Purrloin"},{"id":"tk-bw-z-2","localId":"2","name":"Watchog"},{"id":"tk-bw-z-3","localId":"3","name":"Darkness Energy"},{"id":"tk-bw-z-4","localId":"4","name":"Minccino"},{"id":"tk-bw-z-5","localId":"5","name":"Darkness Energy"},{"id":"tk-bw-z-6","localId":"6","name":"Darkness Energy"},{"id":"tk-bw-z-7","localId":"7","name":"Darkness Energy"},{"id":"tk-bw-z-8","localId":"8","name":"Darkness Energy"},{"id":"tk-bw-z-9","localId":"9","name":"Darkness Energy"},{"id":"tk-bw-z-10","localId":"10","name":"Darkness Energy"},{"id":"tk-bw-z-11","localId":"11","name":"PlusPower"},{"id":"tk-bw-z-12","localId":"12","name":"Patrat"},{"id":"tk-bw-z-13","localId":"13","name":"Zorua"},{"id":"tk-bw-z-14","localId":"14","name":"Pidove"},{"id":"tk-bw-z-15","localId":"15","name":"Tranquill"},{"id":"tk-bw-z-16","localId":"16","name":"Energy Retrieval"},{"id":"tk-bw-z-17","localId":"17","name":"Zoroark"},{"id":"tk-bw-z-18","localId":"18","name":"Pokémon Communication"},{"id":"tk-bw-z-19","localId":"19","name":"Minccino"},{"id":"tk-bw-z-20","localId":"20","name":"Darkness Energy"},{"id":"tk-bw-z-21","localId":"21","name":"Pidove"},{"id":"tk-bw-z-22","localId":"22","name":"Darkness Energy"},{"id":"tk-bw-z-23","localId":"23","name":"Zorua"},{"id":"tk-bw-z-24","localId":"24","name":"Darkness Energy"},{"id":"tk-bw-z-25","localId":"25","name":"Purrloin"},{"id":"tk-bw-z-26","localId":"26","name":"Darkness Energy"},{"id":"tk-bw-z-27","localId":"27","name":"Energy Search"},{"id":"tk-bw-z-28","localId":"28","name":"Darkness Energy"},{"id":"tk-bw-z-29","localId":"29","name":"Patrat"},{"id":"tk-bw-z-30","localId":"30","name":"Zoroark"}],"id":"tk-bw-z","legal":{"expanded":false,"standard":false},"name":"BW trainer Kit (Zoroark)","releaseDate":"2011-09-01","serie":{"id":"tk","name":"Trainer kits"},"abbreviation":{"official":"TK5Z"}}
+{
+    "id": "tk-bw-z",
+    "serieId": "tk",
+    "name": "BW trainer Kit (Zoroark)",
+    "releaseDate": "2011-09-01",
+    "cardCount": 30,
+    "logo": "https://assets.tcgdex.net/en/tk/tk-bw-z/logo",
+    "symbol": "https://assets.tcgdex.net/en/tk/tk-bw-z/symbol",
+    "cards": [
+        {
+            "id": "tk-bw-z-1",
+            "number": "1",
+            "name": "Purrloin",
+            "illustrator": "Kagemaru Himeno",
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-bw-z/1"
+        },
+        {
+            "id": "tk-bw-z-2",
+            "number": "2",
+            "name": "Watchog",
+            "illustrator": "match",
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-bw-z/2"
+        },
+        {
+            "id": "tk-bw-z-3",
+            "number": "3",
+            "name": "Darkness Energy",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-bw-z/3"
+        },
+        {
+            "id": "tk-bw-z-4",
+            "number": "4",
+            "name": "Minccino",
+            "illustrator": "sui",
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-bw-z/4"
+        },
+        {
+            "id": "tk-bw-z-5",
+            "number": "5",
+            "name": "Darkness Energy",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-bw-z/5"
+        },
+        {
+            "id": "tk-bw-z-6",
+            "number": "6",
+            "name": "Darkness Energy",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-bw-z/6"
+        },
+        {
+            "id": "tk-bw-z-7",
+            "number": "7",
+            "name": "Darkness Energy",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-bw-z/7"
+        },
+        {
+            "id": "tk-bw-z-8",
+            "number": "8",
+            "name": "Darkness Energy",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-bw-z/8"
+        },
+        {
+            "id": "tk-bw-z-9",
+            "number": "9",
+            "name": "Darkness Energy",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-bw-z/9"
+        },
+        {
+            "id": "tk-bw-z-10",
+            "number": "10",
+            "name": "Darkness Energy",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-bw-z/10"
+        },
+        {
+            "id": "tk-bw-z-11",
+            "number": "11",
+            "name": "PlusPower",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-bw-z/11"
+        },
+        {
+            "id": "tk-bw-z-12",
+            "number": "12",
+            "name": "Patrat",
+            "illustrator": "Kagemaru Himeno",
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-bw-z/12"
+        },
+        {
+            "id": "tk-bw-z-13",
+            "number": "13",
+            "name": "Zorua",
+            "illustrator": "Kouki Saitou",
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-bw-z/13"
+        },
+        {
+            "id": "tk-bw-z-14",
+            "number": "14",
+            "name": "Pidove",
+            "illustrator": "Masakazu Fukuda",
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-bw-z/14"
+        },
+        {
+            "id": "tk-bw-z-15",
+            "number": "15",
+            "name": "Tranquill",
+            "illustrator": "Kouki Saitou",
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-bw-z/15"
+        },
+        {
+            "id": "tk-bw-z-16",
+            "number": "16",
+            "name": "Energy Retrieval",
+            "illustrator": "Kent Kanetsuna",
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-bw-z/16"
+        },
+        {
+            "id": "tk-bw-z-17",
+            "number": "17",
+            "name": "Zoroark",
+            "illustrator": "Shin Nagasawa",
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-bw-z/17"
+        },
+        {
+            "id": "tk-bw-z-18",
+            "number": "18",
+            "name": "Pokémon Communication",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-bw-z/18"
+        },
+        {
+            "id": "tk-bw-z-19",
+            "number": "19",
+            "name": "Minccino",
+            "illustrator": "sui",
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-bw-z/19"
+        },
+        {
+            "id": "tk-bw-z-20",
+            "number": "20",
+            "name": "Darkness Energy",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-bw-z/20"
+        },
+        {
+            "id": "tk-bw-z-21",
+            "number": "21",
+            "name": "Pidove",
+            "illustrator": "Masakazu Fukuda",
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-bw-z/21"
+        },
+        {
+            "id": "tk-bw-z-22",
+            "number": "22",
+            "name": "Darkness Energy",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-bw-z/22"
+        },
+        {
+            "id": "tk-bw-z-23",
+            "number": "23",
+            "name": "Zorua",
+            "illustrator": "Kouki Saitou",
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-bw-z/23"
+        },
+        {
+            "id": "tk-bw-z-24",
+            "number": "24",
+            "name": "Darkness Energy",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-bw-z/24"
+        },
+        {
+            "id": "tk-bw-z-25",
+            "number": "25",
+            "name": "Purrloin",
+            "illustrator": "Kagemaru Himeno",
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-bw-z/25"
+        },
+        {
+            "id": "tk-bw-z-26",
+            "number": "26",
+            "name": "Darkness Energy",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-bw-z/26"
+        },
+        {
+            "id": "tk-bw-z-27",
+            "number": "27",
+            "name": "Energy Search",
+            "illustrator": "Ryo Ueda",
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-bw-z/27"
+        },
+        {
+            "id": "tk-bw-z-28",
+            "number": "28",
+            "name": "Darkness Energy",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-bw-z/28"
+        },
+        {
+            "id": "tk-bw-z-29",
+            "number": "29",
+            "name": "Patrat",
+            "illustrator": "Kagemaru Himeno",
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-bw-z/29"
+        },
+        {
+            "id": "tk-bw-z-30",
+            "number": "30",
+            "name": "Zoroark",
+            "illustrator": "Shin Nagasawa",
+            "imageBase": "https://assets.tcgdex.net/en/tk/tk-bw-z/30"
+        }
+    ]
+}

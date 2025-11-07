@@ -1,0 +1,788 @@
+{
+    "id": "pl4",
+    "serieId": "pl",
+    "name": "Arceus",
+    "releaseDate": "2009-11-04",
+    "cardCount": 99,
+    "logo": "https://assets.tcgdex.net/fr/pl/pl4/logo",
+    "symbol": "https://assets.tcgdex.net/fr/pl/pl4/symbol",
+    "cards": [
+        {
+            "id": "pl4-1",
+            "number": "1",
+            "name": "Charizard",
+            "illustrator": "Kagemaru Himeno",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/1"
+        },
+        {
+            "id": "pl4-2",
+            "number": "2",
+            "name": "Froslass",
+            "illustrator": "TOKIYA",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/2"
+        },
+        {
+            "id": "pl4-3",
+            "number": "3",
+            "name": "Heatran",
+            "illustrator": "Keiko Moritsugu",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/3"
+        },
+        {
+            "id": "pl4-4",
+            "number": "4",
+            "name": "Kabutops",
+            "illustrator": "Hajime Kusajima",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/4"
+        },
+        {
+            "id": "pl4-5",
+            "number": "5",
+            "name": "Luxray",
+            "illustrator": "kawayoo",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/5"
+        },
+        {
+            "id": "pl4-6",
+            "number": "6",
+            "name": "Mothim",
+            "illustrator": "Kagemaru Himeno",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/6"
+        },
+        {
+            "id": "pl4-7",
+            "number": "7",
+            "name": "Probopass",
+            "illustrator": "Kouki Saitou",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/7"
+        },
+        {
+            "id": "pl4-8",
+            "number": "8",
+            "name": "Salamence",
+            "illustrator": "Shin Nagasawa",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/8"
+        },
+        {
+            "id": "pl4-9",
+            "number": "9",
+            "name": "Swalot",
+            "illustrator": "Aya Kusube",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/9"
+        },
+        {
+            "id": "pl4-10",
+            "number": "10",
+            "name": "Tangrowth",
+            "illustrator": "Masakazu Fukuda",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/10"
+        },
+        {
+            "id": "pl4-11",
+            "number": "11",
+            "name": "Toxicroak",
+            "illustrator": "Kouki Saitou",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/11"
+        },
+        {
+            "id": "pl4-12",
+            "number": "12",
+            "name": "Zapdos",
+            "illustrator": "Ryota Saito",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/12"
+        },
+        {
+            "id": "pl4-13",
+            "number": "13",
+            "name": "Aerodactyl",
+            "illustrator": "Masakazu Fukuda",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/13"
+        },
+        {
+            "id": "pl4-14",
+            "number": "14",
+            "name": "Bronzong",
+            "illustrator": "Atsuko Nishida",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/14"
+        },
+        {
+            "id": "pl4-15",
+            "number": "15",
+            "name": "Cherrim",
+            "illustrator": "Midori Harada",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/15"
+        },
+        {
+            "id": "pl4-16",
+            "number": "16",
+            "name": "Gengar",
+            "illustrator": "Midori Harada",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/16"
+        },
+        {
+            "id": "pl4-17",
+            "number": "17",
+            "name": "Gengar",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/17"
+        },
+        {
+            "id": "pl4-18",
+            "number": "18",
+            "name": "Glalie",
+            "illustrator": "Hiroki Fuchino",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/18"
+        },
+        {
+            "id": "pl4-19",
+            "number": "19",
+            "name": "Golem",
+            "illustrator": "Masakazu Fukuda",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/19"
+        },
+        {
+            "id": "pl4-20",
+            "number": "20",
+            "name": "Hariyama",
+            "illustrator": "Midori Harada",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/20"
+        },
+        {
+            "id": "pl4-21",
+            "number": "21",
+            "name": "Lopunny",
+            "illustrator": "Kyoko Umemoto",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/21"
+        },
+        {
+            "id": "pl4-22",
+            "number": "22",
+            "name": "Manectric",
+            "illustrator": "Mana Ibe",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/22"
+        },
+        {
+            "id": "pl4-23",
+            "number": "23",
+            "name": "Omastar",
+            "illustrator": "Hajime Kusajima",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/23"
+        },
+        {
+            "id": "pl4-24",
+            "number": "24",
+            "name": "Pelipper",
+            "illustrator": "Miki Tanaka",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/24"
+        },
+        {
+            "id": "pl4-25",
+            "number": "25",
+            "name": "Pichu",
+            "illustrator": "Kanako Eo",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/25"
+        },
+        {
+            "id": "pl4-26",
+            "number": "26",
+            "name": "Porygon-Z",
+            "illustrator": "Nobuyuki Fujimoto",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/26"
+        },
+        {
+            "id": "pl4-27",
+            "number": "27",
+            "name": "Raichu",
+            "illustrator": "Suwama Chiaki",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/27"
+        },
+        {
+            "id": "pl4-28",
+            "number": "28",
+            "name": "Rapidash",
+            "illustrator": "Lee HyunJung",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/28"
+        },
+        {
+            "id": "pl4-29",
+            "number": "29",
+            "name": "Raticate",
+            "illustrator": "Masakazu Fukuda",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/29"
+        },
+        {
+            "id": "pl4-30",
+            "number": "30",
+            "name": "Sceptile",
+            "illustrator": "Reiko Tanoue",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/30"
+        },
+        {
+            "id": "pl4-31",
+            "number": "31",
+            "name": "Sceptile",
+            "illustrator": "Kouki Saitou",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/31"
+        },
+        {
+            "id": "pl4-32",
+            "number": "32",
+            "name": "Spiritomb",
+            "illustrator": "Aya Kusube",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/32"
+        },
+        {
+            "id": "pl4-33",
+            "number": "33",
+            "name": "Bronzong",
+            "illustrator": "Masakazu Fukuda",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/33"
+        },
+        {
+            "id": "pl4-34",
+            "number": "34",
+            "name": "Bronzor",
+            "illustrator": "kawayoo",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/34"
+        },
+        {
+            "id": "pl4-35",
+            "number": "35",
+            "name": "Charmeleon",
+            "illustrator": "Sumiyoshi Kizuki",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/35"
+        },
+        {
+            "id": "pl4-36",
+            "number": "36",
+            "name": "Gastly",
+            "illustrator": "kawayoo",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/36"
+        },
+        {
+            "id": "pl4-37",
+            "number": "37",
+            "name": "Graveler",
+            "illustrator": "Sachiko Adachi",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/37"
+        },
+        {
+            "id": "pl4-38",
+            "number": "38",
+            "name": "Grovyle",
+            "illustrator": "Tomoaki Imakuni",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/38"
+        },
+        {
+            "id": "pl4-39",
+            "number": "39",
+            "name": "Grovyle",
+            "illustrator": "Kouki Saitou",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/39"
+        },
+        {
+            "id": "pl4-40",
+            "number": "40",
+            "name": "Gulpin",
+            "illustrator": "Sachiko Adachi",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/40"
+        },
+        {
+            "id": "pl4-41",
+            "number": "41",
+            "name": "Haunter",
+            "illustrator": "Tomokazu Komiya",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/41"
+        },
+        {
+            "id": "pl4-42",
+            "number": "42",
+            "name": "Haunter",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/42"
+        },
+        {
+            "id": "pl4-43",
+            "number": "43",
+            "name": "Luxio",
+            "illustrator": "Suwama Chiaki",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/43"
+        },
+        {
+            "id": "pl4-44",
+            "number": "44",
+            "name": "Manectric",
+            "illustrator": "Shin Nagasawa",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/44"
+        },
+        {
+            "id": "pl4-45",
+            "number": "45",
+            "name": "Pelipper",
+            "illustrator": "Naoyo Kimura",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/45"
+        },
+        {
+            "id": "pl4-46",
+            "number": "46",
+            "name": "Ponyta",
+            "illustrator": "Kanako Eo",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/46"
+        },
+        {
+            "id": "pl4-47",
+            "number": "47",
+            "name": "Rapidash",
+            "illustrator": "Midori Harada",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/47"
+        },
+        {
+            "id": "pl4-48",
+            "number": "48",
+            "name": "Shelgon",
+            "illustrator": "Atsuko Nishida",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/48"
+        },
+        {
+            "id": "pl4-49",
+            "number": "49",
+            "name": "Wormadam Plant Cloak",
+            "illustrator": "Kouki Saitou",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/49"
+        },
+        {
+            "id": "pl4-50",
+            "number": "50",
+            "name": "Wormadam Sandy Cloak",
+            "illustrator": "Atsuko Nishida",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/50"
+        },
+        {
+            "id": "pl4-51",
+            "number": "51",
+            "name": "Wormadam Trash Cloak",
+            "illustrator": "Miki Tanaka",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/51"
+        },
+        {
+            "id": "pl4-52",
+            "number": "52",
+            "name": "Bagon",
+            "illustrator": "Naoyo Kimura",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/52"
+        },
+        {
+            "id": "pl4-53",
+            "number": "53",
+            "name": "Beedrill",
+            "illustrator": "Wataru Kawahara",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/53"
+        },
+        {
+            "id": "pl4-54",
+            "number": "54",
+            "name": "Bronzor",
+            "illustrator": "Masakazu Fukuda",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/54"
+        },
+        {
+            "id": "pl4-55",
+            "number": "55",
+            "name": "Buneary",
+            "illustrator": "sui",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/55"
+        },
+        {
+            "id": "pl4-56",
+            "number": "56",
+            "name": "Burmy Plant Cloak",
+            "illustrator": "Kyoko Umemoto",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/56"
+        },
+        {
+            "id": "pl4-57",
+            "number": "57",
+            "name": "Burmy Sandy Cloak",
+            "illustrator": "Tomokazu Komiya",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/57"
+        },
+        {
+            "id": "pl4-58",
+            "number": "58",
+            "name": "Burmy Trash Cloak",
+            "illustrator": "Yukiko Baba",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/58"
+        },
+        {
+            "id": "pl4-59",
+            "number": "59",
+            "name": "Charmander",
+            "illustrator": "Suwama Chiaki",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/59"
+        },
+        {
+            "id": "pl4-60",
+            "number": "60",
+            "name": "Cherubi",
+            "illustrator": "Yuka Morii",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/60"
+        },
+        {
+            "id": "pl4-61",
+            "number": "61",
+            "name": "Croagunk",
+            "illustrator": "Tomokazu Komiya",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/61"
+        },
+        {
+            "id": "pl4-62",
+            "number": "62",
+            "name": "Electrike",
+            "illustrator": "Yukiko Baba",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/62"
+        },
+        {
+            "id": "pl4-63",
+            "number": "63",
+            "name": "Electrike",
+            "illustrator": "Shin Nagasawa",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/63"
+        },
+        {
+            "id": "pl4-64",
+            "number": "64",
+            "name": "Gastly",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/64"
+        },
+        {
+            "id": "pl4-65",
+            "number": "65",
+            "name": "Geodude",
+            "illustrator": "Motofumi Fujiwara",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/65"
+        },
+        {
+            "id": "pl4-66",
+            "number": "66",
+            "name": "Gulpin",
+            "illustrator": "Sumiyoshi Kizuki",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/66"
+        },
+        {
+            "id": "pl4-67",
+            "number": "67",
+            "name": "Kabuto",
+            "illustrator": "Hironobu Yoshida",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/67"
+        },
+        {
+            "id": "pl4-68",
+            "number": "68",
+            "name": "Makuhita",
+            "illustrator": "sui",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/68"
+        },
+        {
+            "id": "pl4-69",
+            "number": "69",
+            "name": "Nosepass",
+            "illustrator": "Midori Harada",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/69"
+        },
+        {
+            "id": "pl4-70",
+            "number": "70",
+            "name": "Omanyte",
+            "illustrator": "Aya Kusube",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/70"
+        },
+        {
+            "id": "pl4-71",
+            "number": "71",
+            "name": "Pikachu",
+            "illustrator": "sui",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/71"
+        },
+        {
+            "id": "pl4-72",
+            "number": "72",
+            "name": "Ponyta",
+            "illustrator": "Midori Harada",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/72"
+        },
+        {
+            "id": "pl4-73",
+            "number": "73",
+            "name": "Rattata",
+            "illustrator": "Miki Tanaka",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/73"
+        },
+        {
+            "id": "pl4-74",
+            "number": "74",
+            "name": "Shinx",
+            "illustrator": "sui",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/74"
+        },
+        {
+            "id": "pl4-75",
+            "number": "75",
+            "name": "Snorunt",
+            "illustrator": "Yuka Morii",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/75"
+        },
+        {
+            "id": "pl4-76",
+            "number": "76",
+            "name": "Tangela",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/76"
+        },
+        {
+            "id": "pl4-77",
+            "number": "77",
+            "name": "Tangela",
+            "illustrator": "Kagemaru Himeno",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/77"
+        },
+        {
+            "id": "pl4-78",
+            "number": "78",
+            "name": "Treecko",
+            "illustrator": "TOKIYA",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/78"
+        },
+        {
+            "id": "pl4-79",
+            "number": "79",
+            "name": "Treecko",
+            "illustrator": "Kouki Saitou",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/79"
+        },
+        {
+            "id": "pl4-80",
+            "number": "80",
+            "name": "Wingull",
+            "illustrator": "Kyoko Umemoto",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/80"
+        },
+        {
+            "id": "pl4-81",
+            "number": "81",
+            "name": "Wingull",
+            "illustrator": "Naoyo Kimura",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/81"
+        },
+        {
+            "id": "pl4-82",
+            "number": "82",
+            "name": "Porte de départ",
+            "illustrator": "Ryo Ueda",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/82"
+        },
+        {
+            "id": "pl4-83",
+            "number": "83",
+            "name": "Bench Shield",
+            "illustrator": "Wataru Kawahara",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/83"
+        },
+        {
+            "id": "pl4-84",
+            "number": "84",
+            "name": "Buffer Piece",
+            "illustrator": "Ryo Ueda",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/84"
+        },
+        {
+            "id": "pl4-85",
+            "number": "85",
+            "name": "Department Store Girl",
+            "illustrator": "Kanako Eo",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/85"
+        },
+        {
+            "id": "pl4-86",
+            "number": "86",
+            "name": "Energy Restore",
+            "illustrator": "Ryo Ueda",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/86"
+        },
+        {
+            "id": "pl4-87",
+            "number": "87",
+            "name": "Expert Belt",
+            "illustrator": "Wataru Kawahara",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/87"
+        },
+        {
+            "id": "pl4-88",
+            "number": "88",
+            "name": "Lucky Egg",
+            "illustrator": "Nobuyuki Fujimoto",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/88"
+        },
+        {
+            "id": "pl4-89",
+            "number": "89",
+            "name": "Old Amber",
+            "illustrator": "Ryo Ueda",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/89"
+        },
+        {
+            "id": "pl4-90",
+            "number": "90",
+            "name": "Professor Oak's Visit",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/90"
+        },
+        {
+            "id": "pl4-91",
+            "number": "91",
+            "name": "Zone ultime",
+            "illustrator": "Yusuke Ishikawa",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/91"
+        },
+        {
+            "id": "pl4-92",
+            "number": "92",
+            "name": "Dome Fossil",
+            "illustrator": "Ryo Ueda",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/92"
+        },
+        {
+            "id": "pl4-93",
+            "number": "93",
+            "name": "Helix Fossil",
+            "illustrator": "Ryo Ueda",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/93"
+        },
+        {
+            "id": "pl4-94",
+            "number": "94",
+            "name": "Arceus",
+            "illustrator": "Shizurow",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/94"
+        },
+        {
+            "id": "pl4-95",
+            "number": "95",
+            "name": "Arceus",
+            "illustrator": "Ryo Ueda",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/95"
+        },
+        {
+            "id": "pl4-96",
+            "number": "96",
+            "name": "Arceus",
+            "illustrator": "Ryo Ueda",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/96"
+        },
+        {
+            "id": "pl4-97",
+            "number": "97",
+            "name": "Gengar LV. X",
+            "illustrator": "Shizurow",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/97"
+        },
+        {
+            "id": "pl4-98",
+            "number": "98",
+            "name": "Salamence LV. X",
+            "illustrator": "Ryo Ueda",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/98"
+        },
+        {
+            "id": "pl4-99",
+            "number": "99",
+            "name": "Tangrowth LV. X",
+            "illustrator": "Ryo Ueda",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/99"
+        },
+        {
+            "id": "pl4-AR1",
+            "number": "AR1",
+            "name": "Arceus",
+            "illustrator": "kawayoo",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/AR1"
+        },
+        {
+            "id": "pl4-AR5",
+            "number": "AR5",
+            "name": "Arceus",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/AR5"
+        },
+        {
+            "id": "pl4-AR4",
+            "number": "AR4",
+            "name": "Arceus",
+            "illustrator": "Kouki Saitou",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/AR4"
+        },
+        {
+            "id": "pl4-SH12",
+            "number": "SH12",
+            "name": "Shinx",
+            "illustrator": "sui",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/SH12"
+        },
+        {
+            "id": "pl4-SH11",
+            "number": "SH11",
+            "name": "Ponyta",
+            "illustrator": "Kanako Eo",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/SH11"
+        },
+        {
+            "id": "pl4-AR9",
+            "number": "AR9",
+            "name": "Arceus",
+            "illustrator": "TOKIYA",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/AR9"
+        },
+        {
+            "id": "pl4-AR8",
+            "number": "AR8",
+            "name": "Arceus",
+            "illustrator": "Hajime Kusajima",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/AR8"
+        },
+        {
+            "id": "pl4-SH10",
+            "number": "SH10",
+            "name": "Bagon",
+            "illustrator": "Naoyo Kimura",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/SH10"
+        },
+        {
+            "id": "pl4-AR7",
+            "number": "AR7",
+            "name": "Arceus",
+            "illustrator": "Kagemaru Himeno",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/AR7"
+        },
+        {
+            "id": "pl4-AR3",
+            "number": "AR3",
+            "name": "Arceus",
+            "illustrator": "Wataru Kawahara",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/AR3"
+        },
+        {
+            "id": "pl4-AR2",
+            "number": "AR2",
+            "name": "Arceus",
+            "illustrator": "Shin Nagasawa",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/AR2"
+        },
+        {
+            "id": "pl4-AR6",
+            "number": "AR6",
+            "name": "Arceus",
+            "illustrator": "Wataru Kawahara",
+            "imageBase": "https://assets.tcgdex.net/fr/pl/pl4/AR6"
+        }
+    ]
+}

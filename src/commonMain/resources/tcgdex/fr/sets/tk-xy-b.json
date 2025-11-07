@@ -1,1 +1,221 @@
-{"cardCount":{"firstEd":0,"holo":0,"normal":0,"official":30,"reverse":0,"total":30},"cards":[{"id":"tk-xy-b-1","localId":"1","name":"Passerouge"},{"id":"tk-xy-b-2","localId":"2","name":"Énergie Métal"},{"id":"tk-xy-b-3","localId":"3","name":"Énergie Métal"},{"id":"tk-xy-b-4","localId":"4","name":"Vigoroth"},{"id":"tk-xy-b-5","localId":"5","name":"Énergie Métal"},{"id":"tk-xy-b-6","localId":"6","name":"Énergie Métal"},{"id":"tk-xy-b-7","localId":"7","name":"Énergie Métal"},{"id":"tk-xy-b-8","localId":"8","name":"Énergie Métal"},{"id":"tk-xy-b-9","localId":"9","name":"Énergie Métal"},{"id":"tk-xy-b-10","localId":"10","name":"Énergie Métal"},{"id":"tk-xy-b-11","localId":"11","name":"Monorpale"},{"id":"tk-xy-b-12","localId":"12","name":"Keunotor"},{"id":"tk-xy-b-13","localId":"13","name":"Scalpion"},{"id":"tk-xy-b-14","localId":"14","name":"Dimoclès"},{"id":"tk-xy-b-15","localId":"15","name":"Parecool"},{"id":"tk-xy-b-16","localId":"16","name":"Scalproie"},{"id":"tk-xy-b-17","localId":"17","name":"Ratentif"},{"id":"tk-xy-b-18","localId":"18","name":"Énergie Métal"},{"id":"tk-xy-b-19","localId":"19","name":"Tierno"},{"id":"tk-xy-b-20","localId":"20","name":"Trovato"},{"id":"tk-xy-b-21","localId":"21","name":"Scalpion"},{"id":"tk-xy-b-22","localId":"22","name":"Énergie Métal"},{"id":"tk-xy-b-23","localId":"23","name":"Dimoclès"},{"id":"tk-xy-b-24","localId":"24","name":"Énergie Métal"},{"id":"tk-xy-b-25","localId":"25","name":"Potion"},{"id":"tk-xy-b-26","localId":"26","name":"Parecool"},{"id":"tk-xy-b-27","localId":"27","name":"Monorpale"},{"id":"tk-xy-b-28","localId":"28","name":"Vigoroth"},{"id":"tk-xy-b-29","localId":"29","name":"Potion"},{"id":"tk-xy-b-30","localId":"30","name":"Scalproie"}],"id":"tk-xy-b","legal":{"expanded":false,"standard":false},"name":"XY Kit du dresseur (Scalproie)","releaseDate":"2014-11-01","serie":{"id":"tk","name":"Kits du dresseur"},"symbol":"https://assets.tcgdex.net/univ/tk/tk-xy-b/symbol","abbreviation":{"official":"TK7A","localized":"SCA"}}
+{
+    "id": "tk-xy-b",
+    "serieId": "tk",
+    "name": "XY Kit du dresseur (Scalproie)",
+    "releaseDate": "2014-11-01",
+    "cardCount": 30,
+    "logo": "https://assets.tcgdex.net/fr/tk/tk-xy-b/logo",
+    "symbol": "https://assets.tcgdex.net/fr/tk/tk-xy-b/symbol",
+    "cards": [
+        {
+            "id": "tk-xy-b-1",
+            "number": "1",
+            "name": "Passerouge",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-xy-b/1"
+        },
+        {
+            "id": "tk-xy-b-2",
+            "number": "2",
+            "name": "Énergie Métal",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-xy-b/2"
+        },
+        {
+            "id": "tk-xy-b-3",
+            "number": "3",
+            "name": "Énergie Métal",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-xy-b/3"
+        },
+        {
+            "id": "tk-xy-b-4",
+            "number": "4",
+            "name": "Vigoroth",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-xy-b/4"
+        },
+        {
+            "id": "tk-xy-b-5",
+            "number": "5",
+            "name": "Énergie Métal",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-xy-b/5"
+        },
+        {
+            "id": "tk-xy-b-6",
+            "number": "6",
+            "name": "Énergie Métal",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-xy-b/6"
+        },
+        {
+            "id": "tk-xy-b-7",
+            "number": "7",
+            "name": "Énergie Métal",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-xy-b/7"
+        },
+        {
+            "id": "tk-xy-b-8",
+            "number": "8",
+            "name": "Énergie Métal",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-xy-b/8"
+        },
+        {
+            "id": "tk-xy-b-9",
+            "number": "9",
+            "name": "Énergie Métal",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-xy-b/9"
+        },
+        {
+            "id": "tk-xy-b-10",
+            "number": "10",
+            "name": "Énergie Métal",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-xy-b/10"
+        },
+        {
+            "id": "tk-xy-b-11",
+            "number": "11",
+            "name": "Monorpale",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-xy-b/11"
+        },
+        {
+            "id": "tk-xy-b-12",
+            "number": "12",
+            "name": "Keunotor",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-xy-b/12"
+        },
+        {
+            "id": "tk-xy-b-13",
+            "number": "13",
+            "name": "Scalpion",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-xy-b/13"
+        },
+        {
+            "id": "tk-xy-b-14",
+            "number": "14",
+            "name": "Dimoclès",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-xy-b/14"
+        },
+        {
+            "id": "tk-xy-b-15",
+            "number": "15",
+            "name": "Parecool",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-xy-b/15"
+        },
+        {
+            "id": "tk-xy-b-16",
+            "number": "16",
+            "name": "Scalproie",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-xy-b/16"
+        },
+        {
+            "id": "tk-xy-b-17",
+            "number": "17",
+            "name": "Ratentif",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-xy-b/17"
+        },
+        {
+            "id": "tk-xy-b-18",
+            "number": "18",
+            "name": "Énergie Métal",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-xy-b/18"
+        },
+        {
+            "id": "tk-xy-b-19",
+            "number": "19",
+            "name": "Tierno",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-xy-b/19"
+        },
+        {
+            "id": "tk-xy-b-20",
+            "number": "20",
+            "name": "Trovato",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-xy-b/20"
+        },
+        {
+            "id": "tk-xy-b-21",
+            "number": "21",
+            "name": "Scalpion",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-xy-b/21"
+        },
+        {
+            "id": "tk-xy-b-22",
+            "number": "22",
+            "name": "Énergie Métal",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-xy-b/22"
+        },
+        {
+            "id": "tk-xy-b-23",
+            "number": "23",
+            "name": "Dimoclès",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-xy-b/23"
+        },
+        {
+            "id": "tk-xy-b-24",
+            "number": "24",
+            "name": "Énergie Métal",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-xy-b/24"
+        },
+        {
+            "id": "tk-xy-b-25",
+            "number": "25",
+            "name": "Potion",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-xy-b/25"
+        },
+        {
+            "id": "tk-xy-b-26",
+            "number": "26",
+            "name": "Parecool",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-xy-b/26"
+        },
+        {
+            "id": "tk-xy-b-27",
+            "number": "27",
+            "name": "Monorpale",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-xy-b/27"
+        },
+        {
+            "id": "tk-xy-b-28",
+            "number": "28",
+            "name": "Vigoroth",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-xy-b/28"
+        },
+        {
+            "id": "tk-xy-b-29",
+            "number": "29",
+            "name": "Potion",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-xy-b/29"
+        },
+        {
+            "id": "tk-xy-b-30",
+            "number": "30",
+            "name": "Scalproie",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-xy-b/30"
+        }
+    ]
+}

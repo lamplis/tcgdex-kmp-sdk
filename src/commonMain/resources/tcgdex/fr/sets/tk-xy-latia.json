@@ -1,1 +1,221 @@
-{"cardCount":{"firstEd":0,"holo":0,"normal":0,"official":30,"reverse":0,"total":30},"cards":[{"id":"tk-xy-latia-1","localId":"1","name":"Énergie Plante"},{"id":"tk-xy-latia-2","localId":"2","name":"Énergie Plante"},{"id":"tk-xy-latia-3","localId":"3","name":"Énergie Plante"},{"id":"tk-xy-latia-4","localId":"4","name":"Passerouge"},{"id":"tk-xy-latia-5","localId":"5","name":"Énergie Plante"},{"id":"tk-xy-latia-6","localId":"6","name":"Lombre"},{"id":"tk-xy-latia-7","localId":"7","name":"Arcko"},{"id":"tk-xy-latia-8","localId":"8","name":"Énergie Psy"},{"id":"tk-xy-latia-9","localId":"9","name":"Énergie Psy"},{"id":"tk-xy-latia-10","localId":"10","name":"Énergie Psy"},{"id":"tk-xy-latia-11","localId":"11","name":"Nénupiot"},{"id":"tk-xy-latia-12","localId":"12","name":"Bouldeneu"},{"id":"tk-xy-latia-13","localId":"13","name":"Saquedeneu"},{"id":"tk-xy-latia-14","localId":"14","name":"Latias"},{"id":"tk-xy-latia-15","localId":"15","name":"Potion"},{"id":"tk-xy-latia-16","localId":"16","name":"Arakdo"},{"id":"tk-xy-latia-17","localId":"17","name":"Énergie Psy"},{"id":"tk-xy-latia-18","localId":"18","name":"Massko"},{"id":"tk-xy-latia-19","localId":"19","name":"Énergie Plante"},{"id":"tk-xy-latia-20","localId":"20","name":"Vélo Cross"},{"id":"tk-xy-latia-21","localId":"21","name":"Lombre"},{"id":"tk-xy-latia-22","localId":"22","name":"Énergie Psy"},{"id":"tk-xy-latia-23","localId":"23","name":"Nénupiot"},{"id":"tk-xy-latia-24","localId":"24","name":"Arcko"},{"id":"tk-xy-latia-25","localId":"25","name":"Bouldeneu"},{"id":"tk-xy-latia-26","localId":"26","name":"Saquedeneu"},{"id":"tk-xy-latia-27","localId":"27","name":"Massko"},{"id":"tk-xy-latia-28","localId":"28","name":"Énergie Psy"},{"id":"tk-xy-latia-29","localId":"29","name":"Vélo Cross"},{"id":"tk-xy-latia-30","localId":"30","name":"Latias"}],"id":"tk-xy-latia","legal":{"expanded":false,"standard":false},"name":"XY Kit du dresseur (Latias)","releaseDate":"2015-04-29","serie":{"id":"tk","name":"Kits du dresseur"},"symbol":"https://assets.tcgdex.net/univ/tk/tk-xy-latia/symbol","abbreviation":{"official":"TK8A","localized":"LTA"}}
+{
+    "id": "tk-xy-latia",
+    "serieId": "tk",
+    "name": "XY Kit du dresseur (Latias)",
+    "releaseDate": "2015-04-29",
+    "cardCount": 30,
+    "logo": "https://assets.tcgdex.net/fr/tk/tk-xy-latia/logo",
+    "symbol": "https://assets.tcgdex.net/fr/tk/tk-xy-latia/symbol",
+    "cards": [
+        {
+            "id": "tk-xy-latia-1",
+            "number": "1",
+            "name": "Énergie Plante",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-xy-latia/1"
+        },
+        {
+            "id": "tk-xy-latia-2",
+            "number": "2",
+            "name": "Énergie Plante",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-xy-latia/2"
+        },
+        {
+            "id": "tk-xy-latia-3",
+            "number": "3",
+            "name": "Énergie Plante",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-xy-latia/3"
+        },
+        {
+            "id": "tk-xy-latia-4",
+            "number": "4",
+            "name": "Passerouge",
+            "illustrator": "Kyoko Umemoto",
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-xy-latia/4"
+        },
+        {
+            "id": "tk-xy-latia-5",
+            "number": "5",
+            "name": "Énergie Plante",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-xy-latia/5"
+        },
+        {
+            "id": "tk-xy-latia-6",
+            "number": "6",
+            "name": "Lombre",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-xy-latia/6"
+        },
+        {
+            "id": "tk-xy-latia-7",
+            "number": "7",
+            "name": "Arcko",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-xy-latia/7"
+        },
+        {
+            "id": "tk-xy-latia-8",
+            "number": "8",
+            "name": "Énergie Psy",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-xy-latia/8"
+        },
+        {
+            "id": "tk-xy-latia-9",
+            "number": "9",
+            "name": "Énergie Psy",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-xy-latia/9"
+        },
+        {
+            "id": "tk-xy-latia-10",
+            "number": "10",
+            "name": "Énergie Psy",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-xy-latia/10"
+        },
+        {
+            "id": "tk-xy-latia-11",
+            "number": "11",
+            "name": "Nénupiot",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-xy-latia/11"
+        },
+        {
+            "id": "tk-xy-latia-12",
+            "number": "12",
+            "name": "Bouldeneu",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-xy-latia/12"
+        },
+        {
+            "id": "tk-xy-latia-13",
+            "number": "13",
+            "name": "Saquedeneu",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-xy-latia/13"
+        },
+        {
+            "id": "tk-xy-latia-14",
+            "number": "14",
+            "name": "Latias",
+            "illustrator": "Masakazu Fukuda",
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-xy-latia/14"
+        },
+        {
+            "id": "tk-xy-latia-15",
+            "number": "15",
+            "name": "Potion",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-xy-latia/15"
+        },
+        {
+            "id": "tk-xy-latia-16",
+            "number": "16",
+            "name": "Arakdo",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-xy-latia/16"
+        },
+        {
+            "id": "tk-xy-latia-17",
+            "number": "17",
+            "name": "Énergie Psy",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-xy-latia/17"
+        },
+        {
+            "id": "tk-xy-latia-18",
+            "number": "18",
+            "name": "Massko",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-xy-latia/18"
+        },
+        {
+            "id": "tk-xy-latia-19",
+            "number": "19",
+            "name": "Énergie Plante",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-xy-latia/19"
+        },
+        {
+            "id": "tk-xy-latia-20",
+            "number": "20",
+            "name": "Vélo Cross",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-xy-latia/20"
+        },
+        {
+            "id": "tk-xy-latia-21",
+            "number": "21",
+            "name": "Lombre",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-xy-latia/21"
+        },
+        {
+            "id": "tk-xy-latia-22",
+            "number": "22",
+            "name": "Énergie Psy",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-xy-latia/22"
+        },
+        {
+            "id": "tk-xy-latia-23",
+            "number": "23",
+            "name": "Nénupiot",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-xy-latia/23"
+        },
+        {
+            "id": "tk-xy-latia-24",
+            "number": "24",
+            "name": "Arcko",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-xy-latia/24"
+        },
+        {
+            "id": "tk-xy-latia-25",
+            "number": "25",
+            "name": "Bouldeneu",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-xy-latia/25"
+        },
+        {
+            "id": "tk-xy-latia-26",
+            "number": "26",
+            "name": "Saquedeneu",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-xy-latia/26"
+        },
+        {
+            "id": "tk-xy-latia-27",
+            "number": "27",
+            "name": "Massko",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-xy-latia/27"
+        },
+        {
+            "id": "tk-xy-latia-28",
+            "number": "28",
+            "name": "Énergie Psy",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-xy-latia/28"
+        },
+        {
+            "id": "tk-xy-latia-29",
+            "number": "29",
+            "name": "Vélo Cross",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-xy-latia/29"
+        },
+        {
+            "id": "tk-xy-latia-30",
+            "number": "30",
+            "name": "Latias",
+            "illustrator": "Masakazu Fukuda",
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-xy-latia/30"
+        }
+    ]
+}

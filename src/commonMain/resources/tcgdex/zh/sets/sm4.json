@@ -1,0 +1,886 @@
+{
+    "id": "sm4",
+    "serieId": "sm",
+    "name": "Crimson Invasion",
+    "releaseDate": "2017-11-03",
+    "cardCount": 111,
+    "logo": "https://assets.tcgdex.net/zh/sm/sm4/logo",
+    "symbol": "https://assets.tcgdex.net/zh/sm/sm4/symbol",
+    "cards": [
+        {
+            "id": "sm4-1",
+            "number": "1",
+            "name": "Weedle",
+            "illustrator": "Yukiko Baba",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/1"
+        },
+        {
+            "id": "sm4-2",
+            "number": "2",
+            "name": "Kakuna",
+            "illustrator": "miki kudo",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/2"
+        },
+        {
+            "id": "sm4-3",
+            "number": "3",
+            "name": "Beedrill",
+            "illustrator": "kirisAki",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/3"
+        },
+        {
+            "id": "sm4-4",
+            "number": "4",
+            "name": "Exeggcute",
+            "illustrator": "Kouki Saitou",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/4"
+        },
+        {
+            "id": "sm4-5",
+            "number": "5",
+            "name": "Cacnea",
+            "illustrator": "Anesaki Dynamic",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/5"
+        },
+        {
+            "id": "sm4-6",
+            "number": "6",
+            "name": "Cacturne",
+            "illustrator": "Mina Nakai",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/6"
+        },
+        {
+            "id": "sm4-7",
+            "number": "7",
+            "name": "Karrablast",
+            "illustrator": "OOYAMA",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/7"
+        },
+        {
+            "id": "sm4-8",
+            "number": "8",
+            "name": "Shelmet",
+            "illustrator": "OOYAMA",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/8"
+        },
+        {
+            "id": "sm4-9",
+            "number": "9",
+            "name": "Accelgor",
+            "illustrator": "tetsuya koizumi",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/9"
+        },
+        {
+            "id": "sm4-10",
+            "number": "10",
+            "name": "Skiddo",
+            "illustrator": "Naoki Saito",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/10"
+        },
+        {
+            "id": "sm4-11",
+            "number": "11",
+            "name": "Gogoat",
+            "illustrator": "You Iribi",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/11"
+        },
+        {
+            "id": "sm4-12",
+            "number": "12",
+            "name": "Alolan Marowak",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/12"
+        },
+        {
+            "id": "sm4-13",
+            "number": "13",
+            "name": "Numel",
+            "illustrator": "sui",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/13"
+        },
+        {
+            "id": "sm4-14",
+            "number": "14",
+            "name": "Camerupt",
+            "illustrator": "Anesaki Dynamic",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/14"
+        },
+        {
+            "id": "sm4-15",
+            "number": "15",
+            "name": "Staryu",
+            "illustrator": "Yukiko Baba",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/15"
+        },
+        {
+            "id": "sm4-16",
+            "number": "16",
+            "name": "Starmie",
+            "illustrator": "Yuka Morii",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/16"
+        },
+        {
+            "id": "sm4-17",
+            "number": "17",
+            "name": "Magikarp",
+            "illustrator": "TOKIYA",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/17"
+        },
+        {
+            "id": "sm4-18",
+            "number": "18",
+            "name": "Gyarados GX",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/18"
+        },
+        {
+            "id": "sm4-19",
+            "number": "19",
+            "name": "Swinub",
+            "illustrator": "Eri Yamaki",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/19"
+        },
+        {
+            "id": "sm4-20",
+            "number": "20",
+            "name": "Piloswine",
+            "illustrator": "Kouki Saitou",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/20"
+        },
+        {
+            "id": "sm4-21",
+            "number": "21",
+            "name": "Mamoswine",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/21"
+        },
+        {
+            "id": "sm4-22",
+            "number": "22",
+            "name": "Remoraid",
+            "illustrator": "Aya Kusube",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/22"
+        },
+        {
+            "id": "sm4-23",
+            "number": "23",
+            "name": "Octillery",
+            "illustrator": "tetsuya koizumi",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/23"
+        },
+        {
+            "id": "sm4-24",
+            "number": "24",
+            "name": "Corphish",
+            "illustrator": "Masakazu Fukuda",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/24"
+        },
+        {
+            "id": "sm4-25",
+            "number": "25",
+            "name": "Crawdaunt",
+            "illustrator": "Saya Tsuruta",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/25"
+        },
+        {
+            "id": "sm4-26",
+            "number": "26",
+            "name": "Feebas",
+            "illustrator": "Hitoshi Ariga",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/26"
+        },
+        {
+            "id": "sm4-27",
+            "number": "27",
+            "name": "Milotic",
+            "illustrator": "Kagemaru Himeno",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/27"
+        },
+        {
+            "id": "sm4-28",
+            "number": "28",
+            "name": "Regice",
+            "illustrator": "Masakazu Fukuda",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/28"
+        },
+        {
+            "id": "sm4-29",
+            "number": "29",
+            "name": "Shellos",
+            "illustrator": "Kouki Saitou",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/29"
+        },
+        {
+            "id": "sm4-30",
+            "number": "30",
+            "name": "Pikachu",
+            "illustrator": "Shibuzoh.",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/30"
+        },
+        {
+            "id": "sm4-31",
+            "number": "31",
+            "name": "Alolan Raichu",
+            "illustrator": "Akira Komayama",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/31"
+        },
+        {
+            "id": "sm4-32",
+            "number": "32",
+            "name": "Alolan Geodude",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/32"
+        },
+        {
+            "id": "sm4-33",
+            "number": "33",
+            "name": "Alolan Graveler",
+            "illustrator": "kirisAki",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/33"
+        },
+        {
+            "id": "sm4-34",
+            "number": "34",
+            "name": "Alolan Golem GX",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/34"
+        },
+        {
+            "id": "sm4-35",
+            "number": "35",
+            "name": "Emolga",
+            "illustrator": "Kagemaru Himeno",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/35"
+        },
+        {
+            "id": "sm4-36",
+            "number": "36",
+            "name": "Gastly",
+            "illustrator": "Shibuzoh.",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/36"
+        },
+        {
+            "id": "sm4-37",
+            "number": "37",
+            "name": "Haunter",
+            "illustrator": "Eri Yamaki",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/37"
+        },
+        {
+            "id": "sm4-38",
+            "number": "38",
+            "name": "Gengar",
+            "illustrator": "Shin Nagasawa",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/38"
+        },
+        {
+            "id": "sm4-39",
+            "number": "39",
+            "name": "Misdreavus",
+            "illustrator": "so-taro",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/39"
+        },
+        {
+            "id": "sm4-40",
+            "number": "40",
+            "name": "Mismagius",
+            "illustrator": "chibi",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/40"
+        },
+        {
+            "id": "sm4-41",
+            "number": "41",
+            "name": "Spoink",
+            "illustrator": "Sekio",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/41"
+        },
+        {
+            "id": "sm4-42",
+            "number": "42",
+            "name": "Grumpig",
+            "illustrator": "Saya Tsuruta",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/42"
+        },
+        {
+            "id": "sm4-43",
+            "number": "43",
+            "name": "Chimecho",
+            "illustrator": "Kanako Eo",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/43"
+        },
+        {
+            "id": "sm4-44",
+            "number": "44",
+            "name": "Pumpkaboo",
+            "illustrator": "Miki Tanaka",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/44"
+        },
+        {
+            "id": "sm4-45",
+            "number": "45",
+            "name": "Gourgeist",
+            "illustrator": "kirisAki",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/45"
+        },
+        {
+            "id": "sm4-46",
+            "number": "46",
+            "name": "Salandit",
+            "illustrator": "tetsuya koizumi",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/46"
+        },
+        {
+            "id": "sm4-47",
+            "number": "47",
+            "name": "Salazzle",
+            "illustrator": "Shin Nagasawa",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/47"
+        },
+        {
+            "id": "sm4-48",
+            "number": "48",
+            "name": "Oranguru",
+            "illustrator": "Yoshinobu Saito",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/48"
+        },
+        {
+            "id": "sm4-49",
+            "number": "49",
+            "name": "Nihilego GX",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/49"
+        },
+        {
+            "id": "sm4-50",
+            "number": "50",
+            "name": "Mankey",
+            "illustrator": "Miki Tanaka",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/50"
+        },
+        {
+            "id": "sm4-51",
+            "number": "51",
+            "name": "Primeape",
+            "illustrator": "Yuka Morii",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/51"
+        },
+        {
+            "id": "sm4-52",
+            "number": "52",
+            "name": "Cubone",
+            "illustrator": "sui",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/52"
+        },
+        {
+            "id": "sm4-53",
+            "number": "53",
+            "name": "Regirock",
+            "illustrator": "kawayoo",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/53"
+        },
+        {
+            "id": "sm4-54",
+            "number": "54",
+            "name": "Gastrodon",
+            "illustrator": "TOKIYA",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/54"
+        },
+        {
+            "id": "sm4-55",
+            "number": "55",
+            "name": "Stufful",
+            "illustrator": "Kanako Eo",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/55"
+        },
+        {
+            "id": "sm4-56",
+            "number": "56",
+            "name": "Bewear",
+            "illustrator": "Saya Tsuruta",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/56"
+        },
+        {
+            "id": "sm4-57",
+            "number": "57",
+            "name": "Buzzwole GX",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/57"
+        },
+        {
+            "id": "sm4-58",
+            "number": "58",
+            "name": "Houndour",
+            "illustrator": "Kouki Saitou",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/58"
+        },
+        {
+            "id": "sm4-59",
+            "number": "59",
+            "name": "Houndoom",
+            "illustrator": "Shin Nagasawa",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/59"
+        },
+        {
+            "id": "sm4-60",
+            "number": "60",
+            "name": "Deino",
+            "illustrator": "miki kudo",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/60"
+        },
+        {
+            "id": "sm4-61",
+            "number": "61",
+            "name": "Zweilous",
+            "illustrator": "kodama",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/61"
+        },
+        {
+            "id": "sm4-62",
+            "number": "62",
+            "name": "Hydreigon",
+            "illustrator": "Anesaki Dynamic",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/62"
+        },
+        {
+            "id": "sm4-63",
+            "number": "63",
+            "name": "Guzzlord GX",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/63"
+        },
+        {
+            "id": "sm4-63a",
+            "number": "63a",
+            "name": "Guzzlord-GX",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/63"
+        },
+        {
+            "id": "sm4-64",
+            "number": "64",
+            "name": "Mawile",
+            "illustrator": "tetsuya koizumi",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/64"
+        },
+        {
+            "id": "sm4-65",
+            "number": "65",
+            "name": "Aron",
+            "illustrator": "TOKIYA",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/65"
+        },
+        {
+            "id": "sm4-66",
+            "number": "66",
+            "name": "Lairon",
+            "illustrator": "Atsuko Nishida",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/66"
+        },
+        {
+            "id": "sm4-67",
+            "number": "67",
+            "name": "Aggron",
+            "illustrator": "Yoshinobu Saito",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/67"
+        },
+        {
+            "id": "sm4-68",
+            "number": "68",
+            "name": "Registeel",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/68"
+        },
+        {
+            "id": "sm4-69",
+            "number": "69",
+            "name": "Escavalier",
+            "illustrator": "Kagemaru Himeno",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/69"
+        },
+        {
+            "id": "sm4-70",
+            "number": "70",
+            "name": "Kartana GX",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/70"
+        },
+        {
+            "id": "sm4-71",
+            "number": "71",
+            "name": "Jigglypuff",
+            "illustrator": "You Iribi",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/71"
+        },
+        {
+            "id": "sm4-72",
+            "number": "72",
+            "name": "Wigglytuff",
+            "illustrator": "0313",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/72"
+        },
+        {
+            "id": "sm4-73",
+            "number": "73",
+            "name": "Xerneas",
+            "illustrator": "sui",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/73"
+        },
+        {
+            "id": "sm4-74",
+            "number": "74",
+            "name": "Alolan Exeggutor GX",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/74"
+        },
+        {
+            "id": "sm4-75",
+            "number": "75",
+            "name": "Jangmo-o",
+            "illustrator": "Atsuko Nishida",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/75"
+        },
+        {
+            "id": "sm4-76",
+            "number": "76",
+            "name": "Hakamo-o",
+            "illustrator": "Masakazu Fukuda",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/76"
+        },
+        {
+            "id": "sm4-77",
+            "number": "77",
+            "name": "Kommo-o",
+            "illustrator": "kawayoo",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/77"
+        },
+        {
+            "id": "sm4-78",
+            "number": "78",
+            "name": "Miltank",
+            "illustrator": "Mina Nakai",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/78"
+        },
+        {
+            "id": "sm4-79",
+            "number": "79",
+            "name": "Swablu",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/79"
+        },
+        {
+            "id": "sm4-80",
+            "number": "80",
+            "name": "Altaria",
+            "illustrator": "sui",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/80"
+        },
+        {
+            "id": "sm4-81",
+            "number": "81",
+            "name": "Starly",
+            "illustrator": "miki kudo",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/81"
+        },
+        {
+            "id": "sm4-82",
+            "number": "82",
+            "name": "Staravia",
+            "illustrator": "kawayoo",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/82"
+        },
+        {
+            "id": "sm4-83",
+            "number": "83",
+            "name": "Staraptor",
+            "illustrator": "Sekio",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/83"
+        },
+        {
+            "id": "sm4-84",
+            "number": "84",
+            "name": "Regigigas",
+            "illustrator": "Kouki Saitou",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/84"
+        },
+        {
+            "id": "sm4-85",
+            "number": "85",
+            "name": "Minccino",
+            "illustrator": "kodama",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/85"
+        },
+        {
+            "id": "sm4-86",
+            "number": "86",
+            "name": "Cinccino",
+            "illustrator": "0313",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/86"
+        },
+        {
+            "id": "sm4-87",
+            "number": "87",
+            "name": "Bunnelby",
+            "illustrator": "kirisAki",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/87"
+        },
+        {
+            "id": "sm4-88",
+            "number": "88",
+            "name": "Diggersby",
+            "illustrator": "Anesaki Dynamic",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/88"
+        },
+        {
+            "id": "sm4-89",
+            "number": "89",
+            "name": "Type: Null",
+            "illustrator": "Hitoshi Ariga",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/89"
+        },
+        {
+            "id": "sm4-90",
+            "number": "90",
+            "name": "Silvally GX",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/90"
+        },
+        {
+            "id": "sm4-91",
+            "number": "91",
+            "name": "Counter Catcher",
+            "illustrator": "Toyste Beach",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/91"
+        },
+        {
+            "id": "sm4-92",
+            "number": "92",
+            "name": "Dashing Pouch",
+            "illustrator": "Eske Yoshinob",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/92"
+        },
+        {
+            "id": "sm4-93",
+            "number": "93",
+            "name": "Devoured Field",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/93"
+        },
+        {
+            "id": "sm4-94",
+            "number": "94",
+            "name": "Fighting Memory",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/94"
+        },
+        {
+            "id": "sm4-95",
+            "number": "95",
+            "name": "Gladion",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/95"
+        },
+        {
+            "id": "sm4-96",
+            "number": "96",
+            "name": "Lusamine",
+            "illustrator": "take",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/96"
+        },
+        {
+            "id": "sm4-97",
+            "number": "97",
+            "name": "Peeking Red Card",
+            "illustrator": "Toyste Beach",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/97"
+        },
+        {
+            "id": "sm4-98",
+            "number": "98",
+            "name": "Psychic Memory",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/98"
+        },
+        {
+            "id": "sm4-99",
+            "number": "99",
+            "name": "Sea of Nothingness",
+            "illustrator": "Ryo Ueda",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/99"
+        },
+        {
+            "id": "sm4-100",
+            "number": "100",
+            "name": "Counter Energy",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/100"
+        },
+        {
+            "id": "sm4-101",
+            "number": "101",
+            "name": "Gyarados GX",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/101"
+        },
+        {
+            "id": "sm4-102",
+            "number": "102",
+            "name": "Alolan Golem GX",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/102"
+        },
+        {
+            "id": "sm4-103",
+            "number": "103",
+            "name": "Nihilego GX",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/103"
+        },
+        {
+            "id": "sm4-104",
+            "number": "104",
+            "name": "Buzzwole GX",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/104"
+        },
+        {
+            "id": "sm4-105",
+            "number": "105",
+            "name": "Guzzlord GX",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/105"
+        },
+        {
+            "id": "sm4-106",
+            "number": "106",
+            "name": "Kartana GX",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/106"
+        },
+        {
+            "id": "sm4-107",
+            "number": "107",
+            "name": "Alolan Exeggutor GX",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/107"
+        },
+        {
+            "id": "sm4-108",
+            "number": "108",
+            "name": "Silvally GX",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/108"
+        },
+        {
+            "id": "sm4-109",
+            "number": "109",
+            "name": "Gladion",
+            "illustrator": "TOKIYA",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/109"
+        },
+        {
+            "id": "sm4-110",
+            "number": "110",
+            "name": "Lusamine",
+            "illustrator": "Megumi Mizutani",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/110"
+        },
+        {
+            "id": "sm4-111",
+            "number": "111",
+            "name": "Olivia",
+            "illustrator": "Naoki Saito",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/111"
+        },
+        {
+            "id": "sm4-112",
+            "number": "112",
+            "name": "Gyarados GX",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/112"
+        },
+        {
+            "id": "sm4-113",
+            "number": "113",
+            "name": "Alolan Golem GX",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/113"
+        },
+        {
+            "id": "sm4-114",
+            "number": "114",
+            "name": "Nihilego GX",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/114"
+        },
+        {
+            "id": "sm4-115",
+            "number": "115",
+            "name": "Buzzwole GX",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/115"
+        },
+        {
+            "id": "sm4-116",
+            "number": "116",
+            "name": "Guzzlord GX",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/116"
+        },
+        {
+            "id": "sm4-117",
+            "number": "117",
+            "name": "Kartana GX",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/117"
+        },
+        {
+            "id": "sm4-118",
+            "number": "118",
+            "name": "Alolan Exeggutor GX",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/118"
+        },
+        {
+            "id": "sm4-119",
+            "number": "119",
+            "name": "Silvally GX",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/119"
+        },
+        {
+            "id": "sm4-120",
+            "number": "120",
+            "name": "Counter Catcher",
+            "illustrator": "Toyste Beach",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/120"
+        },
+        {
+            "id": "sm4-121",
+            "number": "121",
+            "name": "Wishful Baton",
+            "illustrator": "Toyste Beach",
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/121"
+        },
+        {
+            "id": "sm4-122",
+            "number": "122",
+            "name": "Counter Energy",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/122"
+        },
+        {
+            "id": "sm4-123",
+            "number": "123",
+            "name": "Warp Energy",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/123"
+        },
+        {
+            "id": "sm4-124",
+            "number": "124",
+            "name": "Water Energy",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/zh/sm/sm4/124"
+        }
+    ]
+}

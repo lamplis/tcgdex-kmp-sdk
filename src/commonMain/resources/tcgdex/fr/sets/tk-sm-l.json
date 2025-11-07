@@ -1,1 +1,137 @@
-{"cardCount":{"firstEd":0,"holo":0,"normal":0,"official":30,"reverse":0,"total":30},"cards":[{"id":"tk-sm-l-1","localId":"1","name":"Chenipan"},{"id":"tk-sm-l-4","localId":"4","name":"Piclairon"},{"id":"tk-sm-l-5","localId":"5","name":"Énergie Combat"},{"id":"tk-sm-l-11","localId":"11","name":"Passerouge"},{"id":"tk-sm-l-12","localId":"12","name":"Manglouton"},{"id":"tk-sm-l-13","localId":"13","name":"Braisillon"},{"id":"tk-sm-l-14","localId":"14","name":"Rocabot"},{"id":"tk-sm-l-15","localId":"15","name":"Picassaut"},{"id":"tk-sm-l-16","localId":"16","name":"Lougaroc"},{"id":"tk-sm-l-18","localId":"18","name":"Makuhita"},{"id":"tk-sm-l-19","localId":"19","name":"Tili"},{"id":"tk-sm-l-21","localId":"21","name":"Super Ball"},{"id":"tk-sm-l-22","localId":"22","name":"Bazoucan"},{"id":"tk-sm-l-23","localId":"23","name":"Tili"},{"id":"tk-sm-l-25","localId":"25","name":"Super Ball"},{"id":"tk-sm-l-27","localId":"27","name":"Malasada Maxi"},{"id":"tk-sm-l-29","localId":"29","name":"Rocabot"},{"id":"tk-sm-l-30","localId":"30","name":"Lougaroc"}],"id":"tk-sm-l","legal":{"expanded":false,"standard":false},"name":"SM Kit du dresseur (Lougarox)","releaseDate":"2017-04-21","serie":{"id":"tk","name":"Kits du dresseur"},"symbol":"https://assets.tcgdex.net/univ/tk/tk-sm-l/symbol","abbreviation":{"official":"TK10L","localized":"LOU"}}
+{
+    "id": "tk-sm-l",
+    "serieId": "tk",
+    "name": "SM Kit du dresseur (Lougarox)",
+    "releaseDate": "2017-04-21",
+    "cardCount": 30,
+    "logo": "https://assets.tcgdex.net/fr/tk/tk-sm-l/logo",
+    "symbol": "https://assets.tcgdex.net/fr/tk/tk-sm-l/symbol",
+    "cards": [
+        {
+            "id": "tk-sm-l-1",
+            "number": "1",
+            "name": "Chenipan",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-sm-l/1"
+        },
+        {
+            "id": "tk-sm-l-4",
+            "number": "4",
+            "name": "Piclairon",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-sm-l/4"
+        },
+        {
+            "id": "tk-sm-l-5",
+            "number": "5",
+            "name": "Énergie Combat",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-sm-l/5"
+        },
+        {
+            "id": "tk-sm-l-11",
+            "number": "11",
+            "name": "Passerouge",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-sm-l/11"
+        },
+        {
+            "id": "tk-sm-l-12",
+            "number": "12",
+            "name": "Manglouton",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-sm-l/12"
+        },
+        {
+            "id": "tk-sm-l-13",
+            "number": "13",
+            "name": "Braisillon",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-sm-l/13"
+        },
+        {
+            "id": "tk-sm-l-14",
+            "number": "14",
+            "name": "Rocabot",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-sm-l/14"
+        },
+        {
+            "id": "tk-sm-l-15",
+            "number": "15",
+            "name": "Picassaut",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-sm-l/15"
+        },
+        {
+            "id": "tk-sm-l-16",
+            "number": "16",
+            "name": "Lougaroc",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-sm-l/16"
+        },
+        {
+            "id": "tk-sm-l-18",
+            "number": "18",
+            "name": "Makuhita",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-sm-l/18"
+        },
+        {
+            "id": "tk-sm-l-19",
+            "number": "19",
+            "name": "Tili",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-sm-l/19"
+        },
+        {
+            "id": "tk-sm-l-21",
+            "number": "21",
+            "name": "Super Ball",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-sm-l/21"
+        },
+        {
+            "id": "tk-sm-l-22",
+            "number": "22",
+            "name": "Bazoucan",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-sm-l/22"
+        },
+        {
+            "id": "tk-sm-l-23",
+            "number": "23",
+            "name": "Tili",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-sm-l/23"
+        },
+        {
+            "id": "tk-sm-l-25",
+            "number": "25",
+            "name": "Super Ball",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-sm-l/25"
+        },
+        {
+            "id": "tk-sm-l-27",
+            "number": "27",
+            "name": "Malasada Maxi",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-sm-l/27"
+        },
+        {
+            "id": "tk-sm-l-29",
+            "number": "29",
+            "name": "Rocabot",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-sm-l/29"
+        },
+        {
+            "id": "tk-sm-l-30",
+            "number": "30",
+            "name": "Lougaroc",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/tk/tk-sm-l/30"
+        }
+    ]
+}
