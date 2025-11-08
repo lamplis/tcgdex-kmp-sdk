@@ -1,0 +1,50 @@
+{
+    "illustrator": "The Pokémon Company Art Team",
+    "series": [
+        {
+            "id": "swsh",
+            "name": "Sword & Shield",
+            "releaseDate": "2019-11-15",
+            "sets": [
+                {
+                    "id": "fut2020",
+                    "name": "Pokémon Futsal 2020",
+                    "releaseDate": "2020-09-11",
+                    "cards": [
+                        {
+                            "id": "fut2020-5",
+                            "number": "5"
+                        },
+                        {
+                            "id": "fut2020-4",
+                            "number": "4"
+                        },
+                        {
+                            "id": "fut2020-3",
+                            "number": "3"
+                        },
+                        {
+                            "id": "fut2020-2",
+                            "number": "2"
+                        },
+                        {
+                            "id": "fut2020-1",
+                            "number": "1"
+                        }
+                    ]
+                },
+                {
+                    "id": "swshp",
+                    "name": "SWSH Black Star Promos",
+                    "releaseDate": "2019-11-15",
+                    "cards": [
+                        {
+                            "id": "swshp-SWSH177",
+                            "number": "SWSH177"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

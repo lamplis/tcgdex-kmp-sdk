@@ -1,0 +1,63 @@
+{
+    "illustrator": "Wintr Wandr",
+    "series": [
+        {
+            "id": "me",
+            "name": "Mega Evolution",
+            "releaseDate": "2025-09-26",
+            "sets": [
+                {
+                    "id": "me01",
+                    "name": "Mega Evolution",
+                    "releaseDate": "2025-09-26",
+                    "cards": [
+                        {
+                            "id": "me01-021",
+                            "number": "021"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "sv",
+            "name": "Scarlet & Violet",
+            "releaseDate": "2023-03-31",
+            "sets": [
+                {
+                    "id": "sv08.5",
+                    "name": "Prismatic Evolutions",
+                    "releaseDate": "2025-01-17",
+                    "cards": [
+                        {
+                            "id": "sv08.5-039",
+                            "number": "039"
+                        }
+                    ]
+                },
+                {
+                    "id": "sv08",
+                    "name": "Surging Sparks",
+                    "releaseDate": "2024-11-08",
+                    "cards": [
+                        {
+                            "id": "sv08-022",
+                            "number": "022"
+                        }
+                    ]
+                },
+                {
+                    "id": "sv07",
+                    "name": "Stellar Crown",
+                    "releaseDate": "2024-09-13",
+                    "cards": [
+                        {
+                            "id": "sv07-124",
+                            "number": "124"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

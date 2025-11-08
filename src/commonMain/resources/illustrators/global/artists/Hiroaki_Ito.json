@@ -1,0 +1,67 @@
+{
+    "illustrator": "Hiroaki Ito",
+    "series": [
+        {
+            "id": "dp",
+            "name": "Diamond & Pearl",
+            "releaseDate": "2007-05-01",
+            "sets": [
+                {
+                    "id": "dp2",
+                    "name": "Mysterious Treasures",
+                    "releaseDate": "2007-08-01",
+                    "cards": [
+                        {
+                            "id": "dp2-12",
+                            "number": "12"
+                        }
+                    ]
+                },
+                {
+                    "id": "dpp",
+                    "name": "DP Black Star Promos",
+                    "releaseDate": "2007-05-01",
+                    "cards": [
+                        {
+                            "id": "dpp-DP20",
+                            "number": "DP20"
+                        }
+                    ]
+                },
+                {
+                    "id": "dp1",
+                    "name": "Diamond & Pearl",
+                    "releaseDate": "2007-05-01",
+                    "cards": [
+                        {
+                            "id": "dp1-15",
+                            "number": "15"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ecard",
+            "name": "E-Card",
+            "releaseDate": "2002-08-01",
+            "sets": [
+                {
+                    "id": "ecard1",
+                    "name": "Expedition Base Set",
+                    "releaseDate": "2002-09-15",
+                    "cards": [
+                        {
+                            "id": "ecard1-76",
+                            "number": "76"
+                        },
+                        {
+                            "id": "ecard1-64",
+                            "number": "64"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

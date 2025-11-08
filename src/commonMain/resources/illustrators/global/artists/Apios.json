@@ -1,0 +1,52 @@
+{
+    "illustrator": "Apios",
+    "series": [
+        {
+            "id": "me",
+            "name": "Mega Evolution",
+            "releaseDate": "2025-09-26",
+            "sets": [
+                {
+                    "id": "me01",
+                    "name": "Mega Evolution",
+                    "releaseDate": "2025-09-26",
+                    "cards": [
+                        {
+                            "id": "me01-017",
+                            "number": "017"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "sv",
+            "name": "Scarlet & Violet",
+            "releaseDate": "2023-03-31",
+            "sets": [
+                {
+                    "id": "sv08",
+                    "name": "Surging Sparks",
+                    "releaseDate": "2024-11-08",
+                    "cards": [
+                        {
+                            "id": "sv08-098",
+                            "number": "098"
+                        }
+                    ]
+                },
+                {
+                    "id": "sv07",
+                    "name": "Stellar Crown",
+                    "releaseDate": "2024-09-13",
+                    "cards": [
+                        {
+                            "id": "sv07-103",
+                            "number": "103"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

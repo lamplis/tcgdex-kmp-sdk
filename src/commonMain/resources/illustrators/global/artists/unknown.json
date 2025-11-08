@@ -1,0 +1,85 @@
+{
+    "illustrator": "\\",
+    "series": [
+        {
+            "id": "pop",
+            "name": "POP",
+            "releaseDate": "2003-10-01",
+            "sets": [
+                {
+                    "id": "pop2",
+                    "name": "POP Series 2",
+                    "releaseDate": "2005-08-01",
+                    "cards": [
+                        {
+                            "id": "pop2-9",
+                            "number": "9"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ex",
+            "name": "EX",
+            "releaseDate": "2003-07-01",
+            "sets": [
+                {
+                    "id": "ex14",
+                    "name": "Crystal Guardians",
+                    "releaseDate": "2006-08-30",
+                    "cards": [
+                        {
+                            "id": "ex14-78",
+                            "number": "78"
+                        }
+                    ]
+                },
+                {
+                    "id": "ex11",
+                    "name": "Delta Species",
+                    "releaseDate": "2005-10-31",
+                    "cards": [
+                        {
+                            "id": "ex11-89",
+                            "number": "89"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ecard",
+            "name": "E-Card",
+            "releaseDate": "2002-08-01",
+            "sets": [
+                {
+                    "id": "ecard2",
+                    "name": "Aquapolis",
+                    "releaseDate": "2003-01-15",
+                    "cards": [
+                        {
+                            "id": "ecard2-124",
+                            "number": "124"
+                        },
+                        {
+                            "id": "ecard2-122",
+                            "number": "122"
+                        }
+                    ]
+                },
+                {
+                    "id": "ecard1",
+                    "name": "Expedition Base Set",
+                    "releaseDate": "2002-09-15",
+                    "cards": [
+                        {
+                            "id": "ecard1-144",
+                            "number": "144"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

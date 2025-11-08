@@ -1,0 +1,94 @@
+{
+    "illustrator": "Jungo Suzuki",
+    "series": [
+        {
+            "id": "ex",
+            "name": "EX",
+            "releaseDate": "2003-07-01",
+            "sets": [
+                {
+                    "id": "ex8",
+                    "name": "Deoxys",
+                    "releaseDate": "2005-02-01",
+                    "cards": [
+                        {
+                            "id": "ex8-85",
+                            "number": "85"
+                        }
+                    ]
+                },
+                {
+                    "id": "ex5",
+                    "name": "Hidden Legends",
+                    "releaseDate": "2004-06-01",
+                    "cards": [
+                        {
+                            "id": "ex5-23",
+                            "number": "23"
+                        }
+                    ]
+                },
+                {
+                    "id": "ex4",
+                    "name": "Team Magma vs Team Aqua",
+                    "releaseDate": "2004-03-01",
+                    "cards": [
+                        {
+                            "id": "ex4-51",
+                            "number": "51"
+                        },
+                        {
+                            "id": "ex4-50",
+                            "number": "50"
+                        },
+                        {
+                            "id": "ex4-28",
+                            "number": "28"
+                        },
+                        {
+                            "id": "ex4-26",
+                            "number": "26"
+                        },
+                        {
+                            "id": "ex4-17",
+                            "number": "17"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ecard",
+            "name": "E-Card",
+            "releaseDate": "2002-08-01",
+            "sets": [
+                {
+                    "id": "ecard3",
+                    "name": "Skyridge",
+                    "releaseDate": "2003-05-12",
+                    "cards": [
+                        {
+                            "id": "ecard3-139",
+                            "number": "139"
+                        },
+                        {
+                            "id": "ecard3-122",
+                            "number": "122"
+                        }
+                    ]
+                },
+                {
+                    "id": "ecard2",
+                    "name": "Aquapolis",
+                    "releaseDate": "2003-01-15",
+                    "cards": [
+                        {
+                            "id": "ecard2-141",
+                            "number": "141"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

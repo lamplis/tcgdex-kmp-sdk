@@ -1,0 +1,56 @@
+{
+    "illustrator": "imoniii",
+    "series": [
+        {
+            "id": "me",
+            "name": "Mega Evolution",
+            "releaseDate": "2025-09-26",
+            "sets": [
+                {
+                    "id": "me01",
+                    "name": "Mega Evolution",
+                    "releaseDate": "2025-09-26",
+                    "cards": [
+                        {
+                            "id": "me01-127",
+                            "number": "127"
+                        },
+                        {
+                            "id": "me01-069",
+                            "number": "069"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "sv",
+            "name": "Scarlet & Violet",
+            "releaseDate": "2023-03-31",
+            "sets": [
+                {
+                    "id": "sv08",
+                    "name": "Surging Sparks",
+                    "releaseDate": "2024-11-08",
+                    "cards": [
+                        {
+                            "id": "sv08-180",
+                            "number": "180"
+                        }
+                    ]
+                },
+                {
+                    "id": "sv06.5",
+                    "name": "Shrouded Fable",
+                    "releaseDate": "2024-08-02",
+                    "cards": [
+                        {
+                            "id": "sv06.5-060",
+                            "number": "060"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

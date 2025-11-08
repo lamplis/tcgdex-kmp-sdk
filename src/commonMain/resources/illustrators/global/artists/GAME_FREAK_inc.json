@@ -1,0 +1,53 @@
+{
+    "illustrator": "GAME FREAK inc.",
+    "series": [
+        {
+            "id": "swsh",
+            "name": "Sword & Shield",
+            "releaseDate": "2019-11-15",
+            "sets": [
+                {
+                    "id": "swsh5",
+                    "name": "Battle Styles",
+                    "releaseDate": "2021-03-19",
+                    "cards": [
+                        {
+                            "id": "swsh5-130",
+                            "number": "130"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "xy",
+            "name": "XY",
+            "releaseDate": "2013-10-12",
+            "sets": [
+                {
+                    "id": "dc1",
+                    "name": "Double Crisis",
+                    "releaseDate": "2015-03-25",
+                    "cards": [
+                        {
+                            "id": "dc1-30",
+                            "number": "30"
+                        },
+                        {
+                            "id": "dc1-29",
+                            "number": "29"
+                        },
+                        {
+                            "id": "dc1-26",
+                            "number": "26"
+                        },
+                        {
+                            "id": "dc1-25",
+                            "number": "25"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

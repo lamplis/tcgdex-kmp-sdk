@@ -1,0 +1,82 @@
+{
+    "illustrator": "IKEDA Saki",
+    "series": [
+        {
+            "id": "me",
+            "name": "Mega Evolution",
+            "releaseDate": "2025-09-26",
+            "sets": [
+                {
+                    "id": "me01",
+                    "name": "Mega Evolution",
+                    "releaseDate": "2025-09-26",
+                    "cards": [
+                        {
+                            "id": "me01-148",
+                            "number": "148"
+                        },
+                        {
+                            "id": "me01-061",
+                            "number": "061"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "sv",
+            "name": "Scarlet & Violet",
+            "releaseDate": "2023-03-31",
+            "sets": [
+                {
+                    "id": "sv08.5",
+                    "name": "Prismatic Evolutions",
+                    "releaseDate": "2025-01-17",
+                    "cards": [
+                        {
+                            "id": "sv08.5-035",
+                            "number": "035"
+                        }
+                    ]
+                },
+                {
+                    "id": "sv08",
+                    "name": "Surging Sparks",
+                    "releaseDate": "2024-11-08",
+                    "cards": [
+                        {
+                            "id": "sv08-082",
+                            "number": "082"
+                        }
+                    ]
+                },
+                {
+                    "id": "sv06.5",
+                    "name": "Shrouded Fable",
+                    "releaseDate": "2024-08-02",
+                    "cards": [
+                        {
+                            "id": "sv06.5-065",
+                            "number": "065"
+                        },
+                        {
+                            "id": "sv06.5-018",
+                            "number": "018"
+                        }
+                    ]
+                },
+                {
+                    "id": "svp",
+                    "name": "SVP Black Star Promos",
+                    "releaseDate": "2023-03-31",
+                    "cards": [
+                        {
+                            "id": "svp-211",
+                            "number": "211"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

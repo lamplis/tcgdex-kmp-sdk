@@ -1,3 +1,6 @@
+import org.gradle.jvm.tasks.Jar
+import org.jetbrains.kotlin.gradle.plugin.mpp.KotlinJvmCompilation
+
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
 plugins {

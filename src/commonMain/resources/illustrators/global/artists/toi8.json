@@ -1,0 +1,74 @@
+{
+    "illustrator": "toi8",
+    "series": [
+        {
+            "id": "me",
+            "name": "Mega Evolution",
+            "releaseDate": "2025-09-26",
+            "sets": [
+                {
+                    "id": "me01",
+                    "name": "Mega Evolution",
+                    "releaseDate": "2025-09-26",
+                    "cards": [
+                        {
+                            "id": "me01-062",
+                            "number": "062"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "sv",
+            "name": "Scarlet & Violet",
+            "releaseDate": "2023-03-31",
+            "sets": [
+                {
+                    "id": "sv08",
+                    "name": "Surging Sparks",
+                    "releaseDate": "2024-11-08",
+                    "cards": [
+                        {
+                            "id": "sv08-039",
+                            "number": "039"
+                        }
+                    ]
+                },
+                {
+                    "id": "sv06",
+                    "name": "Twilight Masquerade",
+                    "releaseDate": "2024-05-24",
+                    "cards": [
+                        {
+                            "id": "sv06-119",
+                            "number": "119"
+                        }
+                    ]
+                },
+                {
+                    "id": "sv05",
+                    "name": "Temporal Forces",
+                    "releaseDate": "2024-03-22",
+                    "cards": [
+                        {
+                            "id": "sv05-127",
+                            "number": "127"
+                        }
+                    ]
+                },
+                {
+                    "id": "svp",
+                    "name": "SVP Black Star Promos",
+                    "releaseDate": "2023-03-31",
+                    "cards": [
+                        {
+                            "id": "svp-152",
+                            "number": "152"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

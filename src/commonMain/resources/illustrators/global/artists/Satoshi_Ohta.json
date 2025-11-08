@@ -1,0 +1,103 @@
+{
+    "illustrator": "Satoshi Ohta",
+    "series": [
+        {
+            "id": "pl",
+            "name": "Platinum",
+            "releaseDate": "2009-02-11",
+            "sets": [
+                {
+                    "id": "pl3",
+                    "name": "Supreme Victors",
+                    "releaseDate": "2009-08-19",
+                    "cards": [
+                        {
+                            "id": "pl3-95",
+                            "number": "95"
+                        },
+                        {
+                            "id": "pl3-53",
+                            "number": "53"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "dp",
+            "name": "Diamond & Pearl",
+            "releaseDate": "2007-05-01",
+            "sets": [
+                {
+                    "id": "dp6",
+                    "name": "Legends Awakened",
+                    "releaseDate": "2008-08-01",
+                    "cards": [
+                        {
+                            "id": "dp6-31",
+                            "number": "31"
+                        }
+                    ]
+                },
+                {
+                    "id": "dp4",
+                    "name": "Great Encounters",
+                    "releaseDate": "2008-02-01",
+                    "cards": [
+                        {
+                            "id": "dp4-58",
+                            "number": "58"
+                        }
+                    ]
+                },
+                {
+                    "id": "dp3",
+                    "name": "Secret Wonders",
+                    "releaseDate": "2007-11-01",
+                    "cards": [
+                        {
+                            "id": "dp3-117",
+                            "number": "117"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ex",
+            "name": "EX",
+            "releaseDate": "2003-07-01",
+            "sets": [
+                {
+                    "id": "ex12",
+                    "name": "Legend Maker",
+                    "releaseDate": "2006-02-13",
+                    "cards": [
+                        {
+                            "id": "ex12-64",
+                            "number": "64"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ecard",
+            "name": "E-Card",
+            "releaseDate": "2002-08-01",
+            "sets": [
+                {
+                    "id": "ecard1",
+                    "name": "Expedition Base Set",
+                    "releaseDate": "2002-09-15",
+                    "cards": [
+                        {
+                            "id": "ecard1-120",
+                            "number": "120"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

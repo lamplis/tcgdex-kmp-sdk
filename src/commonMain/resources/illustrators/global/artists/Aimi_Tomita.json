@@ -1,0 +1,41 @@
+{
+    "illustrator": "Aimi Tomita",
+    "series": [
+        {
+            "id": "ex",
+            "name": "EX",
+            "releaseDate": "2003-07-01",
+            "sets": [
+                {
+                    "id": "ex8",
+                    "name": "Deoxys",
+                    "releaseDate": "2005-02-01",
+                    "cards": [
+                        {
+                            "id": "ex8-70",
+                            "number": "70"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ecard",
+            "name": "E-Card",
+            "releaseDate": "2002-08-01",
+            "sets": [
+                {
+                    "id": "ecard1",
+                    "name": "Expedition Base Set",
+                    "releaseDate": "2002-09-15",
+                    "cards": [
+                        {
+                            "id": "ecard1-135",
+                            "number": "135"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

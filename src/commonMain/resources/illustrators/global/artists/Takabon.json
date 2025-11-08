@@ -1,0 +1,41 @@
+{
+    "illustrator": "Takabon",
+    "series": [
+        {
+            "id": "dp",
+            "name": "Diamond & Pearl",
+            "releaseDate": "2007-05-01",
+            "sets": [
+                {
+                    "id": "dp1",
+                    "name": "Diamond & Pearl",
+                    "releaseDate": "2007-05-01",
+                    "cards": [
+                        {
+                            "id": "dp1-2",
+                            "number": "2"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ex",
+            "name": "EX",
+            "releaseDate": "2003-07-01",
+            "sets": [
+                {
+                    "id": "ex14",
+                    "name": "Crystal Guardians",
+                    "releaseDate": "2006-08-30",
+                    "cards": [
+                        {
+                            "id": "ex14-93",
+                            "number": "93"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

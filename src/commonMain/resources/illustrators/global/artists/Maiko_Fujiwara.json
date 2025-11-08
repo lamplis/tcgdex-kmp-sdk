@@ -1,0 +1,52 @@
+{
+    "illustrator": "Maiko Fujiwara",
+    "series": [
+        {
+            "id": "xy",
+            "name": "XY",
+            "releaseDate": "2013-10-12",
+            "sets": [
+                {
+                    "id": "g1",
+                    "name": "Generations",
+                    "releaseDate": "2016-02-22",
+                    "cards": [
+                        {
+                            "id": "g1-68",
+                            "number": "68"
+                        }
+                    ]
+                },
+                {
+                    "id": "xy2",
+                    "name": "Flashfire",
+                    "releaseDate": "2014-05-07",
+                    "cards": [
+                        {
+                            "id": "xy2-93",
+                            "number": "93"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "bw",
+            "name": "Black & White",
+            "releaseDate": "2011-04-25",
+            "sets": [
+                {
+                    "id": "bw4",
+                    "name": "Next Destinies",
+                    "releaseDate": "2012-02-08",
+                    "cards": [
+                        {
+                            "id": "bw4-59",
+                            "number": "59"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

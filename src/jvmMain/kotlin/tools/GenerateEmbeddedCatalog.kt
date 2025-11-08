@@ -119,6 +119,37 @@ private data class LocalScan(
     val setIdToCards: Map<String, List<CardParsed>>,
 )
 
+// ===== Illustrator collections (language-agnostic) =====
+@Serializable
+data class IllustratorCardOut(
+    val id: String,           // TCGdx id like "sv03.5-001"
+    val number: String,       // local number string (may contain suffix)
+    val imageUrl: String? = null,
+)
+
+@Serializable
+data class IllustratorSetOut(
+    val id: String,
+    val name: String,
+    val releaseDate: String? = null,
+    val cards: List<IllustratorCardOut> = emptyList(),
+)
+
+@Serializable
+data class IllustratorSerieOut(
+    val id: String,
+    val name: String,
+    // Oldest set release date in the serie
+    val releaseDate: String? = null,
+    val sets: List<IllustratorSetOut> = emptyList(),
+)
+
+@Serializable
+data class IllustratorCollectionOut(
+    val illustrator: String,
+    val series: List<IllustratorSerieOut> = emptyList(),
+)
+
 private fun toKotlinTripleQuoted(s: String): String {
     val sanitized = s.replace("$", "\${'$'}")
     // Return a string that contains Kotlin triple quotes surrounding the payload
@@ -195,7 +226,11 @@ runBlocking {
 
     val seriesMap = linkedMapOf<String, String>()
     val setsMap = linkedMapOf<String, String>()
+    // Old: language-specific index payloads (kept for backward compat during transition)
     val illustratorsMap = linkedMapOf<String, String>()
+    // New: language-agnostic illustrators assets
+    val illustratorFiles: MutableMap<String, String> = linkedMapOf() // key: sanitized artist name -> json content
+    var illustratorsIndexGlobal: String? = null
 
     // Preload series-with-sets mapping (language-agnostic)
     val seriesWithSets = runCatching { TcgDex.from().getSeriesWithSetsGraphQL().getOrElse { emptyList() } }
@@ -289,6 +324,7 @@ runBlocking {
             else -> letters.lowercase()
         }
     }
+    fun isTcgpSetId(setId: String): Boolean = deriveSerieIdFromSetId(setId) == "tcgp"
 
     fun scanLocalTsDatabase(dataRoot: Path, seriesFilter: String?, limitSets: Int): LocalScan {
         val t0 = System.nanoTime()
@@ -430,7 +466,7 @@ runBlocking {
         fun numPath(num: String): String = num.takeWhile { it.isDigit() }.ifBlank { num }
 
         val filteredSeries = scan.series.filter { !isTcgp(it.id) }
-        val filteredSets = scan.sets.filter { !isTcgp(it.seriesId) }
+        val filteredSets = scan.sets.filter { !isTcgp(it.seriesId) && !isTcgpSetId(it.id) }
         val seriesOut = filteredSeries.map { s ->
             val name = s.names[lang] ?: s.names["en"] ?: s.folderName
             SeriesOut(id = s.id, name = name, releaseDate = s.earliestReleaseDate)
@@ -453,6 +489,21 @@ runBlocking {
         val langDir = outBasePath.resolve(lang)
         val langSetsDir = langDir.resolve("sets")
         Files.createDirectories(langSetsDir)
+        // Cleanup any legacy tcgp set files in this language output
+        runCatching {
+            if (Files.isDirectory(langSetsDir)) {
+                Files.newDirectoryStream(langSetsDir).use { ds ->
+                    for (p in ds) {
+                        if (Files.isRegularFile(p) && p.fileName.toString().endsWith(".json")) {
+                            val sid = p.fileName.toString().removeSuffix(".json")
+                            if (isTcgpSetId(sid)) {
+                                runCatching { Files.deleteIfExists(p) }
+                            }
+                        }
+                    }
+                }
+            }
+        }
         val tWrite0 = System.nanoTime()
         // Order: series by earliest release asc, sets per series by release asc then id
         val orderedSeries = filteredSeries.sortedBy { releaseKey(it.earliestReleaseDate) }
@@ -507,6 +558,7 @@ runBlocking {
             .sortedByDescending { it.value.total }
             .map { (artist, acc) ->
                 val setsList = acc.perSet.values
+                    .filter { !isTcgpSetId(it.setId) }
                     .map { IllustratorSetCount(setId = it.setId, count = it.count) }
                     .sortedByDescending { it.count }
 
@@ -556,12 +608,174 @@ runBlocking {
         Files.createDirectories(langDir)
         Files.writeString(langDir.resolve("series.json"), json.encodeToString(seriesOut), StandardOpenOption.CREATE, StandardOpenOption.TRUNCATE_EXISTING, StandardOpenOption.WRITE)
         Files.writeString(langDir.resolve("sets.json"), json.encodeToString(setsOut), StandardOpenOption.CREATE, StandardOpenOption.TRUNCATE_EXISTING, StandardOpenOption.WRITE)
-        Files.writeString(langDir.resolve("illustrators-index.json"), json.encodeToString(payload), StandardOpenOption.CREATE, StandardOpenOption.TRUNCATE_EXISTING, StandardOpenOption.WRITE)
+        // Do not generate per-language illustrators-index.json (language-agnostic index is written under /illustrators)
+        runCatching { Files.deleteIfExists(langDir.resolve("illustrators-index.json")) }
 
         seriesMap[lang.lowercase()] = json.encodeToString(seriesOut)
         setsMap[lang.lowercase()] = json.encodeToString(setsOut)
         illustratorsMap[lang.lowercase()] = json.encodeToString(payload)
         println("[gen] lang=" + lang + " wrote series=" + seriesOut.size + " sets=" + setsOut.size + " artists=" + artists.size)
+
+        // Generate language-agnostic illustrator collections and global index once (first processed language)
+        if (illustratorsIndexGlobal == null) {
+            // Scope subfolder under illustrators (default: "global"), artists are nested under "<scope>/artists/"
+            val illustratorsScope = System.getProperty("illustratorsScope")
+                ?: System.getenv("TCGDEX_ILLUSTRATORS_SCOPE")
+                ?: "global"
+            val illustratorsBaseDir = Path.of(System.getProperty("user.dir")).resolve("src/commonMain/resources/illustrators")
+            val scopeDir = illustratorsBaseDir.resolve(illustratorsScope)
+            val artistsDir = scopeDir.resolve("artists")
+            Files.createDirectories(artistsDir)
+            // Cleanup any legacy root-level artist JSONs in base illustrators folder (keep any index files)
+            runCatching {
+                Files.newDirectoryStream(illustratorsBaseDir).use { ds ->
+                    for (p in ds) {
+                        if (Files.isRegularFile(p)) {
+                            val name = p.fileName.toString()
+                            if (name.endsWith(".json") && !name.equals("illustrators-index.json", ignoreCase = true)) {
+                                runCatching { Files.deleteIfExists(p) }
+                            }
+                        }
+                    }
+                }
+            }
+
+            fun sanitize(name: String): String = name
+                .replace("\\s+".toRegex(), "_")
+                .replace("[^A-Za-z0-9_\\-]".toRegex(), "")
+                .take(200)
+                .ifBlank { "unknown" }
+
+            // Build per-artist collections from scan
+            val setIdToScan = scan.sets.associateBy { it.id }
+            val serieIdToScan = scan.series.associateBy { it.id }
+
+            // Helper to sort sets and cards
+            fun releaseKey(date: String?): Int = date?.replace("-", "")?.toIntOrNull() ?: 0
+            fun parseLocalNumber(num: String?): Int = num?.takeWhile { it.isDigit() }?.toIntOrNull() ?: Int.MIN_VALUE
+            fun imageUrlFor(langCode: String, serieId: String, setId: String, number: String): String =
+                "https://assets.tcgdex.net/" + langCode + "/" + serieId + "/" + setId + "/" + (number.takeWhile { it.isDigit() }.ifBlank { number }) + "/low.png"
+
+            val globalIndexArtists = mutableListOf<IllustratorIndexEntry>()
+
+            // Prepare counts for index from previously computed artists
+            val indexCounts = scan.illustrators.mapValues { acc ->
+                val perSet = acc.value.perSet.values
+                    .filter { !isTcgpSetId(it.setId) }
+                    .map { IllustratorSetCount(setId = it.setId, count = it.count) }
+                    .sortedByDescending { it.count }
+                acc.value.total to perSet
+            }
+
+            for ((artist, counts) in indexCounts) {
+                val (total, perSet) = counts
+                // Compute last3 latest cards across all series/sets for this artist (as string IDs "setId-number")
+                val allRefs = scan.artistCards[artist]
+                    .orEmpty()
+                    .filter { deriveSerieIdFromSetId(it.setId) != "tcgp" }
+                    .filter { !it.number.isNullOrBlank() }
+                val seriesOrder: List<String> =
+                    allRefs
+                        .map { it.seriesRelease ?: "" }
+                        .distinct()
+                        .sortedByDescending { it }
+                val picked = LinkedHashSet<String>(3)
+                for (serieKey in seriesOrder) {
+                    if (picked.size >= 3) break
+                    val inSerie = allRefs.filter { (it.seriesRelease ?: "") == serieKey }
+                    if (inSerie.isEmpty()) continue
+                    val setOrder =
+                        inSerie
+                            .groupBy { it.setId }
+                            .mapValues { (_, v) -> v.maxOfOrNull { it.setRelease ?: "" } ?: "" }
+                            .toList()
+                            .sortedWith(compareByDescending<Pair<String, String>> { it.second }.thenByDescending { it.first })
+                            .map { it.first }
+                    for (sid in setOrder) {
+                        if (picked.size >= 3) break
+                        inSerie
+                            .asSequence()
+                            .filter { it.setId == sid }
+                            .filter { !it.number.isNullOrBlank() }
+                            .sortedByDescending { it.numSort }
+                            .forEach { r ->
+                                if (picked.size < 3) picked += (r.setId + "-" + r.number)
+                            }
+                    }
+                }
+                val last3Ids = picked.toList()
+                globalIndexArtists += IllustratorIndexEntry(name = artist, total = total, sets = perSet, last3 = last3Ids)
+
+                // Build collection JSON for this artist
+                val bySerie: MutableMap<String, MutableList<IllustratorSetOut>> = linkedMapOf()
+                // For each set that this artist contributed to, gather cards
+                val setsForArtist = perSet.map { it.setId }
+                for (setId in setsForArtist) {
+                    val setScan = setIdToScan[setId] ?: continue
+                    val serieId = setScan.seriesId
+                    val serieScan = serieIdToScan[serieId]
+                    val setName = setScan.names[lang] ?: setScan.names["en"] ?: setId
+                    val cardsParsed = scan.setIdToCards[setId].orEmpty()
+                        .filter { it.illustrator?.trim()?.replace("\\s+".toRegex(), " ") == artist }
+                        .map { cp ->
+                            val num = cp.number
+                            IllustratorCardOut(
+                                id = setId + "-" + num,
+                                number = num,
+                                imageUrl = null, // language-agnostic; URL can be resolved at runtime when needed
+                            )
+                        }
+                        .sortedByDescending { parseLocalNumber(it.number) }
+                    if (cardsParsed.isEmpty()) continue
+                    val setOut = IllustratorSetOut(
+                        id = setId,
+                        name = setName,
+                        releaseDate = setScan.releaseDate,
+                        cards = cardsParsed,
+                    )
+                    bySerie.getOrPut(serieId) { mutableListOf() }.add(setOut)
+                }
+                // Build ordered series list: newest sets first within each serie; series order newest first by earliestReleaseDate
+                val serieEntries = bySerie.entries.mapNotNull { (serieId, setsList) ->
+                    val serieScan = serieIdToScan[serieId]
+                    val serieName = serieScan?.names?.get(lang) ?: serieScan?.names?.get("en") ?: serieId
+                    val serieRelease = serieScan?.earliestReleaseDate
+                    val orderedSets = setsList.sortedWith(compareByDescending<IllustratorSetOut> { releaseKey(it.releaseDate) }.thenByDescending { it.id })
+                    IllustratorSerieOut(
+                        id = serieId,
+                        name = serieName,
+                        releaseDate = serieRelease,
+                        sets = orderedSets,
+                    )
+                }.sortedWith(compareByDescending<IllustratorSerieOut> { releaseKey(it.releaseDate) }.thenByDescending { it.id })
+
+                val coll = IllustratorCollectionOut(illustrator = artist, series = serieEntries)
+                val payload = json.encodeToString(coll)
+                val fileName = sanitize(artist) + ".json"
+                Files.writeString(
+                    artistsDir.resolve(fileName),
+                    payload,
+                    StandardOpenOption.CREATE, StandardOpenOption.TRUNCATE_EXISTING, StandardOpenOption.WRITE,
+                )
+                // Use scoped path as the logical key for embedded access
+                illustratorFiles[illustratorsScope + "/artists/" + fileName] = payload
+            }
+
+            // Write global illustrators-index.json (language-agnostic) alongside artist files
+            val globalIndex = mapOf(
+                "version" to JsonPrimitive(1),
+                "generatedAt" to JsonPrimitive(System.currentTimeMillis()),
+                "artists" to Json.parseToJsonElement(json.encodeToString(globalIndexArtists)),
+            )
+            val globalIndexJson = Json.encodeToString(JsonObject(globalIndex))
+            Files.writeString(
+                scopeDir.resolve("illustrators-index.json"),
+                globalIndexJson,
+                StandardOpenOption.CREATE, StandardOpenOption.TRUNCATE_EXISTING, StandardOpenOption.WRITE,
+            )
+            illustratorsIndexGlobal = globalIndexJson
+            println("[gen] wrote global illustrators index and collections: artists=" + globalIndexArtists.size)
+        }
     }
 
     var totalSetsAll = 0
@@ -746,24 +960,21 @@ runBlocking {
                                 json.encodeToString(filteredSets),
                                 StandardOpenOption.CREATE, StandardOpenOption.TRUNCATE_EXISTING, StandardOpenOption.WRITE,
                             )
-                            // Build and write illustrators-index.json
-                            val artists: List<IllustratorIndexEntry> = langIllustratorAcc.entries
-                                .sortedByDescending { it.value.total }
-                                .map { (artist, acc) ->
-                                    val setsList = acc.perSet.values.map { IllustratorSetCount(setId = it.setId, count = it.count) }
-                                        .sortedByDescending { it.count }
-                                    IllustratorIndexEntry(name = artist, total = acc.total, sets = setsList)
-                                }
-                            val payload = IllustratorIndexPayload(language = lang.lowercase(), generatedAt = System.currentTimeMillis(), artists = artists)
-                            Files.writeString(
-                                langDir.resolve("illustrators-index.json"),
-                                json.encodeToString(payload),
-                                StandardOpenOption.CREATE, StandardOpenOption.TRUNCATE_EXISTING, StandardOpenOption.WRITE,
-                            )
-                            seriesMap[lang.lowercase()] = json.encodeToString(filteredSeries)
-                            setsMap[lang.lowercase()] = json.encodeToString(filteredSets)
-                            illustratorsMap[lang.lowercase()] = json.encodeToString(payload)
-                            log("lang=" + lang + ": wrote series=" + filteredSeries.size + " sets=" + filteredSets.size + " artists=" + langIllustratorAcc.size)
+            // Build illustrators index for potential diagnostics only (not written per-language)
+            val artists: List<IllustratorIndexEntry> = langIllustratorAcc.entries
+                .sortedByDescending { it.value.total }
+                .map { (artist, acc) ->
+                    val setsList = acc.perSet.values.map { IllustratorSetCount(setId = it.setId, count = it.count) }
+                        .sortedByDescending { it.count }
+                    IllustratorIndexEntry(name = artist, total = acc.total, sets = setsList)
+                }
+            val payload = IllustratorIndexPayload(language = lang.lowercase(), generatedAt = System.currentTimeMillis(), artists = artists)
+            // Ensure no legacy per-language file remains
+            runCatching { Files.deleteIfExists(langDir.resolve("illustrators-index.json")) }
+            seriesMap[lang.lowercase()] = json.encodeToString(filteredSeries)
+            setsMap[lang.lowercase()] = json.encodeToString(filteredSets)
+            illustratorsMap[lang.lowercase()] = json.encodeToString(payload)
+            log("lang=" + lang + ": wrote series=" + filteredSeries.size + " sets=" + filteredSets.size + " artists=" + langIllustratorAcc.size)
                             continue
                         }
                         // Fallback: cards-dir-driven discovery under langRoot
@@ -822,8 +1033,10 @@ runBlocking {
                                     log("lang=" + lang + ": progress " + processed + "/" + totalSets)
                                 }
                             }
+                            // Filter out tcgp sets
+                            val detailedFiltered = detailed.filter { !isTcgpSetId(it.id) && !isTcgp(it.serieId) }
                             // Write outputs
-                            val series = detailed
+                            val series = detailedFiltered
                                 .mapNotNull { it.serieId?.let { id -> id to (serieIdToName[id] ?: id) } }
                                 .distinctBy { it.first }
                                 .map { SeriesOut(it.first, it.second) }
@@ -834,25 +1047,25 @@ runBlocking {
                             )
                             Files.writeString(
                                 langDir.resolve("sets.json"),
-                                json.encodeToString(detailed),
+                                json.encodeToString(detailedFiltered),
                                 StandardOpenOption.CREATE, StandardOpenOption.TRUNCATE_EXISTING, StandardOpenOption.WRITE,
                             )
+                            // Do not generate per-language illustrators-index.json (language-agnostic index is written under /illustrators)
                             val artists = langIllustratorAcc.entries
                                 .sortedByDescending { it.value.total }
                                 .map { (artist, acc) ->
-                                    val setsList = acc.perSet.values.map { IllustratorSetCount(setId = it.setId, count = it.count) }.sortedByDescending { it.count }
+                                    val setsList = acc.perSet.values
+                                        .filter { !isTcgpSetId(it.setId) }
+                                        .map { IllustratorSetCount(setId = it.setId, count = it.count) }
+                                        .sortedByDescending { it.count }
                                     IllustratorIndexEntry(name = artist, total = acc.total, sets = setsList)
                                 }
                             val payload = IllustratorIndexPayload(language = lang.lowercase(), generatedAt = System.currentTimeMillis(), artists = artists)
-                            Files.writeString(
-                                langDir.resolve("illustrators-index.json"),
-                                json.encodeToString(payload),
-                                StandardOpenOption.CREATE, StandardOpenOption.TRUNCATE_EXISTING, StandardOpenOption.WRITE,
-                            )
+                            runCatching { Files.deleteIfExists(langDir.resolve("illustrators-index.json")) }
                             seriesMap[lang.lowercase()] = json.encodeToString(series)
-                            setsMap[lang.lowercase()] = json.encodeToString(detailed)
+                            setsMap[lang.lowercase()] = json.encodeToString(detailedFiltered)
                             illustratorsMap[lang.lowercase()] = json.encodeToString(payload)
-                            log("lang=" + lang + ": wrote series=" + series.size + " sets=" + detailed.size + " artists=" + langIllustratorAcc.size)
+                            log("lang=" + lang + ": wrote series=" + series.size + " sets=" + detailedFiltered.size + " artists=" + langIllustratorAcc.size)
                             continue
                         }
                     } else if (finalSetsDir != null) {
@@ -899,14 +1112,16 @@ runBlocking {
                                 log("lang=" + lang + ": progress " + processed + "/" + totalSets)
                             }
                         }
+                        // Filter out tcgp sets
+                        val detailedFiltered = detailed.filter { !isTcgpSetId(it.id) && !isTcgp(it.serieId) }
                         // Write outputs minimal (illustrators scanning happens later)
                         Files.writeString(
                             langDir.resolve("sets.json"),
-                            json.encodeToString(detailed),
+                            json.encodeToString(detailedFiltered),
                             StandardOpenOption.CREATE, StandardOpenOption.TRUNCATE_EXISTING, StandardOpenOption.WRITE,
                         )
                         // Build series list from embedded names if possible
-                        val series = detailed
+                        val series = detailedFiltered
                             .mapNotNull { it.serieId?.let { id -> id to (serieIdToName[id] ?: id) } }
                             .distinctBy { it.first }
                             .map { SeriesOut(it.first, it.second) }
@@ -1019,7 +1234,8 @@ runBlocking {
                         }
                     }
 
-                    val series: List<SeriesOut> = detailed
+                    val filteredDetailed = detailed.filter { !isTcgpSetId(it.id) && !isTcgp(it.serieId) }
+                    val series: List<SeriesOut> = filteredDetailed
                         .mapNotNull { it.serieId?.let { id -> id to (seriesNames[id] ?: (serieIdToName[id] ?: id)) } }
                         .distinctBy { it.first }
                         .map { SeriesOut(id = it.first, name = it.second) }
@@ -1031,13 +1247,13 @@ runBlocking {
                     )
                     Files.writeString(
                         langDir.resolve("sets.json"),
-                        json.encodeToString(detailed),
+                        json.encodeToString(filteredDetailed),
                         StandardOpenOption.CREATE, StandardOpenOption.TRUNCATE_EXISTING, StandardOpenOption.WRITE,
                     )
 
                     // Aggregate illustrators for language from detailed by re-scanning cards dirs
                     val langIllustratorAcc: MutableMap<String, Acc> = linkedMapOf()
-                    for (set in detailed) {
+                    for (set in filteredDetailed) {
                         val cardsDir = candidateDir(
                             langRoot.resolve("cards").resolve(set.id),
                             langRoot.resolve("data").resolve("cards").resolve(set.id),
@@ -1068,11 +1284,8 @@ runBlocking {
                         }
                     val payload = IllustratorIndexPayload(language = lang.lowercase(), generatedAt = System.currentTimeMillis(), artists = artists)
 
-                    Files.writeString(
-                        langDir.resolve("illustrators-index.json"),
-                        json.encodeToString(payload),
-                        StandardOpenOption.CREATE, StandardOpenOption.TRUNCATE_EXISTING, StandardOpenOption.WRITE,
-                    )
+                    // Remove legacy per-language file if present
+                    runCatching { Files.deleteIfExists(langDir.resolve("illustrators-index.json")) }
 
                     seriesMap[lang.lowercase()] = json.encodeToString(series)
                     setsMap[lang.lowercase()] = json.encodeToString(detailed)
@@ -1177,11 +1390,8 @@ runBlocking {
                             IllustratorIndexEntry(name = artist, total = acc.total, sets = setsList)
                         }
                     val payload = IllustratorIndexPayload(language = lang.lowercase(), generatedAt = System.currentTimeMillis(), artists = artists)
-                    Files.writeString(
-                        langDir.resolve("illustrators-index.json"),
-                        json.encodeToString(payload),
-                        StandardOpenOption.CREATE, StandardOpenOption.TRUNCATE_EXISTING, StandardOpenOption.WRITE,
-                    )
+                    // Remove legacy per-language file if present
+                    runCatching { Files.deleteIfExists(langDir.resolve("illustrators-index.json")) }
                     seriesMap[lang.lowercase()] = json.encodeToString(series)
                     setsMap[lang.lowercase()] = json.encodeToString(detailed)
                     illustratorsMap[lang.lowercase()] = json.encodeToString(payload)
@@ -1262,7 +1472,8 @@ runBlocking {
                 }
             }
             totalSetsAll += totalSets
-            val series: List<SeriesOut> = detailed
+            val filteredDetailed = detailed.filter { !isTcgpSetId(it.id) && !isTcgp(it.serieId) }
+            val series: List<SeriesOut> = filteredDetailed
                 .mapNotNull { it.serieId?.let { id -> id to (fullSets.firstOrNull { b -> b.serie?.id == id }?.serie?.name ?: (serieIdToName[id] ?: id)) } }
                 .distinctBy { it.first }
                 .map { SeriesOut(id = it.first, name = it.second) }
@@ -1274,7 +1485,7 @@ runBlocking {
             )
             Files.writeString(
                 langDir.resolve("sets.json"),
-                json.encodeToString(detailed),
+                json.encodeToString(filteredDetailed),
                 StandardOpenOption.CREATE, StandardOpenOption.TRUNCATE_EXISTING, StandardOpenOption.WRITE,
             )
 
@@ -1282,20 +1493,20 @@ runBlocking {
             val artists: List<IllustratorIndexEntry> = illustratorAcc.entries
                 .sortedByDescending { it.value.total }
                 .map { (artist, acc) ->
-                    val setsList = acc.perSet.values.map { IllustratorSetCount(setId = it.setId, count = it.count) }.sortedByDescending { it.count }
+                    val setsList = acc.perSet.values
+                        .filter { !isTcgpSetId(it.setId) }
+                        .map { IllustratorSetCount(setId = it.setId, count = it.count) }
+                        .sortedByDescending { it.count }
                     IllustratorIndexEntry(name = artist, total = acc.total, sets = setsList)
                 }
             val payload = IllustratorIndexPayload(language = lang.lowercase(), generatedAt = System.currentTimeMillis(), artists = artists)
 
-            Files.writeString(
-                langDir.resolve("illustrators-index.json"),
-                json.encodeToString(payload),
-                StandardOpenOption.CREATE, StandardOpenOption.TRUNCATE_EXISTING, StandardOpenOption.WRITE,
-            )
+            // Remove legacy per-language file if present
+            runCatching { Files.deleteIfExists(langDir.resolve("illustrators-index.json")) }
 
             // Accumulate for Kotlin embedding
             seriesMap[lang.lowercase()] = json.encodeToString(series)
-            setsMap[lang.lowercase()] = json.encodeToString(detailed)
+            setsMap[lang.lowercase()] = json.encodeToString(filteredDetailed)
             illustratorsMap[lang.lowercase()] = json.encodeToString(payload)
             log("lang=" + lang + ": wrote series=" + series.size + " sets=" + detailed.size + " artists=" + illustratorAcc.size)
         } catch (t: Throwable) {
@@ -1322,14 +1533,18 @@ runBlocking {
             appendLine("    \"$lang\" to ${toKotlinTripleQuoted(payload)},")
         }
         appendLine("  )")
-        appendLine("  private val illustratorsByLang: Map<String, String> = mapOf(")
-        illustratorsMap.forEach { (lang, payload) ->
-            appendLine("    \"$lang\" to ${toKotlinTripleQuoted(payload)},")
+        // New language-agnostic illustrators assets
+        appendLine("  private val illustratorsByArtist: Map<String, String> = mapOf(")
+        illustratorFiles.forEach { (artistFile, payload) ->
+            appendLine("    \"$artistFile\" to ${toKotlinTripleQuoted(payload)},")
         }
         appendLine("  )")
+        appendLine("  private val illustratorsIndex: String? = ${illustratorsIndexGlobal?.let { toKotlinTripleQuoted(it) } ?: "null"}")
         appendLine("  fun seriesJson(lang: String): String? = seriesByLang[lang.lowercase()]")
         appendLine("  fun setsJson(lang: String): String? = setsByLang[lang.lowercase()]")
-        appendLine("  fun illustratorsIndexJson(lang: String): String? = illustratorsByLang[lang.lowercase()]")
+        appendLine("  fun illustratorsIndexJson(): String? = illustratorsIndex")
+        appendLine("  fun illustratorCollectionJson(artistFileName: String): String? = illustratorsByArtist[artistFileName]")
+        appendLine("  fun illustratorArtistFiles(): List<String> = illustratorsByArtist.keys.toList()")
         appendLine("}")
         appendLine()
     }
