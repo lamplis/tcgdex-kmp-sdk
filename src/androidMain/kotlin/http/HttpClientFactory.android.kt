@@ -7,7 +7,7 @@ import io.ktor.client.plugins.HttpTimeout
 import io.ktor.client.plugins.contentnegotiation.ContentNegotiation
 import io.ktor.serialization.kotlinx.json.json
 import kotlinx.serialization.json.Json
-import io.ktor.utils.io.errors.IOException
+import kotlinx.io.IOException
 
 actual fun createPlatformHttpClient(): HttpClient =
     HttpClient(CIO) {

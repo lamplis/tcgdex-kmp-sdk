@@ -2,6 +2,7 @@ import org.gradle.jvm.tasks.Jar
 import org.jetbrains.kotlin.gradle.plugin.mpp.KotlinJvmCompilation
 
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompilationTask
 
 plugins {
     alias(libs.plugins.kotlinMultiplatform)
@@ -80,6 +81,13 @@ android {
         resources {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
+    }
+}
+
+// Fail on warnings for all Kotlin compilations (Common/Android/iOS/JVM)
+tasks.withType<KotlinCompilationTask<*>>().configureEach {
+    compilerOptions {
+        allWarningsAsErrors.set(true)
     }
 }
 
