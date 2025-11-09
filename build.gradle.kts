@@ -3,6 +3,7 @@ import org.jetbrains.kotlin.gradle.plugin.mpp.KotlinJvmCompilation
 
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompilationTask
+import io.gitlab.arturbosch.detekt.Detekt
 
 plugins {
     alias(libs.plugins.kotlinMultiplatform)
@@ -12,6 +13,7 @@ plugins {
     kotlin("plugin.serialization") version "2.2.20"
 }
 
+// Exclude massive embedded data file from format/lint to avoid OOM
 ktlint {
     ignoreFailures.set(true)
     reporters {
@@ -21,6 +23,7 @@ ktlint {
     filter {
         exclude("**/generated/**")
         exclude("**/build/**")
+        exclude("**/EmbeddedCatalogData.kt")
     }
 }
 
@@ -84,10 +87,12 @@ android {
     }
 }
 
-// Fail on warnings for all Kotlin compilations (Common/Android/iOS/JVM)
+// Fail on warnings for production targets; allow warnings in JVM tools (generator)
 tasks.withType<KotlinCompilationTask<*>>().configureEach {
+    val taskName = name.lowercase()
+    val treatWarningsAsErrors = !(taskName.contains("kotlinjvm") || taskName.contains("jvm"))
     compilerOptions {
-        allWarningsAsErrors.set(true)
+        allWarningsAsErrors.set(treatWarningsAsErrors)
     }
 }
 
@@ -124,4 +129,11 @@ tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>().configureEach 
 // Also wire Android library assembleRelease to trigger generation
 tasks.matching { it.name == "assembleRelease" || it.name == "bundleReleaseAar" }.configureEach {
     dependsOn("generateEmbeddedCatalog")
+}
+
+// Detekt: exclude heavy embedded data file and build directories to prevent timeouts/OOM
+tasks.withType<Detekt>().configureEach {
+    exclude("**/EmbeddedCatalogData.kt")
+    exclude("**/build/**")
+    jvmTarget = "17"
 }

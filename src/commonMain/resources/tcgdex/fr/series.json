@@ -1,102 +1,74 @@
 [
     {
-        "id": "bw",
-        "name": "Noir & Blanc",
-        "releaseDate": "2011-04-25"
-    },
-    {
         "id": "base",
-        "name": "Base",
-        "releaseDate": "1999-01-09"
-    },
-    {
-        "id": "pop",
-        "name": "POP",
-        "releaseDate": "2003-10-01"
-    },
-    {
-        "id": "col",
-        "name": "L'appel des Légendes",
-        "releaseDate": "2011-02-09"
-    },
-    {
-        "id": "lc",
-        "name": "L'Appel des Légendes",
-        "releaseDate": "2002-05-24"
-    },
-    {
-        "id": "mc",
-        "name": "Promo McDonald's",
-        "releaseDate": "2011-06-17"
-    },
-    {
-        "id": "ex",
-        "name": "EX",
-        "releaseDate": "2003-07-01"
+        "name": "Base"
     },
     {
         "id": "misc",
-        "name": "Autre",
-        "releaseDate": "2000-02-01"
-    },
-    {
-        "id": "dp",
-        "name": "Diamant & Perle",
-        "releaseDate": "2007-05-01"
+        "name": "Miscellaneous"
     },
     {
         "id": "neo",
-        "name": "Neo",
-        "releaseDate": "2000-12-16"
-    },
-    {
-        "id": "sm",
-        "name": "Soleil et Lune",
-        "releaseDate": "2017-02-03"
-    },
-    {
-        "id": "me",
-        "name": "Méga-Évolution",
-        "releaseDate": "2025-09-26"
-    },
-    {
-        "id": "hgss",
-        "name": "HeartGold SoulSilver",
-        "releaseDate": "2010-02-10"
+        "name": "Neo"
     },
     {
         "id": "ecard",
-        "name": "e-cards",
-        "releaseDate": "2002-08-01"
+        "name": "E-Card"
     },
     {
-        "id": "sv",
-        "name": "Écarlate et Violet",
-        "releaseDate": "2023-03-31"
+        "id": "ex",
+        "name": "EX"
     },
     {
-        "id": "xy",
-        "name": "XY",
-        "releaseDate": "2013-10-12"
+        "id": "pop",
+        "name": "POP"
     },
     {
         "id": "tk",
-        "name": "Kits du dresseur",
-        "releaseDate": "2004-07-01"
+        "name": "Trainer kits"
+    },
+    {
+        "id": "dp",
+        "name": "Diamond & Pearl"
     },
     {
         "id": "pl",
-        "name": "Platine",
-        "releaseDate": "2009-02-11"
+        "name": "Platinum"
     },
     {
-        "id": "gym",
-        "name": "Gym",
-        "releaseDate": "2000-08-14"
+        "id": "hgss",
+        "name": "HeartGold & SoulSilver"
+    },
+    {
+        "id": "col",
+        "name": "Call of Legends"
+    },
+    {
+        "id": "bw",
+        "name": "Black & White"
+    },
+    {
+        "id": "mc",
+        "name": "McDonald's Collection"
+    },
+    {
+        "id": "xy",
+        "name": "XY"
+    },
+    {
+        "id": "sm",
+        "name": "Sun & Moon"
     },
     {
         "id": "swsh",
-        "name": "Épée et Bouclier",
-        "releaseDate": "2019-11-15"
+        "name": "Sword & Shield"
+    },
+    {
+        "id": "sv",
+        "name": "Scarlet & Violet"
+    },
+    {
+        "id": "me",
+        "name": "Mega Evolution"
     }
 ]

@@ -3,701 +3,876 @@
     "serieId": "bw",
     "name": "Legendary Treasures",
     "releaseDate": "2013-11-06",
-    "cardCount": 113,
+    "cardCount": 140,
     "logo": "https://assets.tcgdex.net/en/bw/bw11/logo",
     "symbol": "https://assets.tcgdex.net/en/bw/bw11/symbol",
     "cards": [
         {
-            "id": "bw11-1",
-            "number": "1",
+            "id": "bw11-001",
+            "number": "001",
             "name": "Tangela",
-            "illustrator": "kirisAki",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/1"
         },
         {
-            "id": "bw11-2",
-            "number": "2",
+            "id": "bw11-001",
+            "number": "001",
+            "name": "Snivy",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/bw/bw11/RC1"
+        },
+        {
+            "id": "bw11-002",
+            "number": "002",
             "name": "Tangrowth",
-            "illustrator": "Kagemaru Himeno",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/2"
         },
         {
-            "id": "bw11-3",
-            "number": "3",
+            "id": "bw11-002",
+            "number": "002",
+            "name": "Servine",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/bw/bw11/RC2"
+        },
+        {
+            "id": "bw11-003",
+            "number": "003",
             "name": "Shuckle",
-            "illustrator": "MAHOU",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/3"
         },
         {
-            "id": "bw11-4",
-            "number": "4",
+            "id": "bw11-003",
+            "number": "003",
+            "name": "Serperior",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/bw/bw11/RC3"
+        },
+        {
+            "id": "bw11-004",
+            "number": "004",
             "name": "Cherubi",
-            "illustrator": "Atsuko Nishida",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/4"
         },
         {
-            "id": "bw11-5",
-            "number": "5",
+            "id": "bw11-004",
+            "number": "004",
+            "name": "Growlithe",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/bw/bw11/RC4"
+        },
+        {
+            "id": "bw11-005",
+            "number": "005",
             "name": "Carnivine",
-            "illustrator": "HiRON",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/5"
         },
         {
-            "id": "bw11-6",
-            "number": "6",
+            "id": "bw11-005",
+            "number": "005",
+            "name": "Torchic",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/bw/bw11/RC5"
+        },
+        {
+            "id": "bw11-006",
+            "number": "006",
             "name": "Snivy",
-            "illustrator": "Aya Kusube",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/6"
         },
         {
-            "id": "bw11-7",
-            "number": "7",
+            "id": "bw11-006",
+            "number": "006",
+            "name": "Piplup",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/bw/bw11/RC6"
+        },
+        {
+            "id": "bw11-007",
+            "number": "007",
             "name": "Servine",
-            "illustrator": "Shigenori Negishi",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/7"
         },
         {
-            "id": "bw11-8",
-            "number": "8",
+            "id": "bw11-007",
+            "number": "007",
+            "name": "Pikachu",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/bw/bw11/RC7"
+        },
+        {
+            "id": "bw11-008",
+            "number": "008",
             "name": "Serperior",
-            "illustrator": "hatachu",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/8"
         },
         {
-            "id": "bw11-9",
-            "number": "9",
+            "id": "bw11-008",
+            "number": "008",
+            "name": "Ralts",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/bw/bw11/RC8"
+        },
+        {
+            "id": "bw11-009",
+            "number": "009",
             "name": "Sewaddle",
-            "illustrator": "Yuka Morii",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/9"
         },
         {
-            "id": "bw11-10",
-            "number": "10",
+            "id": "bw11-009",
+            "number": "009",
+            "name": "Kirlia",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/bw/bw11/RC9"
+        },
+        {
+            "id": "bw11-010",
+            "number": "010",
             "name": "Sewaddle",
-            "illustrator": "Mitsuhiro Arita",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/10"
         },
         {
-            "id": "bw11-11",
-            "number": "11",
+            "id": "bw11-010",
+            "number": "010",
+            "name": "Gardevoir",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/bw/bw11/RC10"
+        },
+        {
+            "id": "bw11-011",
+            "number": "011",
             "name": "Swadloon",
-            "illustrator": "sui",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/11"
         },
         {
-            "id": "bw11-12",
-            "number": "12",
+            "id": "bw11-011",
+            "number": "011",
+            "name": "Meloetta-EX",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/bw/bw11/RC11"
+        },
+        {
+            "id": "bw11-012",
+            "number": "012",
             "name": "Leavanny",
-            "illustrator": "match",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/12"
         },
         {
-            "id": "bw11-13",
-            "number": "13",
+            "id": "bw11-012",
+            "number": "012",
+            "name": "Stunfisk",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/bw/bw11/RC12"
+        },
+        {
+            "id": "bw11-013",
+            "number": "013",
             "name": "Dwebble",
-            "illustrator": "sui",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/13"
         },
         {
-            "id": "bw11-14",
-            "number": "14",
+            "id": "bw11-013",
+            "number": "013",
+            "name": "Purrloin",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/bw/bw11/RC13"
+        },
+        {
+            "id": "bw11-014",
+            "number": "014",
             "name": "Crustle",
-            "illustrator": "Naoki Saito",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/14"
         },
         {
-            "id": "bw11-15",
-            "number": "15",
+            "id": "bw11-014",
+            "number": "014",
+            "name": "Eevee",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/bw/bw11/RC14"
+        },
+        {
+            "id": "bw11-015",
+            "number": "015",
             "name": "Virizion",
-            "illustrator": "Atsuko Nishida",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/15"
         },
         {
-            "id": "bw11-16",
-            "number": "16",
+            "id": "bw11-015",
+            "number": "015",
+            "name": "Teddiursa",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/bw/bw11/RC15"
+        },
+        {
+            "id": "bw11-016",
+            "number": "016",
             "name": "Genesect",
-            "illustrator": "Ayaka Yoshida",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/16"
         },
         {
-            "id": "bw11-17",
-            "number": "17",
+            "id": "bw11-016",
+            "number": "016",
+            "name": "Ursaring",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/bw/bw11/RC16"
+        },
+        {
+            "id": "bw11-017",
+            "number": "017",
             "name": "Charmander",
-            "illustrator": "match",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/17"
         },
         {
-            "id": "bw11-18",
-            "number": "18",
+            "id": "bw11-017",
+            "number": "017",
+            "name": "Audino",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/bw/bw11/RC17"
+        },
+        {
+            "id": "bw11-018",
+            "number": "018",
             "name": "Charmeleon",
-            "illustrator": "Akira Komayama",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/18"
         },
         {
-            "id": "bw11-19",
-            "number": "19",
+            "id": "bw11-018",
+            "number": "018",
+            "name": "Minccino",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/bw/bw11/RC18"
+        },
+        {
+            "id": "bw11-019",
+            "number": "019",
             "name": "Charizard",
-            "illustrator": "TOKIYA",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/19"
         },
         {
-            "id": "bw11-20",
-            "number": "20",
+            "id": "bw11-019",
+            "number": "019",
+            "name": "Cinccino",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/bw/bw11/RC19"
+        },
+        {
+            "id": "bw11-020",
+            "number": "020",
             "name": "Vulpix",
-            "illustrator": "Masakazu Fukuda",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/20"
         },
         {
-            "id": "bw11-21",
-            "number": "21",
+            "id": "bw11-020",
+            "number": "020",
+            "name": "Elesa",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/bw/bw11/RC20"
+        },
+        {
+            "id": "bw11-021",
+            "number": "021",
             "name": "Ninetales",
-            "illustrator": "Satoshi Shirai",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/21"
         },
         {
-            "id": "bw11-22",
-            "number": "22",
+            "id": "bw11-021",
+            "number": "021",
+            "name": "Shaymin-EX",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/bw/bw11/RC21"
+        },
+        {
+            "id": "bw11-022",
+            "number": "022",
             "name": "Moltres",
-            "illustrator": "Mitsuhiro Arita",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/22"
         },
         {
-            "id": "bw11-23",
-            "number": "23",
+            "id": "bw11-022",
+            "number": "022",
+            "name": "Reshiram",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/bw/bw11/RC22"
+        },
+        {
+            "id": "bw11-023",
+            "number": "023",
             "name": "Victini",
-            "illustrator": "Tomokazu Komiya",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/23"
         },
         {
-            "id": "bw11-24",
-            "number": "24",
+            "id": "bw11-023",
+            "number": "023",
+            "name": "Emolga",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/bw/bw11/RC23"
+        },
+        {
+            "id": "bw11-024",
+            "number": "024",
             "name": "Victini-EX",
-            "illustrator": "Eske Yoshinob",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/24"
         },
         {
-            "id": "bw11-25",
-            "number": "25",
+            "id": "bw11-024",
+            "number": "024",
+            "name": "Mew-EX",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/bw/bw11/RC24"
+        },
+        {
+            "id": "bw11-025",
+            "number": "025",
             "name": "Tepig",
-            "illustrator": "Kanako Eo",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/25"
         },
         {
-            "id": "bw11-26",
-            "number": "26",
+            "id": "bw11-025",
+            "number": "025",
+            "name": "Meloetta-EX",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/en/bw/bw11/RC25"
+        },
+        {
+            "id": "bw11-026",
+            "number": "026",
             "name": "Pignite",
-            "illustrator": "Kanako Eo",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/26"
         },
         {
-            "id": "bw11-27",
-            "number": "27",
+            "id": "bw11-027",
+            "number": "027",
             "name": "Emboar",
-            "illustrator": "Kanako Eo",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/27"
         },
         {
-            "id": "bw11-28",
-            "number": "28",
+            "id": "bw11-028",
+            "number": "028",
             "name": "Reshiram",
-            "illustrator": "Aya Kusube",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/28"
         },
         {
-            "id": "bw11-29",
-            "number": "29",
+            "id": "bw11-029",
+            "number": "029",
             "name": "Reshiram-EX",
-            "illustrator": "Shizurow",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/29"
         },
         {
-            "id": "bw11-30",
-            "number": "30",
+            "id": "bw11-030",
+            "number": "030",
             "name": "Magikarp",
-            "illustrator": "Midori Harada",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/30"
         },
         {
-            "id": "bw11-31",
-            "number": "31",
+            "id": "bw11-031",
+            "number": "031",
             "name": "Gyarados",
-            "illustrator": "hatachu",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/31"
         },
         {
-            "id": "bw11-32",
-            "number": "32",
+            "id": "bw11-032",
+            "number": "032",
             "name": "Articuno",
-            "illustrator": "Kagemaru Himeno",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/32"
         },
         {
-            "id": "bw11-33",
-            "number": "33",
+            "id": "bw11-033",
+            "number": "033",
             "name": "Piplup",
-            "illustrator": "Mizue",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/33"
         },
         {
-            "id": "bw11-34",
-            "number": "34",
+            "id": "bw11-034",
+            "number": "034",
             "name": "Prinplup",
-            "illustrator": "Miki Tanaka",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/34"
         },
         {
-            "id": "bw11-35",
-            "number": "35",
+            "id": "bw11-035",
+            "number": "035",
             "name": "Empoleon",
-            "illustrator": "kawayoo",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/35"
         },
         {
-            "id": "bw11-36",
-            "number": "36",
+            "id": "bw11-036",
+            "number": "036",
             "name": "Phione",
-            "illustrator": "kawayoo",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/36"
         },
         {
-            "id": "bw11-37",
-            "number": "37",
+            "id": "bw11-037",
+            "number": "037",
             "name": "Oshawott",
-            "illustrator": "Midori Harada",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/37"
         },
         {
-            "id": "bw11-38",
-            "number": "38",
+            "id": "bw11-038",
+            "number": "038",
             "name": "Dewott",
-            "illustrator": "Mizue",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/38"
         },
         {
-            "id": "bw11-39",
-            "number": "39",
+            "id": "bw11-039",
+            "number": "039",
             "name": "Samurott",
-            "illustrator": "Naoki Saito",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/39"
         },
         {
-            "id": "bw11-40",
-            "number": "40",
+            "id": "bw11-040",
+            "number": "040",
             "name": "Tympole",
-            "illustrator": "Kyoko Umemoto",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/40"
         },
         {
-            "id": "bw11-41",
-            "number": "41",
+            "id": "bw11-041",
+            "number": "041",
             "name": "Palpitoad",
-            "illustrator": "Sachiko Adachi",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/41"
         },
         {
-            "id": "bw11-42",
-            "number": "42",
+            "id": "bw11-042",
+            "number": "042",
             "name": "Seismitoad",
-            "illustrator": "Hajime Kusajima",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/42"
         },
         {
-            "id": "bw11-43",
-            "number": "43",
+            "id": "bw11-043",
+            "number": "043",
             "name": "Kyurem",
-            "illustrator": "Midori Harada",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/43"
         },
         {
-            "id": "bw11-44",
-            "number": "44",
+            "id": "bw11-044",
+            "number": "044",
             "name": "Kyurem-EX",
-            "illustrator": "Shizurow",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/44"
         },
         {
-            "id": "bw11-45",
-            "number": "45",
+            "id": "bw11-045",
+            "number": "045",
             "name": "Keldeo-EX",
-            "illustrator": "Toyste Beach",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/45"
         },
         {
-            "id": "bw11-46",
-            "number": "46",
+            "id": "bw11-046",
+            "number": "046",
             "name": "Zapdos",
-            "illustrator": "Kouki Saitou",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/46"
         },
         {
-            "id": "bw11-47",
-            "number": "47",
+            "id": "bw11-047",
+            "number": "047",
             "name": "Plusle",
-            "illustrator": "Kouki Saitou",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/47"
         },
         {
-            "id": "bw11-48",
-            "number": "48",
+            "id": "bw11-048",
+            "number": "048",
             "name": "Minun",
-            "illustrator": "Kouki Saitou",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/48"
         },
         {
-            "id": "bw11-49",
-            "number": "49",
+            "id": "bw11-049",
+            "number": "049",
             "name": "Emolga",
-            "illustrator": "Tomokazu Komiya",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/49"
         },
         {
-            "id": "bw11-50",
-            "number": "50",
+            "id": "bw11-050",
+            "number": "050",
             "name": "Thundurus",
-            "illustrator": "Yukiko Baba",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/50"
         },
         {
-            "id": "bw11-51",
-            "number": "51",
+            "id": "bw11-051",
+            "number": "051",
             "name": "Zekrom",
-            "illustrator": "Kagemaru Himeno",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/51"
         },
         {
-            "id": "bw11-52",
-            "number": "52",
+            "id": "bw11-052",
+            "number": "052",
             "name": "Zekrom-EX",
-            "illustrator": "Shizurow",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/52"
         },
         {
-            "id": "bw11-53",
-            "number": "53",
+            "id": "bw11-053",
+            "number": "053",
             "name": "Mewtwo",
-            "illustrator": "Ayaka Yoshida",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/53"
         },
         {
-            "id": "bw11-54",
-            "number": "54",
+            "id": "bw11-054",
+            "number": "054",
             "name": "Mewtwo-EX",
-            "illustrator": "Shizurow",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/54"
         },
         {
-            "id": "bw11-55",
-            "number": "55",
+            "id": "bw11-055",
+            "number": "055",
             "name": "Natu",
-            "illustrator": "Sanosuke Sakuma",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/55"
         },
         {
-            "id": "bw11-56",
-            "number": "56",
+            "id": "bw11-056",
+            "number": "056",
             "name": "Xatu",
-            "illustrator": "Kouki Saitou",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/56"
         },
         {
-            "id": "bw11-57",
-            "number": "57",
+            "id": "bw11-057",
+            "number": "057",
             "name": "Misdreavus",
-            "illustrator": "Hitoshi Ariga",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/57"
         },
         {
-            "id": "bw11-58",
-            "number": "58",
+            "id": "bw11-058",
+            "number": "058",
             "name": "Mismagius",
-            "illustrator": "Sumiyoshi Kizuki",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/58"
         },
         {
-            "id": "bw11-59",
-            "number": "59",
+            "id": "bw11-059",
+            "number": "059",
             "name": "Ralts",
-            "illustrator": "Naoyo Kimura",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/59"
         },
         {
-            "id": "bw11-60",
-            "number": "60",
+            "id": "bw11-060",
+            "number": "060",
             "name": "Kirlia",
-            "illustrator": "Yukiko Baba",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/60"
         },
         {
-            "id": "bw11-61",
-            "number": "61",
+            "id": "bw11-061",
+            "number": "061",
             "name": "Sableye",
-            "illustrator": "Hiroki Asanuma",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/61"
         },
         {
-            "id": "bw11-62",
-            "number": "62",
+            "id": "bw11-062",
+            "number": "062",
             "name": "Croagunk",
-            "illustrator": "Sanosuke Sakuma",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/62"
         },
         {
-            "id": "bw11-63",
-            "number": "63",
+            "id": "bw11-063",
+            "number": "063",
             "name": "Toxicroak",
-            "illustrator": "Naoki Saito",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/63"
         },
         {
-            "id": "bw11-64",
-            "number": "64",
+            "id": "bw11-064",
+            "number": "064",
             "name": "Woobat",
-            "illustrator": "Mizue",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/64"
         },
         {
-            "id": "bw11-65",
-            "number": "65",
+            "id": "bw11-065",
+            "number": "065",
             "name": "Swoobat",
-            "illustrator": "Masakazu Fukuda",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/65"
         },
         {
-            "id": "bw11-66",
-            "number": "66",
+            "id": "bw11-066",
+            "number": "066",
             "name": "Sigilyph",
-            "illustrator": "Shigenori Negishi",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/66"
         },
         {
-            "id": "bw11-67",
-            "number": "67",
+            "id": "bw11-067",
+            "number": "067",
             "name": "Trubbish",
-            "illustrator": "kawayoo",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/67"
         },
         {
-            "id": "bw11-68",
-            "number": "68",
+            "id": "bw11-068",
+            "number": "068",
             "name": "Garbodor",
-            "illustrator": "Tomoaki Imakuni",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/68"
         },
         {
-            "id": "bw11-69",
-            "number": "69",
+            "id": "bw11-069",
+            "number": "069",
             "name": "Gothita",
-            "illustrator": "TOKIYA",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/69"
         },
         {
-            "id": "bw11-70",
-            "number": "70",
+            "id": "bw11-070",
+            "number": "070",
             "name": "Gothita",
-            "illustrator": "Akira Komayama",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/70"
         },
         {
-            "id": "bw11-71",
-            "number": "71",
+            "id": "bw11-071",
+            "number": "071",
             "name": "Gothorita",
-            "illustrator": "kirisAki",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/71"
         },
         {
-            "id": "bw11-72",
-            "number": "72",
+            "id": "bw11-072",
+            "number": "072",
             "name": "Gothitelle",
-            "illustrator": "kawayoo",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/72"
         },
         {
-            "id": "bw11-73",
-            "number": "73",
+            "id": "bw11-073",
+            "number": "073",
             "name": "Solosis",
-            "illustrator": "HiRON",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/73"
         },
         {
-            "id": "bw11-74",
-            "number": "74",
+            "id": "bw11-074",
+            "number": "074",
             "name": "Solosis",
-            "illustrator": "Kouki Saitou",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/74"
         },
         {
-            "id": "bw11-75",
-            "number": "75",
+            "id": "bw11-075",
+            "number": "075",
             "name": "Duosion",
-            "illustrator": "Suwama Chiaki",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/75"
         },
         {
-            "id": "bw11-76",
-            "number": "76",
+            "id": "bw11-076",
+            "number": "076",
             "name": "Reuniclus",
-            "illustrator": "Kyoko Umemoto",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/76"
         },
         {
-            "id": "bw11-77",
-            "number": "77",
+            "id": "bw11-077",
+            "number": "077",
             "name": "Chandelure-EX",
-            "illustrator": "Ryo Ueda",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/77"
         },
         {
-            "id": "bw11-78",
-            "number": "78",
+            "id": "bw11-078",
+            "number": "078",
             "name": "Meloetta",
-            "illustrator": "kawayoo",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/78"
         },
         {
-            "id": "bw11-79",
-            "number": "79",
+            "id": "bw11-079",
+            "number": "079",
             "name": "Riolu",
-            "illustrator": "Naoyo Kimura",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/79"
         },
         {
-            "id": "bw11-80",
-            "number": "80",
+            "id": "bw11-080",
+            "number": "080",
             "name": "Lucario",
-            "illustrator": "MAHOU",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/80"
         },
         {
-            "id": "bw11-81",
-            "number": "81",
+            "id": "bw11-081",
+            "number": "081",
             "name": "Gallade",
-            "illustrator": "Hajime Kusajima",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/81"
         },
         {
-            "id": "bw11-82",
-            "number": "82",
+            "id": "bw11-082",
+            "number": "082",
             "name": "Excadrill-EX",
-            "illustrator": "Ryo Ueda",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/82"
         },
         {
-            "id": "bw11-83",
-            "number": "83",
+            "id": "bw11-083",
+            "number": "083",
             "name": "Stunfisk",
-            "illustrator": "Yuka Morii",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/83"
         },
         {
-            "id": "bw11-84",
-            "number": "84",
+            "id": "bw11-084",
+            "number": "084",
             "name": "Terrakion",
-            "illustrator": "Shigenori Negishi",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/84"
         },
         {
-            "id": "bw11-85",
-            "number": "85",
+            "id": "bw11-085",
+            "number": "085",
             "name": "Landorus",
-            "illustrator": "Midori Harada",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/85"
         },
         {
-            "id": "bw11-86",
-            "number": "86",
+            "id": "bw11-086",
+            "number": "086",
             "name": "Meloetta",
-            "illustrator": "Mizue",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/86"
         },
         {
-            "id": "bw11-87",
-            "number": "87",
+            "id": "bw11-087",
+            "number": "087",
             "name": "Spiritomb",
-            "illustrator": "Mitsuhiro Arita",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/87"
         },
         {
-            "id": "bw11-88",
-            "number": "88",
+            "id": "bw11-088",
+            "number": "088",
             "name": "Darkrai-EX",
-            "illustrator": "Shizurow",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/88"
         },
         {
-            "id": "bw11-89",
-            "number": "89",
+            "id": "bw11-089",
+            "number": "089",
             "name": "Zorua",
-            "illustrator": "Atsuko Nishida",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/89"
         },
         {
-            "id": "bw11-90",
-            "number": "90",
+            "id": "bw11-090",
+            "number": "090",
             "name": "Zoroark",
-            "illustrator": "match",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/90"
         },
         {
-            "id": "bw11-91",
-            "number": "91",
+            "id": "bw11-091",
+            "number": "091",
             "name": "Cobalion",
-            "illustrator": "Sumiyoshi Kizuki",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/91"
         },
         {
-            "id": "bw11-92",
-            "number": "92",
+            "id": "bw11-092",
+            "number": "092",
             "name": "Altaria",
-            "illustrator": "Atsuko Nishida",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/92"
         },
         {
-            "id": "bw11-93",
-            "number": "93",
+            "id": "bw11-093",
+            "number": "093",
             "name": "Rayquaza",
-            "illustrator": "Shin Nagasawa",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/93"
         },
         {
-            "id": "bw11-94",
-            "number": "94",
+            "id": "bw11-094",
+            "number": "094",
             "name": "Gible",
-            "illustrator": "sui",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/94"
         },
         {
-            "id": "bw11-95",
-            "number": "95",
+            "id": "bw11-095",
+            "number": "095",
             "name": "Gabite",
-            "illustrator": "Shigenori Negishi",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/95"
         },
         {
-            "id": "bw11-96",
-            "number": "96",
+            "id": "bw11-096",
+            "number": "096",
             "name": "Garchomp",
-            "illustrator": "Masakazu Fukuda",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/96"
         },
         {
-            "id": "bw11-97",
-            "number": "97",
+            "id": "bw11-097",
+            "number": "097",
             "name": "Deino",
-            "illustrator": "Akira Komayama",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/97"
         },
         {
-            "id": "bw11-98",
-            "number": "98",
+            "id": "bw11-098",
+            "number": "098",
             "name": "Zweilous",
-            "illustrator": "Yukiko Baba",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/98"
         },
         {
-            "id": "bw11-99",
-            "number": "99",
+            "id": "bw11-099",
+            "number": "099",
             "name": "Hydreigon",
-            "illustrator": "Tomokazu Komiya",
+            "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/99"
         },
         {
@@ -811,181 +986,6 @@
             "name": "Zekrom",
             "illustrator": "5ban Graphics",
             "imageBase": "https://assets.tcgdex.net/en/bw/bw11/115"
-        },
-        {
-            "id": "bw11-RC18",
-            "number": "RC18",
-            "name": "Minccino",
-            "illustrator": "sui",
-            "imageBase": "https://assets.tcgdex.net/en/bw/bw11/RC18"
-        },
-        {
-            "id": "bw11-RC19",
-            "number": "RC19",
-            "name": "Cinccino",
-            "illustrator": "Kagemaru Himeno",
-            "imageBase": "https://assets.tcgdex.net/en/bw/bw11/RC19"
-        },
-        {
-            "id": "bw11-RC12",
-            "number": "RC12",
-            "name": "Stunfisk",
-            "illustrator": "Akira Komayama",
-            "imageBase": "https://assets.tcgdex.net/en/bw/bw11/RC12"
-        },
-        {
-            "id": "bw11-RC22",
-            "number": "RC22",
-            "name": "Reshiram",
-            "illustrator": "Kagemaru Himeno",
-            "imageBase": "https://assets.tcgdex.net/en/bw/bw11/RC22"
-        },
-        {
-            "id": "bw11-RC16",
-            "number": "RC16",
-            "name": "Ursaring",
-            "illustrator": "Sanosuke Sakuma",
-            "imageBase": "https://assets.tcgdex.net/en/bw/bw11/RC16"
-        },
-        {
-            "id": "bw11-RC4",
-            "number": "RC4",
-            "name": "Growlithe",
-            "illustrator": "Sanosuke Sakuma",
-            "imageBase": "https://assets.tcgdex.net/en/bw/bw11/RC4"
-        },
-        {
-            "id": "bw11-RC23",
-            "number": "RC23",
-            "name": "Emolga",
-            "illustrator": "Atsuko Nishida",
-            "imageBase": "https://assets.tcgdex.net/en/bw/bw11/RC23"
-        },
-        {
-            "id": "bw11-RC17",
-            "number": "RC17",
-            "name": "Audino",
-            "illustrator": "MAHOU",
-            "imageBase": "https://assets.tcgdex.net/en/bw/bw11/RC17"
-        },
-        {
-            "id": "bw11-RC5",
-            "number": "RC5",
-            "name": "Torchic",
-            "illustrator": "Kanako Eo",
-            "imageBase": "https://assets.tcgdex.net/en/bw/bw11/RC5"
-        },
-        {
-            "id": "bw11-RC13",
-            "number": "RC13",
-            "name": "Purrloin",
-            "illustrator": "Mizue",
-            "imageBase": "https://assets.tcgdex.net/en/bw/bw11/RC13"
-        },
-        {
-            "id": "bw11-RC1",
-            "number": "RC1",
-            "name": "Snivy",
-            "illustrator": "Eske Yoshinob",
-            "imageBase": "https://assets.tcgdex.net/en/bw/bw11/RC1"
-        },
-        {
-            "id": "bw11-RC20",
-            "number": "RC20",
-            "name": "Elesa",
-            "illustrator": "Yusuke Ohmura",
-            "imageBase": "https://assets.tcgdex.net/en/bw/bw11/RC20"
-        },
-        {
-            "id": "bw11-RC14",
-            "number": "RC14",
-            "name": "Eevee",
-            "illustrator": "kirisAki",
-            "imageBase": "https://assets.tcgdex.net/en/bw/bw11/RC14"
-        },
-        {
-            "id": "bw11-RC6",
-            "number": "RC6",
-            "name": "Piplup",
-            "illustrator": "sui",
-            "imageBase": "https://assets.tcgdex.net/en/bw/bw11/RC6"
-        },
-        {
-            "id": "bw11-RC10",
-            "number": "RC10",
-            "name": "Gardevoir",
-            "illustrator": "Atsuko Nishida",
-            "imageBase": "https://assets.tcgdex.net/en/bw/bw11/RC10"
-        },
-        {
-            "id": "bw11-RC24",
-            "number": "RC24",
-            "name": "Mew-EX",
-            "illustrator": "MAHOU",
-            "imageBase": "https://assets.tcgdex.net/en/bw/bw11/RC24"
-        },
-        {
-            "id": "bw11-RC2",
-            "number": "RC2",
-            "name": "Servine",
-            "illustrator": "kirisAki",
-            "imageBase": "https://assets.tcgdex.net/en/bw/bw11/RC2"
-        },
-        {
-            "id": "bw11-RC11",
-            "number": "RC11",
-            "name": "Meloetta-EX",
-            "illustrator": "Eske Yoshinob",
-            "imageBase": "https://assets.tcgdex.net/en/bw/bw11/RC11"
-        },
-        {
-            "id": "bw11-RC25",
-            "number": "RC25",
-            "name": "Meloetta-EX",
-            "illustrator": "Eske Yoshinob",
-            "imageBase": "https://assets.tcgdex.net/en/bw/bw11/RC25"
-        },
-        {
-            "id": "bw11-RC3",
-            "number": "RC3",
-            "name": "Serperior",
-            "illustrator": "Shin Nagasawa",
-            "imageBase": "https://assets.tcgdex.net/en/bw/bw11/RC3"
-        },
-        {
-            "id": "bw11-RC21",
-            "number": "RC21",
-            "name": "Shaymin-EX",
-            "illustrator": "Kanako Eo",
-            "imageBase": "https://assets.tcgdex.net/en/bw/bw11/RC21"
-        },
-        {
-            "id": "bw11-RC15",
-            "number": "RC15",
-            "name": "Teddiursa",
-            "illustrator": "kirisAki",
-            "imageBase": "https://assets.tcgdex.net/en/bw/bw11/RC15"
-        },
-        {
-            "id": "bw11-RC7",
-            "number": "RC7",
-            "name": "Pikachu",
-            "illustrator": "Atsuko Nishida",
-            "imageBase": "https://assets.tcgdex.net/en/bw/bw11/RC7"
-        },
-        {
-            "id": "bw11-RC8",
-            "number": "RC8",
-            "name": "Ralts",
-            "illustrator": "Mizue",
-            "imageBase": "https://assets.tcgdex.net/en/bw/bw11/RC8"
-        },
-        {
-            "id": "bw11-RC9",
-            "number": "RC9",
-            "name": "Kirlia",
-            "illustrator": "Kagemaru Himeno",
-            "imageBase": "https://assets.tcgdex.net/en/bw/bw11/RC9"
         }
     ]
 }

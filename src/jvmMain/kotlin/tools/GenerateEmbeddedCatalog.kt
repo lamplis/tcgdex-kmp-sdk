@@ -206,7 +206,9 @@ runBlocking {
     val verbose: Boolean = (System.getProperty("verbose") ?: "").equals("true", ignoreCase = true)
 
     // Local DB flags and mode
-    val localDbPathStr: String? = System.getProperty("localDbPath") ?: System.getenv("TCGDEX_LOCAL_DB")
+    val localDbPathStr: String? = System.getProperty("localDbPath")
+        ?: System.getenv("TCGDEX_LOCAL_DB")
+        ?: "/Users/admin/workspace/cards-database/data/"
     val offlineOnly: Boolean = (System.getProperty("offlineOnly") ?: "").equals("true", ignoreCase = true)
     val localDbPath: Path? = localDbPathStr?.let { Path.of(it) }
     val useLocal: Boolean = localDbPath != null && Files.isDirectory(localDbPath)
@@ -485,7 +487,7 @@ runBlocking {
                 total = s.total,
             )
         }
-        // Phase B: emit detailed set files per language in a single pass using cached scan data
+        // Phase B (local): no longer emits detailed set files. Only prepares directories and cleans legacy tcgp files.
         val langDir = outBasePath.resolve(lang)
         val langSetsDir = langDir.resolve("sets")
         Files.createDirectories(langSetsDir)
@@ -521,30 +523,42 @@ runBlocking {
                 val cardsForLang = cardsParsed
                     .map { cp ->
                         val nm = cp.names[lang] ?: cp.names["en"] ?: ("#" + cp.number)
+                        val leadingDigits = cp.number.takeWhile { it.isDigit() }
+                        val normalizedNumber = leadingDigits.toIntOrNull()?.toString() ?: cp.number
+                        val imageNumSegment = normalizedNumber
                         CardDetailOut(
-                            id = s.id + "-" + cp.number,
-                            number = cp.number,
+                            id = s.id + "-" + normalizedNumber,
+                            number = normalizedNumber,
                             name = nm,
                             illustrator = cp.illustrator,
-                            imageBase = "https://assets.tcgdex.net/" + lang.lowercase() + "/" + s.seriesId + "/" + s.id + "/" + numPath(cp.number),
+                            imageBase = "https://assets.tcgdex.net/" + lang.lowercase() + "/" + s.seriesId + "/" + s.id + "/" + imageNumSegment,
                         )
                     }
                     .sortedBy { parseLocalNumber(it.number) }
-                val details = SetDetailsOut(
-                    id = s.id,
-                    serieId = s.seriesId,
-                    name = setName,
-                    releaseDate = s.releaseDate,
-                    cardCount = s.total ?: s.official,
-                    logo = "https://assets.tcgdex.net/" + lang.lowercase() + "/" + s.seriesId + "/" + s.id + "/logo",
-                    symbol = "https://assets.tcgdex.net/" + lang.lowercase() + "/" + s.seriesId + "/" + s.id + "/symbol",
-                    cards = cardsForLang,
-                )
-                Files.writeString(
-                    langSetsDir.resolve(s.id + ".json"),
-                    json.encodeToString(details),
-                    StandardOpenOption.CREATE, StandardOpenOption.TRUNCATE_EXISTING, StandardOpenOption.WRITE,
-                )
+                // Write sets/<id>.json from local TS scan (local-only path)
+                runCatching {
+                    val langDirLocal = outBasePath.resolve(lang)
+                    val langSetsDirLocal = langDirLocal.resolve("sets")
+                    Files.createDirectories(langSetsDirLocal)
+                    val setName = s.names[lang] ?: s.names["en"] ?: s.fileBase
+                    val assetBaseLocal = "https://assets.tcgdex.net/" + lang.lowercase() + "/" + s.seriesId + "/" + s.id
+                    val cardCountVal = s.total ?: s.official ?: cardsForLang.size
+                    val out = SetDetailsOut(
+                        id = s.id,
+                        serieId = s.seriesId,
+                        name = setName,
+                        releaseDate = s.releaseDate,
+                        cardCount = cardCountVal,
+                        logo = assetBaseLocal + "/logo",
+                        symbol = assetBaseLocal + "/symbol",
+                        cards = cardsForLang,
+                    )
+                    Files.writeString(
+                        langSetsDirLocal.resolve(s.id + ".json"),
+                        json.encodeToString(out),
+                        StandardOpenOption.CREATE, StandardOpenOption.TRUNCATE_EXISTING, StandardOpenOption.WRITE,
+                    )
+                }
                 writtenSets++
                 writtenCards += cardsForLang.size
                 if (writtenSets % kotlin.math.max(1, progressEvery) == 0) {
@@ -810,6 +824,103 @@ runBlocking {
                         " sets=" + (Json { }.decodeFromString<List<SetOut>>(setsMap[lang.lowercase()]!!).size) +
                         " artists=" + (Json { }.decodeFromString<IllustratorIndexPayload>(illustratorsMap[lang.lowercase()]!!).artists.size) +
                         " in " + ((tLang1 - tLang0) / 1_000_000) + " ms")
+                // Phase B (remote): fetch canonical set details exclusively via API (unless offlineOnly)
+                if (offlineOnly) {
+                    log("[i] offlineOnly=true; skipping remote set details for lang=" + lang)
+                } else {
+                    val langDir = outBasePath.resolve(lang)
+                    val langSetsDir = langDir.resolve("sets")
+                    Files.createDirectories(langSetsDir)
+                    val setsForLang = runCatching {
+                        Json { ignoreUnknownKeys = true }.decodeFromString<List<SetOut>>(setsMap[lang.lowercase()]!!)
+                    }.getOrElse { emptyList() }
+                    var processedRemote = 0
+                    for (so in setsForLang) {
+                        try {
+                            val url = "https://api.tcgdex.net/v2/" + lang + "/sets/" + so.id
+                            val raw = http.get(url).bodyAsText()
+                            val element = json.parseToJsonElement(raw)
+                            val obj = element.jsonObject
+                            val cardsCount = obj["cards"]?.jsonArray?.size ?: 0
+                            val cc = obj["cardCount"] as? JsonObject
+                            val expected = cc?.get("total")?.jsonPrimitive?.content?.toIntOrNull()
+                                ?: cc?.get("official")?.jsonPrimitive?.content?.toIntOrNull()
+                            if (expected != null && cardsCount != expected) {
+                                log("[warn] Card count mismatch for " + lang + ":" + so.id + " expected=" + expected + " actual=" + cardsCount + " – normalizing anyway")
+                            }
+
+                            // Normalize remote payload to canonical SetDetailsOut with enriched fields
+                            fun zeroPad(num: Int?, width: Int = 3): String {
+                                if (num == null || num <= 0) return "000"
+                                return num.toString().padStart(width, '0')
+                            }
+                            fun extractLocalNumber(co: JsonObject): String {
+                                // Prefer explicit localId, fallback to last path segment of image URL
+                                val localIdStr = co["localId"]?.jsonPrimitive?.content
+                                val asInt = localIdStr?.filter { it.isDigit() }?.toIntOrNull()
+                                if (asInt != null) return zeroPad(asInt)
+                                val imageStr = co["image"]?.jsonPrimitive?.content
+                                val tail = imageStr?.substringAfterLast('/', missingDelimiterValue = "")?.filter { it.isDigit() }?.toIntOrNull()
+                                if (tail != null) return zeroPad(tail)
+                                return "000"
+                            }
+                            val serieIdVal = so.serieId ?: deriveSerieIdFromSetId(so.id)
+                            val localCardsIndex =
+                                cachedLocalScan
+                                    ?.setIdToCards
+                                    ?.get(so.id)
+                                    ?.associateBy { it.number }
+                                    ?: emptyMap()
+                            val cardsJson: List<JsonElement> = obj["cards"]?.jsonArray?.toList() ?: emptyList()
+                            val cards =
+                                cardsJson
+                                    .mapNotNull { e ->
+                                        val co = e.jsonObject
+                                        val number = extractLocalNumber(co)
+                                        val nameValue = co["name"]?.jsonPrimitive?.content
+                                        val nameResolved = nameValue ?: localCardsIndex[number]?.names?.get(lang.lowercase())
+                                            ?: localCardsIndex[number]?.names?.get("en")
+                                            ?: ("#" + number)
+                                        val illustratorResolved =
+                                            co["illustrator"]?.jsonPrimitive?.content
+                                                ?.takeIf { it.isNotBlank() }
+                                                ?: localCardsIndex[number]?.illustrator
+                                        val imageBaseResolved =
+                                            co["image"]?.jsonPrimitive?.content
+                                                ?: ("https://assets.tcgdex.net/" + lang.lowercase() + "/" + serieIdVal + "/" + so.id + "/" + number.trimStart('0').ifBlank { "0" })
+                                        CardDetailOut(
+                                            id = so.id + "-" + number,
+                                            number = number,
+                                            name = nameResolved,
+                                            illustrator = illustratorResolved,
+                                            imageBase = imageBaseResolved,
+                                        )
+                                    }
+                                    .sortedBy { it.number.takeWhile { ch -> ch.isDigit() }.toIntOrNull() ?: Int.MAX_VALUE }
+                            val out = SetDetailsOut(
+                                id = so.id,
+                                serieId = serieIdVal,
+                                name = so.name,
+                                releaseDate = so.releaseDate,
+                                cardCount = expected,
+                                logo = so.logo,
+                                symbol = so.symbol,
+                                cards = cards,
+                            )
+                            Files.writeString(
+                                langSetsDir.resolve(so.id + ".json"),
+                                json.encodeToString(out),
+                                StandardOpenOption.CREATE, StandardOpenOption.TRUNCATE_EXISTING, StandardOpenOption.WRITE,
+                            )
+                            processedRemote++
+                            if (processedRemote % kotlin.math.max(1, progressEvery) == 0) {
+                                log("lang=" + lang + ": wrote remote set details " + processedRemote + "/" + setsForLang.size)
+                            }
+                        } catch (t: Throwable) {
+                            log("[warn] Failed remote detail for " + lang + ":" + so.id + ": " + (t.message ?: "unknown"))
+                        }
+                    }
+                }
                 continue
             } catch (t: Throwable) {
                 log("[x] Local generation failed for lang=" + lang + ": " + (t.message ?: "unknown"))
@@ -1411,8 +1522,6 @@ runBlocking {
             val langDir = outBasePath.resolve(lang)
             Files.createDirectories(langDir)
             val detailed = mutableListOf<SetOut>()
-            // Build illustrator index: artist -> (total count, per-set counts)
-            val illustratorAcc: MutableMap<String, Acc> = linkedMapOf()
             var processed = 0
             for (s in fullSets.take(totalSets)) {
                 val full = sdk.getSetById(language = lang, setId = s.id).getOrThrow()
@@ -1427,45 +1536,32 @@ runBlocking {
                     official = full.cardCount?.official,
                     total = full.cardCount?.total ?: full.cardCount?.official,
                 )
-                // Also persist full REST detail JSON for this set for offline enrichment (unless skipped)
+                // Persist canonical REST detail JSON for this set (pretty-printed) with validation and language fallback
                 if (!skipDetails) {
-                try {
-                    val raw = http.get("https://api.tcgdex.net/v2/$lang/sets/${full.id}").bodyAsText()
-                    val setDir = langDir.resolve("sets")
-                    Files.createDirectories(setDir)
-                    Files.writeString(
-                        setDir.resolve("${full.id}.json"),
-                        raw,
-                        StandardOpenOption.CREATE, StandardOpenOption.TRUNCATE_EXISTING, StandardOpenOption.WRITE,
-                    )
-                } catch (t: Throwable) {
+                    try {
+                        val raw = http.get("https://api.tcgdex.net/v2/$lang/sets/${full.id}").bodyAsText()
+                        val element = json.parseToJsonElement(raw)
+                        val obj = element.jsonObject
+                        val cardsCount = obj["cards"]?.jsonArray?.size ?: 0
+                        val cc = obj["cardCount"] as? JsonObject
+                        val expected = cc?.get("total")?.jsonPrimitive?.content?.toIntOrNull()
+                            ?: cc?.get("official")?.jsonPrimitive?.content?.toIntOrNull()
+                        val setDir = langDir.resolve("sets")
+                        Files.createDirectories(setDir)
+                        if (expected != null && cardsCount != expected) {
+                            log("[warn] Card count mismatch for " + lang + ":" + full.id + " expected=" + expected + " actual=" + cardsCount + " – writing API payload as-is")
+                        }
+                        Files.writeString(
+                            setDir.resolve("${full.id}.json"),
+                            json.encodeToString(element),
+                            StandardOpenOption.CREATE, StandardOpenOption.TRUNCATE_EXISTING, StandardOpenOption.WRITE,
+                        )
+                    } catch (t: Throwable) {
                         log("[warn] Failed detail write " + lang + ":" + full.id + ": " + (t.message ?: "unknown"))
                     }
                 }
 
-                // Build illustrator counts for this set using SDK cards listing
-                try {
-                    var page = 1
-                    val pageSize = 250
-                    while (true) {
-                        val resp = sdk.getCardsBySet(language = lang, setId = s.id, page = page, pageSize = pageSize).getOrThrow()
-                        val cards = resp.data.orEmpty()
-                        if (cards.isEmpty()) break
-                        for (c in cards) {
-                            val name = c.illustrator?.trim().orEmpty()
-                            if (name.isEmpty()) continue
-                            val acc = illustratorAcc.getOrPut(name) { Acc(0, linkedMapOf()) }
-                            acc.total += 1
-                            val entry = acc.perSet.getOrPut(s.id) { ISet(setId = s.id, count = 0) }
-                            entry.count += 1
-                        }
-                        val total = resp.total ?: (page * pageSize)
-                        if ((page * pageSize) >= total) break
-                        page++
-                    }
-                } catch (t: Throwable) {
-                    log("[warn] Skipping illustrator scan for set=" + s.id + " lang=" + lang + ": " + (t.message ?: "unknown"))
-                }
+                // Removed: remote illustrator accumulation; illustrators are generated from local DB only.
                 processed++
                 if (processed % kotlin.math.max(1, progressEvery) == 0 || processed == totalSets) {
                     log("lang=" + lang + ": progress " + processed + "/" + totalSets)
@@ -1489,26 +1585,10 @@ runBlocking {
                 StandardOpenOption.CREATE, StandardOpenOption.TRUNCATE_EXISTING, StandardOpenOption.WRITE,
             )
 
-            // Write illustrators index to resources and embed to Kotlin
-            val artists: List<IllustratorIndexEntry> = illustratorAcc.entries
-                .sortedByDescending { it.value.total }
-                .map { (artist, acc) ->
-                    val setsList = acc.perSet.values
-                        .filter { !isTcgpSetId(it.setId) }
-                        .map { IllustratorSetCount(setId = it.setId, count = it.count) }
-                        .sortedByDescending { it.count }
-                    IllustratorIndexEntry(name = artist, total = acc.total, sets = setsList)
-                }
-            val payload = IllustratorIndexPayload(language = lang.lowercase(), generatedAt = System.currentTimeMillis(), artists = artists)
-
-            // Remove legacy per-language file if present
-            runCatching { Files.deleteIfExists(langDir.resolve("illustrators-index.json")) }
-
-            // Accumulate for Kotlin embedding
+            // Accumulate for Kotlin embedding (series/sets only in remote path)
             seriesMap[lang.lowercase()] = json.encodeToString(series)
             setsMap[lang.lowercase()] = json.encodeToString(filteredDetailed)
-            illustratorsMap[lang.lowercase()] = json.encodeToString(payload)
-            log("lang=" + lang + ": wrote series=" + series.size + " sets=" + detailed.size + " artists=" + illustratorAcc.size)
+            log("lang=" + lang + ": wrote series=" + series.size + " sets=" + detailed.size)
         } catch (t: Throwable) {
             log("[x] Skipping lang=" + lang + " due to error: " + (t.message ?: "unknown"))
         }

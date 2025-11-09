@@ -1,102 +1,46 @@
 [
     {
-        "id": "bw",
-        "name": "Black & White",
-        "releaseDate": "2011-04-25"
-    },
-    {
         "id": "base",
-        "name": "Coleção Básica",
-        "releaseDate": "1999-01-09"
-    },
-    {
-        "id": "pop",
-        "name": "POP",
-        "releaseDate": "2003-10-01"
-    },
-    {
-        "id": "col",
-        "name": "Chamado das Lendas",
-        "releaseDate": "2011-02-09"
-    },
-    {
-        "id": "lc",
-        "name": "Legendary Collection",
-        "releaseDate": "2002-05-24"
-    },
-    {
-        "id": "mc",
-        "name": "McDonald's Collection",
-        "releaseDate": "2011-06-17"
+        "name": "Base"
     },
     {
         "id": "ex",
-        "name": "EX",
-        "releaseDate": "2003-07-01"
-    },
-    {
-        "id": "misc",
-        "name": "Miscellaneous",
-        "releaseDate": "2000-02-01"
+        "name": "EX"
     },
     {
         "id": "dp",
-        "name": "Diamante & Pérola",
-        "releaseDate": "2007-05-01"
-    },
-    {
-        "id": "neo",
-        "name": "Neo",
-        "releaseDate": "2000-12-16"
-    },
-    {
-        "id": "sm",
-        "name": "Sol e Lua",
-        "releaseDate": "2017-02-03"
-    },
-    {
-        "id": "me",
-        "name": "Megaevolução",
-        "releaseDate": "2025-09-26"
+        "name": "Diamond & Pearl"
     },
     {
         "id": "hgss",
-        "name": "HeartGold SoulSilver",
-        "releaseDate": "2010-02-10"
+        "name": "HeartGold & SoulSilver"
     },
     {
-        "id": "ecard",
-        "name": "E-Card",
-        "releaseDate": "2002-08-01"
+        "id": "col",
+        "name": "Call of Legends"
     },
     {
-        "id": "sv",
-        "name": "Escarlate e Violeta",
-        "releaseDate": "2023-03-31"
+        "id": "bw",
+        "name": "Black & White"
     },
     {
         "id": "xy",
-        "name": "XY",
-        "releaseDate": "2013-10-12"
+        "name": "XY"
     },
     {
-        "id": "tk",
-        "name": "Trainer kits",
-        "releaseDate": "2004-07-01"
-    },
-    {
-        "id": "pl",
-        "name": "Platinum",
-        "releaseDate": "2009-02-11"
-    },
-    {
-        "id": "gym",
-        "name": "Gym",
-        "releaseDate": "2000-08-14"
+        "id": "sm",
+        "name": "Sun & Moon"
     },
     {
         "id": "swsh",
-        "name": "Espada e Escudo",
-        "releaseDate": "2019-11-15"
+        "name": "Sword & Shield"
+    },
+    {
+        "id": "sv",
+        "name": "Scarlet & Violet"
+    },
+    {
+        "id": "me",
+        "name": "Mega Evolution"
     }
 ]
