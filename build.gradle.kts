@@ -117,17 +117,24 @@ tasks.register<JavaExec>("generateEmbeddedCatalog") {
             systemProperty(key, value)
         }
     }
-}
-
-// Ensure the generator runs for release builds to refresh embedded resources & Kotlin data
-tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile>().configureEach {
-    if (name.contains("Release")) {
-        dependsOn("generateEmbeddedCatalog")
+    // Default: run generator offline unless explicitly overridden
+    val offlineProvided =
+        (project.findProperty("offlineOnly")?.toString()
+            ?: System.getProperty("offlineOnly")
+            ?: System.getenv("OFFLINEONLY"))
+            ?.isNotBlank() == true
+    if (!offlineProvided) {
+        systemProperty("offlineOnly", "true")
     }
 }
 
 // Also wire Android library assembleRelease to trigger generation
 tasks.matching { it.name == "assembleRelease" || it.name == "bundleReleaseAar" }.configureEach {
+    dependsOn("generateEmbeddedCatalog")
+}
+
+// Wire Android library Debug packaging tasks to trigger generation during development
+tasks.matching { it.name == "assembleDebug" || it.name == "bundleDebugAar" }.configureEach {
     dependsOn("generateEmbeddedCatalog")
 }
 
