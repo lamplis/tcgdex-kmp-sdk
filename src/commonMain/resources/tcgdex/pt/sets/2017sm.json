@@ -3,6 +3,123 @@
     "serieId": "mc",
     "name": "Macdonald's Collection 2017",
     "releaseDate": "2017-08-03",
+    "cardCount": 12,
     "logo": "https://assets.tcgdex.net/pt/mc/2017sm/logo",
-    "symbol": "https://assets.tcgdex.net/pt/mc/2017sm/symbol"
+    "symbol": "https://assets.tcgdex.net/pt/mc/2017sm/symbol",
+    "cards": [
+        {
+            "id": "2017sm-1",
+            "number": "1",
+            "name": "Rowlet",
+            "illustrator": null,
+            "rarity": "None"
+        },
+        {
+            "id": "2017sm-2",
+            "number": "2",
+            "name": "Grubbin",
+            "illustrator": null,
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "2017sm-3",
+            "number": "3",
+            "name": "Litten",
+            "illustrator": null,
+            "rarity": "None"
+        },
+        {
+            "id": "2017sm-4",
+            "number": "4",
+            "name": "Popplio",
+            "illustrator": null,
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "2017sm-5",
+            "number": "5",
+            "name": "Pikachu",
+            "illustrator": null,
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "2017sm-6",
+            "number": "6",
+            "name": "Cosmog",
+            "illustrator": null,
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "2017sm-7",
+            "number": "7",
+            "name": "Crabrawler",
+            "illustrator": null,
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "2017sm-8",
+            "number": "8",
+            "name": "Alolan Meowth",
+            "illustrator": null,
+            "rarity": "None"
+        },
+        {
+            "id": "2017sm-9",
+            "number": "9",
+            "name": "Alolan Diglett",
+            "illustrator": null,
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "2017sm-10",
+            "number": "10",
+            "name": "Cutiefly",
+            "illustrator": null,
+            "rarity": "None"
+        },
+        {
+            "id": "2017sm-11",
+            "number": "11",
+            "name": "Pikipek",
+            "illustrator": null,
+            "rarity": "None"
+        },
+        {
+            "id": "2017sm-12",
+            "number": "12",
+            "name": "Yungoos",
+            "illustrator": null,
+            "rarity": "None"
+        }
+    ]
 }

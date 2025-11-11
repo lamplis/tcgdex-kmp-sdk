@@ -1,1 +1,251 @@
-{"cardCount":{"firstEd":0,"holo":0,"normal":0,"official":30,"reverse":0,"total":30},"cards":[{"id":"tk-xy-sy-1","image":"https://assets.tcgdex.net/es/tk/tk-xy-sy/1","localId":"1","name":"Fletchling"},{"id":"tk-xy-sy-2","image":"https://assets.tcgdex.net/es/tk/tk-xy-sy/2","localId":"2","name":"Energía Hada"},{"id":"tk-xy-sy-3","image":"https://assets.tcgdex.net/es/tk/tk-xy-sy/3","localId":"3","name":"Energía Hada"},{"id":"tk-xy-sy-4","image":"https://assets.tcgdex.net/es/tk/tk-xy-sy/4","localId":"4","name":"Cambio"},{"id":"tk-xy-sy-5","image":"https://assets.tcgdex.net/es/tk/tk-xy-sy/5","localId":"5","name":"Energía Hada"},{"id":"tk-xy-sy-6","image":"https://assets.tcgdex.net/es/tk/tk-xy-sy/6","localId":"6","name":"Energía Hada"},{"id":"tk-xy-sy-7","image":"https://assets.tcgdex.net/es/tk/tk-xy-sy/7","localId":"7","name":"Energía Hada"},{"id":"tk-xy-sy-8","image":"https://assets.tcgdex.net/es/tk/tk-xy-sy/8","localId":"8","name":"Energía Hada"},{"id":"tk-xy-sy-9","image":"https://assets.tcgdex.net/es/tk/tk-xy-sy/9","localId":"9","name":"Energía Hada"},{"id":"tk-xy-sy-10","image":"https://assets.tcgdex.net/es/tk/tk-xy-sy/10","localId":"10","name":"Energía Hada"},{"id":"tk-xy-sy-11","image":"https://assets.tcgdex.net/es/tk/tk-xy-sy/11","localId":"11","name":"Snubbull"},{"id":"tk-xy-sy-12","image":"https://assets.tcgdex.net/es/tk/tk-xy-sy/12","localId":"12","name":"Energía Hada"},{"id":"tk-xy-sy-13","image":"https://assets.tcgdex.net/es/tk/tk-xy-sy/13","localId":"13","name":"Eevee"},{"id":"tk-xy-sy-14","image":"https://assets.tcgdex.net/es/tk/tk-xy-sy/14","localId":"14","name":"Granbull"},{"id":"tk-xy-sy-15","image":"https://assets.tcgdex.net/es/tk/tk-xy-sy/15","localId":"15","name":"Sylveon"},{"id":"tk-xy-sy-16","image":"https://assets.tcgdex.net/es/tk/tk-xy-sy/16","localId":"16","name":"Furfrou"},{"id":"tk-xy-sy-17","image":"https://assets.tcgdex.net/es/tk/tk-xy-sy/17","localId":"17","name":"Energía Hada"},{"id":"tk-xy-sy-18","image":"https://assets.tcgdex.net/es/tk/tk-xy-sy/18","localId":"18","name":"Energía Hada"},{"id":"tk-xy-sy-19","image":"https://assets.tcgdex.net/es/tk/tk-xy-sy/19","localId":"19","name":"Fletchling"},{"id":"tk-xy-sy-20","image":"https://assets.tcgdex.net/es/tk/tk-xy-sy/20","localId":"20","name":"Poción"},{"id":"tk-xy-sy-21","image":"https://assets.tcgdex.net/es/tk/tk-xy-sy/21","localId":"21","name":"Eevee"},{"id":"tk-xy-sy-22","image":"https://assets.tcgdex.net/es/tk/tk-xy-sy/22","localId":"22","name":"Furfrou"},{"id":"tk-xy-sy-23","image":"https://assets.tcgdex.net/es/tk/tk-xy-sy/23","localId":"23","name":"Capturapokémon"},{"id":"tk-xy-sy-24","image":"https://assets.tcgdex.net/es/tk/tk-xy-sy/24","localId":"24","name":"Poción"},{"id":"tk-xy-sy-25","image":"https://assets.tcgdex.net/es/tk/tk-xy-sy/25","localId":"25","name":"Energía Hada"},{"id":"tk-xy-sy-26","image":"https://assets.tcgdex.net/es/tk/tk-xy-sy/26","localId":"26","name":"Poké Ball"},{"id":"tk-xy-sy-27","image":"https://assets.tcgdex.net/es/tk/tk-xy-sy/27","localId":"27","name":"Snubbull"},{"id":"tk-xy-sy-28","image":"https://assets.tcgdex.net/es/tk/tk-xy-sy/28","localId":"28","name":"Carta del Profesor"},{"id":"tk-xy-sy-29","image":"https://assets.tcgdex.net/es/tk/tk-xy-sy/29","localId":"29","name":"Granbull"},{"id":"tk-xy-sy-30","image":"https://assets.tcgdex.net/es/tk/tk-xy-sy/30","localId":"30","name":"Sylveon"}],"id":"tk-xy-sy","legal":{"expanded":false,"standard":false},"name":"Kit de Entrenador XY (Pikachu Enmascarada)","releaseDate":"2014-03-12","serie":{"id":"tk","name":"Kits de Entrenador"},"symbol":"https://assets.tcgdex.net/univ/tk/tk-xy-sy/symbol","abbreviation":{"official":"TK6S"}}
+{
+    "id": "tk-xy-sy",
+    "serieId": "tk",
+    "name": "Kit de Entrenador XY (Pikachu Enmascarada)",
+    "releaseDate": "2014-03-12",
+    "cardCount": 30,
+    "logo": "https://assets.tcgdex.net/es/tk/tk-xy-sy/logo",
+    "symbol": "https://assets.tcgdex.net/es/tk/tk-xy-sy/symbol",
+    "cards": [
+        {
+            "id": "tk-xy-sy-1",
+            "number": "1",
+            "name": "Fletchling",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-xy-sy/1",
+            "rarity": "Common"
+        },
+        {
+            "id": "tk-xy-sy-2",
+            "number": "2",
+            "name": "Energía Hada",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-xy-sy/2",
+            "rarity": "Common"
+        },
+        {
+            "id": "tk-xy-sy-3",
+            "number": "3",
+            "name": "Energía Hada",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-xy-sy/3",
+            "rarity": "Common"
+        },
+        {
+            "id": "tk-xy-sy-4",
+            "number": "4",
+            "name": "Cambio",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-xy-sy/4",
+            "rarity": "Common"
+        },
+        {
+            "id": "tk-xy-sy-5",
+            "number": "5",
+            "name": "Energía Hada",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-xy-sy/5",
+            "rarity": "Common"
+        },
+        {
+            "id": "tk-xy-sy-6",
+            "number": "6",
+            "name": "Energía Hada",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-xy-sy/6",
+            "rarity": "Common"
+        },
+        {
+            "id": "tk-xy-sy-7",
+            "number": "7",
+            "name": "Energía Hada",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-xy-sy/7",
+            "rarity": "Common"
+        },
+        {
+            "id": "tk-xy-sy-8",
+            "number": "8",
+            "name": "Energía Hada",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-xy-sy/8",
+            "rarity": "Common"
+        },
+        {
+            "id": "tk-xy-sy-9",
+            "number": "9",
+            "name": "Energía Hada",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-xy-sy/9",
+            "rarity": "Common"
+        },
+        {
+            "id": "tk-xy-sy-10",
+            "number": "10",
+            "name": "Energía Hada",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-xy-sy/10",
+            "rarity": "Common"
+        },
+        {
+            "id": "tk-xy-sy-11",
+            "number": "11",
+            "name": "Snubbull",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-xy-sy/11",
+            "rarity": "Common"
+        },
+        {
+            "id": "tk-xy-sy-12",
+            "number": "12",
+            "name": "Energía Hada",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-xy-sy/12",
+            "rarity": "Common"
+        },
+        {
+            "id": "tk-xy-sy-13",
+            "number": "13",
+            "name": "Eevee",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-xy-sy/13",
+            "rarity": "Common"
+        },
+        {
+            "id": "tk-xy-sy-14",
+            "number": "14",
+            "name": "Granbull",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-xy-sy/14",
+            "rarity": "Common"
+        },
+        {
+            "id": "tk-xy-sy-15",
+            "number": "15",
+            "name": "Sylveon",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-xy-sy/15",
+            "rarity": "None"
+        },
+        {
+            "id": "tk-xy-sy-16",
+            "number": "16",
+            "name": "Furfrou",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-xy-sy/16",
+            "rarity": "Common"
+        },
+        {
+            "id": "tk-xy-sy-17",
+            "number": "17",
+            "name": "Energía Hada",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-xy-sy/17",
+            "rarity": "Common"
+        },
+        {
+            "id": "tk-xy-sy-18",
+            "number": "18",
+            "name": "Energía Hada",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-xy-sy/18",
+            "rarity": "Common"
+        },
+        {
+            "id": "tk-xy-sy-19",
+            "number": "19",
+            "name": "Fletchling",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-xy-sy/19",
+            "rarity": "Common"
+        },
+        {
+            "id": "tk-xy-sy-20",
+            "number": "20",
+            "name": "Poción",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-xy-sy/20",
+            "rarity": "Common"
+        },
+        {
+            "id": "tk-xy-sy-21",
+            "number": "21",
+            "name": "Eevee",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-xy-sy/21",
+            "rarity": "Common"
+        },
+        {
+            "id": "tk-xy-sy-22",
+            "number": "22",
+            "name": "Furfrou",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-xy-sy/22",
+            "rarity": "Common"
+        },
+        {
+            "id": "tk-xy-sy-23",
+            "number": "23",
+            "name": "Capturapokémon",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-xy-sy/23",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "tk-xy-sy-24",
+            "number": "24",
+            "name": "Poción",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-xy-sy/24",
+            "rarity": "Common"
+        },
+        {
+            "id": "tk-xy-sy-25",
+            "number": "25",
+            "name": "Energía Hada",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-xy-sy/25",
+            "rarity": "Common"
+        },
+        {
+            "id": "tk-xy-sy-26",
+            "number": "26",
+            "name": "Poké Ball",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-xy-sy/26",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "tk-xy-sy-27",
+            "number": "27",
+            "name": "Snubbull",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-xy-sy/27",
+            "rarity": "Common"
+        },
+        {
+            "id": "tk-xy-sy-28",
+            "number": "28",
+            "name": "Carta del Profesor",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-xy-sy/28",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "tk-xy-sy-29",
+            "number": "29",
+            "name": "Granbull",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-xy-sy/29",
+            "rarity": "Common"
+        },
+        {
+            "id": "tk-xy-sy-30",
+            "number": "30",
+            "name": "Sylveon",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-xy-sy/30",
+            "rarity": "None"
+        }
+    ]
+}

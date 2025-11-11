@@ -1,1 +1,163 @@
-{"cardCount":{"firstEd":0,"holo":0,"normal":0,"official":30,"reverse":0,"total":30},"cards":[{"id":"tk-sm-r-2","image":"https://assets.tcgdex.net/es/tk/tk-sm-r/2","localId":"2","name":"Energía Rayo"},{"id":"tk-sm-r-4","image":"https://assets.tcgdex.net/es/tk/tk-sm-r/4","localId":"4","name":"Stufful"},{"id":"tk-sm-r-6","image":"https://assets.tcgdex.net/es/tk/tk-sm-r/6","localId":"6","name":"Golbat"},{"id":"tk-sm-r-11","image":"https://assets.tcgdex.net/es/tk/tk-sm-r/11","localId":"11","name":"Zubat"},{"id":"tk-sm-r-13","image":"https://assets.tcgdex.net/es/tk/tk-sm-r/13","localId":"13","name":"Spearow"},{"id":"tk-sm-r-14","image":"https://assets.tcgdex.net/es/tk/tk-sm-r/14","localId":"14","name":"Pikachu"},{"id":"tk-sm-r-15","image":"https://assets.tcgdex.net/es/tk/tk-sm-r/15","localId":"15","name":"Poción"},{"id":"tk-sm-r-16","image":"https://assets.tcgdex.net/es/tk/tk-sm-r/16","localId":"16","name":"Grubbin"},{"id":"tk-sm-r-17","image":"https://assets.tcgdex.net/es/tk/tk-sm-r/17","localId":"17","name":"Raichu de Alola"},{"id":"tk-sm-r-18","image":"https://assets.tcgdex.net/es/tk/tk-sm-r/18","localId":"18","name":"Bewear"},{"id":"tk-sm-r-19","image":"https://assets.tcgdex.net/es/tk/tk-sm-r/19","localId":"19","name":"Tilo"},{"id":"tk-sm-r-20","image":"https://assets.tcgdex.net/es/tk/tk-sm-r/20","localId":"20","name":"Energía Psíquica"},{"id":"tk-sm-r-21","image":"https://assets.tcgdex.net/es/tk/tk-sm-r/21","localId":"21","name":"Super Ball"},{"id":"tk-sm-r-22","image":"https://assets.tcgdex.net/es/tk/tk-sm-r/22","localId":"22","name":"Drowzee"},{"id":"tk-sm-r-23","image":"https://assets.tcgdex.net/es/tk/tk-sm-r/23","localId":"23","name":"Tilo"},{"id":"tk-sm-r-25","image":"https://assets.tcgdex.net/es/tk/tk-sm-r/25","localId":"25","name":"Super Ball"},{"id":"tk-sm-r-26","image":"https://assets.tcgdex.net/es/tk/tk-sm-r/26","localId":"26","name":"Togedemaru"},{"id":"tk-sm-r-29","image":"https://assets.tcgdex.net/es/tk/tk-sm-r/29","localId":"29","name":"Pikachu"},{"id":"tk-sm-r-30","image":"https://assets.tcgdex.net/es/tk/tk-sm-r/30","localId":"30","name":"Raichu de Alola"}],"id":"tk-sm-r","legal":{"expanded":false,"standard":false},"name":"Kit de Entrenador Sol y Luna (Raichu de Alola)","releaseDate":"2017-04-21","serie":{"id":"tk","name":"Kits de Entrenador"},"symbol":"https://assets.tcgdex.net/univ/tk/tk-sm-r/symbol","abbreviation":{"official":"TK10A"}}
+{
+    "id": "tk-sm-r",
+    "serieId": "tk",
+    "name": "Kit de Entrenador Sol y Luna (Raichu de Alola)",
+    "releaseDate": "2017-04-21",
+    "cardCount": 30,
+    "logo": "https://assets.tcgdex.net/es/tk/tk-sm-r/logo",
+    "symbol": "https://assets.tcgdex.net/es/tk/tk-sm-r/symbol",
+    "cards": [
+        {
+            "id": "tk-sm-r-2",
+            "number": "2",
+            "name": "Energía Rayo",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-sm-r/2",
+            "rarity": "Common"
+        },
+        {
+            "id": "tk-sm-r-4",
+            "number": "4",
+            "name": "Stufful",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-sm-r/4",
+            "rarity": "Common"
+        },
+        {
+            "id": "tk-sm-r-6",
+            "number": "6",
+            "name": "Golbat",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-sm-r/6",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "tk-sm-r-11",
+            "number": "11",
+            "name": "Zubat",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-sm-r/11",
+            "rarity": "Common"
+        },
+        {
+            "id": "tk-sm-r-13",
+            "number": "13",
+            "name": "Spearow",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-sm-r/13",
+            "rarity": "Common"
+        },
+        {
+            "id": "tk-sm-r-14",
+            "number": "14",
+            "name": "Pikachu",
+            "illustrator": "kodama",
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-sm-r/14",
+            "rarity": "None"
+        },
+        {
+            "id": "tk-sm-r-15",
+            "number": "15",
+            "name": "Poción",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-sm-r/15",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "tk-sm-r-16",
+            "number": "16",
+            "name": "Grubbin",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-sm-r/16",
+            "rarity": "Common"
+        },
+        {
+            "id": "tk-sm-r-17",
+            "number": "17",
+            "name": "Raichu de Alola",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-sm-r/17",
+            "rarity": "None"
+        },
+        {
+            "id": "tk-sm-r-18",
+            "number": "18",
+            "name": "Bewear",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-sm-r/18",
+            "rarity": "Rare"
+        },
+        {
+            "id": "tk-sm-r-19",
+            "number": "19",
+            "name": "Tilo",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-sm-r/19",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "tk-sm-r-20",
+            "number": "20",
+            "name": "Energía Psíquica",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-sm-r/20",
+            "rarity": "Common"
+        },
+        {
+            "id": "tk-sm-r-21",
+            "number": "21",
+            "name": "Super Ball",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-sm-r/21",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "tk-sm-r-22",
+            "number": "22",
+            "name": "Drowzee",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-sm-r/22",
+            "rarity": "Common"
+        },
+        {
+            "id": "tk-sm-r-23",
+            "number": "23",
+            "name": "Tilo",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-sm-r/23",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "tk-sm-r-25",
+            "number": "25",
+            "name": "Super Ball",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-sm-r/25",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "tk-sm-r-26",
+            "number": "26",
+            "name": "Togedemaru",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-sm-r/26",
+            "rarity": "Common"
+        },
+        {
+            "id": "tk-sm-r-29",
+            "number": "29",
+            "name": "Pikachu",
+            "illustrator": "kodama",
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-sm-r/29",
+            "rarity": "None"
+        },
+        {
+            "id": "tk-sm-r-30",
+            "number": "30",
+            "name": "Raichu de Alola",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/es/tk/tk-sm-r/30",
+            "rarity": "None"
+        }
+    ]
+}

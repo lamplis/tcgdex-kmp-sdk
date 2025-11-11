@@ -3,6 +3,128 @@
     "serieId": "mc",
     "name": "Macdonald's Collection 2012",
     "releaseDate": "2012-06-15",
+    "cardCount": 12,
     "logo": "https://assets.tcgdex.net/pt/mc/2012bw/logo",
-    "symbol": "https://assets.tcgdex.net/pt/mc/2012bw/symbol"
+    "symbol": "https://assets.tcgdex.net/pt/mc/2012bw/symbol",
+    "cards": [
+        {
+            "id": "2012bw-1",
+            "number": "1",
+            "name": "Wrap",
+            "illustrator": "Kagemaru Himeno",
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "2012bw-2",
+            "number": "2",
+            "name": "Collect",
+            "illustrator": "Kouki Saitou",
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "2012bw-3",
+            "number": "3",
+            "name": "Withdraw",
+            "illustrator": "MAHOU",
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "2012bw-4",
+            "number": "4",
+            "name": "Flame Charge",
+            "illustrator": "Kouki Saitou",
+            "rarity": "None"
+        },
+        {
+            "id": "2012bw-5",
+            "number": "5",
+            "name": "Water Gun",
+            "illustrator": "Masakazu Fukuda",
+            "rarity": "None"
+        },
+        {
+            "id": "2012bw-6",
+            "number": "6",
+            "name": "Thundershock",
+            "illustrator": "Kouki Saitou",
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "2012bw-7",
+            "number": "7",
+            "name": "Psy Bolt",
+            "illustrator": "Masakazu Fukuda",
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "2012bw-8",
+            "number": "8",
+            "name": "Hone Claws",
+            "illustrator": "match",
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "2012bw-9",
+            "number": "9",
+            "name": "Knock Off",
+            "illustrator": "Atsuko Nishida",
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "2012bw-10",
+            "number": "10",
+            "name": "Headbutt",
+            "illustrator": "Masakazu Fukuda",
+            "rarity": "None"
+        },
+        {
+            "id": "2012bw-11",
+            "number": "11",
+            "name": "Metal Sound",
+            "illustrator": "Kouki Saitou",
+            "rarity": "None"
+        },
+        {
+            "id": "2012bw-12",
+            "number": "12",
+            "name": "Dual Chop",
+            "illustrator": "Atsuko Nishida",
+            "rarity": "None"
+        }
+    ]
 }

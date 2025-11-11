@@ -3,6 +3,779 @@
     "serieId": "lc",
     "name": "Legendary Collection",
     "releaseDate": "2002-05-24",
+    "cardCount": 110,
     "logo": "https://assets.tcgdex.net/ja/lc/lc/logo",
-    "symbol": "https://assets.tcgdex.net/ja/lc/lc/symbol"
+    "symbol": "https://assets.tcgdex.net/ja/lc/lc/symbol",
+    "cards": [
+        {
+            "id": "lc-1",
+            "number": "1",
+            "name": "Alakazam",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Rare"
+        },
+        {
+            "id": "lc-2",
+            "number": "2",
+            "name": "Articuno",
+            "illustrator": "Mitsuhiro Arita",
+            "rarity": "Rare"
+        },
+        {
+            "id": "lc-3",
+            "number": "3",
+            "name": "Charizard",
+            "illustrator": "Mitsuhiro Arita",
+            "rarity": "Rare"
+        },
+        {
+            "id": "lc-4",
+            "number": "4",
+            "name": "Dark Blastoise",
+            "illustrator": "Mitsuhiro Arita",
+            "rarity": "Rare"
+        },
+        {
+            "id": "lc-5",
+            "number": "5",
+            "name": "Dark Dragonite",
+            "illustrator": "Mitsuhiro Arita",
+            "rarity": "Rare"
+        },
+        {
+            "id": "lc-6",
+            "number": "6",
+            "name": "Dark Persian",
+            "illustrator": "Shin-ichi Yoshida",
+            "rarity": "Rare"
+        },
+        {
+            "id": "lc-7",
+            "number": "7",
+            "name": "Dark Raichu",
+            "illustrator": "Mitsuhiro Arita",
+            "rarity": "Rare"
+        },
+        {
+            "id": "lc-8",
+            "number": "8",
+            "name": "Dark Slowbro",
+            "illustrator": "Mitsuhiro Arita",
+            "rarity": "Rare"
+        },
+        {
+            "id": "lc-9",
+            "number": "9",
+            "name": "Dark Vaporeon",
+            "illustrator": "Mitsuhiro Arita",
+            "rarity": "Rare"
+        },
+        {
+            "id": "lc-10",
+            "number": "10",
+            "name": "Flareon",
+            "illustrator": "Kagemaru Himeno",
+            "rarity": "Rare"
+        },
+        {
+            "id": "lc-11",
+            "number": "11",
+            "name": "Gengar",
+            "illustrator": "Keiji Kinebuchi",
+            "rarity": "Rare"
+        },
+        {
+            "id": "lc-12",
+            "number": "12",
+            "name": "Gyarados",
+            "illustrator": "Mitsuhiro Arita",
+            "rarity": "Rare"
+        },
+        {
+            "id": "lc-13",
+            "number": "13",
+            "name": "Hitmonlee",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Rare"
+        },
+        {
+            "id": "lc-14",
+            "number": "14",
+            "name": "Jolteon",
+            "illustrator": "Kagemaru Himeno",
+            "rarity": "Rare"
+        },
+        {
+            "id": "lc-15",
+            "number": "15",
+            "name": "Machamp",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Rare"
+        },
+        {
+            "id": "lc-16",
+            "number": "16",
+            "name": "Muk",
+            "illustrator": "Mitsuhiro Arita",
+            "rarity": "Rare"
+        },
+        {
+            "id": "lc-17",
+            "number": "17",
+            "name": "Ninetales",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Rare"
+        },
+        {
+            "id": "lc-18",
+            "number": "18",
+            "name": "Venusaur",
+            "illustrator": "Mitsuhiro Arita",
+            "rarity": "Rare"
+        },
+        {
+            "id": "lc-19",
+            "number": "19",
+            "name": "Zapdos",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Rare"
+        },
+        {
+            "id": "lc-20",
+            "number": "20",
+            "name": "Beedrill",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Rare"
+        },
+        {
+            "id": "lc-21",
+            "number": "21",
+            "name": "Butterfree",
+            "illustrator": "Kagemaru Himeno",
+            "rarity": "Rare"
+        },
+        {
+            "id": "lc-22",
+            "number": "22",
+            "name": "Electrode",
+            "illustrator": "Mitsuhiro Arita",
+            "rarity": "Rare"
+        },
+        {
+            "id": "lc-23",
+            "number": "23",
+            "name": "Exeggutor",
+            "illustrator": "Kagemaru Himeno",
+            "rarity": "Rare"
+        },
+        {
+            "id": "lc-24",
+            "number": "24",
+            "name": "Golem",
+            "illustrator": "Kagemaru Himeno",
+            "rarity": "Rare"
+        },
+        {
+            "id": "lc-25",
+            "number": "25",
+            "name": "Hypno",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Rare"
+        },
+        {
+            "id": "lc-26",
+            "number": "26",
+            "name": "Jynx",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Rare"
+        },
+        {
+            "id": "lc-27",
+            "number": "27",
+            "name": "Kabutops",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Rare"
+        },
+        {
+            "id": "lc-28",
+            "number": "28",
+            "name": "Magneton",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Rare"
+        },
+        {
+            "id": "lc-29",
+            "number": "29",
+            "name": "Mewtwo",
+            "illustrator": "Christopher Rush",
+            "rarity": "Rare"
+        },
+        {
+            "id": "lc-30",
+            "number": "30",
+            "name": "Moltres",
+            "illustrator": "Mitsuhiro Arita",
+            "rarity": "Rare"
+        },
+        {
+            "id": "lc-31",
+            "number": "31",
+            "name": "Nidoking",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Rare"
+        },
+        {
+            "id": "lc-32",
+            "number": "32",
+            "name": "Nidoqueen",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Rare"
+        },
+        {
+            "id": "lc-33",
+            "number": "33",
+            "name": "Pidgeot",
+            "illustrator": "Kagemaru Himeno",
+            "rarity": "Rare"
+        },
+        {
+            "id": "lc-34",
+            "number": "34",
+            "name": "Pidgeotto",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Rare"
+        },
+        {
+            "id": "lc-35",
+            "number": "35",
+            "name": "Rhydon",
+            "illustrator": "Kagemaru Himeno",
+            "rarity": "Rare"
+        },
+        {
+            "id": "lc-36",
+            "number": "36",
+            "name": "Arcanine",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "lc-37",
+            "number": "37",
+            "name": "Charmeleon",
+            "illustrator": "Mitsuhiro Arita",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "lc-38",
+            "number": "38",
+            "name": "Dark Dragonair",
+            "illustrator": "Kagemaru Himeno",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "lc-39",
+            "number": "39",
+            "name": "Dark Wartortle",
+            "illustrator": "Kagemaru Himeno",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "lc-40",
+            "number": "40",
+            "name": "Dewgong",
+            "illustrator": "Mitsuhiro Arita",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "lc-41",
+            "number": "41",
+            "name": "Dodrio",
+            "illustrator": "Mitsuhiro Arita",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "lc-42",
+            "number": "42",
+            "name": "Fearow",
+            "illustrator": "Mitsuhiro Arita",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "lc-43",
+            "number": "43",
+            "name": "Golduck",
+            "illustrator": "Kagemaru Himeno",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "lc-44",
+            "number": "44",
+            "name": "Graveler",
+            "illustrator": "Kagemaru Himeno",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "lc-45",
+            "number": "45",
+            "name": "Growlithe",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "lc-46",
+            "number": "46",
+            "name": "Haunter",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "lc-47",
+            "number": "47",
+            "name": "Ivysaur",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "lc-48",
+            "number": "48",
+            "name": "Kabuto",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "lc-49",
+            "number": "49",
+            "name": "Kadabra",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "lc-50",
+            "number": "50",
+            "name": "Kakuna",
+            "illustrator": "Keiji Kinebuchi",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "lc-51",
+            "number": "51",
+            "name": "Machoke",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "lc-52",
+            "number": "52",
+            "name": "Magikarp",
+            "illustrator": "Mitsuhiro Arita",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "lc-53",
+            "number": "53",
+            "name": "Meowth",
+            "illustrator": "Mitsuhiro Arita",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "lc-54",
+            "number": "54",
+            "name": "Metapod",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "lc-55",
+            "number": "55",
+            "name": "Nidorina",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "lc-56",
+            "number": "56",
+            "name": "Nidorino",
+            "illustrator": "Mitsuhiro Arita",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "lc-57",
+            "number": "57",
+            "name": "Omanyte",
+            "illustrator": "Kagemaru Himeno",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "lc-58",
+            "number": "58",
+            "name": "Omastar",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "lc-59",
+            "number": "59",
+            "name": "Primeape",
+            "illustrator": "Kagemaru Himeno",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "lc-60",
+            "number": "60",
+            "name": "Rapidash",
+            "illustrator": "Mitsuhiro Arita",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "lc-61",
+            "number": "61",
+            "name": "Raticate",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "lc-62",
+            "number": "62",
+            "name": "Sandslash",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "lc-63",
+            "number": "63",
+            "name": "Seadra",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "lc-64",
+            "number": "64",
+            "name": "Snorlax",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "lc-65",
+            "number": "65",
+            "name": "Tauros",
+            "illustrator": "Kagemaru Himeno",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "lc-66",
+            "number": "66",
+            "name": "Tentacruel",
+            "illustrator": "Kagemaru Himeno",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "lc-67",
+            "number": "67",
+            "name": "Abra",
+            "illustrator": "Mitsuhiro Arita",
+            "rarity": "Common"
+        },
+        {
+            "id": "lc-68",
+            "number": "68",
+            "name": "Bulbasaur",
+            "illustrator": "Mitsuhiro Arita",
+            "rarity": "Common"
+        },
+        {
+            "id": "lc-69",
+            "number": "69",
+            "name": "Caterpie",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Common"
+        },
+        {
+            "id": "lc-70",
+            "number": "70",
+            "name": "Charmander",
+            "illustrator": "Mitsuhiro Arita",
+            "rarity": "Common"
+        },
+        {
+            "id": "lc-71",
+            "number": "71",
+            "name": "Doduo",
+            "illustrator": "Mitsuhiro Arita",
+            "rarity": "Common"
+        },
+        {
+            "id": "lc-72",
+            "number": "72",
+            "name": "Dratini",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Common"
+        },
+        {
+            "id": "lc-73",
+            "number": "73",
+            "name": "Drowzee",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Common"
+        },
+        {
+            "id": "lc-74",
+            "number": "74",
+            "name": "Eevee",
+            "illustrator": "Kagemaru Himeno",
+            "rarity": "Common"
+        },
+        {
+            "id": "lc-75",
+            "number": "75",
+            "name": "Exeggcute",
+            "illustrator": "Mitsuhiro Arita",
+            "rarity": "Common"
+        },
+        {
+            "id": "lc-76",
+            "number": "76",
+            "name": "Gastly",
+            "illustrator": "Keiji Kinebuchi",
+            "rarity": "Common"
+        },
+        {
+            "id": "lc-77",
+            "number": "77",
+            "name": "Geodude",
+            "illustrator": "Kagemaru Himeno",
+            "rarity": "Common"
+        },
+        {
+            "id": "lc-78",
+            "number": "78",
+            "name": "Grimer",
+            "illustrator": "Mitsuhiro Arita",
+            "rarity": "Common"
+        },
+        {
+            "id": "lc-79",
+            "number": "79",
+            "name": "Machop",
+            "illustrator": "Mitsuhiro Arita",
+            "rarity": "Common"
+        },
+        {
+            "id": "lc-80",
+            "number": "80",
+            "name": "Magnemite",
+            "illustrator": "Keiji Kinebuchi",
+            "rarity": "Common"
+        },
+        {
+            "id": "lc-81",
+            "number": "81",
+            "name": "Mankey",
+            "illustrator": "Kagemaru Himeno",
+            "rarity": "Common"
+        },
+        {
+            "id": "lc-82",
+            "number": "82",
+            "name": "Nidoran♀",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Common"
+        },
+        {
+            "id": "lc-83",
+            "number": "83",
+            "name": "Nidoran♂",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Common"
+        },
+        {
+            "id": "lc-84",
+            "number": "84",
+            "name": "Onix",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Common"
+        },
+        {
+            "id": "lc-85",
+            "number": "85",
+            "name": "Pidgey",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Common"
+        },
+        {
+            "id": "lc-86",
+            "number": "86",
+            "name": "Pikachu",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Common"
+        },
+        {
+            "id": "lc-87",
+            "number": "87",
+            "name": "Ponyta",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Common"
+        },
+        {
+            "id": "lc-88",
+            "number": "88",
+            "name": "Psyduck",
+            "illustrator": "Kagemaru Himeno",
+            "rarity": "Common"
+        },
+        {
+            "id": "lc-89",
+            "number": "89",
+            "name": "Rattata",
+            "illustrator": "Mitsuhiro Arita",
+            "rarity": "Common"
+        },
+        {
+            "id": "lc-90",
+            "number": "90",
+            "name": "Rhyhorn",
+            "illustrator": "Mitsuhiro Arita",
+            "rarity": "Common"
+        },
+        {
+            "id": "lc-91",
+            "number": "91",
+            "name": "Sandshrew",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Common"
+        },
+        {
+            "id": "lc-92",
+            "number": "92",
+            "name": "Seel",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Common"
+        },
+        {
+            "id": "lc-93",
+            "number": "93",
+            "name": "Slowpoke",
+            "illustrator": "Miki Tanaka",
+            "rarity": "Common"
+        },
+        {
+            "id": "lc-94",
+            "number": "94",
+            "name": "Spearow",
+            "illustrator": "Mitsuhiro Arita",
+            "rarity": "Common"
+        },
+        {
+            "id": "lc-95",
+            "number": "95",
+            "name": "Squirtle",
+            "illustrator": "Mitsuhiro Arita",
+            "rarity": "Common"
+        },
+        {
+            "id": "lc-96",
+            "number": "96",
+            "name": "Tentacool",
+            "illustrator": "Kagemaru Himeno",
+            "rarity": "Common"
+        },
+        {
+            "id": "lc-97",
+            "number": "97",
+            "name": "Voltorb",
+            "illustrator": "Keiji Kinebuchi",
+            "rarity": "Common"
+        },
+        {
+            "id": "lc-98",
+            "number": "98",
+            "name": "Vulpix",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Common"
+        },
+        {
+            "id": "lc-99",
+            "number": "99",
+            "name": "Weedle",
+            "illustrator": "Mitsuhiro Arita",
+            "rarity": "Common"
+        },
+        {
+            "id": "lc-100",
+            "number": "100",
+            "name": "Full Heal Energy",
+            "illustrator": "Keiji Kinebuchi",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "lc-101",
+            "number": "101",
+            "name": "Potion Energy",
+            "illustrator": "Keiji Kinebuchi",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "lc-102",
+            "number": "102",
+            "name": "Pokémon Breeder",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Rare"
+        },
+        {
+            "id": "lc-103",
+            "number": "103",
+            "name": "Pokémon Trader",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Rare"
+        },
+        {
+            "id": "lc-104",
+            "number": "104",
+            "name": "Scoop Up",
+            "illustrator": "Keiji Kinebuchi",
+            "rarity": "Rare"
+        },
+        {
+            "id": "lc-105",
+            "number": "105",
+            "name": "The Boss's Way",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "lc-106",
+            "number": "106",
+            "name": "Challenge!",
+            "illustrator": "Kagemaru Himeno",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "lc-107",
+            "number": "107",
+            "name": "Energy Retrieval",
+            "illustrator": "Keiji Kinebuchi",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "lc-108",
+            "number": "108",
+            "name": "Bill",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Common"
+        },
+        {
+            "id": "lc-109",
+            "number": "109",
+            "name": "Mysterious Fossil",
+            "illustrator": "Keiji Kinebuchi",
+            "rarity": "Common"
+        },
+        {
+            "id": "lc-110",
+            "number": "110",
+            "name": "Potion",
+            "illustrator": "Keiji Kinebuchi",
+            "rarity": "Common"
+        }
+    ]
 }

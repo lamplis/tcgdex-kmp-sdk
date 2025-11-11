@@ -1,1 +1,718 @@
-{"cardCount":{"firstEd":0,"holo":0,"normal":0,"official":81,"reverse":0,"total":81},"cards":[],"id":"XY7","legal":{"expanded":false,"standard":false},"name":"バンデットリング","releaseDate":"2015-06-20","serie":{"id":"XY","name":"XY"}}
+{
+    "id": "xy7",
+    "serieId": "xy",
+    "name": "Ancient Origins",
+    "releaseDate": "2015-08-12",
+    "cardCount": 98,
+    "logo": "https://assets.tcgdex.net/ja/xy/xy7/logo",
+    "symbol": "https://assets.tcgdex.net/ja/xy/xy7/symbol",
+    "cards": [
+        {
+            "id": "xy7-1",
+            "number": "1",
+            "name": "Oddish",
+            "illustrator": "MAHOU",
+            "rarity": "Common"
+        },
+        {
+            "id": "xy7-2",
+            "number": "2",
+            "name": "Gloom",
+            "illustrator": "Masakazu Fukuda",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "xy7-3",
+            "number": "3",
+            "name": "Vileplume",
+            "illustrator": "Midori Harada",
+            "rarity": "Rare"
+        },
+        {
+            "id": "xy7-4",
+            "number": "4",
+            "name": "Bellossom",
+            "illustrator": "Mizue",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "xy7-5",
+            "number": "5",
+            "name": "Spinarak",
+            "illustrator": "Naoyo Kimura",
+            "rarity": "Common"
+        },
+        {
+            "id": "xy7-6",
+            "number": "6",
+            "name": "Ariados",
+            "illustrator": "Hajime Kusajima",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "xy7-7",
+            "number": "7",
+            "name": "Sceptile EX",
+            "illustrator": "Eske Yoshinob",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "xy7-8",
+            "number": "8",
+            "name": "M Sceptile EX",
+            "illustrator": "5ban Graphics",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "xy7-9",
+            "number": "9",
+            "name": "Combee",
+            "illustrator": "Sumiyoshi Kizuki",
+            "rarity": "Common"
+        },
+        {
+            "id": "xy7-10",
+            "number": "10",
+            "name": "Vespiquen",
+            "illustrator": "kawayoo",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "xy7-11",
+            "number": "11",
+            "name": "Vespiquen",
+            "illustrator": "Ayaka Yoshida",
+            "rarity": "Rare"
+        },
+        {
+            "id": "xy7-12",
+            "number": "12",
+            "name": "Virizion",
+            "illustrator": "match",
+            "rarity": "Rare"
+        },
+        {
+            "id": "xy7-13",
+            "number": "13",
+            "name": "Flareon",
+            "illustrator": "sui",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "xy7-14",
+            "number": "14",
+            "name": "Entei",
+            "illustrator": "Naoki Saito",
+            "rarity": "Rare"
+        },
+        {
+            "id": "xy7-15",
+            "number": "15",
+            "name": "Entei",
+            "illustrator": "Mitsuhiro Arita",
+            "rarity": "Rare"
+        },
+        {
+            "id": "xy7-16",
+            "number": "16",
+            "name": "Larvesta",
+            "illustrator": "Satoshi Shirai",
+            "rarity": "Common"
+        },
+        {
+            "id": "xy7-17",
+            "number": "17",
+            "name": "Volcarona",
+            "illustrator": "Kyoko Umemoto",
+            "rarity": "Rare"
+        },
+        {
+            "id": "xy7-18",
+            "number": "18",
+            "name": "Volcarona",
+            "illustrator": "Kagemaru Himeno",
+            "rarity": "Rare"
+        },
+        {
+            "id": "xy7-19",
+            "number": "19",
+            "name": "Magikarp",
+            "illustrator": "Akira Komayama",
+            "rarity": "Common"
+        },
+        {
+            "id": "xy7-20",
+            "number": "20",
+            "name": "Gyarados",
+            "illustrator": "Shin Nagasawa",
+            "rarity": "Rare"
+        },
+        {
+            "id": "xy7-21",
+            "number": "21",
+            "name": "Gyarados",
+            "illustrator": "TOKIYA",
+            "rarity": "Rare"
+        },
+        {
+            "id": "xy7-22",
+            "number": "22",
+            "name": "Vaporeon",
+            "illustrator": "kirisAki",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "xy7-23",
+            "number": "23",
+            "name": "Relicanth",
+            "illustrator": "Kagemaru Himeno",
+            "rarity": "Common"
+        },
+        {
+            "id": "xy7-24",
+            "number": "24",
+            "name": "Regice",
+            "illustrator": "Miki Tanaka",
+            "rarity": "Rare"
+        },
+        {
+            "id": "xy7-25",
+            "number": "25",
+            "name": "Kyurem EX",
+            "illustrator": "PLANETA",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "xy7-26",
+            "number": "26",
+            "name": "Jolteon",
+            "illustrator": "Sanosuke Sakuma",
+            "rarity": "Rare"
+        },
+        {
+            "id": "xy7-27",
+            "number": "27",
+            "name": "Ampharos EX",
+            "illustrator": "Eske Yoshinob",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "xy7-28",
+            "number": "28",
+            "name": "M Ampharos EX",
+            "illustrator": "5ban Graphics",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "xy7-29",
+            "number": "29",
+            "name": "Rotom",
+            "illustrator": "Mizue",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "xy7-30",
+            "number": "30",
+            "name": "Unown",
+            "illustrator": "Akira Komayama",
+            "rarity": "Common"
+        },
+        {
+            "id": "xy7-31",
+            "number": "31",
+            "name": "Baltoy",
+            "illustrator": "Kouki Saitou",
+            "rarity": "Common"
+        },
+        {
+            "id": "xy7-32",
+            "number": "32",
+            "name": "Baltoy",
+            "illustrator": "Ayaka Yoshida",
+            "rarity": "Common"
+        },
+        {
+            "id": "xy7-33",
+            "number": "33",
+            "name": "Claydol",
+            "illustrator": "Satoshi Shirai",
+            "rarity": "Rare"
+        },
+        {
+            "id": "xy7-34",
+            "number": "34",
+            "name": "Golett",
+            "illustrator": "Sanosuke Sakuma",
+            "rarity": "Common"
+        },
+        {
+            "id": "xy7-35",
+            "number": "35",
+            "name": "Golurk",
+            "illustrator": "kawayoo",
+            "rarity": "Rare"
+        },
+        {
+            "id": "xy7-36",
+            "number": "36",
+            "name": "Hoopa EX",
+            "illustrator": "Ryota Murayama",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "xy7-37",
+            "number": "37",
+            "name": "Machamp EX",
+            "illustrator": "Eske Yoshinob",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "xy7-38",
+            "number": "38",
+            "name": "Wooper",
+            "illustrator": "Sumiyoshi Kizuki",
+            "rarity": "Common"
+        },
+        {
+            "id": "xy7-39",
+            "number": "39",
+            "name": "Quagsire",
+            "illustrator": "Naoyo Kimura",
+            "rarity": "Common"
+        },
+        {
+            "id": "xy7-40",
+            "number": "40",
+            "name": "Regirock",
+            "illustrator": "Shin Nagasawa",
+            "rarity": "Rare"
+        },
+        {
+            "id": "xy7-41",
+            "number": "41",
+            "name": "Golurk",
+            "illustrator": "Suwama Chiaki",
+            "rarity": "Common"
+        },
+        {
+            "id": "xy7-42",
+            "number": "42",
+            "name": "Tyranitar EX",
+            "illustrator": "Eske Yoshinob",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "xy7-43",
+            "number": "43",
+            "name": "M Tyranitar EX",
+            "illustrator": "5ban Graphics",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "xy7-44",
+            "number": "44",
+            "name": "Sableye",
+            "illustrator": "Hitoshi Ariga",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "xy7-45",
+            "number": "45",
+            "name": "Inkay",
+            "illustrator": "Tomokazu Komiya",
+            "rarity": "Common"
+        },
+        {
+            "id": "xy7-46",
+            "number": "46",
+            "name": "Malamar",
+            "illustrator": "Masakazu Fukuda",
+            "rarity": "Common"
+        },
+        {
+            "id": "xy7-47",
+            "number": "47",
+            "name": "Beldum",
+            "illustrator": "Yuka Morii",
+            "rarity": "Common"
+        },
+        {
+            "id": "xy7-48",
+            "number": "48",
+            "name": "Metang",
+            "illustrator": "Shigenori Negishi",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "xy7-49",
+            "number": "49",
+            "name": "Metagross",
+            "illustrator": "kirisAki",
+            "rarity": "Rare"
+        },
+        {
+            "id": "xy7-50",
+            "number": "50",
+            "name": "Metagross",
+            "illustrator": "Hitoshi Ariga",
+            "rarity": "Rare"
+        },
+        {
+            "id": "xy7-51",
+            "number": "51",
+            "name": "Registeel",
+            "illustrator": "Kouki Saitou",
+            "rarity": "Rare"
+        },
+        {
+            "id": "xy7-52",
+            "number": "52",
+            "name": "Ralts",
+            "illustrator": "Aya Kusube",
+            "rarity": "Common"
+        },
+        {
+            "id": "xy7-53",
+            "number": "53",
+            "name": "Kirlia",
+            "illustrator": "match",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "xy7-54",
+            "number": "54",
+            "name": "Gardevoir",
+            "illustrator": "TOKIYA",
+            "rarity": "Rare"
+        },
+        {
+            "id": "xy7-55",
+            "number": "55",
+            "name": "Cottonee",
+            "illustrator": "Kanako Eo",
+            "rarity": "Common"
+        },
+        {
+            "id": "xy7-56",
+            "number": "56",
+            "name": "Whimsicott",
+            "illustrator": "Atsuko Nishida",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "xy7-57",
+            "number": "57",
+            "name": "Giratina EX",
+            "illustrator": "PLANETA",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "xy7-58",
+            "number": "58",
+            "name": "Goomy",
+            "illustrator": "sui",
+            "rarity": "Common"
+        },
+        {
+            "id": "xy7-59",
+            "number": "59",
+            "name": "Sliggoo",
+            "illustrator": "Midori Harada",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "xy7-60",
+            "number": "60",
+            "name": "Goodra",
+            "illustrator": "Saya Tsuruta",
+            "rarity": "Rare"
+        },
+        {
+            "id": "xy7-61",
+            "number": "61",
+            "name": "Meowth",
+            "illustrator": "Kanako Eo",
+            "rarity": "Common"
+        },
+        {
+            "id": "xy7-62",
+            "number": "62",
+            "name": "Persian",
+            "illustrator": "Mitsuhiro Arita",
+            "rarity": "Common"
+        },
+        {
+            "id": "xy7-63",
+            "number": "63",
+            "name": "Eevee",
+            "illustrator": "Kouki Saitou",
+            "rarity": "Common"
+        },
+        {
+            "id": "xy7-64",
+            "number": "64",
+            "name": "Porygon",
+            "illustrator": "Yukiko Baba",
+            "rarity": "Common"
+        },
+        {
+            "id": "xy7-65",
+            "number": "65",
+            "name": "Porygon2",
+            "illustrator": "MAHOU",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "xy7-66",
+            "number": "66",
+            "name": "Porygon-Z",
+            "illustrator": "TOKIYA",
+            "rarity": "Rare"
+        },
+        {
+            "id": "xy7-67",
+            "number": "67",
+            "name": "Porygon-Z",
+            "illustrator": "Naoki Saito",
+            "rarity": "Rare"
+        },
+        {
+            "id": "xy7-68",
+            "number": "68",
+            "name": "Lugia EX",
+            "illustrator": "Eske Yoshinob",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "xy7-69",
+            "number": "69",
+            "name": "Ace Trainer",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "xy7-70",
+            "number": "70",
+            "name": "Ampharos Spirit Link",
+            "illustrator": "5ban Graphics",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "xy7-71",
+            "number": "71",
+            "name": "Eco Arm",
+            "illustrator": "Toyste Beach",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "xy7-72",
+            "number": "72",
+            "name": "Energy Recycler",
+            "illustrator": "Toyste Beach",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "xy7-73",
+            "number": "73",
+            "name": "Faded Town",
+            "illustrator": "Ryo Ueda",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "xy7-74",
+            "number": "74",
+            "name": "Forest of Giant Plants",
+            "illustrator": "Ryo Ueda",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "xy7-75",
+            "number": "75",
+            "name": "Hex Maniac",
+            "illustrator": "Yusuke Ohmura",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "xy7-75a",
+            "number": "75a",
+            "name": "Hex Maniac",
+            "illustrator": "Yusuke Ohmura",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "xy7-76",
+            "number": "76",
+            "name": "Level Ball",
+            "illustrator": "Toyste Beach",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "xy7-77",
+            "number": "77",
+            "name": "Lucky Helmet",
+            "illustrator": "Toyste Beach",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "xy7-78",
+            "number": "78",
+            "name": "Lysandre",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "xy7-79",
+            "number": "79",
+            "name": "Paint Roller",
+            "illustrator": "Toyste Beach",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "xy7-80",
+            "number": "80",
+            "name": "Sceptile Spirit Link",
+            "illustrator": "5ban Graphics",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "xy7-81",
+            "number": "81",
+            "name": "Tyranitar Spirit Link",
+            "illustrator": "5ban Graphics",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "xy7-82",
+            "number": "82",
+            "name": "Dangerous Energy",
+            "illustrator": "5ban Graphics",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "xy7-83",
+            "number": "83",
+            "name": "Flash Energy",
+            "illustrator": "5ban Graphics",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "xy7-84",
+            "number": "84",
+            "name": "Sceptile EX",
+            "illustrator": "Ryo Ueda",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "xy7-85",
+            "number": "85",
+            "name": "M Sceptile EX",
+            "illustrator": "5ban Graphics",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "xy7-86",
+            "number": "86",
+            "name": "Kyurem EX",
+            "illustrator": "Ryo Ueda",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "xy7-87",
+            "number": "87",
+            "name": "Ampharos EX",
+            "illustrator": "Ryo Ueda",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "xy7-88",
+            "number": "88",
+            "name": "M Ampharos EX",
+            "illustrator": "5ban Graphics",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "xy7-89",
+            "number": "89",
+            "name": "Hoopa EX",
+            "illustrator": "5ban Graphics",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "xy7-90",
+            "number": "90",
+            "name": "Machamp EX",
+            "illustrator": "Ryo Ueda",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "xy7-91",
+            "number": "91",
+            "name": "Tyranitar EX",
+            "illustrator": "Ryo Ueda",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "xy7-92",
+            "number": "92",
+            "name": "M Tyranitar EX",
+            "illustrator": "5ban Graphics",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "xy7-93",
+            "number": "93",
+            "name": "Giratina EX",
+            "illustrator": "Ryo Ueda",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "xy7-94",
+            "number": "94",
+            "name": "Lugia EX",
+            "illustrator": "Ryo Ueda",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "xy7-95",
+            "number": "95",
+            "name": "Steven",
+            "illustrator": "Megumi Mizutani",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "xy7-96",
+            "number": "96",
+            "name": "Primal Kyogre EX",
+            "illustrator": "5ban Graphics",
+            "rarity": "Secret Rare"
+        },
+        {
+            "id": "xy7-97",
+            "number": "97",
+            "name": "Primal Groudon EX",
+            "illustrator": "5ban Graphics",
+            "rarity": "Secret Rare"
+        },
+        {
+            "id": "xy7-98",
+            "number": "98",
+            "name": "M Rayquaza EX",
+            "illustrator": "5ban Graphics",
+            "rarity": "Secret Rare"
+        },
+        {
+            "id": "xy7-99",
+            "number": "99",
+            "name": "Energy Retrieval",
+            "illustrator": "5ban Graphics",
+            "rarity": "Secret Rare"
+        },
+        {
+            "id": "xy7-100",
+            "number": "100",
+            "name": "Trainers' Mail",
+            "illustrator": "Toyste Beach",
+            "rarity": "Secret Rare"
+        }
+    ]
+}

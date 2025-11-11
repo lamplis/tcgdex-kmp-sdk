@@ -3,6 +3,212 @@
     "serieId": "pop",
     "name": "POP Series 9",
     "releaseDate": "2009-03-01",
+    "cardCount": 17,
     "logo": "https://assets.tcgdex.net/ko/pop/pop9/logo",
-    "symbol": "https://assets.tcgdex.net/ko/pop/pop9/symbol"
+    "symbol": "https://assets.tcgdex.net/ko/pop/pop9/symbol",
+    "cards": [
+        {
+            "id": "pop9-1",
+            "number": "1",
+            "name": "Garchomp",
+            "illustrator": "Kagemaru Himeno",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
+        },
+        {
+            "id": "pop9-2",
+            "number": "2",
+            "name": "Manaphy",
+            "illustrator": "Masakazu Fukuda",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "pop9-3",
+            "number": "3",
+            "name": "Raichu",
+            "illustrator": "Midori Harada",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "pop9-4",
+            "number": "4",
+            "name": "Regigigas",
+            "illustrator": "Kent Kanetsuna",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
+        },
+        {
+            "id": "pop9-5",
+            "number": "5",
+            "name": "Rotom",
+            "illustrator": "Masakazu Fukuda",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "pop9-6",
+            "number": "6",
+            "name": "Buizel",
+            "illustrator": "Midori Harada",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
+        },
+        {
+            "id": "pop9-7",
+            "number": "7",
+            "name": "Croagunk",
+            "illustrator": "Midori Harada",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
+        },
+        {
+            "id": "pop9-8",
+            "number": "8",
+            "name": "Gabite",
+            "illustrator": "Kagemaru Himeno",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "pop9-9",
+            "number": "9",
+            "name": "Lopunny",
+            "illustrator": "Midori Harada",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "pop9-10",
+            "number": "10",
+            "name": "Pachirisu",
+            "illustrator": "Midori Harada",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "pop9-11",
+            "number": "11",
+            "name": "Pichu",
+            "illustrator": "Midori Harada",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
+        },
+        {
+            "id": "pop9-12",
+            "number": "12",
+            "name": "Buneary",
+            "illustrator": "Midori Harada",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
+        },
+        {
+            "id": "pop9-13",
+            "number": "13",
+            "name": "Chimchar",
+            "illustrator": "Midori Harada",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
+        },
+        {
+            "id": "pop9-14",
+            "number": "14",
+            "name": "Gible",
+            "illustrator": "Hiroki Fuchino",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
+        },
+        {
+            "id": "pop9-15",
+            "number": "15",
+            "name": "Pikachu",
+            "illustrator": "Midori Harada",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
+        },
+        {
+            "id": "pop9-16",
+            "number": "16",
+            "name": "Piplup",
+            "illustrator": "Midori Harada",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
+        },
+        {
+            "id": "pop9-17",
+            "number": "17",
+            "name": "Turtwig",
+            "illustrator": "Midori Harada",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
+        }
+    ]
 }

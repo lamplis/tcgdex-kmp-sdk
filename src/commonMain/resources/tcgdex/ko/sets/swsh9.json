@@ -3,6 +3,2976 @@
     "serieId": "swsh",
     "name": "Brilliant Stars",
     "releaseDate": "2022-02-25",
+    "cardCount": 172,
     "logo": "https://assets.tcgdex.net/ko/swsh/swsh9/logo",
-    "symbol": "https://assets.tcgdex.net/ko/swsh/swsh9/symbol"
+    "symbol": "https://assets.tcgdex.net/ko/swsh/swsh9/symbol",
+    "cards": [
+        {
+            "id": "swsh9-001",
+            "number": "001",
+            "name": "Exeggcute",
+            "illustrator": null,
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-002",
+            "number": "002",
+            "name": "Exeggutor",
+            "illustrator": null,
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-003",
+            "number": "003",
+            "name": "Shroomish",
+            "illustrator": null,
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-004",
+            "number": "004",
+            "name": "Breloom",
+            "illustrator": null,
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-005",
+            "number": "005",
+            "name": "Tropius",
+            "illustrator": null,
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-006",
+            "number": "006",
+            "name": "Turtwig",
+            "illustrator": null,
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-007",
+            "number": "007",
+            "name": "Grotle",
+            "illustrator": null,
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-008",
+            "number": "008",
+            "name": "Torterra",
+            "illustrator": null,
+            "rarity": "Holo Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-009",
+            "number": "009",
+            "name": "Burmy",
+            "illustrator": null,
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-010",
+            "number": "010",
+            "name": "Wormadam",
+            "illustrator": null,
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-011",
+            "number": "011",
+            "name": "Mothim",
+            "illustrator": null,
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-012",
+            "number": "012",
+            "name": "Cherubi",
+            "illustrator": null,
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-013",
+            "number": "013",
+            "name": "Shaymin V",
+            "illustrator": null,
+            "rarity": "Holo Rare V",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-014",
+            "number": "014",
+            "name": "Shaymin VSTAR",
+            "illustrator": null,
+            "rarity": "Holo Rare VSTAR",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-015",
+            "number": "015",
+            "name": "Karrablast",
+            "illustrator": null,
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-016",
+            "number": "016",
+            "name": "Zarude V",
+            "illustrator": null,
+            "rarity": "Holo Rare V",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-017",
+            "number": "017",
+            "name": "Charizard V",
+            "illustrator": null,
+            "rarity": "Holo Rare V",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-018",
+            "number": "018",
+            "name": "Charizard VSTAR",
+            "illustrator": null,
+            "rarity": "Holo Rare VSTAR",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-019",
+            "number": "019",
+            "name": "Magmar",
+            "illustrator": null,
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-020",
+            "number": "020",
+            "name": "Magmortar",
+            "illustrator": null,
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-021",
+            "number": "021",
+            "name": "Moltres",
+            "illustrator": null,
+            "rarity": "Holo Rare",
+            "variants": [
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-022",
+            "number": "022",
+            "name": "Entei V",
+            "illustrator": null,
+            "rarity": "Holo Rare V",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-023",
+            "number": "023",
+            "name": "Torkoal",
+            "illustrator": null,
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-024",
+            "number": "024",
+            "name": "Chimchar",
+            "illustrator": null,
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-025",
+            "number": "025",
+            "name": "Monferno",
+            "illustrator": null,
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-026",
+            "number": "026",
+            "name": "Infernape",
+            "illustrator": null,
+            "rarity": "Holo Rare",
+            "variants": [
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-027",
+            "number": "027",
+            "name": "Simisear V",
+            "illustrator": null,
+            "rarity": "Holo Rare V",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-028",
+            "number": "028",
+            "name": "Kingler V",
+            "illustrator": null,
+            "rarity": "Holo Rare V",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-029",
+            "number": "029",
+            "name": "Kingler VMAX",
+            "illustrator": null,
+            "rarity": "Holo Rare VMAX",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-030",
+            "number": "030",
+            "name": "Staryu",
+            "illustrator": null,
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-031",
+            "number": "031",
+            "name": "Lapras",
+            "illustrator": null,
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-032",
+            "number": "032",
+            "name": "Corphish",
+            "illustrator": null,
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-033",
+            "number": "033",
+            "name": "Crawdaunt",
+            "illustrator": null,
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-034",
+            "number": "034",
+            "name": "Snorunt",
+            "illustrator": null,
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-035",
+            "number": "035",
+            "name": "Piplup",
+            "illustrator": null,
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-036",
+            "number": "036",
+            "name": "Prinplup",
+            "illustrator": null,
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-037",
+            "number": "037",
+            "name": "Empoleon",
+            "illustrator": null,
+            "rarity": "Holo Rare",
+            "variants": [
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-038",
+            "number": "038",
+            "name": "Buizel",
+            "illustrator": null,
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-039",
+            "number": "039",
+            "name": "Floatzel",
+            "illustrator": null,
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-040",
+            "number": "040",
+            "name": "Lumineon V",
+            "illustrator": null,
+            "rarity": "Holo Rare V",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-041",
+            "number": "041",
+            "name": "Manaphy",
+            "illustrator": null,
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-042",
+            "number": "042",
+            "name": "Cubchoo",
+            "illustrator": null,
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-043",
+            "number": "043",
+            "name": "Beartic",
+            "illustrator": null,
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-044",
+            "number": "044",
+            "name": "Eiscue",
+            "illustrator": null,
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-045",
+            "number": "045",
+            "name": "Raichu V",
+            "illustrator": null,
+            "rarity": "Holo Rare V",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-046",
+            "number": "046",
+            "name": "Electabuzz",
+            "illustrator": null,
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-047",
+            "number": "047",
+            "name": "Electivire",
+            "illustrator": null,
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-048",
+            "number": "048",
+            "name": "Raikou V",
+            "illustrator": null,
+            "rarity": "Holo Rare V",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-049",
+            "number": "049",
+            "name": "Shinx",
+            "illustrator": null,
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-050",
+            "number": "050",
+            "name": "Luxio",
+            "illustrator": null,
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-051",
+            "number": "051",
+            "name": "Luxray",
+            "illustrator": null,
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-052",
+            "number": "052",
+            "name": "Pachirisu",
+            "illustrator": null,
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-053",
+            "number": "053",
+            "name": "Clefairy",
+            "illustrator": null,
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-054",
+            "number": "054",
+            "name": "Clefable",
+            "illustrator": null,
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-055",
+            "number": "055",
+            "name": "Starmie",
+            "illustrator": null,
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-056",
+            "number": "056",
+            "name": "Mewtwo",
+            "illustrator": null,
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-057",
+            "number": "057",
+            "name": "Granbull V",
+            "illustrator": null,
+            "rarity": "Holo Rare V",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-058",
+            "number": "058",
+            "name": "Baltoy",
+            "illustrator": null,
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-059",
+            "number": "059",
+            "name": "Claydol",
+            "illustrator": null,
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-060",
+            "number": "060",
+            "name": "Duskull",
+            "illustrator": null,
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-061",
+            "number": "061",
+            "name": "Dusclops",
+            "illustrator": null,
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-062",
+            "number": "062",
+            "name": "Dusknoir",
+            "illustrator": null,
+            "rarity": "Holo Rare",
+            "variants": [
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-063",
+            "number": "063",
+            "name": "Chimecho",
+            "illustrator": null,
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-064",
+            "number": "064",
+            "name": "Whimsicott V",
+            "illustrator": null,
+            "rarity": "Holo Rare V",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-065",
+            "number": "065",
+            "name": "Whimsicott VSTAR",
+            "illustrator": null,
+            "rarity": "Holo Rare VSTAR",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-066",
+            "number": "066",
+            "name": "Sigilyph",
+            "illustrator": null,
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-067",
+            "number": "067",
+            "name": "Dedenne",
+            "illustrator": null,
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-068",
+            "number": "068",
+            "name": "Mimikyu V",
+            "illustrator": null,
+            "rarity": "Holo Rare V",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-069",
+            "number": "069",
+            "name": "Mimikyu VMAX",
+            "illustrator": null,
+            "rarity": "Holo Rare VMAX",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-070",
+            "number": "070",
+            "name": "Milcery",
+            "illustrator": null,
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-071",
+            "number": "071",
+            "name": "Alcremie",
+            "illustrator": null,
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-072",
+            "number": "072",
+            "name": "Hitmontop",
+            "illustrator": null,
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-073",
+            "number": "073",
+            "name": "Nosepass",
+            "illustrator": null,
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-074",
+            "number": "074",
+            "name": "Trapinch",
+            "illustrator": null,
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-075",
+            "number": "075",
+            "name": "Vibrava",
+            "illustrator": null,
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-076",
+            "number": "076",
+            "name": "Flygon",
+            "illustrator": null,
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-077",
+            "number": "077",
+            "name": "Wormadam",
+            "illustrator": null,
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-078",
+            "number": "078",
+            "name": "Riolu",
+            "illustrator": null,
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-079",
+            "number": "079",
+            "name": "Lucario",
+            "illustrator": null,
+            "rarity": "Holo Rare",
+            "variants": [
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-080",
+            "number": "080",
+            "name": "Throh",
+            "illustrator": null,
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-081",
+            "number": "081",
+            "name": "Sawk",
+            "illustrator": null,
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-082",
+            "number": "082",
+            "name": "Golett",
+            "illustrator": null,
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-083",
+            "number": "083",
+            "name": "Golurk",
+            "illustrator": null,
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-084",
+            "number": "084",
+            "name": "Grimer",
+            "illustrator": null,
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-085",
+            "number": "085",
+            "name": "Muk",
+            "illustrator": null,
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-086",
+            "number": "086",
+            "name": "Sneasel",
+            "illustrator": null,
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-087",
+            "number": "087",
+            "name": "Weavile",
+            "illustrator": null,
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-088",
+            "number": "088",
+            "name": "Honchkrow V",
+            "illustrator": null,
+            "rarity": "Holo Rare V",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-089",
+            "number": "089",
+            "name": "Spiritomb",
+            "illustrator": null,
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-090",
+            "number": "090",
+            "name": "Purrloin",
+            "illustrator": null,
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-091",
+            "number": "091",
+            "name": "Liepard",
+            "illustrator": null,
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-092",
+            "number": "092",
+            "name": "Impidimp",
+            "illustrator": null,
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-093",
+            "number": "093",
+            "name": "Morgrem",
+            "illustrator": null,
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-094",
+            "number": "094",
+            "name": "Grimmsnarl",
+            "illustrator": null,
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-095",
+            "number": "095",
+            "name": "Morpeko V",
+            "illustrator": null,
+            "rarity": "Holo Rare V",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-096",
+            "number": "096",
+            "name": "Aggron V",
+            "illustrator": null,
+            "rarity": "Holo Rare V",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-097",
+            "number": "097",
+            "name": "Aggron VMAX",
+            "illustrator": null,
+            "rarity": "Holo Rare VMAX",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-098",
+            "number": "098",
+            "name": "Wormadam",
+            "illustrator": null,
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-099",
+            "number": "099",
+            "name": "Probopass",
+            "illustrator": null,
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-100",
+            "number": "100",
+            "name": "Heatran",
+            "illustrator": null,
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-101",
+            "number": "101",
+            "name": "Escavalier",
+            "illustrator": null,
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-102",
+            "number": "102",
+            "name": "Klink",
+            "illustrator": null,
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-103",
+            "number": "103",
+            "name": "Klang",
+            "illustrator": null,
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-104",
+            "number": "104",
+            "name": "Klinklang",
+            "illustrator": null,
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-105",
+            "number": "105",
+            "name": "Zamazenta V",
+            "illustrator": null,
+            "rarity": "Holo Rare V",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-106",
+            "number": "106",
+            "name": "Flygon V",
+            "illustrator": null,
+            "rarity": "Holo Rare V",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-107",
+            "number": "107",
+            "name": "Gible",
+            "illustrator": null,
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-108",
+            "number": "108",
+            "name": "Gabite",
+            "illustrator": null,
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-109",
+            "number": "109",
+            "name": "Garchomp",
+            "illustrator": null,
+            "rarity": "Holo Rare",
+            "variants": [
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-110",
+            "number": "110",
+            "name": "Axew",
+            "illustrator": null,
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-111",
+            "number": "111",
+            "name": "Fraxure",
+            "illustrator": null,
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-112",
+            "number": "112",
+            "name": "Haxorus",
+            "illustrator": null,
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-113",
+            "number": "113",
+            "name": "Druddigon",
+            "illustrator": null,
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-114",
+            "number": "114",
+            "name": "Dracovish V",
+            "illustrator": null,
+            "rarity": "Holo Rare V",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-115",
+            "number": "115",
+            "name": "Farfetch'd",
+            "illustrator": null,
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-116",
+            "number": "116",
+            "name": "Castform",
+            "illustrator": null,
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-117",
+            "number": "117",
+            "name": "Starly",
+            "illustrator": null,
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-118",
+            "number": "118",
+            "name": "Staravia",
+            "illustrator": null,
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-119",
+            "number": "119",
+            "name": "Staraptor",
+            "illustrator": null,
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-120",
+            "number": "120",
+            "name": "Bidoof",
+            "illustrator": null,
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-121",
+            "number": "121",
+            "name": "Bibarel",
+            "illustrator": null,
+            "rarity": "Holo Rare",
+            "variants": [
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-122",
+            "number": "122",
+            "name": "Arceus V",
+            "illustrator": null,
+            "rarity": "Holo Rare V",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-123",
+            "number": "123",
+            "name": "Arceus VSTAR",
+            "illustrator": null,
+            "rarity": "Holo Rare VSTAR",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-124",
+            "number": "124",
+            "name": "Minccino",
+            "illustrator": null,
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-125",
+            "number": "125",
+            "name": "Cinccino",
+            "illustrator": null,
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-126",
+            "number": "126",
+            "name": "Tornadus",
+            "illustrator": null,
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-127",
+            "number": "127",
+            "name": "Hawlucha",
+            "illustrator": null,
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-128",
+            "number": "128",
+            "name": "Drampa V",
+            "illustrator": null,
+            "rarity": "Holo Rare V",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-129",
+            "number": "129",
+            "name": "Acerola's Premonition",
+            "illustrator": null,
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-130",
+            "number": "130",
+            "name": "Barry",
+            "illustrator": null,
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-131",
+            "number": "131",
+            "name": "Blunder Policy",
+            "illustrator": null,
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-132",
+            "number": "132",
+            "name": "Boss's Orders",
+            "illustrator": null,
+            "rarity": "Holo Rare",
+            "variants": [
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-133",
+            "number": "133",
+            "name": "Café Master",
+            "illustrator": null,
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-134",
+            "number": "134",
+            "name": "Cheren's Care",
+            "illustrator": null,
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-135",
+            "number": "135",
+            "name": "Choice Belt",
+            "illustrator": null,
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-136",
+            "number": "136",
+            "name": "Cleansing Gloves",
+            "illustrator": null,
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-137",
+            "number": "137",
+            "name": "Collapsed Stadium",
+            "illustrator": null,
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-138",
+            "number": "138",
+            "name": "Cynthia's Ambition",
+            "illustrator": null,
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-139",
+            "number": "139",
+            "name": "Fresh Water Set",
+            "illustrator": null,
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-140",
+            "number": "140",
+            "name": "Friends in Galar",
+            "illustrator": null,
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-141",
+            "number": "141",
+            "name": "Gloria",
+            "illustrator": null,
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-142",
+            "number": "142",
+            "name": "Hunting Gloves",
+            "illustrator": null,
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-143",
+            "number": "143",
+            "name": "Kindler",
+            "illustrator": null,
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-144",
+            "number": "144",
+            "name": "Magma Basin",
+            "illustrator": null,
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-145",
+            "number": "145",
+            "name": "Marnie's Pride",
+            "illustrator": null,
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-146",
+            "number": "146",
+            "name": "Pot Helmet",
+            "illustrator": null,
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-147",
+            "number": "147",
+            "name": "Professor's Research",
+            "illustrator": null,
+            "rarity": "Holo Rare",
+            "variants": [
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-148",
+            "number": "148",
+            "name": "Roseanne's Backup",
+            "illustrator": null,
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-149",
+            "number": "149",
+            "name": "Team Yell's Cheer",
+            "illustrator": null,
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-150",
+            "number": "150",
+            "name": "Ultra Ball",
+            "illustrator": null,
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-151",
+            "number": "151",
+            "name": "Double Turbo Energy",
+            "illustrator": null,
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-152",
+            "number": "152",
+            "name": "Shaymin V",
+            "illustrator": null,
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-153",
+            "number": "153",
+            "name": "Charizard V",
+            "illustrator": null,
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-154",
+            "number": "154",
+            "name": "Charizard V",
+            "illustrator": null,
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-155",
+            "number": "155",
+            "name": "Lumineon V",
+            "illustrator": null,
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-156",
+            "number": "156",
+            "name": "Lumineon V",
+            "illustrator": null,
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-157",
+            "number": "157",
+            "name": "Pikachu V",
+            "illustrator": null,
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-158",
+            "number": "158",
+            "name": "Raichu V",
+            "illustrator": null,
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-159",
+            "number": "159",
+            "name": "Granbull V",
+            "illustrator": null,
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-160",
+            "number": "160",
+            "name": "Whimsicott V",
+            "illustrator": null,
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-161",
+            "number": "161",
+            "name": "Honchkrow V",
+            "illustrator": null,
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-162",
+            "number": "162",
+            "name": "Honchkrow V",
+            "illustrator": null,
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-163",
+            "number": "163",
+            "name": "Zamazenta V",
+            "illustrator": null,
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-164",
+            "number": "164",
+            "name": "Flygon V",
+            "illustrator": null,
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-165",
+            "number": "165",
+            "name": "Arceus V",
+            "illustrator": null,
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-166",
+            "number": "166",
+            "name": "Arceus V",
+            "illustrator": null,
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-167",
+            "number": "167",
+            "name": "Barry",
+            "illustrator": null,
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-168",
+            "number": "168",
+            "name": "Cheren's Care",
+            "illustrator": null,
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-169",
+            "number": "169",
+            "name": "Cynthia's Ambition",
+            "illustrator": null,
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-170",
+            "number": "170",
+            "name": "Kindler",
+            "illustrator": null,
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-171",
+            "number": "171",
+            "name": "Marnie's Pride",
+            "illustrator": null,
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-172",
+            "number": "172",
+            "name": "Roseanne's Backup",
+            "illustrator": null,
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-173",
+            "number": "173",
+            "name": "Shaymin VSTAR",
+            "illustrator": null,
+            "rarity": "Secret Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-174",
+            "number": "174",
+            "name": "Charizard VSTAR",
+            "illustrator": null,
+            "rarity": "Secret Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-175",
+            "number": "175",
+            "name": "Whimsicott VSTAR",
+            "illustrator": null,
+            "rarity": "Secret Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-176",
+            "number": "176",
+            "name": "Arceus VSTAR",
+            "illustrator": null,
+            "rarity": "Secret Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-177",
+            "number": "177",
+            "name": "Cheren's Care",
+            "illustrator": null,
+            "rarity": "Secret Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-178",
+            "number": "178",
+            "name": "Cynthia's Ambition",
+            "illustrator": null,
+            "rarity": "Secret Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-179",
+            "number": "179",
+            "name": "Kindler",
+            "illustrator": null,
+            "rarity": "Secret Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-180",
+            "number": "180",
+            "name": "Roseanne's Backup",
+            "illustrator": null,
+            "rarity": "Secret Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-181",
+            "number": "181",
+            "name": "Galarian Articuno V",
+            "illustrator": null,
+            "rarity": "Secret Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-182",
+            "number": "182",
+            "name": "Galarian Zapdos V",
+            "illustrator": null,
+            "rarity": "Secret Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-183",
+            "number": "183",
+            "name": "Galarian Moltres V",
+            "illustrator": null,
+            "rarity": "Secret Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-184",
+            "number": "184",
+            "name": "Arceus VSTAR",
+            "illustrator": null,
+            "rarity": "Secret Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-185",
+            "number": "185",
+            "name": "Magma Basin",
+            "illustrator": null,
+            "rarity": "Secret Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-186",
+            "number": "186",
+            "name": "Ultra Ball",
+            "illustrator": null,
+            "rarity": "Secret Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-TG21",
+            "number": "TG21",
+            "name": "Rapid Strike Urshifu VMAX",
+            "illustrator": null,
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-TG15",
+            "number": "TG15",
+            "name": "Sylveon VMAX",
+            "illustrator": null,
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-TG05",
+            "number": "TG05",
+            "name": "Zekrom",
+            "illustrator": null,
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-TG11",
+            "number": "TG11",
+            "name": "Eevee",
+            "illustrator": null,
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-TG25",
+            "number": "TG25",
+            "name": "Café Master",
+            "illustrator": null,
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-TG01",
+            "number": "TG01",
+            "name": "Flareon",
+            "illustrator": null,
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-TG10",
+            "number": "TG10",
+            "name": "Houndoom",
+            "illustrator": null,
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-TG24",
+            "number": "TG24",
+            "name": "Acerola's Premonition",
+            "illustrator": null,
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-TG20",
+            "number": "TG20",
+            "name": "Rapid Strike Urshifu V",
+            "illustrator": null,
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-TG14",
+            "number": "TG14",
+            "name": "Sylveon V",
+            "illustrator": null,
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-TG04",
+            "number": "TG04",
+            "name": "Jolteon",
+            "illustrator": null,
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-TG30",
+            "number": "TG30",
+            "name": "Rapid Strike Urshifu VMAX",
+            "illustrator": null,
+            "rarity": "Secret Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-TG19",
+            "number": "TG19",
+            "name": "Single Strike Urshifu VMAX",
+            "illustrator": null,
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-TG09",
+            "number": "TG09",
+            "name": "Ariados",
+            "illustrator": null,
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-TG29",
+            "number": "TG29",
+            "name": "Single Strike Urshifu VMAX",
+            "illustrator": null,
+            "rarity": "Secret Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-TG28",
+            "number": "TG28",
+            "name": "Single Strike Style Mustard",
+            "illustrator": null,
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-TG18",
+            "number": "TG18",
+            "name": "Single Strike Urshifu V",
+            "illustrator": null,
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-TG08",
+            "number": "TG08",
+            "name": "Alcremie",
+            "illustrator": null,
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-TG13",
+            "number": "TG13",
+            "name": "Boltund V",
+            "illustrator": null,
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-TG27",
+            "number": "TG27",
+            "name": "Rapid Strike Style Mustard",
+            "illustrator": null,
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-TG03",
+            "number": "TG03",
+            "name": "Octillery",
+            "illustrator": null,
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-TG23",
+            "number": "TG23",
+            "name": "Umbreon VMAX",
+            "illustrator": null,
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-TG17",
+            "number": "TG17",
+            "name": "Mimikyu VMAX",
+            "illustrator": null,
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-TG07",
+            "number": "TG07",
+            "name": "Dedenne",
+            "illustrator": null,
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-TG22",
+            "number": "TG22",
+            "name": "Umbreon V",
+            "illustrator": null,
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-TG16",
+            "number": "TG16",
+            "name": "Mimikyu V",
+            "illustrator": null,
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-TG06",
+            "number": "TG06",
+            "name": "Dusknoir",
+            "illustrator": null,
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-TG12",
+            "number": "TG12",
+            "name": "Oranguru",
+            "illustrator": null,
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-TG26",
+            "number": "TG26",
+            "name": "Gloria",
+            "illustrator": null,
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh9-TG02",
+            "number": "TG02",
+            "name": "Vaporeon",
+            "illustrator": null,
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        }
+    ]
 }

@@ -3,6 +3,228 @@
     "serieId": "pop",
     "name": "POP Series 7",
     "releaseDate": "2008-03-01",
+    "cardCount": 17,
     "logo": "https://assets.tcgdex.net/es/pop/pop7/logo",
-    "symbol": "https://assets.tcgdex.net/es/pop/pop7/symbol"
+    "symbol": "https://assets.tcgdex.net/es/pop/pop7/symbol",
+    "cards": [
+        {
+            "id": "pop7-1",
+            "number": "1",
+            "name": "Ampharos",
+            "illustrator": "Kouki Saitou",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "pop7-2",
+            "number": "2",
+            "name": "Gallade",
+            "illustrator": "Daisuke Ito",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "pop7-3",
+            "number": "3",
+            "name": "Latias",
+            "illustrator": "Daisuke Ito",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "pop7-4",
+            "number": "4",
+            "name": "Latios",
+            "illustrator": "Daisuke Ito",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "pop7-5",
+            "number": "5",
+            "name": "Mothim",
+            "illustrator": "Kazuyuki Kano",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "pop7-6",
+            "number": "6",
+            "name": "Delibird",
+            "illustrator": "Masakazu Fukuda",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
+        },
+        {
+            "id": "pop7-7",
+            "number": "7",
+            "name": "Flaaffy",
+            "illustrator": "Kagemaru Himeno",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
+        },
+        {
+            "id": "pop7-8",
+            "number": "8",
+            "name": "Kirlia",
+            "illustrator": "Masakazu Fukuda",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "pop7-9",
+            "number": "9",
+            "name": "Stantler",
+            "illustrator": "Kouki Saitou",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
+        },
+        {
+            "id": "pop7-10",
+            "number": "10",
+            "name": "Wormadam Sandy Cloak",
+            "illustrator": "Kagemaru Himeno",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
+        },
+        {
+            "id": "pop7-11",
+            "number": "11",
+            "name": "Burmy Plant Cloak",
+            "illustrator": "Kouki Saitou",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
+        },
+        {
+            "id": "pop7-12",
+            "number": "12",
+            "name": "Burmy Sandy Cloak",
+            "illustrator": "Midori Harada",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
+        },
+        {
+            "id": "pop7-13",
+            "number": "13",
+            "name": "Corsola",
+            "illustrator": "Midori Harada",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
+        },
+        {
+            "id": "pop7-14",
+            "number": "14",
+            "name": "Mareep",
+            "illustrator": "Atsuko Nishida",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
+        },
+        {
+            "id": "pop7-15",
+            "number": "15",
+            "name": "Ralts",
+            "illustrator": "Sumiyoshi Kizuki",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
+        },
+        {
+            "id": "pop7-16",
+            "number": "16",
+            "name": "Sentret",
+            "illustrator": "Midori Harada",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
+        },
+        {
+            "id": "pop7-17",
+            "number": "17",
+            "name": "Spinda",
+            "illustrator": "Atsuko Nishida",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
+        }
+    ]
 }

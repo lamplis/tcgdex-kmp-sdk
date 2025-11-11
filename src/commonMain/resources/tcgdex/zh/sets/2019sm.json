@@ -3,6 +3,113 @@
     "serieId": "mc",
     "name": "Macdonald's Collection 2019",
     "releaseDate": "2019-10-15",
+    "cardCount": 12,
     "logo": "https://assets.tcgdex.net/zh/mc/2019sm/logo",
-    "symbol": "https://assets.tcgdex.net/zh/mc/2019sm/symbol"
+    "symbol": "https://assets.tcgdex.net/zh/mc/2019sm/symbol",
+    "cards": [
+        {
+            "id": "2019sm-1",
+            "number": "1",
+            "name": "Surprise Attack",
+            "illustrator": "Sekio",
+            "rarity": "None"
+        },
+        {
+            "id": "2019sm-2",
+            "number": "2",
+            "name": "Tropical Shake",
+            "illustrator": "Satoshi Shirai",
+            "rarity": "None"
+        },
+        {
+            "id": "2019sm-3",
+            "number": "3",
+            "name": "Controlled Burn",
+            "illustrator": "Yumi",
+            "rarity": "None"
+        },
+        {
+            "id": "2019sm-4",
+            "number": "4",
+            "name": "Fury Swipes",
+            "illustrator": "Shin Nagasawa",
+            "rarity": "None"
+        },
+        {
+            "id": "2019sm-5",
+            "number": "5",
+            "name": "Aqua Bullet",
+            "illustrator": "Saya Tsuruta",
+            "rarity": "None"
+        },
+        {
+            "id": "2019sm-6",
+            "number": "6",
+            "name": "Iron Tail",
+            "illustrator": "Kagemaru Himeno",
+            "rarity": "None"
+        },
+        {
+            "id": "2019sm-7",
+            "number": "7",
+            "name": "Ominous Eyes",
+            "illustrator": "Shibuzoh.",
+            "rarity": "None"
+        },
+        {
+            "id": "2019sm-8",
+            "number": "8",
+            "name": "Three-Step Strike",
+            "illustrator": "Miki Tanaka",
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "2019sm-9",
+            "number": "9",
+            "name": "Screech",
+            "illustrator": "Mitsuhiro Arita",
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "2019sm-10",
+            "number": "10",
+            "name": "Spoil the Fun",
+            "illustrator": "Akira Komayama",
+            "rarity": "None"
+        },
+        {
+            "id": "2019sm-11",
+            "number": "11",
+            "name": "Gold Rush",
+            "illustrator": "Megumi Mizutani",
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "2019sm-12",
+            "number": "12",
+            "name": "Gnaw",
+            "illustrator": "Atsuko Nishida",
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        }
+    ]
 }

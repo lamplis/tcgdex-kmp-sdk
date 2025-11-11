@@ -3,7 +3,7 @@
     "serieId": "swsh",
     "name": "Pokémon GO",
     "releaseDate": "2022-07-01",
-    "cardCount": 88,
+    "cardCount": 78,
     "logo": "https://assets.tcgdex.net/fr/swsh/swsh10.5/logo",
     "symbol": "https://assets.tcgdex.net/fr/swsh/swsh10.5/symbol",
     "cards": [
@@ -12,616 +12,704 @@
             "number": "001",
             "name": "Bulbizarre",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/001"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/001",
+            "rarity": "Common"
         },
         {
             "id": "swsh10.5-002",
             "number": "002",
             "name": "Herbizarre",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/002"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/002",
+            "rarity": "Uncommon"
         },
         {
             "id": "swsh10.5-003",
             "number": "003",
             "name": "Florizarre",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/003"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/003",
+            "rarity": "Holo Rare"
         },
         {
             "id": "swsh10.5-004",
             "number": "004",
             "name": "Florizarre Radieux",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/004"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/004",
+            "rarity": "Radiant Rare"
         },
         {
             "id": "swsh10.5-005",
             "number": "005",
             "name": "Noadkoko d'Alola V",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/005"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/005",
+            "rarity": "Holo Rare V"
         },
         {
             "id": "swsh10.5-006",
             "number": "006",
             "name": "Mimigal",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/006"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/006",
+            "rarity": "Common"
         },
         {
             "id": "swsh10.5-007",
             "number": "007",
             "name": "Migalos",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/007"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/007",
+            "rarity": "Uncommon"
         },
         {
             "id": "swsh10.5-008",
             "number": "008",
             "name": "Salamèche",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/008"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/008",
+            "rarity": "Common"
         },
         {
             "id": "swsh10.5-009",
             "number": "009",
             "name": "Reptincel",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/009"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/009",
+            "rarity": "Uncommon"
         },
         {
             "id": "swsh10.5-010",
             "number": "010",
             "name": "Dracaufeu",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/010"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/010",
+            "rarity": "Holo Rare"
         },
         {
             "id": "swsh10.5-011",
             "number": "011",
             "name": "Dracaufeu Radieux",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/011"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/011",
+            "rarity": "Radiant Rare"
         },
         {
             "id": "swsh10.5-012",
             "number": "012",
             "name": "Sulfura",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/012"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/012",
+            "rarity": "Holo Rare"
         },
         {
             "id": "swsh10.5-013",
             "number": "013",
             "name": "Chamallot",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/013"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/013",
+            "rarity": "Common"
         },
         {
             "id": "swsh10.5-014",
             "number": "014",
             "name": "Camérupt",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/014"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/014",
+            "rarity": "Uncommon"
         },
         {
             "id": "swsh10.5-015",
             "number": "015",
             "name": "Carapuce",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/015"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/015",
+            "rarity": "Common"
         },
         {
             "id": "swsh10.5-016",
             "number": "016",
             "name": "Carabaffe",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/016"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/016",
+            "rarity": "Uncommon"
         },
         {
             "id": "swsh10.5-017",
             "number": "017",
             "name": "Tortank",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/017"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/017",
+            "rarity": "Holo Rare"
         },
         {
             "id": "swsh10.5-018",
             "number": "018",
             "name": "Tortank Radieux",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/018"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/018",
+            "rarity": "Radiant Rare"
         },
         {
             "id": "swsh10.5-019",
             "number": "019",
             "name": "Ramoloss",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/019"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/019",
+            "rarity": "Common"
         },
         {
             "id": "swsh10.5-020",
             "number": "020",
             "name": "Flagadoss",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/020"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/020",
+            "rarity": "Uncommon"
         },
         {
             "id": "swsh10.5-021",
             "number": "021",
             "name": "Magicarpe",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/021"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/021",
+            "rarity": "Common"
         },
         {
             "id": "swsh10.5-022",
             "number": "022",
             "name": "Léviator",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/022"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/022",
+            "rarity": "Holo Rare"
         },
         {
             "id": "swsh10.5-023",
             "number": "023",
             "name": "Lokhlass",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/023"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/023",
+            "rarity": "Holo Rare"
         },
         {
             "id": "swsh10.5-024",
             "number": "024",
             "name": "Artikodin",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/024"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/024",
+            "rarity": "Holo Rare"
         },
         {
             "id": "swsh10.5-025",
             "number": "025",
             "name": "Sovkipou",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/025"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/025",
+            "rarity": "Common"
         },
         {
             "id": "swsh10.5-026",
             "number": "026",
             "name": "Sarmuraï",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/026"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/026",
+            "rarity": "Holo Rare"
         },
         {
             "id": "swsh10.5-027",
             "number": "027",
             "name": "Pikachu",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/027"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/027",
+            "rarity": "Common"
         },
         {
             "id": "swsh10.5-028",
             "number": "028",
             "name": "Pikachu",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/028"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/028",
+            "rarity": "Holo Rare"
         },
         {
             "id": "swsh10.5-029",
             "number": "029",
             "name": "Électhor",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/029"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/029",
+            "rarity": "Holo Rare"
         },
         {
             "id": "swsh10.5-030",
             "number": "030",
             "name": "Mewtwo V",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/030"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/030",
+            "rarity": "Holo Rare V"
         },
         {
             "id": "swsh10.5-031",
             "number": "031",
             "name": "Mewtwo VSTAR",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/031"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/031",
+            "rarity": "Holo Rare VMAX"
         },
         {
             "id": "swsh10.5-032",
             "number": "032",
             "name": "Natu",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/032"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/032",
+            "rarity": "Common"
         },
         {
             "id": "swsh10.5-033",
             "number": "033",
             "name": "Xatu",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/033"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/033",
+            "rarity": "Uncommon"
         },
         {
             "id": "swsh10.5-034",
             "number": "034",
             "name": "Séléroc",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/034"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/034",
+            "rarity": "Uncommon"
         },
         {
             "id": "swsh10.5-035",
             "number": "035",
             "name": "Nymphali",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/035"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/035",
+            "rarity": "Holo Rare"
         },
         {
             "id": "swsh10.5-036",
             "number": "036",
             "name": "Onix",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/036"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/036",
+            "rarity": "Common"
         },
         {
             "id": "swsh10.5-037",
             "number": "037",
             "name": "Embrylex",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/037"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/037",
+            "rarity": "Common"
         },
         {
             "id": "swsh10.5-038",
             "number": "038",
             "name": "Ymphect",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/038"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/038",
+            "rarity": "Uncommon"
         },
         {
             "id": "swsh10.5-039",
             "number": "039",
             "name": "Solaroc",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/039"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/039",
+            "rarity": "Uncommon"
         },
         {
             "id": "swsh10.5-040",
             "number": "040",
             "name": "Bétochef V",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/040"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/040",
+            "rarity": "Holo Rare V"
         },
         {
             "id": "swsh10.5-041",
             "number": "041",
             "name": "Rattata d'Alola",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/041"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/041",
+            "rarity": "Common"
         },
         {
             "id": "swsh10.5-042",
             "number": "042",
             "name": "Rattatac d'Alola",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/042"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/042",
+            "rarity": "Common"
         },
         {
             "id": "swsh10.5-043",
             "number": "043",
             "name": "Tyranocif",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/043"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/043",
+            "rarity": "Holo Rare"
         },
         {
             "id": "swsh10.5-044",
             "number": "044",
             "name": "Steelix",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/044"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/044",
+            "rarity": "Uncommon"
         },
         {
             "id": "swsh10.5-045",
             "number": "045",
             "name": "Meltan",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/045"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/045",
+            "rarity": "Common"
         },
         {
             "id": "swsh10.5-046",
             "number": "046",
             "name": "Melmetal",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/046"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/046",
+            "rarity": "Holo Rare"
         },
         {
             "id": "swsh10.5-047",
             "number": "047",
             "name": "Melmetal V",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/047"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/047",
+            "rarity": "Holo Rare V"
         },
         {
             "id": "swsh10.5-048",
             "number": "048",
             "name": "Melmetal VMAX",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/048"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/048",
+            "rarity": "Holo Rare VMAX"
         },
         {
             "id": "swsh10.5-049",
             "number": "049",
             "name": "Dracolosse V",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/049"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/049",
+            "rarity": "Holo Rare V"
         },
         {
             "id": "swsh10.5-050",
             "number": "050",
             "name": "Dracolosse VSTAR",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/050"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/050",
+            "rarity": "Holo Rare VSTAR"
         },
         {
             "id": "swsh10.5-051",
             "number": "051",
             "name": "Leveinard",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/051"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/051",
+            "rarity": "Uncommon"
         },
         {
             "id": "swsh10.5-052",
             "number": "052",
             "name": "Leuphorie",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/052"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/052",
+            "rarity": "Holo Rare"
         },
         {
             "id": "swsh10.5-053",
             "number": "053",
             "name": "Métamorph",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/053"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/053",
+            "rarity": "Holo Rare"
         },
         {
             "id": "swsh10.5-054",
             "number": "054",
             "name": "Évoli",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/054"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/054",
+            "rarity": "Common"
         },
         {
             "id": "swsh10.5-055",
             "number": "055",
             "name": "Ronflex",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/055"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/055",
+            "rarity": "Holo Rare"
         },
         {
             "id": "swsh10.5-056",
             "number": "056",
             "name": "Capumain",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/056"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/056",
+            "rarity": "Common"
         },
         {
             "id": "swsh10.5-057",
             "number": "057",
             "name": "Capidextre",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/057"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/057",
+            "rarity": "Common"
         },
         {
             "id": "swsh10.5-058",
             "number": "058",
             "name": "Monaflèmit V",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/058"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/058",
+            "rarity": "Holo Rare V"
         },
         {
             "id": "swsh10.5-059",
             "number": "059",
             "name": "Keunotor",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/059"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/059",
+            "rarity": "Common"
         },
         {
             "id": "swsh10.5-060",
             "number": "060",
             "name": "Castorno",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/060"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/060",
+            "rarity": "Common"
         },
         {
             "id": "swsh10.5-061",
             "number": "061",
             "name": "Poichigeon",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/061"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/061",
+            "rarity": "Common"
         },
         {
             "id": "swsh10.5-062",
             "number": "062",
             "name": "Colombeau",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/062"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/062",
+            "rarity": "Common"
         },
         {
             "id": "swsh10.5-063",
             "number": "063",
             "name": "Déflaisan",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/063"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/063",
+            "rarity": "Uncommon"
         },
         {
             "id": "swsh10.5-064",
             "number": "064",
             "name": "Capitaine d'équipe Blanche",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/064"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/064",
+            "rarity": "Uncommon"
         },
         {
             "id": "swsh10.5-065",
             "number": "065",
             "name": "Capitaine d'équipe Candela",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/065"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/065",
+            "rarity": "Uncommon"
         },
         {
             "id": "swsh10.5-066",
             "number": "066",
             "name": "Incubateur d'Œufs",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/066"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/066",
+            "rarity": "Uncommon"
         },
         {
             "id": "swsh10.5-067",
             "number": "067",
             "name": "Module Leurre",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/067"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/067",
+            "rarity": "Uncommon"
         },
         {
             "id": "swsh10.5-068",
             "number": "068",
             "name": "PokéStop",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/068"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/068",
+            "rarity": "Uncommon"
         },
         {
             "id": "swsh10.5-069",
             "number": "069",
             "name": "Super Bonbon",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/069"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/069",
+            "rarity": "Uncommon"
         },
         {
             "id": "swsh10.5-070",
             "number": "070",
             "name": "Capitaine d'équipe Spark",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/070"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/070",
+            "rarity": "Uncommon"
         },
         {
             "id": "swsh10.5-071",
             "number": "071",
             "name": "Noadkoko d'Alola V",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/071"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/071",
+            "rarity": "Ultra Rare"
         },
         {
             "id": "swsh10.5-072",
             "number": "072",
             "name": "Mewtwo V",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/072"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/072",
+            "rarity": "Ultra Rare"
         },
         {
             "id": "swsh10.5-073",
             "number": "073",
             "name": "Bétochef V",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/073"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/073",
+            "rarity": "Ultra Rare"
         },
         {
             "id": "swsh10.5-074",
             "number": "074",
             "name": "Bétochef V",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/074"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/074",
+            "rarity": "Ultra Rare"
         },
         {
             "id": "swsh10.5-075",
             "number": "075",
             "name": "Melmetal V",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/075"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/075",
+            "rarity": "Ultra Rare"
         },
         {
             "id": "swsh10.5-076",
             "number": "076",
             "name": "Dracolosse V",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/076"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/076",
+            "rarity": "Ultra Rare"
         },
         {
             "id": "swsh10.5-077",
             "number": "077",
             "name": "Monaflèmit V",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/077"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/077",
+            "rarity": "Ultra Rare"
         },
         {
             "id": "swsh10.5-078",
             "number": "078",
             "name": "Recherches Professorales",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/078"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/078",
+            "rarity": "Ultra Rare"
         },
         {
             "id": "swsh10.5-079",
             "number": "079",
             "name": "Mewtwo VSTAR",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/079"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/079",
+            "rarity": "Secret Rare"
         },
         {
             "id": "swsh10.5-080",
             "number": "080",
             "name": "Melmetal VMAX",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/080"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/080",
+            "rarity": "Secret Rare"
         },
         {
             "id": "swsh10.5-081",
             "number": "081",
             "name": "Dracolosse VSTAR",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/081"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/081",
+            "rarity": "Secret Rare"
         },
         {
             "id": "swsh10.5-082",
             "number": "082",
             "name": "Capitaine d'équipe Blanche",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/082"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/082",
+            "rarity": "Secret Rare"
         },
         {
             "id": "swsh10.5-083",
             "number": "083",
             "name": "Capitaine d'équipe Candela",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/083"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/083",
+            "rarity": "Secret Rare"
         },
         {
             "id": "swsh10.5-084",
             "number": "084",
             "name": "Recherches Professorales",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/084"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/084",
+            "rarity": "Secret Rare"
         },
         {
             "id": "swsh10.5-085",
             "number": "085",
             "name": "Capitaine d'équipe Spark",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/085"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/085",
+            "rarity": "Secret Rare"
         },
         {
             "id": "swsh10.5-086",
             "number": "086",
             "name": "Mewtwo VSTAR",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/086"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/086",
+            "rarity": "Secret Rare"
         },
         {
             "id": "swsh10.5-087",
             "number": "087",
             "name": "Incubateur d'Œufs",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/087"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/087",
+            "rarity": "Secret Rare"
         },
         {
             "id": "swsh10.5-088",
             "number": "088",
             "name": "Module Leurre",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/088"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh10.5/088",
+            "rarity": "Secret Rare"
         }
     ]
 }

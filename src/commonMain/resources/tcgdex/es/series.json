@@ -1,62 +1,102 @@
 [
     {
+        "id": "bw",
+        "name": "Negro y Blanco",
+        "releaseDate": "2011-04-25"
+    },
+    {
         "id": "base",
-        "name": "Base"
-    },
-    {
-        "id": "neo",
-        "name": "Neo"
-    },
-    {
-        "id": "ex",
-        "name": "EX"
+        "name": "Clásica",
+        "releaseDate": "1999-01-09"
     },
     {
         "id": "pop",
-        "name": "POP"
+        "name": "POP",
+        "releaseDate": "2003-10-01"
     },
     {
-        "id": "tk",
-        "name": "Trainer kits"
+        "id": "col",
+        "name": "Call of Legends",
+        "releaseDate": "2011-02-09"
     },
     {
-        "id": "dp",
-        "name": "Diamond & Pearl"
-    },
-    {
-        "id": "pl",
-        "name": "Platinum"
-    },
-    {
-        "id": "hgss",
-        "name": "HeartGold & SoulSilver"
-    },
-    {
-        "id": "bw",
-        "name": "Black & White"
+        "id": "lc",
+        "name": "Llamada de las Leyendas",
+        "releaseDate": "2002-05-24"
     },
     {
         "id": "mc",
-        "name": "McDonald's Collection"
+        "name": "Colección de McDonald's",
+        "releaseDate": "2011-06-17"
     },
     {
-        "id": "xy",
-        "name": "XY"
+        "id": "ex",
+        "name": "ex",
+        "releaseDate": "2003-07-01"
+    },
+    {
+        "id": "misc",
+        "name": "Miscellaneous",
+        "releaseDate": "2000-02-01"
+    },
+    {
+        "id": "dp",
+        "name": "Diamante & Perla",
+        "releaseDate": "2007-05-01"
+    },
+    {
+        "id": "neo",
+        "name": "Neo",
+        "releaseDate": "2000-12-16"
     },
     {
         "id": "sm",
-        "name": "Sun & Moon"
-    },
-    {
-        "id": "swsh",
-        "name": "Sword & Shield"
-    },
-    {
-        "id": "sv",
-        "name": "Scarlet & Violet"
+        "name": "Sol y Luna",
+        "releaseDate": "2017-02-03"
     },
     {
         "id": "me",
-        "name": "Mega Evolution"
+        "name": "Megaevolución",
+        "releaseDate": "2025-09-26"
+    },
+    {
+        "id": "hgss",
+        "name": "HeartGold SoulSilver",
+        "releaseDate": "2010-02-10"
+    },
+    {
+        "id": "ecard",
+        "name": "E-Card",
+        "releaseDate": "2002-08-01"
+    },
+    {
+        "id": "sv",
+        "name": "Escarlata y Púrpura",
+        "releaseDate": "2023-03-31"
+    },
+    {
+        "id": "xy",
+        "name": "XY",
+        "releaseDate": "2013-10-12"
+    },
+    {
+        "id": "tk",
+        "name": "Kits de Entrenador",
+        "releaseDate": "2004-07-01"
+    },
+    {
+        "id": "pl",
+        "name": "Platino",
+        "releaseDate": "2009-02-11"
+    },
+    {
+        "id": "gym",
+        "name": "Gym",
+        "releaseDate": "2000-08-14"
+    },
+    {
+        "id": "swsh",
+        "name": "Espada y Escudo",
+        "releaseDate": "2019-11-15"
     }
 ]

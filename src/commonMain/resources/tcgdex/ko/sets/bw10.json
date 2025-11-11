@@ -3,6 +3,744 @@
     "serieId": "bw",
     "name": "Plasma Blast",
     "releaseDate": "2013-08-14",
+    "cardCount": 101,
     "logo": "https://assets.tcgdex.net/ko/bw/bw10/logo",
-    "symbol": "https://assets.tcgdex.net/ko/bw/bw10/symbol"
+    "symbol": "https://assets.tcgdex.net/ko/bw/bw10/symbol",
+    "cards": [
+        {
+            "id": "bw10-1",
+            "number": "1",
+            "name": "Surskit",
+            "illustrator": "Naoyo Kimura",
+            "rarity": "Common"
+        },
+        {
+            "id": "bw10-2",
+            "number": "2",
+            "name": "Masquerain",
+            "illustrator": "5ban Graphics",
+            "rarity": "Rare"
+        },
+        {
+            "id": "bw10-3",
+            "number": "3",
+            "name": "Lileep",
+            "illustrator": "Suwama Chiaki",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "bw10-4",
+            "number": "4",
+            "name": "Cradily",
+            "illustrator": "kawayoo",
+            "rarity": "Rare"
+        },
+        {
+            "id": "bw10-5",
+            "number": "5",
+            "name": "Tropius",
+            "illustrator": "Shigenori Negishi",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "bw10-6",
+            "number": "6",
+            "name": "Karrablast",
+            "illustrator": "match",
+            "rarity": "Common"
+        },
+        {
+            "id": "bw10-7",
+            "number": "7",
+            "name": "Shelmet",
+            "illustrator": "Sumiyoshi Kizuki",
+            "rarity": "Common"
+        },
+        {
+            "id": "bw10-8",
+            "number": "8",
+            "name": "Accelgor",
+            "illustrator": "5ban Graphics",
+            "rarity": "Rare"
+        },
+        {
+            "id": "bw10-9",
+            "number": "9",
+            "name": "Virizion-EX",
+            "illustrator": "Ryo Ueda",
+            "rarity": "Rare"
+        },
+        {
+            "id": "bw10-10",
+            "number": "10",
+            "name": "Genesect",
+            "illustrator": "Masakazu Fukuda",
+            "rarity": "Rare"
+        },
+        {
+            "id": "bw10-11",
+            "number": "11",
+            "name": "Genesect-EX",
+            "illustrator": "Eske Yoshinob",
+            "rarity": "Rare"
+        },
+        {
+            "id": "bw10-12",
+            "number": "12",
+            "name": "Larvesta",
+            "illustrator": "Masakazu Fukuda",
+            "rarity": "Common"
+        },
+        {
+            "id": "bw10-13",
+            "number": "13",
+            "name": "Volcarona",
+            "illustrator": "5ban Graphics",
+            "rarity": "Rare"
+        },
+        {
+            "id": "bw10-14",
+            "number": "14",
+            "name": "Squirtle",
+            "illustrator": "Akira Komayama",
+            "rarity": "Common"
+        },
+        {
+            "id": "bw10-15",
+            "number": "15",
+            "name": "Wartortle",
+            "illustrator": "Akira Komayama",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "bw10-16",
+            "number": "16",
+            "name": "Blastoise",
+            "illustrator": "Satoshi Shirai",
+            "rarity": "Rare"
+        },
+        {
+            "id": "bw10-17",
+            "number": "17",
+            "name": "Lapras",
+            "illustrator": "Kouki Saitou",
+            "rarity": "Common"
+        },
+        {
+            "id": "bw10-18",
+            "number": "18",
+            "name": "Remoraid",
+            "illustrator": "Masakazu Fukuda",
+            "rarity": "Common"
+        },
+        {
+            "id": "bw10-19",
+            "number": "19",
+            "name": "Octillery",
+            "illustrator": "5ban Graphics",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "bw10-20",
+            "number": "20",
+            "name": "Suicune",
+            "illustrator": "kawayoo",
+            "rarity": "Rare"
+        },
+        {
+            "id": "bw10-21",
+            "number": "21",
+            "name": "Snorunt",
+            "illustrator": "Kyoko Umemoto",
+            "rarity": "Common"
+        },
+        {
+            "id": "bw10-22",
+            "number": "22",
+            "name": "Glalie",
+            "illustrator": "5ban Graphics",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "bw10-23",
+            "number": "23",
+            "name": "Froslass",
+            "illustrator": "5ban Graphics",
+            "rarity": "Rare"
+        },
+        {
+            "id": "bw10-24",
+            "number": "24",
+            "name": "Relicanth",
+            "illustrator": "5ban Graphics",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "bw10-25",
+            "number": "25",
+            "name": "Snover",
+            "illustrator": "Shigenori Negishi",
+            "rarity": "Common"
+        },
+        {
+            "id": "bw10-26",
+            "number": "26",
+            "name": "Abomasnow",
+            "illustrator": "kawayoo",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "bw10-27",
+            "number": "27",
+            "name": "Tirtouga",
+            "illustrator": "Midori Harada",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "bw10-28",
+            "number": "28",
+            "name": "Carracosta",
+            "illustrator": "Mitsuhiro Arita",
+            "rarity": "Rare"
+        },
+        {
+            "id": "bw10-29",
+            "number": "29",
+            "name": "Ducklett",
+            "illustrator": "Naoki Saito",
+            "rarity": "Common"
+        },
+        {
+            "id": "bw10-30",
+            "number": "30",
+            "name": "Kyurem-EX",
+            "illustrator": "Eske Yoshinob",
+            "rarity": "Rare"
+        },
+        {
+            "id": "bw10-31",
+            "number": "31",
+            "name": "Tynamo",
+            "illustrator": "Shigenori Negishi",
+            "rarity": "Common"
+        },
+        {
+            "id": "bw10-32",
+            "number": "32",
+            "name": "Eelektrik",
+            "illustrator": "Suwama Chiaki",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "bw10-33",
+            "number": "33",
+            "name": "Eelektross",
+            "illustrator": "5ban Graphics",
+            "rarity": "Rare"
+        },
+        {
+            "id": "bw10-34",
+            "number": "34",
+            "name": "Drifloon",
+            "illustrator": "Kyoko Umemoto",
+            "rarity": "Common"
+        },
+        {
+            "id": "bw10-35",
+            "number": "35",
+            "name": "Drifblim",
+            "illustrator": "Akira Komayama",
+            "rarity": "Rare"
+        },
+        {
+            "id": "bw10-36",
+            "number": "36",
+            "name": "Uxie",
+            "illustrator": "Sumiyoshi Kizuki",
+            "rarity": "Rare"
+        },
+        {
+            "id": "bw10-37",
+            "number": "37",
+            "name": "Mesprit",
+            "illustrator": "Ryo Ueda",
+            "rarity": "Rare"
+        },
+        {
+            "id": "bw10-38",
+            "number": "38",
+            "name": "Azelf",
+            "illustrator": "Naoyo Kimura",
+            "rarity": "Rare"
+        },
+        {
+            "id": "bw10-39",
+            "number": "39",
+            "name": "Munna",
+            "illustrator": "Mizue",
+            "rarity": "Common"
+        },
+        {
+            "id": "bw10-40",
+            "number": "40",
+            "name": "Musharna",
+            "illustrator": "Kagemaru Himeno",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "bw10-41",
+            "number": "41",
+            "name": "Sigilyph",
+            "illustrator": "Kagemaru Himeno",
+            "rarity": "Rare"
+        },
+        {
+            "id": "bw10-42",
+            "number": "42",
+            "name": "Solosis",
+            "illustrator": "Midori Harada",
+            "rarity": "Common"
+        },
+        {
+            "id": "bw10-43",
+            "number": "43",
+            "name": "Duosion",
+            "illustrator": "match",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "bw10-44",
+            "number": "44",
+            "name": "Reuniclus",
+            "illustrator": "Kagemaru Himeno",
+            "rarity": "Rare"
+        },
+        {
+            "id": "bw10-45",
+            "number": "45",
+            "name": "Golett",
+            "illustrator": "Midori Harada",
+            "rarity": "Common"
+        },
+        {
+            "id": "bw10-46",
+            "number": "46",
+            "name": "Golurk",
+            "illustrator": "Akira Komayama",
+            "rarity": "Rare"
+        },
+        {
+            "id": "bw10-47",
+            "number": "47",
+            "name": "Machop",
+            "illustrator": "sui",
+            "rarity": "Common"
+        },
+        {
+            "id": "bw10-48",
+            "number": "48",
+            "name": "Machoke",
+            "illustrator": "match",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "bw10-49",
+            "number": "49",
+            "name": "Machamp",
+            "illustrator": "Naoki Saito",
+            "rarity": "Rare"
+        },
+        {
+            "id": "bw10-50",
+            "number": "50",
+            "name": "Machamp",
+            "illustrator": "Kouki Saitou",
+            "rarity": "Rare"
+        },
+        {
+            "id": "bw10-51",
+            "number": "51",
+            "name": "Throh",
+            "illustrator": "Naoki Saito",
+            "rarity": "Common"
+        },
+        {
+            "id": "bw10-52",
+            "number": "52",
+            "name": "Sawk",
+            "illustrator": "Naoki Saito",
+            "rarity": "Common"
+        },
+        {
+            "id": "bw10-53",
+            "number": "53",
+            "name": "Archen",
+            "illustrator": "Mizue",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "bw10-54",
+            "number": "54",
+            "name": "Archeops",
+            "illustrator": "Kouki Saitou",
+            "rarity": "Rare"
+        },
+        {
+            "id": "bw10-55",
+            "number": "55",
+            "name": "Houndour",
+            "illustrator": "Sumiyoshi Kizuki",
+            "rarity": "Common"
+        },
+        {
+            "id": "bw10-56",
+            "number": "56",
+            "name": "Houndoom",
+            "illustrator": "Shin Nagasawa",
+            "rarity": "Rare"
+        },
+        {
+            "id": "bw10-57",
+            "number": "57",
+            "name": "Aron",
+            "illustrator": "Shigenori Negishi",
+            "rarity": "Common"
+        },
+        {
+            "id": "bw10-58",
+            "number": "58",
+            "name": "Lairon",
+            "illustrator": "Masakazu Fukuda",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "bw10-59",
+            "number": "59",
+            "name": "Aggron",
+            "illustrator": "Kouki Saitou",
+            "rarity": "Rare"
+        },
+        {
+            "id": "bw10-60",
+            "number": "60",
+            "name": "Jirachi-EX",
+            "illustrator": "Ryo Ueda",
+            "rarity": "Rare"
+        },
+        {
+            "id": "bw10-61",
+            "number": "61",
+            "name": "Escavalier",
+            "illustrator": "5ban Graphics",
+            "rarity": "Rare"
+        },
+        {
+            "id": "bw10-62",
+            "number": "62",
+            "name": "Bagon",
+            "illustrator": "Kouki Saitou",
+            "rarity": "Common"
+        },
+        {
+            "id": "bw10-63",
+            "number": "63",
+            "name": "Shelgon",
+            "illustrator": "Akira Komayama",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "bw10-64",
+            "number": "64",
+            "name": "Salamence",
+            "illustrator": "Naoki Saito",
+            "rarity": "Rare"
+        },
+        {
+            "id": "bw10-65",
+            "number": "65",
+            "name": "Dialga-EX",
+            "illustrator": "Eske Yoshinob",
+            "rarity": "Rare"
+        },
+        {
+            "id": "bw10-66",
+            "number": "66",
+            "name": "Palkia-EX",
+            "illustrator": "Eske Yoshinob",
+            "rarity": "Rare"
+        },
+        {
+            "id": "bw10-67",
+            "number": "67",
+            "name": "Axew",
+            "illustrator": "sui",
+            "rarity": "Common"
+        },
+        {
+            "id": "bw10-68",
+            "number": "68",
+            "name": "Fraxure",
+            "illustrator": "Masakazu Fukuda",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "bw10-69",
+            "number": "69",
+            "name": "Haxorus",
+            "illustrator": "Kouki Saitou",
+            "rarity": "Rare"
+        },
+        {
+            "id": "bw10-70",
+            "number": "70",
+            "name": "Druddigon",
+            "illustrator": "Kouki Saitou",
+            "rarity": "Common"
+        },
+        {
+            "id": "bw10-71",
+            "number": "71",
+            "name": "Kangaskhan",
+            "illustrator": "Kouki Saitou",
+            "rarity": "Common"
+        },
+        {
+            "id": "bw10-72",
+            "number": "72",
+            "name": "Porygon",
+            "illustrator": "Mitsuhiro Arita",
+            "rarity": "Common"
+        },
+        {
+            "id": "bw10-73",
+            "number": "73",
+            "name": "Porygon2",
+            "illustrator": "HiRON",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "bw10-74",
+            "number": "74",
+            "name": "Porygon-Z",
+            "illustrator": "5ban Graphics",
+            "rarity": "Rare"
+        },
+        {
+            "id": "bw10-75",
+            "number": "75",
+            "name": "Teddiursa",
+            "illustrator": "Naoyo Kimura",
+            "rarity": "Common"
+        },
+        {
+            "id": "bw10-76",
+            "number": "76",
+            "name": "Ursaring",
+            "illustrator": "5ban Graphics",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "bw10-77",
+            "number": "77",
+            "name": "Chatot",
+            "illustrator": "5ban Graphics",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "bw10-78",
+            "number": "78",
+            "name": "Caitlin",
+            "illustrator": "Yusuke Ohmura",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "bw10-79",
+            "number": "79",
+            "name": "Cover Fossil",
+            "illustrator": "Ryo Ueda",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "bw10-80",
+            "number": "80",
+            "name": "Energy Retrieval",
+            "illustrator": "Kent Kanetsuna",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "bw10-81",
+            "number": "81",
+            "name": "Iris",
+            "illustrator": "Yusuke Ohmura",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "bw10-82",
+            "number": "82",
+            "name": "Plume Fossil",
+            "illustrator": "Ryo Ueda",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "bw10-83",
+            "number": "83",
+            "name": "Pokémon Catcher",
+            "illustrator": "5ban Graphics",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "bw10-84",
+            "number": "84",
+            "name": "Professor Juniper",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "bw10-85",
+            "number": "85",
+            "name": "Rare Candy",
+            "illustrator": "Ryo Ueda",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "bw10-86",
+            "number": "86",
+            "name": "Reversal Trigger",
+            "illustrator": "5ban Graphics",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "bw10-87",
+            "number": "87",
+            "name": "Root Fossil Lileep",
+            "illustrator": "5ban Graphics",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "bw10-88",
+            "number": "88",
+            "name": "Silver Bangle",
+            "illustrator": "5ban Graphics",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "bw10-89",
+            "number": "89",
+            "name": "Silver Mirror",
+            "illustrator": "5ban Graphics",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "bw10-90",
+            "number": "90",
+            "name": "Ultra Ball",
+            "illustrator": "5ban Graphics",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "bw10-91",
+            "number": "91",
+            "name": "Plasma Energy",
+            "illustrator": "5ban Graphics",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "bw10-92",
+            "number": "92",
+            "name": "G Booster",
+            "illustrator": "5ban Graphics",
+            "rarity": "Rare"
+        },
+        {
+            "id": "bw10-93",
+            "number": "93",
+            "name": "G Scope",
+            "illustrator": "5ban Graphics",
+            "rarity": "Rare"
+        },
+        {
+            "id": "bw10-94",
+            "number": "94",
+            "name": "Master Ball",
+            "illustrator": "5ban Graphics",
+            "rarity": "Rare"
+        },
+        {
+            "id": "bw10-95",
+            "number": "95",
+            "name": "Scoop Up Cyclone",
+            "illustrator": "5ban Graphics",
+            "rarity": "Rare"
+        },
+        {
+            "id": "bw10-96",
+            "number": "96",
+            "name": "Virizion-EX",
+            "illustrator": "5ban Graphics",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "bw10-97",
+            "number": "97",
+            "name": "Genesect-EX",
+            "illustrator": "5ban Graphics",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "bw10-98",
+            "number": "98",
+            "name": "Jirachi-EX",
+            "illustrator": "5ban Graphics",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "bw10-99",
+            "number": "99",
+            "name": "Dialga-EX",
+            "illustrator": "5ban Graphics",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "bw10-100",
+            "number": "100",
+            "name": "Palkia-EX",
+            "illustrator": "5ban Graphics",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "bw10-101",
+            "number": "101",
+            "name": "Iris",
+            "illustrator": "Kagemaru Himeno",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "bw10-102",
+            "number": "102",
+            "name": "Exeggcute",
+            "illustrator": "5ban Graphics",
+            "rarity": "Secret Rare"
+        },
+        {
+            "id": "bw10-103",
+            "number": "103",
+            "name": "Virizion",
+            "illustrator": "Ayaka Yoshida",
+            "rarity": "Secret Rare"
+        },
+        {
+            "id": "bw10-104",
+            "number": "104",
+            "name": "Dusknoir",
+            "illustrator": "Ayaka Yoshida",
+            "rarity": "Secret Rare"
+        },
+        {
+            "id": "bw10-105",
+            "number": "105",
+            "name": "Rare Candy",
+            "illustrator": "5ban Graphics",
+            "rarity": "Secret Rare"
+        }
+    ]
 }

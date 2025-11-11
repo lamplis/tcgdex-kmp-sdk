@@ -12,119 +12,180 @@
             "number": "1",
             "name": "Blastoise",
             "illustrator": "Mitsuhiro Arita",
-            "imageBase": "https://assets.tcgdex.net/en/pop/pop3/1"
+            "imageBase": "https://assets.tcgdex.net/en/pop/pop3/1",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "pop3-2",
             "number": "2",
             "name": "Flareon",
             "illustrator": "Masakazu Fukuda",
-            "imageBase": "https://assets.tcgdex.net/en/pop/pop3/2"
+            "imageBase": "https://assets.tcgdex.net/en/pop/pop3/2",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "pop3-3",
             "number": "3",
             "name": "Jolteon",
             "illustrator": "Masakazu Fukuda",
-            "imageBase": "https://assets.tcgdex.net/en/pop/pop3/3"
+            "imageBase": "https://assets.tcgdex.net/en/pop/pop3/3",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "pop3-4",
             "number": "4",
             "name": "Minun",
             "illustrator": "Sumiyoshi Kizuki",
-            "imageBase": "https://assets.tcgdex.net/en/pop/pop3/4"
+            "imageBase": "https://assets.tcgdex.net/en/pop/pop3/4",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "pop3-5",
             "number": "5",
             "name": "Plusle",
             "illustrator": "Sumiyoshi Kizuki",
-            "imageBase": "https://assets.tcgdex.net/en/pop/pop3/5"
+            "imageBase": "https://assets.tcgdex.net/en/pop/pop3/5",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "pop3-6",
             "number": "6",
             "name": "Vaporeon",
             "illustrator": "Masakazu Fukuda",
-            "imageBase": "https://assets.tcgdex.net/en/pop/pop3/6"
+            "imageBase": "https://assets.tcgdex.net/en/pop/pop3/6",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "pop3-7",
             "number": "7",
             "name": "Combusken",
             "illustrator": "Mitsuhiro Arita",
-            "imageBase": "https://assets.tcgdex.net/en/pop/pop3/7"
+            "imageBase": "https://assets.tcgdex.net/en/pop/pop3/7",
+            "rarity": "Uncommon"
         },
         {
             "id": "pop3-8",
             "number": "8",
             "name": "Donphan",
             "illustrator": "Tomoaki Imakuni",
-            "imageBase": "https://assets.tcgdex.net/en/pop/pop3/8"
+            "imageBase": "https://assets.tcgdex.net/en/pop/pop3/8",
+            "rarity": "Uncommon"
         },
         {
             "id": "pop3-9",
             "number": "9",
             "name": "Forretress",
             "illustrator": "Midori Harada",
-            "imageBase": "https://assets.tcgdex.net/en/pop/pop3/9"
+            "imageBase": "https://assets.tcgdex.net/en/pop/pop3/9",
+            "rarity": "Uncommon"
         },
         {
             "id": "pop3-10",
             "number": "10",
             "name": "High Pressure System",
             "illustrator": "Ken Ikuji",
-            "imageBase": "https://assets.tcgdex.net/en/pop/pop3/10"
+            "imageBase": "https://assets.tcgdex.net/en/pop/pop3/10",
+            "rarity": "Uncommon"
         },
         {
             "id": "pop3-11",
             "number": "11",
             "name": "Low Pressure System",
             "illustrator": "Shin-ichi Yoshikawa",
-            "imageBase": "https://assets.tcgdex.net/en/pop/pop3/11"
+            "imageBase": "https://assets.tcgdex.net/en/pop/pop3/11",
+            "rarity": "Uncommon"
         },
         {
             "id": "pop3-12",
             "number": "12",
             "name": "Ditto",
             "illustrator": "Yuka Morii",
-            "imageBase": "https://assets.tcgdex.net/en/pop/pop3/12"
+            "imageBase": "https://assets.tcgdex.net/en/pop/pop3/12",
+            "rarity": "Common"
         },
         {
             "id": "pop3-13",
             "number": "13",
             "name": "Eevee",
             "illustrator": "Masakazu Fukuda",
-            "imageBase": "https://assets.tcgdex.net/en/pop/pop3/13"
+            "imageBase": "https://assets.tcgdex.net/en/pop/pop3/13",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "pop3-14",
             "number": "14",
             "name": "Ivysaur",
             "illustrator": "Midori Harada",
-            "imageBase": "https://assets.tcgdex.net/en/pop/pop3/14"
+            "imageBase": "https://assets.tcgdex.net/en/pop/pop3/14",
+            "rarity": "Common"
         },
         {
             "id": "pop3-15",
             "number": "15",
             "name": "Marshtomp",
             "illustrator": "Midori Harada",
-            "imageBase": "https://assets.tcgdex.net/en/pop/pop3/15"
+            "imageBase": "https://assets.tcgdex.net/en/pop/pop3/15",
+            "rarity": "Common"
         },
         {
             "id": "pop3-16",
             "number": "16",
             "name": "Pichu Bros.",
             "illustrator": "Kagemaru Himeno",
-            "imageBase": "https://assets.tcgdex.net/en/pop/pop3/16"
+            "imageBase": "https://assets.tcgdex.net/en/pop/pop3/16",
+            "rarity": "Common"
         },
         {
             "id": "pop3-17",
             "number": "17",
             "name": "Ho-Oh ex",
             "illustrator": "Mitsuhiro Arita",
-            "imageBase": "https://assets.tcgdex.net/en/pop/pop3/17"
+            "imageBase": "https://assets.tcgdex.net/en/pop/pop3/17",
+            "rarity": "Ultra Rare"
         }
     ]
 }

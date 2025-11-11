@@ -3,6 +3,534 @@
     "serieId": "neo",
     "name": "Neo Discovery",
     "releaseDate": "2001-06-01",
+    "cardCount": 75,
     "logo": "https://assets.tcgdex.net/zh/neo/neo2/logo",
-    "symbol": "https://assets.tcgdex.net/zh/neo/neo2/symbol"
+    "symbol": "https://assets.tcgdex.net/zh/neo/neo2/symbol",
+    "cards": [
+        {
+            "id": "neo2-1",
+            "number": "1",
+            "name": "Espeon",
+            "illustrator": "Atsuko Nishida",
+            "rarity": "Rare"
+        },
+        {
+            "id": "neo2-2",
+            "number": "2",
+            "name": "Forretress",
+            "illustrator": "CR CG gangs",
+            "rarity": "Rare"
+        },
+        {
+            "id": "neo2-3",
+            "number": "3",
+            "name": "Hitmontop",
+            "illustrator": "Sumiyoshi Kizuki",
+            "rarity": "Rare"
+        },
+        {
+            "id": "neo2-4",
+            "number": "4",
+            "name": "Houndoom",
+            "illustrator": "Shin-ichi Yoshida",
+            "rarity": "Rare"
+        },
+        {
+            "id": "neo2-5",
+            "number": "5",
+            "name": "Houndour",
+            "illustrator": "Aya Kusube",
+            "rarity": "Rare"
+        },
+        {
+            "id": "neo2-6",
+            "number": "6",
+            "name": "Kabutops",
+            "illustrator": "Kimiya Masago",
+            "rarity": "Rare"
+        },
+        {
+            "id": "neo2-7",
+            "number": "7",
+            "name": "Magnemite",
+            "illustrator": null,
+            "rarity": "Rare"
+        },
+        {
+            "id": "neo2-8",
+            "number": "8",
+            "name": "Politoed",
+            "illustrator": "Tomokazu Komiya",
+            "rarity": "Rare"
+        },
+        {
+            "id": "neo2-9",
+            "number": "9",
+            "name": "Poliwrath",
+            "illustrator": "Shin-ichi Yoshida",
+            "rarity": "Rare"
+        },
+        {
+            "id": "neo2-10",
+            "number": "10",
+            "name": "Scizor",
+            "illustrator": "Kimiya Masago",
+            "rarity": "Rare"
+        },
+        {
+            "id": "neo2-11",
+            "number": "11",
+            "name": "Smeargle",
+            "illustrator": "Hironobu Yoshida",
+            "rarity": "Rare"
+        },
+        {
+            "id": "neo2-12",
+            "number": "12",
+            "name": "Tyranitar",
+            "illustrator": "Hironobu Yoshida",
+            "rarity": "Rare"
+        },
+        {
+            "id": "neo2-13",
+            "number": "13",
+            "name": "Umbreon",
+            "illustrator": "Kimiya Masago",
+            "rarity": "Rare"
+        },
+        {
+            "id": "neo2-14",
+            "number": "14",
+            "name": "Unown [A]",
+            "illustrator": "CR CG gangs",
+            "rarity": "Rare"
+        },
+        {
+            "id": "neo2-15",
+            "number": "15",
+            "name": "Ursaring",
+            "illustrator": "Naoyo Kimura",
+            "rarity": "Rare"
+        },
+        {
+            "id": "neo2-16",
+            "number": "16",
+            "name": "Wobbuffet",
+            "illustrator": "Hironobu Yoshida",
+            "rarity": "Rare"
+        },
+        {
+            "id": "neo2-17",
+            "number": "17",
+            "name": "Yanma",
+            "illustrator": "Atsuko Nishida",
+            "rarity": "Rare"
+        },
+        {
+            "id": "neo2-18",
+            "number": "18",
+            "name": "Beedrill",
+            "illustrator": "Aya Kusube",
+            "rarity": "Rare"
+        },
+        {
+            "id": "neo2-19",
+            "number": "19",
+            "name": "Butterfree",
+            "illustrator": "Atsuko Nishida",
+            "rarity": "Rare"
+        },
+        {
+            "id": "neo2-20",
+            "number": "20",
+            "name": "Espeon",
+            "illustrator": "Naoyo Kimura",
+            "rarity": "Rare"
+        },
+        {
+            "id": "neo2-21",
+            "number": "21",
+            "name": "Forretress",
+            "illustrator": "CR CG gangs",
+            "rarity": "Rare"
+        },
+        {
+            "id": "neo2-22",
+            "number": "22",
+            "name": "Hitmontop",
+            "illustrator": "Sumiyoshi Kizuki",
+            "rarity": "Rare"
+        },
+        {
+            "id": "neo2-23",
+            "number": "23",
+            "name": "Houndoom",
+            "illustrator": "Shin-ichi Yoshida",
+            "rarity": "Rare"
+        },
+        {
+            "id": "neo2-24",
+            "number": "24",
+            "name": "Houndour",
+            "illustrator": "Aya Kusube",
+            "rarity": "Rare"
+        },
+        {
+            "id": "neo2-25",
+            "number": "25",
+            "name": "Kabutops",
+            "illustrator": "Kimiya Masago",
+            "rarity": "Rare"
+        },
+        {
+            "id": "neo2-26",
+            "number": "26",
+            "name": "Magnemite",
+            "illustrator": null,
+            "rarity": "Rare"
+        },
+        {
+            "id": "neo2-27",
+            "number": "27",
+            "name": "Politoed",
+            "illustrator": "Tomokazu Komiya",
+            "rarity": "Rare"
+        },
+        {
+            "id": "neo2-28",
+            "number": "28",
+            "name": "Poliwrath",
+            "illustrator": "Shin-ichi Yoshida",
+            "rarity": "Rare"
+        },
+        {
+            "id": "neo2-29",
+            "number": "29",
+            "name": "Scizor",
+            "illustrator": "Kimiya Masago",
+            "rarity": "Rare"
+        },
+        {
+            "id": "neo2-30",
+            "number": "30",
+            "name": "Smeargle",
+            "illustrator": "Hironobu Yoshida",
+            "rarity": "Rare"
+        },
+        {
+            "id": "neo2-31",
+            "number": "31",
+            "name": "Tyranitar",
+            "illustrator": "Hironobu Yoshida",
+            "rarity": "Rare"
+        },
+        {
+            "id": "neo2-32",
+            "number": "32",
+            "name": "Umbreon",
+            "illustrator": "Naoyo Kimura",
+            "rarity": "Rare"
+        },
+        {
+            "id": "neo2-33",
+            "number": "33",
+            "name": "Unown [A]",
+            "illustrator": "CR CG gangs",
+            "rarity": "Rare"
+        },
+        {
+            "id": "neo2-34",
+            "number": "34",
+            "name": "Ursaring",
+            "illustrator": "Naoyo Kimura",
+            "rarity": "Rare"
+        },
+        {
+            "id": "neo2-35",
+            "number": "35",
+            "name": "Wobbuffet",
+            "illustrator": "Hironobu Yoshida",
+            "rarity": "Rare"
+        },
+        {
+            "id": "neo2-36",
+            "number": "36",
+            "name": "Yanma",
+            "illustrator": "Atsuko Nishida",
+            "rarity": "Rare"
+        },
+        {
+            "id": "neo2-37",
+            "number": "37",
+            "name": "Corsola",
+            "illustrator": "Yuka Morii",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "neo2-38",
+            "number": "38",
+            "name": "Eevee",
+            "illustrator": "Aya Kusube",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "neo2-39",
+            "number": "39",
+            "name": "Houndour",
+            "illustrator": "Shin-ichi Yoshida",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "neo2-40",
+            "number": "40",
+            "name": "Igglybuff",
+            "illustrator": "Miki Tanaka",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "neo2-41",
+            "number": "41",
+            "name": "Kakuna",
+            "illustrator": "Yukiko Baba",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "neo2-42",
+            "number": "42",
+            "name": "Metapod",
+            "illustrator": "Sumiyoshi Kizuki",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "neo2-43",
+            "number": "43",
+            "name": "Omastar",
+            "illustrator": "Shin-ichi Yoshida",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "neo2-44",
+            "number": "44",
+            "name": "Poliwhirl",
+            "illustrator": "Kagemaru Himeno",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "neo2-45",
+            "number": "45",
+            "name": "Pupitar",
+            "illustrator": "Hironobu Yoshida",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "neo2-46",
+            "number": "46",
+            "name": "Scyther",
+            "illustrator": "Kimiya Masago",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "neo2-47",
+            "number": "47",
+            "name": "Unown [D]",
+            "illustrator": "CR CG gangs",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "neo2-48",
+            "number": "48",
+            "name": "Unown [F]",
+            "illustrator": "CR CG gangs",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "neo2-49",
+            "number": "49",
+            "name": "Unown [M]",
+            "illustrator": "CR CG gangs",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "neo2-50",
+            "number": "50",
+            "name": "Unown [N]",
+            "illustrator": "CR CG gangs",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "neo2-51",
+            "number": "51",
+            "name": "Unown [U]",
+            "illustrator": "CR CG gangs",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "neo2-52",
+            "number": "52",
+            "name": "Xatu",
+            "illustrator": "Sumiyoshi Kizuki",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "neo2-53",
+            "number": "53",
+            "name": "Caterpie",
+            "illustrator": "Yuka Morii",
+            "rarity": "Common"
+        },
+        {
+            "id": "neo2-54",
+            "number": "54",
+            "name": "Dunsparce",
+            "illustrator": "Yukiko Baba",
+            "rarity": "Common"
+        },
+        {
+            "id": "neo2-55",
+            "number": "55",
+            "name": "Hoppip",
+            "illustrator": "Kagemaru Himeno",
+            "rarity": "Common"
+        },
+        {
+            "id": "neo2-56",
+            "number": "56",
+            "name": "Kabuto",
+            "illustrator": "Yuka Morii",
+            "rarity": "Common"
+        },
+        {
+            "id": "neo2-57",
+            "number": "57",
+            "name": "Larvitar",
+            "illustrator": "Hironobu Yoshida",
+            "rarity": "Common"
+        },
+        {
+            "id": "neo2-58",
+            "number": "58",
+            "name": "Mareep",
+            "illustrator": "Atsuko Nishida",
+            "rarity": "Common"
+        },
+        {
+            "id": "neo2-59",
+            "number": "59",
+            "name": "Natu",
+            "illustrator": "Sumiyoshi Kizuki",
+            "rarity": "Common"
+        },
+        {
+            "id": "neo2-60",
+            "number": "60",
+            "name": "Omanyte",
+            "illustrator": "Yuka Morii",
+            "rarity": "Common"
+        },
+        {
+            "id": "neo2-61",
+            "number": "61",
+            "name": "Pineco",
+            "illustrator": "Tomokazu Komiya",
+            "rarity": "Common"
+        },
+        {
+            "id": "neo2-62",
+            "number": "62",
+            "name": "Poliwag",
+            "illustrator": "Aya Kusube",
+            "rarity": "Common"
+        },
+        {
+            "id": "neo2-63",
+            "number": "63",
+            "name": "Sentret",
+            "illustrator": "Sumiyoshi Kizuki",
+            "rarity": "Common"
+        },
+        {
+            "id": "neo2-64",
+            "number": "64",
+            "name": "Spinarak",
+            "illustrator": "Yukiko Baba",
+            "rarity": "Common"
+        },
+        {
+            "id": "neo2-65",
+            "number": "65",
+            "name": "Teddiursa",
+            "illustrator": "Miki Tanaka",
+            "rarity": "Common"
+        },
+        {
+            "id": "neo2-66",
+            "number": "66",
+            "name": "Tyrogue",
+            "illustrator": "Miki Tanaka",
+            "rarity": "Common"
+        },
+        {
+            "id": "neo2-67",
+            "number": "67",
+            "name": "Unown [E]",
+            "illustrator": "CR CG gangs",
+            "rarity": "Common"
+        },
+        {
+            "id": "neo2-68",
+            "number": "68",
+            "name": "Unown [I]",
+            "illustrator": "CR CG gangs",
+            "rarity": "Common"
+        },
+        {
+            "id": "neo2-69",
+            "number": "69",
+            "name": "Unown [O]",
+            "illustrator": "CR CG gangs",
+            "rarity": "Common"
+        },
+        {
+            "id": "neo2-70",
+            "number": "70",
+            "name": "Weedle",
+            "illustrator": "Miki Tanaka",
+            "rarity": "Common"
+        },
+        {
+            "id": "neo2-71",
+            "number": "71",
+            "name": "Wooper",
+            "illustrator": "Yukiko Baba",
+            "rarity": "Common"
+        },
+        {
+            "id": "neo2-72",
+            "number": "72",
+            "name": "Fossil Egg",
+            "illustrator": null,
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "neo2-73",
+            "number": "73",
+            "name": "Hyper Devolution Spray",
+            "illustrator": null,
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "neo2-74",
+            "number": "74",
+            "name": "Ruin Wall",
+            "illustrator": null,
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "neo2-75",
+            "number": "75",
+            "name": "Energy Ark",
+            "illustrator": null,
+            "rarity": "Common"
+        }
+    ]
 }

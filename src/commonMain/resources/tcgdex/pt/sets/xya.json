@@ -3,6 +3,51 @@
     "serieId": "xy",
     "name": "Yello A Alternate",
     "releaseDate": "2014-02-05",
+    "cardCount": 6,
     "logo": "https://assets.tcgdex.net/pt/xy/xya/logo",
-    "symbol": "https://assets.tcgdex.net/pt/xy/xya/symbol"
+    "symbol": "https://assets.tcgdex.net/pt/xy/xya/symbol",
+    "cards": [
+        {
+            "id": "xya-24a",
+            "number": "24a",
+            "name": "#24a",
+            "illustrator": "5ban Graphics",
+            "rarity": "Rare"
+        },
+        {
+            "id": "xya-28a",
+            "number": "28a",
+            "name": "#28a",
+            "illustrator": "Ryo Ueda",
+            "rarity": "Rare"
+        },
+        {
+            "id": "xya-54a",
+            "number": "54a",
+            "name": "#54a",
+            "illustrator": "5ban Graphics",
+            "rarity": "Rare"
+        },
+        {
+            "id": "xya-55a",
+            "number": "55a",
+            "name": "#55a",
+            "illustrator": "5ban Graphics",
+            "rarity": "Rare"
+        },
+        {
+            "id": "xya-92a",
+            "number": "92a",
+            "name": "#92a",
+            "illustrator": "Toyste Beach",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "xya-107a",
+            "number": "107a",
+            "name": "#107a",
+            "illustrator": "Naoki Saito",
+            "rarity": "Uncommon"
+        }
+    ]
 }

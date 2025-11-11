@@ -3,6 +3,1192 @@
     "serieId": "sm",
     "name": "Guardians Rising",
     "releaseDate": "2017-05-05",
+    "cardCount": 145,
     "logo": "https://assets.tcgdex.net/zh/sm/sm2/logo",
-    "symbol": "https://assets.tcgdex.net/zh/sm/sm2/symbol"
+    "symbol": "https://assets.tcgdex.net/zh/sm/sm2/symbol",
+    "cards": [
+        {
+            "id": "sm2-1",
+            "number": "1",
+            "name": "Bellsprout",
+            "illustrator": "Aya Kusube",
+            "rarity": "Common"
+        },
+        {
+            "id": "sm2-2",
+            "number": "2",
+            "name": "Weepinbell",
+            "illustrator": "Mina Nakai",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sm2-3",
+            "number": "3",
+            "name": "Victreebel",
+            "illustrator": "TOKIYA",
+            "rarity": "Rare"
+        },
+        {
+            "id": "sm2-4",
+            "number": "4",
+            "name": "Petilil",
+            "illustrator": "Naoki Saito",
+            "rarity": "Common"
+        },
+        {
+            "id": "sm2-5",
+            "number": "5",
+            "name": "Lilligant",
+            "illustrator": "You Iribi",
+            "rarity": "Rare"
+        },
+        {
+            "id": "sm2-6",
+            "number": "6",
+            "name": "Phantump",
+            "illustrator": "Sanosuke Sakuma",
+            "rarity": "Common"
+        },
+        {
+            "id": "sm2-7",
+            "number": "7",
+            "name": "Trevenant",
+            "illustrator": "Hiroyuki Yamamoto",
+            "rarity": "Rare"
+        },
+        {
+            "id": "sm2-8",
+            "number": "8",
+            "name": "Wimpod",
+            "illustrator": "match",
+            "rarity": "Common"
+        },
+        {
+            "id": "sm2-9",
+            "number": "9",
+            "name": "Golisopod",
+            "illustrator": "Kouki Saitou",
+            "rarity": "Rare"
+        },
+        {
+            "id": "sm2-10",
+            "number": "10",
+            "name": "Victini",
+            "illustrator": "kodama",
+            "rarity": "Rare"
+        },
+        {
+            "id": "sm2-11",
+            "number": "11",
+            "name": "Litwick",
+            "illustrator": "Mitsuhiro Arita",
+            "rarity": "Common"
+        },
+        {
+            "id": "sm2-12",
+            "number": "12",
+            "name": "Lampent",
+            "illustrator": "0313",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sm2-13",
+            "number": "13",
+            "name": "Chandelure",
+            "illustrator": "Kouki Saitou",
+            "rarity": "Rare"
+        },
+        {
+            "id": "sm2-14",
+            "number": "14",
+            "name": "Oricorio",
+            "illustrator": "Shin Nagasawa",
+            "rarity": "Rare"
+        },
+        {
+            "id": "sm2-15",
+            "number": "15",
+            "name": "Salandit",
+            "illustrator": "TOKIYA",
+            "rarity": "Common"
+        },
+        {
+            "id": "sm2-16",
+            "number": "16",
+            "name": "Salazzle",
+            "illustrator": "Mitsuhiro Arita",
+            "rarity": "Rare"
+        },
+        {
+            "id": "sm2-17",
+            "number": "17",
+            "name": "Turtonator",
+            "illustrator": "Shin Nagasawa",
+            "rarity": "Rare"
+        },
+        {
+            "id": "sm2-18",
+            "number": "18",
+            "name": "Turtonator GX",
+            "illustrator": "5ban Graphics",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "sm2-19",
+            "number": "19",
+            "name": "Alolan Sandshrew",
+            "illustrator": "Mizue",
+            "rarity": "Common"
+        },
+        {
+            "id": "sm2-20",
+            "number": "20",
+            "name": "Alolan Sandslash",
+            "illustrator": "TOKIYA",
+            "rarity": "Rare"
+        },
+        {
+            "id": "sm2-21",
+            "number": "21",
+            "name": "Alolan Vulpix",
+            "illustrator": "You Iribi",
+            "rarity": "Common"
+        },
+        {
+            "id": "sm2-22",
+            "number": "22",
+            "name": "Alolan Ninetales GX",
+            "illustrator": "5ban Graphics",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "sm2-23",
+            "number": "23",
+            "name": "Tentacool",
+            "illustrator": "Shibuzoh.",
+            "rarity": "Common"
+        },
+        {
+            "id": "sm2-24",
+            "number": "24",
+            "name": "Tentacruel",
+            "illustrator": "Masakazu Fukuda",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sm2-25",
+            "number": "25",
+            "name": "Politoed",
+            "illustrator": "Saya Tsuruta",
+            "rarity": "Rare"
+        },
+        {
+            "id": "sm2-26",
+            "number": "26",
+            "name": "Delibird",
+            "illustrator": "sui",
+            "rarity": "Common"
+        },
+        {
+            "id": "sm2-27",
+            "number": "27",
+            "name": "Carvanha",
+            "illustrator": "Hideki Ishikawa",
+            "rarity": "Common"
+        },
+        {
+            "id": "sm2-28",
+            "number": "28",
+            "name": "Sharpedo",
+            "illustrator": "5ban Graphics",
+            "rarity": "Rare"
+        },
+        {
+            "id": "sm2-29",
+            "number": "29",
+            "name": "Wailmer",
+            "illustrator": "Miki Tanaka",
+            "rarity": "Common"
+        },
+        {
+            "id": "sm2-30",
+            "number": "30",
+            "name": "Wailord",
+            "illustrator": "OOYAMA",
+            "rarity": "Rare"
+        },
+        {
+            "id": "sm2-31",
+            "number": "31",
+            "name": "Snorunt",
+            "illustrator": "Tomokazu Komiya",
+            "rarity": "Common"
+        },
+        {
+            "id": "sm2-32",
+            "number": "32",
+            "name": "Glalie",
+            "illustrator": "so-taro",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sm2-33",
+            "number": "33",
+            "name": "Vanillite",
+            "illustrator": "OOYAMA",
+            "rarity": "Common"
+        },
+        {
+            "id": "sm2-34",
+            "number": "34",
+            "name": "Vanillish",
+            "illustrator": "Naoki Saito",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sm2-35",
+            "number": "35",
+            "name": "Vanilluxe",
+            "illustrator": "kawayoo",
+            "rarity": "Rare"
+        },
+        {
+            "id": "sm2-36",
+            "number": "36",
+            "name": "Alomomola",
+            "illustrator": "Aya Kusube",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sm2-37",
+            "number": "37",
+            "name": "Wishiwashi",
+            "illustrator": "Sanosuke Sakuma",
+            "rarity": "Common"
+        },
+        {
+            "id": "sm2-38",
+            "number": "38",
+            "name": "Wishiwashi GX",
+            "illustrator": "5ban Graphics",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "sm2-39",
+            "number": "39",
+            "name": "Mareanie",
+            "illustrator": "Shin Nagasawa",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sm2-40",
+            "number": "40",
+            "name": "Alolan Geodude",
+            "illustrator": "Hitoshi Ariga",
+            "rarity": "Common"
+        },
+        {
+            "id": "sm2-41",
+            "number": "41",
+            "name": "Alolan Graveler",
+            "illustrator": "match",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sm2-42",
+            "number": "42",
+            "name": "Alolan Golem",
+            "illustrator": "Shin Nagasawa",
+            "rarity": "Rare"
+        },
+        {
+            "id": "sm2-43",
+            "number": "43",
+            "name": "Helioptile",
+            "illustrator": "Masakazu Fukuda",
+            "rarity": "Common"
+        },
+        {
+            "id": "sm2-44",
+            "number": "44",
+            "name": "Heliolisk",
+            "illustrator": "Shin Nagasawa",
+            "rarity": "Rare"
+        },
+        {
+            "id": "sm2-45",
+            "number": "45",
+            "name": "Vikavolt GX",
+            "illustrator": "5ban Graphics",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "sm2-46",
+            "number": "46",
+            "name": "Oricorio",
+            "illustrator": "Naoki Saito",
+            "rarity": "Rare"
+        },
+        {
+            "id": "sm2-47",
+            "number": "47",
+            "name": "Tapu Koko GX",
+            "illustrator": "5ban Graphics",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "sm2-48",
+            "number": "48",
+            "name": "Slowpoke",
+            "illustrator": "Mina Nakai",
+            "rarity": "Common"
+        },
+        {
+            "id": "sm2-49",
+            "number": "49",
+            "name": "Slowbro",
+            "illustrator": "Shibuzoh.",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sm2-50",
+            "number": "50",
+            "name": "Trubbish",
+            "illustrator": "Yuka Morii",
+            "rarity": "Common"
+        },
+        {
+            "id": "sm2-51",
+            "number": "51",
+            "name": "Garbodor",
+            "illustrator": "Mitsuhiro Arita",
+            "rarity": "Rare"
+        },
+        {
+            "id": "sm2-52",
+            "number": "52",
+            "name": "Gothita",
+            "illustrator": "Yuka Morii",
+            "rarity": "Common"
+        },
+        {
+            "id": "sm2-53",
+            "number": "53",
+            "name": "Gothorita",
+            "illustrator": "kawayoo",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sm2-54",
+            "number": "54",
+            "name": "Gothitelle",
+            "illustrator": "Mitsuhiro Arita",
+            "rarity": "Rare"
+        },
+        {
+            "id": "sm2-55",
+            "number": "55",
+            "name": "Oricorio",
+            "illustrator": "Kouki Saitou",
+            "rarity": "Rare"
+        },
+        {
+            "id": "sm2-56",
+            "number": "56",
+            "name": "Oricorio",
+            "illustrator": "TOKIYA",
+            "rarity": "Rare"
+        },
+        {
+            "id": "sm2-57",
+            "number": "57",
+            "name": "Toxapex GX",
+            "illustrator": "5ban Graphics",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "sm2-58",
+            "number": "58",
+            "name": "Mimikyu",
+            "illustrator": "Megumi Mizutani",
+            "rarity": "Rare"
+        },
+        {
+            "id": "sm2-59",
+            "number": "59",
+            "name": "Dhelmise",
+            "illustrator": "Hasuno",
+            "rarity": "Rare"
+        },
+        {
+            "id": "sm2-60",
+            "number": "60",
+            "name": "Tapu Lele GX",
+            "illustrator": "5ban Graphics",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "sm2-61",
+            "number": "61",
+            "name": "Lunala",
+            "illustrator": "5ban Graphics",
+            "rarity": "Rare"
+        },
+        {
+            "id": "sm2-62",
+            "number": "62",
+            "name": "Machop",
+            "illustrator": "Kyoko Umemoto",
+            "rarity": "Common"
+        },
+        {
+            "id": "sm2-63",
+            "number": "63",
+            "name": "Machop",
+            "illustrator": "Masakazu Fukuda",
+            "rarity": "Common"
+        },
+        {
+            "id": "sm2-64",
+            "number": "64",
+            "name": "Machoke",
+            "illustrator": "Kouki Saitou",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sm2-65",
+            "number": "65",
+            "name": "Machamp",
+            "illustrator": "Hitoshi Ariga",
+            "rarity": "Rare"
+        },
+        {
+            "id": "sm2-66",
+            "number": "66",
+            "name": "Sudowoodo",
+            "illustrator": "Hajime Kusajima",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sm2-67",
+            "number": "67",
+            "name": "Gligar",
+            "illustrator": "Mina Nakai",
+            "rarity": "Common"
+        },
+        {
+            "id": "sm2-68",
+            "number": "68",
+            "name": "Gliscor",
+            "illustrator": "Yoshinobu Saito",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sm2-69",
+            "number": "69",
+            "name": "Nosepass",
+            "illustrator": "Tomokazu Komiya",
+            "rarity": "Common"
+        },
+        {
+            "id": "sm2-70",
+            "number": "70",
+            "name": "Barboach",
+            "illustrator": "sui",
+            "rarity": "Common"
+        },
+        {
+            "id": "sm2-71",
+            "number": "71",
+            "name": "Whiscash",
+            "illustrator": "Masakazu Fukuda",
+            "rarity": "Rare"
+        },
+        {
+            "id": "sm2-72",
+            "number": "72",
+            "name": "Pancham",
+            "illustrator": "TOKIYA",
+            "rarity": "Common"
+        },
+        {
+            "id": "sm2-73",
+            "number": "73",
+            "name": "Rockruff",
+            "illustrator": "Naoki Saito",
+            "rarity": "Common"
+        },
+        {
+            "id": "sm2-74",
+            "number": "74",
+            "name": "Lycanroc GX",
+            "illustrator": "5ban Graphics",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "sm2-75",
+            "number": "75",
+            "name": "Mudbray",
+            "illustrator": "Kouki Saitou",
+            "rarity": "Common"
+        },
+        {
+            "id": "sm2-76",
+            "number": "76",
+            "name": "Mudsdale",
+            "illustrator": "Mitsuhiro Arita",
+            "rarity": "Rare"
+        },
+        {
+            "id": "sm2-77",
+            "number": "77",
+            "name": "Minior",
+            "illustrator": "Naoki Saito",
+            "rarity": "Rare"
+        },
+        {
+            "id": "sm2-78",
+            "number": "78",
+            "name": "Murkrow",
+            "illustrator": "Sekio",
+            "rarity": "Common"
+        },
+        {
+            "id": "sm2-79",
+            "number": "79",
+            "name": "Honchkrow",
+            "illustrator": "Hideki Ishikawa",
+            "rarity": "Rare"
+        },
+        {
+            "id": "sm2-80",
+            "number": "80",
+            "name": "Sableye",
+            "illustrator": "Aya Kusube",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sm2-81",
+            "number": "81",
+            "name": "Absol",
+            "illustrator": "Anesaki Dynamic",
+            "rarity": "Rare"
+        },
+        {
+            "id": "sm2-82",
+            "number": "82",
+            "name": "Pangoro",
+            "illustrator": "kodama",
+            "rarity": "Rare"
+        },
+        {
+            "id": "sm2-83",
+            "number": "83",
+            "name": "Beldum",
+            "illustrator": "Kyoko Umemoto",
+            "rarity": "Common"
+        },
+        {
+            "id": "sm2-84",
+            "number": "84",
+            "name": "Metang",
+            "illustrator": "Kagemaru Himeno",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sm2-85",
+            "number": "85",
+            "name": "Metagross GX",
+            "illustrator": "5ban Graphics",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "sm2-86",
+            "number": "86",
+            "name": "Probopass",
+            "illustrator": "Yoshinobu Saito",
+            "rarity": "Rare"
+        },
+        {
+            "id": "sm2-87",
+            "number": "87",
+            "name": "Solgaleo",
+            "illustrator": "5ban Graphics",
+            "rarity": "Rare"
+        },
+        {
+            "id": "sm2-88",
+            "number": "88",
+            "name": "Clefairy",
+            "illustrator": "Kagemaru Himeno",
+            "rarity": "Common"
+        },
+        {
+            "id": "sm2-89",
+            "number": "89",
+            "name": "Clefable",
+            "illustrator": "Miki Tanaka",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sm2-90",
+            "number": "90",
+            "name": "Cottonee",
+            "illustrator": "Megumi Mizutani",
+            "rarity": "Common"
+        },
+        {
+            "id": "sm2-91",
+            "number": "91",
+            "name": "Whimsicott",
+            "illustrator": "Kouki Saitou",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sm2-92",
+            "number": "92",
+            "name": "Sylveon GX",
+            "illustrator": "5ban Graphics",
+            "rarity": "Rare"
+        },
+        {
+            "id": "sm2-93",
+            "number": "93",
+            "name": "Comfey",
+            "illustrator": "Sanosuke Sakuma",
+            "rarity": "Rare"
+        },
+        {
+            "id": "sm2-94",
+            "number": "94",
+            "name": "Goomy",
+            "illustrator": "Asako Ito",
+            "rarity": "Common"
+        },
+        {
+            "id": "sm2-95",
+            "number": "95",
+            "name": "Sliggoo",
+            "illustrator": "Tomokazu Komiya",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sm2-96",
+            "number": "96",
+            "name": "Goodra",
+            "illustrator": "Naoki Saito",
+            "rarity": "Rare"
+        },
+        {
+            "id": "sm2-97",
+            "number": "97",
+            "name": "Drampa",
+            "illustrator": "match",
+            "rarity": "Rare"
+        },
+        {
+            "id": "sm2-98",
+            "number": "98",
+            "name": "Jangmo-o",
+            "illustrator": "match",
+            "rarity": "Common"
+        },
+        {
+            "id": "sm2-99",
+            "number": "99",
+            "name": "Hakamo-o",
+            "illustrator": "Shin Nagasawa",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sm2-100",
+            "number": "100",
+            "name": "Kommo-o GX",
+            "illustrator": "5ban Graphics",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "sm2-101",
+            "number": "101",
+            "name": "Chansey",
+            "illustrator": "Megumi Mizutani",
+            "rarity": "Common"
+        },
+        {
+            "id": "sm2-102",
+            "number": "102",
+            "name": "Blissey",
+            "illustrator": "Hideki Ishikawa",
+            "rarity": "Rare"
+        },
+        {
+            "id": "sm2-103",
+            "number": "103",
+            "name": "Taillow",
+            "illustrator": "Ayaka Yoshida",
+            "rarity": "Common"
+        },
+        {
+            "id": "sm2-104",
+            "number": "104",
+            "name": "Swellow",
+            "illustrator": "Kagemaru Himeno",
+            "rarity": "Rare"
+        },
+        {
+            "id": "sm2-105",
+            "number": "105",
+            "name": "Castform",
+            "illustrator": "sui",
+            "rarity": "Common"
+        },
+        {
+            "id": "sm2-106",
+            "number": "106",
+            "name": "Rayquaza",
+            "illustrator": "Yoshinobu Saito",
+            "rarity": "Rare"
+        },
+        {
+            "id": "sm2-107",
+            "number": "107",
+            "name": "Patrat",
+            "illustrator": "Ayaka Yoshida",
+            "rarity": "Common"
+        },
+        {
+            "id": "sm2-108",
+            "number": "108",
+            "name": "Watchog",
+            "illustrator": "Kagemaru Himeno",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sm2-109",
+            "number": "109",
+            "name": "Fletchling",
+            "illustrator": "You Iribi",
+            "rarity": "Common"
+        },
+        {
+            "id": "sm2-110",
+            "number": "110",
+            "name": "Fletchinder",
+            "illustrator": "kawayoo",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sm2-111",
+            "number": "111",
+            "name": "Talonflame",
+            "illustrator": "Shin Nagasawa",
+            "rarity": "Rare"
+        },
+        {
+            "id": "sm2-112",
+            "number": "112",
+            "name": "Stufful",
+            "illustrator": "Kouki Saitou",
+            "rarity": "Common"
+        },
+        {
+            "id": "sm2-113",
+            "number": "113",
+            "name": "Bewear",
+            "illustrator": "Shin Nagasawa",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sm2-114",
+            "number": "114",
+            "name": "Komala",
+            "illustrator": "Kouki Saitou",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sm2-115",
+            "number": "115",
+            "name": "Drampa GX",
+            "illustrator": "5ban Graphics",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "sm2-116",
+            "number": "116",
+            "name": "Aether Paradise Conservation Area",
+            "illustrator": "5ban Graphics",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sm2-117",
+            "number": "117",
+            "name": "Altar of the Moone",
+            "illustrator": "5ban Graphics",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sm2-118",
+            "number": "118",
+            "name": "Altar of the Sunne",
+            "illustrator": "5ban Graphics",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sm2-119",
+            "number": "119",
+            "name": "Aqua Patch",
+            "illustrator": "Toyste Beach",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sm2-120",
+            "number": "120",
+            "name": "Brooklet Hill",
+            "illustrator": "5ban Graphics",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sm2-121",
+            "number": "121",
+            "name": "Choice Band",
+            "illustrator": "Eske Yoshinob",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sm2-122",
+            "number": "122",
+            "name": "Energy Loto",
+            "illustrator": "Yoshinobu Saito",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sm2-123",
+            "number": "123",
+            "name": "Energy Recycler",
+            "illustrator": "Toyste Beach",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sm2-124",
+            "number": "124",
+            "name": "Enhanced Hammer",
+            "illustrator": "Yoshinobu Saito",
+            "rarity": "Rare"
+        },
+        {
+            "id": "sm2-125",
+            "number": "125",
+            "name": "Field Blower",
+            "illustrator": "Toyste Beach",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sm2-126",
+            "number": "126",
+            "name": "Hala",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sm2-127",
+            "number": "127",
+            "name": "Mallow",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sm2-128",
+            "number": "128",
+            "name": "Max Potion",
+            "illustrator": "Toyste Beach",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sm2-129",
+            "number": "129",
+            "name": "Multi Switch",
+            "illustrator": "Toyste Beach",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sm2-130",
+            "number": "130",
+            "name": "Rescue Stretcher",
+            "illustrator": "Yoshinobu Saito",
+            "rarity": "Rare"
+        },
+        {
+            "id": "sm2-131",
+            "number": "131",
+            "name": "Turtonator GX",
+            "illustrator": "5ban Graphics",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "sm2-132",
+            "number": "132",
+            "name": "Alolan Ninetales GX",
+            "illustrator": "5ban Graphics",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "sm2-133",
+            "number": "133",
+            "name": "Wishiwashi GX",
+            "illustrator": "5ban Graphics",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "sm2-134",
+            "number": "134",
+            "name": "Vikavolt GX",
+            "illustrator": "5ban Graphics",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "sm2-135",
+            "number": "135",
+            "name": "Tapu Koko GX",
+            "illustrator": "5ban Graphics",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "sm2-136",
+            "number": "136",
+            "name": "Toxapex GX",
+            "illustrator": "5ban Graphics",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "sm2-137",
+            "number": "137",
+            "name": "Tapu Lele GX",
+            "illustrator": "5ban Graphics",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "sm2-138",
+            "number": "138",
+            "name": "Lycanroc GX",
+            "illustrator": "5ban Graphics",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "sm2-139",
+            "number": "139",
+            "name": "Metagross GX",
+            "illustrator": "5ban Graphics",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "sm2-140",
+            "number": "140",
+            "name": "Sylveon GX",
+            "illustrator": "5ban Graphics",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "sm2-141",
+            "number": "141",
+            "name": "Kommo-o GX",
+            "illustrator": "5ban Graphics",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "sm2-142",
+            "number": "142",
+            "name": "Drampa GX",
+            "illustrator": "5ban Graphics",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "sm2-143",
+            "number": "143",
+            "name": "Hala",
+            "illustrator": "Naoki Saito",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "sm2-144",
+            "number": "144",
+            "name": "Hau",
+            "illustrator": "Sanosuke Sakuma",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "sm2-145",
+            "number": "145",
+            "name": "Mallow",
+            "illustrator": "Megumi Mizutani",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "sm2-146",
+            "number": "146",
+            "name": "Decidueye GX",
+            "illustrator": "5ban Graphics",
+            "rarity": "Secret Rare"
+        },
+        {
+            "id": "sm2-147",
+            "number": "147",
+            "name": "Incineroar GX",
+            "illustrator": "5ban Graphics",
+            "rarity": "Secret Rare"
+        },
+        {
+            "id": "sm2-148",
+            "number": "148",
+            "name": "Turtonator GX",
+            "illustrator": "5ban Graphics",
+            "rarity": "Secret Rare"
+        },
+        {
+            "id": "sm2-149",
+            "number": "149",
+            "name": "Primarina GX",
+            "illustrator": "5ban Graphics",
+            "rarity": "Secret Rare"
+        },
+        {
+            "id": "sm2-150",
+            "number": "150",
+            "name": "Alolan Ninetales GX",
+            "illustrator": "5ban Graphics",
+            "rarity": "Secret Rare"
+        },
+        {
+            "id": "sm2-151",
+            "number": "151",
+            "name": "Wishiwashi GX",
+            "illustrator": "5ban Graphics",
+            "rarity": "Secret Rare"
+        },
+        {
+            "id": "sm2-152",
+            "number": "152",
+            "name": "Vikavolt GX",
+            "illustrator": "5ban Graphics",
+            "rarity": "Secret Rare"
+        },
+        {
+            "id": "sm2-153",
+            "number": "153",
+            "name": "Tapu Koko GX",
+            "illustrator": "5ban Graphics",
+            "rarity": "Secret Rare"
+        },
+        {
+            "id": "sm2-154",
+            "number": "154",
+            "name": "Toxapex GX",
+            "illustrator": "5ban Graphics",
+            "rarity": "Secret Rare"
+        },
+        {
+            "id": "sm2-155",
+            "number": "155",
+            "name": "Tapu Lele GX",
+            "illustrator": "5ban Graphics",
+            "rarity": "Secret Rare"
+        },
+        {
+            "id": "sm2-156",
+            "number": "156",
+            "name": "Lycanroc GX",
+            "illustrator": "5ban Graphics",
+            "rarity": "Secret Rare"
+        },
+        {
+            "id": "sm2-157",
+            "number": "157",
+            "name": "Metagross GX",
+            "illustrator": "5ban Graphics",
+            "rarity": "Secret Rare"
+        },
+        {
+            "id": "sm2-158",
+            "number": "158",
+            "name": "Sylveon GX",
+            "illustrator": "5ban Graphics",
+            "rarity": "Secret Rare"
+        },
+        {
+            "id": "sm2-159",
+            "number": "159",
+            "name": "Kommo-o GX",
+            "illustrator": "5ban Graphics",
+            "rarity": "Secret Rare"
+        },
+        {
+            "id": "sm2-160",
+            "number": "160",
+            "name": "Drampa GX",
+            "illustrator": "5ban Graphics",
+            "rarity": "Secret Rare"
+        },
+        {
+            "id": "sm2-161",
+            "number": "161",
+            "name": "Aqua Patch",
+            "illustrator": "Toyste Beach",
+            "rarity": "Secret Rare"
+        },
+        {
+            "id": "sm2-162",
+            "number": "162",
+            "name": "Enhanced Hammer",
+            "illustrator": "Yoshinobu Saito",
+            "rarity": "Secret Rare"
+        },
+        {
+            "id": "sm2-163",
+            "number": "163",
+            "name": "Field Blower",
+            "illustrator": "Toyste Beach",
+            "rarity": "Secret Rare"
+        },
+        {
+            "id": "sm2-164",
+            "number": "164",
+            "name": "Max Potion",
+            "illustrator": "Toyste Beach",
+            "rarity": "Secret Rare"
+        },
+        {
+            "id": "sm2-165",
+            "number": "165",
+            "name": "Rare Candy",
+            "illustrator": "Toyste Beach",
+            "rarity": "Secret Rare"
+        },
+        {
+            "id": "sm2-166",
+            "number": "166",
+            "name": "Double Colorless Energy",
+            "illustrator": "5ban Graphics",
+            "rarity": "Secret Rare"
+        },
+        {
+            "id": "sm2-167",
+            "number": "167",
+            "name": "Grass Energy",
+            "illustrator": null,
+            "rarity": "Secret Rare"
+        },
+        {
+            "id": "sm2-168",
+            "number": "168",
+            "name": "Lightning Energy",
+            "illustrator": null,
+            "rarity": "Secret Rare"
+        },
+        {
+            "id": "sm2-169",
+            "number": "169",
+            "name": "Fighting Energy",
+            "illustrator": null,
+            "rarity": "Secret Rare"
+        }
+    ]
 }

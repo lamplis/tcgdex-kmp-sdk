@@ -3,681 +3,1461 @@
     "serieId": "hgss",
     "name": "Déchaînement",
     "releaseDate": "2010-05-12",
-    "cardCount": 96,
+    "cardCount": 95,
     "logo": "https://assets.tcgdex.net/fr/hgss/hgss2/logo",
     "symbol": "https://assets.tcgdex.net/fr/hgss/hgss2/symbol",
     "cards": [
         {
-            "id": "hgss2-000",
-            "number": "000",
-            "name": "Lithographie d'Alpha",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/0"
-        },
-        {
-            "id": "hgss2-001",
-            "number": "001",
+            "id": "hgss2-1",
+            "number": "1",
             "name": "Jirachi",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/1"
+            "illustrator": "Wataru Kawahara",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/1",
+            "rarity": "Rare Holo",
+            "variants": [
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
-            "id": "hgss2-002",
-            "number": "002",
+            "id": "hgss2-2",
+            "number": "2",
             "name": "Maganon",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/2"
+            "illustrator": "Hajime Kusajima",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/2",
+            "rarity": "Rare Holo",
+            "variants": [
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
-            "id": "hgss2-003",
-            "number": "003",
+            "id": "hgss2-3",
+            "number": "3",
             "name": "Manaphy",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/3"
+            "illustrator": "Masakazu Fukuda",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/3",
+            "rarity": "Rare Holo",
+            "variants": [
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
-            "id": "hgss2-004",
-            "number": "004",
+            "id": "hgss2-4",
+            "number": "4",
             "name": "Metalosse",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/4"
+            "illustrator": "Wataru Kawahara",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/4",
+            "rarity": "Rare Holo",
+            "variants": [
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
-            "id": "hgss2-005",
-            "number": "005",
+            "id": "hgss2-5",
+            "number": "5",
             "name": "Magirêve",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/5"
+            "illustrator": "Hideaki Hakozaki",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/5",
+            "rarity": "Rare Holo",
+            "variants": [
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
-            "id": "hgss2-006",
-            "number": "006",
+            "id": "hgss2-6",
+            "number": "6",
             "name": "Octillery",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/6"
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/6",
+            "rarity": "Rare Holo",
+            "variants": [
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
-            "id": "hgss2-007",
-            "number": "007",
+            "id": "hgss2-7",
+            "number": "7",
             "name": "Tarpaud",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/7"
+            "illustrator": "Naoyo Kimura",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/7",
+            "rarity": "Rare Holo",
+            "variants": [
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
-            "id": "hgss2-008",
-            "number": "008",
+            "id": "hgss2-8",
+            "number": "8",
             "name": "Shaymin",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/8"
+            "illustrator": "Hideaki Hakozaki",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/8",
+            "rarity": "Rare Holo",
+            "variants": [
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
-            "id": "hgss2-009",
-            "number": "009",
+            "id": "hgss2-9",
+            "number": "9",
             "name": "Simularbre",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/9"
+            "illustrator": "Sachiko Adachi",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/9",
+            "rarity": "Rare Holo",
+            "variants": [
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
-            "id": "hgss2-010",
-            "number": "010",
+            "id": "hgss2-10",
+            "number": "10",
             "name": "Torterra",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/10"
+            "illustrator": "match",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/10",
+            "rarity": "Rare Holo"
         },
         {
-            "id": "hgss2-011",
-            "number": "011",
+            "id": "hgss2-11",
+            "number": "11",
             "name": "Xatu",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/11"
+            "illustrator": "sui",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/11",
+            "rarity": "Rare Holo",
+            "variants": [
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
-            "id": "hgss2-012",
-            "number": "012",
+            "id": "hgss2-12",
+            "number": "12",
             "name": "Dardargnan",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/12"
+            "illustrator": "Kyoko Umemoto",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/12",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
-            "id": "hgss2-013",
-            "number": "013",
+            "id": "hgss2-13",
+            "number": "13",
             "name": "Tortank",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/13"
+            "illustrator": "Masakazu Fukuda",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/13",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
-            "id": "hgss2-014",
-            "number": "014",
+            "id": "hgss2-14",
+            "number": "14",
             "name": "Nostenfer",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/14"
+            "illustrator": "kawayoo",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/14",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
-            "id": "hgss2-015",
-            "number": "015",
+            "id": "hgss2-15",
+            "number": "15",
             "name": "Rapasdepic",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/15"
+            "illustrator": "Kagemaru Himeno",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/15",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
-            "id": "hgss2-016",
-            "number": "016",
+            "id": "hgss2-16",
+            "number": "16",
             "name": "Mustéflott",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/16"
+            "illustrator": "Masakazu Fukuda",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/16",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
-            "id": "hgss2-017",
-            "number": "017",
+            "id": "hgss2-17",
+            "number": "17",
             "name": "Hyporoi",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/17"
+            "illustrator": "Shin Nagasawa",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/17",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
-            "id": "hgss2-018",
-            "number": "018",
+            "id": "hgss2-18",
+            "number": "18",
             "name": "Lanturn",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/18"
+            "illustrator": "sui",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/18",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
-            "id": "hgss2-019",
-            "number": "019",
+            "id": "hgss2-19",
+            "number": "19",
             "name": "Lucario",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/19"
+            "illustrator": "Kouki Saitou",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/19",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
-            "id": "hgss2-020",
-            "number": "020",
+            "id": "hgss2-20",
+            "number": "20",
             "name": "Feunard",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/20"
+            "illustrator": "Hajime Kusajima",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/20",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
-            "id": "hgss2-021",
-            "number": "021",
+            "id": "hgss2-21",
+            "number": "21",
             "name": "Tartard",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/21"
+            "illustrator": "Naoyo Kimura",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/21",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
-            "id": "hgss2-022",
-            "number": "022",
+            "id": "hgss2-22",
+            "number": "22",
             "name": "Colossinge",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/22"
+            "illustrator": "Sachiko Adachi",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/22",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
-            "id": "hgss2-023",
-            "number": "023",
+            "id": "hgss2-23",
+            "number": "23",
             "name": "Roserade",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/23"
+            "illustrator": "Takashi Yamaguchi",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/23",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
-            "id": "hgss2-024",
-            "number": "024",
+            "id": "hgss2-24",
+            "number": "24",
             "name": "Steelix",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/24"
+            "illustrator": "Masakazu Fukuda",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/24",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
-            "id": "hgss2-025",
-            "number": "025",
+            "id": "hgss2-25",
+            "number": "25",
             "name": "Chartor",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/25"
+            "illustrator": "Hideaki Hakozaki",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/25",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
-            "id": "hgss2-026",
-            "number": "026",
+            "id": "hgss2-26",
+            "number": "26",
             "name": "Tyranocif",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/26"
+            "illustrator": "Kouki Saitou",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/26",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
-            "id": "hgss2-027",
-            "number": "027",
+            "id": "hgss2-27",
+            "number": "27",
             "name": "Ursaring",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/27"
+            "illustrator": "Kouki Saitou",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/27",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
-            "id": "hgss2-028",
-            "number": "028",
+            "id": "hgss2-28",
+            "number": "28",
             "name": "Ceriflor",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/28"
+            "illustrator": "match",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/28",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
-            "id": "hgss2-029",
-            "number": "029",
+            "id": "hgss2-29",
+            "number": "29",
             "name": "Insolourdo",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/29"
+            "illustrator": "Takashi Yamaguchi",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/29",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
-            "id": "hgss2-030",
-            "number": "030",
+            "id": "hgss2-30",
+            "number": "30",
             "name": "Nosferalto",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/30"
+            "illustrator": "kawayoo",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/30",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
-            "id": "hgss2-031",
-            "number": "031",
+            "id": "hgss2-31",
+            "number": "31",
             "name": "Boskara",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/31"
+            "illustrator": "match",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/31",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
-            "id": "hgss2-032",
-            "number": "032",
+            "id": "hgss2-32",
+            "number": "32",
             "name": "Coconfort",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/32"
+            "illustrator": "Kyoko Umemoto",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/32",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
-            "id": "hgss2-033",
-            "number": "033",
+            "id": "hgss2-33",
+            "number": "33",
             "name": "Metang",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/33"
+            "illustrator": "Wataru Kawahara",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/33",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
-            "id": "hgss2-034",
-            "number": "034",
+            "id": "hgss2-34",
+            "number": "34",
             "name": "Negapi",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/34"
+            "illustrator": "Kouki Saitou",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/34",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
-            "id": "hgss2-035",
-            "number": "035",
+            "id": "hgss2-35",
+            "number": "35",
             "name": "Chamallot",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/35"
+            "illustrator": "Hajime Kusajima",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/35",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
-            "id": "hgss2-036",
-            "number": "036",
+            "id": "hgss2-36",
+            "number": "36",
             "name": "Posipi",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/36"
+            "illustrator": "Kouki Saitou",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/36",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
-            "id": "hgss2-037",
-            "number": "037",
+            "id": "hgss2-37",
+            "number": "37",
             "name": "Tetarte",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/37"
+            "illustrator": "Naoyo Kimura",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/37",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
-            "id": "hgss2-038",
-            "number": "038",
+            "id": "hgss2-38",
+            "number": "38",
             "name": "Ymphect",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/38"
+            "illustrator": "Sumiyoshi Kizuki",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/38",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
-            "id": "hgss2-039",
-            "number": "039",
+            "id": "hgss2-39",
+            "number": "39",
             "name": "Ymphect",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/39"
+            "illustrator": "Kouki Saitou",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/39",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
-            "id": "hgss2-040",
-            "number": "040",
+            "id": "hgss2-40",
+            "number": "40",
             "name": "Hypocean",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/40"
+            "illustrator": "Shin Nagasawa",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/40",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
-            "id": "hgss2-041",
-            "number": "041",
+            "id": "hgss2-41",
+            "number": "41",
             "name": "Tauros",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/41"
+            "illustrator": "Tomokazu Komiya",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/41",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
-            "id": "hgss2-042",
-            "number": "042",
+            "id": "hgss2-42",
+            "number": "42",
             "name": "Carabaffe",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/42"
+            "illustrator": "Masakazu Fukuda",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/42",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
-            "id": "hgss2-043",
-            "number": "043",
+            "id": "hgss2-43",
+            "number": "43",
             "name": "Capumain",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/43"
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/43",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
-            "id": "hgss2-044",
-            "number": "044",
+            "id": "hgss2-44",
+            "number": "44",
             "name": "Terhal",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/44"
+            "illustrator": "Wataru Kawahara",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/44",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
-            "id": "hgss2-045",
-            "number": "045",
+            "id": "hgss2-45",
+            "number": "45",
             "name": "Mustébouée",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/45"
+            "illustrator": "Masakazu Fukuda",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/45",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
-            "id": "hgss2-046",
-            "number": "046",
+            "id": "hgss2-46",
+            "number": "46",
             "name": "Vortente",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/46"
+            "illustrator": "Wataru Kawahara",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/46",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
-            "id": "hgss2-047",
-            "number": "047",
+            "id": "hgss2-47",
+            "number": "47",
             "name": "Ceribou",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/47"
+            "illustrator": "match",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/47",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
-            "id": "hgss2-048",
-            "number": "048",
+            "id": "hgss2-48",
+            "number": "48",
             "name": "Loupio",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/48"
+            "illustrator": "sui",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/48",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
-            "id": "hgss2-049",
-            "number": "049",
+            "id": "hgss2-49",
+            "number": "49",
             "name": "Hypotrempe",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/49"
+            "illustrator": "Shin Nagasawa",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/49",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
-            "id": "hgss2-050",
-            "number": "050",
+            "id": "hgss2-50",
+            "number": "50",
             "name": "Embrylex",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/50"
+            "illustrator": "Sumiyoshi Kizuki",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/50",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
-            "id": "hgss2-051",
-            "number": "051",
+            "id": "hgss2-51",
+            "number": "51",
             "name": "Embrylex",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/51"
+            "illustrator": "Kouki Saitou",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/51",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
-            "id": "hgss2-052",
-            "number": "052",
+            "id": "hgss2-52",
+            "number": "52",
             "name": "Magmar",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/52"
+            "illustrator": "Hajime Kusajima",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/52",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
-            "id": "hgss2-053",
-            "number": "053",
+            "id": "hgss2-53",
+            "number": "53",
             "name": "Férosinge",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/53"
+            "illustrator": "Sachiko Adachi",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/53",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
-            "id": "hgss2-054",
-            "number": "054",
+            "id": "hgss2-54",
+            "number": "54",
             "name": "Feuforêve",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/54"
+            "illustrator": "Hideaki Hakozaki",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/54",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
-            "id": "hgss2-055",
-            "number": "055",
+            "id": "hgss2-55",
+            "number": "55",
             "name": "Natu",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/55"
+            "illustrator": "sui",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/55",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
-            "id": "hgss2-056",
-            "number": "056",
+            "id": "hgss2-56",
+            "number": "56",
             "name": "Onix",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/56"
+            "illustrator": "MAHOU",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/56",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
-            "id": "hgss2-057",
-            "number": "057",
+            "id": "hgss2-57",
+            "number": "57",
             "name": "Onix",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/57"
+            "illustrator": "Masakazu Fukuda",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/57",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
-            "id": "hgss2-058",
-            "number": "058",
+            "id": "hgss2-58",
+            "number": "58",
             "name": "Ptitard",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/58"
+            "illustrator": "Naoyo Kimura",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/58",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
-            "id": "hgss2-059",
-            "number": "059",
+            "id": "hgss2-59",
+            "number": "59",
             "name": "Remoraid",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/59"
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/59",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
-            "id": "hgss2-060",
-            "number": "060",
+            "id": "hgss2-60",
+            "number": "60",
             "name": "Riolu",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/60"
+            "illustrator": "Kouki Saitou",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/60",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
-            "id": "hgss2-061",
-            "number": "061",
+            "id": "hgss2-61",
+            "number": "61",
             "name": "Roselia",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/61"
+            "illustrator": "Takashi Yamaguchi",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/61",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
-            "id": "hgss2-062",
-            "number": "062",
+            "id": "hgss2-62",
+            "number": "62",
             "name": "Piafabec",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/62"
+            "illustrator": "Kagemaru Himeno",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/62",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
-            "id": "hgss2-063",
-            "number": "063",
+            "id": "hgss2-63",
+            "number": "63",
             "name": "Carapuce",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/63"
+            "illustrator": "Masakazu Fukuda",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/63",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
-            "id": "hgss2-064",
-            "number": "064",
+            "id": "hgss2-64",
+            "number": "64",
             "name": "Cerfrousse",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/64"
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/64",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
-            "id": "hgss2-065",
-            "number": "065",
+            "id": "hgss2-65",
+            "number": "65",
             "name": "Teddiursa",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/65"
+            "illustrator": "Kouki Saitou",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/65",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
-            "id": "hgss2-066",
-            "number": "066",
+            "id": "hgss2-66",
+            "number": "66",
             "name": "Tropius",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/66"
+            "illustrator": "match",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/66",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
-            "id": "hgss2-067",
-            "number": "067",
+            "id": "hgss2-67",
+            "number": "67",
             "name": "Tortipouss",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/67"
+            "illustrator": "match",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/67",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
-            "id": "hgss2-068",
-            "number": "068",
+            "id": "hgss2-68",
+            "number": "68",
             "name": "Goupix",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/68"
+            "illustrator": "Hajime Kusajima",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/68",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
-            "id": "hgss2-069",
-            "number": "069",
+            "id": "hgss2-69",
+            "number": "69",
             "name": "Aspicot",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/69"
+            "illustrator": "Kyoko Umemoto",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/69",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
-            "id": "hgss2-070",
-            "number": "070",
+            "id": "hgss2-70",
+            "number": "70",
             "name": "Nosferapti",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/70"
+            "illustrator": "kawayoo",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/70",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
-            "id": "hgss2-071",
-            "number": "071",
+            "id": "hgss2-71",
+            "number": "71",
             "name": "Encouragements hystériques",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/71"
+            "illustrator": "Kouki Saitou",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/71",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
-            "id": "hgss2-072",
-            "number": "072",
+            "id": "hgss2-72",
+            "number": "72",
             "name": "Double boule",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/72"
+            "illustrator": "Takashi Yamaguchi",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/72",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
-            "id": "hgss2-073",
-            "number": "073",
+            "id": "hgss2-73",
+            "number": "73",
             "name": "Bavardage du maître",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/73"
+            "illustrator": "Kouki Saitou",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/73",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
-            "id": "hgss2-074",
-            "number": "074",
+            "id": "hgss2-74",
+            "number": "74",
             "name": "Récupérateur d’énergie",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/74"
+            "illustrator": "Wataru Kawahara",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/74",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
-            "id": "hgss2-075",
-            "number": "075",
+            "id": "hgss2-75",
+            "number": "75",
             "name": "Réglages techniques",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/75"
+            "illustrator": "Kouki Saitou",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/75",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
-            "id": "hgss2-076",
-            "number": "076",
+            "id": "hgss2-76",
+            "number": "76",
             "name": "Bonne canne",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/76"
+            "illustrator": "Wataru Kawahara",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/76",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
-            "id": "hgss2-077",
-            "number": "077",
+            "id": "hgss2-77",
+            "number": "77",
             "name": "Questionnaire d’interview",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/77"
+            "illustrator": "Kouki Saitou",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/77",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
-            "id": "hgss2-078",
-            "number": "078",
+            "id": "hgss2-78",
+            "number": "78",
             "name": "Juge",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/78"
+            "illustrator": "Kouki Saitou",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/78",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
-            "id": "hgss2-079",
-            "number": "079",
+            "id": "hgss2-79",
+            "number": "79",
             "name": "Herbe sauveuse",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/79"
+            "illustrator": "Hideaki Hakozaki",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/79",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
-            "id": "hgss2-080",
-            "number": "080",
+            "id": "hgss2-80",
+            "number": "80",
             "name": "PlusPower",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/80"
+            "illustrator": "Takashi Yamaguchi",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/80",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
-            "id": "hgss2-081",
-            "number": "081",
+            "id": "hgss2-81",
+            "number": "81",
             "name": "Circulateur de Pokémon",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/81"
+            "illustrator": "Hideaki Hakozaki",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/81",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
-            "id": "hgss2-082",
-            "number": "082",
+            "id": "hgss2-82",
+            "number": "82",
             "name": "Super bonbon",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/82"
+            "illustrator": "Noriko Hotta",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/82",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
-            "id": "hgss2-083",
-            "number": "083",
+            "id": "hgss2-83",
+            "number": "83",
             "name": "Super rappel",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/83"
+            "illustrator": "Wataru Kawahara",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/83",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
-            "id": "hgss2-084",
-            "number": "084",
+            "id": "hgss2-84",
+            "number": "84",
             "name": "Nostenfer",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/84"
+            "illustrator": "Hideaki Hakozaki",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/84",
+            "rarity": "Rare PRIME",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
-            "id": "hgss2-085",
-            "number": "085",
+            "id": "hgss2-85",
+            "number": "85",
             "name": "Hyporoi",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/85"
+            "illustrator": "Hideaki Hakozaki",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/85",
+            "rarity": "Rare PRIME",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
-            "id": "hgss2-086",
-            "number": "086",
+            "id": "hgss2-86",
+            "number": "86",
             "name": "Lanturn",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/86"
+            "illustrator": "Hideaki Hakozaki",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/86",
+            "rarity": "Rare PRIME",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
-            "id": "hgss2-087",
-            "number": "087",
+            "id": "hgss2-87",
+            "number": "87",
             "name": "Steelix",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/87"
+            "illustrator": "Wataru Kawahara",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/87",
+            "rarity": "Rare PRIME",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
-            "id": "hgss2-088",
-            "number": "088",
+            "id": "hgss2-88",
+            "number": "88",
             "name": "Tyranocif",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/88"
+            "illustrator": "Wataru Kawahara",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/88",
+            "rarity": "Rare PRIME",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
-            "id": "hgss2-089",
-            "number": "089",
+            "id": "hgss2-89",
+            "number": "89",
             "name": "Ursaring",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/89"
+            "illustrator": "Wataru Kawahara",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/89",
+            "rarity": "Rare PRIME",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
-            "id": "hgss2-090",
-            "number": "090",
+            "id": "hgss2-90",
+            "number": "90",
             "name": "Entei & Raikou LÉGENDE (haut)",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/90"
+            "illustrator": "Shinji Higuchi + Sachiko Eba 樋口 真嗣 + 江場 左知子",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/90",
+            "rarity": "LEGEND",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
-            "id": "hgss2-091",
-            "number": "091",
+            "id": "hgss2-91",
+            "number": "91",
             "name": "Entei & Raikou LÉGENDE (bas)",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/91"
+            "illustrator": "Shinji Higuchi + Sachiko Eba",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/91",
+            "rarity": "LEGEND",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
-            "id": "hgss2-092",
-            "number": "092",
+            "id": "hgss2-92",
+            "number": "92",
             "name": "Raikou & Suicune LÉGENDE (haut)",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/92"
+            "illustrator": "Shinji Higuchi + Noriko Takaya",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/92",
+            "rarity": "LEGEND",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
-            "id": "hgss2-093",
-            "number": "093",
+            "id": "hgss2-93",
+            "number": "93",
             "name": "Raikou & Suicune LÉGENDE (bas)",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/93"
+            "illustrator": "Shinji Higuchi + Noriko Takaya",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/93",
+            "rarity": "LEGEND",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
-            "id": "hgss2-094",
-            "number": "094",
+            "id": "hgss2-94",
+            "number": "94",
             "name": "Suicune & Entei LÉGENDE (haut)",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/94"
+            "illustrator": "Shinji Higuchi + Sachiko Eba",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/94",
+            "rarity": "LEGEND",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
-            "id": "hgss2-095",
-            "number": "095",
+            "id": "hgss2-95",
+            "number": "95",
             "name": "Suicune & Entei LÉGENDE (bas)",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/95"
+            "illustrator": "Shinji Higuchi + Sachiko Eba",
+            "imageBase": "https://assets.tcgdex.net/fr/hgss/hgss2/95",
+            "rarity": "LEGEND",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-TWO",
+            "number": "TWO",
+            "name": "Lithographie d'Alpha",
+            "illustrator": "Milky Isobe",
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         }
     ]
 }

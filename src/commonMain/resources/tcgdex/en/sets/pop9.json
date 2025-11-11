@@ -12,119 +12,220 @@
             "number": "1",
             "name": "Garchomp",
             "illustrator": "Kagemaru Himeno",
-            "imageBase": "https://assets.tcgdex.net/en/pop/pop9/1"
+            "imageBase": "https://assets.tcgdex.net/en/pop/pop9/1",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "pop9-2",
             "number": "2",
             "name": "Manaphy",
             "illustrator": "Masakazu Fukuda",
-            "imageBase": "https://assets.tcgdex.net/en/pop/pop9/2"
+            "imageBase": "https://assets.tcgdex.net/en/pop/pop9/2",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "pop9-3",
             "number": "3",
             "name": "Raichu",
             "illustrator": "Midori Harada",
-            "imageBase": "https://assets.tcgdex.net/en/pop/pop9/3"
+            "imageBase": "https://assets.tcgdex.net/en/pop/pop9/3",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "pop9-4",
             "number": "4",
             "name": "Regigigas",
             "illustrator": "Kent Kanetsuna",
-            "imageBase": "https://assets.tcgdex.net/en/pop/pop9/4"
+            "imageBase": "https://assets.tcgdex.net/en/pop/pop9/4",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "pop9-5",
             "number": "5",
             "name": "Rotom",
             "illustrator": "Masakazu Fukuda",
-            "imageBase": "https://assets.tcgdex.net/en/pop/pop9/5"
+            "imageBase": "https://assets.tcgdex.net/en/pop/pop9/5",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "pop9-6",
             "number": "6",
             "name": "Buizel",
             "illustrator": "Midori Harada",
-            "imageBase": "https://assets.tcgdex.net/en/pop/pop9/6"
+            "imageBase": "https://assets.tcgdex.net/en/pop/pop9/6",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "pop9-7",
             "number": "7",
             "name": "Croagunk",
             "illustrator": "Midori Harada",
-            "imageBase": "https://assets.tcgdex.net/en/pop/pop9/7"
+            "imageBase": "https://assets.tcgdex.net/en/pop/pop9/7",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "pop9-8",
             "number": "8",
             "name": "Gabite",
             "illustrator": "Kagemaru Himeno",
-            "imageBase": "https://assets.tcgdex.net/en/pop/pop9/8"
+            "imageBase": "https://assets.tcgdex.net/en/pop/pop9/8",
+            "rarity": "Uncommon"
         },
         {
             "id": "pop9-9",
             "number": "9",
             "name": "Lopunny",
             "illustrator": "Midori Harada",
-            "imageBase": "https://assets.tcgdex.net/en/pop/pop9/9"
+            "imageBase": "https://assets.tcgdex.net/en/pop/pop9/9",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "pop9-10",
             "number": "10",
             "name": "Pachirisu",
             "illustrator": "Midori Harada",
-            "imageBase": "https://assets.tcgdex.net/en/pop/pop9/10"
+            "imageBase": "https://assets.tcgdex.net/en/pop/pop9/10",
+            "rarity": "Uncommon"
         },
         {
             "id": "pop9-11",
             "number": "11",
             "name": "Pichu",
             "illustrator": "Midori Harada",
-            "imageBase": "https://assets.tcgdex.net/en/pop/pop9/11"
+            "imageBase": "https://assets.tcgdex.net/en/pop/pop9/11",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "pop9-12",
             "number": "12",
             "name": "Buneary",
             "illustrator": "Midori Harada",
-            "imageBase": "https://assets.tcgdex.net/en/pop/pop9/12"
+            "imageBase": "https://assets.tcgdex.net/en/pop/pop9/12",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "pop9-13",
             "number": "13",
             "name": "Chimchar",
             "illustrator": "Midori Harada",
-            "imageBase": "https://assets.tcgdex.net/en/pop/pop9/13"
+            "imageBase": "https://assets.tcgdex.net/en/pop/pop9/13",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "pop9-14",
             "number": "14",
             "name": "Gible",
             "illustrator": "Hiroki Fuchino",
-            "imageBase": "https://assets.tcgdex.net/en/pop/pop9/14"
+            "imageBase": "https://assets.tcgdex.net/en/pop/pop9/14",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "pop9-15",
             "number": "15",
             "name": "Pikachu",
             "illustrator": "Midori Harada",
-            "imageBase": "https://assets.tcgdex.net/en/pop/pop9/15"
+            "imageBase": "https://assets.tcgdex.net/en/pop/pop9/15",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "pop9-16",
             "number": "16",
             "name": "Piplup",
             "illustrator": "Midori Harada",
-            "imageBase": "https://assets.tcgdex.net/en/pop/pop9/16"
+            "imageBase": "https://assets.tcgdex.net/en/pop/pop9/16",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "pop9-17",
             "number": "17",
             "name": "Turtwig",
             "illustrator": "Midori Harada",
-            "imageBase": "https://assets.tcgdex.net/en/pop/pop9/17"
+            "imageBase": "https://assets.tcgdex.net/en/pop/pop9/17",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         }
     ]
 }

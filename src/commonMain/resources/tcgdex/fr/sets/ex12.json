@@ -3,660 +3,753 @@
     "serieId": "ex",
     "name": "EX Créateurs de légendes",
     "releaseDate": "2006-02-13",
-    "cardCount": 93,
+    "cardCount": 92,
     "logo": "https://assets.tcgdex.net/fr/ex/ex12/logo",
     "symbol": "https://assets.tcgdex.net/fr/ex/ex12/symbol",
     "cards": [
         {
-            "id": "ex12-001",
-            "number": "001",
+            "id": "ex12-1",
+            "number": "1",
             "name": "Ptera",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/1"
+            "illustrator": "Hajime Kusajima",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/1",
+            "rarity": "Rare"
         },
         {
-            "id": "ex12-002",
-            "number": "002",
+            "id": "ex12-2",
+            "number": "2",
             "name": "Galeking",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/2"
+            "illustrator": "Hisao Nakamura",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/2",
+            "rarity": "Rare"
         },
         {
-            "id": "ex12-003",
-            "number": "003",
+            "id": "ex12-3",
+            "number": "3",
             "name": "Vacilys",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/3"
+            "illustrator": "Hajime Kusajima",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/3",
+            "rarity": "Rare"
         },
         {
-            "id": "ex12-004",
-            "number": "004",
+            "id": "ex12-4",
+            "number": "4",
             "name": "Delcatty",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/4"
+            "illustrator": "Naoyo Kimura",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/4",
+            "rarity": "Rare"
         },
         {
-            "id": "ex12-005",
-            "number": "005",
+            "id": "ex12-5",
+            "number": "5",
             "name": "Ectoplasma",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/5"
+            "illustrator": "Kouki Saitou",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/5",
+            "rarity": "Rare"
         },
         {
-            "id": "ex12-006",
-            "number": "006",
+            "id": "ex12-6",
+            "number": "6",
             "name": "Grolem",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/6"
+            "illustrator": "Hajime Kusajima",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/6",
+            "rarity": "Rare"
         },
         {
-            "id": "ex12-007",
-            "number": "007",
+            "id": "ex12-7",
+            "number": "7",
             "name": "Kabutops",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/7"
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/7",
+            "rarity": "Rare"
         },
         {
-            "id": "ex12-008",
-            "number": "008",
+            "id": "ex12-8",
+            "number": "8",
             "name": "Lokhlass",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/8"
+            "illustrator": "Kagemaru Himeno",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/8",
+            "rarity": "Rare"
         },
         {
-            "id": "ex12-009",
-            "number": "009",
+            "id": "ex12-9",
+            "number": "9",
             "name": "Mackogneur",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/9"
+            "illustrator": "Kouki Saitou",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/9",
+            "rarity": "Rare"
         },
         {
-            "id": "ex12-010",
-            "number": "010",
+            "id": "ex12-10",
+            "number": "10",
             "name": "Mew",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/10"
+            "illustrator": "Kouki Saitou",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/10",
+            "rarity": "Rare"
         },
         {
-            "id": "ex12-011",
-            "number": "011",
+            "id": "ex12-11",
+            "number": "11",
             "name": "Grotadmorv",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/11"
+            "illustrator": "Midori Harada",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/11",
+            "rarity": "Rare"
         },
         {
-            "id": "ex12-012",
-            "number": "012",
+            "id": "ex12-12",
+            "number": "12",
             "name": "Tengalice",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/12"
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/12",
+            "rarity": "Rare"
         },
         {
-            "id": "ex12-013",
-            "number": "013",
+            "id": "ex12-13",
+            "number": "13",
             "name": "Empiflor",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/13"
+            "illustrator": "Sumiyoshi Kizuki",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/13",
+            "rarity": "Rare"
         },
         {
-            "id": "ex12-014",
-            "number": "014",
+            "id": "ex12-14",
+            "number": "14",
             "name": "Wailord",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/14"
+            "illustrator": "Kouki Saitou",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/14",
+            "rarity": "Rare"
         },
         {
-            "id": "ex12-015",
-            "number": "015",
+            "id": "ex12-15",
+            "number": "15",
             "name": "Absol",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/15"
+            "illustrator": "Midori Harada",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/15",
+            "rarity": "Rare"
         },
         {
-            "id": "ex12-016",
-            "number": "016",
+            "id": "ex12-16",
+            "number": "16",
             "name": "Girafarig",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/16"
+            "illustrator": "Aya Kusube",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/16",
+            "rarity": "Rare"
         },
         {
-            "id": "ex12-017",
-            "number": "017",
+            "id": "ex12-17",
+            "number": "17",
             "name": "Rosabyss",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/17"
+            "illustrator": "Atsuko Nishida",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/17",
+            "rarity": "Rare"
         },
         {
-            "id": "ex12-018",
-            "number": "018",
+            "id": "ex12-18",
+            "number": "18",
             "name": "Serpang",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/18"
+            "illustrator": "Midori Harada",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/18",
+            "rarity": "Rare"
         },
         {
-            "id": "ex12-019",
-            "number": "019",
+            "id": "ex12-19",
+            "number": "19",
             "name": "Lanturn",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/19"
+            "illustrator": "Kagemaru Himeno",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/19",
+            "rarity": "Rare"
         },
         {
-            "id": "ex12-020",
-            "number": "020",
+            "id": "ex12-20",
+            "number": "20",
             "name": "Seleroc",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/20"
+            "illustrator": "Hisao Nakamura",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/20",
+            "rarity": "Rare"
         },
         {
-            "id": "ex12-021",
-            "number": "021",
+            "id": "ex12-21",
+            "number": "21",
             "name": "Magmar",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/21"
+            "illustrator": "Sumiyoshi Kizuki",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/21",
+            "rarity": "Rare"
         },
         {
-            "id": "ex12-022",
-            "number": "022",
+            "id": "ex12-22",
+            "number": "22",
             "name": "Magneton",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/22"
+            "illustrator": "Hisao Nakamura",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/22",
+            "rarity": "Rare"
         },
         {
-            "id": "ex12-023",
-            "number": "023",
+            "id": "ex12-23",
+            "number": "23",
             "name": "Amonistar",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/23"
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/23",
+            "rarity": "Rare"
         },
         {
-            "id": "ex12-024",
-            "number": "024",
+            "id": "ex12-24",
+            "number": "24",
             "name": "Scarabrute",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/24"
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/24",
+            "rarity": "Rare"
         },
         {
-            "id": "ex12-025",
-            "number": "025",
+            "id": "ex12-25",
+            "number": "25",
             "name": "Solaroc",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/25"
+            "illustrator": "Hisao Nakamura",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/25",
+            "rarity": "Rare"
         },
         {
-            "id": "ex12-026",
-            "number": "026",
+            "id": "ex12-26",
+            "number": "26",
             "name": "Spinda",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/26"
+            "illustrator": "Motofumi Fujiwara",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/26",
+            "rarity": "Rare"
         },
         {
-            "id": "ex12-027",
-            "number": "027",
+            "id": "ex12-27",
+            "number": "27",
             "name": "Chartor",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/27"
+            "illustrator": "Atsuko Nishida",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/27",
+            "rarity": "Rare"
         },
         {
-            "id": "ex12-028",
-            "number": "028",
+            "id": "ex12-28",
+            "number": "28",
             "name": "Qulbutoké",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/28"
+            "illustrator": "Kouki Saitou",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/28",
+            "rarity": "Rare"
         },
         {
-            "id": "ex12-029",
-            "number": "029",
+            "id": "ex12-29",
+            "number": "29",
             "name": "Anorith",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/29"
+            "illustrator": "Atsuko Nishida",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/29",
+            "rarity": "Uncommon"
         },
         {
-            "id": "ex12-030",
-            "number": "030",
+            "id": "ex12-30",
+            "number": "30",
             "name": "Blindalys",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/30"
+            "illustrator": "Sachiko Adachi",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/30",
+            "rarity": "Uncommon"
         },
         {
-            "id": "ex12-031",
-            "number": "031",
+            "id": "ex12-31",
+            "number": "31",
             "name": "Insolourdo",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/31"
+            "illustrator": "Hajime Kusajima",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/31",
+            "rarity": "Uncommon"
         },
         {
-            "id": "ex12-032",
-            "number": "032",
+            "id": "ex12-32",
+            "number": "32",
             "name": "Electrode",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/32"
+            "illustrator": "Midori Harada",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/32",
+            "rarity": "Uncommon"
         },
         {
-            "id": "ex12-033",
-            "number": "033",
+            "id": "ex12-33",
+            "number": "33",
             "name": "Fouinar",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/33"
+            "illustrator": "Tomokazu Komiya",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/33",
+            "rarity": "Uncommon"
         },
         {
-            "id": "ex12-034",
-            "number": "034",
+            "id": "ex12-34",
+            "number": "34",
             "name": "Gravalanch",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/34"
+            "illustrator": "Sumiyoshi Kizuki",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/34",
+            "rarity": "Uncommon"
         },
         {
-            "id": "ex12-035",
-            "number": "035",
+            "id": "ex12-35",
+            "number": "35",
             "name": "Spectrum",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/35"
+            "illustrator": "Aya Kusube",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/35",
+            "rarity": "Uncommon"
         },
         {
-            "id": "ex12-036",
-            "number": "036",
+            "id": "ex12-36",
+            "number": "36",
             "name": "Kabuto",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/36"
+            "illustrator": "Takao Unno",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/36",
+            "rarity": "Uncommon"
         },
         {
-            "id": "ex12-037",
-            "number": "037",
+            "id": "ex12-37",
+            "number": "37",
             "name": "Kecleon",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/37"
+            "illustrator": "Tomokazu Komiya",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/37",
+            "rarity": "Uncommon"
         },
         {
-            "id": "ex12-038",
-            "number": "038",
+            "id": "ex12-38",
+            "number": "38",
             "name": "Galegon",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/38"
+            "illustrator": "Naoyo Kimura",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/38",
+            "rarity": "Uncommon"
         },
         {
-            "id": "ex12-039",
-            "number": "039",
+            "id": "ex12-39",
+            "number": "39",
             "name": "Machopeur",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/39"
+            "illustrator": "Kagemaru Himeno",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/39",
+            "rarity": "Uncommon"
         },
         {
-            "id": "ex12-040",
-            "number": "040",
+            "id": "ex12-40",
+            "number": "40",
             "name": "Feuforêve",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/40"
+            "illustrator": "Yukiko Baba",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/40",
+            "rarity": "Uncommon"
         },
         {
-            "id": "ex12-041",
-            "number": "041",
+            "id": "ex12-41",
+            "number": "41",
             "name": "Pifeuil",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/41"
+            "illustrator": "Katsura Tabata",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/41",
+            "rarity": "Uncommon"
         },
         {
-            "id": "ex12-042",
-            "number": "042",
+            "id": "ex12-42",
+            "number": "42",
             "name": "Roselia",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/42"
+            "illustrator": "Kagemaru Himeno",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/42",
+            "rarity": "Uncommon"
         },
         {
-            "id": "ex12-043",
-            "number": "043",
+            "id": "ex12-43",
+            "number": "43",
             "name": "Phogleur",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/43"
+            "illustrator": "Midori Harada",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/43",
+            "rarity": "Uncommon"
         },
         {
-            "id": "ex12-044",
-            "number": "044",
+            "id": "ex12-44",
+            "number": "44",
             "name": "Saquedeneu",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/44"
+            "illustrator": "Aya Kusube",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/44",
+            "rarity": "Uncommon"
         },
         {
-            "id": "ex12-045",
-            "number": "045",
+            "id": "ex12-45",
+            "number": "45",
             "name": "Tentacruel",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/45"
+            "illustrator": "Kagemaru Himeno",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/45",
+            "rarity": "Uncommon"
         },
         {
-            "id": "ex12-046",
-            "number": "046",
+            "id": "ex12-46",
+            "number": "46",
             "name": "Vibraninf",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/46"
+            "illustrator": "Atsuko Nishida",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/46",
+            "rarity": "Uncommon"
         },
         {
-            "id": "ex12-047",
-            "number": "047",
+            "id": "ex12-47",
+            "number": "47",
             "name": "Boustiflor",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/47"
+            "illustrator": "Katsura Tabata",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/47",
+            "rarity": "Uncommon"
         },
         {
-            "id": "ex12-048",
-            "number": "048",
+            "id": "ex12-48",
+            "number": "48",
             "name": "Galekid",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/48"
+            "illustrator": "Miki Tanaka",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/48",
+            "rarity": "Common"
         },
         {
-            "id": "ex12-049",
-            "number": "049",
+            "id": "ex12-49",
+            "number": "49",
             "name": "Chetiflor",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/49"
+            "illustrator": "Midori Harada",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/49",
+            "rarity": "Common"
         },
         {
-            "id": "ex12-050",
-            "number": "050",
+            "id": "ex12-50",
+            "number": "50",
             "name": "Loupio",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/50"
+            "illustrator": "Sachiko Adachi",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/50",
+            "rarity": "Common"
         },
         {
-            "id": "ex12-051",
-            "number": "051",
+            "id": "ex12-51",
+            "number": "51",
             "name": "Coquiperl",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/51"
+            "illustrator": "Sachiko Adachi",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/51",
+            "rarity": "Common"
         },
         {
-            "id": "ex12-052",
-            "number": "052",
+            "id": "ex12-52",
+            "number": "52",
             "name": "Fantominus",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/52"
+            "illustrator": "Hajime Kusajima",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/52",
+            "rarity": "Common"
         },
         {
-            "id": "ex12-053",
-            "number": "053",
+            "id": "ex12-53",
+            "number": "53",
             "name": "Racaillou",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/53"
+            "illustrator": "Miki Tanaka",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/53",
+            "rarity": "Common"
         },
         {
-            "id": "ex12-054",
-            "number": "054",
+            "id": "ex12-54",
+            "number": "54",
             "name": "Tadmorv",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/54"
+            "illustrator": "Tomokazu Komiya",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/54",
+            "rarity": "Common"
         },
         {
-            "id": "ex12-055",
-            "number": "055",
+            "id": "ex12-55",
+            "number": "55",
             "name": "Caninos",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/55"
+            "illustrator": "Kanako Eo",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/55",
+            "rarity": "Common"
         },
         {
-            "id": "ex12-056",
-            "number": "056",
+            "id": "ex12-56",
+            "number": "56",
             "name": "Lilia",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/56"
+            "illustrator": "Atsuko Nishida",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/56",
+            "rarity": "Common"
         },
         {
-            "id": "ex12-057",
-            "number": "057",
+            "id": "ex12-57",
+            "number": "57",
             "name": "Machoc",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/57"
+            "illustrator": "Yukiko Baba",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/57",
+            "rarity": "Common"
         },
         {
-            "id": "ex12-058",
-            "number": "058",
+            "id": "ex12-58",
+            "number": "58",
             "name": "Magby",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/58"
+            "illustrator": "Yuka Morii",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/58",
+            "rarity": "Common"
         },
         {
-            "id": "ex12-059",
-            "number": "059",
+            "id": "ex12-59",
+            "number": "59",
             "name": "Magneti",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/59"
+            "illustrator": "Hiroki Fuchino",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/59",
+            "rarity": "Common"
         },
         {
-            "id": "ex12-060",
-            "number": "060",
+            "id": "ex12-60",
+            "number": "60",
             "name": "Amonita",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/60"
+            "illustrator": "Kenkichi Toyama",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/60",
+            "rarity": "Common"
         },
         {
-            "id": "ex12-061",
-            "number": "061",
+            "id": "ex12-61",
+            "number": "61",
             "name": "Grainipiot",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/61"
+            "illustrator": "Yuka Morii",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/61",
+            "rarity": "Common"
         },
         {
-            "id": "ex12-062",
-            "number": "062",
+            "id": "ex12-62",
+            "number": "62",
             "name": "Fouinette",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/62"
+            "illustrator": "Tomokazu Komiya",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/62",
+            "rarity": "Common"
         },
         {
-            "id": "ex12-063",
-            "number": "063",
+            "id": "ex12-63",
+            "number": "63",
             "name": "Polichombr",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/63"
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/63",
+            "rarity": "Common"
         },
         {
-            "id": "ex12-064",
-            "number": "064",
+            "id": "ex12-64",
+            "number": "64",
             "name": "Skitty",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/64"
+            "illustrator": "Satoshi Ohta",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/64",
+            "rarity": "Common"
         },
         {
-            "id": "ex12-065",
-            "number": "065",
+            "id": "ex12-65",
+            "number": "65",
             "name": "Obalie",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/65"
+            "illustrator": "Miki Tanaka",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/65",
+            "rarity": "Common"
         },
         {
-            "id": "ex12-066",
-            "number": "066",
+            "id": "ex12-66",
+            "number": "66",
             "name": "Tentacool",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/66"
+            "illustrator": "Tomoaki Imakuni",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/66",
+            "rarity": "Common"
         },
         {
-            "id": "ex12-067",
-            "number": "067",
+            "id": "ex12-67",
+            "number": "67",
             "name": "Kraknoix",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/67"
+            "illustrator": "Tomokazu Komiya",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/67",
+            "rarity": "Common"
         },
         {
-            "id": "ex12-068",
-            "number": "068",
+            "id": "ex12-68",
+            "number": "68",
             "name": "Voltorbe",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/68"
+            "illustrator": "Midori Harada",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/68",
+            "rarity": "Common"
         },
         {
-            "id": "ex12-069",
-            "number": "069",
+            "id": "ex12-69",
+            "number": "69",
             "name": "Wailmer",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/69"
+            "illustrator": "Sumiyoshi Kizuki",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/69",
+            "rarity": "Common"
         },
         {
-            "id": "ex12-070",
-            "number": "070",
+            "id": "ex12-70",
+            "number": "70",
             "name": "Chenipotte",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/70"
+            "illustrator": "Yukiko Baba",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/70",
+            "rarity": "Common"
         },
         {
-            "id": "ex12-071",
-            "number": "071",
+            "id": "ex12-71",
+            "number": "71",
             "name": "Okéoké",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/71"
+            "illustrator": "Yuka Morii",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/71",
+            "rarity": "Common"
         },
         {
-            "id": "ex12-072",
-            "number": "072",
+            "id": "ex12-72",
+            "number": "72",
             "name": "Pierre maléfique",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/72"
+            "illustrator": "Ryo Ueda",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/72",
+            "rarity": "Uncommon"
         },
         {
-            "id": "ex12-073",
-            "number": "073",
+            "id": "ex12-73",
+            "number": "73",
             "name": "Travailleur de terrain",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/73"
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/73",
+            "rarity": "Uncommon"
         },
         {
-            "id": "ex12-074",
-            "number": "074",
+            "id": "ex12-74",
+            "number": "74",
             "name": "Flamme maximale",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/74"
+            "illustrator": "Ryo Ueda",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/74",
+            "rarity": "Uncommon"
         },
         {
-            "id": "ex12-075",
-            "number": "075",
+            "id": "ex12-75",
+            "number": "75",
             "name": "Souche géante",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/75"
+            "illustrator": "Ryo Ueda",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/75",
+            "rarity": "Uncommon"
         },
         {
-            "id": "ex12-076",
-            "number": "076",
+            "id": "ex12-76",
+            "number": "76",
             "name": "Arbre à puissance",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/76"
+            "illustrator": "Ryo Ueda",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/76",
+            "rarity": "Uncommon"
         },
         {
-            "id": "ex12-077",
-            "number": "077",
+            "id": "ex12-77",
+            "number": "77",
             "name": "Cave étrange",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/77"
+            "illustrator": "Ryo Ueda",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/77",
+            "rarity": "Uncommon"
         },
         {
-            "id": "ex12-078",
-            "number": "078",
+            "id": "ex12-78",
+            "number": "78",
             "name": "Fossile griffe",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/78"
+            "illustrator": "Ryo Ueda",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/78",
+            "rarity": "Common"
         },
         {
-            "id": "ex12-079",
-            "number": "079",
+            "id": "ex12-79",
+            "number": "79",
             "name": "Mystérieux fossile",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/79"
+            "illustrator": "Ryo Ueda",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/79",
+            "rarity": "Common"
         },
         {
-            "id": "ex12-080",
-            "number": "080",
+            "id": "ex12-80",
+            "number": "80",
             "name": "Fossile racine",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/80"
+            "illustrator": "Ryo Ueda",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/80",
+            "rarity": "Common"
         },
         {
-            "id": "ex12-081",
-            "number": "081",
+            "id": "ex12-81",
+            "number": "81",
             "name": "Énergie Multicolore",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/81"
+            "illustrator": "Takumi Akabane",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/81",
+            "rarity": "Rare"
         },
         {
-            "id": "ex12-082",
-            "number": "082",
+            "id": "ex12-82",
+            "number": "82",
             "name": "Énergie réaction",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/82"
+            "illustrator": "Takumi Akabane",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/82",
+            "rarity": "Uncommon"
         },
         {
-            "id": "ex12-083",
-            "number": "083",
+            "id": "ex12-83",
+            "number": "83",
             "name": "Arcanin ex",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/83"
+            "illustrator": "Hikaru Koike",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/83",
+            "rarity": "Rare"
         },
         {
-            "id": "ex12-084",
-            "number": "084",
+            "id": "ex12-84",
+            "number": "84",
             "name": "Armaldo ex",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/84"
+            "illustrator": "Kimiya Masago",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/84",
+            "rarity": "Rare"
         },
         {
-            "id": "ex12-085",
-            "number": "085",
+            "id": "ex12-85",
+            "number": "85",
             "name": "Branette ex",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/85"
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/85",
+            "rarity": "Rare"
         },
         {
-            "id": "ex12-086",
-            "number": "086",
+            "id": "ex12-86",
+            "number": "86",
             "name": "Papinox ex",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/86"
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/86",
+            "rarity": "Rare"
         },
         {
-            "id": "ex12-087",
-            "number": "087",
+            "id": "ex12-87",
+            "number": "87",
             "name": "Libegon ex",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/87"
+            "illustrator": "Ryo Ueda",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/87",
+            "rarity": "Rare"
         },
         {
-            "id": "ex12-088",
-            "number": "088",
+            "id": "ex12-88",
+            "number": "88",
             "name": "Mew ex",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/88"
+            "illustrator": "Ryo Ueda",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/88",
+            "rarity": "Rare"
         },
         {
-            "id": "ex12-089",
-            "number": "089",
+            "id": "ex12-89",
+            "number": "89",
             "name": "Kaimorse ex",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/89"
+            "illustrator": "Kimiya Masago",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/89",
+            "rarity": "Rare"
         },
         {
-            "id": "ex12-090",
-            "number": "090",
+            "id": "ex12-90",
+            "number": "90",
             "name": "Regice ☆",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/90"
+            "illustrator": "Masakazu Fukuda",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/90",
+            "rarity": "Rare"
         },
         {
-            "id": "ex12-091",
-            "number": "091",
+            "id": "ex12-91",
+            "number": "91",
             "name": "Regirock ☆",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/91"
+            "illustrator": "Masakazu Fukuda",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/91",
+            "rarity": "Rare"
         },
         {
-            "id": "ex12-092",
-            "number": "092",
+            "id": "ex12-92",
+            "number": "92",
             "name": "Registeel ☆",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/92"
+            "illustrator": "Masakazu Fukuda",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/92",
+            "rarity": "Rare"
         },
         {
-            "id": "ex12-093",
-            "number": "093",
+            "id": "ex12-93",
+            "number": "93",
             "name": "Pikachu δ",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/93"
+            "illustrator": "Ryo Ueda",
+            "imageBase": "https://assets.tcgdex.net/fr/ex/ex12/93",
+            "rarity": "Rare"
         }
     ]
 }

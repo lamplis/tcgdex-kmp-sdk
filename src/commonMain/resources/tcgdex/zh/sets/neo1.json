@@ -3,6 +3,786 @@
     "serieId": "neo",
     "name": "Neo Genesis",
     "releaseDate": "2000-12-16",
+    "cardCount": 111,
     "logo": "https://assets.tcgdex.net/zh/neo/neo1/logo",
-    "symbol": "https://assets.tcgdex.net/zh/neo/neo1/symbol"
+    "symbol": "https://assets.tcgdex.net/zh/neo/neo1/symbol",
+    "cards": [
+        {
+            "id": "neo1-1",
+            "number": "1",
+            "name": "Ampharos",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Rare"
+        },
+        {
+            "id": "neo1-2",
+            "number": "2",
+            "name": "Azumarill",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Rare"
+        },
+        {
+            "id": "neo1-3",
+            "number": "3",
+            "name": "Bellossom",
+            "illustrator": "Atsuko Nishida",
+            "rarity": "Rare"
+        },
+        {
+            "id": "neo1-4",
+            "number": "4",
+            "name": "Feraligatr",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Rare"
+        },
+        {
+            "id": "neo1-5",
+            "number": "5",
+            "name": "Feraligatr",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Rare"
+        },
+        {
+            "id": "neo1-6",
+            "number": "6",
+            "name": "Heracross",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Rare"
+        },
+        {
+            "id": "neo1-7",
+            "number": "7",
+            "name": "Jumpluff",
+            "illustrator": "Atsuko Nishida",
+            "rarity": "Rare"
+        },
+        {
+            "id": "neo1-8",
+            "number": "8",
+            "name": "Kingdra",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Rare"
+        },
+        {
+            "id": "neo1-9",
+            "number": "9",
+            "name": "Lugia",
+            "illustrator": "Hironobu Yoshida",
+            "rarity": "Rare"
+        },
+        {
+            "id": "neo1-10",
+            "number": "10",
+            "name": "Meganium",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Rare"
+        },
+        {
+            "id": "neo1-11",
+            "number": "11",
+            "name": "Meganium",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Rare"
+        },
+        {
+            "id": "neo1-12",
+            "number": "12",
+            "name": "Pichu",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Rare"
+        },
+        {
+            "id": "neo1-13",
+            "number": "13",
+            "name": "Skarmory",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Rare"
+        },
+        {
+            "id": "neo1-14",
+            "number": "14",
+            "name": "Slowking",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Rare"
+        },
+        {
+            "id": "neo1-15",
+            "number": "15",
+            "name": "Steelix",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Rare"
+        },
+        {
+            "id": "neo1-16",
+            "number": "16",
+            "name": "Togetic",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Rare"
+        },
+        {
+            "id": "neo1-17",
+            "number": "17",
+            "name": "Typhlosion",
+            "illustrator": "Shin-ichi Yoshida",
+            "rarity": "Rare"
+        },
+        {
+            "id": "neo1-18",
+            "number": "18",
+            "name": "Typhlosion",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Rare"
+        },
+        {
+            "id": "neo1-19",
+            "number": "19",
+            "name": "Metal Energy",
+            "illustrator": "Milky Isobe",
+            "rarity": "Rare"
+        },
+        {
+            "id": "neo1-20",
+            "number": "20",
+            "name": "Cleffa",
+            "illustrator": "Kagemaru Himeno",
+            "rarity": "Rare"
+        },
+        {
+            "id": "neo1-21",
+            "number": "21",
+            "name": "Donphan",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Rare"
+        },
+        {
+            "id": "neo1-22",
+            "number": "22",
+            "name": "Elekid",
+            "illustrator": "Miki Tanaka",
+            "rarity": "Rare"
+        },
+        {
+            "id": "neo1-23",
+            "number": "23",
+            "name": "Magby",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Rare"
+        },
+        {
+            "id": "neo1-24",
+            "number": "24",
+            "name": "Murkrow",
+            "illustrator": "Shin-ichi Yoshida",
+            "rarity": "Rare"
+        },
+        {
+            "id": "neo1-25",
+            "number": "25",
+            "name": "Sneasel",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Rare"
+        },
+        {
+            "id": "neo1-26",
+            "number": "26",
+            "name": "Aipom",
+            "illustrator": "Hironobu Yoshida",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "neo1-27",
+            "number": "27",
+            "name": "Ariados",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "neo1-28",
+            "number": "28",
+            "name": "Bayleef",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "neo1-29",
+            "number": "29",
+            "name": "Bayleef",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "neo1-30",
+            "number": "30",
+            "name": "Clefairy",
+            "illustrator": "Sumiyoshi Kizuki",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "neo1-31",
+            "number": "31",
+            "name": "Croconaw",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "neo1-32",
+            "number": "32",
+            "name": "Croconaw",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "neo1-33",
+            "number": "33",
+            "name": "Electabuzz",
+            "illustrator": "Shin-ichi Yoshida",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "neo1-34",
+            "number": "34",
+            "name": "Flaaffy",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "neo1-35",
+            "number": "35",
+            "name": "Furret",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "neo1-36",
+            "number": "36",
+            "name": "Gloom",
+            "illustrator": "Mitsuhiro Arita",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "neo1-37",
+            "number": "37",
+            "name": "Granbull",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "neo1-38",
+            "number": "38",
+            "name": "Lanturn",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "neo1-39",
+            "number": "39",
+            "name": "Ledian",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "neo1-40",
+            "number": "40",
+            "name": "Magmar",
+            "illustrator": "Naoyo Kimura",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "neo1-41",
+            "number": "41",
+            "name": "Miltank",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "neo1-42",
+            "number": "42",
+            "name": "Noctowl",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "neo1-43",
+            "number": "43",
+            "name": "Phanpy",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "neo1-44",
+            "number": "44",
+            "name": "Piloswine",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "neo1-45",
+            "number": "45",
+            "name": "Quagsire",
+            "illustrator": "Atsuko Nishida",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "neo1-46",
+            "number": "46",
+            "name": "Quilava",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "neo1-47",
+            "number": "47",
+            "name": "Quilava",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "neo1-48",
+            "number": "48",
+            "name": "Seadra",
+            "illustrator": "Shin-ichi Yoshida",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "neo1-49",
+            "number": "49",
+            "name": "Skiploom",
+            "illustrator": "Atsuko Nishida",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "neo1-50",
+            "number": "50",
+            "name": "Sunflora",
+            "illustrator": "Kagemaru Himeno",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "neo1-51",
+            "number": "51",
+            "name": "Togepi",
+            "illustrator": "Naoyo Kimura",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "neo1-52",
+            "number": "52",
+            "name": "Xatu",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "neo1-53",
+            "number": "53",
+            "name": "Chikorita",
+            "illustrator": "Naoyo Kimura",
+            "rarity": "Common"
+        },
+        {
+            "id": "neo1-54",
+            "number": "54",
+            "name": "Chikorita",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Common"
+        },
+        {
+            "id": "neo1-55",
+            "number": "55",
+            "name": "Chinchou",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Common"
+        },
+        {
+            "id": "neo1-56",
+            "number": "56",
+            "name": "Cyndaquil",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Common"
+        },
+        {
+            "id": "neo1-57",
+            "number": "57",
+            "name": "Cyndaquil",
+            "illustrator": "Shin-ichi Yoshida",
+            "rarity": "Common"
+        },
+        {
+            "id": "neo1-58",
+            "number": "58",
+            "name": "Girafarig",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Common"
+        },
+        {
+            "id": "neo1-59",
+            "number": "59",
+            "name": "Gligar",
+            "illustrator": "Hironobu Yoshida",
+            "rarity": "Common"
+        },
+        {
+            "id": "neo1-60",
+            "number": "60",
+            "name": "Hoothoot",
+            "illustrator": "Sumiyoshi Kizuki",
+            "rarity": "Common"
+        },
+        {
+            "id": "neo1-61",
+            "number": "61",
+            "name": "Hoppip",
+            "illustrator": "Atsuko Nishida",
+            "rarity": "Common"
+        },
+        {
+            "id": "neo1-62",
+            "number": "62",
+            "name": "Horsea",
+            "illustrator": "Miki Tanaka",
+            "rarity": "Common"
+        },
+        {
+            "id": "neo1-63",
+            "number": "63",
+            "name": "Ledyba",
+            "illustrator": "Sumiyoshi Kizuki",
+            "rarity": "Common"
+        },
+        {
+            "id": "neo1-64",
+            "number": "64",
+            "name": "Mantine",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Common"
+        },
+        {
+            "id": "neo1-65",
+            "number": "65",
+            "name": "Mareep",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Common"
+        },
+        {
+            "id": "neo1-66",
+            "number": "66",
+            "name": "Marill",
+            "illustrator": "Atsuko Nishida",
+            "rarity": "Common"
+        },
+        {
+            "id": "neo1-67",
+            "number": "67",
+            "name": "Natu",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Common"
+        },
+        {
+            "id": "neo1-68",
+            "number": "68",
+            "name": "Oddish",
+            "illustrator": "Sumiyoshi Kizuki",
+            "rarity": "Common"
+        },
+        {
+            "id": "neo1-69",
+            "number": "69",
+            "name": "Onix",
+            "illustrator": "Mitsuhiro Arita",
+            "rarity": "Common"
+        },
+        {
+            "id": "neo1-70",
+            "number": "70",
+            "name": "Pikachu",
+            "illustrator": "Naoyo Kimura",
+            "rarity": "Common"
+        },
+        {
+            "id": "neo1-71",
+            "number": "71",
+            "name": "Sentret",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Common"
+        },
+        {
+            "id": "neo1-72",
+            "number": "72",
+            "name": "Shuckle",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Common"
+        },
+        {
+            "id": "neo1-73",
+            "number": "73",
+            "name": "Slowpoke",
+            "illustrator": "Tomokazu Komiya",
+            "rarity": "Common"
+        },
+        {
+            "id": "neo1-74",
+            "number": "74",
+            "name": "Snubbull",
+            "illustrator": "Mitsuhiro Arita",
+            "rarity": "Common"
+        },
+        {
+            "id": "neo1-75",
+            "number": "75",
+            "name": "Spinarak",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Common"
+        },
+        {
+            "id": "neo1-76",
+            "number": "76",
+            "name": "Stantler",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Common"
+        },
+        {
+            "id": "neo1-77",
+            "number": "77",
+            "name": "Sudowoodo",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Common"
+        },
+        {
+            "id": "neo1-78",
+            "number": "78",
+            "name": "Sunkern",
+            "illustrator": "Kagemaru Himeno",
+            "rarity": "Common"
+        },
+        {
+            "id": "neo1-79",
+            "number": "79",
+            "name": "Swinub",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Common"
+        },
+        {
+            "id": "neo1-80",
+            "number": "80",
+            "name": "Totodile",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Common"
+        },
+        {
+            "id": "neo1-81",
+            "number": "81",
+            "name": "Totodile",
+            "illustrator": "Hironobu Yoshida",
+            "rarity": "Common"
+        },
+        {
+            "id": "neo1-82",
+            "number": "82",
+            "name": "Wooper",
+            "illustrator": "Miki Tanaka",
+            "rarity": "Common"
+        },
+        {
+            "id": "neo1-83",
+            "number": "83",
+            "name": "Arcade Game",
+            "illustrator": null,
+            "rarity": "Rare"
+        },
+        {
+            "id": "neo1-84",
+            "number": "84",
+            "name": "Ecogym",
+            "illustrator": null,
+            "rarity": "Rare"
+        },
+        {
+            "id": "neo1-85",
+            "number": "85",
+            "name": "Energy Charge",
+            "illustrator": "Keiji Kinebuchi",
+            "rarity": "Rare"
+        },
+        {
+            "id": "neo1-86",
+            "number": "86",
+            "name": "Focus Band",
+            "illustrator": "Tomokazu Komiya",
+            "rarity": "Rare"
+        },
+        {
+            "id": "neo1-87",
+            "number": "87",
+            "name": "Mary",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Rare"
+        },
+        {
+            "id": "neo1-88",
+            "number": "88",
+            "name": "PokéGear",
+            "illustrator": null,
+            "rarity": "Rare"
+        },
+        {
+            "id": "neo1-89",
+            "number": "89",
+            "name": "Super Energy Retrieval",
+            "illustrator": "Keiji Kinebuchi",
+            "rarity": "Rare"
+        },
+        {
+            "id": "neo1-90",
+            "number": "90",
+            "name": "Time Capsule",
+            "illustrator": null,
+            "rarity": "Rare"
+        },
+        {
+            "id": "neo1-91",
+            "number": "91",
+            "name": "Bill's Teleporter",
+            "illustrator": "Keiji Kinebuchi",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "neo1-92",
+            "number": "92",
+            "name": "Card-Flip Game",
+            "illustrator": null,
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "neo1-93",
+            "number": "93",
+            "name": "Gold Berry",
+            "illustrator": null,
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "neo1-94",
+            "number": "94",
+            "name": "Miracle Berry",
+            "illustrator": null,
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "neo1-95",
+            "number": "95",
+            "name": "New Pokédex",
+            "illustrator": "Keiji Kinebuchi",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "neo1-96",
+            "number": "96",
+            "name": "Professor Elm",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "neo1-97",
+            "number": "97",
+            "name": "Sprout Tower",
+            "illustrator": null,
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "neo1-98",
+            "number": "98",
+            "name": "Super Scoop Up",
+            "illustrator": "Keiji Kinebuchi",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "neo1-99",
+            "number": "99",
+            "name": "Berry",
+            "illustrator": null,
+            "rarity": "Common"
+        },
+        {
+            "id": "neo1-100",
+            "number": "100",
+            "name": "Double Gust",
+            "illustrator": "Tomokazu Komiya",
+            "rarity": "Common"
+        },
+        {
+            "id": "neo1-101",
+            "number": "101",
+            "name": "Moo-Moo Milk",
+            "illustrator": "Tomokazu Komiya",
+            "rarity": "Common"
+        },
+        {
+            "id": "neo1-102",
+            "number": "102",
+            "name": "Pokémon March",
+            "illustrator": "Tomokazu Komiya",
+            "rarity": "Common"
+        },
+        {
+            "id": "neo1-103",
+            "number": "103",
+            "name": "Super Rod",
+            "illustrator": "Keiji Kinebuchi",
+            "rarity": "Common"
+        },
+        {
+            "id": "neo1-104",
+            "number": "104",
+            "name": "Darkness Energy",
+            "illustrator": "Milky Isobe",
+            "rarity": "Rare"
+        },
+        {
+            "id": "neo1-105",
+            "number": "105",
+            "name": "Recycle Energy",
+            "illustrator": "Hideki Kazama",
+            "rarity": "Rare"
+        },
+        {
+            "id": "neo1-106",
+            "number": "106",
+            "name": "Fighting Energy",
+            "illustrator": "Keiji Kinebuchi",
+            "rarity": "Common"
+        },
+        {
+            "id": "neo1-107",
+            "number": "107",
+            "name": "Fire Energy",
+            "illustrator": "Keiji Kinebuchi",
+            "rarity": "Common"
+        },
+        {
+            "id": "neo1-108",
+            "number": "108",
+            "name": "Grass Energy",
+            "illustrator": "Keiji Kinebuchi",
+            "rarity": "Common"
+        },
+        {
+            "id": "neo1-109",
+            "number": "109",
+            "name": "Lightning Energy",
+            "illustrator": "Keiji Kinebuchi",
+            "rarity": "Common"
+        },
+        {
+            "id": "neo1-110",
+            "number": "110",
+            "name": "Psychic Energy",
+            "illustrator": "Keiji Kinebuchi",
+            "rarity": "Common"
+        },
+        {
+            "id": "neo1-111",
+            "number": "111",
+            "name": "Water Energy",
+            "illustrator": "Keiji Kinebuchi",
+            "rarity": "Common"
+        }
+    ]
 }

@@ -3,6 +3,217 @@
     "serieId": "pop",
     "name": "POP Series 5",
     "releaseDate": "2007-03-01",
+    "cardCount": 17,
     "logo": "https://assets.tcgdex.net/fr/pop/pop5/logo",
-    "symbol": "https://assets.tcgdex.net/fr/pop/pop5/symbol"
+    "symbol": "https://assets.tcgdex.net/fr/pop/pop5/symbol",
+    "cards": [
+        {
+            "id": "pop5-1",
+            "number": "1",
+            "name": "Ho-Oh",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/fr/pop/pop5/1",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "pop5-2",
+            "number": "2",
+            "name": "Lugia",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/fr/pop/pop5/2",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "pop5-3",
+            "number": "3",
+            "name": "Mew δ",
+            "illustrator": "Masakazu Fukuda",
+            "imageBase": "https://assets.tcgdex.net/fr/pop/pop5/3",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
+        },
+        {
+            "id": "pop5-4",
+            "number": "4",
+            "name": "Double Rainbow Energy",
+            "illustrator": "Takumi Akabane",
+            "imageBase": "https://assets.tcgdex.net/fr/pop/pop5/4",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
+        },
+        {
+            "id": "pop5-5",
+            "number": "5",
+            "name": "Charmeleon δ",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/fr/pop/pop5/5",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "pop5-6",
+            "number": "6",
+            "name": "Bill’s Maintenance",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/pop/pop5/6",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
+        },
+        {
+            "id": "pop5-7",
+            "number": "7",
+            "name": "Rare Candy",
+            "illustrator": "Ryo Ueda",
+            "imageBase": "https://assets.tcgdex.net/fr/pop/pop5/7",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
+        },
+        {
+            "id": "pop5-8",
+            "number": "8",
+            "name": "Boost Energy",
+            "illustrator": "Shin-ichi Yoshikawa",
+            "imageBase": "https://assets.tcgdex.net/fr/pop/pop5/8",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
+        },
+        {
+            "id": "pop5-9",
+            "number": "9",
+            "name": "δ Rainbow Energy",
+            "illustrator": "Takumi Akabane",
+            "imageBase": "https://assets.tcgdex.net/fr/pop/pop5/9",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "pop5-10",
+            "number": "10",
+            "name": "Charmander δ",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/fr/pop/pop5/10",
+            "rarity": "Common"
+        },
+        {
+            "id": "pop5-11",
+            "number": "11",
+            "name": "Meowth δ",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/fr/pop/pop5/11",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
+        },
+        {
+            "id": "pop5-12",
+            "number": "12",
+            "name": "Pikachu",
+            "illustrator": "Naoyo Kimura",
+            "imageBase": "https://assets.tcgdex.net/fr/pop/pop5/12",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "pop5-13",
+            "number": "13",
+            "name": "Pikachu δ",
+            "illustrator": "Ryo Ueda",
+            "imageBase": "https://assets.tcgdex.net/fr/pop/pop5/13",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
+        },
+        {
+            "id": "pop5-14",
+            "number": "14",
+            "name": "Pelipper δ",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/fr/pop/pop5/14",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "pop5-15",
+            "number": "15",
+            "name": "Zangoose δ",
+            "illustrator": "Kouki Saitou",
+            "imageBase": "https://assets.tcgdex.net/fr/pop/pop5/15",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "pop5-16",
+            "number": "16",
+            "name": "Espeon ★",
+            "illustrator": "Masakazu Fukuda",
+            "imageBase": "https://assets.tcgdex.net/fr/pop/pop5/16",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "pop5-17",
+            "number": "17",
+            "name": "Umbreon ★",
+            "illustrator": "Masakazu Fukuda",
+            "imageBase": "https://assets.tcgdex.net/fr/pop/pop5/17",
+            "rarity": "Ultra Rare"
+        }
+    ]
 }

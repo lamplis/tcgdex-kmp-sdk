@@ -8,179 +8,510 @@
     "symbol": "https://assets.tcgdex.net/fr/swsh/cel25/symbol",
     "cards": [
         {
-            "id": "cel25-001",
-            "number": "001",
+            "id": "cel25-1",
+            "number": "1",
             "name": "Ho-Oh",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/cel25/1"
+            "illustrator": "Kouki Saitou",
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/cel25/1",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
-            "id": "cel25-002",
-            "number": "002",
+            "id": "cel25-2A",
+            "number": "2A",
+            "name": "Blastoise",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Classic Collection"
+        },
+        {
+            "id": "cel25-2",
+            "number": "2",
             "name": "Reshiram",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/cel25/2"
+            "illustrator": "Aya Kusube",
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/cel25/2",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
-            "id": "cel25-003",
-            "number": "003",
+            "id": "cel25-3",
+            "number": "3",
             "name": "Kyogre",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/cel25/3"
+            "illustrator": "Ryuta Fuse",
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/cel25/3",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
-            "id": "cel25-004",
-            "number": "004",
+            "id": "cel25-4A",
+            "number": "4A",
+            "name": "Charizard",
+            "illustrator": "Mitsuhiro Arita",
+            "rarity": "Classic Collection"
+        },
+        {
+            "id": "cel25-4",
+            "number": "4",
             "name": "Palkia",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/cel25/4"
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/cel25/4",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
-            "id": "cel25-005",
-            "number": "005",
+            "id": "cel25-5",
+            "number": "5",
             "name": "Pikachu",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/cel25/5"
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/cel25/5",
+            "rarity": "Holo Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
-            "id": "cel25-006",
-            "number": "006",
+            "id": "cel25-6",
+            "number": "6",
             "name": "Pikachu Volant V",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/cel25/6"
+            "illustrator": "aky CG Works",
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/cel25/6",
+            "rarity": "Holo Rare V",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
-            "id": "cel25-007",
-            "number": "007",
+            "id": "cel25-7",
+            "number": "7",
             "name": "Pikachu Volant VMAX",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/cel25/7"
+            "illustrator": "aky CG Works",
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/cel25/7",
+            "rarity": "Holo Rare VMAX",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
-            "id": "cel25-008",
-            "number": "008",
+            "id": "cel25-8A",
+            "number": "8A",
+            "name": "Dark Gyarados",
+            "illustrator": "Kagemaru Himeno",
+            "rarity": "Classic Collection"
+        },
+        {
+            "id": "cel25-8",
+            "number": "8",
             "name": "Pikachu Surfeur V",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/cel25/8"
+            "illustrator": "aky CG Works",
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/cel25/8",
+            "rarity": "Holo Rare V",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
-            "id": "cel25-009",
-            "number": "009",
+            "id": "cel25-9A",
+            "number": "9A",
+            "name": "Team Magma's Groudon",
+            "illustrator": "Kazuo Yazawa",
+            "rarity": "Classic Collection"
+        },
+        {
+            "id": "cel25-9",
+            "number": "9",
             "name": "Pikachu Surfeur VMAX",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/cel25/9"
+            "illustrator": "aky CG Works",
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/cel25/9",
+            "rarity": "Holo Rare VMAX",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
-            "id": "cel25-010",
-            "number": "010",
+            "id": "cel25-10",
+            "number": "10",
             "name": "Zekrom",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/cel25/10"
+            "illustrator": "Aya Kusube",
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/cel25/10",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
-            "id": "cel25-011",
-            "number": "011",
+            "id": "cel25-11",
+            "number": "11",
             "name": "Mew",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/cel25/11"
+            "illustrator": "Yuu Nishida",
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/cel25/11",
+            "rarity": "Holo Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
-            "id": "cel25-012",
-            "number": "012",
+            "id": "cel25-12",
+            "number": "12",
             "name": "Xerneas",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/cel25/12"
+            "illustrator": "AKIRA EGAWA",
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/cel25/12",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
-            "id": "cel25-013",
-            "number": "013",
+            "id": "cel25-13",
+            "number": "13",
             "name": "Cosmog",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/cel25/13"
+            "illustrator": "kirisAki",
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/cel25/13",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
-            "id": "cel25-014",
-            "number": "014",
+            "id": "cel25-14",
+            "number": "14",
             "name": "Cosmovum",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/cel25/14"
+            "illustrator": "kirisAki",
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/cel25/14",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
-            "id": "cel25-015",
-            "number": "015",
+            "id": "cel25-15A3",
+            "number": "15A3",
+            "name": "Rocket's Zapdos",
+            "illustrator": "Shin-ichi Yoshida",
+            "rarity": "Classic Collection"
+        },
+        {
+            "id": "cel25-15A2",
+            "number": "15A2",
+            "name": "Here Comes Team Rocket!",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Classic Collection"
+        },
+        {
+            "id": "cel25-15A",
+            "number": "15A",
+            "name": "Venusaur",
+            "illustrator": "Mitsuhiro Arita",
+            "rarity": "Classic Collection"
+        },
+        {
+            "id": "cel25-15A1",
+            "number": "15A1",
+            "name": "Venusaur",
+            "illustrator": "Mitsuhiro Arita",
+            "rarity": "Classic Collection"
+        },
+        {
+            "id": "cel25-15A4",
+            "number": "15A4",
+            "name": "Claydol",
+            "illustrator": "Midori Harada",
+            "rarity": "Classic Collection"
+        },
+        {
+            "id": "cel25-15",
+            "number": "15",
             "name": "Lunala",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/cel25/15"
+            "illustrator": "kirisAki",
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/cel25/15",
+            "rarity": "Holo Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
-            "id": "cel25-016",
-            "number": "016",
+            "id": "cel25-16",
+            "number": "16",
             "name": "Zacian V",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/cel25/16"
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/cel25/16",
+            "rarity": "Holo Rare V",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
-            "id": "cel25-017",
-            "number": "017",
+            "id": "cel25-17",
+            "number": "17",
             "name": "Groudon",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/cel25/17"
+            "illustrator": "Ryuta Fuse",
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/cel25/17",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
-            "id": "cel25-018",
-            "number": "018",
+            "id": "cel25-17A",
+            "number": "17A",
+            "name": "Umbreon Star",
+            "illustrator": "Masakazu Fukuda",
+            "rarity": "Classic Collection"
+        },
+        {
+            "id": "cel25-18",
+            "number": "18",
             "name": "Zamazenta V",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/cel25/18"
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/cel25/18",
+            "rarity": "Holo Rare V",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
-            "id": "cel25-019",
-            "number": "019",
+            "id": "cel25-19",
+            "number": "19",
             "name": "Yveltal",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/cel25/19"
+            "illustrator": "AKIRA EGAWA",
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/cel25/19",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
-            "id": "cel25-020",
-            "number": "020",
+            "id": "cel25-20A",
+            "number": "20A",
+            "name": "Cleffa",
+            "illustrator": "Kagemaru Himeno",
+            "rarity": "Classic Collection"
+        },
+        {
+            "id": "cel25-20",
+            "number": "20",
             "name": "Dialga",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/cel25/20"
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/cel25/20",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
-            "id": "cel25-021",
-            "number": "021",
+            "id": "cel25-21",
+            "number": "21",
             "name": "Solgaleo",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/cel25/21"
+            "illustrator": "kirisAki",
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/cel25/21",
+            "rarity": "Holo Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
-            "id": "cel25-022",
-            "number": "022",
+            "id": "cel25-22",
+            "number": "22",
             "name": "Lugia",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/cel25/22"
+            "illustrator": "Kouki Saitou",
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/cel25/22",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
-            "id": "cel25-023",
-            "number": "023",
+            "id": "cel25-23",
+            "number": "23",
             "name": "Recherches Professorales (Professeur Chen)",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/cel25/23"
+            "illustrator": "KIYOTAKA OSHIYAMA",
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/cel25/23",
+            "rarity": "Holo Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
-            "id": "cel25-024",
-            "number": "024",
+            "id": "cel25-24A",
+            "number": "24A",
+            "name": "_____'s Pikachu",
+            "illustrator": "Kagemaru Himeno",
+            "rarity": "Classic Collection"
+        },
+        {
+            "id": "cel25-24",
+            "number": "24",
             "name": "Recherches Professorales (Professeur Chen)",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/cel25/24"
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/cel25/24",
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
-            "id": "cel25-025",
-            "number": "025",
+            "id": "cel25-25",
+            "number": "25",
             "name": "Mew",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/cel25/25"
+            "illustrator": "Saki Hayashiro",
+            "rarity": "Secret Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "cel25-54A",
+            "number": "54A",
+            "name": "Mewtwo EX",
+            "illustrator": "Shizurow",
+            "rarity": "Classic Collection"
+        },
+        {
+            "id": "cel25-60A",
+            "number": "60A",
+            "name": "Tapu Lele GX",
+            "illustrator": "5ban Graphics",
+            "rarity": "Classic Collection"
+        },
+        {
+            "id": "cel25-66A",
+            "number": "66A",
+            "name": "Shining Magikarp",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Classic Collection"
+        },
+        {
+            "id": "cel25-73A",
+            "number": "73A",
+            "name": "Imposter Professor Oak",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Classic Collection"
+        },
+        {
+            "id": "cel25-76A",
+            "number": "76A",
+            "name": "M Rayquaza EX",
+            "illustrator": "5ban Graphics",
+            "rarity": "Classic Collection"
+        },
+        {
+            "id": "cel25-86A",
+            "number": "86A",
+            "name": "Rocket's Admin.",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Classic Collection"
+        },
+        {
+            "id": "cel25-88A",
+            "number": "88A",
+            "name": "Mew ex",
+            "illustrator": "Ryo Ueda",
+            "rarity": "Classic Collection"
+        },
+        {
+            "id": "cel25-93A",
+            "number": "93A",
+            "name": "Gardevoir ex",
+            "illustrator": "Masahiko Ishii",
+            "rarity": "Classic Collection"
+        },
+        {
+            "id": "cel25-97A",
+            "number": "97A",
+            "name": "Xerneas EX",
+            "illustrator": "5ban Graphics",
+            "rarity": "Classic Collection"
+        },
+        {
+            "id": "cel25-107A",
+            "number": "107A",
+            "name": "Donphan",
+            "illustrator": "Kent Kanetsuna",
+            "rarity": "Classic Collection"
+        },
+        {
+            "id": "cel25-109A",
+            "number": "109A",
+            "name": "Luxray GL LV.X",
+            "illustrator": "Mitsuhiro Arita",
+            "rarity": "Classic Collection"
+        },
+        {
+            "id": "cel25-113A",
+            "number": "113A",
+            "name": "Reshiram",
+            "illustrator": "5ban Graphics",
+            "rarity": "Classic Collection"
+        },
+        {
+            "id": "cel25-114A",
+            "number": "114A",
+            "name": "Zekrom",
+            "illustrator": "5ban Graphics",
+            "rarity": "Classic Collection"
+        },
+        {
+            "id": "cel25-145A",
+            "number": "145A",
+            "name": "Garchomp C LV.X",
+            "illustrator": "Shizurow",
+            "rarity": "Classic Collection"
         }
     ]
 }

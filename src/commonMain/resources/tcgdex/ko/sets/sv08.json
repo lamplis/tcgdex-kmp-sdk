@@ -3,6 +3,1778 @@
     "serieId": "sv",
     "name": "Surging Sparks",
     "releaseDate": "2024-11-08",
+    "cardCount": 191,
     "logo": "https://assets.tcgdex.net/ko/sv/sv08/logo",
-    "symbol": "https://assets.tcgdex.net/ko/sv/sv08/symbol"
+    "symbol": "https://assets.tcgdex.net/ko/sv/sv08/symbol",
+    "cards": [
+        {
+            "id": "sv08-001",
+            "number": "001",
+            "name": "Exeggcute",
+            "illustrator": "Tetsu Kayama",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-002",
+            "number": "002",
+            "name": "Exeggcute",
+            "illustrator": "OKUBO",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-003",
+            "number": "003",
+            "name": "Exeggutor",
+            "illustrator": "Oswaldo KATO",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sv08-004",
+            "number": "004",
+            "name": "Durant ex",
+            "illustrator": "PLANETA Tsuji",
+            "rarity": "Double rare"
+        },
+        {
+            "id": "sv08-005",
+            "number": "005",
+            "name": "Scatterbug",
+            "illustrator": "Iori Suzuki",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-006",
+            "number": "006",
+            "name": "Spewpa",
+            "illustrator": "tono",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-007",
+            "number": "007",
+            "name": "Vivillon",
+            "illustrator": "Amelicart",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sv08-008",
+            "number": "008",
+            "name": "Morelull",
+            "illustrator": "Tomokazu Komiya",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-009",
+            "number": "009",
+            "name": "Shiinotic",
+            "illustrator": "Aya Kusube",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sv08-010",
+            "number": "010",
+            "name": "Dhelmise",
+            "illustrator": "Mori Yuu",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-011",
+            "number": "011",
+            "name": "Zarude",
+            "illustrator": "GOSSAN",
+            "rarity": "Rare"
+        },
+        {
+            "id": "sv08-012",
+            "number": "012",
+            "name": "Capsakid",
+            "illustrator": "Julie Hang",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-013",
+            "number": "013",
+            "name": "Rellor",
+            "illustrator": "Toshinao Aoki",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-014",
+            "number": "014",
+            "name": "Rabsca",
+            "illustrator": "Masako Tomii",
+            "rarity": "Rare"
+        },
+        {
+            "id": "sv08-015",
+            "number": "015",
+            "name": "Wo-Chien",
+            "illustrator": "danciao",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sv08-016",
+            "number": "016",
+            "name": "Vulpix",
+            "illustrator": "Narumi Sato",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-017",
+            "number": "017",
+            "name": "Ninetales",
+            "illustrator": "Kamome Shirahama",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sv08-018",
+            "number": "018",
+            "name": "Paldean Tauros",
+            "illustrator": "Taiga Kasai",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sv08-019",
+            "number": "019",
+            "name": "Ho-Oh",
+            "illustrator": "kodama",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sv08-020",
+            "number": "020",
+            "name": "Castform Sunny Form",
+            "illustrator": "osare",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-021",
+            "number": "021",
+            "name": "Victini",
+            "illustrator": "0313",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sv08-022",
+            "number": "022",
+            "name": "Pansear",
+            "illustrator": "Wintr Wandr",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-023",
+            "number": "023",
+            "name": "Simisear",
+            "illustrator": "Taiga Kasai",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-024",
+            "number": "024",
+            "name": "Larvesta",
+            "illustrator": "MARINA Chikazawa",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-025",
+            "number": "025",
+            "name": "Volcarona",
+            "illustrator": "matazo",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-026",
+            "number": "026",
+            "name": "Oricorio",
+            "illustrator": "Heisuke Kitazawa",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-027",
+            "number": "027",
+            "name": "Sizzlipede",
+            "illustrator": "Minahamu",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-028",
+            "number": "028",
+            "name": "Centiskorch",
+            "illustrator": "Aliya Chen",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-029",
+            "number": "029",
+            "name": "Fuecoco",
+            "illustrator": "Tomomi Ozaki",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-030",
+            "number": "030",
+            "name": "Crocalor",
+            "illustrator": "Atsuya Uki",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-031",
+            "number": "031",
+            "name": "Skeledirge",
+            "illustrator": "akagi",
+            "rarity": "Rare"
+        },
+        {
+            "id": "sv08-032",
+            "number": "032",
+            "name": "Charcadet",
+            "illustrator": "Kariya",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-033",
+            "number": "033",
+            "name": "Charcadet",
+            "illustrator": "Mékayu",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-034",
+            "number": "034",
+            "name": "Armarouge",
+            "illustrator": "DOM",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sv08-035",
+            "number": "035",
+            "name": "Ceruledge",
+            "illustrator": "kantaro",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sv08-036",
+            "number": "036",
+            "name": "Ceruledge ex",
+            "illustrator": "5ban Graphics",
+            "rarity": "Double rare"
+        },
+        {
+            "id": "sv08-037",
+            "number": "037",
+            "name": "Scovillain ex",
+            "illustrator": "PLANETA Mochizuki",
+            "rarity": "Double rare"
+        },
+        {
+            "id": "sv08-038",
+            "number": "038",
+            "name": "Gouging Fire",
+            "illustrator": "AKIRA EGAWA",
+            "rarity": "Rare"
+        },
+        {
+            "id": "sv08-039",
+            "number": "039",
+            "name": "Paldean Tauros",
+            "illustrator": "toi8",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sv08-040",
+            "number": "040",
+            "name": "Mantine",
+            "illustrator": "satoma",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-041",
+            "number": "041",
+            "name": "Feebas",
+            "illustrator": "Kedamahadaitai Yawarakai",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-042",
+            "number": "042",
+            "name": "Milotic ex",
+            "illustrator": "hncl",
+            "rarity": "Double rare"
+        },
+        {
+            "id": "sv08-043",
+            "number": "043",
+            "name": "Spheal",
+            "illustrator": "Teeziro",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-044",
+            "number": "044",
+            "name": "Sealeo",
+            "illustrator": "Mina Nakai",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-045",
+            "number": "045",
+            "name": "Walrein",
+            "illustrator": "Mitsuhiro Arita",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sv08-046",
+            "number": "046",
+            "name": "Shellos",
+            "illustrator": "Shinya Komatsu",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-047",
+            "number": "047",
+            "name": "Cryogonal",
+            "illustrator": "sui",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-048",
+            "number": "048",
+            "name": "Black Kyurem ex",
+            "illustrator": "kawayoo",
+            "rarity": "Double rare"
+        },
+        {
+            "id": "sv08-049",
+            "number": "049",
+            "name": "Bruxish",
+            "illustrator": "Shibuzoh.",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sv08-050",
+            "number": "050",
+            "name": "Quaxly",
+            "illustrator": "Saboteri",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-051",
+            "number": "051",
+            "name": "Quaxwell",
+            "illustrator": "OKACHEKE",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-052",
+            "number": "052",
+            "name": "Quaquaval",
+            "illustrator": "nagimiso",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sv08-053",
+            "number": "053",
+            "name": "Cetoddle",
+            "illustrator": "Ayako Ozaki",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-054",
+            "number": "054",
+            "name": "Cetitan",
+            "illustrator": "Uta",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-055",
+            "number": "055",
+            "name": "Iron Bundle",
+            "illustrator": "rika",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sv08-056",
+            "number": "056",
+            "name": "Chien-Pao",
+            "illustrator": "Yuya Oka",
+            "rarity": "Rare"
+        },
+        {
+            "id": "sv08-057",
+            "number": "057",
+            "name": "Pikachu ex",
+            "illustrator": "aky CG Works",
+            "rarity": "Double rare"
+        },
+        {
+            "id": "sv08-058",
+            "number": "058",
+            "name": "Magnemite",
+            "illustrator": "Hoshino KURO",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-059",
+            "number": "059",
+            "name": "Magneton",
+            "illustrator": "Nisota Niso",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sv08-060",
+            "number": "060",
+            "name": "Magnezone",
+            "illustrator": "Po-Suzuki",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sv08-061",
+            "number": "061",
+            "name": "Rotom",
+            "illustrator": "Shinya Mizuno",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-062",
+            "number": "062",
+            "name": "Blitzle",
+            "illustrator": "kamonabe",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-063",
+            "number": "063",
+            "name": "Zebstrika",
+            "illustrator": "Sanosuke Sakuma",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-064",
+            "number": "064",
+            "name": "Stunfisk",
+            "illustrator": "Miki Tanaka",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-065",
+            "number": "065",
+            "name": "Tapu Koko",
+            "illustrator": "Souichirou Gunjima",
+            "rarity": "Rare"
+        },
+        {
+            "id": "sv08-066",
+            "number": "066",
+            "name": "Wattrel",
+            "illustrator": "Pani Kobayashi",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-067",
+            "number": "067",
+            "name": "Kilowattrel",
+            "illustrator": "KEIICHIRO ITO",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sv08-068",
+            "number": "068",
+            "name": "Kilowattrel ex",
+            "illustrator": "PLANETA Yamashita",
+            "rarity": "Double rare"
+        },
+        {
+            "id": "sv08-069",
+            "number": "069",
+            "name": "Miraidon",
+            "illustrator": "Nurikabe",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sv08-070",
+            "number": "070",
+            "name": "Togepi",
+            "illustrator": "Yoko Hishida",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-071",
+            "number": "071",
+            "name": "Togetic",
+            "illustrator": "Teeziro",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-072",
+            "number": "072",
+            "name": "Togekiss",
+            "illustrator": "Narano",
+            "rarity": "Rare"
+        },
+        {
+            "id": "sv08-073",
+            "number": "073",
+            "name": "Marill",
+            "illustrator": "Shimaris Yukichi",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-074",
+            "number": "074",
+            "name": "Azumarill",
+            "illustrator": "Orca",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sv08-075",
+            "number": "075",
+            "name": "Smoochum",
+            "illustrator": "Saya Tsuruta",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-076",
+            "number": "076",
+            "name": "Latias ex",
+            "illustrator": "takuyoa",
+            "rarity": "Double rare"
+        },
+        {
+            "id": "sv08-077",
+            "number": "077",
+            "name": "Latios",
+            "illustrator": "kantaro",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sv08-078",
+            "number": "078",
+            "name": "Uxie",
+            "illustrator": "HYOGONOSUKE",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-079",
+            "number": "079",
+            "name": "Mesprit",
+            "illustrator": "HYOGONOSUKE",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-080",
+            "number": "080",
+            "name": "Azelf",
+            "illustrator": "HYOGONOSUKE",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-081",
+            "number": "081",
+            "name": "Sigilyph",
+            "illustrator": "svlt",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-082",
+            "number": "082",
+            "name": "Yamask",
+            "illustrator": "IKEDA Saki",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-083",
+            "number": "083",
+            "name": "Cofagrigus",
+            "illustrator": "Shiburingaru",
+            "rarity": "Rare"
+        },
+        {
+            "id": "sv08-084",
+            "number": "084",
+            "name": "Espurr",
+            "illustrator": "Natsumi Yoshida",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-085",
+            "number": "085",
+            "name": "Meowstic",
+            "illustrator": "Yoriyuki Ikegami",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sv08-086",
+            "number": "086",
+            "name": "Sylveon ex",
+            "illustrator": "5ban Graphics",
+            "rarity": "Double rare"
+        },
+        {
+            "id": "sv08-087",
+            "number": "087",
+            "name": "Dedenne",
+            "illustrator": "Uninori",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-088",
+            "number": "088",
+            "name": "Xerneas",
+            "illustrator": "Ryuta Fuse",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sv08-089",
+            "number": "089",
+            "name": "Oricorio",
+            "illustrator": "saino misaki",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-090",
+            "number": "090",
+            "name": "Sandygast",
+            "illustrator": "Koji Nakata",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-091",
+            "number": "091",
+            "name": "Palossand ex",
+            "illustrator": "5ban Graphics",
+            "rarity": "Double rare"
+        },
+        {
+            "id": "sv08-092",
+            "number": "092",
+            "name": "Tapu Lele",
+            "illustrator": "Natsumi Yoshida",
+            "rarity": "Rare"
+        },
+        {
+            "id": "sv08-093",
+            "number": "093",
+            "name": "Indeedee",
+            "illustrator": "Sekio",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sv08-094",
+            "number": "094",
+            "name": "Flittle",
+            "illustrator": "buchi",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-095",
+            "number": "095",
+            "name": "Espathra",
+            "illustrator": "Anesaki Dynamic",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sv08-096",
+            "number": "096",
+            "name": "Flutter Mane",
+            "illustrator": "Ebila",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sv08-097",
+            "number": "097",
+            "name": "Gimmighoul",
+            "illustrator": "Scav",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-098",
+            "number": "098",
+            "name": "Mankey",
+            "illustrator": "Apios",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-099",
+            "number": "099",
+            "name": "Primeape",
+            "illustrator": "Felicia Chen",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-100",
+            "number": "100",
+            "name": "Annihilape",
+            "illustrator": "SIE NANAHARA",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sv08-101",
+            "number": "101",
+            "name": "Paldean Tauros",
+            "illustrator": "Uta",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sv08-102",
+            "number": "102",
+            "name": "Phanpy",
+            "illustrator": "ryoma uratsuka",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-103",
+            "number": "103",
+            "name": "Donphan",
+            "illustrator": "GOSSAN",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-104",
+            "number": "104",
+            "name": "Trapinch",
+            "illustrator": "Taiga Kayama",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-105",
+            "number": "105",
+            "name": "Vibrava",
+            "illustrator": "Teeziro",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-106",
+            "number": "106",
+            "name": "Flygon ex",
+            "illustrator": "5ban Graphics",
+            "rarity": "Double rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "sv08-107",
+            "number": "107",
+            "name": "Gastrodon",
+            "illustrator": "Scav",
+            "rarity": "Rare"
+        },
+        {
+            "id": "sv08-108",
+            "number": "108",
+            "name": "Drilbur",
+            "illustrator": "Ounishi",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-109",
+            "number": "109",
+            "name": "Excadrill",
+            "illustrator": "Yuya Oka",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-110",
+            "number": "110",
+            "name": "Landorus",
+            "illustrator": "Souichirou Gunjima",
+            "rarity": "Rare"
+        },
+        {
+            "id": "sv08-111",
+            "number": "111",
+            "name": "Passimian",
+            "illustrator": "Teeziro",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sv08-112",
+            "number": "112",
+            "name": "Clobbopus",
+            "illustrator": "Shimaris Yukichi",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-113",
+            "number": "113",
+            "name": "Grapploct",
+            "illustrator": "KEIICHIRO ITO",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-114",
+            "number": "114",
+            "name": "Glimmet",
+            "illustrator": "Eri Kamei",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-115",
+            "number": "115",
+            "name": "Glimmora",
+            "illustrator": "takashi shiraishi",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-116",
+            "number": "116",
+            "name": "Koraidon",
+            "illustrator": "Ryuta Fuse",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sv08-117",
+            "number": "117",
+            "name": "Deino",
+            "illustrator": "YASHIRO Nanaco",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-118",
+            "number": "118",
+            "name": "Zweilous",
+            "illustrator": "chibi",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-119",
+            "number": "119",
+            "name": "Hydreigon ex",
+            "illustrator": "5ban Graphics",
+            "rarity": "Double rare"
+        },
+        {
+            "id": "sv08-120",
+            "number": "120",
+            "name": "Shroodle",
+            "illustrator": "Yukiko Baba",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-121",
+            "number": "121",
+            "name": "Grafaiai",
+            "illustrator": "NC Empire",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sv08-122",
+            "number": "122",
+            "name": "Alolan Diglett",
+            "illustrator": "Akino Fukuji",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-123",
+            "number": "123",
+            "name": "Alolan Dugtrio",
+            "illustrator": "Dsuke",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sv08-124",
+            "number": "124",
+            "name": "Skarmory",
+            "illustrator": "kawayoo",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-125",
+            "number": "125",
+            "name": "Registeel",
+            "illustrator": "Shiburingaru",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sv08-126",
+            "number": "126",
+            "name": "Bronzor",
+            "illustrator": "Nabatame Kazutaka",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-127",
+            "number": "127",
+            "name": "Bronzong",
+            "illustrator": "kawayoo",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-128",
+            "number": "128",
+            "name": "Klefki",
+            "illustrator": "mingo",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-129",
+            "number": "129",
+            "name": "Duraludon",
+            "illustrator": "Tonji Matsuno",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-130",
+            "number": "130",
+            "name": "Archaludon ex",
+            "illustrator": "5ban Graphics",
+            "rarity": "Double rare"
+        },
+        {
+            "id": "sv08-131",
+            "number": "131",
+            "name": "Gholdengo",
+            "illustrator": "Dsuke",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sv08-132",
+            "number": "132",
+            "name": "Iron Crown",
+            "illustrator": "akagi",
+            "rarity": "Rare"
+        },
+        {
+            "id": "sv08-133",
+            "number": "133",
+            "name": "Alolan Exeggutor ex",
+            "illustrator": "aky CG Works",
+            "rarity": "Double rare"
+        },
+        {
+            "id": "sv08-134",
+            "number": "134",
+            "name": "Altaria",
+            "illustrator": "rika",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sv08-135",
+            "number": "135",
+            "name": "Dialga",
+            "illustrator": "Takumi Wada",
+            "rarity": "Rare"
+        },
+        {
+            "id": "sv08-136",
+            "number": "136",
+            "name": "Palkia",
+            "illustrator": "danciao",
+            "rarity": "Rare"
+        },
+        {
+            "id": "sv08-137",
+            "number": "137",
+            "name": "Turtonator",
+            "illustrator": "Rianti Hidayat",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sv08-138",
+            "number": "138",
+            "name": "Applin",
+            "illustrator": "Yuka Morii",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-139",
+            "number": "139",
+            "name": "Flapple",
+            "illustrator": "GOTO minori",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sv08-140",
+            "number": "140",
+            "name": "Appletun",
+            "illustrator": "Oswaldo KATO",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sv08-141",
+            "number": "141",
+            "name": "Eternatus",
+            "illustrator": "AKIRA EGAWA",
+            "rarity": "Rare"
+        },
+        {
+            "id": "sv08-142",
+            "number": "142",
+            "name": "Tatsugiri ex",
+            "illustrator": "5ban Graphics",
+            "rarity": "Double rare"
+        },
+        {
+            "id": "sv08-143",
+            "number": "143",
+            "name": "Eevee",
+            "illustrator": "Naoyo Kimura",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-144",
+            "number": "144",
+            "name": "Snorlax",
+            "illustrator": "Ounishi",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-145",
+            "number": "145",
+            "name": "Slakoth",
+            "illustrator": "Aya Kusube",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-146",
+            "number": "146",
+            "name": "Vigoroth",
+            "illustrator": "Kurata So",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-147",
+            "number": "147",
+            "name": "Slaking ex",
+            "illustrator": "PLANETA Igarashi",
+            "rarity": "Double rare"
+        },
+        {
+            "id": "sv08-148",
+            "number": "148",
+            "name": "Swablu",
+            "illustrator": "sowsow",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-149",
+            "number": "149",
+            "name": "Zangoose",
+            "illustrator": "Ligton",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-150",
+            "number": "150",
+            "name": "Kecleon",
+            "illustrator": "Shinji Kanda",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-151",
+            "number": "151",
+            "name": "Bouffalant",
+            "illustrator": "Anesaki Dynamic",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-152",
+            "number": "152",
+            "name": "Rufflet",
+            "illustrator": "Nakamura Ippan",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-153",
+            "number": "153",
+            "name": "Braviary",
+            "illustrator": "Anesaki Dynamic",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sv08-154",
+            "number": "154",
+            "name": "Helioptile",
+            "illustrator": "miki kudo",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-155",
+            "number": "155",
+            "name": "Heliolisk",
+            "illustrator": "Ryota Murayama",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-156",
+            "number": "156",
+            "name": "Oranguru",
+            "illustrator": "Saboteri",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-157",
+            "number": "157",
+            "name": "Tandemaus",
+            "illustrator": "USGMEN",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-158",
+            "number": "158",
+            "name": "Maushold",
+            "illustrator": "DOM",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sv08-159",
+            "number": "159",
+            "name": "Cyclizar ex",
+            "illustrator": "5ban Graphics",
+            "rarity": "Double rare"
+        },
+        {
+            "id": "sv08-160",
+            "number": "160",
+            "name": "Flamigo ex",
+            "illustrator": "N-DESIGN Inc.",
+            "rarity": "Double rare"
+        },
+        {
+            "id": "sv08-161",
+            "number": "161",
+            "name": "Terapagos",
+            "illustrator": "GIDORA",
+            "rarity": "Rare"
+        },
+        {
+            "id": "sv08-162",
+            "number": "162",
+            "name": "Amulet of Hope",
+            "illustrator": "Toyste Beach",
+            "rarity": "ACE SPEC Rare"
+        },
+        {
+            "id": "sv08-163",
+            "number": "163",
+            "name": "Babiri Berry",
+            "illustrator": "Studio Bora Inc.",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sv08-164",
+            "number": "164",
+            "name": "Brilliant Blender",
+            "illustrator": "Toyste Beach",
+            "rarity": "ACE SPEC Rare"
+        },
+        {
+            "id": "sv08-165",
+            "number": "165",
+            "name": "Call Bell",
+            "illustrator": "Ayaka Yoshida",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sv08-166",
+            "number": "166",
+            "name": "Chill Teaser Toy",
+            "illustrator": "AYUMI ODASHIMA",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sv08-167",
+            "number": "167",
+            "name": "Clemont's Quick Wit",
+            "illustrator": "Naoki Saito",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sv08-168",
+            "number": "168",
+            "name": "Colbur Berry",
+            "illustrator": "Studio Bora Inc.",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sv08-169",
+            "number": "169",
+            "name": "Counter Gain",
+            "illustrator": "Toyste Beach",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sv08-170",
+            "number": "170",
+            "name": "Cyrano",
+            "illustrator": "Akira Komayama",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sv08-171",
+            "number": "171",
+            "name": "Deduction Kit",
+            "illustrator": "AYUMI ODASHIMA",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sv08-172",
+            "number": "172",
+            "name": "Dragon Elixir",
+            "illustrator": "AYUMI ODASHIMA",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sv08-173",
+            "number": "173",
+            "name": "Drasna",
+            "illustrator": "Hideki Ishikawa",
+            "rarity": "Common"
+        },
+        {
+            "id": "sv08-174",
+            "number": "174",
+            "name": "Drayton",
+            "illustrator": "GIDORA",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sv08-175",
+            "number": "175",
+            "name": "Dusk Ball",
+            "illustrator": "Studio Bora Inc.",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sv08-176",
+            "number": "176",
+            "name": "Energy Search Pro",
+            "illustrator": "Toyste Beach",
+            "rarity": "ACE SPEC Rare"
+        },
+        {
+            "id": "sv08-177",
+            "number": "177",
+            "name": "Gravity Mountain",
+            "illustrator": "AYUMI ODASHIMA",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sv08-178",
+            "number": "178",
+            "name": "Jasmine's Gaze",
+            "illustrator": "Taira Akitsu",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sv08-179",
+            "number": "179",
+            "name": "Lisia's Appeal",
+            "illustrator": "En Morikura",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sv08-180",
+            "number": "180",
+            "name": "Lively Stadium",
+            "illustrator": "imoniii",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sv08-181",
+            "number": "181",
+            "name": "Meddling Memo",
+            "illustrator": "Ayaka Yoshida",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sv08-182",
+            "number": "182",
+            "name": "Megaton Blower",
+            "illustrator": "Toyste Beach",
+            "rarity": "ACE SPEC Rare"
+        },
+        {
+            "id": "sv08-183",
+            "number": "183",
+            "name": "Miracle Headset",
+            "illustrator": "inose yukie",
+            "rarity": "ACE SPEC Rare"
+        },
+        {
+            "id": "sv08-184",
+            "number": "184",
+            "name": "Passho Berry",
+            "illustrator": "Studio Bora Inc.",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sv08-185",
+            "number": "185",
+            "name": "Precious Trolley",
+            "illustrator": "inose yukie",
+            "rarity": "ACE SPEC Rare"
+        },
+        {
+            "id": "sv08-186",
+            "number": "186",
+            "name": "Scramble Switch",
+            "illustrator": "Ayaka Yoshida",
+            "rarity": "ACE SPEC Rare"
+        },
+        {
+            "id": "sv08-187",
+            "number": "187",
+            "name": "Surfer",
+            "illustrator": "Sanosuke Sakuma",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sv08-188",
+            "number": "188",
+            "name": "Technical Machine: Fluorite",
+            "illustrator": "Studio Bora Inc.",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sv08-189",
+            "number": "189",
+            "name": "Tera Orb",
+            "illustrator": "Ayaka Yoshida",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sv08-190",
+            "number": "190",
+            "name": "Tyme",
+            "illustrator": "Akira Komayama",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sv08-191",
+            "number": "191",
+            "name": "Enriching Energy",
+            "illustrator": null,
+            "rarity": "ACE SPEC Rare"
+        },
+        {
+            "id": "sv08-192",
+            "number": "192",
+            "name": "Exeggcute",
+            "illustrator": "Yuriko Akase",
+            "rarity": "Illustration rare"
+        },
+        {
+            "id": "sv08-193",
+            "number": "193",
+            "name": "Vivillon",
+            "illustrator": "REND",
+            "rarity": "Illustration rare"
+        },
+        {
+            "id": "sv08-194",
+            "number": "194",
+            "name": "Shiinotic",
+            "illustrator": "matazo",
+            "rarity": "Illustration rare"
+        },
+        {
+            "id": "sv08-195",
+            "number": "195",
+            "name": "Castform Sunny Form",
+            "illustrator": "Narano",
+            "rarity": "Illustration rare"
+        },
+        {
+            "id": "sv08-196",
+            "number": "196",
+            "name": "Larvesta",
+            "illustrator": "Whisker",
+            "rarity": "Illustration rare"
+        },
+        {
+            "id": "sv08-197",
+            "number": "197",
+            "name": "Ceruledge",
+            "illustrator": "Rond",
+            "rarity": "Illustration rare"
+        },
+        {
+            "id": "sv08-198",
+            "number": "198",
+            "name": "Feebas",
+            "illustrator": "Kuroimori",
+            "rarity": "Illustration rare"
+        },
+        {
+            "id": "sv08-199",
+            "number": "199",
+            "name": "Spheal",
+            "illustrator": "miki kudo",
+            "rarity": "Illustration rare"
+        },
+        {
+            "id": "sv08-200",
+            "number": "200",
+            "name": "Bruxish",
+            "illustrator": "Mitsuhiro Arita",
+            "rarity": "Illustration rare"
+        },
+        {
+            "id": "sv08-201",
+            "number": "201",
+            "name": "Cetitan",
+            "illustrator": "Jerky",
+            "rarity": "Illustration rare"
+        },
+        {
+            "id": "sv08-202",
+            "number": "202",
+            "name": "Stunfisk",
+            "illustrator": "N-DESIGN Inc.",
+            "rarity": "Illustration rare"
+        },
+        {
+            "id": "sv08-203",
+            "number": "203",
+            "name": "Latios",
+            "illustrator": "OKACHEKE",
+            "rarity": "Illustration rare"
+        },
+        {
+            "id": "sv08-204",
+            "number": "204",
+            "name": "Mesprit",
+            "illustrator": "HYOGONOSUKE",
+            "rarity": "Illustration rare"
+        },
+        {
+            "id": "sv08-205",
+            "number": "205",
+            "name": "Phanpy",
+            "illustrator": "Saboteri",
+            "rarity": "Illustration rare"
+        },
+        {
+            "id": "sv08-206",
+            "number": "206",
+            "name": "Vibrava",
+            "illustrator": "toriyufu",
+            "rarity": "Illustration rare"
+        },
+        {
+            "id": "sv08-207",
+            "number": "207",
+            "name": "Clobbopus",
+            "illustrator": "USGMEN",
+            "rarity": "Illustration rare"
+        },
+        {
+            "id": "sv08-208",
+            "number": "208",
+            "name": "Alolan Dugtrio",
+            "illustrator": "Yukihiro Tada",
+            "rarity": "Illustration rare"
+        },
+        {
+            "id": "sv08-209",
+            "number": "209",
+            "name": "Skarmory",
+            "illustrator": "Takumi Wada",
+            "rarity": "Illustration rare"
+        },
+        {
+            "id": "sv08-210",
+            "number": "210",
+            "name": "Flapple",
+            "illustrator": "Uninori",
+            "rarity": "Illustration rare"
+        },
+        {
+            "id": "sv08-211",
+            "number": "211",
+            "name": "Appletun",
+            "illustrator": "MINAMINAMI Take",
+            "rarity": "Illustration rare"
+        },
+        {
+            "id": "sv08-212",
+            "number": "212",
+            "name": "Slakoth",
+            "illustrator": "Mékayu",
+            "rarity": "Illustration rare"
+        },
+        {
+            "id": "sv08-213",
+            "number": "213",
+            "name": "Kecleon",
+            "illustrator": "Mori Yuu",
+            "rarity": "Illustration rare"
+        },
+        {
+            "id": "sv08-214",
+            "number": "214",
+            "name": "Braviary",
+            "illustrator": "Gapao",
+            "rarity": "Illustration rare"
+        },
+        {
+            "id": "sv08-215",
+            "number": "215",
+            "name": "Durant ex",
+            "illustrator": "PLANETA Tsuji",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "sv08-216",
+            "number": "216",
+            "name": "Scovillain ex",
+            "illustrator": "PLANETA Igarashi",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "sv08-217",
+            "number": "217",
+            "name": "Milotic ex",
+            "illustrator": "N-DESIGN Inc.",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "sv08-218",
+            "number": "218",
+            "name": "Black Kyurem ex",
+            "illustrator": "N-DESIGN Inc.",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "sv08-219",
+            "number": "219",
+            "name": "Pikachu ex",
+            "illustrator": "aky CG Works",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "sv08-220",
+            "number": "220",
+            "name": "Latias ex",
+            "illustrator": "takuyoa",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "sv08-221",
+            "number": "221",
+            "name": "Palossand ex",
+            "illustrator": "5ban Graphics",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "sv08-222",
+            "number": "222",
+            "name": "Flygon ex",
+            "illustrator": "5ban Graphics",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "sv08-223",
+            "number": "223",
+            "name": "Hydreigon ex",
+            "illustrator": "5ban Graphics",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "sv08-224",
+            "number": "224",
+            "name": "Archaludon ex",
+            "illustrator": "5ban Graphics",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "sv08-225",
+            "number": "225",
+            "name": "Alolan Exeggutor ex",
+            "illustrator": "aky CG Works",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "sv08-226",
+            "number": "226",
+            "name": "Tatsugiri ex",
+            "illustrator": "5ban Graphics",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "sv08-227",
+            "number": "227",
+            "name": "Slaking ex",
+            "illustrator": "PLANETA Igarashi",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "sv08-228",
+            "number": "228",
+            "name": "Cyclizar ex",
+            "illustrator": "5ban Graphics",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "sv08-229",
+            "number": "229",
+            "name": "Clemont's Quick Wit",
+            "illustrator": "Naoki Saito",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "sv08-230",
+            "number": "230",
+            "name": "Cyrano",
+            "illustrator": "Akira Komayama",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "sv08-231",
+            "number": "231",
+            "name": "Drasna",
+            "illustrator": "Hideki Ishikawa",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "sv08-232",
+            "number": "232",
+            "name": "Drayton",
+            "illustrator": "GIDORA",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "sv08-233",
+            "number": "233",
+            "name": "Jasmine's Gaze",
+            "illustrator": "Taira Akitsu",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "sv08-234",
+            "number": "234",
+            "name": "Lisia's Appeal",
+            "illustrator": "En Morikura",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "sv08-235",
+            "number": "235",
+            "name": "Surfer",
+            "illustrator": "Sanosuke Sakuma",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "sv08-236",
+            "number": "236",
+            "name": "Durant ex",
+            "illustrator": "osare",
+            "rarity": "Special illustration rare"
+        },
+        {
+            "id": "sv08-237",
+            "number": "237",
+            "name": "Milotic ex",
+            "illustrator": "Kuroimori",
+            "rarity": "Special illustration rare"
+        },
+        {
+            "id": "sv08-238",
+            "number": "238",
+            "name": "Pikachu ex",
+            "illustrator": "GIDORA",
+            "rarity": "Special illustration rare"
+        },
+        {
+            "id": "sv08-239",
+            "number": "239",
+            "name": "Latias ex",
+            "illustrator": "OKACHEKE",
+            "rarity": "Special illustration rare"
+        },
+        {
+            "id": "sv08-240",
+            "number": "240",
+            "name": "Hydreigon ex",
+            "illustrator": "AKIRA EGAWA",
+            "rarity": "Special illustration rare"
+        },
+        {
+            "id": "sv08-241",
+            "number": "241",
+            "name": "Archaludon ex",
+            "illustrator": "Shinya Mizuno",
+            "rarity": "Special illustration rare"
+        },
+        {
+            "id": "sv08-242",
+            "number": "242",
+            "name": "Alolan Exeggutor ex",
+            "illustrator": "Yuriko Akase",
+            "rarity": "Special illustration rare"
+        },
+        {
+            "id": "sv08-243",
+            "number": "243",
+            "name": "Clemont's Quick Wit",
+            "illustrator": "Shinya Mizuno",
+            "rarity": "Special illustration rare"
+        },
+        {
+            "id": "sv08-244",
+            "number": "244",
+            "name": "Drayton",
+            "illustrator": "DOM",
+            "rarity": "Special illustration rare"
+        },
+        {
+            "id": "sv08-245",
+            "number": "245",
+            "name": "Jasmine's Gaze",
+            "illustrator": "Fujimoto Gold",
+            "rarity": "Special illustration rare"
+        },
+        {
+            "id": "sv08-246",
+            "number": "246",
+            "name": "Lisia's Appeal",
+            "illustrator": "Nobusawa/Mochipuyo",
+            "rarity": "Special illustration rare"
+        },
+        {
+            "id": "sv08-247",
+            "number": "247",
+            "name": "Pikachu ex",
+            "illustrator": "aky CG Works",
+            "rarity": "Hyper rare"
+        },
+        {
+            "id": "sv08-248",
+            "number": "248",
+            "name": "Alolan Exeggutor ex",
+            "illustrator": "aky CG Works",
+            "rarity": "Hyper rare"
+        },
+        {
+            "id": "sv08-249",
+            "number": "249",
+            "name": "Counter Gain",
+            "illustrator": "Toyste Beach",
+            "rarity": "Hyper rare"
+        },
+        {
+            "id": "sv08-250",
+            "number": "250",
+            "name": "Gravity Mountain",
+            "illustrator": "AYUMI ODASHIMA",
+            "rarity": "Hyper rare"
+        },
+        {
+            "id": "sv08-251",
+            "number": "251",
+            "name": "Night Stretcher",
+            "illustrator": "Toyste Beach",
+            "rarity": "Hyper rare"
+        },
+        {
+            "id": "sv08-252",
+            "number": "252",
+            "name": "Jet Energy",
+            "illustrator": null,
+            "rarity": "Hyper rare"
+        }
+    ]
 }

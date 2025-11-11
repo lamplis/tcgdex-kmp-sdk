@@ -3,7 +3,7 @@
     "serieId": "swsh",
     "name": "Tempête Argentée",
     "releaseDate": "2022-11-11",
-    "cardCount": 245,
+    "cardCount": 195,
     "logo": "https://assets.tcgdex.net/fr/swsh/swsh12/logo",
     "symbol": "https://assets.tcgdex.net/fr/swsh/swsh12/symbol",
     "cards": [
@@ -12,1715 +12,3611 @@
             "number": "001",
             "name": "Mimitoss",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/001"
-        },
-        {
-            "id": "swsh12-001",
-            "number": "001",
-            "name": "Roussil",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/TG01"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/001",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-002",
             "number": "002",
             "name": "Aéromite",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/002"
-        },
-        {
-            "id": "swsh12-002",
-            "number": "002",
-            "name": "Milobellus",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/TG02"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/002",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-003",
             "number": "003",
             "name": "Mimigal",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/003"
-        },
-        {
-            "id": "swsh12-003",
-            "number": "003",
-            "name": "Lainergie",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/TG03"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/003",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-004",
             "number": "004",
             "name": "Migalos",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/004"
-        },
-        {
-            "id": "swsh12-004",
-            "number": "004",
-            "name": "Lippoutou",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/TG04"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/004",
+            "rarity": "Holo Rare",
+            "variants": [
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-005",
             "number": "005",
             "name": "Tournegrin",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/005"
-        },
-        {
-            "id": "swsh12-005",
-            "number": "005",
-            "name": "Gardevoir",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/TG05"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/005",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-006",
             "number": "006",
             "name": "Héliatronc",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/006"
-        },
-        {
-            "id": "swsh12-006",
-            "number": "006",
-            "name": "Sepiatroce",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/TG06"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/006",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-007",
             "number": "007",
             "name": "Majaspic V",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/007"
-        },
-        {
-            "id": "swsh12-007",
-            "number": "007",
-            "name": "Rocabot",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/TG07"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/007",
+            "rarity": "Holo Rare V",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-008",
             "number": "008",
             "name": "Majaspic VSTAR",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/008"
-        },
-        {
-            "id": "swsh12-008",
-            "number": "008",
-            "name": "Quartermac",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/TG08"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/008",
+            "rarity": "Holo Rare VSTAR",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-009",
             "number": "009",
             "name": "Chlorobule",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/009"
-        },
-        {
-            "id": "swsh12-009",
-            "number": "009",
-            "name": "Drakkarmin",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/TG09"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/009",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-010",
             "number": "010",
             "name": "Fragilady de Hisui",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/010"
-        },
-        {
-            "id": "swsh12-010",
-            "number": "010",
-            "name": "Queulorior",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/TG10"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/010",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-011",
             "number": "011",
             "name": "Trompignon",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/011"
-        },
-        {
-            "id": "swsh12-011",
-            "number": "011",
-            "name": "Altaria",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/TG11"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/011",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-012",
             "number": "012",
             "name": "Gaulet",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/012"
-        },
-        {
-            "id": "swsh12-012",
-            "number": "012",
-            "name": "Mélokrik V",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/TG12"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/012",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-013",
             "number": "013",
             "name": "Fermite",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/013"
-        },
-        {
-            "id": "swsh12-013",
-            "number": "013",
-            "name": "Majaspic V",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/TG13"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/013",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-014",
             "number": "014",
             "name": "Viridium",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/014"
-        },
-        {
-            "id": "swsh12-014",
-            "number": "014",
-            "name": "Braségali V",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/TG14"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/014",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-015",
             "number": "015",
             "name": "Blindépique V",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/015"
-        },
-        {
-            "id": "swsh12-015",
-            "number": "015",
-            "name": "Braségali VMAX",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/TG15"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/015",
+            "rarity": "Holo Rare V",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-016",
             "number": "016",
             "name": "Sucreine Radieux",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/016"
-        },
-        {
-            "id": "swsh12-016",
-            "number": "016",
-            "name": "Zeraora V",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/TG16"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/016",
+            "rarity": "Radiant Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-017",
             "number": "017",
             "name": "Goupix",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/017"
-        },
-        {
-            "id": "swsh12-017",
-            "number": "017",
-            "name": "Mysdibule V",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/TG17"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/017",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-018",
             "number": "018",
             "name": "Feunard",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/018"
-        },
-        {
-            "id": "swsh12-018",
-            "number": "018",
-            "name": "Corvaillus V",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/TG18"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/018",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-019",
             "number": "019",
             "name": "Caninos",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/019"
-        },
-        {
-            "id": "swsh12-019",
-            "number": "019",
-            "name": "Corvaillus VMAX",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/TG19"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/019",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-020",
             "number": "020",
             "name": "Arcanin",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/020"
-        },
-        {
-            "id": "swsh12-020",
-            "number": "020",
-            "name": "Rayquaza VMAX",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/TG20"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/020",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-021",
             "number": "021",
             "name": "Ponyta",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/021"
-        },
-        {
-            "id": "swsh12-021",
-            "number": "021",
-            "name": "Duralugon VMAX",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/TG21"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/021",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-022",
             "number": "022",
             "name": "Galopa",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/022"
-        },
-        {
-            "id": "swsh12-022",
-            "number": "022",
-            "name": "Leuphorie V",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/TG22"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/022",
+            "rarity": "Holo Rare",
+            "variants": [
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-023",
             "number": "023",
             "name": "Victini",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/023"
-        },
-        {
-            "id": "swsh12-023",
-            "number": "023",
-            "name": "Amis de Galar",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/TG23"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/023",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-024",
             "number": "024",
             "name": "Reshiram V",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/024"
-        },
-        {
-            "id": "swsh12-024",
-            "number": "024",
-            "name": "Chaz",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/TG24"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/024",
+            "rarity": "Holo Rare V",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-025",
             "number": "025",
             "name": "Feunnec",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/025"
-        },
-        {
-            "id": "swsh12-025",
-            "number": "025",
-            "name": "Juge",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/TG25"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/025",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-026",
             "number": "026",
             "name": "Roussil",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/026"
-        },
-        {
-            "id": "swsh12-026",
-            "number": "026",
-            "name": "Professeure Pimprenelle",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/TG26"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/026",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-027",
             "number": "027",
             "name": "Goupelin",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/027"
-        },
-        {
-            "id": "swsh12-027",
-            "number": "027",
-            "name": "Roy",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/TG27"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/027",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-028",
             "number": "028",
             "name": "Braisillon",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/028"
-        },
-        {
-            "id": "swsh12-028",
-            "number": "028",
-            "name": "Jean-Fleuret et Jean-Targe",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/TG28"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/028",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-029",
             "number": "029",
             "name": "Flambusard",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/029"
-        },
-        {
-            "id": "swsh12-029",
-            "number": "029",
-            "name": "Rayquaza VMAX",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/TG29"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/029",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-030",
             "number": "030",
             "name": "Flamiaou",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/030"
-        },
-        {
-            "id": "swsh12-030",
-            "number": "030",
-            "name": "Duralugon VMAX",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/TG30"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/030",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-031",
             "number": "031",
             "name": "Matoufeu",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/031"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/031",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-032",
             "number": "032",
             "name": "Félinferno",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/032"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/032",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-033",
             "number": "033",
             "name": "Goupix d'Alola V",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/033"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/033",
+            "rarity": "Holo Rare V",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-034",
             "number": "034",
             "name": "Goupix d'Alola VSTAR",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/034"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/034",
+            "rarity": "Holo Rare VSTAR",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-035",
             "number": "035",
             "name": "Amonistar V",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/035"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/035",
+            "rarity": "Holo Rare V",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-036",
             "number": "036",
             "name": "Artikodin",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/036"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/036",
+            "rarity": "Holo Rare",
+            "variants": [
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-037",
             "number": "037",
             "name": "Wailmer",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/037"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/037",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-038",
             "number": "038",
             "name": "Wailord",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/038"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/038",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-039",
             "number": "039",
             "name": "Barpau",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/039"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/039",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-040",
             "number": "040",
             "name": "Milobellus",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/040"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/040",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-041",
             "number": "041",
             "name": "Stalgamin",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/041"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/041",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-042",
             "number": "042",
             "name": "Oniglali",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/042"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/042",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-043",
             "number": "043",
             "name": "Momartik",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/043"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/043",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-044",
             "number": "044",
             "name": "Relicanth",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/044"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/044",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-045",
             "number": "045",
             "name": "Phione",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/045"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/045",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-046",
             "number": "046",
             "name": "Keldeo",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/046"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/046",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-047",
             "number": "047",
             "name": "Araqua",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/047"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/047",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-048",
             "number": "048",
             "name": "Tarenbulle",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/048"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/048",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-049",
             "number": "049",
             "name": "Pikachu",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/049"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/049",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-050",
             "number": "050",
             "name": "Raichu",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/050"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/050",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-051",
             "number": "051",
             "name": "Loupio",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/051"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/051",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-052",
             "number": "052",
             "name": "Lanturn",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/052"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/052",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-053",
             "number": "053",
             "name": "Motisma",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/053"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/053",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-054",
             "number": "054",
             "name": "Emolga",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/054"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/054",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-055",
             "number": "055",
             "name": "Limonde",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/055"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/055",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-056",
             "number": "056",
             "name": "Zeraora",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/056"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/056",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-057",
             "number": "057",
             "name": "Regieleki V",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/057"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/057",
+            "rarity": "Holo Rare V",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-058",
             "number": "058",
             "name": "Regieleki VMAX",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/058"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/058",
+            "rarity": "Holo Rare VMAX",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-059",
             "number": "059",
             "name": "Alakazam Radieux",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/059"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/059",
+            "rarity": "Radiant Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-060",
             "number": "060",
             "name": "Soporifik",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/060"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/060",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-061",
             "number": "061",
             "name": "Hypnomade",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/061"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/061",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-062",
             "number": "062",
             "name": "Lippoutou",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/062"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/062",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-063",
             "number": "063",
             "name": "Feuforêve",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/063"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/063",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-064",
             "number": "064",
             "name": "Magirêve",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/064"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/064",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-065",
             "number": "065",
             "name": "Zarbi V",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/065"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/065",
+            "rarity": "Holo Rare V",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-066",
             "number": "066",
             "name": "Zarbi VSTAR",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/066"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/066",
+            "rarity": "Holo Rare VSTAR",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-067",
             "number": "067",
             "name": "Tarsal",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/067"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/067",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-068",
             "number": "068",
             "name": "Kirlia",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/068"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/068",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-069",
             "number": "069",
             "name": "Gardevoir",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/069"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/069",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-070",
             "number": "070",
             "name": "Mysdibule V",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/070"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/070",
+            "rarity": "Holo Rare V",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-071",
             "number": "071",
             "name": "Mysdibule VSTAR",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/071"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/071",
+            "rarity": "Holo Rare VSTAR",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-072",
             "number": "072",
             "name": "Méditikka",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/072"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/072",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-073",
             "number": "073",
             "name": "Charmina",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/073"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/073",
+            "rarity": "Holo Rare",
+            "variants": [
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-074",
             "number": "074",
             "name": "Éoko",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/074"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/074",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-075",
             "number": "075",
             "name": "Cryptéro",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/075"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/075",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-076",
             "number": "076",
             "name": "Nucléos",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/076"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/076",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-077",
             "number": "077",
             "name": "Méios",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/077"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/077",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-078",
             "number": "078",
             "name": "Symbios",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/078"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/078",
+            "rarity": "Holo Rare",
+            "variants": [
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-079",
             "number": "079",
             "name": "Lewsor",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/079"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/079",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-080",
             "number": "080",
             "name": "Neitram",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/080"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/080",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-081",
             "number": "081",
             "name": "Psystigri",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/081"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/081",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-082",
             "number": "082",
             "name": "Mistigrix",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/082"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/082",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-083",
             "number": "083",
             "name": "Sucroquin",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/083"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/083",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-084",
             "number": "084",
             "name": "Cupcanaille",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/084"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/084",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-085",
             "number": "085",
             "name": "Dedenne",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/085"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/085",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-086",
             "number": "086",
             "name": "Wimessir",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/086"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/086",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-087",
             "number": "087",
             "name": "Fantyrm",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/087"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/087",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-088",
             "number": "088",
             "name": "Dispareptil",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/088"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/088",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-089",
             "number": "089",
             "name": "Lanssorien",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/089"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/089",
+            "rarity": "Holo Rare",
+            "variants": [
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-090",
             "number": "090",
             "name": "Arcanin de Hisui V",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/090"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/090",
+            "rarity": "Holo Rare V",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-091",
             "number": "091",
             "name": "Phanpy",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/091"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/091",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-092",
             "number": "092",
             "name": "Donphan",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/092"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/092",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-093",
             "number": "093",
             "name": "Balbuto",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/093"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/093",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-094",
             "number": "094",
             "name": "Kaorine",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/094"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/094",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-095",
             "number": "095",
             "name": "Anorith",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/095"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/095",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-096",
             "number": "096",
             "name": "Armaldo",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/096"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/096",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-097",
             "number": "097",
             "name": "Terrakium",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/097"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/097",
+            "rarity": "Holo Rare",
+            "variants": [
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-098",
             "number": "098",
             "name": "Brutalibré",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/098"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/098",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-099",
             "number": "099",
             "name": "Bacabouh",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/099"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/099",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-100",
             "number": "100",
             "name": "Trépassable",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/100"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/100",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-101",
             "number": "101",
             "name": "Dolman",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/101"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/101",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-102",
             "number": "102",
             "name": "Ursaking V",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/102"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/102",
+            "rarity": "Holo Rare V",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-103",
             "number": "103",
             "name": "Nosferapti",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/103"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/103",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-104",
             "number": "104",
             "name": "Nosferalto",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/104"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/104",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-105",
             "number": "105",
             "name": "Nostenfer",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/105"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/105",
+            "rarity": "Holo Rare",
+            "variants": [
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-106",
             "number": "106",
             "name": "Cornèbre",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/106"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/106",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-107",
             "number": "107",
             "name": "Corboss",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/107"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/107",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-108",
             "number": "108",
             "name": "Moufflair V",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/108"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/108",
+            "rarity": "Holo Rare V",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-109",
             "number": "109",
             "name": "Cradopaud",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/109"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/109",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-110",
             "number": "110",
             "name": "Coatox",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/110"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/110",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-111",
             "number": "111",
             "name": "Mascaïman",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/111"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/111",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-112",
             "number": "112",
             "name": "Escroco",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/112"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/112",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-113",
             "number": "113",
             "name": "Crocorible",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/113"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/113",
+            "rarity": "Holo Rare",
+            "variants": [
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-114",
             "number": "114",
             "name": "Vorastérie",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/114"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/114",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-115",
             "number": "115",
             "name": "Prédastérie",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/115"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/115",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-116",
             "number": "116",
             "name": "Morpeko",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/116"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/116",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-117",
             "number": "117",
             "name": "Terhal",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/117"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/117",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-118",
             "number": "118",
             "name": "Métang",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/118"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/118",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-119",
             "number": "119",
             "name": "Métalosse",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/119"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/119",
+            "rarity": "Holo Rare",
+            "variants": [
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-120",
             "number": "120",
             "name": "Jirachi Radieux",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/120"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/120",
+            "rarity": "Radiant Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-121",
             "number": "121",
             "name": "Grindur",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/121"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/121",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-122",
             "number": "122",
             "name": "Noacier",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/122"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/122",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-123",
             "number": "123",
             "name": "Tic",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/123"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/123",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-124",
             "number": "124",
             "name": "Clic",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/124"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/124",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-125",
             "number": "125",
             "name": "Cliticlic",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/125"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/125",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-126",
             "number": "126",
             "name": "Cobaltium",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/126"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/126",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-127",
             "number": "127",
             "name": "Togedemaru",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/127"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/127",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-128",
             "number": "128",
             "name": "Magearna V",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/128"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/128",
+            "rarity": "Holo Rare V",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-129",
             "number": "129",
             "name": "Minidraco",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/129"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/129",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-130",
             "number": "130",
             "name": "Draco",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/130"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/130",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-131",
             "number": "131",
             "name": "Dracolosse",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/131"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/131",
+            "rarity": "Holo Rare",
+            "variants": [
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-132",
             "number": "132",
             "name": "Sonistrelle",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/132"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/132",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-133",
             "number": "133",
             "name": "Bruyverne",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/133"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/133",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-134",
             "number": "134",
             "name": "Zygarde",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/134"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/134",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-135",
             "number": "135",
             "name": "Regidrago V",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/135"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/135",
+            "rarity": "Holo Rare V",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-136",
             "number": "136",
             "name": "Regidrago VSTAR",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/136"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/136",
+            "rarity": "Holo Rare VSTAR",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-137",
             "number": "137",
             "name": "Queulorior",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/137"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/137",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-138",
             "number": "138",
             "name": "Lugia V",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/138"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/138",
+            "rarity": "Holo Rare V",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-139",
             "number": "139",
             "name": "Lugia VSTAR",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/139"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/139",
+            "rarity": "Holo Rare VSTAR",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-140",
             "number": "140",
             "name": "Ho-Oh V",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/140"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/140",
+            "rarity": "Holo Rare V",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-141",
             "number": "141",
             "name": "Spinda",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/141"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/141",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-142",
             "number": "142",
             "name": "Tylton",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/142"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/142",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-143",
             "number": "143",
             "name": "Altaria",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/143"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/143",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-144",
             "number": "144",
             "name": "Laporeille",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/144"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/144",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-145",
             "number": "145",
             "name": "Lockpin",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/145"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/145",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-146",
             "number": "146",
             "name": "Arkéapti",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/146"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/146",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-147",
             "number": "147",
             "name": "Aéroptéryx",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/147"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/147",
+            "rarity": "Holo Rare",
+            "variants": [
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-148",
             "number": "148",
             "name": "Furaiglon",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/148"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/148",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-149",
             "number": "149",
             "name": "Gueriaigle de Hisui",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/149"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/149",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-150",
             "number": "150",
             "name": "Passerouge",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/150"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/150",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-151",
             "number": "151",
             "name": "Bayar",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/151"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/151",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-152",
             "number": "152",
             "name": "Gladys",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/152"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/152",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-153",
             "number": "153",
             "name": "Arôme Captivant",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/153"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/153",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-154",
             "number": "154",
             "name": "Pierre Scellée Terrestre",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/154"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/154",
+            "rarity": "Holo Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-155",
             "number": "155",
             "name": "Gelée de Secours",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/155"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/155",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-156",
             "number": "156",
             "name": "Pierre Scellée Sylvestre",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/156"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/156",
+            "rarity": "Holo Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-157",
             "number": "157",
             "name": "Fille en Kimono",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/157"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/157",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-158",
             "number": "158",
             "name": "Dresseurs d'Arène",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/158"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/158",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-159",
             "number": "159",
             "name": "Peter",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/159"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/159",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-160",
             "number": "160",
             "name": "Poncho de Camouflage Feuillu",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/160"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/160",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-161",
             "number": "161",
             "name": "Autel Primordial",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/161"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/161",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-162",
             "number": "162",
             "name": "Professeur Lavande",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/162"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/162",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-163",
             "number": "163",
             "name": "Quad Roc",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/163"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/163",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-164",
             "number": "164",
             "name": "Serena",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/164"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/164",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-165",
             "number": "165",
             "name": "Fossile Inconnu",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/165"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/165",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-166",
             "number": "166",
             "name": "Marc",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/166"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/166",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-167",
             "number": "167",
             "name": "Ouvrière",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/167"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/167",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-168",
             "number": "168",
             "name": "Énergie Régénérante",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/168"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/168",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-169",
             "number": "169",
             "name": "Énergie Garde V",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/169"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/169",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "swsh12-170",
             "number": "170",
             "name": "Majaspic V",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/170"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/170",
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-171",
             "number": "171",
             "name": "Blindépique V",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/171"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/171",
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-172",
             "number": "172",
             "name": "Reshiram V",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/172"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/172",
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-173",
             "number": "173",
             "name": "Goupix d'Alola V",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/173"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/173",
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-174",
             "number": "174",
             "name": "Amonistar V",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/174"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/174",
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-175",
             "number": "175",
             "name": "Regieleki V",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/175"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/175",
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-176",
             "number": "176",
             "name": "Zarbi V",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/176"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/176",
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-177",
             "number": "177",
             "name": "Zarbi V",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/177"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/177",
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-178",
             "number": "178",
             "name": "Mysdibule V",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/178"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/178",
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-179",
             "number": "179",
             "name": "Arcanin de Hisui V",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/179"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/179",
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-180",
             "number": "180",
             "name": "Moufflair V",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/180"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/180",
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-181",
             "number": "181",
             "name": "Moufflair V",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/181"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/181",
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-182",
             "number": "182",
             "name": "Magearna V",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/182"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/182",
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-183",
             "number": "183",
             "name": "Regidrago V",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/183"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/183",
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-184",
             "number": "184",
             "name": "Regidrago V",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/184"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/184",
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-185",
             "number": "185",
             "name": "Lugia V",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/185"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/185",
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-186",
             "number": "186",
             "name": "Lugia V",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/186"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/186",
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-187",
             "number": "187",
             "name": "Ho-Oh V",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/187"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/187",
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-188",
             "number": "188",
             "name": "Bayar",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/188"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/188",
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-189",
             "number": "189",
             "name": "Gladys",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/189"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/189",
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-190",
             "number": "190",
             "name": "Fille en Kimono",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/190"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/190",
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-191",
             "number": "191",
             "name": "Dresseurs d'Arène",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/191"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/191",
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-192",
             "number": "192",
             "name": "Peter",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/192"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/192",
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-193",
             "number": "193",
             "name": "Serena",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/193"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/193",
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-194",
             "number": "194",
             "name": "Marc",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/194"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/194",
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-195",
             "number": "195",
             "name": "Ouvrière",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/195"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/195",
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-196",
             "number": "196",
             "name": "Majaspic VSTAR",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/196"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/196",
+            "rarity": "Secret Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-197",
             "number": "197",
             "name": "Goupix d'Alola VSTAR",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/197"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/197",
+            "rarity": "Secret Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-198",
             "number": "198",
             "name": "Regieleki VMAX",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/198"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/198",
+            "rarity": "Secret Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-199",
             "number": "199",
             "name": "Zarbi VSTAR",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/199"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/199",
+            "rarity": "Secret Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-200",
             "number": "200",
             "name": "Mysdibule VSTAR",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/200"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/200",
+            "rarity": "Secret Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-201",
             "number": "201",
             "name": "Regidrago VSTAR",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/201"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/201",
+            "rarity": "Secret Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-202",
             "number": "202",
             "name": "Lugia VSTAR",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/202"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/202",
+            "rarity": "Secret Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-203",
             "number": "203",
             "name": "Bayar",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/203"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/203",
+            "rarity": "Secret Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-204",
             "number": "204",
             "name": "Gladys",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/204"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/204",
+            "rarity": "Secret Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-205",
             "number": "205",
             "name": "Fille en Kimono",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/205"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/205",
+            "rarity": "Secret Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-206",
             "number": "206",
             "name": "Peter",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/206"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/206",
+            "rarity": "Secret Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-207",
             "number": "207",
             "name": "Serena",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/207"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/207",
+            "rarity": "Secret Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-208",
             "number": "208",
             "name": "Marc",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/208"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/208",
+            "rarity": "Secret Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-209",
             "number": "209",
             "name": "Ouvrière",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/209"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/209",
+            "rarity": "Secret Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-210",
             "number": "210",
             "name": "Majaspic VSTAR",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/210"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/210",
+            "rarity": "Secret Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-211",
             "number": "211",
             "name": "Lugia VSTAR",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/211"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/211",
+            "rarity": "Secret Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-212",
             "number": "212",
             "name": "Échange d'Énergie",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/212"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/212",
+            "rarity": "Secret Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-213",
             "number": "213",
             "name": "Marais Bouchebée",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/213"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/213",
+            "rarity": "Secret Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-214",
             "number": "214",
             "name": "Poncho de Camouflage Feuillu",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/214"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/214",
+            "rarity": "Secret Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "swsh12-215",
             "number": "215",
             "name": "Énergie Garde V",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/215"
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/215",
+            "rarity": "Secret Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh12-TG21",
+            "number": "TG21",
+            "name": "Duralugon VMAX",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/TG21",
+            "rarity": "Holo Rare VMAX",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh12-TG15",
+            "number": "TG15",
+            "name": "Braségali VMAX",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/TG15",
+            "rarity": "Holo Rare VMAX",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh12-TG05",
+            "number": "TG05",
+            "name": "Gardevoir",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/TG05",
+            "rarity": "Holo Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh12-TG11",
+            "number": "TG11",
+            "name": "Altaria",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/TG11",
+            "rarity": "Holo Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh12-TG25",
+            "number": "TG25",
+            "name": "Juge",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/TG25",
+            "rarity": "Full Art Trainer",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh12-TG01",
+            "number": "TG01",
+            "name": "Roussil",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/TG01",
+            "rarity": "Holo Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh12-TG10",
+            "number": "TG10",
+            "name": "Queulorior",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/TG10",
+            "rarity": "Holo Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh12-TG24",
+            "number": "TG24",
+            "name": "Chaz",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/TG24",
+            "rarity": "Full Art Trainer",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh12-TG20",
+            "number": "TG20",
+            "name": "Rayquaza VMAX",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/TG20",
+            "rarity": "Holo Rare VMAX",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh12-TG14",
+            "number": "TG14",
+            "name": "Braségali V",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/TG14",
+            "rarity": "Holo Rare V",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh12-TG04",
+            "number": "TG04",
+            "name": "Lippoutou",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/TG04",
+            "rarity": "Holo Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh12-TG30",
+            "number": "TG30",
+            "name": "Duralugon VMAX",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/TG30",
+            "rarity": "Secret Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh12-TG19",
+            "number": "TG19",
+            "name": "Corvaillus VMAX",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/TG19",
+            "rarity": "Holo Rare VMAX",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh12-TG09",
+            "number": "TG09",
+            "name": "Drakkarmin",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/TG09",
+            "rarity": "Holo Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh12-TG29",
+            "number": "TG29",
+            "name": "Rayquaza VMAX",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/TG29",
+            "rarity": "Secret Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh12-TG28",
+            "number": "TG28",
+            "name": "Jean-Fleuret et Jean-Targe",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/TG28",
+            "rarity": "Full Art Trainer",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh12-TG18",
+            "number": "TG18",
+            "name": "Corvaillus V",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/TG18",
+            "rarity": "Holo Rare V",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh12-TG08",
+            "number": "TG08",
+            "name": "Quartermac",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/TG08",
+            "rarity": "Holo Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh12-TG13",
+            "number": "TG13",
+            "name": "Majaspic V",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/TG13",
+            "rarity": "Holo Rare V",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh12-TG27",
+            "number": "TG27",
+            "name": "Roy",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/TG27",
+            "rarity": "Full Art Trainer",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh12-TG03",
+            "number": "TG03",
+            "name": "Lainergie",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/TG03",
+            "rarity": "Holo Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh12-TG23",
+            "number": "TG23",
+            "name": "Amis de Galar",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/TG23",
+            "rarity": "Full Art Trainer",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh12-TG17",
+            "number": "TG17",
+            "name": "Mysdibule V",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/TG17",
+            "rarity": "Holo Rare V",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh12-TG07",
+            "number": "TG07",
+            "name": "Rocabot",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/TG07",
+            "rarity": "Holo Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh12-TG22",
+            "number": "TG22",
+            "name": "Leuphorie V",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/TG22",
+            "rarity": "Holo Rare V",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh12-TG16",
+            "number": "TG16",
+            "name": "Zeraora V",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/TG16",
+            "rarity": "Holo Rare V",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh12-TG06",
+            "number": "TG06",
+            "name": "Sepiatroce",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/TG06",
+            "rarity": "Holo Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh12-TG12",
+            "number": "TG12",
+            "name": "Mélokrik V",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/TG12",
+            "rarity": "Holo Rare V",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh12-TG26",
+            "number": "TG26",
+            "name": "Professeure Pimprenelle",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/TG26",
+            "rarity": "Full Art Trainer",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh12-TG02",
+            "number": "TG02",
+            "name": "Milobellus",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/swsh/swsh12/TG02",
+            "rarity": "Holo Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         }
     ]
 }

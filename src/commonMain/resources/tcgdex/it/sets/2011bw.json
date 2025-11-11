@@ -1,1 +1,150 @@
-{"cardCount":{"firstEd":0,"holo":0,"normal":0,"official":12,"reverse":0,"total":12},"cards":[],"id":"2011bw","legal":{"expanded":false,"standard":false},"name":"McDonald's Collection","releaseDate":"2011-06-17","serie":{"id":"mc","name":"McDonald's Collection"},"abbreviation":{"official":"MCD11"}}
+{
+    "id": "2011bw",
+    "serieId": "mc",
+    "name": "McDonald's Collection",
+    "releaseDate": "2011-06-17",
+    "cardCount": 12,
+    "logo": "https://assets.tcgdex.net/it/mc/2011bw/logo",
+    "symbol": "https://assets.tcgdex.net/it/mc/2011bw/symbol",
+    "cards": [
+        {
+            "id": "2011bw-1",
+            "number": "1",
+            "name": "Slam",
+            "illustrator": "Ken Sugimori",
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "2011bw-2",
+            "number": "2",
+            "name": "Mega Drain",
+            "illustrator": "Kagemaru Himeno",
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "2011bw-3",
+            "number": "3",
+            "name": "Ember",
+            "illustrator": "Ken Sugimori",
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
+        },
+        {
+            "id": "2011bw-4",
+            "number": "4",
+            "name": "Water Pulse",
+            "illustrator": "Ken Sugimori",
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "2011bw-5",
+            "number": "5",
+            "name": "Pound",
+            "illustrator": "sui",
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "2011bw-6",
+            "number": "6",
+            "name": "Quick Attack",
+            "illustrator": "Ken Sugimori",
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "2011bw-7",
+            "number": "7",
+            "name": "Yawn",
+            "illustrator": "Ken Sugimori",
+            "rarity": "None"
+        },
+        {
+            "id": "2011bw-8",
+            "number": "8",
+            "name": "Sand Tomb",
+            "illustrator": "Ken Sugimori",
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "2011bw-9",
+            "number": "9",
+            "name": "Scratch",
+            "illustrator": "Ken Sugimori",
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "2011bw-10",
+            "number": "10",
+            "name": "Charge Beam",
+            "illustrator": "Ken Sugimori",
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "2011bw-11",
+            "number": "11",
+            "name": "Growl",
+            "illustrator": "Ken Sugimori",
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "2011bw-12",
+            "number": "12",
+            "name": "Double Slap",
+            "illustrator": "MAHOU",
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        }
+    ]
+}

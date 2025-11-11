@@ -8,95 +8,200 @@
     "symbol": "https://assets.tcgdex.net/fr/pop/pop2/symbol",
     "cards": [
         {
-            "id": "pop2-002",
-            "number": "002",
+            "id": "pop2-1",
+            "number": "1",
+            "name": "Entei",
+            "illustrator": "Kouki Saitou",
+            "imageBase": "https://assets.tcgdex.net/fr/pop/pop2/1",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "pop2-2",
+            "number": "2",
             "name": "Roucarnage",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/pop/pop2/2"
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/pop/pop2/2",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
-            "id": "pop2-003",
-            "number": "003",
+            "id": "pop2-3",
+            "number": "3",
             "name": "Raikou",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/pop/pop2/3"
+            "illustrator": "Kouki Saitou",
+            "imageBase": "https://assets.tcgdex.net/fr/pop/pop2/3",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
-            "id": "pop2-005",
-            "number": "005",
+            "id": "pop2-4",
+            "number": "4",
+            "name": "Suicune",
+            "illustrator": "Kouki Saitou",
+            "imageBase": "https://assets.tcgdex.net/fr/pop/pop2/4",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "pop2-5",
+            "number": "5",
             "name": "Tauros",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/pop/pop2/5"
+            "illustrator": "Kouki Saitou",
+            "imageBase": "https://assets.tcgdex.net/fr/pop/pop2/5",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
-            "id": "pop2-007",
-            "number": "007",
+            "id": "pop2-6",
+            "number": "6",
+            "name": "Venusaur",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/fr/pop/pop2/6",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "pop2-7",
+            "number": "7",
             "name": "Herbizarre",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/pop/pop2/7"
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/pop/pop2/7",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
-            "id": "pop2-008",
-            "number": "008",
+            "id": "pop2-8",
+            "number": "8",
             "name": "La compassion de M. Briney",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/pop/pop2/8"
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/pop/pop2/8",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
-            "id": "pop2-009",
-            "number": "009",
+            "id": "pop2-9",
+            "number": "9",
             "name": "Machine multi-technique 01",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/pop/pop2/9"
+            "illustrator": "\\",
+            "imageBase": "https://assets.tcgdex.net/fr/pop/pop2/9",
+            "rarity": "Uncommon"
         },
         {
-            "id": "pop2-010",
-            "number": "010",
+            "id": "pop2-10",
+            "number": "10",
             "name": "Parc Pokémon",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/pop/pop2/10"
+            "illustrator": "Kazuo Yazawa",
+            "imageBase": "https://assets.tcgdex.net/fr/pop/pop2/10",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
-            "id": "pop2-011",
-            "number": "011",
+            "id": "pop2-11",
+            "number": "11",
             "name": "Journaliste télé",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/pop/pop2/11"
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/pop/pop2/11",
+            "rarity": "Uncommon"
         },
         {
-            "id": "pop2-012",
-            "number": "012",
+            "id": "pop2-12",
+            "number": "12",
             "name": "Bulbizarre",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/pop/pop2/12"
+            "illustrator": "Midori Harada",
+            "imageBase": "https://assets.tcgdex.net/fr/pop/pop2/12",
+            "rarity": "Common"
         },
         {
-            "id": "pop2-013",
-            "number": "013",
+            "id": "pop2-13",
+            "number": "13",
             "name": "Cacnea",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/pop/pop2/13"
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/pop/pop2/13",
+            "rarity": "Common"
         },
         {
-            "id": "pop2-014",
-            "number": "014",
+            "id": "pop2-14",
+            "number": "14",
             "name": "Lovdisc",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/pop/pop2/14"
+            "illustrator": "Atsuko Nishida",
+            "imageBase": "https://assets.tcgdex.net/fr/pop/pop2/14",
+            "rarity": "Common"
         },
         {
-            "id": "pop2-015",
-            "number": "015",
+            "id": "pop2-15",
+            "number": "15",
             "name": "Phanpy",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/pop/pop2/15"
+            "illustrator": "Tomokazu Komiya",
+            "imageBase": "https://assets.tcgdex.net/fr/pop/pop2/15",
+            "rarity": "Common"
         },
         {
-            "id": "pop2-016",
-            "number": "016",
+            "id": "pop2-16",
+            "number": "16",
             "name": "Pikachu",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/pop/pop2/16"
+            "illustrator": "Yuka Morii",
+            "imageBase": "https://assets.tcgdex.net/fr/pop/pop2/16",
+            "rarity": "Common"
+        },
+        {
+            "id": "pop2-17",
+            "number": "17",
+            "name": "Celebi ex",
+            "illustrator": "Ryo Ueda",
+            "imageBase": "https://assets.tcgdex.net/fr/pop/pop2/17",
+            "rarity": "Rare"
         }
     ]
 }

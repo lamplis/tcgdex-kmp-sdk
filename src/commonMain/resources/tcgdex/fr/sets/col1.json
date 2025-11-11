@@ -8,333 +8,746 @@
     "symbol": "https://assets.tcgdex.net/fr/col/col1/symbol",
     "cards": [
         {
-            "id": "col1-001",
-            "number": "001",
+            "id": "col1-1",
+            "number": "1",
+            "name": "Clefable",
+            "illustrator": "sui",
+            "rarity": "Rare Holo"
+        },
+        {
+            "id": "col1-2",
+            "number": "2",
             "name": "Deoxys",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/col/col1/1"
+            "illustrator": "Ryo Ueda",
+            "rarity": "Rare Holo"
         },
         {
-            "id": "col1-002",
-            "number": "002",
-            "name": "Deoxys",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/col/col1/2"
-        },
-        {
-            "id": "col1-002",
-            "number": "002",
+            "id": "col1-3",
+            "number": "3",
             "name": "Dialga",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/col/col1/2"
+            "illustrator": "Ayaka Yoshida",
+            "rarity": "Rare Holo"
         },
         {
-            "id": "col1-003",
-            "number": "003",
-            "name": "Dialga",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/col/col1/3"
+            "id": "col1-4",
+            "number": "4",
+            "name": "Espeon",
+            "illustrator": "match",
+            "rarity": "Rare Holo"
         },
         {
-            "id": "col1-003",
-            "number": "003",
-            "name": "Entei",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/col/col1/3"
+            "id": "col1-5",
+            "number": "5",
+            "name": "Forretress",
+            "illustrator": "Kyoko Umemoto",
+            "rarity": "Rare Holo"
         },
         {
-            "id": "col1-004",
-            "number": "004",
+            "id": "col1-6",
+            "number": "6",
             "name": "Groudon",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/col/col1/4"
+            "illustrator": "Ryo Ueda",
+            "rarity": "Rare Holo"
         },
         {
-            "id": "col1-005",
-            "number": "005",
+            "id": "col1-7",
+            "number": "7",
+            "name": "Gyarados",
+            "illustrator": "Mitsuhiro Arita",
+            "rarity": "Rare Holo"
+        },
+        {
+            "id": "col1-8",
+            "number": "8",
+            "name": "Hitmontop",
+            "illustrator": "Shigenori Negishi",
+            "rarity": "Rare Holo"
+        },
+        {
+            "id": "col1-9",
+            "number": "9",
             "name": "Ho-Oh",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/col/col1/5"
+            "illustrator": "Ryo Ueda",
+            "rarity": "Rare Holo"
         },
         {
-            "id": "col1-006",
-            "number": "006",
-            "name": "Groudon",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/col/col1/6"
+            "id": "col1-10",
+            "number": "10",
+            "name": "Houndoom",
+            "illustrator": "Kagemaru Himeno",
+            "rarity": "Rare Holo"
         },
         {
-            "id": "col1-006",
-            "number": "006",
+            "id": "col1-11",
+            "number": "11",
+            "name": "Jirachi",
+            "illustrator": "match",
+            "rarity": "Rare Holo"
+        },
+        {
+            "id": "col1-12",
+            "number": "12",
             "name": "Kyogre",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/col/col1/6"
+            "illustrator": "Ryo Ueda",
+            "rarity": "Rare Holo"
         },
         {
-            "id": "col1-007",
-            "number": "007",
-            "name": "Lugia",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/col/col1/7"
+            "id": "col1-13",
+            "number": "13",
+            "name": "Leafeon",
+            "illustrator": "match",
+            "rarity": "Rare Holo"
         },
         {
-            "id": "col1-008",
-            "number": "008",
-            "name": "Palkia",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/col/col1/8"
-        },
-        {
-            "id": "col1-009",
-            "number": "009",
-            "name": "Ho-Oh",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/col/col1/9"
-        },
-        {
-            "id": "col1-009",
-            "number": "009",
-            "name": "Raikou",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/col/col1/9"
-        },
-        {
-            "id": "col1-010",
-            "number": "010",
-            "name": "Rayquaza",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/col/col1/10"
-        },
-        {
-            "id": "col1-011",
-            "number": "011",
-            "name": "Suicune",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/col/col1/11"
-        },
-        {
-            "id": "col1-012",
-            "number": "012",
-            "name": "Kyogre",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/col/col1/12"
-        },
-        {
-            "id": "col1-014",
-            "number": "014",
+            "id": "col1-14",
+            "number": "14",
             "name": "Lucario",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/col/col1/14"
+            "illustrator": "Takashi Yamaguchi",
+            "rarity": "Rare Holo"
         },
         {
-            "id": "col1-015",
-            "number": "015",
+            "id": "col1-15",
+            "number": "15",
             "name": "Lugia",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/col/col1/15"
+            "illustrator": "Ryo Ueda",
+            "rarity": "Rare Holo"
         },
         {
-            "id": "col1-018",
-            "number": "018",
+            "id": "col1-16",
+            "number": "16",
+            "name": "Magmortar",
+            "illustrator": "Hajime Kusajima",
+            "rarity": "Rare Holo"
+        },
+        {
+            "id": "col1-17",
+            "number": "17",
+            "name": "Ninetales",
+            "illustrator": "TOKIYA",
+            "rarity": "Rare Holo"
+        },
+        {
+            "id": "col1-18",
+            "number": "18",
             "name": "Pachirisu",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/col/col1/18"
+            "illustrator": "Noriko Hotta",
+            "rarity": "Rare Holo"
         },
         {
-            "id": "col1-019",
-            "number": "019",
+            "id": "col1-19",
+            "number": "19",
             "name": "Palkia",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/col/col1/19"
+            "illustrator": "Daisuke Iwamoto",
+            "rarity": "Rare Holo"
         },
         {
-            "id": "col1-020",
-            "number": "020",
+            "id": "col1-20",
+            "number": "20",
             "name": "Rayquaza",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/col/col1/20"
+            "illustrator": "Ryo Ueda",
+            "rarity": "Rare Holo"
         },
         {
-            "id": "col1-029",
-            "number": "029",
+            "id": "col1-21",
+            "number": "21",
+            "name": "Smeargle",
+            "illustrator": "Midori Harada",
+            "rarity": "Rare Holo"
+        },
+        {
+            "id": "col1-22",
+            "number": "22",
+            "name": "Umbreon",
+            "illustrator": "Mitsuhiro Arita",
+            "rarity": "Rare Holo"
+        },
+        {
+            "id": "col1-23",
+            "number": "23",
+            "name": "Ampharos",
+            "illustrator": "Masakazu Fukuda",
+            "rarity": "Rare"
+        },
+        {
+            "id": "col1-24",
+            "number": "24",
+            "name": "Cleffa",
+            "illustrator": "sui",
+            "rarity": "Rare"
+        },
+        {
+            "id": "col1-25",
+            "number": "25",
+            "name": "Feraligatr",
+            "illustrator": "kawayoo",
+            "rarity": "Rare"
+        },
+        {
+            "id": "col1-26",
+            "number": "26",
+            "name": "Granbull",
+            "illustrator": "Mizue",
+            "rarity": "Rare"
+        },
+        {
+            "id": "col1-27",
+            "number": "27",
+            "name": "Meganium",
+            "illustrator": "Shin Nagasawa",
+            "rarity": "Rare"
+        },
+        {
+            "id": "col1-28",
+            "number": "28",
+            "name": "Mismagius",
+            "illustrator": "Suwama Chiaki",
+            "rarity": "Rare"
+        },
+        {
+            "id": "col1-29",
+            "number": "29",
             "name": "M. Mime",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/col/col1/29"
+            "illustrator": "Noriko Hotta",
+            "rarity": "Rare"
         },
         {
-            "id": "col1-033",
-            "number": "033",
+            "id": "col1-30",
+            "number": "30",
+            "name": "Pidgeot",
+            "illustrator": "Suwama Chiaki",
+            "rarity": "Rare"
+        },
+        {
+            "id": "col1-31",
+            "number": "31",
+            "name": "Skarmory",
+            "illustrator": "Midori Harada",
+            "rarity": "Rare"
+        },
+        {
+            "id": "col1-32",
+            "number": "32",
+            "name": "Slowking",
+            "illustrator": "Sumiyoshi Kizuki",
+            "rarity": "Rare"
+        },
+        {
+            "id": "col1-33",
+            "number": "33",
             "name": "Ronflex",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/col/col1/33"
+            "illustrator": "Kent Kanetsuna",
+            "rarity": "Rare"
         },
         {
-            "id": "col1-034",
-            "number": "034",
+            "id": "col1-34",
+            "number": "34",
             "name": "Bouldeneu",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/col/col1/34"
+            "illustrator": "Hideaki Hakozaki",
+            "rarity": "Rare"
         },
         {
-            "id": "col1-039",
-            "number": "039",
+            "id": "col1-35",
+            "number": "35",
+            "name": "Typhlosion",
+            "illustrator": "Kagemaru Himeno",
+            "rarity": "Rare"
+        },
+        {
+            "id": "col1-36",
+            "number": "36",
+            "name": "Tyrogue",
+            "illustrator": "Shigenori Negishi",
+            "rarity": "Rare"
+        },
+        {
+            "id": "col1-37",
+            "number": "37",
+            "name": "Ursaring",
+            "illustrator": "Kouki Saitou",
+            "rarity": "Rare"
+        },
+        {
+            "id": "col1-38",
+            "number": "38",
+            "name": "Weezing",
+            "illustrator": "Hajime Kusajima",
+            "rarity": "Rare"
+        },
+        {
+            "id": "col1-39",
+            "number": "39",
             "name": "Mangriff",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/col/col1/39"
+            "illustrator": "Wataru Kawahara",
+            "rarity": "Rare"
         },
         {
-            "id": "col1-047",
-            "number": "047",
+            "id": "col1-40",
+            "number": "40",
+            "name": "Bayleef",
+            "illustrator": "Shin Nagasawa",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "col1-41",
+            "number": "41",
+            "name": "Croconaw",
+            "illustrator": "kawayoo",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "col1-42",
+            "number": "42",
+            "name": "Donphan",
+            "illustrator": "Midori Harada",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "col1-43",
+            "number": "43",
+            "name": "Flaaffy",
+            "illustrator": "Masakazu Fukuda",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "col1-44",
+            "number": "44",
+            "name": "Flareon",
+            "illustrator": "kawayoo",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "col1-45",
+            "number": "45",
+            "name": "Jolteon",
+            "illustrator": "Shin Nagasawa",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "col1-46",
+            "number": "46",
+            "name": "Magby",
+            "illustrator": "Akira Komayama",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "col1-47",
+            "number": "47",
             "name": "Mime Jr.",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/col/col1/47"
+            "illustrator": "Noriko Hotta",
+            "rarity": "Uncommon"
         },
         {
-            "id": "col1-050",
-            "number": "050",
+            "id": "col1-48",
+            "number": "48",
+            "name": "Pidgeotto",
+            "illustrator": "Suwama Chiaki",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "col1-49",
+            "number": "49",
+            "name": "Quilava",
+            "illustrator": "Kagemaru Himeno",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "col1-50",
+            "number": "50",
             "name": "Riolu",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/col/col1/50"
+            "illustrator": "Takashi Yamaguchi",
+            "rarity": "Uncommon"
         },
         {
-            "id": "col1-051",
-            "number": "051",
+            "id": "col1-51",
+            "number": "51",
             "name": "Seviper",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/col/col1/51"
+            "illustrator": "Wataru Kawahara",
+            "rarity": "Uncommon"
         },
         {
-            "id": "col1-053",
-            "number": "053",
+            "id": "col1-52",
+            "number": "52",
+            "name": "Vaporeon",
+            "illustrator": "sui",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "col1-53",
+            "number": "53",
             "name": "Germignon",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/col/col1/53"
+            "illustrator": "Ken Sugimori",
+            "rarity": "Common"
         },
         {
-            "id": "col1-055",
-            "number": "055",
+            "id": "col1-54",
+            "number": "54",
+            "name": "Clefairy",
+            "illustrator": "sui",
+            "rarity": "Common"
+        },
+        {
+            "id": "col1-55",
+            "number": "55",
             "name": "Héricendre",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/col/col1/55"
+            "illustrator": "Ken Sugimori",
+            "rarity": "Common"
         },
         {
-            "id": "col1-063",
-            "number": "063",
+            "id": "col1-56",
+            "number": "56",
+            "name": "Eevee",
+            "illustrator": "Akira Komayama",
+            "rarity": "Common"
+        },
+        {
+            "id": "col1-57",
+            "number": "57",
+            "name": "Hitmonchan",
+            "illustrator": "Kouki Saitou",
+            "rarity": "Common"
+        },
+        {
+            "id": "col1-58",
+            "number": "58",
+            "name": "Hitmonlee",
+            "illustrator": "Kouki Saitou",
+            "rarity": "Common"
+        },
+        {
+            "id": "col1-59",
+            "number": "59",
+            "name": "Houndour",
+            "illustrator": "Kagemaru Himeno",
+            "rarity": "Common"
+        },
+        {
+            "id": "col1-60",
+            "number": "60",
+            "name": "Koffing",
+            "illustrator": "Hajime Kusajima",
+            "rarity": "Common"
+        },
+        {
+            "id": "col1-61",
+            "number": "61",
+            "name": "Magikarp",
+            "illustrator": "Mitsuhiro Arita",
+            "rarity": "Common"
+        },
+        {
+            "id": "col1-62",
+            "number": "62",
+            "name": "Magmar",
+            "illustrator": "Hajime Kusajima",
+            "rarity": "Common"
+        },
+        {
+            "id": "col1-63",
+            "number": "63",
             "name": "Wattouat",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/col/col1/63"
+            "illustrator": "Ken Sugimori",
+            "rarity": "Common"
         },
         {
-            "id": "col1-066",
-            "number": "066",
+            "id": "col1-64",
+            "number": "64",
+            "name": "Mawile",
+            "illustrator": "TOKIYA",
+            "rarity": "Common"
+        },
+        {
+            "id": "col1-65",
+            "number": "65",
+            "name": "Misdreavus",
+            "illustrator": "Suwama Chiaki",
+            "rarity": "Common"
+        },
+        {
+            "id": "col1-66",
+            "number": "66",
             "name": "Phanpy",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/col/col1/66"
+            "illustrator": "Ken Sugimori",
+            "rarity": "Common"
         },
         {
-            "id": "col1-069",
-            "number": "069",
+            "id": "col1-67",
+            "number": "67",
+            "name": "Pidgey",
+            "illustrator": "Suwama Chiaki",
+            "rarity": "Common"
+        },
+        {
+            "id": "col1-68",
+            "number": "68",
+            "name": "Pineco",
+            "illustrator": "Kyoko Umemoto",
+            "rarity": "Common"
+        },
+        {
+            "id": "col1-69",
+            "number": "69",
             "name": "Relicanth",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/col/col1/69"
+            "illustrator": "Wataru Kawahara",
+            "rarity": "Common"
         },
         {
-            "id": "col1-072",
-            "number": "072",
+            "id": "col1-70",
+            "number": "70",
+            "name": "Slowpoke",
+            "illustrator": "Sumiyoshi Kizuki",
+            "rarity": "Common"
+        },
+        {
+            "id": "col1-71",
+            "number": "71",
+            "name": "Snubbull",
+            "illustrator": "Mizue",
+            "rarity": "Common"
+        },
+        {
+            "id": "col1-72",
+            "number": "72",
             "name": "Saquedeneu",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/col/col1/72"
+            "illustrator": "Hideaki Hakozaki",
+            "rarity": "Common"
         },
         {
-            "id": "col1-073",
-            "number": "073",
+            "id": "col1-73",
+            "number": "73",
             "name": "Teddiursa",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/col/col1/73"
+            "illustrator": "Ken Sugimori",
+            "rarity": "Common"
         },
         {
-            "id": "col1-074",
-            "number": "074",
+            "id": "col1-74",
+            "number": "74",
             "name": "Kaiminus",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/col/col1/74"
+            "illustrator": "Ken Sugimori",
+            "rarity": "Common"
         },
         {
-            "id": "col1-080",
-            "number": "080",
+            "id": "col1-75",
+            "number": "75",
+            "name": "Vulpix",
+            "illustrator": "TOKIYA",
+            "rarity": "Common"
+        },
+        {
+            "id": "col1-76",
+            "number": "76",
+            "name": "Cheerleader's Cheer",
+            "illustrator": "Kouki Saitou",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "col1-77",
+            "number": "77",
+            "name": "Copycat",
+            "illustrator": "Kanako Eo",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "col1-78",
+            "number": "78",
+            "name": "Dual Ball",
+            "illustrator": "Takashi Yamaguchi",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "col1-79",
+            "number": "79",
+            "name": "Interviewer's Questions",
+            "illustrator": "Kouki Saitou",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "col1-80",
+            "number": "80",
             "name": "Nettoyeur perdu",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/col/col1/80"
+            "illustrator": "Wataru Kawahara",
+            "rarity": "Uncommon"
         },
         {
-            "id": "col1-081",
-            "number": "081",
+            "id": "col1-81",
+            "number": "81",
             "name": "Monde perdu",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/col/col1/81"
+            "illustrator": "Hideaki Hakozaki",
+            "rarity": "Uncommon"
         },
         {
-            "id": "col1-084",
-            "number": "084",
+            "id": "col1-82",
+            "number": "82",
+            "name": "Professor Elm's Training Method",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "col1-83",
+            "number": "83",
+            "name": "Professor Oak's New Theory",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "col1-84",
+            "number": "84",
             "name": "Archive des recherches",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/col/col1/84"
+            "illustrator": "Hideaki Hakozaki",
+            "rarity": "Uncommon"
         },
         {
-            "id": "col1-088",
-            "number": "088",
+            "id": "col1-85",
+            "number": "85",
+            "name": "Sage's Training",
+            "illustrator": "Masakazu Fukuda",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "col1-86",
+            "number": "86",
+            "name": "Darkness Energy",
+            "illustrator": "Kent Kanetsuna",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "col1-87",
+            "number": "87",
+            "name": "Metal Energy",
+            "illustrator": "Kent Kanetsuna",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "col1-88",
+            "number": "88",
             "name": "Énergie Plante",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/col/col1/88"
+            "rarity": "Common"
         },
         {
-            "id": "col1-089",
-            "number": "089",
+            "id": "col1-89",
+            "number": "89",
             "name": "Énergie Feu",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/col/col1/89"
+            "rarity": "Common"
         },
         {
-            "id": "col1-090",
-            "number": "090",
+            "id": "col1-90",
+            "number": "90",
             "name": "Énergie Eau",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/col/col1/90"
+            "rarity": "Common"
         },
         {
-            "id": "col1-091",
-            "number": "091",
+            "id": "col1-91",
+            "number": "91",
             "name": "Énergie Électrique",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/col/col1/91"
+            "rarity": "Common"
         },
         {
-            "id": "col1-092",
-            "number": "092",
+            "id": "col1-92",
+            "number": "92",
             "name": "Énergie Psy",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/col/col1/92"
+            "rarity": "Common"
         },
         {
-            "id": "col1-093",
-            "number": "093",
+            "id": "col1-93",
+            "number": "93",
             "name": "Énergie Combat",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/col/col1/93"
+            "rarity": "Common"
         },
         {
-            "id": "col1-094",
-            "number": "094",
+            "id": "col1-94",
+            "number": "94",
             "name": "Énergie Obscurité",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/col/col1/94"
+            "rarity": "Common"
         },
         {
-            "id": "col1-095",
-            "number": "095",
+            "id": "col1-95",
+            "number": "95",
             "name": "Énergie Métal",
             "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/col/col1/95"
+            "rarity": "Common"
+        },
+        {
+            "id": "col1-SL8",
+            "number": "SL8",
+            "name": "Palkia",
+            "illustrator": "Ayaka Yoshida",
+            "rarity": "Rare Holo"
+        },
+        {
+            "id": "col1-SL11",
+            "number": "SL11",
+            "name": "Suicune",
+            "illustrator": "Ayaka Yoshida",
+            "rarity": "Rare Holo"
+        },
+        {
+            "id": "col1-SL10",
+            "number": "SL10",
+            "name": "Rayquaza",
+            "illustrator": "Noriko Hotta",
+            "rarity": "Rare Holo"
+        },
+        {
+            "id": "col1-SL9",
+            "number": "SL9",
+            "name": "Raikou",
+            "illustrator": "Noriko Hotta",
+            "rarity": "Rare Holo"
+        },
+        {
+            "id": "col1-SL2",
+            "number": "SL2",
+            "name": "Dialga",
+            "illustrator": "Ayaka Yoshida",
+            "rarity": "Rare Holo"
+        },
+        {
+            "id": "col1-SL6",
+            "number": "SL6",
+            "name": "Kyogre",
+            "illustrator": "Yuri Umemura",
+            "rarity": "Rare Holo"
+        },
+        {
+            "id": "col1-SL7",
+            "number": "SL7",
+            "name": "Lugia",
+            "illustrator": "Hideaki Hakozaki",
+            "rarity": "Rare Holo"
+        },
+        {
+            "id": "col1-SL3",
+            "number": "SL3",
+            "name": "Entei",
+            "illustrator": "Yuri Umemura",
+            "rarity": "Rare Holo"
+        },
+        {
+            "id": "col1-SL4",
+            "number": "SL4",
+            "name": "Groudon",
+            "illustrator": "Yuri Umemura",
+            "rarity": "Rare Holo"
+        },
+        {
+            "id": "col1-SL1",
+            "number": "SL1",
+            "name": "Deoxys",
+            "illustrator": "Noriko Hotta",
+            "rarity": "Rare Holo"
+        },
+        {
+            "id": "col1-SL5",
+            "number": "SL5",
+            "name": "Ho-Oh",
+            "illustrator": "Hideaki Hakozaki",
+            "rarity": "Rare Holo"
         }
     ]
 }

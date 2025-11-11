@@ -3,6 +3,172 @@
     "serieId": "pop",
     "name": "POP Serie 3",
     "releaseDate": "2006-04-01",
+    "cardCount": 17,
     "logo": "https://assets.tcgdex.net/de/pop/pop3/logo",
-    "symbol": "https://assets.tcgdex.net/de/pop/pop3/symbol"
+    "symbol": "https://assets.tcgdex.net/de/pop/pop3/symbol",
+    "cards": [
+        {
+            "id": "pop3-1",
+            "number": "1",
+            "name": "Blastoise",
+            "illustrator": "Mitsuhiro Arita",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "pop3-2",
+            "number": "2",
+            "name": "Flareon",
+            "illustrator": "Masakazu Fukuda",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "pop3-3",
+            "number": "3",
+            "name": "Jolteon",
+            "illustrator": "Masakazu Fukuda",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "pop3-4",
+            "number": "4",
+            "name": "Minun",
+            "illustrator": "Sumiyoshi Kizuki",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "pop3-5",
+            "number": "5",
+            "name": "Plusle",
+            "illustrator": "Sumiyoshi Kizuki",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "pop3-6",
+            "number": "6",
+            "name": "Vaporeon",
+            "illustrator": "Masakazu Fukuda",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "pop3-7",
+            "number": "7",
+            "name": "Combusken",
+            "illustrator": "Mitsuhiro Arita",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "pop3-8",
+            "number": "8",
+            "name": "Donphan",
+            "illustrator": "Tomoaki Imakuni",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "pop3-9",
+            "number": "9",
+            "name": "Forretress",
+            "illustrator": "Midori Harada",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "pop3-10",
+            "number": "10",
+            "name": "High Pressure System",
+            "illustrator": "Ken Ikuji",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "pop3-11",
+            "number": "11",
+            "name": "Low Pressure System",
+            "illustrator": "Shin-ichi Yoshikawa",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "pop3-12",
+            "number": "12",
+            "name": "Ditto",
+            "illustrator": "Yuka Morii",
+            "rarity": "Common"
+        },
+        {
+            "id": "pop3-13",
+            "number": "13",
+            "name": "Eevee",
+            "illustrator": "Masakazu Fukuda",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
+        },
+        {
+            "id": "pop3-14",
+            "number": "14",
+            "name": "Ivysaur",
+            "illustrator": "Midori Harada",
+            "rarity": "Common"
+        },
+        {
+            "id": "pop3-15",
+            "number": "15",
+            "name": "Marshtomp",
+            "illustrator": "Midori Harada",
+            "rarity": "Common"
+        },
+        {
+            "id": "pop3-16",
+            "number": "16",
+            "name": "Pichu Bros.",
+            "illustrator": "Kagemaru Himeno",
+            "rarity": "Common"
+        },
+        {
+            "id": "pop3-17",
+            "number": "17",
+            "name": "Ho-Oh ex",
+            "illustrator": "Mitsuhiro Arita",
+            "rarity": "Ultra Rare"
+        }
+    ]
 }

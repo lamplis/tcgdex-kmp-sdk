@@ -3,6 +3,2574 @@
     "serieId": "swsh",
     "name": "Battle Styles",
     "releaseDate": "2021-03-19",
+    "cardCount": 163,
     "logo": "https://assets.tcgdex.net/zh/swsh/swsh5/logo",
-    "symbol": "https://assets.tcgdex.net/zh/swsh/swsh5/symbol"
+    "symbol": "https://assets.tcgdex.net/zh/swsh/swsh5/symbol",
+    "cards": [
+        {
+            "id": "swsh5-1",
+            "number": "1",
+            "name": "Bellsprout",
+            "illustrator": "Sekio",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-2",
+            "number": "2",
+            "name": "Weepinbell",
+            "illustrator": "Shibuzoh.",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-3",
+            "number": "3",
+            "name": "Victreebel",
+            "illustrator": "Tika Matsuno",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-4",
+            "number": "4",
+            "name": "Cacnea",
+            "illustrator": "Kazuma Koda",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-5",
+            "number": "5",
+            "name": "Cacturne",
+            "illustrator": "Tomokazu Komiya",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-6",
+            "number": "6",
+            "name": "Kricketune V",
+            "illustrator": "Satoshi Shirai",
+            "rarity": "Holo Rare V",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-7",
+            "number": "7",
+            "name": "Cherubi",
+            "illustrator": "Akira Komayama",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-8",
+            "number": "8",
+            "name": "Cherrim",
+            "illustrator": "Mina Nakai",
+            "rarity": "Holo Rare",
+            "variants": [
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-9",
+            "number": "9",
+            "name": "Carnivine",
+            "illustrator": "AKIRA EGAWA",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-10",
+            "number": "10",
+            "name": "Durant",
+            "illustrator": "kodama",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-11",
+            "number": "11",
+            "name": "Scatterbug",
+            "illustrator": "Midori Harada",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-12",
+            "number": "12",
+            "name": "Spewpa",
+            "illustrator": "Sumiyoshi Kizuki",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-13",
+            "number": "13",
+            "name": "Vivillon",
+            "illustrator": "miki kudo",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-14",
+            "number": "14",
+            "name": "Fomantis",
+            "illustrator": "Yukiko Baba",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-15",
+            "number": "15",
+            "name": "Lurantis",
+            "illustrator": "Anesaki Dynamic",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-16",
+            "number": "16",
+            "name": "Tapu Bulu",
+            "illustrator": "Ryota Murayama",
+            "rarity": "Holo Rare",
+            "variants": [
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-17",
+            "number": "17",
+            "name": "Blipbug",
+            "illustrator": "Masakazu Fukuda",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-18",
+            "number": "18",
+            "name": "Flapple V",
+            "illustrator": "PLANETA Mochizuki",
+            "rarity": "Holo Rare V",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-19",
+            "number": "19",
+            "name": "Flapple VMAX",
+            "illustrator": "PLANETA Tsuji",
+            "rarity": "Holo Rare VMAX",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-20",
+            "number": "20",
+            "name": "Entei",
+            "illustrator": "kodama",
+            "rarity": "Holo Rare",
+            "variants": [
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-21",
+            "number": "21",
+            "name": "Victini V",
+            "illustrator": "Kagemaru Himeno",
+            "rarity": "Holo Rare V",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-22",
+            "number": "22",
+            "name": "Victini VMAX",
+            "illustrator": "PLANETA Mochizuki",
+            "rarity": "Holo Rare VMAX",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-23",
+            "number": "23",
+            "name": "Tepig",
+            "illustrator": "You Iribi",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-24",
+            "number": "24",
+            "name": "Pignite",
+            "illustrator": "tetsuya koizumi",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-25",
+            "number": "25",
+            "name": "Emboar",
+            "illustrator": "Anesaki Dynamic",
+            "rarity": "Holo Rare",
+            "variants": [
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-26",
+            "number": "26",
+            "name": "Heatmor",
+            "illustrator": "Miki Tanaka",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-27",
+            "number": "27",
+            "name": "Salandit",
+            "illustrator": "Yuka Morii",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-28",
+            "number": "28",
+            "name": "Salazzle",
+            "illustrator": "Shibuzoh.",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-29",
+            "number": "29",
+            "name": "Sizzlipede",
+            "illustrator": "Yuka Morii",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-30",
+            "number": "30",
+            "name": "Centiskorch",
+            "illustrator": "Souichirou Gunjima",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-31",
+            "number": "31",
+            "name": "Horsea",
+            "illustrator": "Anesaki Dynamic",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-32",
+            "number": "32",
+            "name": "Seadra",
+            "illustrator": "0313",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-33",
+            "number": "33",
+            "name": "Kingdra",
+            "illustrator": "kawayoo",
+            "rarity": "Holo Rare",
+            "variants": [
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-34",
+            "number": "34",
+            "name": "Galarian Mr. Mime",
+            "illustrator": "kodama",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-35",
+            "number": "35",
+            "name": "Galarian Mr. Rime",
+            "illustrator": "HYOGONOSUKE",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-36",
+            "number": "36",
+            "name": "Remoraid",
+            "illustrator": "HYOGONOSUKE",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-37",
+            "number": "37",
+            "name": "Octillery",
+            "illustrator": "Souichirou Gunjima",
+            "rarity": "Holo Rare",
+            "variants": [
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-38",
+            "number": "38",
+            "name": "Corphish",
+            "illustrator": "chibi",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-39",
+            "number": "39",
+            "name": "Crawdaunt",
+            "illustrator": "Hasegawa Saki",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-40",
+            "number": "40",
+            "name": "Empoleon V",
+            "illustrator": "Ayaka Yoshida",
+            "rarity": "Holo Rare V",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-41",
+            "number": "41",
+            "name": "Frillish",
+            "illustrator": "miki kudo",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-42",
+            "number": "42",
+            "name": "Jellicent",
+            "illustrator": "Tomokazu Komiya",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-43",
+            "number": "43",
+            "name": "Bruxish",
+            "illustrator": "Misa Tsutsui",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-44",
+            "number": "44",
+            "name": "Electabuzz",
+            "illustrator": "Hasuno",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-45",
+            "number": "45",
+            "name": "Electivire",
+            "illustrator": "Megumi Higuchi",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-46",
+            "number": "46",
+            "name": "Shinx",
+            "illustrator": "sowsow",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-47",
+            "number": "47",
+            "name": "Luxio",
+            "illustrator": "Megumi Higuchi",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-48",
+            "number": "48",
+            "name": "Luxray",
+            "illustrator": "Kazuma Koda",
+            "rarity": "Holo Rare",
+            "variants": [
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-49",
+            "number": "49",
+            "name": "Pachirisu",
+            "illustrator": "Naoyo Kimura",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-50",
+            "number": "50",
+            "name": "Tapu Koko V",
+            "illustrator": "AKIRA EGAWA",
+            "rarity": "Holo Rare V",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-51",
+            "number": "51",
+            "name": "Tapu Koko VMAX",
+            "illustrator": "PLANETA Tsuji",
+            "rarity": "Holo Rare VMAX",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-52",
+            "number": "52",
+            "name": "Yamper",
+            "illustrator": "sui",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-53",
+            "number": "53",
+            "name": "Boltund",
+            "illustrator": "chibi",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-54",
+            "number": "54",
+            "name": "Galarian Slowpoke",
+            "illustrator": "Ryota Murayama",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-55",
+            "number": "55",
+            "name": "Spoink",
+            "illustrator": "kawayoo",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-56",
+            "number": "56",
+            "name": "Grumpig",
+            "illustrator": "Tomokazu Komiya",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-57",
+            "number": "57",
+            "name": "Baltoy",
+            "illustrator": "sui",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-58",
+            "number": "58",
+            "name": "Claydol",
+            "illustrator": "Shibuzoh.",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-59",
+            "number": "59",
+            "name": "Chimecho",
+            "illustrator": "Shibuzoh.",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-60",
+            "number": "60",
+            "name": "Espurr",
+            "illustrator": "Saya Tsuruta",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-61",
+            "number": "61",
+            "name": "Meowstic",
+            "illustrator": "Yuu Nishida",
+            "rarity": "Holo Rare",
+            "variants": [
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-62",
+            "number": "62",
+            "name": "Mimikyu V",
+            "illustrator": "Eske Yoshinob",
+            "rarity": "Holo Rare V",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-63",
+            "number": "63",
+            "name": "Necrozma V",
+            "illustrator": "PLANETA Tsuji",
+            "rarity": "Holo Rare V",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-64",
+            "number": "64",
+            "name": "Dottler",
+            "illustrator": "Midori Harada",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-65",
+            "number": "65",
+            "name": "Orbeetle",
+            "illustrator": "Mizue",
+            "rarity": "Holo Rare",
+            "variants": [
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-66",
+            "number": "66",
+            "name": "Mankey",
+            "illustrator": "Ryuta Fuse",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-67",
+            "number": "67",
+            "name": "Primeape",
+            "illustrator": "Kouki Saitou",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-68",
+            "number": "68",
+            "name": "Onix",
+            "illustrator": "Naoyo Kimura",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-69",
+            "number": "69",
+            "name": "Cubone",
+            "illustrator": "You Iribi",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-70",
+            "number": "70",
+            "name": "Marowak",
+            "illustrator": "Narumi Sato",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-71",
+            "number": "71",
+            "name": "Gligar",
+            "illustrator": "Naoyo Kimura",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-72",
+            "number": "72",
+            "name": "Gliscor",
+            "illustrator": "ryoma uratsuka",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-73",
+            "number": "73",
+            "name": "Timburr",
+            "illustrator": "Mina Nakai",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-74",
+            "number": "74",
+            "name": "Gurdurr",
+            "illustrator": "Uta",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-75",
+            "number": "75",
+            "name": "Conkeldurr",
+            "illustrator": "Miki Tanaka",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-76",
+            "number": "76",
+            "name": "Mienfoo",
+            "illustrator": "NC Empire",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-77",
+            "number": "77",
+            "name": "Mienshao",
+            "illustrator": "Taira Akitsu",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-78",
+            "number": "78",
+            "name": "Rolycoly",
+            "illustrator": "SATOSHI NAKAI",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-79",
+            "number": "79",
+            "name": "Carkol",
+            "illustrator": "Uta",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-80",
+            "number": "80",
+            "name": "Coalossal",
+            "illustrator": "AKIRA EGAWA",
+            "rarity": "Holo Rare",
+            "variants": [
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-81",
+            "number": "81",
+            "name": "Silicobra",
+            "illustrator": "Atsuko Nishida",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-82",
+            "number": "82",
+            "name": "Sandaconda",
+            "illustrator": "hatachu",
+            "rarity": "Holo Rare",
+            "variants": [
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-83",
+            "number": "83",
+            "name": "Falinks",
+            "illustrator": "Hasuno",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-84",
+            "number": "84",
+            "name": "Stonjourner",
+            "illustrator": "Masakazu Fukuda",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-85",
+            "number": "85",
+            "name": "Single Strike Urshifu V",
+            "illustrator": "PLANETA Mochizuki",
+            "rarity": "Holo Rare V",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-86",
+            "number": "86",
+            "name": "Single Strike Urshifu VMAX",
+            "illustrator": "PLANETA Tsuji",
+            "rarity": "Holo Rare VMAX",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-87",
+            "number": "87",
+            "name": "Rapid Strike Urshifu V",
+            "illustrator": "PLANETA Mochizuki",
+            "rarity": "Holo Rare V",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-88",
+            "number": "88",
+            "name": "Rapid Strike Urshifu VMAX",
+            "illustrator": "PLANETA Tsuji",
+            "rarity": "Holo Rare VMAX",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-89",
+            "number": "89",
+            "name": "Zubat",
+            "illustrator": "Asako Ito",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-90",
+            "number": "90",
+            "name": "Golbat",
+            "illustrator": "sui",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-91",
+            "number": "91",
+            "name": "Crobat",
+            "illustrator": "SATOSHI NAKAI",
+            "rarity": "Holo Rare",
+            "variants": [
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-92",
+            "number": "92",
+            "name": "Galarian Slowbro",
+            "illustrator": "Mitsuhiro Arita",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-93",
+            "number": "93",
+            "name": "Murkrow",
+            "illustrator": "Aya Kusube",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-94",
+            "number": "94",
+            "name": "Honchkrow",
+            "illustrator": "Miki Tanaka",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-95",
+            "number": "95",
+            "name": "Houndour",
+            "illustrator": "Sanosuke Sakuma",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-96",
+            "number": "96",
+            "name": "Houndoom",
+            "illustrator": "Ryota Murayama",
+            "rarity": "Holo Rare",
+            "variants": [
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-97",
+            "number": "97",
+            "name": "Tyranitar V",
+            "illustrator": "Ayaka Yoshida",
+            "rarity": "Holo Rare V",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-98",
+            "number": "98",
+            "name": "Morpeko",
+            "illustrator": "NC Empire",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-99",
+            "number": "99",
+            "name": "Steelix",
+            "illustrator": "NC Empire",
+            "rarity": "Holo Rare",
+            "variants": [
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-100",
+            "number": "100",
+            "name": "Mawile",
+            "illustrator": "kawayoo",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-101",
+            "number": "101",
+            "name": "Bronzor",
+            "illustrator": "Mizue",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-102",
+            "number": "102",
+            "name": "Bronzong",
+            "illustrator": "Hasuno",
+            "rarity": "Holo Rare",
+            "variants": [
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-103",
+            "number": "103",
+            "name": "Pawniard",
+            "illustrator": "otumami",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-104",
+            "number": "104",
+            "name": "Bisharp",
+            "illustrator": "tetsuya koizumi",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-105",
+            "number": "105",
+            "name": "Honedge",
+            "illustrator": "sowsow",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-106",
+            "number": "106",
+            "name": "Doublade",
+            "illustrator": "Miki Tanaka",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-107",
+            "number": "107",
+            "name": "Aegislash",
+            "illustrator": "miki kudo",
+            "rarity": "Holo Rare",
+            "variants": [
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-108",
+            "number": "108",
+            "name": "Aegislash",
+            "illustrator": "Naoyo Kimura",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-109",
+            "number": "109",
+            "name": "Corviknight V",
+            "illustrator": "PLANETA Mochizuki",
+            "rarity": "Holo Rare V",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-110",
+            "number": "110",
+            "name": "Corviknight VMAX",
+            "illustrator": "PLANETA Mochizuki",
+            "rarity": "Holo Rare VMAX",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-111",
+            "number": "111",
+            "name": "Spearow",
+            "illustrator": "Sekio",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-112",
+            "number": "112",
+            "name": "Fearow",
+            "illustrator": "Yukiko Baba",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-113",
+            "number": "113",
+            "name": "Lickitung",
+            "illustrator": "HYOGONOSUKE",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-114",
+            "number": "114",
+            "name": "Lickilicky",
+            "illustrator": "Mina Nakai",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-115",
+            "number": "115",
+            "name": "Glameow",
+            "illustrator": "Shigenori Negishi",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-116",
+            "number": "116",
+            "name": "Purugly",
+            "illustrator": "Akira Komayama",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-117",
+            "number": "117",
+            "name": "Stoutland V",
+            "illustrator": "Eske Yoshinob",
+            "rarity": "Holo Rare V",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-118",
+            "number": "118",
+            "name": "Bouffalant",
+            "illustrator": "nagimiso",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-119",
+            "number": "119",
+            "name": "Drampa",
+            "illustrator": "Eri Yamaki",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-120",
+            "number": "120",
+            "name": "Indeedee",
+            "illustrator": "Saya Tsuruta",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-121",
+            "number": "121",
+            "name": "Bruno",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-122",
+            "number": "122",
+            "name": "Camping Gear",
+            "illustrator": "sadaji",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-123",
+            "number": "123",
+            "name": "Cheryl",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-124",
+            "number": "124",
+            "name": "Energy Recycler",
+            "illustrator": "Toyste Beach",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-125",
+            "number": "125",
+            "name": "Escape Rope",
+            "illustrator": "sadaji",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-126",
+            "number": "126",
+            "name": "Exp. Share",
+            "illustrator": "Toyste Beach",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-127",
+            "number": "127",
+            "name": "Fan of Waves",
+            "illustrator": "sadaji",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-128",
+            "number": "128",
+            "name": "Korrina's Focus",
+            "illustrator": "kirisAki",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-129",
+            "number": "129",
+            "name": "Level Ball",
+            "illustrator": "Ryo Ueda",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-130",
+            "number": "130",
+            "name": "Phoebe",
+            "illustrator": "GAME FREAK inc.",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-131",
+            "number": "131",
+            "name": "Rapid Strike Scroll of Swirls",
+            "illustrator": "5ban Graphics",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-132",
+            "number": "132",
+            "name": "Rapid Strike Style Mustard",
+            "illustrator": "Naoki Saito",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-133",
+            "number": "133",
+            "name": "Single Strike Scroll of Scorn",
+            "illustrator": "5ban Graphics",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-134",
+            "number": "134",
+            "name": "Single Strike Style Mustard",
+            "illustrator": "Mitsuhiro Arita",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-135",
+            "number": "135",
+            "name": "Sordward & Shielbert",
+            "illustrator": "Hideki Ishikawa",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-136",
+            "number": "136",
+            "name": "Tool Jammer",
+            "illustrator": "inose yukie",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-137",
+            "number": "137",
+            "name": "Tower of Darkness",
+            "illustrator": "5ban Graphics",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-138",
+            "number": "138",
+            "name": "Tower of Waters",
+            "illustrator": "5ban Graphics",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-139",
+            "number": "139",
+            "name": "Urn of Vitality",
+            "illustrator": "Toyste Beach",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-140",
+            "number": "140",
+            "name": "Rapid Strike Energy",
+            "illustrator": null,
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-141",
+            "number": "141",
+            "name": "Single Strike Energy",
+            "illustrator": null,
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-142",
+            "number": "142",
+            "name": "Kricketune V",
+            "illustrator": "Satoshi Shirai",
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-143",
+            "number": "143",
+            "name": "Flapple V",
+            "illustrator": "PLANETA Mochizuki",
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-144",
+            "number": "144",
+            "name": "Victini V",
+            "illustrator": "Saki Hayashiro",
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-145",
+            "number": "145",
+            "name": "Empoleon V",
+            "illustrator": "Ayaka Yoshida",
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-146",
+            "number": "146",
+            "name": "Empoleon V",
+            "illustrator": "chibi",
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-147",
+            "number": "147",
+            "name": "Tapu Koko V",
+            "illustrator": "Eske Yoshinob",
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-148",
+            "number": "148",
+            "name": "Mimikyu V",
+            "illustrator": "Eske Yoshinob",
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-149",
+            "number": "149",
+            "name": "Necrozma V",
+            "illustrator": "PLANETA Tsuji",
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-150",
+            "number": "150",
+            "name": "Single Strike Urshifu V",
+            "illustrator": "PLANETA Mochizuki",
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-151",
+            "number": "151",
+            "name": "Single Strike Urshifu V",
+            "illustrator": "kawayoo",
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-152",
+            "number": "152",
+            "name": "Rapid Strike Urshifu V",
+            "illustrator": "PLANETA Mochizuki",
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-153",
+            "number": "153",
+            "name": "Rapid Strike Urshifu V",
+            "illustrator": "Ryota Murayama",
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-154",
+            "number": "154",
+            "name": "Tyranitar V",
+            "illustrator": "Ayaka Yoshida",
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-155",
+            "number": "155",
+            "name": "Tyranitar V",
+            "illustrator": "HYOGONOSUKE",
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-156",
+            "number": "156",
+            "name": "Corviknight V",
+            "illustrator": "PLANETA Mochizuki",
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-157",
+            "number": "157",
+            "name": "Stoutland V",
+            "illustrator": "Eske Yoshinob",
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-158",
+            "number": "158",
+            "name": "Bruno",
+            "illustrator": "Ryuta Fuse",
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-159",
+            "number": "159",
+            "name": "Cheryl",
+            "illustrator": "Yuu Nishida",
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-160",
+            "number": "160",
+            "name": "Korrina's Focus",
+            "illustrator": "Taira Akitsu",
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-161",
+            "number": "161",
+            "name": "Phoebe",
+            "illustrator": "Kagemaru Himeno",
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-162",
+            "number": "162",
+            "name": "Rapid Strike Style Mustard",
+            "illustrator": "Naoki Saito",
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-163",
+            "number": "163",
+            "name": "Single Strike Style Mustard",
+            "illustrator": "Mitsuhiro Arita",
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-164",
+            "number": "164",
+            "name": "Flapple VMAX",
+            "illustrator": "PLANETA Tsuji",
+            "rarity": "Secret Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-165",
+            "number": "165",
+            "name": "Victini VMAX",
+            "illustrator": "PLANETA Mochizuki",
+            "rarity": "Secret Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-166",
+            "number": "166",
+            "name": "Tapu Koko VMAX",
+            "illustrator": "PLANETA Tsuji",
+            "rarity": "Secret Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-167",
+            "number": "167",
+            "name": "Single Strike Urshifu VMAX",
+            "illustrator": "PLANETA Tsuji",
+            "rarity": "Secret Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-168",
+            "number": "168",
+            "name": "Single Strike Urshifu VMAX",
+            "illustrator": "Kinu Nishimura",
+            "rarity": "Secret Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-169",
+            "number": "169",
+            "name": "Rapid Strike Urshifu VMAX",
+            "illustrator": "PLANETA Tsuji",
+            "rarity": "Secret Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-170",
+            "number": "170",
+            "name": "Rapid Strike Urshifu VMAX",
+            "illustrator": "KIYOTAKA OSHIYAMA",
+            "rarity": "Secret Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-171",
+            "number": "171",
+            "name": "Corviknight VMAX",
+            "illustrator": "PLANETA Mochizuki",
+            "rarity": "Secret Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-172",
+            "number": "172",
+            "name": "Bruno",
+            "illustrator": "Ryuta Fuse",
+            "rarity": "Secret Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-173",
+            "number": "173",
+            "name": "Cheryl",
+            "illustrator": "Yuu Nishida",
+            "rarity": "Secret Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-174",
+            "number": "174",
+            "name": "Korrina's Focus",
+            "illustrator": "Taira Akitsu",
+            "rarity": "Secret Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-175",
+            "number": "175",
+            "name": "Phoebe",
+            "illustrator": "Kagemaru Himeno",
+            "rarity": "Secret Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-176",
+            "number": "176",
+            "name": "Rapid Strike Style Mustard",
+            "illustrator": "Naoki Saito",
+            "rarity": "Secret Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-177",
+            "number": "177",
+            "name": "Single Strike Style Mustard",
+            "illustrator": "Mitsuhiro Arita",
+            "rarity": "Secret Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-178",
+            "number": "178",
+            "name": "Octillery",
+            "illustrator": "PLANETA Mochizuki",
+            "rarity": "Secret Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-179",
+            "number": "179",
+            "name": "Houndoom",
+            "illustrator": "PLANETA Mochizuki",
+            "rarity": "Secret Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-180",
+            "number": "180",
+            "name": "Exp. Share",
+            "illustrator": "Toyste Beach",
+            "rarity": "Secret Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-181",
+            "number": "181",
+            "name": "Level Ball",
+            "illustrator": "Ryo Ueda",
+            "rarity": "Secret Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-182",
+            "number": "182",
+            "name": "Rapid Strike Energy",
+            "illustrator": null,
+            "rarity": "Secret Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "swsh5-183",
+            "number": "183",
+            "name": "Single Strike Energy",
+            "illustrator": null,
+            "rarity": "Secret Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        }
+    ]
 }

@@ -3,6 +3,786 @@
     "serieId": "pl",
     "name": "Arceus",
     "releaseDate": "2009-11-04",
+    "cardCount": 99,
     "logo": "https://assets.tcgdex.net/pt/pl/pl4/logo",
-    "symbol": "https://assets.tcgdex.net/pt/pl/pl4/symbol"
+    "symbol": "https://assets.tcgdex.net/pt/pl/pl4/symbol",
+    "cards": [
+        {
+            "id": "pl4-1",
+            "number": "1",
+            "name": "Charizard",
+            "illustrator": "Kagemaru Himeno",
+            "rarity": "Rare Holo"
+        },
+        {
+            "id": "pl4-2",
+            "number": "2",
+            "name": "Froslass",
+            "illustrator": "TOKIYA",
+            "rarity": "Rare Holo"
+        },
+        {
+            "id": "pl4-3",
+            "number": "3",
+            "name": "Heatran",
+            "illustrator": "Keiko Moritsugu",
+            "rarity": "Rare Holo"
+        },
+        {
+            "id": "pl4-4",
+            "number": "4",
+            "name": "Kabutops",
+            "illustrator": "Hajime Kusajima",
+            "rarity": "Rare Holo"
+        },
+        {
+            "id": "pl4-5",
+            "number": "5",
+            "name": "Luxray",
+            "illustrator": "kawayoo",
+            "rarity": "Rare Holo"
+        },
+        {
+            "id": "pl4-6",
+            "number": "6",
+            "name": "Mothim",
+            "illustrator": "Kagemaru Himeno",
+            "rarity": "Rare Holo"
+        },
+        {
+            "id": "pl4-7",
+            "number": "7",
+            "name": "Probopass",
+            "illustrator": "Kouki Saitou",
+            "rarity": "Rare Holo"
+        },
+        {
+            "id": "pl4-8",
+            "number": "8",
+            "name": "Salamence",
+            "illustrator": "Shin Nagasawa",
+            "rarity": "Rare Holo"
+        },
+        {
+            "id": "pl4-9",
+            "number": "9",
+            "name": "Swalot",
+            "illustrator": "Aya Kusube",
+            "rarity": "Rare Holo"
+        },
+        {
+            "id": "pl4-10",
+            "number": "10",
+            "name": "Tangrowth",
+            "illustrator": "Masakazu Fukuda",
+            "rarity": "Rare Holo"
+        },
+        {
+            "id": "pl4-11",
+            "number": "11",
+            "name": "Toxicroak",
+            "illustrator": "Kouki Saitou",
+            "rarity": "Rare Holo"
+        },
+        {
+            "id": "pl4-12",
+            "number": "12",
+            "name": "Zapdos",
+            "illustrator": "Ryota Saito",
+            "rarity": "Rare Holo"
+        },
+        {
+            "id": "pl4-13",
+            "number": "13",
+            "name": "Aerodactyl",
+            "illustrator": "Masakazu Fukuda",
+            "rarity": "Rare"
+        },
+        {
+            "id": "pl4-14",
+            "number": "14",
+            "name": "Bronzong",
+            "illustrator": "Atsuko Nishida",
+            "rarity": "Rare"
+        },
+        {
+            "id": "pl4-15",
+            "number": "15",
+            "name": "Cherrim",
+            "illustrator": "Midori Harada",
+            "rarity": "Rare"
+        },
+        {
+            "id": "pl4-16",
+            "number": "16",
+            "name": "Gengar",
+            "illustrator": "Midori Harada",
+            "rarity": "Rare"
+        },
+        {
+            "id": "pl4-17",
+            "number": "17",
+            "name": "Gengar",
+            "illustrator": "Mitsuhiro Arita",
+            "rarity": "Rare"
+        },
+        {
+            "id": "pl4-18",
+            "number": "18",
+            "name": "Glalie",
+            "illustrator": "Hiroki Fuchino",
+            "rarity": "Rare"
+        },
+        {
+            "id": "pl4-19",
+            "number": "19",
+            "name": "Golem",
+            "illustrator": "Masakazu Fukuda",
+            "rarity": "Rare"
+        },
+        {
+            "id": "pl4-20",
+            "number": "20",
+            "name": "Hariyama",
+            "illustrator": "Midori Harada",
+            "rarity": "Rare"
+        },
+        {
+            "id": "pl4-21",
+            "number": "21",
+            "name": "Lopunny",
+            "illustrator": "Kyoko Umemoto",
+            "rarity": "Rare"
+        },
+        {
+            "id": "pl4-22",
+            "number": "22",
+            "name": "Manectric",
+            "illustrator": "Mana Ibe",
+            "rarity": "Rare"
+        },
+        {
+            "id": "pl4-23",
+            "number": "23",
+            "name": "Omastar",
+            "illustrator": "Hajime Kusajima",
+            "rarity": "Rare"
+        },
+        {
+            "id": "pl4-24",
+            "number": "24",
+            "name": "Pelipper",
+            "illustrator": "Miki Tanaka",
+            "rarity": "Rare"
+        },
+        {
+            "id": "pl4-25",
+            "number": "25",
+            "name": "Pichu",
+            "illustrator": "Kanako Eo",
+            "rarity": "Rare"
+        },
+        {
+            "id": "pl4-26",
+            "number": "26",
+            "name": "Porygon-Z",
+            "illustrator": "Nobuyuki Fujimoto",
+            "rarity": "Rare"
+        },
+        {
+            "id": "pl4-27",
+            "number": "27",
+            "name": "Raichu",
+            "illustrator": "Suwama Chiaki",
+            "rarity": "Rare"
+        },
+        {
+            "id": "pl4-28",
+            "number": "28",
+            "name": "Rapidash",
+            "illustrator": "Lee HyunJung",
+            "rarity": "Rare"
+        },
+        {
+            "id": "pl4-29",
+            "number": "29",
+            "name": "Raticate",
+            "illustrator": "Masakazu Fukuda",
+            "rarity": "Rare"
+        },
+        {
+            "id": "pl4-30",
+            "number": "30",
+            "name": "Sceptile",
+            "illustrator": "Reiko Tanoue",
+            "rarity": "Rare"
+        },
+        {
+            "id": "pl4-31",
+            "number": "31",
+            "name": "Sceptile",
+            "illustrator": "Kouki Saitou",
+            "rarity": "Rare"
+        },
+        {
+            "id": "pl4-32",
+            "number": "32",
+            "name": "Spiritomb",
+            "illustrator": "Aya Kusube",
+            "rarity": "Rare"
+        },
+        {
+            "id": "pl4-33",
+            "number": "33",
+            "name": "Bronzong",
+            "illustrator": "Masakazu Fukuda",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "pl4-34",
+            "number": "34",
+            "name": "Bronzor",
+            "illustrator": "kawayoo",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "pl4-35",
+            "number": "35",
+            "name": "Charmeleon",
+            "illustrator": "Sumiyoshi Kizuki",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "pl4-36",
+            "number": "36",
+            "name": "Gastly",
+            "illustrator": "kawayoo",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "pl4-37",
+            "number": "37",
+            "name": "Graveler",
+            "illustrator": "Sachiko Adachi",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "pl4-38",
+            "number": "38",
+            "name": "Grovyle",
+            "illustrator": "Tomoaki Imakuni",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "pl4-39",
+            "number": "39",
+            "name": "Grovyle",
+            "illustrator": "Kouki Saitou",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "pl4-40",
+            "number": "40",
+            "name": "Gulpin",
+            "illustrator": "Sachiko Adachi",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "pl4-41",
+            "number": "41",
+            "name": "Haunter",
+            "illustrator": "Tomokazu Komiya",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "pl4-42",
+            "number": "42",
+            "name": "Haunter",
+            "illustrator": "Mitsuhiro Arita",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "pl4-43",
+            "number": "43",
+            "name": "Luxio",
+            "illustrator": "Suwama Chiaki",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "pl4-44",
+            "number": "44",
+            "name": "Manectric",
+            "illustrator": "Shin Nagasawa",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "pl4-45",
+            "number": "45",
+            "name": "Pelipper",
+            "illustrator": "Naoyo Kimura",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "pl4-46",
+            "number": "46",
+            "name": "Ponyta",
+            "illustrator": "Kanako Eo",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "pl4-47",
+            "number": "47",
+            "name": "Rapidash",
+            "illustrator": "Midori Harada",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "pl4-48",
+            "number": "48",
+            "name": "Shelgon",
+            "illustrator": "Atsuko Nishida",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "pl4-49",
+            "number": "49",
+            "name": "Wormadam Plant Cloak",
+            "illustrator": "Kouki Saitou",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "pl4-50",
+            "number": "50",
+            "name": "Wormadam Sandy Cloak",
+            "illustrator": "Atsuko Nishida",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "pl4-51",
+            "number": "51",
+            "name": "Wormadam Trash Cloak",
+            "illustrator": "Miki Tanaka",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "pl4-52",
+            "number": "52",
+            "name": "Bagon",
+            "illustrator": "Naoyo Kimura",
+            "rarity": "Common"
+        },
+        {
+            "id": "pl4-53",
+            "number": "53",
+            "name": "Beedrill",
+            "illustrator": "Wataru Kawahara",
+            "rarity": "Common"
+        },
+        {
+            "id": "pl4-54",
+            "number": "54",
+            "name": "Bronzor",
+            "illustrator": "Masakazu Fukuda",
+            "rarity": "Common"
+        },
+        {
+            "id": "pl4-55",
+            "number": "55",
+            "name": "Buneary",
+            "illustrator": "sui",
+            "rarity": "Common"
+        },
+        {
+            "id": "pl4-56",
+            "number": "56",
+            "name": "Burmy Plant Cloak",
+            "illustrator": "Kyoko Umemoto",
+            "rarity": "Common"
+        },
+        {
+            "id": "pl4-57",
+            "number": "57",
+            "name": "Burmy Sandy Cloak",
+            "illustrator": "Tomokazu Komiya",
+            "rarity": "Common"
+        },
+        {
+            "id": "pl4-58",
+            "number": "58",
+            "name": "Burmy Trash Cloak",
+            "illustrator": "Yukiko Baba",
+            "rarity": "Common"
+        },
+        {
+            "id": "pl4-59",
+            "number": "59",
+            "name": "Charmander",
+            "illustrator": "Suwama Chiaki",
+            "rarity": "Common"
+        },
+        {
+            "id": "pl4-60",
+            "number": "60",
+            "name": "Cherubi",
+            "illustrator": "Yuka Morii",
+            "rarity": "Common"
+        },
+        {
+            "id": "pl4-61",
+            "number": "61",
+            "name": "Croagunk",
+            "illustrator": "Tomokazu Komiya",
+            "rarity": "Common"
+        },
+        {
+            "id": "pl4-62",
+            "number": "62",
+            "name": "Electrike",
+            "illustrator": "Yukiko Baba",
+            "rarity": "Common"
+        },
+        {
+            "id": "pl4-63",
+            "number": "63",
+            "name": "Electrike",
+            "illustrator": "Shin Nagasawa",
+            "rarity": "Common"
+        },
+        {
+            "id": "pl4-64",
+            "number": "64",
+            "name": "Gastly",
+            "illustrator": "Mitsuhiro Arita",
+            "rarity": "Common"
+        },
+        {
+            "id": "pl4-65",
+            "number": "65",
+            "name": "Geodude",
+            "illustrator": "Motofumi Fujiwara",
+            "rarity": "Common"
+        },
+        {
+            "id": "pl4-66",
+            "number": "66",
+            "name": "Gulpin",
+            "illustrator": "Sumiyoshi Kizuki",
+            "rarity": "Common"
+        },
+        {
+            "id": "pl4-67",
+            "number": "67",
+            "name": "Kabuto",
+            "illustrator": "Hironobu Yoshida",
+            "rarity": "Common"
+        },
+        {
+            "id": "pl4-68",
+            "number": "68",
+            "name": "Makuhita",
+            "illustrator": "sui",
+            "rarity": "Common"
+        },
+        {
+            "id": "pl4-69",
+            "number": "69",
+            "name": "Nosepass",
+            "illustrator": "Midori Harada",
+            "rarity": "Common"
+        },
+        {
+            "id": "pl4-70",
+            "number": "70",
+            "name": "Omanyte",
+            "illustrator": "Aya Kusube",
+            "rarity": "Common"
+        },
+        {
+            "id": "pl4-71",
+            "number": "71",
+            "name": "Pikachu",
+            "illustrator": "sui",
+            "rarity": "Common"
+        },
+        {
+            "id": "pl4-72",
+            "number": "72",
+            "name": "Ponyta",
+            "illustrator": "Midori Harada",
+            "rarity": "Common"
+        },
+        {
+            "id": "pl4-73",
+            "number": "73",
+            "name": "Rattata",
+            "illustrator": "Miki Tanaka",
+            "rarity": "Common"
+        },
+        {
+            "id": "pl4-74",
+            "number": "74",
+            "name": "Shinx",
+            "illustrator": "sui",
+            "rarity": "Common"
+        },
+        {
+            "id": "pl4-75",
+            "number": "75",
+            "name": "Snorunt",
+            "illustrator": "Yuka Morii",
+            "rarity": "Common"
+        },
+        {
+            "id": "pl4-76",
+            "number": "76",
+            "name": "Tangela",
+            "illustrator": "Mitsuhiro Arita",
+            "rarity": "Common"
+        },
+        {
+            "id": "pl4-77",
+            "number": "77",
+            "name": "Tangela",
+            "illustrator": "Kagemaru Himeno",
+            "rarity": "Common"
+        },
+        {
+            "id": "pl4-78",
+            "number": "78",
+            "name": "Treecko",
+            "illustrator": "TOKIYA",
+            "rarity": "Common"
+        },
+        {
+            "id": "pl4-79",
+            "number": "79",
+            "name": "Treecko",
+            "illustrator": "Kouki Saitou",
+            "rarity": "Common"
+        },
+        {
+            "id": "pl4-80",
+            "number": "80",
+            "name": "Wingull",
+            "illustrator": "Kyoko Umemoto",
+            "rarity": "Common"
+        },
+        {
+            "id": "pl4-81",
+            "number": "81",
+            "name": "Wingull",
+            "illustrator": "Naoyo Kimura",
+            "rarity": "Common"
+        },
+        {
+            "id": "pl4-82",
+            "number": "82",
+            "name": "Beginning Door",
+            "illustrator": "Ryo Ueda",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "pl4-83",
+            "number": "83",
+            "name": "Bench Shield",
+            "illustrator": "Wataru Kawahara",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "pl4-84",
+            "number": "84",
+            "name": "Buffer Piece",
+            "illustrator": "Ryo Ueda",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "pl4-85",
+            "number": "85",
+            "name": "Department Store Girl",
+            "illustrator": "Kanako Eo",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "pl4-86",
+            "number": "86",
+            "name": "Energy Restore",
+            "illustrator": "Ryo Ueda",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "pl4-87",
+            "number": "87",
+            "name": "Expert Belt",
+            "illustrator": "Wataru Kawahara",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "pl4-88",
+            "number": "88",
+            "name": "Lucky Egg",
+            "illustrator": "Nobuyuki Fujimoto",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "pl4-89",
+            "number": "89",
+            "name": "Old Amber",
+            "illustrator": "Ryo Ueda",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "pl4-90",
+            "number": "90",
+            "name": "Professor Oak's Visit",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "pl4-91",
+            "number": "91",
+            "name": "Ultimate Zone",
+            "illustrator": "Yusuke Ishikawa",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "pl4-92",
+            "number": "92",
+            "name": "Dome Fossil",
+            "illustrator": "Ryo Ueda",
+            "rarity": "Common"
+        },
+        {
+            "id": "pl4-93",
+            "number": "93",
+            "name": "Helix Fossil",
+            "illustrator": "Ryo Ueda",
+            "rarity": "Common"
+        },
+        {
+            "id": "pl4-94",
+            "number": "94",
+            "name": "Arceus LV. X",
+            "illustrator": "Shizurow",
+            "rarity": "Rare Holo LV.X"
+        },
+        {
+            "id": "pl4-95",
+            "number": "95",
+            "name": "Arceus LV. X",
+            "illustrator": "Ryo Ueda",
+            "rarity": "Rare Holo LV.X"
+        },
+        {
+            "id": "pl4-96",
+            "number": "96",
+            "name": "Arceus LV. X",
+            "illustrator": "Ryo Ueda",
+            "rarity": "Rare Holo LV.X"
+        },
+        {
+            "id": "pl4-97",
+            "number": "97",
+            "name": "Gengar LV. X",
+            "illustrator": "Shizurow",
+            "rarity": "Rare Holo LV.X"
+        },
+        {
+            "id": "pl4-98",
+            "number": "98",
+            "name": "Salamence LV. X",
+            "illustrator": "Ryo Ueda",
+            "rarity": "Rare Holo LV.X"
+        },
+        {
+            "id": "pl4-99",
+            "number": "99",
+            "name": "Tangrowth LV. X",
+            "illustrator": "Ryo Ueda",
+            "rarity": "Rare Holo LV.X"
+        },
+        {
+            "id": "pl4-AR1",
+            "number": "AR1",
+            "name": "Arceus",
+            "illustrator": "kawayoo",
+            "rarity": "Rare"
+        },
+        {
+            "id": "pl4-AR5",
+            "number": "AR5",
+            "name": "Arceus",
+            "illustrator": "Mitsuhiro Arita",
+            "rarity": "Rare"
+        },
+        {
+            "id": "pl4-AR4",
+            "number": "AR4",
+            "name": "Arceus",
+            "illustrator": "Kouki Saitou",
+            "rarity": "Rare"
+        },
+        {
+            "id": "pl4-SH12",
+            "number": "SH12",
+            "name": "Shinx",
+            "illustrator": "sui",
+            "rarity": "Rare"
+        },
+        {
+            "id": "pl4-SH11",
+            "number": "SH11",
+            "name": "Ponyta",
+            "illustrator": "Kanako Eo",
+            "rarity": "Rare"
+        },
+        {
+            "id": "pl4-AR9",
+            "number": "AR9",
+            "name": "Arceus",
+            "illustrator": "TOKIYA",
+            "rarity": "Rare"
+        },
+        {
+            "id": "pl4-AR8",
+            "number": "AR8",
+            "name": "Arceus",
+            "illustrator": "Hajime Kusajima",
+            "rarity": "Rare"
+        },
+        {
+            "id": "pl4-SH10",
+            "number": "SH10",
+            "name": "Bagon",
+            "illustrator": "Naoyo Kimura",
+            "rarity": "Rare"
+        },
+        {
+            "id": "pl4-AR7",
+            "number": "AR7",
+            "name": "Arceus",
+            "illustrator": "Kagemaru Himeno",
+            "rarity": "Rare"
+        },
+        {
+            "id": "pl4-AR3",
+            "number": "AR3",
+            "name": "Arceus",
+            "illustrator": "Wataru Kawahara",
+            "rarity": "Rare"
+        },
+        {
+            "id": "pl4-AR2",
+            "number": "AR2",
+            "name": "Arceus",
+            "illustrator": "Shin Nagasawa",
+            "rarity": "Rare"
+        },
+        {
+            "id": "pl4-AR6",
+            "number": "AR6",
+            "name": "Arceus",
+            "illustrator": "Wataru Kawahara",
+            "rarity": "Rare"
+        }
+    ]
 }

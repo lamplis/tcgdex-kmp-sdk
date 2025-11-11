@@ -8,151 +8,379 @@
     "symbol": "https://assets.tcgdex.net/fr/mc/2021swsh/symbol",
     "cards": [
         {
-            "id": "2021swsh-005",
-            "number": "005",
+            "id": "2021swsh-1",
+            "number": "1",
+            "name": "Bulbasaur",
+            "illustrator": "Mizue",
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "2021swsh-2",
+            "number": "2",
+            "name": "Chikorita",
+            "illustrator": "sowsow",
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "2021swsh-3",
+            "number": "3",
+            "name": "Treecko",
+            "illustrator": "Akira Komayama",
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "2021swsh-4",
+            "number": "4",
+            "name": "Turtwig",
+            "illustrator": "OOYAMA",
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "2021swsh-5",
+            "number": "5",
             "name": "Vipélierre",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/mc/2021swsh/5"
+            "illustrator": "Ken Sugimori",
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
-            "id": "2021swsh-006",
-            "number": "006",
+            "id": "2021swsh-6",
+            "number": "6",
             "name": "Marisson",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/mc/2021swsh/6"
+            "illustrator": "5ban Graphics",
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
-            "id": "2021swsh-007",
-            "number": "007",
+            "id": "2021swsh-7",
+            "number": "7",
             "name": "Brindibou",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/mc/2021swsh/7"
+            "illustrator": "Megumi Mizutani",
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
-            "id": "2021swsh-008",
-            "number": "008",
+            "id": "2021swsh-8",
+            "number": "8",
             "name": "Ouistempo",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/mc/2021swsh/8"
+            "illustrator": "kirisAki",
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
-            "id": "2021swsh-009",
-            "number": "009",
+            "id": "2021swsh-9",
+            "number": "9",
             "name": "Salamèche",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/mc/2021swsh/9"
+            "illustrator": "Kagemaru Himeno",
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
-            "id": "2021swsh-010",
-            "number": "010",
+            "id": "2021swsh-10",
+            "number": "10",
             "name": "Héricendre",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/mc/2021swsh/10"
+            "illustrator": "kirisAki",
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
-            "id": "2021swsh-011",
-            "number": "011",
+            "id": "2021swsh-11",
+            "number": "11",
             "name": "Poussifeu",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/mc/2021swsh/11"
+            "illustrator": "sui",
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
-            "id": "2021swsh-012",
-            "number": "012",
+            "id": "2021swsh-12",
+            "number": "12",
             "name": "Chimpenfeu",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/mc/2021swsh/12"
+            "illustrator": "Kouki Saitou",
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
-            "id": "2021swsh-013",
-            "number": "013",
+            "id": "2021swsh-13",
+            "number": "13",
             "name": "Gruikui",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/mc/2021swsh/13"
+            "illustrator": "Ken Sugimori",
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
-            "id": "2021swsh-014",
-            "number": "014",
+            "id": "2021swsh-14",
+            "number": "14",
             "name": "Feunnec",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/mc/2021swsh/14"
+            "illustrator": "5ban Graphics",
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
-            "id": "2021swsh-015",
-            "number": "015",
+            "id": "2021swsh-15",
+            "number": "15",
             "name": "Flamiaou",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/mc/2021swsh/15"
+            "illustrator": "Akira Komayama",
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
-            "id": "2021swsh-016",
-            "number": "016",
+            "id": "2021swsh-16",
+            "number": "16",
             "name": "Flambino",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/mc/2021swsh/16"
+            "illustrator": "Hitoshi Ariga",
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
-            "id": "2021swsh-017",
-            "number": "017",
+            "id": "2021swsh-17",
+            "number": "17",
             "name": "Carapuce",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/mc/2021swsh/17"
+            "illustrator": "tetsuya koizumi",
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
-            "id": "2021swsh-018",
-            "number": "018",
+            "id": "2021swsh-18",
+            "number": "18",
             "name": "Kaiminus",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/mc/2021swsh/18"
+            "illustrator": "Kagemaru Himeno",
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
-            "id": "2021swsh-019",
-            "number": "019",
+            "id": "2021swsh-19",
+            "number": "19",
             "name": "Gobou",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/mc/2021swsh/19"
+            "illustrator": "Aya Kusube",
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
-            "id": "2021swsh-020",
-            "number": "020",
+            "id": "2021swsh-20",
+            "number": "20",
             "name": "Tiplouf",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/mc/2021swsh/20"
+            "illustrator": "Shibuzoh.",
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
-            "id": "2021swsh-021",
-            "number": "021",
+            "id": "2021swsh-21",
+            "number": "21",
             "name": "Moustillon",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/mc/2021swsh/21"
+            "illustrator": "Ken Sugimori",
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
-            "id": "2021swsh-022",
-            "number": "022",
+            "id": "2021swsh-22",
+            "number": "22",
             "name": "Grenousse",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/mc/2021swsh/22"
+            "illustrator": "5ban Graphics",
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
-            "id": "2021swsh-023",
-            "number": "023",
+            "id": "2021swsh-23",
+            "number": "23",
             "name": "Otaquin",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/mc/2021swsh/23"
+            "illustrator": "Kouki Saitou",
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
-            "id": "2021swsh-024",
-            "number": "024",
+            "id": "2021swsh-24",
+            "number": "24",
             "name": "Larméléon",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/mc/2021swsh/24"
+            "illustrator": "Mizue",
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
-            "id": "2021swsh-025",
-            "number": "025",
+            "id": "2021swsh-25",
+            "number": "25",
             "name": "Pikachu",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/mc/2021swsh/25"
+            "illustrator": "Sanosuke Sakuma",
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
         }
     ]
 }

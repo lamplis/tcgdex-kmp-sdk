@@ -8,998 +8,1730 @@
     "symbol": "https://assets.tcgdex.net/fr/xy/xyp/symbol",
     "cards": [
         {
-            "id": "xyp-001",
-            "number": "001",
-            "name": "Marisson",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY01"
-        },
-        {
-            "id": "xyp-002",
-            "number": "002",
-            "name": "Feunnec",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY02"
-        },
-        {
-            "id": "xyp-003",
-            "number": "003",
-            "name": "Grenousse",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY03"
-        },
-        {
-            "id": "xyp-004",
-            "number": "004",
-            "name": "Nymphali",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY04"
-        },
-        {
-            "id": "xyp-005",
-            "number": "005",
-            "name": "Yveltal",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY05"
-        },
-        {
-            "id": "xyp-006",
-            "number": "006",
-            "name": "Xerneas",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY06"
-        },
-        {
-            "id": "xyp-007",
-            "number": "007",
-            "name": "Xerneas EX",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY07"
-        },
-        {
-            "id": "xyp-008",
-            "number": "008",
-            "name": "Yveltal EX",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY08"
-        },
-        {
-            "id": "xyp-009",
-            "number": "009",
-            "name": "Carchacrok EX",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY09"
-        },
-        {
-            "id": "xyp-010",
-            "number": "010",
-            "name": "Kravarech",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY10"
-        },
-        {
-            "id": "xyp-011",
-            "number": "011",
-            "name": "Cabriolaine",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY11"
-        },
-        {
-            "id": "xyp-012",
-            "number": "012",
-            "name": "Monorpale",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY12"
-        },
-        {
-            "id": "xyp-013",
-            "number": "013",
-            "name": "Mackogneur",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY13"
-        },
-        {
-            "id": "xyp-014",
-            "number": "014",
-            "name": "Desséliande",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY14"
-        },
-        {
-            "id": "xyp-015",
-            "number": "015",
-            "name": "Cupcanaille",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY15"
-        },
-        {
-            "id": "xyp-016",
-            "number": "016",
-            "name": "Chevroum",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY16"
-        },
-        {
-            "id": "xyp-017",
-            "number": "017",
-            "name": "Dracaufeu EX",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY17"
-        },
-        {
-            "id": "xyp-018",
-            "number": "018",
-            "name": "Blindépique EX",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY18"
-        },
-        {
-            "id": "xyp-019",
-            "number": "019",
-            "name": "Goupelin EX",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY19"
-        },
-        {
-            "id": "xyp-020",
-            "number": "020",
-            "name": "Amphinobi EX",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY20"
-        },
-        {
-            "id": "xyp-021",
-            "number": "021",
-            "name": "Archéodong",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY21"
-        },
-        {
-            "id": "xyp-022",
-            "number": "022",
-            "name": "Darkrai",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY22"
-        },
-        {
-            "id": "xyp-023",
-            "number": "023",
-            "name": "Tengalice",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY23"
-        },
-        {
-            "id": "xyp-024",
-            "number": "024",
-            "name": "Amphinobi",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY24"
-        },
-        {
-            "id": "xyp-025",
-            "number": "025",
-            "name": "Crocorible EX",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY25"
-        },
-        {
-            "id": "xyp-026",
-            "number": "026",
-            "name": "Némélios",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY26"
-        },
-        {
-            "id": "xyp-027",
-            "number": "027",
-            "name": "Festival des Champions",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY27"
-        },
-        {
-            "id": "xyp-028",
-            "number": "028",
-            "name": "Florizarre EX",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY28"
-        },
-        {
-            "id": "xyp-029",
-            "number": "029",
-            "name": "Dracaufeu EX",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY29"
-        },
-        {
-            "id": "xyp-030",
-            "number": "030",
-            "name": "Tortank EX",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY30"
-        },
-        {
-            "id": "xyp-031",
-            "number": "031",
-            "name": "Xerneas",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY31"
-        },
-        {
-            "id": "xyp-032",
-            "number": "032",
-            "name": "Yveltal",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY32"
-        },
-        {
-            "id": "xyp-033",
-            "number": "033",
-            "name": "Trovato",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY33"
-        },
-        {
-            "id": "xyp-034",
-            "number": "034",
-            "name": "Métalosse EX",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY34"
-        },
-        {
-            "id": "xyp-035",
-            "number": "035",
-            "name": "M Métalosse EX",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY35"
-        },
-        {
-            "id": "xyp-036",
-            "number": "036",
-            "name": "Arcko",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY36"
-        },
-        {
-            "id": "xyp-037",
-            "number": "037",
-            "name": "Poussifeu",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY37"
-        },
-        {
-            "id": "xyp-038",
-            "number": "038",
-            "name": "Gobou",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY38"
-        },
-        {
-            "id": "xyp-039",
-            "number": "039",
-            "name": "Hyporoi",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY39"
-        },
-        {
-            "id": "xyp-040",
-            "number": "040",
-            "name": "Métamorph",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY40"
-        },
-        {
-            "id": "xyp-041",
-            "number": "041",
-            "name": "Kyogre EX",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY41"
-        },
-        {
-            "id": "xyp-042",
-            "number": "042",
-            "name": "Groudon EX",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY42"
-        },
-        {
-            "id": "xyp-043",
-            "number": "043",
-            "name": "Diancie EX",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY43"
-        },
-        {
-            "id": "xyp-044",
-            "number": "044",
-            "name": "M Diancie EX",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY44"
-        },
-        {
-            "id": "xyp-045",
-            "number": "045",
-            "name": "Gallame EX",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY45"
-        },
-        {
-            "id": "xyp-046",
-            "number": "046",
-            "name": "Altaria",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY46"
-        },
-        {
-            "id": "xyp-047",
-            "number": "047",
-            "name": "Iguolta",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY47"
-        },
-        {
-            "id": "xyp-048",
-            "number": "048",
-            "name": "Mistigrix",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY48"
-        },
-        {
-            "id": "xyp-049",
-            "number": "049",
-            "name": "Regirock",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY49"
-        },
-        {
-            "id": "xyp-050",
-            "number": "050",
-            "name": "Pandarbare",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY50"
-        },
-        {
-            "id": "xyp-051",
-            "number": "051",
-            "name": "Kyogre",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY51"
-        },
-        {
-            "id": "xyp-052",
-            "number": "052",
-            "name": "Groudon",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY52"
-        },
-        {
-            "id": "xyp-053",
-            "number": "053",
-            "name": "Jungko EX",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY53"
-        },
-        {
-            "id": "xyp-054",
-            "number": "054",
-            "name": "Braségali EX",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY54"
-        },
-        {
-            "id": "xyp-055",
-            "number": "055",
-            "name": "Laggron EX",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY55"
-        },
-        {
-            "id": "xyp-056",
-            "number": "056",
-            "name": "Leuphorie",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY56"
-        },
-        {
-            "id": "xyp-057",
-            "number": "057",
-            "name": "Rapasdepic",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY57"
-        },
-        {
-            "id": "xyp-058",
-            "number": "058",
-            "name": "Sepiatroce",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY58"
-        },
-        {
-            "id": "xyp-059",
-            "number": "059",
-            "name": "Drattak",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY59"
-        },
-        {
-            "id": "xyp-060",
-            "number": "060",
-            "name": "Léviator",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY60"
-        },
-        {
-            "id": "xyp-061",
-            "number": "061",
-            "name": "Libégon EX",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY61"
-        },
-        {
-            "id": "xyp-062",
-            "number": "062",
-            "name": "Absol EX",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY62"
-        },
-        {
-            "id": "xyp-063",
-            "number": "063",
-            "name": "M Absol EX",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY63"
-        },
-        {
-            "id": "xyp-064",
-            "number": "064",
-            "name": "Rayquaza",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY64"
-        },
-        {
-            "id": "xyp-065",
-            "number": "065",
-            "name": "Latios",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY65"
-        },
-        {
-            "id": "xyp-066",
-            "number": "066",
-            "name": "Rayquaza EX",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY66"
-        },
-        {
-            "id": "xyp-067",
-            "number": "067",
-            "name": "Jirachi",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY67"
-        },
-        {
-            "id": "xyp-068",
-            "number": "068",
-            "name": "Blindépique",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY68"
-        },
-        {
-            "id": "xyp-069",
-            "number": "069",
-            "name": "Rayquaza EX",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY69"
-        },
-        {
-            "id": "xyp-070",
-            "number": "070",
-            "name": "Rexillius EX",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY70"
-        },
-        {
-            "id": "xyp-071",
-            "number": "071",
-            "name": "Hoopa EX",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY71"
-        },
-        {
-            "id": "xyp-072",
-            "number": "072",
-            "name": "Latios EX",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY72"
-        },
-        {
-            "id": "xyp-073",
-            "number": "073",
-            "name": "Rayquaza EX",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY73"
-        },
-        {
-            "id": "xyp-074",
-            "number": "074",
-            "name": "Reshiram",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY74"
-        },
-        {
-            "id": "xyp-075",
-            "number": "075",
-            "name": "Palkia",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY75"
-        },
-        {
-            "id": "xyp-076",
-            "number": "076",
-            "name": "Zekrom",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY76"
-        },
-        {
-            "id": "xyp-077",
-            "number": "077",
-            "name": "Dialga",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY77"
-        },
-        {
-            "id": "xyp-078",
-            "number": "078",
-            "name": "Latias",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY78"
-        },
-        {
-            "id": "xyp-079",
-            "number": "079",
-            "name": "Latios",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY79"
-        },
-        {
-            "id": "xyp-080",
-            "number": "080",
-            "name": "Kyurem Noir",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY80"
-        },
-        {
-            "id": "xyp-081",
-            "number": "081",
-            "name": "Kyurem Blanc",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY81"
-        },
-        {
-            "id": "xyp-082",
-            "number": "082",
-            "name": "Regigigas",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY82"
-        },
-        {
-            "id": "xyp-083",
-            "number": "083",
-            "name": "Arceus",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY83"
-        },
-        {
-            "id": "xyp-084",
-            "number": "084",
-            "name": "Pikachu EX",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY84"
-        },
-        {
-            "id": "xyp-085",
-            "number": "085",
-            "name": "Hoopa EX",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY85"
-        },
-        {
-            "id": "xyp-086",
-            "number": "086",
-            "name": "M Braségali EX",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY86"
-        },
-        {
-            "id": "xyp-087",
-            "number": "087",
-            "name": "M Laggron EX",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY87"
-        },
-        {
-            "id": "xyp-088",
-            "number": "088",
-            "name": "Marisson",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY88"
-        },
-        {
-            "id": "xyp-089",
-            "number": "089",
-            "name": "Pikachu",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY89"
-        },
-        {
-            "id": "xyp-090",
-            "number": "090",
-            "name": "Hoopa",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY90"
-        },
-        {
-            "id": "xyp-091",
-            "number": "091",
-            "name": "Festival des Champions",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/91"
-        },
-        {
-            "id": "xyp-092",
-            "number": "092",
-            "name": "Ténéfix",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY92"
-        },
-        {
-            "id": "xyp-093",
-            "number": "093",
-            "name": "Celebi",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY93"
-        },
-        {
-            "id": "xyp-095",
-            "number": "095",
-            "name": "Pikachu",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY95"
-        },
-        {
-            "id": "xyp-096",
-            "number": "096",
-            "name": "Noctali",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY96"
-        },
-        {
-            "id": "xyp-097",
-            "number": "097",
-            "name": "Ptéra EX",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY97"
-        },
-        {
-            "id": "xyp-098",
-            "number": "098",
-            "name": "M Ptéra EX",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY98"
-        },
-        {
-            "id": "xyp-099",
-            "number": "099",
-            "name": "Lien Spirituel Ptéra",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY99"
-        },
-        {
-            "id": "xyp-100",
-            "number": "100",
-            "name": "Mewtwo",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY100"
-        },
-        {
-            "id": "xyp-101",
-            "number": "101",
-            "name": "Mewtwo",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY101"
-        },
-        {
-            "id": "xyp-102",
-            "number": "102",
-            "name": "Dragmara EX",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY102"
-        },
-        {
-            "id": "xyp-103",
-            "number": "103",
-            "name": "Mysdibule EX",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY103"
-        },
-        {
-            "id": "xyp-104",
-            "number": "104",
-            "name": "M Mysdibule EX",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY104"
-        },
-        {
-            "id": "xyp-105",
-            "number": "105",
-            "name": "Lien Spirituel Mysdibule",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY105"
-        },
-        {
-            "id": "xyp-106",
-            "number": "106",
-            "name": "Léviator EX",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY106"
-        },
-        {
-            "id": "xyp-107",
-            "number": "107",
-            "name": "Mewtwo EX",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY107"
-        },
-        {
-            "id": "xyp-108",
-            "number": "108",
-            "name": "Mackogneur EX",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY108"
-        },
-        {
-            "id": "xyp-109",
-            "number": "109",
-            "name": "Léviator",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY109"
-        },
-        {
-            "id": "xyp-110",
-            "number": "110",
-            "name": "Mew",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY110"
-        },
-        {
-            "id": "xyp-111",
-            "number": "111",
-            "name": "Celebi",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY111"
-        },
-        {
-            "id": "xyp-112",
-            "number": "112",
-            "name": "Jirachi",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY112"
-        },
-        {
-            "id": "xyp-113",
-            "number": "113",
-            "name": "Manaphy",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY113"
-        },
-        {
-            "id": "xyp-114",
-            "number": "114",
-            "name": "Darkrai",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY114"
-        },
-        {
-            "id": "xyp-115",
-            "number": "115",
-            "name": "Shaymin",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY115"
-        },
-        {
-            "id": "xyp-116",
-            "number": "116",
-            "name": "Arceus",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY116"
-        },
-        {
-            "id": "xyp-117",
-            "number": "117",
-            "name": "Victini",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY117"
-        },
-        {
-            "id": "xyp-118",
-            "number": "118",
-            "name": "Keldeo",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY118"
-        },
-        {
-            "id": "xyp-121",
-            "number": "121",
-            "name": "Dracaufeu EX",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY121"
-        },
-        {
-            "id": "xyp-122",
-            "number": "122",
-            "name": "Tortank EX",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY122"
-        },
-        {
-            "id": "xyp-123",
-            "number": "123",
-            "name": "Florizarre EX",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY123"
-        },
-        {
-            "id": "xyp-124",
-            "number": "124",
-            "name": "Pikachu EX",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY124"
-        },
-        {
-            "id": "xyp-131",
-            "number": "131",
-            "name": "Flamajou",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY131"
-        },
-        {
-            "id": "xyp-133",
-            "number": "133",
-            "name": "Sachanobi EX",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY133"
-        },
-        {
-            "id": "xyp-137",
-            "number": "137",
-            "name": "Prismillon",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY137"
-        },
-        {
-            "id": "xyp-138",
-            "number": "138",
-            "name": "Grenousse",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY138"
-        },
-        {
-            "id": "xyp-139",
-            "number": "139",
-            "name": "Floette",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY139"
-        },
-        {
-            "id": "xyp-140",
-            "number": "140",
-            "name": "Lucario",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY140"
-        },
-        {
-            "id": "xyp-141",
-            "number": "141",
-            "name": "Rayquaza",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY141"
-        },
-        {
-            "id": "xyp-142",
-            "number": "142",
-            "name": "Créfadet",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY142"
-        },
-        {
-            "id": "xyp-143",
-            "number": "143",
-            "name": "Magicarpe",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY143"
-        },
-        {
-            "id": "xyp-144",
-            "number": "144",
-            "name": "Yanmega",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY144"
-        },
-        {
-            "id": "xyp-145",
-            "number": "145",
-            "name": "Volcanion",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY145"
-        },
-        {
-            "id": "xyp-146",
-            "number": "146",
-            "name": "Gamblast",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY146"
-        },
-        {
-            "id": "xyp-147",
-            "number": "147",
-            "name": "Hoopa",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY147"
-        },
-        {
-            "id": "xyp-149",
-            "number": "149",
-            "name": "Xerneas EX",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY149"
-        },
-        {
-            "id": "xyp-150",
-            "number": "150",
-            "name": "Yveltal EX",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY150"
-        },
-        {
-            "id": "xyp-151",
-            "number": "151",
-            "name": "Zygarde EX",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY151"
-        },
-        {
-            "id": "xyp-152",
-            "number": "152",
-            "name": "Zygarde",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY152"
-        },
-        {
-            "id": "xyp-153",
-            "number": "153",
-            "name": "Ho-Oh",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY153"
-        },
-        {
-            "id": "xyp-154",
-            "number": "154",
-            "name": "Ho-Oh TURBO",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY154"
-        },
-        {
-            "id": "xyp-155",
-            "number": "155",
-            "name": "Qulbutoké TURBO",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY155"
-        },
-        {
-            "id": "xyp-156",
-            "number": "156",
+            "id": "xyp-XY156",
+            "number": "XY156",
             "name": "Lugia",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY156"
+            "illustrator": "Hajime Kusajima",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY156",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY107",
+            "number": "XY107",
+            "name": "Mewtwo EX",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY107",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY133",
+            "number": "XY133",
+            "name": "Sachanobi EX",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY133",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY162",
+            "number": "XY162",
+            "name": "Greninja",
+            "illustrator": "Sanosuke Sakuma",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY162",
+            "rarity": "Common"
+        },
+        {
+            "id": "xyp-XY191",
+            "number": "XY191",
+            "name": "Keldeo",
+            "illustrator": "Shin Nagasawa",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY191",
+            "rarity": "Common"
+        },
+        {
+            "id": "xyp-XY200",
+            "number": "XY200",
+            "name": "M Sharpedo-EX",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY200",
+            "rarity": "Common"
+        },
+        {
+            "id": "xyp-XY09",
+            "number": "XY09",
+            "name": "Carchacrok EX",
+            "illustrator": "Ryo Ueda",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY09",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY58",
+            "number": "XY58",
+            "name": "Sepiatroce",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY58",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY48",
+            "number": "XY48",
+            "name": "Mistigrix",
+            "illustrator": "kirisAki",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY48",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY19",
+            "number": "XY19",
+            "name": "Goupelin EX",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY19",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY210",
+            "number": "XY210",
+            "name": "Gym Badge",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY210",
+            "rarity": "Common"
+        },
+        {
+            "id": "xyp-XY181",
+            "number": "XY181",
+            "name": "Crobat BREAK",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY181",
+            "rarity": "Common"
+        },
+        {
+            "id": "xyp-XY172",
+            "number": "XY172",
+            "name": "Salamence Spirit Link",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY172",
+            "rarity": "Common"
+        },
+        {
+            "id": "xyp-XY123",
+            "number": "XY123",
+            "name": "Florizarre EX",
+            "illustrator": "Naoki Saito",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY123",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY117",
+            "number": "XY117",
+            "name": "Victini",
+            "illustrator": "Atsuko Nishida",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY117",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY146",
+            "number": "XY146",
+            "name": "Gamblast",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY146",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY166",
+            "number": "XY166",
+            "name": "M Gengar-EX",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY166",
+            "rarity": "Common"
+        },
+        {
+            "id": "xyp-XY137",
+            "number": "XY137",
+            "name": "Prismillon",
+            "illustrator": "match",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY137",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY204",
+            "number": "XY204",
+            "name": "Gym Badge",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY204",
+            "rarity": "Common"
+        },
+        {
+            "id": "xyp-XY195",
+            "number": "XY195",
+            "name": "Jirachi",
+            "illustrator": "Kagemaru Himeno",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY195",
+            "rarity": "Common"
+        },
+        {
+            "id": "xyp-XY103",
+            "number": "XY103",
+            "name": "Mysdibule EX",
+            "illustrator": "Ayaka Yoshida",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY103",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY152",
+            "number": "XY152",
+            "name": "Zygarde",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY152",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY39",
+            "number": "XY39",
+            "name": "Hyporoi",
+            "illustrator": "hatachu",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY39",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY68",
+            "number": "XY68",
+            "name": "Blindépique",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY68",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY198a",
+            "number": "XY198a",
+            "name": "M Camerupt-EX",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY198a",
+            "rarity": "Common"
+        },
+        {
+            "id": "xyp-XY78",
+            "number": "XY78",
+            "name": "Latias",
+            "illustrator": "Sanosuke Sakuma",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY78",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY29",
+            "number": "XY29",
+            "name": "Dracaufeu EX",
+            "illustrator": "Eske Yoshinob",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY29",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY142",
+            "number": "XY142",
+            "name": "Créfadet",
+            "illustrator": "chibi",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY142",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY113",
+            "number": "XY113",
+            "name": "Manaphy",
+            "illustrator": "Hitoshi Ariga",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY113",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY185",
+            "number": "XY185",
+            "name": "Volcanion",
+            "illustrator": "TOKIYA",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY185",
+            "rarity": "Common"
+        },
+        {
+            "id": "xyp-XY127",
+            "number": "XY127",
+            "name": "Moltres",
+            "illustrator": "OOYAMA",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY127",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY176",
+            "number": "XY176",
+            "name": "Champions Festival",
+            "illustrator": "Naoki Saito",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY176",
+            "rarity": "Common"
+        },
+        {
+            "id": "xyp-XY167",
+            "number": "XY167",
+            "name": "Garchomp-EX",
+            "illustrator": "Ryo Ueda",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY167",
+            "rarity": "Common"
+        },
+        {
+            "id": "xyp-XY136",
+            "number": "XY136",
+            "name": "Noctowl BREAK",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY136",
+            "rarity": "Common"
+        },
+        {
+            "id": "xyp-XY194",
+            "number": "XY194",
+            "name": "Darkrai",
+            "illustrator": "kawayoo",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY194",
+            "rarity": "Common"
+        },
+        {
+            "id": "xyp-XY205",
+            "number": "XY205",
+            "name": "Gym Badge",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY205",
+            "rarity": "Common"
+        },
+        {
+            "id": "xyp-XY200a",
+            "number": "XY200a",
+            "name": "M Sharpedo-EX",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY200a",
+            "rarity": "Common"
+        },
+        {
+            "id": "xyp-XY102",
+            "number": "XY102",
+            "name": "Dragmara EX",
+            "illustrator": "Toyste Beach",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY102",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY153",
+            "number": "XY153",
+            "name": "Ho-Oh",
+            "illustrator": "You Iribi",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY153",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY38",
+            "number": "XY38",
+            "name": "Gobou",
+            "illustrator": "Aya Kusube",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY38",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY69",
+            "number": "XY69",
+            "name": "Rayquaza EX",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY69",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY177a",
+            "number": "XY177a",
+            "name": "Karen",
+            "illustrator": "You Iribi",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY177a",
+            "rarity": "Common"
+        },
+        {
+            "id": "xyp-XY79",
+            "number": "XY79",
+            "name": "Latios",
+            "illustrator": "Naoki Saito",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY79",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY28",
+            "number": "XY28",
+            "name": "Florizarre EX",
+            "illustrator": "Eske Yoshinob",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY28",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY143",
+            "number": "XY143",
+            "name": "Magicarpe",
+            "illustrator": "Saya Tsuruta",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY143",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY112",
+            "number": "XY112",
+            "name": "Jirachi",
+            "illustrator": "Kagemaru Himeno",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY112",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY184",
+            "number": "XY184",
+            "name": "Giratina",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY184",
+            "rarity": "Rare"
+        },
+        {
+            "id": "xyp-XY126",
+            "number": "XY126",
+            "name": "Mew EX",
+            "illustrator": "Eske Yoshinob",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY126",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY177",
+            "number": "XY177",
+            "name": "Karen",
+            "illustrator": "You Iribi",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY177",
+            "rarity": "Common"
+        },
+        {
+            "id": "xyp-XY157",
+            "number": "XY157",
+            "name": "Beedrill EX",
+            "illustrator": "hatachu",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY157",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY106",
+            "number": "XY106",
+            "name": "Léviator EX",
+            "illustrator": "Eske Yoshinob",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY106",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY132",
+            "number": "XY132",
+            "name": "Gastly",
+            "illustrator": "Shigenori Negishi",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY132",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY163",
+            "number": "XY163",
+            "name": "Weezing",
+            "illustrator": "TOKIYA",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY163",
+            "rarity": "Common"
+        },
+        {
+            "id": "xyp-XY201",
+            "number": "XY201",
+            "name": "Sharpedo Spirit Link",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY201",
+            "rarity": "Common"
+        },
+        {
+            "id": "xyp-XY190",
+            "number": "XY190",
+            "name": "Manaphy",
+            "illustrator": "Hitoshi Ariga",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY190",
+            "rarity": "Common"
+        },
+        {
+            "id": "xyp-XY08",
+            "number": "XY08",
+            "name": "Yveltal EX",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY08",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY59",
+            "number": "XY59",
+            "name": "Drattak",
+            "illustrator": "Naoki Saito",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY59",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY49",
+            "number": "XY49",
+            "name": "Regirock",
+            "illustrator": "Kouki Saitou",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY49",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY18",
+            "number": "XY18",
+            "name": "Blindépique EX",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY18",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY180",
+            "number": "XY180",
+            "name": "Arcanine BREAK",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY180",
+            "rarity": "Common"
+        },
+        {
+            "id": "xyp-XY211",
+            "number": "XY211",
+            "name": "Lucario Spirit Link",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY211",
+            "rarity": "Common"
+        },
+        {
+            "id": "xyp-XY173",
+            "number": "XY173",
+            "name": "Volcanion EX",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY173",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY122",
+            "number": "XY122",
+            "name": "Tortank EX",
+            "illustrator": "kawayoo",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY122",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY116",
+            "number": "XY116",
+            "name": "Arceus",
+            "illustrator": "Naoki Saito",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY116",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY147",
+            "number": "XY147",
+            "name": "Hoopa",
+            "illustrator": "Yoshinobu Saito",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY147",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY03",
+            "number": "XY03",
+            "name": "Grenousse",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY03",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY52",
+            "number": "XY52",
+            "name": "Groudon",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY52",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY95",
+            "number": "XY95",
+            "name": "Pikachu",
+            "illustrator": "Kanako Eo",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY95",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY66",
+            "number": "XY66",
+            "name": "Rayquaza EX",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY66",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY37",
+            "number": "XY37",
+            "name": "Poussifeu",
+            "illustrator": "sui",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY37",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY139",
+            "number": "XY139",
+            "name": "Floette",
+            "illustrator": "Midori Harada",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY139",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY168",
+            "number": "XY168",
+            "name": "M Garchomp-EX",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY168",
+            "rarity": "Common"
+        },
+        {
+            "id": "xyp-XY178",
+            "number": "XY178",
+            "name": "Absol",
+            "illustrator": "Hasuno",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY178",
+            "rarity": "Common"
+        },
+        {
+            "id": "xyp-XY129",
+            "number": "XY129",
+            "name": "Zygarde",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY129",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY27",
+            "number": "XY27",
+            "name": "Festival des Champions",
+            "illustrator": "Naoki Saito",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY27",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY76",
+            "number": "XY76",
+            "name": "Zekrom",
+            "illustrator": "Naoki Saito",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY76",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY85",
+            "number": "XY85",
+            "name": "Hoopa EX",
+            "illustrator": "Hitoshi Ariga",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY85",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY42",
+            "number": "XY42",
+            "name": "Groudon EX",
+            "illustrator": "Eske Yoshinob",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY42",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY13",
+            "number": "XY13",
+            "name": "Mackogneur",
+            "illustrator": "PLANETA",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY13",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY91",
+            "number": "XY91",
+            "name": "Festival des Champions",
+            "illustrator": "Naoki Saito",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY33",
+            "number": "XY33",
+            "name": "Trovato",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY33",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY62",
+            "number": "XY62",
+            "name": "Absol EX",
+            "illustrator": "PLANETA",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY62",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY56",
+            "number": "XY56",
+            "name": "Leuphorie",
+            "illustrator": "Akira Komayama",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY56",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY07",
+            "number": "XY07",
+            "name": "Xerneas EX",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY07",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY109",
+            "number": "XY109",
+            "name": "Léviator",
+            "illustrator": "Hajime Kusajima",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY109",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY158",
+            "number": "XY158",
+            "name": "M Beedrill-EX",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY158",
+            "rarity": "Common"
+        },
+        {
+            "id": "xyp-XY148",
+            "number": "XY148",
+            "name": "Shaymin EX",
+            "illustrator": "Kanako Eo",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY148",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY119",
+            "number": "XY119",
+            "name": "Genesect",
+            "illustrator": "PLANETA",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY119",
+            "rarity": "Common"
+        },
+        {
+            "id": "xyp-XY17",
+            "number": "XY17",
+            "name": "Dracaufeu EX",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY17",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY46",
+            "number": "XY46",
+            "name": "Altaria",
+            "illustrator": "Naoki Saito",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY46",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY72",
+            "number": "XY72",
+            "name": "Latios EX",
+            "illustrator": "Ayaka Yoshida",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY72",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY23",
+            "number": "XY23",
+            "name": "Tengalice",
+            "illustrator": "Sanosuke Sakuma",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY23",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY81",
+            "number": "XY81",
+            "name": "Kyurem Blanc",
+            "illustrator": "Shin Nagasawa",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY81",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY90",
+            "number": "XY90",
+            "name": "Hoopa",
+            "illustrator": "Masakazu Fukuda",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY90",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY32",
+            "number": "XY32",
+            "name": "Yveltal",
+            "illustrator": "Masakazu Fukuda",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY32",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY63",
+            "number": "XY63",
+            "name": "M Absol EX",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY63",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY57",
+            "number": "XY57",
+            "name": "Rapasdepic",
+            "illustrator": "match",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY57",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY06",
+            "number": "XY06",
+            "name": "Xerneas",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY06",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY108",
+            "number": "XY108",
+            "name": "Mackogneur EX",
+            "illustrator": "Eske Yoshinob",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY108",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY159",
+            "number": "XY159",
+            "name": "Beedrill Spirit Link",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY159",
+            "rarity": "Common"
+        },
+        {
+            "id": "xyp-XY149",
+            "number": "XY149",
+            "name": "Xerneas EX",
+            "illustrator": "Eske Yoshinob",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY149",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY118",
+            "number": "XY118",
+            "name": "Keldeo",
+            "illustrator": "Shin Nagasawa",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY118",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY16",
+            "number": "XY16",
+            "name": "Chevroum",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY16",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY47",
+            "number": "XY47",
+            "name": "Iguolta",
+            "illustrator": "kawayoo",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY47",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY73",
+            "number": "XY73",
+            "name": "Rayquaza EX",
+            "illustrator": "PLANETA",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY73",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY22",
+            "number": "XY22",
+            "name": "Darkrai",
+            "illustrator": "Sanosuke Sakuma",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY22",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY80",
+            "number": "XY80",
+            "name": "Kyurem Noir",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY80",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY02",
+            "number": "XY02",
+            "name": "Feunnec",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY02",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY53",
+            "number": "XY53",
+            "name": "Jungko EX",
+            "illustrator": "Eske Yoshinob",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY53",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY94",
+            "number": "XY94",
+            "name": "Trevenant",
+            "illustrator": "Midori Harada",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY67",
+            "number": "XY67",
+            "name": "Jirachi",
+            "illustrator": "sui",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY67",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY36",
+            "number": "XY36",
+            "name": "Arcko",
+            "illustrator": "Akira Komayama",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY36",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY138",
+            "number": "XY138",
+            "name": "Grenousse",
+            "illustrator": "Sanosuke Sakuma",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY138",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY169",
+            "number": "XY169",
+            "name": "Garchomp Spirit Link",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY169",
+            "rarity": "Common"
+        },
+        {
+            "id": "xyp-XY179",
+            "number": "XY179",
+            "name": "Snorlax",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY179",
+            "rarity": "Common"
+        },
+        {
+            "id": "xyp-XY128",
+            "number": "XY128",
+            "name": "White Kyurem",
+            "illustrator": "kawayoo",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY128",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY67a",
+            "number": "XY67a",
+            "name": "Jirachi",
+            "illustrator": "sui",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY67a",
+            "rarity": "Common"
+        },
+        {
+            "id": "xyp-XY26",
+            "number": "XY26",
+            "name": "Némélios",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY26",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY77",
+            "number": "XY77",
+            "name": "Dialga",
+            "illustrator": "TOKIYA",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY77",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY84",
+            "number": "XY84",
+            "name": "Pikachu EX",
+            "illustrator": "Hitoshi Ariga",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY84",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY43",
+            "number": "XY43",
+            "name": "Diancie EX",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY43",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY12",
+            "number": "XY12",
+            "name": "Monorpale",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY12",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY60",
+            "number": "XY60",
+            "name": "Léviator",
+            "illustrator": "TOKIYA",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY60",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY31",
+            "number": "XY31",
+            "name": "Xerneas",
+            "illustrator": "Masakazu Fukuda",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY31",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY93",
+            "number": "XY93",
+            "name": "Celebi",
+            "illustrator": "Shin Nagasawa",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY93",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY05",
+            "number": "XY05",
+            "name": "Yveltal",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY05",
+            "rarity": "Rare"
+        },
+        {
+            "id": "xyp-XY54",
+            "number": "XY54",
+            "name": "Braségali EX",
+            "illustrator": "Eske Yoshinob",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY54",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY44",
+            "number": "XY44",
+            "name": "M Diancie EX",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY44",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY15",
+            "number": "XY15",
+            "name": "Cupcanaille",
+            "illustrator": "Kagemaru Himeno",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY15",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY83",
+            "number": "XY83",
+            "name": "Arceus",
+            "illustrator": "Shin Nagasawa",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY83",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY21",
+            "number": "XY21",
+            "name": "Archéodong",
+            "illustrator": "match",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY21",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY70",
+            "number": "XY70",
+            "name": "Rexillius EX",
+            "illustrator": "Eske Yoshinob",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY70",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY50",
+            "number": "XY50",
+            "name": "Pandarbare",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY50",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY01",
+            "number": "XY01",
+            "name": "Marisson",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY01",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY35",
+            "number": "XY35",
+            "name": "M Métalosse EX",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY35",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY64",
+            "number": "XY64",
+            "name": "Rayquaza",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY64",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY97",
+            "number": "XY97",
+            "name": "Ptéra EX",
+            "illustrator": "Ayaka Yoshida",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY97",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY208",
+            "number": "XY208",
+            "name": "Gym Badge",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY208",
+            "rarity": "Common"
+        },
+        {
+            "id": "xyp-XY199",
+            "number": "XY199",
+            "name": "Camerupt Spirit Link",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY199",
+            "rarity": "Common"
+        },
+        {
+            "id": "xyp-XY189",
+            "number": "XY189",
+            "name": "Victini",
+            "illustrator": "Atsuko Nishida",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY189",
+            "rarity": "Common"
+        },
+        {
+            "id": "xyp-XY87",
+            "number": "XY87",
+            "name": "M Laggron EX",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY87",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY74",
+            "number": "XY74",
+            "name": "Reshiram",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY74",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY25",
+            "number": "XY25",
+            "name": "Crocorible EX",
+            "illustrator": "PLANETA",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY25",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY11",
+            "number": "XY11",
+            "name": "Cabriolaine",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY11",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY40",
+            "number": "XY40",
+            "name": "Métamorph",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY40",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY51",
+            "number": "XY51",
+            "name": "Kyogre",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY51",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY34",
+            "number": "XY34",
+            "name": "Métalosse EX",
+            "illustrator": "PLANETA",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY34",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY65",
+            "number": "XY65",
+            "name": "Latios",
+            "illustrator": "Masakazu Fukuda",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY65",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY96",
+            "number": "XY96",
+            "name": "Noctali",
+            "illustrator": "kawayoo",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY96",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY198",
+            "number": "XY198",
+            "name": "M Camerupt-EX",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY198",
+            "rarity": "Common"
+        },
+        {
+            "id": "xyp-XY209",
+            "number": "XY209",
+            "name": "Gym Badge",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY209",
+            "rarity": "Common"
+        },
+        {
+            "id": "xyp-XY188",
+            "number": "XY188",
+            "name": "Shaymin",
+            "illustrator": "You Iribi",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY188",
+            "rarity": "Common"
+        },
+        {
+            "id": "xyp-XY86",
+            "number": "XY86",
+            "name": "M Braségali EX",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY86",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY75",
+            "number": "XY75",
+            "name": "Palkia",
+            "illustrator": "Naoki Saito",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY75",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY24",
+            "number": "XY24",
+            "name": "Amphinobi",
+            "illustrator": "Akira Komayama",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY24",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY10",
+            "number": "XY10",
+            "name": "Kravarech",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY10",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY41",
+            "number": "XY41",
+            "name": "Kyogre EX",
+            "illustrator": "Eske Yoshinob",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY41",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY61",
+            "number": "XY61",
+            "name": "Libégon EX",
+            "illustrator": "Toyste Beach",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY61",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY30",
+            "number": "XY30",
+            "name": "Tortank EX",
+            "illustrator": "Eske Yoshinob",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY30",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY92",
+            "number": "XY92",
+            "name": "Ténéfix",
+            "illustrator": "match",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY92",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY04",
+            "number": "XY04",
+            "name": "Nymphali",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY04",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY55",
+            "number": "XY55",
+            "name": "Laggron EX",
+            "illustrator": "Eske Yoshinob",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY55",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY45",
+            "number": "XY45",
+            "name": "Gallame EX",
+            "illustrator": "PLANETA",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY45",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY14",
+            "number": "XY14",
+            "name": "Desséliande",
+            "illustrator": "Kouki Saitou",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY14",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY82",
+            "number": "XY82",
+            "name": "Regigigas",
+            "illustrator": "Shin Nagasawa",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY82",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY20",
+            "number": "XY20",
+            "name": "Amphinobi EX",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY20",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY71",
+            "number": "XY71",
+            "name": "Hoopa EX",
+            "illustrator": "Eske Yoshinob",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY71",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY206",
+            "number": "XY206",
+            "name": "Gym Badge",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY206",
+            "rarity": "Common"
+        },
+        {
+            "id": "xyp-XY197",
+            "number": "XY197",
+            "name": "Arceus",
+            "illustrator": "Naoki Saito",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY197",
+            "rarity": "Common"
+        },
+        {
+            "id": "xyp-XY135",
+            "number": "XY135",
+            "name": "Beheeyem BREAK",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY135",
+            "rarity": "Common"
+        },
+        {
+            "id": "xyp-XY164",
+            "number": "XY164",
+            "name": "Volcanion",
+            "illustrator": "TOKIYA",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY164",
+            "rarity": "Common"
+        },
+        {
+            "id": "xyp-XY150",
+            "number": "XY150",
+            "name": "Yveltal EX",
+            "illustrator": "Eske Yoshinob",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY150",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY101",
+            "number": "XY101",
+            "name": "Mewtwo",
+            "illustrator": "match",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY101",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY99",
+            "number": "XY99",
+            "name": "Lien Spirituel Ptéra",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY99",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY150a",
+            "number": "XY150a",
+            "name": "Yveltal-EX",
+            "illustrator": "Eske Yoshinob",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY150a",
+            "rarity": "Rare"
+        },
+        {
+            "id": "xyp-XY89",
+            "number": "XY89",
+            "name": "Pikachu",
+            "illustrator": "Masakazu Fukuda",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY89",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY111",
+            "number": "XY111",
+            "name": "Celebi",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY111",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY140",
+            "number": "XY140",
+            "name": "Lucario",
+            "illustrator": "Naoki Saito",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY140",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY174",
+            "number": "XY174",
+            "name": "Pikachu-EX",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY174",
+            "rarity": "Common"
+        },
+        {
+            "id": "xyp-XY125",
+            "number": "XY125",
+            "name": "Mewtwo EX",
+            "illustrator": "Eske Yoshinob",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY125",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY187",
+            "number": "XY187",
+            "name": "Celebi",
+            "illustrator": "Mitsuhiro Arita",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY187",
+            "rarity": "Common"
+        },
+        {
+            "id": "xyp-XY105",
+            "number": "XY105",
+            "name": "Lien Spirituel Mysdibule",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY105",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY154",
+            "number": "XY154",
+            "name": "Ho-Oh TURBO",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY154",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY193",
+            "number": "XY193",
+            "name": "Meloetta",
+            "illustrator": "Megumi Mizutani",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY193",
+            "rarity": "Common"
+        },
+        {
+            "id": "xyp-XY202",
+            "number": "XY202",
+            "name": "Pikachu",
+            "illustrator": "Ken Sugimori",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY202",
+            "rarity": "Common"
+        },
+        {
+            "id": "xyp-XY160",
+            "number": "XY160",
+            "name": "Black Kyurem",
+            "illustrator": "kawayoo",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY160",
+            "rarity": "Rare"
+        },
+        {
+            "id": "xyp-XY131",
+            "number": "XY131",
+            "name": "Flamajou",
+            "illustrator": "sui",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY131",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY121",
+            "number": "XY121",
+            "name": "Dracaufeu EX",
+            "illustrator": "Kouki Saitou",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY121",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY170",
+            "number": "XY170",
+            "name": "Salamence EX",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY170",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY183",
+            "number": "XY183",
+            "name": "Mewtwo-EX",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY183",
+            "rarity": "Rare"
+        },
+        {
+            "id": "xyp-XY144",
+            "number": "XY144",
+            "name": "Yanmega",
+            "illustrator": "Midori Harada",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY144",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY115",
+            "number": "XY115",
+            "name": "Shaymin",
+            "illustrator": "You Iribi",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY115",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY104",
+            "number": "XY104",
+            "name": "M Mysdibule EX",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY104",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY155",
+            "number": "XY155",
+            "name": "Qulbutoké TURBO",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY155",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY203",
+            "number": "XY203",
+            "name": "Gym Badge",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY203",
+            "rarity": "Common"
+        },
+        {
+            "id": "xyp-XY192",
+            "number": "XY192",
+            "name": "Mew",
+            "illustrator": "Kouki Saitou",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY192",
+            "rarity": "Common"
+        },
+        {
+            "id": "xyp-XY161",
+            "number": "XY161",
+            "name": "Braixen",
+            "illustrator": "kirisAki",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY161",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "xyp-XY130",
+            "number": "XY130",
+            "name": "Tyranitar",
+            "illustrator": "Satoshi Shirai",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY130",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY120",
+            "number": "XY120",
+            "name": "Meloetta",
+            "illustrator": "Megumi Mizutani",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY120",
+            "rarity": "Common"
+        },
+        {
+            "id": "xyp-XY171",
+            "number": "XY171",
+            "name": "M Salamence-EX",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY171",
+            "rarity": "Common"
+        },
+        {
+            "id": "xyp-XY182",
+            "number": "XY182",
+            "name": "Mandibuzz BREAK",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY182",
+            "rarity": "Common"
+        },
+        {
+            "id": "xyp-XY145",
+            "number": "XY145",
+            "name": "Volcanion",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY145",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY114",
+            "number": "XY114",
+            "name": "Darkrai",
+            "illustrator": "kawayoo",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY114",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY196",
+            "number": "XY196",
+            "name": "Genesect",
+            "illustrator": "PLANETA",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY196",
+            "rarity": "Common"
+        },
+        {
+            "id": "xyp-XY207",
+            "number": "XY207",
+            "name": "Gym Badge",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY207",
+            "rarity": "Common"
+        },
+        {
+            "id": "xyp-XY134",
+            "number": "XY134",
+            "name": "Empoleon BREAK",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY134",
+            "rarity": "Common"
+        },
+        {
+            "id": "xyp-XY165",
+            "number": "XY165",
+            "name": "Magearna",
+            "illustrator": "Megumi Mizutani",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY165",
+            "rarity": "Common"
+        },
+        {
+            "id": "xyp-XY151",
+            "number": "XY151",
+            "name": "Zygarde EX",
+            "illustrator": "Eske Yoshinob",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY151",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY100",
+            "number": "XY100",
+            "name": "Mewtwo",
+            "illustrator": "match",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY100",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY98",
+            "number": "XY98",
+            "name": "M Ptéra EX",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY98",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY88",
+            "number": "XY88",
+            "name": "Marisson",
+            "illustrator": "Atsuko Nishida",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY88",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY110",
+            "number": "XY110",
+            "name": "Mew",
+            "illustrator": "Kouki Saitou",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY110",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY141",
+            "number": "XY141",
+            "name": "Rayquaza",
+            "illustrator": "Masakazu Fukuda",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY141",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY175",
+            "number": "XY175",
+            "name": "Magearna-EX",
+            "illustrator": "5ban Graphics",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY175",
+            "rarity": "Rare"
+        },
+        {
+            "id": "xyp-XY124",
+            "number": "XY124",
+            "name": "Pikachu EX",
+            "illustrator": "Megumi Mizutani",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY124",
+            "rarity": "None"
+        },
+        {
+            "id": "xyp-XY186",
+            "number": "XY186",
+            "name": "Magearna",
+            "illustrator": "Megumi Mizutani",
+            "imageBase": "https://assets.tcgdex.net/fr/xy/xyp/XY186",
+            "rarity": "Common"
         }
     ]
 }

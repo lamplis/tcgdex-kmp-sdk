@@ -3,6 +3,1366 @@
     "serieId": "hgss",
     "name": "Unleashed",
     "releaseDate": "2010-05-12",
+    "cardCount": 95,
     "logo": "https://assets.tcgdex.net/zh/hgss/hgss2/logo",
-    "symbol": "https://assets.tcgdex.net/zh/hgss/hgss2/symbol"
+    "symbol": "https://assets.tcgdex.net/zh/hgss/hgss2/symbol",
+    "cards": [
+        {
+            "id": "hgss2-1",
+            "number": "1",
+            "name": "Jirachi",
+            "illustrator": "Wataru Kawahara",
+            "rarity": "Rare Holo",
+            "variants": [
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-2",
+            "number": "2",
+            "name": "Magmortar",
+            "illustrator": "Hajime Kusajima",
+            "rarity": "Rare Holo",
+            "variants": [
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-3",
+            "number": "3",
+            "name": "Manaphy",
+            "illustrator": "Masakazu Fukuda",
+            "rarity": "Rare Holo",
+            "variants": [
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-4",
+            "number": "4",
+            "name": "Metagross",
+            "illustrator": "Wataru Kawahara",
+            "rarity": "Rare Holo",
+            "variants": [
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-5",
+            "number": "5",
+            "name": "Mismagius",
+            "illustrator": "Hideaki Hakozaki",
+            "rarity": "Rare Holo",
+            "variants": [
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-6",
+            "number": "6",
+            "name": "Octillery",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Rare Holo",
+            "variants": [
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-7",
+            "number": "7",
+            "name": "Politoed",
+            "illustrator": "Naoyo Kimura",
+            "rarity": "Rare Holo",
+            "variants": [
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-8",
+            "number": "8",
+            "name": "Shaymin",
+            "illustrator": "Hideaki Hakozaki",
+            "rarity": "Rare Holo",
+            "variants": [
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-9",
+            "number": "9",
+            "name": "Sudowoodo",
+            "illustrator": "Sachiko Adachi",
+            "rarity": "Rare Holo",
+            "variants": [
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-10",
+            "number": "10",
+            "name": "Torterra",
+            "illustrator": "match",
+            "rarity": "Rare Holo"
+        },
+        {
+            "id": "hgss2-11",
+            "number": "11",
+            "name": "Xatu",
+            "illustrator": "sui",
+            "rarity": "Rare Holo",
+            "variants": [
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-12",
+            "number": "12",
+            "name": "Beedrill",
+            "illustrator": "Kyoko Umemoto",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-13",
+            "number": "13",
+            "name": "Blastoise",
+            "illustrator": "Masakazu Fukuda",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-14",
+            "number": "14",
+            "name": "Crobat",
+            "illustrator": "kawayoo",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-15",
+            "number": "15",
+            "name": "Fearow",
+            "illustrator": "Kagemaru Himeno",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-16",
+            "number": "16",
+            "name": "Floatzel",
+            "illustrator": "Masakazu Fukuda",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-17",
+            "number": "17",
+            "name": "Kingdra",
+            "illustrator": "Shin Nagasawa",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-18",
+            "number": "18",
+            "name": "Lanturn",
+            "illustrator": "sui",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-19",
+            "number": "19",
+            "name": "Lucario",
+            "illustrator": "Kouki Saitou",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-20",
+            "number": "20",
+            "name": "Ninetales",
+            "illustrator": "Hajime Kusajima",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-21",
+            "number": "21",
+            "name": "Poliwrath",
+            "illustrator": "Naoyo Kimura",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-22",
+            "number": "22",
+            "name": "Primeape",
+            "illustrator": "Sachiko Adachi",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-23",
+            "number": "23",
+            "name": "Roserade",
+            "illustrator": "Takashi Yamaguchi",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-24",
+            "number": "24",
+            "name": "Steelix",
+            "illustrator": "Masakazu Fukuda",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-25",
+            "number": "25",
+            "name": "Torkoal",
+            "illustrator": "Hideaki Hakozaki",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-26",
+            "number": "26",
+            "name": "Tyranitar",
+            "illustrator": "Kouki Saitou",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-27",
+            "number": "27",
+            "name": "Ursaring",
+            "illustrator": "Kouki Saitou",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-28",
+            "number": "28",
+            "name": "Cherrim",
+            "illustrator": "match",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-29",
+            "number": "29",
+            "name": "Dunsparce",
+            "illustrator": "Takashi Yamaguchi",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-30",
+            "number": "30",
+            "name": "Golbat",
+            "illustrator": "kawayoo",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-31",
+            "number": "31",
+            "name": "Grotle",
+            "illustrator": "match",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-32",
+            "number": "32",
+            "name": "Kakuna",
+            "illustrator": "Kyoko Umemoto",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-33",
+            "number": "33",
+            "name": "Metang",
+            "illustrator": "Wataru Kawahara",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-34",
+            "number": "34",
+            "name": "Minun",
+            "illustrator": "Kouki Saitou",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-35",
+            "number": "35",
+            "name": "Numel",
+            "illustrator": "Hajime Kusajima",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-36",
+            "number": "36",
+            "name": "Plusle",
+            "illustrator": "Kouki Saitou",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-37",
+            "number": "37",
+            "name": "Poliwhirl",
+            "illustrator": "Naoyo Kimura",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-38",
+            "number": "38",
+            "name": "Pupitar",
+            "illustrator": "Sumiyoshi Kizuki",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-39",
+            "number": "39",
+            "name": "Pupitar",
+            "illustrator": "Kouki Saitou",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-40",
+            "number": "40",
+            "name": "Seadra",
+            "illustrator": "Shin Nagasawa",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-41",
+            "number": "41",
+            "name": "Tauros",
+            "illustrator": "Tomokazu Komiya",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-42",
+            "number": "42",
+            "name": "Wartortle",
+            "illustrator": "Masakazu Fukuda",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-43",
+            "number": "43",
+            "name": "Aipom",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-44",
+            "number": "44",
+            "name": "Beldum",
+            "illustrator": "Wataru Kawahara",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-45",
+            "number": "45",
+            "name": "Buizel",
+            "illustrator": "Masakazu Fukuda",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-46",
+            "number": "46",
+            "name": "Carnivine",
+            "illustrator": "Wataru Kawahara",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-47",
+            "number": "47",
+            "name": "Cherubi",
+            "illustrator": "match",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-48",
+            "number": "48",
+            "name": "Chinchou",
+            "illustrator": "sui",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-49",
+            "number": "49",
+            "name": "Horsea",
+            "illustrator": "Shin Nagasawa",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-50",
+            "number": "50",
+            "name": "Larvitar",
+            "illustrator": "Sumiyoshi Kizuki",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-51",
+            "number": "51",
+            "name": "Larvitar",
+            "illustrator": "Kouki Saitou",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-52",
+            "number": "52",
+            "name": "Magmar",
+            "illustrator": "Hajime Kusajima",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-53",
+            "number": "53",
+            "name": "Mankey",
+            "illustrator": "Sachiko Adachi",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-54",
+            "number": "54",
+            "name": "Misdreavus",
+            "illustrator": "Hideaki Hakozaki",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-55",
+            "number": "55",
+            "name": "Natu",
+            "illustrator": "sui",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-56",
+            "number": "56",
+            "name": "Onix",
+            "illustrator": "MAHOU",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-57",
+            "number": "57",
+            "name": "Onix",
+            "illustrator": "Masakazu Fukuda",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-58",
+            "number": "58",
+            "name": "Poliwag",
+            "illustrator": "Naoyo Kimura",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-59",
+            "number": "59",
+            "name": "Remoraid",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-60",
+            "number": "60",
+            "name": "Riolu",
+            "illustrator": "Kouki Saitou",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-61",
+            "number": "61",
+            "name": "Roselia",
+            "illustrator": "Takashi Yamaguchi",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-62",
+            "number": "62",
+            "name": "Spearow",
+            "illustrator": "Kagemaru Himeno",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-63",
+            "number": "63",
+            "name": "Squirtle",
+            "illustrator": "Masakazu Fukuda",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-64",
+            "number": "64",
+            "name": "Stantler",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-65",
+            "number": "65",
+            "name": "Teddiursa",
+            "illustrator": "Kouki Saitou",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-66",
+            "number": "66",
+            "name": "Tropius",
+            "illustrator": "match",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-67",
+            "number": "67",
+            "name": "Turtwig",
+            "illustrator": "match",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-68",
+            "number": "68",
+            "name": "Vulpix",
+            "illustrator": "Hajime Kusajima",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-69",
+            "number": "69",
+            "name": "Weedle",
+            "illustrator": "Kyoko Umemoto",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-70",
+            "number": "70",
+            "name": "Zubat",
+            "illustrator": "kawayoo",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-71",
+            "number": "71",
+            "name": "Cheerleader’s Cheer",
+            "illustrator": "Kouki Saitou",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-72",
+            "number": "72",
+            "name": "Dual Ball",
+            "illustrator": "Takashi Yamaguchi",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-73",
+            "number": "73",
+            "name": "Emcee’s Chatter",
+            "illustrator": "Kouki Saitou",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-74",
+            "number": "74",
+            "name": "Energy Returner",
+            "illustrator": "Wataru Kawahara",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-75",
+            "number": "75",
+            "name": "Engineer’s Adjustments",
+            "illustrator": "Kouki Saitou",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-76",
+            "number": "76",
+            "name": "Good Rod",
+            "illustrator": "Wataru Kawahara",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-77",
+            "number": "77",
+            "name": "Interviewer’s Questions",
+            "illustrator": "Kouki Saitou",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-78",
+            "number": "78",
+            "name": "Judge",
+            "illustrator": "Kouki Saitou",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-79",
+            "number": "79",
+            "name": "Life Herb",
+            "illustrator": "Hideaki Hakozaki",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-80",
+            "number": "80",
+            "name": "PlusPower",
+            "illustrator": "Takashi Yamaguchi",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-81",
+            "number": "81",
+            "name": "Pokémon Circulator",
+            "illustrator": "Hideaki Hakozaki",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-82",
+            "number": "82",
+            "name": "Rare Candy",
+            "illustrator": "Noriko Hotta",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-83",
+            "number": "83",
+            "name": "Super Scoop Up",
+            "illustrator": "Wataru Kawahara",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-84",
+            "number": "84",
+            "name": "Crobat",
+            "illustrator": "Hideaki Hakozaki",
+            "rarity": "Rare PRIME",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-85",
+            "number": "85",
+            "name": "Kingdra",
+            "illustrator": "Hideaki Hakozaki",
+            "rarity": "Rare PRIME",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-86",
+            "number": "86",
+            "name": "Lanturn",
+            "illustrator": "Hideaki Hakozaki",
+            "rarity": "Rare PRIME",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-87",
+            "number": "87",
+            "name": "Steelix",
+            "illustrator": "Wataru Kawahara",
+            "rarity": "Rare PRIME",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-88",
+            "number": "88",
+            "name": "Tyranitar",
+            "illustrator": "Wataru Kawahara",
+            "rarity": "Rare PRIME",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-89",
+            "number": "89",
+            "name": "Ursaring",
+            "illustrator": "Wataru Kawahara",
+            "rarity": "Rare PRIME",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-90",
+            "number": "90",
+            "name": "Entei & Raikou LEGEND",
+            "illustrator": "Shinji Higuchi + Sachiko Eba 樋口 真嗣 + 江場 左知子",
+            "rarity": "LEGEND",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-91",
+            "number": "91",
+            "name": "Entei & Raikou LEGEND",
+            "illustrator": "Shinji Higuchi + Sachiko Eba",
+            "rarity": "LEGEND",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-92",
+            "number": "92",
+            "name": "Raikou & Suicune LEGEND",
+            "illustrator": "Shinji Higuchi + Noriko Takaya",
+            "rarity": "LEGEND",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-93",
+            "number": "93",
+            "name": "Raikou & Suicune LEGEND",
+            "illustrator": "Shinji Higuchi + Noriko Takaya",
+            "rarity": "LEGEND",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-94",
+            "number": "94",
+            "name": "Suicune & Entei LEGEND",
+            "illustrator": "Shinji Higuchi + Sachiko Eba",
+            "rarity": "LEGEND",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-95",
+            "number": "95",
+            "name": "Suicune & Entei LEGEND",
+            "illustrator": "Shinji Higuchi + Sachiko Eba",
+            "rarity": "LEGEND",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "hgss2-TWO",
+            "number": "TWO",
+            "name": "Alph Lithograph",
+            "illustrator": "Milky Isobe",
+            "rarity": "Ultra Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        }
+    ]
 }

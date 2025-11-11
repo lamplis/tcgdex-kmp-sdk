@@ -12,119 +12,198 @@
             "number": "1",
             "name": "Chimecho δ",
             "illustrator": "Masakazu Fukuda",
-            "imageBase": "https://assets.tcgdex.net/en/pop/pop4/1"
+            "imageBase": "https://assets.tcgdex.net/en/pop/pop4/1",
+            "rarity": "Rare"
         },
         {
             "id": "pop4-2",
             "number": "2",
             "name": "Deoxys δ",
             "illustrator": "Kouki Saitou",
-            "imageBase": "https://assets.tcgdex.net/en/pop/pop4/2"
+            "imageBase": "https://assets.tcgdex.net/en/pop/pop4/2",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "pop4-3",
             "number": "3",
             "name": "Flygon",
             "illustrator": "Hisao Nakamura",
-            "imageBase": "https://assets.tcgdex.net/en/pop/pop4/3"
+            "imageBase": "https://assets.tcgdex.net/en/pop/pop4/3",
+            "rarity": "Rare"
         },
         {
             "id": "pop4-4",
             "number": "4",
             "name": "Mew",
             "illustrator": "Nakaoka",
-            "imageBase": "https://assets.tcgdex.net/en/pop/pop4/4"
+            "imageBase": "https://assets.tcgdex.net/en/pop/pop4/4",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "pop4-5",
             "number": "5",
             "name": "Sceptile",
             "illustrator": "Atsuko Nishida",
-            "imageBase": "https://assets.tcgdex.net/en/pop/pop4/5"
+            "imageBase": "https://assets.tcgdex.net/en/pop/pop4/5",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "pop4-6",
             "number": "6",
             "name": "Combusken",
             "illustrator": "Mitsuhiro Arita",
-            "imageBase": "https://assets.tcgdex.net/en/pop/pop4/6"
+            "imageBase": "https://assets.tcgdex.net/en/pop/pop4/6",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "pop4-7",
             "number": "7",
             "name": "Grovyle",
             "illustrator": "Mitsuhiro Arita",
-            "imageBase": "https://assets.tcgdex.net/en/pop/pop4/7"
+            "imageBase": "https://assets.tcgdex.net/en/pop/pop4/7",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "pop4-8",
             "number": "8",
             "name": "Heal Energy",
             "illustrator": "Takumi Akabane",
-            "imageBase": "https://assets.tcgdex.net/en/pop/pop4/8"
+            "imageBase": "https://assets.tcgdex.net/en/pop/pop4/8",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "pop4-9",
             "number": "9",
             "name": "Pokémon Fan Club",
             "illustrator": "Ken Sugimori",
-            "imageBase": "https://assets.tcgdex.net/en/pop/pop4/9"
+            "imageBase": "https://assets.tcgdex.net/en/pop/pop4/9",
+            "rarity": "Uncommon"
         },
         {
             "id": "pop4-10",
             "number": "10",
             "name": "Scramble Energy",
             "illustrator": "Takumi Akabane",
-            "imageBase": "https://assets.tcgdex.net/en/pop/pop4/10"
+            "imageBase": "https://assets.tcgdex.net/en/pop/pop4/10",
+            "rarity": "Uncommon"
         },
         {
             "id": "pop4-11",
             "number": "11",
             "name": "Mudkip",
             "illustrator": "Masakazu Fukuda",
-            "imageBase": "https://assets.tcgdex.net/en/pop/pop4/11"
+            "imageBase": "https://assets.tcgdex.net/en/pop/pop4/11",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "pop4-12",
             "number": "12",
             "name": "Pidgey",
             "illustrator": "Hisao Nakamura",
-            "imageBase": "https://assets.tcgdex.net/en/pop/pop4/12"
+            "imageBase": "https://assets.tcgdex.net/en/pop/pop4/12",
+            "rarity": "Common"
         },
         {
             "id": "pop4-13",
             "number": "13",
             "name": "Pikachu",
             "illustrator": "Kouki Saitou",
-            "imageBase": "https://assets.tcgdex.net/en/pop/pop4/13"
+            "imageBase": "https://assets.tcgdex.net/en/pop/pop4/13",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "pop4-14",
             "number": "14",
             "name": "Squirtle",
             "illustrator": "Atsuko Nishida",
-            "imageBase": "https://assets.tcgdex.net/en/pop/pop4/14"
+            "imageBase": "https://assets.tcgdex.net/en/pop/pop4/14",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "pop4-15",
             "number": "15",
             "name": "Treecko δ",
             "illustrator": "Masakazu Fukuda",
-            "imageBase": "https://assets.tcgdex.net/en/pop/pop4/15"
+            "imageBase": "https://assets.tcgdex.net/en/pop/pop4/15",
+            "rarity": "Common"
         },
         {
             "id": "pop4-16",
             "number": "16",
             "name": "Wobbuffet",
             "illustrator": "Kagemaru Himeno",
-            "imageBase": "https://assets.tcgdex.net/en/pop/pop4/16"
+            "imageBase": "https://assets.tcgdex.net/en/pop/pop4/16",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "pop4-17",
             "number": "17",
             "name": "Deoxys ex",
             "illustrator": "Hiromichi Sugiyama",
-            "imageBase": "https://assets.tcgdex.net/en/pop/pop4/17"
+            "imageBase": "https://assets.tcgdex.net/en/pop/pop4/17",
+            "rarity": "Ultra Rare"
         }
     ]
 }

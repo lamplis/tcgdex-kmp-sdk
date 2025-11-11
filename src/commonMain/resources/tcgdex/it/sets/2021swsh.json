@@ -1,1 +1,386 @@
-{"cardCount":{"firstEd":0,"holo":0,"normal":0,"official":25,"reverse":0,"total":25},"cards":[],"id":"2021swsh","legal":{"expanded":false,"standard":false},"name":"McDonald's Collection 2021","releaseDate":"2021-02-09","serie":{"id":"mc","name":"McDonald's Collection"},"symbol":"https://assets.tcgdex.net/univ/mc/2021swsh/symbol","abbreviation":{"official":"MCD21"}}
+{
+    "id": "2021swsh",
+    "serieId": "mc",
+    "name": "McDonald's Collection 2021",
+    "releaseDate": "2021-02-09",
+    "cardCount": 25,
+    "logo": "https://assets.tcgdex.net/it/mc/2021swsh/logo",
+    "symbol": "https://assets.tcgdex.net/it/mc/2021swsh/symbol",
+    "cards": [
+        {
+            "id": "2021swsh-1",
+            "number": "1",
+            "name": "Bulbasaur",
+            "illustrator": "Mizue",
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "2021swsh-2",
+            "number": "2",
+            "name": "Chikorita",
+            "illustrator": "sowsow",
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "2021swsh-3",
+            "number": "3",
+            "name": "Treecko",
+            "illustrator": "Akira Komayama",
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "2021swsh-4",
+            "number": "4",
+            "name": "Turtwig",
+            "illustrator": "OOYAMA",
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "2021swsh-5",
+            "number": "5",
+            "name": "Snivy",
+            "illustrator": "Ken Sugimori",
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "2021swsh-6",
+            "number": "6",
+            "name": "Chespin",
+            "illustrator": "5ban Graphics",
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "2021swsh-7",
+            "number": "7",
+            "name": "Rowlet",
+            "illustrator": "Megumi Mizutani",
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "2021swsh-8",
+            "number": "8",
+            "name": "Grookey",
+            "illustrator": "kirisAki",
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "2021swsh-9",
+            "number": "9",
+            "name": "Charmander",
+            "illustrator": "Kagemaru Himeno",
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "2021swsh-10",
+            "number": "10",
+            "name": "Cyndaquil",
+            "illustrator": "kirisAki",
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "2021swsh-11",
+            "number": "11",
+            "name": "Torchic",
+            "illustrator": "sui",
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "2021swsh-12",
+            "number": "12",
+            "name": "Chimchar",
+            "illustrator": "Kouki Saitou",
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "2021swsh-13",
+            "number": "13",
+            "name": "Tepig",
+            "illustrator": "Ken Sugimori",
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "2021swsh-14",
+            "number": "14",
+            "name": "Fennekin",
+            "illustrator": "5ban Graphics",
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "2021swsh-15",
+            "number": "15",
+            "name": "Litten",
+            "illustrator": "Akira Komayama",
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "2021swsh-16",
+            "number": "16",
+            "name": "Scorbunny",
+            "illustrator": "Hitoshi Ariga",
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "2021swsh-17",
+            "number": "17",
+            "name": "Squirtle",
+            "illustrator": "tetsuya koizumi",
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "2021swsh-18",
+            "number": "18",
+            "name": "Totodile",
+            "illustrator": "Kagemaru Himeno",
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "2021swsh-19",
+            "number": "19",
+            "name": "Mudkip",
+            "illustrator": "Aya Kusube",
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "2021swsh-20",
+            "number": "20",
+            "name": "Piplup",
+            "illustrator": "Shibuzoh.",
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "2021swsh-21",
+            "number": "21",
+            "name": "Oshawott",
+            "illustrator": "Ken Sugimori",
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "2021swsh-22",
+            "number": "22",
+            "name": "Froakie",
+            "illustrator": "5ban Graphics",
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "2021swsh-23",
+            "number": "23",
+            "name": "Popplio",
+            "illustrator": "Kouki Saitou",
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "2021swsh-24",
+            "number": "24",
+            "name": "Sobble",
+            "illustrator": "Mizue",
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "2021swsh-25",
+            "number": "25",
+            "name": "Pikachu",
+            "illustrator": "Sanosuke Sakuma",
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        }
+    ]
+}

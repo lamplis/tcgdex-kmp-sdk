@@ -8,109 +8,224 @@
     "symbol": "https://assets.tcgdex.net/fr/pop/pop9/symbol",
     "cards": [
         {
-            "id": "pop9-001",
-            "number": "001",
+            "id": "pop9-1",
+            "number": "1",
             "name": "Carchacrok",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/pop/pop9/1"
+            "illustrator": "Kagemaru Himeno",
+            "imageBase": "https://assets.tcgdex.net/fr/pop/pop9/1",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
-            "id": "pop9-002",
-            "number": "002",
+            "id": "pop9-2",
+            "number": "2",
             "name": "Manaphy",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/pop/pop9/2"
+            "illustrator": "Masakazu Fukuda",
+            "imageBase": "https://assets.tcgdex.net/fr/pop/pop9/2",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
-            "id": "pop9-003",
-            "number": "003",
+            "id": "pop9-3",
+            "number": "3",
             "name": "Raichu",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/pop/pop9/3"
+            "illustrator": "Midori Harada",
+            "imageBase": "https://assets.tcgdex.net/fr/pop/pop9/3",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
-            "id": "pop9-004",
-            "number": "004",
+            "id": "pop9-4",
+            "number": "4",
             "name": "Regigigas",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/pop/pop9/4"
+            "illustrator": "Kent Kanetsuna",
+            "imageBase": "https://assets.tcgdex.net/fr/pop/pop9/4",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
-            "id": "pop9-005",
-            "number": "005",
+            "id": "pop9-5",
+            "number": "5",
             "name": "Motisma",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/pop/pop9/5"
+            "illustrator": "Masakazu Fukuda",
+            "imageBase": "https://assets.tcgdex.net/fr/pop/pop9/5",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
-            "id": "pop9-007",
-            "number": "007",
+            "id": "pop9-6",
+            "number": "6",
+            "name": "Buizel",
+            "illustrator": "Midori Harada",
+            "imageBase": "https://assets.tcgdex.net/fr/pop/pop9/6",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
+        },
+        {
+            "id": "pop9-7",
+            "number": "7",
             "name": "Cradopaud",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/pop/pop9/7"
+            "illustrator": "Midori Harada",
+            "imageBase": "https://assets.tcgdex.net/fr/pop/pop9/7",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
-            "id": "pop9-009",
-            "number": "009",
+            "id": "pop9-8",
+            "number": "8",
+            "name": "Gabite",
+            "illustrator": "Kagemaru Himeno",
+            "imageBase": "https://assets.tcgdex.net/fr/pop/pop9/8",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "pop9-9",
+            "number": "9",
             "name": "Lockpin",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/pop/pop9/9"
+            "illustrator": "Midori Harada",
+            "imageBase": "https://assets.tcgdex.net/fr/pop/pop9/9",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
-            "id": "pop9-010",
-            "number": "010",
+            "id": "pop9-10",
+            "number": "10",
             "name": "Pachirisu",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/pop/pop9/10"
+            "illustrator": "Midori Harada",
+            "imageBase": "https://assets.tcgdex.net/fr/pop/pop9/10",
+            "rarity": "Uncommon"
         },
         {
-            "id": "pop9-011",
-            "number": "011",
+            "id": "pop9-11",
+            "number": "11",
             "name": "Pichu",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/pop/pop9/11"
+            "illustrator": "Midori Harada",
+            "imageBase": "https://assets.tcgdex.net/fr/pop/pop9/11",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
-            "id": "pop9-012",
-            "number": "012",
+            "id": "pop9-12",
+            "number": "12",
             "name": "Laporeille",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/pop/pop9/12"
+            "illustrator": "Midori Harada",
+            "imageBase": "https://assets.tcgdex.net/fr/pop/pop9/12",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
-            "id": "pop9-013",
-            "number": "013",
+            "id": "pop9-13",
+            "number": "13",
             "name": "Ouisticram",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/pop/pop9/13"
+            "illustrator": "Midori Harada",
+            "imageBase": "https://assets.tcgdex.net/fr/pop/pop9/13",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
-            "id": "pop9-014",
-            "number": "014",
+            "id": "pop9-14",
+            "number": "14",
             "name": "Griknot",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/pop/pop9/14"
+            "illustrator": "Hiroki Fuchino",
+            "imageBase": "https://assets.tcgdex.net/fr/pop/pop9/14",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
-            "id": "pop9-015",
-            "number": "015",
+            "id": "pop9-15",
+            "number": "15",
             "name": "Pikachu",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/pop/pop9/15"
+            "illustrator": "Midori Harada",
+            "imageBase": "https://assets.tcgdex.net/fr/pop/pop9/15",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
-            "id": "pop9-016",
-            "number": "016",
+            "id": "pop9-16",
+            "number": "16",
             "name": "Tiplouf",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/pop/pop9/16"
+            "illustrator": "Midori Harada",
+            "imageBase": "https://assets.tcgdex.net/fr/pop/pop9/16",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
-            "id": "pop9-017",
-            "number": "017",
+            "id": "pop9-17",
+            "number": "17",
             "name": "Tortipouss",
-            "illustrator": null,
-            "imageBase": "https://assets.tcgdex.net/fr/pop/pop9/17"
+            "illustrator": "Midori Harada",
+            "imageBase": "https://assets.tcgdex.net/fr/pop/pop9/17",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         }
     ]
 }

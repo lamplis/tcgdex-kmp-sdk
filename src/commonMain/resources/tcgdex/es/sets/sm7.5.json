@@ -1,1 +1,557 @@
-{"cardCount":{"firstEd":0,"holo":0,"normal":0,"official":70,"reverse":0,"total":78},"cards":[{"id":"sm7.5-1","localId":"1","name":"Charmander"},{"id":"sm7.5-2","localId":"2","name":"Charmeleon"},{"id":"sm7.5-3","localId":"3","name":"Charizard"},{"id":"sm7.5-4","localId":"4","name":"Torchic"},{"id":"sm7.5-5","localId":"5","name":"Combusken"},{"id":"sm7.5-6","localId":"6","name":"Blaziken"},{"id":"sm7.5-7","localId":"7","name":"Victini ◇"},{"id":"sm7.5-8","localId":"8","name":"Darumaka"},{"id":"sm7.5-9","localId":"9","name":"Darmanitan"},{"id":"sm7.5-10","localId":"10","name":"Heatmor"},{"id":"sm7.5-11","localId":"11","name":"Reshiram GX"},{"id":"sm7.5-12","localId":"12","name":"Litten"},{"id":"sm7.5-13","localId":"13","name":"Salandit"},{"id":"sm7.5-14","localId":"14","name":"Salazzle"},{"id":"sm7.5-15","localId":"15","name":"Horsea"},{"id":"sm7.5-16","localId":"16","name":"Horsea"},{"id":"sm7.5-17","localId":"17","name":"Seadra"},{"id":"sm7.5-18","localId":"18","name":"Kingdra GX"},{"id":"sm7.5-19","localId":"19","name":"Magikarp"},{"id":"sm7.5-20","localId":"20","name":"Gyarados"},{"id":"sm7.5-21","localId":"21","name":"Lapras"},{"id":"sm7.5-22","localId":"22","name":"Totodile"},{"id":"sm7.5-23","localId":"23","name":"Croconaw"},{"id":"sm7.5-24","localId":"24","name":"Feraligatr"},{"id":"sm7.5-25","localId":"25","name":"Wooper"},{"id":"sm7.5-26","localId":"26","name":"Quagsire"},{"id":"sm7.5-27","localId":"27","name":"Corsola"},{"id":"sm7.5-28","localId":"28","name":"Feebas"},{"id":"sm7.5-29","localId":"29","name":"Milotic"},{"id":"sm7.5-30","localId":"30","name":"Phione"},{"id":"sm7.5-31","localId":"31","name":"Wishiwashi"},{"id":"sm7.5-32","localId":"32","name":"Trapinch"},{"id":"sm7.5-33","localId":"33","name":"Hydreigon"},{"id":"sm7.5-34","localId":"34","name":"Dratini"},{"id":"sm7.5-35","localId":"35","name":"Dratini"},{"id":"sm7.5-36","localId":"36","name":"Dragonair"},{"id":"sm7.5-37","localId":"37","name":"Dragonite GX"},{"id":"sm7.5-38","localId":"38","name":"Vibrava"},{"id":"sm7.5-39","localId":"39","name":"Flygon"},{"id":"sm7.5-40","localId":"40","name":"Altaria"},{"id":"sm7.5-41","localId":"41","name":"Altaria GX"},{"id":"sm7.5-42","localId":"42","name":"Bagon"},{"id":"sm7.5-43","localId":"43","name":"Shelgon"},{"id":"sm7.5-44","localId":"44","name":"Salamence GX"},{"id":"sm7.5-45","localId":"45","name":"Druddigon"},{"id":"sm7.5-46","localId":"46","name":"Zekrom"},{"id":"sm7.5-47","localId":"47","name":"Kyurem"},{"id":"sm7.5-48","localId":"48","name":"Kyurem Blanco GX"},{"id":"sm7.5-49","localId":"49","name":"Zygarde"},{"id":"sm7.5-50","localId":"50","name":"Turtonator"},{"id":"sm7.5-51","localId":"51","name":"Drampa"},{"id":"sm7.5-52","localId":"52","name":"Jangmo-o"},{"id":"sm7.5-53","localId":"53","name":"Hakamo-o"},{"id":"sm7.5-54","localId":"54","name":"Kommo-o"},{"id":"sm7.5-55","localId":"55","name":"Kangaskhan"},{"id":"sm7.5-56","localId":"56","name":"Swablu"},{"id":"sm7.5-57","localId":"57","name":"Swablu"},{"id":"sm7.5-58","localId":"58","name":"Último Recurso de Blaine"},{"id":"sm7.5-59","localId":"59","name":"Espolón de Dragón"},{"id":"sm7.5-60","localId":"60","name":"Pedernal Ardiente"},{"id":"sm7.5-61","localId":"61","name":"Lance ◇"},{"id":"sm7.5-62","localId":"62","name":"Cambio Salvavidas"},{"id":"sm7.5-63","localId":"63","name":"Área Volcánica del Wela"},{"id":"sm7.5-64","localId":"64","name":"Tristana"},{"id":"sm7.5-65","localId":"65","name":"Reshiram GX"},{"id":"sm7.5-66","localId":"66","name":"Kingdra GX"},{"id":"sm7.5-67","localId":"67","name":"Dragonite GX"},{"id":"sm7.5-68","localId":"68","name":"Altaria GX"},{"id":"sm7.5-69","localId":"69","name":"Último Recurso de Blaine"},{"id":"sm7.5-70","localId":"70","name":"Tristana"},{"id":"sm7.5-71","localId":"71","name":"Reshiram GX"},{"id":"sm7.5-72","localId":"72","name":"Altaria GX"},{"id":"sm7.5-73","localId":"73","name":"Salamence GX"},{"id":"sm7.5-74","localId":"74","name":"Kyurem Blanco GX"},{"id":"sm7.5-75","localId":"75","name":"Espolón de Dragón"},{"id":"sm7.5-76","localId":"76","name":"Pedernal Ardiente"},{"id":"sm7.5-77","localId":"77","name":"Cambio Salvavidas"},{"id":"sm7.5-78","localId":"78","name":"Ultra-Necrozma GX"}],"id":"sm7.5","legal":{"expanded":true,"standard":false},"name":"Majestad De Dragones","releaseDate":"2018-09-07","serie":{"id":"sm","name":"Sol y Luna"},"tcgOnline":"DRM","abbreviation":{"official":"DRM"}}
+{
+    "id": "sm7.5",
+    "serieId": "sm",
+    "name": "Majestad De Dragones",
+    "releaseDate": "2018-09-07",
+    "cardCount": 70,
+    "logo": "https://assets.tcgdex.net/es/sm/sm7.5/logo",
+    "symbol": "https://assets.tcgdex.net/es/sm/sm7.5/symbol",
+    "cards": [
+        {
+            "id": "sm7.5-1",
+            "number": "1",
+            "name": "Charmander",
+            "illustrator": "tetsuya koizumi",
+            "rarity": "Common"
+        },
+        {
+            "id": "sm7.5-2",
+            "number": "2",
+            "name": "Charmeleon",
+            "illustrator": "kodama",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sm7.5-3",
+            "number": "3",
+            "name": "Charizard",
+            "illustrator": "Ryota Murayama",
+            "rarity": "Rare"
+        },
+        {
+            "id": "sm7.5-4",
+            "number": "4",
+            "name": "Torchic",
+            "illustrator": "Kouki Saitou",
+            "rarity": "Common"
+        },
+        {
+            "id": "sm7.5-5",
+            "number": "5",
+            "name": "Combusken",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sm7.5-6",
+            "number": "6",
+            "name": "Blaziken",
+            "illustrator": "Kouki Saitou",
+            "rarity": "Rare"
+        },
+        {
+            "id": "sm7.5-7",
+            "number": "7",
+            "name": "Victini ◇",
+            "illustrator": "Shin Nagasawa",
+            "rarity": "Rare"
+        },
+        {
+            "id": "sm7.5-8",
+            "number": "8",
+            "name": "Darumaka",
+            "illustrator": "Mitsuhiro Arita",
+            "rarity": "Common"
+        },
+        {
+            "id": "sm7.5-9",
+            "number": "9",
+            "name": "Darmanitan",
+            "illustrator": "Masakazu Fukuda",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sm7.5-10",
+            "number": "10",
+            "name": "Heatmor",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sm7.5-11",
+            "number": "11",
+            "name": "Reshiram GX",
+            "illustrator": "PLANETA Otani",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "sm7.5-12",
+            "number": "12",
+            "name": "Litten",
+            "illustrator": "Ryota Murayama",
+            "rarity": "Common"
+        },
+        {
+            "id": "sm7.5-13",
+            "number": "13",
+            "name": "Salandit",
+            "illustrator": "MAHOU",
+            "rarity": "Common"
+        },
+        {
+            "id": "sm7.5-14",
+            "number": "14",
+            "name": "Salazzle",
+            "illustrator": "Naoki Saito",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sm7.5-15",
+            "number": "15",
+            "name": "Horsea",
+            "illustrator": "Yukiko Baba",
+            "rarity": "Common"
+        },
+        {
+            "id": "sm7.5-16",
+            "number": "16",
+            "name": "Horsea",
+            "illustrator": "Mizue",
+            "rarity": "Common"
+        },
+        {
+            "id": "sm7.5-17",
+            "number": "17",
+            "name": "Seadra",
+            "illustrator": "Yumi",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sm7.5-18",
+            "number": "18",
+            "name": "Kingdra GX",
+            "illustrator": "5ban Graphics",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "sm7.5-19",
+            "number": "19",
+            "name": "Magikarp",
+            "illustrator": "Sekio",
+            "rarity": "Common"
+        },
+        {
+            "id": "sm7.5-20",
+            "number": "20",
+            "name": "Gyarados",
+            "illustrator": "kawayoo",
+            "rarity": "Rare"
+        },
+        {
+            "id": "sm7.5-21",
+            "number": "21",
+            "name": "Lapras",
+            "illustrator": "Saya Tsuruta",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sm7.5-22",
+            "number": "22",
+            "name": "Totodile",
+            "illustrator": "Hironobu Yoshida",
+            "rarity": "Common"
+        },
+        {
+            "id": "sm7.5-23",
+            "number": "23",
+            "name": "Croconaw",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sm7.5-24",
+            "number": "24",
+            "name": "Feraligatr",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Rare"
+        },
+        {
+            "id": "sm7.5-25",
+            "number": "25",
+            "name": "Wooper",
+            "illustrator": "Shibuzoh.",
+            "rarity": "Common"
+        },
+        {
+            "id": "sm7.5-26",
+            "number": "26",
+            "name": "Quagsire",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sm7.5-27",
+            "number": "27",
+            "name": "Corsola",
+            "illustrator": "Kagemaru Himeno",
+            "rarity": "Common"
+        },
+        {
+            "id": "sm7.5-28",
+            "number": "28",
+            "name": "Feebas",
+            "illustrator": "Shin Nagasawa",
+            "rarity": "Common"
+        },
+        {
+            "id": "sm7.5-29",
+            "number": "29",
+            "name": "Milotic",
+            "illustrator": "hatachu",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sm7.5-30",
+            "number": "30",
+            "name": "Phione",
+            "illustrator": "kawayoo",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sm7.5-31",
+            "number": "31",
+            "name": "Wishiwashi",
+            "illustrator": "Kouki Saitou",
+            "rarity": "Common"
+        },
+        {
+            "id": "sm7.5-32",
+            "number": "32",
+            "name": "Trapinch",
+            "illustrator": "Naoyo Kimura",
+            "rarity": "Common"
+        },
+        {
+            "id": "sm7.5-33",
+            "number": "33",
+            "name": "Hydreigon",
+            "illustrator": "Masakazu Fukuda",
+            "rarity": "Rare"
+        },
+        {
+            "id": "sm7.5-34",
+            "number": "34",
+            "name": "Dratini",
+            "illustrator": "Ayaka Yoshida",
+            "rarity": "Common"
+        },
+        {
+            "id": "sm7.5-35",
+            "number": "35",
+            "name": "Dratini",
+            "illustrator": "Anesaki Dynamic",
+            "rarity": "Common"
+        },
+        {
+            "id": "sm7.5-36",
+            "number": "36",
+            "name": "Dragonair",
+            "illustrator": "sui",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sm7.5-37",
+            "number": "37",
+            "name": "Dragonite GX",
+            "illustrator": "5ban Graphics",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "sm7.5-38",
+            "number": "38",
+            "name": "Vibrava",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Common"
+        },
+        {
+            "id": "sm7.5-39",
+            "number": "39",
+            "name": "Flygon",
+            "illustrator": "Shigenori Negishi",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sm7.5-40",
+            "number": "40",
+            "name": "Altaria",
+            "illustrator": "Kyoko Umemoto",
+            "rarity": "Rare"
+        },
+        {
+            "id": "sm7.5-41",
+            "number": "41",
+            "name": "Altaria GX",
+            "illustrator": "5ban Graphics",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "sm7.5-42",
+            "number": "42",
+            "name": "Bagon",
+            "illustrator": "Kouki Saitou",
+            "rarity": "Common"
+        },
+        {
+            "id": "sm7.5-43",
+            "number": "43",
+            "name": "Shelgon",
+            "illustrator": "Yuka Morii",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sm7.5-44",
+            "number": "44",
+            "name": "Salamence GX",
+            "illustrator": "5ban Graphics",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "sm7.5-45",
+            "number": "45",
+            "name": "Druddigon",
+            "illustrator": "Mitsuhiro Arita",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sm7.5-46",
+            "number": "46",
+            "name": "Zekrom",
+            "illustrator": "Hasuno",
+            "rarity": "Rare"
+        },
+        {
+            "id": "sm7.5-47",
+            "number": "47",
+            "name": "Kyurem",
+            "illustrator": "TOKIYA",
+            "rarity": "Rare"
+        },
+        {
+            "id": "sm7.5-48",
+            "number": "48",
+            "name": "Kyurem Blanco GX",
+            "illustrator": "5ban Graphics",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "sm7.5-49",
+            "number": "49",
+            "name": "Zygarde",
+            "illustrator": "Misa Tsutsui",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sm7.5-50",
+            "number": "50",
+            "name": "Turtonator",
+            "illustrator": "Sumiyoshi Kizuki",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sm7.5-51",
+            "number": "51",
+            "name": "Drampa",
+            "illustrator": "Sanosuke Sakuma",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sm7.5-52",
+            "number": "52",
+            "name": "Jangmo-o",
+            "illustrator": "Yusuke Ohmura",
+            "rarity": "Common"
+        },
+        {
+            "id": "sm7.5-53",
+            "number": "53",
+            "name": "Hakamo-o",
+            "illustrator": "hatachu",
+            "rarity": "Common"
+        },
+        {
+            "id": "sm7.5-54",
+            "number": "54",
+            "name": "Kommo-o",
+            "illustrator": "so-taro",
+            "rarity": "Rare"
+        },
+        {
+            "id": "sm7.5-55",
+            "number": "55",
+            "name": "Kangaskhan",
+            "illustrator": "Naoyo Kimura",
+            "rarity": "Common"
+        },
+        {
+            "id": "sm7.5-56",
+            "number": "56",
+            "name": "Swablu",
+            "illustrator": "Yukiko Baba",
+            "rarity": "Common"
+        },
+        {
+            "id": "sm7.5-57",
+            "number": "57",
+            "name": "Swablu",
+            "illustrator": "Shibuzoh.",
+            "rarity": "Common"
+        },
+        {
+            "id": "sm7.5-58",
+            "number": "58",
+            "name": "Último Recurso de Blaine",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Rare"
+        },
+        {
+            "id": "sm7.5-59",
+            "number": "59",
+            "name": "Espolón de Dragón",
+            "illustrator": "Toyste Beach",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sm7.5-60",
+            "number": "60",
+            "name": "Pedernal Ardiente",
+            "illustrator": "Eske Yoshinob",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sm7.5-61",
+            "number": "61",
+            "name": "Lance ◇",
+            "illustrator": "kodama",
+            "rarity": "Rare"
+        },
+        {
+            "id": "sm7.5-62",
+            "number": "62",
+            "name": "Cambio Salvavidas",
+            "illustrator": "Yoshinobu Saito",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sm7.5-63",
+            "number": "63",
+            "name": "Área Volcánica del Wela",
+            "illustrator": "5ban Graphics",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sm7.5-64",
+            "number": "64",
+            "name": "Tristana",
+            "illustrator": "Megumi Mizutani",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "sm7.5-65",
+            "number": "65",
+            "name": "Reshiram GX",
+            "illustrator": "PLANETA Igarashi",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "sm7.5-66",
+            "number": "66",
+            "name": "Kingdra GX",
+            "illustrator": "5ban Graphics",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "sm7.5-67",
+            "number": "67",
+            "name": "Dragonite GX",
+            "illustrator": "5ban Graphics",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "sm7.5-68",
+            "number": "68",
+            "name": "Altaria GX",
+            "illustrator": "5ban Graphics",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "sm7.5-69",
+            "number": "69",
+            "name": "Último Recurso de Blaine",
+            "illustrator": "Mitsuhiro Arita",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "sm7.5-70",
+            "number": "70",
+            "name": "Tristana",
+            "illustrator": "Hideki Ishikawa",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "sm7.5-71",
+            "number": "71",
+            "name": "Reshiram GX",
+            "illustrator": "PLANETA Igarashi",
+            "rarity": "Secret Rare"
+        },
+        {
+            "id": "sm7.5-72",
+            "number": "72",
+            "name": "Altaria GX",
+            "illustrator": "5ban Graphics",
+            "rarity": "Secret Rare"
+        },
+        {
+            "id": "sm7.5-73",
+            "number": "73",
+            "name": "Salamence GX",
+            "illustrator": "5ban Graphics",
+            "rarity": "Secret Rare"
+        },
+        {
+            "id": "sm7.5-74",
+            "number": "74",
+            "name": "Kyurem Blanco GX",
+            "illustrator": "5ban Graphics",
+            "rarity": "Secret Rare"
+        },
+        {
+            "id": "sm7.5-75",
+            "number": "75",
+            "name": "Espolón de Dragón",
+            "illustrator": "Toyste Beach",
+            "rarity": "Secret Rare"
+        },
+        {
+            "id": "sm7.5-76",
+            "number": "76",
+            "name": "Pedernal Ardiente",
+            "illustrator": "Eske Yoshinob",
+            "rarity": "Secret Rare"
+        },
+        {
+            "id": "sm7.5-77",
+            "number": "77",
+            "name": "Cambio Salvavidas",
+            "illustrator": "Yoshinobu Saito",
+            "rarity": "Secret Rare"
+        },
+        {
+            "id": "sm7.5-78",
+            "number": "78",
+            "name": "Ultra-Necrozma GX",
+            "illustrator": "PLANETA Igarashi",
+            "rarity": "Secret Rare"
+        }
+    ]
+}

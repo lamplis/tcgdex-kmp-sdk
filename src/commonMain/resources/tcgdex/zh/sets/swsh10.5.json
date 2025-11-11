@@ -3,6 +3,625 @@
     "serieId": "swsh",
     "name": "Pokémon GO",
     "releaseDate": "2022-07-01",
+    "cardCount": 78,
     "logo": "https://assets.tcgdex.net/zh/swsh/swsh10.5/logo",
-    "symbol": "https://assets.tcgdex.net/zh/swsh/swsh10.5/symbol"
+    "symbol": "https://assets.tcgdex.net/zh/swsh/swsh10.5/symbol",
+    "cards": [
+        {
+            "id": "swsh10.5-001",
+            "number": "001",
+            "name": "Bulbasaur",
+            "illustrator": null,
+            "rarity": "Common"
+        },
+        {
+            "id": "swsh10.5-002",
+            "number": "002",
+            "name": "Ivysaur",
+            "illustrator": null,
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "swsh10.5-003",
+            "number": "003",
+            "name": "Venusaur",
+            "illustrator": null,
+            "rarity": "Holo Rare"
+        },
+        {
+            "id": "swsh10.5-004",
+            "number": "004",
+            "name": "Radiant Venusaur",
+            "illustrator": null,
+            "rarity": "Radiant Rare"
+        },
+        {
+            "id": "swsh10.5-005",
+            "number": "005",
+            "name": "Alolan Exeggutor V",
+            "illustrator": null,
+            "rarity": "Holo Rare V"
+        },
+        {
+            "id": "swsh10.5-006",
+            "number": "006",
+            "name": "Spinarak",
+            "illustrator": null,
+            "rarity": "Common"
+        },
+        {
+            "id": "swsh10.5-007",
+            "number": "007",
+            "name": "Ariados",
+            "illustrator": null,
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "swsh10.5-008",
+            "number": "008",
+            "name": "Charmander",
+            "illustrator": null,
+            "rarity": "Common"
+        },
+        {
+            "id": "swsh10.5-009",
+            "number": "009",
+            "name": "Charmeleon",
+            "illustrator": null,
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "swsh10.5-010",
+            "number": "010",
+            "name": "Charizard",
+            "illustrator": null,
+            "rarity": "Holo Rare"
+        },
+        {
+            "id": "swsh10.5-011",
+            "number": "011",
+            "name": "Radiant Charizard",
+            "illustrator": null,
+            "rarity": "Radiant Rare"
+        },
+        {
+            "id": "swsh10.5-012",
+            "number": "012",
+            "name": "Moltres",
+            "illustrator": null,
+            "rarity": "Holo Rare"
+        },
+        {
+            "id": "swsh10.5-013",
+            "number": "013",
+            "name": "Numel",
+            "illustrator": null,
+            "rarity": "Common"
+        },
+        {
+            "id": "swsh10.5-014",
+            "number": "014",
+            "name": "Camerupt",
+            "illustrator": null,
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "swsh10.5-015",
+            "number": "015",
+            "name": "Squirtle",
+            "illustrator": null,
+            "rarity": "Common"
+        },
+        {
+            "id": "swsh10.5-016",
+            "number": "016",
+            "name": "Wartortle",
+            "illustrator": null,
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "swsh10.5-017",
+            "number": "017",
+            "name": "Blastoise",
+            "illustrator": null,
+            "rarity": "Holo Rare"
+        },
+        {
+            "id": "swsh10.5-018",
+            "number": "018",
+            "name": "Radiant Blastoise",
+            "illustrator": null,
+            "rarity": "Radiant Rare"
+        },
+        {
+            "id": "swsh10.5-019",
+            "number": "019",
+            "name": "Slowpoke",
+            "illustrator": null,
+            "rarity": "Common"
+        },
+        {
+            "id": "swsh10.5-020",
+            "number": "020",
+            "name": "Slowbro",
+            "illustrator": null,
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "swsh10.5-021",
+            "number": "021",
+            "name": "Magikarp",
+            "illustrator": null,
+            "rarity": "Common"
+        },
+        {
+            "id": "swsh10.5-022",
+            "number": "022",
+            "name": "Gyarados",
+            "illustrator": null,
+            "rarity": "Holo Rare"
+        },
+        {
+            "id": "swsh10.5-023",
+            "number": "023",
+            "name": "Lapras",
+            "illustrator": null,
+            "rarity": "Holo Rare"
+        },
+        {
+            "id": "swsh10.5-024",
+            "number": "024",
+            "name": "Articuno",
+            "illustrator": null,
+            "rarity": "Holo Rare"
+        },
+        {
+            "id": "swsh10.5-025",
+            "number": "025",
+            "name": "Wimpod",
+            "illustrator": null,
+            "rarity": "Common"
+        },
+        {
+            "id": "swsh10.5-026",
+            "number": "026",
+            "name": "Golisopod",
+            "illustrator": null,
+            "rarity": "Holo Rare"
+        },
+        {
+            "id": "swsh10.5-027",
+            "number": "027",
+            "name": "Pikachu",
+            "illustrator": null,
+            "rarity": "Common"
+        },
+        {
+            "id": "swsh10.5-028",
+            "number": "028",
+            "name": "Pikachu",
+            "illustrator": null,
+            "rarity": "Holo Rare"
+        },
+        {
+            "id": "swsh10.5-029",
+            "number": "029",
+            "name": "Zapdos",
+            "illustrator": null,
+            "rarity": "Holo Rare"
+        },
+        {
+            "id": "swsh10.5-030",
+            "number": "030",
+            "name": "Mewtwo V",
+            "illustrator": null,
+            "rarity": "Holo Rare V"
+        },
+        {
+            "id": "swsh10.5-031",
+            "number": "031",
+            "name": "Mewtwo VSTAR",
+            "illustrator": null,
+            "rarity": "Holo Rare VMAX"
+        },
+        {
+            "id": "swsh10.5-032",
+            "number": "032",
+            "name": "Natu",
+            "illustrator": null,
+            "rarity": "Common"
+        },
+        {
+            "id": "swsh10.5-033",
+            "number": "033",
+            "name": "Xatu",
+            "illustrator": null,
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "swsh10.5-034",
+            "number": "034",
+            "name": "Lunatone",
+            "illustrator": null,
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "swsh10.5-035",
+            "number": "035",
+            "name": "Sylveon",
+            "illustrator": null,
+            "rarity": "Holo Rare"
+        },
+        {
+            "id": "swsh10.5-036",
+            "number": "036",
+            "name": "Onix",
+            "illustrator": null,
+            "rarity": "Common"
+        },
+        {
+            "id": "swsh10.5-037",
+            "number": "037",
+            "name": "Larvitar",
+            "illustrator": null,
+            "rarity": "Common"
+        },
+        {
+            "id": "swsh10.5-038",
+            "number": "038",
+            "name": "Pupitar",
+            "illustrator": null,
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "swsh10.5-039",
+            "number": "039",
+            "name": "Solrock",
+            "illustrator": null,
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "swsh10.5-040",
+            "number": "040",
+            "name": "Conkeldurr V",
+            "illustrator": null,
+            "rarity": "Holo Rare V"
+        },
+        {
+            "id": "swsh10.5-041",
+            "number": "041",
+            "name": "Alolan Rattata",
+            "illustrator": null,
+            "rarity": "Common"
+        },
+        {
+            "id": "swsh10.5-042",
+            "number": "042",
+            "name": "Alolan Raticate",
+            "illustrator": null,
+            "rarity": "Common"
+        },
+        {
+            "id": "swsh10.5-043",
+            "number": "043",
+            "name": "Tyranitar",
+            "illustrator": null,
+            "rarity": "Holo Rare"
+        },
+        {
+            "id": "swsh10.5-044",
+            "number": "044",
+            "name": "Steelix",
+            "illustrator": null,
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "swsh10.5-045",
+            "number": "045",
+            "name": "Meltan",
+            "illustrator": null,
+            "rarity": "Common"
+        },
+        {
+            "id": "swsh10.5-046",
+            "number": "046",
+            "name": "Melmetal",
+            "illustrator": null,
+            "rarity": "Holo Rare"
+        },
+        {
+            "id": "swsh10.5-047",
+            "number": "047",
+            "name": "Melmetal V",
+            "illustrator": null,
+            "rarity": "Holo Rare V"
+        },
+        {
+            "id": "swsh10.5-048",
+            "number": "048",
+            "name": "Melmetal VMAX",
+            "illustrator": null,
+            "rarity": "Holo Rare VMAX"
+        },
+        {
+            "id": "swsh10.5-049",
+            "number": "049",
+            "name": "Dragonite V",
+            "illustrator": null,
+            "rarity": "Holo Rare V"
+        },
+        {
+            "id": "swsh10.5-050",
+            "number": "050",
+            "name": "Dragonite VSTAR",
+            "illustrator": null,
+            "rarity": "Holo Rare VSTAR"
+        },
+        {
+            "id": "swsh10.5-051",
+            "number": "051",
+            "name": "Chansey",
+            "illustrator": null,
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "swsh10.5-052",
+            "number": "052",
+            "name": "Blissey",
+            "illustrator": null,
+            "rarity": "Holo Rare"
+        },
+        {
+            "id": "swsh10.5-053",
+            "number": "053",
+            "name": "Ditto",
+            "illustrator": null,
+            "rarity": "Holo Rare"
+        },
+        {
+            "id": "swsh10.5-054",
+            "number": "054",
+            "name": "Eevee",
+            "illustrator": null,
+            "rarity": "Common"
+        },
+        {
+            "id": "swsh10.5-055",
+            "number": "055",
+            "name": "Snorlax",
+            "illustrator": null,
+            "rarity": "Holo Rare"
+        },
+        {
+            "id": "swsh10.5-056",
+            "number": "056",
+            "name": "Aipom",
+            "illustrator": null,
+            "rarity": "Common"
+        },
+        {
+            "id": "swsh10.5-057",
+            "number": "057",
+            "name": "Ambipom",
+            "illustrator": null,
+            "rarity": "Common"
+        },
+        {
+            "id": "swsh10.5-058",
+            "number": "058",
+            "name": "Slaking V",
+            "illustrator": null,
+            "rarity": "Holo Rare V"
+        },
+        {
+            "id": "swsh10.5-059",
+            "number": "059",
+            "name": "Bidoof",
+            "illustrator": null,
+            "rarity": "Common"
+        },
+        {
+            "id": "swsh10.5-060",
+            "number": "060",
+            "name": "Bibarel",
+            "illustrator": null,
+            "rarity": "Common"
+        },
+        {
+            "id": "swsh10.5-061",
+            "number": "061",
+            "name": "Pidove",
+            "illustrator": null,
+            "rarity": "Common"
+        },
+        {
+            "id": "swsh10.5-062",
+            "number": "062",
+            "name": "Tranquill",
+            "illustrator": null,
+            "rarity": "Common"
+        },
+        {
+            "id": "swsh10.5-063",
+            "number": "063",
+            "name": "Unfezant",
+            "illustrator": null,
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "swsh10.5-064",
+            "number": "064",
+            "name": "Blanche",
+            "illustrator": null,
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "swsh10.5-065",
+            "number": "065",
+            "name": "Candela",
+            "illustrator": null,
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "swsh10.5-066",
+            "number": "066",
+            "name": "Egg Incubator",
+            "illustrator": null,
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "swsh10.5-067",
+            "number": "067",
+            "name": "Lure Module",
+            "illustrator": null,
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "swsh10.5-068",
+            "number": "068",
+            "name": "PokéStop",
+            "illustrator": null,
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "swsh10.5-069",
+            "number": "069",
+            "name": "Rare Candy",
+            "illustrator": null,
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "swsh10.5-070",
+            "number": "070",
+            "name": "Spark",
+            "illustrator": null,
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "swsh10.5-071",
+            "number": "071",
+            "name": "Alolan Exeggutor V",
+            "illustrator": null,
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "swsh10.5-072",
+            "number": "072",
+            "name": "Mewtwo V",
+            "illustrator": null,
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "swsh10.5-073",
+            "number": "073",
+            "name": "Conkeldurr V",
+            "illustrator": null,
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "swsh10.5-074",
+            "number": "074",
+            "name": "Conkeldurr V",
+            "illustrator": null,
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "swsh10.5-075",
+            "number": "075",
+            "name": "Melmetal V",
+            "illustrator": null,
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "swsh10.5-076",
+            "number": "076",
+            "name": "Dragonite V",
+            "illustrator": null,
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "swsh10.5-077",
+            "number": "077",
+            "name": "Slaking V",
+            "illustrator": null,
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "swsh10.5-078",
+            "number": "078",
+            "name": "Professor's Research",
+            "illustrator": null,
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "swsh10.5-079",
+            "number": "079",
+            "name": "Mewtwo VSTAR",
+            "illustrator": null,
+            "rarity": "Secret Rare"
+        },
+        {
+            "id": "swsh10.5-080",
+            "number": "080",
+            "name": "Melmetal VMAX",
+            "illustrator": null,
+            "rarity": "Secret Rare"
+        },
+        {
+            "id": "swsh10.5-081",
+            "number": "081",
+            "name": "Dragonite VSTAR",
+            "illustrator": null,
+            "rarity": "Secret Rare"
+        },
+        {
+            "id": "swsh10.5-082",
+            "number": "082",
+            "name": "Blanche",
+            "illustrator": null,
+            "rarity": "Secret Rare"
+        },
+        {
+            "id": "swsh10.5-083",
+            "number": "083",
+            "name": "Candela",
+            "illustrator": null,
+            "rarity": "Secret Rare"
+        },
+        {
+            "id": "swsh10.5-084",
+            "number": "084",
+            "name": "Professor's Research",
+            "illustrator": null,
+            "rarity": "Secret Rare"
+        },
+        {
+            "id": "swsh10.5-085",
+            "number": "085",
+            "name": "Spark",
+            "illustrator": null,
+            "rarity": "Secret Rare"
+        },
+        {
+            "id": "swsh10.5-086",
+            "number": "086",
+            "name": "Mewtwo VSTAR",
+            "illustrator": null,
+            "rarity": "Secret Rare"
+        },
+        {
+            "id": "swsh10.5-087",
+            "number": "087",
+            "name": "Egg Incubator",
+            "illustrator": null,
+            "rarity": "Secret Rare"
+        },
+        {
+            "id": "swsh10.5-088",
+            "number": "088",
+            "name": "Lure Module",
+            "illustrator": null,
+            "rarity": "Secret Rare"
+        }
+    ]
 }

@@ -3,6 +3,200 @@
     "serieId": "pop",
     "name": "POP Series 5",
     "releaseDate": "2007-03-01",
+    "cardCount": 17,
     "logo": "https://assets.tcgdex.net/pt/pop/pop5/logo",
-    "symbol": "https://assets.tcgdex.net/pt/pop/pop5/symbol"
+    "symbol": "https://assets.tcgdex.net/pt/pop/pop5/symbol",
+    "cards": [
+        {
+            "id": "pop5-1",
+            "number": "1",
+            "name": "Ho-Oh",
+            "illustrator": "Mitsuhiro Arita",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "pop5-2",
+            "number": "2",
+            "name": "Lugia",
+            "illustrator": "Mitsuhiro Arita",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "pop5-3",
+            "number": "3",
+            "name": "Mew δ",
+            "illustrator": "Masakazu Fukuda",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
+        },
+        {
+            "id": "pop5-4",
+            "number": "4",
+            "name": "Double Rainbow Energy",
+            "illustrator": "Takumi Akabane",
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
+        },
+        {
+            "id": "pop5-5",
+            "number": "5",
+            "name": "Charmeleon δ",
+            "illustrator": "Mitsuhiro Arita",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "pop5-6",
+            "number": "6",
+            "name": "Bill’s Maintenance",
+            "illustrator": "Ken Sugimori",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
+        },
+        {
+            "id": "pop5-7",
+            "number": "7",
+            "name": "Rare Candy",
+            "illustrator": "Ryo Ueda",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
+        },
+        {
+            "id": "pop5-8",
+            "number": "8",
+            "name": "Boost Energy",
+            "illustrator": "Shin-ichi Yoshikawa",
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
+        },
+        {
+            "id": "pop5-9",
+            "number": "9",
+            "name": "δ Rainbow Energy",
+            "illustrator": "Takumi Akabane",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "pop5-10",
+            "number": "10",
+            "name": "Charmander δ",
+            "illustrator": "Mitsuhiro Arita",
+            "rarity": "Common"
+        },
+        {
+            "id": "pop5-11",
+            "number": "11",
+            "name": "Meowth δ",
+            "illustrator": "Mitsuhiro Arita",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
+        },
+        {
+            "id": "pop5-12",
+            "number": "12",
+            "name": "Pikachu",
+            "illustrator": "Naoyo Kimura",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "pop5-13",
+            "number": "13",
+            "name": "Pikachu δ",
+            "illustrator": "Ryo Ueda",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
+        },
+        {
+            "id": "pop5-14",
+            "number": "14",
+            "name": "Pelipper δ",
+            "illustrator": "Mitsuhiro Arita",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "pop5-15",
+            "number": "15",
+            "name": "Zangoose δ",
+            "illustrator": "Kouki Saitou",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "pop5-16",
+            "number": "16",
+            "name": "Espeon ★",
+            "illustrator": "Masakazu Fukuda",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "pop5-17",
+            "number": "17",
+            "name": "Umbreon ★",
+            "illustrator": "Masakazu Fukuda",
+            "rarity": "Ultra Rare"
+        }
+    ]
 }

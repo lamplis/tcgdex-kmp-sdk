@@ -3,6 +3,249 @@
     "serieId": "tk",
     "name": "XY trainer Kit (Pikachu Libre)",
     "releaseDate": "2016-04-27",
+    "cardCount": 30,
     "logo": "https://assets.tcgdex.net/de/tk/tk-xy-p/logo",
-    "symbol": "https://assets.tcgdex.net/de/tk/tk-xy-p/symbol"
+    "symbol": "https://assets.tcgdex.net/de/tk/tk-xy-p/symbol",
+    "cards": [
+        {
+            "id": "tk-xy-p-1",
+            "number": "1",
+            "name": "Charmian",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/de/tk/tk-xy-p/1",
+            "rarity": "Common"
+        },
+        {
+            "id": "tk-xy-p-2",
+            "number": "2",
+            "name": "Elektro-Energie",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/de/tk/tk-xy-p/2",
+            "rarity": "Common"
+        },
+        {
+            "id": "tk-xy-p-3",
+            "number": "3",
+            "name": "Elektro-Energie",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/de/tk/tk-xy-p/3",
+            "rarity": "Common"
+        },
+        {
+            "id": "tk-xy-p-4",
+            "number": "4",
+            "name": "Elevoltek",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/de/tk/tk-xy-p/4",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "tk-xy-p-5",
+            "number": "5",
+            "name": "Elektro-Energie",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/de/tk/tk-xy-p/5",
+            "rarity": "Common"
+        },
+        {
+            "id": "tk-xy-p-6",
+            "number": "6",
+            "name": "Elektro-Energie",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/de/tk/tk-xy-p/6",
+            "rarity": "Common"
+        },
+        {
+            "id": "tk-xy-p-7",
+            "number": "7",
+            "name": "Schwalbini",
+            "illustrator": "Atsuko Nishida",
+            "imageBase": "https://assets.tcgdex.net/de/tk/tk-xy-p/7",
+            "rarity": "None"
+        },
+        {
+            "id": "tk-xy-p-8",
+            "number": "8",
+            "name": "Elektro-Energie",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/de/tk/tk-xy-p/8",
+            "rarity": "Common"
+        },
+        {
+            "id": "tk-xy-p-9",
+            "number": "9",
+            "name": "Elektro-Energie",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/de/tk/tk-xy-p/9",
+            "rarity": "Common"
+        },
+        {
+            "id": "tk-xy-p-10",
+            "number": "10",
+            "name": "Elektro-Energie",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/de/tk/tk-xy-p/10",
+            "rarity": "Common"
+        },
+        {
+            "id": "tk-xy-p-11",
+            "number": "11",
+            "name": "Frizelbliz",
+            "illustrator": "Akira Komayama",
+            "imageBase": "https://assets.tcgdex.net/de/tk/tk-xy-p/11",
+            "rarity": "None"
+        },
+        {
+            "id": "tk-xy-p-12",
+            "number": "12",
+            "name": "Elezeba",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/de/tk/tk-xy-p/12",
+            "rarity": "Common"
+        },
+        {
+            "id": "tk-xy-p-13",
+            "number": "13",
+            "name": "Voltenso",
+            "illustrator": "match",
+            "imageBase": "https://assets.tcgdex.net/de/tk/tk-xy-p/13",
+            "rarity": "None"
+        },
+        {
+            "id": "tk-xy-p-14",
+            "number": "14",
+            "name": "Wrestler-Pikachu",
+            "illustrator": "Yoshinobu Saito",
+            "imageBase": "https://assets.tcgdex.net/de/tk/tk-xy-p/14",
+            "rarity": "None"
+        },
+        {
+            "id": "tk-xy-p-15",
+            "number": "15",
+            "name": "Elektek",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/de/tk/tk-xy-p/15",
+            "rarity": "Common"
+        },
+        {
+            "id": "tk-xy-p-16",
+            "number": "16",
+            "name": "Dartiri",
+            "illustrator": "Kanako Eo",
+            "imageBase": "https://assets.tcgdex.net/de/tk/tk-xy-p/16",
+            "rarity": "None"
+        },
+        {
+            "id": "tk-xy-p-17",
+            "number": "17",
+            "name": "Elektro-Energie",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/de/tk/tk-xy-p/17",
+            "rarity": "Common"
+        },
+        {
+            "id": "tk-xy-p-18",
+            "number": "18",
+            "name": "Elektro-Energie",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/de/tk/tk-xy-p/18",
+            "rarity": "Common"
+        },
+        {
+            "id": "tk-xy-p-19",
+            "number": "19",
+            "name": "Shnurgarst",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/de/tk/tk-xy-p/19",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "tk-xy-p-20",
+            "number": "20",
+            "name": "Tierno",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/de/tk/tk-xy-p/20",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "tk-xy-p-21",
+            "number": "21",
+            "name": "Trank",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/de/tk/tk-xy-p/21",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "tk-xy-p-22",
+            "number": "22",
+            "name": "Voltenso",
+            "illustrator": "match",
+            "imageBase": "https://assets.tcgdex.net/de/tk/tk-xy-p/22",
+            "rarity": "None"
+        },
+        {
+            "id": "tk-xy-p-23",
+            "number": "23",
+            "name": "Elektek",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/de/tk/tk-xy-p/23",
+            "rarity": "Common"
+        },
+        {
+            "id": "tk-xy-p-24",
+            "number": "24",
+            "name": "Shnurgarst",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/de/tk/tk-xy-p/24",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "tk-xy-p-25",
+            "number": "25",
+            "name": "Elevoltek",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/de/tk/tk-xy-p/25",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "tk-xy-p-26",
+            "number": "26",
+            "name": "Elezeba",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/de/tk/tk-xy-p/26",
+            "rarity": "Common"
+        },
+        {
+            "id": "tk-xy-p-27",
+            "number": "27",
+            "name": "Charmian",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/de/tk/tk-xy-p/27",
+            "rarity": "Common"
+        },
+        {
+            "id": "tk-xy-p-28",
+            "number": "28",
+            "name": "Frizelbliz",
+            "illustrator": "Akira Komayama",
+            "imageBase": "https://assets.tcgdex.net/de/tk/tk-xy-p/28",
+            "rarity": "None"
+        },
+        {
+            "id": "tk-xy-p-29",
+            "number": "29",
+            "name": "Elektro-Energie",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/de/tk/tk-xy-p/29",
+            "rarity": "Common"
+        },
+        {
+            "id": "tk-xy-p-30",
+            "number": "30",
+            "name": "Wrestler-Pikachu",
+            "illustrator": "Yoshinobu Saito",
+            "imageBase": "https://assets.tcgdex.net/de/tk/tk-xy-p/30",
+            "rarity": "None"
+        }
+    ]
 }

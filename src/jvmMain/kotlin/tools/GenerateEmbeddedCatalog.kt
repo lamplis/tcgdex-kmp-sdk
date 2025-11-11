@@ -1,6 +1,5 @@
 package tools
 
-import app.cardium.tcgdex.sdk.TcgDex
 import io.ktor.client.HttpClient
 import io.ktor.client.engine.cio.CIO
 import io.ktor.client.plugins.contentnegotiation.ContentNegotiation
@@ -19,10 +18,14 @@ import kotlinx.serialization.json.jsonObject
 import kotlinx.serialization.json.jsonPrimitive
 import java.nio.file.Files
 import java.nio.file.Path
+import java.nio.file.Paths
 import java.nio.file.StandardOpenOption
 import java.nio.file.FileVisitOption
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
+
+// Manifest structure: [lang][serieId][setId][cardId] -> Set<String>
+typealias ImageManifest = Map<String, Map<String, Map<String, Set<String>>>>
 
 @Serializable
 data class SeriesOut(val id: String, val name: String, val releaseDate: String? = null)
@@ -40,12 +43,17 @@ data class SetOut(
 )
 
 @Serializable
+data class VariantOut(val type: String)
+
+@Serializable
 data class CardDetailOut(
     val id: String,            // "sv01-001"
-    val number: String,        // "001"
+    val number: String,        // "001" (exact file name without normalization)
     val name: String,          // localized name
     val illustrator: String?,  // may be null
-    val imageBase: String,     // "https://assets.tcgdex.net/<lang>/<serieId>/<setId>/<num>"
+    val imageBase: String? = null,     // "https://assets.tcgdex.net/<lang>/<serieId>/<setId>/<num>" (null if image doesn't exist)
+    val rarity: String? = null,         // copied verbatim from TS
+    val variants: List<VariantOut>? = null, // array-only, tcgdex-like
 )
 
 @Serializable
@@ -104,9 +112,11 @@ private data class SetScan(
     val total: Int?,
 )
 private data class CardParsed(
-    val number: String,
+    val number: String,              // EXACTLY the filename (e.g., "1" or "001")
     val illustrator: String?,
     val names: Map<String, String>,
+    val rarity: String?,
+    val variants: List<String>?,     // list of variant type strings; null if none
 )
 private data class LocalScan(
     val series: List<SeriesScan>,
@@ -160,6 +170,18 @@ object GenerateEmbeddedCatalog {
 @JvmStatic
 fun main(args: Array<String>) {
 runBlocking {
+    /**
+     * CRITICAL RULES:
+     * 1) Local-only generation: do NOT use REST or GraphQL for JSON generation.
+     * 2) Card number MUST be the card file name without modification (e.g., "1", "001").
+     *    Use this exact number in image URLs.
+     * 3) Variants MUST be emitted as an array: [{ "type": "<exact>" }].
+     *    Accept TS object/array inputs; always output array.
+     * 4) rarity MUST be copied verbatim (no normalization).
+     * 5) Image manifest is the ONLY network fetch: attempt once; on failure use cached file;
+     *    if no cache, abort generation with a clear error.
+     * 6) cardCount MUST be TOTAL (#cards); never use "official" in JSON output.
+     */
     val json = Json { prettyPrint = true; ignoreUnknownKeys = true }
     val outBase = System.getProperty("outputDir")
         ?: (System.getenv("TCGDEX_EMBED_OUT") ?: "${System.getProperty("user.dir")}/src/commonMain/resources/tcgdex")
@@ -182,11 +204,305 @@ runBlocking {
         )
     }
 
-    val sdk = TcgDex.from()
     val http = HttpClient(CIO) {
         install(ContentNegotiation) {
             json(Json { ignoreUnknownKeys = true; isLenient = true })
         }
+    }
+    fun manifestCachePath(): Path {
+        val override = System.getProperty("manifestCache") ?: System.getenv("TCGDEX_MANIFEST_CACHE")
+        if (!override.isNullOrBlank()) return Paths.get(override)
+        return Path.of(System.getProperty("user.dir")).resolve("build/cache/datas.json")
+    }
+    /**
+     * Parse the image manifest from TCGdex assets.
+     * 
+     * CRITICAL: The manifest uses a strict 4-level nested structure:
+     *   manifest[language][seriesId][setId][cardId] = true
+     * 
+     * Example:
+     *   manifest['en']['sv']['sv09']['001'] = true
+     * 
+     * This matches the original TypeScript implementation exactly:
+     *   file[lang]?.[card.set.serie.id]?.[card.set.id]?.[cardId]
+     * 
+     * NO heuristics, NO auto-detection, NO flat structure support.
+     */
+    fun parseManifest(raw: String): ImageManifest {
+        val element = json.parseToJsonElement(raw)
+        val obj = element.jsonObject
+        val manifest = mutableMapOf<String, MutableMap<String, MutableMap<String, MutableSet<String>>>>()
+        
+        // Level 1: Language (e.g., "en", "fr", "de")
+        obj.entries.forEach { (lang, langData) ->
+            if (langData !is JsonObject) return@forEach
+            val langMap = manifest.getOrPut(lang.lowercase()) { mutableMapOf() }
+            
+            // Level 2: Series ID (e.g., "sv", "base", "ex")
+            langData.entries.forEach { (serieId, serieData) ->
+                if (serieData !is JsonObject) return@forEach
+                val serieMap = langMap.getOrPut(serieId) { mutableMapOf() }
+                
+                // Level 3: Set ID (e.g., "sv09", "base1")
+                serieData.entries.forEach { (setId, setData) ->
+                    if (setData !is JsonObject) return@forEach
+                    val cardSet = serieMap.getOrPut(setId) { mutableSetOf() }
+                    
+                    // Level 4: Card ID (e.g., "001", "025")
+                    setData.entries.forEach { (cardId, _) ->
+                        cardSet.add(cardId)
+                    }
+                }
+            }
+        }
+        return manifest
+    }
+    // IMPORTANT: The image manifest (datas.json) is the ONLY remote resource we are allowed
+    // to download during generation, even in "offline" mode. Offline mode disables API/GraphQL
+    // calls for card/set data, but MUST NOT affect manifest download. We always try to fetch
+    // the manifest once per generation; on failure we fall back to the cached file. If neither
+    // succeeds, we abort with a clear error.
+    suspend fun loadImageManifestWithCache(offlineOnly: Boolean): ImageManifest {
+        val cache = manifestCachePath()
+        Files.createDirectories(cache.parent)
+        // Always attempt to download the manifest (allowed in offline mode)
+        val url = "https://assets.tcgdex.net/datas.json"
+        log("[i] Fetching image manifest (allowed in offline mode) from $url")
+        val fetched = runCatching { http.get(url).bodyAsText() }
+            .onFailure { e -> log("[warn] Failed to fetch image manifest: ${e.message}; trying cache") }
+            .getOrNull()
+        if (fetched != null) {
+            val parsed = runCatching { parseManifest(fetched) }
+                .onFailure { e -> log("[warn] Failed to parse fetched manifest: ${e.message}; trying cache") }
+                .getOrNull()
+            if (parsed != null) {
+                runCatching {
+                    Files.writeString(
+                        cache,
+                        fetched,
+                        StandardOpenOption.CREATE,
+                        StandardOpenOption.TRUNCATE_EXISTING,
+                        StandardOpenOption.WRITE,
+                    )
+                }.onFailure { e -> log("[warn] Could not write manifest cache: ${e.message}") }
+                log("[OK] Image manifest loaded and cached at $cache")
+                return parsed
+            }
+        }
+        if (Files.isRegularFile(cache)) {
+            val cachedRaw = runCatching { Files.readString(cache) }
+                .onFailure { e -> log("[warn] Failed to read manifest cache: ${e.message}") }
+                .getOrNull()
+            if (cachedRaw != null) {
+                val parsed = runCatching { parseManifest(cachedRaw) }
+                    .onFailure { e -> log("[warn] Failed to parse manifest cache: ${e.message}") }
+                    .getOrNull()
+                if (parsed != null) {
+                    log("[OK] Image manifest loaded from cache $cache")
+                    return parsed
+                }
+            }
+        }
+        throw IllegalStateException("Image manifest unavailable: download failed and no valid cache at $cache. Provide -DmanifestCache or restore connectivity.")
+    }
+    /**
+     * Fetches and parses the datas.json manifest from TCGdex assets.
+     * Returns null if fetch fails or manifest is invalid.
+     */
+    suspend fun fetchImageManifest(): ImageManifest? {
+        return runCatching {
+            val url = "https://assets.tcgdex.net/datas.json"
+            log("[i] Fetching image manifest from $url")
+            val raw = http.get(url).bodyAsText()
+            val element = json.parseToJsonElement(raw)
+            val obj = element.jsonObject
+
+            // Parse nested structure: [lang][serieId][setId][cardId]
+            val manifest = mutableMapOf<String, MutableMap<String, MutableMap<String, MutableSet<String>>>>()
+            obj.entries.forEach { (lang, langData) ->
+                if (langData !is JsonObject) return@forEach
+                val langMap = manifest.getOrPut(lang.lowercase()) { mutableMapOf() }
+                langData.entries.forEach { (serieId, serieData) ->
+                    if (serieData !is JsonObject) return@forEach
+                    val serieMap = langMap.getOrPut(serieId) { mutableMapOf() }
+                    serieData.entries.forEach { (setId, setData) ->
+                        if (setData !is JsonObject) return@forEach
+                        val cardSet = serieMap.getOrPut(setId) { mutableSetOf() }
+                        setData.entries.forEach { (cardId, _) ->
+                            cardSet.add(cardId)
+                        }
+                    }
+                }
+            }
+            log("[OK] Image manifest loaded: ${manifest.keys.size} languages, ${manifest.values.sumOf { it.values.sumOf { it.size } }} sets")
+            manifest
+        }.onFailure { e ->
+            log("[warn] Failed to fetch image manifest: ${e.message}")
+        }.getOrNull()
+    }
+    // Counters for detailed diagnostics per set (for logging)
+    data class MissStats(
+        var lang: Int = 0,
+        var serie: Int = 0,
+        var set: Int = 0,
+        var card: Int = 0,
+        var normalizedSetUsed: Int = 0,
+    )
+
+    fun normalizeSetId(id: String): String {
+        // Example: "sv09" -> "sv9", "sv03.5" -> "sv3.5"; keep non-digit suffix (e.g., 'w','b') intact
+        val regex = Regex("^([a-zA-Z]+)(\\d+)(\\..+)?([a-zA-Z]*)$")
+        val m = regex.matchEntire(id) ?: return id
+        val prefix = m.groupValues[1]
+        val intPart = m.groupValues[2].trimStart('0').ifBlank { "0" }
+        val dotPart = m.groupValues[3] // includes leading dot if present
+        val suffix = m.groupValues[4]
+        return prefix + intPart + dotPart + suffix
+    }
+
+    /**
+     * Check if an image exists in the manifest using the exact 4-level path.
+     * 
+     * Matches the original TypeScript implementation:
+     *   Boolean(file[lang]?.[card.set.serie.id]?.[card.set.id]?.[cardId])
+     * 
+     * STRICT rules:
+     * - No language fallback (must match exact language)
+     * - No number normalization (must match exact card number including leading zeros)
+     * - No setId normalization (exact match only)
+     * 
+     * Path: manifest[lang][serieId][setId][cardNumber]
+     * Example: manifest['en']['sv']['sv09']['001'] -> true
+     */
+    fun imageExistsInManifest(
+        manifest: ImageManifest?,
+        lang: String,
+        serieId: String,
+        setId: String,
+        cardNumber: String
+    ): Boolean {
+        if (manifest == null) return false
+        val langMap = manifest[lang.lowercase()] ?: return false
+        val serieMap = langMap[serieId] ?: return false
+        val cardSet = serieMap[setId] ?: return false
+        return cardNumber in cardSet
+    }
+
+    // Internal: track one-time diagnostics per set
+    val diagnosticLogged = mutableSetOf<String>()
+
+    /**
+     * Check if image exists in manifest and return the setId to use in URL.
+     * 
+     * STRICT rules matching TypeScript implementation:
+     * - No language fallback
+     * - No number normalization
+     * - Allows setId normalization as fallback (e.g., sv09 -> sv9)
+     * 
+     * Returns the setId to use in the URL if found, or null if not present.
+     * Populates [stats] with detailed miss reasons for diagnostics.
+     */
+    fun resolveImageSetIdIfExists(
+        manifest: ImageManifest?,
+        lang: String,
+        serieId: String,
+        setId: String,
+        cardNumber: String,
+        stats: MissStats?,
+        verbose: Boolean
+    ): String? {
+        if (manifest == null) {
+            if (verbose) {
+                val key = "MISS_MANIFEST"
+                if (diagnosticLogged.add(key)) {
+                    log("[i] Image miss: manifest is null (download+cache failed)")
+                }
+            }
+            return null
+        }
+        
+        val setKey = "$lang|$serieId|$setId"
+        
+        // Level 1: Check language
+        val langMap = manifest[lang.lowercase()]
+        if (langMap == null) {
+            stats?.lang = stats?.lang?.plus(1) ?: 1
+            if (verbose) {
+                val key = "MISS_LANG|$setKey"
+                if (diagnosticLogged.add(key)) {
+                    log("[i] Image miss: lang='$lang' not in manifest. Available: ${manifest.keys.take(5)}")
+                }
+            }
+            return null
+        }
+        
+        // Level 2: Check series
+        val serieMap = langMap[serieId]
+        if (serieMap == null) {
+            stats?.serie = stats?.serie?.plus(1) ?: 1
+            if (verbose) {
+                val key = "MISS_SERIE|$setKey"
+                if (diagnosticLogged.add(key)) {
+                    log("[i] Image miss: serieId='$serieId' not in manifest['$lang']. Available: ${langMap.keys.take(10)}")
+                }
+            }
+            return null
+        }
+        
+        // Level 3: Check set (exact match first)
+        val exactSet = serieMap[setId]
+        if (exactSet != null) {
+            // Level 4: Check card number
+            return if (cardNumber in exactSet) {
+                setId // Found with exact setId
+            } else {
+                stats?.card = stats?.card?.plus(1) ?: 1
+                if (verbose) {
+                    val key = "MISS_CARD|$setKey|$cardNumber"
+                    if (diagnosticLogged.add(key)) {
+                        log("[i] Image miss: card='$cardNumber' not in manifest['$lang']['$serieId']['$setId']. Sample cards: ${exactSet.take(10)}")
+                    }
+                }
+                null
+            }
+        }
+        
+        // Fallback: Try normalized setId (e.g., sv09 -> sv9)
+        val norm = normalizeSetId(setId)
+        if (norm != setId) {
+            val normSet = serieMap[norm]
+            if (normSet != null) {
+                return if (cardNumber in normSet) {
+                    stats?.normalizedSetUsed = stats?.normalizedSetUsed?.plus(1) ?: 1
+                    if (verbose) {
+                        val key = "FOUND_NORM_SET|$setKey"
+                        if (diagnosticLogged.add(key)) {
+                            log("[OK] Image found using normalized setId: $setId → $norm, card=$cardNumber")
+                        }
+                    }
+                    norm // Found with normalized setId
+                } else {
+                    stats?.card = stats?.card?.plus(1) ?: 1
+                    if (verbose) {
+                        val key = "MISS_CARD_NORM|$setKey|$cardNumber"
+                        if (diagnosticLogged.add(key)) {
+                            log("[i] Image miss: card='$cardNumber' not in manifest['$lang']['$serieId']['$norm']")
+                        }
+                    }
+                    null
+                }
+            }
+        }
+        
+        // Set not found (neither exact nor normalized)
+        stats?.set = stats?.set?.plus(1) ?: 1
+        if (verbose) {
+            val key = "MISS_SET|$setKey"
+            if (diagnosticLogged.add(key)) {
+                log("[i] Image miss: setId='$setId' (normalized='$norm') not in manifest['$lang']['$serieId']. Available: ${serieMap.keys.take(10)}")
+            }
+        }
+        return null
     }
     // Supported languages (extend as needed); can be overridden via -Dlangs="en,fr"
     val defaultLangs = listOf("en","fr","de","es","it","pt","ja","ko","zh")
@@ -219,11 +535,68 @@ runBlocking {
     log("Languages: " + languages)
     log("limitSets=" + limitSets + ", progressEvery=" + progressEvery + ", skipDetails=" + skipDetails + ", verbose=" + verbose)
     log("localDbPath=" + (localDbPathStr ?: "<none>") + ", offlineOnly=" + offlineOnly + ", useLocal=" + useLocal)
-    log("MODE: " + (if (useLocal) "LOCAL_TS" else "REMOTE_API"))
+    log("MODE: " + (if (useLocal) "LOCAL_TS" else "LOCAL_TS_REQUIRED"))
 
-    if (offlineOnly && !useLocal) {
-        log("[x] offlineOnly=true but localDbPath is invalid or missing; aborting")
+    if (!useLocal) {
+        log("[x] Local database path is invalid or missing; local-only generation enforced. Aborting.")
         return@runBlocking
+    }
+
+    // ===== Manifest coverage diagnostics (no fallback/normalization used) =====
+    data class CoverageMetrics(
+        val lang: String,
+        val setsInScan: Int,
+        val setsWithManifest: Int,
+        val cardsInScan: Int,
+        val cardsWithImages: Int,
+        val setsMissing: List<String> = emptyList(),
+        val cardsNeedingTrimNormalization: Int = 0, // strictly not allowed; for diagnostics only
+    )
+
+    fun computeCoverageForLangStrict(
+        lang: String,
+        scan: LocalScan,
+        manifest: ImageManifest,
+    ): CoverageMetrics {
+        val langMap = manifest[lang.lowercase()] ?: emptyMap()
+        val setsInScan = scan.sets.size
+        var setsWithManifest = 0
+        var cardsInScan = 0
+        var cardsWithImages = 0
+        var needsTrim = 0
+        val missingSets = mutableListOf<String>()
+        for (s in scan.sets) {
+            val serieMap = langMap[s.seriesId]
+            val setMap = serieMap?.get(s.id)
+            val cards = scan.setIdToCards[s.id].orEmpty()
+            cardsInScan += cards.size
+            if (setMap == null) {
+                missingSets.add(s.id)
+                continue
+            }
+            setsWithManifest++
+            for (cp in cards) {
+                val exact = cp.number
+                if (setMap.contains(exact)) {
+                    cardsWithImages++
+                } else {
+                    // For diagnostics: check if a trimmed version exists (not used for output)
+                    val trimmed = exact.trimStart('0').ifBlank { "0" }
+                    if (trimmed != exact && setMap.contains(trimmed)) {
+                        needsTrim++
+                    }
+                }
+            }
+        }
+        return CoverageMetrics(
+            lang = lang,
+            setsInScan = setsInScan,
+            setsWithManifest = setsWithManifest,
+            cardsInScan = cardsInScan,
+            cardsWithImages = cardsWithImages,
+            setsMissing = missingSets,
+            cardsNeedingTrimNormalization = needsTrim,
+        )
     }
 
     val seriesMap = linkedMapOf<String, String>()
@@ -234,16 +607,7 @@ runBlocking {
     val illustratorFiles: MutableMap<String, String> = linkedMapOf() // key: sanitized artist name -> json content
     var illustratorsIndexGlobal: String? = null
 
-    // Preload series-with-sets mapping (language-agnostic)
-    val seriesWithSets = runCatching { TcgDex.from().getSeriesWithSetsGraphQL().getOrElse { emptyList() } }
-        .onFailure { log("[warn] series-with-sets GraphQL failed: ${'$'}{it.message}") }
-        .getOrElse { emptyList() }
-    val setIdToSerieId = mutableMapOf<String, String>()
-    val serieIdToName = mutableMapOf<String, String>()
-    seriesWithSets.forEach { s ->
-        serieIdToName[s.id] = s.name
-        s.sets.forEach { ref -> setIdToSerieId[ref.id] = s.id }
-    }
+    // Removed: GraphQL preload (local-only generation)
 
     fun extractSerieIdFromSetId(setId: String): String? {
         val letters = setId.takeWhile { it.isLetter() || it == '-' }
@@ -300,6 +664,28 @@ runBlocking {
         return r.find(ts)?.groupValues?.getOrNull(1)?.toIntOrNull()
     }
 
+    fun parseVariantsToArray(ts: String): List<String>? {
+        // A) Object form: variants: { normal: true, reverse: false }
+        Regex("variants\\s*:\\s*\\{([\\s\\S]*?)\\}", setOf(RegexOption.IGNORE_CASE, RegexOption.DOT_MATCHES_ALL))
+            .find(ts)?.let { m ->
+                val body = m.groupValues[1]
+                val pairs = Regex("([A-Za-z][A-Za-z0-9]*)\\s*:\\s*(true|false)", RegexOption.IGNORE_CASE).findAll(body)
+                val types = pairs.filter { it.groupValues[2].equals("true", ignoreCase = true) }
+                    .map { it.groupValues[1] }
+                    .toList()
+                if (types.isNotEmpty()) return types
+            }
+        // B) Array form: variants: [ { type: 'normal' }, ... ]
+        Regex("variants\\s*:\\s*\\[([\\s\\S]*?)\\]", setOf(RegexOption.IGNORE_CASE, RegexOption.DOT_MATCHES_ALL))
+            .find(ts)?.let { m ->
+                val body = m.groupValues[1]
+                val types = Regex("type\\s*:\\s*'([^']+)'", RegexOption.IGNORE_CASE).findAll(body)
+                    .map { it.groupValues[1] }
+                    .toList()
+                if (types.isNotEmpty()) return types
+            }
+        return null
+    }
     fun isTcgp(id: String?): Boolean = id?.equals("tcgp", ignoreCase = true) == true
 
     fun extractNameMap(ts: String): Map<String, String> {
@@ -408,7 +794,7 @@ runBlocking {
                                 val entry = acc.perSet.getOrPut(setId) { ISet(setId = setId, count = 0) }
                                 entry.count += 1
                                 // Track top-3 latest cards per illustrator
-                                val number = extractStringField(cardTs, "number") ?: cp.fileName.toString().removeSuffix(".ts")
+                                val number = cp.fileName.toString().removeSuffix(".ts") // exact filename
                                 val numSort = number?.takeWhile { it.isDigit() }?.toIntOrNull() ?: Int.MIN_VALUE
                                 val cref = CardRef(
                                     setId = setId,
@@ -421,9 +807,11 @@ runBlocking {
                                 list.add(cref)
                             }
                             // Store multilingual card info (number, illustrator, names)
-                            val numberForCard = extractStringField(cardTs, "number") ?: cp.fileName.toString().removeSuffix(".ts")
+                            val numberForCard = cp.fileName.toString().removeSuffix(".ts") // exact filename
                             val namesMap = extractNameMap(cardTs)
-                            parsedList.add(CardParsed(number = numberForCard, illustrator = illustrator, names = namesMap))
+                            val rarity = extractStringField(cardTs, "rarity")
+                            val variants = parseVariantsToArray(cardTs)
+                            parsedList.add(CardParsed(number = numberForCard, illustrator = illustrator, names = namesMap, rarity = rarity, variants = variants))
                             processedCards++
                             if (processedCards % kotlin.math.max(1, progressEvery) == 0) {
                                 println("[gen] cards parsed=" + processedCards + " (set=" + setId + ")")
@@ -462,6 +850,7 @@ runBlocking {
         seriesMap: MutableMap<String, String>,
         setsMap: MutableMap<String, String>,
         illustratorsMap: MutableMap<String, String>,
+        manifest: ImageManifest? = null,
     ) {
         fun releaseKey(date: String?): Int = date?.replace("-", "")?.toIntOrNull() ?: 0
         fun parseLocalNumber(num: String?): Int = num?.takeWhile { it.isDigit() }?.toIntOrNull() ?: Int.MAX_VALUE
@@ -520,21 +909,46 @@ runBlocking {
             for (s in setsOfSerie) {
                 val cardsParsed = scan.setIdToCards[s.id].orEmpty()
                 val setName = s.names[lang] ?: s.names["en"] ?: s.fileBase
+                var cardsWithImages = 0
+                var cardsWithoutImages = 0
+                val miss = MissStats()
                 val cardsForLang = cardsParsed
                     .map { cp ->
                         val nm = cp.names[lang] ?: cp.names["en"] ?: ("#" + cp.number)
-                        val leadingDigits = cp.number.takeWhile { it.isDigit() }
-                        val normalizedNumber = leadingDigits.toIntOrNull()?.toString() ?: cp.number
-                        val imageNumSegment = normalizedNumber
+                        val exactNumber = cp.number
+                        // Strict original behavior:
+                        // - no language fallback
+                        // - no number normalization (use exact file name)
+                        // - allows setId normalization as fallback (e.g., sv09 -> sv9)
+                        val resolvedSetId = resolveImageSetIdIfExists(manifest, lang, s.seriesId, s.id, exactNumber, miss, verbose)
+                        val imageBaseUrl =
+                            if (resolvedSetId != null) {
+                                cardsWithImages++
+                                "https://assets.tcgdex.net/" + lang.lowercase() + "/" + s.seriesId + "/" + resolvedSetId + "/" + exactNumber
+                            } else {
+                                cardsWithoutImages++
+                                null
+                            }
+                        val variantsArray = cp.variants?.map { VariantOut(type = it) }
                         CardDetailOut(
-                            id = s.id + "-" + normalizedNumber,
-                            number = normalizedNumber,
+                            id = s.id + "-" + exactNumber,
+                            number = exactNumber,
                             name = nm,
                             illustrator = cp.illustrator,
-                            imageBase = "https://assets.tcgdex.net/" + lang.lowercase() + "/" + s.seriesId + "/" + s.id + "/" + imageNumSegment,
+                            imageBase = imageBaseUrl,
+                            rarity = cp.rarity,
+                            variants = variantsArray,
                         )
                     }
                     .sortedBy { parseLocalNumber(it.number) }
+                if (verbose) {
+                    println(
+                        "[gen] lang=" + lang + " set=" + s.id +
+                            ": images=" + cardsWithImages + "/" + cardsForLang.size +
+                            " miss={lang=" + miss.lang + ", serie=" + miss.serie + ", set=" + miss.set + ", card=" + miss.card + "}" +
+                            (if (miss.normalizedSetUsed > 0) " normSetUrl=" + miss.normalizedSetUsed else "")
+                    )
+                }
                 // Write sets/<id>.json from local TS scan (local-only path)
                 runCatching {
                     val langDirLocal = outBasePath.resolve(lang)
@@ -779,9 +1193,11 @@ runBlocking {
             val globalIndex = mapOf(
                 "version" to JsonPrimitive(1),
                 "generatedAt" to JsonPrimitive(System.currentTimeMillis()),
-                "artists" to Json.parseToJsonElement(json.encodeToString(globalIndexArtists)),
+                // Use the pretty-printing Json instance to ensure readable indentation
+                "artists" to json.parseToJsonElement(json.encodeToString(globalIndexArtists)),
             )
-            val globalIndexJson = Json.encodeToString(JsonObject(globalIndex))
+            // Encode with pretty printing enabled
+            val globalIndexJson = json.encodeToString(JsonObject(globalIndex))
             Files.writeString(
                 scopeDir.resolve("illustrators-index.json"),
                 globalIndexJson,
@@ -795,6 +1211,72 @@ runBlocking {
     var totalSetsAll = 0
     // Cache a single local TS DB scan for all languages
     var cachedLocalScan: LocalScan? = null
+    // Fetch image manifest once for all languages (download once -> cache -> fallback to cache). Abort if missing.
+    val manifest: ImageManifest? = runCatching { loadImageManifestWithCache(offlineOnly) }
+        .onFailure { e -> log("[x] ${e.message ?: "Image manifest error"}") }
+        .getOrNull()
+        ?: run {
+            log("[x] Aborting: Image manifest not available and no cache found")
+            return@runBlocking
+        }
+    // Preflight diagnostics and optional gating
+    val manifestStrictGate: Boolean = (System.getProperty("manifest.strict") ?: "").equals("true", ignoreCase = true)
+    val minSetCoverage: Double = System.getProperty("manifest.minSetCoverage")?.toDoubleOrNull() ?: 0.0
+    val minCardCoverage: Double = System.getProperty("manifest.minCardCoverage")?.toDoubleOrNull() ?: 0.0
+    val coverageReport = StringBuilder()
+    coverageReport.appendLine("Manifest coverage report (strict, no fallback):")
+    val cov = languages.map { lang ->
+        val metrics = computeCoverageForLangStrict(lang, cachedLocalScan ?: run {
+            // ensure scan is present for coverage; perform one quick scan shared for all langs
+            val dataRoot = listOf(
+                localDbPath!!.resolve("data"),
+                localDbPath
+            ).firstOrNull { Files.isDirectory(it) } ?: localDbPath
+            log("lang=$lang: preflight single-pass scan under $dataRoot for coverage")
+            val tScan0 = System.nanoTime()
+            cachedLocalScan = scanLocalTsDatabase(dataRoot, seriesFilter, limitSets)
+            val tScan1 = System.nanoTime()
+            log("preflight scan completed in " + ((tScan1 - tScan0) / 1_000_000) + " ms")
+            cachedLocalScan!!
+        }, manifest!!)
+        val setCov = if (metrics.setsInScan > 0) metrics.setsWithManifest.toDouble() / metrics.setsInScan else 0.0
+        val cardCov = if (metrics.cardsInScan > 0) metrics.cardsWithImages.toDouble() / metrics.cardsInScan else 0.0
+        coverageReport.appendLine(" - lang=" + lang +
+            " sets=" + metrics.setsWithManifest + "/" + metrics.setsInScan +
+            " (" + String.format("%.1f", setCov * 100) + "%)" +
+            " cards=" + metrics.cardsWithImages + "/" + metrics.cardsInScan +
+            " (" + String.format("%.1f", cardCov * 100) + "%)" +
+            (if (metrics.cardsNeedingTrimNormalization > 0) " needsTrim=" + metrics.cardsNeedingTrimNormalization else "")
+        )
+        if (verbose && metrics.setsMissing.isNotEmpty()) {
+            coverageReport.appendLine("   missing sets: " + metrics.setsMissing.take(10).joinToString(",") + (if (metrics.setsMissing.size > 10) " …" else ""))
+        }
+        metrics
+    }
+    // Write report
+    try {
+        val reportDir = Path.of(System.getProperty("user.dir")).resolve("build/reports")
+        Files.createDirectories(reportDir)
+        Files.writeString(
+            reportDir.resolve("manifest_coverage.txt"),
+            coverageReport.toString(),
+            StandardOpenOption.CREATE, StandardOpenOption.TRUNCATE_EXISTING, StandardOpenOption.WRITE
+        )
+    } catch (_: Throwable) {}
+    println(coverageReport.toString().trim())
+    // Enforce optional gates
+    if (manifestStrictGate) {
+        val failingLangs = cov.filter { m ->
+            val setCov = if (m.setsInScan > 0) m.setsWithManifest.toDouble() / m.setsInScan else 0.0
+            val cardCov = if (m.cardsInScan > 0) m.cardsWithImages.toDouble() / m.cardsInScan else 0.0
+            setCov < minSetCoverage || cardCov < minCardCoverage
+        }.map { it.lang }
+        if (failingLangs.isNotEmpty()) {
+            log("[x] Aborting: manifest coverage below thresholds. minSetCoverage=" + minSetCoverage + " minCardCoverage=" + minCardCoverage +
+                " failingLangs=" + failingLangs.joinToString(","))
+            return@runBlocking
+        }
+    }
     for (lang in languages) {
         log("Generating catalog for lang=" + lang + " …")
         if (useLocal) {
@@ -818,6 +1300,7 @@ runBlocking {
                     seriesMap = seriesMap,
                     setsMap = setsMap,
                     illustratorsMap = illustratorsMap,
+                    manifest = manifest,
                 )
                 val tLang1 = System.nanoTime()
                 log("lang=" + lang + ": wrote series=" + (Json { }.decodeFromString<List<SeriesOut>>(seriesMap[lang.lowercase()]!!).size) +
@@ -827,6 +1310,7 @@ runBlocking {
                 // Phase B (remote): fetch canonical set details exclusively via API (unless offlineOnly)
                 if (offlineOnly) {
                     log("[i] offlineOnly=true; skipping remote set details for lang=" + lang)
+                    continue
                 } else {
                     val langDir = outBasePath.resolve(lang)
                     val langSetsDir = langDir.resolve("sets")
@@ -885,9 +1369,18 @@ runBlocking {
                                             co["illustrator"]?.jsonPrimitive?.content
                                                 ?.takeIf { it.isNotBlank() }
                                                 ?: localCardsIndex[number]?.illustrator
-                                        val imageBaseResolved =
-                                            co["image"]?.jsonPrimitive?.content
-                                                ?: ("https://assets.tcgdex.net/" + lang.lowercase() + "/" + serieIdVal + "/" + so.id + "/" + number.trimStart('0').ifBlank { "0" })
+                                        val imageBaseFromApi = co["image"]?.jsonPrimitive?.content
+                                        val imageBaseResolved = if (imageBaseFromApi != null) {
+                                            imageBaseFromApi
+                                        } else {
+                                            // Fallback: check manifest before generating URL
+                                            val fallbackNumber = number.trimStart('0').ifBlank { "0" }
+                                            if (imageExistsInManifest(manifest, lang, serieIdVal, so.id, number)) {
+                                                "https://assets.tcgdex.net/" + lang.lowercase() + "/" + serieIdVal + "/" + so.id + "/" + fallbackNumber
+                                            } else {
+                                                null
+                                            }
+                                        }
                                         CardDetailOut(
                                             id = so.id + "-" + number,
                                             number = number,
@@ -1148,7 +1641,7 @@ runBlocking {
                             val detailedFiltered = detailed.filter { !isTcgpSetId(it.id) && !isTcgp(it.serieId) }
                             // Write outputs
                             val series = detailedFiltered
-                                .mapNotNull { it.serieId?.let { id -> id to (serieIdToName[id] ?: id) } }
+                                .mapNotNull { it.serieId?.let { id -> id to id } }
                                 .distinctBy { it.first }
                                 .map { SeriesOut(it.first, it.second) }
                             Files.writeString(
@@ -1233,7 +1726,7 @@ runBlocking {
                         )
                         // Build series list from embedded names if possible
                         val series = detailedFiltered
-                            .mapNotNull { it.serieId?.let { id -> id to (serieIdToName[id] ?: id) } }
+                            .mapNotNull { it.serieId?.let { id -> id to id } }
                             .distinctBy { it.first }
                             .map { SeriesOut(it.first, it.second) }
                         Files.writeString(
@@ -1347,7 +1840,7 @@ runBlocking {
 
                     val filteredDetailed = detailed.filter { !isTcgpSetId(it.id) && !isTcgp(it.serieId) }
                     val series: List<SeriesOut> = filteredDetailed
-                        .mapNotNull { it.serieId?.let { id -> id to (seriesNames[id] ?: (serieIdToName[id] ?: id)) } }
+                        .mapNotNull { it.serieId?.let { id -> id to (seriesNames[id] ?: id) } }
                         .distinctBy { it.first }
                         .map { SeriesOut(id = it.first, name = it.second) }
 
@@ -1459,7 +1952,7 @@ runBlocking {
                         }
                     }
                     val series = detailed
-                        .mapNotNull { it.serieId?.let { id -> id to (seriesNames[id] ?: (serieIdToName[id] ?: id)) } }
+                        .mapNotNull { it.serieId?.let { id -> id to (seriesNames[id] ?: id) } }
                         .distinctBy { it.first }
                         .map { SeriesOut(it.first, it.second) }
                     Files.writeString(
@@ -1514,84 +2007,7 @@ runBlocking {
                 if (offlineOnly) continue else log("[~] Falling back to remote for lang=" + lang)
             }
         }
-        try {
-            val setsResp = sdk.getSets(language = lang, page = 1, pageSize = 2000).getOrThrow()
-            val fullSets = setsResp.data.orEmpty()
-            val totalSets = if (limitSets > 0) kotlin.math.min(limitSets, fullSets.size) else fullSets.size
-            log("lang=" + lang + ": sets=" + fullSets.size + " (processing=" + totalSets + ")")
-            val langDir = outBasePath.resolve(lang)
-            Files.createDirectories(langDir)
-            val detailed = mutableListOf<SetOut>()
-            var processed = 0
-            for (s in fullSets.take(totalSets)) {
-                val full = sdk.getSetById(language = lang, setId = s.id).getOrThrow()
-                val serieId = full.serie?.id ?: setIdToSerieId[s.id] ?: extractSerieIdFromSetId(s.id)
-                detailed += SetOut(
-                    id = full.id,
-                    name = full.name,
-                    releaseDate = full.releaseDate,
-                    logo = full.logo,
-                    symbol = full.symbol,
-                    serieId = serieId,
-                    official = full.cardCount?.official,
-                    total = full.cardCount?.total ?: full.cardCount?.official,
-                )
-                // Persist canonical REST detail JSON for this set (pretty-printed) with validation and language fallback
-                if (!skipDetails) {
-                    try {
-                        val raw = http.get("https://api.tcgdex.net/v2/$lang/sets/${full.id}").bodyAsText()
-                        val element = json.parseToJsonElement(raw)
-                        val obj = element.jsonObject
-                        val cardsCount = obj["cards"]?.jsonArray?.size ?: 0
-                        val cc = obj["cardCount"] as? JsonObject
-                        val expected = cc?.get("total")?.jsonPrimitive?.content?.toIntOrNull()
-                            ?: cc?.get("official")?.jsonPrimitive?.content?.toIntOrNull()
-                        val setDir = langDir.resolve("sets")
-                        Files.createDirectories(setDir)
-                        if (expected != null && cardsCount != expected) {
-                            log("[warn] Card count mismatch for " + lang + ":" + full.id + " expected=" + expected + " actual=" + cardsCount + " – writing API payload as-is")
-                        }
-                        Files.writeString(
-                            setDir.resolve("${full.id}.json"),
-                            json.encodeToString(element),
-                            StandardOpenOption.CREATE, StandardOpenOption.TRUNCATE_EXISTING, StandardOpenOption.WRITE,
-                        )
-                    } catch (t: Throwable) {
-                        log("[warn] Failed detail write " + lang + ":" + full.id + ": " + (t.message ?: "unknown"))
-                    }
-                }
-
-                // Removed: remote illustrator accumulation; illustrators are generated from local DB only.
-                processed++
-                if (processed % kotlin.math.max(1, progressEvery) == 0 || processed == totalSets) {
-                    log("lang=" + lang + ": progress " + processed + "/" + totalSets)
-                }
-            }
-            totalSetsAll += totalSets
-            val filteredDetailed = detailed.filter { !isTcgpSetId(it.id) && !isTcgp(it.serieId) }
-            val series: List<SeriesOut> = filteredDetailed
-                .mapNotNull { it.serieId?.let { id -> id to (fullSets.firstOrNull { b -> b.serie?.id == id }?.serie?.name ?: (serieIdToName[id] ?: id)) } }
-                .distinctBy { it.first }
-                .map { SeriesOut(id = it.first, name = it.second) }
-
-            Files.writeString(
-                langDir.resolve("series.json"),
-                json.encodeToString(series),
-                StandardOpenOption.CREATE, StandardOpenOption.TRUNCATE_EXISTING, StandardOpenOption.WRITE,
-            )
-            Files.writeString(
-                langDir.resolve("sets.json"),
-                json.encodeToString(filteredDetailed),
-                StandardOpenOption.CREATE, StandardOpenOption.TRUNCATE_EXISTING, StandardOpenOption.WRITE,
-            )
-
-            // Accumulate for Kotlin embedding (series/sets only in remote path)
-            seriesMap[lang.lowercase()] = json.encodeToString(series)
-            setsMap[lang.lowercase()] = json.encodeToString(filteredDetailed)
-            log("lang=" + lang + ": wrote series=" + series.size + " sets=" + detailed.size)
-        } catch (t: Throwable) {
-            log("[x] Skipping lang=" + lang + " due to error: " + (t.message ?: "unknown"))
-        }
+        // Remote generation disabled (local-only enforced).
     }
 
     // Also write a Kotlin source with embedded data to keep loading platform-agnostic
