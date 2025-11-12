@@ -757,17 +757,15 @@ runBlocking {
                     latest = listOfNotNull(latest, releaseDate).maxOrNull()
                 }
                 val official = extractIntFieldInObject(c, "cardCount", "official")
-                val total = extractIntFieldInObject(c, "cardCount", "total") ?: official
-                setScans += SetScan(
-                    id = setId,
-                    seriesId = serieId,
-                    fileBase = setTs.fileName.toString().removeSuffix(".ts"),
-                    names = setNames,
-                    releaseDate = releaseDate,
-                    official = official,
-                    total = total,
-                )
-                // Resolve cards folder with multiple candidates: fileBase, setId, english/fr names
+                
+                // CRITICAL: ALWAYS compute 'total' by counting actual card files in the database.
+                // NEVER use the 'total' field from source TypeScript files (may be incorrect/incomplete).
+                // The 'official' count is the numbered main set (e.g. 1-165), while 'total' includes
+                // ALL cards: secret rares, full arts, rainbow rares, trainer gallery, etc.
+                // This count is language-independent and applied to all languages.
+                // Requirement: Users must be able to see and collect ALL cards, not just numbered ones.
+                
+                // Find the cards directory and count actual .ts files
                 val fileBase = setTs.fileName.toString().removeSuffix(".ts")
                 val folderCandidates = listOfNotNull(
                     fileBase,
@@ -779,6 +777,36 @@ runBlocking {
                     .asSequence()
                     .map { nm -> seriesFolder.resolve(nm) }
                     .firstOrNull { Files.isDirectory(it) }
+                
+                var total: Int? = null
+                if (cardsFolder != null && Files.exists(cardsFolder)) {
+                    // Count actual card files (.ts) in the directory
+                    val actualCardCount = Files.newDirectoryStream(cardsFolder).use { stream ->
+                        stream.count { path -> 
+                            Files.isRegularFile(path) && path.toString().endsWith(".ts")
+                        }
+                    }
+                    if (actualCardCount > 0) {
+                        total = actualCardCount
+                        println("[gen] info: set=$setId: counted $actualCardCount actual card files (official=$official)")
+                    } else {
+                        println("[gen] warn: set=$setId: no card files found in $cardsFolder, using official=$official")
+                    }
+                } else {
+                    println("[gen] warn: set=$setId: cards folder not found, using official=$official")
+                }
+                
+                setScans += SetScan(
+                    id = setId,
+                    seriesId = serieId,
+                    fileBase = setTs.fileName.toString().removeSuffix(".ts"),
+                    names = setNames,
+                    releaseDate = releaseDate,
+                    official = official,
+                    total = total ?: official, // Fallback to official if card files not found
+                )
+                
+                // Parse cards from the cards folder (already resolved above during counting)
                 if (cardsFolder != null) {
                     println("[gen] set=" + setId + " cardsFolder=" + cardsFolder.fileName)
                     setIdToCardsFolder[setId] = cardsFolder
@@ -1034,6 +1062,15 @@ runBlocking {
         val payload = IllustratorIndexPayload(language = lang.lowercase(), generatedAt = System.currentTimeMillis(), artists = artists)
 
         Files.createDirectories(langDir)
+        
+        // Write catalog metadata with generation timestamp for cache versioning
+        val catalogMetadata = mapOf(
+            "version" to JsonPrimitive(1),
+            "generatedAt" to JsonPrimitive(System.currentTimeMillis()),
+            "language" to JsonPrimitive(lang.lowercase())
+        )
+        Files.writeString(langDir.resolve("catalog-metadata.json"), json.encodeToString(JsonObject(catalogMetadata)), StandardOpenOption.CREATE, StandardOpenOption.TRUNCATE_EXISTING, StandardOpenOption.WRITE)
+        
         Files.writeString(langDir.resolve("series.json"), json.encodeToString(seriesOut), StandardOpenOption.CREATE, StandardOpenOption.TRUNCATE_EXISTING, StandardOpenOption.WRITE)
         Files.writeString(langDir.resolve("sets.json"), json.encodeToString(setsOut), StandardOpenOption.CREATE, StandardOpenOption.TRUNCATE_EXISTING, StandardOpenOption.WRITE)
         // Do not generate per-language illustrators-index.json (language-agnostic index is written under /illustrators)
@@ -1511,7 +1548,41 @@ runBlocking {
                                         if (symbol.isNullOrBlank()) symbol = assetBase + "/symbol"
                                     }
                                     val official = extractIntFieldInObject(c, "cardCount", "official")
-                                    val total = extractIntFieldInObject(c, "cardCount", "total") ?: official
+                                    
+                                    // CRITICAL: ALWAYS compute 'total' by counting actual card files in the database.
+                                    // NEVER use the 'total' field from source TypeScript files (may be incorrect/incomplete).
+                                    // Same logic as the first pass, ensures consistency across all languages.
+                                    
+                                    // Find the cards directory and count actual .ts files
+                                    val fileBase = setTs.fileName.toString().removeSuffix(".ts")
+                                    val folderCandidates = listOfNotNull(
+                                        fileBase,
+                                        setId,
+                                        setName,
+                                    ).distinct()
+                                    val cardsFolder = folderCandidates
+                                        .asSequence()
+                                        .map { nm -> seriesFolder.resolve(nm) }
+                                        .firstOrNull { Files.isDirectory(it) }
+                                    
+                                    var total: Int? = null
+                                    if (cardsFolder != null && Files.exists(cardsFolder)) {
+                                        // Count actual card files (.ts) in the directory
+                                        val actualCardCount = Files.newDirectoryStream(cardsFolder).use { stream ->
+                                            stream.count { path -> 
+                                                Files.isRegularFile(path) && path.toString().endsWith(".ts")
+                                            }
+                                        }
+                                        if (actualCardCount > 0) {
+                                            total = actualCardCount
+                                            log("lang=" + lang + ": info: set=$setId: counted $actualCardCount actual card files (official=$official)")
+                                        } else {
+                                            log("lang=" + lang + ": warn: set=$setId: no card files found in $cardsFolder, using official=$official")
+                                        }
+                                    } else {
+                                        log("lang=" + lang + ": warn: set=$setId: cards folder not found, using official=$official")
+                                    }
+                                    
                                     detailed += SetOut(
                                         id = setId,
                                         name = setName,
@@ -1520,13 +1591,13 @@ runBlocking {
                                         symbol = symbol,
                                         serieId = serieId,
                                         official = official,
-                                        total = total,
+                                        total = total ?: official, // Fallback to official if card files not found
                                     )
 
                                     // Aggregate illustrators for this set from card TS files in folder named after the set file base
-                                    val cardsFolder = seriesFolder.resolve(setTs.fileName.toString().removeSuffix(".ts"))
-                                    if (Files.isDirectory(cardsFolder)) {
-                                        Files.newDirectoryStream(cardsFolder).use { cds ->
+                                    val illustratorCardsFolder = seriesFolder.resolve(setTs.fileName.toString().removeSuffix(".ts"))
+                                    if (Files.isDirectory(illustratorCardsFolder)) {
+                                        Files.newDirectoryStream(illustratorCardsFolder).use { cds ->
                                             for (cp in cds) {
                                                 if (!Files.isRegularFile(cp) || !cp.toString().endsWith(".ts")) continue
                                                 val cardTs = runCatching { Files.readString(cp) }.getOrNull() ?: continue

@@ -149,6 +149,88 @@ Notes:
 - Series data is embedded in each set (`TcgdxSet.serie`); there is no separate series endpoint. The SDK derives series from the sets collection.
 
 
+## Embedded Catalog Generator
+
+This SDK includes a JVM-based tool (`GenerateEmbeddedCatalog.kt`) that processes the TCGdex cards-database repository and generates embedded JSON catalogs for offline use.
+
+### Purpose
+
+The embedded catalog allows the app to function without network access by including pre-generated JSON files containing:
+- Set metadata (names, release dates, card counts, logos, symbols)
+- Series metadata
+- Illustrator collections and statistics
+- Multilingual support (en, fr, de, es, it, pt, ja, ko, zh)
+
+### Running the Generator
+
+```bash
+./gradlew :libs:tcgdex-kmp-sdk:generateEmbeddedCatalog --no-daemon
+```
+
+### Auto-Counting Feature (Total Card Count)
+
+**Problem**: Most sets in the upstream TCGdex data only specify the `official` card count (numbered cards 1-N), but omit the `total` count which includes secret rares, full arts, rainbow rares, trainer gallery cards, and other special cards.
+
+**Solution**: The generator automatically counts actual card files (`.ts` files) in each set directory when the `total` field is missing from the source TypeScript definition.
+
+**Behavior**:
+- If `total` is present in the source → uses that value
+- If `total` is missing → counts actual `.ts` files in the set directory
+- If set directory not found → falls back to `official` count as last resort
+
+**Why This Matters**:
+- Users can see and collect **all cards** in a set, not just numbered ones
+- Cardium remains independent of incomplete upstream data
+- Sets automatically show correct totals based on reality (actual card files)
+
+**Example Output**:
+```
+[gen] info: set=sv02: 'total' not in source, counted 279 actual card files (official=193)
+[gen] info: set=sv03: 'total' not in source, counted 230 actual card files (official=197)
+[gen] info: set=sv03.5: using total=207 from source (official=165)
+```
+
+**Logs**: Generation logs are saved to `libs/tcgdex-kmp-sdk/build/logs/generate-embedded-catalog-<timestamp>.log`
+
+### Requirements
+
+- **cards-database repository**: Must be cloned at `../cards-database` (relative to cardium root)
+- **Java 17+**: Required for running the generator
+- **Disk space**: ~50MB for generated JSON files across all languages
+
+### Generated Files Structure
+
+```
+src/commonMain/resources/
+├── tcgdex/
+│   ├── en/
+│   │   ├── series.json          # Series metadata
+│   │   ├── sets.json            # All sets (with auto-counted totals)
+│   │   └── sets/                # Individual set files
+│   │       ├── sv01.json
+│   │       ├── sv02.json
+│   │       └── ...
+│   ├── fr/ ...
+│   └── ... (9 languages total)
+└── illustrators/
+    └── global/
+        ├── illustrators-index.json  # Global illustrator index
+        └── artists/
+            ├── Mitsuhiro_Arita.json
+            └── ... (393 artists)
+```
+
+### Customization
+
+The generator supports command-line arguments:
+- `--limit-sets <N>`: Only process first N sets per series (for testing)
+- `--progress-every <N>`: Show progress every N sets (default: 10)
+
+Example:
+```bash
+./gradlew :libs:tcgdex-kmp-sdk:generateEmbeddedCatalog --args="--limit-sets 5 --progress-every 1"
+```
+
 ## Versioning
 
 This module is currently versioned alongside the host repo. When separating into an independent artifact, prefer semantic versioning.
