@@ -12,700 +12,1527 @@
             "number": "1",
             "name": "Armaldo",
             "illustrator": "Mitsuhiro Arita",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-2",
             "number": "2",
             "name": "Noktuska",
             "illustrator": "Atsuko Nishida",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-3",
             "number": "3",
             "name": "Wielie",
             "illustrator": "Midori Harada",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-4",
             "number": "4",
             "name": "Zwirrklop",
             "illustrator": "Midori Harada",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-5",
             "number": "5",
             "name": "Flamara",
             "illustrator": "Midori Harada",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-6",
             "number": "6",
             "name": "Blitza",
             "illustrator": "Atsuko Nishida",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-7",
             "number": "7",
             "name": "Kappalores",
             "illustrator": "Tomokazu Komiya",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-8",
             "number": "8",
             "name": "Lunastein",
             "illustrator": "Hajime Kusajima",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-9",
             "number": "9",
             "name": "Flunkifer",
             "illustrator": "Mitsuhiro Arita",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-10",
             "number": "10",
             "name": "Zobiris",
             "illustrator": "Hajime Kusajima",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-11",
             "number": "11",
             "name": "Vipitis",
             "illustrator": "Hajime Kusajima",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-12",
             "number": "12",
             "name": "Tengulist",
             "illustrator": "Atsuko Nishida",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-13",
             "number": "13",
             "name": "Sonnfel",
             "illustrator": "Hajime Kusajima",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-14",
             "number": "14",
             "name": "Sengo",
             "illustrator": "Kagemaru Himeno",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-15",
             "number": "15",
             "name": "Arkani",
             "illustrator": "Hajime Kusajima",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-16",
             "number": "16",
             "name": "Psiana",
             "illustrator": "Mitsuhiro Arita",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "normal",
+                    "subtype": "no-e-reader"
+                }
+            ]
         },
         {
             "id": "ex2-17",
             "number": "17",
             "name": "Entoron",
             "illustrator": "Hajime Kusajima",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-18",
             "number": "18",
             "name": "Kecleon",
             "illustrator": "Kagemaru Himeno",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-19",
             "number": "19",
             "name": "Amoroso",
             "illustrator": "Kouki Saitou",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-20",
             "number": "20",
             "name": "Pichu",
             "illustrator": "Naoyo Kimura",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-21",
             "number": "21",
             "name": "Sandamer",
             "illustrator": "Kouki Saitou",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-22",
             "number": "22",
             "name": "Tengulist",
             "illustrator": "Ken Sugimori",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-23",
             "number": "23",
             "name": "Stahlos",
             "illustrator": "Midori Harada",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-24",
             "number": "24",
             "name": "Nachtara",
             "illustrator": "Kagemaru Himeno",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-25",
             "number": "25",
             "name": "Aquana",
             "illustrator": "Hajime Kusajima",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-26",
             "number": "26",
             "name": "Woingenau",
             "illustrator": "Atsuko Nishida",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-27",
             "number": "27",
             "name": "Anorith",
             "illustrator": "Mitsuhiro Arita",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-28",
             "number": "28",
             "name": "Anorith",
             "illustrator": "Ken Sugimori",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-29",
             "number": "29",
             "name": "Arbok",
             "illustrator": "Midori Harada",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-30",
             "number": "30",
             "name": "Azumarill",
             "illustrator": "Mitsuhiro Arita",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-31",
             "number": "31",
             "name": "Azurill",
             "illustrator": "Kagemaru Himeno",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-32",
             "number": "32",
             "name": "Puppance",
             "illustrator": "Midori Harada",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-33",
             "number": "33",
             "name": "Kapilz",
             "illustrator": "Atsuko Nishida",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-34",
             "number": "34",
             "name": "Enekoro",
             "illustrator": "Midori Harada",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-35",
             "number": "35",
             "name": "Elektek",
             "illustrator": "Kouki Saitou",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-36",
             "number": "36",
             "name": "Elekid",
             "illustrator": "Kouki Saitou",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-37",
             "number": "37",
             "name": "Ibitak",
             "illustrator": "Aya Kusube",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-38",
             "number": "38",
             "name": "Illumise",
             "illustrator": "Kyoko Umemoto",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-39",
             "number": "39",
             "name": "Kabuto",
             "illustrator": "Atsuko Nishida",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-40",
             "number": "40",
             "name": "Kirlia",
             "illustrator": "Hajime Kusajima",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-41",
             "number": "41",
             "name": "Stollrak",
             "illustrator": "Atsuko Nishida",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-42",
             "number": "42",
             "name": "Liliep",
             "illustrator": "Midori Harada",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-43",
             "number": "43",
             "name": "Liliep",
             "illustrator": "Ken Sugimori",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-44",
             "number": "44",
             "name": "Geradaks",
             "illustrator": "Mitsuhiro Arita",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-45",
             "number": "45",
             "name": "Lombrero",
             "illustrator": "Tomokazu Komiya",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-46",
             "number": "46",
             "name": "Lombrero",
             "illustrator": "Mitsuhiro Arita",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-47",
             "number": "47",
             "name": "Kramurx",
             "illustrator": "Mitsuhiro Arita",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-48",
             "number": "48",
             "name": "Blanas",
             "illustrator": "Atsuko Nishida",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-49",
             "number": "49",
             "name": "Blanas",
             "illustrator": "Ken Sugimori",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-50",
             "number": "50",
             "name": "Pelipper",
             "illustrator": "Kagemaru Himeno",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-51",
             "number": "51",
             "name": "Igelavar",
             "illustrator": "Naoyo Kimura",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "normal",
+                    "subtype": "no-e-reader"
+                }
+            ]
         },
         {
             "id": "ex2-52",
             "number": "52",
             "name": "Muntier",
             "illustrator": "Ken Sugimori",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-53",
             "number": "53",
             "name": "Volbeat",
             "illustrator": "Kyoko Umemoto",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-54",
             "number": "54",
             "name": "Isso",
             "illustrator": "Kagemaru Himeno",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-55",
             "number": "55",
             "name": "Xatu",
             "illustrator": "Midori Harada",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "normal",
+                    "subtype": "no-e-reader"
+                }
+            ]
         },
         {
             "id": "ex2-56",
             "number": "56",
             "name": "Stollunior",
             "illustrator": "Atsuko Nishida",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-57",
             "number": "57",
             "name": "Tuska",
             "illustrator": "Atsuko Nishida",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-58",
             "number": "58",
             "name": "Tuska",
             "illustrator": "Midori Harada",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-59",
             "number": "59",
             "name": "Feurigel",
             "illustrator": "Naoyo Kimura",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-60",
             "number": "60",
             "name": "Dummisel",
             "illustrator": "Mitsuhiro Arita",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "normal",
+                    "subtype": "no-e-reader"
+                }
+            ]
         },
         {
             "id": "ex2-61",
             "number": "61",
             "name": "Zwirrlicht",
             "illustrator": "Midori Harada",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-62",
             "number": "62",
             "name": "Zwirrlicht",
             "illustrator": "Aya Kusube",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-63",
             "number": "63",
             "name": "Evoli",
             "illustrator": "Kouki Saitou",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "normal",
+                    "subtype": "no-e-reader"
+                }
+            ]
         },
         {
             "id": "ex2-64",
             "number": "64",
             "name": "Rettan",
             "illustrator": "Midori Harada",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-65",
             "number": "65",
             "name": "Fukano",
             "illustrator": "Hajime Kusajima",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-66",
             "number": "66",
             "name": "Loturzel",
             "illustrator": "Tomokazu Komiya",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-67",
             "number": "67",
             "name": "Loturzel",
             "illustrator": "Mitsuhiro Arita",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-68",
             "number": "68",
             "name": "Marill",
             "illustrator": "Mitsuhiro Arita",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-69",
             "number": "69",
             "name": "Natu",
             "illustrator": "Kouki Saitou",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "normal",
+                    "subtype": "no-e-reader"
+                }
+            ]
         },
         {
             "id": "ex2-70",
             "number": "70",
             "name": "Amonitas",
             "illustrator": "Kouki Saitou",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-71",
             "number": "71",
             "name": "Onix",
             "illustrator": "Midori Harada",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "normal",
+                    "subtype": "no-e-reader"
+                }
+            ]
         },
         {
             "id": "ex2-72",
             "number": "72",
             "name": "Pikachu",
             "illustrator": "Mitsuhiro Arita",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-73",
             "number": "73",
             "name": "Enton",
             "illustrator": "Kouki Saitou",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-74",
             "number": "74",
             "name": "Trasla",
             "illustrator": "Hajime Kusajima",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "normal",
+                    "subtype": "no-e-reader"
+                }
+            ]
         },
         {
             "id": "ex2-75",
             "number": "75",
             "name": "Sandan",
             "illustrator": "Kouki Saitou",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-76",
             "number": "76",
             "name": "Samurzel",
             "illustrator": "Atsuko Nishida",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-77",
             "number": "77",
             "name": "Samurzel",
             "illustrator": "Ken Sugimori",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-78",
             "number": "78",
             "name": "Knilz",
             "illustrator": "Ken Sugimori",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-79",
             "number": "79",
             "name": "Eneco",
             "illustrator": "Kagemaru Himeno",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "normal",
+                    "subtype": "no-e-reader"
+                }
+            ]
         },
         {
             "id": "ex2-80",
             "number": "80",
             "name": "Bummelz",
             "illustrator": "Ken Sugimori",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-81",
             "number": "81",
             "name": "Habitak",
             "illustrator": "Aya Kusube",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-82",
             "number": "82",
             "name": "Knacklion",
             "illustrator": "Mitsuhiro Arita",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-83",
             "number": "83",
             "name": "Wailmer",
             "illustrator": "Ken Sugimori",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-84",
             "number": "84",
             "name": "Wingull",
             "illustrator": "Kagemaru Himeno",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-85",
             "number": "85",
             "name": "Zigzachs",
             "illustrator": "Mitsuhiro Arita",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-86",
             "number": "86",
             "name": "Doppel Hyperheiler",
             "illustrator": "Ryo Ueda",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "normal",
+                    "subtype": "no-e-reader"
+                }
+            ]
         },
         {
             "id": "ex2-87",
             "number": "87",
             "name": "Lanettes Internetsuche",
             "illustrator": "Ken Sugimori",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-88",
             "number": "88",
             "name": "Sonderbonbon",
             "illustrator": "Ryo Ueda",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-89",
             "number": "89",
             "name": "Heikos Training",
             "illustrator": "Ken Sugimori",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "normal",
+                    "subtype": "no-e-reader"
+                }
+            ]
         },
         {
             "id": "ex2-90",
             "number": "90",
             "name": "Klauenfossil",
             "illustrator": "Ryo Ueda",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-91",
             "number": "91",
             "name": "Geheimnis-Fossil",
             "illustrator": "Keiji Kinebuchi",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-92",
             "number": "92",
             "name": "Wurzelfossil",
             "illustrator": "Ryo Ueda",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex2-93",
             "number": "93",
             "name": "Multi-Energie",
             "illustrator": "Takumi Akabane",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "holo",
+                    "foil": "cosmos"
+                }
+            ]
         },
         {
             "id": "ex2-94",
             "number": "94",
             "name": "Aerodactyl ex",
             "illustrator": "Hikaru Koike",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "ex2-95",
             "number": "95",
             "name": "Stollos ex",
             "illustrator": "Hikaru Koike",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "ex2-96",
             "number": "96",
             "name": "Guardevoir ex",
             "illustrator": "Hikaru Koike",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "ex2-97",
             "number": "97",
             "name": "Kabutops ex",
             "illustrator": "Ryo Ueda",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "ex2-98",
             "number": "98",
             "name": "Raichu ex",
             "illustrator": "Ryo Ueda",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "ex2-99",
             "number": "99",
             "name": "Tornupto ex",
             "illustrator": "Hikaru Koike",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "ex2-100",
             "number": "100",
             "name": "Wailord ex",
             "illustrator": "Ryo Ueda",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         }
     ]
 }

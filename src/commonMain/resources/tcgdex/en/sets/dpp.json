@@ -13,7 +13,12 @@
             "name": "Beginning Door",
             "illustrator": "Ryo Ueda",
             "imageBase": "https://assets.tcgdex.net/en/dp/dpp/DP54",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "dpp-DP05",
@@ -29,7 +34,12 @@
             "name": "Heatran",
             "illustrator": "Shizurow",
             "imageBase": "https://assets.tcgdex.net/en/dp/dpp/DP31",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "dpp-DP21",
@@ -37,7 +47,12 @@
             "name": "Raichu",
             "illustrator": "Daisuke Ito",
             "imageBase": "https://assets.tcgdex.net/en/dp/dpp/DP21",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "dpp-DP15",
@@ -45,7 +60,12 @@
             "name": "Shinx",
             "illustrator": "Kagemaru Himeno",
             "imageBase": "https://assets.tcgdex.net/en/dp/dpp/DP15",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "dpp-DP44",
@@ -53,7 +73,12 @@
             "name": "Magnezone",
             "illustrator": "Kagemaru Himeno",
             "imageBase": "https://assets.tcgdex.net/en/dp/dpp/DP44",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "dpp-DP35",
@@ -61,7 +86,12 @@
             "name": "Porygon-Z",
             "illustrator": "Kagemaru Himeno",
             "imageBase": "https://assets.tcgdex.net/en/dp/dpp/DP35",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "dpp-DP01",
@@ -69,7 +99,12 @@
             "name": "Turtwig",
             "illustrator": "Masakazu Fukuda",
             "imageBase": "https://assets.tcgdex.net/en/dp/dpp/DP01",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "dpp-DP50",
@@ -77,7 +112,16 @@
             "name": "Arceus",
             "illustrator": "Kunihiko Yuyama",
             "imageBase": "https://assets.tcgdex.net/en/dp/dpp/DP50",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                },
+                {
+                    "type": "holo",
+                    "size": "jumbo"
+                }
+            ]
         },
         {
             "id": "dpp-DP40",
@@ -85,7 +129,20 @@
             "name": "Regigigas",
             "illustrator": "Kagemaru Himeno",
             "imageBase": "https://assets.tcgdex.net/en/dp/dpp/DP40",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo",
+                    "foil": "cosmos"
+                },
+                {
+                    "type": "holo",
+                    "size": "jumbo"
+                },
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "dpp-DP11",
@@ -93,7 +150,12 @@
             "name": "Empoleon",
             "illustrator": "Shizurow",
             "imageBase": "https://assets.tcgdex.net/en/dp/dpp/DP11",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "dpp-DP25",
@@ -109,7 +171,12 @@
             "name": "Drifblim",
             "illustrator": "Mitsuhiro Arita",
             "imageBase": "https://assets.tcgdex.net/en/dp/dpp/DP34",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "dpp-DP51",
@@ -117,7 +184,12 @@
             "name": "Cresselia",
             "illustrator": "Wataru Kawahara",
             "imageBase": "https://assets.tcgdex.net/en/dp/dpp/DP51",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "dpp-DP41",
@@ -125,7 +197,13 @@
             "name": "Toxicroak G",
             "illustrator": "Ryota Saito",
             "imageBase": "https://assets.tcgdex.net/en/dp/dpp/DP41",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo",
+                    "foil": "cosmos"
+                }
+            ]
         },
         {
             "id": "dpp-DP10",
@@ -133,7 +211,12 @@
             "name": "Infernape",
             "illustrator": "Shizurow",
             "imageBase": "https://assets.tcgdex.net/en/dp/dpp/DP10",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "dpp-DP24",
@@ -141,7 +224,20 @@
             "name": "Darkrai",
             "illustrator": "Kouki Saitou",
             "imageBase": "https://assets.tcgdex.net/en/dp/dpp/DP24",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo",
+                    "foil": "cosmos"
+                },
+                {
+                    "type": "holo",
+                    "size": "jumbo"
+                },
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "dpp-DP55",
@@ -149,7 +245,12 @@
             "name": "Ultimate Zone",
             "illustrator": "Yusuke Ishikawa",
             "imageBase": "https://assets.tcgdex.net/en/dp/dpp/DP55",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "dpp-DP04",
@@ -157,7 +258,12 @@
             "name": "Pachirisu",
             "illustrator": "Atsuko Nishida",
             "imageBase": "https://assets.tcgdex.net/en/dp/dpp/DP04",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "dpp-DP30",
@@ -165,7 +271,12 @@
             "name": "Regigigas",
             "illustrator": "Shizurow",
             "imageBase": "https://assets.tcgdex.net/en/dp/dpp/DP30",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "dpp-DP20",
@@ -173,7 +284,12 @@
             "name": "Magmortar",
             "illustrator": "Hiroaki Ito",
             "imageBase": "https://assets.tcgdex.net/en/dp/dpp/DP20",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "dpp-DP14",
@@ -181,7 +297,12 @@
             "name": "Chatot",
             "illustrator": "Masakazu Fukuda",
             "imageBase": "https://assets.tcgdex.net/en/dp/dpp/DP14",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "dpp-DP45",
@@ -189,7 +310,12 @@
             "name": "Charizard G",
             "illustrator": "Wataru Kawahara",
             "imageBase": "https://assets.tcgdex.net/en/dp/dpp/DP45",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "dpp-DP37",
@@ -197,7 +323,12 @@
             "name": "Dialga",
             "illustrator": "Ryo Ueda",
             "imageBase": "https://assets.tcgdex.net/en/dp/dpp/DP37",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "dpp-DP52",
@@ -205,7 +336,12 @@
             "name": "Darkrai",
             "illustrator": "Wataru Kawahara",
             "imageBase": "https://assets.tcgdex.net/en/dp/dpp/DP52",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "dpp-DP03",
@@ -213,7 +349,13 @@
             "name": "Piplup",
             "illustrator": "Atsuko Nishida",
             "imageBase": "https://assets.tcgdex.net/en/dp/dpp/DP03",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo",
+                    "foil": "cosmos"
+                }
+            ]
         },
         {
             "id": "dpp-DP13",
@@ -221,7 +363,12 @@
             "name": "Buizel",
             "illustrator": "Mitsuhiro Arita",
             "imageBase": "https://assets.tcgdex.net/en/dp/dpp/DP13",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "dpp-DP42",
@@ -229,7 +376,12 @@
             "name": "Carnivine G",
             "illustrator": "Makoto Imai",
             "imageBase": "https://assets.tcgdex.net/en/dp/dpp/DP42",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "dpp-DP27",
@@ -237,7 +389,23 @@
             "name": "Palkia",
             "illustrator": "Daisuke Ito",
             "imageBase": "https://assets.tcgdex.net/en/dp/dpp/DP27",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo",
+                    "foil": "cosmos"
+                },
+                {
+                    "type": "holo",
+                    "size": "jumbo",
+                    "foil": "cracked-ice"
+                },
+                {
+                    "type": "holo",
+                    "size": "jumbo",
+                    "foil": "mirror"
+                }
+            ]
         },
         {
             "id": "dpp-DP07",
@@ -245,7 +413,12 @@
             "name": "Cranidos",
             "illustrator": "Mitsuhiro Arita",
             "imageBase": "https://assets.tcgdex.net/en/dp/dpp/DP07",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "dpp-DP56",
@@ -253,7 +426,12 @@
             "name": "Arceus",
             "illustrator": "Ryo Ueda",
             "imageBase": "https://assets.tcgdex.net/en/dp/dpp/DP56",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "dpp-DP33",
@@ -261,7 +439,12 @@
             "name": "Dusknoir",
             "illustrator": "Kent Kanetsuna",
             "imageBase": "https://assets.tcgdex.net/en/dp/dpp/DP33",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "dpp-DP23",
@@ -269,7 +452,12 @@
             "name": "Glameow",
             "illustrator": "Mitsuhiro Arita",
             "imageBase": "https://assets.tcgdex.net/en/dp/dpp/DP23",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "dpp-DP46",
@@ -277,7 +465,12 @@
             "name": "Garchomp C",
             "illustrator": "Shizurow",
             "imageBase": "https://assets.tcgdex.net/en/dp/dpp/DP46",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "dpp-DP17",
@@ -285,7 +478,12 @@
             "name": "Dialga",
             "illustrator": "Ryo Ueda",
             "imageBase": "https://assets.tcgdex.net/en/dp/dpp/DP17",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "dpp-DP06",
@@ -293,7 +491,12 @@
             "name": "Buneary",
             "illustrator": "Kagemaru Himeno",
             "imageBase": "https://assets.tcgdex.net/en/dp/dpp/DP06",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "dpp-DP32",
@@ -301,7 +504,12 @@
             "name": "Magnezone",
             "illustrator": "Kent Kanetsuna",
             "imageBase": "https://assets.tcgdex.net/en/dp/dpp/DP32",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "dpp-DP22",
@@ -309,7 +517,12 @@
             "name": "Mime Jr.",
             "illustrator": "Mitsuhiro Arita",
             "imageBase": "https://assets.tcgdex.net/en/dp/dpp/DP22",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "dpp-DP47",
@@ -317,7 +530,12 @@
             "name": "Rayquaza C",
             "illustrator": null,
             "imageBase": "https://assets.tcgdex.net/en/dp/dpp/DP47",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "dpp-DP16",
@@ -325,7 +543,13 @@
             "name": "Pikachu",
             "illustrator": "Sumiyoshi Kizuki",
             "imageBase": "https://assets.tcgdex.net/en/dp/dpp/DP16",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo",
+                    "foil": "cosmos"
+                }
+            ]
         },
         {
             "id": "dpp-DP36",
@@ -333,7 +557,12 @@
             "name": "Gliscor",
             "illustrator": "Kagemaru Himeno",
             "imageBase": "https://assets.tcgdex.net/en/dp/dpp/DP36",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "dpp-DP53",
@@ -341,7 +570,12 @@
             "name": "Arceus",
             "illustrator": "Shizurow",
             "imageBase": "https://assets.tcgdex.net/en/dp/dpp/DP53",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "dpp-DP02",
@@ -349,7 +583,12 @@
             "name": "Chimchar",
             "illustrator": "Kagemaru Himeno",
             "imageBase": "https://assets.tcgdex.net/en/dp/dpp/DP02",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "dpp-DP12",
@@ -357,7 +596,12 @@
             "name": "Lucario",
             "illustrator": "Ryo Ueda",
             "imageBase": "https://assets.tcgdex.net/en/dp/dpp/DP12",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "dpp-DP43",
@@ -365,7 +609,12 @@
             "name": "Probopass G",
             "illustrator": "Ryota Saito",
             "imageBase": "https://assets.tcgdex.net/en/dp/dpp/DP43",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "dpp-DP26",
@@ -373,7 +622,23 @@
             "name": "Dialga",
             "illustrator": "Kazuyuki Kano",
             "imageBase": "https://assets.tcgdex.net/en/dp/dpp/DP26",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo",
+                    "foil": "cosmos"
+                },
+                {
+                    "type": "holo",
+                    "size": "jumbo",
+                    "foil": "cracked-ice"
+                },
+                {
+                    "type": "holo",
+                    "size": "jumbo",
+                    "foil": "mirror"
+                }
+            ]
         },
         {
             "id": "dpp-DP09",
@@ -381,7 +646,12 @@
             "name": "Torterra",
             "illustrator": "Shizurow",
             "imageBase": "https://assets.tcgdex.net/en/dp/dpp/DP09",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "dpp-DP19",
@@ -389,7 +659,12 @@
             "name": "Darkrai",
             "illustrator": "Shizurow",
             "imageBase": "https://assets.tcgdex.net/en/dp/dpp/DP19",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "dpp-DP48",
@@ -405,7 +680,12 @@
             "name": "Shaymin",
             "illustrator": "Shizurow",
             "imageBase": "https://assets.tcgdex.net/en/dp/dpp/DP39",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "dpp-DP29",
@@ -413,7 +693,12 @@
             "name": "Rhyperior",
             "illustrator": "Ryo Ueda",
             "imageBase": "https://assets.tcgdex.net/en/dp/dpp/DP29",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "dpp-DP38",
@@ -421,7 +706,12 @@
             "name": "Giratina",
             "illustrator": "Shizurow",
             "imageBase": "https://assets.tcgdex.net/en/dp/dpp/DP38",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "dpp-DP28",
@@ -429,7 +719,12 @@
             "name": "Mewtwo",
             "illustrator": "Shizurow",
             "imageBase": "https://assets.tcgdex.net/en/dp/dpp/DP28",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "dpp-DP08",
@@ -437,7 +732,12 @@
             "name": "Shieldon",
             "illustrator": "Kouki Saitou",
             "imageBase": "https://assets.tcgdex.net/en/dp/dpp/DP08",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "dpp-DP18",
@@ -445,7 +745,12 @@
             "name": "Palkia",
             "illustrator": "Ryo Ueda",
             "imageBase": "https://assets.tcgdex.net/en/dp/dpp/DP18",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "dpp-DP49",
@@ -453,7 +758,12 @@
             "name": "Dialga",
             "illustrator": "Kagemaru Himeno",
             "imageBase": "https://assets.tcgdex.net/en/dp/dpp/DP49",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         }
     ]
 }

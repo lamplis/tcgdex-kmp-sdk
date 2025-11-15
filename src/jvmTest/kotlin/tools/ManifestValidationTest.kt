@@ -7,17 +7,20 @@ import java.nio.file.Path
 import java.nio.file.Paths
 
 class ManifestValidationTest {
-
     @Test
     fun manifestIsPresentAndParsable() {
         // Try common cache locations (module-level and project root)
-        val candidates: List<Path> = listOf(
-            Paths.get(System.getProperty("user.dir")).resolve("build/cache/datas.json"),
-            Paths.get(System.getProperty("user.dir")).resolve("libs/tcgdex-kmp-sdk/build/cache/datas.json"),
-        )
+        val candidates: List<Path> =
+            listOf(
+                Paths.get(System.getProperty("user.dir")).resolve("build/cache/datas.json"),
+                Paths.get(System.getProperty("user.dir")).resolve("libs/tcgdex-kmp-sdk/build/cache/datas.json"),
+            )
         val cachePath: Path? = candidates.firstOrNull { Files.isRegularFile(it) }
 
-        assertTrue(cachePath != null, "Image manifest cache not found in expected locations. Run :libs:tcgdex-kmp-sdk:generateEmbeddedCatalog first.")
+        assertTrue(
+            cachePath != null,
+            "Image manifest cache not found in expected locations. Run :libs:tcgdex-kmp-sdk:generateEmbeddedCatalog first.",
+        )
 
         val raw = Files.readString(cachePath!!)
         assertTrue(raw.isNotBlank(), "Image manifest file is empty: $cachePath")
@@ -39,4 +42,3 @@ class ManifestValidationTest {
         assertTrue(anyCards != null && anyCards!!.isNotEmpty(), "Manifest 'en' first set has no card entries")
     }
 }
-

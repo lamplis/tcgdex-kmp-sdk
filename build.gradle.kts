@@ -1,6 +1,3 @@
-import org.gradle.jvm.tasks.Jar
-import org.jetbrains.kotlin.gradle.plugin.mpp.KotlinJvmCompilation
-
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompilationTask
 import io.gitlab.arturbosch.detekt.Detekt
@@ -39,6 +36,7 @@ kotlin {
 
     listOf(
         iosArm64(),
+        iosX64(), // Intel simulator support
         iosSimulatorArm64(),
     )
 
@@ -119,9 +117,11 @@ tasks.register<JavaExec>("generateEmbeddedCatalog") {
     }
     // Default: run generator offline unless explicitly overridden
     val offlineProvided =
-        (project.findProperty("offlineOnly")?.toString()
-            ?: System.getProperty("offlineOnly")
-            ?: System.getenv("OFFLINEONLY"))
+        (
+            project.findProperty("offlineOnly")?.toString()
+                ?: System.getProperty("offlineOnly")
+                ?: System.getenv("OFFLINEONLY")
+        )
             ?.isNotBlank() == true
     if (!offlineProvided) {
         systemProperty("offlineOnly", "true")

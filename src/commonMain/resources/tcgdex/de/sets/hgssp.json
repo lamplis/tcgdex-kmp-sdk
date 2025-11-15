@@ -3,7 +3,7 @@
     "serieId": "hgss",
     "name": "Promo HGSS",
     "releaseDate": "2010-02-11",
-    "cardCount": 24,
+    "cardCount": 25,
     "logo": "https://assets.tcgdex.net/de/hgss/hgssp/logo",
     "symbol": "https://assets.tcgdex.net/de/hgss/hgssp/symbol",
     "cards": [
@@ -12,76 +12,148 @@
             "number": "HGSS24",
             "name": "Hitmonchan",
             "illustrator": "Kouki Saitou",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "hgssp-HGSS10",
             "number": "HGSS10",
             "name": "Latias",
             "illustrator": "Wataru Kawahara",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo",
+                    "foil": "cracked-ice"
+                },
+                {
+                    "type": "holo",
+                    "foil": "cosmos"
+                }
+            ]
         },
         {
             "id": "hgssp-HGSS14",
             "number": "HGSS14",
             "name": "Lapras",
             "illustrator": "Masakazu Fukuda",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "hgssp-HGSS20",
             "number": "HGSS20",
             "name": "Entei",
             "illustrator": "Yuri Umemura",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "hgssp-HGSS04",
             "number": "HGSS04",
             "name": "Wobbuffet",
             "illustrator": "match",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "hgssp-HGSS15",
             "number": "HGSS15",
             "name": "Shuckle",
             "illustrator": "match",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "hgssp-HGSS21",
             "number": "HGSS21",
             "name": "Suicune",
             "illustrator": "Hideaki Hakozaki",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "hgssp-HGSS05",
             "number": "HGSS05",
             "name": "Hoothoot",
             "illustrator": "Masakazu Fukuda",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "hgssp-HGSS25",
             "number": "HGSS25",
             "name": "Hitmonlee",
             "illustrator": "Kouki Saitou",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "hgssp-HGSS11",
             "number": "HGSS11",
             "name": "Latios",
             "illustrator": "Wataru Kawahara",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo",
+                    "foil": "cracked-ice"
+                },
+                {
+                    "type": "holo",
+                    "foil": "cosmos"
+                }
+            ]
         },
         {
             "id": "hgssp-HGSS01",
             "number": "HGSS01",
             "name": "Ho-Oh",
             "illustrator": "Takashi Yamaguchi",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "hgssp-HGSS18",
+            "number": "HGSS18",
+            "name": "Tropical Tidal Wave",
+            "illustrator": "Sumiyoshi Kizuki",
             "rarity": "Common"
         },
         {
@@ -89,91 +161,156 @@
             "number": "HGSS08",
             "name": "Meganium",
             "illustrator": "Noriko Hotta",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "hgssp-HGSS19",
             "number": "HGSS19",
             "name": "Raikou",
             "illustrator": "Noriko Hotta",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "hgssp-HGSS09",
             "number": "HGSS09",
             "name": "Typhlosion",
             "illustrator": "Wataru Kawahara",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "hgssp-HGSS16",
             "number": "HGSS16",
             "name": "Plusle",
             "illustrator": "Kouki Saitou",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "hgssp-HGSS22",
             "number": "HGSS22",
             "name": "Porygon",
             "illustrator": "TOKIYA",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "hgssp-HGSS06",
             "number": "HGSS06",
             "name": "Noctowl",
             "illustrator": "Masakazu Fukuda",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "hgssp-HGSS12",
             "number": "HGSS12",
             "name": "Cleffa",
             "illustrator": "Masakazu Fukuda",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "hgssp-HGSS02",
             "number": "HGSS02",
             "name": "Lugia",
             "illustrator": "Takashi Yamaguchi",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "hgssp-HGSS13",
             "number": "HGSS13",
             "name": "Smoochum",
             "illustrator": "Midori Harada",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "hgssp-HGSS03",
             "number": "HGSS03",
             "name": "Pikachu",
             "illustrator": "Kanako Eo",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "hgssp-HGSS17",
             "number": "HGSS17",
             "name": "Minun",
             "illustrator": "Kouki Saitou",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "hgssp-HGSS23",
             "number": "HGSS23",
             "name": "Porygon2",
             "illustrator": "TOKIYA",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "hgssp-HGSS07",
             "number": "HGSS07",
             "name": "Feraligatr",
             "illustrator": "Kent Kanetsuna",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         }
     ]
 }

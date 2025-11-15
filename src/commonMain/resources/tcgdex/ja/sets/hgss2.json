@@ -15,10 +15,14 @@
             "rarity": "Rare Holo",
             "variants": [
                 {
+                    "type": "holo"
+                },
+                {
                     "type": "reverse"
                 },
                 {
-                    "type": "holo"
+                    "type": "holo",
+                    "foil": "cracked-ice"
                 }
             ]
         },
@@ -30,10 +34,10 @@
             "rarity": "Rare Holo",
             "variants": [
                 {
-                    "type": "reverse"
+                    "type": "holo"
                 },
                 {
-                    "type": "holo"
+                    "type": "reverse"
                 }
             ]
         },
@@ -45,10 +49,10 @@
             "rarity": "Rare Holo",
             "variants": [
                 {
-                    "type": "reverse"
+                    "type": "holo"
                 },
                 {
-                    "type": "holo"
+                    "type": "reverse"
                 }
             ]
         },
@@ -60,10 +64,14 @@
             "rarity": "Rare Holo",
             "variants": [
                 {
+                    "type": "holo"
+                },
+                {
                     "type": "reverse"
                 },
                 {
-                    "type": "holo"
+                    "type": "holo",
+                    "foil": "cracked-ice"
                 }
             ]
         },
@@ -75,10 +83,14 @@
             "rarity": "Rare Holo",
             "variants": [
                 {
+                    "type": "holo"
+                },
+                {
                     "type": "reverse"
                 },
                 {
-                    "type": "holo"
+                    "type": "reverse",
+                    "foil": "league"
                 }
             ]
         },
@@ -90,10 +102,10 @@
             "rarity": "Rare Holo",
             "variants": [
                 {
-                    "type": "reverse"
+                    "type": "holo"
                 },
                 {
-                    "type": "holo"
+                    "type": "reverse"
                 }
             ]
         },
@@ -105,10 +117,10 @@
             "rarity": "Rare Holo",
             "variants": [
                 {
-                    "type": "reverse"
+                    "type": "holo"
                 },
                 {
-                    "type": "holo"
+                    "type": "reverse"
                 }
             ]
         },
@@ -120,10 +132,10 @@
             "rarity": "Rare Holo",
             "variants": [
                 {
-                    "type": "reverse"
+                    "type": "holo"
                 },
                 {
-                    "type": "holo"
+                    "type": "reverse"
                 }
             ]
         },
@@ -135,10 +147,10 @@
             "rarity": "Rare Holo",
             "variants": [
                 {
-                    "type": "reverse"
+                    "type": "holo"
                 },
                 {
-                    "type": "holo"
+                    "type": "reverse"
                 }
             ]
         },
@@ -147,7 +159,19 @@
             "number": "10",
             "name": "Torterra",
             "illustrator": "match",
-            "rarity": "Rare Holo"
+            "rarity": "Rare Holo",
+            "variants": [
+                {
+                    "type": "holo"
+                },
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "holo",
+                    "foil": "cracked-ice"
+                }
+            ]
         },
         {
             "id": "hgss2-11",
@@ -157,10 +181,14 @@
             "rarity": "Rare Holo",
             "variants": [
                 {
+                    "type": "holo"
+                },
+                {
                     "type": "reverse"
                 },
                 {
-                    "type": "holo"
+                    "type": "holo",
+                    "foil": "cracked-ice"
                 }
             ]
         },
@@ -191,6 +219,10 @@
                 },
                 {
                     "type": "reverse"
+                },
+                {
+                    "type": "holo",
+                    "foil": "cracked-ice"
                 }
             ]
         },
@@ -203,6 +235,13 @@
             "variants": [
                 {
                     "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "reverse",
+                    "foil": "league"
                 }
             ]
         },
@@ -289,6 +328,9 @@
             "rarity": "Rare",
             "variants": [
                 {
+                    "type": "normal"
+                },
+                {
                     "type": "reverse"
                 }
             ]
@@ -305,6 +347,10 @@
                 },
                 {
                     "type": "reverse"
+                },
+                {
+                    "type": "reverse",
+                    "foil": "league"
                 }
             ]
         },
@@ -347,6 +393,17 @@
             "variants": [
                 {
                     "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "holo",
+                    "foil": "cosmos"
+                },
+                {
+                    "type": "reverse",
+                    "foil": "league"
                 }
             ]
         },
@@ -373,7 +430,14 @@
             "rarity": "Rare",
             "variants": [
                 {
-                    "type": "normal"
+                    "type": "holo"
+                },
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "holo",
+                    "foil": "cosmos"
                 }
             ]
         },
@@ -386,6 +450,9 @@
             "variants": [
                 {
                     "type": "normal"
+                },
+                {
+                    "type": "reverse"
                 }
             ]
         },
@@ -536,6 +603,10 @@
                 },
                 {
                     "type": "reverse"
+                },
+                {
+                    "type": "reverse",
+                    "foil": "league"
                 }
             ]
         },
@@ -608,6 +679,9 @@
             "variants": [
                 {
                     "type": "normal"
+                },
+                {
+                    "type": "reverse"
                 }
             ]
         },
@@ -650,6 +724,9 @@
             "variants": [
                 {
                     "type": "normal"
+                },
+                {
+                    "type": "reverse"
                 }
             ]
         },
@@ -692,6 +769,9 @@
             "variants": [
                 {
                     "type": "normal"
+                },
+                {
+                    "type": "reverse"
                 }
             ]
         },
@@ -842,6 +922,10 @@
                 },
                 {
                     "type": "reverse"
+                },
+                {
+                    "type": "reverse",
+                    "foil": "league"
                 }
             ]
         },
@@ -914,6 +998,9 @@
             "variants": [
                 {
                     "type": "normal"
+                },
+                {
+                    "type": "reverse"
                 }
             ]
         },
@@ -941,6 +1028,9 @@
             "variants": [
                 {
                     "type": "normal"
+                },
+                {
+                    "type": "reverse"
                 }
             ]
         },
@@ -968,6 +1058,9 @@
             "variants": [
                 {
                     "type": "normal"
+                },
+                {
+                    "type": "reverse"
                 }
             ]
         },
@@ -1010,6 +1103,9 @@
             "variants": [
                 {
                     "type": "normal"
+                },
+                {
+                    "type": "reverse"
                 }
             ]
         },
@@ -1190,6 +1286,10 @@
                 },
                 {
                     "type": "reverse"
+                },
+                {
+                    "type": "reverse",
+                    "foil": "league"
                 }
             ]
         },
@@ -1205,6 +1305,10 @@
                 },
                 {
                     "type": "reverse"
+                },
+                {
+                    "type": "reverse",
+                    "foil": "league"
                 }
             ]
         },
@@ -1360,7 +1464,7 @@
             "rarity": "Ultra Rare",
             "variants": [
                 {
-                    "type": "holo"
+                    "type": "normal"
                 }
             ]
         }

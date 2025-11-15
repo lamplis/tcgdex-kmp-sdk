@@ -12,161 +12,297 @@
             "number": "1",
             "name": "Pikachu",
             "illustrator": "Keiji Kinebuchi",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "basep-2",
             "number": "2",
             "name": "Electabuzz",
             "illustrator": "Ken Sugimori",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "basep-3",
             "number": "3",
             "name": "Mewtwo",
             "illustrator": "Ken Sugimori",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "basep-4",
             "number": "4",
             "name": "Pikachu",
             "illustrator": "Ken Sugimori",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "basep-5",
             "number": "5",
             "name": "Dragonite",
             "illustrator": "Toshinao Aoki",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "basep-6",
             "number": "6",
             "name": "Arcanine",
             "illustrator": "Ken Sugimori",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "basep-7",
             "number": "7",
             "name": "Jigglypuff",
             "illustrator": "Keiji Kinebuchi",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "basep-8",
             "number": "8",
             "name": "Mew",
             "illustrator": "Ken Sugimori",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "basep-9",
             "number": "9",
             "name": "Mew",
             "illustrator": "Ken Sugimori",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "basep-10",
             "number": "10",
             "name": "Meowth",
             "illustrator": "Kagemaru Himeno",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "basep-11",
             "number": "11",
             "name": "Eevee",
             "illustrator": "Kagemaru Himeno",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo",
+                    "foil": "cosmos"
+                },
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "basep-12",
             "number": "12",
             "name": "Mewtwo",
             "illustrator": "Christopher Rush",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "basep-13",
             "number": "13",
             "name": "Venusaur",
             "illustrator": "Ken Sugimori",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "basep-14",
             "number": "14",
             "name": "Mewtwo",
             "illustrator": "Benimaru Itoh",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "basep-15",
             "number": "15",
             "name": "Cool Porygon",
             "illustrator": "Hiromichi Sugiyama",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "basep-16",
             "number": "16",
             "name": "Computer Error",
             "illustrator": "Sumiyoshi Kizuki",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "basep-17",
             "number": "17",
             "name": "Dark Persian",
             "illustrator": "Ken Sugimori",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo",
+                    "foil": "cosmos"
+                },
+                {
+                    "type": "holo",
+                    "subtype": "missing-hp"
+                }
+            ]
         },
         {
             "id": "basep-18",
             "number": "18",
             "name": "Team Rocket's Meowth",
             "illustrator": "Kunihiko Yuyama",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "basep-19",
             "number": "19",
             "name": "Sabrina's Abra",
             "illustrator": "Atsuko Nishida",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "basep-20",
             "number": "20",
             "name": "Psyduck",
             "illustrator": "Kagemaru Himeno",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "basep-21",
             "number": "21",
             "name": "Moltres",
-            "illustrator": "Toshinao Aoki",
-            "rarity": "Common"
+            "illustrator": "Naoyo Kimura",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "normal",
+                    "subtype": "aoki-error"
+                }
+            ]
         },
         {
             "id": "basep-22",
             "number": "22",
             "name": "Articuno",
-            "illustrator": "Toshinao Aoki",
-            "rarity": "Common"
+            "illustrator": "Naoyo Kimura",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "normal",
+                    "subtype": "aoki-error"
+                }
+            ]
         },
         {
             "id": "basep-23",
             "number": "23",
             "name": "Zapdos",
-            "illustrator": "Toshinao Aoki",
-            "rarity": "Common"
+            "illustrator": "Naoyo Kimura",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "normal",
+                    "subtype": "aoki-error"
+                }
+            ]
         },
         {
             "id": "basep-24",
@@ -208,147 +344,252 @@
             "number": "29",
             "name": "Marill",
             "illustrator": "Ken Sugimori",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "basep-30",
             "number": "30",
             "name": "Togepi",
             "illustrator": "Ken Sugimori",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "basep-31",
             "number": "31",
             "name": "Cleffa",
             "illustrator": "Ken Sugimori",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "basep-32",
             "number": "32",
             "name": "Smeargle",
             "illustrator": "Tomokazu Komiya",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "basep-33",
             "number": "33",
             "name": "Scizor",
             "illustrator": "Hironobu Yoshida",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "basep-34",
             "number": "34",
             "name": "Entei",
             "illustrator": "Ken Sugimori",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "basep-35",
             "number": "35",
             "name": "Pichu",
             "illustrator": "Ken Sugimori",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "basep-36",
             "number": "36",
             "name": "Igglybuff",
             "illustrator": "Kagemaru Himeno",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "basep-37",
             "number": "37",
             "name": "Hitmontop",
             "illustrator": "Atsuko Nishida",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "basep-38",
             "number": "38",
             "name": "Unown [J]",
             "illustrator": "Hideki Kazama",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "basep-39",
             "number": "39",
             "name": "Misdreavus",
             "illustrator": "Shin-ichi Yoshida",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "basep-40",
             "number": "40",
             "name": "Pokémon Center",
-            "illustrator": null,
-            "rarity": "Common"
+            "illustrator": "\\",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "basep-41",
             "number": "41",
             "name": "Lucky Stadium",
-            "illustrator": null,
-            "rarity": "Common"
+            "illustrator": "\\",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "basep-42",
             "number": "42",
             "name": "Pokémon Tower",
             "illustrator": "Keiji Kinebuchi",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "basep-43",
             "number": "43",
             "name": "Machamp",
             "illustrator": "Tomokazu Komiya",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "basep-44",
             "number": "44",
             "name": "Magmar",
             "illustrator": "Atsuko Nishida",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "basep-45",
             "number": "45",
             "name": "Scyther",
             "illustrator": "Hironobu Yoshida",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "basep-46",
             "number": "46",
             "name": "Electabuzz",
             "illustrator": "Miki Tanaka",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "basep-47",
             "number": "47",
             "name": "Mew",
             "illustrator": "Ken Sugimori",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "basep-48",
             "number": "48",
             "name": "Articuno",
             "illustrator": "Atsuko Nishida",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "basep-49",
             "number": "49",
             "name": "Snorlax",
             "illustrator": "Craig Turvey",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "basep-50",
@@ -362,14 +603,24 @@
             "number": "51",
             "name": "Rapidash",
             "illustrator": "Mitsuhiro Arita",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "basep-52",
             "number": "52",
             "name": "Ho-oh",
             "illustrator": "Mitsuhiro Arita",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "basep-53",

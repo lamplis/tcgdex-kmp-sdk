@@ -13,7 +13,18 @@
             "name": "Ampharos",
             "illustrator": "Kouki Saitou",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/1",
-            "rarity": "Rare Holo"
+            "rarity": "Rare Holo",
+            "variants": [
+                {
+                    "type": "holo"
+                },
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "dp3-2",
@@ -21,7 +32,15 @@
             "name": "Blastoise",
             "illustrator": "Daisuke Ito",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/2",
-            "rarity": "Rare Holo"
+            "rarity": "Rare Holo",
+            "variants": [
+                {
+                    "type": "holo"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-3",
@@ -29,7 +48,15 @@
             "name": "Charizard",
             "illustrator": "Daisuke Ito",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/3",
-            "rarity": "Rare Holo"
+            "rarity": "Rare Holo",
+            "variants": [
+                {
+                    "type": "holo"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-4",
@@ -37,7 +64,19 @@
             "name": "Entei",
             "illustrator": "Ryo Ueda",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/4",
-            "rarity": "Rare Holo"
+            "rarity": "Rare Holo",
+            "variants": [
+                {
+                    "type": "holo"
+                },
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "holo",
+                    "foil": "cracked-ice"
+                }
+            ]
         },
         {
             "id": "dp3-5",
@@ -45,7 +84,15 @@
             "name": "Flygon",
             "illustrator": "Daisuke Ito",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/5",
-            "rarity": "Rare Holo"
+            "rarity": "Rare Holo",
+            "variants": [
+                {
+                    "type": "holo"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-6",
@@ -53,7 +100,15 @@
             "name": "Gallade",
             "illustrator": "Daisuke Ito",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/6",
-            "rarity": "Rare Holo"
+            "rarity": "Rare Holo",
+            "variants": [
+                {
+                    "type": "holo"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-7",
@@ -61,7 +116,15 @@
             "name": "Gardevoir",
             "illustrator": "Atsuko Nishida",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/7",
-            "rarity": "Rare Holo"
+            "rarity": "Rare Holo",
+            "variants": [
+                {
+                    "type": "holo"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-8",
@@ -69,7 +132,15 @@
             "name": "Gastrodon East Sea",
             "illustrator": "Kazuyuki Kano",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/8",
-            "rarity": "Rare Holo"
+            "rarity": "Rare Holo",
+            "variants": [
+                {
+                    "type": "holo"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-9",
@@ -77,7 +148,15 @@
             "name": "Gastrodon West Sea",
             "illustrator": "Kazuyuki Kano",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/9",
-            "rarity": "Rare Holo"
+            "rarity": "Rare Holo",
+            "variants": [
+                {
+                    "type": "holo"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-10",
@@ -85,7 +164,15 @@
             "name": "Ho-Oh",
             "illustrator": "Kazuyuki Kano",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/10",
-            "rarity": "Rare Holo"
+            "rarity": "Rare Holo",
+            "variants": [
+                {
+                    "type": "holo"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-11",
@@ -93,7 +180,15 @@
             "name": "Jumpluff",
             "illustrator": "Kagemaru Himeno",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/11",
-            "rarity": "Rare Holo"
+            "rarity": "Rare Holo",
+            "variants": [
+                {
+                    "type": "holo"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-12",
@@ -101,7 +196,15 @@
             "name": "Lickilicky",
             "illustrator": "Kazuyuki Kano",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/12",
-            "rarity": "Rare Holo"
+            "rarity": "Rare Holo",
+            "variants": [
+                {
+                    "type": "holo"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-13",
@@ -109,7 +212,15 @@
             "name": "Ludicolo",
             "illustrator": "Mitsuhiro Arita",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/13",
-            "rarity": "Rare Holo"
+            "rarity": "Rare Holo",
+            "variants": [
+                {
+                    "type": "holo"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-14",
@@ -117,7 +228,15 @@
             "name": "Lugia",
             "illustrator": "Kazuyuki Kano",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/14",
-            "rarity": "Rare Holo"
+            "rarity": "Rare Holo",
+            "variants": [
+                {
+                    "type": "holo"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-15",
@@ -125,7 +244,15 @@
             "name": "Mew",
             "illustrator": "Kagemaru Himeno",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/15",
-            "rarity": "Rare Holo"
+            "rarity": "Rare Holo",
+            "variants": [
+                {
+                    "type": "holo"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-16",
@@ -133,7 +260,19 @@
             "name": "Raikou",
             "illustrator": "Ryo Ueda",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/16",
-            "rarity": "Rare Holo"
+            "rarity": "Rare Holo",
+            "variants": [
+                {
+                    "type": "holo"
+                },
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "holo",
+                    "foil": "cracked-ice"
+                }
+            ]
         },
         {
             "id": "dp3-17",
@@ -141,7 +280,15 @@
             "name": "Roserade",
             "illustrator": "Ken Sugimori",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/17",
-            "rarity": "Rare Holo"
+            "rarity": "Rare Holo",
+            "variants": [
+                {
+                    "type": "holo"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-18",
@@ -149,7 +296,15 @@
             "name": "Salamence",
             "illustrator": "Kazuyuki Kano",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/18",
-            "rarity": "Rare Holo"
+            "rarity": "Rare Holo",
+            "variants": [
+                {
+                    "type": "holo"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-19",
@@ -157,7 +312,19 @@
             "name": "Suicune",
             "illustrator": "Ryo Ueda",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/19",
-            "rarity": "Rare Holo"
+            "rarity": "Rare Holo",
+            "variants": [
+                {
+                    "type": "holo"
+                },
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "holo",
+                    "foil": "cracked-ice"
+                }
+            ]
         },
         {
             "id": "dp3-20",
@@ -165,7 +332,18 @@
             "name": "Venusaur",
             "illustrator": "Kazuyuki Kano",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/20",
-            "rarity": "Rare Holo"
+            "rarity": "Rare Holo",
+            "variants": [
+                {
+                    "type": "holo"
+                },
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "dp3-21",
@@ -173,7 +351,15 @@
             "name": "Absol",
             "illustrator": "Ken Sugimori",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/21",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-22",
@@ -181,7 +367,15 @@
             "name": "Arcanine",
             "illustrator": "Kouki Saitou",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/22",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-23",
@@ -189,7 +383,15 @@
             "name": "Banette",
             "illustrator": "Kouki Saitou",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/23",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-24",
@@ -197,7 +399,15 @@
             "name": "Dugtrio",
             "illustrator": "Ken Sugimori",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/24",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-25",
@@ -205,7 +415,19 @@
             "name": "Electivire",
             "illustrator": "Kouki Saitou",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/25",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "holo",
+                    "foil": "cosmos"
+                }
+            ]
         },
         {
             "id": "dp3-26",
@@ -213,7 +435,15 @@
             "name": "Electrode",
             "illustrator": "Ken Sugimori",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/26",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-27",
@@ -221,7 +451,15 @@
             "name": "Furret",
             "illustrator": "Kagemaru Himeno",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/27",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-28",
@@ -229,7 +467,15 @@
             "name": "Golduck",
             "illustrator": "Ken Sugimori",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/28",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-29",
@@ -237,7 +483,15 @@
             "name": "Golem",
             "illustrator": "Naoyo Kimura",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/29",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-30",
@@ -245,7 +499,15 @@
             "name": "Jynx",
             "illustrator": "Kagemaru Himeno",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/30",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-31",
@@ -253,7 +515,19 @@
             "name": "Magmortar",
             "illustrator": "Kouki Saitou",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/31",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "holo",
+                    "foil": "cosmos"
+                }
+            ]
         },
         {
             "id": "dp3-32",
@@ -261,7 +535,15 @@
             "name": "Minun",
             "illustrator": "Masakazu Fukuda",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/32",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-33",
@@ -269,7 +551,15 @@
             "name": "Mothim",
             "illustrator": "Kazuyuki Kano",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/33",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-34",
@@ -277,7 +567,15 @@
             "name": "Nidoking",
             "illustrator": "Kouki Saitou",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/34",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-35",
@@ -285,7 +583,15 @@
             "name": "Pidgeot",
             "illustrator": "Masakazu Fukuda",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/35",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-36",
@@ -293,7 +599,15 @@
             "name": "Plusle",
             "illustrator": "Masakazu Fukuda",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/36",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-37",
@@ -301,7 +615,15 @@
             "name": "Sharpedo",
             "illustrator": "Ken Sugimori",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/37",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-38",
@@ -309,7 +631,15 @@
             "name": "Sunflora",
             "illustrator": "Mitsuhiro Arita",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/38",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-39",
@@ -317,7 +647,15 @@
             "name": "Unown S",
             "illustrator": "Kazuyuki Kano",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/39",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-40",
@@ -325,7 +663,15 @@
             "name": "Weavile",
             "illustrator": "Kagemaru Himeno",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/40",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-41",
@@ -333,7 +679,15 @@
             "name": "Wormadam Plant Cloak",
             "illustrator": "Mitsuhiro Arita",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/41",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-42",
@@ -341,7 +695,15 @@
             "name": "Wormadam Sandy Cloak",
             "illustrator": "Kagemaru Himeno",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/42",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-43",
@@ -349,7 +711,15 @@
             "name": "Wormadam Trash Cloak",
             "illustrator": "Kazuyuki Kano",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/43",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-44",
@@ -357,7 +727,15 @@
             "name": "Xatu",
             "illustrator": "Sumiyoshi Kizuki",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/44",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-45",
@@ -365,7 +743,15 @@
             "name": "Breloom",
             "illustrator": "Kouki Saitou",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/45",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-46",
@@ -373,7 +759,15 @@
             "name": "Charmeleon",
             "illustrator": "Atsuko Nishida",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/46",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-47",
@@ -381,7 +775,15 @@
             "name": "Cloyster",
             "illustrator": "Ken Sugimori",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/47",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-48",
@@ -389,7 +791,15 @@
             "name": "Donphan",
             "illustrator": "Ken Sugimori",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/48",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-49",
@@ -397,7 +807,15 @@
             "name": "Farfetch'd",
             "illustrator": "Ken Sugimori",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/49",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-50",
@@ -405,7 +823,15 @@
             "name": "Flaaffy",
             "illustrator": "Kagemaru Himeno",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/50",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-51",
@@ -413,7 +839,15 @@
             "name": "Ivysaur",
             "illustrator": "Kagemaru Himeno",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/51",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-52",
@@ -421,7 +855,15 @@
             "name": "Kecleon",
             "illustrator": "Mitsuhiro Arita",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/52",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-53",
@@ -429,7 +871,15 @@
             "name": "Kirlia",
             "illustrator": "Masakazu Fukuda",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/53",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-54",
@@ -437,7 +887,15 @@
             "name": "Lombre",
             "illustrator": "Kouki Saitou",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/54",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-55",
@@ -445,7 +903,15 @@
             "name": "Miltank",
             "illustrator": "Mitsuhiro Arita",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/55",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-56",
@@ -453,7 +919,15 @@
             "name": "Muk",
             "illustrator": "Daisuke Ito",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/56",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-57",
@@ -461,7 +935,15 @@
             "name": "Nidorino",
             "illustrator": "Naoyo Kimura",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/57",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-58",
@@ -469,7 +951,15 @@
             "name": "Pidgeotto",
             "illustrator": "Ken Sugimori",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/58",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-59",
@@ -477,7 +967,15 @@
             "name": "Pinsir",
             "illustrator": "Ken Sugimori",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/59",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-60",
@@ -485,7 +983,15 @@
             "name": "Quagsire",
             "illustrator": "Sumiyoshi Kizuki",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/60",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-61",
@@ -493,7 +999,15 @@
             "name": "Raticate",
             "illustrator": "Ken Sugimori",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/61",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-62",
@@ -501,7 +1015,15 @@
             "name": "Roselia",
             "illustrator": "Kouki Saitou",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/62",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-63",
@@ -509,7 +1031,15 @@
             "name": "Sableye",
             "illustrator": "Sumiyoshi Kizuki",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/63",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-64",
@@ -517,7 +1047,15 @@
             "name": "Shelgon",
             "illustrator": "Kouki Saitou",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/64",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-65",
@@ -525,7 +1063,15 @@
             "name": "Skiploom",
             "illustrator": "Masakazu Fukuda",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/65",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-66",
@@ -533,7 +1079,15 @@
             "name": "Smeargle",
             "illustrator": "Masakazu Fukuda",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/66",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-67",
@@ -541,7 +1095,15 @@
             "name": "Smoochum",
             "illustrator": "Atsuko Nishida",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/67",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-68",
@@ -549,7 +1111,15 @@
             "name": "Unown K",
             "illustrator": "Daisuke Ito",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/68",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-69",
@@ -557,7 +1127,15 @@
             "name": "Unown N",
             "illustrator": "Daisuke Ito",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/69",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-70",
@@ -565,7 +1143,15 @@
             "name": "Unown O",
             "illustrator": "Daisuke Ito",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/70",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-71",
@@ -573,7 +1159,15 @@
             "name": "Unown X",
             "illustrator": "Kazuyuki Kano",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/71",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-72",
@@ -581,7 +1175,15 @@
             "name": "Unown Z",
             "illustrator": "Kazuyuki Kano",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/72",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-73",
@@ -589,7 +1191,15 @@
             "name": "Venomoth",
             "illustrator": "Mitsuhiro Arita",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/73",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-74",
@@ -597,7 +1207,15 @@
             "name": "Vibrava",
             "illustrator": "Kouki Saitou",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/74",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-75",
@@ -605,7 +1223,15 @@
             "name": "Wartortle",
             "illustrator": "Ken Sugimori",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/75",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-76",
@@ -613,7 +1239,15 @@
             "name": "Bagon",
             "illustrator": "Atsuko Nishida",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/76",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-77",
@@ -621,7 +1255,15 @@
             "name": "Bulbasaur",
             "illustrator": "Kouki Saitou",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/77",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-78",
@@ -629,7 +1271,15 @@
             "name": "Burmy Plant Cloak",
             "illustrator": "Kouki Saitou",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/78",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-79",
@@ -637,7 +1287,15 @@
             "name": "Burmy Sandy Cloak",
             "illustrator": "Midori Harada",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/79",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-80",
@@ -645,7 +1303,15 @@
             "name": "Burmy Trash Cloak",
             "illustrator": "Ken Sugimori",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/80",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-81",
@@ -653,7 +1319,15 @@
             "name": "Carvanha",
             "illustrator": "Masakazu Fukuda",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/81",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-82",
@@ -661,7 +1335,15 @@
             "name": "Charmander",
             "illustrator": "Masakazu Fukuda",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/82",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-83",
@@ -669,7 +1351,15 @@
             "name": "Clefairy",
             "illustrator": "Lee HyunJung",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/83",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-84",
@@ -677,7 +1367,15 @@
             "name": "Corsola",
             "illustrator": "Midori Harada",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/84",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-85",
@@ -685,7 +1383,15 @@
             "name": "Diglett",
             "illustrator": "Takao Unno",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/85",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-86",
@@ -693,7 +1399,15 @@
             "name": "Duskull",
             "illustrator": "Hiroki Fuchino",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/86",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-87",
@@ -701,7 +1415,15 @@
             "name": "Electabuzz",
             "illustrator": "Masakazu Fukuda",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/87",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-88",
@@ -709,7 +1431,15 @@
             "name": "Grimer",
             "illustrator": "Ken Sugimori",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/88",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-89",
@@ -717,7 +1447,15 @@
             "name": "Growlithe",
             "illustrator": "Kagemaru Himeno",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/89",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-90",
@@ -725,7 +1463,15 @@
             "name": "Hoppip",
             "illustrator": "Motofumi Fujiwara",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/90",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-91",
@@ -733,7 +1479,15 @@
             "name": "Lickitung",
             "illustrator": "Ken Sugimori",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/91",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-92",
@@ -741,7 +1495,15 @@
             "name": "Lotad",
             "illustrator": "Saya Tsuruta",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/92",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-93",
@@ -749,7 +1511,15 @@
             "name": "Magmar",
             "illustrator": "Ken Sugimori",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/93",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-94",
@@ -757,7 +1527,15 @@
             "name": "Mareep",
             "illustrator": "Atsuko Nishida",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/94",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-95",
@@ -765,7 +1543,15 @@
             "name": "Murkrow",
             "illustrator": "Yusuke Ohmura",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/95",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-96",
@@ -773,7 +1559,15 @@
             "name": "Natu",
             "illustrator": "Midori Harada",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/96",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-97",
@@ -781,7 +1575,15 @@
             "name": "Nidoran♂",
             "illustrator": "Mitsuhiro Arita",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/97",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-98",
@@ -789,7 +1591,15 @@
             "name": "Phanpy",
             "illustrator": "Kouki Saitou",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/98",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-99",
@@ -797,7 +1607,15 @@
             "name": "Pidgey",
             "illustrator": "Hironobu Yoshida",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/99",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-100",
@@ -805,7 +1623,15 @@
             "name": "Psyduck",
             "illustrator": "Kagemaru Himeno",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/100",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-101",
@@ -813,7 +1639,15 @@
             "name": "Qwilfish",
             "illustrator": "Kenkichi Toyama",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/101",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-102",
@@ -821,7 +1655,15 @@
             "name": "Ralts",
             "illustrator": "Sumiyoshi Kizuki",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/102",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-103",
@@ -829,7 +1671,15 @@
             "name": "Rattata",
             "illustrator": "Mitsuhiro Arita",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/103",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-104",
@@ -837,7 +1687,15 @@
             "name": "Sentret",
             "illustrator": "Midori Harada",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/104",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-105",
@@ -845,7 +1703,15 @@
             "name": "Shellder",
             "illustrator": "Ken Sugimori",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/105",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-106",
@@ -853,7 +1719,15 @@
             "name": "Shellos East Sea",
             "illustrator": "Ken Sugimori",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/106",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-107",
@@ -861,7 +1735,15 @@
             "name": "Shellos West Sea",
             "illustrator": "Ken Sugimori",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/107",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-108",
@@ -869,7 +1751,15 @@
             "name": "Shroomish",
             "illustrator": "Midori Harada",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/108",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-109",
@@ -877,7 +1767,15 @@
             "name": "Shuckle",
             "illustrator": "Emi Yoshida",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/109",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-110",
@@ -885,7 +1783,15 @@
             "name": "Shuppet",
             "illustrator": "Kagemaru Himeno",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/110",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-111",
@@ -893,7 +1799,15 @@
             "name": "Spinda",
             "illustrator": "Atsuko Nishida",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/111",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-112",
@@ -901,7 +1815,15 @@
             "name": "Squirtle",
             "illustrator": "Kagemaru Himeno",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/112",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-113",
@@ -909,7 +1831,15 @@
             "name": "Stantler",
             "illustrator": "Kouki Saitou",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/113",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-114",
@@ -917,7 +1847,15 @@
             "name": "Sunkern",
             "illustrator": "Midori Harada",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/114",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-115",
@@ -925,7 +1863,15 @@
             "name": "Trapinch",
             "illustrator": "Sumiyoshi Kizuki",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/115",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-116",
@@ -933,7 +1879,15 @@
             "name": "Venonat",
             "illustrator": "Ken Sugimori",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/116",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-117",
@@ -941,7 +1895,15 @@
             "name": "Voltorb",
             "illustrator": "Satoshi Ohta",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/117",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-118",
@@ -949,7 +1911,15 @@
             "name": "Wooper",
             "illustrator": "Masakazu Fukuda",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/118",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-119",
@@ -957,7 +1927,15 @@
             "name": "Bebe's Search",
             "illustrator": "Ken Sugimori",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/119",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-120",
@@ -965,7 +1943,15 @@
             "name": "Night Maintenance",
             "illustrator": "Ryo Ueda",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/120",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-121",
@@ -973,7 +1959,15 @@
             "name": "PlusPower",
             "illustrator": "Ryo Ueda",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/121",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-122",
@@ -981,7 +1975,15 @@
             "name": "Professor Oak's Visit",
             "illustrator": "Ken Sugimori",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/122",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-123",
@@ -989,7 +1991,15 @@
             "name": "Professor Rowan",
             "illustrator": "Ken Sugimori",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/123",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-124",
@@ -997,7 +2007,15 @@
             "name": "Rival",
             "illustrator": "Ken Sugimori",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/124",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-125",
@@ -1005,7 +2023,19 @@
             "name": "Roseanne's Research",
             "illustrator": "Kanako Eo",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/125",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                },
+                {
+                    "type": "reverse",
+                    "foil": "league"
+                }
+            ]
         },
         {
             "id": "dp3-126",
@@ -1013,7 +2043,15 @@
             "name": "Team Galactic's Mars",
             "illustrator": "Ken Sugimori",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/126",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-127",
@@ -1021,7 +2059,15 @@
             "name": "Potion",
             "illustrator": "Shin-ichi Yoshikawa",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/127",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-128",
@@ -1029,7 +2075,15 @@
             "name": "Switch",
             "illustrator": "Ryo Ueda",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/128",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-129",
@@ -1037,7 +2091,15 @@
             "name": "Darkness Energy",
             "illustrator": "Takumi Akabane",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/129",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-130",
@@ -1045,7 +2107,15 @@
             "name": "Metal Energy",
             "illustrator": "Takumi Akabane",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/130",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "dp3-131",
@@ -1053,7 +2123,12 @@
             "name": "Gardevoir",
             "illustrator": "Ryo Ueda",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/131",
-            "rarity": "Rare Holo LV.X"
+            "rarity": "Rare Holo LV.X",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "dp3-132",
@@ -1061,7 +2136,12 @@
             "name": "Honchkrow",
             "illustrator": "Ryo Ueda",
             "imageBase": "https://assets.tcgdex.net/en/dp/dp3/132",
-            "rarity": "Rare Holo LV.X"
+            "rarity": "Rare Holo LV.X",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         }
     ]
 }

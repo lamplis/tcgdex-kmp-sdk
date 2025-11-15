@@ -3,7 +3,7 @@
     "serieId": "hgss",
     "name": "HGSS Black Star Promos",
     "releaseDate": "2010-02-11",
-    "cardCount": 24,
+    "cardCount": 25,
     "logo": "https://assets.tcgdex.net/en/hgss/hgssp/logo",
     "symbol": "https://assets.tcgdex.net/en/hgss/hgssp/symbol",
     "cards": [
@@ -12,7 +12,12 @@
             "number": "HGSS24",
             "name": "Hitmonchan",
             "illustrator": "Kouki Saitou",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "hgssp-HGSS10",
@@ -20,7 +25,17 @@
             "name": "Latias",
             "illustrator": "Wataru Kawahara",
             "imageBase": "https://assets.tcgdex.net/en/hgss/hgssp/HGSS10",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo",
+                    "foil": "cracked-ice"
+                },
+                {
+                    "type": "holo",
+                    "foil": "cosmos"
+                }
+            ]
         },
         {
             "id": "hgssp-HGSS14",
@@ -28,14 +43,24 @@
             "name": "Lapras",
             "illustrator": "Masakazu Fukuda",
             "imageBase": "https://assets.tcgdex.net/en/hgss/hgssp/HGSS14",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "hgssp-HGSS20",
             "number": "HGSS20",
             "name": "Entei",
             "illustrator": "Yuri Umemura",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "hgssp-HGSS04",
@@ -43,7 +68,12 @@
             "name": "Wobbuffet",
             "illustrator": "match",
             "imageBase": "https://assets.tcgdex.net/en/hgss/hgssp/HGSS04",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "hgssp-HGSS15",
@@ -51,14 +81,24 @@
             "name": "Shuckle",
             "illustrator": "match",
             "imageBase": "https://assets.tcgdex.net/en/hgss/hgssp/HGSS15",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "hgssp-HGSS21",
             "number": "HGSS21",
             "name": "Suicune",
             "illustrator": "Hideaki Hakozaki",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "hgssp-HGSS05",
@@ -66,14 +106,24 @@
             "name": "Hoothoot",
             "illustrator": "Masakazu Fukuda",
             "imageBase": "https://assets.tcgdex.net/en/hgss/hgssp/HGSS05",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "hgssp-HGSS25",
             "number": "HGSS25",
             "name": "Hitmonlee",
             "illustrator": "Kouki Saitou",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "hgssp-HGSS11",
@@ -81,7 +131,17 @@
             "name": "Latios",
             "illustrator": "Wataru Kawahara",
             "imageBase": "https://assets.tcgdex.net/en/hgss/hgssp/HGSS11",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo",
+                    "foil": "cracked-ice"
+                },
+                {
+                    "type": "holo",
+                    "foil": "cosmos"
+                }
+            ]
         },
         {
             "id": "hgssp-HGSS01",
@@ -89,6 +149,18 @@
             "name": "Ho-Oh",
             "illustrator": "Takashi Yamaguchi",
             "imageBase": "https://assets.tcgdex.net/en/hgss/hgssp/HGSS01",
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
+        },
+        {
+            "id": "hgssp-HGSS18",
+            "number": "HGSS18",
+            "name": "Tropical Tidal Wave",
+            "illustrator": "Sumiyoshi Kizuki",
             "rarity": "Common"
         },
         {
@@ -97,14 +169,24 @@
             "name": "Meganium",
             "illustrator": "Noriko Hotta",
             "imageBase": "https://assets.tcgdex.net/en/hgss/hgssp/HGSS08",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "hgssp-HGSS19",
             "number": "HGSS19",
             "name": "Raikou",
             "illustrator": "Noriko Hotta",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "hgssp-HGSS09",
@@ -112,7 +194,12 @@
             "name": "Typhlosion",
             "illustrator": "Wataru Kawahara",
             "imageBase": "https://assets.tcgdex.net/en/hgss/hgssp/HGSS09",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "hgssp-HGSS16",
@@ -120,14 +207,24 @@
             "name": "Plusle",
             "illustrator": "Kouki Saitou",
             "imageBase": "https://assets.tcgdex.net/en/hgss/hgssp/HGSS16",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "hgssp-HGSS22",
             "number": "HGSS22",
             "name": "Porygon",
             "illustrator": "TOKIYA",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "hgssp-HGSS06",
@@ -135,7 +232,12 @@
             "name": "Noctowl",
             "illustrator": "Masakazu Fukuda",
             "imageBase": "https://assets.tcgdex.net/en/hgss/hgssp/HGSS06",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "hgssp-HGSS12",
@@ -143,7 +245,12 @@
             "name": "Cleffa",
             "illustrator": "Masakazu Fukuda",
             "imageBase": "https://assets.tcgdex.net/en/hgss/hgssp/HGSS12",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "hgssp-HGSS02",
@@ -151,7 +258,12 @@
             "name": "Lugia",
             "illustrator": "Takashi Yamaguchi",
             "imageBase": "https://assets.tcgdex.net/en/hgss/hgssp/HGSS02",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "hgssp-HGSS13",
@@ -159,7 +271,12 @@
             "name": "Smoochum",
             "illustrator": "Midori Harada",
             "imageBase": "https://assets.tcgdex.net/en/hgss/hgssp/HGSS13",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "hgssp-HGSS03",
@@ -167,21 +284,36 @@
             "name": "Pikachu",
             "illustrator": "Kanako Eo",
             "imageBase": "https://assets.tcgdex.net/en/hgss/hgssp/HGSS03",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "hgssp-HGSS17",
             "number": "HGSS17",
             "name": "Minun",
             "illustrator": "Kouki Saitou",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "hgssp-HGSS23",
             "number": "HGSS23",
             "name": "Porygon2",
             "illustrator": "TOKIYA",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "hgssp-HGSS07",
@@ -189,7 +321,12 @@
             "name": "Feraligatr",
             "illustrator": "Kent Kanetsuna",
             "imageBase": "https://assets.tcgdex.net/en/hgss/hgssp/HGSS07",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         }
     ]
 }

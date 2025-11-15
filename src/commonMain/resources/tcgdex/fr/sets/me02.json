@@ -1,0 +1,975 @@
+{
+    "id": "me02",
+    "serieId": "me",
+    "name": "Flammes Fantasmagoriques",
+    "releaseDate": "2025-11-14",
+    "cardCount": 130,
+    "logo": "https://assets.tcgdex.net/fr/me/me02/logo",
+    "symbol": "https://assets.tcgdex.net/fr/me/me02/symbol",
+    "cards": [
+        {
+            "id": "me02-001",
+            "number": "001",
+            "name": "Mystherbe",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/me/me02/001",
+            "rarity": "Common"
+        },
+        {
+            "id": "me02-002",
+            "number": "002",
+            "name": "Ortide",
+            "illustrator": null,
+            "rarity": "Common"
+        },
+        {
+            "id": "me02-003",
+            "number": "003",
+            "name": "Rafflesia",
+            "illustrator": null,
+            "rarity": "Rare"
+        },
+        {
+            "id": "me02-004",
+            "number": "004",
+            "name": "Méga-Scarhino-ex",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/me/me02/004",
+            "rarity": "Double rare"
+        },
+        {
+            "id": "me02-005",
+            "number": "005",
+            "name": "Nénupiot",
+            "illustrator": null,
+            "rarity": "Common"
+        },
+        {
+            "id": "me02-006",
+            "number": "006",
+            "name": "Lombre",
+            "illustrator": null,
+            "rarity": "Common"
+        },
+        {
+            "id": "me02-007",
+            "number": "007",
+            "name": "Ludicolo",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/me/me02/007",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "me02-008",
+            "number": "008",
+            "name": "Genesect",
+            "illustrator": null,
+            "rarity": "Rare"
+        },
+        {
+            "id": "me02-009",
+            "number": "009",
+            "name": "Lilliterelle",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/me/me02/009",
+            "rarity": "Common"
+        },
+        {
+            "id": "me02-010",
+            "number": "010",
+            "name": "Gambex",
+            "illustrator": null,
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "me02-011",
+            "number": "011",
+            "name": "Salamèche",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/me/me02/011",
+            "rarity": "Common"
+        },
+        {
+            "id": "me02-012",
+            "number": "012",
+            "name": "Reptincel",
+            "illustrator": null,
+            "rarity": "Common"
+        },
+        {
+            "id": "me02-013",
+            "number": "013",
+            "name": "Méga-Dracaufeu X-ex",
+            "illustrator": null,
+            "rarity": "Double rare"
+        },
+        {
+            "id": "me02-014",
+            "number": "014",
+            "name": "Sulfura",
+            "illustrator": null,
+            "rarity": "Rare"
+        },
+        {
+            "id": "me02-015",
+            "number": "015",
+            "name": "Darumarond",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/me/me02/015",
+            "rarity": "Common"
+        },
+        {
+            "id": "me02-016",
+            "number": "016",
+            "name": "Darumacho",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/me/me02/016",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "me02-017",
+            "number": "017",
+            "name": "Reshiram",
+            "illustrator": null,
+            "rarity": "Rare"
+        },
+        {
+            "id": "me02-018",
+            "number": "018",
+            "name": "Plumeline-ex",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/me/me02/018",
+            "rarity": "Double rare"
+        },
+        {
+            "id": "me02-019",
+            "number": "019",
+            "name": "Charbambin",
+            "illustrator": null,
+            "rarity": "Common"
+        },
+        {
+            "id": "me02-020",
+            "number": "020",
+            "name": "Malvalame",
+            "illustrator": null,
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "me02-021",
+            "number": "021",
+            "name": "Otaria",
+            "illustrator": null,
+            "rarity": "Common"
+        },
+        {
+            "id": "me02-022",
+            "number": "022",
+            "name": "Lamantine",
+            "illustrator": null,
+            "rarity": "Common"
+        },
+        {
+            "id": "me02-023",
+            "number": "023",
+            "name": "Marcacrin",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/me/me02/023",
+            "rarity": "Common"
+        },
+        {
+            "id": "me02-024",
+            "number": "024",
+            "name": "Cochignon",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/me/me02/024",
+            "rarity": "Common"
+        },
+        {
+            "id": "me02-025",
+            "number": "025",
+            "name": "Mammochon",
+            "illustrator": null,
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "me02-026",
+            "number": "026",
+            "name": "Suicune",
+            "illustrator": null,
+            "rarity": "Rare"
+        },
+        {
+            "id": "me02-027",
+            "number": "027",
+            "name": "Tiplouf",
+            "illustrator": null,
+            "rarity": "Common"
+        },
+        {
+            "id": "me02-028",
+            "number": "028",
+            "name": "Prinplouf",
+            "illustrator": null,
+            "rarity": "Common"
+        },
+        {
+            "id": "me02-029",
+            "number": "029",
+            "name": "Motisma-ex",
+            "illustrator": null,
+            "rarity": "Double rare"
+        },
+        {
+            "id": "me02-030",
+            "number": "030",
+            "name": "Voltoutou",
+            "illustrator": null,
+            "rarity": "Common"
+        },
+        {
+            "id": "me02-031",
+            "number": "031",
+            "name": "Fulgudog",
+            "illustrator": null,
+            "rarity": "Common"
+        },
+        {
+            "id": "me02-032",
+            "number": "032",
+            "name": "Pohm",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/me/me02/032",
+            "rarity": "Common"
+        },
+        {
+            "id": "me02-033",
+            "number": "033",
+            "name": "Pohmotte",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/me/me02/033",
+            "rarity": "Common"
+        },
+        {
+            "id": "me02-034",
+            "number": "034",
+            "name": "Pohmarmotte",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/me/me02/034",
+            "rarity": "Rare"
+        },
+        {
+            "id": "me02-035",
+            "number": "035",
+            "name": "Feuforêve",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/me/me02/035",
+            "rarity": "Common"
+        },
+        {
+            "id": "me02-036",
+            "number": "036",
+            "name": "Magirêve-ex",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/me/me02/036",
+            "rarity": "Double rare"
+        },
+        {
+            "id": "me02-037",
+            "number": "037",
+            "name": "Snubbull",
+            "illustrator": null,
+            "rarity": "Common"
+        },
+        {
+            "id": "me02-038",
+            "number": "038",
+            "name": "Granbull",
+            "illustrator": null,
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "me02-039",
+            "number": "039",
+            "name": "Cresselia",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/me/me02/039",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "me02-040",
+            "number": "040",
+            "name": "Meloetta",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/me/me02/040",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "me02-041",
+            "number": "041",
+            "name": "Méga-Diancie-ex",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/me/me02/041",
+            "rarity": "Double rare"
+        },
+        {
+            "id": "me02-042",
+            "number": "042",
+            "name": "Mimiqui",
+            "illustrator": null,
+            "rarity": "Common"
+        },
+        {
+            "id": "me02-043",
+            "number": "043",
+            "name": "Crèmy",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/me/me02/043",
+            "rarity": "Common"
+        },
+        {
+            "id": "me02-044",
+            "number": "044",
+            "name": "Charmilly",
+            "illustrator": null,
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "me02-045",
+            "number": "045",
+            "name": "Zacian",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/me/me02/045",
+            "rarity": "Rare"
+        },
+        {
+            "id": "me02-046",
+            "number": "046",
+            "name": "Virovent",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/me/me02/046",
+            "rarity": "Common"
+        },
+        {
+            "id": "me02-047",
+            "number": "047",
+            "name": "Virevorreur",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/me/me02/047",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "me02-048",
+            "number": "048",
+            "name": "Tauros de Paldea",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/me/me02/048",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "me02-049",
+            "number": "049",
+            "name": "Scorplane",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/me/me02/049",
+            "rarity": "Common"
+        },
+        {
+            "id": "me02-050",
+            "number": "050",
+            "name": "Scorvol",
+            "illustrator": null,
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "me02-051",
+            "number": "051",
+            "name": "Kraknoix",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/me/me02/051",
+            "rarity": "Common"
+        },
+        {
+            "id": "me02-052",
+            "number": "052",
+            "name": "Vibraninf",
+            "illustrator": null,
+            "rarity": "Common"
+        },
+        {
+            "id": "me02-053",
+            "number": "053",
+            "name": "Libégon",
+            "illustrator": null,
+            "rarity": "Rare"
+        },
+        {
+            "id": "me02-054",
+            "number": "054",
+            "name": "Fantominus",
+            "illustrator": null,
+            "rarity": "Common"
+        },
+        {
+            "id": "me02-055",
+            "number": "055",
+            "name": "Spectrum",
+            "illustrator": null,
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "me02-056",
+            "number": "056",
+            "name": "Méga-Ectoplasma-ex",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/me/me02/056",
+            "rarity": "Double rare"
+        },
+        {
+            "id": "me02-057",
+            "number": "057",
+            "name": "Cornèbre",
+            "illustrator": null,
+            "rarity": "Common"
+        },
+        {
+            "id": "me02-058",
+            "number": "058",
+            "name": "Corboss",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/me/me02/058",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "me02-059",
+            "number": "059",
+            "name": "Ténéfix",
+            "illustrator": null,
+            "rarity": "Common"
+        },
+        {
+            "id": "me02-060",
+            "number": "060",
+            "name": "Carvanha",
+            "illustrator": null,
+            "rarity": "Common"
+        },
+        {
+            "id": "me02-061",
+            "number": "061",
+            "name": "Méga-Sharpedo-ex",
+            "illustrator": null,
+            "rarity": "Double rare"
+        },
+        {
+            "id": "me02-062",
+            "number": "062",
+            "name": "Séviper",
+            "illustrator": null,
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "me02-063",
+            "number": "063",
+            "name": "Absol",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/me/me02/063",
+            "rarity": "Common"
+        },
+        {
+            "id": "me02-064",
+            "number": "064",
+            "name": "Mascaïman",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/me/me02/064",
+            "rarity": "Common"
+        },
+        {
+            "id": "me02-065",
+            "number": "065",
+            "name": "Escroco",
+            "illustrator": null,
+            "rarity": "Common"
+        },
+        {
+            "id": "me02-066",
+            "number": "066",
+            "name": "Crocorible",
+            "illustrator": null,
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "me02-067",
+            "number": "067",
+            "name": "Toxizap",
+            "illustrator": null,
+            "rarity": "Common"
+        },
+        {
+            "id": "me02-068",
+            "number": "068",
+            "name": "Salarsen",
+            "illustrator": null,
+            "rarity": "Rare"
+        },
+        {
+            "id": "me02-069",
+            "number": "069",
+            "name": "Éthernatos",
+            "illustrator": null,
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "me02-070",
+            "number": "070",
+            "name": "Pingoléon-ex",
+            "illustrator": null,
+            "rarity": "Double rare"
+        },
+        {
+            "id": "me02-071",
+            "number": "071",
+            "name": "Archéomire",
+            "illustrator": null,
+            "rarity": "Common"
+        },
+        {
+            "id": "me02-072",
+            "number": "072",
+            "name": "Archéodong",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/me/me02/072",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "me02-073",
+            "number": "073",
+            "name": "Togedemaru",
+            "illustrator": null,
+            "rarity": "Common"
+        },
+        {
+            "id": "me02-074",
+            "number": "074",
+            "name": "Duralugon",
+            "illustrator": null,
+            "rarity": "Common"
+        },
+        {
+            "id": "me02-075",
+            "number": "075",
+            "name": "Pondralugon",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/me/me02/075",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "me02-076",
+            "number": "076",
+            "name": "Rondoudou",
+            "illustrator": null,
+            "rarity": "Common"
+        },
+        {
+            "id": "me02-077",
+            "number": "077",
+            "name": "Grodoudou",
+            "illustrator": null,
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "me02-078",
+            "number": "078",
+            "name": "Capumain",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/me/me02/078",
+            "rarity": "Common"
+        },
+        {
+            "id": "me02-079",
+            "number": "079",
+            "name": "Capidextre",
+            "illustrator": null,
+            "rarity": "Rare"
+        },
+        {
+            "id": "me02-080",
+            "number": "080",
+            "name": "Queulorior",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/me/me02/080",
+            "rarity": "Common"
+        },
+        {
+            "id": "me02-081",
+            "number": "081",
+            "name": "Zigzaton",
+            "illustrator": null,
+            "rarity": "Common"
+        },
+        {
+            "id": "me02-082",
+            "number": "082",
+            "name": "Linéon",
+            "illustrator": null,
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "me02-083",
+            "number": "083",
+            "name": "Laporeille",
+            "illustrator": null,
+            "rarity": "Common"
+        },
+        {
+            "id": "me02-084",
+            "number": "084",
+            "name": "Méga-Lockpin-ex",
+            "illustrator": null,
+            "rarity": "Double rare"
+        },
+        {
+            "id": "me02-085",
+            "number": "085",
+            "name": "Cage de Combat",
+            "illustrator": null,
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "me02-086",
+            "number": "086",
+            "name": "Chalumeau",
+            "illustrator": null,
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "me02-087",
+            "number": "087",
+            "name": "Aurore",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/me/me02/087",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "me02-088",
+            "number": "088",
+            "name": "Vallée Étourdissante",
+            "illustrator": null,
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "me02-089",
+            "number": "089",
+            "name": "Crache-Feu",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/me/me02/089",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "me02-090",
+            "number": "090",
+            "name": "Action de Pieris",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/me/me02/090",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "me02-091",
+            "number": "091",
+            "name": "Glace Géante",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/me/me02/091",
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "me02-092",
+            "number": "092",
+            "name": "Casque Punk",
+            "illustrator": null,
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "me02-093",
+            "number": "093",
+            "name": "Amulette Sacrée",
+            "illustrator": null,
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "me02-094",
+            "number": "094",
+            "name": "Fortifiant Merveilleux",
+            "illustrator": null,
+            "rarity": "Uncommon"
+        },
+        {
+            "id": "me02-095",
+            "number": "095",
+            "name": "Ludicolo",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/me/me02/095",
+            "rarity": "Illustration rare"
+        },
+        {
+            "id": "me02-096",
+            "number": "096",
+            "name": "Lilliterelle",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/me/me02/096",
+            "rarity": "Illustration rare"
+        },
+        {
+            "id": "me02-097",
+            "number": "097",
+            "name": "Lamantine",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/me/me02/097",
+            "rarity": "Illustration rare"
+        },
+        {
+            "id": "me02-098",
+            "number": "098",
+            "name": "Tiplouf",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/me/me02/098",
+            "rarity": "Illustration rare"
+        },
+        {
+            "id": "me02-099",
+            "number": "099",
+            "name": "Voltoutou",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/me/me02/099",
+            "rarity": "Illustration rare"
+        },
+        {
+            "id": "me02-100",
+            "number": "100",
+            "name": "Zacian",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/me/me02/100",
+            "rarity": "Illustration rare"
+        },
+        {
+            "id": "me02-101",
+            "number": "101",
+            "name": "Libégon",
+            "illustrator": null,
+            "rarity": "Illustration rare"
+        },
+        {
+            "id": "me02-102",
+            "number": "102",
+            "name": "Axoloto de Paldea",
+            "illustrator": null,
+            "rarity": "Illustration rare"
+        },
+        {
+            "id": "me02-103",
+            "number": "103",
+            "name": "Salarsen",
+            "illustrator": null,
+            "rarity": "Illustration rare"
+        },
+        {
+            "id": "me02-104",
+            "number": "104",
+            "name": "Togedemaru",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/me/me02/104",
+            "rarity": "Illustration rare"
+        },
+        {
+            "id": "me02-105",
+            "number": "105",
+            "name": "Grodoudou",
+            "illustrator": null,
+            "rarity": "Illustration rare"
+        },
+        {
+            "id": "me02-106",
+            "number": "106",
+            "name": "Miaouss",
+            "illustrator": null,
+            "rarity": "Illustration rare"
+        },
+        {
+            "id": "me02-107",
+            "number": "107",
+            "name": "Capidextre",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/me/me02/107",
+            "rarity": "Illustration rare"
+        },
+        {
+            "id": "me02-108",
+            "number": "108",
+            "name": "Méga-Scarhino-ex",
+            "illustrator": null,
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "me02-109",
+            "number": "109",
+            "name": "Méga-Dracaufeu X-ex",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/me/me02/109",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "me02-110",
+            "number": "110",
+            "name": "Plumeline-ex",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/me/me02/110",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "me02-111",
+            "number": "111",
+            "name": "Motisma-ex",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/me/me02/111",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "me02-112",
+            "number": "112",
+            "name": "Magirêve-ex",
+            "illustrator": null,
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "me02-113",
+            "number": "113",
+            "name": "Méga-Sharpedo-ex",
+            "illustrator": null,
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "me02-114",
+            "number": "114",
+            "name": "Pingoléon-ex",
+            "illustrator": null,
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "me02-115",
+            "number": "115",
+            "name": "Méga-Lockpin-ex",
+            "illustrator": null,
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "me02-116",
+            "number": "116",
+            "name": "Cage de Combat",
+            "illustrator": null,
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "me02-117",
+            "number": "117",
+            "name": "Chalumeau",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/me/me02/117",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "me02-118",
+            "number": "118",
+            "name": "Aurore",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/me/me02/118",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "me02-119",
+            "number": "119",
+            "name": "Crache-Feu",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/me/me02/119",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "me02-120",
+            "number": "120",
+            "name": "Action de Pieris",
+            "illustrator": null,
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "me02-121",
+            "number": "121",
+            "name": "Casque Punk",
+            "illustrator": null,
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "me02-122",
+            "number": "122",
+            "name": "Amulette Sacrée",
+            "illustrator": null,
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "me02-123",
+            "number": "123",
+            "name": "Échange",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/me/me02/123",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "me02-124",
+            "number": "124",
+            "name": "Énergie Amorce",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/me/me02/124",
+            "rarity": "Ultra Rare"
+        },
+        {
+            "id": "me02-125",
+            "number": "125",
+            "name": "Méga-Dracaufeu X-ex",
+            "illustrator": null,
+            "imageBase": "https://assets.tcgdex.net/fr/me/me02/125",
+            "rarity": "Special illustration rare"
+        },
+        {
+            "id": "me02-126",
+            "number": "126",
+            "name": "Motisma-ex",
+            "illustrator": null,
+            "rarity": "Special illustration rare"
+        },
+        {
+            "id": "me02-127",
+            "number": "127",
+            "name": "Méga-Sharpedo-ex",
+            "illustrator": null,
+            "rarity": "Special illustration rare"
+        },
+        {
+            "id": "me02-128",
+            "number": "128",
+            "name": "Méga-Lockpin-ex",
+            "illustrator": null,
+            "rarity": "Special illustration rare"
+        },
+        {
+            "id": "me02-129",
+            "number": "129",
+            "name": "Aurore",
+            "illustrator": null,
+            "rarity": "Special illustration rare"
+        },
+        {
+            "id": "me02-130",
+            "number": "130",
+            "name": "Méga-Dracaufeu X-ex",
+            "illustrator": null,
+            "rarity": "Mega Hyper Rare"
+        }
+    ]
+}

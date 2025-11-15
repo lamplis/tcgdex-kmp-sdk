@@ -1535,7 +1535,16 @@
             "number": "196",
             "name": "Charizard EX",
             "illustrator": "5ban Graphics",
-            "rarity": "None"
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "holo"
+                },
+                {
+                    "type": "lenticular",
+                    "size": "jumbo"
+                }
+            ]
         },
         {
             "id": "svp-197",
@@ -1556,49 +1565,93 @@
             "number": "199",
             "name": "Zarude",
             "illustrator": "Uninori",
-            "rarity": "None"
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "holo",
+                    "subtype": "cosmos"
+                }
+            ]
         },
         {
             "id": "svp-200",
             "number": "200",
             "name": "Eevee",
             "illustrator": "Kariya",
-            "rarity": "None"
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "holo",
+                    "subtype": "cosmos"
+                }
+            ]
         },
         {
             "id": "svp-201",
             "number": "201",
             "name": "Zebstrika",
             "illustrator": "Krgc",
-            "rarity": "None"
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "holo",
+                    "subtype": "cosmos"
+                }
+            ]
         },
         {
             "id": "svp-202",
             "number": "202",
             "name": "Kangaskhan",
             "illustrator": "Uta",
-            "rarity": "None"
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "holo",
+                    "subtype": "cosmos"
+                }
+            ]
         },
         {
             "id": "svp-203",
             "number": "203",
             "name": "Team Rocket's Wobbuffet",
             "illustrator": "Saboteri",
-            "rarity": "None"
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "holo",
+                    "subtype": "cosmos"
+                }
+            ]
         },
         {
             "id": "svp-204",
             "number": "204",
             "name": "Cynthia's Garchomp ex",
             "illustrator": "PLANETA Igarashi",
-            "rarity": "None"
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "svp-205",
             "number": "205",
             "name": "Team Rocket's Mewtwo ex",
             "illustrator": "aky CG Works",
-            "rarity": "None"
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "holo"
+                },
+                {
+                    "type": "holo",
+                    "size": "jumbo"
+                }
+            ]
         },
         {
             "id": "svp-206",
@@ -1619,35 +1672,64 @@
             "number": "208",
             "name": "Victini",
             "illustrator": "Amelicart",
-            "rarity": "None"
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "holo"
+                },
+                {
+                    "type": "holo",
+                    "size": "jumbo"
+                }
+            ]
         },
         {
             "id": "svp-209",
             "number": "209",
             "name": "Thundurus",
             "illustrator": "Anesaki Dynamic",
-            "rarity": "None"
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "svp-210",
             "number": "210",
             "name": "Tornadus",
             "illustrator": "Kouki Saitou",
-            "rarity": "None"
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "svp-211",
             "number": "211",
             "name": "Gothitelle",
             "illustrator": "IKEDA Saki",
-            "rarity": "None"
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "svp-212",
             "number": "212",
             "name": "Reuniclus",
             "illustrator": "satoma",
-            "rarity": "None"
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "svp-213",
@@ -1675,21 +1757,40 @@
             "number": "216",
             "name": "Team Rocket's Mewtwo ex",
             "illustrator": "aky CG Works",
-            "rarity": "None"
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "holo"
+                },
+                {
+                    "type": "holo",
+                    "size": "jumbo"
+                }
+            ]
         },
         {
             "id": "svp-217",
             "number": "217",
             "name": "Team Rocket's Nidoking ex",
             "illustrator": "5ban Graphics",
-            "rarity": "None"
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "svp-218",
             "number": "218",
             "name": "Team Rocket's Persian ex",
             "illustrator": "5ban Graphics",
-            "rarity": "None"
+            "rarity": "None",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "svp-224",

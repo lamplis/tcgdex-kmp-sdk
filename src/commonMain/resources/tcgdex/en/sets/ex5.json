@@ -13,7 +13,16 @@
             "name": "Banette",
             "illustrator": "Midori Harada",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/1",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-2",
@@ -21,7 +30,16 @@
             "name": "Claydol",
             "illustrator": "Kyoko Umemoto",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/2",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-3",
@@ -29,7 +47,16 @@
             "name": "Crobat",
             "illustrator": "Midori Harada",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/3",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-4",
@@ -37,7 +64,16 @@
             "name": "Dark Celebi",
             "illustrator": "Ken Ikuji",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/4",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-5",
@@ -45,7 +81,16 @@
             "name": "Electrode",
             "illustrator": "Kyoko Umemoto",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/5",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-6",
@@ -53,7 +98,16 @@
             "name": "Exploud",
             "illustrator": "Tomokazu Komiya",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/6",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-7",
@@ -61,7 +115,16 @@
             "name": "Heracross",
             "illustrator": "Hajime Kusajima",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/7",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-8",
@@ -69,7 +132,15 @@
             "name": "Jirachi",
             "illustrator": "Ryo Ueda",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/8",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                },
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "ex5-9",
@@ -77,7 +148,16 @@
             "name": "Machamp",
             "illustrator": "Hajime Kusajima",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/9",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-10",
@@ -85,7 +165,16 @@
             "name": "Medicham",
             "illustrator": "Atsuko Nishida",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/10",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-11",
@@ -93,7 +182,19 @@
             "name": "Metagross",
             "illustrator": "Kouki Saitou",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/11",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                },
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "ex5-12",
@@ -101,7 +202,16 @@
             "name": "Milotic",
             "illustrator": "Atsuko Nishida",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/12",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-13",
@@ -109,7 +219,16 @@
             "name": "Pinsir",
             "illustrator": "Hajime Kusajima",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/13",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-14",
@@ -117,7 +236,16 @@
             "name": "Shiftry",
             "illustrator": "Hisao Nakamura",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/14",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-15",
@@ -125,7 +253,16 @@
             "name": "Walrein",
             "illustrator": "Atsuko Nishida",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/15",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-16",
@@ -133,7 +270,16 @@
             "name": "Bellossom",
             "illustrator": "Yuka Morii",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/16",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-17",
@@ -141,7 +287,16 @@
             "name": "Chimecho",
             "illustrator": "Miki Tanaka",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/17",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-18",
@@ -149,7 +304,16 @@
             "name": "Gorebyss",
             "illustrator": "Kagemaru Himeno",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/18",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-19",
@@ -157,7 +321,16 @@
             "name": "Huntail",
             "illustrator": "Kagemaru Himeno",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/19",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-20",
@@ -165,7 +338,16 @@
             "name": "Masquerain",
             "illustrator": "Toshinao Aoki",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/20",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-21",
@@ -173,7 +355,16 @@
             "name": "Metang",
             "illustrator": "Mitsuhiro Arita",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/21",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-22",
@@ -181,7 +372,16 @@
             "name": "Ninetales",
             "illustrator": "Toshinao Aoki",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/22",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-23",
@@ -189,7 +389,16 @@
             "name": "Rain Castform",
             "illustrator": "Jungo Suzuki",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/23",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-24",
@@ -197,7 +406,16 @@
             "name": "Relicanth",
             "illustrator": "Kagemaru Himeno",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/24",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-25",
@@ -205,7 +423,16 @@
             "name": "Snow-cloud Castform",
             "illustrator": "Sumiyoshi Kizuki",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/25",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-26",
@@ -213,7 +440,16 @@
             "name": "Sunny Castform",
             "illustrator": "Sumiyoshi Kizuki",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/26",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-27",
@@ -221,7 +457,16 @@
             "name": "Tropius",
             "illustrator": "Kouki Saitou",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/27",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-28",
@@ -229,7 +474,16 @@
             "name": "Beldum",
             "illustrator": "Ken Sugimori",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/28",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-29",
@@ -237,7 +491,16 @@
             "name": "Beldum",
             "illustrator": "Mitsuhiro Arita",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/29",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-30",
@@ -245,7 +508,16 @@
             "name": "Castform",
             "illustrator": "Sumiyoshi Kizuki",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/30",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-31",
@@ -253,7 +525,16 @@
             "name": "Claydol",
             "illustrator": "Ken Sugimori",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/31",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-32",
@@ -261,7 +542,16 @@
             "name": "Corsola",
             "illustrator": "Naoyo Kimura",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/32",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-33",
@@ -269,7 +559,16 @@
             "name": "Dodrio",
             "illustrator": "Miki Tanaka",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/33",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-34",
@@ -277,7 +576,16 @@
             "name": "Glalie",
             "illustrator": "Midori Harada",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/34",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-35",
@@ -285,7 +593,16 @@
             "name": "Gloom",
             "illustrator": "Yuka Morii",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/35",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-36",
@@ -293,7 +610,16 @@
             "name": "Golbat",
             "illustrator": "Midori Harada",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/36",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-37",
@@ -301,7 +627,16 @@
             "name": "Igglybuff",
             "illustrator": "Naoyo Kimura",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/37",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-38",
@@ -309,7 +644,16 @@
             "name": "Lanturn",
             "illustrator": "Aya Kusube",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/38",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-39",
@@ -317,7 +661,16 @@
             "name": "Loudred",
             "illustrator": "Tomokazu Komiya",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/39",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-40",
@@ -325,7 +678,16 @@
             "name": "Luvdisc",
             "illustrator": "Miki Tanaka",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/40",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-41",
@@ -333,7 +695,16 @@
             "name": "Machoke",
             "illustrator": "Hajime Kusajima",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/41",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-42",
@@ -341,7 +712,16 @@
             "name": "Medicham",
             "illustrator": "Ken Sugimori",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/42",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-43",
@@ -349,7 +729,16 @@
             "name": "Metang",
             "illustrator": "Kouki Saitou",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/43",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-44",
@@ -357,7 +746,16 @@
             "name": "Metang",
             "illustrator": "Ken Sugimori",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/44",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-45",
@@ -365,7 +763,16 @@
             "name": "Nuzleaf",
             "illustrator": "Hisao Nakamura",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/45",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-46",
@@ -373,7 +780,16 @@
             "name": "Rhydon",
             "illustrator": "Atsuko Nishida",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/46",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-47",
@@ -381,7 +797,16 @@
             "name": "Sealeo",
             "illustrator": "Atsuko Nishida",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/47",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-48",
@@ -389,7 +814,16 @@
             "name": "Spinda",
             "illustrator": "Kagemaru Himeno",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/48",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-49",
@@ -397,7 +831,16 @@
             "name": "Starmie",
             "illustrator": "Aya Kusube",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/49",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-50",
@@ -405,7 +848,16 @@
             "name": "Swalot",
             "illustrator": "Yuka Morii",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/50",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-51",
@@ -413,7 +865,16 @@
             "name": "Tentacruel",
             "illustrator": "Hisao Nakamura",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/51",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-52",
@@ -421,7 +882,16 @@
             "name": "Baltoy",
             "illustrator": "Kyoko Umemoto",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/52",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-53",
@@ -429,7 +899,16 @@
             "name": "Baltoy",
             "illustrator": "Ken Sugimori",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/53",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-54",
@@ -437,7 +916,16 @@
             "name": "Beldum",
             "illustrator": "Kouki Saitou",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/54",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-55",
@@ -445,7 +933,16 @@
             "name": "Chikorita",
             "illustrator": "Shin-ichi Yoshikawa",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/55",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-56",
@@ -453,7 +950,16 @@
             "name": "Chinchou",
             "illustrator": "Aya Kusube",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/56",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-57",
@@ -461,7 +967,16 @@
             "name": "Chinchou",
             "illustrator": "Nakaoka",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/57",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-58",
@@ -469,7 +984,16 @@
             "name": "Clamperl",
             "illustrator": "Kagemaru Himeno",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/58",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-59",
@@ -477,7 +1001,16 @@
             "name": "Cyndaquil",
             "illustrator": "Ken Ikuji",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/59",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-60",
@@ -485,7 +1018,16 @@
             "name": "Doduo",
             "illustrator": "Miki Tanaka",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/60",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-61",
@@ -493,7 +1035,16 @@
             "name": "Feebas",
             "illustrator": "Tomokazu Komiya",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/61",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-62",
@@ -501,7 +1052,16 @@
             "name": "Gulpin",
             "illustrator": "Yuka Morii",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/62",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-63",
@@ -509,7 +1069,16 @@
             "name": "Jigglypuff",
             "illustrator": "Naoyo Kimura",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/63",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-64",
@@ -517,7 +1086,16 @@
             "name": "Machop",
             "illustrator": "Hajime Kusajima",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/64",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-65",
@@ -525,7 +1103,16 @@
             "name": "Meditite",
             "illustrator": "Ken Sugimori",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/65",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-66",
@@ -533,7 +1120,16 @@
             "name": "Meditite",
             "illustrator": "Atsuko Nishida",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/66",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-67",
@@ -541,7 +1137,16 @@
             "name": "Minun",
             "illustrator": "Kagemaru Himeno",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/67",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-68",
@@ -549,7 +1154,16 @@
             "name": "Oddish",
             "illustrator": "Yuka Morii",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/68",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-69",
@@ -557,7 +1171,16 @@
             "name": "Plusle",
             "illustrator": "Kagemaru Himeno",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/69",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-70",
@@ -565,7 +1188,16 @@
             "name": "Rhyhorn",
             "illustrator": "Atsuko Nishida",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/70",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-71",
@@ -573,7 +1205,16 @@
             "name": "Seedot",
             "illustrator": "Hisao Nakamura",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/71",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-72",
@@ -581,7 +1222,16 @@
             "name": "Shuppet",
             "illustrator": "Midori Harada",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/72",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-73",
@@ -589,7 +1239,16 @@
             "name": "Snorunt",
             "illustrator": "Midori Harada",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/73",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-74",
@@ -597,7 +1256,16 @@
             "name": "Spheal",
             "illustrator": "Atsuko Nishida",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/74",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-75",
@@ -605,7 +1273,16 @@
             "name": "Staryu",
             "illustrator": "Aya Kusube",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/75",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-76",
@@ -613,7 +1290,16 @@
             "name": "Surskit",
             "illustrator": "Toshinao Aoki",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/76",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-77",
@@ -621,7 +1307,16 @@
             "name": "Tentacool",
             "illustrator": "Hisao Nakamura",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/77",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-78",
@@ -629,7 +1324,16 @@
             "name": "Togepi",
             "illustrator": "Nakaoka",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/78",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-79",
@@ -637,7 +1341,16 @@
             "name": "Totodile",
             "illustrator": "Shin-ichi Yoshikawa",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/79",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-80",
@@ -645,7 +1358,16 @@
             "name": "Voltorb",
             "illustrator": "Kyoko Umemoto",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/80",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-81",
@@ -653,7 +1375,16 @@
             "name": "Vulpix",
             "illustrator": "Toshinao Aoki",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/81",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-82",
@@ -661,7 +1392,16 @@
             "name": "Whismur",
             "illustrator": "Tomokazu Komiya",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/82",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-83",
@@ -669,7 +1409,16 @@
             "name": "Zubat",
             "illustrator": "Midori Harada",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/83",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-84",
@@ -677,7 +1426,16 @@
             "name": "Ancient Technical Machine (Ice)",
             "illustrator": "Mitsuhiro Arita",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/84",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-85",
@@ -685,7 +1443,16 @@
             "name": "Ancient Technical Machine (Rock)",
             "illustrator": "Mitsuhiro Arita",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/85",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-86",
@@ -693,7 +1460,16 @@
             "name": "Ancient Technical Machine (Steel)",
             "illustrator": "Mitsuhiro Arita",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/86",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-87",
@@ -701,7 +1477,16 @@
             "name": "Ancient Tomb",
             "illustrator": "Ken Ikuji",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/87",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-88",
@@ -709,7 +1494,16 @@
             "name": "Desert Ruins",
             "illustrator": "Shin-ichi Yoshikawa",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/88",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-89",
@@ -717,7 +1511,16 @@
             "name": "Island Cave",
             "illustrator": "Ken Ikugi",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/89",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-90",
@@ -725,7 +1528,16 @@
             "name": "Life Herb",
             "illustrator": "Ryo Ueda",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/90",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-91",
@@ -733,7 +1545,16 @@
             "name": "Magnetic Storm",
             "illustrator": "Shin-ichi Yoshikawa",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/91",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-92",
@@ -741,7 +1562,16 @@
             "name": "Steven's Advice",
             "illustrator": "Ken Sugimori",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/92",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "energy"
+                }
+            ]
         },
         {
             "id": "ex5-93",
@@ -749,7 +1579,12 @@
             "name": "Groudon ex",
             "illustrator": "Hikaru Koike",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/93",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "ex5-94",
@@ -757,7 +1592,12 @@
             "name": "Kyogre ex",
             "illustrator": "Hikaru Koike",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/94",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "ex5-95",
@@ -765,7 +1605,12 @@
             "name": "Metagross ex",
             "illustrator": "Mitsuhiro Arita",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/95",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "ex5-96",
@@ -773,7 +1618,12 @@
             "name": "Ninetales ex",
             "illustrator": "Ryo Ueda",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/96",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "ex5-97",
@@ -781,7 +1631,12 @@
             "name": "Regice ex",
             "illustrator": "Mitsuhiro Arita",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/97",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "ex5-98",
@@ -789,7 +1644,12 @@
             "name": "Regirock ex",
             "illustrator": "Mitsuhiro Arita",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/98",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "ex5-99",
@@ -797,7 +1657,12 @@
             "name": "Registeel ex",
             "illustrator": "Mitsuhiro Arita",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/99",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "ex5-100",
@@ -805,7 +1670,12 @@
             "name": "Vileplume ex",
             "illustrator": "Ryo Ueda",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/100",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "ex5-101",
@@ -813,7 +1683,12 @@
             "name": "Wigglytuff ex",
             "illustrator": "Ryo Ueda",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/101",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "ex5-102",
@@ -821,7 +1696,12 @@
             "name": "Groudon",
             "illustrator": "Mitsuhiro Arita",
             "imageBase": "https://assets.tcgdex.net/en/ex/ex5/102",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         }
     ]
 }

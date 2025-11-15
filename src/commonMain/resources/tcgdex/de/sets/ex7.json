@@ -12,7 +12,12 @@
             "number": "1",
             "name": "Azumarill",
             "illustrator": "Sumiyoshi Kizuki",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "ex7-2",
@@ -54,7 +59,12 @@
             "number": "7",
             "name": "Dunkles Knogga",
             "illustrator": "Mitsuhiro Arita",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "ex7-8",
@@ -110,7 +120,12 @@
             "number": "15",
             "name": "Dunkles Dragoran",
             "illustrator": "Nakaoka",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "ex7-16",
@@ -138,14 +153,28 @@
             "number": "19",
             "name": "Dunkles Despotar",
             "illustrator": "Nakaoka",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "ex7-20",
             "number": "20",
             "name": "Dunkles Despotar",
             "illustrator": "Kyoko Koizumi",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "holo",
+                    "foil": "cosmos"
+                }
+            ]
         },
         {
             "id": "ex7-21",
@@ -264,7 +293,12 @@
             "number": "37",
             "name": "Dunkles Hundemon",
             "illustrator": "Nakaoka",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "ex7-38",
@@ -292,7 +326,12 @@
             "number": "41",
             "name": "Dunkles Pupitar",
             "illustrator": "Emi Miwa",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "ex7-42",
@@ -446,7 +485,12 @@
             "number": "63",
             "name": "Larvitar",
             "illustrator": "Midroi Harada",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "ex7-64",
@@ -488,7 +532,12 @@
             "number": "69",
             "name": "Onix",
             "illustrator": "Atsuko Nishida",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "ex7-70",
@@ -586,28 +635,48 @@
             "number": "83",
             "name": "Nachahmerin",
             "illustrator": "Ken Sugimori",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "ex7-84",
             "number": "84",
             "name": "Pokémon Retriever*",
             "illustrator": "Katsura Tabata",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "ex7-85",
             "number": "85",
             "name": "Pow! Hand Extension*",
             "illustrator": "Katsura Tabata",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "ex7-86",
             "number": "86",
             "name": "Rocket's Admin.*",
             "illustrator": "Ken Sugimori",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "ex7-87",
@@ -642,14 +711,24 @@
             "number": "91",
             "name": "Surprise! Time Machine*",
             "illustrator": "Katsura Tabata",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "ex7-92",
             "number": "92",
             "name": "Swoop! Teleporter*",
             "illustrator": "Katsura Tabata",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "ex7-93",
@@ -670,119 +749,204 @@
             "number": "95",
             "name": "R Energy*",
             "illustrator": "Takumi Akabane",
-            "rarity": "Uncommon"
+            "rarity": "Uncommon",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "ex7-96",
             "number": "96",
             "name": "Rockets Arktos ex",
             "illustrator": "Ryo Ueda",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "ex7-97",
             "number": "97",
             "name": "Rockets Entei ex",
             "illustrator": "Ryo Ueda",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "ex7-98",
             "number": "98",
             "name": "Rockets Nokchan ex",
             "illustrator": "Mitsuhiro Arita",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "ex7-99",
             "number": "99",
             "name": "Rockets Mewtu ex",
             "illustrator": "Mitsuhiro Arita",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "ex7-100",
             "number": "100",
             "name": "Rockets Lavados ex",
             "illustrator": "Ryo Ueda",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "ex7-101",
             "number": "101",
             "name": "Rockets Scherox ex",
             "illustrator": "Hikaru Koike",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "ex7-102",
             "number": "102",
             "name": "Rockets Sichlor ex",
             "illustrator": "Hikaru Koike",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "ex7-103",
             "number": "103",
             "name": "Rockets Sniebel ex",
             "illustrator": "Ryo Ueda",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "ex7-104",
             "number": "104",
             "name": "Rockets Relaxo ex",
             "illustrator": "Mitsuhiro Arita",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "ex7-105",
             "number": "105",
             "name": "Rockets Suicune ex",
             "illustrator": "Ryo Ueda",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "ex7-106",
             "number": "106",
             "name": "Rockets Zapdos ex",
             "illustrator": "Ryo Ueda",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "ex7-107",
             "number": "107",
             "name": "Hydropi *",
             "illustrator": "Masakazu Fukuda",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "ex7-108",
             "number": "108",
             "name": "Flemmli *",
             "illustrator": "Masakazu Fukuda",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "ex7-109",
             "number": "109",
             "name": "Geckarbor *",
             "illustrator": "Masakazu Fukuda",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "ex7-110",
             "number": "110",
             "name": "Glutexo",
             "illustrator": "Ken Sugimori",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "ex7-111",
             "number": "111",
             "name": "Hier kommt Team Rocket!",
             "illustrator": "Ken Sugimori",
-            "rarity": "Rare"
+            "rarity": "Rare",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         }
     ]
 }

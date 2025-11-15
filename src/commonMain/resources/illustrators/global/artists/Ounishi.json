@@ -2,6 +2,24 @@
     "illustrator": "Ounishi",
     "series": [
         {
+            "id": "me",
+            "name": "Mega Evolution",
+            "releaseDate": "2025-09-26",
+            "sets": [
+                {
+                    "id": "mep",
+                    "name": "MEP Black Star Promos",
+                    "releaseDate": "2025-09-26",
+                    "cards": [
+                        {
+                            "id": "mep-004",
+                            "number": "004"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "id": "sv",
             "name": "Scarlet & Violet",
             "releaseDate": "2023-03-31",

@@ -13,7 +13,12 @@
             "name": "Pikachu",
             "illustrator": "Keiji Kinebuchi",
             "imageBase": "https://assets.tcgdex.net/en/base/basep/1",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "basep-2",
@@ -21,7 +26,12 @@
             "name": "Electabuzz",
             "illustrator": "Ken Sugimori",
             "imageBase": "https://assets.tcgdex.net/en/base/basep/2",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "basep-3",
@@ -29,7 +39,12 @@
             "name": "Mewtwo",
             "illustrator": "Ken Sugimori",
             "imageBase": "https://assets.tcgdex.net/en/base/basep/3",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "basep-4",
@@ -37,7 +52,12 @@
             "name": "Pikachu",
             "illustrator": "Ken Sugimori",
             "imageBase": "https://assets.tcgdex.net/en/base/basep/4",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "basep-5",
@@ -45,7 +65,12 @@
             "name": "Dragonite",
             "illustrator": "Toshinao Aoki",
             "imageBase": "https://assets.tcgdex.net/en/base/basep/5",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "basep-6",
@@ -53,7 +78,12 @@
             "name": "Arcanine",
             "illustrator": "Ken Sugimori",
             "imageBase": "https://assets.tcgdex.net/en/base/basep/6",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "basep-7",
@@ -61,7 +91,12 @@
             "name": "Jigglypuff",
             "illustrator": "Keiji Kinebuchi",
             "imageBase": "https://assets.tcgdex.net/en/base/basep/7",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "basep-8",
@@ -69,7 +104,12 @@
             "name": "Mew",
             "illustrator": "Ken Sugimori",
             "imageBase": "https://assets.tcgdex.net/en/base/basep/8",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "basep-9",
@@ -77,7 +117,12 @@
             "name": "Mew",
             "illustrator": "Ken Sugimori",
             "imageBase": "https://assets.tcgdex.net/en/base/basep/9",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "basep-10",
@@ -85,7 +130,12 @@
             "name": "Meowth",
             "illustrator": "Kagemaru Himeno",
             "imageBase": "https://assets.tcgdex.net/en/base/basep/10",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "basep-11",
@@ -93,7 +143,16 @@
             "name": "Eevee",
             "illustrator": "Kagemaru Himeno",
             "imageBase": "https://assets.tcgdex.net/en/base/basep/11",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo",
+                    "foil": "cosmos"
+                },
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "basep-12",
@@ -101,7 +160,12 @@
             "name": "Mewtwo",
             "illustrator": "Christopher Rush",
             "imageBase": "https://assets.tcgdex.net/en/base/basep/12",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "basep-13",
@@ -109,7 +173,12 @@
             "name": "Venusaur",
             "illustrator": "Ken Sugimori",
             "imageBase": "https://assets.tcgdex.net/en/base/basep/13",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "basep-14",
@@ -117,7 +186,12 @@
             "name": "Mewtwo",
             "illustrator": "Benimaru Itoh",
             "imageBase": "https://assets.tcgdex.net/en/base/basep/14",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "basep-15",
@@ -125,7 +199,12 @@
             "name": "Cool Porygon",
             "illustrator": "Hiromichi Sugiyama",
             "imageBase": "https://assets.tcgdex.net/en/base/basep/15",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "basep-16",
@@ -133,7 +212,12 @@
             "name": "Computer Error",
             "illustrator": "Sumiyoshi Kizuki",
             "imageBase": "https://assets.tcgdex.net/en/base/basep/16",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "basep-17",
@@ -141,7 +225,17 @@
             "name": "Dark Persian",
             "illustrator": "Ken Sugimori",
             "imageBase": "https://assets.tcgdex.net/en/base/basep/17",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo",
+                    "foil": "cosmos"
+                },
+                {
+                    "type": "holo",
+                    "subtype": "missing-hp"
+                }
+            ]
         },
         {
             "id": "basep-18",
@@ -149,7 +243,12 @@
             "name": "Team Rocket's Meowth",
             "illustrator": "Kunihiko Yuyama",
             "imageBase": "https://assets.tcgdex.net/en/base/basep/18",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "holo"
+                }
+            ]
         },
         {
             "id": "basep-19",
@@ -157,7 +256,12 @@
             "name": "Sabrina's Abra",
             "illustrator": "Atsuko Nishida",
             "imageBase": "https://assets.tcgdex.net/en/base/basep/19",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "basep-20",
@@ -165,31 +269,63 @@
             "name": "Psyduck",
             "illustrator": "Kagemaru Himeno",
             "imageBase": "https://assets.tcgdex.net/en/base/basep/20",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "basep-21",
             "number": "21",
             "name": "Moltres",
-            "illustrator": "Toshinao Aoki",
+            "illustrator": "Naoyo Kimura",
             "imageBase": "https://assets.tcgdex.net/en/base/basep/21",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "normal",
+                    "subtype": "aoki-error"
+                }
+            ]
         },
         {
             "id": "basep-22",
             "number": "22",
             "name": "Articuno",
-            "illustrator": "Toshinao Aoki",
+            "illustrator": "Naoyo Kimura",
             "imageBase": "https://assets.tcgdex.net/en/base/basep/22",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "normal",
+                    "subtype": "aoki-error"
+                }
+            ]
         },
         {
             "id": "basep-23",
             "number": "23",
             "name": "Zapdos",
-            "illustrator": "Toshinao Aoki",
+            "illustrator": "Naoyo Kimura",
             "imageBase": "https://assets.tcgdex.net/en/base/basep/23",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                },
+                {
+                    "type": "normal",
+                    "subtype": "aoki-error"
+                }
+            ]
         },
         {
             "id": "basep-24",
@@ -237,7 +373,12 @@
             "name": "Marill",
             "illustrator": "Ken Sugimori",
             "imageBase": "https://assets.tcgdex.net/en/base/basep/29",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "basep-30",
@@ -245,7 +386,12 @@
             "name": "Togepi",
             "illustrator": "Ken Sugimori",
             "imageBase": "https://assets.tcgdex.net/en/base/basep/30",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "basep-31",
@@ -253,7 +399,12 @@
             "name": "Cleffa",
             "illustrator": "Ken Sugimori",
             "imageBase": "https://assets.tcgdex.net/en/base/basep/31",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "basep-32",
@@ -261,7 +412,12 @@
             "name": "Smeargle",
             "illustrator": "Tomokazu Komiya",
             "imageBase": "https://assets.tcgdex.net/en/base/basep/32",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "basep-33",
@@ -269,7 +425,12 @@
             "name": "Scizor",
             "illustrator": "Hironobu Yoshida",
             "imageBase": "https://assets.tcgdex.net/en/base/basep/33",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "basep-34",
@@ -277,7 +438,12 @@
             "name": "Entei",
             "illustrator": "Ken Sugimori",
             "imageBase": "https://assets.tcgdex.net/en/base/basep/34",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "basep-35",
@@ -285,7 +451,12 @@
             "name": "Pichu",
             "illustrator": "Ken Sugimori",
             "imageBase": "https://assets.tcgdex.net/en/base/basep/35",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "reverse"
+                }
+            ]
         },
         {
             "id": "basep-36",
@@ -293,7 +464,12 @@
             "name": "Igglybuff",
             "illustrator": "Kagemaru Himeno",
             "imageBase": "https://assets.tcgdex.net/en/base/basep/36",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "basep-37",
@@ -301,7 +477,12 @@
             "name": "Hitmontop",
             "illustrator": "Atsuko Nishida",
             "imageBase": "https://assets.tcgdex.net/en/base/basep/37",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "basep-38",
@@ -309,7 +490,12 @@
             "name": "Unown [J]",
             "illustrator": "Hideki Kazama",
             "imageBase": "https://assets.tcgdex.net/en/base/basep/38",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "basep-39",
@@ -317,23 +503,38 @@
             "name": "Misdreavus",
             "illustrator": "Shin-ichi Yoshida",
             "imageBase": "https://assets.tcgdex.net/en/base/basep/39",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "basep-40",
             "number": "40",
             "name": "Pokémon Center",
-            "illustrator": null,
+            "illustrator": "\\",
             "imageBase": "https://assets.tcgdex.net/en/base/basep/40",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "basep-41",
             "number": "41",
             "name": "Lucky Stadium",
-            "illustrator": null,
+            "illustrator": "\\",
             "imageBase": "https://assets.tcgdex.net/en/base/basep/41",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "basep-42",
@@ -341,7 +542,12 @@
             "name": "Pokémon Tower",
             "illustrator": "Keiji Kinebuchi",
             "imageBase": "https://assets.tcgdex.net/en/base/basep/42",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "basep-43",
@@ -349,7 +555,12 @@
             "name": "Machamp",
             "illustrator": "Tomokazu Komiya",
             "imageBase": "https://assets.tcgdex.net/en/base/basep/43",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "basep-44",
@@ -357,7 +568,12 @@
             "name": "Magmar",
             "illustrator": "Atsuko Nishida",
             "imageBase": "https://assets.tcgdex.net/en/base/basep/44",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "basep-45",
@@ -365,7 +581,12 @@
             "name": "Scyther",
             "illustrator": "Hironobu Yoshida",
             "imageBase": "https://assets.tcgdex.net/en/base/basep/45",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "basep-46",
@@ -373,7 +594,12 @@
             "name": "Electabuzz",
             "illustrator": "Miki Tanaka",
             "imageBase": "https://assets.tcgdex.net/en/base/basep/46",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "basep-47",
@@ -381,7 +607,12 @@
             "name": "Mew",
             "illustrator": "Ken Sugimori",
             "imageBase": "https://assets.tcgdex.net/en/base/basep/47",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "basep-48",
@@ -389,7 +620,12 @@
             "name": "Articuno",
             "illustrator": "Atsuko Nishida",
             "imageBase": "https://assets.tcgdex.net/en/base/basep/48",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "basep-49",
@@ -397,7 +633,12 @@
             "name": "Snorlax",
             "illustrator": "Craig Turvey",
             "imageBase": "https://assets.tcgdex.net/en/base/basep/49",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "basep-50",
@@ -413,7 +654,12 @@
             "name": "Rapidash",
             "illustrator": "Mitsuhiro Arita",
             "imageBase": "https://assets.tcgdex.net/en/base/basep/51",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "basep-52",
@@ -421,7 +667,12 @@
             "name": "Ho-oh",
             "illustrator": "Mitsuhiro Arita",
             "imageBase": "https://assets.tcgdex.net/en/base/basep/52",
-            "rarity": "Common"
+            "rarity": "Common",
+            "variants": [
+                {
+                    "type": "normal"
+                }
+            ]
         },
         {
             "id": "basep-53",

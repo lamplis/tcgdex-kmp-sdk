@@ -1685,6 +1685,32 @@
                     ]
                 }
             ]
+        },
+        {
+            "id": "base",
+            "name": "Base",
+            "releaseDate": "1999-01-09",
+            "sets": [
+                {
+                    "id": "basep",
+                    "name": "Wizards Black Star Promos",
+                    "releaseDate": "1999-07-01",
+                    "cards": [
+                        {
+                            "id": "basep-23",
+                            "number": "23"
+                        },
+                        {
+                            "id": "basep-22",
+                            "number": "22"
+                        },
+                        {
+                            "id": "basep-21",
+                            "number": "21"
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }

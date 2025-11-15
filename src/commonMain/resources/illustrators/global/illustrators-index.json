@@ -1,6 +1,6 @@
 {
     "version": 1,
-    "generatedAt": 1762970072167,
+    "generatedAt": 1763242725432,
     "artists": [
         {
             "name": "Hideki Ishikawa",
@@ -1334,7 +1334,7 @@
         },
         {
             "name": "Sumiyoshi Kizuki",
-            "total": 225,
+            "total": 226,
             "sets": [
                 {
                     "setId": "base5",
@@ -1610,6 +1610,10 @@
                 },
                 {
                     "setId": "sm3",
+                    "count": 1
+                },
+                {
+                    "setId": "hgssp",
                     "count": 1
                 },
                 {
@@ -4531,7 +4535,7 @@
         },
         {
             "name": "Kazumasa Yasukuni",
-            "total": 15,
+            "total": 16,
             "sets": [
                 {
                     "setId": "me01",
@@ -4544,6 +4548,10 @@
                 {
                     "setId": "sv09",
                     "count": 2
+                },
+                {
+                    "setId": "mep",
+                    "count": 1
                 },
                 {
                     "setId": "sv06.5",
@@ -4563,9 +4571,9 @@
                 }
             ],
             "last3": [
+                "mep-002",
                 "me01-064",
-                "me01-005",
-                "sv09-047"
+                "me01-005"
             ]
         },
         {
@@ -5178,7 +5186,7 @@
         },
         {
             "name": "Naoyo Kimura",
-            "total": 274,
+            "total": 277,
             "sets": [
                 {
                     "setId": "ecard2",
@@ -5274,6 +5282,10 @@
                 },
                 {
                     "setId": "bw4",
+                    "count": 3
+                },
+                {
+                    "setId": "basep",
                     "count": 3
                 },
                 {
@@ -9604,8 +9616,12 @@
         },
         {
             "name": "Shimaris Yukichi",
-            "total": 17,
+            "total": 19,
             "sets": [
+                {
+                    "setId": "mep",
+                    "count": 2
+                },
                 {
                     "setId": "me01",
                     "count": 2
@@ -9644,9 +9660,9 @@
                 }
             ],
             "last3": [
-                "me01-149",
-                "me01-032",
-                "sv09-001"
+                "mep-006",
+                "mep-005",
+                "me01-149"
             ]
         },
         {
@@ -11114,7 +11130,7 @@
         },
         {
             "name": "Aya Kusube",
-            "total": 136,
+            "total": 137,
             "sets": [
                 {
                     "setId": "neo2",
@@ -11289,6 +11305,10 @@
                     "count": 1
                 },
                 {
+                    "setId": "mep",
+                    "count": 1
+                },
+                {
                     "setId": "hgss1",
                     "count": 1
                 },
@@ -11350,9 +11370,9 @@
                 }
             ],
             "last3": [
+                "mep-009",
                 "sv09-106",
-                "sv08-145",
-                "sv08-009"
+                "sv08-145"
             ]
         },
         {
@@ -11988,7 +12008,7 @@
         },
         {
             "name": "GOSSAN",
-            "total": 65,
+            "total": 66,
             "sets": [
                 {
                     "setId": "sv04.5",
@@ -12047,14 +12067,18 @@
                     "count": 2
                 },
                 {
+                    "setId": "mep",
+                    "count": 1
+                },
+                {
                     "setId": "me01",
                     "count": 1
                 }
             ],
             "last3": [
+                "mep-010",
                 "me01-073",
-                "sv09-145",
-                "sv09-144"
+                "sv09-145"
             ]
         },
         {
@@ -14542,7 +14566,7 @@
         },
         {
             "name": "Jiro Sasumo",
-            "total": 14,
+            "total": 16,
             "sets": [
                 {
                     "setId": "sv04",
@@ -14551,6 +14575,10 @@
                 {
                     "setId": "sv01",
                     "count": 3
+                },
+                {
+                    "setId": "mep",
+                    "count": 2
                 },
                 {
                     "setId": "sv09",
@@ -14574,9 +14602,9 @@
                 }
             ],
             "last3": [
-                "me01-186",
-                "sv09-097",
-                "sv09-007"
+                "mep-008",
+                "mep-007",
+                "me01-186"
             ]
         },
         {
@@ -14906,11 +14934,15 @@
         },
         {
             "name": "Ounishi",
-            "total": 6,
+            "total": 7,
             "sets": [
                 {
                     "setId": "sv08",
                     "count": 2
+                },
+                {
+                    "setId": "mep",
+                    "count": 1
                 },
                 {
                     "setId": "sv06",
@@ -14926,9 +14958,9 @@
                 }
             ],
             "last3": [
+                "mep-004",
                 "sv09-160",
-                "sv08-144",
-                "sv08-108"
+                "sv08-144"
             ]
         },
         {
@@ -17276,7 +17308,7 @@
         },
         {
             "name": "Uninori",
-            "total": 15,
+            "total": 16,
             "sets": [
                 {
                     "setId": "me01",
@@ -17299,6 +17331,10 @@
                     "count": 2
                 },
                 {
+                    "setId": "mep",
+                    "count": 1
+                },
+                {
                     "setId": "sv06.5",
                     "count": 1
                 },
@@ -17312,9 +17348,9 @@
                 }
             ],
             "last3": [
+                "mep-001",
                 "me01-101",
-                "me01-015",
-                "sv08-210"
+                "me01-015"
             ]
         },
         {
@@ -17675,12 +17711,8 @@
         },
         {
             "name": "Toshinao Aoki",
-            "total": 63,
+            "total": 60,
             "sets": [
-                {
-                    "setId": "basep",
-                    "count": 6
-                },
                 {
                     "setId": "neo4",
                     "count": 6
@@ -17692,6 +17724,10 @@
                 {
                     "setId": "ecard3",
                     "count": 4
+                },
+                {
+                    "setId": "basep",
+                    "count": 3
                 },
                 {
                     "setId": "ex6",
@@ -19115,8 +19151,12 @@
         },
         {
             "name": "cochi8i",
-            "total": 6,
+            "total": 7,
             "sets": [
+                {
+                    "setId": "mep",
+                    "count": 1
+                },
                 {
                     "setId": "me01",
                     "count": 1
@@ -19139,9 +19179,9 @@
                 }
             ],
             "last3": [
+                "mep-003",
                 "me01-063",
-                "sv07-073",
-                "sv06-129"
+                "sv07-073"
             ]
         },
         {
@@ -21649,6 +21689,41 @@
             ]
         },
         {
+            "name": "\\",
+            "total": 8,
+            "sets": [
+                {
+                    "setId": "basep",
+                    "count": 2
+                },
+                {
+                    "setId": "ecard2",
+                    "count": 2
+                },
+                {
+                    "setId": "pop2",
+                    "count": 1
+                },
+                {
+                    "setId": "ex14",
+                    "count": 1
+                },
+                {
+                    "setId": "ex11",
+                    "count": 1
+                },
+                {
+                    "setId": "ecard1",
+                    "count": 1
+                }
+            ],
+            "last3": [
+                "pop2-9",
+                "ex14-78",
+                "ex11-89"
+            ]
+        },
+        {
             "name": "Hiromichi Sugiyama",
             "total": 33,
             "sets": [
@@ -21815,37 +21890,6 @@
                 "cel25-9A",
                 "pop2-10",
                 "np-2"
-            ]
-        },
-        {
-            "name": "\\",
-            "total": 6,
-            "sets": [
-                {
-                    "setId": "ecard2",
-                    "count": 2
-                },
-                {
-                    "setId": "pop2",
-                    "count": 1
-                },
-                {
-                    "setId": "ex14",
-                    "count": 1
-                },
-                {
-                    "setId": "ex11",
-                    "count": 1
-                },
-                {
-                    "setId": "ecard1",
-                    "count": 1
-                }
-            ],
-            "last3": [
-                "pop2-9",
-                "ex14-78",
-                "ex11-89"
             ]
         },
         {
