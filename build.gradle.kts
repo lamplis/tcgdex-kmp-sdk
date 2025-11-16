@@ -104,6 +104,8 @@ tasks.register<JavaExec>("generateEmbeddedCatalog") {
     classpath = files(jvmMain.output.allOutputs, jvmMain.runtimeDependencyFiles)
     // Write under module resources by default
     systemProperty("outputDir", project.projectDir.resolve("src/commonMain/resources/tcgdex").absolutePath)
+    // Ensure missing-images CSV is always generated at module root by default
+    systemProperty("missingCsvPath", project.projectDir.resolve("missing_card_images.csv").absolutePath)
     // Pass-through optional tuning properties for faster debug runs and local mode
     val keys = listOf("langs", "limitSets", "progressEvery", "skipDetails", "localDbPath", "offlineOnly", "verbose", "seriesFilter")
     keys.forEach { key ->

@@ -947,7 +947,7 @@ object EmbeddedCatalogData {
         "name": "Plasma Storm",
         "releaseDate": "2013-02-06",
         "logo": "https://assets.tcgdex.net/en/bw/bw8/logo",
-        "symbol": "https://assets.tcgdex.net/en/bw/bw8/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw8/symbol.png",
         "serieId": "bw",
         "official": 135,
         "total": 138
@@ -957,7 +957,7 @@ object EmbeddedCatalogData {
         "name": "Dark Explorers",
         "releaseDate": "2012-05-09",
         "logo": "https://assets.tcgdex.net/en/bw/bw5/logo",
-        "symbol": "https://assets.tcgdex.net/en/bw/bw5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw5/symbol.png",
         "serieId": "bw",
         "official": 108,
         "total": 111
@@ -967,7 +967,7 @@ object EmbeddedCatalogData {
         "name": "Black & White",
         "releaseDate": "2011-04-25",
         "logo": "https://assets.tcgdex.net/en/bw/bw1/logo",
-        "symbol": "https://assets.tcgdex.net/en/bw/bw1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw1/symbol.png",
         "serieId": "bw",
         "official": 114,
         "total": 115
@@ -977,7 +977,7 @@ object EmbeddedCatalogData {
         "name": "Boundaries Crossed",
         "releaseDate": "2012-11-07",
         "logo": "https://assets.tcgdex.net/en/bw/bw7/logo",
-        "symbol": "https://assets.tcgdex.net/en/bw/bw7/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw7/symbol.png",
         "serieId": "bw",
         "official": 149,
         "total": 153
@@ -987,7 +987,7 @@ object EmbeddedCatalogData {
         "name": "Emerging Powers",
         "releaseDate": "2011-08-31",
         "logo": "https://assets.tcgdex.net/en/bw/bw2/logo",
-        "symbol": "https://assets.tcgdex.net/en/bw/bw2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw2/symbol.png",
         "serieId": "bw",
         "official": 98,
         "total": 98
@@ -997,7 +997,7 @@ object EmbeddedCatalogData {
         "name": "Plasma Freeze",
         "releaseDate": "2013-05-08",
         "logo": "https://assets.tcgdex.net/en/bw/bw9/logo",
-        "symbol": "https://assets.tcgdex.net/en/bw/bw9/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw9/symbol.png",
         "serieId": "bw",
         "official": 116,
         "total": 122
@@ -1007,7 +1007,7 @@ object EmbeddedCatalogData {
         "name": "Noble Victories",
         "releaseDate": "2011-11-16",
         "logo": "https://assets.tcgdex.net/en/bw/bw3/logo",
-        "symbol": "https://assets.tcgdex.net/en/bw/bw3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw3/symbol.png",
         "serieId": "bw",
         "official": 101,
         "total": 102
@@ -1017,7 +1017,7 @@ object EmbeddedCatalogData {
         "name": "Plasma Blast",
         "releaseDate": "2013-08-14",
         "logo": "https://assets.tcgdex.net/en/bw/bw10/logo",
-        "symbol": "https://assets.tcgdex.net/en/bw/bw10/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw10/symbol.png",
         "serieId": "bw",
         "official": 101,
         "total": 105
@@ -1027,7 +1027,7 @@ object EmbeddedCatalogData {
         "name": "Radiant Collection",
         "releaseDate": "2013-11-06",
         "logo": "https://assets.tcgdex.net/en/bw/rc/logo",
-        "symbol": "https://assets.tcgdex.net/en/bw/rc/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/rc/symbol.png",
         "serieId": "bw",
         "official": 25,
         "total": 25
@@ -1037,7 +1037,7 @@ object EmbeddedCatalogData {
         "name": "Legendary Treasures",
         "releaseDate": "2013-11-06",
         "logo": "https://assets.tcgdex.net/en/bw/bw11/logo",
-        "symbol": "https://assets.tcgdex.net/en/bw/bw11/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw11/symbol.png",
         "serieId": "bw",
         "official": 113,
         "total": 140
@@ -1047,7 +1047,7 @@ object EmbeddedCatalogData {
         "name": "Dragons Exalted",
         "releaseDate": "2012-08-15",
         "logo": "https://assets.tcgdex.net/en/bw/bw6/logo",
-        "symbol": "https://assets.tcgdex.net/en/bw/bw6/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw6/symbol.png",
         "serieId": "bw",
         "official": 124,
         "total": 128
@@ -1057,7 +1057,7 @@ object EmbeddedCatalogData {
         "name": "BW Black Star Promos",
         "releaseDate": "2011-04-26",
         "logo": "https://assets.tcgdex.net/en/bw/bwp/logo",
-        "symbol": "https://assets.tcgdex.net/en/bw/bwp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bwp/symbol.png",
         "serieId": "bw",
         "official": 101,
         "total": 101
@@ -1067,7 +1067,7 @@ object EmbeddedCatalogData {
         "name": "Next Destinies",
         "releaseDate": "2012-02-08",
         "logo": "https://assets.tcgdex.net/en/bw/bw4/logo",
-        "symbol": "https://assets.tcgdex.net/en/bw/bw4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw4/symbol.png",
         "serieId": "bw",
         "official": 99,
         "total": 103
@@ -1077,7 +1077,7 @@ object EmbeddedCatalogData {
         "name": "Dragon Vault",
         "releaseDate": "2012-10-05",
         "logo": "https://assets.tcgdex.net/en/bw/dv1/logo",
-        "symbol": "https://assets.tcgdex.net/en/bw/dv1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/dv1/symbol.png",
         "serieId": "bw",
         "official": 20,
         "total": 21
@@ -1087,7 +1087,7 @@ object EmbeddedCatalogData {
         "name": "Jungle",
         "releaseDate": "1999-06-16",
         "logo": "https://assets.tcgdex.net/en/base/base2/logo",
-        "symbol": "https://assets.tcgdex.net/en/base/base2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/base/base2/symbol.png",
         "serieId": "base",
         "official": 64,
         "total": 64
@@ -1097,7 +1097,7 @@ object EmbeddedCatalogData {
         "name": "Team Rocket",
         "releaseDate": "2000-04-24",
         "logo": "https://assets.tcgdex.net/en/base/base5/logo",
-        "symbol": "https://assets.tcgdex.net/en/base/base5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/base/base5/symbol.png",
         "serieId": "base",
         "official": 82,
         "total": 83
@@ -1107,7 +1107,7 @@ object EmbeddedCatalogData {
         "name": "Wizards Black Star Promos",
         "releaseDate": "1999-07-01",
         "logo": "https://assets.tcgdex.net/en/base/basep/logo",
-        "symbol": "https://assets.tcgdex.net/en/base/basep/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/base/basep/symbol.png",
         "serieId": "base",
         "official": 53,
         "total": 53
@@ -1117,7 +1117,7 @@ object EmbeddedCatalogData {
         "name": "Fossil",
         "releaseDate": "1999-10-10",
         "logo": "https://assets.tcgdex.net/en/base/base3/logo",
-        "symbol": "https://assets.tcgdex.net/en/base/base3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/base/base3/symbol.png",
         "serieId": "base",
         "official": 62,
         "total": 62
@@ -1127,7 +1127,7 @@ object EmbeddedCatalogData {
         "name": "Base Set 2",
         "releaseDate": "2000-02-24",
         "logo": "https://assets.tcgdex.net/en/base/base4/logo",
-        "symbol": "https://assets.tcgdex.net/en/base/base4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/base/base4/symbol.png",
         "serieId": "base",
         "official": 130,
         "total": 130
@@ -1137,7 +1137,7 @@ object EmbeddedCatalogData {
         "name": "Base Set",
         "releaseDate": "1999-01-09",
         "logo": "https://assets.tcgdex.net/en/base/base1/logo",
-        "symbol": "https://assets.tcgdex.net/en/base/base1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/base/base1/symbol.png",
         "serieId": "base",
         "official": 102,
         "total": 102
@@ -1147,7 +1147,7 @@ object EmbeddedCatalogData {
         "name": "W Promotional",
         "releaseDate": "1999-09-01",
         "logo": "https://assets.tcgdex.net/en/base/wp/logo",
-        "symbol": "https://assets.tcgdex.net/en/base/wp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/base/wp/symbol.png",
         "serieId": "base",
         "official": 7,
         "total": 7
@@ -1157,7 +1157,7 @@ object EmbeddedCatalogData {
         "name": "POP Series 8",
         "releaseDate": "2008-09-01",
         "logo": "https://assets.tcgdex.net/en/pop/pop8/logo",
-        "symbol": "https://assets.tcgdex.net/en/pop/pop8/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop8/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -1167,7 +1167,7 @@ object EmbeddedCatalogData {
         "name": "POP Series 9",
         "releaseDate": "2009-03-01",
         "logo": "https://assets.tcgdex.net/en/pop/pop9/logo",
-        "symbol": "https://assets.tcgdex.net/en/pop/pop9/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop9/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -1177,7 +1177,7 @@ object EmbeddedCatalogData {
         "name": "POP Series 2",
         "releaseDate": "2005-08-01",
         "logo": "https://assets.tcgdex.net/en/pop/pop2/logo",
-        "symbol": "https://assets.tcgdex.net/en/pop/pop2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop2/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -1187,7 +1187,7 @@ object EmbeddedCatalogData {
         "name": "POP Series 6",
         "releaseDate": "2007-09-01",
         "logo": "https://assets.tcgdex.net/en/pop/pop6/logo",
-        "symbol": "https://assets.tcgdex.net/en/pop/pop6/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop6/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -1197,7 +1197,7 @@ object EmbeddedCatalogData {
         "name": "POP Series 7",
         "releaseDate": "2008-03-01",
         "logo": "https://assets.tcgdex.net/en/pop/pop7/logo",
-        "symbol": "https://assets.tcgdex.net/en/pop/pop7/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop7/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -1207,7 +1207,7 @@ object EmbeddedCatalogData {
         "name": "POP Series 3",
         "releaseDate": "2006-04-01",
         "logo": "https://assets.tcgdex.net/en/pop/pop3/logo",
-        "symbol": "https://assets.tcgdex.net/en/pop/pop3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop3/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -1217,7 +1217,7 @@ object EmbeddedCatalogData {
         "name": "POP Series 4",
         "releaseDate": "2006-08-01",
         "logo": "https://assets.tcgdex.net/en/pop/pop4/logo",
-        "symbol": "https://assets.tcgdex.net/en/pop/pop4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop4/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -1227,7 +1227,7 @@ object EmbeddedCatalogData {
         "name": "POP Series 1",
         "releaseDate": "2004-09-01",
         "logo": "https://assets.tcgdex.net/en/pop/pop1/logo",
-        "symbol": "https://assets.tcgdex.net/en/pop/pop1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop1/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -1237,7 +1237,7 @@ object EmbeddedCatalogData {
         "name": "POP Series 5",
         "releaseDate": "2007-03-01",
         "logo": "https://assets.tcgdex.net/en/pop/pop5/logo",
-        "symbol": "https://assets.tcgdex.net/en/pop/pop5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop5/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -1247,7 +1247,7 @@ object EmbeddedCatalogData {
         "name": "Nintendo Black Star Promos",
         "releaseDate": "2003-10-01",
         "logo": "https://assets.tcgdex.net/en/pop/np/logo",
-        "symbol": "https://assets.tcgdex.net/en/pop/np/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/np/symbol.png",
         "serieId": "pop",
         "official": 40,
         "total": 40
@@ -1257,7 +1257,7 @@ object EmbeddedCatalogData {
         "name": "Call of Legends",
         "releaseDate": "2011-02-09",
         "logo": "https://assets.tcgdex.net/en/col/col1/logo",
-        "symbol": "https://assets.tcgdex.net/en/col/col1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/col/col1/symbol.png",
         "serieId": "col",
         "official": 95,
         "total": 106
@@ -1267,7 +1267,7 @@ object EmbeddedCatalogData {
         "name": "Legendary Collection",
         "releaseDate": "2002-05-24",
         "logo": "https://assets.tcgdex.net/en/lc/lc/logo",
-        "symbol": "https://assets.tcgdex.net/en/lc/lc/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/lc/lc/symbol.png",
         "serieId": "lc",
         "official": 110,
         "total": 110
@@ -1277,7 +1277,7 @@ object EmbeddedCatalogData {
         "name": "Macdonald's Collection 2021",
         "releaseDate": "2021-02-09",
         "logo": "https://assets.tcgdex.net/en/mc/2021swsh/logo",
-        "symbol": "https://assets.tcgdex.net/en/mc/2021swsh/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2021swsh/symbol.png",
         "serieId": "mc",
         "official": 25,
         "total": 25
@@ -1287,7 +1287,7 @@ object EmbeddedCatalogData {
         "name": "Macdonald's Collection 2015",
         "releaseDate": "2015-11-27",
         "logo": "https://assets.tcgdex.net/en/mc/2015xy/logo",
-        "symbol": "https://assets.tcgdex.net/en/mc/2015xy/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2015xy/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 12
@@ -1297,7 +1297,7 @@ object EmbeddedCatalogData {
         "name": "Promo McDonald's 2019",
         "releaseDate": "2019-10-30",
         "logo": "https://assets.tcgdex.net/en/mc/2019sm-fr/logo",
-        "symbol": "https://assets.tcgdex.net/en/mc/2019sm-fr/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2019sm-fr/symbol.png",
         "serieId": "mc",
         "official": 40,
         "total": 40
@@ -1307,7 +1307,7 @@ object EmbeddedCatalogData {
         "name": "Macdonald's Collection 2011",
         "releaseDate": "2011-06-17",
         "logo": "https://assets.tcgdex.net/en/mc/2011bw/logo",
-        "symbol": "https://assets.tcgdex.net/en/mc/2011bw/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2011bw/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 12
@@ -1317,7 +1317,7 @@ object EmbeddedCatalogData {
         "name": "Promo McDonald's 2018",
         "releaseDate": "2018-06-13",
         "logo": "https://assets.tcgdex.net/en/mc/2018sm-fr/logo",
-        "symbol": "https://assets.tcgdex.net/en/mc/2018sm-fr/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2018sm-fr/symbol.png",
         "serieId": "mc",
         "official": 40,
         "total": 40
@@ -1327,7 +1327,7 @@ object EmbeddedCatalogData {
         "name": "Macdonald's Collection 2014",
         "releaseDate": "2014-05-23",
         "logo": "https://assets.tcgdex.net/en/mc/2014xy/logo",
-        "symbol": "https://assets.tcgdex.net/en/mc/2014xy/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2014xy/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 12
@@ -1337,7 +1337,7 @@ object EmbeddedCatalogData {
         "name": "Promo McDonald's 2013",
         "releaseDate": "2013-11-01",
         "logo": "https://assets.tcgdex.net/en/mc/2013bw/logo",
-        "symbol": "https://assets.tcgdex.net/en/mc/2013bw/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2013bw/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 1
@@ -1347,7 +1347,7 @@ object EmbeddedCatalogData {
         "name": "Macdonald's Collection 2019",
         "releaseDate": "2019-10-15",
         "logo": "https://assets.tcgdex.net/en/mc/2019sm/logo",
-        "symbol": "https://assets.tcgdex.net/en/mc/2019sm/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2019sm/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 12
@@ -1357,7 +1357,7 @@ object EmbeddedCatalogData {
         "name": "Macdonald's Collection 2018",
         "releaseDate": "2018-10-19",
         "logo": "https://assets.tcgdex.net/en/mc/2018sm/logo",
-        "symbol": "https://assets.tcgdex.net/en/mc/2018sm/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2018sm/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 12
@@ -1367,7 +1367,7 @@ object EmbeddedCatalogData {
         "name": "Macdonald's Collection 2017",
         "releaseDate": "2017-08-03",
         "logo": "https://assets.tcgdex.net/en/mc/2017sm/logo",
-        "symbol": "https://assets.tcgdex.net/en/mc/2017sm/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2017sm/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 12
@@ -1377,7 +1377,7 @@ object EmbeddedCatalogData {
         "name": "Macdonald's Collection 2016",
         "releaseDate": "2016-08-20",
         "logo": "https://assets.tcgdex.net/en/mc/2016xy/logo",
-        "symbol": "https://assets.tcgdex.net/en/mc/2016xy/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2016xy/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 12
@@ -1387,7 +1387,7 @@ object EmbeddedCatalogData {
         "name": "Macdonald's Collection 2012",
         "releaseDate": "2012-06-15",
         "logo": "https://assets.tcgdex.net/en/mc/2012bw/logo",
-        "symbol": "https://assets.tcgdex.net/en/mc/2012bw/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2012bw/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 12
@@ -1397,7 +1397,7 @@ object EmbeddedCatalogData {
         "name": "FireRed & LeafGreen",
         "releaseDate": "2004-09-01",
         "logo": "https://assets.tcgdex.net/en/ex/ex6/logo",
-        "symbol": "https://assets.tcgdex.net/en/ex/ex6/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex6/symbol.png",
         "serieId": "ex",
         "official": 112,
         "total": 116
@@ -1407,7 +1407,7 @@ object EmbeddedCatalogData {
         "name": "Team Magma vs Team Aqua",
         "releaseDate": "2004-03-01",
         "logo": "https://assets.tcgdex.net/en/ex/ex4/logo",
-        "symbol": "https://assets.tcgdex.net/en/ex/ex4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex4/symbol.png",
         "serieId": "ex",
         "official": 95,
         "total": 97
@@ -1417,7 +1417,7 @@ object EmbeddedCatalogData {
         "name": "Sandstorm",
         "releaseDate": "2003-09-18",
         "logo": "https://assets.tcgdex.net/en/ex/ex2/logo",
-        "symbol": "https://assets.tcgdex.net/en/ex/ex2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex2/symbol.png",
         "serieId": "ex",
         "official": 100,
         "total": 100
@@ -1427,7 +1427,7 @@ object EmbeddedCatalogData {
         "name": "Team Rocket Returns",
         "releaseDate": "2004-11-01",
         "logo": "https://assets.tcgdex.net/en/ex/ex7/logo",
-        "symbol": "https://assets.tcgdex.net/en/ex/ex7/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex7/symbol.png",
         "serieId": "ex",
         "official": 109,
         "total": 111
@@ -1437,7 +1437,7 @@ object EmbeddedCatalogData {
         "name": "Legend Maker",
         "releaseDate": "2006-02-13",
         "logo": "https://assets.tcgdex.net/en/ex/ex12/logo",
-        "symbol": "https://assets.tcgdex.net/en/ex/ex12/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex12/symbol.png",
         "serieId": "ex",
         "official": 92,
         "total": 93
@@ -1447,7 +1447,7 @@ object EmbeddedCatalogData {
         "name": "Dragon Frontiers",
         "releaseDate": "2006-11-08",
         "logo": "https://assets.tcgdex.net/en/ex/ex15/logo",
-        "symbol": "https://assets.tcgdex.net/en/ex/ex15/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex15/symbol.png",
         "serieId": "ex",
         "official": 101,
         "total": 101
@@ -1457,7 +1457,7 @@ object EmbeddedCatalogData {
         "name": "Power Keepers",
         "releaseDate": "2007-02-17",
         "logo": "https://assets.tcgdex.net/en/ex/ex16/logo",
-        "symbol": "https://assets.tcgdex.net/en/ex/ex16/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex16/symbol.png",
         "serieId": "ex",
         "official": 108,
         "total": 108
@@ -1467,7 +1467,7 @@ object EmbeddedCatalogData {
         "name": "Crystal Guardians",
         "releaseDate": "2006-08-30",
         "logo": "https://assets.tcgdex.net/en/ex/ex14/logo",
-        "symbol": "https://assets.tcgdex.net/en/ex/ex14/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex14/symbol.png",
         "serieId": "ex",
         "official": 100,
         "total": 100
@@ -1477,7 +1477,7 @@ object EmbeddedCatalogData {
         "name": "Delta Species",
         "releaseDate": "2005-10-31",
         "logo": "https://assets.tcgdex.net/en/ex/ex11/logo",
-        "symbol": "https://assets.tcgdex.net/en/ex/ex11/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex11/symbol.png",
         "serieId": "ex",
         "official": 113,
         "total": 114
@@ -1487,7 +1487,7 @@ object EmbeddedCatalogData {
         "name": "Unseen Forces",
         "releaseDate": "2005-08-22",
         "logo": "https://assets.tcgdex.net/en/ex/ex10/logo",
-        "symbol": "https://assets.tcgdex.net/en/ex/ex10/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex10/symbol.png",
         "serieId": "ex",
         "official": 115,
         "total": 117
@@ -1497,7 +1497,7 @@ object EmbeddedCatalogData {
         "name": "Emerald",
         "releaseDate": "2005-05-09",
         "logo": "https://assets.tcgdex.net/en/ex/ex9/logo",
-        "symbol": "https://assets.tcgdex.net/en/ex/ex9/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex9/symbol.png",
         "serieId": "ex",
         "official": 106,
         "total": 107
@@ -1507,7 +1507,7 @@ object EmbeddedCatalogData {
         "name": "Deoxys",
         "releaseDate": "2005-02-01",
         "logo": "https://assets.tcgdex.net/en/ex/ex8/logo",
-        "symbol": "https://assets.tcgdex.net/en/ex/ex8/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex8/symbol.png",
         "serieId": "ex",
         "official": 107,
         "total": 108
@@ -1517,7 +1517,7 @@ object EmbeddedCatalogData {
         "name": "Poké Card Creator Pack",
         "releaseDate": "2004-07-01",
         "logo": "https://assets.tcgdex.net/en/ex/ex5.5/logo",
-        "symbol": "https://assets.tcgdex.net/en/ex/ex5.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex5.5/symbol.png",
         "serieId": "ex",
         "official": 5,
         "total": 5
@@ -1527,7 +1527,7 @@ object EmbeddedCatalogData {
         "name": "Unseen Forces Unown Collection",
         "releaseDate": "2005-08-22",
         "logo": "https://assets.tcgdex.net/en/ex/exu/logo",
-        "symbol": "https://assets.tcgdex.net/en/ex/exu/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/exu/symbol.png",
         "serieId": "ex",
         "official": 28,
         "total": 28
@@ -1537,7 +1537,7 @@ object EmbeddedCatalogData {
         "name": "Holon Phantoms",
         "releaseDate": "2006-05-03",
         "logo": "https://assets.tcgdex.net/en/ex/ex13/logo",
-        "symbol": "https://assets.tcgdex.net/en/ex/ex13/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex13/symbol.png",
         "serieId": "ex",
         "official": 110,
         "total": 111
@@ -1547,7 +1547,7 @@ object EmbeddedCatalogData {
         "name": "Dragon",
         "releaseDate": "2003-11-24",
         "logo": "https://assets.tcgdex.net/en/ex/ex3/logo",
-        "symbol": "https://assets.tcgdex.net/en/ex/ex3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex3/symbol.png",
         "serieId": "ex",
         "official": 97,
         "total": 100
@@ -1557,7 +1557,7 @@ object EmbeddedCatalogData {
         "name": "Ruby & Sapphire",
         "releaseDate": "2003-07-01",
         "logo": "https://assets.tcgdex.net/en/ex/ex1/logo",
-        "symbol": "https://assets.tcgdex.net/en/ex/ex1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex1/symbol.png",
         "serieId": "ex",
         "official": 109,
         "total": 109
@@ -1567,7 +1567,7 @@ object EmbeddedCatalogData {
         "name": "Hidden Legends",
         "releaseDate": "2004-06-01",
         "logo": "https://assets.tcgdex.net/en/ex/ex5/logo",
-        "symbol": "https://assets.tcgdex.net/en/ex/ex5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex5/symbol.png",
         "serieId": "ex",
         "official": 101,
         "total": 102
@@ -1577,7 +1577,7 @@ object EmbeddedCatalogData {
         "name": "Jumbo cards",
         "releaseDate": "2000-02-01",
         "logo": "https://assets.tcgdex.net/en/misc/jumbo/logo",
-        "symbol": "https://assets.tcgdex.net/en/misc/jumbo/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/misc/jumbo/symbol.png",
         "serieId": "misc",
         "official": 160,
         "total": 160
@@ -1587,7 +1587,7 @@ object EmbeddedCatalogData {
         "name": "Legends Awakened",
         "releaseDate": "2008-08-01",
         "logo": "https://assets.tcgdex.net/en/dp/dp6/logo",
-        "symbol": "https://assets.tcgdex.net/en/dp/dp6/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/dp/dp6/symbol.png",
         "serieId": "dp",
         "official": 146,
         "total": 146
@@ -1597,7 +1597,7 @@ object EmbeddedCatalogData {
         "name": "DP Black Star Promos",
         "releaseDate": "2007-05-01",
         "logo": "https://assets.tcgdex.net/en/dp/dpp/logo",
-        "symbol": "https://assets.tcgdex.net/en/dp/dpp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/dp/dpp/symbol.png",
         "serieId": "dp",
         "official": 56,
         "total": 56
@@ -1607,7 +1607,7 @@ object EmbeddedCatalogData {
         "name": "Diamond & Pearl",
         "releaseDate": "2007-05-01",
         "logo": "https://assets.tcgdex.net/en/dp/dp1/logo",
-        "symbol": "https://assets.tcgdex.net/en/dp/dp1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/dp/dp1/symbol.png",
         "serieId": "dp",
         "official": 130,
         "total": 130
@@ -1617,7 +1617,7 @@ object EmbeddedCatalogData {
         "name": "Mysterious Treasures",
         "releaseDate": "2007-08-01",
         "logo": "https://assets.tcgdex.net/en/dp/dp2/logo",
-        "symbol": "https://assets.tcgdex.net/en/dp/dp2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/dp/dp2/symbol.png",
         "serieId": "dp",
         "official": 122,
         "total": 124
@@ -1627,7 +1627,7 @@ object EmbeddedCatalogData {
         "name": "Great Encounters",
         "releaseDate": "2008-02-01",
         "logo": "https://assets.tcgdex.net/en/dp/dp4/logo",
-        "symbol": "https://assets.tcgdex.net/en/dp/dp4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/dp/dp4/symbol.png",
         "serieId": "dp",
         "official": 106,
         "total": 106
@@ -1637,7 +1637,7 @@ object EmbeddedCatalogData {
         "name": "Secret Wonders",
         "releaseDate": "2007-11-01",
         "logo": "https://assets.tcgdex.net/en/dp/dp3/logo",
-        "symbol": "https://assets.tcgdex.net/en/dp/dp3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/dp/dp3/symbol.png",
         "serieId": "dp",
         "official": 132,
         "total": 132
@@ -1647,7 +1647,7 @@ object EmbeddedCatalogData {
         "name": "Stormfront",
         "releaseDate": "2008-11-01",
         "logo": "https://assets.tcgdex.net/en/dp/dp7/logo",
-        "symbol": "https://assets.tcgdex.net/en/dp/dp7/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/dp/dp7/symbol.png",
         "serieId": "dp",
         "official": 100,
         "total": 106
@@ -1657,7 +1657,7 @@ object EmbeddedCatalogData {
         "name": "Majestic Dawn",
         "releaseDate": "2008-05-01",
         "logo": "https://assets.tcgdex.net/en/dp/dp5/logo",
-        "symbol": "https://assets.tcgdex.net/en/dp/dp5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/dp/dp5/symbol.png",
         "serieId": "dp",
         "official": 100,
         "total": 100
@@ -1667,7 +1667,7 @@ object EmbeddedCatalogData {
         "name": "Neo Destiny",
         "releaseDate": "2002-02-28",
         "logo": "https://assets.tcgdex.net/en/neo/neo4/logo",
-        "symbol": "https://assets.tcgdex.net/en/neo/neo4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/neo/neo4/symbol.png",
         "serieId": "neo",
         "official": 105,
         "total": 113
@@ -1677,7 +1677,7 @@ object EmbeddedCatalogData {
         "name": "Neo Genesis",
         "releaseDate": "2000-12-16",
         "logo": "https://assets.tcgdex.net/en/neo/neo1/logo",
-        "symbol": "https://assets.tcgdex.net/en/neo/neo1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/neo/neo1/symbol.png",
         "serieId": "neo",
         "official": 111,
         "total": 111
@@ -1687,7 +1687,7 @@ object EmbeddedCatalogData {
         "name": "Neo Discovery",
         "releaseDate": "2001-06-01",
         "logo": "https://assets.tcgdex.net/en/neo/neo2/logo",
-        "symbol": "https://assets.tcgdex.net/en/neo/neo2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/neo/neo2/symbol.png",
         "serieId": "neo",
         "official": 75,
         "total": 75
@@ -1697,7 +1697,7 @@ object EmbeddedCatalogData {
         "name": "Southern Islands",
         "releaseDate": "2001-07-31",
         "logo": "https://assets.tcgdex.net/en/neo/si1/logo",
-        "symbol": "https://assets.tcgdex.net/en/neo/si1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/neo/si1/symbol.png",
         "serieId": "neo",
         "official": 18,
         "total": 18
@@ -1707,7 +1707,7 @@ object EmbeddedCatalogData {
         "name": "Neo Revelation",
         "releaseDate": "2001-09-21",
         "logo": "https://assets.tcgdex.net/en/neo/neo3/logo",
-        "symbol": "https://assets.tcgdex.net/en/neo/neo3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/neo/neo3/symbol.png",
         "serieId": "neo",
         "official": 64,
         "total": 66
@@ -1717,7 +1717,7 @@ object EmbeddedCatalogData {
         "name": "Ultra Prism",
         "releaseDate": "2018-02-02",
         "logo": "https://assets.tcgdex.net/en/sm/sm5/logo",
-        "symbol": "https://assets.tcgdex.net/en/sm/sm5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm5/symbol.png",
         "serieId": "sm",
         "official": 156,
         "total": 173
@@ -1727,7 +1727,7 @@ object EmbeddedCatalogData {
         "name": "Unbroken Bonds",
         "releaseDate": "2019-05-03",
         "logo": "https://assets.tcgdex.net/en/sm/sm10/logo",
-        "symbol": "https://assets.tcgdex.net/en/sm/sm10/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm10/symbol.png",
         "serieId": "sm",
         "official": 214,
         "total": 234
@@ -1737,7 +1737,7 @@ object EmbeddedCatalogData {
         "name": "Cosmic Eclipse",
         "releaseDate": "2019-11-01",
         "logo": "https://assets.tcgdex.net/en/sm/sm12/logo",
-        "symbol": "https://assets.tcgdex.net/en/sm/sm12/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm12/symbol.png",
         "serieId": "sm",
         "official": 236,
         "total": 271
@@ -1747,7 +1747,7 @@ object EmbeddedCatalogData {
         "name": "Yellow A Alternate",
         "releaseDate": "2019-08-23",
         "logo": "https://assets.tcgdex.net/en/sm/sma/logo",
-        "symbol": "https://assets.tcgdex.net/en/sm/sma/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sma/symbol.png",
         "serieId": "sm",
         "official": 94,
         "total": 94
@@ -1757,7 +1757,7 @@ object EmbeddedCatalogData {
         "name": "Unified Minds",
         "releaseDate": "2019-08-02",
         "logo": "https://assets.tcgdex.net/en/sm/sm11/logo",
-        "symbol": "https://assets.tcgdex.net/en/sm/sm11/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm11/symbol.png",
         "serieId": "sm",
         "official": 236,
         "total": 258
@@ -1767,7 +1767,7 @@ object EmbeddedCatalogData {
         "name": "Detective Pikachu",
         "releaseDate": "2019-03-29",
         "logo": "https://assets.tcgdex.net/en/sm/det1/logo",
-        "symbol": "https://assets.tcgdex.net/en/sm/det1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/det1/symbol.png",
         "serieId": "sm",
         "official": 18,
         "total": 18
@@ -1777,7 +1777,7 @@ object EmbeddedCatalogData {
         "name": "Sun & Moon",
         "releaseDate": "2017-02-03",
         "logo": "https://assets.tcgdex.net/en/sm/sm1/logo",
-        "symbol": "https://assets.tcgdex.net/en/sm/sm1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm1/symbol.png",
         "serieId": "sm",
         "official": 149,
         "total": 172
@@ -1787,7 +1787,7 @@ object EmbeddedCatalogData {
         "name": "Hidden Fates",
         "releaseDate": "2019-08-23",
         "logo": "https://assets.tcgdex.net/en/sm/sm115/logo",
-        "symbol": "https://assets.tcgdex.net/en/sm/sm115/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm115/symbol.png",
         "serieId": "sm",
         "official": 68,
         "total": 69
@@ -1797,7 +1797,7 @@ object EmbeddedCatalogData {
         "name": "Forbidden Light",
         "releaseDate": "2018-05-04",
         "logo": "https://assets.tcgdex.net/en/sm/sm6/logo",
-        "symbol": "https://assets.tcgdex.net/en/sm/sm6/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm6/symbol.png",
         "serieId": "sm",
         "official": 131,
         "total": 146
@@ -1807,7 +1807,7 @@ object EmbeddedCatalogData {
         "name": "Celestial Storm",
         "releaseDate": "2018-08-03",
         "logo": "https://assets.tcgdex.net/en/sm/sm7/logo",
-        "symbol": "https://assets.tcgdex.net/en/sm/sm7/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm7/symbol.png",
         "serieId": "sm",
         "official": 168,
         "total": 183
@@ -1817,7 +1817,7 @@ object EmbeddedCatalogData {
         "name": "Dragon Majesty",
         "releaseDate": "2018-09-07",
         "logo": "https://assets.tcgdex.net/en/sm/sm7.5/logo",
-        "symbol": "https://assets.tcgdex.net/en/sm/sm7.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm7.5/symbol.png",
         "serieId": "sm",
         "official": 70,
         "total": 78
@@ -1827,7 +1827,7 @@ object EmbeddedCatalogData {
         "name": "Shining Legends",
         "releaseDate": "2017-10-06",
         "logo": "https://assets.tcgdex.net/en/sm/sm3.5/logo",
-        "symbol": "https://assets.tcgdex.net/en/sm/sm3.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm3.5/symbol.png",
         "serieId": "sm",
         "official": 73,
         "total": 78
@@ -1837,7 +1837,7 @@ object EmbeddedCatalogData {
         "name": "Team Up",
         "releaseDate": "2019-01-31",
         "logo": "https://assets.tcgdex.net/en/sm/sm9/logo",
-        "symbol": "https://assets.tcgdex.net/en/sm/sm9/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm9/symbol.png",
         "serieId": "sm",
         "official": 181,
         "total": 196
@@ -1847,7 +1847,7 @@ object EmbeddedCatalogData {
         "name": "Lost Thunder",
         "releaseDate": "2018-11-02",
         "logo": "https://assets.tcgdex.net/en/sm/sm8/logo",
-        "symbol": "https://assets.tcgdex.net/en/sm/sm8/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm8/symbol.png",
         "serieId": "sm",
         "official": 214,
         "total": 236
@@ -1857,7 +1857,7 @@ object EmbeddedCatalogData {
         "name": "Guardians Rising",
         "releaseDate": "2017-05-05",
         "logo": "https://assets.tcgdex.net/en/sm/sm2/logo",
-        "symbol": "https://assets.tcgdex.net/en/sm/sm2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm2/symbol.png",
         "serieId": "sm",
         "official": 145,
         "total": 169
@@ -1867,7 +1867,7 @@ object EmbeddedCatalogData {
         "name": "Crimson Invasion",
         "releaseDate": "2017-11-03",
         "logo": "https://assets.tcgdex.net/en/sm/sm4/logo",
-        "symbol": "https://assets.tcgdex.net/en/sm/sm4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm4/symbol.png",
         "serieId": "sm",
         "official": 111,
         "total": 125
@@ -1877,7 +1877,7 @@ object EmbeddedCatalogData {
         "name": "Burning Shadows",
         "releaseDate": "2017-08-04",
         "logo": "https://assets.tcgdex.net/en/sm/sm3/logo",
-        "symbol": "https://assets.tcgdex.net/en/sm/sm3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm3/symbol.png",
         "serieId": "sm",
         "official": 147,
         "total": 169
@@ -1887,7 +1887,7 @@ object EmbeddedCatalogData {
         "name": "SM Black Star Promos",
         "releaseDate": "2017-02-03",
         "logo": "https://assets.tcgdex.net/en/sm/smp/logo",
-        "symbol": "https://assets.tcgdex.net/en/sm/smp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/smp/symbol.png",
         "serieId": "sm",
         "official": 236,
         "total": 244
@@ -1897,7 +1897,7 @@ object EmbeddedCatalogData {
         "name": "MEP Black Star Promos",
         "releaseDate": "2025-09-26",
         "logo": "https://assets.tcgdex.net/en/me/mep/logo",
-        "symbol": "https://assets.tcgdex.net/en/me/mep/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/me/mep/symbol.png",
         "serieId": "me",
         "official": 0,
         "total": 10
@@ -1907,7 +1907,7 @@ object EmbeddedCatalogData {
         "name": "Mega Evolution",
         "releaseDate": "2025-09-26",
         "logo": "https://assets.tcgdex.net/en/me/me01/logo",
-        "symbol": "https://assets.tcgdex.net/en/me/me01/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/me/me01/symbol.png",
         "serieId": "me",
         "official": 132,
         "total": 188
@@ -1917,7 +1917,7 @@ object EmbeddedCatalogData {
         "name": "Phantasmal Flames",
         "releaseDate": "2025-11-14",
         "logo": "https://assets.tcgdex.net/en/me/me02/logo",
-        "symbol": "https://assets.tcgdex.net/en/me/me02/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/me/me02/symbol.png",
         "serieId": "me",
         "official": 94,
         "total": 130
@@ -1927,7 +1927,7 @@ object EmbeddedCatalogData {
         "name": "HeartGold SoulSilver",
         "releaseDate": "2010-02-10",
         "logo": "https://assets.tcgdex.net/en/hgss/hgss1/logo",
-        "symbol": "https://assets.tcgdex.net/en/hgss/hgss1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/hgss/hgss1/symbol.png",
         "serieId": "hgss",
         "official": 123,
         "total": 124
@@ -1937,7 +1937,7 @@ object EmbeddedCatalogData {
         "name": "Unleashed",
         "releaseDate": "2010-05-12",
         "logo": "https://assets.tcgdex.net/en/hgss/hgss2/logo",
-        "symbol": "https://assets.tcgdex.net/en/hgss/hgss2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/hgss/hgss2/symbol.png",
         "serieId": "hgss",
         "official": 95,
         "total": 96
@@ -1947,7 +1947,7 @@ object EmbeddedCatalogData {
         "name": "Triumphant",
         "releaseDate": "2010-11-03",
         "logo": "https://assets.tcgdex.net/en/hgss/hgss4/logo",
-        "symbol": "https://assets.tcgdex.net/en/hgss/hgss4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/hgss/hgss4/symbol.png",
         "serieId": "hgss",
         "official": 102,
         "total": 103
@@ -1957,7 +1957,7 @@ object EmbeddedCatalogData {
         "name": "HGSS Black Star Promos",
         "releaseDate": "2010-02-11",
         "logo": "https://assets.tcgdex.net/en/hgss/hgssp/logo",
-        "symbol": "https://assets.tcgdex.net/en/hgss/hgssp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/hgss/hgssp/symbol.png",
         "serieId": "hgss",
         "official": 25,
         "total": 25
@@ -1967,7 +1967,7 @@ object EmbeddedCatalogData {
         "name": "Undaunted",
         "releaseDate": "2010-08-18",
         "logo": "https://assets.tcgdex.net/en/hgss/hgss3/logo",
-        "symbol": "https://assets.tcgdex.net/en/hgss/hgss3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/hgss/hgss3/symbol.png",
         "serieId": "hgss",
         "official": 90,
         "total": 91
@@ -1977,7 +1977,7 @@ object EmbeddedCatalogData {
         "name": "Skyridge",
         "releaseDate": "2003-05-12",
         "logo": "https://assets.tcgdex.net/en/ecard/ecard3/logo",
-        "symbol": "https://assets.tcgdex.net/en/ecard/ecard3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ecard/ecard3/symbol.png",
         "serieId": "ecard",
         "official": 144,
         "total": 182
@@ -1987,7 +1987,7 @@ object EmbeddedCatalogData {
         "name": "Aquapolis",
         "releaseDate": "2003-01-15",
         "logo": "https://assets.tcgdex.net/en/ecard/ecard2/logo",
-        "symbol": "https://assets.tcgdex.net/en/ecard/ecard2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ecard/ecard2/symbol.png",
         "serieId": "ecard",
         "official": 147,
         "total": 186
@@ -1997,7 +1997,7 @@ object EmbeddedCatalogData {
         "name": "Sample",
         "releaseDate": "2002-08-01",
         "logo": "https://assets.tcgdex.net/en/ecard/sp/logo",
-        "symbol": "https://assets.tcgdex.net/en/ecard/sp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ecard/sp/symbol.png",
         "serieId": "ecard",
         "official": 10,
         "total": 10
@@ -2007,7 +2007,7 @@ object EmbeddedCatalogData {
         "name": "Best of game",
         "releaseDate": "2002-12-01",
         "logo": "https://assets.tcgdex.net/en/ecard/bog/logo",
-        "symbol": "https://assets.tcgdex.net/en/ecard/bog/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ecard/bog/symbol.png",
         "serieId": "ecard",
         "official": 9,
         "total": 9
@@ -2017,7 +2017,7 @@ object EmbeddedCatalogData {
         "name": "Expedition Base Set",
         "releaseDate": "2002-09-15",
         "logo": "https://assets.tcgdex.net/en/ecard/ecard1/logo",
-        "symbol": "https://assets.tcgdex.net/en/ecard/ecard1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ecard/ecard1/symbol.png",
         "serieId": "ecard",
         "official": 165,
         "total": 165
@@ -2027,7 +2027,7 @@ object EmbeddedCatalogData {
         "name": "Paldean Fates",
         "releaseDate": "2024-01-26",
         "logo": "https://assets.tcgdex.net/en/sv/sv04.5/logo",
-        "symbol": "https://assets.tcgdex.net/en/sv/sv04.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv04.5/symbol.png",
         "serieId": "sv",
         "official": 91,
         "total": 245
@@ -2037,7 +2037,7 @@ object EmbeddedCatalogData {
         "name": "Shrouded Fable",
         "releaseDate": "2024-08-02",
         "logo": "https://assets.tcgdex.net/en/sv/sv06.5/logo",
-        "symbol": "https://assets.tcgdex.net/en/sv/sv06.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv06.5/symbol.png",
         "serieId": "sv",
         "official": 64,
         "total": 99
@@ -2047,7 +2047,7 @@ object EmbeddedCatalogData {
         "name": "Prismatic Evolutions",
         "releaseDate": "2025-01-17",
         "logo": "https://assets.tcgdex.net/en/sv/sv08.5/logo",
-        "symbol": "https://assets.tcgdex.net/en/sv/sv08.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv08.5/symbol.png",
         "serieId": "sv",
         "official": 131,
         "total": 180
@@ -2057,7 +2057,7 @@ object EmbeddedCatalogData {
         "name": "White Flare",
         "releaseDate": "2025-07-17",
         "logo": "https://assets.tcgdex.net/en/sv/sv10.5w/logo",
-        "symbol": "https://assets.tcgdex.net/en/sv/sv10.5w/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv10.5w/symbol.png",
         "serieId": "sv",
         "official": 86,
         "total": 173
@@ -2067,7 +2067,7 @@ object EmbeddedCatalogData {
         "name": "Paldea Evolved",
         "releaseDate": "2023-06-09",
         "logo": "https://assets.tcgdex.net/en/sv/sv02/logo",
-        "symbol": "https://assets.tcgdex.net/en/sv/sv02/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv02/symbol.png",
         "serieId": "sv",
         "official": 193,
         "total": 279
@@ -2077,7 +2077,7 @@ object EmbeddedCatalogData {
         "name": "151",
         "releaseDate": "2023-09-22",
         "logo": "https://assets.tcgdex.net/en/sv/sv03.5/logo",
-        "symbol": "https://assets.tcgdex.net/en/sv/sv03.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv03.5/symbol.png",
         "serieId": "sv",
         "official": 165,
         "total": 207
@@ -2087,7 +2087,7 @@ object EmbeddedCatalogData {
         "name": "Destined Rivals",
         "releaseDate": "2025-05-30",
         "logo": "https://assets.tcgdex.net/en/sv/sv10/logo",
-        "symbol": "https://assets.tcgdex.net/en/sv/sv10/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv10/symbol.png",
         "serieId": "sv",
         "official": 182,
         "total": 244
@@ -2097,7 +2097,7 @@ object EmbeddedCatalogData {
         "name": "Paradox Rift",
         "releaseDate": "2023-11-03",
         "logo": "https://assets.tcgdex.net/en/sv/sv04/logo",
-        "symbol": "https://assets.tcgdex.net/en/sv/sv04/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv04/symbol.png",
         "serieId": "sv",
         "official": 182,
         "total": 266
@@ -2107,7 +2107,7 @@ object EmbeddedCatalogData {
         "name": "Obsidian Flames",
         "releaseDate": "2023-08-11",
         "logo": "https://assets.tcgdex.net/en/sv/sv03/logo",
-        "symbol": "https://assets.tcgdex.net/en/sv/sv03/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv03/symbol.png",
         "serieId": "sv",
         "official": 197,
         "total": 230
@@ -2117,7 +2117,7 @@ object EmbeddedCatalogData {
         "name": "Surging Sparks",
         "releaseDate": "2024-11-08",
         "logo": "https://assets.tcgdex.net/en/sv/sv08/logo",
-        "symbol": "https://assets.tcgdex.net/en/sv/sv08/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv08/symbol.png",
         "serieId": "sv",
         "official": 191,
         "total": 252
@@ -2127,7 +2127,7 @@ object EmbeddedCatalogData {
         "name": "Black Bolt",
         "releaseDate": "2025-07-17",
         "logo": "https://assets.tcgdex.net/en/sv/sv10.5b/logo",
-        "symbol": "https://assets.tcgdex.net/en/sv/sv10.5b/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv10.5b/symbol.png",
         "serieId": "sv",
         "official": 86,
         "total": 172
@@ -2137,7 +2137,7 @@ object EmbeddedCatalogData {
         "name": "Twilight Masquerade",
         "releaseDate": "2024-05-24",
         "logo": "https://assets.tcgdex.net/en/sv/sv06/logo",
-        "symbol": "https://assets.tcgdex.net/en/sv/sv06/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv06/symbol.png",
         "serieId": "sv",
         "official": 167,
         "total": 226
@@ -2147,7 +2147,7 @@ object EmbeddedCatalogData {
         "name": "Temporal Forces",
         "releaseDate": "2024-03-22",
         "logo": "https://assets.tcgdex.net/en/sv/sv05/logo",
-        "symbol": "https://assets.tcgdex.net/en/sv/sv05/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv05/symbol.png",
         "serieId": "sv",
         "official": 162,
         "total": 218
@@ -2157,7 +2157,7 @@ object EmbeddedCatalogData {
         "name": "Stellar Crown",
         "releaseDate": "2024-09-13",
         "logo": "https://assets.tcgdex.net/en/sv/sv07/logo",
-        "symbol": "https://assets.tcgdex.net/en/sv/sv07/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv07/symbol.png",
         "serieId": "sv",
         "official": 142,
         "total": 175
@@ -2167,7 +2167,7 @@ object EmbeddedCatalogData {
         "name": "SVP Black Star Promos",
         "releaseDate": "2023-03-31",
         "logo": "https://assets.tcgdex.net/en/sv/svp/logo",
-        "symbol": "https://assets.tcgdex.net/en/sv/svp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/svp/symbol.png",
         "serieId": "sv",
         "official": 0,
         "total": 219
@@ -2177,7 +2177,7 @@ object EmbeddedCatalogData {
         "name": "Scarlet & Violet",
         "releaseDate": "2023-03-31",
         "logo": "https://assets.tcgdex.net/en/sv/sv01/logo",
-        "symbol": "https://assets.tcgdex.net/en/sv/sv01/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv01/symbol.png",
         "serieId": "sv",
         "official": 198,
         "total": 258
@@ -2187,7 +2187,7 @@ object EmbeddedCatalogData {
         "name": "Journey Together",
         "releaseDate": "2025-03-28",
         "logo": "https://assets.tcgdex.net/en/sv/sv09/logo",
-        "symbol": "https://assets.tcgdex.net/en/sv/sv09/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv09/symbol.png",
         "serieId": "sv",
         "official": 159,
         "total": 190
@@ -2197,7 +2197,7 @@ object EmbeddedCatalogData {
         "name": "Yello A Alternate",
         "releaseDate": "2014-02-05",
         "logo": "https://assets.tcgdex.net/en/xy/xya/logo",
-        "symbol": "https://assets.tcgdex.net/en/xy/xya/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xya/symbol.png",
         "serieId": "xy",
         "official": 6,
         "total": 6
@@ -2207,7 +2207,7 @@ object EmbeddedCatalogData {
         "name": "Roaring Skies",
         "releaseDate": "2015-05-06",
         "logo": "https://assets.tcgdex.net/en/xy/xy6/logo",
-        "symbol": "https://assets.tcgdex.net/en/xy/xy6/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy6/symbol.png",
         "serieId": "xy",
         "official": 108,
         "total": 112
@@ -2217,7 +2217,7 @@ object EmbeddedCatalogData {
         "name": "Ancient Origins",
         "releaseDate": "2015-08-12",
         "logo": "https://assets.tcgdex.net/en/xy/xy7/logo",
-        "symbol": "https://assets.tcgdex.net/en/xy/xy7/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy7/symbol.png",
         "serieId": "xy",
         "official": 98,
         "total": 101
@@ -2227,7 +2227,7 @@ object EmbeddedCatalogData {
         "name": "BREAKpoint",
         "releaseDate": "2016-02-03",
         "logo": "https://assets.tcgdex.net/en/xy/xy9/logo",
-        "symbol": "https://assets.tcgdex.net/en/xy/xy9/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy9/symbol.png",
         "serieId": "xy",
         "official": 122,
         "total": 126
@@ -2237,7 +2237,7 @@ object EmbeddedCatalogData {
         "name": "Primal Clash",
         "releaseDate": "2015-02-04",
         "logo": "https://assets.tcgdex.net/en/xy/xy5/logo",
-        "symbol": "https://assets.tcgdex.net/en/xy/xy5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy5/symbol.png",
         "serieId": "xy",
         "official": 160,
         "total": 164
@@ -2247,7 +2247,7 @@ object EmbeddedCatalogData {
         "name": "XY Black Star Promos",
         "releaseDate": "2013-10-12",
         "logo": "https://assets.tcgdex.net/en/xy/xyp/logo",
-        "symbol": "https://assets.tcgdex.net/en/xy/xyp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xyp/symbol.png",
         "serieId": "xy",
         "official": 211,
         "total": 216
@@ -2257,7 +2257,7 @@ object EmbeddedCatalogData {
         "name": "Kalos Starter Set",
         "releaseDate": "2013-11-08",
         "logo": "https://assets.tcgdex.net/en/xy/xy0/logo",
-        "symbol": "https://assets.tcgdex.net/en/xy/xy0/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy0/symbol.png",
         "serieId": "xy",
         "official": 39,
         "total": 39
@@ -2267,7 +2267,7 @@ object EmbeddedCatalogData {
         "name": "Flashfire",
         "releaseDate": "2014-05-07",
         "logo": "https://assets.tcgdex.net/en/xy/xy2/logo",
-        "symbol": "https://assets.tcgdex.net/en/xy/xy2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy2/symbol.png",
         "serieId": "xy",
         "official": 106,
         "total": 110
@@ -2277,7 +2277,7 @@ object EmbeddedCatalogData {
         "name": "BREAKthrough",
         "releaseDate": "2015-11-04",
         "logo": "https://assets.tcgdex.net/en/xy/xy8/logo",
-        "symbol": "https://assets.tcgdex.net/en/xy/xy8/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy8/symbol.png",
         "serieId": "xy",
         "official": 162,
         "total": 165
@@ -2287,7 +2287,7 @@ object EmbeddedCatalogData {
         "name": "Evolutions",
         "releaseDate": "2016-11-02",
         "logo": "https://assets.tcgdex.net/en/xy/xy12/logo",
-        "symbol": "https://assets.tcgdex.net/en/xy/xy12/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy12/symbol.png",
         "serieId": "xy",
         "official": 108,
         "total": 113
@@ -2297,7 +2297,7 @@ object EmbeddedCatalogData {
         "name": "Double Crisis",
         "releaseDate": "2015-03-25",
         "logo": "https://assets.tcgdex.net/en/xy/dc1/logo",
-        "symbol": "https://assets.tcgdex.net/en/xy/dc1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/dc1/symbol.png",
         "serieId": "xy",
         "official": 34,
         "total": 34
@@ -2307,7 +2307,7 @@ object EmbeddedCatalogData {
         "name": "Generations",
         "releaseDate": "2016-02-22",
         "logo": "https://assets.tcgdex.net/en/xy/g1/logo",
-        "symbol": "https://assets.tcgdex.net/en/xy/g1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/g1/symbol.png",
         "serieId": "xy",
         "official": 83,
         "total": 117
@@ -2317,7 +2317,7 @@ object EmbeddedCatalogData {
         "name": "XY",
         "releaseDate": "2014-02-05",
         "logo": "https://assets.tcgdex.net/en/xy/xy1/logo",
-        "symbol": "https://assets.tcgdex.net/en/xy/xy1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy1/symbol.png",
         "serieId": "xy",
         "official": 146,
         "total": 146
@@ -2327,7 +2327,7 @@ object EmbeddedCatalogData {
         "name": "Steam Siege",
         "releaseDate": "2016-08-03",
         "logo": "https://assets.tcgdex.net/en/xy/xy11/logo",
-        "symbol": "https://assets.tcgdex.net/en/xy/xy11/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy11/symbol.png",
         "serieId": "xy",
         "official": 114,
         "total": 116
@@ -2337,7 +2337,7 @@ object EmbeddedCatalogData {
         "name": "Fates Collide",
         "releaseDate": "2016-05-02",
         "logo": "https://assets.tcgdex.net/en/xy/xy10/logo",
-        "symbol": "https://assets.tcgdex.net/en/xy/xy10/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy10/symbol.png",
         "serieId": "xy",
         "official": 124,
         "total": 129
@@ -2347,7 +2347,7 @@ object EmbeddedCatalogData {
         "name": "Furious Fists",
         "releaseDate": "2014-08-13",
         "logo": "https://assets.tcgdex.net/en/xy/xy3/logo",
-        "symbol": "https://assets.tcgdex.net/en/xy/xy3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy3/symbol.png",
         "serieId": "xy",
         "official": 111,
         "total": 114
@@ -2357,7 +2357,7 @@ object EmbeddedCatalogData {
         "name": "Phantom Forces",
         "releaseDate": "2014-11-05",
         "logo": "https://assets.tcgdex.net/en/xy/xy4/logo",
-        "symbol": "https://assets.tcgdex.net/en/xy/xy4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy4/symbol.png",
         "serieId": "xy",
         "official": 119,
         "total": 124
@@ -2367,7 +2367,7 @@ object EmbeddedCatalogData {
         "name": "HS trainer Kit (Gyarados)",
         "releaseDate": "2010-05-01",
         "logo": "https://assets.tcgdex.net/en/tk/tk-hs-g/logo",
-        "symbol": "https://assets.tcgdex.net/en/tk/tk-hs-g/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-hs-g/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 1
@@ -2377,7 +2377,7 @@ object EmbeddedCatalogData {
         "name": "EX trainer Kit 2 (Plusle)",
         "releaseDate": "2006-03-01",
         "logo": "https://assets.tcgdex.net/en/tk/tk-ex-p/logo",
-        "symbol": "https://assets.tcgdex.net/en/tk/tk-ex-p/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-ex-p/symbol.png",
         "serieId": "tk",
         "official": 12,
         "total": 12
@@ -2387,7 +2387,7 @@ object EmbeddedCatalogData {
         "name": "EX trainer Kit 2 (Minun)",
         "releaseDate": "2006-03-01",
         "logo": "https://assets.tcgdex.net/en/tk/tk-ex-m/logo",
-        "symbol": "https://assets.tcgdex.net/en/tk/tk-ex-m/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-ex-m/symbol.png",
         "serieId": "tk",
         "official": 12,
         "total": 12
@@ -2397,7 +2397,7 @@ object EmbeddedCatalogData {
         "name": "DP trainer Kit (Lucario)",
         "releaseDate": "2007-09-01",
         "logo": "https://assets.tcgdex.net/en/tk/tk-dp-l/logo",
-        "symbol": "https://assets.tcgdex.net/en/tk/tk-dp-l/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-dp-l/symbol.png",
         "serieId": "tk",
         "official": 11,
         "total": 11
@@ -2407,7 +2407,7 @@ object EmbeddedCatalogData {
         "name": "SM trainer Kit (Alolan Raichu)",
         "releaseDate": "2017-04-21",
         "logo": "https://assets.tcgdex.net/en/tk/tk-sm-r/logo",
-        "symbol": "https://assets.tcgdex.net/en/tk/tk-sm-r/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-sm-r/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 19
@@ -2417,7 +2417,7 @@ object EmbeddedCatalogData {
         "name": "XY trainer Kit (Latias)",
         "releaseDate": "2015-04-29",
         "logo": "https://assets.tcgdex.net/en/tk/tk-xy-latia/logo",
-        "symbol": "https://assets.tcgdex.net/en/tk/tk-xy-latia/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-xy-latia/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -2427,7 +2427,7 @@ object EmbeddedCatalogData {
         "name": "HS trainer Kit (Raichu)",
         "releaseDate": "2010-05-01",
         "logo": "https://assets.tcgdex.net/en/tk/tk-hs-r/logo",
-        "symbol": "https://assets.tcgdex.net/en/tk/tk-hs-r/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-hs-r/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 1
@@ -2437,7 +2437,7 @@ object EmbeddedCatalogData {
         "name": "EX trainer Kit (Latios)",
         "releaseDate": "2004-07-01",
         "logo": "https://assets.tcgdex.net/en/tk/tk-ex-latio/logo",
-        "symbol": "https://assets.tcgdex.net/en/tk/tk-ex-latio/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-ex-latio/symbol.png",
         "serieId": "tk",
         "official": 10,
         "total": 10
@@ -2447,7 +2447,7 @@ object EmbeddedCatalogData {
         "name": "BW trainer Kit (Excadrill)",
         "releaseDate": "2011-09-01",
         "logo": "https://assets.tcgdex.net/en/tk/tk-bw-e/logo",
-        "symbol": "https://assets.tcgdex.net/en/tk/tk-bw-e/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-bw-e/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -2457,7 +2457,7 @@ object EmbeddedCatalogData {
         "name": "XY trainer Kit (Pikachu Libre)",
         "releaseDate": "2016-04-27",
         "logo": "https://assets.tcgdex.net/en/tk/tk-xy-p/logo",
-        "symbol": "https://assets.tcgdex.net/en/tk/tk-xy-p/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-xy-p/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -2467,7 +2467,7 @@ object EmbeddedCatalogData {
         "name": "XY trainer Kit (Latios)",
         "releaseDate": "2015-04-29",
         "logo": "https://assets.tcgdex.net/en/tk/tk-xy-latio/logo",
-        "symbol": "https://assets.tcgdex.net/en/tk/tk-xy-latio/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-xy-latio/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -2477,7 +2477,7 @@ object EmbeddedCatalogData {
         "name": "SM trainer Kit (Lycanroc)",
         "releaseDate": "2017-04-21",
         "logo": "https://assets.tcgdex.net/en/tk/tk-sm-l/logo",
-        "symbol": "https://assets.tcgdex.net/en/tk/tk-sm-l/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-sm-l/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 18
@@ -2487,7 +2487,7 @@ object EmbeddedCatalogData {
         "name": "EX trainer Kit (Latias)",
         "releaseDate": "2004-07-01",
         "logo": "https://assets.tcgdex.net/en/tk/tk-ex-latia/logo",
-        "symbol": "https://assets.tcgdex.net/en/tk/tk-ex-latia/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-ex-latia/symbol.png",
         "serieId": "tk",
         "official": 10,
         "total": 10
@@ -2497,7 +2497,7 @@ object EmbeddedCatalogData {
         "name": "XY trainer Kit (Suicune)",
         "releaseDate": "2016-04-27",
         "logo": "https://assets.tcgdex.net/en/tk/tk-xy-su/logo",
-        "symbol": "https://assets.tcgdex.net/en/tk/tk-xy-su/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-xy-su/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -2507,7 +2507,7 @@ object EmbeddedCatalogData {
         "name": "DP trainer Kit (Manaphy)",
         "releaseDate": "2007-09-01",
         "logo": "https://assets.tcgdex.net/en/tk/tk-dp-m/logo",
-        "symbol": "https://assets.tcgdex.net/en/tk/tk-dp-m/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-dp-m/symbol.png",
         "serieId": "tk",
         "official": 12,
         "total": 12
@@ -2517,7 +2517,7 @@ object EmbeddedCatalogData {
         "name": "XY trainer Kit (Wigglytuff)",
         "releaseDate": "2014-11-01",
         "logo": "https://assets.tcgdex.net/en/tk/tk-xy-w/logo",
-        "symbol": "https://assets.tcgdex.net/en/tk/tk-xy-w/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-xy-w/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -2527,7 +2527,7 @@ object EmbeddedCatalogData {
         "name": "BW trainer Kit (Zoroark)",
         "releaseDate": "2011-09-01",
         "logo": "https://assets.tcgdex.net/en/tk/tk-bw-z/logo",
-        "symbol": "https://assets.tcgdex.net/en/tk/tk-bw-z/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-bw-z/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -2537,7 +2537,7 @@ object EmbeddedCatalogData {
         "name": "XY trainer Kit (Noivern)",
         "releaseDate": "2014-03-12",
         "logo": "https://assets.tcgdex.net/en/tk/tk-xy-n/logo",
-        "symbol": "https://assets.tcgdex.net/en/tk/tk-xy-n/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-xy-n/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -2547,7 +2547,7 @@ object EmbeddedCatalogData {
         "name": "XY trainer Kit (Sylveon)",
         "releaseDate": "2014-03-12",
         "logo": "https://assets.tcgdex.net/en/tk/tk-xy-sy/logo",
-        "symbol": "https://assets.tcgdex.net/en/tk/tk-xy-sy/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-xy-sy/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -2557,7 +2557,7 @@ object EmbeddedCatalogData {
         "name": "XY trainer Kit (Bisharp)",
         "releaseDate": "2014-11-01",
         "logo": "https://assets.tcgdex.net/en/tk/tk-xy-b/logo",
-        "symbol": "https://assets.tcgdex.net/en/tk/tk-xy-b/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-xy-b/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -2567,7 +2567,7 @@ object EmbeddedCatalogData {
         "name": "Arceus",
         "releaseDate": "2009-11-04",
         "logo": "https://assets.tcgdex.net/en/pl/pl4/logo",
-        "symbol": "https://assets.tcgdex.net/en/pl/pl4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pl/pl4/symbol.png",
         "serieId": "pl",
         "official": 99,
         "total": 111
@@ -2577,7 +2577,7 @@ object EmbeddedCatalogData {
         "name": "Supreme Victors",
         "releaseDate": "2009-08-19",
         "logo": "https://assets.tcgdex.net/en/pl/pl3/logo",
-        "symbol": "https://assets.tcgdex.net/en/pl/pl3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pl/pl3/symbol.png",
         "serieId": "pl",
         "official": 147,
         "total": 153
@@ -2587,7 +2587,7 @@ object EmbeddedCatalogData {
         "name": "Rising Rivals",
         "releaseDate": "2009-05-16",
         "logo": "https://assets.tcgdex.net/en/pl/pl2/logo",
-        "symbol": "https://assets.tcgdex.net/en/pl/pl2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pl/pl2/symbol.png",
         "serieId": "pl",
         "official": 111,
         "total": 120
@@ -2597,7 +2597,7 @@ object EmbeddedCatalogData {
         "name": "Pokémon Rumble",
         "releaseDate": "2009-12-02",
         "logo": "https://assets.tcgdex.net/en/pl/ru1/logo",
-        "symbol": "https://assets.tcgdex.net/en/pl/ru1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pl/ru1/symbol.png",
         "serieId": "pl",
         "official": 16,
         "total": 16
@@ -2607,7 +2607,7 @@ object EmbeddedCatalogData {
         "name": "Platinum",
         "releaseDate": "2009-02-11",
         "logo": "https://assets.tcgdex.net/en/pl/pl1/logo",
-        "symbol": "https://assets.tcgdex.net/en/pl/pl1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pl/pl1/symbol.png",
         "serieId": "pl",
         "official": 127,
         "total": 133
@@ -2617,7 +2617,7 @@ object EmbeddedCatalogData {
         "name": "Gym Challenge",
         "releaseDate": "2000-10-16",
         "logo": "https://assets.tcgdex.net/en/gym/gym2/logo",
-        "symbol": "https://assets.tcgdex.net/en/gym/gym2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/gym/gym2/symbol.png",
         "serieId": "gym",
         "official": 132,
         "total": 132
@@ -2627,7 +2627,7 @@ object EmbeddedCatalogData {
         "name": "Gym Heroes",
         "releaseDate": "2000-08-14",
         "logo": "https://assets.tcgdex.net/en/gym/gym1/logo",
-        "symbol": "https://assets.tcgdex.net/en/gym/gym1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/gym/gym1/symbol.png",
         "serieId": "gym",
         "official": 132,
         "total": 132
@@ -2637,7 +2637,7 @@ object EmbeddedCatalogData {
         "name": "Shining Fates",
         "releaseDate": "2021-02-19",
         "logo": "https://assets.tcgdex.net/en/swsh/swsh4.5/logo",
-        "symbol": "https://assets.tcgdex.net/en/swsh/swsh4.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh4.5/symbol.png",
         "serieId": "swsh",
         "official": 72,
         "total": 195
@@ -2647,7 +2647,7 @@ object EmbeddedCatalogData {
         "name": "Astral Radiance",
         "releaseDate": "2022-05-27",
         "logo": "https://assets.tcgdex.net/en/swsh/swsh10/logo",
-        "symbol": "https://assets.tcgdex.net/en/swsh/swsh10/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh10/symbol.png",
         "serieId": "swsh",
         "official": 189,
         "total": 246
@@ -2657,7 +2657,7 @@ object EmbeddedCatalogData {
         "name": "Fusion Strike",
         "releaseDate": "2021-11-12",
         "logo": "https://assets.tcgdex.net/en/swsh/swsh8/logo",
-        "symbol": "https://assets.tcgdex.net/en/swsh/swsh8/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh8/symbol.png",
         "serieId": "swsh",
         "official": 264,
         "total": 284
@@ -2667,7 +2667,7 @@ object EmbeddedCatalogData {
         "name": "Evolving Skies",
         "releaseDate": "2021-08-27",
         "logo": "https://assets.tcgdex.net/en/swsh/swsh7/logo",
-        "symbol": "https://assets.tcgdex.net/en/swsh/swsh7/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh7/symbol.png",
         "serieId": "swsh",
         "official": 203,
         "total": 237
@@ -2677,7 +2677,7 @@ object EmbeddedCatalogData {
         "name": "Crown Zenith",
         "releaseDate": "2023-01-20",
         "logo": "https://assets.tcgdex.net/en/swsh/swsh12.5/logo",
-        "symbol": "https://assets.tcgdex.net/en/swsh/swsh12.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh12.5/symbol.png",
         "serieId": "swsh",
         "official": 159,
         "total": 230
@@ -2687,7 +2687,7 @@ object EmbeddedCatalogData {
         "name": "Champion's Path",
         "releaseDate": "2020-09-25",
         "logo": "https://assets.tcgdex.net/en/swsh/swsh3.5/logo",
-        "symbol": "https://assets.tcgdex.net/en/swsh/swsh3.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh3.5/symbol.png",
         "serieId": "swsh",
         "official": 70,
         "total": 80
@@ -2697,7 +2697,7 @@ object EmbeddedCatalogData {
         "name": "Celebrations",
         "releaseDate": "2021-10-08",
         "logo": "https://assets.tcgdex.net/en/swsh/cel25/logo",
-        "symbol": "https://assets.tcgdex.net/en/swsh/cel25/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/cel25/symbol.png",
         "serieId": "swsh",
         "official": 25,
         "total": 51
@@ -2707,7 +2707,7 @@ object EmbeddedCatalogData {
         "name": "Battle Styles",
         "releaseDate": "2021-03-19",
         "logo": "https://assets.tcgdex.net/en/swsh/swsh5/logo",
-        "symbol": "https://assets.tcgdex.net/en/swsh/swsh5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh5/symbol.png",
         "serieId": "swsh",
         "official": 163,
         "total": 183
@@ -2717,7 +2717,7 @@ object EmbeddedCatalogData {
         "name": "Silver Tempest",
         "releaseDate": "2022-11-11",
         "logo": "https://assets.tcgdex.net/en/swsh/swsh12/logo",
-        "symbol": "https://assets.tcgdex.net/en/swsh/swsh12/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh12/symbol.png",
         "serieId": "swsh",
         "official": 195,
         "total": 245
@@ -2727,7 +2727,7 @@ object EmbeddedCatalogData {
         "name": "Vivid Voltage",
         "releaseDate": "2020-11-13",
         "logo": "https://assets.tcgdex.net/en/swsh/swsh4/logo",
-        "symbol": "https://assets.tcgdex.net/en/swsh/swsh4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh4/symbol.png",
         "serieId": "swsh",
         "official": 185,
         "total": 203
@@ -2737,7 +2737,7 @@ object EmbeddedCatalogData {
         "name": "Chilling Reign",
         "releaseDate": "2021-06-18",
         "logo": "https://assets.tcgdex.net/en/swsh/swsh6/logo",
-        "symbol": "https://assets.tcgdex.net/en/swsh/swsh6/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh6/symbol.png",
         "serieId": "swsh",
         "official": 198,
         "total": 233
@@ -2747,7 +2747,7 @@ object EmbeddedCatalogData {
         "name": "Lost Origin",
         "releaseDate": "2022-09-09",
         "logo": "https://assets.tcgdex.net/en/swsh/swsh11/logo",
-        "symbol": "https://assets.tcgdex.net/en/swsh/swsh11/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh11/symbol.png",
         "serieId": "swsh",
         "official": 196,
         "total": 247
@@ -2757,7 +2757,7 @@ object EmbeddedCatalogData {
         "name": "Darkness Ablaze",
         "releaseDate": "2020-08-14",
         "logo": "https://assets.tcgdex.net/en/swsh/swsh3/logo",
-        "symbol": "https://assets.tcgdex.net/en/swsh/swsh3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh3/symbol.png",
         "serieId": "swsh",
         "official": 189,
         "total": 201
@@ -2767,7 +2767,7 @@ object EmbeddedCatalogData {
         "name": "Rebel Clash",
         "releaseDate": "2020-05-01",
         "logo": "https://assets.tcgdex.net/en/swsh/swsh2/logo",
-        "symbol": "https://assets.tcgdex.net/en/swsh/swsh2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh2/symbol.png",
         "serieId": "swsh",
         "official": 192,
         "total": 209
@@ -2777,7 +2777,7 @@ object EmbeddedCatalogData {
         "name": "SWSH Black Star Promos",
         "releaseDate": "2019-11-15",
         "logo": "https://assets.tcgdex.net/en/swsh/swshp/logo",
-        "symbol": "https://assets.tcgdex.net/en/swsh/swshp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swshp/symbol.png",
         "serieId": "swsh",
         "official": 107,
         "total": 287
@@ -2787,7 +2787,7 @@ object EmbeddedCatalogData {
         "name": "Pokémon Futsal 2020",
         "releaseDate": "2020-09-11",
         "logo": "https://assets.tcgdex.net/en/swsh/fut2020/logo",
-        "symbol": "https://assets.tcgdex.net/en/swsh/fut2020/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/fut2020/symbol.png",
         "serieId": "swsh",
         "official": 5,
         "total": 5
@@ -2797,7 +2797,7 @@ object EmbeddedCatalogData {
         "name": "Pokémon GO",
         "releaseDate": "2022-07-01",
         "logo": "https://assets.tcgdex.net/en/swsh/swsh10.5/logo",
-        "symbol": "https://assets.tcgdex.net/en/swsh/swsh10.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh10.5/symbol.png",
         "serieId": "swsh",
         "official": 78,
         "total": 88
@@ -2807,7 +2807,7 @@ object EmbeddedCatalogData {
         "name": "Brilliant Stars",
         "releaseDate": "2022-02-25",
         "logo": "https://assets.tcgdex.net/en/swsh/swsh9/logo",
-        "symbol": "https://assets.tcgdex.net/en/swsh/swsh9/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh9/symbol.png",
         "serieId": "swsh",
         "official": 172,
         "total": 216
@@ -2817,7 +2817,7 @@ object EmbeddedCatalogData {
         "name": "Sword & Shield",
         "releaseDate": "2020-02-07",
         "logo": "https://assets.tcgdex.net/en/swsh/swsh1/logo",
-        "symbol": "https://assets.tcgdex.net/en/swsh/swsh1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh1/symbol.png",
         "serieId": "swsh",
         "official": 202,
         "total": 216
@@ -2831,7 +2831,7 @@ object EmbeddedCatalogData {
         "name": "Tempète Plasma",
         "releaseDate": "2013-02-06",
         "logo": "https://assets.tcgdex.net/fr/bw/bw8/logo",
-        "symbol": "https://assets.tcgdex.net/fr/bw/bw8/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw8/symbol.png",
         "serieId": "bw",
         "official": 135,
         "total": 138
@@ -2841,7 +2841,7 @@ object EmbeddedCatalogData {
         "name": "Explorateurs Obscurs",
         "releaseDate": "2012-05-09",
         "logo": "https://assets.tcgdex.net/fr/bw/bw5/logo",
-        "symbol": "https://assets.tcgdex.net/fr/bw/bw5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw5/symbol.png",
         "serieId": "bw",
         "official": 108,
         "total": 111
@@ -2851,7 +2851,7 @@ object EmbeddedCatalogData {
         "name": "Noir & Blanc",
         "releaseDate": "2011-04-25",
         "logo": "https://assets.tcgdex.net/fr/bw/bw1/logo",
-        "symbol": "https://assets.tcgdex.net/fr/bw/bw1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw1/symbol.png",
         "serieId": "bw",
         "official": 114,
         "total": 115
@@ -2861,7 +2861,7 @@ object EmbeddedCatalogData {
         "name": "Frontières Franchies",
         "releaseDate": "2012-11-07",
         "logo": "https://assets.tcgdex.net/fr/bw/bw7/logo",
-        "symbol": "https://assets.tcgdex.net/fr/bw/bw7/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw7/symbol.png",
         "serieId": "bw",
         "official": 149,
         "total": 153
@@ -2871,7 +2871,7 @@ object EmbeddedCatalogData {
         "name": "Pouvoirs Émergents",
         "releaseDate": "2011-08-31",
         "logo": "https://assets.tcgdex.net/fr/bw/bw2/logo",
-        "symbol": "https://assets.tcgdex.net/fr/bw/bw2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw2/symbol.png",
         "serieId": "bw",
         "official": 98,
         "total": 98
@@ -2881,7 +2881,7 @@ object EmbeddedCatalogData {
         "name": "Glaciation Plasma",
         "releaseDate": "2013-05-08",
         "logo": "https://assets.tcgdex.net/fr/bw/bw9/logo",
-        "symbol": "https://assets.tcgdex.net/fr/bw/bw9/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw9/symbol.png",
         "serieId": "bw",
         "official": 116,
         "total": 122
@@ -2891,7 +2891,7 @@ object EmbeddedCatalogData {
         "name": "Nobles Victoires",
         "releaseDate": "2011-11-16",
         "logo": "https://assets.tcgdex.net/fr/bw/bw3/logo",
-        "symbol": "https://assets.tcgdex.net/fr/bw/bw3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw3/symbol.png",
         "serieId": "bw",
         "official": 101,
         "total": 102
@@ -2901,7 +2901,7 @@ object EmbeddedCatalogData {
         "name": "Explosion Plasma",
         "releaseDate": "2013-08-14",
         "logo": "https://assets.tcgdex.net/fr/bw/bw10/logo",
-        "symbol": "https://assets.tcgdex.net/fr/bw/bw10/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw10/symbol.png",
         "serieId": "bw",
         "official": 101,
         "total": 105
@@ -2911,7 +2911,7 @@ object EmbeddedCatalogData {
         "name": "Radiant Collection",
         "releaseDate": "2013-11-06",
         "logo": "https://assets.tcgdex.net/fr/bw/rc/logo",
-        "symbol": "https://assets.tcgdex.net/fr/bw/rc/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/rc/symbol.png",
         "serieId": "bw",
         "official": 25,
         "total": 25
@@ -2921,7 +2921,7 @@ object EmbeddedCatalogData {
         "name": "Trésors Légendaires",
         "releaseDate": "2013-11-06",
         "logo": "https://assets.tcgdex.net/fr/bw/bw11/logo",
-        "symbol": "https://assets.tcgdex.net/fr/bw/bw11/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw11/symbol.png",
         "serieId": "bw",
         "official": 113,
         "total": 140
@@ -2931,7 +2931,7 @@ object EmbeddedCatalogData {
         "name": "Dragons Éxaltés",
         "releaseDate": "2012-08-15",
         "logo": "https://assets.tcgdex.net/fr/bw/bw6/logo",
-        "symbol": "https://assets.tcgdex.net/fr/bw/bw6/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw6/symbol.png",
         "serieId": "bw",
         "official": 124,
         "total": 128
@@ -2941,7 +2941,7 @@ object EmbeddedCatalogData {
         "name": "Promo BW",
         "releaseDate": "2011-04-26",
         "logo": "https://assets.tcgdex.net/fr/bw/bwp/logo",
-        "symbol": "https://assets.tcgdex.net/fr/bw/bwp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bwp/symbol.png",
         "serieId": "bw",
         "official": 101,
         "total": 101
@@ -2951,7 +2951,7 @@ object EmbeddedCatalogData {
         "name": "Destinées Futures",
         "releaseDate": "2012-02-08",
         "logo": "https://assets.tcgdex.net/fr/bw/bw4/logo",
-        "symbol": "https://assets.tcgdex.net/fr/bw/bw4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw4/symbol.png",
         "serieId": "bw",
         "official": 99,
         "total": 103
@@ -2961,7 +2961,7 @@ object EmbeddedCatalogData {
         "name": "Coffre des Dragons",
         "releaseDate": "2012-10-05",
         "logo": "https://assets.tcgdex.net/fr/bw/dv1/logo",
-        "symbol": "https://assets.tcgdex.net/fr/bw/dv1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/dv1/symbol.png",
         "serieId": "bw",
         "official": 20,
         "total": 21
@@ -2971,7 +2971,7 @@ object EmbeddedCatalogData {
         "name": "Jungle",
         "releaseDate": "1999-06-16",
         "logo": "https://assets.tcgdex.net/fr/base/base2/logo",
-        "symbol": "https://assets.tcgdex.net/fr/base/base2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/base/base2/symbol.png",
         "serieId": "base",
         "official": 64,
         "total": 64
@@ -2981,7 +2981,7 @@ object EmbeddedCatalogData {
         "name": "Team Rocket",
         "releaseDate": "2000-04-24",
         "logo": "https://assets.tcgdex.net/fr/base/base5/logo",
-        "symbol": "https://assets.tcgdex.net/fr/base/base5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/base/base5/symbol.png",
         "serieId": "base",
         "official": 82,
         "total": 83
@@ -2991,7 +2991,7 @@ object EmbeddedCatalogData {
         "name": "Wizards Black Star Promos",
         "releaseDate": "1999-07-01",
         "logo": "https://assets.tcgdex.net/fr/base/basep/logo",
-        "symbol": "https://assets.tcgdex.net/fr/base/basep/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/base/basep/symbol.png",
         "serieId": "base",
         "official": 53,
         "total": 53
@@ -3001,7 +3001,7 @@ object EmbeddedCatalogData {
         "name": "Fossile",
         "releaseDate": "1999-10-10",
         "logo": "https://assets.tcgdex.net/fr/base/base3/logo",
-        "symbol": "https://assets.tcgdex.net/fr/base/base3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/base/base3/symbol.png",
         "serieId": "base",
         "official": 62,
         "total": 62
@@ -3011,7 +3011,7 @@ object EmbeddedCatalogData {
         "name": "Base Set 2",
         "releaseDate": "2000-02-24",
         "logo": "https://assets.tcgdex.net/fr/base/base4/logo",
-        "symbol": "https://assets.tcgdex.net/fr/base/base4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/base/base4/symbol.png",
         "serieId": "base",
         "official": 130,
         "total": 130
@@ -3021,7 +3021,7 @@ object EmbeddedCatalogData {
         "name": "Set de Base",
         "releaseDate": "1999-01-09",
         "logo": "https://assets.tcgdex.net/fr/base/base1/logo",
-        "symbol": "https://assets.tcgdex.net/fr/base/base1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/base/base1/symbol.png",
         "serieId": "base",
         "official": 102,
         "total": 102
@@ -3031,7 +3031,7 @@ object EmbeddedCatalogData {
         "name": "W Promotional",
         "releaseDate": "1999-09-01",
         "logo": "https://assets.tcgdex.net/fr/base/wp/logo",
-        "symbol": "https://assets.tcgdex.net/fr/base/wp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/base/wp/symbol.png",
         "serieId": "base",
         "official": 7,
         "total": 7
@@ -3041,7 +3041,7 @@ object EmbeddedCatalogData {
         "name": "POP Series 8",
         "releaseDate": "2008-09-01",
         "logo": "https://assets.tcgdex.net/fr/pop/pop8/logo",
-        "symbol": "https://assets.tcgdex.net/fr/pop/pop8/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop8/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -3051,7 +3051,7 @@ object EmbeddedCatalogData {
         "name": "POP Série 9",
         "releaseDate": "2009-03-01",
         "logo": "https://assets.tcgdex.net/fr/pop/pop9/logo",
-        "symbol": "https://assets.tcgdex.net/fr/pop/pop9/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop9/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -3061,7 +3061,7 @@ object EmbeddedCatalogData {
         "name": "POP Série 2",
         "releaseDate": "2005-08-01",
         "logo": "https://assets.tcgdex.net/fr/pop/pop2/logo",
-        "symbol": "https://assets.tcgdex.net/fr/pop/pop2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop2/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -3071,7 +3071,7 @@ object EmbeddedCatalogData {
         "name": "POP Series 6",
         "releaseDate": "2007-09-01",
         "logo": "https://assets.tcgdex.net/fr/pop/pop6/logo",
-        "symbol": "https://assets.tcgdex.net/fr/pop/pop6/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop6/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -3081,7 +3081,7 @@ object EmbeddedCatalogData {
         "name": "POP Série 7",
         "releaseDate": "2008-03-01",
         "logo": "https://assets.tcgdex.net/fr/pop/pop7/logo",
-        "symbol": "https://assets.tcgdex.net/fr/pop/pop7/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop7/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -3091,7 +3091,7 @@ object EmbeddedCatalogData {
         "name": "POP Série 3",
         "releaseDate": "2006-04-01",
         "logo": "https://assets.tcgdex.net/fr/pop/pop3/logo",
-        "symbol": "https://assets.tcgdex.net/fr/pop/pop3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop3/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -3101,7 +3101,7 @@ object EmbeddedCatalogData {
         "name": "POP Série 4",
         "releaseDate": "2006-08-01",
         "logo": "https://assets.tcgdex.net/fr/pop/pop4/logo",
-        "symbol": "https://assets.tcgdex.net/fr/pop/pop4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop4/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -3111,7 +3111,7 @@ object EmbeddedCatalogData {
         "name": "POP Série 1",
         "releaseDate": "2004-09-01",
         "logo": "https://assets.tcgdex.net/fr/pop/pop1/logo",
-        "symbol": "https://assets.tcgdex.net/fr/pop/pop1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop1/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -3121,7 +3121,7 @@ object EmbeddedCatalogData {
         "name": "POP Series 5",
         "releaseDate": "2007-03-01",
         "logo": "https://assets.tcgdex.net/fr/pop/pop5/logo",
-        "symbol": "https://assets.tcgdex.net/fr/pop/pop5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop5/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -3131,7 +3131,7 @@ object EmbeddedCatalogData {
         "name": "Promo Nintendo",
         "releaseDate": "2003-10-01",
         "logo": "https://assets.tcgdex.net/fr/pop/np/logo",
-        "symbol": "https://assets.tcgdex.net/fr/pop/np/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/np/symbol.png",
         "serieId": "pop",
         "official": 40,
         "total": 40
@@ -3141,7 +3141,7 @@ object EmbeddedCatalogData {
         "name": "L'appel des Légendes",
         "releaseDate": "2011-02-09",
         "logo": "https://assets.tcgdex.net/fr/col/col1/logo",
-        "symbol": "https://assets.tcgdex.net/fr/col/col1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/col/col1/symbol.png",
         "serieId": "col",
         "official": 95,
         "total": 106
@@ -3151,7 +3151,7 @@ object EmbeddedCatalogData {
         "name": "Legendary Collection",
         "releaseDate": "2002-05-24",
         "logo": "https://assets.tcgdex.net/fr/lc/lc/logo",
-        "symbol": "https://assets.tcgdex.net/fr/lc/lc/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/lc/lc/symbol.png",
         "serieId": "lc",
         "official": 110,
         "total": 110
@@ -3161,7 +3161,7 @@ object EmbeddedCatalogData {
         "name": "Promo McDonald's 2021",
         "releaseDate": "2021-02-09",
         "logo": "https://assets.tcgdex.net/fr/mc/2021swsh/logo",
-        "symbol": "https://assets.tcgdex.net/fr/mc/2021swsh/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2021swsh/symbol.png",
         "serieId": "mc",
         "official": 25,
         "total": 25
@@ -3171,7 +3171,7 @@ object EmbeddedCatalogData {
         "name": "Promo McDonald's 2015",
         "releaseDate": "2015-11-27",
         "logo": "https://assets.tcgdex.net/fr/mc/2015xy/logo",
-        "symbol": "https://assets.tcgdex.net/fr/mc/2015xy/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2015xy/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 12
@@ -3181,7 +3181,7 @@ object EmbeddedCatalogData {
         "name": "Promo McDonald's 2019",
         "releaseDate": "2019-10-30",
         "logo": "https://assets.tcgdex.net/fr/mc/2019sm-fr/logo",
-        "symbol": "https://assets.tcgdex.net/fr/mc/2019sm-fr/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2019sm-fr/symbol.png",
         "serieId": "mc",
         "official": 40,
         "total": 40
@@ -3191,7 +3191,7 @@ object EmbeddedCatalogData {
         "name": "Promo McDonald's 2012",
         "releaseDate": "2011-06-17",
         "logo": "https://assets.tcgdex.net/fr/mc/2011bw/logo",
-        "symbol": "https://assets.tcgdex.net/fr/mc/2011bw/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2011bw/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 12
@@ -3201,7 +3201,7 @@ object EmbeddedCatalogData {
         "name": "Promo McDonald's 2018",
         "releaseDate": "2018-06-13",
         "logo": "https://assets.tcgdex.net/fr/mc/2018sm-fr/logo",
-        "symbol": "https://assets.tcgdex.net/fr/mc/2018sm-fr/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2018sm-fr/symbol.png",
         "serieId": "mc",
         "official": 40,
         "total": 40
@@ -3211,7 +3211,7 @@ object EmbeddedCatalogData {
         "name": "Promo McDonald's 2014",
         "releaseDate": "2014-05-23",
         "logo": "https://assets.tcgdex.net/fr/mc/2014xy/logo",
-        "symbol": "https://assets.tcgdex.net/fr/mc/2014xy/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2014xy/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 12
@@ -3221,7 +3221,7 @@ object EmbeddedCatalogData {
         "name": "Promo McDonald's 2013",
         "releaseDate": "2013-11-01",
         "logo": "https://assets.tcgdex.net/fr/mc/2013bw/logo",
-        "symbol": "https://assets.tcgdex.net/fr/mc/2013bw/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2013bw/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 1
@@ -3231,7 +3231,7 @@ object EmbeddedCatalogData {
         "name": "Macdonald's Collection 2019",
         "releaseDate": "2019-10-15",
         "logo": "https://assets.tcgdex.net/fr/mc/2019sm/logo",
-        "symbol": "https://assets.tcgdex.net/fr/mc/2019sm/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2019sm/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 12
@@ -3241,7 +3241,7 @@ object EmbeddedCatalogData {
         "name": "Macdonald's Collection 2018",
         "releaseDate": "2018-10-19",
         "logo": "https://assets.tcgdex.net/fr/mc/2018sm/logo",
-        "symbol": "https://assets.tcgdex.net/fr/mc/2018sm/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2018sm/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 12
@@ -3251,7 +3251,7 @@ object EmbeddedCatalogData {
         "name": "Promo McDonald's 2017",
         "releaseDate": "2017-08-03",
         "logo": "https://assets.tcgdex.net/fr/mc/2017sm/logo",
-        "symbol": "https://assets.tcgdex.net/fr/mc/2017sm/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2017sm/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 12
@@ -3261,7 +3261,7 @@ object EmbeddedCatalogData {
         "name": "Promo McDonald's 2016",
         "releaseDate": "2016-08-20",
         "logo": "https://assets.tcgdex.net/fr/mc/2016xy/logo",
-        "symbol": "https://assets.tcgdex.net/fr/mc/2016xy/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2016xy/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 12
@@ -3271,7 +3271,7 @@ object EmbeddedCatalogData {
         "name": "Macdonald's Collection 2012",
         "releaseDate": "2012-06-15",
         "logo": "https://assets.tcgdex.net/fr/mc/2012bw/logo",
-        "symbol": "https://assets.tcgdex.net/fr/mc/2012bw/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2012bw/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 12
@@ -3281,7 +3281,7 @@ object EmbeddedCatalogData {
         "name": "EX Rouge Feu & Vert Feuille",
         "releaseDate": "2004-09-01",
         "logo": "https://assets.tcgdex.net/fr/ex/ex6/logo",
-        "symbol": "https://assets.tcgdex.net/fr/ex/ex6/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex6/symbol.png",
         "serieId": "ex",
         "official": 112,
         "total": 116
@@ -3291,7 +3291,7 @@ object EmbeddedCatalogData {
         "name": "EX Team Magma vs Team Aqua",
         "releaseDate": "2004-03-01",
         "logo": "https://assets.tcgdex.net/fr/ex/ex4/logo",
-        "symbol": "https://assets.tcgdex.net/fr/ex/ex4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex4/symbol.png",
         "serieId": "ex",
         "official": 95,
         "total": 97
@@ -3301,7 +3301,7 @@ object EmbeddedCatalogData {
         "name": "EX Tempête de sable",
         "releaseDate": "2003-09-18",
         "logo": "https://assets.tcgdex.net/fr/ex/ex2/logo",
-        "symbol": "https://assets.tcgdex.net/fr/ex/ex2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex2/symbol.png",
         "serieId": "ex",
         "official": 100,
         "total": 100
@@ -3311,7 +3311,7 @@ object EmbeddedCatalogData {
         "name": "Team Rocket Returns",
         "releaseDate": "2004-11-01",
         "logo": "https://assets.tcgdex.net/fr/ex/ex7/logo",
-        "symbol": "https://assets.tcgdex.net/fr/ex/ex7/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex7/symbol.png",
         "serieId": "ex",
         "official": 109,
         "total": 111
@@ -3321,7 +3321,7 @@ object EmbeddedCatalogData {
         "name": "EX Créateurs de légendes",
         "releaseDate": "2006-02-13",
         "logo": "https://assets.tcgdex.net/fr/ex/ex12/logo",
-        "symbol": "https://assets.tcgdex.net/fr/ex/ex12/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex12/symbol.png",
         "serieId": "ex",
         "official": 92,
         "total": 93
@@ -3331,7 +3331,7 @@ object EmbeddedCatalogData {
         "name": "EX Île des Dragons",
         "releaseDate": "2006-11-08",
         "logo": "https://assets.tcgdex.net/fr/ex/ex15/logo",
-        "symbol": "https://assets.tcgdex.net/fr/ex/ex15/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex15/symbol.png",
         "serieId": "ex",
         "official": 101,
         "total": 101
@@ -3341,7 +3341,7 @@ object EmbeddedCatalogData {
         "name": "EX Gardiens du Pouvoir",
         "releaseDate": "2007-02-17",
         "logo": "https://assets.tcgdex.net/fr/ex/ex16/logo",
-        "symbol": "https://assets.tcgdex.net/fr/ex/ex16/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex16/symbol.png",
         "serieId": "ex",
         "official": 108,
         "total": 108
@@ -3351,7 +3351,7 @@ object EmbeddedCatalogData {
         "name": "EX Gardiens de Cristal",
         "releaseDate": "2006-08-30",
         "logo": "https://assets.tcgdex.net/fr/ex/ex14/logo",
-        "symbol": "https://assets.tcgdex.net/fr/ex/ex14/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex14/symbol.png",
         "serieId": "ex",
         "official": 100,
         "total": 100
@@ -3361,7 +3361,7 @@ object EmbeddedCatalogData {
         "name": "EX Espèces Delta",
         "releaseDate": "2005-10-31",
         "logo": "https://assets.tcgdex.net/fr/ex/ex11/logo",
-        "symbol": "https://assets.tcgdex.net/fr/ex/ex11/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex11/symbol.png",
         "serieId": "ex",
         "official": 113,
         "total": 114
@@ -3371,7 +3371,7 @@ object EmbeddedCatalogData {
         "name": "EX Forces Cachées",
         "releaseDate": "2005-08-22",
         "logo": "https://assets.tcgdex.net/fr/ex/ex10/logo",
-        "symbol": "https://assets.tcgdex.net/fr/ex/ex10/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex10/symbol.png",
         "serieId": "ex",
         "official": 115,
         "total": 117
@@ -3381,7 +3381,7 @@ object EmbeddedCatalogData {
         "name": "EX Émeraude",
         "releaseDate": "2005-05-09",
         "logo": "https://assets.tcgdex.net/fr/ex/ex9/logo",
-        "symbol": "https://assets.tcgdex.net/fr/ex/ex9/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex9/symbol.png",
         "serieId": "ex",
         "official": 106,
         "total": 107
@@ -3391,7 +3391,7 @@ object EmbeddedCatalogData {
         "name": "EX Deoxys",
         "releaseDate": "2005-02-01",
         "logo": "https://assets.tcgdex.net/fr/ex/ex8/logo",
-        "symbol": "https://assets.tcgdex.net/fr/ex/ex8/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex8/symbol.png",
         "serieId": "ex",
         "official": 107,
         "total": 108
@@ -3401,7 +3401,7 @@ object EmbeddedCatalogData {
         "name": "Poké Card Creator Pack",
         "releaseDate": "2004-07-01",
         "logo": "https://assets.tcgdex.net/fr/ex/ex5.5/logo",
-        "symbol": "https://assets.tcgdex.net/fr/ex/ex5.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex5.5/symbol.png",
         "serieId": "ex",
         "official": 5,
         "total": 5
@@ -3411,7 +3411,7 @@ object EmbeddedCatalogData {
         "name": "EX Forces Cachées Collection Zarbi",
         "releaseDate": "2005-08-22",
         "logo": "https://assets.tcgdex.net/fr/ex/exu/logo",
-        "symbol": "https://assets.tcgdex.net/fr/ex/exu/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/exu/symbol.png",
         "serieId": "ex",
         "official": 28,
         "total": 28
@@ -3421,7 +3421,7 @@ object EmbeddedCatalogData {
         "name": "EX Fantômes Holon",
         "releaseDate": "2006-05-03",
         "logo": "https://assets.tcgdex.net/fr/ex/ex13/logo",
-        "symbol": "https://assets.tcgdex.net/fr/ex/ex13/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex13/symbol.png",
         "serieId": "ex",
         "official": 110,
         "total": 111
@@ -3431,7 +3431,7 @@ object EmbeddedCatalogData {
         "name": "EX Dragon",
         "releaseDate": "2003-11-24",
         "logo": "https://assets.tcgdex.net/fr/ex/ex3/logo",
-        "symbol": "https://assets.tcgdex.net/fr/ex/ex3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex3/symbol.png",
         "serieId": "ex",
         "official": 97,
         "total": 100
@@ -3441,7 +3441,7 @@ object EmbeddedCatalogData {
         "name": "EX Rubis & Saphir",
         "releaseDate": "2003-07-01",
         "logo": "https://assets.tcgdex.net/fr/ex/ex1/logo",
-        "symbol": "https://assets.tcgdex.net/fr/ex/ex1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex1/symbol.png",
         "serieId": "ex",
         "official": 109,
         "total": 109
@@ -3451,7 +3451,7 @@ object EmbeddedCatalogData {
         "name": "EX Légendes Oubliées",
         "releaseDate": "2004-06-01",
         "logo": "https://assets.tcgdex.net/fr/ex/ex5/logo",
-        "symbol": "https://assets.tcgdex.net/fr/ex/ex5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex5/symbol.png",
         "serieId": "ex",
         "official": 101,
         "total": 102
@@ -3461,7 +3461,7 @@ object EmbeddedCatalogData {
         "name": "Cartes Jumbo",
         "releaseDate": "2000-02-01",
         "logo": "https://assets.tcgdex.net/fr/misc/jumbo/logo",
-        "symbol": "https://assets.tcgdex.net/fr/misc/jumbo/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/misc/jumbo/symbol.png",
         "serieId": "misc",
         "official": 160,
         "total": 160
@@ -3471,7 +3471,7 @@ object EmbeddedCatalogData {
         "name": "Éveil des Légendes",
         "releaseDate": "2008-08-01",
         "logo": "https://assets.tcgdex.net/fr/dp/dp6/logo",
-        "symbol": "https://assets.tcgdex.net/fr/dp/dp6/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/dp/dp6/symbol.png",
         "serieId": "dp",
         "official": 146,
         "total": 146
@@ -3481,7 +3481,7 @@ object EmbeddedCatalogData {
         "name": "Promo DP",
         "releaseDate": "2007-05-01",
         "logo": "https://assets.tcgdex.net/fr/dp/dpp/logo",
-        "symbol": "https://assets.tcgdex.net/fr/dp/dpp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/dp/dpp/symbol.png",
         "serieId": "dp",
         "official": 56,
         "total": 56
@@ -3491,7 +3491,7 @@ object EmbeddedCatalogData {
         "name": "Diamant & Perle",
         "releaseDate": "2007-05-01",
         "logo": "https://assets.tcgdex.net/fr/dp/dp1/logo",
-        "symbol": "https://assets.tcgdex.net/fr/dp/dp1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/dp/dp1/symbol.png",
         "serieId": "dp",
         "official": 130,
         "total": 130
@@ -3501,7 +3501,7 @@ object EmbeddedCatalogData {
         "name": "Trésors Mystérieux",
         "releaseDate": "2007-08-01",
         "logo": "https://assets.tcgdex.net/fr/dp/dp2/logo",
-        "symbol": "https://assets.tcgdex.net/fr/dp/dp2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/dp/dp2/symbol.png",
         "serieId": "dp",
         "official": 122,
         "total": 124
@@ -3511,7 +3511,7 @@ object EmbeddedCatalogData {
         "name": "Duels au Sommets",
         "releaseDate": "2008-02-01",
         "logo": "https://assets.tcgdex.net/fr/dp/dp4/logo",
-        "symbol": "https://assets.tcgdex.net/fr/dp/dp4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/dp/dp4/symbol.png",
         "serieId": "dp",
         "official": 106,
         "total": 106
@@ -3521,7 +3521,7 @@ object EmbeddedCatalogData {
         "name": "Merveilles Secrètes",
         "releaseDate": "2007-11-01",
         "logo": "https://assets.tcgdex.net/fr/dp/dp3/logo",
-        "symbol": "https://assets.tcgdex.net/fr/dp/dp3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/dp/dp3/symbol.png",
         "serieId": "dp",
         "official": 132,
         "total": 132
@@ -3531,7 +3531,7 @@ object EmbeddedCatalogData {
         "name": "Tempête",
         "releaseDate": "2008-11-01",
         "logo": "https://assets.tcgdex.net/fr/dp/dp7/logo",
-        "symbol": "https://assets.tcgdex.net/fr/dp/dp7/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/dp/dp7/symbol.png",
         "serieId": "dp",
         "official": 100,
         "total": 106
@@ -3541,7 +3541,7 @@ object EmbeddedCatalogData {
         "name": "Aube Majestueuse",
         "releaseDate": "2008-05-01",
         "logo": "https://assets.tcgdex.net/fr/dp/dp5/logo",
-        "symbol": "https://assets.tcgdex.net/fr/dp/dp5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/dp/dp5/symbol.png",
         "serieId": "dp",
         "official": 100,
         "total": 100
@@ -3551,7 +3551,7 @@ object EmbeddedCatalogData {
         "name": "Neo Destiny",
         "releaseDate": "2002-02-28",
         "logo": "https://assets.tcgdex.net/fr/neo/neo4/logo",
-        "symbol": "https://assets.tcgdex.net/fr/neo/neo4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/neo/neo4/symbol.png",
         "serieId": "neo",
         "official": 105,
         "total": 113
@@ -3561,7 +3561,7 @@ object EmbeddedCatalogData {
         "name": "Neo Genesis",
         "releaseDate": "2000-12-16",
         "logo": "https://assets.tcgdex.net/fr/neo/neo1/logo",
-        "symbol": "https://assets.tcgdex.net/fr/neo/neo1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/neo/neo1/symbol.png",
         "serieId": "neo",
         "official": 111,
         "total": 111
@@ -3571,7 +3571,7 @@ object EmbeddedCatalogData {
         "name": "Neo Discovery",
         "releaseDate": "2001-06-01",
         "logo": "https://assets.tcgdex.net/fr/neo/neo2/logo",
-        "symbol": "https://assets.tcgdex.net/fr/neo/neo2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/neo/neo2/symbol.png",
         "serieId": "neo",
         "official": 75,
         "total": 75
@@ -3581,7 +3581,7 @@ object EmbeddedCatalogData {
         "name": "Southern Islands",
         "releaseDate": "2001-07-31",
         "logo": "https://assets.tcgdex.net/fr/neo/si1/logo",
-        "symbol": "https://assets.tcgdex.net/fr/neo/si1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/neo/si1/symbol.png",
         "serieId": "neo",
         "official": 18,
         "total": 18
@@ -3591,7 +3591,7 @@ object EmbeddedCatalogData {
         "name": "Neo Revelation",
         "releaseDate": "2001-09-21",
         "logo": "https://assets.tcgdex.net/fr/neo/neo3/logo",
-        "symbol": "https://assets.tcgdex.net/fr/neo/neo3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/neo/neo3/symbol.png",
         "serieId": "neo",
         "official": 64,
         "total": 66
@@ -3601,7 +3601,7 @@ object EmbeddedCatalogData {
         "name": "Ultra-Prisme",
         "releaseDate": "2018-02-02",
         "logo": "https://assets.tcgdex.net/fr/sm/sm5/logo",
-        "symbol": "https://assets.tcgdex.net/fr/sm/sm5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm5/symbol.png",
         "serieId": "sm",
         "official": 156,
         "total": 173
@@ -3611,7 +3611,7 @@ object EmbeddedCatalogData {
         "name": "Alliance Infaillible",
         "releaseDate": "2019-05-03",
         "logo": "https://assets.tcgdex.net/fr/sm/sm10/logo",
-        "symbol": "https://assets.tcgdex.net/fr/sm/sm10/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm10/symbol.png",
         "serieId": "sm",
         "official": 214,
         "total": 234
@@ -3621,7 +3621,7 @@ object EmbeddedCatalogData {
         "name": "Éclipse Cosmique",
         "releaseDate": "2019-11-01",
         "logo": "https://assets.tcgdex.net/fr/sm/sm12/logo",
-        "symbol": "https://assets.tcgdex.net/fr/sm/sm12/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm12/symbol.png",
         "serieId": "sm",
         "official": 236,
         "total": 271
@@ -3631,7 +3631,7 @@ object EmbeddedCatalogData {
         "name": "Carte Alternative A Jaune",
         "releaseDate": "2019-08-23",
         "logo": "https://assets.tcgdex.net/fr/sm/sma/logo",
-        "symbol": "https://assets.tcgdex.net/fr/sm/sma/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sma/symbol.png",
         "serieId": "sm",
         "official": 94,
         "total": 94
@@ -3641,7 +3641,7 @@ object EmbeddedCatalogData {
         "name": "Harmonie des Esprits",
         "releaseDate": "2019-08-02",
         "logo": "https://assets.tcgdex.net/fr/sm/sm11/logo",
-        "symbol": "https://assets.tcgdex.net/fr/sm/sm11/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm11/symbol.png",
         "serieId": "sm",
         "official": 236,
         "total": 258
@@ -3651,7 +3651,7 @@ object EmbeddedCatalogData {
         "name": "Détective Pikachu",
         "releaseDate": "2019-03-29",
         "logo": "https://assets.tcgdex.net/fr/sm/det1/logo",
-        "symbol": "https://assets.tcgdex.net/fr/sm/det1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/det1/symbol.png",
         "serieId": "sm",
         "official": 18,
         "total": 18
@@ -3661,7 +3661,7 @@ object EmbeddedCatalogData {
         "name": "Soleil et Lune",
         "releaseDate": "2017-02-03",
         "logo": "https://assets.tcgdex.net/fr/sm/sm1/logo",
-        "symbol": "https://assets.tcgdex.net/fr/sm/sm1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm1/symbol.png",
         "serieId": "sm",
         "official": 149,
         "total": 172
@@ -3671,7 +3671,7 @@ object EmbeddedCatalogData {
         "name": "Destinées Occultes",
         "releaseDate": "2019-08-23",
         "logo": "https://assets.tcgdex.net/fr/sm/sm115/logo",
-        "symbol": "https://assets.tcgdex.net/fr/sm/sm115/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm115/symbol.png",
         "serieId": "sm",
         "official": 68,
         "total": 69
@@ -3681,7 +3681,7 @@ object EmbeddedCatalogData {
         "name": "Lumière Interdite",
         "releaseDate": "2018-05-04",
         "logo": "https://assets.tcgdex.net/fr/sm/sm6/logo",
-        "symbol": "https://assets.tcgdex.net/fr/sm/sm6/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm6/symbol.png",
         "serieId": "sm",
         "official": 131,
         "total": 146
@@ -3691,7 +3691,7 @@ object EmbeddedCatalogData {
         "name": "Tempête Céleste",
         "releaseDate": "2018-08-03",
         "logo": "https://assets.tcgdex.net/fr/sm/sm7/logo",
-        "symbol": "https://assets.tcgdex.net/fr/sm/sm7/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm7/symbol.png",
         "serieId": "sm",
         "official": 168,
         "total": 183
@@ -3701,7 +3701,7 @@ object EmbeddedCatalogData {
         "name": "Majesté Des Dragons",
         "releaseDate": "2018-09-07",
         "logo": "https://assets.tcgdex.net/fr/sm/sm7.5/logo",
-        "symbol": "https://assets.tcgdex.net/fr/sm/sm7.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm7.5/symbol.png",
         "serieId": "sm",
         "official": 70,
         "total": 78
@@ -3711,7 +3711,7 @@ object EmbeddedCatalogData {
         "name": "Légendes Brillantes",
         "releaseDate": "2017-10-06",
         "logo": "https://assets.tcgdex.net/fr/sm/sm3.5/logo",
-        "symbol": "https://assets.tcgdex.net/fr/sm/sm3.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm3.5/symbol.png",
         "serieId": "sm",
         "official": 73,
         "total": 78
@@ -3721,7 +3721,7 @@ object EmbeddedCatalogData {
         "name": "Duo de Choc",
         "releaseDate": "2019-01-31",
         "logo": "https://assets.tcgdex.net/fr/sm/sm9/logo",
-        "symbol": "https://assets.tcgdex.net/fr/sm/sm9/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm9/symbol.png",
         "serieId": "sm",
         "official": 181,
         "total": 196
@@ -3731,7 +3731,7 @@ object EmbeddedCatalogData {
         "name": "Tonnerre Perdu",
         "releaseDate": "2018-11-02",
         "logo": "https://assets.tcgdex.net/fr/sm/sm8/logo",
-        "symbol": "https://assets.tcgdex.net/fr/sm/sm8/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm8/symbol.png",
         "serieId": "sm",
         "official": 214,
         "total": 236
@@ -3741,7 +3741,7 @@ object EmbeddedCatalogData {
         "name": "Gardiens Ascendants",
         "releaseDate": "2017-05-05",
         "logo": "https://assets.tcgdex.net/fr/sm/sm2/logo",
-        "symbol": "https://assets.tcgdex.net/fr/sm/sm2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm2/symbol.png",
         "serieId": "sm",
         "official": 145,
         "total": 169
@@ -3751,7 +3751,7 @@ object EmbeddedCatalogData {
         "name": "Invasion Carmin",
         "releaseDate": "2017-11-03",
         "logo": "https://assets.tcgdex.net/fr/sm/sm4/logo",
-        "symbol": "https://assets.tcgdex.net/fr/sm/sm4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm4/symbol.png",
         "serieId": "sm",
         "official": 111,
         "total": 125
@@ -3761,7 +3761,7 @@ object EmbeddedCatalogData {
         "name": "Ombres Ardentes",
         "releaseDate": "2017-08-04",
         "logo": "https://assets.tcgdex.net/fr/sm/sm3/logo",
-        "symbol": "https://assets.tcgdex.net/fr/sm/sm3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm3/symbol.png",
         "serieId": "sm",
         "official": 147,
         "total": 169
@@ -3771,7 +3771,7 @@ object EmbeddedCatalogData {
         "name": "Promo SM",
         "releaseDate": "2017-02-03",
         "logo": "https://assets.tcgdex.net/fr/sm/smp/logo",
-        "symbol": "https://assets.tcgdex.net/fr/sm/smp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/smp/symbol.png",
         "serieId": "sm",
         "official": 236,
         "total": 244
@@ -3781,7 +3781,7 @@ object EmbeddedCatalogData {
         "name": "MEP Black Star Promos",
         "releaseDate": "2025-09-26",
         "logo": "https://assets.tcgdex.net/fr/me/mep/logo",
-        "symbol": "https://assets.tcgdex.net/fr/me/mep/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/me/mep/symbol.png",
         "serieId": "me",
         "official": 0,
         "total": 10
@@ -3791,7 +3791,7 @@ object EmbeddedCatalogData {
         "name": "Méga-Évolution",
         "releaseDate": "2025-09-26",
         "logo": "https://assets.tcgdex.net/fr/me/me01/logo",
-        "symbol": "https://assets.tcgdex.net/fr/me/me01/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/me/me01/symbol.png",
         "serieId": "me",
         "official": 132,
         "total": 188
@@ -3801,7 +3801,7 @@ object EmbeddedCatalogData {
         "name": "Flammes Fantasmagoriques",
         "releaseDate": "2025-11-14",
         "logo": "https://assets.tcgdex.net/fr/me/me02/logo",
-        "symbol": "https://assets.tcgdex.net/fr/me/me02/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/me/me02/symbol.png",
         "serieId": "me",
         "official": 94,
         "total": 130
@@ -3811,7 +3811,7 @@ object EmbeddedCatalogData {
         "name": "HeartGold SoulSilver",
         "releaseDate": "2010-02-10",
         "logo": "https://assets.tcgdex.net/fr/hgss/hgss1/logo",
-        "symbol": "https://assets.tcgdex.net/fr/hgss/hgss1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/hgss/hgss1/symbol.png",
         "serieId": "hgss",
         "official": 123,
         "total": 124
@@ -3821,7 +3821,7 @@ object EmbeddedCatalogData {
         "name": "Déchaînement",
         "releaseDate": "2010-05-12",
         "logo": "https://assets.tcgdex.net/fr/hgss/hgss2/logo",
-        "symbol": "https://assets.tcgdex.net/fr/hgss/hgss2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/hgss/hgss2/symbol.png",
         "serieId": "hgss",
         "official": 95,
         "total": 96
@@ -3831,7 +3831,7 @@ object EmbeddedCatalogData {
         "name": "Triomphant",
         "releaseDate": "2010-11-03",
         "logo": "https://assets.tcgdex.net/fr/hgss/hgss4/logo",
-        "symbol": "https://assets.tcgdex.net/fr/hgss/hgss4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/hgss/hgss4/symbol.png",
         "serieId": "hgss",
         "official": 102,
         "total": 103
@@ -3841,7 +3841,7 @@ object EmbeddedCatalogData {
         "name": "Promo HGSS",
         "releaseDate": "2010-02-11",
         "logo": "https://assets.tcgdex.net/fr/hgss/hgssp/logo",
-        "symbol": "https://assets.tcgdex.net/fr/hgss/hgssp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/hgss/hgssp/symbol.png",
         "serieId": "hgss",
         "official": 25,
         "total": 25
@@ -3851,7 +3851,7 @@ object EmbeddedCatalogData {
         "name": "Indomptable",
         "releaseDate": "2010-08-18",
         "logo": "https://assets.tcgdex.net/fr/hgss/hgss3/logo",
-        "symbol": "https://assets.tcgdex.net/fr/hgss/hgss3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/hgss/hgss3/symbol.png",
         "serieId": "hgss",
         "official": 90,
         "total": 91
@@ -3861,7 +3861,7 @@ object EmbeddedCatalogData {
         "name": "Skyridge",
         "releaseDate": "2003-05-12",
         "logo": "https://assets.tcgdex.net/fr/ecard/ecard3/logo",
-        "symbol": "https://assets.tcgdex.net/fr/ecard/ecard3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ecard/ecard3/symbol.png",
         "serieId": "ecard",
         "official": 144,
         "total": 182
@@ -3871,7 +3871,7 @@ object EmbeddedCatalogData {
         "name": "Aquapolis",
         "releaseDate": "2003-01-15",
         "logo": "https://assets.tcgdex.net/fr/ecard/ecard2/logo",
-        "symbol": "https://assets.tcgdex.net/fr/ecard/ecard2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ecard/ecard2/symbol.png",
         "serieId": "ecard",
         "official": 147,
         "total": 186
@@ -3881,7 +3881,7 @@ object EmbeddedCatalogData {
         "name": "Sample",
         "releaseDate": "2002-08-01",
         "logo": "https://assets.tcgdex.net/fr/ecard/sp/logo",
-        "symbol": "https://assets.tcgdex.net/fr/ecard/sp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ecard/sp/symbol.png",
         "serieId": "ecard",
         "official": 10,
         "total": 10
@@ -3891,7 +3891,7 @@ object EmbeddedCatalogData {
         "name": "Best of game",
         "releaseDate": "2002-12-01",
         "logo": "https://assets.tcgdex.net/fr/ecard/bog/logo",
-        "symbol": "https://assets.tcgdex.net/fr/ecard/bog/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ecard/bog/symbol.png",
         "serieId": "ecard",
         "official": 9,
         "total": 9
@@ -3901,7 +3901,7 @@ object EmbeddedCatalogData {
         "name": "Expedition",
         "releaseDate": "2002-09-15",
         "logo": "https://assets.tcgdex.net/fr/ecard/ecard1/logo",
-        "symbol": "https://assets.tcgdex.net/fr/ecard/ecard1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ecard/ecard1/symbol.png",
         "serieId": "ecard",
         "official": 165,
         "total": 165
@@ -3911,7 +3911,7 @@ object EmbeddedCatalogData {
         "name": "Destinées de Paldea",
         "releaseDate": "2024-01-26",
         "logo": "https://assets.tcgdex.net/fr/sv/sv04.5/logo",
-        "symbol": "https://assets.tcgdex.net/fr/sv/sv04.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv04.5/symbol.png",
         "serieId": "sv",
         "official": 91,
         "total": 245
@@ -3921,7 +3921,7 @@ object EmbeddedCatalogData {
         "name": "Fable Nébuleuse",
         "releaseDate": "2024-08-02",
         "logo": "https://assets.tcgdex.net/fr/sv/sv06.5/logo",
-        "symbol": "https://assets.tcgdex.net/fr/sv/sv06.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv06.5/symbol.png",
         "serieId": "sv",
         "official": 64,
         "total": 99
@@ -3931,7 +3931,7 @@ object EmbeddedCatalogData {
         "name": "Évolutions Prismatiques",
         "releaseDate": "2025-01-17",
         "logo": "https://assets.tcgdex.net/fr/sv/sv08.5/logo",
-        "symbol": "https://assets.tcgdex.net/fr/sv/sv08.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv08.5/symbol.png",
         "serieId": "sv",
         "official": 131,
         "total": 180
@@ -3941,7 +3941,7 @@ object EmbeddedCatalogData {
         "name": "Flamme Blanche",
         "releaseDate": "2025-07-17",
         "logo": "https://assets.tcgdex.net/fr/sv/sv10.5w/logo",
-        "symbol": "https://assets.tcgdex.net/fr/sv/sv10.5w/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv10.5w/symbol.png",
         "serieId": "sv",
         "official": 86,
         "total": 173
@@ -3951,7 +3951,7 @@ object EmbeddedCatalogData {
         "name": "Évolutions à Paldea",
         "releaseDate": "2023-06-09",
         "logo": "https://assets.tcgdex.net/fr/sv/sv02/logo",
-        "symbol": "https://assets.tcgdex.net/fr/sv/sv02/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv02/symbol.png",
         "serieId": "sv",
         "official": 193,
         "total": 279
@@ -3961,7 +3961,7 @@ object EmbeddedCatalogData {
         "name": "151",
         "releaseDate": "2023-09-22",
         "logo": "https://assets.tcgdex.net/fr/sv/sv03.5/logo",
-        "symbol": "https://assets.tcgdex.net/fr/sv/sv03.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv03.5/symbol.png",
         "serieId": "sv",
         "official": 165,
         "total": 207
@@ -3971,7 +3971,7 @@ object EmbeddedCatalogData {
         "name": "Rivalités Destinées",
         "releaseDate": "2025-05-30",
         "logo": "https://assets.tcgdex.net/fr/sv/sv10/logo",
-        "symbol": "https://assets.tcgdex.net/fr/sv/sv10/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv10/symbol.png",
         "serieId": "sv",
         "official": 182,
         "total": 244
@@ -3981,7 +3981,7 @@ object EmbeddedCatalogData {
         "name": "Faille Paradoxe",
         "releaseDate": "2023-11-03",
         "logo": "https://assets.tcgdex.net/fr/sv/sv04/logo",
-        "symbol": "https://assets.tcgdex.net/fr/sv/sv04/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv04/symbol.png",
         "serieId": "sv",
         "official": 182,
         "total": 266
@@ -3991,7 +3991,7 @@ object EmbeddedCatalogData {
         "name": "Flammes Obsidiennes",
         "releaseDate": "2023-08-11",
         "logo": "https://assets.tcgdex.net/fr/sv/sv03/logo",
-        "symbol": "https://assets.tcgdex.net/fr/sv/sv03/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv03/symbol.png",
         "serieId": "sv",
         "official": 197,
         "total": 230
@@ -4001,7 +4001,7 @@ object EmbeddedCatalogData {
         "name": "Étincelles Déferlantes",
         "releaseDate": "2024-11-08",
         "logo": "https://assets.tcgdex.net/fr/sv/sv08/logo",
-        "symbol": "https://assets.tcgdex.net/fr/sv/sv08/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv08/symbol.png",
         "serieId": "sv",
         "official": 191,
         "total": 252
@@ -4011,7 +4011,7 @@ object EmbeddedCatalogData {
         "name": "Foudre Noire",
         "releaseDate": "2025-07-17",
         "logo": "https://assets.tcgdex.net/fr/sv/sv10.5b/logo",
-        "symbol": "https://assets.tcgdex.net/fr/sv/sv10.5b/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv10.5b/symbol.png",
         "serieId": "sv",
         "official": 86,
         "total": 172
@@ -4021,7 +4021,7 @@ object EmbeddedCatalogData {
         "name": "Mascarade Crépusculaire",
         "releaseDate": "2024-05-24",
         "logo": "https://assets.tcgdex.net/fr/sv/sv06/logo",
-        "symbol": "https://assets.tcgdex.net/fr/sv/sv06/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv06/symbol.png",
         "serieId": "sv",
         "official": 167,
         "total": 226
@@ -4031,7 +4031,7 @@ object EmbeddedCatalogData {
         "name": "Forces Temporelles",
         "releaseDate": "2024-03-22",
         "logo": "https://assets.tcgdex.net/fr/sv/sv05/logo",
-        "symbol": "https://assets.tcgdex.net/fr/sv/sv05/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv05/symbol.png",
         "serieId": "sv",
         "official": 162,
         "total": 218
@@ -4041,7 +4041,7 @@ object EmbeddedCatalogData {
         "name": "Couronne Stellaire",
         "releaseDate": "2024-09-13",
         "logo": "https://assets.tcgdex.net/fr/sv/sv07/logo",
-        "symbol": "https://assets.tcgdex.net/fr/sv/sv07/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv07/symbol.png",
         "serieId": "sv",
         "official": 142,
         "total": 175
@@ -4051,7 +4051,7 @@ object EmbeddedCatalogData {
         "name": "SVP Black Star Promos",
         "releaseDate": "2023-03-31",
         "logo": "https://assets.tcgdex.net/fr/sv/svp/logo",
-        "symbol": "https://assets.tcgdex.net/fr/sv/svp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/svp/symbol.png",
         "serieId": "sv",
         "official": 0,
         "total": 219
@@ -4061,7 +4061,7 @@ object EmbeddedCatalogData {
         "name": "Écarlate et Violet",
         "releaseDate": "2023-03-31",
         "logo": "https://assets.tcgdex.net/fr/sv/sv01/logo",
-        "symbol": "https://assets.tcgdex.net/fr/sv/sv01/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv01/symbol.png",
         "serieId": "sv",
         "official": 198,
         "total": 258
@@ -4071,7 +4071,7 @@ object EmbeddedCatalogData {
         "name": "Aventures Ensemble",
         "releaseDate": "2025-03-28",
         "logo": "https://assets.tcgdex.net/fr/sv/sv09/logo",
-        "symbol": "https://assets.tcgdex.net/fr/sv/sv09/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv09/symbol.png",
         "serieId": "sv",
         "official": 159,
         "total": 190
@@ -4081,7 +4081,7 @@ object EmbeddedCatalogData {
         "name": "carte alternative A Jaune",
         "releaseDate": "2014-02-05",
         "logo": "https://assets.tcgdex.net/fr/xy/xya/logo",
-        "symbol": "https://assets.tcgdex.net/fr/xy/xya/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xya/symbol.png",
         "serieId": "xy",
         "official": 6,
         "total": 6
@@ -4091,7 +4091,7 @@ object EmbeddedCatalogData {
         "name": "Ciel Rugissant",
         "releaseDate": "2015-05-06",
         "logo": "https://assets.tcgdex.net/fr/xy/xy6/logo",
-        "symbol": "https://assets.tcgdex.net/fr/xy/xy6/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy6/symbol.png",
         "serieId": "xy",
         "official": 108,
         "total": 112
@@ -4101,7 +4101,7 @@ object EmbeddedCatalogData {
         "name": "Origines Antiques",
         "releaseDate": "2015-08-12",
         "logo": "https://assets.tcgdex.net/fr/xy/xy7/logo",
-        "symbol": "https://assets.tcgdex.net/fr/xy/xy7/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy7/symbol.png",
         "serieId": "xy",
         "official": 98,
         "total": 101
@@ -4111,7 +4111,7 @@ object EmbeddedCatalogData {
         "name": "Rupture Turbo",
         "releaseDate": "2016-02-03",
         "logo": "https://assets.tcgdex.net/fr/xy/xy9/logo",
-        "symbol": "https://assets.tcgdex.net/fr/xy/xy9/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy9/symbol.png",
         "serieId": "xy",
         "official": 122,
         "total": 126
@@ -4121,7 +4121,7 @@ object EmbeddedCatalogData {
         "name": "Primo-Choc",
         "releaseDate": "2015-02-04",
         "logo": "https://assets.tcgdex.net/fr/xy/xy5/logo",
-        "symbol": "https://assets.tcgdex.net/fr/xy/xy5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy5/symbol.png",
         "serieId": "xy",
         "official": 160,
         "total": 164
@@ -4131,7 +4131,7 @@ object EmbeddedCatalogData {
         "name": "Promo XY",
         "releaseDate": "2013-10-12",
         "logo": "https://assets.tcgdex.net/fr/xy/xyp/logo",
-        "symbol": "https://assets.tcgdex.net/fr/xy/xyp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xyp/symbol.png",
         "serieId": "xy",
         "official": 211,
         "total": 216
@@ -4141,7 +4141,7 @@ object EmbeddedCatalogData {
         "name": "Bienvenue à Kalos",
         "releaseDate": "2013-11-08",
         "logo": "https://assets.tcgdex.net/fr/xy/xy0/logo",
-        "symbol": "https://assets.tcgdex.net/fr/xy/xy0/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy0/symbol.png",
         "serieId": "xy",
         "official": 39,
         "total": 39
@@ -4151,7 +4151,7 @@ object EmbeddedCatalogData {
         "name": "Étincelles",
         "releaseDate": "2014-05-07",
         "logo": "https://assets.tcgdex.net/fr/xy/xy2/logo",
-        "symbol": "https://assets.tcgdex.net/fr/xy/xy2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy2/symbol.png",
         "serieId": "xy",
         "official": 106,
         "total": 110
@@ -4161,7 +4161,7 @@ object EmbeddedCatalogData {
         "name": "Impulsion Turbo",
         "releaseDate": "2015-11-04",
         "logo": "https://assets.tcgdex.net/fr/xy/xy8/logo",
-        "symbol": "https://assets.tcgdex.net/fr/xy/xy8/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy8/symbol.png",
         "serieId": "xy",
         "official": 162,
         "total": 165
@@ -4171,7 +4171,7 @@ object EmbeddedCatalogData {
         "name": "Évolutions",
         "releaseDate": "2016-11-02",
         "logo": "https://assets.tcgdex.net/fr/xy/xy12/logo",
-        "symbol": "https://assets.tcgdex.net/fr/xy/xy12/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy12/symbol.png",
         "serieId": "xy",
         "official": 108,
         "total": 113
@@ -4181,7 +4181,7 @@ object EmbeddedCatalogData {
         "name": "Double Danger",
         "releaseDate": "2015-03-25",
         "logo": "https://assets.tcgdex.net/fr/xy/dc1/logo",
-        "symbol": "https://assets.tcgdex.net/fr/xy/dc1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/dc1/symbol.png",
         "serieId": "xy",
         "official": 34,
         "total": 34
@@ -4191,7 +4191,7 @@ object EmbeddedCatalogData {
         "name": "Générations",
         "releaseDate": "2016-02-22",
         "logo": "https://assets.tcgdex.net/fr/xy/g1/logo",
-        "symbol": "https://assets.tcgdex.net/fr/xy/g1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/g1/symbol.png",
         "serieId": "xy",
         "official": 83,
         "total": 117
@@ -4201,7 +4201,7 @@ object EmbeddedCatalogData {
         "name": "XY",
         "releaseDate": "2014-02-05",
         "logo": "https://assets.tcgdex.net/fr/xy/xy1/logo",
-        "symbol": "https://assets.tcgdex.net/fr/xy/xy1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy1/symbol.png",
         "serieId": "xy",
         "official": 146,
         "total": 146
@@ -4211,7 +4211,7 @@ object EmbeddedCatalogData {
         "name": "Offensive Vapeur",
         "releaseDate": "2016-08-03",
         "logo": "https://assets.tcgdex.net/fr/xy/xy11/logo",
-        "symbol": "https://assets.tcgdex.net/fr/xy/xy11/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy11/symbol.png",
         "serieId": "xy",
         "official": 114,
         "total": 116
@@ -4221,7 +4221,7 @@ object EmbeddedCatalogData {
         "name": "Impact des Destins",
         "releaseDate": "2016-05-02",
         "logo": "https://assets.tcgdex.net/fr/xy/xy10/logo",
-        "symbol": "https://assets.tcgdex.net/fr/xy/xy10/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy10/symbol.png",
         "serieId": "xy",
         "official": 124,
         "total": 129
@@ -4231,7 +4231,7 @@ object EmbeddedCatalogData {
         "name": "Poings Furieux",
         "releaseDate": "2014-08-13",
         "logo": "https://assets.tcgdex.net/fr/xy/xy3/logo",
-        "symbol": "https://assets.tcgdex.net/fr/xy/xy3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy3/symbol.png",
         "serieId": "xy",
         "official": 111,
         "total": 114
@@ -4241,7 +4241,7 @@ object EmbeddedCatalogData {
         "name": "Vigueur Spectrale",
         "releaseDate": "2014-11-05",
         "logo": "https://assets.tcgdex.net/fr/xy/xy4/logo",
-        "symbol": "https://assets.tcgdex.net/fr/xy/xy4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy4/symbol.png",
         "serieId": "xy",
         "official": 119,
         "total": 124
@@ -4251,7 +4251,7 @@ object EmbeddedCatalogData {
         "name": "HS Kit du dresseur (Léviator)",
         "releaseDate": "2010-05-01",
         "logo": "https://assets.tcgdex.net/fr/tk/tk-hs-g/logo",
-        "symbol": "https://assets.tcgdex.net/fr/tk/tk-hs-g/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-hs-g/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 1
@@ -4261,7 +4261,7 @@ object EmbeddedCatalogData {
         "name": "EX Kit dresseur (Positi)",
         "releaseDate": "2006-03-01",
         "logo": "https://assets.tcgdex.net/fr/tk/tk-ex-p/logo",
-        "symbol": "https://assets.tcgdex.net/fr/tk/tk-ex-p/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-ex-p/symbol.png",
         "serieId": "tk",
         "official": 12,
         "total": 12
@@ -4271,7 +4271,7 @@ object EmbeddedCatalogData {
         "name": "EX Kit dresseur (Négapi)",
         "releaseDate": "2006-03-01",
         "logo": "https://assets.tcgdex.net/fr/tk/tk-ex-m/logo",
-        "symbol": "https://assets.tcgdex.net/fr/tk/tk-ex-m/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-ex-m/symbol.png",
         "serieId": "tk",
         "official": 12,
         "total": 12
@@ -4281,7 +4281,7 @@ object EmbeddedCatalogData {
         "name": "DP Kit dresseur (Lucario)",
         "releaseDate": "2007-09-01",
         "logo": "https://assets.tcgdex.net/fr/tk/tk-dp-l/logo",
-        "symbol": "https://assets.tcgdex.net/fr/tk/tk-dp-l/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-dp-l/symbol.png",
         "serieId": "tk",
         "official": 11,
         "total": 11
@@ -4291,7 +4291,7 @@ object EmbeddedCatalogData {
         "name": "SM Kit du dresseur (Raichu d'Alola)",
         "releaseDate": "2017-04-21",
         "logo": "https://assets.tcgdex.net/fr/tk/tk-sm-r/logo",
-        "symbol": "https://assets.tcgdex.net/fr/tk/tk-sm-r/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-sm-r/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 19
@@ -4301,7 +4301,7 @@ object EmbeddedCatalogData {
         "name": "XY Kit du dresseur (Latias)",
         "releaseDate": "2015-04-29",
         "logo": "https://assets.tcgdex.net/fr/tk/tk-xy-latia/logo",
-        "symbol": "https://assets.tcgdex.net/fr/tk/tk-xy-latia/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-xy-latia/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -4311,7 +4311,7 @@ object EmbeddedCatalogData {
         "name": "HS Kit du dresseur (Raichu)",
         "releaseDate": "2010-05-01",
         "logo": "https://assets.tcgdex.net/fr/tk/tk-hs-r/logo",
-        "symbol": "https://assets.tcgdex.net/fr/tk/tk-hs-r/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-hs-r/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 1
@@ -4321,7 +4321,7 @@ object EmbeddedCatalogData {
         "name": "EX Kit dresseur (Latios)",
         "releaseDate": "2004-07-01",
         "logo": "https://assets.tcgdex.net/fr/tk/tk-ex-latio/logo",
-        "symbol": "https://assets.tcgdex.net/fr/tk/tk-ex-latio/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-ex-latio/symbol.png",
         "serieId": "tk",
         "official": 10,
         "total": 10
@@ -4331,7 +4331,7 @@ object EmbeddedCatalogData {
         "name": "BW Kit du dresseur (Minitaupe)",
         "releaseDate": "2011-09-01",
         "logo": "https://assets.tcgdex.net/fr/tk/tk-bw-e/logo",
-        "symbol": "https://assets.tcgdex.net/fr/tk/tk-bw-e/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-bw-e/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -4341,7 +4341,7 @@ object EmbeddedCatalogData {
         "name": "XY Kit du dresseur (Pikachu Libre)",
         "releaseDate": "2016-04-27",
         "logo": "https://assets.tcgdex.net/fr/tk/tk-xy-p/logo",
-        "symbol": "https://assets.tcgdex.net/fr/tk/tk-xy-p/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-xy-p/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -4351,7 +4351,7 @@ object EmbeddedCatalogData {
         "name": "XY Kit du dresseur (Latios)",
         "releaseDate": "2015-04-29",
         "logo": "https://assets.tcgdex.net/fr/tk/tk-xy-latio/logo",
-        "symbol": "https://assets.tcgdex.net/fr/tk/tk-xy-latio/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-xy-latio/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -4361,7 +4361,7 @@ object EmbeddedCatalogData {
         "name": "SM Kit du dresseur (Lougarox)",
         "releaseDate": "2017-04-21",
         "logo": "https://assets.tcgdex.net/fr/tk/tk-sm-l/logo",
-        "symbol": "https://assets.tcgdex.net/fr/tk/tk-sm-l/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-sm-l/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 18
@@ -4371,7 +4371,7 @@ object EmbeddedCatalogData {
         "name": "EX Kit dresseur (Latias)",
         "releaseDate": "2004-07-01",
         "logo": "https://assets.tcgdex.net/fr/tk/tk-ex-latia/logo",
-        "symbol": "https://assets.tcgdex.net/fr/tk/tk-ex-latia/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-ex-latia/symbol.png",
         "serieId": "tk",
         "official": 10,
         "total": 10
@@ -4381,7 +4381,7 @@ object EmbeddedCatalogData {
         "name": "XY Kit du dresseur (Suicune)",
         "releaseDate": "2016-04-27",
         "logo": "https://assets.tcgdex.net/fr/tk/tk-xy-su/logo",
-        "symbol": "https://assets.tcgdex.net/fr/tk/tk-xy-su/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-xy-su/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -4391,7 +4391,7 @@ object EmbeddedCatalogData {
         "name": "DP Kit dresseur (Manaphy)",
         "releaseDate": "2007-09-01",
         "logo": "https://assets.tcgdex.net/fr/tk/tk-dp-m/logo",
-        "symbol": "https://assets.tcgdex.net/fr/tk/tk-dp-m/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-dp-m/symbol.png",
         "serieId": "tk",
         "official": 12,
         "total": 12
@@ -4401,7 +4401,7 @@ object EmbeddedCatalogData {
         "name": "XY Kit du dresseur (Grodoudou)",
         "releaseDate": "2014-11-01",
         "logo": "https://assets.tcgdex.net/fr/tk/tk-xy-w/logo",
-        "symbol": "https://assets.tcgdex.net/fr/tk/tk-xy-w/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-xy-w/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -4411,7 +4411,7 @@ object EmbeddedCatalogData {
         "name": "BW Kit du dresseur (Zoroark)",
         "releaseDate": "2011-09-01",
         "logo": "https://assets.tcgdex.net/fr/tk/tk-bw-z/logo",
-        "symbol": "https://assets.tcgdex.net/fr/tk/tk-bw-z/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-bw-z/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -4421,7 +4421,7 @@ object EmbeddedCatalogData {
         "name": "XY Kit du dresseur (Bruyverne)",
         "releaseDate": "2014-03-12",
         "logo": "https://assets.tcgdex.net/fr/tk/tk-xy-n/logo",
-        "symbol": "https://assets.tcgdex.net/fr/tk/tk-xy-n/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-xy-n/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -4431,7 +4431,7 @@ object EmbeddedCatalogData {
         "name": "XY Kit du dresseur (Nymphali)",
         "releaseDate": "2014-03-12",
         "logo": "https://assets.tcgdex.net/fr/tk/tk-xy-sy/logo",
-        "symbol": "https://assets.tcgdex.net/fr/tk/tk-xy-sy/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-xy-sy/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -4441,7 +4441,7 @@ object EmbeddedCatalogData {
         "name": "XY Kit du dresseur (Scalproie)",
         "releaseDate": "2014-11-01",
         "logo": "https://assets.tcgdex.net/fr/tk/tk-xy-b/logo",
-        "symbol": "https://assets.tcgdex.net/fr/tk/tk-xy-b/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-xy-b/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -4451,7 +4451,7 @@ object EmbeddedCatalogData {
         "name": "Arceus",
         "releaseDate": "2009-11-04",
         "logo": "https://assets.tcgdex.net/fr/pl/pl4/logo",
-        "symbol": "https://assets.tcgdex.net/fr/pl/pl4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pl/pl4/symbol.png",
         "serieId": "pl",
         "official": 99,
         "total": 111
@@ -4461,7 +4461,7 @@ object EmbeddedCatalogData {
         "name": "Vainqueurs Suprêmes",
         "releaseDate": "2009-08-19",
         "logo": "https://assets.tcgdex.net/fr/pl/pl3/logo",
-        "symbol": "https://assets.tcgdex.net/fr/pl/pl3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pl/pl3/symbol.png",
         "serieId": "pl",
         "official": 147,
         "total": 153
@@ -4471,7 +4471,7 @@ object EmbeddedCatalogData {
         "name": "Rivaux Émergeants",
         "releaseDate": "2009-05-16",
         "logo": "https://assets.tcgdex.net/fr/pl/pl2/logo",
-        "symbol": "https://assets.tcgdex.net/fr/pl/pl2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pl/pl2/symbol.png",
         "serieId": "pl",
         "official": 111,
         "total": 120
@@ -4481,7 +4481,7 @@ object EmbeddedCatalogData {
         "name": "Pokémon Rumble",
         "releaseDate": "2009-12-02",
         "logo": "https://assets.tcgdex.net/fr/pl/ru1/logo",
-        "symbol": "https://assets.tcgdex.net/fr/pl/ru1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pl/ru1/symbol.png",
         "serieId": "pl",
         "official": 16,
         "total": 16
@@ -4491,7 +4491,7 @@ object EmbeddedCatalogData {
         "name": "Platine",
         "releaseDate": "2009-02-11",
         "logo": "https://assets.tcgdex.net/fr/pl/pl1/logo",
-        "symbol": "https://assets.tcgdex.net/fr/pl/pl1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pl/pl1/symbol.png",
         "serieId": "pl",
         "official": 127,
         "total": 133
@@ -4501,7 +4501,7 @@ object EmbeddedCatalogData {
         "name": "Gym Challenge",
         "releaseDate": "2000-10-16",
         "logo": "https://assets.tcgdex.net/fr/gym/gym2/logo",
-        "symbol": "https://assets.tcgdex.net/fr/gym/gym2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/gym/gym2/symbol.png",
         "serieId": "gym",
         "official": 132,
         "total": 132
@@ -4511,7 +4511,7 @@ object EmbeddedCatalogData {
         "name": "Gym Heroes",
         "releaseDate": "2000-08-14",
         "logo": "https://assets.tcgdex.net/fr/gym/gym1/logo",
-        "symbol": "https://assets.tcgdex.net/fr/gym/gym1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/gym/gym1/symbol.png",
         "serieId": "gym",
         "official": 132,
         "total": 132
@@ -4521,7 +4521,7 @@ object EmbeddedCatalogData {
         "name": "Destinées Radieuses",
         "releaseDate": "2021-02-19",
         "logo": "https://assets.tcgdex.net/fr/swsh/swsh4.5/logo",
-        "symbol": "https://assets.tcgdex.net/fr/swsh/swsh4.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh4.5/symbol.png",
         "serieId": "swsh",
         "official": 72,
         "total": 195
@@ -4531,7 +4531,7 @@ object EmbeddedCatalogData {
         "name": "Astres Radieux",
         "releaseDate": "2022-05-27",
         "logo": "https://assets.tcgdex.net/fr/swsh/swsh10/logo",
-        "symbol": "https://assets.tcgdex.net/fr/swsh/swsh10/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh10/symbol.png",
         "serieId": "swsh",
         "official": 189,
         "total": 246
@@ -4541,7 +4541,7 @@ object EmbeddedCatalogData {
         "name": "Poing de Fusion",
         "releaseDate": "2021-11-12",
         "logo": "https://assets.tcgdex.net/fr/swsh/swsh8/logo",
-        "symbol": "https://assets.tcgdex.net/fr/swsh/swsh8/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh8/symbol.png",
         "serieId": "swsh",
         "official": 264,
         "total": 284
@@ -4551,7 +4551,7 @@ object EmbeddedCatalogData {
         "name": "Évolution Céleste",
         "releaseDate": "2021-08-27",
         "logo": "https://assets.tcgdex.net/fr/swsh/swsh7/logo",
-        "symbol": "https://assets.tcgdex.net/fr/swsh/swsh7/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh7/symbol.png",
         "serieId": "swsh",
         "official": 203,
         "total": 237
@@ -4561,7 +4561,7 @@ object EmbeddedCatalogData {
         "name": "Zénith Suprême",
         "releaseDate": "2023-01-20",
         "logo": "https://assets.tcgdex.net/fr/swsh/swsh12.5/logo",
-        "symbol": "https://assets.tcgdex.net/fr/swsh/swsh12.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh12.5/symbol.png",
         "serieId": "swsh",
         "official": 159,
         "total": 230
@@ -4571,7 +4571,7 @@ object EmbeddedCatalogData {
         "name": "La Voie du Maître",
         "releaseDate": "2020-09-25",
         "logo": "https://assets.tcgdex.net/fr/swsh/swsh3.5/logo",
-        "symbol": "https://assets.tcgdex.net/fr/swsh/swsh3.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh3.5/symbol.png",
         "serieId": "swsh",
         "official": 70,
         "total": 80
@@ -4581,7 +4581,7 @@ object EmbeddedCatalogData {
         "name": "Célébrations",
         "releaseDate": "2021-10-08",
         "logo": "https://assets.tcgdex.net/fr/swsh/cel25/logo",
-        "symbol": "https://assets.tcgdex.net/fr/swsh/cel25/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/cel25/symbol.png",
         "serieId": "swsh",
         "official": 25,
         "total": 51
@@ -4591,7 +4591,7 @@ object EmbeddedCatalogData {
         "name": "Styles de combat",
         "releaseDate": "2021-03-19",
         "logo": "https://assets.tcgdex.net/fr/swsh/swsh5/logo",
-        "symbol": "https://assets.tcgdex.net/fr/swsh/swsh5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh5/symbol.png",
         "serieId": "swsh",
         "official": 163,
         "total": 183
@@ -4601,7 +4601,7 @@ object EmbeddedCatalogData {
         "name": "Tempête Argentée",
         "releaseDate": "2022-11-11",
         "logo": "https://assets.tcgdex.net/fr/swsh/swsh12/logo",
-        "symbol": "https://assets.tcgdex.net/fr/swsh/swsh12/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh12/symbol.png",
         "serieId": "swsh",
         "official": 195,
         "total": 245
@@ -4611,7 +4611,7 @@ object EmbeddedCatalogData {
         "name": "Voltage Éclatant",
         "releaseDate": "2020-11-13",
         "logo": "https://assets.tcgdex.net/fr/swsh/swsh4/logo",
-        "symbol": "https://assets.tcgdex.net/fr/swsh/swsh4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh4/symbol.png",
         "serieId": "swsh",
         "official": 185,
         "total": 203
@@ -4621,7 +4621,7 @@ object EmbeddedCatalogData {
         "name": "Règne de Glace",
         "releaseDate": "2021-06-18",
         "logo": "https://assets.tcgdex.net/fr/swsh/swsh6/logo",
-        "symbol": "https://assets.tcgdex.net/fr/swsh/swsh6/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh6/symbol.png",
         "serieId": "swsh",
         "official": 198,
         "total": 233
@@ -4631,7 +4631,7 @@ object EmbeddedCatalogData {
         "name": "Origine Perdue",
         "releaseDate": "2022-09-09",
         "logo": "https://assets.tcgdex.net/fr/swsh/swsh11/logo",
-        "symbol": "https://assets.tcgdex.net/fr/swsh/swsh11/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh11/symbol.png",
         "serieId": "swsh",
         "official": 196,
         "total": 247
@@ -4641,7 +4641,7 @@ object EmbeddedCatalogData {
         "name": "Ténèbres Embrasées",
         "releaseDate": "2020-08-14",
         "logo": "https://assets.tcgdex.net/fr/swsh/swsh3/logo",
-        "symbol": "https://assets.tcgdex.net/fr/swsh/swsh3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh3/symbol.png",
         "serieId": "swsh",
         "official": 189,
         "total": 201
@@ -4651,7 +4651,7 @@ object EmbeddedCatalogData {
         "name": "Clash des Rebelles",
         "releaseDate": "2020-05-01",
         "logo": "https://assets.tcgdex.net/fr/swsh/swsh2/logo",
-        "symbol": "https://assets.tcgdex.net/fr/swsh/swsh2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh2/symbol.png",
         "serieId": "swsh",
         "official": 192,
         "total": 209
@@ -4661,7 +4661,7 @@ object EmbeddedCatalogData {
         "name": "Promo SWSH",
         "releaseDate": "2019-11-15",
         "logo": "https://assets.tcgdex.net/fr/swsh/swshp/logo",
-        "symbol": "https://assets.tcgdex.net/fr/swsh/swshp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swshp/symbol.png",
         "serieId": "swsh",
         "official": 107,
         "total": 287
@@ -4671,7 +4671,7 @@ object EmbeddedCatalogData {
         "name": "Pokémon Futsal 2020",
         "releaseDate": "2020-09-11",
         "logo": "https://assets.tcgdex.net/fr/swsh/fut2020/logo",
-        "symbol": "https://assets.tcgdex.net/fr/swsh/fut2020/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/fut2020/symbol.png",
         "serieId": "swsh",
         "official": 5,
         "total": 5
@@ -4681,7 +4681,7 @@ object EmbeddedCatalogData {
         "name": "Pokémon GO",
         "releaseDate": "2022-07-01",
         "logo": "https://assets.tcgdex.net/fr/swsh/swsh10.5/logo",
-        "symbol": "https://assets.tcgdex.net/fr/swsh/swsh10.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh10.5/symbol.png",
         "serieId": "swsh",
         "official": 78,
         "total": 88
@@ -4691,7 +4691,7 @@ object EmbeddedCatalogData {
         "name": "Stars Étincelantes",
         "releaseDate": "2022-02-25",
         "logo": "https://assets.tcgdex.net/fr/swsh/swsh9/logo",
-        "symbol": "https://assets.tcgdex.net/fr/swsh/swsh9/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh9/symbol.png",
         "serieId": "swsh",
         "official": 172,
         "total": 216
@@ -4701,7 +4701,7 @@ object EmbeddedCatalogData {
         "name": "Épée et Bouclier",
         "releaseDate": "2020-02-07",
         "logo": "https://assets.tcgdex.net/fr/swsh/swsh1/logo",
-        "symbol": "https://assets.tcgdex.net/fr/swsh/swsh1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh1/symbol.png",
         "serieId": "swsh",
         "official": 202,
         "total": 216
@@ -4715,7 +4715,7 @@ object EmbeddedCatalogData {
         "name": "Plasma-Sturm",
         "releaseDate": "2013-02-06",
         "logo": "https://assets.tcgdex.net/de/bw/bw8/logo",
-        "symbol": "https://assets.tcgdex.net/de/bw/bw8/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw8/symbol.png",
         "serieId": "bw",
         "official": 135,
         "total": 138
@@ -4725,7 +4725,7 @@ object EmbeddedCatalogData {
         "name": "Erfoscher der Finsternis",
         "releaseDate": "2012-05-09",
         "logo": "https://assets.tcgdex.net/de/bw/bw5/logo",
-        "symbol": "https://assets.tcgdex.net/de/bw/bw5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw5/symbol.png",
         "serieId": "bw",
         "official": 108,
         "total": 111
@@ -4735,7 +4735,7 @@ object EmbeddedCatalogData {
         "name": "Schwarz & Weiß",
         "releaseDate": "2011-04-25",
         "logo": "https://assets.tcgdex.net/de/bw/bw1/logo",
-        "symbol": "https://assets.tcgdex.net/de/bw/bw1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw1/symbol.png",
         "serieId": "bw",
         "official": 114,
         "total": 115
@@ -4745,7 +4745,7 @@ object EmbeddedCatalogData {
         "name": "Überschrittene Schwellen",
         "releaseDate": "2012-11-07",
         "logo": "https://assets.tcgdex.net/de/bw/bw7/logo",
-        "symbol": "https://assets.tcgdex.net/de/bw/bw7/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw7/symbol.png",
         "serieId": "bw",
         "official": 149,
         "total": 153
@@ -4755,7 +4755,7 @@ object EmbeddedCatalogData {
         "name": "Aufstreben der Mächtigen",
         "releaseDate": "2011-08-31",
         "logo": "https://assets.tcgdex.net/de/bw/bw2/logo",
-        "symbol": "https://assets.tcgdex.net/de/bw/bw2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw2/symbol.png",
         "serieId": "bw",
         "official": 98,
         "total": 98
@@ -4765,7 +4765,7 @@ object EmbeddedCatalogData {
         "name": "Plasma-Frost",
         "releaseDate": "2013-05-08",
         "logo": "https://assets.tcgdex.net/de/bw/bw9/logo",
-        "symbol": "https://assets.tcgdex.net/de/bw/bw9/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw9/symbol.png",
         "serieId": "bw",
         "official": 116,
         "total": 122
@@ -4775,7 +4775,7 @@ object EmbeddedCatalogData {
         "name": "Königliche Siege",
         "releaseDate": "2011-11-16",
         "logo": "https://assets.tcgdex.net/de/bw/bw3/logo",
-        "symbol": "https://assets.tcgdex.net/de/bw/bw3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw3/symbol.png",
         "serieId": "bw",
         "official": 101,
         "total": 102
@@ -4785,7 +4785,7 @@ object EmbeddedCatalogData {
         "name": "Plasma-Blaster",
         "releaseDate": "2013-08-14",
         "logo": "https://assets.tcgdex.net/de/bw/bw10/logo",
-        "symbol": "https://assets.tcgdex.net/de/bw/bw10/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw10/symbol.png",
         "serieId": "bw",
         "official": 101,
         "total": 105
@@ -4795,7 +4795,7 @@ object EmbeddedCatalogData {
         "name": "Radiant Collection",
         "releaseDate": "2013-11-06",
         "logo": "https://assets.tcgdex.net/de/bw/rc/logo",
-        "symbol": "https://assets.tcgdex.net/de/bw/rc/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/rc/symbol.png",
         "serieId": "bw",
         "official": 25,
         "total": 25
@@ -4805,7 +4805,7 @@ object EmbeddedCatalogData {
         "name": "Legendary Treasures",
         "releaseDate": "2013-11-06",
         "logo": "https://assets.tcgdex.net/de/bw/bw11/logo",
-        "symbol": "https://assets.tcgdex.net/de/bw/bw11/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw11/symbol.png",
         "serieId": "bw",
         "official": 113,
         "total": 140
@@ -4815,7 +4815,7 @@ object EmbeddedCatalogData {
         "name": "Hoheit der Drachen",
         "releaseDate": "2012-08-15",
         "logo": "https://assets.tcgdex.net/de/bw/bw6/logo",
-        "symbol": "https://assets.tcgdex.net/de/bw/bw6/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw6/symbol.png",
         "serieId": "bw",
         "official": 124,
         "total": 128
@@ -4825,7 +4825,7 @@ object EmbeddedCatalogData {
         "name": "SW Promokarten",
         "releaseDate": "2011-04-26",
         "logo": "https://assets.tcgdex.net/de/bw/bwp/logo",
-        "symbol": "https://assets.tcgdex.net/de/bw/bwp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bwp/symbol.png",
         "serieId": "bw",
         "official": 101,
         "total": 101
@@ -4835,7 +4835,7 @@ object EmbeddedCatalogData {
         "name": "Kommende Schicksale",
         "releaseDate": "2012-02-08",
         "logo": "https://assets.tcgdex.net/de/bw/bw4/logo",
-        "symbol": "https://assets.tcgdex.net/de/bw/bw4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw4/symbol.png",
         "serieId": "bw",
         "official": 99,
         "total": 103
@@ -4845,7 +4845,7 @@ object EmbeddedCatalogData {
         "name": "Drachengruft",
         "releaseDate": "2012-10-05",
         "logo": "https://assets.tcgdex.net/de/bw/dv1/logo",
-        "symbol": "https://assets.tcgdex.net/de/bw/dv1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/dv1/symbol.png",
         "serieId": "bw",
         "official": 20,
         "total": 21
@@ -4855,7 +4855,7 @@ object EmbeddedCatalogData {
         "name": "Dschungel",
         "releaseDate": "1999-06-16",
         "logo": "https://assets.tcgdex.net/de/base/base2/logo",
-        "symbol": "https://assets.tcgdex.net/de/base/base2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/base/base2/symbol.png",
         "serieId": "base",
         "official": 64,
         "total": 64
@@ -4865,7 +4865,7 @@ object EmbeddedCatalogData {
         "name": "Team Rocket",
         "releaseDate": "2000-04-24",
         "logo": "https://assets.tcgdex.net/de/base/base5/logo",
-        "symbol": "https://assets.tcgdex.net/de/base/base5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/base/base5/symbol.png",
         "serieId": "base",
         "official": 82,
         "total": 83
@@ -4875,7 +4875,7 @@ object EmbeddedCatalogData {
         "name": "Wizards Black Star Promos",
         "releaseDate": "1999-07-01",
         "logo": "https://assets.tcgdex.net/de/base/basep/logo",
-        "symbol": "https://assets.tcgdex.net/de/base/basep/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/base/basep/symbol.png",
         "serieId": "base",
         "official": 53,
         "total": 53
@@ -4885,7 +4885,7 @@ object EmbeddedCatalogData {
         "name": "Fossil",
         "releaseDate": "1999-10-10",
         "logo": "https://assets.tcgdex.net/de/base/base3/logo",
-        "symbol": "https://assets.tcgdex.net/de/base/base3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/base/base3/symbol.png",
         "serieId": "base",
         "official": 62,
         "total": 62
@@ -4895,7 +4895,7 @@ object EmbeddedCatalogData {
         "name": "Base Set 2",
         "releaseDate": "2000-02-24",
         "logo": "https://assets.tcgdex.net/de/base/base4/logo",
-        "symbol": "https://assets.tcgdex.net/de/base/base4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/base/base4/symbol.png",
         "serieId": "base",
         "official": 130,
         "total": 130
@@ -4905,7 +4905,7 @@ object EmbeddedCatalogData {
         "name": "Grundset",
         "releaseDate": "1999-01-09",
         "logo": "https://assets.tcgdex.net/de/base/base1/logo",
-        "symbol": "https://assets.tcgdex.net/de/base/base1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/base/base1/symbol.png",
         "serieId": "base",
         "official": 102,
         "total": 102
@@ -4915,7 +4915,7 @@ object EmbeddedCatalogData {
         "name": "W Promotional",
         "releaseDate": "1999-09-01",
         "logo": "https://assets.tcgdex.net/de/base/wp/logo",
-        "symbol": "https://assets.tcgdex.net/de/base/wp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/base/wp/symbol.png",
         "serieId": "base",
         "official": 7,
         "total": 7
@@ -4925,7 +4925,7 @@ object EmbeddedCatalogData {
         "name": "POP Series 8",
         "releaseDate": "2008-09-01",
         "logo": "https://assets.tcgdex.net/de/pop/pop8/logo",
-        "symbol": "https://assets.tcgdex.net/de/pop/pop8/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop8/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -4935,7 +4935,7 @@ object EmbeddedCatalogData {
         "name": "POP Serie 9",
         "releaseDate": "2009-03-01",
         "logo": "https://assets.tcgdex.net/de/pop/pop9/logo",
-        "symbol": "https://assets.tcgdex.net/de/pop/pop9/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop9/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -4945,7 +4945,7 @@ object EmbeddedCatalogData {
         "name": "POP Serie 2",
         "releaseDate": "2005-08-01",
         "logo": "https://assets.tcgdex.net/de/pop/pop2/logo",
-        "symbol": "https://assets.tcgdex.net/de/pop/pop2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop2/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -4955,7 +4955,7 @@ object EmbeddedCatalogData {
         "name": "POP Series 6",
         "releaseDate": "2007-09-01",
         "logo": "https://assets.tcgdex.net/de/pop/pop6/logo",
-        "symbol": "https://assets.tcgdex.net/de/pop/pop6/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop6/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -4965,7 +4965,7 @@ object EmbeddedCatalogData {
         "name": "POP Serie 7",
         "releaseDate": "2008-03-01",
         "logo": "https://assets.tcgdex.net/de/pop/pop7/logo",
-        "symbol": "https://assets.tcgdex.net/de/pop/pop7/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop7/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -4975,7 +4975,7 @@ object EmbeddedCatalogData {
         "name": "POP Serie 3",
         "releaseDate": "2006-04-01",
         "logo": "https://assets.tcgdex.net/de/pop/pop3/logo",
-        "symbol": "https://assets.tcgdex.net/de/pop/pop3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop3/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -4985,7 +4985,7 @@ object EmbeddedCatalogData {
         "name": "POP Serie 4",
         "releaseDate": "2006-08-01",
         "logo": "https://assets.tcgdex.net/de/pop/pop4/logo",
-        "symbol": "https://assets.tcgdex.net/de/pop/pop4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop4/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -4995,7 +4995,7 @@ object EmbeddedCatalogData {
         "name": "POP Serie 1",
         "releaseDate": "2004-09-01",
         "logo": "https://assets.tcgdex.net/de/pop/pop1/logo",
-        "symbol": "https://assets.tcgdex.net/de/pop/pop1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop1/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -5005,7 +5005,7 @@ object EmbeddedCatalogData {
         "name": "POP Serie 5",
         "releaseDate": "2007-03-01",
         "logo": "https://assets.tcgdex.net/de/pop/pop5/logo",
-        "symbol": "https://assets.tcgdex.net/de/pop/pop5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop5/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -5015,7 +5015,7 @@ object EmbeddedCatalogData {
         "name": "Nintendo Black Star Promos",
         "releaseDate": "2003-10-01",
         "logo": "https://assets.tcgdex.net/de/pop/np/logo",
-        "symbol": "https://assets.tcgdex.net/de/pop/np/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/np/symbol.png",
         "serieId": "pop",
         "official": 40,
         "total": 40
@@ -5025,7 +5025,7 @@ object EmbeddedCatalogData {
         "name": "Ruf der Legenden",
         "releaseDate": "2011-02-09",
         "logo": "https://assets.tcgdex.net/de/col/col1/logo",
-        "symbol": "https://assets.tcgdex.net/de/col/col1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/col/col1/symbol.png",
         "serieId": "col",
         "official": 95,
         "total": 106
@@ -5035,7 +5035,7 @@ object EmbeddedCatalogData {
         "name": "Legendary Collection",
         "releaseDate": "2002-05-24",
         "logo": "https://assets.tcgdex.net/de/lc/lc/logo",
-        "symbol": "https://assets.tcgdex.net/de/lc/lc/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/lc/lc/symbol.png",
         "serieId": "lc",
         "official": 110,
         "total": 110
@@ -5045,7 +5045,7 @@ object EmbeddedCatalogData {
         "name": "McDonald’s Kollektion 2021",
         "releaseDate": "2021-02-09",
         "logo": "https://assets.tcgdex.net/de/mc/2021swsh/logo",
-        "symbol": "https://assets.tcgdex.net/de/mc/2021swsh/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2021swsh/symbol.png",
         "serieId": "mc",
         "official": 25,
         "total": 25
@@ -5055,7 +5055,7 @@ object EmbeddedCatalogData {
         "name": "Macdonald's Collection 2015",
         "releaseDate": "2015-11-27",
         "logo": "https://assets.tcgdex.net/de/mc/2015xy/logo",
-        "symbol": "https://assets.tcgdex.net/de/mc/2015xy/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2015xy/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 12
@@ -5065,7 +5065,7 @@ object EmbeddedCatalogData {
         "name": "Promo McDonald's 2019",
         "releaseDate": "2019-10-30",
         "logo": "https://assets.tcgdex.net/de/mc/2019sm-fr/logo",
-        "symbol": "https://assets.tcgdex.net/de/mc/2019sm-fr/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2019sm-fr/symbol.png",
         "serieId": "mc",
         "official": 40,
         "total": 40
@@ -5075,7 +5075,7 @@ object EmbeddedCatalogData {
         "name": "McDonald’s Kollektion 2011",
         "releaseDate": "2011-06-17",
         "logo": "https://assets.tcgdex.net/de/mc/2011bw/logo",
-        "symbol": "https://assets.tcgdex.net/de/mc/2011bw/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2011bw/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 12
@@ -5085,7 +5085,7 @@ object EmbeddedCatalogData {
         "name": "Promo McDonald's 2018",
         "releaseDate": "2018-06-13",
         "logo": "https://assets.tcgdex.net/de/mc/2018sm-fr/logo",
-        "symbol": "https://assets.tcgdex.net/de/mc/2018sm-fr/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2018sm-fr/symbol.png",
         "serieId": "mc",
         "official": 40,
         "total": 40
@@ -5095,7 +5095,7 @@ object EmbeddedCatalogData {
         "name": "Macdonald's Collection 2014",
         "releaseDate": "2014-05-23",
         "logo": "https://assets.tcgdex.net/de/mc/2014xy/logo",
-        "symbol": "https://assets.tcgdex.net/de/mc/2014xy/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2014xy/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 12
@@ -5105,7 +5105,7 @@ object EmbeddedCatalogData {
         "name": "Promo McDonald's 2013",
         "releaseDate": "2013-11-01",
         "logo": "https://assets.tcgdex.net/de/mc/2013bw/logo",
-        "symbol": "https://assets.tcgdex.net/de/mc/2013bw/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2013bw/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 1
@@ -5115,7 +5115,7 @@ object EmbeddedCatalogData {
         "name": "McDonald’s Kollektion 2019",
         "releaseDate": "2019-10-15",
         "logo": "https://assets.tcgdex.net/de/mc/2019sm/logo",
-        "symbol": "https://assets.tcgdex.net/de/mc/2019sm/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2019sm/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 12
@@ -5125,7 +5125,7 @@ object EmbeddedCatalogData {
         "name": "Macdonald's Collection 2018",
         "releaseDate": "2018-10-19",
         "logo": "https://assets.tcgdex.net/de/mc/2018sm/logo",
-        "symbol": "https://assets.tcgdex.net/de/mc/2018sm/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2018sm/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 12
@@ -5135,7 +5135,7 @@ object EmbeddedCatalogData {
         "name": "McDonald’s Kollektion 2017",
         "releaseDate": "2017-08-03",
         "logo": "https://assets.tcgdex.net/de/mc/2017sm/logo",
-        "symbol": "https://assets.tcgdex.net/de/mc/2017sm/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2017sm/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 12
@@ -5145,7 +5145,7 @@ object EmbeddedCatalogData {
         "name": "Macdonald's Collection 2016",
         "releaseDate": "2016-08-20",
         "logo": "https://assets.tcgdex.net/de/mc/2016xy/logo",
-        "symbol": "https://assets.tcgdex.net/de/mc/2016xy/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2016xy/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 12
@@ -5155,7 +5155,7 @@ object EmbeddedCatalogData {
         "name": "Macdonald's Collection 2012",
         "releaseDate": "2012-06-15",
         "logo": "https://assets.tcgdex.net/de/mc/2012bw/logo",
-        "symbol": "https://assets.tcgdex.net/de/mc/2012bw/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2012bw/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 12
@@ -5165,7 +5165,7 @@ object EmbeddedCatalogData {
         "name": "EX Feuerrot & Blattgrün",
         "releaseDate": "2004-09-01",
         "logo": "https://assets.tcgdex.net/de/ex/ex6/logo",
-        "symbol": "https://assets.tcgdex.net/de/ex/ex6/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex6/symbol.png",
         "serieId": "ex",
         "official": 112,
         "total": 116
@@ -5175,7 +5175,7 @@ object EmbeddedCatalogData {
         "name": "EX Team Magma vs Team Aqua",
         "releaseDate": "2004-03-01",
         "logo": "https://assets.tcgdex.net/de/ex/ex4/logo",
-        "symbol": "https://assets.tcgdex.net/de/ex/ex4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex4/symbol.png",
         "serieId": "ex",
         "official": 95,
         "total": 97
@@ -5185,7 +5185,7 @@ object EmbeddedCatalogData {
         "name": "EX Sandsturm",
         "releaseDate": "2003-09-18",
         "logo": "https://assets.tcgdex.net/de/ex/ex2/logo",
-        "symbol": "https://assets.tcgdex.net/de/ex/ex2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex2/symbol.png",
         "serieId": "ex",
         "official": 100,
         "total": 100
@@ -5195,7 +5195,7 @@ object EmbeddedCatalogData {
         "name": "Team Rocket Returns",
         "releaseDate": "2004-11-01",
         "logo": "https://assets.tcgdex.net/de/ex/ex7/logo",
-        "symbol": "https://assets.tcgdex.net/de/ex/ex7/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex7/symbol.png",
         "serieId": "ex",
         "official": 109,
         "total": 111
@@ -5205,7 +5205,7 @@ object EmbeddedCatalogData {
         "name": "EX Legend Maker",
         "releaseDate": "2006-02-13",
         "logo": "https://assets.tcgdex.net/de/ex/ex12/logo",
-        "symbol": "https://assets.tcgdex.net/de/ex/ex12/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex12/symbol.png",
         "serieId": "ex",
         "official": 92,
         "total": 93
@@ -5215,7 +5215,7 @@ object EmbeddedCatalogData {
         "name": "EX Dragon Frontiers",
         "releaseDate": "2006-11-08",
         "logo": "https://assets.tcgdex.net/de/ex/ex15/logo",
-        "symbol": "https://assets.tcgdex.net/de/ex/ex15/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex15/symbol.png",
         "serieId": "ex",
         "official": 101,
         "total": 101
@@ -5225,7 +5225,7 @@ object EmbeddedCatalogData {
         "name": "EX Power Keepers",
         "releaseDate": "2007-02-17",
         "logo": "https://assets.tcgdex.net/de/ex/ex16/logo",
-        "symbol": "https://assets.tcgdex.net/de/ex/ex16/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex16/symbol.png",
         "serieId": "ex",
         "official": 108,
         "total": 108
@@ -5235,7 +5235,7 @@ object EmbeddedCatalogData {
         "name": "EX Crystal Guardians",
         "releaseDate": "2006-08-30",
         "logo": "https://assets.tcgdex.net/de/ex/ex14/logo",
-        "symbol": "https://assets.tcgdex.net/de/ex/ex14/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex14/symbol.png",
         "serieId": "ex",
         "official": 100,
         "total": 100
@@ -5245,7 +5245,7 @@ object EmbeddedCatalogData {
         "name": "EX Delta Species",
         "releaseDate": "2005-10-31",
         "logo": "https://assets.tcgdex.net/de/ex/ex11/logo",
-        "symbol": "https://assets.tcgdex.net/de/ex/ex11/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex11/symbol.png",
         "serieId": "ex",
         "official": 113,
         "total": 114
@@ -5255,7 +5255,7 @@ object EmbeddedCatalogData {
         "name": "EX Verborgene Mächte",
         "releaseDate": "2005-08-22",
         "logo": "https://assets.tcgdex.net/de/ex/ex10/logo",
-        "symbol": "https://assets.tcgdex.net/de/ex/ex10/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex10/symbol.png",
         "serieId": "ex",
         "official": 115,
         "total": 117
@@ -5265,7 +5265,7 @@ object EmbeddedCatalogData {
         "name": "EX Smaragd",
         "releaseDate": "2005-05-09",
         "logo": "https://assets.tcgdex.net/de/ex/ex9/logo",
-        "symbol": "https://assets.tcgdex.net/de/ex/ex9/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex9/symbol.png",
         "serieId": "ex",
         "official": 106,
         "total": 107
@@ -5275,7 +5275,7 @@ object EmbeddedCatalogData {
         "name": "EX Deoxys",
         "releaseDate": "2005-02-01",
         "logo": "https://assets.tcgdex.net/de/ex/ex8/logo",
-        "symbol": "https://assets.tcgdex.net/de/ex/ex8/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex8/symbol.png",
         "serieId": "ex",
         "official": 107,
         "total": 108
@@ -5285,7 +5285,7 @@ object EmbeddedCatalogData {
         "name": "Poké Card Creator Pack",
         "releaseDate": "2004-07-01",
         "logo": "https://assets.tcgdex.net/de/ex/ex5.5/logo",
-        "symbol": "https://assets.tcgdex.net/de/ex/ex5.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex5.5/symbol.png",
         "serieId": "ex",
         "official": 5,
         "total": 5
@@ -5295,7 +5295,7 @@ object EmbeddedCatalogData {
         "name": "EX Verborgene Mächte Icognito",
         "releaseDate": "2005-08-22",
         "logo": "https://assets.tcgdex.net/de/ex/exu/logo",
-        "symbol": "https://assets.tcgdex.net/de/ex/exu/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/exu/symbol.png",
         "serieId": "ex",
         "official": 28,
         "total": 28
@@ -5305,7 +5305,7 @@ object EmbeddedCatalogData {
         "name": "EX Holon Phantoms",
         "releaseDate": "2006-05-03",
         "logo": "https://assets.tcgdex.net/de/ex/ex13/logo",
-        "symbol": "https://assets.tcgdex.net/de/ex/ex13/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex13/symbol.png",
         "serieId": "ex",
         "official": 110,
         "total": 111
@@ -5315,7 +5315,7 @@ object EmbeddedCatalogData {
         "name": "EX Drache",
         "releaseDate": "2003-11-24",
         "logo": "https://assets.tcgdex.net/de/ex/ex3/logo",
-        "symbol": "https://assets.tcgdex.net/de/ex/ex3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex3/symbol.png",
         "serieId": "ex",
         "official": 97,
         "total": 100
@@ -5325,7 +5325,7 @@ object EmbeddedCatalogData {
         "name": "EX Rubin & Saphir",
         "releaseDate": "2003-07-01",
         "logo": "https://assets.tcgdex.net/de/ex/ex1/logo",
-        "symbol": "https://assets.tcgdex.net/de/ex/ex1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex1/symbol.png",
         "serieId": "ex",
         "official": 109,
         "total": 109
@@ -5335,7 +5335,7 @@ object EmbeddedCatalogData {
         "name": "Hidden Legends",
         "releaseDate": "2004-06-01",
         "logo": "https://assets.tcgdex.net/de/ex/ex5/logo",
-        "symbol": "https://assets.tcgdex.net/de/ex/ex5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex5/symbol.png",
         "serieId": "ex",
         "official": 101,
         "total": 102
@@ -5345,7 +5345,7 @@ object EmbeddedCatalogData {
         "name": "Jumbo cards",
         "releaseDate": "2000-02-01",
         "logo": "https://assets.tcgdex.net/de/misc/jumbo/logo",
-        "symbol": "https://assets.tcgdex.net/de/misc/jumbo/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/misc/jumbo/symbol.png",
         "serieId": "misc",
         "official": 160,
         "total": 160
@@ -5355,7 +5355,7 @@ object EmbeddedCatalogData {
         "name": "Erwachte Legenden",
         "releaseDate": "2008-08-01",
         "logo": "https://assets.tcgdex.net/de/dp/dp6/logo",
-        "symbol": "https://assets.tcgdex.net/de/dp/dp6/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/dp/dp6/symbol.png",
         "serieId": "dp",
         "official": 146,
         "total": 146
@@ -5365,7 +5365,7 @@ object EmbeddedCatalogData {
         "name": "Promo DP",
         "releaseDate": "2007-05-01",
         "logo": "https://assets.tcgdex.net/de/dp/dpp/logo",
-        "symbol": "https://assets.tcgdex.net/de/dp/dpp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/dp/dpp/symbol.png",
         "serieId": "dp",
         "official": 56,
         "total": 56
@@ -5375,7 +5375,7 @@ object EmbeddedCatalogData {
         "name": "Diamant & Perl",
         "releaseDate": "2007-05-01",
         "logo": "https://assets.tcgdex.net/de/dp/dp1/logo",
-        "symbol": "https://assets.tcgdex.net/de/dp/dp1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/dp/dp1/symbol.png",
         "serieId": "dp",
         "official": 130,
         "total": 130
@@ -5385,7 +5385,7 @@ object EmbeddedCatalogData {
         "name": "Geheimnisvolle Schätze",
         "releaseDate": "2007-08-01",
         "logo": "https://assets.tcgdex.net/de/dp/dp2/logo",
-        "symbol": "https://assets.tcgdex.net/de/dp/dp2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/dp/dp2/symbol.png",
         "serieId": "dp",
         "official": 122,
         "total": 124
@@ -5395,7 +5395,7 @@ object EmbeddedCatalogData {
         "name": "Epische Begegnungen",
         "releaseDate": "2008-02-01",
         "logo": "https://assets.tcgdex.net/de/dp/dp4/logo",
-        "symbol": "https://assets.tcgdex.net/de/dp/dp4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/dp/dp4/symbol.png",
         "serieId": "dp",
         "official": 106,
         "total": 106
@@ -5405,7 +5405,7 @@ object EmbeddedCatalogData {
         "name": "Rätselhafte Wunder",
         "releaseDate": "2007-11-01",
         "logo": "https://assets.tcgdex.net/de/dp/dp3/logo",
-        "symbol": "https://assets.tcgdex.net/de/dp/dp3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/dp/dp3/symbol.png",
         "serieId": "dp",
         "official": 132,
         "total": 132
@@ -5415,7 +5415,7 @@ object EmbeddedCatalogData {
         "name": "Sturmtief",
         "releaseDate": "2008-11-01",
         "logo": "https://assets.tcgdex.net/de/dp/dp7/logo",
-        "symbol": "https://assets.tcgdex.net/de/dp/dp7/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/dp/dp7/symbol.png",
         "serieId": "dp",
         "official": 100,
         "total": 106
@@ -5425,7 +5425,7 @@ object EmbeddedCatalogData {
         "name": "Majestätischer Morgen",
         "releaseDate": "2008-05-01",
         "logo": "https://assets.tcgdex.net/de/dp/dp5/logo",
-        "symbol": "https://assets.tcgdex.net/de/dp/dp5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/dp/dp5/symbol.png",
         "serieId": "dp",
         "official": 100,
         "total": 100
@@ -5435,7 +5435,7 @@ object EmbeddedCatalogData {
         "name": "Neo Destiny",
         "releaseDate": "2002-02-28",
         "logo": "https://assets.tcgdex.net/de/neo/neo4/logo",
-        "symbol": "https://assets.tcgdex.net/de/neo/neo4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/neo/neo4/symbol.png",
         "serieId": "neo",
         "official": 105,
         "total": 113
@@ -5445,7 +5445,7 @@ object EmbeddedCatalogData {
         "name": "Neo Genesis",
         "releaseDate": "2000-12-16",
         "logo": "https://assets.tcgdex.net/de/neo/neo1/logo",
-        "symbol": "https://assets.tcgdex.net/de/neo/neo1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/neo/neo1/symbol.png",
         "serieId": "neo",
         "official": 111,
         "total": 111
@@ -5455,7 +5455,7 @@ object EmbeddedCatalogData {
         "name": "Neo Entdeckung",
         "releaseDate": "2001-06-01",
         "logo": "https://assets.tcgdex.net/de/neo/neo2/logo",
-        "symbol": "https://assets.tcgdex.net/de/neo/neo2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/neo/neo2/symbol.png",
         "serieId": "neo",
         "official": 75,
         "total": 75
@@ -5465,7 +5465,7 @@ object EmbeddedCatalogData {
         "name": "Southern Islands",
         "releaseDate": "2001-07-31",
         "logo": "https://assets.tcgdex.net/de/neo/si1/logo",
-        "symbol": "https://assets.tcgdex.net/de/neo/si1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/neo/si1/symbol.png",
         "serieId": "neo",
         "official": 18,
         "total": 18
@@ -5475,7 +5475,7 @@ object EmbeddedCatalogData {
         "name": "Neo Revelation",
         "releaseDate": "2001-09-21",
         "logo": "https://assets.tcgdex.net/de/neo/neo3/logo",
-        "symbol": "https://assets.tcgdex.net/de/neo/neo3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/neo/neo3/symbol.png",
         "serieId": "neo",
         "official": 64,
         "total": 66
@@ -5485,7 +5485,7 @@ object EmbeddedCatalogData {
         "name": "Ultra-Prisma",
         "releaseDate": "2018-02-02",
         "logo": "https://assets.tcgdex.net/de/sm/sm5/logo",
-        "symbol": "https://assets.tcgdex.net/de/sm/sm5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm5/symbol.png",
         "serieId": "sm",
         "official": 156,
         "total": 173
@@ -5495,7 +5495,7 @@ object EmbeddedCatalogData {
         "name": "Kräfte im Einklang",
         "releaseDate": "2019-05-03",
         "logo": "https://assets.tcgdex.net/de/sm/sm10/logo",
-        "symbol": "https://assets.tcgdex.net/de/sm/sm10/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm10/symbol.png",
         "serieId": "sm",
         "official": 214,
         "total": 234
@@ -5505,7 +5505,7 @@ object EmbeddedCatalogData {
         "name": "Welten im Wandel",
         "releaseDate": "2019-11-01",
         "logo": "https://assets.tcgdex.net/de/sm/sm12/logo",
-        "symbol": "https://assets.tcgdex.net/de/sm/sm12/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm12/symbol.png",
         "serieId": "sm",
         "official": 236,
         "total": 271
@@ -5515,7 +5515,7 @@ object EmbeddedCatalogData {
         "name": "Gelbes A-Alternativkarte",
         "releaseDate": "2019-08-23",
         "logo": "https://assets.tcgdex.net/de/sm/sma/logo",
-        "symbol": "https://assets.tcgdex.net/de/sm/sma/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sma/symbol.png",
         "serieId": "sm",
         "official": 94,
         "total": 94
@@ -5525,7 +5525,7 @@ object EmbeddedCatalogData {
         "name": "Bund der Gleichgesinnten",
         "releaseDate": "2019-08-02",
         "logo": "https://assets.tcgdex.net/de/sm/sm11/logo",
-        "symbol": "https://assets.tcgdex.net/de/sm/sm11/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm11/symbol.png",
         "serieId": "sm",
         "official": 236,
         "total": 258
@@ -5535,7 +5535,7 @@ object EmbeddedCatalogData {
         "name": "Meisterdetektiv Pikachu",
         "releaseDate": "2019-03-29",
         "logo": "https://assets.tcgdex.net/de/sm/det1/logo",
-        "symbol": "https://assets.tcgdex.net/de/sm/det1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/det1/symbol.png",
         "serieId": "sm",
         "official": 18,
         "total": 18
@@ -5545,7 +5545,7 @@ object EmbeddedCatalogData {
         "name": "Sonne & Mond",
         "releaseDate": "2017-02-03",
         "logo": "https://assets.tcgdex.net/de/sm/sm1/logo",
-        "symbol": "https://assets.tcgdex.net/de/sm/sm1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm1/symbol.png",
         "serieId": "sm",
         "official": 149,
         "total": 172
@@ -5555,7 +5555,7 @@ object EmbeddedCatalogData {
         "name": "Verborgenes Schicksal",
         "releaseDate": "2019-08-23",
         "logo": "https://assets.tcgdex.net/de/sm/sm115/logo",
-        "symbol": "https://assets.tcgdex.net/de/sm/sm115/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm115/symbol.png",
         "serieId": "sm",
         "official": 68,
         "total": 69
@@ -5565,7 +5565,7 @@ object EmbeddedCatalogData {
         "name": "Grauen Der Lichtfinsternis",
         "releaseDate": "2018-05-04",
         "logo": "https://assets.tcgdex.net/de/sm/sm6/logo",
-        "symbol": "https://assets.tcgdex.net/de/sm/sm6/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm6/symbol.png",
         "serieId": "sm",
         "official": 131,
         "total": 146
@@ -5575,7 +5575,7 @@ object EmbeddedCatalogData {
         "name": "Sturm Am Firmament",
         "releaseDate": "2018-08-03",
         "logo": "https://assets.tcgdex.net/de/sm/sm7/logo",
-        "symbol": "https://assets.tcgdex.net/de/sm/sm7/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm7/symbol.png",
         "serieId": "sm",
         "official": 168,
         "total": 183
@@ -5585,7 +5585,7 @@ object EmbeddedCatalogData {
         "name": "Majestät Der Drachen",
         "releaseDate": "2018-09-07",
         "logo": "https://assets.tcgdex.net/de/sm/sm7.5/logo",
-        "symbol": "https://assets.tcgdex.net/de/sm/sm7.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm7.5/symbol.png",
         "serieId": "sm",
         "official": 70,
         "total": 78
@@ -5595,7 +5595,7 @@ object EmbeddedCatalogData {
         "name": "Schimmernde Legenden",
         "releaseDate": "2017-10-06",
         "logo": "https://assets.tcgdex.net/de/sm/sm3.5/logo",
-        "symbol": "https://assets.tcgdex.net/de/sm/sm3.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm3.5/symbol.png",
         "serieId": "sm",
         "official": 73,
         "total": 78
@@ -5605,7 +5605,7 @@ object EmbeddedCatalogData {
         "name": "Teams Sind Trumpf",
         "releaseDate": "2019-01-31",
         "logo": "https://assets.tcgdex.net/de/sm/sm9/logo",
-        "symbol": "https://assets.tcgdex.net/de/sm/sm9/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm9/symbol.png",
         "serieId": "sm",
         "official": 181,
         "total": 196
@@ -5615,7 +5615,7 @@ object EmbeddedCatalogData {
         "name": "Echo des Donners",
         "releaseDate": "2018-11-02",
         "logo": "https://assets.tcgdex.net/de/sm/sm8/logo",
-        "symbol": "https://assets.tcgdex.net/de/sm/sm8/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm8/symbol.png",
         "serieId": "sm",
         "official": 214,
         "total": 236
@@ -5625,7 +5625,7 @@ object EmbeddedCatalogData {
         "name": "Stunde der Wächter",
         "releaseDate": "2017-05-05",
         "logo": "https://assets.tcgdex.net/de/sm/sm2/logo",
-        "symbol": "https://assets.tcgdex.net/de/sm/sm2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm2/symbol.png",
         "serieId": "sm",
         "official": 145,
         "total": 169
@@ -5635,7 +5635,7 @@ object EmbeddedCatalogData {
         "name": "Aufziehen der Sturmröte",
         "releaseDate": "2017-11-03",
         "logo": "https://assets.tcgdex.net/de/sm/sm4/logo",
-        "symbol": "https://assets.tcgdex.net/de/sm/sm4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm4/symbol.png",
         "serieId": "sm",
         "official": 111,
         "total": 125
@@ -5645,7 +5645,7 @@ object EmbeddedCatalogData {
         "name": "Nacht in Flammen",
         "releaseDate": "2017-08-04",
         "logo": "https://assets.tcgdex.net/de/sm/sm3/logo",
-        "symbol": "https://assets.tcgdex.net/de/sm/sm3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm3/symbol.png",
         "serieId": "sm",
         "official": 147,
         "total": 169
@@ -5655,7 +5655,7 @@ object EmbeddedCatalogData {
         "name": "SM Promokarten",
         "releaseDate": "2017-02-03",
         "logo": "https://assets.tcgdex.net/de/sm/smp/logo",
-        "symbol": "https://assets.tcgdex.net/de/sm/smp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/smp/symbol.png",
         "serieId": "sm",
         "official": 236,
         "total": 244
@@ -5665,7 +5665,7 @@ object EmbeddedCatalogData {
         "name": "MEP Black Star Promos",
         "releaseDate": "2025-09-26",
         "logo": "https://assets.tcgdex.net/de/me/mep/logo",
-        "symbol": "https://assets.tcgdex.net/de/me/mep/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/me/mep/symbol.png",
         "serieId": "me",
         "official": 0,
         "total": 10
@@ -5675,7 +5675,7 @@ object EmbeddedCatalogData {
         "name": "Mega-Entwicklung",
         "releaseDate": "2025-09-26",
         "logo": "https://assets.tcgdex.net/de/me/me01/logo",
-        "symbol": "https://assets.tcgdex.net/de/me/me01/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/me/me01/symbol.png",
         "serieId": "me",
         "official": 132,
         "total": 188
@@ -5685,7 +5685,7 @@ object EmbeddedCatalogData {
         "name": "Fatale Flammen",
         "releaseDate": "2025-11-14",
         "logo": "https://assets.tcgdex.net/de/me/me02/logo",
-        "symbol": "https://assets.tcgdex.net/de/me/me02/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/me/me02/symbol.png",
         "serieId": "me",
         "official": 94,
         "total": 130
@@ -5695,7 +5695,7 @@ object EmbeddedCatalogData {
         "name": "HeartGold SoulSilver",
         "releaseDate": "2010-02-10",
         "logo": "https://assets.tcgdex.net/de/hgss/hgss1/logo",
-        "symbol": "https://assets.tcgdex.net/de/hgss/hgss1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/hgss/hgss1/symbol.png",
         "serieId": "hgss",
         "official": 123,
         "total": 124
@@ -5705,7 +5705,7 @@ object EmbeddedCatalogData {
         "name": "Entfesselt",
         "releaseDate": "2010-05-12",
         "logo": "https://assets.tcgdex.net/de/hgss/hgss2/logo",
-        "symbol": "https://assets.tcgdex.net/de/hgss/hgss2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/hgss/hgss2/symbol.png",
         "serieId": "hgss",
         "official": 95,
         "total": 96
@@ -5715,7 +5715,7 @@ object EmbeddedCatalogData {
         "name": "Triumph",
         "releaseDate": "2010-11-03",
         "logo": "https://assets.tcgdex.net/de/hgss/hgss4/logo",
-        "symbol": "https://assets.tcgdex.net/de/hgss/hgss4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/hgss/hgss4/symbol.png",
         "serieId": "hgss",
         "official": 102,
         "total": 103
@@ -5725,7 +5725,7 @@ object EmbeddedCatalogData {
         "name": "Promo HGSS",
         "releaseDate": "2010-02-11",
         "logo": "https://assets.tcgdex.net/de/hgss/hgssp/logo",
-        "symbol": "https://assets.tcgdex.net/de/hgss/hgssp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/hgss/hgssp/symbol.png",
         "serieId": "hgss",
         "official": 25,
         "total": 25
@@ -5735,7 +5735,7 @@ object EmbeddedCatalogData {
         "name": "Unerschrocken",
         "releaseDate": "2010-08-18",
         "logo": "https://assets.tcgdex.net/de/hgss/hgss3/logo",
-        "symbol": "https://assets.tcgdex.net/de/hgss/hgss3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/hgss/hgss3/symbol.png",
         "serieId": "hgss",
         "official": 90,
         "total": 91
@@ -5745,7 +5745,7 @@ object EmbeddedCatalogData {
         "name": "Skyridge",
         "releaseDate": "2003-05-12",
         "logo": "https://assets.tcgdex.net/de/ecard/ecard3/logo",
-        "symbol": "https://assets.tcgdex.net/de/ecard/ecard3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ecard/ecard3/symbol.png",
         "serieId": "ecard",
         "official": 144,
         "total": 182
@@ -5755,7 +5755,7 @@ object EmbeddedCatalogData {
         "name": "Aquapolis",
         "releaseDate": "2003-01-15",
         "logo": "https://assets.tcgdex.net/de/ecard/ecard2/logo",
-        "symbol": "https://assets.tcgdex.net/de/ecard/ecard2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ecard/ecard2/symbol.png",
         "serieId": "ecard",
         "official": 147,
         "total": 186
@@ -5765,7 +5765,7 @@ object EmbeddedCatalogData {
         "name": "Sample",
         "releaseDate": "2002-08-01",
         "logo": "https://assets.tcgdex.net/de/ecard/sp/logo",
-        "symbol": "https://assets.tcgdex.net/de/ecard/sp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ecard/sp/symbol.png",
         "serieId": "ecard",
         "official": 10,
         "total": 10
@@ -5775,7 +5775,7 @@ object EmbeddedCatalogData {
         "name": "Best of game",
         "releaseDate": "2002-12-01",
         "logo": "https://assets.tcgdex.net/de/ecard/bog/logo",
-        "symbol": "https://assets.tcgdex.net/de/ecard/bog/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ecard/bog/symbol.png",
         "serieId": "ecard",
         "official": 9,
         "total": 9
@@ -5785,7 +5785,7 @@ object EmbeddedCatalogData {
         "name": "Expedition",
         "releaseDate": "2002-09-15",
         "logo": "https://assets.tcgdex.net/de/ecard/ecard1/logo",
-        "symbol": "https://assets.tcgdex.net/de/ecard/ecard1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ecard/ecard1/symbol.png",
         "serieId": "ecard",
         "official": 165,
         "total": 165
@@ -5795,7 +5795,7 @@ object EmbeddedCatalogData {
         "name": "Paldeas Schicksale",
         "releaseDate": "2024-01-26",
         "logo": "https://assets.tcgdex.net/de/sv/sv04.5/logo",
-        "symbol": "https://assets.tcgdex.net/de/sv/sv04.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv04.5/symbol.png",
         "serieId": "sv",
         "official": 91,
         "total": 245
@@ -5805,7 +5805,7 @@ object EmbeddedCatalogData {
         "name": "Nebel der Sagen",
         "releaseDate": "2024-08-02",
         "logo": "https://assets.tcgdex.net/de/sv/sv06.5/logo",
-        "symbol": "https://assets.tcgdex.net/de/sv/sv06.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv06.5/symbol.png",
         "serieId": "sv",
         "official": 64,
         "total": 99
@@ -5815,7 +5815,7 @@ object EmbeddedCatalogData {
         "name": "Prismatische Entwicklungen",
         "releaseDate": "2025-01-17",
         "logo": "https://assets.tcgdex.net/de/sv/sv08.5/logo",
-        "symbol": "https://assets.tcgdex.net/de/sv/sv08.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv08.5/symbol.png",
         "serieId": "sv",
         "official": 131,
         "total": 180
@@ -5825,7 +5825,7 @@ object EmbeddedCatalogData {
         "name": "Weiße Flammen",
         "releaseDate": "2025-07-17",
         "logo": "https://assets.tcgdex.net/de/sv/sv10.5w/logo",
-        "symbol": "https://assets.tcgdex.net/de/sv/sv10.5w/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv10.5w/symbol.png",
         "serieId": "sv",
         "official": 86,
         "total": 173
@@ -5835,7 +5835,7 @@ object EmbeddedCatalogData {
         "name": "Entwicklungen in Paldea",
         "releaseDate": "2023-06-09",
         "logo": "https://assets.tcgdex.net/de/sv/sv02/logo",
-        "symbol": "https://assets.tcgdex.net/de/sv/sv02/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv02/symbol.png",
         "serieId": "sv",
         "official": 193,
         "total": 279
@@ -5845,7 +5845,7 @@ object EmbeddedCatalogData {
         "name": "151",
         "releaseDate": "2023-09-22",
         "logo": "https://assets.tcgdex.net/de/sv/sv03.5/logo",
-        "symbol": "https://assets.tcgdex.net/de/sv/sv03.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv03.5/symbol.png",
         "serieId": "sv",
         "official": 165,
         "total": 207
@@ -5855,7 +5855,7 @@ object EmbeddedCatalogData {
         "name": "Ewige Rivalen",
         "releaseDate": "2025-05-30",
         "logo": "https://assets.tcgdex.net/de/sv/sv10/logo",
-        "symbol": "https://assets.tcgdex.net/de/sv/sv10/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv10/symbol.png",
         "serieId": "sv",
         "official": 182,
         "total": 244
@@ -5865,7 +5865,7 @@ object EmbeddedCatalogData {
         "name": "Paradoxrift",
         "releaseDate": "2023-11-03",
         "logo": "https://assets.tcgdex.net/de/sv/sv04/logo",
-        "symbol": "https://assets.tcgdex.net/de/sv/sv04/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv04/symbol.png",
         "serieId": "sv",
         "official": 182,
         "total": 266
@@ -5875,7 +5875,7 @@ object EmbeddedCatalogData {
         "name": "Obsidian Flammen",
         "releaseDate": "2023-08-11",
         "logo": "https://assets.tcgdex.net/de/sv/sv03/logo",
-        "symbol": "https://assets.tcgdex.net/de/sv/sv03/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv03/symbol.png",
         "serieId": "sv",
         "official": 197,
         "total": 230
@@ -5885,7 +5885,7 @@ object EmbeddedCatalogData {
         "name": "Stürmische Funken",
         "releaseDate": "2024-11-08",
         "logo": "https://assets.tcgdex.net/de/sv/sv08/logo",
-        "symbol": "https://assets.tcgdex.net/de/sv/sv08/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv08/symbol.png",
         "serieId": "sv",
         "official": 191,
         "total": 252
@@ -5895,7 +5895,7 @@ object EmbeddedCatalogData {
         "name": "Schwarze Blitze",
         "releaseDate": "2025-07-17",
         "logo": "https://assets.tcgdex.net/de/sv/sv10.5b/logo",
-        "symbol": "https://assets.tcgdex.net/de/sv/sv10.5b/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv10.5b/symbol.png",
         "serieId": "sv",
         "official": 86,
         "total": 172
@@ -5905,7 +5905,7 @@ object EmbeddedCatalogData {
         "name": "Maskerade im Zwielicht",
         "releaseDate": "2024-05-24",
         "logo": "https://assets.tcgdex.net/de/sv/sv06/logo",
-        "symbol": "https://assets.tcgdex.net/de/sv/sv06/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv06/symbol.png",
         "serieId": "sv",
         "official": 167,
         "total": 226
@@ -5915,7 +5915,7 @@ object EmbeddedCatalogData {
         "name": "Gewalten der Zeit",
         "releaseDate": "2024-03-22",
         "logo": "https://assets.tcgdex.net/de/sv/sv05/logo",
-        "symbol": "https://assets.tcgdex.net/de/sv/sv05/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv05/symbol.png",
         "serieId": "sv",
         "official": 162,
         "total": 218
@@ -5925,7 +5925,7 @@ object EmbeddedCatalogData {
         "name": "Stellarkrone",
         "releaseDate": "2024-09-13",
         "logo": "https://assets.tcgdex.net/de/sv/sv07/logo",
-        "symbol": "https://assets.tcgdex.net/de/sv/sv07/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv07/symbol.png",
         "serieId": "sv",
         "official": 142,
         "total": 175
@@ -5935,7 +5935,7 @@ object EmbeddedCatalogData {
         "name": "SVP Black Star Promos",
         "releaseDate": "2023-03-31",
         "logo": "https://assets.tcgdex.net/de/sv/svp/logo",
-        "symbol": "https://assets.tcgdex.net/de/sv/svp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/svp/symbol.png",
         "serieId": "sv",
         "official": 0,
         "total": 219
@@ -5945,7 +5945,7 @@ object EmbeddedCatalogData {
         "name": "Karmesin & Purpur",
         "releaseDate": "2023-03-31",
         "logo": "https://assets.tcgdex.net/de/sv/sv01/logo",
-        "symbol": "https://assets.tcgdex.net/de/sv/sv01/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv01/symbol.png",
         "serieId": "sv",
         "official": 198,
         "total": 258
@@ -5955,7 +5955,7 @@ object EmbeddedCatalogData {
         "name": "Reisegefährten",
         "releaseDate": "2025-03-28",
         "logo": "https://assets.tcgdex.net/de/sv/sv09/logo",
-        "symbol": "https://assets.tcgdex.net/de/sv/sv09/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv09/symbol.png",
         "serieId": "sv",
         "official": 159,
         "total": 190
@@ -5965,7 +5965,7 @@ object EmbeddedCatalogData {
         "name": "Gelbes-A-Alternativkarten",
         "releaseDate": "2014-02-05",
         "logo": "https://assets.tcgdex.net/de/xy/xya/logo",
-        "symbol": "https://assets.tcgdex.net/de/xy/xya/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xya/symbol.png",
         "serieId": "xy",
         "official": 6,
         "total": 6
@@ -5975,7 +5975,7 @@ object EmbeddedCatalogData {
         "name": "Drachenleuchten",
         "releaseDate": "2015-05-06",
         "logo": "https://assets.tcgdex.net/de/xy/xy6/logo",
-        "symbol": "https://assets.tcgdex.net/de/xy/xy6/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy6/symbol.png",
         "serieId": "xy",
         "official": 108,
         "total": 112
@@ -5985,7 +5985,7 @@ object EmbeddedCatalogData {
         "name": "Ewiger Anfang",
         "releaseDate": "2015-08-12",
         "logo": "https://assets.tcgdex.net/de/xy/xy7/logo",
-        "symbol": "https://assets.tcgdex.net/de/xy/xy7/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy7/symbol.png",
         "serieId": "xy",
         "official": 98,
         "total": 101
@@ -5995,7 +5995,7 @@ object EmbeddedCatalogData {
         "name": "TURBOfieber",
         "releaseDate": "2016-02-03",
         "logo": "https://assets.tcgdex.net/de/xy/xy9/logo",
-        "symbol": "https://assets.tcgdex.net/de/xy/xy9/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy9/symbol.png",
         "serieId": "xy",
         "official": 122,
         "total": 126
@@ -6005,7 +6005,7 @@ object EmbeddedCatalogData {
         "name": "Protoshock",
         "releaseDate": "2015-02-04",
         "logo": "https://assets.tcgdex.net/de/xy/xy5/logo",
-        "symbol": "https://assets.tcgdex.net/de/xy/xy5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy5/symbol.png",
         "serieId": "xy",
         "official": 160,
         "total": 164
@@ -6015,7 +6015,7 @@ object EmbeddedCatalogData {
         "name": "XY Promokarten",
         "releaseDate": "2013-10-12",
         "logo": "https://assets.tcgdex.net/de/xy/xyp/logo",
-        "symbol": "https://assets.tcgdex.net/de/xy/xyp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xyp/symbol.png",
         "serieId": "xy",
         "official": 211,
         "total": 216
@@ -6025,7 +6025,7 @@ object EmbeddedCatalogData {
         "name": "Willkommen in Kalos",
         "releaseDate": "2013-11-08",
         "logo": "https://assets.tcgdex.net/de/xy/xy0/logo",
-        "symbol": "https://assets.tcgdex.net/de/xy/xy0/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy0/symbol.png",
         "serieId": "xy",
         "official": 39,
         "total": 39
@@ -6035,7 +6035,7 @@ object EmbeddedCatalogData {
         "name": "Flammenmeer",
         "releaseDate": "2014-05-07",
         "logo": "https://assets.tcgdex.net/de/xy/xy2/logo",
-        "symbol": "https://assets.tcgdex.net/de/xy/xy2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy2/symbol.png",
         "serieId": "xy",
         "official": 106,
         "total": 110
@@ -6045,7 +6045,7 @@ object EmbeddedCatalogData {
         "name": "TURBOstart",
         "releaseDate": "2015-11-04",
         "logo": "https://assets.tcgdex.net/de/xy/xy8/logo",
-        "symbol": "https://assets.tcgdex.net/de/xy/xy8/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy8/symbol.png",
         "serieId": "xy",
         "official": 162,
         "total": 165
@@ -6055,7 +6055,7 @@ object EmbeddedCatalogData {
         "name": "Evolution",
         "releaseDate": "2016-11-02",
         "logo": "https://assets.tcgdex.net/de/xy/xy12/logo",
-        "symbol": "https://assets.tcgdex.net/de/xy/xy12/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy12/symbol.png",
         "serieId": "xy",
         "official": 108,
         "total": 113
@@ -6065,7 +6065,7 @@ object EmbeddedCatalogData {
         "name": "Double Crisis",
         "releaseDate": "2015-03-25",
         "logo": "https://assets.tcgdex.net/de/xy/dc1/logo",
-        "symbol": "https://assets.tcgdex.net/de/xy/dc1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/dc1/symbol.png",
         "serieId": "xy",
         "official": 34,
         "total": 34
@@ -6075,7 +6075,7 @@ object EmbeddedCatalogData {
         "name": "Generationen",
         "releaseDate": "2016-02-22",
         "logo": "https://assets.tcgdex.net/de/xy/g1/logo",
-        "symbol": "https://assets.tcgdex.net/de/xy/g1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/g1/symbol.png",
         "serieId": "xy",
         "official": 83,
         "total": 117
@@ -6085,7 +6085,7 @@ object EmbeddedCatalogData {
         "name": "XY",
         "releaseDate": "2014-02-05",
         "logo": "https://assets.tcgdex.net/de/xy/xy1/logo",
-        "symbol": "https://assets.tcgdex.net/de/xy/xy1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy1/symbol.png",
         "serieId": "xy",
         "official": 146,
         "total": 146
@@ -6095,7 +6095,7 @@ object EmbeddedCatalogData {
         "name": "Dampfkessel",
         "releaseDate": "2016-08-03",
         "logo": "https://assets.tcgdex.net/de/xy/xy11/logo",
-        "symbol": "https://assets.tcgdex.net/de/xy/xy11/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy11/symbol.png",
         "serieId": "xy",
         "official": 114,
         "total": 116
@@ -6105,7 +6105,7 @@ object EmbeddedCatalogData {
         "name": "Schicksalsschmiede",
         "releaseDate": "2016-05-02",
         "logo": "https://assets.tcgdex.net/de/xy/xy10/logo",
-        "symbol": "https://assets.tcgdex.net/de/xy/xy10/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy10/symbol.png",
         "serieId": "xy",
         "official": 124,
         "total": 129
@@ -6115,7 +6115,7 @@ object EmbeddedCatalogData {
         "name": "Fliegende Fäuste",
         "releaseDate": "2014-08-13",
         "logo": "https://assets.tcgdex.net/de/xy/xy3/logo",
-        "symbol": "https://assets.tcgdex.net/de/xy/xy3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy3/symbol.png",
         "serieId": "xy",
         "official": 111,
         "total": 114
@@ -6125,7 +6125,7 @@ object EmbeddedCatalogData {
         "name": "Phantomkräfte",
         "releaseDate": "2014-11-05",
         "logo": "https://assets.tcgdex.net/de/xy/xy4/logo",
-        "symbol": "https://assets.tcgdex.net/de/xy/xy4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy4/symbol.png",
         "serieId": "xy",
         "official": 119,
         "total": 124
@@ -6135,7 +6135,7 @@ object EmbeddedCatalogData {
         "name": "HS trainer Kit (Gyarados)",
         "releaseDate": "2010-05-01",
         "logo": "https://assets.tcgdex.net/de/tk/tk-hs-g/logo",
-        "symbol": "https://assets.tcgdex.net/de/tk/tk-hs-g/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-hs-g/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 1
@@ -6145,7 +6145,7 @@ object EmbeddedCatalogData {
         "name": "EX trainer Kit 2 (Plusle)",
         "releaseDate": "2006-03-01",
         "logo": "https://assets.tcgdex.net/de/tk/tk-ex-p/logo",
-        "symbol": "https://assets.tcgdex.net/de/tk/tk-ex-p/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-ex-p/symbol.png",
         "serieId": "tk",
         "official": 12,
         "total": 12
@@ -6155,7 +6155,7 @@ object EmbeddedCatalogData {
         "name": "EX trainer Kit 2 (Minun)",
         "releaseDate": "2006-03-01",
         "logo": "https://assets.tcgdex.net/de/tk/tk-ex-m/logo",
-        "symbol": "https://assets.tcgdex.net/de/tk/tk-ex-m/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-ex-m/symbol.png",
         "serieId": "tk",
         "official": 12,
         "total": 12
@@ -6165,7 +6165,7 @@ object EmbeddedCatalogData {
         "name": "DP trainer Kit (Lucario)",
         "releaseDate": "2007-09-01",
         "logo": "https://assets.tcgdex.net/de/tk/tk-dp-l/logo",
-        "symbol": "https://assets.tcgdex.net/de/tk/tk-dp-l/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-dp-l/symbol.png",
         "serieId": "tk",
         "official": 11,
         "total": 11
@@ -6175,7 +6175,7 @@ object EmbeddedCatalogData {
         "name": "SM trainer Kit (Alolan Raichu)",
         "releaseDate": "2017-04-21",
         "logo": "https://assets.tcgdex.net/de/tk/tk-sm-r/logo",
-        "symbol": "https://assets.tcgdex.net/de/tk/tk-sm-r/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-sm-r/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 19
@@ -6185,7 +6185,7 @@ object EmbeddedCatalogData {
         "name": "XY trainer Kit (Latias)",
         "releaseDate": "2015-04-29",
         "logo": "https://assets.tcgdex.net/de/tk/tk-xy-latia/logo",
-        "symbol": "https://assets.tcgdex.net/de/tk/tk-xy-latia/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-xy-latia/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -6195,7 +6195,7 @@ object EmbeddedCatalogData {
         "name": "HS trainer Kit (Raichu)",
         "releaseDate": "2010-05-01",
         "logo": "https://assets.tcgdex.net/de/tk/tk-hs-r/logo",
-        "symbol": "https://assets.tcgdex.net/de/tk/tk-hs-r/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-hs-r/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 1
@@ -6205,7 +6205,7 @@ object EmbeddedCatalogData {
         "name": "EX trainer Kit (Latios)",
         "releaseDate": "2004-07-01",
         "logo": "https://assets.tcgdex.net/de/tk/tk-ex-latio/logo",
-        "symbol": "https://assets.tcgdex.net/de/tk/tk-ex-latio/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-ex-latio/symbol.png",
         "serieId": "tk",
         "official": 10,
         "total": 10
@@ -6215,7 +6215,7 @@ object EmbeddedCatalogData {
         "name": "BW trainer Kit (Excadrill)",
         "releaseDate": "2011-09-01",
         "logo": "https://assets.tcgdex.net/de/tk/tk-bw-e/logo",
-        "symbol": "https://assets.tcgdex.net/de/tk/tk-bw-e/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-bw-e/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -6225,7 +6225,7 @@ object EmbeddedCatalogData {
         "name": "XY trainer Kit (Pikachu Libre)",
         "releaseDate": "2016-04-27",
         "logo": "https://assets.tcgdex.net/de/tk/tk-xy-p/logo",
-        "symbol": "https://assets.tcgdex.net/de/tk/tk-xy-p/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-xy-p/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -6235,7 +6235,7 @@ object EmbeddedCatalogData {
         "name": "XY trainer Kit (Latios)",
         "releaseDate": "2015-04-29",
         "logo": "https://assets.tcgdex.net/de/tk/tk-xy-latio/logo",
-        "symbol": "https://assets.tcgdex.net/de/tk/tk-xy-latio/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-xy-latio/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -6245,7 +6245,7 @@ object EmbeddedCatalogData {
         "name": "SM trainer Kit (Lycanroc)",
         "releaseDate": "2017-04-21",
         "logo": "https://assets.tcgdex.net/de/tk/tk-sm-l/logo",
-        "symbol": "https://assets.tcgdex.net/de/tk/tk-sm-l/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-sm-l/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 18
@@ -6255,7 +6255,7 @@ object EmbeddedCatalogData {
         "name": "EX trainer Kit (Latias)",
         "releaseDate": "2004-07-01",
         "logo": "https://assets.tcgdex.net/de/tk/tk-ex-latia/logo",
-        "symbol": "https://assets.tcgdex.net/de/tk/tk-ex-latia/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-ex-latia/symbol.png",
         "serieId": "tk",
         "official": 10,
         "total": 10
@@ -6265,7 +6265,7 @@ object EmbeddedCatalogData {
         "name": "XY trainer Kit (Suicune)",
         "releaseDate": "2016-04-27",
         "logo": "https://assets.tcgdex.net/de/tk/tk-xy-su/logo",
-        "symbol": "https://assets.tcgdex.net/de/tk/tk-xy-su/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-xy-su/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -6275,7 +6275,7 @@ object EmbeddedCatalogData {
         "name": "DP trainer Kit (Manaphy)",
         "releaseDate": "2007-09-01",
         "logo": "https://assets.tcgdex.net/de/tk/tk-dp-m/logo",
-        "symbol": "https://assets.tcgdex.net/de/tk/tk-dp-m/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-dp-m/symbol.png",
         "serieId": "tk",
         "official": 12,
         "total": 12
@@ -6285,7 +6285,7 @@ object EmbeddedCatalogData {
         "name": "XY trainer Kit (Wigglytuff)",
         "releaseDate": "2014-11-01",
         "logo": "https://assets.tcgdex.net/de/tk/tk-xy-w/logo",
-        "symbol": "https://assets.tcgdex.net/de/tk/tk-xy-w/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-xy-w/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -6295,7 +6295,7 @@ object EmbeddedCatalogData {
         "name": "BW trainer Kit (Zoroark)",
         "releaseDate": "2011-09-01",
         "logo": "https://assets.tcgdex.net/de/tk/tk-bw-z/logo",
-        "symbol": "https://assets.tcgdex.net/de/tk/tk-bw-z/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-bw-z/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -6305,7 +6305,7 @@ object EmbeddedCatalogData {
         "name": "XY trainer Kit (Noivern)",
         "releaseDate": "2014-03-12",
         "logo": "https://assets.tcgdex.net/de/tk/tk-xy-n/logo",
-        "symbol": "https://assets.tcgdex.net/de/tk/tk-xy-n/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-xy-n/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -6315,7 +6315,7 @@ object EmbeddedCatalogData {
         "name": "XY trainer Kit (Sylveon)",
         "releaseDate": "2014-03-12",
         "logo": "https://assets.tcgdex.net/de/tk/tk-xy-sy/logo",
-        "symbol": "https://assets.tcgdex.net/de/tk/tk-xy-sy/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-xy-sy/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -6325,7 +6325,7 @@ object EmbeddedCatalogData {
         "name": "XY trainer Kit (Bisharp)",
         "releaseDate": "2014-11-01",
         "logo": "https://assets.tcgdex.net/de/tk/tk-xy-b/logo",
-        "symbol": "https://assets.tcgdex.net/de/tk/tk-xy-b/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-xy-b/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -6335,7 +6335,7 @@ object EmbeddedCatalogData {
         "name": "Arceus",
         "releaseDate": "2009-11-04",
         "logo": "https://assets.tcgdex.net/de/pl/pl4/logo",
-        "symbol": "https://assets.tcgdex.net/de/pl/pl4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pl/pl4/symbol.png",
         "serieId": "pl",
         "official": 99,
         "total": 111
@@ -6345,7 +6345,7 @@ object EmbeddedCatalogData {
         "name": "Ultimative Sieger",
         "releaseDate": "2009-08-19",
         "logo": "https://assets.tcgdex.net/de/pl/pl3/logo",
-        "symbol": "https://assets.tcgdex.net/de/pl/pl3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pl/pl3/symbol.png",
         "serieId": "pl",
         "official": 147,
         "total": 153
@@ -6355,7 +6355,7 @@ object EmbeddedCatalogData {
         "name": "Aufstieg der Rivalen",
         "releaseDate": "2009-05-16",
         "logo": "https://assets.tcgdex.net/de/pl/pl2/logo",
-        "symbol": "https://assets.tcgdex.net/de/pl/pl2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pl/pl2/symbol.png",
         "serieId": "pl",
         "official": 111,
         "total": 120
@@ -6365,7 +6365,7 @@ object EmbeddedCatalogData {
         "name": "Pokémon Rumble",
         "releaseDate": "2009-12-02",
         "logo": "https://assets.tcgdex.net/de/pl/ru1/logo",
-        "symbol": "https://assets.tcgdex.net/de/pl/ru1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pl/ru1/symbol.png",
         "serieId": "pl",
         "official": 16,
         "total": 16
@@ -6375,7 +6375,7 @@ object EmbeddedCatalogData {
         "name": "Platin",
         "releaseDate": "2009-02-11",
         "logo": "https://assets.tcgdex.net/de/pl/pl1/logo",
-        "symbol": "https://assets.tcgdex.net/de/pl/pl1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pl/pl1/symbol.png",
         "serieId": "pl",
         "official": 127,
         "total": 133
@@ -6385,7 +6385,7 @@ object EmbeddedCatalogData {
         "name": "Gym Challenge",
         "releaseDate": "2000-10-16",
         "logo": "https://assets.tcgdex.net/de/gym/gym2/logo",
-        "symbol": "https://assets.tcgdex.net/de/gym/gym2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/gym/gym2/symbol.png",
         "serieId": "gym",
         "official": 132,
         "total": 132
@@ -6395,7 +6395,7 @@ object EmbeddedCatalogData {
         "name": "Gym Heroes",
         "releaseDate": "2000-08-14",
         "logo": "https://assets.tcgdex.net/de/gym/gym1/logo",
-        "symbol": "https://assets.tcgdex.net/de/gym/gym1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/gym/gym1/symbol.png",
         "serieId": "gym",
         "official": 132,
         "total": 132
@@ -6405,7 +6405,7 @@ object EmbeddedCatalogData {
         "name": "Glänzendes Schicksal",
         "releaseDate": "2021-02-19",
         "logo": "https://assets.tcgdex.net/de/swsh/swsh4.5/logo",
-        "symbol": "https://assets.tcgdex.net/de/swsh/swsh4.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh4.5/symbol.png",
         "serieId": "swsh",
         "official": 72,
         "total": 195
@@ -6415,7 +6415,7 @@ object EmbeddedCatalogData {
         "name": "Astralglanz",
         "releaseDate": "2022-05-27",
         "logo": "https://assets.tcgdex.net/de/swsh/swsh10/logo",
-        "symbol": "https://assets.tcgdex.net/de/swsh/swsh10/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh10/symbol.png",
         "serieId": "swsh",
         "official": 189,
         "total": 246
@@ -6425,7 +6425,7 @@ object EmbeddedCatalogData {
         "name": "Fusions Angriff",
         "releaseDate": "2021-11-12",
         "logo": "https://assets.tcgdex.net/de/swsh/swsh8/logo",
-        "symbol": "https://assets.tcgdex.net/de/swsh/swsh8/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh8/symbol.png",
         "serieId": "swsh",
         "official": 264,
         "total": 284
@@ -6435,7 +6435,7 @@ object EmbeddedCatalogData {
         "name": "Drachenwandel",
         "releaseDate": "2021-08-27",
         "logo": "https://assets.tcgdex.net/de/swsh/swsh7/logo",
-        "symbol": "https://assets.tcgdex.net/de/swsh/swsh7/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh7/symbol.png",
         "serieId": "swsh",
         "official": 203,
         "total": 237
@@ -6445,7 +6445,7 @@ object EmbeddedCatalogData {
         "name": "Zenit der Könige",
         "releaseDate": "2023-01-20",
         "logo": "https://assets.tcgdex.net/de/swsh/swsh12.5/logo",
-        "symbol": "https://assets.tcgdex.net/de/swsh/swsh12.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh12.5/symbol.png",
         "serieId": "swsh",
         "official": 159,
         "total": 230
@@ -6455,7 +6455,7 @@ object EmbeddedCatalogData {
         "name": "Weg des Champs",
         "releaseDate": "2020-09-25",
         "logo": "https://assets.tcgdex.net/de/swsh/swsh3.5/logo",
-        "symbol": "https://assets.tcgdex.net/de/swsh/swsh3.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh3.5/symbol.png",
         "serieId": "swsh",
         "official": 70,
         "total": 80
@@ -6465,7 +6465,7 @@ object EmbeddedCatalogData {
         "name": "Celebrations",
         "releaseDate": "2021-10-08",
         "logo": "https://assets.tcgdex.net/de/swsh/cel25/logo",
-        "symbol": "https://assets.tcgdex.net/de/swsh/cel25/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/cel25/symbol.png",
         "serieId": "swsh",
         "official": 25,
         "total": 51
@@ -6475,7 +6475,7 @@ object EmbeddedCatalogData {
         "name": "Kampfstile",
         "releaseDate": "2021-03-19",
         "logo": "https://assets.tcgdex.net/de/swsh/swsh5/logo",
-        "symbol": "https://assets.tcgdex.net/de/swsh/swsh5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh5/symbol.png",
         "serieId": "swsh",
         "official": 163,
         "total": 183
@@ -6485,7 +6485,7 @@ object EmbeddedCatalogData {
         "name": "Silberne Sturmwinde",
         "releaseDate": "2022-11-11",
         "logo": "https://assets.tcgdex.net/de/swsh/swsh12/logo",
-        "symbol": "https://assets.tcgdex.net/de/swsh/swsh12/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh12/symbol.png",
         "serieId": "swsh",
         "official": 195,
         "total": 245
@@ -6495,7 +6495,7 @@ object EmbeddedCatalogData {
         "name": "Farbenschock",
         "releaseDate": "2020-11-13",
         "logo": "https://assets.tcgdex.net/de/swsh/swsh4/logo",
-        "symbol": "https://assets.tcgdex.net/de/swsh/swsh4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh4/symbol.png",
         "serieId": "swsh",
         "official": 185,
         "total": 203
@@ -6505,7 +6505,7 @@ object EmbeddedCatalogData {
         "name": "Schaurige Herrschaft",
         "releaseDate": "2021-06-18",
         "logo": "https://assets.tcgdex.net/de/swsh/swsh6/logo",
-        "symbol": "https://assets.tcgdex.net/de/swsh/swsh6/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh6/symbol.png",
         "serieId": "swsh",
         "official": 198,
         "total": 233
@@ -6515,7 +6515,7 @@ object EmbeddedCatalogData {
         "name": "Verlorener Ursprung",
         "releaseDate": "2022-09-09",
         "logo": "https://assets.tcgdex.net/de/swsh/swsh11/logo",
-        "symbol": "https://assets.tcgdex.net/de/swsh/swsh11/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh11/symbol.png",
         "serieId": "swsh",
         "official": 196,
         "total": 247
@@ -6525,7 +6525,7 @@ object EmbeddedCatalogData {
         "name": "Flammende Finsternis",
         "releaseDate": "2020-08-14",
         "logo": "https://assets.tcgdex.net/de/swsh/swsh3/logo",
-        "symbol": "https://assets.tcgdex.net/de/swsh/swsh3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh3/symbol.png",
         "serieId": "swsh",
         "official": 189,
         "total": 201
@@ -6535,7 +6535,7 @@ object EmbeddedCatalogData {
         "name": "Clash der Rebellen",
         "releaseDate": "2020-05-01",
         "logo": "https://assets.tcgdex.net/de/swsh/swsh2/logo",
-        "symbol": "https://assets.tcgdex.net/de/swsh/swsh2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh2/symbol.png",
         "serieId": "swsh",
         "official": 192,
         "total": 209
@@ -6545,7 +6545,7 @@ object EmbeddedCatalogData {
         "name": "SCSC Promokarten",
         "releaseDate": "2019-11-15",
         "logo": "https://assets.tcgdex.net/de/swsh/swshp/logo",
-        "symbol": "https://assets.tcgdex.net/de/swsh/swshp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swshp/symbol.png",
         "serieId": "swsh",
         "official": 107,
         "total": 287
@@ -6555,7 +6555,7 @@ object EmbeddedCatalogData {
         "name": "Pokémon Futsal 2020",
         "releaseDate": "2020-09-11",
         "logo": "https://assets.tcgdex.net/de/swsh/fut2020/logo",
-        "symbol": "https://assets.tcgdex.net/de/swsh/fut2020/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/fut2020/symbol.png",
         "serieId": "swsh",
         "official": 5,
         "total": 5
@@ -6565,7 +6565,7 @@ object EmbeddedCatalogData {
         "name": "Pokémon GO",
         "releaseDate": "2022-07-01",
         "logo": "https://assets.tcgdex.net/de/swsh/swsh10.5/logo",
-        "symbol": "https://assets.tcgdex.net/de/swsh/swsh10.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh10.5/symbol.png",
         "serieId": "swsh",
         "official": 78,
         "total": 88
@@ -6575,7 +6575,7 @@ object EmbeddedCatalogData {
         "name": "Strahlende Sterne",
         "releaseDate": "2022-02-25",
         "logo": "https://assets.tcgdex.net/de/swsh/swsh9/logo",
-        "symbol": "https://assets.tcgdex.net/de/swsh/swsh9/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh9/symbol.png",
         "serieId": "swsh",
         "official": 172,
         "total": 216
@@ -6585,7 +6585,7 @@ object EmbeddedCatalogData {
         "name": "Schwert & Schild",
         "releaseDate": "2020-02-07",
         "logo": "https://assets.tcgdex.net/de/swsh/swsh1/logo",
-        "symbol": "https://assets.tcgdex.net/de/swsh/swsh1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh1/symbol.png",
         "serieId": "swsh",
         "official": 202,
         "total": 216
@@ -6599,7 +6599,7 @@ object EmbeddedCatalogData {
         "name": "Tormenta Plasma",
         "releaseDate": "2013-02-06",
         "logo": "https://assets.tcgdex.net/es/bw/bw8/logo",
-        "symbol": "https://assets.tcgdex.net/es/bw/bw8/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw8/symbol.png",
         "serieId": "bw",
         "official": 135,
         "total": 138
@@ -6609,7 +6609,7 @@ object EmbeddedCatalogData {
         "name": "Oscuros Exploradores",
         "releaseDate": "2012-05-09",
         "logo": "https://assets.tcgdex.net/es/bw/bw5/logo",
-        "symbol": "https://assets.tcgdex.net/es/bw/bw5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw5/symbol.png",
         "serieId": "bw",
         "official": 108,
         "total": 111
@@ -6619,7 +6619,7 @@ object EmbeddedCatalogData {
         "name": "Negro y Blanco",
         "releaseDate": "2011-04-25",
         "logo": "https://assets.tcgdex.net/es/bw/bw1/logo",
-        "symbol": "https://assets.tcgdex.net/es/bw/bw1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw1/symbol.png",
         "serieId": "bw",
         "official": 114,
         "total": 115
@@ -6629,7 +6629,7 @@ object EmbeddedCatalogData {
         "name": "Fronteras Cruzadas",
         "releaseDate": "2012-11-07",
         "logo": "https://assets.tcgdex.net/es/bw/bw7/logo",
-        "symbol": "https://assets.tcgdex.net/es/bw/bw7/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw7/symbol.png",
         "serieId": "bw",
         "official": 149,
         "total": 153
@@ -6639,7 +6639,7 @@ object EmbeddedCatalogData {
         "name": "Fuerzas Emergentes",
         "releaseDate": "2011-08-31",
         "logo": "https://assets.tcgdex.net/es/bw/bw2/logo",
-        "symbol": "https://assets.tcgdex.net/es/bw/bw2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw2/symbol.png",
         "serieId": "bw",
         "official": 98,
         "total": 98
@@ -6649,7 +6649,7 @@ object EmbeddedCatalogData {
         "name": "Glaciación Plasma",
         "releaseDate": "2013-05-08",
         "logo": "https://assets.tcgdex.net/es/bw/bw9/logo",
-        "symbol": "https://assets.tcgdex.net/es/bw/bw9/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw9/symbol.png",
         "serieId": "bw",
         "official": 116,
         "total": 122
@@ -6659,7 +6659,7 @@ object EmbeddedCatalogData {
         "name": "Nobles Victorias",
         "releaseDate": "2011-11-16",
         "logo": "https://assets.tcgdex.net/es/bw/bw3/logo",
-        "symbol": "https://assets.tcgdex.net/es/bw/bw3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw3/symbol.png",
         "serieId": "bw",
         "official": 101,
         "total": 102
@@ -6669,7 +6669,7 @@ object EmbeddedCatalogData {
         "name": "Plasma Blast",
         "releaseDate": "2013-08-14",
         "logo": "https://assets.tcgdex.net/es/bw/bw10/logo",
-        "symbol": "https://assets.tcgdex.net/es/bw/bw10/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw10/symbol.png",
         "serieId": "bw",
         "official": 101,
         "total": 105
@@ -6679,7 +6679,7 @@ object EmbeddedCatalogData {
         "name": "Radiant Collection",
         "releaseDate": "2013-11-06",
         "logo": "https://assets.tcgdex.net/es/bw/rc/logo",
-        "symbol": "https://assets.tcgdex.net/es/bw/rc/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/rc/symbol.png",
         "serieId": "bw",
         "official": 25,
         "total": 25
@@ -6689,7 +6689,7 @@ object EmbeddedCatalogData {
         "name": "Legendary Treasures",
         "releaseDate": "2013-11-06",
         "logo": "https://assets.tcgdex.net/es/bw/bw11/logo",
-        "symbol": "https://assets.tcgdex.net/es/bw/bw11/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw11/symbol.png",
         "serieId": "bw",
         "official": 113,
         "total": 140
@@ -6699,7 +6699,7 @@ object EmbeddedCatalogData {
         "name": "Dragones Majestuosos",
         "releaseDate": "2012-08-15",
         "logo": "https://assets.tcgdex.net/es/bw/bw6/logo",
-        "symbol": "https://assets.tcgdex.net/es/bw/bw6/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw6/symbol.png",
         "serieId": "bw",
         "official": 124,
         "total": 128
@@ -6709,7 +6709,7 @@ object EmbeddedCatalogData {
         "name": "NB Promo",
         "releaseDate": "2011-04-26",
         "logo": "https://assets.tcgdex.net/es/bw/bwp/logo",
-        "symbol": "https://assets.tcgdex.net/es/bw/bwp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bwp/symbol.png",
         "serieId": "bw",
         "official": 101,
         "total": 101
@@ -6719,7 +6719,7 @@ object EmbeddedCatalogData {
         "name": "Próximos Destinos",
         "releaseDate": "2012-02-08",
         "logo": "https://assets.tcgdex.net/es/bw/bw4/logo",
-        "symbol": "https://assets.tcgdex.net/es/bw/bw4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw4/symbol.png",
         "serieId": "bw",
         "official": 99,
         "total": 103
@@ -6729,7 +6729,7 @@ object EmbeddedCatalogData {
         "name": "Tesoro de Dragones",
         "releaseDate": "2012-10-05",
         "logo": "https://assets.tcgdex.net/es/bw/dv1/logo",
-        "symbol": "https://assets.tcgdex.net/es/bw/dv1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/dv1/symbol.png",
         "serieId": "bw",
         "official": 20,
         "total": 21
@@ -6739,7 +6739,7 @@ object EmbeddedCatalogData {
         "name": "Jungla",
         "releaseDate": "1999-06-16",
         "logo": "https://assets.tcgdex.net/es/base/base2/logo",
-        "symbol": "https://assets.tcgdex.net/es/base/base2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/base/base2/symbol.png",
         "serieId": "base",
         "official": 64,
         "total": 64
@@ -6749,7 +6749,7 @@ object EmbeddedCatalogData {
         "name": "Team Rocket",
         "releaseDate": "2000-04-24",
         "logo": "https://assets.tcgdex.net/es/base/base5/logo",
-        "symbol": "https://assets.tcgdex.net/es/base/base5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/base/base5/symbol.png",
         "serieId": "base",
         "official": 82,
         "total": 83
@@ -6759,7 +6759,7 @@ object EmbeddedCatalogData {
         "name": "Wizards Black Star Promos",
         "releaseDate": "1999-07-01",
         "logo": "https://assets.tcgdex.net/es/base/basep/logo",
-        "symbol": "https://assets.tcgdex.net/es/base/basep/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/base/basep/symbol.png",
         "serieId": "base",
         "official": 53,
         "total": 53
@@ -6769,7 +6769,7 @@ object EmbeddedCatalogData {
         "name": "Fósil",
         "releaseDate": "1999-10-10",
         "logo": "https://assets.tcgdex.net/es/base/base3/logo",
-        "symbol": "https://assets.tcgdex.net/es/base/base3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/base/base3/symbol.png",
         "serieId": "base",
         "official": 62,
         "total": 62
@@ -6779,7 +6779,7 @@ object EmbeddedCatalogData {
         "name": "Base Set 2",
         "releaseDate": "2000-02-24",
         "logo": "https://assets.tcgdex.net/es/base/base4/logo",
-        "symbol": "https://assets.tcgdex.net/es/base/base4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/base/base4/symbol.png",
         "serieId": "base",
         "official": 130,
         "total": 130
@@ -6789,7 +6789,7 @@ object EmbeddedCatalogData {
         "name": "Edición Básica",
         "releaseDate": "1999-01-09",
         "logo": "https://assets.tcgdex.net/es/base/base1/logo",
-        "symbol": "https://assets.tcgdex.net/es/base/base1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/base/base1/symbol.png",
         "serieId": "base",
         "official": 102,
         "total": 102
@@ -6799,7 +6799,7 @@ object EmbeddedCatalogData {
         "name": "W Promotional",
         "releaseDate": "1999-09-01",
         "logo": "https://assets.tcgdex.net/es/base/wp/logo",
-        "symbol": "https://assets.tcgdex.net/es/base/wp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/base/wp/symbol.png",
         "serieId": "base",
         "official": 7,
         "total": 7
@@ -6809,7 +6809,7 @@ object EmbeddedCatalogData {
         "name": "POP Series 8",
         "releaseDate": "2008-09-01",
         "logo": "https://assets.tcgdex.net/es/pop/pop8/logo",
-        "symbol": "https://assets.tcgdex.net/es/pop/pop8/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop8/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -6819,7 +6819,7 @@ object EmbeddedCatalogData {
         "name": "POP Series 9",
         "releaseDate": "2009-03-01",
         "logo": "https://assets.tcgdex.net/es/pop/pop9/logo",
-        "symbol": "https://assets.tcgdex.net/es/pop/pop9/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop9/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -6829,7 +6829,7 @@ object EmbeddedCatalogData {
         "name": "POP Series 2",
         "releaseDate": "2005-08-01",
         "logo": "https://assets.tcgdex.net/es/pop/pop2/logo",
-        "symbol": "https://assets.tcgdex.net/es/pop/pop2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop2/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -6839,7 +6839,7 @@ object EmbeddedCatalogData {
         "name": "POP Series 6",
         "releaseDate": "2007-09-01",
         "logo": "https://assets.tcgdex.net/es/pop/pop6/logo",
-        "symbol": "https://assets.tcgdex.net/es/pop/pop6/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop6/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -6849,7 +6849,7 @@ object EmbeddedCatalogData {
         "name": "POP Series 7",
         "releaseDate": "2008-03-01",
         "logo": "https://assets.tcgdex.net/es/pop/pop7/logo",
-        "symbol": "https://assets.tcgdex.net/es/pop/pop7/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop7/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -6859,7 +6859,7 @@ object EmbeddedCatalogData {
         "name": "POP Series 3",
         "releaseDate": "2006-04-01",
         "logo": "https://assets.tcgdex.net/es/pop/pop3/logo",
-        "symbol": "https://assets.tcgdex.net/es/pop/pop3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop3/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -6869,7 +6869,7 @@ object EmbeddedCatalogData {
         "name": "POP Series 4",
         "releaseDate": "2006-08-01",
         "logo": "https://assets.tcgdex.net/es/pop/pop4/logo",
-        "symbol": "https://assets.tcgdex.net/es/pop/pop4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop4/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -6879,7 +6879,7 @@ object EmbeddedCatalogData {
         "name": "POP Series 1",
         "releaseDate": "2004-09-01",
         "logo": "https://assets.tcgdex.net/es/pop/pop1/logo",
-        "symbol": "https://assets.tcgdex.net/es/pop/pop1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop1/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -6889,7 +6889,7 @@ object EmbeddedCatalogData {
         "name": "POP Series 5",
         "releaseDate": "2007-03-01",
         "logo": "https://assets.tcgdex.net/es/pop/pop5/logo",
-        "symbol": "https://assets.tcgdex.net/es/pop/pop5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop5/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -6899,7 +6899,7 @@ object EmbeddedCatalogData {
         "name": "Nintendo Black Star Promos",
         "releaseDate": "2003-10-01",
         "logo": "https://assets.tcgdex.net/es/pop/np/logo",
-        "symbol": "https://assets.tcgdex.net/es/pop/np/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/np/symbol.png",
         "serieId": "pop",
         "official": 40,
         "total": 40
@@ -6909,7 +6909,7 @@ object EmbeddedCatalogData {
         "name": "Llamada de las Leyendas",
         "releaseDate": "2011-02-09",
         "logo": "https://assets.tcgdex.net/es/col/col1/logo",
-        "symbol": "https://assets.tcgdex.net/es/col/col1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/col/col1/symbol.png",
         "serieId": "col",
         "official": 95,
         "total": 106
@@ -6919,7 +6919,7 @@ object EmbeddedCatalogData {
         "name": "Legendary Collection",
         "releaseDate": "2002-05-24",
         "logo": "https://assets.tcgdex.net/es/lc/lc/logo",
-        "symbol": "https://assets.tcgdex.net/es/lc/lc/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/lc/lc/symbol.png",
         "serieId": "lc",
         "official": 110,
         "total": 110
@@ -6929,7 +6929,7 @@ object EmbeddedCatalogData {
         "name": "Colección de McDonald's 2021",
         "releaseDate": "2021-02-09",
         "logo": "https://assets.tcgdex.net/es/mc/2021swsh/logo",
-        "symbol": "https://assets.tcgdex.net/es/mc/2021swsh/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2021swsh/symbol.png",
         "serieId": "mc",
         "official": 25,
         "total": 25
@@ -6939,7 +6939,7 @@ object EmbeddedCatalogData {
         "name": "Macdonald's Collection 2015",
         "releaseDate": "2015-11-27",
         "logo": "https://assets.tcgdex.net/es/mc/2015xy/logo",
-        "symbol": "https://assets.tcgdex.net/es/mc/2015xy/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2015xy/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 12
@@ -6949,7 +6949,7 @@ object EmbeddedCatalogData {
         "name": "Promo McDonald's 2019",
         "releaseDate": "2019-10-30",
         "logo": "https://assets.tcgdex.net/es/mc/2019sm-fr/logo",
-        "symbol": "https://assets.tcgdex.net/es/mc/2019sm-fr/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2019sm-fr/symbol.png",
         "serieId": "mc",
         "official": 40,
         "total": 40
@@ -6959,7 +6959,7 @@ object EmbeddedCatalogData {
         "name": "Colección de McDonald's 2011",
         "releaseDate": "2011-06-17",
         "logo": "https://assets.tcgdex.net/es/mc/2011bw/logo",
-        "symbol": "https://assets.tcgdex.net/es/mc/2011bw/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2011bw/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 12
@@ -6969,7 +6969,7 @@ object EmbeddedCatalogData {
         "name": "Promo McDonald's 2018",
         "releaseDate": "2018-06-13",
         "logo": "https://assets.tcgdex.net/es/mc/2018sm-fr/logo",
-        "symbol": "https://assets.tcgdex.net/es/mc/2018sm-fr/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2018sm-fr/symbol.png",
         "serieId": "mc",
         "official": 40,
         "total": 40
@@ -6979,7 +6979,7 @@ object EmbeddedCatalogData {
         "name": "Macdonald's Collection 2014",
         "releaseDate": "2014-05-23",
         "logo": "https://assets.tcgdex.net/es/mc/2014xy/logo",
-        "symbol": "https://assets.tcgdex.net/es/mc/2014xy/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2014xy/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 12
@@ -6989,7 +6989,7 @@ object EmbeddedCatalogData {
         "name": "Promo McDonald's 2013",
         "releaseDate": "2013-11-01",
         "logo": "https://assets.tcgdex.net/es/mc/2013bw/logo",
-        "symbol": "https://assets.tcgdex.net/es/mc/2013bw/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2013bw/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 1
@@ -6999,7 +6999,7 @@ object EmbeddedCatalogData {
         "name": "Macdonald's Collection 2019",
         "releaseDate": "2019-10-15",
         "logo": "https://assets.tcgdex.net/es/mc/2019sm/logo",
-        "symbol": "https://assets.tcgdex.net/es/mc/2019sm/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2019sm/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 12
@@ -7009,7 +7009,7 @@ object EmbeddedCatalogData {
         "name": "Macdonald's Collection 2018",
         "releaseDate": "2018-10-19",
         "logo": "https://assets.tcgdex.net/es/mc/2018sm/logo",
-        "symbol": "https://assets.tcgdex.net/es/mc/2018sm/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2018sm/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 12
@@ -7019,7 +7019,7 @@ object EmbeddedCatalogData {
         "name": "Macdonald's Collection 2017",
         "releaseDate": "2017-08-03",
         "logo": "https://assets.tcgdex.net/es/mc/2017sm/logo",
-        "symbol": "https://assets.tcgdex.net/es/mc/2017sm/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2017sm/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 12
@@ -7029,7 +7029,7 @@ object EmbeddedCatalogData {
         "name": "Macdonald's Collection 2016",
         "releaseDate": "2016-08-20",
         "logo": "https://assets.tcgdex.net/es/mc/2016xy/logo",
-        "symbol": "https://assets.tcgdex.net/es/mc/2016xy/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2016xy/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 12
@@ -7039,7 +7039,7 @@ object EmbeddedCatalogData {
         "name": "Colección de McDonald's 2012",
         "releaseDate": "2012-06-15",
         "logo": "https://assets.tcgdex.net/es/mc/2012bw/logo",
-        "symbol": "https://assets.tcgdex.net/es/mc/2012bw/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2012bw/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 12
@@ -7049,7 +7049,7 @@ object EmbeddedCatalogData {
         "name": "FireRed & LeafGreen",
         "releaseDate": "2004-09-01",
         "logo": "https://assets.tcgdex.net/es/ex/ex6/logo",
-        "symbol": "https://assets.tcgdex.net/es/ex/ex6/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex6/symbol.png",
         "serieId": "ex",
         "official": 112,
         "total": 116
@@ -7059,7 +7059,7 @@ object EmbeddedCatalogData {
         "name": "Team Magma vs Team Aqua",
         "releaseDate": "2004-03-01",
         "logo": "https://assets.tcgdex.net/es/ex/ex4/logo",
-        "symbol": "https://assets.tcgdex.net/es/ex/ex4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex4/symbol.png",
         "serieId": "ex",
         "official": 95,
         "total": 97
@@ -7069,7 +7069,7 @@ object EmbeddedCatalogData {
         "name": "Sandstorm",
         "releaseDate": "2003-09-18",
         "logo": "https://assets.tcgdex.net/es/ex/ex2/logo",
-        "symbol": "https://assets.tcgdex.net/es/ex/ex2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex2/symbol.png",
         "serieId": "ex",
         "official": 100,
         "total": 100
@@ -7079,7 +7079,7 @@ object EmbeddedCatalogData {
         "name": "Team Rocket Returns",
         "releaseDate": "2004-11-01",
         "logo": "https://assets.tcgdex.net/es/ex/ex7/logo",
-        "symbol": "https://assets.tcgdex.net/es/ex/ex7/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex7/symbol.png",
         "serieId": "ex",
         "official": 109,
         "total": 111
@@ -7089,7 +7089,7 @@ object EmbeddedCatalogData {
         "name": "Legend Maker",
         "releaseDate": "2006-02-13",
         "logo": "https://assets.tcgdex.net/es/ex/ex12/logo",
-        "symbol": "https://assets.tcgdex.net/es/ex/ex12/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex12/symbol.png",
         "serieId": "ex",
         "official": 92,
         "total": 93
@@ -7099,7 +7099,7 @@ object EmbeddedCatalogData {
         "name": "Dragon Frontiers",
         "releaseDate": "2006-11-08",
         "logo": "https://assets.tcgdex.net/es/ex/ex15/logo",
-        "symbol": "https://assets.tcgdex.net/es/ex/ex15/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex15/symbol.png",
         "serieId": "ex",
         "official": 101,
         "total": 101
@@ -7109,7 +7109,7 @@ object EmbeddedCatalogData {
         "name": "Power Keepers",
         "releaseDate": "2007-02-17",
         "logo": "https://assets.tcgdex.net/es/ex/ex16/logo",
-        "symbol": "https://assets.tcgdex.net/es/ex/ex16/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex16/symbol.png",
         "serieId": "ex",
         "official": 108,
         "total": 108
@@ -7119,7 +7119,7 @@ object EmbeddedCatalogData {
         "name": "Crystal Guardians",
         "releaseDate": "2006-08-30",
         "logo": "https://assets.tcgdex.net/es/ex/ex14/logo",
-        "symbol": "https://assets.tcgdex.net/es/ex/ex14/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex14/symbol.png",
         "serieId": "ex",
         "official": 100,
         "total": 100
@@ -7129,7 +7129,7 @@ object EmbeddedCatalogData {
         "name": "Delta Species",
         "releaseDate": "2005-10-31",
         "logo": "https://assets.tcgdex.net/es/ex/ex11/logo",
-        "symbol": "https://assets.tcgdex.net/es/ex/ex11/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex11/symbol.png",
         "serieId": "ex",
         "official": 113,
         "total": 114
@@ -7139,7 +7139,7 @@ object EmbeddedCatalogData {
         "name": "EX Fuerzas Ocultas",
         "releaseDate": "2005-08-22",
         "logo": "https://assets.tcgdex.net/es/ex/ex10/logo",
-        "symbol": "https://assets.tcgdex.net/es/ex/ex10/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex10/symbol.png",
         "serieId": "ex",
         "official": 115,
         "total": 117
@@ -7149,7 +7149,7 @@ object EmbeddedCatalogData {
         "name": "Emerald",
         "releaseDate": "2005-05-09",
         "logo": "https://assets.tcgdex.net/es/ex/ex9/logo",
-        "symbol": "https://assets.tcgdex.net/es/ex/ex9/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex9/symbol.png",
         "serieId": "ex",
         "official": 106,
         "total": 107
@@ -7159,7 +7159,7 @@ object EmbeddedCatalogData {
         "name": "Deoxys",
         "releaseDate": "2005-02-01",
         "logo": "https://assets.tcgdex.net/es/ex/ex8/logo",
-        "symbol": "https://assets.tcgdex.net/es/ex/ex8/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex8/symbol.png",
         "serieId": "ex",
         "official": 107,
         "total": 108
@@ -7169,7 +7169,7 @@ object EmbeddedCatalogData {
         "name": "Poké Card Creator Pack",
         "releaseDate": "2004-07-01",
         "logo": "https://assets.tcgdex.net/es/ex/ex5.5/logo",
-        "symbol": "https://assets.tcgdex.net/es/ex/ex5.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex5.5/symbol.png",
         "serieId": "ex",
         "official": 5,
         "total": 5
@@ -7179,7 +7179,7 @@ object EmbeddedCatalogData {
         "name": "EX Fuerzas Ocultas Unown",
         "releaseDate": "2005-08-22",
         "logo": "https://assets.tcgdex.net/es/ex/exu/logo",
-        "symbol": "https://assets.tcgdex.net/es/ex/exu/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/exu/symbol.png",
         "serieId": "ex",
         "official": 28,
         "total": 28
@@ -7189,7 +7189,7 @@ object EmbeddedCatalogData {
         "name": "Holon Phantoms",
         "releaseDate": "2006-05-03",
         "logo": "https://assets.tcgdex.net/es/ex/ex13/logo",
-        "symbol": "https://assets.tcgdex.net/es/ex/ex13/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex13/symbol.png",
         "serieId": "ex",
         "official": 110,
         "total": 111
@@ -7199,7 +7199,7 @@ object EmbeddedCatalogData {
         "name": "Dragon",
         "releaseDate": "2003-11-24",
         "logo": "https://assets.tcgdex.net/es/ex/ex3/logo",
-        "symbol": "https://assets.tcgdex.net/es/ex/ex3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex3/symbol.png",
         "serieId": "ex",
         "official": 97,
         "total": 100
@@ -7209,7 +7209,7 @@ object EmbeddedCatalogData {
         "name": "Rubí & Zafiro",
         "releaseDate": "2003-07-01",
         "logo": "https://assets.tcgdex.net/es/ex/ex1/logo",
-        "symbol": "https://assets.tcgdex.net/es/ex/ex1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex1/symbol.png",
         "serieId": "ex",
         "official": 109,
         "total": 109
@@ -7219,7 +7219,7 @@ object EmbeddedCatalogData {
         "name": "Hidden Legends",
         "releaseDate": "2004-06-01",
         "logo": "https://assets.tcgdex.net/es/ex/ex5/logo",
-        "symbol": "https://assets.tcgdex.net/es/ex/ex5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex5/symbol.png",
         "serieId": "ex",
         "official": 101,
         "total": 102
@@ -7229,7 +7229,7 @@ object EmbeddedCatalogData {
         "name": "Jumbo cards",
         "releaseDate": "2000-02-01",
         "logo": "https://assets.tcgdex.net/es/misc/jumbo/logo",
-        "symbol": "https://assets.tcgdex.net/es/misc/jumbo/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/misc/jumbo/symbol.png",
         "serieId": "misc",
         "official": 160,
         "total": 160
@@ -7239,7 +7239,7 @@ object EmbeddedCatalogData {
         "name": "Despertar de las Leyendas",
         "releaseDate": "2008-08-01",
         "logo": "https://assets.tcgdex.net/es/dp/dp6/logo",
-        "symbol": "https://assets.tcgdex.net/es/dp/dp6/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/dp/dp6/symbol.png",
         "serieId": "dp",
         "official": 146,
         "total": 146
@@ -7249,7 +7249,7 @@ object EmbeddedCatalogData {
         "name": "DP Black Star Promos",
         "releaseDate": "2007-05-01",
         "logo": "https://assets.tcgdex.net/es/dp/dpp/logo",
-        "symbol": "https://assets.tcgdex.net/es/dp/dpp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/dp/dpp/symbol.png",
         "serieId": "dp",
         "official": 56,
         "total": 56
@@ -7259,7 +7259,7 @@ object EmbeddedCatalogData {
         "name": "Diamante & Perla",
         "releaseDate": "2007-05-01",
         "logo": "https://assets.tcgdex.net/es/dp/dp1/logo",
-        "symbol": "https://assets.tcgdex.net/es/dp/dp1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/dp/dp1/symbol.png",
         "serieId": "dp",
         "official": 130,
         "total": 130
@@ -7269,7 +7269,7 @@ object EmbeddedCatalogData {
         "name": "Tesoros Misteriosos",
         "releaseDate": "2007-08-01",
         "logo": "https://assets.tcgdex.net/es/dp/dp2/logo",
-        "symbol": "https://assets.tcgdex.net/es/dp/dp2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/dp/dp2/symbol.png",
         "serieId": "dp",
         "official": 122,
         "total": 124
@@ -7279,7 +7279,7 @@ object EmbeddedCatalogData {
         "name": "Grandes Encuentros",
         "releaseDate": "2008-02-01",
         "logo": "https://assets.tcgdex.net/es/dp/dp4/logo",
-        "symbol": "https://assets.tcgdex.net/es/dp/dp4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/dp/dp4/symbol.png",
         "serieId": "dp",
         "official": 106,
         "total": 106
@@ -7289,7 +7289,7 @@ object EmbeddedCatalogData {
         "name": "Maravillas Secretas",
         "releaseDate": "2007-11-01",
         "logo": "https://assets.tcgdex.net/es/dp/dp3/logo",
-        "symbol": "https://assets.tcgdex.net/es/dp/dp3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/dp/dp3/symbol.png",
         "serieId": "dp",
         "official": 132,
         "total": 132
@@ -7299,7 +7299,7 @@ object EmbeddedCatalogData {
         "name": "Frente Tormentoso",
         "releaseDate": "2008-11-01",
         "logo": "https://assets.tcgdex.net/es/dp/dp7/logo",
-        "symbol": "https://assets.tcgdex.net/es/dp/dp7/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/dp/dp7/symbol.png",
         "serieId": "dp",
         "official": 100,
         "total": 106
@@ -7309,7 +7309,7 @@ object EmbeddedCatalogData {
         "name": "Majestic Dawn",
         "releaseDate": "2008-05-01",
         "logo": "https://assets.tcgdex.net/es/dp/dp5/logo",
-        "symbol": "https://assets.tcgdex.net/es/dp/dp5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/dp/dp5/symbol.png",
         "serieId": "dp",
         "official": 100,
         "total": 100
@@ -7319,7 +7319,7 @@ object EmbeddedCatalogData {
         "name": "Neo Destiny",
         "releaseDate": "2002-02-28",
         "logo": "https://assets.tcgdex.net/es/neo/neo4/logo",
-        "symbol": "https://assets.tcgdex.net/es/neo/neo4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/neo/neo4/symbol.png",
         "serieId": "neo",
         "official": 105,
         "total": 113
@@ -7329,7 +7329,7 @@ object EmbeddedCatalogData {
         "name": "Neo Genesis",
         "releaseDate": "2000-12-16",
         "logo": "https://assets.tcgdex.net/es/neo/neo1/logo",
-        "symbol": "https://assets.tcgdex.net/es/neo/neo1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/neo/neo1/symbol.png",
         "serieId": "neo",
         "official": 111,
         "total": 111
@@ -7339,7 +7339,7 @@ object EmbeddedCatalogData {
         "name": "Neo Discovery",
         "releaseDate": "2001-06-01",
         "logo": "https://assets.tcgdex.net/es/neo/neo2/logo",
-        "symbol": "https://assets.tcgdex.net/es/neo/neo2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/neo/neo2/symbol.png",
         "serieId": "neo",
         "official": 75,
         "total": 75
@@ -7349,7 +7349,7 @@ object EmbeddedCatalogData {
         "name": "Southern Islands",
         "releaseDate": "2001-07-31",
         "logo": "https://assets.tcgdex.net/es/neo/si1/logo",
-        "symbol": "https://assets.tcgdex.net/es/neo/si1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/neo/si1/symbol.png",
         "serieId": "neo",
         "official": 18,
         "total": 18
@@ -7359,7 +7359,7 @@ object EmbeddedCatalogData {
         "name": "Neo Revelation",
         "releaseDate": "2001-09-21",
         "logo": "https://assets.tcgdex.net/es/neo/neo3/logo",
-        "symbol": "https://assets.tcgdex.net/es/neo/neo3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/neo/neo3/symbol.png",
         "serieId": "neo",
         "official": 64,
         "total": 66
@@ -7369,7 +7369,7 @@ object EmbeddedCatalogData {
         "name": "Ultraprisma",
         "releaseDate": "2018-02-02",
         "logo": "https://assets.tcgdex.net/es/sm/sm5/logo",
-        "symbol": "https://assets.tcgdex.net/es/sm/sm5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm5/symbol.png",
         "serieId": "sm",
         "official": 156,
         "total": 173
@@ -7379,7 +7379,7 @@ object EmbeddedCatalogData {
         "name": "Vínculos Indestructibles",
         "releaseDate": "2019-05-03",
         "logo": "https://assets.tcgdex.net/es/sm/sm10/logo",
-        "symbol": "https://assets.tcgdex.net/es/sm/sm10/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm10/symbol.png",
         "serieId": "sm",
         "official": 214,
         "total": 234
@@ -7389,7 +7389,7 @@ object EmbeddedCatalogData {
         "name": "Eclipse Cósmico",
         "releaseDate": "2019-11-01",
         "logo": "https://assets.tcgdex.net/es/sm/sm12/logo",
-        "symbol": "https://assets.tcgdex.net/es/sm/sm12/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm12/symbol.png",
         "serieId": "sm",
         "official": 236,
         "total": 271
@@ -7399,7 +7399,7 @@ object EmbeddedCatalogData {
         "name": "Cartas alternativas",
         "releaseDate": "2019-08-23",
         "logo": "https://assets.tcgdex.net/es/sm/sma/logo",
-        "symbol": "https://assets.tcgdex.net/es/sm/sma/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sma/symbol.png",
         "serieId": "sm",
         "official": 94,
         "total": 94
@@ -7409,7 +7409,7 @@ object EmbeddedCatalogData {
         "name": "Mentes Unidas",
         "releaseDate": "2019-08-02",
         "logo": "https://assets.tcgdex.net/es/sm/sm11/logo",
-        "symbol": "https://assets.tcgdex.net/es/sm/sm11/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm11/symbol.png",
         "serieId": "sm",
         "official": 236,
         "total": 258
@@ -7419,7 +7419,7 @@ object EmbeddedCatalogData {
         "name": "Detective Pikachu",
         "releaseDate": "2019-03-29",
         "logo": "https://assets.tcgdex.net/es/sm/det1/logo",
-        "symbol": "https://assets.tcgdex.net/es/sm/det1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/det1/symbol.png",
         "serieId": "sm",
         "official": 18,
         "total": 18
@@ -7429,7 +7429,7 @@ object EmbeddedCatalogData {
         "name": "Sol y Luna",
         "releaseDate": "2017-02-03",
         "logo": "https://assets.tcgdex.net/es/sm/sm1/logo",
-        "symbol": "https://assets.tcgdex.net/es/sm/sm1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm1/symbol.png",
         "serieId": "sm",
         "official": 149,
         "total": 172
@@ -7439,7 +7439,7 @@ object EmbeddedCatalogData {
         "name": "Destinos Ocultos",
         "releaseDate": "2019-08-23",
         "logo": "https://assets.tcgdex.net/es/sm/sm115/logo",
-        "symbol": "https://assets.tcgdex.net/es/sm/sm115/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm115/symbol.png",
         "serieId": "sm",
         "official": 68,
         "total": 69
@@ -7449,7 +7449,7 @@ object EmbeddedCatalogData {
         "name": "Luz Prohibida",
         "releaseDate": "2018-05-04",
         "logo": "https://assets.tcgdex.net/es/sm/sm6/logo",
-        "symbol": "https://assets.tcgdex.net/es/sm/sm6/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm6/symbol.png",
         "serieId": "sm",
         "official": 131,
         "total": 146
@@ -7459,7 +7459,7 @@ object EmbeddedCatalogData {
         "name": "Tormenta Celestial",
         "releaseDate": "2018-08-03",
         "logo": "https://assets.tcgdex.net/es/sm/sm7/logo",
-        "symbol": "https://assets.tcgdex.net/es/sm/sm7/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm7/symbol.png",
         "serieId": "sm",
         "official": 168,
         "total": 183
@@ -7469,7 +7469,7 @@ object EmbeddedCatalogData {
         "name": "Majestad De Dragones",
         "releaseDate": "2018-09-07",
         "logo": "https://assets.tcgdex.net/es/sm/sm7.5/logo",
-        "symbol": "https://assets.tcgdex.net/es/sm/sm7.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm7.5/symbol.png",
         "serieId": "sm",
         "official": 70,
         "total": 78
@@ -7479,7 +7479,7 @@ object EmbeddedCatalogData {
         "name": "Leyendas Luminosas",
         "releaseDate": "2017-10-06",
         "logo": "https://assets.tcgdex.net/es/sm/sm3.5/logo",
-        "symbol": "https://assets.tcgdex.net/es/sm/sm3.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm3.5/symbol.png",
         "serieId": "sm",
         "official": 73,
         "total": 78
@@ -7489,7 +7489,7 @@ object EmbeddedCatalogData {
         "name": "Union de Aliados",
         "releaseDate": "2019-01-31",
         "logo": "https://assets.tcgdex.net/es/sm/sm9/logo",
-        "symbol": "https://assets.tcgdex.net/es/sm/sm9/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm9/symbol.png",
         "serieId": "sm",
         "official": 181,
         "total": 196
@@ -7499,7 +7499,7 @@ object EmbeddedCatalogData {
         "name": "Truenos Perdidos",
         "releaseDate": "2018-11-02",
         "logo": "https://assets.tcgdex.net/es/sm/sm8/logo",
-        "symbol": "https://assets.tcgdex.net/es/sm/sm8/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm8/symbol.png",
         "serieId": "sm",
         "official": 214,
         "total": 236
@@ -7509,7 +7509,7 @@ object EmbeddedCatalogData {
         "name": "Albor de Guadianes",
         "releaseDate": "2017-05-05",
         "logo": "https://assets.tcgdex.net/es/sm/sm2/logo",
-        "symbol": "https://assets.tcgdex.net/es/sm/sm2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm2/symbol.png",
         "serieId": "sm",
         "official": 145,
         "total": 169
@@ -7519,7 +7519,7 @@ object EmbeddedCatalogData {
         "name": "Invasión Carmesí",
         "releaseDate": "2017-11-03",
         "logo": "https://assets.tcgdex.net/es/sm/sm4/logo",
-        "symbol": "https://assets.tcgdex.net/es/sm/sm4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm4/symbol.png",
         "serieId": "sm",
         "official": 111,
         "total": 125
@@ -7529,7 +7529,7 @@ object EmbeddedCatalogData {
         "name": "Sombras Ardientes",
         "releaseDate": "2017-08-04",
         "logo": "https://assets.tcgdex.net/es/sm/sm3/logo",
-        "symbol": "https://assets.tcgdex.net/es/sm/sm3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm3/symbol.png",
         "serieId": "sm",
         "official": 147,
         "total": 169
@@ -7539,7 +7539,7 @@ object EmbeddedCatalogData {
         "name": "SL Cartas de promoción",
         "releaseDate": "2017-02-03",
         "logo": "https://assets.tcgdex.net/es/sm/smp/logo",
-        "symbol": "https://assets.tcgdex.net/es/sm/smp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/smp/symbol.png",
         "serieId": "sm",
         "official": 236,
         "total": 244
@@ -7549,7 +7549,7 @@ object EmbeddedCatalogData {
         "name": "MEP Black Star Promos",
         "releaseDate": "2025-09-26",
         "logo": "https://assets.tcgdex.net/es/me/mep/logo",
-        "symbol": "https://assets.tcgdex.net/es/me/mep/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/me/mep/symbol.png",
         "serieId": "me",
         "official": 0,
         "total": 10
@@ -7559,7 +7559,7 @@ object EmbeddedCatalogData {
         "name": "Megaevolución",
         "releaseDate": "2025-09-26",
         "logo": "https://assets.tcgdex.net/es/me/me01/logo",
-        "symbol": "https://assets.tcgdex.net/es/me/me01/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/me/me01/symbol.png",
         "serieId": "me",
         "official": 132,
         "total": 188
@@ -7569,7 +7569,7 @@ object EmbeddedCatalogData {
         "name": "Fuegos Fantasmales",
         "releaseDate": "2025-11-14",
         "logo": "https://assets.tcgdex.net/es/me/me02/logo",
-        "symbol": "https://assets.tcgdex.net/es/me/me02/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/me/me02/symbol.png",
         "serieId": "me",
         "official": 94,
         "total": 130
@@ -7579,7 +7579,7 @@ object EmbeddedCatalogData {
         "name": "HeartGold SoulSilver",
         "releaseDate": "2010-02-10",
         "logo": "https://assets.tcgdex.net/es/hgss/hgss1/logo",
-        "symbol": "https://assets.tcgdex.net/es/hgss/hgss1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/hgss/hgss1/symbol.png",
         "serieId": "hgss",
         "official": 123,
         "total": 124
@@ -7589,7 +7589,7 @@ object EmbeddedCatalogData {
         "name": "Liberados",
         "releaseDate": "2010-05-12",
         "logo": "https://assets.tcgdex.net/es/hgss/hgss2/logo",
-        "symbol": "https://assets.tcgdex.net/es/hgss/hgss2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/hgss/hgss2/symbol.png",
         "serieId": "hgss",
         "official": 95,
         "total": 96
@@ -7599,7 +7599,7 @@ object EmbeddedCatalogData {
         "name": "Triumphant",
         "releaseDate": "2010-11-03",
         "logo": "https://assets.tcgdex.net/es/hgss/hgss4/logo",
-        "symbol": "https://assets.tcgdex.net/es/hgss/hgss4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/hgss/hgss4/symbol.png",
         "serieId": "hgss",
         "official": 102,
         "total": 103
@@ -7609,7 +7609,7 @@ object EmbeddedCatalogData {
         "name": "HGSS Black Star Promos",
         "releaseDate": "2010-02-11",
         "logo": "https://assets.tcgdex.net/es/hgss/hgssp/logo",
-        "symbol": "https://assets.tcgdex.net/es/hgss/hgssp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/hgss/hgssp/symbol.png",
         "serieId": "hgss",
         "official": 25,
         "total": 25
@@ -7619,7 +7619,7 @@ object EmbeddedCatalogData {
         "name": "Undaunted",
         "releaseDate": "2010-08-18",
         "logo": "https://assets.tcgdex.net/es/hgss/hgss3/logo",
-        "symbol": "https://assets.tcgdex.net/es/hgss/hgss3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/hgss/hgss3/symbol.png",
         "serieId": "hgss",
         "official": 90,
         "total": 91
@@ -7629,7 +7629,7 @@ object EmbeddedCatalogData {
         "name": "Skyridge",
         "releaseDate": "2003-05-12",
         "logo": "https://assets.tcgdex.net/es/ecard/ecard3/logo",
-        "symbol": "https://assets.tcgdex.net/es/ecard/ecard3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ecard/ecard3/symbol.png",
         "serieId": "ecard",
         "official": 144,
         "total": 182
@@ -7639,7 +7639,7 @@ object EmbeddedCatalogData {
         "name": "Aquapolis",
         "releaseDate": "2003-01-15",
         "logo": "https://assets.tcgdex.net/es/ecard/ecard2/logo",
-        "symbol": "https://assets.tcgdex.net/es/ecard/ecard2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ecard/ecard2/symbol.png",
         "serieId": "ecard",
         "official": 147,
         "total": 186
@@ -7649,7 +7649,7 @@ object EmbeddedCatalogData {
         "name": "Sample",
         "releaseDate": "2002-08-01",
         "logo": "https://assets.tcgdex.net/es/ecard/sp/logo",
-        "symbol": "https://assets.tcgdex.net/es/ecard/sp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ecard/sp/symbol.png",
         "serieId": "ecard",
         "official": 10,
         "total": 10
@@ -7659,7 +7659,7 @@ object EmbeddedCatalogData {
         "name": "Best of game",
         "releaseDate": "2002-12-01",
         "logo": "https://assets.tcgdex.net/es/ecard/bog/logo",
-        "symbol": "https://assets.tcgdex.net/es/ecard/bog/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ecard/bog/symbol.png",
         "serieId": "ecard",
         "official": 9,
         "total": 9
@@ -7669,7 +7669,7 @@ object EmbeddedCatalogData {
         "name": "Expedition Base Set",
         "releaseDate": "2002-09-15",
         "logo": "https://assets.tcgdex.net/es/ecard/ecard1/logo",
-        "symbol": "https://assets.tcgdex.net/es/ecard/ecard1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ecard/ecard1/symbol.png",
         "serieId": "ecard",
         "official": 165,
         "total": 165
@@ -7679,7 +7679,7 @@ object EmbeddedCatalogData {
         "name": "Destinos de Paldea",
         "releaseDate": "2024-01-26",
         "logo": "https://assets.tcgdex.net/es/sv/sv04.5/logo",
-        "symbol": "https://assets.tcgdex.net/es/sv/sv04.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv04.5/symbol.png",
         "serieId": "sv",
         "official": 91,
         "total": 245
@@ -7689,7 +7689,7 @@ object EmbeddedCatalogData {
         "name": "Fabula Sombría",
         "releaseDate": "2024-08-02",
         "logo": "https://assets.tcgdex.net/es/sv/sv06.5/logo",
-        "symbol": "https://assets.tcgdex.net/es/sv/sv06.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv06.5/symbol.png",
         "serieId": "sv",
         "official": 64,
         "total": 99
@@ -7699,7 +7699,7 @@ object EmbeddedCatalogData {
         "name": "Evoluciones Prismáticas",
         "releaseDate": "2025-01-17",
         "logo": "https://assets.tcgdex.net/es/sv/sv08.5/logo",
-        "symbol": "https://assets.tcgdex.net/es/sv/sv08.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv08.5/symbol.png",
         "serieId": "sv",
         "official": 131,
         "total": 180
@@ -7709,7 +7709,7 @@ object EmbeddedCatalogData {
         "name": "Llama Blanca",
         "releaseDate": "2025-07-17",
         "logo": "https://assets.tcgdex.net/es/sv/sv10.5w/logo",
-        "symbol": "https://assets.tcgdex.net/es/sv/sv10.5w/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv10.5w/symbol.png",
         "serieId": "sv",
         "official": 86,
         "total": 173
@@ -7719,7 +7719,7 @@ object EmbeddedCatalogData {
         "name": "Evoluciones en Paldea",
         "releaseDate": "2023-06-09",
         "logo": "https://assets.tcgdex.net/es/sv/sv02/logo",
-        "symbol": "https://assets.tcgdex.net/es/sv/sv02/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv02/symbol.png",
         "serieId": "sv",
         "official": 193,
         "total": 279
@@ -7729,7 +7729,7 @@ object EmbeddedCatalogData {
         "name": "151",
         "releaseDate": "2023-09-22",
         "logo": "https://assets.tcgdex.net/es/sv/sv03.5/logo",
-        "symbol": "https://assets.tcgdex.net/es/sv/sv03.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv03.5/symbol.png",
         "serieId": "sv",
         "official": 165,
         "total": 207
@@ -7739,7 +7739,7 @@ object EmbeddedCatalogData {
         "name": "Rivales Predestinados",
         "releaseDate": "2025-05-30",
         "logo": "https://assets.tcgdex.net/es/sv/sv10/logo",
-        "symbol": "https://assets.tcgdex.net/es/sv/sv10/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv10/symbol.png",
         "serieId": "sv",
         "official": 182,
         "total": 244
@@ -7749,7 +7749,7 @@ object EmbeddedCatalogData {
         "name": "Brecha Paradójica",
         "releaseDate": "2023-11-03",
         "logo": "https://assets.tcgdex.net/es/sv/sv04/logo",
-        "symbol": "https://assets.tcgdex.net/es/sv/sv04/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv04/symbol.png",
         "serieId": "sv",
         "official": 182,
         "total": 266
@@ -7759,7 +7759,7 @@ object EmbeddedCatalogData {
         "name": "Llamas Obsidianas",
         "releaseDate": "2023-08-11",
         "logo": "https://assets.tcgdex.net/es/sv/sv03/logo",
-        "symbol": "https://assets.tcgdex.net/es/sv/sv03/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv03/symbol.png",
         "serieId": "sv",
         "official": 197,
         "total": 230
@@ -7769,7 +7769,7 @@ object EmbeddedCatalogData {
         "name": "Chispas Fulgurantes",
         "releaseDate": "2024-11-08",
         "logo": "https://assets.tcgdex.net/es/sv/sv08/logo",
-        "symbol": "https://assets.tcgdex.net/es/sv/sv08/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv08/symbol.png",
         "serieId": "sv",
         "official": 191,
         "total": 252
@@ -7779,7 +7779,7 @@ object EmbeddedCatalogData {
         "name": "Fulgor Negro",
         "releaseDate": "2025-07-17",
         "logo": "https://assets.tcgdex.net/es/sv/sv10.5b/logo",
-        "symbol": "https://assets.tcgdex.net/es/sv/sv10.5b/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv10.5b/symbol.png",
         "serieId": "sv",
         "official": 86,
         "total": 172
@@ -7789,7 +7789,7 @@ object EmbeddedCatalogData {
         "name": "Mascarada Crepuscular",
         "releaseDate": "2024-05-24",
         "logo": "https://assets.tcgdex.net/es/sv/sv06/logo",
-        "symbol": "https://assets.tcgdex.net/es/sv/sv06/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv06/symbol.png",
         "serieId": "sv",
         "official": 167,
         "total": 226
@@ -7799,7 +7799,7 @@ object EmbeddedCatalogData {
         "name": "Fuerzas Temporales",
         "releaseDate": "2024-03-22",
         "logo": "https://assets.tcgdex.net/es/sv/sv05/logo",
-        "symbol": "https://assets.tcgdex.net/es/sv/sv05/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv05/symbol.png",
         "serieId": "sv",
         "official": 162,
         "total": 218
@@ -7809,7 +7809,7 @@ object EmbeddedCatalogData {
         "name": "Corona Astral",
         "releaseDate": "2024-09-13",
         "logo": "https://assets.tcgdex.net/es/sv/sv07/logo",
-        "symbol": "https://assets.tcgdex.net/es/sv/sv07/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv07/symbol.png",
         "serieId": "sv",
         "official": 142,
         "total": 175
@@ -7819,7 +7819,7 @@ object EmbeddedCatalogData {
         "name": "SVP Black Star Promos",
         "releaseDate": "2023-03-31",
         "logo": "https://assets.tcgdex.net/es/sv/svp/logo",
-        "symbol": "https://assets.tcgdex.net/es/sv/svp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/svp/symbol.png",
         "serieId": "sv",
         "official": 0,
         "total": 219
@@ -7829,7 +7829,7 @@ object EmbeddedCatalogData {
         "name": "Escarlata y Púrpura",
         "releaseDate": "2023-03-31",
         "logo": "https://assets.tcgdex.net/es/sv/sv01/logo",
-        "symbol": "https://assets.tcgdex.net/es/sv/sv01/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv01/symbol.png",
         "serieId": "sv",
         "official": 198,
         "total": 258
@@ -7839,7 +7839,7 @@ object EmbeddedCatalogData {
         "name": "Juntos de Aventuras",
         "releaseDate": "2025-03-28",
         "logo": "https://assets.tcgdex.net/es/sv/sv09/logo",
-        "symbol": "https://assets.tcgdex.net/es/sv/sv09/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv09/symbol.png",
         "serieId": "sv",
         "official": 159,
         "total": 190
@@ -7849,7 +7849,7 @@ object EmbeddedCatalogData {
         "name": "Cartas alternativas",
         "releaseDate": "2014-02-05",
         "logo": "https://assets.tcgdex.net/es/xy/xya/logo",
-        "symbol": "https://assets.tcgdex.net/es/xy/xya/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xya/symbol.png",
         "serieId": "xy",
         "official": 6,
         "total": 6
@@ -7859,7 +7859,7 @@ object EmbeddedCatalogData {
         "name": "Cielos Rugientes",
         "releaseDate": "2015-05-06",
         "logo": "https://assets.tcgdex.net/es/xy/xy6/logo",
-        "symbol": "https://assets.tcgdex.net/es/xy/xy6/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy6/symbol.png",
         "serieId": "xy",
         "official": 108,
         "total": 112
@@ -7869,7 +7869,7 @@ object EmbeddedCatalogData {
         "name": "Antiguos Orígenes",
         "releaseDate": "2015-08-12",
         "logo": "https://assets.tcgdex.net/es/xy/xy7/logo",
-        "symbol": "https://assets.tcgdex.net/es/xy/xy7/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy7/symbol.png",
         "serieId": "xy",
         "official": 98,
         "total": 101
@@ -7879,7 +7879,7 @@ object EmbeddedCatalogData {
         "name": "TURBOLímite",
         "releaseDate": "2016-02-03",
         "logo": "https://assets.tcgdex.net/es/xy/xy9/logo",
-        "symbol": "https://assets.tcgdex.net/es/xy/xy9/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy9/symbol.png",
         "serieId": "xy",
         "official": 122,
         "total": 126
@@ -7889,7 +7889,7 @@ object EmbeddedCatalogData {
         "name": "Duelos Primigenios",
         "releaseDate": "2015-02-04",
         "logo": "https://assets.tcgdex.net/es/xy/xy5/logo",
-        "symbol": "https://assets.tcgdex.net/es/xy/xy5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy5/symbol.png",
         "serieId": "xy",
         "official": 160,
         "total": 164
@@ -7899,7 +7899,7 @@ object EmbeddedCatalogData {
         "name": "XY Cartas de promoción",
         "releaseDate": "2013-10-12",
         "logo": "https://assets.tcgdex.net/es/xy/xyp/logo",
-        "symbol": "https://assets.tcgdex.net/es/xy/xyp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xyp/symbol.png",
         "serieId": "xy",
         "official": 211,
         "total": 216
@@ -7909,7 +7909,7 @@ object EmbeddedCatalogData {
         "name": "Kalos Starter Set",
         "releaseDate": "2013-11-08",
         "logo": "https://assets.tcgdex.net/es/xy/xy0/logo",
-        "symbol": "https://assets.tcgdex.net/es/xy/xy0/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy0/symbol.png",
         "serieId": "xy",
         "official": 39,
         "total": 39
@@ -7919,7 +7919,7 @@ object EmbeddedCatalogData {
         "name": "Destellos de Fuego",
         "releaseDate": "2014-05-07",
         "logo": "https://assets.tcgdex.net/es/xy/xy2/logo",
-        "symbol": "https://assets.tcgdex.net/es/xy/xy2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy2/symbol.png",
         "serieId": "xy",
         "official": 106,
         "total": 110
@@ -7929,7 +7929,7 @@ object EmbeddedCatalogData {
         "name": "Turbo Impulso",
         "releaseDate": "2015-11-04",
         "logo": "https://assets.tcgdex.net/es/xy/xy8/logo",
-        "symbol": "https://assets.tcgdex.net/es/xy/xy8/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy8/symbol.png",
         "serieId": "xy",
         "official": 162,
         "total": 165
@@ -7939,7 +7939,7 @@ object EmbeddedCatalogData {
         "name": "Evoluciones",
         "releaseDate": "2016-11-02",
         "logo": "https://assets.tcgdex.net/es/xy/xy12/logo",
-        "symbol": "https://assets.tcgdex.net/es/xy/xy12/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy12/symbol.png",
         "serieId": "xy",
         "official": 108,
         "total": 113
@@ -7949,7 +7949,7 @@ object EmbeddedCatalogData {
         "name": "Double Crisis",
         "releaseDate": "2015-03-25",
         "logo": "https://assets.tcgdex.net/es/xy/dc1/logo",
-        "symbol": "https://assets.tcgdex.net/es/xy/dc1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/dc1/symbol.png",
         "serieId": "xy",
         "official": 34,
         "total": 34
@@ -7959,7 +7959,7 @@ object EmbeddedCatalogData {
         "name": "Generaciones",
         "releaseDate": "2016-02-22",
         "logo": "https://assets.tcgdex.net/es/xy/g1/logo",
-        "symbol": "https://assets.tcgdex.net/es/xy/g1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/g1/symbol.png",
         "serieId": "xy",
         "official": 83,
         "total": 117
@@ -7969,7 +7969,7 @@ object EmbeddedCatalogData {
         "name": "XY",
         "releaseDate": "2014-02-05",
         "logo": "https://assets.tcgdex.net/es/xy/xy1/logo",
-        "symbol": "https://assets.tcgdex.net/es/xy/xy1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy1/symbol.png",
         "serieId": "xy",
         "official": 146,
         "total": 146
@@ -7979,7 +7979,7 @@ object EmbeddedCatalogData {
         "name": "Asedio de Vapor",
         "releaseDate": "2016-08-03",
         "logo": "https://assets.tcgdex.net/es/xy/xy11/logo",
-        "symbol": "https://assets.tcgdex.net/es/xy/xy11/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy11/symbol.png",
         "serieId": "xy",
         "official": 114,
         "total": 116
@@ -7989,7 +7989,7 @@ object EmbeddedCatalogData {
         "name": "Destinos Enfrentados",
         "releaseDate": "2016-05-02",
         "logo": "https://assets.tcgdex.net/es/xy/xy10/logo",
-        "symbol": "https://assets.tcgdex.net/es/xy/xy10/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy10/symbol.png",
         "serieId": "xy",
         "official": 124,
         "total": 129
@@ -7999,7 +7999,7 @@ object EmbeddedCatalogData {
         "name": "Puños Furiosos",
         "releaseDate": "2014-08-13",
         "logo": "https://assets.tcgdex.net/es/xy/xy3/logo",
-        "symbol": "https://assets.tcgdex.net/es/xy/xy3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy3/symbol.png",
         "serieId": "xy",
         "official": 111,
         "total": 114
@@ -8009,7 +8009,7 @@ object EmbeddedCatalogData {
         "name": "Fuerzas Fantasmales",
         "releaseDate": "2014-11-05",
         "logo": "https://assets.tcgdex.net/es/xy/xy4/logo",
-        "symbol": "https://assets.tcgdex.net/es/xy/xy4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy4/symbol.png",
         "serieId": "xy",
         "official": 119,
         "total": 124
@@ -8019,7 +8019,7 @@ object EmbeddedCatalogData {
         "name": "Kit de Entrenador HeatGold & SoulSilver (Gyarados)",
         "releaseDate": "2010-05-01",
         "logo": "https://assets.tcgdex.net/es/tk/tk-hs-g/logo",
-        "symbol": "https://assets.tcgdex.net/es/tk/tk-hs-g/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-hs-g/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 1
@@ -8029,7 +8029,7 @@ object EmbeddedCatalogData {
         "name": "Kit de Entrenador EX (Plusle)",
         "releaseDate": "2006-03-01",
         "logo": "https://assets.tcgdex.net/es/tk/tk-ex-p/logo",
-        "symbol": "https://assets.tcgdex.net/es/tk/tk-ex-p/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-ex-p/symbol.png",
         "serieId": "tk",
         "official": 12,
         "total": 12
@@ -8039,7 +8039,7 @@ object EmbeddedCatalogData {
         "name": "Kit de Entrenador EX (Ninun)",
         "releaseDate": "2006-03-01",
         "logo": "https://assets.tcgdex.net/es/tk/tk-ex-m/logo",
-        "symbol": "https://assets.tcgdex.net/es/tk/tk-ex-m/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-ex-m/symbol.png",
         "serieId": "tk",
         "official": 12,
         "total": 12
@@ -8049,7 +8049,7 @@ object EmbeddedCatalogData {
         "name": "Kit de Entrenador Diamante & Perla (Lucario)",
         "releaseDate": "2007-09-01",
         "logo": "https://assets.tcgdex.net/es/tk/tk-dp-l/logo",
-        "symbol": "https://assets.tcgdex.net/es/tk/tk-dp-l/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-dp-l/symbol.png",
         "serieId": "tk",
         "official": 11,
         "total": 11
@@ -8059,7 +8059,7 @@ object EmbeddedCatalogData {
         "name": "Kit de Entrenador Sol y Luna (Raichu de Alola)",
         "releaseDate": "2017-04-21",
         "logo": "https://assets.tcgdex.net/es/tk/tk-sm-r/logo",
-        "symbol": "https://assets.tcgdex.net/es/tk/tk-sm-r/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-sm-r/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 19
@@ -8069,7 +8069,7 @@ object EmbeddedCatalogData {
         "name": "Kit de Entrenador XY (Latias)",
         "releaseDate": "2015-04-29",
         "logo": "https://assets.tcgdex.net/es/tk/tk-xy-latia/logo",
-        "symbol": "https://assets.tcgdex.net/es/tk/tk-xy-latia/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-xy-latia/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -8079,7 +8079,7 @@ object EmbeddedCatalogData {
         "name": "Kit de Entrenador HeatGold & SoulSilver (Raichu)",
         "releaseDate": "2010-05-01",
         "logo": "https://assets.tcgdex.net/es/tk/tk-hs-r/logo",
-        "symbol": "https://assets.tcgdex.net/es/tk/tk-hs-r/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-hs-r/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 1
@@ -8089,7 +8089,7 @@ object EmbeddedCatalogData {
         "name": "Kit de Entrenador EX (Latios)",
         "releaseDate": "2004-07-01",
         "logo": "https://assets.tcgdex.net/es/tk/tk-ex-latio/logo",
-        "symbol": "https://assets.tcgdex.net/es/tk/tk-ex-latio/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-ex-latio/symbol.png",
         "serieId": "tk",
         "official": 10,
         "total": 10
@@ -8099,7 +8099,7 @@ object EmbeddedCatalogData {
         "name": "Kit de Entrenador BW (Excadrill)",
         "releaseDate": "2011-09-01",
         "logo": "https://assets.tcgdex.net/es/tk/tk-bw-e/logo",
-        "symbol": "https://assets.tcgdex.net/es/tk/tk-bw-e/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-bw-e/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -8109,7 +8109,7 @@ object EmbeddedCatalogData {
         "name": "Kit de Entrenador XY (Pikachu Enmascarada)",
         "releaseDate": "2016-04-27",
         "logo": "https://assets.tcgdex.net/es/tk/tk-xy-p/logo",
-        "symbol": "https://assets.tcgdex.net/es/tk/tk-xy-p/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-xy-p/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -8119,7 +8119,7 @@ object EmbeddedCatalogData {
         "name": "Kit de Entrenador XY (Latios)",
         "releaseDate": "2015-04-29",
         "logo": "https://assets.tcgdex.net/es/tk/tk-xy-latio/logo",
-        "symbol": "https://assets.tcgdex.net/es/tk/tk-xy-latio/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-xy-latio/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -8129,7 +8129,7 @@ object EmbeddedCatalogData {
         "name": "Kit de Entrenador Sol y Luna (Lycanroc)",
         "releaseDate": "2017-04-21",
         "logo": "https://assets.tcgdex.net/es/tk/tk-sm-l/logo",
-        "symbol": "https://assets.tcgdex.net/es/tk/tk-sm-l/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-sm-l/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 18
@@ -8139,7 +8139,7 @@ object EmbeddedCatalogData {
         "name": "Kit de Entrenador EX (Latias)",
         "releaseDate": "2004-07-01",
         "logo": "https://assets.tcgdex.net/es/tk/tk-ex-latia/logo",
-        "symbol": "https://assets.tcgdex.net/es/tk/tk-ex-latia/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-ex-latia/symbol.png",
         "serieId": "tk",
         "official": 10,
         "total": 10
@@ -8149,7 +8149,7 @@ object EmbeddedCatalogData {
         "name": "Kit de Entrenador XY (Suicune)",
         "releaseDate": "2016-04-27",
         "logo": "https://assets.tcgdex.net/es/tk/tk-xy-su/logo",
-        "symbol": "https://assets.tcgdex.net/es/tk/tk-xy-su/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-xy-su/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -8159,7 +8159,7 @@ object EmbeddedCatalogData {
         "name": "Kit de Entrenador Diamante & Perla (Manaphy)",
         "releaseDate": "2007-09-01",
         "logo": "https://assets.tcgdex.net/es/tk/tk-dp-m/logo",
-        "symbol": "https://assets.tcgdex.net/es/tk/tk-dp-m/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-dp-m/symbol.png",
         "serieId": "tk",
         "official": 12,
         "total": 12
@@ -8169,7 +8169,7 @@ object EmbeddedCatalogData {
         "name": "Kit de Entrenador XY (Wigglytuff)",
         "releaseDate": "2014-11-01",
         "logo": "https://assets.tcgdex.net/es/tk/tk-xy-w/logo",
-        "symbol": "https://assets.tcgdex.net/es/tk/tk-xy-w/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-xy-w/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -8179,7 +8179,7 @@ object EmbeddedCatalogData {
         "name": "Kit de Entrenador XY (Pikachu Enmascarada)",
         "releaseDate": "2011-09-01",
         "logo": "https://assets.tcgdex.net/es/tk/tk-bw-z/logo",
-        "symbol": "https://assets.tcgdex.net/es/tk/tk-bw-z/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-bw-z/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -8189,7 +8189,7 @@ object EmbeddedCatalogData {
         "name": "Kit de Entrenador XY (Noivern)",
         "releaseDate": "2014-03-12",
         "logo": "https://assets.tcgdex.net/es/tk/tk-xy-n/logo",
-        "symbol": "https://assets.tcgdex.net/es/tk/tk-xy-n/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-xy-n/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -8199,7 +8199,7 @@ object EmbeddedCatalogData {
         "name": "Kit de Entrenador XY (Pikachu Enmascarada)",
         "releaseDate": "2014-03-12",
         "logo": "https://assets.tcgdex.net/es/tk/tk-xy-sy/logo",
-        "symbol": "https://assets.tcgdex.net/es/tk/tk-xy-sy/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-xy-sy/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -8209,7 +8209,7 @@ object EmbeddedCatalogData {
         "name": "Kit de Entrenador XY (Bisharp)",
         "releaseDate": "2014-11-01",
         "logo": "https://assets.tcgdex.net/es/tk/tk-xy-b/logo",
-        "symbol": "https://assets.tcgdex.net/es/tk/tk-xy-b/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-xy-b/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -8219,7 +8219,7 @@ object EmbeddedCatalogData {
         "name": "Arceus",
         "releaseDate": "2009-11-04",
         "logo": "https://assets.tcgdex.net/es/pl/pl4/logo",
-        "symbol": "https://assets.tcgdex.net/es/pl/pl4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pl/pl4/symbol.png",
         "serieId": "pl",
         "official": 99,
         "total": 111
@@ -8229,7 +8229,7 @@ object EmbeddedCatalogData {
         "name": "Supreme Victors",
         "releaseDate": "2009-08-19",
         "logo": "https://assets.tcgdex.net/es/pl/pl3/logo",
-        "symbol": "https://assets.tcgdex.net/es/pl/pl3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pl/pl3/symbol.png",
         "serieId": "pl",
         "official": 147,
         "total": 153
@@ -8239,7 +8239,7 @@ object EmbeddedCatalogData {
         "name": "Rising Rivals",
         "releaseDate": "2009-05-16",
         "logo": "https://assets.tcgdex.net/es/pl/pl2/logo",
-        "symbol": "https://assets.tcgdex.net/es/pl/pl2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pl/pl2/symbol.png",
         "serieId": "pl",
         "official": 111,
         "total": 120
@@ -8249,7 +8249,7 @@ object EmbeddedCatalogData {
         "name": "Pokémon Rumble",
         "releaseDate": "2009-12-02",
         "logo": "https://assets.tcgdex.net/es/pl/ru1/logo",
-        "symbol": "https://assets.tcgdex.net/es/pl/ru1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pl/ru1/symbol.png",
         "serieId": "pl",
         "official": 16,
         "total": 16
@@ -8259,7 +8259,7 @@ object EmbeddedCatalogData {
         "name": "Platino",
         "releaseDate": "2009-02-11",
         "logo": "https://assets.tcgdex.net/es/pl/pl1/logo",
-        "symbol": "https://assets.tcgdex.net/es/pl/pl1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pl/pl1/symbol.png",
         "serieId": "pl",
         "official": 127,
         "total": 133
@@ -8269,7 +8269,7 @@ object EmbeddedCatalogData {
         "name": "Gym Challenge",
         "releaseDate": "2000-10-16",
         "logo": "https://assets.tcgdex.net/es/gym/gym2/logo",
-        "symbol": "https://assets.tcgdex.net/es/gym/gym2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/gym/gym2/symbol.png",
         "serieId": "gym",
         "official": 132,
         "total": 132
@@ -8279,7 +8279,7 @@ object EmbeddedCatalogData {
         "name": "Gym Heroes",
         "releaseDate": "2000-08-14",
         "logo": "https://assets.tcgdex.net/es/gym/gym1/logo",
-        "symbol": "https://assets.tcgdex.net/es/gym/gym1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/gym/gym1/symbol.png",
         "serieId": "gym",
         "official": 132,
         "total": 132
@@ -8289,7 +8289,7 @@ object EmbeddedCatalogData {
         "name": "Destinos Brillantes",
         "releaseDate": "2021-02-19",
         "logo": "https://assets.tcgdex.net/es/swsh/swsh4.5/logo",
-        "symbol": "https://assets.tcgdex.net/es/swsh/swsh4.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh4.5/symbol.png",
         "serieId": "swsh",
         "official": 72,
         "total": 195
@@ -8299,7 +8299,7 @@ object EmbeddedCatalogData {
         "name": "Resplandor Astral",
         "releaseDate": "2022-05-27",
         "logo": "https://assets.tcgdex.net/es/swsh/swsh10/logo",
-        "symbol": "https://assets.tcgdex.net/es/swsh/swsh10/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh10/symbol.png",
         "serieId": "swsh",
         "official": 189,
         "total": 246
@@ -8309,7 +8309,7 @@ object EmbeddedCatalogData {
         "name": "Golpe Fusión",
         "releaseDate": "2021-11-12",
         "logo": "https://assets.tcgdex.net/es/swsh/swsh8/logo",
-        "symbol": "https://assets.tcgdex.net/es/swsh/swsh8/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh8/symbol.png",
         "serieId": "swsh",
         "official": 264,
         "total": 284
@@ -8319,7 +8319,7 @@ object EmbeddedCatalogData {
         "name": "Cielos Evolutivos",
         "releaseDate": "2021-08-27",
         "logo": "https://assets.tcgdex.net/es/swsh/swsh7/logo",
-        "symbol": "https://assets.tcgdex.net/es/swsh/swsh7/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh7/symbol.png",
         "serieId": "swsh",
         "official": 203,
         "total": 237
@@ -8329,7 +8329,7 @@ object EmbeddedCatalogData {
         "name": "Cenit Supremo",
         "releaseDate": "2023-01-20",
         "logo": "https://assets.tcgdex.net/es/swsh/swsh12.5/logo",
-        "symbol": "https://assets.tcgdex.net/es/swsh/swsh12.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh12.5/symbol.png",
         "serieId": "swsh",
         "official": 159,
         "total": 230
@@ -8339,7 +8339,7 @@ object EmbeddedCatalogData {
         "name": "Camino de Campeones",
         "releaseDate": "2020-09-25",
         "logo": "https://assets.tcgdex.net/es/swsh/swsh3.5/logo",
-        "symbol": "https://assets.tcgdex.net/es/swsh/swsh3.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh3.5/symbol.png",
         "serieId": "swsh",
         "official": 70,
         "total": 80
@@ -8349,7 +8349,7 @@ object EmbeddedCatalogData {
         "name": "Celebraciones",
         "releaseDate": "2021-10-08",
         "logo": "https://assets.tcgdex.net/es/swsh/cel25/logo",
-        "symbol": "https://assets.tcgdex.net/es/swsh/cel25/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/cel25/symbol.png",
         "serieId": "swsh",
         "official": 25,
         "total": 51
@@ -8359,7 +8359,7 @@ object EmbeddedCatalogData {
         "name": "Estilos de Combate",
         "releaseDate": "2021-03-19",
         "logo": "https://assets.tcgdex.net/es/swsh/swsh5/logo",
-        "symbol": "https://assets.tcgdex.net/es/swsh/swsh5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh5/symbol.png",
         "serieId": "swsh",
         "official": 163,
         "total": 183
@@ -8369,7 +8369,7 @@ object EmbeddedCatalogData {
         "name": "Tempestad Plateada",
         "releaseDate": "2022-11-11",
         "logo": "https://assets.tcgdex.net/es/swsh/swsh12/logo",
-        "symbol": "https://assets.tcgdex.net/es/swsh/swsh12/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh12/symbol.png",
         "serieId": "swsh",
         "official": 195,
         "total": 245
@@ -8379,7 +8379,7 @@ object EmbeddedCatalogData {
         "name": "Voltaje Vívido",
         "releaseDate": "2020-11-13",
         "logo": "https://assets.tcgdex.net/es/swsh/swsh4/logo",
-        "symbol": "https://assets.tcgdex.net/es/swsh/swsh4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh4/symbol.png",
         "serieId": "swsh",
         "official": 185,
         "total": 203
@@ -8389,7 +8389,7 @@ object EmbeddedCatalogData {
         "name": "Reinado Escalofriante",
         "releaseDate": "2021-06-18",
         "logo": "https://assets.tcgdex.net/es/swsh/swsh6/logo",
-        "symbol": "https://assets.tcgdex.net/es/swsh/swsh6/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh6/symbol.png",
         "serieId": "swsh",
         "official": 198,
         "total": 233
@@ -8399,7 +8399,7 @@ object EmbeddedCatalogData {
         "name": "Origen Perdido",
         "releaseDate": "2022-09-09",
         "logo": "https://assets.tcgdex.net/es/swsh/swsh11/logo",
-        "symbol": "https://assets.tcgdex.net/es/swsh/swsh11/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh11/symbol.png",
         "serieId": "swsh",
         "official": 196,
         "total": 247
@@ -8409,7 +8409,7 @@ object EmbeddedCatalogData {
         "name": "Oscuridad Incandescente",
         "releaseDate": "2020-08-14",
         "logo": "https://assets.tcgdex.net/es/swsh/swsh3/logo",
-        "symbol": "https://assets.tcgdex.net/es/swsh/swsh3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh3/symbol.png",
         "serieId": "swsh",
         "official": 189,
         "total": 201
@@ -8419,7 +8419,7 @@ object EmbeddedCatalogData {
         "name": "Choque Rebelde",
         "releaseDate": "2020-05-01",
         "logo": "https://assets.tcgdex.net/es/swsh/swsh2/logo",
-        "symbol": "https://assets.tcgdex.net/es/swsh/swsh2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh2/symbol.png",
         "serieId": "swsh",
         "official": 192,
         "total": 209
@@ -8429,7 +8429,7 @@ object EmbeddedCatalogData {
         "name": "Cartas de promoción ESES",
         "releaseDate": "2019-11-15",
         "logo": "https://assets.tcgdex.net/es/swsh/swshp/logo",
-        "symbol": "https://assets.tcgdex.net/es/swsh/swshp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swshp/symbol.png",
         "serieId": "swsh",
         "official": 107,
         "total": 287
@@ -8439,7 +8439,7 @@ object EmbeddedCatalogData {
         "name": "Pokémon Futsal 2020",
         "releaseDate": "2020-09-11",
         "logo": "https://assets.tcgdex.net/es/swsh/fut2020/logo",
-        "symbol": "https://assets.tcgdex.net/es/swsh/fut2020/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/fut2020/symbol.png",
         "serieId": "swsh",
         "official": 5,
         "total": 5
@@ -8449,7 +8449,7 @@ object EmbeddedCatalogData {
         "name": "Pokémon GO",
         "releaseDate": "2022-07-01",
         "logo": "https://assets.tcgdex.net/es/swsh/swsh10.5/logo",
-        "symbol": "https://assets.tcgdex.net/es/swsh/swsh10.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh10.5/symbol.png",
         "serieId": "swsh",
         "official": 78,
         "total": 88
@@ -8459,7 +8459,7 @@ object EmbeddedCatalogData {
         "name": "Astros Brillantes",
         "releaseDate": "2022-02-25",
         "logo": "https://assets.tcgdex.net/es/swsh/swsh9/logo",
-        "symbol": "https://assets.tcgdex.net/es/swsh/swsh9/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh9/symbol.png",
         "serieId": "swsh",
         "official": 172,
         "total": 216
@@ -8469,7 +8469,7 @@ object EmbeddedCatalogData {
         "name": "Espada y Escudo",
         "releaseDate": "2020-02-07",
         "logo": "https://assets.tcgdex.net/es/swsh/swsh1/logo",
-        "symbol": "https://assets.tcgdex.net/es/swsh/swsh1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh1/symbol.png",
         "serieId": "swsh",
         "official": 202,
         "total": 216
@@ -8483,7 +8483,7 @@ object EmbeddedCatalogData {
         "name": "Uragano Plasma",
         "releaseDate": "2013-02-06",
         "logo": "https://assets.tcgdex.net/it/bw/bw8/logo",
-        "symbol": "https://assets.tcgdex.net/it/bw/bw8/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw8/symbol.png",
         "serieId": "bw",
         "official": 135,
         "total": 138
@@ -8493,7 +8493,7 @@ object EmbeddedCatalogData {
         "name": "Esploratori delle Tenebre",
         "releaseDate": "2012-05-09",
         "logo": "https://assets.tcgdex.net/it/bw/bw5/logo",
-        "symbol": "https://assets.tcgdex.net/it/bw/bw5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw5/symbol.png",
         "serieId": "bw",
         "official": 108,
         "total": 111
@@ -8503,7 +8503,7 @@ object EmbeddedCatalogData {
         "name": "Nero e Bianco",
         "releaseDate": "2011-04-25",
         "logo": "https://assets.tcgdex.net/it/bw/bw1/logo",
-        "symbol": "https://assets.tcgdex.net/it/bw/bw1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw1/symbol.png",
         "serieId": "bw",
         "official": 114,
         "total": 115
@@ -8513,7 +8513,7 @@ object EmbeddedCatalogData {
         "name": "Confini Varcati",
         "releaseDate": "2012-11-07",
         "logo": "https://assets.tcgdex.net/it/bw/bw7/logo",
-        "symbol": "https://assets.tcgdex.net/it/bw/bw7/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw7/symbol.png",
         "serieId": "bw",
         "official": 149,
         "total": 153
@@ -8523,7 +8523,7 @@ object EmbeddedCatalogData {
         "name": "Nuove Forze",
         "releaseDate": "2011-08-31",
         "logo": "https://assets.tcgdex.net/it/bw/bw2/logo",
-        "symbol": "https://assets.tcgdex.net/it/bw/bw2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw2/symbol.png",
         "serieId": "bw",
         "official": 98,
         "total": 98
@@ -8533,7 +8533,7 @@ object EmbeddedCatalogData {
         "name": "Glaciazione Plasma",
         "releaseDate": "2013-05-08",
         "logo": "https://assets.tcgdex.net/it/bw/bw9/logo",
-        "symbol": "https://assets.tcgdex.net/it/bw/bw9/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw9/symbol.png",
         "serieId": "bw",
         "official": 116,
         "total": 122
@@ -8543,7 +8543,7 @@ object EmbeddedCatalogData {
         "name": "Vittorie Regali",
         "releaseDate": "2011-11-16",
         "logo": "https://assets.tcgdex.net/it/bw/bw3/logo",
-        "symbol": "https://assets.tcgdex.net/it/bw/bw3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw3/symbol.png",
         "serieId": "bw",
         "official": 101,
         "total": 102
@@ -8553,7 +8553,7 @@ object EmbeddedCatalogData {
         "name": "Plasma Blast",
         "releaseDate": "2013-08-14",
         "logo": "https://assets.tcgdex.net/it/bw/bw10/logo",
-        "symbol": "https://assets.tcgdex.net/it/bw/bw10/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw10/symbol.png",
         "serieId": "bw",
         "official": 101,
         "total": 105
@@ -8563,7 +8563,7 @@ object EmbeddedCatalogData {
         "name": "Radiant Collection",
         "releaseDate": "2013-11-06",
         "logo": "https://assets.tcgdex.net/it/bw/rc/logo",
-        "symbol": "https://assets.tcgdex.net/it/bw/rc/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/rc/symbol.png",
         "serieId": "bw",
         "official": 25,
         "total": 25
@@ -8573,7 +8573,7 @@ object EmbeddedCatalogData {
         "name": "Legendary Treasures",
         "releaseDate": "2013-11-06",
         "logo": "https://assets.tcgdex.net/it/bw/bw11/logo",
-        "symbol": "https://assets.tcgdex.net/it/bw/bw11/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw11/symbol.png",
         "serieId": "bw",
         "official": 113,
         "total": 140
@@ -8583,7 +8583,7 @@ object EmbeddedCatalogData {
         "name": "Stirpe dei Draghi",
         "releaseDate": "2012-08-15",
         "logo": "https://assets.tcgdex.net/it/bw/bw6/logo",
-        "symbol": "https://assets.tcgdex.net/it/bw/bw6/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw6/symbol.png",
         "serieId": "bw",
         "official": 124,
         "total": 128
@@ -8593,7 +8593,7 @@ object EmbeddedCatalogData {
         "name": "NB Promo",
         "releaseDate": "2011-04-26",
         "logo": "https://assets.tcgdex.net/it/bw/bwp/logo",
-        "symbol": "https://assets.tcgdex.net/it/bw/bwp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bwp/symbol.png",
         "serieId": "bw",
         "official": 101,
         "total": 101
@@ -8603,7 +8603,7 @@ object EmbeddedCatalogData {
         "name": "Destini Futuri",
         "releaseDate": "2012-02-08",
         "logo": "https://assets.tcgdex.net/it/bw/bw4/logo",
-        "symbol": "https://assets.tcgdex.net/it/bw/bw4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw4/symbol.png",
         "serieId": "bw",
         "official": 99,
         "total": 103
@@ -8613,7 +8613,7 @@ object EmbeddedCatalogData {
         "name": "Tesoro dei Draghi",
         "releaseDate": "2012-10-05",
         "logo": "https://assets.tcgdex.net/it/bw/dv1/logo",
-        "symbol": "https://assets.tcgdex.net/it/bw/dv1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/dv1/symbol.png",
         "serieId": "bw",
         "official": 20,
         "total": 21
@@ -8623,7 +8623,7 @@ object EmbeddedCatalogData {
         "name": "Jungle",
         "releaseDate": "1999-06-16",
         "logo": "https://assets.tcgdex.net/it/base/base2/logo",
-        "symbol": "https://assets.tcgdex.net/it/base/base2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/base/base2/symbol.png",
         "serieId": "base",
         "official": 64,
         "total": 64
@@ -8633,7 +8633,7 @@ object EmbeddedCatalogData {
         "name": "Team Rocket",
         "releaseDate": "2000-04-24",
         "logo": "https://assets.tcgdex.net/it/base/base5/logo",
-        "symbol": "https://assets.tcgdex.net/it/base/base5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/base/base5/symbol.png",
         "serieId": "base",
         "official": 82,
         "total": 83
@@ -8643,7 +8643,7 @@ object EmbeddedCatalogData {
         "name": "Wizards Black Star Promos",
         "releaseDate": "1999-07-01",
         "logo": "https://assets.tcgdex.net/it/base/basep/logo",
-        "symbol": "https://assets.tcgdex.net/it/base/basep/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/base/basep/symbol.png",
         "serieId": "base",
         "official": 53,
         "total": 53
@@ -8653,7 +8653,7 @@ object EmbeddedCatalogData {
         "name": "Fossil",
         "releaseDate": "1999-10-10",
         "logo": "https://assets.tcgdex.net/it/base/base3/logo",
-        "symbol": "https://assets.tcgdex.net/it/base/base3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/base/base3/symbol.png",
         "serieId": "base",
         "official": 62,
         "total": 62
@@ -8663,7 +8663,7 @@ object EmbeddedCatalogData {
         "name": "Base Set 2",
         "releaseDate": "2000-02-24",
         "logo": "https://assets.tcgdex.net/it/base/base4/logo",
-        "symbol": "https://assets.tcgdex.net/it/base/base4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/base/base4/symbol.png",
         "serieId": "base",
         "official": 130,
         "total": 130
@@ -8673,7 +8673,7 @@ object EmbeddedCatalogData {
         "name": "Set Base",
         "releaseDate": "1999-01-09",
         "logo": "https://assets.tcgdex.net/it/base/base1/logo",
-        "symbol": "https://assets.tcgdex.net/it/base/base1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/base/base1/symbol.png",
         "serieId": "base",
         "official": 102,
         "total": 102
@@ -8683,7 +8683,7 @@ object EmbeddedCatalogData {
         "name": "Carte Promo Wizards",
         "releaseDate": "1999-09-01",
         "logo": "https://assets.tcgdex.net/it/base/wp/logo",
-        "symbol": "https://assets.tcgdex.net/it/base/wp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/base/wp/symbol.png",
         "serieId": "base",
         "official": 7,
         "total": 7
@@ -8693,7 +8693,7 @@ object EmbeddedCatalogData {
         "name": "POP Series 8",
         "releaseDate": "2008-09-01",
         "logo": "https://assets.tcgdex.net/it/pop/pop8/logo",
-        "symbol": "https://assets.tcgdex.net/it/pop/pop8/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop8/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -8703,7 +8703,7 @@ object EmbeddedCatalogData {
         "name": "POP Serie 9",
         "releaseDate": "2009-03-01",
         "logo": "https://assets.tcgdex.net/it/pop/pop9/logo",
-        "symbol": "https://assets.tcgdex.net/it/pop/pop9/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop9/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -8713,7 +8713,7 @@ object EmbeddedCatalogData {
         "name": "POP Serie 2",
         "releaseDate": "2005-08-01",
         "logo": "https://assets.tcgdex.net/it/pop/pop2/logo",
-        "symbol": "https://assets.tcgdex.net/it/pop/pop2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop2/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -8723,7 +8723,7 @@ object EmbeddedCatalogData {
         "name": "POP Series 6",
         "releaseDate": "2007-09-01",
         "logo": "https://assets.tcgdex.net/it/pop/pop6/logo",
-        "symbol": "https://assets.tcgdex.net/it/pop/pop6/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop6/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -8733,7 +8733,7 @@ object EmbeddedCatalogData {
         "name": "POP Serie 7",
         "releaseDate": "2008-03-01",
         "logo": "https://assets.tcgdex.net/it/pop/pop7/logo",
-        "symbol": "https://assets.tcgdex.net/it/pop/pop7/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop7/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -8743,7 +8743,7 @@ object EmbeddedCatalogData {
         "name": "POP Serie 3",
         "releaseDate": "2006-04-01",
         "logo": "https://assets.tcgdex.net/it/pop/pop3/logo",
-        "symbol": "https://assets.tcgdex.net/it/pop/pop3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop3/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -8753,7 +8753,7 @@ object EmbeddedCatalogData {
         "name": "POP Serie 4",
         "releaseDate": "2006-08-01",
         "logo": "https://assets.tcgdex.net/it/pop/pop4/logo",
-        "symbol": "https://assets.tcgdex.net/it/pop/pop4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop4/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -8763,7 +8763,7 @@ object EmbeddedCatalogData {
         "name": "POP Serie 1",
         "releaseDate": "2004-09-01",
         "logo": "https://assets.tcgdex.net/it/pop/pop1/logo",
-        "symbol": "https://assets.tcgdex.net/it/pop/pop1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop1/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -8773,7 +8773,7 @@ object EmbeddedCatalogData {
         "name": "POP Serie 5",
         "releaseDate": "2007-03-01",
         "logo": "https://assets.tcgdex.net/it/pop/pop5/logo",
-        "symbol": "https://assets.tcgdex.net/it/pop/pop5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop5/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -8783,7 +8783,7 @@ object EmbeddedCatalogData {
         "name": "Nintendo Black Star Promos",
         "releaseDate": "2003-10-01",
         "logo": "https://assets.tcgdex.net/it/pop/np/logo",
-        "symbol": "https://assets.tcgdex.net/it/pop/np/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/np/symbol.png",
         "serieId": "pop",
         "official": 40,
         "total": 40
@@ -8793,7 +8793,7 @@ object EmbeddedCatalogData {
         "name": "Richiamo delle Leggende",
         "releaseDate": "2011-02-09",
         "logo": "https://assets.tcgdex.net/it/col/col1/logo",
-        "symbol": "https://assets.tcgdex.net/it/col/col1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/col/col1/symbol.png",
         "serieId": "col",
         "official": 95,
         "total": 106
@@ -8803,7 +8803,7 @@ object EmbeddedCatalogData {
         "name": "Legendary Collection",
         "releaseDate": "2002-05-24",
         "logo": "https://assets.tcgdex.net/it/lc/lc/logo",
-        "symbol": "https://assets.tcgdex.net/it/lc/lc/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/lc/lc/symbol.png",
         "serieId": "lc",
         "official": 110,
         "total": 110
@@ -8813,7 +8813,7 @@ object EmbeddedCatalogData {
         "name": "McDonald's Collection 2021",
         "releaseDate": "2021-02-09",
         "logo": "https://assets.tcgdex.net/it/mc/2021swsh/logo",
-        "symbol": "https://assets.tcgdex.net/it/mc/2021swsh/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2021swsh/symbol.png",
         "serieId": "mc",
         "official": 25,
         "total": 25
@@ -8823,7 +8823,7 @@ object EmbeddedCatalogData {
         "name": "McDonald's Collection 2015",
         "releaseDate": "2015-11-27",
         "logo": "https://assets.tcgdex.net/it/mc/2015xy/logo",
-        "symbol": "https://assets.tcgdex.net/it/mc/2015xy/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2015xy/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 12
@@ -8833,7 +8833,7 @@ object EmbeddedCatalogData {
         "name": "Promo McDonald's 2019",
         "releaseDate": "2019-10-30",
         "logo": "https://assets.tcgdex.net/it/mc/2019sm-fr/logo",
-        "symbol": "https://assets.tcgdex.net/it/mc/2019sm-fr/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2019sm-fr/symbol.png",
         "serieId": "mc",
         "official": 40,
         "total": 40
@@ -8843,7 +8843,7 @@ object EmbeddedCatalogData {
         "name": "McDonald's Collection",
         "releaseDate": "2011-06-17",
         "logo": "https://assets.tcgdex.net/it/mc/2011bw/logo",
-        "symbol": "https://assets.tcgdex.net/it/mc/2011bw/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2011bw/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 12
@@ -8853,7 +8853,7 @@ object EmbeddedCatalogData {
         "name": "Promo McDonald's 2018",
         "releaseDate": "2018-06-13",
         "logo": "https://assets.tcgdex.net/it/mc/2018sm-fr/logo",
-        "symbol": "https://assets.tcgdex.net/it/mc/2018sm-fr/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2018sm-fr/symbol.png",
         "serieId": "mc",
         "official": 40,
         "total": 40
@@ -8863,7 +8863,7 @@ object EmbeddedCatalogData {
         "name": "McDonald's Collection 2014",
         "releaseDate": "2014-05-23",
         "logo": "https://assets.tcgdex.net/it/mc/2014xy/logo",
-        "symbol": "https://assets.tcgdex.net/it/mc/2014xy/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2014xy/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 12
@@ -8873,7 +8873,7 @@ object EmbeddedCatalogData {
         "name": "Promo McDonald's 2013",
         "releaseDate": "2013-11-01",
         "logo": "https://assets.tcgdex.net/it/mc/2013bw/logo",
-        "symbol": "https://assets.tcgdex.net/it/mc/2013bw/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2013bw/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 1
@@ -8883,7 +8883,7 @@ object EmbeddedCatalogData {
         "name": "McDonald's Collection 2019",
         "releaseDate": "2019-10-15",
         "logo": "https://assets.tcgdex.net/it/mc/2019sm/logo",
-        "symbol": "https://assets.tcgdex.net/it/mc/2019sm/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2019sm/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 12
@@ -8893,7 +8893,7 @@ object EmbeddedCatalogData {
         "name": "McDonald's Collection 2018",
         "releaseDate": "2018-10-19",
         "logo": "https://assets.tcgdex.net/it/mc/2018sm/logo",
-        "symbol": "https://assets.tcgdex.net/it/mc/2018sm/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2018sm/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 12
@@ -8903,7 +8903,7 @@ object EmbeddedCatalogData {
         "name": "McDonald's Collection 2017",
         "releaseDate": "2017-08-03",
         "logo": "https://assets.tcgdex.net/it/mc/2017sm/logo",
-        "symbol": "https://assets.tcgdex.net/it/mc/2017sm/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2017sm/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 12
@@ -8913,7 +8913,7 @@ object EmbeddedCatalogData {
         "name": "McDonald's Collection 2016",
         "releaseDate": "2016-08-20",
         "logo": "https://assets.tcgdex.net/it/mc/2016xy/logo",
-        "symbol": "https://assets.tcgdex.net/it/mc/2016xy/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2016xy/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 12
@@ -8923,7 +8923,7 @@ object EmbeddedCatalogData {
         "name": "McDonald's Collection 2012",
         "releaseDate": "2012-06-15",
         "logo": "https://assets.tcgdex.net/it/mc/2012bw/logo",
-        "symbol": "https://assets.tcgdex.net/it/mc/2012bw/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2012bw/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 12
@@ -8933,7 +8933,7 @@ object EmbeddedCatalogData {
         "name": "EX RossoFuoco e VerdeFoglia",
         "releaseDate": "2004-09-01",
         "logo": "https://assets.tcgdex.net/it/ex/ex6/logo",
-        "symbol": "https://assets.tcgdex.net/it/ex/ex6/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex6/symbol.png",
         "serieId": "ex",
         "official": 112,
         "total": 116
@@ -8943,7 +8943,7 @@ object EmbeddedCatalogData {
         "name": "EX Team Magma vs Team Idro",
         "releaseDate": "2004-03-01",
         "logo": "https://assets.tcgdex.net/it/ex/ex4/logo",
-        "symbol": "https://assets.tcgdex.net/it/ex/ex4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex4/symbol.png",
         "serieId": "ex",
         "official": 95,
         "total": 97
@@ -8953,7 +8953,7 @@ object EmbeddedCatalogData {
         "name": "EX Tempesta di Sabbia",
         "releaseDate": "2003-09-18",
         "logo": "https://assets.tcgdex.net/it/ex/ex2/logo",
-        "symbol": "https://assets.tcgdex.net/it/ex/ex2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex2/symbol.png",
         "serieId": "ex",
         "official": 100,
         "total": 100
@@ -8963,7 +8963,7 @@ object EmbeddedCatalogData {
         "name": "Team Rocket Returns",
         "releaseDate": "2004-11-01",
         "logo": "https://assets.tcgdex.net/it/ex/ex7/logo",
-        "symbol": "https://assets.tcgdex.net/it/ex/ex7/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex7/symbol.png",
         "serieId": "ex",
         "official": 109,
         "total": 111
@@ -8973,7 +8973,7 @@ object EmbeddedCatalogData {
         "name": "EX La Leggenda di Mew",
         "releaseDate": "2006-02-13",
         "logo": "https://assets.tcgdex.net/it/ex/ex12/logo",
-        "symbol": "https://assets.tcgdex.net/it/ex/ex12/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex12/symbol.png",
         "serieId": "ex",
         "official": 92,
         "total": 93
@@ -8983,7 +8983,7 @@ object EmbeddedCatalogData {
         "name": "EX L'Isola dei Draghi",
         "releaseDate": "2006-11-08",
         "logo": "https://assets.tcgdex.net/it/ex/ex15/logo",
-        "symbol": "https://assets.tcgdex.net/it/ex/ex15/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex15/symbol.png",
         "serieId": "ex",
         "official": 101,
         "total": 101
@@ -8993,7 +8993,7 @@ object EmbeddedCatalogData {
         "name": "Power Keepers",
         "releaseDate": "2007-02-17",
         "logo": "https://assets.tcgdex.net/it/ex/ex16/logo",
-        "symbol": "https://assets.tcgdex.net/it/ex/ex16/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex16/symbol.png",
         "serieId": "ex",
         "official": 108,
         "total": 108
@@ -9003,7 +9003,7 @@ object EmbeddedCatalogData {
         "name": "EX Guardiani dei Cristalli",
         "releaseDate": "2006-08-30",
         "logo": "https://assets.tcgdex.net/it/ex/ex14/logo",
-        "symbol": "https://assets.tcgdex.net/it/ex/ex14/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex14/symbol.png",
         "serieId": "ex",
         "official": 100,
         "total": 100
@@ -9013,7 +9013,7 @@ object EmbeddedCatalogData {
         "name": "EX Specie Delta",
         "releaseDate": "2005-10-31",
         "logo": "https://assets.tcgdex.net/it/ex/ex11/logo",
-        "symbol": "https://assets.tcgdex.net/it/ex/ex11/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex11/symbol.png",
         "serieId": "ex",
         "official": 113,
         "total": 114
@@ -9023,7 +9023,7 @@ object EmbeddedCatalogData {
         "name": "EX Forze Segrete",
         "releaseDate": "2005-08-22",
         "logo": "https://assets.tcgdex.net/it/ex/ex10/logo",
-        "symbol": "https://assets.tcgdex.net/it/ex/ex10/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex10/symbol.png",
         "serieId": "ex",
         "official": 115,
         "total": 117
@@ -9033,7 +9033,7 @@ object EmbeddedCatalogData {
         "name": "EX Smeraldo",
         "releaseDate": "2005-05-09",
         "logo": "https://assets.tcgdex.net/it/ex/ex9/logo",
-        "symbol": "https://assets.tcgdex.net/it/ex/ex9/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex9/symbol.png",
         "serieId": "ex",
         "official": 106,
         "total": 107
@@ -9043,7 +9043,7 @@ object EmbeddedCatalogData {
         "name": "EX Deoxys",
         "releaseDate": "2005-02-01",
         "logo": "https://assets.tcgdex.net/it/ex/ex8/logo",
-        "symbol": "https://assets.tcgdex.net/it/ex/ex8/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex8/symbol.png",
         "serieId": "ex",
         "official": 107,
         "total": 108
@@ -9053,7 +9053,7 @@ object EmbeddedCatalogData {
         "name": "Poké Card Creator Pack",
         "releaseDate": "2004-07-01",
         "logo": "https://assets.tcgdex.net/it/ex/ex5.5/logo",
-        "symbol": "https://assets.tcgdex.net/it/ex/ex5.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex5.5/symbol.png",
         "serieId": "ex",
         "official": 5,
         "total": 5
@@ -9063,7 +9063,7 @@ object EmbeddedCatalogData {
         "name": "EX Forze Segrete Unown",
         "releaseDate": "2005-08-22",
         "logo": "https://assets.tcgdex.net/it/ex/exu/logo",
-        "symbol": "https://assets.tcgdex.net/it/ex/exu/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/exu/symbol.png",
         "serieId": "ex",
         "official": 28,
         "total": 28
@@ -9073,7 +9073,7 @@ object EmbeddedCatalogData {
         "name": "EX Fantasmi di Holon",
         "releaseDate": "2006-05-03",
         "logo": "https://assets.tcgdex.net/it/ex/ex13/logo",
-        "symbol": "https://assets.tcgdex.net/it/ex/ex13/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex13/symbol.png",
         "serieId": "ex",
         "official": 110,
         "total": 111
@@ -9083,7 +9083,7 @@ object EmbeddedCatalogData {
         "name": "EX Drago",
         "releaseDate": "2003-11-24",
         "logo": "https://assets.tcgdex.net/it/ex/ex3/logo",
-        "symbol": "https://assets.tcgdex.net/it/ex/ex3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex3/symbol.png",
         "serieId": "ex",
         "official": 97,
         "total": 100
@@ -9093,7 +9093,7 @@ object EmbeddedCatalogData {
         "name": "EX Rubino & Zaffiro",
         "releaseDate": "2003-07-01",
         "logo": "https://assets.tcgdex.net/it/ex/ex1/logo",
-        "symbol": "https://assets.tcgdex.net/it/ex/ex1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex1/symbol.png",
         "serieId": "ex",
         "official": 109,
         "total": 109
@@ -9103,7 +9103,7 @@ object EmbeddedCatalogData {
         "name": "EX Leggende Nascoste",
         "releaseDate": "2004-06-01",
         "logo": "https://assets.tcgdex.net/it/ex/ex5/logo",
-        "symbol": "https://assets.tcgdex.net/it/ex/ex5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex5/symbol.png",
         "serieId": "ex",
         "official": 101,
         "total": 102
@@ -9113,7 +9113,7 @@ object EmbeddedCatalogData {
         "name": "Jumbo cards",
         "releaseDate": "2000-02-01",
         "logo": "https://assets.tcgdex.net/it/misc/jumbo/logo",
-        "symbol": "https://assets.tcgdex.net/it/misc/jumbo/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/misc/jumbo/symbol.png",
         "serieId": "misc",
         "official": 160,
         "total": 160
@@ -9123,7 +9123,7 @@ object EmbeddedCatalogData {
         "name": "Il Risveglio dei Miti",
         "releaseDate": "2008-08-01",
         "logo": "https://assets.tcgdex.net/it/dp/dp6/logo",
-        "symbol": "https://assets.tcgdex.net/it/dp/dp6/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/dp/dp6/symbol.png",
         "serieId": "dp",
         "official": 146,
         "total": 146
@@ -9133,7 +9133,7 @@ object EmbeddedCatalogData {
         "name": "DP Black Star Promos",
         "releaseDate": "2007-05-01",
         "logo": "https://assets.tcgdex.net/it/dp/dpp/logo",
-        "symbol": "https://assets.tcgdex.net/it/dp/dpp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/dp/dpp/symbol.png",
         "serieId": "dp",
         "official": 56,
         "total": 56
@@ -9143,7 +9143,7 @@ object EmbeddedCatalogData {
         "name": "Diamante & Perla",
         "releaseDate": "2007-05-01",
         "logo": "https://assets.tcgdex.net/it/dp/dp1/logo",
-        "symbol": "https://assets.tcgdex.net/it/dp/dp1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/dp/dp1/symbol.png",
         "serieId": "dp",
         "official": 130,
         "total": 130
@@ -9153,7 +9153,7 @@ object EmbeddedCatalogData {
         "name": "Tesori Misteriosi",
         "releaseDate": "2007-08-01",
         "logo": "https://assets.tcgdex.net/it/dp/dp2/logo",
-        "symbol": "https://assets.tcgdex.net/it/dp/dp2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/dp/dp2/symbol.png",
         "serieId": "dp",
         "official": 122,
         "total": 124
@@ -9163,7 +9163,7 @@ object EmbeddedCatalogData {
         "name": "Incontri Leggendari",
         "releaseDate": "2008-02-01",
         "logo": "https://assets.tcgdex.net/it/dp/dp4/logo",
-        "symbol": "https://assets.tcgdex.net/it/dp/dp4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/dp/dp4/symbol.png",
         "serieId": "dp",
         "official": 106,
         "total": 106
@@ -9173,7 +9173,7 @@ object EmbeddedCatalogData {
         "name": "Prodigi Segreti",
         "releaseDate": "2007-11-01",
         "logo": "https://assets.tcgdex.net/it/dp/dp3/logo",
-        "symbol": "https://assets.tcgdex.net/it/dp/dp3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/dp/dp3/symbol.png",
         "serieId": "dp",
         "official": 132,
         "total": 132
@@ -9183,7 +9183,7 @@ object EmbeddedCatalogData {
         "name": "Fronte di Tempesta",
         "releaseDate": "2008-11-01",
         "logo": "https://assets.tcgdex.net/it/dp/dp7/logo",
-        "symbol": "https://assets.tcgdex.net/it/dp/dp7/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/dp/dp7/symbol.png",
         "serieId": "dp",
         "official": 100,
         "total": 106
@@ -9193,7 +9193,7 @@ object EmbeddedCatalogData {
         "name": "Alba Suprema",
         "releaseDate": "2008-05-01",
         "logo": "https://assets.tcgdex.net/it/dp/dp5/logo",
-        "symbol": "https://assets.tcgdex.net/it/dp/dp5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/dp/dp5/symbol.png",
         "serieId": "dp",
         "official": 100,
         "total": 100
@@ -9203,7 +9203,7 @@ object EmbeddedCatalogData {
         "name": "Neo Destiny",
         "releaseDate": "2002-02-28",
         "logo": "https://assets.tcgdex.net/it/neo/neo4/logo",
-        "symbol": "https://assets.tcgdex.net/it/neo/neo4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/neo/neo4/symbol.png",
         "serieId": "neo",
         "official": 105,
         "total": 113
@@ -9213,7 +9213,7 @@ object EmbeddedCatalogData {
         "name": "Neo Genesis",
         "releaseDate": "2000-12-16",
         "logo": "https://assets.tcgdex.net/it/neo/neo1/logo",
-        "symbol": "https://assets.tcgdex.net/it/neo/neo1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/neo/neo1/symbol.png",
         "serieId": "neo",
         "official": 111,
         "total": 111
@@ -9223,7 +9223,7 @@ object EmbeddedCatalogData {
         "name": "Neo Discovery",
         "releaseDate": "2001-06-01",
         "logo": "https://assets.tcgdex.net/it/neo/neo2/logo",
-        "symbol": "https://assets.tcgdex.net/it/neo/neo2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/neo/neo2/symbol.png",
         "serieId": "neo",
         "official": 75,
         "total": 75
@@ -9233,7 +9233,7 @@ object EmbeddedCatalogData {
         "name": "Southern Islands",
         "releaseDate": "2001-07-31",
         "logo": "https://assets.tcgdex.net/it/neo/si1/logo",
-        "symbol": "https://assets.tcgdex.net/it/neo/si1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/neo/si1/symbol.png",
         "serieId": "neo",
         "official": 18,
         "total": 18
@@ -9243,7 +9243,7 @@ object EmbeddedCatalogData {
         "name": "Neo Revelation",
         "releaseDate": "2001-09-21",
         "logo": "https://assets.tcgdex.net/it/neo/neo3/logo",
-        "symbol": "https://assets.tcgdex.net/it/neo/neo3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/neo/neo3/symbol.png",
         "serieId": "neo",
         "official": 64,
         "total": 66
@@ -9253,7 +9253,7 @@ object EmbeddedCatalogData {
         "name": "Ultraprisma",
         "releaseDate": "2018-02-02",
         "logo": "https://assets.tcgdex.net/it/sm/sm5/logo",
-        "symbol": "https://assets.tcgdex.net/it/sm/sm5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm5/symbol.png",
         "serieId": "sm",
         "official": 156,
         "total": 173
@@ -9263,7 +9263,7 @@ object EmbeddedCatalogData {
         "name": "Legami Inossidabili",
         "releaseDate": "2019-05-03",
         "logo": "https://assets.tcgdex.net/it/sm/sm10/logo",
-        "symbol": "https://assets.tcgdex.net/it/sm/sm10/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm10/symbol.png",
         "serieId": "sm",
         "official": 214,
         "total": 234
@@ -9273,7 +9273,7 @@ object EmbeddedCatalogData {
         "name": "Eclissi Cosmica",
         "releaseDate": "2019-11-01",
         "logo": "https://assets.tcgdex.net/it/sm/sm12/logo",
-        "symbol": "https://assets.tcgdex.net/it/sm/sm12/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm12/symbol.png",
         "serieId": "sm",
         "official": 236,
         "total": 271
@@ -9283,7 +9283,7 @@ object EmbeddedCatalogData {
         "name": "Carta Alternativa A Gialla",
         "releaseDate": "2019-08-23",
         "logo": "https://assets.tcgdex.net/it/sm/sma/logo",
-        "symbol": "https://assets.tcgdex.net/it/sm/sma/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sma/symbol.png",
         "serieId": "sm",
         "official": 94,
         "total": 94
@@ -9293,7 +9293,7 @@ object EmbeddedCatalogData {
         "name": "Sintonia Mentale",
         "releaseDate": "2019-08-02",
         "logo": "https://assets.tcgdex.net/it/sm/sm11/logo",
-        "symbol": "https://assets.tcgdex.net/it/sm/sm11/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm11/symbol.png",
         "serieId": "sm",
         "official": 236,
         "total": 258
@@ -9303,7 +9303,7 @@ object EmbeddedCatalogData {
         "name": "Detective Pikachu",
         "releaseDate": "2019-03-29",
         "logo": "https://assets.tcgdex.net/it/sm/det1/logo",
-        "symbol": "https://assets.tcgdex.net/it/sm/det1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/det1/symbol.png",
         "serieId": "sm",
         "official": 18,
         "total": 18
@@ -9313,7 +9313,7 @@ object EmbeddedCatalogData {
         "name": "Sole e Luna",
         "releaseDate": "2017-02-03",
         "logo": "https://assets.tcgdex.net/it/sm/sm1/logo",
-        "symbol": "https://assets.tcgdex.net/it/sm/sm1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm1/symbol.png",
         "serieId": "sm",
         "official": 149,
         "total": 172
@@ -9323,7 +9323,7 @@ object EmbeddedCatalogData {
         "name": "Destino Sfuggente",
         "releaseDate": "2019-08-23",
         "logo": "https://assets.tcgdex.net/it/sm/sm115/logo",
-        "symbol": "https://assets.tcgdex.net/it/sm/sm115/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm115/symbol.png",
         "serieId": "sm",
         "official": 68,
         "total": 69
@@ -9333,7 +9333,7 @@ object EmbeddedCatalogData {
         "name": "Apocalisse Di Luce",
         "releaseDate": "2018-05-04",
         "logo": "https://assets.tcgdex.net/it/sm/sm6/logo",
-        "symbol": "https://assets.tcgdex.net/it/sm/sm6/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm6/symbol.png",
         "serieId": "sm",
         "official": 131,
         "total": 146
@@ -9343,7 +9343,7 @@ object EmbeddedCatalogData {
         "name": "Tempesta Astrale",
         "releaseDate": "2018-08-03",
         "logo": "https://assets.tcgdex.net/it/sm/sm7/logo",
-        "symbol": "https://assets.tcgdex.net/it/sm/sm7/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm7/symbol.png",
         "serieId": "sm",
         "official": 168,
         "total": 183
@@ -9353,7 +9353,7 @@ object EmbeddedCatalogData {
         "name": "Trionfo Dei Draghi",
         "releaseDate": "2018-09-07",
         "logo": "https://assets.tcgdex.net/it/sm/sm7.5/logo",
-        "symbol": "https://assets.tcgdex.net/it/sm/sm7.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm7.5/symbol.png",
         "serieId": "sm",
         "official": 70,
         "total": 78
@@ -9363,7 +9363,7 @@ object EmbeddedCatalogData {
         "name": "Leggende Iridescenti",
         "releaseDate": "2017-10-06",
         "logo": "https://assets.tcgdex.net/it/sm/sm3.5/logo",
-        "symbol": "https://assets.tcgdex.net/it/sm/sm3.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm3.5/symbol.png",
         "serieId": "sm",
         "official": 73,
         "total": 78
@@ -9373,7 +9373,7 @@ object EmbeddedCatalogData {
         "name": "Gioco di Squadra",
         "releaseDate": "2019-01-31",
         "logo": "https://assets.tcgdex.net/it/sm/sm9/logo",
-        "symbol": "https://assets.tcgdex.net/it/sm/sm9/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm9/symbol.png",
         "serieId": "sm",
         "official": 181,
         "total": 196
@@ -9383,7 +9383,7 @@ object EmbeddedCatalogData {
         "name": "Tuoni Perduti",
         "releaseDate": "2018-11-02",
         "logo": "https://assets.tcgdex.net/it/sm/sm8/logo",
-        "symbol": "https://assets.tcgdex.net/it/sm/sm8/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm8/symbol.png",
         "serieId": "sm",
         "official": 214,
         "total": 236
@@ -9393,7 +9393,7 @@ object EmbeddedCatalogData {
         "name": "Guardiani Nascenti",
         "releaseDate": "2017-05-05",
         "logo": "https://assets.tcgdex.net/it/sm/sm2/logo",
-        "symbol": "https://assets.tcgdex.net/it/sm/sm2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm2/symbol.png",
         "serieId": "sm",
         "official": 145,
         "total": 169
@@ -9403,7 +9403,7 @@ object EmbeddedCatalogData {
         "name": "Invasione Scarlatta",
         "releaseDate": "2017-11-03",
         "logo": "https://assets.tcgdex.net/it/sm/sm4/logo",
-        "symbol": "https://assets.tcgdex.net/it/sm/sm4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm4/symbol.png",
         "serieId": "sm",
         "official": 111,
         "total": 125
@@ -9413,7 +9413,7 @@ object EmbeddedCatalogData {
         "name": "Ombre Infuocate",
         "releaseDate": "2017-08-04",
         "logo": "https://assets.tcgdex.net/it/sm/sm3/logo",
-        "symbol": "https://assets.tcgdex.net/it/sm/sm3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm3/symbol.png",
         "serieId": "sm",
         "official": 147,
         "total": 169
@@ -9423,7 +9423,7 @@ object EmbeddedCatalogData {
         "name": "SL Promo",
         "releaseDate": "2017-02-03",
         "logo": "https://assets.tcgdex.net/it/sm/smp/logo",
-        "symbol": "https://assets.tcgdex.net/it/sm/smp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/smp/symbol.png",
         "serieId": "sm",
         "official": 236,
         "total": 244
@@ -9433,7 +9433,7 @@ object EmbeddedCatalogData {
         "name": "MEP Black Star Promos",
         "releaseDate": "2025-09-26",
         "logo": "https://assets.tcgdex.net/it/me/mep/logo",
-        "symbol": "https://assets.tcgdex.net/it/me/mep/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/me/mep/symbol.png",
         "serieId": "me",
         "official": 0,
         "total": 10
@@ -9443,7 +9443,7 @@ object EmbeddedCatalogData {
         "name": "Megaevoluzione",
         "releaseDate": "2025-09-26",
         "logo": "https://assets.tcgdex.net/it/me/me01/logo",
-        "symbol": "https://assets.tcgdex.net/it/me/me01/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/me/me01/symbol.png",
         "serieId": "me",
         "official": 132,
         "total": 188
@@ -9453,7 +9453,7 @@ object EmbeddedCatalogData {
         "name": "Flamme Spettrali",
         "releaseDate": "2025-11-14",
         "logo": "https://assets.tcgdex.net/it/me/me02/logo",
-        "symbol": "https://assets.tcgdex.net/it/me/me02/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/me/me02/symbol.png",
         "serieId": "me",
         "official": 94,
         "total": 130
@@ -9463,7 +9463,7 @@ object EmbeddedCatalogData {
         "name": "HeartGold SoulSilver",
         "releaseDate": "2010-02-10",
         "logo": "https://assets.tcgdex.net/it/hgss/hgss1/logo",
-        "symbol": "https://assets.tcgdex.net/it/hgss/hgss1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/hgss/hgss1/symbol.png",
         "serieId": "hgss",
         "official": 123,
         "total": 124
@@ -9473,7 +9473,7 @@ object EmbeddedCatalogData {
         "name": "Forze Scatenate",
         "releaseDate": "2010-05-12",
         "logo": "https://assets.tcgdex.net/it/hgss/hgss2/logo",
-        "symbol": "https://assets.tcgdex.net/it/hgss/hgss2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/hgss/hgss2/symbol.png",
         "serieId": "hgss",
         "official": 95,
         "total": 96
@@ -9483,7 +9483,7 @@ object EmbeddedCatalogData {
         "name": "Battaglie Trionfali",
         "releaseDate": "2010-11-03",
         "logo": "https://assets.tcgdex.net/it/hgss/hgss4/logo",
-        "symbol": "https://assets.tcgdex.net/it/hgss/hgss4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/hgss/hgss4/symbol.png",
         "serieId": "hgss",
         "official": 102,
         "total": 103
@@ -9493,7 +9493,7 @@ object EmbeddedCatalogData {
         "name": "HGSS Promo",
         "releaseDate": "2010-02-11",
         "logo": "https://assets.tcgdex.net/it/hgss/hgssp/logo",
-        "symbol": "https://assets.tcgdex.net/it/hgss/hgssp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/hgss/hgssp/symbol.png",
         "serieId": "hgss",
         "official": 25,
         "total": 25
@@ -9503,7 +9503,7 @@ object EmbeddedCatalogData {
         "name": "Senza Paura",
         "releaseDate": "2010-08-18",
         "logo": "https://assets.tcgdex.net/it/hgss/hgss3/logo",
-        "symbol": "https://assets.tcgdex.net/it/hgss/hgss3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/hgss/hgss3/symbol.png",
         "serieId": "hgss",
         "official": 90,
         "total": 91
@@ -9513,7 +9513,7 @@ object EmbeddedCatalogData {
         "name": "Skyridge",
         "releaseDate": "2003-05-12",
         "logo": "https://assets.tcgdex.net/it/ecard/ecard3/logo",
-        "symbol": "https://assets.tcgdex.net/it/ecard/ecard3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ecard/ecard3/symbol.png",
         "serieId": "ecard",
         "official": 144,
         "total": 182
@@ -9523,7 +9523,7 @@ object EmbeddedCatalogData {
         "name": "Aquapolis",
         "releaseDate": "2003-01-15",
         "logo": "https://assets.tcgdex.net/it/ecard/ecard2/logo",
-        "symbol": "https://assets.tcgdex.net/it/ecard/ecard2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ecard/ecard2/symbol.png",
         "serieId": "ecard",
         "official": 147,
         "total": 186
@@ -9533,7 +9533,7 @@ object EmbeddedCatalogData {
         "name": "Sample",
         "releaseDate": "2002-08-01",
         "logo": "https://assets.tcgdex.net/it/ecard/sp/logo",
-        "symbol": "https://assets.tcgdex.net/it/ecard/sp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ecard/sp/symbol.png",
         "serieId": "ecard",
         "official": 10,
         "total": 10
@@ -9543,7 +9543,7 @@ object EmbeddedCatalogData {
         "name": "Best of game",
         "releaseDate": "2002-12-01",
         "logo": "https://assets.tcgdex.net/it/ecard/bog/logo",
-        "symbol": "https://assets.tcgdex.net/it/ecard/bog/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ecard/bog/symbol.png",
         "serieId": "ecard",
         "official": 9,
         "total": 9
@@ -9553,7 +9553,7 @@ object EmbeddedCatalogData {
         "name": "Expedition Set Base",
         "releaseDate": "2002-09-15",
         "logo": "https://assets.tcgdex.net/it/ecard/ecard1/logo",
-        "symbol": "https://assets.tcgdex.net/it/ecard/ecard1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ecard/ecard1/symbol.png",
         "serieId": "ecard",
         "official": 165,
         "total": 165
@@ -9563,7 +9563,7 @@ object EmbeddedCatalogData {
         "name": "Destino di Paldea",
         "releaseDate": "2024-01-26",
         "logo": "https://assets.tcgdex.net/it/sv/sv04.5/logo",
-        "symbol": "https://assets.tcgdex.net/it/sv/sv04.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv04.5/symbol.png",
         "serieId": "sv",
         "official": 91,
         "total": 245
@@ -9573,7 +9573,7 @@ object EmbeddedCatalogData {
         "name": "Segreto Fiabesco",
         "releaseDate": "2024-08-02",
         "logo": "https://assets.tcgdex.net/it/sv/sv06.5/logo",
-        "symbol": "https://assets.tcgdex.net/it/sv/sv06.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv06.5/symbol.png",
         "serieId": "sv",
         "official": 64,
         "total": 99
@@ -9583,7 +9583,7 @@ object EmbeddedCatalogData {
         "name": "Evoluzioni Prismatiche",
         "releaseDate": "2025-01-17",
         "logo": "https://assets.tcgdex.net/it/sv/sv08.5/logo",
-        "symbol": "https://assets.tcgdex.net/it/sv/sv08.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv08.5/symbol.png",
         "serieId": "sv",
         "official": 131,
         "total": 180
@@ -9593,7 +9593,7 @@ object EmbeddedCatalogData {
         "name": "Fuoco Bianco",
         "releaseDate": "2025-07-17",
         "logo": "https://assets.tcgdex.net/it/sv/sv10.5w/logo",
-        "symbol": "https://assets.tcgdex.net/it/sv/sv10.5w/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv10.5w/symbol.png",
         "serieId": "sv",
         "official": 86,
         "total": 173
@@ -9603,7 +9603,7 @@ object EmbeddedCatalogData {
         "name": "Evoluzioni a Paldea",
         "releaseDate": "2023-06-09",
         "logo": "https://assets.tcgdex.net/it/sv/sv02/logo",
-        "symbol": "https://assets.tcgdex.net/it/sv/sv02/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv02/symbol.png",
         "serieId": "sv",
         "official": 193,
         "total": 279
@@ -9613,7 +9613,7 @@ object EmbeddedCatalogData {
         "name": "151",
         "releaseDate": "2023-09-22",
         "logo": "https://assets.tcgdex.net/it/sv/sv03.5/logo",
-        "symbol": "https://assets.tcgdex.net/it/sv/sv03.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv03.5/symbol.png",
         "serieId": "sv",
         "official": 165,
         "total": 207
@@ -9623,7 +9623,7 @@ object EmbeddedCatalogData {
         "name": "Rivali Predestinati",
         "releaseDate": "2025-05-30",
         "logo": "https://assets.tcgdex.net/it/sv/sv10/logo",
-        "symbol": "https://assets.tcgdex.net/it/sv/sv10/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv10/symbol.png",
         "serieId": "sv",
         "official": 182,
         "total": 244
@@ -9633,7 +9633,7 @@ object EmbeddedCatalogData {
         "name": "Paradosso Temporale",
         "releaseDate": "2023-11-03",
         "logo": "https://assets.tcgdex.net/it/sv/sv04/logo",
-        "symbol": "https://assets.tcgdex.net/it/sv/sv04/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv04/symbol.png",
         "serieId": "sv",
         "official": 182,
         "total": 266
@@ -9643,7 +9643,7 @@ object EmbeddedCatalogData {
         "name": "Ossidiana Infuocata",
         "releaseDate": "2023-08-11",
         "logo": "https://assets.tcgdex.net/it/sv/sv03/logo",
-        "symbol": "https://assets.tcgdex.net/it/sv/sv03/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv03/symbol.png",
         "serieId": "sv",
         "official": 197,
         "total": 230
@@ -9653,7 +9653,7 @@ object EmbeddedCatalogData {
         "name": "Scintille Folgoranti",
         "releaseDate": "2024-11-08",
         "logo": "https://assets.tcgdex.net/it/sv/sv08/logo",
-        "symbol": "https://assets.tcgdex.net/it/sv/sv08/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv08/symbol.png",
         "serieId": "sv",
         "official": 191,
         "total": 252
@@ -9663,7 +9663,7 @@ object EmbeddedCatalogData {
         "name": "Luce Nera",
         "releaseDate": "2025-07-17",
         "logo": "https://assets.tcgdex.net/it/sv/sv10.5b/logo",
-        "symbol": "https://assets.tcgdex.net/it/sv/sv10.5b/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv10.5b/symbol.png",
         "serieId": "sv",
         "official": 86,
         "total": 172
@@ -9673,7 +9673,7 @@ object EmbeddedCatalogData {
         "name": "Crepuscolo Mascherato",
         "releaseDate": "2024-05-24",
         "logo": "https://assets.tcgdex.net/it/sv/sv06/logo",
-        "symbol": "https://assets.tcgdex.net/it/sv/sv06/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv06/symbol.png",
         "serieId": "sv",
         "official": 167,
         "total": 226
@@ -9683,7 +9683,7 @@ object EmbeddedCatalogData {
         "name": "Cronoforze",
         "releaseDate": "2024-03-22",
         "logo": "https://assets.tcgdex.net/it/sv/sv05/logo",
-        "symbol": "https://assets.tcgdex.net/it/sv/sv05/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv05/symbol.png",
         "serieId": "sv",
         "official": 162,
         "total": 218
@@ -9693,7 +9693,7 @@ object EmbeddedCatalogData {
         "name": "Corona Astrale",
         "releaseDate": "2024-09-13",
         "logo": "https://assets.tcgdex.net/it/sv/sv07/logo",
-        "symbol": "https://assets.tcgdex.net/it/sv/sv07/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv07/symbol.png",
         "serieId": "sv",
         "official": 142,
         "total": 175
@@ -9703,7 +9703,7 @@ object EmbeddedCatalogData {
         "name": "SVP Black Star Promos",
         "releaseDate": "2023-03-31",
         "logo": "https://assets.tcgdex.net/it/sv/svp/logo",
-        "symbol": "https://assets.tcgdex.net/it/sv/svp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/svp/symbol.png",
         "serieId": "sv",
         "official": 0,
         "total": 219
@@ -9713,7 +9713,7 @@ object EmbeddedCatalogData {
         "name": "Scarlatto e Violetto",
         "releaseDate": "2023-03-31",
         "logo": "https://assets.tcgdex.net/it/sv/sv01/logo",
-        "symbol": "https://assets.tcgdex.net/it/sv/sv01/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv01/symbol.png",
         "serieId": "sv",
         "official": 198,
         "total": 258
@@ -9723,7 +9723,7 @@ object EmbeddedCatalogData {
         "name": "Avventure Insieme",
         "releaseDate": "2025-03-28",
         "logo": "https://assets.tcgdex.net/it/sv/sv09/logo",
-        "symbol": "https://assets.tcgdex.net/it/sv/sv09/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv09/symbol.png",
         "serieId": "sv",
         "official": 159,
         "total": 190
@@ -9733,7 +9733,7 @@ object EmbeddedCatalogData {
         "name": "Carta Alternatica A Gialla",
         "releaseDate": "2014-02-05",
         "logo": "https://assets.tcgdex.net/it/xy/xya/logo",
-        "symbol": "https://assets.tcgdex.net/it/xy/xya/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xya/symbol.png",
         "serieId": "xy",
         "official": 6,
         "total": 6
@@ -9743,7 +9743,7 @@ object EmbeddedCatalogData {
         "name": "Furie Volanti",
         "releaseDate": "2015-05-06",
         "logo": "https://assets.tcgdex.net/it/xy/xy6/logo",
-        "symbol": "https://assets.tcgdex.net/it/xy/xy6/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy6/symbol.png",
         "serieId": "xy",
         "official": 108,
         "total": 112
@@ -9753,7 +9753,7 @@ object EmbeddedCatalogData {
         "name": "Antiche Origini",
         "releaseDate": "2015-08-12",
         "logo": "https://assets.tcgdex.net/it/xy/xy7/logo",
-        "symbol": "https://assets.tcgdex.net/it/xy/xy7/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy7/symbol.png",
         "serieId": "xy",
         "official": 98,
         "total": 101
@@ -9763,7 +9763,7 @@ object EmbeddedCatalogData {
         "name": "Turbo Crash",
         "releaseDate": "2016-02-03",
         "logo": "https://assets.tcgdex.net/it/xy/xy9/logo",
-        "symbol": "https://assets.tcgdex.net/it/xy/xy9/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy9/symbol.png",
         "serieId": "xy",
         "official": 122,
         "total": 126
@@ -9773,7 +9773,7 @@ object EmbeddedCatalogData {
         "name": "Scontro Primordiale",
         "releaseDate": "2015-02-04",
         "logo": "https://assets.tcgdex.net/it/xy/xy5/logo",
-        "symbol": "https://assets.tcgdex.net/it/xy/xy5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy5/symbol.png",
         "serieId": "xy",
         "official": 160,
         "total": 164
@@ -9783,7 +9783,7 @@ object EmbeddedCatalogData {
         "name": "XY Promo",
         "releaseDate": "2013-10-12",
         "logo": "https://assets.tcgdex.net/it/xy/xyp/logo",
-        "symbol": "https://assets.tcgdex.net/it/xy/xyp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xyp/symbol.png",
         "serieId": "xy",
         "official": 211,
         "total": 216
@@ -9793,7 +9793,7 @@ object EmbeddedCatalogData {
         "name": "Benvenuti a Kalos",
         "releaseDate": "2013-11-08",
         "logo": "https://assets.tcgdex.net/it/xy/xy0/logo",
-        "symbol": "https://assets.tcgdex.net/it/xy/xy0/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy0/symbol.png",
         "serieId": "xy",
         "official": 39,
         "total": 39
@@ -9803,7 +9803,7 @@ object EmbeddedCatalogData {
         "name": "Fuoco Infernale",
         "releaseDate": "2014-05-07",
         "logo": "https://assets.tcgdex.net/it/xy/xy2/logo",
-        "symbol": "https://assets.tcgdex.net/it/xy/xy2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy2/symbol.png",
         "serieId": "xy",
         "official": 106,
         "total": 110
@@ -9813,7 +9813,7 @@ object EmbeddedCatalogData {
         "name": "Turbo Blitz",
         "releaseDate": "2015-11-04",
         "logo": "https://assets.tcgdex.net/it/xy/xy8/logo",
-        "symbol": "https://assets.tcgdex.net/it/xy/xy8/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy8/symbol.png",
         "serieId": "xy",
         "official": 162,
         "total": 165
@@ -9823,7 +9823,7 @@ object EmbeddedCatalogData {
         "name": "Evoluzioni",
         "releaseDate": "2016-11-02",
         "logo": "https://assets.tcgdex.net/it/xy/xy12/logo",
-        "symbol": "https://assets.tcgdex.net/it/xy/xy12/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy12/symbol.png",
         "serieId": "xy",
         "official": 108,
         "total": 113
@@ -9833,7 +9833,7 @@ object EmbeddedCatalogData {
         "name": "Double Crisis",
         "releaseDate": "2015-03-25",
         "logo": "https://assets.tcgdex.net/it/xy/dc1/logo",
-        "symbol": "https://assets.tcgdex.net/it/xy/dc1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/dc1/symbol.png",
         "serieId": "xy",
         "official": 34,
         "total": 34
@@ -9843,7 +9843,7 @@ object EmbeddedCatalogData {
         "name": "Generazioni",
         "releaseDate": "2016-02-22",
         "logo": "https://assets.tcgdex.net/it/xy/g1/logo",
-        "symbol": "https://assets.tcgdex.net/it/xy/g1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/g1/symbol.png",
         "serieId": "xy",
         "official": 83,
         "total": 117
@@ -9853,7 +9853,7 @@ object EmbeddedCatalogData {
         "name": "XY",
         "releaseDate": "2014-02-05",
         "logo": "https://assets.tcgdex.net/it/xy/xy1/logo",
-        "symbol": "https://assets.tcgdex.net/it/xy/xy1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy1/symbol.png",
         "serieId": "xy",
         "official": 146,
         "total": 146
@@ -9863,7 +9863,7 @@ object EmbeddedCatalogData {
         "name": "Vapori Accesi",
         "releaseDate": "2016-08-03",
         "logo": "https://assets.tcgdex.net/it/xy/xy11/logo",
-        "symbol": "https://assets.tcgdex.net/it/xy/xy11/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy11/symbol.png",
         "serieId": "xy",
         "official": 114,
         "total": 116
@@ -9873,7 +9873,7 @@ object EmbeddedCatalogData {
         "name": "Destini Incrociati",
         "releaseDate": "2016-05-02",
         "logo": "https://assets.tcgdex.net/it/xy/xy10/logo",
-        "symbol": "https://assets.tcgdex.net/it/xy/xy10/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy10/symbol.png",
         "serieId": "xy",
         "official": 124,
         "total": 129
@@ -9883,7 +9883,7 @@ object EmbeddedCatalogData {
         "name": "Colpi Furiosi",
         "releaseDate": "2014-08-13",
         "logo": "https://assets.tcgdex.net/it/xy/xy3/logo",
-        "symbol": "https://assets.tcgdex.net/it/xy/xy3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy3/symbol.png",
         "serieId": "xy",
         "official": 111,
         "total": 114
@@ -9893,7 +9893,7 @@ object EmbeddedCatalogData {
         "name": "Forze Spettrali",
         "releaseDate": "2014-11-05",
         "logo": "https://assets.tcgdex.net/it/xy/xy4/logo",
-        "symbol": "https://assets.tcgdex.net/it/xy/xy4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy4/symbol.png",
         "serieId": "xy",
         "official": 119,
         "total": 124
@@ -9903,7 +9903,7 @@ object EmbeddedCatalogData {
         "name": "HS trainer Kit (Gyarados)",
         "releaseDate": "2010-05-01",
         "logo": "https://assets.tcgdex.net/it/tk/tk-hs-g/logo",
-        "symbol": "https://assets.tcgdex.net/it/tk/tk-hs-g/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-hs-g/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 1
@@ -9913,7 +9913,7 @@ object EmbeddedCatalogData {
         "name": "EX trainer Kit (Plusle)",
         "releaseDate": "2006-03-01",
         "logo": "https://assets.tcgdex.net/it/tk/tk-ex-p/logo",
-        "symbol": "https://assets.tcgdex.net/it/tk/tk-ex-p/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-ex-p/symbol.png",
         "serieId": "tk",
         "official": 12,
         "total": 12
@@ -9923,7 +9923,7 @@ object EmbeddedCatalogData {
         "name": "EX trainer Kit (Ninun)",
         "releaseDate": "2006-03-01",
         "logo": "https://assets.tcgdex.net/it/tk/tk-ex-m/logo",
-        "symbol": "https://assets.tcgdex.net/it/tk/tk-ex-m/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-ex-m/symbol.png",
         "serieId": "tk",
         "official": 12,
         "total": 12
@@ -9933,7 +9933,7 @@ object EmbeddedCatalogData {
         "name": "Diamond & Pearl trainer Kit (Lucario)",
         "releaseDate": "2007-09-01",
         "logo": "https://assets.tcgdex.net/it/tk/tk-dp-l/logo",
-        "symbol": "https://assets.tcgdex.net/it/tk/tk-dp-l/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-dp-l/symbol.png",
         "serieId": "tk",
         "official": 11,
         "total": 11
@@ -9943,7 +9943,7 @@ object EmbeddedCatalogData {
         "name": "Sole e Luna trainer Kit (Alolan Raichu)",
         "releaseDate": "2017-04-21",
         "logo": "https://assets.tcgdex.net/it/tk/tk-sm-r/logo",
-        "symbol": "https://assets.tcgdex.net/it/tk/tk-sm-r/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-sm-r/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 19
@@ -9953,7 +9953,7 @@ object EmbeddedCatalogData {
         "name": "XY trainer Kit (Latias)",
         "releaseDate": "2015-04-29",
         "logo": "https://assets.tcgdex.net/it/tk/tk-xy-latia/logo",
-        "symbol": "https://assets.tcgdex.net/it/tk/tk-xy-latia/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-xy-latia/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -9963,7 +9963,7 @@ object EmbeddedCatalogData {
         "name": "HS trainer Kit (Raichu)",
         "releaseDate": "2010-05-01",
         "logo": "https://assets.tcgdex.net/it/tk/tk-hs-r/logo",
-        "symbol": "https://assets.tcgdex.net/it/tk/tk-hs-r/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-hs-r/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 1
@@ -9973,7 +9973,7 @@ object EmbeddedCatalogData {
         "name": "EX trainer Kit (Latios)",
         "releaseDate": "2004-07-01",
         "logo": "https://assets.tcgdex.net/it/tk/tk-ex-latio/logo",
-        "symbol": "https://assets.tcgdex.net/it/tk/tk-ex-latio/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-ex-latio/symbol.png",
         "serieId": "tk",
         "official": 10,
         "total": 10
@@ -9983,7 +9983,7 @@ object EmbeddedCatalogData {
         "name": "BW trainer Kit (Excadrill)",
         "releaseDate": "2011-09-01",
         "logo": "https://assets.tcgdex.net/it/tk/tk-bw-e/logo",
-        "symbol": "https://assets.tcgdex.net/it/tk/tk-bw-e/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-bw-e/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -9993,7 +9993,7 @@ object EmbeddedCatalogData {
         "name": "XY trainer Kit (Pikachu Libre)",
         "releaseDate": "2016-04-27",
         "logo": "https://assets.tcgdex.net/it/tk/tk-xy-p/logo",
-        "symbol": "https://assets.tcgdex.net/it/tk/tk-xy-p/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-xy-p/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -10003,7 +10003,7 @@ object EmbeddedCatalogData {
         "name": "XY trainer Kit (Latios)",
         "releaseDate": "2015-04-29",
         "logo": "https://assets.tcgdex.net/it/tk/tk-xy-latio/logo",
-        "symbol": "https://assets.tcgdex.net/it/tk/tk-xy-latio/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-xy-latio/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -10013,7 +10013,7 @@ object EmbeddedCatalogData {
         "name": "Sole e Luna trainer Kit (Lycanroc)",
         "releaseDate": "2017-04-21",
         "logo": "https://assets.tcgdex.net/it/tk/tk-sm-l/logo",
-        "symbol": "https://assets.tcgdex.net/it/tk/tk-sm-l/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-sm-l/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 18
@@ -10023,7 +10023,7 @@ object EmbeddedCatalogData {
         "name": "EX trainer Kit (Latias)",
         "releaseDate": "2004-07-01",
         "logo": "https://assets.tcgdex.net/it/tk/tk-ex-latia/logo",
-        "symbol": "https://assets.tcgdex.net/it/tk/tk-ex-latia/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-ex-latia/symbol.png",
         "serieId": "tk",
         "official": 10,
         "total": 10
@@ -10033,7 +10033,7 @@ object EmbeddedCatalogData {
         "name": "XY trainer Kit (Suicune)",
         "releaseDate": "2016-04-27",
         "logo": "https://assets.tcgdex.net/it/tk/tk-xy-su/logo",
-        "symbol": "https://assets.tcgdex.net/it/tk/tk-xy-su/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-xy-su/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -10043,7 +10043,7 @@ object EmbeddedCatalogData {
         "name": "Diamond & Pearl trainer Kit (Manaphy)",
         "releaseDate": "2007-09-01",
         "logo": "https://assets.tcgdex.net/it/tk/tk-dp-m/logo",
-        "symbol": "https://assets.tcgdex.net/it/tk/tk-dp-m/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-dp-m/symbol.png",
         "serieId": "tk",
         "official": 12,
         "total": 12
@@ -10053,7 +10053,7 @@ object EmbeddedCatalogData {
         "name": "XY trainer Kit (Wigglytuff)",
         "releaseDate": "2014-11-01",
         "logo": "https://assets.tcgdex.net/it/tk/tk-xy-w/logo",
-        "symbol": "https://assets.tcgdex.net/it/tk/tk-xy-w/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-xy-w/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -10063,7 +10063,7 @@ object EmbeddedCatalogData {
         "name": "BW trainer Kit (Zoroark)",
         "releaseDate": "2011-09-01",
         "logo": "https://assets.tcgdex.net/it/tk/tk-bw-z/logo",
-        "symbol": "https://assets.tcgdex.net/it/tk/tk-bw-z/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-bw-z/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -10073,7 +10073,7 @@ object EmbeddedCatalogData {
         "name": "XY trainer Kit (Noivern)",
         "releaseDate": "2014-03-12",
         "logo": "https://assets.tcgdex.net/it/tk/tk-xy-n/logo",
-        "symbol": "https://assets.tcgdex.net/it/tk/tk-xy-n/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-xy-n/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -10083,7 +10083,7 @@ object EmbeddedCatalogData {
         "name": "XY trainer Kit (Sylveon)",
         "releaseDate": "2014-03-12",
         "logo": "https://assets.tcgdex.net/it/tk/tk-xy-sy/logo",
-        "symbol": "https://assets.tcgdex.net/it/tk/tk-xy-sy/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-xy-sy/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -10093,7 +10093,7 @@ object EmbeddedCatalogData {
         "name": "XY trainer Kit (Bisharp)",
         "releaseDate": "2014-11-01",
         "logo": "https://assets.tcgdex.net/it/tk/tk-xy-b/logo",
-        "symbol": "https://assets.tcgdex.net/it/tk/tk-xy-b/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-xy-b/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -10103,7 +10103,7 @@ object EmbeddedCatalogData {
         "name": "Arceus",
         "releaseDate": "2009-11-04",
         "logo": "https://assets.tcgdex.net/it/pl/pl4/logo",
-        "symbol": "https://assets.tcgdex.net/it/pl/pl4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pl/pl4/symbol.png",
         "serieId": "pl",
         "official": 99,
         "total": 111
@@ -10113,7 +10113,7 @@ object EmbeddedCatalogData {
         "name": "Supreme Victors",
         "releaseDate": "2009-08-19",
         "logo": "https://assets.tcgdex.net/it/pl/pl3/logo",
-        "symbol": "https://assets.tcgdex.net/it/pl/pl3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pl/pl3/symbol.png",
         "serieId": "pl",
         "official": 147,
         "total": 153
@@ -10123,7 +10123,7 @@ object EmbeddedCatalogData {
         "name": "L'Ascesa dei Rivali",
         "releaseDate": "2009-05-16",
         "logo": "https://assets.tcgdex.net/it/pl/pl2/logo",
-        "symbol": "https://assets.tcgdex.net/it/pl/pl2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pl/pl2/symbol.png",
         "serieId": "pl",
         "official": 111,
         "total": 120
@@ -10133,7 +10133,7 @@ object EmbeddedCatalogData {
         "name": "Pokémon Rumble",
         "releaseDate": "2009-12-02",
         "logo": "https://assets.tcgdex.net/it/pl/ru1/logo",
-        "symbol": "https://assets.tcgdex.net/it/pl/ru1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pl/ru1/symbol.png",
         "serieId": "pl",
         "official": 16,
         "total": 16
@@ -10143,7 +10143,7 @@ object EmbeddedCatalogData {
         "name": "Platino",
         "releaseDate": "2009-02-11",
         "logo": "https://assets.tcgdex.net/it/pl/pl1/logo",
-        "symbol": "https://assets.tcgdex.net/it/pl/pl1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pl/pl1/symbol.png",
         "serieId": "pl",
         "official": 127,
         "total": 133
@@ -10153,7 +10153,7 @@ object EmbeddedCatalogData {
         "name": "Gym Challenge",
         "releaseDate": "2000-10-16",
         "logo": "https://assets.tcgdex.net/it/gym/gym2/logo",
-        "symbol": "https://assets.tcgdex.net/it/gym/gym2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/gym/gym2/symbol.png",
         "serieId": "gym",
         "official": 132,
         "total": 132
@@ -10163,7 +10163,7 @@ object EmbeddedCatalogData {
         "name": "Gym Heroes",
         "releaseDate": "2000-08-14",
         "logo": "https://assets.tcgdex.net/it/gym/gym1/logo",
-        "symbol": "https://assets.tcgdex.net/it/gym/gym1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/gym/gym1/symbol.png",
         "serieId": "gym",
         "official": 132,
         "total": 132
@@ -10173,7 +10173,7 @@ object EmbeddedCatalogData {
         "name": "Destino Splendente",
         "releaseDate": "2021-02-19",
         "logo": "https://assets.tcgdex.net/it/swsh/swsh4.5/logo",
-        "symbol": "https://assets.tcgdex.net/it/swsh/swsh4.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh4.5/symbol.png",
         "serieId": "swsh",
         "official": 72,
         "total": 195
@@ -10183,7 +10183,7 @@ object EmbeddedCatalogData {
         "name": "Lucentezza Siderale",
         "releaseDate": "2022-05-27",
         "logo": "https://assets.tcgdex.net/it/swsh/swsh10/logo",
-        "symbol": "https://assets.tcgdex.net/it/swsh/swsh10/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh10/symbol.png",
         "serieId": "swsh",
         "official": 189,
         "total": 246
@@ -10193,7 +10193,7 @@ object EmbeddedCatalogData {
         "name": "Colpo Fusione",
         "releaseDate": "2021-11-12",
         "logo": "https://assets.tcgdex.net/it/swsh/swsh8/logo",
-        "symbol": "https://assets.tcgdex.net/it/swsh/swsh8/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh8/symbol.png",
         "serieId": "swsh",
         "official": 264,
         "total": 284
@@ -10203,7 +10203,7 @@ object EmbeddedCatalogData {
         "name": "Evoluzioni Eteree",
         "releaseDate": "2021-08-27",
         "logo": "https://assets.tcgdex.net/it/swsh/swsh7/logo",
-        "symbol": "https://assets.tcgdex.net/it/swsh/swsh7/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh7/symbol.png",
         "serieId": "swsh",
         "official": 203,
         "total": 237
@@ -10213,7 +10213,7 @@ object EmbeddedCatalogData {
         "name": "Zenit Regale",
         "releaseDate": "2023-01-20",
         "logo": "https://assets.tcgdex.net/it/swsh/swsh12.5/logo",
-        "symbol": "https://assets.tcgdex.net/it/swsh/swsh12.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh12.5/symbol.png",
         "serieId": "swsh",
         "official": 159,
         "total": 230
@@ -10223,7 +10223,7 @@ object EmbeddedCatalogData {
         "name": "Futuri Campioni",
         "releaseDate": "2020-09-25",
         "logo": "https://assets.tcgdex.net/it/swsh/swsh3.5/logo",
-        "symbol": "https://assets.tcgdex.net/it/swsh/swsh3.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh3.5/symbol.png",
         "serieId": "swsh",
         "official": 70,
         "total": 80
@@ -10233,7 +10233,7 @@ object EmbeddedCatalogData {
         "name": "Gran Festa",
         "releaseDate": "2021-10-08",
         "logo": "https://assets.tcgdex.net/it/swsh/cel25/logo",
-        "symbol": "https://assets.tcgdex.net/it/swsh/cel25/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/cel25/symbol.png",
         "serieId": "swsh",
         "official": 25,
         "total": 51
@@ -10243,7 +10243,7 @@ object EmbeddedCatalogData {
         "name": "Stili di Lotta",
         "releaseDate": "2021-03-19",
         "logo": "https://assets.tcgdex.net/it/swsh/swsh5/logo",
-        "symbol": "https://assets.tcgdex.net/it/swsh/swsh5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh5/symbol.png",
         "serieId": "swsh",
         "official": 163,
         "total": 183
@@ -10253,7 +10253,7 @@ object EmbeddedCatalogData {
         "name": "Tempesta Argentata",
         "releaseDate": "2022-11-11",
         "logo": "https://assets.tcgdex.net/it/swsh/swsh12/logo",
-        "symbol": "https://assets.tcgdex.net/it/swsh/swsh12/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh12/symbol.png",
         "serieId": "swsh",
         "official": 195,
         "total": 245
@@ -10263,7 +10263,7 @@ object EmbeddedCatalogData {
         "name": "Voltaggio Sfolgorante",
         "releaseDate": "2020-11-13",
         "logo": "https://assets.tcgdex.net/it/swsh/swsh4/logo",
-        "symbol": "https://assets.tcgdex.net/it/swsh/swsh4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh4/symbol.png",
         "serieId": "swsh",
         "official": 185,
         "total": 203
@@ -10273,7 +10273,7 @@ object EmbeddedCatalogData {
         "name": "Regno Glaciale",
         "releaseDate": "2021-06-18",
         "logo": "https://assets.tcgdex.net/it/swsh/swsh6/logo",
-        "symbol": "https://assets.tcgdex.net/it/swsh/swsh6/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh6/symbol.png",
         "serieId": "swsh",
         "official": 198,
         "total": 233
@@ -10283,7 +10283,7 @@ object EmbeddedCatalogData {
         "name": "Origine Perduta",
         "releaseDate": "2022-09-09",
         "logo": "https://assets.tcgdex.net/it/swsh/swsh11/logo",
-        "symbol": "https://assets.tcgdex.net/it/swsh/swsh11/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh11/symbol.png",
         "serieId": "swsh",
         "official": 196,
         "total": 247
@@ -10293,7 +10293,7 @@ object EmbeddedCatalogData {
         "name": "Fiamme Oscure",
         "releaseDate": "2020-08-14",
         "logo": "https://assets.tcgdex.net/it/swsh/swsh3/logo",
-        "symbol": "https://assets.tcgdex.net/it/swsh/swsh3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh3/symbol.png",
         "serieId": "swsh",
         "official": 189,
         "total": 201
@@ -10303,7 +10303,7 @@ object EmbeddedCatalogData {
         "name": "Fragore Ribelle",
         "releaseDate": "2020-05-01",
         "logo": "https://assets.tcgdex.net/it/swsh/swsh2/logo",
-        "symbol": "https://assets.tcgdex.net/it/swsh/swsh2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh2/symbol.png",
         "serieId": "swsh",
         "official": 192,
         "total": 209
@@ -10313,7 +10313,7 @@ object EmbeddedCatalogData {
         "name": "SPSC Promo",
         "releaseDate": "2019-11-15",
         "logo": "https://assets.tcgdex.net/it/swsh/swshp/logo",
-        "symbol": "https://assets.tcgdex.net/it/swsh/swshp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swshp/symbol.png",
         "serieId": "swsh",
         "official": 107,
         "total": 287
@@ -10323,7 +10323,7 @@ object EmbeddedCatalogData {
         "name": "Pokémon Futsal 2020",
         "releaseDate": "2020-09-11",
         "logo": "https://assets.tcgdex.net/it/swsh/fut2020/logo",
-        "symbol": "https://assets.tcgdex.net/it/swsh/fut2020/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/fut2020/symbol.png",
         "serieId": "swsh",
         "official": 5,
         "total": 5
@@ -10333,7 +10333,7 @@ object EmbeddedCatalogData {
         "name": "Pokémon GO",
         "releaseDate": "2022-07-01",
         "logo": "https://assets.tcgdex.net/it/swsh/swsh10.5/logo",
-        "symbol": "https://assets.tcgdex.net/it/swsh/swsh10.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh10.5/symbol.png",
         "serieId": "swsh",
         "official": 78,
         "total": 88
@@ -10343,7 +10343,7 @@ object EmbeddedCatalogData {
         "name": "Astri Lucenti",
         "releaseDate": "2022-02-25",
         "logo": "https://assets.tcgdex.net/it/swsh/swsh9/logo",
-        "symbol": "https://assets.tcgdex.net/it/swsh/swsh9/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh9/symbol.png",
         "serieId": "swsh",
         "official": 172,
         "total": 216
@@ -10353,7 +10353,7 @@ object EmbeddedCatalogData {
         "name": "Spada e Scudo",
         "releaseDate": "2020-02-07",
         "logo": "https://assets.tcgdex.net/it/swsh/swsh1/logo",
-        "symbol": "https://assets.tcgdex.net/it/swsh/swsh1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh1/symbol.png",
         "serieId": "swsh",
         "official": 202,
         "total": 216
@@ -10367,7 +10367,7 @@ object EmbeddedCatalogData {
         "name": "Tempestade de Plasma",
         "releaseDate": "2013-02-06",
         "logo": "https://assets.tcgdex.net/pt/bw/bw8/logo",
-        "symbol": "https://assets.tcgdex.net/pt/bw/bw8/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw8/symbol.png",
         "serieId": "bw",
         "official": 135,
         "total": 138
@@ -10377,7 +10377,7 @@ object EmbeddedCatalogData {
         "name": "Exploradores da Escuridão",
         "releaseDate": "2012-05-09",
         "logo": "https://assets.tcgdex.net/pt/bw/bw5/logo",
-        "symbol": "https://assets.tcgdex.net/pt/bw/bw5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw5/symbol.png",
         "serieId": "bw",
         "official": 108,
         "total": 111
@@ -10387,7 +10387,7 @@ object EmbeddedCatalogData {
         "name": "Black & White",
         "releaseDate": "2011-04-25",
         "logo": "https://assets.tcgdex.net/pt/bw/bw1/logo",
-        "symbol": "https://assets.tcgdex.net/pt/bw/bw1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw1/symbol.png",
         "serieId": "bw",
         "official": 114,
         "total": 115
@@ -10397,7 +10397,7 @@ object EmbeddedCatalogData {
         "name": "Fronteiras Cruzadas",
         "releaseDate": "2012-11-07",
         "logo": "https://assets.tcgdex.net/pt/bw/bw7/logo",
-        "symbol": "https://assets.tcgdex.net/pt/bw/bw7/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw7/symbol.png",
         "serieId": "bw",
         "official": 149,
         "total": 153
@@ -10407,7 +10407,7 @@ object EmbeddedCatalogData {
         "name": "Poderes Emergentes",
         "releaseDate": "2011-08-31",
         "logo": "https://assets.tcgdex.net/pt/bw/bw2/logo",
-        "symbol": "https://assets.tcgdex.net/pt/bw/bw2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw2/symbol.png",
         "serieId": "bw",
         "official": 98,
         "total": 98
@@ -10417,7 +10417,7 @@ object EmbeddedCatalogData {
         "name": "Congelamento de Plasma",
         "releaseDate": "2013-05-08",
         "logo": "https://assets.tcgdex.net/pt/bw/bw9/logo",
-        "symbol": "https://assets.tcgdex.net/pt/bw/bw9/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw9/symbol.png",
         "serieId": "bw",
         "official": 116,
         "total": 122
@@ -10427,7 +10427,7 @@ object EmbeddedCatalogData {
         "name": "Vitórias Nobres",
         "releaseDate": "2011-11-16",
         "logo": "https://assets.tcgdex.net/pt/bw/bw3/logo",
-        "symbol": "https://assets.tcgdex.net/pt/bw/bw3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw3/symbol.png",
         "serieId": "bw",
         "official": 101,
         "total": 102
@@ -10437,7 +10437,7 @@ object EmbeddedCatalogData {
         "name": "Explosão de Plasma",
         "releaseDate": "2013-08-14",
         "logo": "https://assets.tcgdex.net/pt/bw/bw10/logo",
-        "symbol": "https://assets.tcgdex.net/pt/bw/bw10/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw10/symbol.png",
         "serieId": "bw",
         "official": 101,
         "total": 105
@@ -10447,7 +10447,7 @@ object EmbeddedCatalogData {
         "name": "Radiant Collection",
         "releaseDate": "2013-11-06",
         "logo": "https://assets.tcgdex.net/pt/bw/rc/logo",
-        "symbol": "https://assets.tcgdex.net/pt/bw/rc/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/rc/symbol.png",
         "serieId": "bw",
         "official": 25,
         "total": 25
@@ -10457,7 +10457,7 @@ object EmbeddedCatalogData {
         "name": "Tesouros Lendários",
         "releaseDate": "2013-11-06",
         "logo": "https://assets.tcgdex.net/pt/bw/bw11/logo",
-        "symbol": "https://assets.tcgdex.net/pt/bw/bw11/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw11/symbol.png",
         "serieId": "bw",
         "official": 113,
         "total": 140
@@ -10467,7 +10467,7 @@ object EmbeddedCatalogData {
         "name": "Dragões Enaltecidos",
         "releaseDate": "2012-08-15",
         "logo": "https://assets.tcgdex.net/pt/bw/bw6/logo",
-        "symbol": "https://assets.tcgdex.net/pt/bw/bw6/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw6/symbol.png",
         "serieId": "bw",
         "official": 124,
         "total": 128
@@ -10477,7 +10477,7 @@ object EmbeddedCatalogData {
         "name": "BW Black Star Promos",
         "releaseDate": "2011-04-26",
         "logo": "https://assets.tcgdex.net/pt/bw/bwp/logo",
-        "symbol": "https://assets.tcgdex.net/pt/bw/bwp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bwp/symbol.png",
         "serieId": "bw",
         "official": 101,
         "total": 101
@@ -10487,7 +10487,7 @@ object EmbeddedCatalogData {
         "name": "Próximos Destinos",
         "releaseDate": "2012-02-08",
         "logo": "https://assets.tcgdex.net/pt/bw/bw4/logo",
-        "symbol": "https://assets.tcgdex.net/pt/bw/bw4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw4/symbol.png",
         "serieId": "bw",
         "official": 99,
         "total": 103
@@ -10497,7 +10497,7 @@ object EmbeddedCatalogData {
         "name": "Cofre do Dragão",
         "releaseDate": "2012-10-05",
         "logo": "https://assets.tcgdex.net/pt/bw/dv1/logo",
-        "symbol": "https://assets.tcgdex.net/pt/bw/dv1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/dv1/symbol.png",
         "serieId": "bw",
         "official": 20,
         "total": 21
@@ -10507,7 +10507,7 @@ object EmbeddedCatalogData {
         "name": "Selva",
         "releaseDate": "1999-06-16",
         "logo": "https://assets.tcgdex.net/pt/base/base2/logo",
-        "symbol": "https://assets.tcgdex.net/pt/base/base2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/base/base2/symbol.png",
         "serieId": "base",
         "official": 64,
         "total": 64
@@ -10517,7 +10517,7 @@ object EmbeddedCatalogData {
         "name": "Team Rocket",
         "releaseDate": "2000-04-24",
         "logo": "https://assets.tcgdex.net/pt/base/base5/logo",
-        "symbol": "https://assets.tcgdex.net/pt/base/base5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/base/base5/symbol.png",
         "serieId": "base",
         "official": 82,
         "total": 83
@@ -10527,7 +10527,7 @@ object EmbeddedCatalogData {
         "name": "Wizards Black Star Promos",
         "releaseDate": "1999-07-01",
         "logo": "https://assets.tcgdex.net/pt/base/basep/logo",
-        "symbol": "https://assets.tcgdex.net/pt/base/basep/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/base/basep/symbol.png",
         "serieId": "base",
         "official": 53,
         "total": 53
@@ -10537,7 +10537,7 @@ object EmbeddedCatalogData {
         "name": "Fóssil",
         "releaseDate": "1999-10-10",
         "logo": "https://assets.tcgdex.net/pt/base/base3/logo",
-        "symbol": "https://assets.tcgdex.net/pt/base/base3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/base/base3/symbol.png",
         "serieId": "base",
         "official": 62,
         "total": 62
@@ -10547,7 +10547,7 @@ object EmbeddedCatalogData {
         "name": "Base Set 2",
         "releaseDate": "2000-02-24",
         "logo": "https://assets.tcgdex.net/pt/base/base4/logo",
-        "symbol": "https://assets.tcgdex.net/pt/base/base4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/base/base4/symbol.png",
         "serieId": "base",
         "official": 130,
         "total": 130
@@ -10557,7 +10557,7 @@ object EmbeddedCatalogData {
         "name": "Coleção Básica",
         "releaseDate": "1999-01-09",
         "logo": "https://assets.tcgdex.net/pt/base/base1/logo",
-        "symbol": "https://assets.tcgdex.net/pt/base/base1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/base/base1/symbol.png",
         "serieId": "base",
         "official": 102,
         "total": 102
@@ -10567,7 +10567,7 @@ object EmbeddedCatalogData {
         "name": "W Promotional",
         "releaseDate": "1999-09-01",
         "logo": "https://assets.tcgdex.net/pt/base/wp/logo",
-        "symbol": "https://assets.tcgdex.net/pt/base/wp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/base/wp/symbol.png",
         "serieId": "base",
         "official": 7,
         "total": 7
@@ -10577,7 +10577,7 @@ object EmbeddedCatalogData {
         "name": "POP Series 8",
         "releaseDate": "2008-09-01",
         "logo": "https://assets.tcgdex.net/pt/pop/pop8/logo",
-        "symbol": "https://assets.tcgdex.net/pt/pop/pop8/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop8/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -10587,7 +10587,7 @@ object EmbeddedCatalogData {
         "name": "POP Series 9",
         "releaseDate": "2009-03-01",
         "logo": "https://assets.tcgdex.net/pt/pop/pop9/logo",
-        "symbol": "https://assets.tcgdex.net/pt/pop/pop9/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop9/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -10597,7 +10597,7 @@ object EmbeddedCatalogData {
         "name": "POP Series 2",
         "releaseDate": "2005-08-01",
         "logo": "https://assets.tcgdex.net/pt/pop/pop2/logo",
-        "symbol": "https://assets.tcgdex.net/pt/pop/pop2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop2/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -10607,7 +10607,7 @@ object EmbeddedCatalogData {
         "name": "POP Series 6",
         "releaseDate": "2007-09-01",
         "logo": "https://assets.tcgdex.net/pt/pop/pop6/logo",
-        "symbol": "https://assets.tcgdex.net/pt/pop/pop6/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop6/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -10617,7 +10617,7 @@ object EmbeddedCatalogData {
         "name": "POP Series 7",
         "releaseDate": "2008-03-01",
         "logo": "https://assets.tcgdex.net/pt/pop/pop7/logo",
-        "symbol": "https://assets.tcgdex.net/pt/pop/pop7/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop7/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -10627,7 +10627,7 @@ object EmbeddedCatalogData {
         "name": "POP Series 3",
         "releaseDate": "2006-04-01",
         "logo": "https://assets.tcgdex.net/pt/pop/pop3/logo",
-        "symbol": "https://assets.tcgdex.net/pt/pop/pop3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop3/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -10637,7 +10637,7 @@ object EmbeddedCatalogData {
         "name": "POP Series 4",
         "releaseDate": "2006-08-01",
         "logo": "https://assets.tcgdex.net/pt/pop/pop4/logo",
-        "symbol": "https://assets.tcgdex.net/pt/pop/pop4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop4/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -10647,7 +10647,7 @@ object EmbeddedCatalogData {
         "name": "POP Series 1",
         "releaseDate": "2004-09-01",
         "logo": "https://assets.tcgdex.net/pt/pop/pop1/logo",
-        "symbol": "https://assets.tcgdex.net/pt/pop/pop1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop1/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -10657,7 +10657,7 @@ object EmbeddedCatalogData {
         "name": "POP Series 5",
         "releaseDate": "2007-03-01",
         "logo": "https://assets.tcgdex.net/pt/pop/pop5/logo",
-        "symbol": "https://assets.tcgdex.net/pt/pop/pop5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop5/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -10667,7 +10667,7 @@ object EmbeddedCatalogData {
         "name": "Nintendo Black Star Promos",
         "releaseDate": "2003-10-01",
         "logo": "https://assets.tcgdex.net/pt/pop/np/logo",
-        "symbol": "https://assets.tcgdex.net/pt/pop/np/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/np/symbol.png",
         "serieId": "pop",
         "official": 40,
         "total": 40
@@ -10677,7 +10677,7 @@ object EmbeddedCatalogData {
         "name": "Chamado das Lendas",
         "releaseDate": "2011-02-09",
         "logo": "https://assets.tcgdex.net/pt/col/col1/logo",
-        "symbol": "https://assets.tcgdex.net/pt/col/col1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/col/col1/symbol.png",
         "serieId": "col",
         "official": 95,
         "total": 106
@@ -10687,7 +10687,7 @@ object EmbeddedCatalogData {
         "name": "Legendary Collection",
         "releaseDate": "2002-05-24",
         "logo": "https://assets.tcgdex.net/pt/lc/lc/logo",
-        "symbol": "https://assets.tcgdex.net/pt/lc/lc/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/lc/lc/symbol.png",
         "serieId": "lc",
         "official": 110,
         "total": 110
@@ -10697,7 +10697,7 @@ object EmbeddedCatalogData {
         "name": "Macdonald's Collection 2021",
         "releaseDate": "2021-02-09",
         "logo": "https://assets.tcgdex.net/pt/mc/2021swsh/logo",
-        "symbol": "https://assets.tcgdex.net/pt/mc/2021swsh/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2021swsh/symbol.png",
         "serieId": "mc",
         "official": 25,
         "total": 25
@@ -10707,7 +10707,7 @@ object EmbeddedCatalogData {
         "name": "Macdonald's Collection 2015",
         "releaseDate": "2015-11-27",
         "logo": "https://assets.tcgdex.net/pt/mc/2015xy/logo",
-        "symbol": "https://assets.tcgdex.net/pt/mc/2015xy/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2015xy/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 12
@@ -10717,7 +10717,7 @@ object EmbeddedCatalogData {
         "name": "Promo McDonald's 2019",
         "releaseDate": "2019-10-30",
         "logo": "https://assets.tcgdex.net/pt/mc/2019sm-fr/logo",
-        "symbol": "https://assets.tcgdex.net/pt/mc/2019sm-fr/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2019sm-fr/symbol.png",
         "serieId": "mc",
         "official": 40,
         "total": 40
@@ -10727,7 +10727,7 @@ object EmbeddedCatalogData {
         "name": "Macdonald's Collection 2011",
         "releaseDate": "2011-06-17",
         "logo": "https://assets.tcgdex.net/pt/mc/2011bw/logo",
-        "symbol": "https://assets.tcgdex.net/pt/mc/2011bw/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2011bw/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 12
@@ -10737,7 +10737,7 @@ object EmbeddedCatalogData {
         "name": "Promo McDonald's 2018",
         "releaseDate": "2018-06-13",
         "logo": "https://assets.tcgdex.net/pt/mc/2018sm-fr/logo",
-        "symbol": "https://assets.tcgdex.net/pt/mc/2018sm-fr/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2018sm-fr/symbol.png",
         "serieId": "mc",
         "official": 40,
         "total": 40
@@ -10747,7 +10747,7 @@ object EmbeddedCatalogData {
         "name": "Macdonald's Collection 2014",
         "releaseDate": "2014-05-23",
         "logo": "https://assets.tcgdex.net/pt/mc/2014xy/logo",
-        "symbol": "https://assets.tcgdex.net/pt/mc/2014xy/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2014xy/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 12
@@ -10757,7 +10757,7 @@ object EmbeddedCatalogData {
         "name": "Promo McDonald's 2013",
         "releaseDate": "2013-11-01",
         "logo": "https://assets.tcgdex.net/pt/mc/2013bw/logo",
-        "symbol": "https://assets.tcgdex.net/pt/mc/2013bw/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2013bw/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 1
@@ -10767,7 +10767,7 @@ object EmbeddedCatalogData {
         "name": "Macdonald's Collection 2019",
         "releaseDate": "2019-10-15",
         "logo": "https://assets.tcgdex.net/pt/mc/2019sm/logo",
-        "symbol": "https://assets.tcgdex.net/pt/mc/2019sm/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2019sm/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 12
@@ -10777,7 +10777,7 @@ object EmbeddedCatalogData {
         "name": "Macdonald's Collection 2018",
         "releaseDate": "2018-10-19",
         "logo": "https://assets.tcgdex.net/pt/mc/2018sm/logo",
-        "symbol": "https://assets.tcgdex.net/pt/mc/2018sm/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2018sm/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 12
@@ -10787,7 +10787,7 @@ object EmbeddedCatalogData {
         "name": "Macdonald's Collection 2017",
         "releaseDate": "2017-08-03",
         "logo": "https://assets.tcgdex.net/pt/mc/2017sm/logo",
-        "symbol": "https://assets.tcgdex.net/pt/mc/2017sm/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2017sm/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 12
@@ -10797,7 +10797,7 @@ object EmbeddedCatalogData {
         "name": "Macdonald's Collection 2016",
         "releaseDate": "2016-08-20",
         "logo": "https://assets.tcgdex.net/pt/mc/2016xy/logo",
-        "symbol": "https://assets.tcgdex.net/pt/mc/2016xy/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2016xy/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 12
@@ -10807,7 +10807,7 @@ object EmbeddedCatalogData {
         "name": "Macdonald's Collection 2012",
         "releaseDate": "2012-06-15",
         "logo": "https://assets.tcgdex.net/pt/mc/2012bw/logo",
-        "symbol": "https://assets.tcgdex.net/pt/mc/2012bw/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2012bw/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 12
@@ -10817,7 +10817,7 @@ object EmbeddedCatalogData {
         "name": "FireRed & LeafGreen",
         "releaseDate": "2004-09-01",
         "logo": "https://assets.tcgdex.net/pt/ex/ex6/logo",
-        "symbol": "https://assets.tcgdex.net/pt/ex/ex6/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex6/symbol.png",
         "serieId": "ex",
         "official": 112,
         "total": 116
@@ -10827,7 +10827,7 @@ object EmbeddedCatalogData {
         "name": "Team Magma vs Team Aqua",
         "releaseDate": "2004-03-01",
         "logo": "https://assets.tcgdex.net/pt/ex/ex4/logo",
-        "symbol": "https://assets.tcgdex.net/pt/ex/ex4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex4/symbol.png",
         "serieId": "ex",
         "official": 95,
         "total": 97
@@ -10837,7 +10837,7 @@ object EmbeddedCatalogData {
         "name": "Sandstorm",
         "releaseDate": "2003-09-18",
         "logo": "https://assets.tcgdex.net/pt/ex/ex2/logo",
-        "symbol": "https://assets.tcgdex.net/pt/ex/ex2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex2/symbol.png",
         "serieId": "ex",
         "official": 100,
         "total": 100
@@ -10847,7 +10847,7 @@ object EmbeddedCatalogData {
         "name": "EX O Retorno da Equipe Rocket ",
         "releaseDate": "2004-11-01",
         "logo": "https://assets.tcgdex.net/pt/ex/ex7/logo",
-        "symbol": "https://assets.tcgdex.net/pt/ex/ex7/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex7/symbol.png",
         "serieId": "ex",
         "official": 109,
         "total": 111
@@ -10857,7 +10857,7 @@ object EmbeddedCatalogData {
         "name": "Legend Maker",
         "releaseDate": "2006-02-13",
         "logo": "https://assets.tcgdex.net/pt/ex/ex12/logo",
-        "symbol": "https://assets.tcgdex.net/pt/ex/ex12/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex12/symbol.png",
         "serieId": "ex",
         "official": 92,
         "total": 93
@@ -10867,7 +10867,7 @@ object EmbeddedCatalogData {
         "name": "Dragon Frontiers",
         "releaseDate": "2006-11-08",
         "logo": "https://assets.tcgdex.net/pt/ex/ex15/logo",
-        "symbol": "https://assets.tcgdex.net/pt/ex/ex15/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex15/symbol.png",
         "serieId": "ex",
         "official": 101,
         "total": 101
@@ -10877,7 +10877,7 @@ object EmbeddedCatalogData {
         "name": "Power Keepers",
         "releaseDate": "2007-02-17",
         "logo": "https://assets.tcgdex.net/pt/ex/ex16/logo",
-        "symbol": "https://assets.tcgdex.net/pt/ex/ex16/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex16/symbol.png",
         "serieId": "ex",
         "official": 108,
         "total": 108
@@ -10887,7 +10887,7 @@ object EmbeddedCatalogData {
         "name": "Crystal Guardians",
         "releaseDate": "2006-08-30",
         "logo": "https://assets.tcgdex.net/pt/ex/ex14/logo",
-        "symbol": "https://assets.tcgdex.net/pt/ex/ex14/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex14/symbol.png",
         "serieId": "ex",
         "official": 100,
         "total": 100
@@ -10897,7 +10897,7 @@ object EmbeddedCatalogData {
         "name": "Delta Species",
         "releaseDate": "2005-10-31",
         "logo": "https://assets.tcgdex.net/pt/ex/ex11/logo",
-        "symbol": "https://assets.tcgdex.net/pt/ex/ex11/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex11/symbol.png",
         "serieId": "ex",
         "official": 113,
         "total": 114
@@ -10907,7 +10907,7 @@ object EmbeddedCatalogData {
         "name": "EX Forças Ocultas",
         "releaseDate": "2005-08-22",
         "logo": "https://assets.tcgdex.net/pt/ex/ex10/logo",
-        "symbol": "https://assets.tcgdex.net/pt/ex/ex10/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex10/symbol.png",
         "serieId": "ex",
         "official": 115,
         "total": 117
@@ -10917,7 +10917,7 @@ object EmbeddedCatalogData {
         "name": "EX Esmeralda",
         "releaseDate": "2005-05-09",
         "logo": "https://assets.tcgdex.net/pt/ex/ex9/logo",
-        "symbol": "https://assets.tcgdex.net/pt/ex/ex9/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex9/symbol.png",
         "serieId": "ex",
         "official": 106,
         "total": 107
@@ -10927,7 +10927,7 @@ object EmbeddedCatalogData {
         "name": "EX Deoxys",
         "releaseDate": "2005-02-01",
         "logo": "https://assets.tcgdex.net/pt/ex/ex8/logo",
-        "symbol": "https://assets.tcgdex.net/pt/ex/ex8/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex8/symbol.png",
         "serieId": "ex",
         "official": 107,
         "total": 108
@@ -10937,7 +10937,7 @@ object EmbeddedCatalogData {
         "name": "Poké Card Creator Pack",
         "releaseDate": "2004-07-01",
         "logo": "https://assets.tcgdex.net/pt/ex/ex5.5/logo",
-        "symbol": "https://assets.tcgdex.net/pt/ex/ex5.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex5.5/symbol.png",
         "serieId": "ex",
         "official": 5,
         "total": 5
@@ -10947,7 +10947,7 @@ object EmbeddedCatalogData {
         "name": "Unseen Forces Unown Collection",
         "releaseDate": "2005-08-22",
         "logo": "https://assets.tcgdex.net/pt/ex/exu/logo",
-        "symbol": "https://assets.tcgdex.net/pt/ex/exu/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/exu/symbol.png",
         "serieId": "ex",
         "official": 28,
         "total": 28
@@ -10957,7 +10957,7 @@ object EmbeddedCatalogData {
         "name": "Holon Phantoms",
         "releaseDate": "2006-05-03",
         "logo": "https://assets.tcgdex.net/pt/ex/ex13/logo",
-        "symbol": "https://assets.tcgdex.net/pt/ex/ex13/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex13/symbol.png",
         "serieId": "ex",
         "official": 110,
         "total": 111
@@ -10967,7 +10967,7 @@ object EmbeddedCatalogData {
         "name": "Dragon",
         "releaseDate": "2003-11-24",
         "logo": "https://assets.tcgdex.net/pt/ex/ex3/logo",
-        "symbol": "https://assets.tcgdex.net/pt/ex/ex3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex3/symbol.png",
         "serieId": "ex",
         "official": 97,
         "total": 100
@@ -10977,7 +10977,7 @@ object EmbeddedCatalogData {
         "name": "EX Rubi e Safira",
         "releaseDate": "2003-07-01",
         "logo": "https://assets.tcgdex.net/pt/ex/ex1/logo",
-        "symbol": "https://assets.tcgdex.net/pt/ex/ex1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex1/symbol.png",
         "serieId": "ex",
         "official": 109,
         "total": 109
@@ -10987,7 +10987,7 @@ object EmbeddedCatalogData {
         "name": "Hidden Legends",
         "releaseDate": "2004-06-01",
         "logo": "https://assets.tcgdex.net/pt/ex/ex5/logo",
-        "symbol": "https://assets.tcgdex.net/pt/ex/ex5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex5/symbol.png",
         "serieId": "ex",
         "official": 101,
         "total": 102
@@ -10997,7 +10997,7 @@ object EmbeddedCatalogData {
         "name": "Jumbo cards",
         "releaseDate": "2000-02-01",
         "logo": "https://assets.tcgdex.net/pt/misc/jumbo/logo",
-        "symbol": "https://assets.tcgdex.net/pt/misc/jumbo/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/misc/jumbo/symbol.png",
         "serieId": "misc",
         "official": 160,
         "total": 160
@@ -11007,7 +11007,7 @@ object EmbeddedCatalogData {
         "name": "Legends Awakened",
         "releaseDate": "2008-08-01",
         "logo": "https://assets.tcgdex.net/pt/dp/dp6/logo",
-        "symbol": "https://assets.tcgdex.net/pt/dp/dp6/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/dp/dp6/symbol.png",
         "serieId": "dp",
         "official": 146,
         "total": 146
@@ -11017,7 +11017,7 @@ object EmbeddedCatalogData {
         "name": "DP Black Star Promos",
         "releaseDate": "2007-05-01",
         "logo": "https://assets.tcgdex.net/pt/dp/dpp/logo",
-        "symbol": "https://assets.tcgdex.net/pt/dp/dpp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/dp/dpp/symbol.png",
         "serieId": "dp",
         "official": 56,
         "total": 56
@@ -11027,7 +11027,7 @@ object EmbeddedCatalogData {
         "name": "Diamante & Pérola",
         "releaseDate": "2007-05-01",
         "logo": "https://assets.tcgdex.net/pt/dp/dp1/logo",
-        "symbol": "https://assets.tcgdex.net/pt/dp/dp1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/dp/dp1/symbol.png",
         "serieId": "dp",
         "official": 130,
         "total": 130
@@ -11037,7 +11037,7 @@ object EmbeddedCatalogData {
         "name": "Tesouros Misteriosos",
         "releaseDate": "2007-08-01",
         "logo": "https://assets.tcgdex.net/pt/dp/dp2/logo",
-        "symbol": "https://assets.tcgdex.net/pt/dp/dp2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/dp/dp2/symbol.png",
         "serieId": "dp",
         "official": 122,
         "total": 124
@@ -11047,7 +11047,7 @@ object EmbeddedCatalogData {
         "name": "Great Encounters",
         "releaseDate": "2008-02-01",
         "logo": "https://assets.tcgdex.net/pt/dp/dp4/logo",
-        "symbol": "https://assets.tcgdex.net/pt/dp/dp4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/dp/dp4/symbol.png",
         "serieId": "dp",
         "official": 106,
         "total": 106
@@ -11057,7 +11057,7 @@ object EmbeddedCatalogData {
         "name": "Maravilhas Secretas",
         "releaseDate": "2007-11-01",
         "logo": "https://assets.tcgdex.net/pt/dp/dp3/logo",
-        "symbol": "https://assets.tcgdex.net/pt/dp/dp3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/dp/dp3/symbol.png",
         "serieId": "dp",
         "official": 132,
         "total": 132
@@ -11067,7 +11067,7 @@ object EmbeddedCatalogData {
         "name": "Stormfront",
         "releaseDate": "2008-11-01",
         "logo": "https://assets.tcgdex.net/pt/dp/dp7/logo",
-        "symbol": "https://assets.tcgdex.net/pt/dp/dp7/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/dp/dp7/symbol.png",
         "serieId": "dp",
         "official": 100,
         "total": 106
@@ -11077,7 +11077,7 @@ object EmbeddedCatalogData {
         "name": "Majestic Dawn",
         "releaseDate": "2008-05-01",
         "logo": "https://assets.tcgdex.net/pt/dp/dp5/logo",
-        "symbol": "https://assets.tcgdex.net/pt/dp/dp5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/dp/dp5/symbol.png",
         "serieId": "dp",
         "official": 100,
         "total": 100
@@ -11087,7 +11087,7 @@ object EmbeddedCatalogData {
         "name": "Neo Destiny",
         "releaseDate": "2002-02-28",
         "logo": "https://assets.tcgdex.net/pt/neo/neo4/logo",
-        "symbol": "https://assets.tcgdex.net/pt/neo/neo4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/neo/neo4/symbol.png",
         "serieId": "neo",
         "official": 105,
         "total": 113
@@ -11097,7 +11097,7 @@ object EmbeddedCatalogData {
         "name": "Neo Genesis",
         "releaseDate": "2000-12-16",
         "logo": "https://assets.tcgdex.net/pt/neo/neo1/logo",
-        "symbol": "https://assets.tcgdex.net/pt/neo/neo1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/neo/neo1/symbol.png",
         "serieId": "neo",
         "official": 111,
         "total": 111
@@ -11107,7 +11107,7 @@ object EmbeddedCatalogData {
         "name": "Neo Discovery",
         "releaseDate": "2001-06-01",
         "logo": "https://assets.tcgdex.net/pt/neo/neo2/logo",
-        "symbol": "https://assets.tcgdex.net/pt/neo/neo2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/neo/neo2/symbol.png",
         "serieId": "neo",
         "official": 75,
         "total": 75
@@ -11117,7 +11117,7 @@ object EmbeddedCatalogData {
         "name": "Southern Islands",
         "releaseDate": "2001-07-31",
         "logo": "https://assets.tcgdex.net/pt/neo/si1/logo",
-        "symbol": "https://assets.tcgdex.net/pt/neo/si1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/neo/si1/symbol.png",
         "serieId": "neo",
         "official": 18,
         "total": 18
@@ -11127,7 +11127,7 @@ object EmbeddedCatalogData {
         "name": "Neo Revelation",
         "releaseDate": "2001-09-21",
         "logo": "https://assets.tcgdex.net/pt/neo/neo3/logo",
-        "symbol": "https://assets.tcgdex.net/pt/neo/neo3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/neo/neo3/symbol.png",
         "serieId": "neo",
         "official": 64,
         "total": 66
@@ -11137,7 +11137,7 @@ object EmbeddedCatalogData {
         "name": "Ultra Prisma",
         "releaseDate": "2018-02-02",
         "logo": "https://assets.tcgdex.net/pt/sm/sm5/logo",
-        "symbol": "https://assets.tcgdex.net/pt/sm/sm5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm5/symbol.png",
         "serieId": "sm",
         "official": 156,
         "total": 173
@@ -11147,7 +11147,7 @@ object EmbeddedCatalogData {
         "name": "Elos Inquebráveis",
         "releaseDate": "2019-05-03",
         "logo": "https://assets.tcgdex.net/pt/sm/sm10/logo",
-        "symbol": "https://assets.tcgdex.net/pt/sm/sm10/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm10/symbol.png",
         "serieId": "sm",
         "official": 214,
         "total": 234
@@ -11157,7 +11157,7 @@ object EmbeddedCatalogData {
         "name": "Eclipse Cósmico",
         "releaseDate": "2019-11-01",
         "logo": "https://assets.tcgdex.net/pt/sm/sm12/logo",
-        "symbol": "https://assets.tcgdex.net/pt/sm/sm12/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm12/symbol.png",
         "serieId": "sm",
         "official": 236,
         "total": 271
@@ -11167,7 +11167,7 @@ object EmbeddedCatalogData {
         "name": "Yellow A Alternate",
         "releaseDate": "2019-08-23",
         "logo": "https://assets.tcgdex.net/pt/sm/sma/logo",
-        "symbol": "https://assets.tcgdex.net/pt/sm/sma/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sma/symbol.png",
         "serieId": "sm",
         "official": 94,
         "total": 94
@@ -11177,7 +11177,7 @@ object EmbeddedCatalogData {
         "name": "Sintonia Mental ",
         "releaseDate": "2019-08-02",
         "logo": "https://assets.tcgdex.net/pt/sm/sm11/logo",
-        "symbol": "https://assets.tcgdex.net/pt/sm/sm11/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm11/symbol.png",
         "serieId": "sm",
         "official": 236,
         "total": 258
@@ -11187,7 +11187,7 @@ object EmbeddedCatalogData {
         "name": "Detetive Pikachu",
         "releaseDate": "2019-03-29",
         "logo": "https://assets.tcgdex.net/pt/sm/det1/logo",
-        "symbol": "https://assets.tcgdex.net/pt/sm/det1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/det1/symbol.png",
         "serieId": "sm",
         "official": 18,
         "total": 18
@@ -11197,7 +11197,7 @@ object EmbeddedCatalogData {
         "name": "Sol e Lua",
         "releaseDate": "2017-02-03",
         "logo": "https://assets.tcgdex.net/pt/sm/sm1/logo",
-        "symbol": "https://assets.tcgdex.net/pt/sm/sm1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm1/symbol.png",
         "serieId": "sm",
         "official": 149,
         "total": 172
@@ -11207,7 +11207,7 @@ object EmbeddedCatalogData {
         "name": "Destinos Ocultos",
         "releaseDate": "2019-08-23",
         "logo": "https://assets.tcgdex.net/pt/sm/sm115/logo",
-        "symbol": "https://assets.tcgdex.net/pt/sm/sm115/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm115/symbol.png",
         "serieId": "sm",
         "official": 68,
         "total": 69
@@ -11217,7 +11217,7 @@ object EmbeddedCatalogData {
         "name": "Luz Proibida",
         "releaseDate": "2018-05-04",
         "logo": "https://assets.tcgdex.net/pt/sm/sm6/logo",
-        "symbol": "https://assets.tcgdex.net/pt/sm/sm6/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm6/symbol.png",
         "serieId": "sm",
         "official": 131,
         "total": 146
@@ -11227,7 +11227,7 @@ object EmbeddedCatalogData {
         "name": "Tempestade Celestial",
         "releaseDate": "2018-08-03",
         "logo": "https://assets.tcgdex.net/pt/sm/sm7/logo",
-        "symbol": "https://assets.tcgdex.net/pt/sm/sm7/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm7/symbol.png",
         "serieId": "sm",
         "official": 168,
         "total": 183
@@ -11237,7 +11237,7 @@ object EmbeddedCatalogData {
         "name": "Dragões Soberanos",
         "releaseDate": "2018-09-07",
         "logo": "https://assets.tcgdex.net/pt/sm/sm7.5/logo",
-        "symbol": "https://assets.tcgdex.net/pt/sm/sm7.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm7.5/symbol.png",
         "serieId": "sm",
         "official": 70,
         "total": 78
@@ -11247,7 +11247,7 @@ object EmbeddedCatalogData {
         "name": "Lendas Luminescentes",
         "releaseDate": "2017-10-06",
         "logo": "https://assets.tcgdex.net/pt/sm/sm3.5/logo",
-        "symbol": "https://assets.tcgdex.net/pt/sm/sm3.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm3.5/symbol.png",
         "serieId": "sm",
         "official": 73,
         "total": 78
@@ -11257,7 +11257,7 @@ object EmbeddedCatalogData {
         "name": "União de Aliados",
         "releaseDate": "2019-01-31",
         "logo": "https://assets.tcgdex.net/pt/sm/sm9/logo",
-        "symbol": "https://assets.tcgdex.net/pt/sm/sm9/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm9/symbol.png",
         "serieId": "sm",
         "official": 181,
         "total": 196
@@ -11267,7 +11267,7 @@ object EmbeddedCatalogData {
         "name": "Trovões Perdidos",
         "releaseDate": "2018-11-02",
         "logo": "https://assets.tcgdex.net/pt/sm/sm8/logo",
-        "symbol": "https://assets.tcgdex.net/pt/sm/sm8/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm8/symbol.png",
         "serieId": "sm",
         "official": 214,
         "total": 236
@@ -11277,7 +11277,7 @@ object EmbeddedCatalogData {
         "name": "Guardiões Ascendentes",
         "releaseDate": "2017-05-05",
         "logo": "https://assets.tcgdex.net/pt/sm/sm2/logo",
-        "symbol": "https://assets.tcgdex.net/pt/sm/sm2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm2/symbol.png",
         "serieId": "sm",
         "official": 145,
         "total": 169
@@ -11287,7 +11287,7 @@ object EmbeddedCatalogData {
         "name": "Invasão Carmim",
         "releaseDate": "2017-11-03",
         "logo": "https://assets.tcgdex.net/pt/sm/sm4/logo",
-        "symbol": "https://assets.tcgdex.net/pt/sm/sm4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm4/symbol.png",
         "serieId": "sm",
         "official": 111,
         "total": 125
@@ -11297,7 +11297,7 @@ object EmbeddedCatalogData {
         "name": "Sombras Ardentes",
         "releaseDate": "2017-08-04",
         "logo": "https://assets.tcgdex.net/pt/sm/sm3/logo",
-        "symbol": "https://assets.tcgdex.net/pt/sm/sm3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm3/symbol.png",
         "serieId": "sm",
         "official": 147,
         "total": 169
@@ -11307,7 +11307,7 @@ object EmbeddedCatalogData {
         "name": "SM Black Star Promos",
         "releaseDate": "2017-02-03",
         "logo": "https://assets.tcgdex.net/pt/sm/smp/logo",
-        "symbol": "https://assets.tcgdex.net/pt/sm/smp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/smp/symbol.png",
         "serieId": "sm",
         "official": 236,
         "total": 244
@@ -11317,7 +11317,7 @@ object EmbeddedCatalogData {
         "name": "MEP Black Star Promos",
         "releaseDate": "2025-09-26",
         "logo": "https://assets.tcgdex.net/pt/me/mep/logo",
-        "symbol": "https://assets.tcgdex.net/pt/me/mep/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/me/mep/symbol.png",
         "serieId": "me",
         "official": 0,
         "total": 10
@@ -11327,7 +11327,7 @@ object EmbeddedCatalogData {
         "name": "Megaevolução",
         "releaseDate": "2025-09-26",
         "logo": "https://assets.tcgdex.net/pt/me/me01/logo",
-        "symbol": "https://assets.tcgdex.net/pt/me/me01/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/me/me01/symbol.png",
         "serieId": "me",
         "official": 132,
         "total": 188
@@ -11337,7 +11337,7 @@ object EmbeddedCatalogData {
         "name": "Fogo Fantasmagórico",
         "releaseDate": "2025-11-14",
         "logo": "https://assets.tcgdex.net/pt/me/me02/logo",
-        "symbol": "https://assets.tcgdex.net/pt/me/me02/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/me/me02/symbol.png",
         "serieId": "me",
         "official": 94,
         "total": 130
@@ -11347,7 +11347,7 @@ object EmbeddedCatalogData {
         "name": "HeartGold SoulSilver",
         "releaseDate": "2010-02-10",
         "logo": "https://assets.tcgdex.net/pt/hgss/hgss1/logo",
-        "symbol": "https://assets.tcgdex.net/pt/hgss/hgss1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/hgss/hgss1/symbol.png",
         "serieId": "hgss",
         "official": 123,
         "total": 124
@@ -11357,7 +11357,7 @@ object EmbeddedCatalogData {
         "name": "Revelado",
         "releaseDate": "2010-05-12",
         "logo": "https://assets.tcgdex.net/pt/hgss/hgss2/logo",
-        "symbol": "https://assets.tcgdex.net/pt/hgss/hgss2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/hgss/hgss2/symbol.png",
         "serieId": "hgss",
         "official": 95,
         "total": 96
@@ -11367,7 +11367,7 @@ object EmbeddedCatalogData {
         "name": "Triunfante",
         "releaseDate": "2010-11-03",
         "logo": "https://assets.tcgdex.net/pt/hgss/hgss4/logo",
-        "symbol": "https://assets.tcgdex.net/pt/hgss/hgss4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/hgss/hgss4/symbol.png",
         "serieId": "hgss",
         "official": 102,
         "total": 103
@@ -11377,7 +11377,7 @@ object EmbeddedCatalogData {
         "name": "HGSS Black Star Promos",
         "releaseDate": "2010-02-11",
         "logo": "https://assets.tcgdex.net/pt/hgss/hgssp/logo",
-        "symbol": "https://assets.tcgdex.net/pt/hgss/hgssp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/hgss/hgssp/symbol.png",
         "serieId": "hgss",
         "official": 25,
         "total": 25
@@ -11387,7 +11387,7 @@ object EmbeddedCatalogData {
         "name": "Destemido",
         "releaseDate": "2010-08-18",
         "logo": "https://assets.tcgdex.net/pt/hgss/hgss3/logo",
-        "symbol": "https://assets.tcgdex.net/pt/hgss/hgss3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/hgss/hgss3/symbol.png",
         "serieId": "hgss",
         "official": 90,
         "total": 91
@@ -11397,7 +11397,7 @@ object EmbeddedCatalogData {
         "name": "Skyridge",
         "releaseDate": "2003-05-12",
         "logo": "https://assets.tcgdex.net/pt/ecard/ecard3/logo",
-        "symbol": "https://assets.tcgdex.net/pt/ecard/ecard3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ecard/ecard3/symbol.png",
         "serieId": "ecard",
         "official": 144,
         "total": 182
@@ -11407,7 +11407,7 @@ object EmbeddedCatalogData {
         "name": "Aquapolis",
         "releaseDate": "2003-01-15",
         "logo": "https://assets.tcgdex.net/pt/ecard/ecard2/logo",
-        "symbol": "https://assets.tcgdex.net/pt/ecard/ecard2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ecard/ecard2/symbol.png",
         "serieId": "ecard",
         "official": 147,
         "total": 186
@@ -11417,7 +11417,7 @@ object EmbeddedCatalogData {
         "name": "Sample",
         "releaseDate": "2002-08-01",
         "logo": "https://assets.tcgdex.net/pt/ecard/sp/logo",
-        "symbol": "https://assets.tcgdex.net/pt/ecard/sp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ecard/sp/symbol.png",
         "serieId": "ecard",
         "official": 10,
         "total": 10
@@ -11427,7 +11427,7 @@ object EmbeddedCatalogData {
         "name": "Best of game",
         "releaseDate": "2002-12-01",
         "logo": "https://assets.tcgdex.net/pt/ecard/bog/logo",
-        "symbol": "https://assets.tcgdex.net/pt/ecard/bog/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ecard/bog/symbol.png",
         "serieId": "ecard",
         "official": 9,
         "total": 9
@@ -11437,7 +11437,7 @@ object EmbeddedCatalogData {
         "name": "Expedition Base Set",
         "releaseDate": "2002-09-15",
         "logo": "https://assets.tcgdex.net/pt/ecard/ecard1/logo",
-        "symbol": "https://assets.tcgdex.net/pt/ecard/ecard1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ecard/ecard1/symbol.png",
         "serieId": "ecard",
         "official": 165,
         "total": 165
@@ -11447,7 +11447,7 @@ object EmbeddedCatalogData {
         "name": "Destinos de Paldea",
         "releaseDate": "2024-01-26",
         "logo": "https://assets.tcgdex.net/pt/sv/sv04.5/logo",
-        "symbol": "https://assets.tcgdex.net/pt/sv/sv04.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv04.5/symbol.png",
         "serieId": "sv",
         "official": 91,
         "total": 245
@@ -11457,7 +11457,7 @@ object EmbeddedCatalogData {
         "name": "Fábulas Nebulosas",
         "releaseDate": "2024-08-02",
         "logo": "https://assets.tcgdex.net/pt/sv/sv06.5/logo",
-        "symbol": "https://assets.tcgdex.net/pt/sv/sv06.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv06.5/symbol.png",
         "serieId": "sv",
         "official": 64,
         "total": 99
@@ -11467,7 +11467,7 @@ object EmbeddedCatalogData {
         "name": "Evoluções Prismáticas",
         "releaseDate": "2025-01-17",
         "logo": "https://assets.tcgdex.net/pt/sv/sv08.5/logo",
-        "symbol": "https://assets.tcgdex.net/pt/sv/sv08.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv08.5/symbol.png",
         "serieId": "sv",
         "official": 131,
         "total": 180
@@ -11477,7 +11477,7 @@ object EmbeddedCatalogData {
         "name": "Fogo Branco",
         "releaseDate": "2025-07-17",
         "logo": "https://assets.tcgdex.net/pt/sv/sv10.5w/logo",
-        "symbol": "https://assets.tcgdex.net/pt/sv/sv10.5w/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv10.5w/symbol.png",
         "serieId": "sv",
         "official": 86,
         "total": 173
@@ -11487,7 +11487,7 @@ object EmbeddedCatalogData {
         "name": "Evoluções em Paldea",
         "releaseDate": "2023-06-09",
         "logo": "https://assets.tcgdex.net/pt/sv/sv02/logo",
-        "symbol": "https://assets.tcgdex.net/pt/sv/sv02/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv02/symbol.png",
         "serieId": "sv",
         "official": 193,
         "total": 279
@@ -11497,7 +11497,7 @@ object EmbeddedCatalogData {
         "name": "151",
         "releaseDate": "2023-09-22",
         "logo": "https://assets.tcgdex.net/pt/sv/sv03.5/logo",
-        "symbol": "https://assets.tcgdex.net/pt/sv/sv03.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv03.5/symbol.png",
         "serieId": "sv",
         "official": 165,
         "total": 207
@@ -11507,7 +11507,7 @@ object EmbeddedCatalogData {
         "name": "Rivais Predestinados",
         "releaseDate": "2025-05-30",
         "logo": "https://assets.tcgdex.net/pt/sv/sv10/logo",
-        "symbol": "https://assets.tcgdex.net/pt/sv/sv10/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv10/symbol.png",
         "serieId": "sv",
         "official": 182,
         "total": 244
@@ -11517,7 +11517,7 @@ object EmbeddedCatalogData {
         "name": "Fenda Paradoxal",
         "releaseDate": "2023-11-03",
         "logo": "https://assets.tcgdex.net/pt/sv/sv04/logo",
-        "symbol": "https://assets.tcgdex.net/pt/sv/sv04/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv04/symbol.png",
         "serieId": "sv",
         "official": 182,
         "total": 266
@@ -11527,7 +11527,7 @@ object EmbeddedCatalogData {
         "name": "Obsidiana em Chamas",
         "releaseDate": "2023-08-11",
         "logo": "https://assets.tcgdex.net/pt/sv/sv03/logo",
-        "symbol": "https://assets.tcgdex.net/pt/sv/sv03/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv03/symbol.png",
         "serieId": "sv",
         "official": 197,
         "total": 230
@@ -11537,7 +11537,7 @@ object EmbeddedCatalogData {
         "name": "Fagulhas Impetudsas",
         "releaseDate": "2024-11-08",
         "logo": "https://assets.tcgdex.net/pt/sv/sv08/logo",
-        "symbol": "https://assets.tcgdex.net/pt/sv/sv08/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv08/symbol.png",
         "serieId": "sv",
         "official": 191,
         "total": 252
@@ -11547,7 +11547,7 @@ object EmbeddedCatalogData {
         "name": "Raio Preto",
         "releaseDate": "2025-07-17",
         "logo": "https://assets.tcgdex.net/pt/sv/sv10.5b/logo",
-        "symbol": "https://assets.tcgdex.net/pt/sv/sv10.5b/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv10.5b/symbol.png",
         "serieId": "sv",
         "official": 86,
         "total": 172
@@ -11557,7 +11557,7 @@ object EmbeddedCatalogData {
         "name": "Máscaras do Crepúsculo",
         "releaseDate": "2024-05-24",
         "logo": "https://assets.tcgdex.net/pt/sv/sv06/logo",
-        "symbol": "https://assets.tcgdex.net/pt/sv/sv06/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv06/symbol.png",
         "serieId": "sv",
         "official": 167,
         "total": 226
@@ -11567,7 +11567,7 @@ object EmbeddedCatalogData {
         "name": "Forças Temporais",
         "releaseDate": "2024-03-22",
         "logo": "https://assets.tcgdex.net/pt/sv/sv05/logo",
-        "symbol": "https://assets.tcgdex.net/pt/sv/sv05/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv05/symbol.png",
         "serieId": "sv",
         "official": 162,
         "total": 218
@@ -11577,7 +11577,7 @@ object EmbeddedCatalogData {
         "name": "Coroa Estelar",
         "releaseDate": "2024-09-13",
         "logo": "https://assets.tcgdex.net/pt/sv/sv07/logo",
-        "symbol": "https://assets.tcgdex.net/pt/sv/sv07/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv07/symbol.png",
         "serieId": "sv",
         "official": 142,
         "total": 175
@@ -11587,7 +11587,7 @@ object EmbeddedCatalogData {
         "name": "SVP Black Star Promos",
         "releaseDate": "2023-03-31",
         "logo": "https://assets.tcgdex.net/pt/sv/svp/logo",
-        "symbol": "https://assets.tcgdex.net/pt/sv/svp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/svp/symbol.png",
         "serieId": "sv",
         "official": 0,
         "total": 219
@@ -11597,7 +11597,7 @@ object EmbeddedCatalogData {
         "name": "Escarlate e Violeta",
         "releaseDate": "2023-03-31",
         "logo": "https://assets.tcgdex.net/pt/sv/sv01/logo",
-        "symbol": "https://assets.tcgdex.net/pt/sv/sv01/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv01/symbol.png",
         "serieId": "sv",
         "official": 198,
         "total": 258
@@ -11607,7 +11607,7 @@ object EmbeddedCatalogData {
         "name": "Amigos de Jornada",
         "releaseDate": "2025-03-28",
         "logo": "https://assets.tcgdex.net/pt/sv/sv09/logo",
-        "symbol": "https://assets.tcgdex.net/pt/sv/sv09/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv09/symbol.png",
         "serieId": "sv",
         "official": 159,
         "total": 190
@@ -11617,7 +11617,7 @@ object EmbeddedCatalogData {
         "name": "Yello A Alternate",
         "releaseDate": "2014-02-05",
         "logo": "https://assets.tcgdex.net/pt/xy/xya/logo",
-        "symbol": "https://assets.tcgdex.net/pt/xy/xya/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xya/symbol.png",
         "serieId": "xy",
         "official": 6,
         "total": 6
@@ -11627,7 +11627,7 @@ object EmbeddedCatalogData {
         "name": "Céus Estrondosos",
         "releaseDate": "2015-05-06",
         "logo": "https://assets.tcgdex.net/pt/xy/xy6/logo",
-        "symbol": "https://assets.tcgdex.net/pt/xy/xy6/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy6/symbol.png",
         "serieId": "xy",
         "official": 108,
         "total": 112
@@ -11637,7 +11637,7 @@ object EmbeddedCatalogData {
         "name": "Origens Ancestrais",
         "releaseDate": "2015-08-12",
         "logo": "https://assets.tcgdex.net/pt/xy/xy7/logo",
-        "symbol": "https://assets.tcgdex.net/pt/xy/xy7/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy7/symbol.png",
         "serieId": "xy",
         "official": 98,
         "total": 101
@@ -11647,7 +11647,7 @@ object EmbeddedCatalogData {
         "name": "Turbo Colisão",
         "releaseDate": "2016-02-03",
         "logo": "https://assets.tcgdex.net/pt/xy/xy9/logo",
-        "symbol": "https://assets.tcgdex.net/pt/xy/xy9/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy9/symbol.png",
         "serieId": "xy",
         "official": 122,
         "total": 126
@@ -11657,7 +11657,7 @@ object EmbeddedCatalogData {
         "name": "Conflito Primitivo",
         "releaseDate": "2015-02-04",
         "logo": "https://assets.tcgdex.net/pt/xy/xy5/logo",
-        "symbol": "https://assets.tcgdex.net/pt/xy/xy5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy5/symbol.png",
         "serieId": "xy",
         "official": 160,
         "total": 164
@@ -11667,7 +11667,7 @@ object EmbeddedCatalogData {
         "name": "XY Black Star Promos",
         "releaseDate": "2013-10-12",
         "logo": "https://assets.tcgdex.net/pt/xy/xyp/logo",
-        "symbol": "https://assets.tcgdex.net/pt/xy/xyp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xyp/symbol.png",
         "serieId": "xy",
         "official": 211,
         "total": 216
@@ -11677,7 +11677,7 @@ object EmbeddedCatalogData {
         "name": "Conjunto para Iniciantes Kalos",
         "releaseDate": "2013-11-08",
         "logo": "https://assets.tcgdex.net/pt/xy/xy0/logo",
-        "symbol": "https://assets.tcgdex.net/pt/xy/xy0/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy0/symbol.png",
         "serieId": "xy",
         "official": 39,
         "total": 39
@@ -11687,7 +11687,7 @@ object EmbeddedCatalogData {
         "name": "Flash de Fogo",
         "releaseDate": "2014-05-07",
         "logo": "https://assets.tcgdex.net/pt/xy/xy2/logo",
-        "symbol": "https://assets.tcgdex.net/pt/xy/xy2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy2/symbol.png",
         "serieId": "xy",
         "official": 106,
         "total": 110
@@ -11697,7 +11697,7 @@ object EmbeddedCatalogData {
         "name": "Turbo Revolução",
         "releaseDate": "2015-11-04",
         "logo": "https://assets.tcgdex.net/pt/xy/xy8/logo",
-        "symbol": "https://assets.tcgdex.net/pt/xy/xy8/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy8/symbol.png",
         "serieId": "xy",
         "official": 162,
         "total": 165
@@ -11707,7 +11707,7 @@ object EmbeddedCatalogData {
         "name": "Evoluções",
         "releaseDate": "2016-11-02",
         "logo": "https://assets.tcgdex.net/pt/xy/xy12/logo",
-        "symbol": "https://assets.tcgdex.net/pt/xy/xy12/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy12/symbol.png",
         "serieId": "xy",
         "official": 108,
         "total": 113
@@ -11717,7 +11717,7 @@ object EmbeddedCatalogData {
         "name": "Crise Dupla",
         "releaseDate": "2015-03-25",
         "logo": "https://assets.tcgdex.net/pt/xy/dc1/logo",
-        "symbol": "https://assets.tcgdex.net/pt/xy/dc1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/dc1/symbol.png",
         "serieId": "xy",
         "official": 34,
         "total": 34
@@ -11727,7 +11727,7 @@ object EmbeddedCatalogData {
         "name": "Gerações",
         "releaseDate": "2016-02-22",
         "logo": "https://assets.tcgdex.net/pt/xy/g1/logo",
-        "symbol": "https://assets.tcgdex.net/pt/xy/g1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/g1/symbol.png",
         "serieId": "xy",
         "official": 83,
         "total": 117
@@ -11737,7 +11737,7 @@ object EmbeddedCatalogData {
         "name": "XY",
         "releaseDate": "2014-02-05",
         "logo": "https://assets.tcgdex.net/pt/xy/xy1/logo",
-        "symbol": "https://assets.tcgdex.net/pt/xy/xy1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy1/symbol.png",
         "serieId": "xy",
         "official": 146,
         "total": 146
@@ -11747,7 +11747,7 @@ object EmbeddedCatalogData {
         "name": "Cerco de Vapor",
         "releaseDate": "2016-08-03",
         "logo": "https://assets.tcgdex.net/pt/xy/xy11/logo",
-        "symbol": "https://assets.tcgdex.net/pt/xy/xy11/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy11/symbol.png",
         "serieId": "xy",
         "official": 114,
         "total": 116
@@ -11757,7 +11757,7 @@ object EmbeddedCatalogData {
         "name": "Fusão de Destinos",
         "releaseDate": "2016-05-02",
         "logo": "https://assets.tcgdex.net/pt/xy/xy10/logo",
-        "symbol": "https://assets.tcgdex.net/pt/xy/xy10/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy10/symbol.png",
         "serieId": "xy",
         "official": 124,
         "total": 129
@@ -11767,7 +11767,7 @@ object EmbeddedCatalogData {
         "name": "Punhos Furiosos",
         "releaseDate": "2014-08-13",
         "logo": "https://assets.tcgdex.net/pt/xy/xy3/logo",
-        "symbol": "https://assets.tcgdex.net/pt/xy/xy3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy3/symbol.png",
         "serieId": "xy",
         "official": 111,
         "total": 114
@@ -11777,7 +11777,7 @@ object EmbeddedCatalogData {
         "name": "Força Fantasma",
         "releaseDate": "2014-11-05",
         "logo": "https://assets.tcgdex.net/pt/xy/xy4/logo",
-        "symbol": "https://assets.tcgdex.net/pt/xy/xy4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy4/symbol.png",
         "serieId": "xy",
         "official": 119,
         "total": 124
@@ -11787,7 +11787,7 @@ object EmbeddedCatalogData {
         "name": "HS trainer Kit (Gyarados)",
         "releaseDate": "2010-05-01",
         "logo": "https://assets.tcgdex.net/pt/tk/tk-hs-g/logo",
-        "symbol": "https://assets.tcgdex.net/pt/tk/tk-hs-g/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-hs-g/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 1
@@ -11797,7 +11797,7 @@ object EmbeddedCatalogData {
         "name": "EX trainer Kit 2 (Plusle)",
         "releaseDate": "2006-03-01",
         "logo": "https://assets.tcgdex.net/pt/tk/tk-ex-p/logo",
-        "symbol": "https://assets.tcgdex.net/pt/tk/tk-ex-p/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-ex-p/symbol.png",
         "serieId": "tk",
         "official": 12,
         "total": 12
@@ -11807,7 +11807,7 @@ object EmbeddedCatalogData {
         "name": "EX trainer Kit 2 (Minun)",
         "releaseDate": "2006-03-01",
         "logo": "https://assets.tcgdex.net/pt/tk/tk-ex-m/logo",
-        "symbol": "https://assets.tcgdex.net/pt/tk/tk-ex-m/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-ex-m/symbol.png",
         "serieId": "tk",
         "official": 12,
         "total": 12
@@ -11817,7 +11817,7 @@ object EmbeddedCatalogData {
         "name": "DP trainer Kit (Lucario)",
         "releaseDate": "2007-09-01",
         "logo": "https://assets.tcgdex.net/pt/tk/tk-dp-l/logo",
-        "symbol": "https://assets.tcgdex.net/pt/tk/tk-dp-l/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-dp-l/symbol.png",
         "serieId": "tk",
         "official": 11,
         "total": 11
@@ -11827,7 +11827,7 @@ object EmbeddedCatalogData {
         "name": "SM trainer Kit (Alolan Raichu)",
         "releaseDate": "2017-04-21",
         "logo": "https://assets.tcgdex.net/pt/tk/tk-sm-r/logo",
-        "symbol": "https://assets.tcgdex.net/pt/tk/tk-sm-r/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-sm-r/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 19
@@ -11837,7 +11837,7 @@ object EmbeddedCatalogData {
         "name": "XY trainer Kit (Latias)",
         "releaseDate": "2015-04-29",
         "logo": "https://assets.tcgdex.net/pt/tk/tk-xy-latia/logo",
-        "symbol": "https://assets.tcgdex.net/pt/tk/tk-xy-latia/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-xy-latia/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -11847,7 +11847,7 @@ object EmbeddedCatalogData {
         "name": "HS trainer Kit (Raichu)",
         "releaseDate": "2010-05-01",
         "logo": "https://assets.tcgdex.net/pt/tk/tk-hs-r/logo",
-        "symbol": "https://assets.tcgdex.net/pt/tk/tk-hs-r/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-hs-r/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 1
@@ -11857,7 +11857,7 @@ object EmbeddedCatalogData {
         "name": "EX trainer Kit (Latios)",
         "releaseDate": "2004-07-01",
         "logo": "https://assets.tcgdex.net/pt/tk/tk-ex-latio/logo",
-        "symbol": "https://assets.tcgdex.net/pt/tk/tk-ex-latio/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-ex-latio/symbol.png",
         "serieId": "tk",
         "official": 10,
         "total": 10
@@ -11867,7 +11867,7 @@ object EmbeddedCatalogData {
         "name": "BW trainer Kit (Excadrill)",
         "releaseDate": "2011-09-01",
         "logo": "https://assets.tcgdex.net/pt/tk/tk-bw-e/logo",
-        "symbol": "https://assets.tcgdex.net/pt/tk/tk-bw-e/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-bw-e/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -11877,7 +11877,7 @@ object EmbeddedCatalogData {
         "name": "XY trainer Kit (Pikachu Libre)",
         "releaseDate": "2016-04-27",
         "logo": "https://assets.tcgdex.net/pt/tk/tk-xy-p/logo",
-        "symbol": "https://assets.tcgdex.net/pt/tk/tk-xy-p/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-xy-p/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -11887,7 +11887,7 @@ object EmbeddedCatalogData {
         "name": "XY trainer Kit (Latios)",
         "releaseDate": "2015-04-29",
         "logo": "https://assets.tcgdex.net/pt/tk/tk-xy-latio/logo",
-        "symbol": "https://assets.tcgdex.net/pt/tk/tk-xy-latio/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-xy-latio/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -11897,7 +11897,7 @@ object EmbeddedCatalogData {
         "name": "SM trainer Kit (Lycanroc)",
         "releaseDate": "2017-04-21",
         "logo": "https://assets.tcgdex.net/pt/tk/tk-sm-l/logo",
-        "symbol": "https://assets.tcgdex.net/pt/tk/tk-sm-l/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-sm-l/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 18
@@ -11907,7 +11907,7 @@ object EmbeddedCatalogData {
         "name": "EX trainer Kit (Latias)",
         "releaseDate": "2004-07-01",
         "logo": "https://assets.tcgdex.net/pt/tk/tk-ex-latia/logo",
-        "symbol": "https://assets.tcgdex.net/pt/tk/tk-ex-latia/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-ex-latia/symbol.png",
         "serieId": "tk",
         "official": 10,
         "total": 10
@@ -11917,7 +11917,7 @@ object EmbeddedCatalogData {
         "name": "XY trainer Kit (Suicune)",
         "releaseDate": "2016-04-27",
         "logo": "https://assets.tcgdex.net/pt/tk/tk-xy-su/logo",
-        "symbol": "https://assets.tcgdex.net/pt/tk/tk-xy-su/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-xy-su/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -11927,7 +11927,7 @@ object EmbeddedCatalogData {
         "name": "DP trainer Kit (Manaphy)",
         "releaseDate": "2007-09-01",
         "logo": "https://assets.tcgdex.net/pt/tk/tk-dp-m/logo",
-        "symbol": "https://assets.tcgdex.net/pt/tk/tk-dp-m/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-dp-m/symbol.png",
         "serieId": "tk",
         "official": 12,
         "total": 12
@@ -11937,7 +11937,7 @@ object EmbeddedCatalogData {
         "name": "XY trainer Kit (Wigglytuff)",
         "releaseDate": "2014-11-01",
         "logo": "https://assets.tcgdex.net/pt/tk/tk-xy-w/logo",
-        "symbol": "https://assets.tcgdex.net/pt/tk/tk-xy-w/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-xy-w/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -11947,7 +11947,7 @@ object EmbeddedCatalogData {
         "name": "BW trainer Kit (Zoroark)",
         "releaseDate": "2011-09-01",
         "logo": "https://assets.tcgdex.net/pt/tk/tk-bw-z/logo",
-        "symbol": "https://assets.tcgdex.net/pt/tk/tk-bw-z/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-bw-z/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -11957,7 +11957,7 @@ object EmbeddedCatalogData {
         "name": "XY trainer Kit (Noivern)",
         "releaseDate": "2014-03-12",
         "logo": "https://assets.tcgdex.net/pt/tk/tk-xy-n/logo",
-        "symbol": "https://assets.tcgdex.net/pt/tk/tk-xy-n/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-xy-n/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -11967,7 +11967,7 @@ object EmbeddedCatalogData {
         "name": "XY trainer Kit (Sylveon)",
         "releaseDate": "2014-03-12",
         "logo": "https://assets.tcgdex.net/pt/tk/tk-xy-sy/logo",
-        "symbol": "https://assets.tcgdex.net/pt/tk/tk-xy-sy/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-xy-sy/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -11977,7 +11977,7 @@ object EmbeddedCatalogData {
         "name": "XY trainer Kit (Bisharp)",
         "releaseDate": "2014-11-01",
         "logo": "https://assets.tcgdex.net/pt/tk/tk-xy-b/logo",
-        "symbol": "https://assets.tcgdex.net/pt/tk/tk-xy-b/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-xy-b/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -11987,7 +11987,7 @@ object EmbeddedCatalogData {
         "name": "Arceus",
         "releaseDate": "2009-11-04",
         "logo": "https://assets.tcgdex.net/pt/pl/pl4/logo",
-        "symbol": "https://assets.tcgdex.net/pt/pl/pl4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pl/pl4/symbol.png",
         "serieId": "pl",
         "official": 99,
         "total": 111
@@ -11997,7 +11997,7 @@ object EmbeddedCatalogData {
         "name": "Supreme Victors",
         "releaseDate": "2009-08-19",
         "logo": "https://assets.tcgdex.net/pt/pl/pl3/logo",
-        "symbol": "https://assets.tcgdex.net/pt/pl/pl3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pl/pl3/symbol.png",
         "serieId": "pl",
         "official": 147,
         "total": 153
@@ -12007,7 +12007,7 @@ object EmbeddedCatalogData {
         "name": "Rising Rivals",
         "releaseDate": "2009-05-16",
         "logo": "https://assets.tcgdex.net/pt/pl/pl2/logo",
-        "symbol": "https://assets.tcgdex.net/pt/pl/pl2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pl/pl2/symbol.png",
         "serieId": "pl",
         "official": 111,
         "total": 120
@@ -12017,7 +12017,7 @@ object EmbeddedCatalogData {
         "name": "Pokémon Rumble",
         "releaseDate": "2009-12-02",
         "logo": "https://assets.tcgdex.net/pt/pl/ru1/logo",
-        "symbol": "https://assets.tcgdex.net/pt/pl/ru1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pl/ru1/symbol.png",
         "serieId": "pl",
         "official": 16,
         "total": 16
@@ -12027,7 +12027,7 @@ object EmbeddedCatalogData {
         "name": "Platinum",
         "releaseDate": "2009-02-11",
         "logo": "https://assets.tcgdex.net/pt/pl/pl1/logo",
-        "symbol": "https://assets.tcgdex.net/pt/pl/pl1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pl/pl1/symbol.png",
         "serieId": "pl",
         "official": 127,
         "total": 133
@@ -12037,7 +12037,7 @@ object EmbeddedCatalogData {
         "name": "Gym Challenge",
         "releaseDate": "2000-10-16",
         "logo": "https://assets.tcgdex.net/pt/gym/gym2/logo",
-        "symbol": "https://assets.tcgdex.net/pt/gym/gym2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/gym/gym2/symbol.png",
         "serieId": "gym",
         "official": 132,
         "total": 132
@@ -12047,7 +12047,7 @@ object EmbeddedCatalogData {
         "name": "Gym Heroes",
         "releaseDate": "2000-08-14",
         "logo": "https://assets.tcgdex.net/pt/gym/gym1/logo",
-        "symbol": "https://assets.tcgdex.net/pt/gym/gym1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/gym/gym1/symbol.png",
         "serieId": "gym",
         "official": 132,
         "total": 132
@@ -12057,7 +12057,7 @@ object EmbeddedCatalogData {
         "name": "Destinos Brilhantes ",
         "releaseDate": "2021-02-19",
         "logo": "https://assets.tcgdex.net/pt/swsh/swsh4.5/logo",
-        "symbol": "https://assets.tcgdex.net/pt/swsh/swsh4.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh4.5/symbol.png",
         "serieId": "swsh",
         "official": 72,
         "total": 195
@@ -12067,7 +12067,7 @@ object EmbeddedCatalogData {
         "name": "Estrelas Radiantes",
         "releaseDate": "2022-05-27",
         "logo": "https://assets.tcgdex.net/pt/swsh/swsh10/logo",
-        "symbol": "https://assets.tcgdex.net/pt/swsh/swsh10/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh10/symbol.png",
         "serieId": "swsh",
         "official": 189,
         "total": 246
@@ -12077,7 +12077,7 @@ object EmbeddedCatalogData {
         "name": "Golpe Fusão",
         "releaseDate": "2021-11-12",
         "logo": "https://assets.tcgdex.net/pt/swsh/swsh8/logo",
-        "symbol": "https://assets.tcgdex.net/pt/swsh/swsh8/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh8/symbol.png",
         "serieId": "swsh",
         "official": 264,
         "total": 284
@@ -12087,7 +12087,7 @@ object EmbeddedCatalogData {
         "name": "Céus em Evolução",
         "releaseDate": "2021-08-27",
         "logo": "https://assets.tcgdex.net/pt/swsh/swsh7/logo",
-        "symbol": "https://assets.tcgdex.net/pt/swsh/swsh7/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh7/symbol.png",
         "serieId": "swsh",
         "official": 203,
         "total": 237
@@ -12097,7 +12097,7 @@ object EmbeddedCatalogData {
         "name": "Realeza Absoluta",
         "releaseDate": "2023-01-20",
         "logo": "https://assets.tcgdex.net/pt/swsh/swsh12.5/logo",
-        "symbol": "https://assets.tcgdex.net/pt/swsh/swsh12.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh12.5/symbol.png",
         "serieId": "swsh",
         "official": 159,
         "total": 230
@@ -12107,7 +12107,7 @@ object EmbeddedCatalogData {
         "name": "Caminho do Campeão",
         "releaseDate": "2020-09-25",
         "logo": "https://assets.tcgdex.net/pt/swsh/swsh3.5/logo",
-        "symbol": "https://assets.tcgdex.net/pt/swsh/swsh3.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh3.5/symbol.png",
         "serieId": "swsh",
         "official": 70,
         "total": 80
@@ -12117,7 +12117,7 @@ object EmbeddedCatalogData {
         "name": "Celebrações",
         "releaseDate": "2021-10-08",
         "logo": "https://assets.tcgdex.net/pt/swsh/cel25/logo",
-        "symbol": "https://assets.tcgdex.net/pt/swsh/cel25/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/cel25/symbol.png",
         "serieId": "swsh",
         "official": 25,
         "total": 51
@@ -12127,7 +12127,7 @@ object EmbeddedCatalogData {
         "name": "Estilos de Batalha",
         "releaseDate": "2021-03-19",
         "logo": "https://assets.tcgdex.net/pt/swsh/swsh5/logo",
-        "symbol": "https://assets.tcgdex.net/pt/swsh/swsh5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh5/symbol.png",
         "serieId": "swsh",
         "official": 163,
         "total": 183
@@ -12137,7 +12137,7 @@ object EmbeddedCatalogData {
         "name": "Tempestade Prateada",
         "releaseDate": "2022-11-11",
         "logo": "https://assets.tcgdex.net/pt/swsh/swsh12/logo",
-        "symbol": "https://assets.tcgdex.net/pt/swsh/swsh12/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh12/symbol.png",
         "serieId": "swsh",
         "official": 195,
         "total": 245
@@ -12147,7 +12147,7 @@ object EmbeddedCatalogData {
         "name": "Voltagem Vívida",
         "releaseDate": "2020-11-13",
         "logo": "https://assets.tcgdex.net/pt/swsh/swsh4/logo",
-        "symbol": "https://assets.tcgdex.net/pt/swsh/swsh4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh4/symbol.png",
         "serieId": "swsh",
         "official": 185,
         "total": 203
@@ -12157,7 +12157,7 @@ object EmbeddedCatalogData {
         "name": "Reinado Arrepiante",
         "releaseDate": "2021-06-18",
         "logo": "https://assets.tcgdex.net/pt/swsh/swsh6/logo",
-        "symbol": "https://assets.tcgdex.net/pt/swsh/swsh6/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh6/symbol.png",
         "serieId": "swsh",
         "official": 198,
         "total": 233
@@ -12167,7 +12167,7 @@ object EmbeddedCatalogData {
         "name": "Origem Perdida",
         "releaseDate": "2022-09-09",
         "logo": "https://assets.tcgdex.net/pt/swsh/swsh11/logo",
-        "symbol": "https://assets.tcgdex.net/pt/swsh/swsh11/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh11/symbol.png",
         "serieId": "swsh",
         "official": 196,
         "total": 247
@@ -12177,7 +12177,7 @@ object EmbeddedCatalogData {
         "name": "Escuridão Incandescente",
         "releaseDate": "2020-08-14",
         "logo": "https://assets.tcgdex.net/pt/swsh/swsh3/logo",
-        "symbol": "https://assets.tcgdex.net/pt/swsh/swsh3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh3/symbol.png",
         "serieId": "swsh",
         "official": 189,
         "total": 201
@@ -12187,7 +12187,7 @@ object EmbeddedCatalogData {
         "name": "Rixa Rebelde",
         "releaseDate": "2020-05-01",
         "logo": "https://assets.tcgdex.net/pt/swsh/swsh2/logo",
-        "symbol": "https://assets.tcgdex.net/pt/swsh/swsh2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh2/symbol.png",
         "serieId": "swsh",
         "official": 192,
         "total": 209
@@ -12197,7 +12197,7 @@ object EmbeddedCatalogData {
         "name": "ESES Promos",
         "releaseDate": "2019-11-15",
         "logo": "https://assets.tcgdex.net/pt/swsh/swshp/logo",
-        "symbol": "https://assets.tcgdex.net/pt/swsh/swshp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swshp/symbol.png",
         "serieId": "swsh",
         "official": 107,
         "total": 287
@@ -12207,7 +12207,7 @@ object EmbeddedCatalogData {
         "name": "Pokémon Futsal 2020",
         "releaseDate": "2020-09-11",
         "logo": "https://assets.tcgdex.net/pt/swsh/fut2020/logo",
-        "symbol": "https://assets.tcgdex.net/pt/swsh/fut2020/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/fut2020/symbol.png",
         "serieId": "swsh",
         "official": 5,
         "total": 5
@@ -12217,7 +12217,7 @@ object EmbeddedCatalogData {
         "name": "Pokémon GO",
         "releaseDate": "2022-07-01",
         "logo": "https://assets.tcgdex.net/pt/swsh/swsh10.5/logo",
-        "symbol": "https://assets.tcgdex.net/pt/swsh/swsh10.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh10.5/symbol.png",
         "serieId": "swsh",
         "official": 78,
         "total": 88
@@ -12227,7 +12227,7 @@ object EmbeddedCatalogData {
         "name": "Astros Cintilantes",
         "releaseDate": "2022-02-25",
         "logo": "https://assets.tcgdex.net/pt/swsh/swsh9/logo",
-        "symbol": "https://assets.tcgdex.net/pt/swsh/swsh9/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh9/symbol.png",
         "serieId": "swsh",
         "official": 172,
         "total": 216
@@ -12237,7 +12237,7 @@ object EmbeddedCatalogData {
         "name": "Espada e Escudo",
         "releaseDate": "2020-02-07",
         "logo": "https://assets.tcgdex.net/pt/swsh/swsh1/logo",
-        "symbol": "https://assets.tcgdex.net/pt/swsh/swsh1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh1/symbol.png",
         "serieId": "swsh",
         "official": 202,
         "total": 216
@@ -12251,7 +12251,7 @@ object EmbeddedCatalogData {
         "name": "Plasma Storm",
         "releaseDate": "2013-02-06",
         "logo": "https://assets.tcgdex.net/ja/bw/bw8/logo",
-        "symbol": "https://assets.tcgdex.net/ja/bw/bw8/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw8/symbol.png",
         "serieId": "bw",
         "official": 135,
         "total": 138
@@ -12261,7 +12261,7 @@ object EmbeddedCatalogData {
         "name": "Dark Explorers",
         "releaseDate": "2012-05-09",
         "logo": "https://assets.tcgdex.net/ja/bw/bw5/logo",
-        "symbol": "https://assets.tcgdex.net/ja/bw/bw5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw5/symbol.png",
         "serieId": "bw",
         "official": 108,
         "total": 111
@@ -12271,7 +12271,7 @@ object EmbeddedCatalogData {
         "name": "Black & White",
         "releaseDate": "2011-04-25",
         "logo": "https://assets.tcgdex.net/ja/bw/bw1/logo",
-        "symbol": "https://assets.tcgdex.net/ja/bw/bw1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw1/symbol.png",
         "serieId": "bw",
         "official": 114,
         "total": 115
@@ -12281,7 +12281,7 @@ object EmbeddedCatalogData {
         "name": "Boundaries Crossed",
         "releaseDate": "2012-11-07",
         "logo": "https://assets.tcgdex.net/ja/bw/bw7/logo",
-        "symbol": "https://assets.tcgdex.net/ja/bw/bw7/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw7/symbol.png",
         "serieId": "bw",
         "official": 149,
         "total": 153
@@ -12291,7 +12291,7 @@ object EmbeddedCatalogData {
         "name": "Emerging Powers",
         "releaseDate": "2011-08-31",
         "logo": "https://assets.tcgdex.net/ja/bw/bw2/logo",
-        "symbol": "https://assets.tcgdex.net/ja/bw/bw2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw2/symbol.png",
         "serieId": "bw",
         "official": 98,
         "total": 98
@@ -12301,7 +12301,7 @@ object EmbeddedCatalogData {
         "name": "Plasma Freeze",
         "releaseDate": "2013-05-08",
         "logo": "https://assets.tcgdex.net/ja/bw/bw9/logo",
-        "symbol": "https://assets.tcgdex.net/ja/bw/bw9/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw9/symbol.png",
         "serieId": "bw",
         "official": 116,
         "total": 122
@@ -12311,7 +12311,7 @@ object EmbeddedCatalogData {
         "name": "Noble Victories",
         "releaseDate": "2011-11-16",
         "logo": "https://assets.tcgdex.net/ja/bw/bw3/logo",
-        "symbol": "https://assets.tcgdex.net/ja/bw/bw3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw3/symbol.png",
         "serieId": "bw",
         "official": 101,
         "total": 102
@@ -12321,7 +12321,7 @@ object EmbeddedCatalogData {
         "name": "Plasma Blast",
         "releaseDate": "2013-08-14",
         "logo": "https://assets.tcgdex.net/ja/bw/bw10/logo",
-        "symbol": "https://assets.tcgdex.net/ja/bw/bw10/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw10/symbol.png",
         "serieId": "bw",
         "official": 101,
         "total": 105
@@ -12331,7 +12331,7 @@ object EmbeddedCatalogData {
         "name": "Radiant Collection",
         "releaseDate": "2013-11-06",
         "logo": "https://assets.tcgdex.net/ja/bw/rc/logo",
-        "symbol": "https://assets.tcgdex.net/ja/bw/rc/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/rc/symbol.png",
         "serieId": "bw",
         "official": 25,
         "total": 25
@@ -12341,7 +12341,7 @@ object EmbeddedCatalogData {
         "name": "Legendary Treasures",
         "releaseDate": "2013-11-06",
         "logo": "https://assets.tcgdex.net/ja/bw/bw11/logo",
-        "symbol": "https://assets.tcgdex.net/ja/bw/bw11/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw11/symbol.png",
         "serieId": "bw",
         "official": 113,
         "total": 140
@@ -12351,7 +12351,7 @@ object EmbeddedCatalogData {
         "name": "Dragons Exalted",
         "releaseDate": "2012-08-15",
         "logo": "https://assets.tcgdex.net/ja/bw/bw6/logo",
-        "symbol": "https://assets.tcgdex.net/ja/bw/bw6/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw6/symbol.png",
         "serieId": "bw",
         "official": 124,
         "total": 128
@@ -12361,7 +12361,7 @@ object EmbeddedCatalogData {
         "name": "BW Black Star Promos",
         "releaseDate": "2011-04-26",
         "logo": "https://assets.tcgdex.net/ja/bw/bwp/logo",
-        "symbol": "https://assets.tcgdex.net/ja/bw/bwp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bwp/symbol.png",
         "serieId": "bw",
         "official": 101,
         "total": 101
@@ -12371,7 +12371,7 @@ object EmbeddedCatalogData {
         "name": "Next Destinies",
         "releaseDate": "2012-02-08",
         "logo": "https://assets.tcgdex.net/ja/bw/bw4/logo",
-        "symbol": "https://assets.tcgdex.net/ja/bw/bw4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw4/symbol.png",
         "serieId": "bw",
         "official": 99,
         "total": 103
@@ -12381,7 +12381,7 @@ object EmbeddedCatalogData {
         "name": "Dragon Vault",
         "releaseDate": "2012-10-05",
         "logo": "https://assets.tcgdex.net/ja/bw/dv1/logo",
-        "symbol": "https://assets.tcgdex.net/ja/bw/dv1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/dv1/symbol.png",
         "serieId": "bw",
         "official": 20,
         "total": 21
@@ -12391,7 +12391,7 @@ object EmbeddedCatalogData {
         "name": "Jungle",
         "releaseDate": "1999-06-16",
         "logo": "https://assets.tcgdex.net/ja/base/base2/logo",
-        "symbol": "https://assets.tcgdex.net/ja/base/base2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/base/base2/symbol.png",
         "serieId": "base",
         "official": 64,
         "total": 64
@@ -12401,7 +12401,7 @@ object EmbeddedCatalogData {
         "name": "Team Rocket",
         "releaseDate": "2000-04-24",
         "logo": "https://assets.tcgdex.net/ja/base/base5/logo",
-        "symbol": "https://assets.tcgdex.net/ja/base/base5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/base/base5/symbol.png",
         "serieId": "base",
         "official": 82,
         "total": 83
@@ -12411,7 +12411,7 @@ object EmbeddedCatalogData {
         "name": "Wizards Black Star Promos",
         "releaseDate": "1999-07-01",
         "logo": "https://assets.tcgdex.net/ja/base/basep/logo",
-        "symbol": "https://assets.tcgdex.net/ja/base/basep/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/base/basep/symbol.png",
         "serieId": "base",
         "official": 53,
         "total": 53
@@ -12421,7 +12421,7 @@ object EmbeddedCatalogData {
         "name": "Fossil",
         "releaseDate": "1999-10-10",
         "logo": "https://assets.tcgdex.net/ja/base/base3/logo",
-        "symbol": "https://assets.tcgdex.net/ja/base/base3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/base/base3/symbol.png",
         "serieId": "base",
         "official": 62,
         "total": 62
@@ -12431,7 +12431,7 @@ object EmbeddedCatalogData {
         "name": "Base Set 2",
         "releaseDate": "2000-02-24",
         "logo": "https://assets.tcgdex.net/ja/base/base4/logo",
-        "symbol": "https://assets.tcgdex.net/ja/base/base4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/base/base4/symbol.png",
         "serieId": "base",
         "official": 130,
         "total": 130
@@ -12441,7 +12441,7 @@ object EmbeddedCatalogData {
         "name": "Base Set",
         "releaseDate": "1999-01-09",
         "logo": "https://assets.tcgdex.net/ja/base/base1/logo",
-        "symbol": "https://assets.tcgdex.net/ja/base/base1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/base/base1/symbol.png",
         "serieId": "base",
         "official": 102,
         "total": 102
@@ -12451,7 +12451,7 @@ object EmbeddedCatalogData {
         "name": "W Promotional",
         "releaseDate": "1999-09-01",
         "logo": "https://assets.tcgdex.net/ja/base/wp/logo",
-        "symbol": "https://assets.tcgdex.net/ja/base/wp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/base/wp/symbol.png",
         "serieId": "base",
         "official": 7,
         "total": 7
@@ -12461,7 +12461,7 @@ object EmbeddedCatalogData {
         "name": "POP Series 8",
         "releaseDate": "2008-09-01",
         "logo": "https://assets.tcgdex.net/ja/pop/pop8/logo",
-        "symbol": "https://assets.tcgdex.net/ja/pop/pop8/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop8/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -12471,7 +12471,7 @@ object EmbeddedCatalogData {
         "name": "POP Series 9",
         "releaseDate": "2009-03-01",
         "logo": "https://assets.tcgdex.net/ja/pop/pop9/logo",
-        "symbol": "https://assets.tcgdex.net/ja/pop/pop9/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop9/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -12481,7 +12481,7 @@ object EmbeddedCatalogData {
         "name": "POP Series 2",
         "releaseDate": "2005-08-01",
         "logo": "https://assets.tcgdex.net/ja/pop/pop2/logo",
-        "symbol": "https://assets.tcgdex.net/ja/pop/pop2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop2/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -12491,7 +12491,7 @@ object EmbeddedCatalogData {
         "name": "POP Series 6",
         "releaseDate": "2007-09-01",
         "logo": "https://assets.tcgdex.net/ja/pop/pop6/logo",
-        "symbol": "https://assets.tcgdex.net/ja/pop/pop6/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop6/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -12501,7 +12501,7 @@ object EmbeddedCatalogData {
         "name": "POP Series 7",
         "releaseDate": "2008-03-01",
         "logo": "https://assets.tcgdex.net/ja/pop/pop7/logo",
-        "symbol": "https://assets.tcgdex.net/ja/pop/pop7/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop7/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -12511,7 +12511,7 @@ object EmbeddedCatalogData {
         "name": "POP Series 3",
         "releaseDate": "2006-04-01",
         "logo": "https://assets.tcgdex.net/ja/pop/pop3/logo",
-        "symbol": "https://assets.tcgdex.net/ja/pop/pop3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop3/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -12521,7 +12521,7 @@ object EmbeddedCatalogData {
         "name": "POP Series 4",
         "releaseDate": "2006-08-01",
         "logo": "https://assets.tcgdex.net/ja/pop/pop4/logo",
-        "symbol": "https://assets.tcgdex.net/ja/pop/pop4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop4/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -12531,7 +12531,7 @@ object EmbeddedCatalogData {
         "name": "POP Series 1",
         "releaseDate": "2004-09-01",
         "logo": "https://assets.tcgdex.net/ja/pop/pop1/logo",
-        "symbol": "https://assets.tcgdex.net/ja/pop/pop1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop1/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -12541,7 +12541,7 @@ object EmbeddedCatalogData {
         "name": "POP Series 5",
         "releaseDate": "2007-03-01",
         "logo": "https://assets.tcgdex.net/ja/pop/pop5/logo",
-        "symbol": "https://assets.tcgdex.net/ja/pop/pop5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop5/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -12551,7 +12551,7 @@ object EmbeddedCatalogData {
         "name": "Nintendo Black Star Promos",
         "releaseDate": "2003-10-01",
         "logo": "https://assets.tcgdex.net/ja/pop/np/logo",
-        "symbol": "https://assets.tcgdex.net/ja/pop/np/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/np/symbol.png",
         "serieId": "pop",
         "official": 40,
         "total": 40
@@ -12561,7 +12561,7 @@ object EmbeddedCatalogData {
         "name": "Call of Legends",
         "releaseDate": "2011-02-09",
         "logo": "https://assets.tcgdex.net/ja/col/col1/logo",
-        "symbol": "https://assets.tcgdex.net/ja/col/col1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/col/col1/symbol.png",
         "serieId": "col",
         "official": 95,
         "total": 106
@@ -12571,7 +12571,7 @@ object EmbeddedCatalogData {
         "name": "Legendary Collection",
         "releaseDate": "2002-05-24",
         "logo": "https://assets.tcgdex.net/ja/lc/lc/logo",
-        "symbol": "https://assets.tcgdex.net/ja/lc/lc/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/lc/lc/symbol.png",
         "serieId": "lc",
         "official": 110,
         "total": 110
@@ -12581,7 +12581,7 @@ object EmbeddedCatalogData {
         "name": "Macdonald's Collection 2021",
         "releaseDate": "2021-02-09",
         "logo": "https://assets.tcgdex.net/ja/mc/2021swsh/logo",
-        "symbol": "https://assets.tcgdex.net/ja/mc/2021swsh/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2021swsh/symbol.png",
         "serieId": "mc",
         "official": 25,
         "total": 25
@@ -12591,7 +12591,7 @@ object EmbeddedCatalogData {
         "name": "Macdonald's Collection 2015",
         "releaseDate": "2015-11-27",
         "logo": "https://assets.tcgdex.net/ja/mc/2015xy/logo",
-        "symbol": "https://assets.tcgdex.net/ja/mc/2015xy/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2015xy/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 12
@@ -12601,7 +12601,7 @@ object EmbeddedCatalogData {
         "name": "Promo McDonald's 2019",
         "releaseDate": "2019-10-30",
         "logo": "https://assets.tcgdex.net/ja/mc/2019sm-fr/logo",
-        "symbol": "https://assets.tcgdex.net/ja/mc/2019sm-fr/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2019sm-fr/symbol.png",
         "serieId": "mc",
         "official": 40,
         "total": 40
@@ -12611,7 +12611,7 @@ object EmbeddedCatalogData {
         "name": "Macdonald's Collection 2011",
         "releaseDate": "2011-06-17",
         "logo": "https://assets.tcgdex.net/ja/mc/2011bw/logo",
-        "symbol": "https://assets.tcgdex.net/ja/mc/2011bw/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2011bw/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 12
@@ -12621,7 +12621,7 @@ object EmbeddedCatalogData {
         "name": "Promo McDonald's 2018",
         "releaseDate": "2018-06-13",
         "logo": "https://assets.tcgdex.net/ja/mc/2018sm-fr/logo",
-        "symbol": "https://assets.tcgdex.net/ja/mc/2018sm-fr/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2018sm-fr/symbol.png",
         "serieId": "mc",
         "official": 40,
         "total": 40
@@ -12631,7 +12631,7 @@ object EmbeddedCatalogData {
         "name": "Macdonald's Collection 2014",
         "releaseDate": "2014-05-23",
         "logo": "https://assets.tcgdex.net/ja/mc/2014xy/logo",
-        "symbol": "https://assets.tcgdex.net/ja/mc/2014xy/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2014xy/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 12
@@ -12641,7 +12641,7 @@ object EmbeddedCatalogData {
         "name": "Promo McDonald's 2013",
         "releaseDate": "2013-11-01",
         "logo": "https://assets.tcgdex.net/ja/mc/2013bw/logo",
-        "symbol": "https://assets.tcgdex.net/ja/mc/2013bw/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2013bw/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 1
@@ -12651,7 +12651,7 @@ object EmbeddedCatalogData {
         "name": "Macdonald's Collection 2019",
         "releaseDate": "2019-10-15",
         "logo": "https://assets.tcgdex.net/ja/mc/2019sm/logo",
-        "symbol": "https://assets.tcgdex.net/ja/mc/2019sm/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2019sm/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 12
@@ -12661,7 +12661,7 @@ object EmbeddedCatalogData {
         "name": "Macdonald's Collection 2018",
         "releaseDate": "2018-10-19",
         "logo": "https://assets.tcgdex.net/ja/mc/2018sm/logo",
-        "symbol": "https://assets.tcgdex.net/ja/mc/2018sm/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2018sm/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 12
@@ -12671,7 +12671,7 @@ object EmbeddedCatalogData {
         "name": "Macdonald's Collection 2017",
         "releaseDate": "2017-08-03",
         "logo": "https://assets.tcgdex.net/ja/mc/2017sm/logo",
-        "symbol": "https://assets.tcgdex.net/ja/mc/2017sm/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2017sm/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 12
@@ -12681,7 +12681,7 @@ object EmbeddedCatalogData {
         "name": "Macdonald's Collection 2016",
         "releaseDate": "2016-08-20",
         "logo": "https://assets.tcgdex.net/ja/mc/2016xy/logo",
-        "symbol": "https://assets.tcgdex.net/ja/mc/2016xy/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2016xy/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 12
@@ -12691,7 +12691,7 @@ object EmbeddedCatalogData {
         "name": "Macdonald's Collection 2012",
         "releaseDate": "2012-06-15",
         "logo": "https://assets.tcgdex.net/ja/mc/2012bw/logo",
-        "symbol": "https://assets.tcgdex.net/ja/mc/2012bw/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2012bw/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 12
@@ -12701,7 +12701,7 @@ object EmbeddedCatalogData {
         "name": "FireRed & LeafGreen",
         "releaseDate": "2004-09-01",
         "logo": "https://assets.tcgdex.net/ja/ex/ex6/logo",
-        "symbol": "https://assets.tcgdex.net/ja/ex/ex6/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex6/symbol.png",
         "serieId": "ex",
         "official": 112,
         "total": 116
@@ -12711,7 +12711,7 @@ object EmbeddedCatalogData {
         "name": "Team Magma vs Team Aqua",
         "releaseDate": "2004-03-01",
         "logo": "https://assets.tcgdex.net/ja/ex/ex4/logo",
-        "symbol": "https://assets.tcgdex.net/ja/ex/ex4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex4/symbol.png",
         "serieId": "ex",
         "official": 95,
         "total": 97
@@ -12721,7 +12721,7 @@ object EmbeddedCatalogData {
         "name": "Sandstorm",
         "releaseDate": "2003-09-18",
         "logo": "https://assets.tcgdex.net/ja/ex/ex2/logo",
-        "symbol": "https://assets.tcgdex.net/ja/ex/ex2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex2/symbol.png",
         "serieId": "ex",
         "official": 100,
         "total": 100
@@ -12731,7 +12731,7 @@ object EmbeddedCatalogData {
         "name": "Team Rocket Returns",
         "releaseDate": "2004-11-01",
         "logo": "https://assets.tcgdex.net/ja/ex/ex7/logo",
-        "symbol": "https://assets.tcgdex.net/ja/ex/ex7/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex7/symbol.png",
         "serieId": "ex",
         "official": 109,
         "total": 111
@@ -12741,7 +12741,7 @@ object EmbeddedCatalogData {
         "name": "Legend Maker",
         "releaseDate": "2006-02-13",
         "logo": "https://assets.tcgdex.net/ja/ex/ex12/logo",
-        "symbol": "https://assets.tcgdex.net/ja/ex/ex12/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex12/symbol.png",
         "serieId": "ex",
         "official": 92,
         "total": 93
@@ -12751,7 +12751,7 @@ object EmbeddedCatalogData {
         "name": "Dragon Frontiers",
         "releaseDate": "2006-11-08",
         "logo": "https://assets.tcgdex.net/ja/ex/ex15/logo",
-        "symbol": "https://assets.tcgdex.net/ja/ex/ex15/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex15/symbol.png",
         "serieId": "ex",
         "official": 101,
         "total": 101
@@ -12761,7 +12761,7 @@ object EmbeddedCatalogData {
         "name": "Power Keepers",
         "releaseDate": "2007-02-17",
         "logo": "https://assets.tcgdex.net/ja/ex/ex16/logo",
-        "symbol": "https://assets.tcgdex.net/ja/ex/ex16/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex16/symbol.png",
         "serieId": "ex",
         "official": 108,
         "total": 108
@@ -12771,7 +12771,7 @@ object EmbeddedCatalogData {
         "name": "Crystal Guardians",
         "releaseDate": "2006-08-30",
         "logo": "https://assets.tcgdex.net/ja/ex/ex14/logo",
-        "symbol": "https://assets.tcgdex.net/ja/ex/ex14/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex14/symbol.png",
         "serieId": "ex",
         "official": 100,
         "total": 100
@@ -12781,7 +12781,7 @@ object EmbeddedCatalogData {
         "name": "Delta Species",
         "releaseDate": "2005-10-31",
         "logo": "https://assets.tcgdex.net/ja/ex/ex11/logo",
-        "symbol": "https://assets.tcgdex.net/ja/ex/ex11/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex11/symbol.png",
         "serieId": "ex",
         "official": 113,
         "total": 114
@@ -12791,7 +12791,7 @@ object EmbeddedCatalogData {
         "name": "Unseen Forces",
         "releaseDate": "2005-08-22",
         "logo": "https://assets.tcgdex.net/ja/ex/ex10/logo",
-        "symbol": "https://assets.tcgdex.net/ja/ex/ex10/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex10/symbol.png",
         "serieId": "ex",
         "official": 115,
         "total": 117
@@ -12801,7 +12801,7 @@ object EmbeddedCatalogData {
         "name": "Emerald",
         "releaseDate": "2005-05-09",
         "logo": "https://assets.tcgdex.net/ja/ex/ex9/logo",
-        "symbol": "https://assets.tcgdex.net/ja/ex/ex9/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex9/symbol.png",
         "serieId": "ex",
         "official": 106,
         "total": 107
@@ -12811,7 +12811,7 @@ object EmbeddedCatalogData {
         "name": "Deoxys",
         "releaseDate": "2005-02-01",
         "logo": "https://assets.tcgdex.net/ja/ex/ex8/logo",
-        "symbol": "https://assets.tcgdex.net/ja/ex/ex8/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex8/symbol.png",
         "serieId": "ex",
         "official": 107,
         "total": 108
@@ -12821,7 +12821,7 @@ object EmbeddedCatalogData {
         "name": "Poké Card Creator Pack",
         "releaseDate": "2004-07-01",
         "logo": "https://assets.tcgdex.net/ja/ex/ex5.5/logo",
-        "symbol": "https://assets.tcgdex.net/ja/ex/ex5.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex5.5/symbol.png",
         "serieId": "ex",
         "official": 5,
         "total": 5
@@ -12831,7 +12831,7 @@ object EmbeddedCatalogData {
         "name": "Unseen Forces Unown Collection",
         "releaseDate": "2005-08-22",
         "logo": "https://assets.tcgdex.net/ja/ex/exu/logo",
-        "symbol": "https://assets.tcgdex.net/ja/ex/exu/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/exu/symbol.png",
         "serieId": "ex",
         "official": 28,
         "total": 28
@@ -12841,7 +12841,7 @@ object EmbeddedCatalogData {
         "name": "Holon Phantoms",
         "releaseDate": "2006-05-03",
         "logo": "https://assets.tcgdex.net/ja/ex/ex13/logo",
-        "symbol": "https://assets.tcgdex.net/ja/ex/ex13/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex13/symbol.png",
         "serieId": "ex",
         "official": 110,
         "total": 111
@@ -12851,7 +12851,7 @@ object EmbeddedCatalogData {
         "name": "Dragon",
         "releaseDate": "2003-11-24",
         "logo": "https://assets.tcgdex.net/ja/ex/ex3/logo",
-        "symbol": "https://assets.tcgdex.net/ja/ex/ex3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex3/symbol.png",
         "serieId": "ex",
         "official": 97,
         "total": 100
@@ -12861,7 +12861,7 @@ object EmbeddedCatalogData {
         "name": "Ruby & Sapphire",
         "releaseDate": "2003-07-01",
         "logo": "https://assets.tcgdex.net/ja/ex/ex1/logo",
-        "symbol": "https://assets.tcgdex.net/ja/ex/ex1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex1/symbol.png",
         "serieId": "ex",
         "official": 109,
         "total": 109
@@ -12871,7 +12871,7 @@ object EmbeddedCatalogData {
         "name": "Hidden Legends",
         "releaseDate": "2004-06-01",
         "logo": "https://assets.tcgdex.net/ja/ex/ex5/logo",
-        "symbol": "https://assets.tcgdex.net/ja/ex/ex5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex5/symbol.png",
         "serieId": "ex",
         "official": 101,
         "total": 102
@@ -12881,7 +12881,7 @@ object EmbeddedCatalogData {
         "name": "Jumbo cards",
         "releaseDate": "2000-02-01",
         "logo": "https://assets.tcgdex.net/ja/misc/jumbo/logo",
-        "symbol": "https://assets.tcgdex.net/ja/misc/jumbo/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/misc/jumbo/symbol.png",
         "serieId": "misc",
         "official": 160,
         "total": 160
@@ -12891,7 +12891,7 @@ object EmbeddedCatalogData {
         "name": "Legends Awakened",
         "releaseDate": "2008-08-01",
         "logo": "https://assets.tcgdex.net/ja/dp/dp6/logo",
-        "symbol": "https://assets.tcgdex.net/ja/dp/dp6/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/dp/dp6/symbol.png",
         "serieId": "dp",
         "official": 146,
         "total": 146
@@ -12901,7 +12901,7 @@ object EmbeddedCatalogData {
         "name": "DP Black Star Promos",
         "releaseDate": "2007-05-01",
         "logo": "https://assets.tcgdex.net/ja/dp/dpp/logo",
-        "symbol": "https://assets.tcgdex.net/ja/dp/dpp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/dp/dpp/symbol.png",
         "serieId": "dp",
         "official": 56,
         "total": 56
@@ -12911,7 +12911,7 @@ object EmbeddedCatalogData {
         "name": "Diamond & Pearl",
         "releaseDate": "2007-05-01",
         "logo": "https://assets.tcgdex.net/ja/dp/dp1/logo",
-        "symbol": "https://assets.tcgdex.net/ja/dp/dp1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/dp/dp1/symbol.png",
         "serieId": "dp",
         "official": 130,
         "total": 130
@@ -12921,7 +12921,7 @@ object EmbeddedCatalogData {
         "name": "Mysterious Treasures",
         "releaseDate": "2007-08-01",
         "logo": "https://assets.tcgdex.net/ja/dp/dp2/logo",
-        "symbol": "https://assets.tcgdex.net/ja/dp/dp2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/dp/dp2/symbol.png",
         "serieId": "dp",
         "official": 122,
         "total": 124
@@ -12931,7 +12931,7 @@ object EmbeddedCatalogData {
         "name": "Great Encounters",
         "releaseDate": "2008-02-01",
         "logo": "https://assets.tcgdex.net/ja/dp/dp4/logo",
-        "symbol": "https://assets.tcgdex.net/ja/dp/dp4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/dp/dp4/symbol.png",
         "serieId": "dp",
         "official": 106,
         "total": 106
@@ -12941,7 +12941,7 @@ object EmbeddedCatalogData {
         "name": "Secret Wonders",
         "releaseDate": "2007-11-01",
         "logo": "https://assets.tcgdex.net/ja/dp/dp3/logo",
-        "symbol": "https://assets.tcgdex.net/ja/dp/dp3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/dp/dp3/symbol.png",
         "serieId": "dp",
         "official": 132,
         "total": 132
@@ -12951,7 +12951,7 @@ object EmbeddedCatalogData {
         "name": "Stormfront",
         "releaseDate": "2008-11-01",
         "logo": "https://assets.tcgdex.net/ja/dp/dp7/logo",
-        "symbol": "https://assets.tcgdex.net/ja/dp/dp7/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/dp/dp7/symbol.png",
         "serieId": "dp",
         "official": 100,
         "total": 106
@@ -12961,7 +12961,7 @@ object EmbeddedCatalogData {
         "name": "Majestic Dawn",
         "releaseDate": "2008-05-01",
         "logo": "https://assets.tcgdex.net/ja/dp/dp5/logo",
-        "symbol": "https://assets.tcgdex.net/ja/dp/dp5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/dp/dp5/symbol.png",
         "serieId": "dp",
         "official": 100,
         "total": 100
@@ -12971,7 +12971,7 @@ object EmbeddedCatalogData {
         "name": "Neo Destiny",
         "releaseDate": "2002-02-28",
         "logo": "https://assets.tcgdex.net/ja/neo/neo4/logo",
-        "symbol": "https://assets.tcgdex.net/ja/neo/neo4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/neo/neo4/symbol.png",
         "serieId": "neo",
         "official": 105,
         "total": 113
@@ -12981,7 +12981,7 @@ object EmbeddedCatalogData {
         "name": "Neo Genesis",
         "releaseDate": "2000-12-16",
         "logo": "https://assets.tcgdex.net/ja/neo/neo1/logo",
-        "symbol": "https://assets.tcgdex.net/ja/neo/neo1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/neo/neo1/symbol.png",
         "serieId": "neo",
         "official": 111,
         "total": 111
@@ -12991,7 +12991,7 @@ object EmbeddedCatalogData {
         "name": "Neo Discovery",
         "releaseDate": "2001-06-01",
         "logo": "https://assets.tcgdex.net/ja/neo/neo2/logo",
-        "symbol": "https://assets.tcgdex.net/ja/neo/neo2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/neo/neo2/symbol.png",
         "serieId": "neo",
         "official": 75,
         "total": 75
@@ -13001,7 +13001,7 @@ object EmbeddedCatalogData {
         "name": "Southern Islands",
         "releaseDate": "2001-07-31",
         "logo": "https://assets.tcgdex.net/ja/neo/si1/logo",
-        "symbol": "https://assets.tcgdex.net/ja/neo/si1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/neo/si1/symbol.png",
         "serieId": "neo",
         "official": 18,
         "total": 18
@@ -13011,7 +13011,7 @@ object EmbeddedCatalogData {
         "name": "Neo Revelation",
         "releaseDate": "2001-09-21",
         "logo": "https://assets.tcgdex.net/ja/neo/neo3/logo",
-        "symbol": "https://assets.tcgdex.net/ja/neo/neo3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/neo/neo3/symbol.png",
         "serieId": "neo",
         "official": 64,
         "total": 66
@@ -13021,7 +13021,7 @@ object EmbeddedCatalogData {
         "name": "Ultra Prism",
         "releaseDate": "2018-02-02",
         "logo": "https://assets.tcgdex.net/ja/sm/sm5/logo",
-        "symbol": "https://assets.tcgdex.net/ja/sm/sm5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm5/symbol.png",
         "serieId": "sm",
         "official": 156,
         "total": 173
@@ -13031,7 +13031,7 @@ object EmbeddedCatalogData {
         "name": "Unbroken Bonds",
         "releaseDate": "2019-05-03",
         "logo": "https://assets.tcgdex.net/ja/sm/sm10/logo",
-        "symbol": "https://assets.tcgdex.net/ja/sm/sm10/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm10/symbol.png",
         "serieId": "sm",
         "official": 214,
         "total": 234
@@ -13041,7 +13041,7 @@ object EmbeddedCatalogData {
         "name": "Cosmic Eclipse",
         "releaseDate": "2019-11-01",
         "logo": "https://assets.tcgdex.net/ja/sm/sm12/logo",
-        "symbol": "https://assets.tcgdex.net/ja/sm/sm12/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm12/symbol.png",
         "serieId": "sm",
         "official": 236,
         "total": 271
@@ -13051,7 +13051,7 @@ object EmbeddedCatalogData {
         "name": "Yellow A Alternate",
         "releaseDate": "2019-08-23",
         "logo": "https://assets.tcgdex.net/ja/sm/sma/logo",
-        "symbol": "https://assets.tcgdex.net/ja/sm/sma/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sma/symbol.png",
         "serieId": "sm",
         "official": 94,
         "total": 94
@@ -13061,7 +13061,7 @@ object EmbeddedCatalogData {
         "name": "Unified Minds",
         "releaseDate": "2019-08-02",
         "logo": "https://assets.tcgdex.net/ja/sm/sm11/logo",
-        "symbol": "https://assets.tcgdex.net/ja/sm/sm11/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm11/symbol.png",
         "serieId": "sm",
         "official": 236,
         "total": 258
@@ -13071,7 +13071,7 @@ object EmbeddedCatalogData {
         "name": "Detective Pikachu",
         "releaseDate": "2019-03-29",
         "logo": "https://assets.tcgdex.net/ja/sm/det1/logo",
-        "symbol": "https://assets.tcgdex.net/ja/sm/det1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/det1/symbol.png",
         "serieId": "sm",
         "official": 18,
         "total": 18
@@ -13081,7 +13081,7 @@ object EmbeddedCatalogData {
         "name": "Sun & Moon",
         "releaseDate": "2017-02-03",
         "logo": "https://assets.tcgdex.net/ja/sm/sm1/logo",
-        "symbol": "https://assets.tcgdex.net/ja/sm/sm1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm1/symbol.png",
         "serieId": "sm",
         "official": 149,
         "total": 172
@@ -13091,7 +13091,7 @@ object EmbeddedCatalogData {
         "name": "Hidden Fates",
         "releaseDate": "2019-08-23",
         "logo": "https://assets.tcgdex.net/ja/sm/sm115/logo",
-        "symbol": "https://assets.tcgdex.net/ja/sm/sm115/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm115/symbol.png",
         "serieId": "sm",
         "official": 68,
         "total": 69
@@ -13101,7 +13101,7 @@ object EmbeddedCatalogData {
         "name": "Forbidden Light",
         "releaseDate": "2018-05-04",
         "logo": "https://assets.tcgdex.net/ja/sm/sm6/logo",
-        "symbol": "https://assets.tcgdex.net/ja/sm/sm6/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm6/symbol.png",
         "serieId": "sm",
         "official": 131,
         "total": 146
@@ -13111,7 +13111,7 @@ object EmbeddedCatalogData {
         "name": "Celestial Storm",
         "releaseDate": "2018-08-03",
         "logo": "https://assets.tcgdex.net/ja/sm/sm7/logo",
-        "symbol": "https://assets.tcgdex.net/ja/sm/sm7/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm7/symbol.png",
         "serieId": "sm",
         "official": 168,
         "total": 183
@@ -13121,7 +13121,7 @@ object EmbeddedCatalogData {
         "name": "Dragon Majesty",
         "releaseDate": "2018-09-07",
         "logo": "https://assets.tcgdex.net/ja/sm/sm7.5/logo",
-        "symbol": "https://assets.tcgdex.net/ja/sm/sm7.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm7.5/symbol.png",
         "serieId": "sm",
         "official": 70,
         "total": 78
@@ -13131,7 +13131,7 @@ object EmbeddedCatalogData {
         "name": "Shining Legends",
         "releaseDate": "2017-10-06",
         "logo": "https://assets.tcgdex.net/ja/sm/sm3.5/logo",
-        "symbol": "https://assets.tcgdex.net/ja/sm/sm3.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm3.5/symbol.png",
         "serieId": "sm",
         "official": 73,
         "total": 78
@@ -13141,7 +13141,7 @@ object EmbeddedCatalogData {
         "name": "Team Up",
         "releaseDate": "2019-01-31",
         "logo": "https://assets.tcgdex.net/ja/sm/sm9/logo",
-        "symbol": "https://assets.tcgdex.net/ja/sm/sm9/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm9/symbol.png",
         "serieId": "sm",
         "official": 181,
         "total": 196
@@ -13151,7 +13151,7 @@ object EmbeddedCatalogData {
         "name": "Lost Thunder",
         "releaseDate": "2018-11-02",
         "logo": "https://assets.tcgdex.net/ja/sm/sm8/logo",
-        "symbol": "https://assets.tcgdex.net/ja/sm/sm8/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm8/symbol.png",
         "serieId": "sm",
         "official": 214,
         "total": 236
@@ -13161,7 +13161,7 @@ object EmbeddedCatalogData {
         "name": "Guardians Rising",
         "releaseDate": "2017-05-05",
         "logo": "https://assets.tcgdex.net/ja/sm/sm2/logo",
-        "symbol": "https://assets.tcgdex.net/ja/sm/sm2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm2/symbol.png",
         "serieId": "sm",
         "official": 145,
         "total": 169
@@ -13171,7 +13171,7 @@ object EmbeddedCatalogData {
         "name": "Crimson Invasion",
         "releaseDate": "2017-11-03",
         "logo": "https://assets.tcgdex.net/ja/sm/sm4/logo",
-        "symbol": "https://assets.tcgdex.net/ja/sm/sm4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm4/symbol.png",
         "serieId": "sm",
         "official": 111,
         "total": 125
@@ -13181,7 +13181,7 @@ object EmbeddedCatalogData {
         "name": "Burning Shadows",
         "releaseDate": "2017-08-04",
         "logo": "https://assets.tcgdex.net/ja/sm/sm3/logo",
-        "symbol": "https://assets.tcgdex.net/ja/sm/sm3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm3/symbol.png",
         "serieId": "sm",
         "official": 147,
         "total": 169
@@ -13191,7 +13191,7 @@ object EmbeddedCatalogData {
         "name": "SM Black Star Promos",
         "releaseDate": "2017-02-03",
         "logo": "https://assets.tcgdex.net/ja/sm/smp/logo",
-        "symbol": "https://assets.tcgdex.net/ja/sm/smp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/smp/symbol.png",
         "serieId": "sm",
         "official": 236,
         "total": 244
@@ -13201,7 +13201,7 @@ object EmbeddedCatalogData {
         "name": "MEP Black Star Promos",
         "releaseDate": "2025-09-26",
         "logo": "https://assets.tcgdex.net/ja/me/mep/logo",
-        "symbol": "https://assets.tcgdex.net/ja/me/mep/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/me/mep/symbol.png",
         "serieId": "me",
         "official": 0,
         "total": 10
@@ -13211,7 +13211,7 @@ object EmbeddedCatalogData {
         "name": "Mega Evolution",
         "releaseDate": "2025-09-26",
         "logo": "https://assets.tcgdex.net/ja/me/me01/logo",
-        "symbol": "https://assets.tcgdex.net/ja/me/me01/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/me/me01/symbol.png",
         "serieId": "me",
         "official": 132,
         "total": 188
@@ -13221,7 +13221,7 @@ object EmbeddedCatalogData {
         "name": "Phantasmal Flames",
         "releaseDate": "2025-11-14",
         "logo": "https://assets.tcgdex.net/ja/me/me02/logo",
-        "symbol": "https://assets.tcgdex.net/ja/me/me02/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/me/me02/symbol.png",
         "serieId": "me",
         "official": 94,
         "total": 130
@@ -13231,7 +13231,7 @@ object EmbeddedCatalogData {
         "name": "HeartGold SoulSilver",
         "releaseDate": "2010-02-10",
         "logo": "https://assets.tcgdex.net/ja/hgss/hgss1/logo",
-        "symbol": "https://assets.tcgdex.net/ja/hgss/hgss1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/hgss/hgss1/symbol.png",
         "serieId": "hgss",
         "official": 123,
         "total": 124
@@ -13241,7 +13241,7 @@ object EmbeddedCatalogData {
         "name": "Unleashed",
         "releaseDate": "2010-05-12",
         "logo": "https://assets.tcgdex.net/ja/hgss/hgss2/logo",
-        "symbol": "https://assets.tcgdex.net/ja/hgss/hgss2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/hgss/hgss2/symbol.png",
         "serieId": "hgss",
         "official": 95,
         "total": 96
@@ -13251,7 +13251,7 @@ object EmbeddedCatalogData {
         "name": "Triumphant",
         "releaseDate": "2010-11-03",
         "logo": "https://assets.tcgdex.net/ja/hgss/hgss4/logo",
-        "symbol": "https://assets.tcgdex.net/ja/hgss/hgss4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/hgss/hgss4/symbol.png",
         "serieId": "hgss",
         "official": 102,
         "total": 103
@@ -13261,7 +13261,7 @@ object EmbeddedCatalogData {
         "name": "HGSS Black Star Promos",
         "releaseDate": "2010-02-11",
         "logo": "https://assets.tcgdex.net/ja/hgss/hgssp/logo",
-        "symbol": "https://assets.tcgdex.net/ja/hgss/hgssp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/hgss/hgssp/symbol.png",
         "serieId": "hgss",
         "official": 25,
         "total": 25
@@ -13271,7 +13271,7 @@ object EmbeddedCatalogData {
         "name": "Undaunted",
         "releaseDate": "2010-08-18",
         "logo": "https://assets.tcgdex.net/ja/hgss/hgss3/logo",
-        "symbol": "https://assets.tcgdex.net/ja/hgss/hgss3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/hgss/hgss3/symbol.png",
         "serieId": "hgss",
         "official": 90,
         "total": 91
@@ -13281,7 +13281,7 @@ object EmbeddedCatalogData {
         "name": "Skyridge",
         "releaseDate": "2003-05-12",
         "logo": "https://assets.tcgdex.net/ja/ecard/ecard3/logo",
-        "symbol": "https://assets.tcgdex.net/ja/ecard/ecard3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ecard/ecard3/symbol.png",
         "serieId": "ecard",
         "official": 144,
         "total": 182
@@ -13291,7 +13291,7 @@ object EmbeddedCatalogData {
         "name": "Aquapolis",
         "releaseDate": "2003-01-15",
         "logo": "https://assets.tcgdex.net/ja/ecard/ecard2/logo",
-        "symbol": "https://assets.tcgdex.net/ja/ecard/ecard2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ecard/ecard2/symbol.png",
         "serieId": "ecard",
         "official": 147,
         "total": 186
@@ -13301,7 +13301,7 @@ object EmbeddedCatalogData {
         "name": "Sample",
         "releaseDate": "2002-08-01",
         "logo": "https://assets.tcgdex.net/ja/ecard/sp/logo",
-        "symbol": "https://assets.tcgdex.net/ja/ecard/sp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ecard/sp/symbol.png",
         "serieId": "ecard",
         "official": 10,
         "total": 10
@@ -13311,7 +13311,7 @@ object EmbeddedCatalogData {
         "name": "Best of game",
         "releaseDate": "2002-12-01",
         "logo": "https://assets.tcgdex.net/ja/ecard/bog/logo",
-        "symbol": "https://assets.tcgdex.net/ja/ecard/bog/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ecard/bog/symbol.png",
         "serieId": "ecard",
         "official": 9,
         "total": 9
@@ -13321,7 +13321,7 @@ object EmbeddedCatalogData {
         "name": "Expedition Base Set",
         "releaseDate": "2002-09-15",
         "logo": "https://assets.tcgdex.net/ja/ecard/ecard1/logo",
-        "symbol": "https://assets.tcgdex.net/ja/ecard/ecard1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ecard/ecard1/symbol.png",
         "serieId": "ecard",
         "official": 165,
         "total": 165
@@ -13331,7 +13331,7 @@ object EmbeddedCatalogData {
         "name": "Paldean Fates",
         "releaseDate": "2024-01-26",
         "logo": "https://assets.tcgdex.net/ja/sv/sv04.5/logo",
-        "symbol": "https://assets.tcgdex.net/ja/sv/sv04.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv04.5/symbol.png",
         "serieId": "sv",
         "official": 91,
         "total": 245
@@ -13341,7 +13341,7 @@ object EmbeddedCatalogData {
         "name": "Shrouded Fable",
         "releaseDate": "2024-08-02",
         "logo": "https://assets.tcgdex.net/ja/sv/sv06.5/logo",
-        "symbol": "https://assets.tcgdex.net/ja/sv/sv06.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv06.5/symbol.png",
         "serieId": "sv",
         "official": 64,
         "total": 99
@@ -13351,7 +13351,7 @@ object EmbeddedCatalogData {
         "name": "Prismatic Evolutions",
         "releaseDate": "2025-01-17",
         "logo": "https://assets.tcgdex.net/ja/sv/sv08.5/logo",
-        "symbol": "https://assets.tcgdex.net/ja/sv/sv08.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv08.5/symbol.png",
         "serieId": "sv",
         "official": 131,
         "total": 180
@@ -13361,7 +13361,7 @@ object EmbeddedCatalogData {
         "name": "White Flare",
         "releaseDate": "2025-07-17",
         "logo": "https://assets.tcgdex.net/ja/sv/sv10.5w/logo",
-        "symbol": "https://assets.tcgdex.net/ja/sv/sv10.5w/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv10.5w/symbol.png",
         "serieId": "sv",
         "official": 86,
         "total": 173
@@ -13371,7 +13371,7 @@ object EmbeddedCatalogData {
         "name": "Paldea Evolved",
         "releaseDate": "2023-06-09",
         "logo": "https://assets.tcgdex.net/ja/sv/sv02/logo",
-        "symbol": "https://assets.tcgdex.net/ja/sv/sv02/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv02/symbol.png",
         "serieId": "sv",
         "official": 193,
         "total": 279
@@ -13381,7 +13381,7 @@ object EmbeddedCatalogData {
         "name": "151",
         "releaseDate": "2023-09-22",
         "logo": "https://assets.tcgdex.net/ja/sv/sv03.5/logo",
-        "symbol": "https://assets.tcgdex.net/ja/sv/sv03.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv03.5/symbol.png",
         "serieId": "sv",
         "official": 165,
         "total": 207
@@ -13391,7 +13391,7 @@ object EmbeddedCatalogData {
         "name": "Destined Rivals",
         "releaseDate": "2025-05-30",
         "logo": "https://assets.tcgdex.net/ja/sv/sv10/logo",
-        "symbol": "https://assets.tcgdex.net/ja/sv/sv10/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv10/symbol.png",
         "serieId": "sv",
         "official": 182,
         "total": 244
@@ -13401,7 +13401,7 @@ object EmbeddedCatalogData {
         "name": "Paradox Rift",
         "releaseDate": "2023-11-03",
         "logo": "https://assets.tcgdex.net/ja/sv/sv04/logo",
-        "symbol": "https://assets.tcgdex.net/ja/sv/sv04/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv04/symbol.png",
         "serieId": "sv",
         "official": 182,
         "total": 266
@@ -13411,7 +13411,7 @@ object EmbeddedCatalogData {
         "name": "Obsidian Flames",
         "releaseDate": "2023-08-11",
         "logo": "https://assets.tcgdex.net/ja/sv/sv03/logo",
-        "symbol": "https://assets.tcgdex.net/ja/sv/sv03/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv03/symbol.png",
         "serieId": "sv",
         "official": 197,
         "total": 230
@@ -13421,7 +13421,7 @@ object EmbeddedCatalogData {
         "name": "Surging Sparks",
         "releaseDate": "2024-11-08",
         "logo": "https://assets.tcgdex.net/ja/sv/sv08/logo",
-        "symbol": "https://assets.tcgdex.net/ja/sv/sv08/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv08/symbol.png",
         "serieId": "sv",
         "official": 191,
         "total": 252
@@ -13431,7 +13431,7 @@ object EmbeddedCatalogData {
         "name": "Black Bolt",
         "releaseDate": "2025-07-17",
         "logo": "https://assets.tcgdex.net/ja/sv/sv10.5b/logo",
-        "symbol": "https://assets.tcgdex.net/ja/sv/sv10.5b/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv10.5b/symbol.png",
         "serieId": "sv",
         "official": 86,
         "total": 172
@@ -13441,7 +13441,7 @@ object EmbeddedCatalogData {
         "name": "Twilight Masquerade",
         "releaseDate": "2024-05-24",
         "logo": "https://assets.tcgdex.net/ja/sv/sv06/logo",
-        "symbol": "https://assets.tcgdex.net/ja/sv/sv06/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv06/symbol.png",
         "serieId": "sv",
         "official": 167,
         "total": 226
@@ -13451,7 +13451,7 @@ object EmbeddedCatalogData {
         "name": "Temporal Forces",
         "releaseDate": "2024-03-22",
         "logo": "https://assets.tcgdex.net/ja/sv/sv05/logo",
-        "symbol": "https://assets.tcgdex.net/ja/sv/sv05/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv05/symbol.png",
         "serieId": "sv",
         "official": 162,
         "total": 218
@@ -13461,7 +13461,7 @@ object EmbeddedCatalogData {
         "name": "Stellar Crown",
         "releaseDate": "2024-09-13",
         "logo": "https://assets.tcgdex.net/ja/sv/sv07/logo",
-        "symbol": "https://assets.tcgdex.net/ja/sv/sv07/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv07/symbol.png",
         "serieId": "sv",
         "official": 142,
         "total": 175
@@ -13471,7 +13471,7 @@ object EmbeddedCatalogData {
         "name": "SVP Black Star Promos",
         "releaseDate": "2023-03-31",
         "logo": "https://assets.tcgdex.net/ja/sv/svp/logo",
-        "symbol": "https://assets.tcgdex.net/ja/sv/svp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/svp/symbol.png",
         "serieId": "sv",
         "official": 0,
         "total": 219
@@ -13481,7 +13481,7 @@ object EmbeddedCatalogData {
         "name": "Scarlet & Violet",
         "releaseDate": "2023-03-31",
         "logo": "https://assets.tcgdex.net/ja/sv/sv01/logo",
-        "symbol": "https://assets.tcgdex.net/ja/sv/sv01/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv01/symbol.png",
         "serieId": "sv",
         "official": 198,
         "total": 258
@@ -13491,7 +13491,7 @@ object EmbeddedCatalogData {
         "name": "Journey Together",
         "releaseDate": "2025-03-28",
         "logo": "https://assets.tcgdex.net/ja/sv/sv09/logo",
-        "symbol": "https://assets.tcgdex.net/ja/sv/sv09/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv09/symbol.png",
         "serieId": "sv",
         "official": 159,
         "total": 190
@@ -13501,7 +13501,7 @@ object EmbeddedCatalogData {
         "name": "Yello A Alternate",
         "releaseDate": "2014-02-05",
         "logo": "https://assets.tcgdex.net/ja/xy/xya/logo",
-        "symbol": "https://assets.tcgdex.net/ja/xy/xya/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xya/symbol.png",
         "serieId": "xy",
         "official": 6,
         "total": 6
@@ -13511,7 +13511,7 @@ object EmbeddedCatalogData {
         "name": "Roaring Skies",
         "releaseDate": "2015-05-06",
         "logo": "https://assets.tcgdex.net/ja/xy/xy6/logo",
-        "symbol": "https://assets.tcgdex.net/ja/xy/xy6/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy6/symbol.png",
         "serieId": "xy",
         "official": 108,
         "total": 112
@@ -13521,7 +13521,7 @@ object EmbeddedCatalogData {
         "name": "Ancient Origins",
         "releaseDate": "2015-08-12",
         "logo": "https://assets.tcgdex.net/ja/xy/xy7/logo",
-        "symbol": "https://assets.tcgdex.net/ja/xy/xy7/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy7/symbol.png",
         "serieId": "xy",
         "official": 98,
         "total": 101
@@ -13531,7 +13531,7 @@ object EmbeddedCatalogData {
         "name": "BREAKpoint",
         "releaseDate": "2016-02-03",
         "logo": "https://assets.tcgdex.net/ja/xy/xy9/logo",
-        "symbol": "https://assets.tcgdex.net/ja/xy/xy9/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy9/symbol.png",
         "serieId": "xy",
         "official": 122,
         "total": 126
@@ -13541,7 +13541,7 @@ object EmbeddedCatalogData {
         "name": "Primal Clash",
         "releaseDate": "2015-02-04",
         "logo": "https://assets.tcgdex.net/ja/xy/xy5/logo",
-        "symbol": "https://assets.tcgdex.net/ja/xy/xy5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy5/symbol.png",
         "serieId": "xy",
         "official": 160,
         "total": 164
@@ -13551,7 +13551,7 @@ object EmbeddedCatalogData {
         "name": "XY Black Star Promos",
         "releaseDate": "2013-10-12",
         "logo": "https://assets.tcgdex.net/ja/xy/xyp/logo",
-        "symbol": "https://assets.tcgdex.net/ja/xy/xyp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xyp/symbol.png",
         "serieId": "xy",
         "official": 211,
         "total": 216
@@ -13561,7 +13561,7 @@ object EmbeddedCatalogData {
         "name": "Kalos Starter Set",
         "releaseDate": "2013-11-08",
         "logo": "https://assets.tcgdex.net/ja/xy/xy0/logo",
-        "symbol": "https://assets.tcgdex.net/ja/xy/xy0/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy0/symbol.png",
         "serieId": "xy",
         "official": 39,
         "total": 39
@@ -13571,7 +13571,7 @@ object EmbeddedCatalogData {
         "name": "Flashfire",
         "releaseDate": "2014-05-07",
         "logo": "https://assets.tcgdex.net/ja/xy/xy2/logo",
-        "symbol": "https://assets.tcgdex.net/ja/xy/xy2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy2/symbol.png",
         "serieId": "xy",
         "official": 106,
         "total": 110
@@ -13581,7 +13581,7 @@ object EmbeddedCatalogData {
         "name": "BREAKthrough",
         "releaseDate": "2015-11-04",
         "logo": "https://assets.tcgdex.net/ja/xy/xy8/logo",
-        "symbol": "https://assets.tcgdex.net/ja/xy/xy8/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy8/symbol.png",
         "serieId": "xy",
         "official": 162,
         "total": 165
@@ -13591,7 +13591,7 @@ object EmbeddedCatalogData {
         "name": "Evolutions",
         "releaseDate": "2016-11-02",
         "logo": "https://assets.tcgdex.net/ja/xy/xy12/logo",
-        "symbol": "https://assets.tcgdex.net/ja/xy/xy12/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy12/symbol.png",
         "serieId": "xy",
         "official": 108,
         "total": 113
@@ -13601,7 +13601,7 @@ object EmbeddedCatalogData {
         "name": "Double Crisis",
         "releaseDate": "2015-03-25",
         "logo": "https://assets.tcgdex.net/ja/xy/dc1/logo",
-        "symbol": "https://assets.tcgdex.net/ja/xy/dc1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/dc1/symbol.png",
         "serieId": "xy",
         "official": 34,
         "total": 34
@@ -13611,7 +13611,7 @@ object EmbeddedCatalogData {
         "name": "Generations",
         "releaseDate": "2016-02-22",
         "logo": "https://assets.tcgdex.net/ja/xy/g1/logo",
-        "symbol": "https://assets.tcgdex.net/ja/xy/g1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/g1/symbol.png",
         "serieId": "xy",
         "official": 83,
         "total": 117
@@ -13621,7 +13621,7 @@ object EmbeddedCatalogData {
         "name": "XY",
         "releaseDate": "2014-02-05",
         "logo": "https://assets.tcgdex.net/ja/xy/xy1/logo",
-        "symbol": "https://assets.tcgdex.net/ja/xy/xy1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy1/symbol.png",
         "serieId": "xy",
         "official": 146,
         "total": 146
@@ -13631,7 +13631,7 @@ object EmbeddedCatalogData {
         "name": "Steam Siege",
         "releaseDate": "2016-08-03",
         "logo": "https://assets.tcgdex.net/ja/xy/xy11/logo",
-        "symbol": "https://assets.tcgdex.net/ja/xy/xy11/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy11/symbol.png",
         "serieId": "xy",
         "official": 114,
         "total": 116
@@ -13641,7 +13641,7 @@ object EmbeddedCatalogData {
         "name": "Fates Collide",
         "releaseDate": "2016-05-02",
         "logo": "https://assets.tcgdex.net/ja/xy/xy10/logo",
-        "symbol": "https://assets.tcgdex.net/ja/xy/xy10/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy10/symbol.png",
         "serieId": "xy",
         "official": 124,
         "total": 129
@@ -13651,7 +13651,7 @@ object EmbeddedCatalogData {
         "name": "Furious Fists",
         "releaseDate": "2014-08-13",
         "logo": "https://assets.tcgdex.net/ja/xy/xy3/logo",
-        "symbol": "https://assets.tcgdex.net/ja/xy/xy3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy3/symbol.png",
         "serieId": "xy",
         "official": 111,
         "total": 114
@@ -13661,7 +13661,7 @@ object EmbeddedCatalogData {
         "name": "Phantom Forces",
         "releaseDate": "2014-11-05",
         "logo": "https://assets.tcgdex.net/ja/xy/xy4/logo",
-        "symbol": "https://assets.tcgdex.net/ja/xy/xy4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy4/symbol.png",
         "serieId": "xy",
         "official": 119,
         "total": 124
@@ -13671,7 +13671,7 @@ object EmbeddedCatalogData {
         "name": "HS trainer Kit (Gyarados)",
         "releaseDate": "2010-05-01",
         "logo": "https://assets.tcgdex.net/ja/tk/tk-hs-g/logo",
-        "symbol": "https://assets.tcgdex.net/ja/tk/tk-hs-g/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-hs-g/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 1
@@ -13681,7 +13681,7 @@ object EmbeddedCatalogData {
         "name": "EX trainer Kit 2 (Plusle)",
         "releaseDate": "2006-03-01",
         "logo": "https://assets.tcgdex.net/ja/tk/tk-ex-p/logo",
-        "symbol": "https://assets.tcgdex.net/ja/tk/tk-ex-p/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-ex-p/symbol.png",
         "serieId": "tk",
         "official": 12,
         "total": 12
@@ -13691,7 +13691,7 @@ object EmbeddedCatalogData {
         "name": "EX trainer Kit 2 (Minun)",
         "releaseDate": "2006-03-01",
         "logo": "https://assets.tcgdex.net/ja/tk/tk-ex-m/logo",
-        "symbol": "https://assets.tcgdex.net/ja/tk/tk-ex-m/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-ex-m/symbol.png",
         "serieId": "tk",
         "official": 12,
         "total": 12
@@ -13701,7 +13701,7 @@ object EmbeddedCatalogData {
         "name": "DP trainer Kit (Lucario)",
         "releaseDate": "2007-09-01",
         "logo": "https://assets.tcgdex.net/ja/tk/tk-dp-l/logo",
-        "symbol": "https://assets.tcgdex.net/ja/tk/tk-dp-l/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-dp-l/symbol.png",
         "serieId": "tk",
         "official": 11,
         "total": 11
@@ -13711,7 +13711,7 @@ object EmbeddedCatalogData {
         "name": "SM trainer Kit (Alolan Raichu)",
         "releaseDate": "2017-04-21",
         "logo": "https://assets.tcgdex.net/ja/tk/tk-sm-r/logo",
-        "symbol": "https://assets.tcgdex.net/ja/tk/tk-sm-r/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-sm-r/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 19
@@ -13721,7 +13721,7 @@ object EmbeddedCatalogData {
         "name": "XY trainer Kit (Latias)",
         "releaseDate": "2015-04-29",
         "logo": "https://assets.tcgdex.net/ja/tk/tk-xy-latia/logo",
-        "symbol": "https://assets.tcgdex.net/ja/tk/tk-xy-latia/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-xy-latia/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -13731,7 +13731,7 @@ object EmbeddedCatalogData {
         "name": "HS trainer Kit (Raichu)",
         "releaseDate": "2010-05-01",
         "logo": "https://assets.tcgdex.net/ja/tk/tk-hs-r/logo",
-        "symbol": "https://assets.tcgdex.net/ja/tk/tk-hs-r/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-hs-r/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 1
@@ -13741,7 +13741,7 @@ object EmbeddedCatalogData {
         "name": "EX trainer Kit (Latios)",
         "releaseDate": "2004-07-01",
         "logo": "https://assets.tcgdex.net/ja/tk/tk-ex-latio/logo",
-        "symbol": "https://assets.tcgdex.net/ja/tk/tk-ex-latio/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-ex-latio/symbol.png",
         "serieId": "tk",
         "official": 10,
         "total": 10
@@ -13751,7 +13751,7 @@ object EmbeddedCatalogData {
         "name": "BW trainer Kit (Excadrill)",
         "releaseDate": "2011-09-01",
         "logo": "https://assets.tcgdex.net/ja/tk/tk-bw-e/logo",
-        "symbol": "https://assets.tcgdex.net/ja/tk/tk-bw-e/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-bw-e/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -13761,7 +13761,7 @@ object EmbeddedCatalogData {
         "name": "XY trainer Kit (Pikachu Libre)",
         "releaseDate": "2016-04-27",
         "logo": "https://assets.tcgdex.net/ja/tk/tk-xy-p/logo",
-        "symbol": "https://assets.tcgdex.net/ja/tk/tk-xy-p/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-xy-p/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -13771,7 +13771,7 @@ object EmbeddedCatalogData {
         "name": "XY trainer Kit (Latios)",
         "releaseDate": "2015-04-29",
         "logo": "https://assets.tcgdex.net/ja/tk/tk-xy-latio/logo",
-        "symbol": "https://assets.tcgdex.net/ja/tk/tk-xy-latio/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-xy-latio/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -13781,7 +13781,7 @@ object EmbeddedCatalogData {
         "name": "SM trainer Kit (Lycanroc)",
         "releaseDate": "2017-04-21",
         "logo": "https://assets.tcgdex.net/ja/tk/tk-sm-l/logo",
-        "symbol": "https://assets.tcgdex.net/ja/tk/tk-sm-l/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-sm-l/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 18
@@ -13791,7 +13791,7 @@ object EmbeddedCatalogData {
         "name": "EX trainer Kit (Latias)",
         "releaseDate": "2004-07-01",
         "logo": "https://assets.tcgdex.net/ja/tk/tk-ex-latia/logo",
-        "symbol": "https://assets.tcgdex.net/ja/tk/tk-ex-latia/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-ex-latia/symbol.png",
         "serieId": "tk",
         "official": 10,
         "total": 10
@@ -13801,7 +13801,7 @@ object EmbeddedCatalogData {
         "name": "XY trainer Kit (Suicune)",
         "releaseDate": "2016-04-27",
         "logo": "https://assets.tcgdex.net/ja/tk/tk-xy-su/logo",
-        "symbol": "https://assets.tcgdex.net/ja/tk/tk-xy-su/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-xy-su/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -13811,7 +13811,7 @@ object EmbeddedCatalogData {
         "name": "DP trainer Kit (Manaphy)",
         "releaseDate": "2007-09-01",
         "logo": "https://assets.tcgdex.net/ja/tk/tk-dp-m/logo",
-        "symbol": "https://assets.tcgdex.net/ja/tk/tk-dp-m/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-dp-m/symbol.png",
         "serieId": "tk",
         "official": 12,
         "total": 12
@@ -13821,7 +13821,7 @@ object EmbeddedCatalogData {
         "name": "XY trainer Kit (Wigglytuff)",
         "releaseDate": "2014-11-01",
         "logo": "https://assets.tcgdex.net/ja/tk/tk-xy-w/logo",
-        "symbol": "https://assets.tcgdex.net/ja/tk/tk-xy-w/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-xy-w/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -13831,7 +13831,7 @@ object EmbeddedCatalogData {
         "name": "BW trainer Kit (Zoroark)",
         "releaseDate": "2011-09-01",
         "logo": "https://assets.tcgdex.net/ja/tk/tk-bw-z/logo",
-        "symbol": "https://assets.tcgdex.net/ja/tk/tk-bw-z/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-bw-z/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -13841,7 +13841,7 @@ object EmbeddedCatalogData {
         "name": "XY trainer Kit (Noivern)",
         "releaseDate": "2014-03-12",
         "logo": "https://assets.tcgdex.net/ja/tk/tk-xy-n/logo",
-        "symbol": "https://assets.tcgdex.net/ja/tk/tk-xy-n/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-xy-n/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -13851,7 +13851,7 @@ object EmbeddedCatalogData {
         "name": "XY trainer Kit (Sylveon)",
         "releaseDate": "2014-03-12",
         "logo": "https://assets.tcgdex.net/ja/tk/tk-xy-sy/logo",
-        "symbol": "https://assets.tcgdex.net/ja/tk/tk-xy-sy/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-xy-sy/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -13861,7 +13861,7 @@ object EmbeddedCatalogData {
         "name": "XY trainer Kit (Bisharp)",
         "releaseDate": "2014-11-01",
         "logo": "https://assets.tcgdex.net/ja/tk/tk-xy-b/logo",
-        "symbol": "https://assets.tcgdex.net/ja/tk/tk-xy-b/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-xy-b/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -13871,7 +13871,7 @@ object EmbeddedCatalogData {
         "name": "Arceus",
         "releaseDate": "2009-11-04",
         "logo": "https://assets.tcgdex.net/ja/pl/pl4/logo",
-        "symbol": "https://assets.tcgdex.net/ja/pl/pl4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pl/pl4/symbol.png",
         "serieId": "pl",
         "official": 99,
         "total": 111
@@ -13881,7 +13881,7 @@ object EmbeddedCatalogData {
         "name": "Supreme Victors",
         "releaseDate": "2009-08-19",
         "logo": "https://assets.tcgdex.net/ja/pl/pl3/logo",
-        "symbol": "https://assets.tcgdex.net/ja/pl/pl3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pl/pl3/symbol.png",
         "serieId": "pl",
         "official": 147,
         "total": 153
@@ -13891,7 +13891,7 @@ object EmbeddedCatalogData {
         "name": "Rising Rivals",
         "releaseDate": "2009-05-16",
         "logo": "https://assets.tcgdex.net/ja/pl/pl2/logo",
-        "symbol": "https://assets.tcgdex.net/ja/pl/pl2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pl/pl2/symbol.png",
         "serieId": "pl",
         "official": 111,
         "total": 120
@@ -13901,7 +13901,7 @@ object EmbeddedCatalogData {
         "name": "Pokémon Rumble",
         "releaseDate": "2009-12-02",
         "logo": "https://assets.tcgdex.net/ja/pl/ru1/logo",
-        "symbol": "https://assets.tcgdex.net/ja/pl/ru1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pl/ru1/symbol.png",
         "serieId": "pl",
         "official": 16,
         "total": 16
@@ -13911,7 +13911,7 @@ object EmbeddedCatalogData {
         "name": "Platinum",
         "releaseDate": "2009-02-11",
         "logo": "https://assets.tcgdex.net/ja/pl/pl1/logo",
-        "symbol": "https://assets.tcgdex.net/ja/pl/pl1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pl/pl1/symbol.png",
         "serieId": "pl",
         "official": 127,
         "total": 133
@@ -13921,7 +13921,7 @@ object EmbeddedCatalogData {
         "name": "Gym Challenge",
         "releaseDate": "2000-10-16",
         "logo": "https://assets.tcgdex.net/ja/gym/gym2/logo",
-        "symbol": "https://assets.tcgdex.net/ja/gym/gym2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/gym/gym2/symbol.png",
         "serieId": "gym",
         "official": 132,
         "total": 132
@@ -13931,7 +13931,7 @@ object EmbeddedCatalogData {
         "name": "Gym Heroes",
         "releaseDate": "2000-08-14",
         "logo": "https://assets.tcgdex.net/ja/gym/gym1/logo",
-        "symbol": "https://assets.tcgdex.net/ja/gym/gym1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/gym/gym1/symbol.png",
         "serieId": "gym",
         "official": 132,
         "total": 132
@@ -13941,7 +13941,7 @@ object EmbeddedCatalogData {
         "name": "Shining Fates",
         "releaseDate": "2021-02-19",
         "logo": "https://assets.tcgdex.net/ja/swsh/swsh4.5/logo",
-        "symbol": "https://assets.tcgdex.net/ja/swsh/swsh4.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh4.5/symbol.png",
         "serieId": "swsh",
         "official": 72,
         "total": 195
@@ -13951,7 +13951,7 @@ object EmbeddedCatalogData {
         "name": "Astral Radiance",
         "releaseDate": "2022-05-27",
         "logo": "https://assets.tcgdex.net/ja/swsh/swsh10/logo",
-        "symbol": "https://assets.tcgdex.net/ja/swsh/swsh10/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh10/symbol.png",
         "serieId": "swsh",
         "official": 189,
         "total": 246
@@ -13961,7 +13961,7 @@ object EmbeddedCatalogData {
         "name": "Fusion Strike",
         "releaseDate": "2021-11-12",
         "logo": "https://assets.tcgdex.net/ja/swsh/swsh8/logo",
-        "symbol": "https://assets.tcgdex.net/ja/swsh/swsh8/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh8/symbol.png",
         "serieId": "swsh",
         "official": 264,
         "total": 284
@@ -13971,7 +13971,7 @@ object EmbeddedCatalogData {
         "name": "Evolving Skies",
         "releaseDate": "2021-08-27",
         "logo": "https://assets.tcgdex.net/ja/swsh/swsh7/logo",
-        "symbol": "https://assets.tcgdex.net/ja/swsh/swsh7/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh7/symbol.png",
         "serieId": "swsh",
         "official": 203,
         "total": 237
@@ -13981,7 +13981,7 @@ object EmbeddedCatalogData {
         "name": "Crown Zenith",
         "releaseDate": "2023-01-20",
         "logo": "https://assets.tcgdex.net/ja/swsh/swsh12.5/logo",
-        "symbol": "https://assets.tcgdex.net/ja/swsh/swsh12.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh12.5/symbol.png",
         "serieId": "swsh",
         "official": 159,
         "total": 230
@@ -13991,7 +13991,7 @@ object EmbeddedCatalogData {
         "name": "Champion's Path",
         "releaseDate": "2020-09-25",
         "logo": "https://assets.tcgdex.net/ja/swsh/swsh3.5/logo",
-        "symbol": "https://assets.tcgdex.net/ja/swsh/swsh3.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh3.5/symbol.png",
         "serieId": "swsh",
         "official": 70,
         "total": 80
@@ -14001,7 +14001,7 @@ object EmbeddedCatalogData {
         "name": "Celebrations",
         "releaseDate": "2021-10-08",
         "logo": "https://assets.tcgdex.net/ja/swsh/cel25/logo",
-        "symbol": "https://assets.tcgdex.net/ja/swsh/cel25/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/cel25/symbol.png",
         "serieId": "swsh",
         "official": 25,
         "total": 51
@@ -14011,7 +14011,7 @@ object EmbeddedCatalogData {
         "name": "Battle Styles",
         "releaseDate": "2021-03-19",
         "logo": "https://assets.tcgdex.net/ja/swsh/swsh5/logo",
-        "symbol": "https://assets.tcgdex.net/ja/swsh/swsh5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh5/symbol.png",
         "serieId": "swsh",
         "official": 163,
         "total": 183
@@ -14021,7 +14021,7 @@ object EmbeddedCatalogData {
         "name": "Silver Tempest",
         "releaseDate": "2022-11-11",
         "logo": "https://assets.tcgdex.net/ja/swsh/swsh12/logo",
-        "symbol": "https://assets.tcgdex.net/ja/swsh/swsh12/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh12/symbol.png",
         "serieId": "swsh",
         "official": 195,
         "total": 245
@@ -14031,7 +14031,7 @@ object EmbeddedCatalogData {
         "name": "Vivid Voltage",
         "releaseDate": "2020-11-13",
         "logo": "https://assets.tcgdex.net/ja/swsh/swsh4/logo",
-        "symbol": "https://assets.tcgdex.net/ja/swsh/swsh4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh4/symbol.png",
         "serieId": "swsh",
         "official": 185,
         "total": 203
@@ -14041,7 +14041,7 @@ object EmbeddedCatalogData {
         "name": "Chilling Reign",
         "releaseDate": "2021-06-18",
         "logo": "https://assets.tcgdex.net/ja/swsh/swsh6/logo",
-        "symbol": "https://assets.tcgdex.net/ja/swsh/swsh6/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh6/symbol.png",
         "serieId": "swsh",
         "official": 198,
         "total": 233
@@ -14051,7 +14051,7 @@ object EmbeddedCatalogData {
         "name": "Lost Origin",
         "releaseDate": "2022-09-09",
         "logo": "https://assets.tcgdex.net/ja/swsh/swsh11/logo",
-        "symbol": "https://assets.tcgdex.net/ja/swsh/swsh11/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh11/symbol.png",
         "serieId": "swsh",
         "official": 196,
         "total": 247
@@ -14061,7 +14061,7 @@ object EmbeddedCatalogData {
         "name": "Darkness Ablaze",
         "releaseDate": "2020-08-14",
         "logo": "https://assets.tcgdex.net/ja/swsh/swsh3/logo",
-        "symbol": "https://assets.tcgdex.net/ja/swsh/swsh3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh3/symbol.png",
         "serieId": "swsh",
         "official": 189,
         "total": 201
@@ -14071,7 +14071,7 @@ object EmbeddedCatalogData {
         "name": "Rebel Clash",
         "releaseDate": "2020-05-01",
         "logo": "https://assets.tcgdex.net/ja/swsh/swsh2/logo",
-        "symbol": "https://assets.tcgdex.net/ja/swsh/swsh2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh2/symbol.png",
         "serieId": "swsh",
         "official": 192,
         "total": 209
@@ -14081,7 +14081,7 @@ object EmbeddedCatalogData {
         "name": "SWSH Black Star Promos",
         "releaseDate": "2019-11-15",
         "logo": "https://assets.tcgdex.net/ja/swsh/swshp/logo",
-        "symbol": "https://assets.tcgdex.net/ja/swsh/swshp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swshp/symbol.png",
         "serieId": "swsh",
         "official": 107,
         "total": 287
@@ -14091,7 +14091,7 @@ object EmbeddedCatalogData {
         "name": "Pokémon Futsal 2020",
         "releaseDate": "2020-09-11",
         "logo": "https://assets.tcgdex.net/ja/swsh/fut2020/logo",
-        "symbol": "https://assets.tcgdex.net/ja/swsh/fut2020/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/fut2020/symbol.png",
         "serieId": "swsh",
         "official": 5,
         "total": 5
@@ -14101,7 +14101,7 @@ object EmbeddedCatalogData {
         "name": "Pokémon GO",
         "releaseDate": "2022-07-01",
         "logo": "https://assets.tcgdex.net/ja/swsh/swsh10.5/logo",
-        "symbol": "https://assets.tcgdex.net/ja/swsh/swsh10.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh10.5/symbol.png",
         "serieId": "swsh",
         "official": 78,
         "total": 88
@@ -14111,7 +14111,7 @@ object EmbeddedCatalogData {
         "name": "Brilliant Stars",
         "releaseDate": "2022-02-25",
         "logo": "https://assets.tcgdex.net/ja/swsh/swsh9/logo",
-        "symbol": "https://assets.tcgdex.net/ja/swsh/swsh9/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh9/symbol.png",
         "serieId": "swsh",
         "official": 172,
         "total": 216
@@ -14121,7 +14121,7 @@ object EmbeddedCatalogData {
         "name": "Sword & Shield",
         "releaseDate": "2020-02-07",
         "logo": "https://assets.tcgdex.net/ja/swsh/swsh1/logo",
-        "symbol": "https://assets.tcgdex.net/ja/swsh/swsh1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh1/symbol.png",
         "serieId": "swsh",
         "official": 202,
         "total": 216
@@ -14135,7 +14135,7 @@ object EmbeddedCatalogData {
         "name": "Plasma Storm",
         "releaseDate": "2013-02-06",
         "logo": "https://assets.tcgdex.net/ko/bw/bw8/logo",
-        "symbol": "https://assets.tcgdex.net/ko/bw/bw8/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw8/symbol.png",
         "serieId": "bw",
         "official": 135,
         "total": 138
@@ -14145,7 +14145,7 @@ object EmbeddedCatalogData {
         "name": "Dark Explorers",
         "releaseDate": "2012-05-09",
         "logo": "https://assets.tcgdex.net/ko/bw/bw5/logo",
-        "symbol": "https://assets.tcgdex.net/ko/bw/bw5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw5/symbol.png",
         "serieId": "bw",
         "official": 108,
         "total": 111
@@ -14155,7 +14155,7 @@ object EmbeddedCatalogData {
         "name": "Black & White",
         "releaseDate": "2011-04-25",
         "logo": "https://assets.tcgdex.net/ko/bw/bw1/logo",
-        "symbol": "https://assets.tcgdex.net/ko/bw/bw1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw1/symbol.png",
         "serieId": "bw",
         "official": 114,
         "total": 115
@@ -14165,7 +14165,7 @@ object EmbeddedCatalogData {
         "name": "Boundaries Crossed",
         "releaseDate": "2012-11-07",
         "logo": "https://assets.tcgdex.net/ko/bw/bw7/logo",
-        "symbol": "https://assets.tcgdex.net/ko/bw/bw7/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw7/symbol.png",
         "serieId": "bw",
         "official": 149,
         "total": 153
@@ -14175,7 +14175,7 @@ object EmbeddedCatalogData {
         "name": "Emerging Powers",
         "releaseDate": "2011-08-31",
         "logo": "https://assets.tcgdex.net/ko/bw/bw2/logo",
-        "symbol": "https://assets.tcgdex.net/ko/bw/bw2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw2/symbol.png",
         "serieId": "bw",
         "official": 98,
         "total": 98
@@ -14185,7 +14185,7 @@ object EmbeddedCatalogData {
         "name": "Plasma Freeze",
         "releaseDate": "2013-05-08",
         "logo": "https://assets.tcgdex.net/ko/bw/bw9/logo",
-        "symbol": "https://assets.tcgdex.net/ko/bw/bw9/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw9/symbol.png",
         "serieId": "bw",
         "official": 116,
         "total": 122
@@ -14195,7 +14195,7 @@ object EmbeddedCatalogData {
         "name": "Noble Victories",
         "releaseDate": "2011-11-16",
         "logo": "https://assets.tcgdex.net/ko/bw/bw3/logo",
-        "symbol": "https://assets.tcgdex.net/ko/bw/bw3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw3/symbol.png",
         "serieId": "bw",
         "official": 101,
         "total": 102
@@ -14205,7 +14205,7 @@ object EmbeddedCatalogData {
         "name": "Plasma Blast",
         "releaseDate": "2013-08-14",
         "logo": "https://assets.tcgdex.net/ko/bw/bw10/logo",
-        "symbol": "https://assets.tcgdex.net/ko/bw/bw10/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw10/symbol.png",
         "serieId": "bw",
         "official": 101,
         "total": 105
@@ -14215,7 +14215,7 @@ object EmbeddedCatalogData {
         "name": "Radiant Collection",
         "releaseDate": "2013-11-06",
         "logo": "https://assets.tcgdex.net/ko/bw/rc/logo",
-        "symbol": "https://assets.tcgdex.net/ko/bw/rc/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/rc/symbol.png",
         "serieId": "bw",
         "official": 25,
         "total": 25
@@ -14225,7 +14225,7 @@ object EmbeddedCatalogData {
         "name": "Legendary Treasures",
         "releaseDate": "2013-11-06",
         "logo": "https://assets.tcgdex.net/ko/bw/bw11/logo",
-        "symbol": "https://assets.tcgdex.net/ko/bw/bw11/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw11/symbol.png",
         "serieId": "bw",
         "official": 113,
         "total": 140
@@ -14235,7 +14235,7 @@ object EmbeddedCatalogData {
         "name": "Dragons Exalted",
         "releaseDate": "2012-08-15",
         "logo": "https://assets.tcgdex.net/ko/bw/bw6/logo",
-        "symbol": "https://assets.tcgdex.net/ko/bw/bw6/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw6/symbol.png",
         "serieId": "bw",
         "official": 124,
         "total": 128
@@ -14245,7 +14245,7 @@ object EmbeddedCatalogData {
         "name": "BW Black Star Promos",
         "releaseDate": "2011-04-26",
         "logo": "https://assets.tcgdex.net/ko/bw/bwp/logo",
-        "symbol": "https://assets.tcgdex.net/ko/bw/bwp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bwp/symbol.png",
         "serieId": "bw",
         "official": 101,
         "total": 101
@@ -14255,7 +14255,7 @@ object EmbeddedCatalogData {
         "name": "Next Destinies",
         "releaseDate": "2012-02-08",
         "logo": "https://assets.tcgdex.net/ko/bw/bw4/logo",
-        "symbol": "https://assets.tcgdex.net/ko/bw/bw4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw4/symbol.png",
         "serieId": "bw",
         "official": 99,
         "total": 103
@@ -14265,7 +14265,7 @@ object EmbeddedCatalogData {
         "name": "Dragon Vault",
         "releaseDate": "2012-10-05",
         "logo": "https://assets.tcgdex.net/ko/bw/dv1/logo",
-        "symbol": "https://assets.tcgdex.net/ko/bw/dv1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/dv1/symbol.png",
         "serieId": "bw",
         "official": 20,
         "total": 21
@@ -14275,7 +14275,7 @@ object EmbeddedCatalogData {
         "name": "Jungle",
         "releaseDate": "1999-06-16",
         "logo": "https://assets.tcgdex.net/ko/base/base2/logo",
-        "symbol": "https://assets.tcgdex.net/ko/base/base2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/base/base2/symbol.png",
         "serieId": "base",
         "official": 64,
         "total": 64
@@ -14285,7 +14285,7 @@ object EmbeddedCatalogData {
         "name": "Team Rocket",
         "releaseDate": "2000-04-24",
         "logo": "https://assets.tcgdex.net/ko/base/base5/logo",
-        "symbol": "https://assets.tcgdex.net/ko/base/base5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/base/base5/symbol.png",
         "serieId": "base",
         "official": 82,
         "total": 83
@@ -14295,7 +14295,7 @@ object EmbeddedCatalogData {
         "name": "Wizards Black Star Promos",
         "releaseDate": "1999-07-01",
         "logo": "https://assets.tcgdex.net/ko/base/basep/logo",
-        "symbol": "https://assets.tcgdex.net/ko/base/basep/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/base/basep/symbol.png",
         "serieId": "base",
         "official": 53,
         "total": 53
@@ -14305,7 +14305,7 @@ object EmbeddedCatalogData {
         "name": "Fossil",
         "releaseDate": "1999-10-10",
         "logo": "https://assets.tcgdex.net/ko/base/base3/logo",
-        "symbol": "https://assets.tcgdex.net/ko/base/base3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/base/base3/symbol.png",
         "serieId": "base",
         "official": 62,
         "total": 62
@@ -14315,7 +14315,7 @@ object EmbeddedCatalogData {
         "name": "Base Set 2",
         "releaseDate": "2000-02-24",
         "logo": "https://assets.tcgdex.net/ko/base/base4/logo",
-        "symbol": "https://assets.tcgdex.net/ko/base/base4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/base/base4/symbol.png",
         "serieId": "base",
         "official": 130,
         "total": 130
@@ -14325,7 +14325,7 @@ object EmbeddedCatalogData {
         "name": "Base Set",
         "releaseDate": "1999-01-09",
         "logo": "https://assets.tcgdex.net/ko/base/base1/logo",
-        "symbol": "https://assets.tcgdex.net/ko/base/base1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/base/base1/symbol.png",
         "serieId": "base",
         "official": 102,
         "total": 102
@@ -14335,7 +14335,7 @@ object EmbeddedCatalogData {
         "name": "W Promotional",
         "releaseDate": "1999-09-01",
         "logo": "https://assets.tcgdex.net/ko/base/wp/logo",
-        "symbol": "https://assets.tcgdex.net/ko/base/wp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/base/wp/symbol.png",
         "serieId": "base",
         "official": 7,
         "total": 7
@@ -14345,7 +14345,7 @@ object EmbeddedCatalogData {
         "name": "POP Series 8",
         "releaseDate": "2008-09-01",
         "logo": "https://assets.tcgdex.net/ko/pop/pop8/logo",
-        "symbol": "https://assets.tcgdex.net/ko/pop/pop8/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop8/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -14355,7 +14355,7 @@ object EmbeddedCatalogData {
         "name": "POP Series 9",
         "releaseDate": "2009-03-01",
         "logo": "https://assets.tcgdex.net/ko/pop/pop9/logo",
-        "symbol": "https://assets.tcgdex.net/ko/pop/pop9/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop9/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -14365,7 +14365,7 @@ object EmbeddedCatalogData {
         "name": "POP Series 2",
         "releaseDate": "2005-08-01",
         "logo": "https://assets.tcgdex.net/ko/pop/pop2/logo",
-        "symbol": "https://assets.tcgdex.net/ko/pop/pop2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop2/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -14375,7 +14375,7 @@ object EmbeddedCatalogData {
         "name": "POP Series 6",
         "releaseDate": "2007-09-01",
         "logo": "https://assets.tcgdex.net/ko/pop/pop6/logo",
-        "symbol": "https://assets.tcgdex.net/ko/pop/pop6/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop6/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -14385,7 +14385,7 @@ object EmbeddedCatalogData {
         "name": "POP Series 7",
         "releaseDate": "2008-03-01",
         "logo": "https://assets.tcgdex.net/ko/pop/pop7/logo",
-        "symbol": "https://assets.tcgdex.net/ko/pop/pop7/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop7/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -14395,7 +14395,7 @@ object EmbeddedCatalogData {
         "name": "POP Series 3",
         "releaseDate": "2006-04-01",
         "logo": "https://assets.tcgdex.net/ko/pop/pop3/logo",
-        "symbol": "https://assets.tcgdex.net/ko/pop/pop3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop3/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -14405,7 +14405,7 @@ object EmbeddedCatalogData {
         "name": "POP Series 4",
         "releaseDate": "2006-08-01",
         "logo": "https://assets.tcgdex.net/ko/pop/pop4/logo",
-        "symbol": "https://assets.tcgdex.net/ko/pop/pop4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop4/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -14415,7 +14415,7 @@ object EmbeddedCatalogData {
         "name": "POP Series 1",
         "releaseDate": "2004-09-01",
         "logo": "https://assets.tcgdex.net/ko/pop/pop1/logo",
-        "symbol": "https://assets.tcgdex.net/ko/pop/pop1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop1/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -14425,7 +14425,7 @@ object EmbeddedCatalogData {
         "name": "POP Series 5",
         "releaseDate": "2007-03-01",
         "logo": "https://assets.tcgdex.net/ko/pop/pop5/logo",
-        "symbol": "https://assets.tcgdex.net/ko/pop/pop5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop5/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -14435,7 +14435,7 @@ object EmbeddedCatalogData {
         "name": "Nintendo Black Star Promos",
         "releaseDate": "2003-10-01",
         "logo": "https://assets.tcgdex.net/ko/pop/np/logo",
-        "symbol": "https://assets.tcgdex.net/ko/pop/np/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/np/symbol.png",
         "serieId": "pop",
         "official": 40,
         "total": 40
@@ -14445,7 +14445,7 @@ object EmbeddedCatalogData {
         "name": "Call of Legends",
         "releaseDate": "2011-02-09",
         "logo": "https://assets.tcgdex.net/ko/col/col1/logo",
-        "symbol": "https://assets.tcgdex.net/ko/col/col1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/col/col1/symbol.png",
         "serieId": "col",
         "official": 95,
         "total": 106
@@ -14455,7 +14455,7 @@ object EmbeddedCatalogData {
         "name": "Legendary Collection",
         "releaseDate": "2002-05-24",
         "logo": "https://assets.tcgdex.net/ko/lc/lc/logo",
-        "symbol": "https://assets.tcgdex.net/ko/lc/lc/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/lc/lc/symbol.png",
         "serieId": "lc",
         "official": 110,
         "total": 110
@@ -14465,7 +14465,7 @@ object EmbeddedCatalogData {
         "name": "Macdonald's Collection 2021",
         "releaseDate": "2021-02-09",
         "logo": "https://assets.tcgdex.net/ko/mc/2021swsh/logo",
-        "symbol": "https://assets.tcgdex.net/ko/mc/2021swsh/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2021swsh/symbol.png",
         "serieId": "mc",
         "official": 25,
         "total": 25
@@ -14475,7 +14475,7 @@ object EmbeddedCatalogData {
         "name": "Macdonald's Collection 2015",
         "releaseDate": "2015-11-27",
         "logo": "https://assets.tcgdex.net/ko/mc/2015xy/logo",
-        "symbol": "https://assets.tcgdex.net/ko/mc/2015xy/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2015xy/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 12
@@ -14485,7 +14485,7 @@ object EmbeddedCatalogData {
         "name": "Promo McDonald's 2019",
         "releaseDate": "2019-10-30",
         "logo": "https://assets.tcgdex.net/ko/mc/2019sm-fr/logo",
-        "symbol": "https://assets.tcgdex.net/ko/mc/2019sm-fr/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2019sm-fr/symbol.png",
         "serieId": "mc",
         "official": 40,
         "total": 40
@@ -14495,7 +14495,7 @@ object EmbeddedCatalogData {
         "name": "Macdonald's Collection 2011",
         "releaseDate": "2011-06-17",
         "logo": "https://assets.tcgdex.net/ko/mc/2011bw/logo",
-        "symbol": "https://assets.tcgdex.net/ko/mc/2011bw/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2011bw/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 12
@@ -14505,7 +14505,7 @@ object EmbeddedCatalogData {
         "name": "Promo McDonald's 2018",
         "releaseDate": "2018-06-13",
         "logo": "https://assets.tcgdex.net/ko/mc/2018sm-fr/logo",
-        "symbol": "https://assets.tcgdex.net/ko/mc/2018sm-fr/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2018sm-fr/symbol.png",
         "serieId": "mc",
         "official": 40,
         "total": 40
@@ -14515,7 +14515,7 @@ object EmbeddedCatalogData {
         "name": "Macdonald's Collection 2014",
         "releaseDate": "2014-05-23",
         "logo": "https://assets.tcgdex.net/ko/mc/2014xy/logo",
-        "symbol": "https://assets.tcgdex.net/ko/mc/2014xy/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2014xy/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 12
@@ -14525,7 +14525,7 @@ object EmbeddedCatalogData {
         "name": "Promo McDonald's 2013",
         "releaseDate": "2013-11-01",
         "logo": "https://assets.tcgdex.net/ko/mc/2013bw/logo",
-        "symbol": "https://assets.tcgdex.net/ko/mc/2013bw/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2013bw/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 1
@@ -14535,7 +14535,7 @@ object EmbeddedCatalogData {
         "name": "Macdonald's Collection 2019",
         "releaseDate": "2019-10-15",
         "logo": "https://assets.tcgdex.net/ko/mc/2019sm/logo",
-        "symbol": "https://assets.tcgdex.net/ko/mc/2019sm/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2019sm/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 12
@@ -14545,7 +14545,7 @@ object EmbeddedCatalogData {
         "name": "Macdonald's Collection 2018",
         "releaseDate": "2018-10-19",
         "logo": "https://assets.tcgdex.net/ko/mc/2018sm/logo",
-        "symbol": "https://assets.tcgdex.net/ko/mc/2018sm/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2018sm/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 12
@@ -14555,7 +14555,7 @@ object EmbeddedCatalogData {
         "name": "Macdonald's Collection 2017",
         "releaseDate": "2017-08-03",
         "logo": "https://assets.tcgdex.net/ko/mc/2017sm/logo",
-        "symbol": "https://assets.tcgdex.net/ko/mc/2017sm/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2017sm/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 12
@@ -14565,7 +14565,7 @@ object EmbeddedCatalogData {
         "name": "Macdonald's Collection 2016",
         "releaseDate": "2016-08-20",
         "logo": "https://assets.tcgdex.net/ko/mc/2016xy/logo",
-        "symbol": "https://assets.tcgdex.net/ko/mc/2016xy/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2016xy/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 12
@@ -14575,7 +14575,7 @@ object EmbeddedCatalogData {
         "name": "Macdonald's Collection 2012",
         "releaseDate": "2012-06-15",
         "logo": "https://assets.tcgdex.net/ko/mc/2012bw/logo",
-        "symbol": "https://assets.tcgdex.net/ko/mc/2012bw/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2012bw/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 12
@@ -14585,7 +14585,7 @@ object EmbeddedCatalogData {
         "name": "FireRed & LeafGreen",
         "releaseDate": "2004-09-01",
         "logo": "https://assets.tcgdex.net/ko/ex/ex6/logo",
-        "symbol": "https://assets.tcgdex.net/ko/ex/ex6/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex6/symbol.png",
         "serieId": "ex",
         "official": 112,
         "total": 116
@@ -14595,7 +14595,7 @@ object EmbeddedCatalogData {
         "name": "Team Magma vs Team Aqua",
         "releaseDate": "2004-03-01",
         "logo": "https://assets.tcgdex.net/ko/ex/ex4/logo",
-        "symbol": "https://assets.tcgdex.net/ko/ex/ex4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex4/symbol.png",
         "serieId": "ex",
         "official": 95,
         "total": 97
@@ -14605,7 +14605,7 @@ object EmbeddedCatalogData {
         "name": "Sandstorm",
         "releaseDate": "2003-09-18",
         "logo": "https://assets.tcgdex.net/ko/ex/ex2/logo",
-        "symbol": "https://assets.tcgdex.net/ko/ex/ex2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex2/symbol.png",
         "serieId": "ex",
         "official": 100,
         "total": 100
@@ -14615,7 +14615,7 @@ object EmbeddedCatalogData {
         "name": "Team Rocket Returns",
         "releaseDate": "2004-11-01",
         "logo": "https://assets.tcgdex.net/ko/ex/ex7/logo",
-        "symbol": "https://assets.tcgdex.net/ko/ex/ex7/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex7/symbol.png",
         "serieId": "ex",
         "official": 109,
         "total": 111
@@ -14625,7 +14625,7 @@ object EmbeddedCatalogData {
         "name": "Legend Maker",
         "releaseDate": "2006-02-13",
         "logo": "https://assets.tcgdex.net/ko/ex/ex12/logo",
-        "symbol": "https://assets.tcgdex.net/ko/ex/ex12/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex12/symbol.png",
         "serieId": "ex",
         "official": 92,
         "total": 93
@@ -14635,7 +14635,7 @@ object EmbeddedCatalogData {
         "name": "Dragon Frontiers",
         "releaseDate": "2006-11-08",
         "logo": "https://assets.tcgdex.net/ko/ex/ex15/logo",
-        "symbol": "https://assets.tcgdex.net/ko/ex/ex15/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex15/symbol.png",
         "serieId": "ex",
         "official": 101,
         "total": 101
@@ -14645,7 +14645,7 @@ object EmbeddedCatalogData {
         "name": "Power Keepers",
         "releaseDate": "2007-02-17",
         "logo": "https://assets.tcgdex.net/ko/ex/ex16/logo",
-        "symbol": "https://assets.tcgdex.net/ko/ex/ex16/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex16/symbol.png",
         "serieId": "ex",
         "official": 108,
         "total": 108
@@ -14655,7 +14655,7 @@ object EmbeddedCatalogData {
         "name": "Crystal Guardians",
         "releaseDate": "2006-08-30",
         "logo": "https://assets.tcgdex.net/ko/ex/ex14/logo",
-        "symbol": "https://assets.tcgdex.net/ko/ex/ex14/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex14/symbol.png",
         "serieId": "ex",
         "official": 100,
         "total": 100
@@ -14665,7 +14665,7 @@ object EmbeddedCatalogData {
         "name": "Delta Species",
         "releaseDate": "2005-10-31",
         "logo": "https://assets.tcgdex.net/ko/ex/ex11/logo",
-        "symbol": "https://assets.tcgdex.net/ko/ex/ex11/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex11/symbol.png",
         "serieId": "ex",
         "official": 113,
         "total": 114
@@ -14675,7 +14675,7 @@ object EmbeddedCatalogData {
         "name": "Unseen Forces",
         "releaseDate": "2005-08-22",
         "logo": "https://assets.tcgdex.net/ko/ex/ex10/logo",
-        "symbol": "https://assets.tcgdex.net/ko/ex/ex10/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex10/symbol.png",
         "serieId": "ex",
         "official": 115,
         "total": 117
@@ -14685,7 +14685,7 @@ object EmbeddedCatalogData {
         "name": "Emerald",
         "releaseDate": "2005-05-09",
         "logo": "https://assets.tcgdex.net/ko/ex/ex9/logo",
-        "symbol": "https://assets.tcgdex.net/ko/ex/ex9/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex9/symbol.png",
         "serieId": "ex",
         "official": 106,
         "total": 107
@@ -14695,7 +14695,7 @@ object EmbeddedCatalogData {
         "name": "Deoxys",
         "releaseDate": "2005-02-01",
         "logo": "https://assets.tcgdex.net/ko/ex/ex8/logo",
-        "symbol": "https://assets.tcgdex.net/ko/ex/ex8/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex8/symbol.png",
         "serieId": "ex",
         "official": 107,
         "total": 108
@@ -14705,7 +14705,7 @@ object EmbeddedCatalogData {
         "name": "Poké Card Creator Pack",
         "releaseDate": "2004-07-01",
         "logo": "https://assets.tcgdex.net/ko/ex/ex5.5/logo",
-        "symbol": "https://assets.tcgdex.net/ko/ex/ex5.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex5.5/symbol.png",
         "serieId": "ex",
         "official": 5,
         "total": 5
@@ -14715,7 +14715,7 @@ object EmbeddedCatalogData {
         "name": "Unseen Forces Unown Collection",
         "releaseDate": "2005-08-22",
         "logo": "https://assets.tcgdex.net/ko/ex/exu/logo",
-        "symbol": "https://assets.tcgdex.net/ko/ex/exu/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/exu/symbol.png",
         "serieId": "ex",
         "official": 28,
         "total": 28
@@ -14725,7 +14725,7 @@ object EmbeddedCatalogData {
         "name": "Holon Phantoms",
         "releaseDate": "2006-05-03",
         "logo": "https://assets.tcgdex.net/ko/ex/ex13/logo",
-        "symbol": "https://assets.tcgdex.net/ko/ex/ex13/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex13/symbol.png",
         "serieId": "ex",
         "official": 110,
         "total": 111
@@ -14735,7 +14735,7 @@ object EmbeddedCatalogData {
         "name": "Dragon",
         "releaseDate": "2003-11-24",
         "logo": "https://assets.tcgdex.net/ko/ex/ex3/logo",
-        "symbol": "https://assets.tcgdex.net/ko/ex/ex3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex3/symbol.png",
         "serieId": "ex",
         "official": 97,
         "total": 100
@@ -14745,7 +14745,7 @@ object EmbeddedCatalogData {
         "name": "Ruby & Sapphire",
         "releaseDate": "2003-07-01",
         "logo": "https://assets.tcgdex.net/ko/ex/ex1/logo",
-        "symbol": "https://assets.tcgdex.net/ko/ex/ex1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex1/symbol.png",
         "serieId": "ex",
         "official": 109,
         "total": 109
@@ -14755,7 +14755,7 @@ object EmbeddedCatalogData {
         "name": "Hidden Legends",
         "releaseDate": "2004-06-01",
         "logo": "https://assets.tcgdex.net/ko/ex/ex5/logo",
-        "symbol": "https://assets.tcgdex.net/ko/ex/ex5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex5/symbol.png",
         "serieId": "ex",
         "official": 101,
         "total": 102
@@ -14765,7 +14765,7 @@ object EmbeddedCatalogData {
         "name": "Jumbo cards",
         "releaseDate": "2000-02-01",
         "logo": "https://assets.tcgdex.net/ko/misc/jumbo/logo",
-        "symbol": "https://assets.tcgdex.net/ko/misc/jumbo/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/misc/jumbo/symbol.png",
         "serieId": "misc",
         "official": 160,
         "total": 160
@@ -14775,7 +14775,7 @@ object EmbeddedCatalogData {
         "name": "Legends Awakened",
         "releaseDate": "2008-08-01",
         "logo": "https://assets.tcgdex.net/ko/dp/dp6/logo",
-        "symbol": "https://assets.tcgdex.net/ko/dp/dp6/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/dp/dp6/symbol.png",
         "serieId": "dp",
         "official": 146,
         "total": 146
@@ -14785,7 +14785,7 @@ object EmbeddedCatalogData {
         "name": "DP Black Star Promos",
         "releaseDate": "2007-05-01",
         "logo": "https://assets.tcgdex.net/ko/dp/dpp/logo",
-        "symbol": "https://assets.tcgdex.net/ko/dp/dpp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/dp/dpp/symbol.png",
         "serieId": "dp",
         "official": 56,
         "total": 56
@@ -14795,7 +14795,7 @@ object EmbeddedCatalogData {
         "name": "Diamond & Pearl",
         "releaseDate": "2007-05-01",
         "logo": "https://assets.tcgdex.net/ko/dp/dp1/logo",
-        "symbol": "https://assets.tcgdex.net/ko/dp/dp1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/dp/dp1/symbol.png",
         "serieId": "dp",
         "official": 130,
         "total": 130
@@ -14805,7 +14805,7 @@ object EmbeddedCatalogData {
         "name": "Mysterious Treasures",
         "releaseDate": "2007-08-01",
         "logo": "https://assets.tcgdex.net/ko/dp/dp2/logo",
-        "symbol": "https://assets.tcgdex.net/ko/dp/dp2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/dp/dp2/symbol.png",
         "serieId": "dp",
         "official": 122,
         "total": 124
@@ -14815,7 +14815,7 @@ object EmbeddedCatalogData {
         "name": "Great Encounters",
         "releaseDate": "2008-02-01",
         "logo": "https://assets.tcgdex.net/ko/dp/dp4/logo",
-        "symbol": "https://assets.tcgdex.net/ko/dp/dp4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/dp/dp4/symbol.png",
         "serieId": "dp",
         "official": 106,
         "total": 106
@@ -14825,7 +14825,7 @@ object EmbeddedCatalogData {
         "name": "Secret Wonders",
         "releaseDate": "2007-11-01",
         "logo": "https://assets.tcgdex.net/ko/dp/dp3/logo",
-        "symbol": "https://assets.tcgdex.net/ko/dp/dp3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/dp/dp3/symbol.png",
         "serieId": "dp",
         "official": 132,
         "total": 132
@@ -14835,7 +14835,7 @@ object EmbeddedCatalogData {
         "name": "Stormfront",
         "releaseDate": "2008-11-01",
         "logo": "https://assets.tcgdex.net/ko/dp/dp7/logo",
-        "symbol": "https://assets.tcgdex.net/ko/dp/dp7/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/dp/dp7/symbol.png",
         "serieId": "dp",
         "official": 100,
         "total": 106
@@ -14845,7 +14845,7 @@ object EmbeddedCatalogData {
         "name": "Majestic Dawn",
         "releaseDate": "2008-05-01",
         "logo": "https://assets.tcgdex.net/ko/dp/dp5/logo",
-        "symbol": "https://assets.tcgdex.net/ko/dp/dp5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/dp/dp5/symbol.png",
         "serieId": "dp",
         "official": 100,
         "total": 100
@@ -14855,7 +14855,7 @@ object EmbeddedCatalogData {
         "name": "Neo Destiny",
         "releaseDate": "2002-02-28",
         "logo": "https://assets.tcgdex.net/ko/neo/neo4/logo",
-        "symbol": "https://assets.tcgdex.net/ko/neo/neo4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/neo/neo4/symbol.png",
         "serieId": "neo",
         "official": 105,
         "total": 113
@@ -14865,7 +14865,7 @@ object EmbeddedCatalogData {
         "name": "Neo Genesis",
         "releaseDate": "2000-12-16",
         "logo": "https://assets.tcgdex.net/ko/neo/neo1/logo",
-        "symbol": "https://assets.tcgdex.net/ko/neo/neo1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/neo/neo1/symbol.png",
         "serieId": "neo",
         "official": 111,
         "total": 111
@@ -14875,7 +14875,7 @@ object EmbeddedCatalogData {
         "name": "Neo Discovery",
         "releaseDate": "2001-06-01",
         "logo": "https://assets.tcgdex.net/ko/neo/neo2/logo",
-        "symbol": "https://assets.tcgdex.net/ko/neo/neo2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/neo/neo2/symbol.png",
         "serieId": "neo",
         "official": 75,
         "total": 75
@@ -14885,7 +14885,7 @@ object EmbeddedCatalogData {
         "name": "Southern Islands",
         "releaseDate": "2001-07-31",
         "logo": "https://assets.tcgdex.net/ko/neo/si1/logo",
-        "symbol": "https://assets.tcgdex.net/ko/neo/si1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/neo/si1/symbol.png",
         "serieId": "neo",
         "official": 18,
         "total": 18
@@ -14895,7 +14895,7 @@ object EmbeddedCatalogData {
         "name": "Neo Revelation",
         "releaseDate": "2001-09-21",
         "logo": "https://assets.tcgdex.net/ko/neo/neo3/logo",
-        "symbol": "https://assets.tcgdex.net/ko/neo/neo3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/neo/neo3/symbol.png",
         "serieId": "neo",
         "official": 64,
         "total": 66
@@ -14905,7 +14905,7 @@ object EmbeddedCatalogData {
         "name": "Ultra Prism",
         "releaseDate": "2018-02-02",
         "logo": "https://assets.tcgdex.net/ko/sm/sm5/logo",
-        "symbol": "https://assets.tcgdex.net/ko/sm/sm5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm5/symbol.png",
         "serieId": "sm",
         "official": 156,
         "total": 173
@@ -14915,7 +14915,7 @@ object EmbeddedCatalogData {
         "name": "Unbroken Bonds",
         "releaseDate": "2019-05-03",
         "logo": "https://assets.tcgdex.net/ko/sm/sm10/logo",
-        "symbol": "https://assets.tcgdex.net/ko/sm/sm10/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm10/symbol.png",
         "serieId": "sm",
         "official": 214,
         "total": 234
@@ -14925,7 +14925,7 @@ object EmbeddedCatalogData {
         "name": "Cosmic Eclipse",
         "releaseDate": "2019-11-01",
         "logo": "https://assets.tcgdex.net/ko/sm/sm12/logo",
-        "symbol": "https://assets.tcgdex.net/ko/sm/sm12/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm12/symbol.png",
         "serieId": "sm",
         "official": 236,
         "total": 271
@@ -14935,7 +14935,7 @@ object EmbeddedCatalogData {
         "name": "Yellow A Alternate",
         "releaseDate": "2019-08-23",
         "logo": "https://assets.tcgdex.net/ko/sm/sma/logo",
-        "symbol": "https://assets.tcgdex.net/ko/sm/sma/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sma/symbol.png",
         "serieId": "sm",
         "official": 94,
         "total": 94
@@ -14945,7 +14945,7 @@ object EmbeddedCatalogData {
         "name": "Unified Minds",
         "releaseDate": "2019-08-02",
         "logo": "https://assets.tcgdex.net/ko/sm/sm11/logo",
-        "symbol": "https://assets.tcgdex.net/ko/sm/sm11/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm11/symbol.png",
         "serieId": "sm",
         "official": 236,
         "total": 258
@@ -14955,7 +14955,7 @@ object EmbeddedCatalogData {
         "name": "Detective Pikachu",
         "releaseDate": "2019-03-29",
         "logo": "https://assets.tcgdex.net/ko/sm/det1/logo",
-        "symbol": "https://assets.tcgdex.net/ko/sm/det1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/det1/symbol.png",
         "serieId": "sm",
         "official": 18,
         "total": 18
@@ -14965,7 +14965,7 @@ object EmbeddedCatalogData {
         "name": "Sun & Moon",
         "releaseDate": "2017-02-03",
         "logo": "https://assets.tcgdex.net/ko/sm/sm1/logo",
-        "symbol": "https://assets.tcgdex.net/ko/sm/sm1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm1/symbol.png",
         "serieId": "sm",
         "official": 149,
         "total": 172
@@ -14975,7 +14975,7 @@ object EmbeddedCatalogData {
         "name": "Hidden Fates",
         "releaseDate": "2019-08-23",
         "logo": "https://assets.tcgdex.net/ko/sm/sm115/logo",
-        "symbol": "https://assets.tcgdex.net/ko/sm/sm115/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm115/symbol.png",
         "serieId": "sm",
         "official": 68,
         "total": 69
@@ -14985,7 +14985,7 @@ object EmbeddedCatalogData {
         "name": "Forbidden Light",
         "releaseDate": "2018-05-04",
         "logo": "https://assets.tcgdex.net/ko/sm/sm6/logo",
-        "symbol": "https://assets.tcgdex.net/ko/sm/sm6/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm6/symbol.png",
         "serieId": "sm",
         "official": 131,
         "total": 146
@@ -14995,7 +14995,7 @@ object EmbeddedCatalogData {
         "name": "Celestial Storm",
         "releaseDate": "2018-08-03",
         "logo": "https://assets.tcgdex.net/ko/sm/sm7/logo",
-        "symbol": "https://assets.tcgdex.net/ko/sm/sm7/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm7/symbol.png",
         "serieId": "sm",
         "official": 168,
         "total": 183
@@ -15005,7 +15005,7 @@ object EmbeddedCatalogData {
         "name": "Dragon Majesty",
         "releaseDate": "2018-09-07",
         "logo": "https://assets.tcgdex.net/ko/sm/sm7.5/logo",
-        "symbol": "https://assets.tcgdex.net/ko/sm/sm7.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm7.5/symbol.png",
         "serieId": "sm",
         "official": 70,
         "total": 78
@@ -15015,7 +15015,7 @@ object EmbeddedCatalogData {
         "name": "Shining Legends",
         "releaseDate": "2017-10-06",
         "logo": "https://assets.tcgdex.net/ko/sm/sm3.5/logo",
-        "symbol": "https://assets.tcgdex.net/ko/sm/sm3.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm3.5/symbol.png",
         "serieId": "sm",
         "official": 73,
         "total": 78
@@ -15025,7 +15025,7 @@ object EmbeddedCatalogData {
         "name": "Team Up",
         "releaseDate": "2019-01-31",
         "logo": "https://assets.tcgdex.net/ko/sm/sm9/logo",
-        "symbol": "https://assets.tcgdex.net/ko/sm/sm9/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm9/symbol.png",
         "serieId": "sm",
         "official": 181,
         "total": 196
@@ -15035,7 +15035,7 @@ object EmbeddedCatalogData {
         "name": "Lost Thunder",
         "releaseDate": "2018-11-02",
         "logo": "https://assets.tcgdex.net/ko/sm/sm8/logo",
-        "symbol": "https://assets.tcgdex.net/ko/sm/sm8/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm8/symbol.png",
         "serieId": "sm",
         "official": 214,
         "total": 236
@@ -15045,7 +15045,7 @@ object EmbeddedCatalogData {
         "name": "Guardians Rising",
         "releaseDate": "2017-05-05",
         "logo": "https://assets.tcgdex.net/ko/sm/sm2/logo",
-        "symbol": "https://assets.tcgdex.net/ko/sm/sm2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm2/symbol.png",
         "serieId": "sm",
         "official": 145,
         "total": 169
@@ -15055,7 +15055,7 @@ object EmbeddedCatalogData {
         "name": "Crimson Invasion",
         "releaseDate": "2017-11-03",
         "logo": "https://assets.tcgdex.net/ko/sm/sm4/logo",
-        "symbol": "https://assets.tcgdex.net/ko/sm/sm4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm4/symbol.png",
         "serieId": "sm",
         "official": 111,
         "total": 125
@@ -15065,7 +15065,7 @@ object EmbeddedCatalogData {
         "name": "Burning Shadows",
         "releaseDate": "2017-08-04",
         "logo": "https://assets.tcgdex.net/ko/sm/sm3/logo",
-        "symbol": "https://assets.tcgdex.net/ko/sm/sm3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm3/symbol.png",
         "serieId": "sm",
         "official": 147,
         "total": 169
@@ -15075,7 +15075,7 @@ object EmbeddedCatalogData {
         "name": "SM Black Star Promos",
         "releaseDate": "2017-02-03",
         "logo": "https://assets.tcgdex.net/ko/sm/smp/logo",
-        "symbol": "https://assets.tcgdex.net/ko/sm/smp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/smp/symbol.png",
         "serieId": "sm",
         "official": 236,
         "total": 244
@@ -15085,7 +15085,7 @@ object EmbeddedCatalogData {
         "name": "MEP Black Star Promos",
         "releaseDate": "2025-09-26",
         "logo": "https://assets.tcgdex.net/ko/me/mep/logo",
-        "symbol": "https://assets.tcgdex.net/ko/me/mep/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/me/mep/symbol.png",
         "serieId": "me",
         "official": 0,
         "total": 10
@@ -15095,7 +15095,7 @@ object EmbeddedCatalogData {
         "name": "Mega Evolution",
         "releaseDate": "2025-09-26",
         "logo": "https://assets.tcgdex.net/ko/me/me01/logo",
-        "symbol": "https://assets.tcgdex.net/ko/me/me01/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/me/me01/symbol.png",
         "serieId": "me",
         "official": 132,
         "total": 188
@@ -15105,7 +15105,7 @@ object EmbeddedCatalogData {
         "name": "Phantasmal Flames",
         "releaseDate": "2025-11-14",
         "logo": "https://assets.tcgdex.net/ko/me/me02/logo",
-        "symbol": "https://assets.tcgdex.net/ko/me/me02/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/me/me02/symbol.png",
         "serieId": "me",
         "official": 94,
         "total": 130
@@ -15115,7 +15115,7 @@ object EmbeddedCatalogData {
         "name": "HeartGold SoulSilver",
         "releaseDate": "2010-02-10",
         "logo": "https://assets.tcgdex.net/ko/hgss/hgss1/logo",
-        "symbol": "https://assets.tcgdex.net/ko/hgss/hgss1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/hgss/hgss1/symbol.png",
         "serieId": "hgss",
         "official": 123,
         "total": 124
@@ -15125,7 +15125,7 @@ object EmbeddedCatalogData {
         "name": "Unleashed",
         "releaseDate": "2010-05-12",
         "logo": "https://assets.tcgdex.net/ko/hgss/hgss2/logo",
-        "symbol": "https://assets.tcgdex.net/ko/hgss/hgss2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/hgss/hgss2/symbol.png",
         "serieId": "hgss",
         "official": 95,
         "total": 96
@@ -15135,7 +15135,7 @@ object EmbeddedCatalogData {
         "name": "Triumphant",
         "releaseDate": "2010-11-03",
         "logo": "https://assets.tcgdex.net/ko/hgss/hgss4/logo",
-        "symbol": "https://assets.tcgdex.net/ko/hgss/hgss4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/hgss/hgss4/symbol.png",
         "serieId": "hgss",
         "official": 102,
         "total": 103
@@ -15145,7 +15145,7 @@ object EmbeddedCatalogData {
         "name": "HGSS Black Star Promos",
         "releaseDate": "2010-02-11",
         "logo": "https://assets.tcgdex.net/ko/hgss/hgssp/logo",
-        "symbol": "https://assets.tcgdex.net/ko/hgss/hgssp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/hgss/hgssp/symbol.png",
         "serieId": "hgss",
         "official": 25,
         "total": 25
@@ -15155,7 +15155,7 @@ object EmbeddedCatalogData {
         "name": "Undaunted",
         "releaseDate": "2010-08-18",
         "logo": "https://assets.tcgdex.net/ko/hgss/hgss3/logo",
-        "symbol": "https://assets.tcgdex.net/ko/hgss/hgss3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/hgss/hgss3/symbol.png",
         "serieId": "hgss",
         "official": 90,
         "total": 91
@@ -15165,7 +15165,7 @@ object EmbeddedCatalogData {
         "name": "Skyridge",
         "releaseDate": "2003-05-12",
         "logo": "https://assets.tcgdex.net/ko/ecard/ecard3/logo",
-        "symbol": "https://assets.tcgdex.net/ko/ecard/ecard3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ecard/ecard3/symbol.png",
         "serieId": "ecard",
         "official": 144,
         "total": 182
@@ -15175,7 +15175,7 @@ object EmbeddedCatalogData {
         "name": "Aquapolis",
         "releaseDate": "2003-01-15",
         "logo": "https://assets.tcgdex.net/ko/ecard/ecard2/logo",
-        "symbol": "https://assets.tcgdex.net/ko/ecard/ecard2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ecard/ecard2/symbol.png",
         "serieId": "ecard",
         "official": 147,
         "total": 186
@@ -15185,7 +15185,7 @@ object EmbeddedCatalogData {
         "name": "Sample",
         "releaseDate": "2002-08-01",
         "logo": "https://assets.tcgdex.net/ko/ecard/sp/logo",
-        "symbol": "https://assets.tcgdex.net/ko/ecard/sp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ecard/sp/symbol.png",
         "serieId": "ecard",
         "official": 10,
         "total": 10
@@ -15195,7 +15195,7 @@ object EmbeddedCatalogData {
         "name": "Best of game",
         "releaseDate": "2002-12-01",
         "logo": "https://assets.tcgdex.net/ko/ecard/bog/logo",
-        "symbol": "https://assets.tcgdex.net/ko/ecard/bog/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ecard/bog/symbol.png",
         "serieId": "ecard",
         "official": 9,
         "total": 9
@@ -15205,7 +15205,7 @@ object EmbeddedCatalogData {
         "name": "Expedition Base Set",
         "releaseDate": "2002-09-15",
         "logo": "https://assets.tcgdex.net/ko/ecard/ecard1/logo",
-        "symbol": "https://assets.tcgdex.net/ko/ecard/ecard1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ecard/ecard1/symbol.png",
         "serieId": "ecard",
         "official": 165,
         "total": 165
@@ -15215,7 +15215,7 @@ object EmbeddedCatalogData {
         "name": "Paldean Fates",
         "releaseDate": "2024-01-26",
         "logo": "https://assets.tcgdex.net/ko/sv/sv04.5/logo",
-        "symbol": "https://assets.tcgdex.net/ko/sv/sv04.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv04.5/symbol.png",
         "serieId": "sv",
         "official": 91,
         "total": 245
@@ -15225,7 +15225,7 @@ object EmbeddedCatalogData {
         "name": "Shrouded Fable",
         "releaseDate": "2024-08-02",
         "logo": "https://assets.tcgdex.net/ko/sv/sv06.5/logo",
-        "symbol": "https://assets.tcgdex.net/ko/sv/sv06.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv06.5/symbol.png",
         "serieId": "sv",
         "official": 64,
         "total": 99
@@ -15235,7 +15235,7 @@ object EmbeddedCatalogData {
         "name": "Prismatic Evolutions",
         "releaseDate": "2025-01-17",
         "logo": "https://assets.tcgdex.net/ko/sv/sv08.5/logo",
-        "symbol": "https://assets.tcgdex.net/ko/sv/sv08.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv08.5/symbol.png",
         "serieId": "sv",
         "official": 131,
         "total": 180
@@ -15245,7 +15245,7 @@ object EmbeddedCatalogData {
         "name": "White Flare",
         "releaseDate": "2025-07-17",
         "logo": "https://assets.tcgdex.net/ko/sv/sv10.5w/logo",
-        "symbol": "https://assets.tcgdex.net/ko/sv/sv10.5w/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv10.5w/symbol.png",
         "serieId": "sv",
         "official": 86,
         "total": 173
@@ -15255,7 +15255,7 @@ object EmbeddedCatalogData {
         "name": "Paldea Evolved",
         "releaseDate": "2023-06-09",
         "logo": "https://assets.tcgdex.net/ko/sv/sv02/logo",
-        "symbol": "https://assets.tcgdex.net/ko/sv/sv02/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv02/symbol.png",
         "serieId": "sv",
         "official": 193,
         "total": 279
@@ -15265,7 +15265,7 @@ object EmbeddedCatalogData {
         "name": "151",
         "releaseDate": "2023-09-22",
         "logo": "https://assets.tcgdex.net/ko/sv/sv03.5/logo",
-        "symbol": "https://assets.tcgdex.net/ko/sv/sv03.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv03.5/symbol.png",
         "serieId": "sv",
         "official": 165,
         "total": 207
@@ -15275,7 +15275,7 @@ object EmbeddedCatalogData {
         "name": "Destined Rivals",
         "releaseDate": "2025-05-30",
         "logo": "https://assets.tcgdex.net/ko/sv/sv10/logo",
-        "symbol": "https://assets.tcgdex.net/ko/sv/sv10/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv10/symbol.png",
         "serieId": "sv",
         "official": 182,
         "total": 244
@@ -15285,7 +15285,7 @@ object EmbeddedCatalogData {
         "name": "Paradox Rift",
         "releaseDate": "2023-11-03",
         "logo": "https://assets.tcgdex.net/ko/sv/sv04/logo",
-        "symbol": "https://assets.tcgdex.net/ko/sv/sv04/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv04/symbol.png",
         "serieId": "sv",
         "official": 182,
         "total": 266
@@ -15295,7 +15295,7 @@ object EmbeddedCatalogData {
         "name": "Obsidian Flames",
         "releaseDate": "2023-08-11",
         "logo": "https://assets.tcgdex.net/ko/sv/sv03/logo",
-        "symbol": "https://assets.tcgdex.net/ko/sv/sv03/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv03/symbol.png",
         "serieId": "sv",
         "official": 197,
         "total": 230
@@ -15305,7 +15305,7 @@ object EmbeddedCatalogData {
         "name": "Surging Sparks",
         "releaseDate": "2024-11-08",
         "logo": "https://assets.tcgdex.net/ko/sv/sv08/logo",
-        "symbol": "https://assets.tcgdex.net/ko/sv/sv08/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv08/symbol.png",
         "serieId": "sv",
         "official": 191,
         "total": 252
@@ -15315,7 +15315,7 @@ object EmbeddedCatalogData {
         "name": "Black Bolt",
         "releaseDate": "2025-07-17",
         "logo": "https://assets.tcgdex.net/ko/sv/sv10.5b/logo",
-        "symbol": "https://assets.tcgdex.net/ko/sv/sv10.5b/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv10.5b/symbol.png",
         "serieId": "sv",
         "official": 86,
         "total": 172
@@ -15325,7 +15325,7 @@ object EmbeddedCatalogData {
         "name": "Twilight Masquerade",
         "releaseDate": "2024-05-24",
         "logo": "https://assets.tcgdex.net/ko/sv/sv06/logo",
-        "symbol": "https://assets.tcgdex.net/ko/sv/sv06/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv06/symbol.png",
         "serieId": "sv",
         "official": 167,
         "total": 226
@@ -15335,7 +15335,7 @@ object EmbeddedCatalogData {
         "name": "Temporal Forces",
         "releaseDate": "2024-03-22",
         "logo": "https://assets.tcgdex.net/ko/sv/sv05/logo",
-        "symbol": "https://assets.tcgdex.net/ko/sv/sv05/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv05/symbol.png",
         "serieId": "sv",
         "official": 162,
         "total": 218
@@ -15345,7 +15345,7 @@ object EmbeddedCatalogData {
         "name": "Stellar Crown",
         "releaseDate": "2024-09-13",
         "logo": "https://assets.tcgdex.net/ko/sv/sv07/logo",
-        "symbol": "https://assets.tcgdex.net/ko/sv/sv07/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv07/symbol.png",
         "serieId": "sv",
         "official": 142,
         "total": 175
@@ -15355,7 +15355,7 @@ object EmbeddedCatalogData {
         "name": "SVP Black Star Promos",
         "releaseDate": "2023-03-31",
         "logo": "https://assets.tcgdex.net/ko/sv/svp/logo",
-        "symbol": "https://assets.tcgdex.net/ko/sv/svp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/svp/symbol.png",
         "serieId": "sv",
         "official": 0,
         "total": 219
@@ -15365,7 +15365,7 @@ object EmbeddedCatalogData {
         "name": "Scarlet & Violet",
         "releaseDate": "2023-03-31",
         "logo": "https://assets.tcgdex.net/ko/sv/sv01/logo",
-        "symbol": "https://assets.tcgdex.net/ko/sv/sv01/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv01/symbol.png",
         "serieId": "sv",
         "official": 198,
         "total": 258
@@ -15375,7 +15375,7 @@ object EmbeddedCatalogData {
         "name": "Journey Together",
         "releaseDate": "2025-03-28",
         "logo": "https://assets.tcgdex.net/ko/sv/sv09/logo",
-        "symbol": "https://assets.tcgdex.net/ko/sv/sv09/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv09/symbol.png",
         "serieId": "sv",
         "official": 159,
         "total": 190
@@ -15385,7 +15385,7 @@ object EmbeddedCatalogData {
         "name": "Yello A Alternate",
         "releaseDate": "2014-02-05",
         "logo": "https://assets.tcgdex.net/ko/xy/xya/logo",
-        "symbol": "https://assets.tcgdex.net/ko/xy/xya/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xya/symbol.png",
         "serieId": "xy",
         "official": 6,
         "total": 6
@@ -15395,7 +15395,7 @@ object EmbeddedCatalogData {
         "name": "Roaring Skies",
         "releaseDate": "2015-05-06",
         "logo": "https://assets.tcgdex.net/ko/xy/xy6/logo",
-        "symbol": "https://assets.tcgdex.net/ko/xy/xy6/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy6/symbol.png",
         "serieId": "xy",
         "official": 108,
         "total": 112
@@ -15405,7 +15405,7 @@ object EmbeddedCatalogData {
         "name": "Ancient Origins",
         "releaseDate": "2015-08-12",
         "logo": "https://assets.tcgdex.net/ko/xy/xy7/logo",
-        "symbol": "https://assets.tcgdex.net/ko/xy/xy7/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy7/symbol.png",
         "serieId": "xy",
         "official": 98,
         "total": 101
@@ -15415,7 +15415,7 @@ object EmbeddedCatalogData {
         "name": "BREAKpoint",
         "releaseDate": "2016-02-03",
         "logo": "https://assets.tcgdex.net/ko/xy/xy9/logo",
-        "symbol": "https://assets.tcgdex.net/ko/xy/xy9/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy9/symbol.png",
         "serieId": "xy",
         "official": 122,
         "total": 126
@@ -15425,7 +15425,7 @@ object EmbeddedCatalogData {
         "name": "Primal Clash",
         "releaseDate": "2015-02-04",
         "logo": "https://assets.tcgdex.net/ko/xy/xy5/logo",
-        "symbol": "https://assets.tcgdex.net/ko/xy/xy5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy5/symbol.png",
         "serieId": "xy",
         "official": 160,
         "total": 164
@@ -15435,7 +15435,7 @@ object EmbeddedCatalogData {
         "name": "XY Black Star Promos",
         "releaseDate": "2013-10-12",
         "logo": "https://assets.tcgdex.net/ko/xy/xyp/logo",
-        "symbol": "https://assets.tcgdex.net/ko/xy/xyp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xyp/symbol.png",
         "serieId": "xy",
         "official": 211,
         "total": 216
@@ -15445,7 +15445,7 @@ object EmbeddedCatalogData {
         "name": "Kalos Starter Set",
         "releaseDate": "2013-11-08",
         "logo": "https://assets.tcgdex.net/ko/xy/xy0/logo",
-        "symbol": "https://assets.tcgdex.net/ko/xy/xy0/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy0/symbol.png",
         "serieId": "xy",
         "official": 39,
         "total": 39
@@ -15455,7 +15455,7 @@ object EmbeddedCatalogData {
         "name": "Flashfire",
         "releaseDate": "2014-05-07",
         "logo": "https://assets.tcgdex.net/ko/xy/xy2/logo",
-        "symbol": "https://assets.tcgdex.net/ko/xy/xy2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy2/symbol.png",
         "serieId": "xy",
         "official": 106,
         "total": 110
@@ -15465,7 +15465,7 @@ object EmbeddedCatalogData {
         "name": "BREAKthrough",
         "releaseDate": "2015-11-04",
         "logo": "https://assets.tcgdex.net/ko/xy/xy8/logo",
-        "symbol": "https://assets.tcgdex.net/ko/xy/xy8/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy8/symbol.png",
         "serieId": "xy",
         "official": 162,
         "total": 165
@@ -15475,7 +15475,7 @@ object EmbeddedCatalogData {
         "name": "Evolutions",
         "releaseDate": "2016-11-02",
         "logo": "https://assets.tcgdex.net/ko/xy/xy12/logo",
-        "symbol": "https://assets.tcgdex.net/ko/xy/xy12/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy12/symbol.png",
         "serieId": "xy",
         "official": 108,
         "total": 113
@@ -15485,7 +15485,7 @@ object EmbeddedCatalogData {
         "name": "Double Crisis",
         "releaseDate": "2015-03-25",
         "logo": "https://assets.tcgdex.net/ko/xy/dc1/logo",
-        "symbol": "https://assets.tcgdex.net/ko/xy/dc1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/dc1/symbol.png",
         "serieId": "xy",
         "official": 34,
         "total": 34
@@ -15495,7 +15495,7 @@ object EmbeddedCatalogData {
         "name": "Generations",
         "releaseDate": "2016-02-22",
         "logo": "https://assets.tcgdex.net/ko/xy/g1/logo",
-        "symbol": "https://assets.tcgdex.net/ko/xy/g1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/g1/symbol.png",
         "serieId": "xy",
         "official": 83,
         "total": 117
@@ -15505,7 +15505,7 @@ object EmbeddedCatalogData {
         "name": "XY",
         "releaseDate": "2014-02-05",
         "logo": "https://assets.tcgdex.net/ko/xy/xy1/logo",
-        "symbol": "https://assets.tcgdex.net/ko/xy/xy1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy1/symbol.png",
         "serieId": "xy",
         "official": 146,
         "total": 146
@@ -15515,7 +15515,7 @@ object EmbeddedCatalogData {
         "name": "Steam Siege",
         "releaseDate": "2016-08-03",
         "logo": "https://assets.tcgdex.net/ko/xy/xy11/logo",
-        "symbol": "https://assets.tcgdex.net/ko/xy/xy11/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy11/symbol.png",
         "serieId": "xy",
         "official": 114,
         "total": 116
@@ -15525,7 +15525,7 @@ object EmbeddedCatalogData {
         "name": "Fates Collide",
         "releaseDate": "2016-05-02",
         "logo": "https://assets.tcgdex.net/ko/xy/xy10/logo",
-        "symbol": "https://assets.tcgdex.net/ko/xy/xy10/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy10/symbol.png",
         "serieId": "xy",
         "official": 124,
         "total": 129
@@ -15535,7 +15535,7 @@ object EmbeddedCatalogData {
         "name": "Furious Fists",
         "releaseDate": "2014-08-13",
         "logo": "https://assets.tcgdex.net/ko/xy/xy3/logo",
-        "symbol": "https://assets.tcgdex.net/ko/xy/xy3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy3/symbol.png",
         "serieId": "xy",
         "official": 111,
         "total": 114
@@ -15545,7 +15545,7 @@ object EmbeddedCatalogData {
         "name": "Phantom Forces",
         "releaseDate": "2014-11-05",
         "logo": "https://assets.tcgdex.net/ko/xy/xy4/logo",
-        "symbol": "https://assets.tcgdex.net/ko/xy/xy4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy4/symbol.png",
         "serieId": "xy",
         "official": 119,
         "total": 124
@@ -15555,7 +15555,7 @@ object EmbeddedCatalogData {
         "name": "HS trainer Kit (Gyarados)",
         "releaseDate": "2010-05-01",
         "logo": "https://assets.tcgdex.net/ko/tk/tk-hs-g/logo",
-        "symbol": "https://assets.tcgdex.net/ko/tk/tk-hs-g/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-hs-g/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 1
@@ -15565,7 +15565,7 @@ object EmbeddedCatalogData {
         "name": "EX trainer Kit 2 (Plusle)",
         "releaseDate": "2006-03-01",
         "logo": "https://assets.tcgdex.net/ko/tk/tk-ex-p/logo",
-        "symbol": "https://assets.tcgdex.net/ko/tk/tk-ex-p/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-ex-p/symbol.png",
         "serieId": "tk",
         "official": 12,
         "total": 12
@@ -15575,7 +15575,7 @@ object EmbeddedCatalogData {
         "name": "EX trainer Kit 2 (Minun)",
         "releaseDate": "2006-03-01",
         "logo": "https://assets.tcgdex.net/ko/tk/tk-ex-m/logo",
-        "symbol": "https://assets.tcgdex.net/ko/tk/tk-ex-m/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-ex-m/symbol.png",
         "serieId": "tk",
         "official": 12,
         "total": 12
@@ -15585,7 +15585,7 @@ object EmbeddedCatalogData {
         "name": "DP trainer Kit (Lucario)",
         "releaseDate": "2007-09-01",
         "logo": "https://assets.tcgdex.net/ko/tk/tk-dp-l/logo",
-        "symbol": "https://assets.tcgdex.net/ko/tk/tk-dp-l/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-dp-l/symbol.png",
         "serieId": "tk",
         "official": 11,
         "total": 11
@@ -15595,7 +15595,7 @@ object EmbeddedCatalogData {
         "name": "SM trainer Kit (Alolan Raichu)",
         "releaseDate": "2017-04-21",
         "logo": "https://assets.tcgdex.net/ko/tk/tk-sm-r/logo",
-        "symbol": "https://assets.tcgdex.net/ko/tk/tk-sm-r/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-sm-r/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 19
@@ -15605,7 +15605,7 @@ object EmbeddedCatalogData {
         "name": "XY trainer Kit (Latias)",
         "releaseDate": "2015-04-29",
         "logo": "https://assets.tcgdex.net/ko/tk/tk-xy-latia/logo",
-        "symbol": "https://assets.tcgdex.net/ko/tk/tk-xy-latia/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-xy-latia/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -15615,7 +15615,7 @@ object EmbeddedCatalogData {
         "name": "HS trainer Kit (Raichu)",
         "releaseDate": "2010-05-01",
         "logo": "https://assets.tcgdex.net/ko/tk/tk-hs-r/logo",
-        "symbol": "https://assets.tcgdex.net/ko/tk/tk-hs-r/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-hs-r/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 1
@@ -15625,7 +15625,7 @@ object EmbeddedCatalogData {
         "name": "EX trainer Kit (Latios)",
         "releaseDate": "2004-07-01",
         "logo": "https://assets.tcgdex.net/ko/tk/tk-ex-latio/logo",
-        "symbol": "https://assets.tcgdex.net/ko/tk/tk-ex-latio/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-ex-latio/symbol.png",
         "serieId": "tk",
         "official": 10,
         "total": 10
@@ -15635,7 +15635,7 @@ object EmbeddedCatalogData {
         "name": "BW trainer Kit (Excadrill)",
         "releaseDate": "2011-09-01",
         "logo": "https://assets.tcgdex.net/ko/tk/tk-bw-e/logo",
-        "symbol": "https://assets.tcgdex.net/ko/tk/tk-bw-e/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-bw-e/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -15645,7 +15645,7 @@ object EmbeddedCatalogData {
         "name": "XY trainer Kit (Pikachu Libre)",
         "releaseDate": "2016-04-27",
         "logo": "https://assets.tcgdex.net/ko/tk/tk-xy-p/logo",
-        "symbol": "https://assets.tcgdex.net/ko/tk/tk-xy-p/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-xy-p/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -15655,7 +15655,7 @@ object EmbeddedCatalogData {
         "name": "XY trainer Kit (Latios)",
         "releaseDate": "2015-04-29",
         "logo": "https://assets.tcgdex.net/ko/tk/tk-xy-latio/logo",
-        "symbol": "https://assets.tcgdex.net/ko/tk/tk-xy-latio/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-xy-latio/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -15665,7 +15665,7 @@ object EmbeddedCatalogData {
         "name": "SM trainer Kit (Lycanroc)",
         "releaseDate": "2017-04-21",
         "logo": "https://assets.tcgdex.net/ko/tk/tk-sm-l/logo",
-        "symbol": "https://assets.tcgdex.net/ko/tk/tk-sm-l/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-sm-l/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 18
@@ -15675,7 +15675,7 @@ object EmbeddedCatalogData {
         "name": "EX trainer Kit (Latias)",
         "releaseDate": "2004-07-01",
         "logo": "https://assets.tcgdex.net/ko/tk/tk-ex-latia/logo",
-        "symbol": "https://assets.tcgdex.net/ko/tk/tk-ex-latia/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-ex-latia/symbol.png",
         "serieId": "tk",
         "official": 10,
         "total": 10
@@ -15685,7 +15685,7 @@ object EmbeddedCatalogData {
         "name": "XY trainer Kit (Suicune)",
         "releaseDate": "2016-04-27",
         "logo": "https://assets.tcgdex.net/ko/tk/tk-xy-su/logo",
-        "symbol": "https://assets.tcgdex.net/ko/tk/tk-xy-su/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-xy-su/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -15695,7 +15695,7 @@ object EmbeddedCatalogData {
         "name": "DP trainer Kit (Manaphy)",
         "releaseDate": "2007-09-01",
         "logo": "https://assets.tcgdex.net/ko/tk/tk-dp-m/logo",
-        "symbol": "https://assets.tcgdex.net/ko/tk/tk-dp-m/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-dp-m/symbol.png",
         "serieId": "tk",
         "official": 12,
         "total": 12
@@ -15705,7 +15705,7 @@ object EmbeddedCatalogData {
         "name": "XY trainer Kit (Wigglytuff)",
         "releaseDate": "2014-11-01",
         "logo": "https://assets.tcgdex.net/ko/tk/tk-xy-w/logo",
-        "symbol": "https://assets.tcgdex.net/ko/tk/tk-xy-w/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-xy-w/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -15715,7 +15715,7 @@ object EmbeddedCatalogData {
         "name": "BW trainer Kit (Zoroark)",
         "releaseDate": "2011-09-01",
         "logo": "https://assets.tcgdex.net/ko/tk/tk-bw-z/logo",
-        "symbol": "https://assets.tcgdex.net/ko/tk/tk-bw-z/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-bw-z/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -15725,7 +15725,7 @@ object EmbeddedCatalogData {
         "name": "XY trainer Kit (Noivern)",
         "releaseDate": "2014-03-12",
         "logo": "https://assets.tcgdex.net/ko/tk/tk-xy-n/logo",
-        "symbol": "https://assets.tcgdex.net/ko/tk/tk-xy-n/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-xy-n/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -15735,7 +15735,7 @@ object EmbeddedCatalogData {
         "name": "XY trainer Kit (Sylveon)",
         "releaseDate": "2014-03-12",
         "logo": "https://assets.tcgdex.net/ko/tk/tk-xy-sy/logo",
-        "symbol": "https://assets.tcgdex.net/ko/tk/tk-xy-sy/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-xy-sy/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -15745,7 +15745,7 @@ object EmbeddedCatalogData {
         "name": "XY trainer Kit (Bisharp)",
         "releaseDate": "2014-11-01",
         "logo": "https://assets.tcgdex.net/ko/tk/tk-xy-b/logo",
-        "symbol": "https://assets.tcgdex.net/ko/tk/tk-xy-b/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-xy-b/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -15755,7 +15755,7 @@ object EmbeddedCatalogData {
         "name": "Arceus",
         "releaseDate": "2009-11-04",
         "logo": "https://assets.tcgdex.net/ko/pl/pl4/logo",
-        "symbol": "https://assets.tcgdex.net/ko/pl/pl4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pl/pl4/symbol.png",
         "serieId": "pl",
         "official": 99,
         "total": 111
@@ -15765,7 +15765,7 @@ object EmbeddedCatalogData {
         "name": "Supreme Victors",
         "releaseDate": "2009-08-19",
         "logo": "https://assets.tcgdex.net/ko/pl/pl3/logo",
-        "symbol": "https://assets.tcgdex.net/ko/pl/pl3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pl/pl3/symbol.png",
         "serieId": "pl",
         "official": 147,
         "total": 153
@@ -15775,7 +15775,7 @@ object EmbeddedCatalogData {
         "name": "Rising Rivals",
         "releaseDate": "2009-05-16",
         "logo": "https://assets.tcgdex.net/ko/pl/pl2/logo",
-        "symbol": "https://assets.tcgdex.net/ko/pl/pl2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pl/pl2/symbol.png",
         "serieId": "pl",
         "official": 111,
         "total": 120
@@ -15785,7 +15785,7 @@ object EmbeddedCatalogData {
         "name": "Pokémon Rumble",
         "releaseDate": "2009-12-02",
         "logo": "https://assets.tcgdex.net/ko/pl/ru1/logo",
-        "symbol": "https://assets.tcgdex.net/ko/pl/ru1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pl/ru1/symbol.png",
         "serieId": "pl",
         "official": 16,
         "total": 16
@@ -15795,7 +15795,7 @@ object EmbeddedCatalogData {
         "name": "Platinum",
         "releaseDate": "2009-02-11",
         "logo": "https://assets.tcgdex.net/ko/pl/pl1/logo",
-        "symbol": "https://assets.tcgdex.net/ko/pl/pl1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pl/pl1/symbol.png",
         "serieId": "pl",
         "official": 127,
         "total": 133
@@ -15805,7 +15805,7 @@ object EmbeddedCatalogData {
         "name": "Gym Challenge",
         "releaseDate": "2000-10-16",
         "logo": "https://assets.tcgdex.net/ko/gym/gym2/logo",
-        "symbol": "https://assets.tcgdex.net/ko/gym/gym2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/gym/gym2/symbol.png",
         "serieId": "gym",
         "official": 132,
         "total": 132
@@ -15815,7 +15815,7 @@ object EmbeddedCatalogData {
         "name": "Gym Heroes",
         "releaseDate": "2000-08-14",
         "logo": "https://assets.tcgdex.net/ko/gym/gym1/logo",
-        "symbol": "https://assets.tcgdex.net/ko/gym/gym1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/gym/gym1/symbol.png",
         "serieId": "gym",
         "official": 132,
         "total": 132
@@ -15825,7 +15825,7 @@ object EmbeddedCatalogData {
         "name": "Shining Fates",
         "releaseDate": "2021-02-19",
         "logo": "https://assets.tcgdex.net/ko/swsh/swsh4.5/logo",
-        "symbol": "https://assets.tcgdex.net/ko/swsh/swsh4.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh4.5/symbol.png",
         "serieId": "swsh",
         "official": 72,
         "total": 195
@@ -15835,7 +15835,7 @@ object EmbeddedCatalogData {
         "name": "Astral Radiance",
         "releaseDate": "2022-05-27",
         "logo": "https://assets.tcgdex.net/ko/swsh/swsh10/logo",
-        "symbol": "https://assets.tcgdex.net/ko/swsh/swsh10/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh10/symbol.png",
         "serieId": "swsh",
         "official": 189,
         "total": 246
@@ -15845,7 +15845,7 @@ object EmbeddedCatalogData {
         "name": "Fusion Strike",
         "releaseDate": "2021-11-12",
         "logo": "https://assets.tcgdex.net/ko/swsh/swsh8/logo",
-        "symbol": "https://assets.tcgdex.net/ko/swsh/swsh8/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh8/symbol.png",
         "serieId": "swsh",
         "official": 264,
         "total": 284
@@ -15855,7 +15855,7 @@ object EmbeddedCatalogData {
         "name": "Evolving Skies",
         "releaseDate": "2021-08-27",
         "logo": "https://assets.tcgdex.net/ko/swsh/swsh7/logo",
-        "symbol": "https://assets.tcgdex.net/ko/swsh/swsh7/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh7/symbol.png",
         "serieId": "swsh",
         "official": 203,
         "total": 237
@@ -15865,7 +15865,7 @@ object EmbeddedCatalogData {
         "name": "Crown Zenith",
         "releaseDate": "2023-01-20",
         "logo": "https://assets.tcgdex.net/ko/swsh/swsh12.5/logo",
-        "symbol": "https://assets.tcgdex.net/ko/swsh/swsh12.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh12.5/symbol.png",
         "serieId": "swsh",
         "official": 159,
         "total": 230
@@ -15875,7 +15875,7 @@ object EmbeddedCatalogData {
         "name": "Champion's Path",
         "releaseDate": "2020-09-25",
         "logo": "https://assets.tcgdex.net/ko/swsh/swsh3.5/logo",
-        "symbol": "https://assets.tcgdex.net/ko/swsh/swsh3.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh3.5/symbol.png",
         "serieId": "swsh",
         "official": 70,
         "total": 80
@@ -15885,7 +15885,7 @@ object EmbeddedCatalogData {
         "name": "Celebrations",
         "releaseDate": "2021-10-08",
         "logo": "https://assets.tcgdex.net/ko/swsh/cel25/logo",
-        "symbol": "https://assets.tcgdex.net/ko/swsh/cel25/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/cel25/symbol.png",
         "serieId": "swsh",
         "official": 25,
         "total": 51
@@ -15895,7 +15895,7 @@ object EmbeddedCatalogData {
         "name": "Battle Styles",
         "releaseDate": "2021-03-19",
         "logo": "https://assets.tcgdex.net/ko/swsh/swsh5/logo",
-        "symbol": "https://assets.tcgdex.net/ko/swsh/swsh5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh5/symbol.png",
         "serieId": "swsh",
         "official": 163,
         "total": 183
@@ -15905,7 +15905,7 @@ object EmbeddedCatalogData {
         "name": "Silver Tempest",
         "releaseDate": "2022-11-11",
         "logo": "https://assets.tcgdex.net/ko/swsh/swsh12/logo",
-        "symbol": "https://assets.tcgdex.net/ko/swsh/swsh12/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh12/symbol.png",
         "serieId": "swsh",
         "official": 195,
         "total": 245
@@ -15915,7 +15915,7 @@ object EmbeddedCatalogData {
         "name": "Vivid Voltage",
         "releaseDate": "2020-11-13",
         "logo": "https://assets.tcgdex.net/ko/swsh/swsh4/logo",
-        "symbol": "https://assets.tcgdex.net/ko/swsh/swsh4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh4/symbol.png",
         "serieId": "swsh",
         "official": 185,
         "total": 203
@@ -15925,7 +15925,7 @@ object EmbeddedCatalogData {
         "name": "Chilling Reign",
         "releaseDate": "2021-06-18",
         "logo": "https://assets.tcgdex.net/ko/swsh/swsh6/logo",
-        "symbol": "https://assets.tcgdex.net/ko/swsh/swsh6/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh6/symbol.png",
         "serieId": "swsh",
         "official": 198,
         "total": 233
@@ -15935,7 +15935,7 @@ object EmbeddedCatalogData {
         "name": "Lost Origin",
         "releaseDate": "2022-09-09",
         "logo": "https://assets.tcgdex.net/ko/swsh/swsh11/logo",
-        "symbol": "https://assets.tcgdex.net/ko/swsh/swsh11/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh11/symbol.png",
         "serieId": "swsh",
         "official": 196,
         "total": 247
@@ -15945,7 +15945,7 @@ object EmbeddedCatalogData {
         "name": "Darkness Ablaze",
         "releaseDate": "2020-08-14",
         "logo": "https://assets.tcgdex.net/ko/swsh/swsh3/logo",
-        "symbol": "https://assets.tcgdex.net/ko/swsh/swsh3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh3/symbol.png",
         "serieId": "swsh",
         "official": 189,
         "total": 201
@@ -15955,7 +15955,7 @@ object EmbeddedCatalogData {
         "name": "Rebel Clash",
         "releaseDate": "2020-05-01",
         "logo": "https://assets.tcgdex.net/ko/swsh/swsh2/logo",
-        "symbol": "https://assets.tcgdex.net/ko/swsh/swsh2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh2/symbol.png",
         "serieId": "swsh",
         "official": 192,
         "total": 209
@@ -15965,7 +15965,7 @@ object EmbeddedCatalogData {
         "name": "SWSH Black Star Promos",
         "releaseDate": "2019-11-15",
         "logo": "https://assets.tcgdex.net/ko/swsh/swshp/logo",
-        "symbol": "https://assets.tcgdex.net/ko/swsh/swshp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swshp/symbol.png",
         "serieId": "swsh",
         "official": 107,
         "total": 287
@@ -15975,7 +15975,7 @@ object EmbeddedCatalogData {
         "name": "Pokémon Futsal 2020",
         "releaseDate": "2020-09-11",
         "logo": "https://assets.tcgdex.net/ko/swsh/fut2020/logo",
-        "symbol": "https://assets.tcgdex.net/ko/swsh/fut2020/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/fut2020/symbol.png",
         "serieId": "swsh",
         "official": 5,
         "total": 5
@@ -15985,7 +15985,7 @@ object EmbeddedCatalogData {
         "name": "Pokémon GO",
         "releaseDate": "2022-07-01",
         "logo": "https://assets.tcgdex.net/ko/swsh/swsh10.5/logo",
-        "symbol": "https://assets.tcgdex.net/ko/swsh/swsh10.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh10.5/symbol.png",
         "serieId": "swsh",
         "official": 78,
         "total": 88
@@ -15995,7 +15995,7 @@ object EmbeddedCatalogData {
         "name": "Brilliant Stars",
         "releaseDate": "2022-02-25",
         "logo": "https://assets.tcgdex.net/ko/swsh/swsh9/logo",
-        "symbol": "https://assets.tcgdex.net/ko/swsh/swsh9/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh9/symbol.png",
         "serieId": "swsh",
         "official": 172,
         "total": 216
@@ -16005,7 +16005,7 @@ object EmbeddedCatalogData {
         "name": "Sword & Shield",
         "releaseDate": "2020-02-07",
         "logo": "https://assets.tcgdex.net/ko/swsh/swsh1/logo",
-        "symbol": "https://assets.tcgdex.net/ko/swsh/swsh1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh1/symbol.png",
         "serieId": "swsh",
         "official": 202,
         "total": 216
@@ -16019,7 +16019,7 @@ object EmbeddedCatalogData {
         "name": "Plasma Storm",
         "releaseDate": "2013-02-06",
         "logo": "https://assets.tcgdex.net/zh/bw/bw8/logo",
-        "symbol": "https://assets.tcgdex.net/zh/bw/bw8/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw8/symbol.png",
         "serieId": "bw",
         "official": 135,
         "total": 138
@@ -16029,7 +16029,7 @@ object EmbeddedCatalogData {
         "name": "Dark Explorers",
         "releaseDate": "2012-05-09",
         "logo": "https://assets.tcgdex.net/zh/bw/bw5/logo",
-        "symbol": "https://assets.tcgdex.net/zh/bw/bw5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw5/symbol.png",
         "serieId": "bw",
         "official": 108,
         "total": 111
@@ -16039,7 +16039,7 @@ object EmbeddedCatalogData {
         "name": "Black & White",
         "releaseDate": "2011-04-25",
         "logo": "https://assets.tcgdex.net/zh/bw/bw1/logo",
-        "symbol": "https://assets.tcgdex.net/zh/bw/bw1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw1/symbol.png",
         "serieId": "bw",
         "official": 114,
         "total": 115
@@ -16049,7 +16049,7 @@ object EmbeddedCatalogData {
         "name": "Boundaries Crossed",
         "releaseDate": "2012-11-07",
         "logo": "https://assets.tcgdex.net/zh/bw/bw7/logo",
-        "symbol": "https://assets.tcgdex.net/zh/bw/bw7/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw7/symbol.png",
         "serieId": "bw",
         "official": 149,
         "total": 153
@@ -16059,7 +16059,7 @@ object EmbeddedCatalogData {
         "name": "Emerging Powers",
         "releaseDate": "2011-08-31",
         "logo": "https://assets.tcgdex.net/zh/bw/bw2/logo",
-        "symbol": "https://assets.tcgdex.net/zh/bw/bw2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw2/symbol.png",
         "serieId": "bw",
         "official": 98,
         "total": 98
@@ -16069,7 +16069,7 @@ object EmbeddedCatalogData {
         "name": "Plasma Freeze",
         "releaseDate": "2013-05-08",
         "logo": "https://assets.tcgdex.net/zh/bw/bw9/logo",
-        "symbol": "https://assets.tcgdex.net/zh/bw/bw9/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw9/symbol.png",
         "serieId": "bw",
         "official": 116,
         "total": 122
@@ -16079,7 +16079,7 @@ object EmbeddedCatalogData {
         "name": "Noble Victories",
         "releaseDate": "2011-11-16",
         "logo": "https://assets.tcgdex.net/zh/bw/bw3/logo",
-        "symbol": "https://assets.tcgdex.net/zh/bw/bw3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw3/symbol.png",
         "serieId": "bw",
         "official": 101,
         "total": 102
@@ -16089,7 +16089,7 @@ object EmbeddedCatalogData {
         "name": "Plasma Blast",
         "releaseDate": "2013-08-14",
         "logo": "https://assets.tcgdex.net/zh/bw/bw10/logo",
-        "symbol": "https://assets.tcgdex.net/zh/bw/bw10/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw10/symbol.png",
         "serieId": "bw",
         "official": 101,
         "total": 105
@@ -16099,7 +16099,7 @@ object EmbeddedCatalogData {
         "name": "Radiant Collection",
         "releaseDate": "2013-11-06",
         "logo": "https://assets.tcgdex.net/zh/bw/rc/logo",
-        "symbol": "https://assets.tcgdex.net/zh/bw/rc/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/rc/symbol.png",
         "serieId": "bw",
         "official": 25,
         "total": 25
@@ -16109,7 +16109,7 @@ object EmbeddedCatalogData {
         "name": "Legendary Treasures",
         "releaseDate": "2013-11-06",
         "logo": "https://assets.tcgdex.net/zh/bw/bw11/logo",
-        "symbol": "https://assets.tcgdex.net/zh/bw/bw11/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw11/symbol.png",
         "serieId": "bw",
         "official": 113,
         "total": 140
@@ -16119,7 +16119,7 @@ object EmbeddedCatalogData {
         "name": "Dragons Exalted",
         "releaseDate": "2012-08-15",
         "logo": "https://assets.tcgdex.net/zh/bw/bw6/logo",
-        "symbol": "https://assets.tcgdex.net/zh/bw/bw6/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw6/symbol.png",
         "serieId": "bw",
         "official": 124,
         "total": 128
@@ -16129,7 +16129,7 @@ object EmbeddedCatalogData {
         "name": "BW Black Star Promos",
         "releaseDate": "2011-04-26",
         "logo": "https://assets.tcgdex.net/zh/bw/bwp/logo",
-        "symbol": "https://assets.tcgdex.net/zh/bw/bwp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bwp/symbol.png",
         "serieId": "bw",
         "official": 101,
         "total": 101
@@ -16139,7 +16139,7 @@ object EmbeddedCatalogData {
         "name": "Next Destinies",
         "releaseDate": "2012-02-08",
         "logo": "https://assets.tcgdex.net/zh/bw/bw4/logo",
-        "symbol": "https://assets.tcgdex.net/zh/bw/bw4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/bw4/symbol.png",
         "serieId": "bw",
         "official": 99,
         "total": 103
@@ -16149,7 +16149,7 @@ object EmbeddedCatalogData {
         "name": "Dragon Vault",
         "releaseDate": "2012-10-05",
         "logo": "https://assets.tcgdex.net/zh/bw/dv1/logo",
-        "symbol": "https://assets.tcgdex.net/zh/bw/dv1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/bw/dv1/symbol.png",
         "serieId": "bw",
         "official": 20,
         "total": 21
@@ -16159,7 +16159,7 @@ object EmbeddedCatalogData {
         "name": "Jungle",
         "releaseDate": "1999-06-16",
         "logo": "https://assets.tcgdex.net/zh/base/base2/logo",
-        "symbol": "https://assets.tcgdex.net/zh/base/base2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/base/base2/symbol.png",
         "serieId": "base",
         "official": 64,
         "total": 64
@@ -16169,7 +16169,7 @@ object EmbeddedCatalogData {
         "name": "Team Rocket",
         "releaseDate": "2000-04-24",
         "logo": "https://assets.tcgdex.net/zh/base/base5/logo",
-        "symbol": "https://assets.tcgdex.net/zh/base/base5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/base/base5/symbol.png",
         "serieId": "base",
         "official": 82,
         "total": 83
@@ -16179,7 +16179,7 @@ object EmbeddedCatalogData {
         "name": "Wizards Black Star Promos",
         "releaseDate": "1999-07-01",
         "logo": "https://assets.tcgdex.net/zh/base/basep/logo",
-        "symbol": "https://assets.tcgdex.net/zh/base/basep/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/base/basep/symbol.png",
         "serieId": "base",
         "official": 53,
         "total": 53
@@ -16189,7 +16189,7 @@ object EmbeddedCatalogData {
         "name": "Fossil",
         "releaseDate": "1999-10-10",
         "logo": "https://assets.tcgdex.net/zh/base/base3/logo",
-        "symbol": "https://assets.tcgdex.net/zh/base/base3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/base/base3/symbol.png",
         "serieId": "base",
         "official": 62,
         "total": 62
@@ -16199,7 +16199,7 @@ object EmbeddedCatalogData {
         "name": "Base Set 2",
         "releaseDate": "2000-02-24",
         "logo": "https://assets.tcgdex.net/zh/base/base4/logo",
-        "symbol": "https://assets.tcgdex.net/zh/base/base4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/base/base4/symbol.png",
         "serieId": "base",
         "official": 130,
         "total": 130
@@ -16209,7 +16209,7 @@ object EmbeddedCatalogData {
         "name": "Base Set",
         "releaseDate": "1999-01-09",
         "logo": "https://assets.tcgdex.net/zh/base/base1/logo",
-        "symbol": "https://assets.tcgdex.net/zh/base/base1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/base/base1/symbol.png",
         "serieId": "base",
         "official": 102,
         "total": 102
@@ -16219,7 +16219,7 @@ object EmbeddedCatalogData {
         "name": "W Promotional",
         "releaseDate": "1999-09-01",
         "logo": "https://assets.tcgdex.net/zh/base/wp/logo",
-        "symbol": "https://assets.tcgdex.net/zh/base/wp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/base/wp/symbol.png",
         "serieId": "base",
         "official": 7,
         "total": 7
@@ -16229,7 +16229,7 @@ object EmbeddedCatalogData {
         "name": "POP Series 8",
         "releaseDate": "2008-09-01",
         "logo": "https://assets.tcgdex.net/zh/pop/pop8/logo",
-        "symbol": "https://assets.tcgdex.net/zh/pop/pop8/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop8/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -16239,7 +16239,7 @@ object EmbeddedCatalogData {
         "name": "POP Series 9",
         "releaseDate": "2009-03-01",
         "logo": "https://assets.tcgdex.net/zh/pop/pop9/logo",
-        "symbol": "https://assets.tcgdex.net/zh/pop/pop9/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop9/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -16249,7 +16249,7 @@ object EmbeddedCatalogData {
         "name": "POP Series 2",
         "releaseDate": "2005-08-01",
         "logo": "https://assets.tcgdex.net/zh/pop/pop2/logo",
-        "symbol": "https://assets.tcgdex.net/zh/pop/pop2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop2/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -16259,7 +16259,7 @@ object EmbeddedCatalogData {
         "name": "POP Series 6",
         "releaseDate": "2007-09-01",
         "logo": "https://assets.tcgdex.net/zh/pop/pop6/logo",
-        "symbol": "https://assets.tcgdex.net/zh/pop/pop6/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop6/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -16269,7 +16269,7 @@ object EmbeddedCatalogData {
         "name": "POP Series 7",
         "releaseDate": "2008-03-01",
         "logo": "https://assets.tcgdex.net/zh/pop/pop7/logo",
-        "symbol": "https://assets.tcgdex.net/zh/pop/pop7/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop7/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -16279,7 +16279,7 @@ object EmbeddedCatalogData {
         "name": "POP Series 3",
         "releaseDate": "2006-04-01",
         "logo": "https://assets.tcgdex.net/zh/pop/pop3/logo",
-        "symbol": "https://assets.tcgdex.net/zh/pop/pop3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop3/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -16289,7 +16289,7 @@ object EmbeddedCatalogData {
         "name": "POP Series 4",
         "releaseDate": "2006-08-01",
         "logo": "https://assets.tcgdex.net/zh/pop/pop4/logo",
-        "symbol": "https://assets.tcgdex.net/zh/pop/pop4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop4/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -16299,7 +16299,7 @@ object EmbeddedCatalogData {
         "name": "POP Series 1",
         "releaseDate": "2004-09-01",
         "logo": "https://assets.tcgdex.net/zh/pop/pop1/logo",
-        "symbol": "https://assets.tcgdex.net/zh/pop/pop1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop1/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -16309,7 +16309,7 @@ object EmbeddedCatalogData {
         "name": "POP Series 5",
         "releaseDate": "2007-03-01",
         "logo": "https://assets.tcgdex.net/zh/pop/pop5/logo",
-        "symbol": "https://assets.tcgdex.net/zh/pop/pop5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/pop5/symbol.png",
         "serieId": "pop",
         "official": 17,
         "total": 17
@@ -16319,7 +16319,7 @@ object EmbeddedCatalogData {
         "name": "Nintendo Black Star Promos",
         "releaseDate": "2003-10-01",
         "logo": "https://assets.tcgdex.net/zh/pop/np/logo",
-        "symbol": "https://assets.tcgdex.net/zh/pop/np/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pop/np/symbol.png",
         "serieId": "pop",
         "official": 40,
         "total": 40
@@ -16329,7 +16329,7 @@ object EmbeddedCatalogData {
         "name": "Call of Legends",
         "releaseDate": "2011-02-09",
         "logo": "https://assets.tcgdex.net/zh/col/col1/logo",
-        "symbol": "https://assets.tcgdex.net/zh/col/col1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/col/col1/symbol.png",
         "serieId": "col",
         "official": 95,
         "total": 106
@@ -16339,7 +16339,7 @@ object EmbeddedCatalogData {
         "name": "Legendary Collection",
         "releaseDate": "2002-05-24",
         "logo": "https://assets.tcgdex.net/zh/lc/lc/logo",
-        "symbol": "https://assets.tcgdex.net/zh/lc/lc/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/lc/lc/symbol.png",
         "serieId": "lc",
         "official": 110,
         "total": 110
@@ -16349,7 +16349,7 @@ object EmbeddedCatalogData {
         "name": "Macdonald's Collection 2021",
         "releaseDate": "2021-02-09",
         "logo": "https://assets.tcgdex.net/zh/mc/2021swsh/logo",
-        "symbol": "https://assets.tcgdex.net/zh/mc/2021swsh/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2021swsh/symbol.png",
         "serieId": "mc",
         "official": 25,
         "total": 25
@@ -16359,7 +16359,7 @@ object EmbeddedCatalogData {
         "name": "Macdonald's Collection 2015",
         "releaseDate": "2015-11-27",
         "logo": "https://assets.tcgdex.net/zh/mc/2015xy/logo",
-        "symbol": "https://assets.tcgdex.net/zh/mc/2015xy/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2015xy/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 12
@@ -16369,7 +16369,7 @@ object EmbeddedCatalogData {
         "name": "Promo McDonald's 2019",
         "releaseDate": "2019-10-30",
         "logo": "https://assets.tcgdex.net/zh/mc/2019sm-fr/logo",
-        "symbol": "https://assets.tcgdex.net/zh/mc/2019sm-fr/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2019sm-fr/symbol.png",
         "serieId": "mc",
         "official": 40,
         "total": 40
@@ -16379,7 +16379,7 @@ object EmbeddedCatalogData {
         "name": "Macdonald's Collection 2011",
         "releaseDate": "2011-06-17",
         "logo": "https://assets.tcgdex.net/zh/mc/2011bw/logo",
-        "symbol": "https://assets.tcgdex.net/zh/mc/2011bw/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2011bw/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 12
@@ -16389,7 +16389,7 @@ object EmbeddedCatalogData {
         "name": "Promo McDonald's 2018",
         "releaseDate": "2018-06-13",
         "logo": "https://assets.tcgdex.net/zh/mc/2018sm-fr/logo",
-        "symbol": "https://assets.tcgdex.net/zh/mc/2018sm-fr/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2018sm-fr/symbol.png",
         "serieId": "mc",
         "official": 40,
         "total": 40
@@ -16399,7 +16399,7 @@ object EmbeddedCatalogData {
         "name": "Macdonald's Collection 2014",
         "releaseDate": "2014-05-23",
         "logo": "https://assets.tcgdex.net/zh/mc/2014xy/logo",
-        "symbol": "https://assets.tcgdex.net/zh/mc/2014xy/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2014xy/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 12
@@ -16409,7 +16409,7 @@ object EmbeddedCatalogData {
         "name": "Promo McDonald's 2013",
         "releaseDate": "2013-11-01",
         "logo": "https://assets.tcgdex.net/zh/mc/2013bw/logo",
-        "symbol": "https://assets.tcgdex.net/zh/mc/2013bw/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2013bw/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 1
@@ -16419,7 +16419,7 @@ object EmbeddedCatalogData {
         "name": "Macdonald's Collection 2019",
         "releaseDate": "2019-10-15",
         "logo": "https://assets.tcgdex.net/zh/mc/2019sm/logo",
-        "symbol": "https://assets.tcgdex.net/zh/mc/2019sm/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2019sm/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 12
@@ -16429,7 +16429,7 @@ object EmbeddedCatalogData {
         "name": "Macdonald's Collection 2018",
         "releaseDate": "2018-10-19",
         "logo": "https://assets.tcgdex.net/zh/mc/2018sm/logo",
-        "symbol": "https://assets.tcgdex.net/zh/mc/2018sm/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2018sm/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 12
@@ -16439,7 +16439,7 @@ object EmbeddedCatalogData {
         "name": "Macdonald's Collection 2017",
         "releaseDate": "2017-08-03",
         "logo": "https://assets.tcgdex.net/zh/mc/2017sm/logo",
-        "symbol": "https://assets.tcgdex.net/zh/mc/2017sm/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2017sm/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 12
@@ -16449,7 +16449,7 @@ object EmbeddedCatalogData {
         "name": "Macdonald's Collection 2016",
         "releaseDate": "2016-08-20",
         "logo": "https://assets.tcgdex.net/zh/mc/2016xy/logo",
-        "symbol": "https://assets.tcgdex.net/zh/mc/2016xy/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2016xy/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 12
@@ -16459,7 +16459,7 @@ object EmbeddedCatalogData {
         "name": "Macdonald's Collection 2012",
         "releaseDate": "2012-06-15",
         "logo": "https://assets.tcgdex.net/zh/mc/2012bw/logo",
-        "symbol": "https://assets.tcgdex.net/zh/mc/2012bw/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/mc/2012bw/symbol.png",
         "serieId": "mc",
         "official": 12,
         "total": 12
@@ -16469,7 +16469,7 @@ object EmbeddedCatalogData {
         "name": "FireRed & LeafGreen",
         "releaseDate": "2004-09-01",
         "logo": "https://assets.tcgdex.net/zh/ex/ex6/logo",
-        "symbol": "https://assets.tcgdex.net/zh/ex/ex6/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex6/symbol.png",
         "serieId": "ex",
         "official": 112,
         "total": 116
@@ -16479,7 +16479,7 @@ object EmbeddedCatalogData {
         "name": "Team Magma vs Team Aqua",
         "releaseDate": "2004-03-01",
         "logo": "https://assets.tcgdex.net/zh/ex/ex4/logo",
-        "symbol": "https://assets.tcgdex.net/zh/ex/ex4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex4/symbol.png",
         "serieId": "ex",
         "official": 95,
         "total": 97
@@ -16489,7 +16489,7 @@ object EmbeddedCatalogData {
         "name": "Sandstorm",
         "releaseDate": "2003-09-18",
         "logo": "https://assets.tcgdex.net/zh/ex/ex2/logo",
-        "symbol": "https://assets.tcgdex.net/zh/ex/ex2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex2/symbol.png",
         "serieId": "ex",
         "official": 100,
         "total": 100
@@ -16499,7 +16499,7 @@ object EmbeddedCatalogData {
         "name": "Team Rocket Returns",
         "releaseDate": "2004-11-01",
         "logo": "https://assets.tcgdex.net/zh/ex/ex7/logo",
-        "symbol": "https://assets.tcgdex.net/zh/ex/ex7/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex7/symbol.png",
         "serieId": "ex",
         "official": 109,
         "total": 111
@@ -16509,7 +16509,7 @@ object EmbeddedCatalogData {
         "name": "Legend Maker",
         "releaseDate": "2006-02-13",
         "logo": "https://assets.tcgdex.net/zh/ex/ex12/logo",
-        "symbol": "https://assets.tcgdex.net/zh/ex/ex12/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex12/symbol.png",
         "serieId": "ex",
         "official": 92,
         "total": 93
@@ -16519,7 +16519,7 @@ object EmbeddedCatalogData {
         "name": "Dragon Frontiers",
         "releaseDate": "2006-11-08",
         "logo": "https://assets.tcgdex.net/zh/ex/ex15/logo",
-        "symbol": "https://assets.tcgdex.net/zh/ex/ex15/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex15/symbol.png",
         "serieId": "ex",
         "official": 101,
         "total": 101
@@ -16529,7 +16529,7 @@ object EmbeddedCatalogData {
         "name": "Power Keepers",
         "releaseDate": "2007-02-17",
         "logo": "https://assets.tcgdex.net/zh/ex/ex16/logo",
-        "symbol": "https://assets.tcgdex.net/zh/ex/ex16/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex16/symbol.png",
         "serieId": "ex",
         "official": 108,
         "total": 108
@@ -16539,7 +16539,7 @@ object EmbeddedCatalogData {
         "name": "Crystal Guardians",
         "releaseDate": "2006-08-30",
         "logo": "https://assets.tcgdex.net/zh/ex/ex14/logo",
-        "symbol": "https://assets.tcgdex.net/zh/ex/ex14/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex14/symbol.png",
         "serieId": "ex",
         "official": 100,
         "total": 100
@@ -16549,7 +16549,7 @@ object EmbeddedCatalogData {
         "name": "Delta Species",
         "releaseDate": "2005-10-31",
         "logo": "https://assets.tcgdex.net/zh/ex/ex11/logo",
-        "symbol": "https://assets.tcgdex.net/zh/ex/ex11/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex11/symbol.png",
         "serieId": "ex",
         "official": 113,
         "total": 114
@@ -16559,7 +16559,7 @@ object EmbeddedCatalogData {
         "name": "Unseen Forces",
         "releaseDate": "2005-08-22",
         "logo": "https://assets.tcgdex.net/zh/ex/ex10/logo",
-        "symbol": "https://assets.tcgdex.net/zh/ex/ex10/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex10/symbol.png",
         "serieId": "ex",
         "official": 115,
         "total": 117
@@ -16569,7 +16569,7 @@ object EmbeddedCatalogData {
         "name": "Emerald",
         "releaseDate": "2005-05-09",
         "logo": "https://assets.tcgdex.net/zh/ex/ex9/logo",
-        "symbol": "https://assets.tcgdex.net/zh/ex/ex9/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex9/symbol.png",
         "serieId": "ex",
         "official": 106,
         "total": 107
@@ -16579,7 +16579,7 @@ object EmbeddedCatalogData {
         "name": "Deoxys",
         "releaseDate": "2005-02-01",
         "logo": "https://assets.tcgdex.net/zh/ex/ex8/logo",
-        "symbol": "https://assets.tcgdex.net/zh/ex/ex8/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex8/symbol.png",
         "serieId": "ex",
         "official": 107,
         "total": 108
@@ -16589,7 +16589,7 @@ object EmbeddedCatalogData {
         "name": "Poké Card Creator Pack",
         "releaseDate": "2004-07-01",
         "logo": "https://assets.tcgdex.net/zh/ex/ex5.5/logo",
-        "symbol": "https://assets.tcgdex.net/zh/ex/ex5.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex5.5/symbol.png",
         "serieId": "ex",
         "official": 5,
         "total": 5
@@ -16599,7 +16599,7 @@ object EmbeddedCatalogData {
         "name": "Unseen Forces Unown Collection",
         "releaseDate": "2005-08-22",
         "logo": "https://assets.tcgdex.net/zh/ex/exu/logo",
-        "symbol": "https://assets.tcgdex.net/zh/ex/exu/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/exu/symbol.png",
         "serieId": "ex",
         "official": 28,
         "total": 28
@@ -16609,7 +16609,7 @@ object EmbeddedCatalogData {
         "name": "Holon Phantoms",
         "releaseDate": "2006-05-03",
         "logo": "https://assets.tcgdex.net/zh/ex/ex13/logo",
-        "symbol": "https://assets.tcgdex.net/zh/ex/ex13/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex13/symbol.png",
         "serieId": "ex",
         "official": 110,
         "total": 111
@@ -16619,7 +16619,7 @@ object EmbeddedCatalogData {
         "name": "Dragon",
         "releaseDate": "2003-11-24",
         "logo": "https://assets.tcgdex.net/zh/ex/ex3/logo",
-        "symbol": "https://assets.tcgdex.net/zh/ex/ex3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex3/symbol.png",
         "serieId": "ex",
         "official": 97,
         "total": 100
@@ -16629,7 +16629,7 @@ object EmbeddedCatalogData {
         "name": "Ruby & Sapphire",
         "releaseDate": "2003-07-01",
         "logo": "https://assets.tcgdex.net/zh/ex/ex1/logo",
-        "symbol": "https://assets.tcgdex.net/zh/ex/ex1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex1/symbol.png",
         "serieId": "ex",
         "official": 109,
         "total": 109
@@ -16639,7 +16639,7 @@ object EmbeddedCatalogData {
         "name": "Hidden Legends",
         "releaseDate": "2004-06-01",
         "logo": "https://assets.tcgdex.net/zh/ex/ex5/logo",
-        "symbol": "https://assets.tcgdex.net/zh/ex/ex5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ex/ex5/symbol.png",
         "serieId": "ex",
         "official": 101,
         "total": 102
@@ -16649,7 +16649,7 @@ object EmbeddedCatalogData {
         "name": "Jumbo cards",
         "releaseDate": "2000-02-01",
         "logo": "https://assets.tcgdex.net/zh/misc/jumbo/logo",
-        "symbol": "https://assets.tcgdex.net/zh/misc/jumbo/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/misc/jumbo/symbol.png",
         "serieId": "misc",
         "official": 160,
         "total": 160
@@ -16659,7 +16659,7 @@ object EmbeddedCatalogData {
         "name": "Legends Awakened",
         "releaseDate": "2008-08-01",
         "logo": "https://assets.tcgdex.net/zh/dp/dp6/logo",
-        "symbol": "https://assets.tcgdex.net/zh/dp/dp6/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/dp/dp6/symbol.png",
         "serieId": "dp",
         "official": 146,
         "total": 146
@@ -16669,7 +16669,7 @@ object EmbeddedCatalogData {
         "name": "DP Black Star Promos",
         "releaseDate": "2007-05-01",
         "logo": "https://assets.tcgdex.net/zh/dp/dpp/logo",
-        "symbol": "https://assets.tcgdex.net/zh/dp/dpp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/dp/dpp/symbol.png",
         "serieId": "dp",
         "official": 56,
         "total": 56
@@ -16679,7 +16679,7 @@ object EmbeddedCatalogData {
         "name": "Diamond & Pearl",
         "releaseDate": "2007-05-01",
         "logo": "https://assets.tcgdex.net/zh/dp/dp1/logo",
-        "symbol": "https://assets.tcgdex.net/zh/dp/dp1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/dp/dp1/symbol.png",
         "serieId": "dp",
         "official": 130,
         "total": 130
@@ -16689,7 +16689,7 @@ object EmbeddedCatalogData {
         "name": "Mysterious Treasures",
         "releaseDate": "2007-08-01",
         "logo": "https://assets.tcgdex.net/zh/dp/dp2/logo",
-        "symbol": "https://assets.tcgdex.net/zh/dp/dp2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/dp/dp2/symbol.png",
         "serieId": "dp",
         "official": 122,
         "total": 124
@@ -16699,7 +16699,7 @@ object EmbeddedCatalogData {
         "name": "Great Encounters",
         "releaseDate": "2008-02-01",
         "logo": "https://assets.tcgdex.net/zh/dp/dp4/logo",
-        "symbol": "https://assets.tcgdex.net/zh/dp/dp4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/dp/dp4/symbol.png",
         "serieId": "dp",
         "official": 106,
         "total": 106
@@ -16709,7 +16709,7 @@ object EmbeddedCatalogData {
         "name": "Secret Wonders",
         "releaseDate": "2007-11-01",
         "logo": "https://assets.tcgdex.net/zh/dp/dp3/logo",
-        "symbol": "https://assets.tcgdex.net/zh/dp/dp3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/dp/dp3/symbol.png",
         "serieId": "dp",
         "official": 132,
         "total": 132
@@ -16719,7 +16719,7 @@ object EmbeddedCatalogData {
         "name": "Stormfront",
         "releaseDate": "2008-11-01",
         "logo": "https://assets.tcgdex.net/zh/dp/dp7/logo",
-        "symbol": "https://assets.tcgdex.net/zh/dp/dp7/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/dp/dp7/symbol.png",
         "serieId": "dp",
         "official": 100,
         "total": 106
@@ -16729,7 +16729,7 @@ object EmbeddedCatalogData {
         "name": "Majestic Dawn",
         "releaseDate": "2008-05-01",
         "logo": "https://assets.tcgdex.net/zh/dp/dp5/logo",
-        "symbol": "https://assets.tcgdex.net/zh/dp/dp5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/dp/dp5/symbol.png",
         "serieId": "dp",
         "official": 100,
         "total": 100
@@ -16739,7 +16739,7 @@ object EmbeddedCatalogData {
         "name": "Neo Destiny",
         "releaseDate": "2002-02-28",
         "logo": "https://assets.tcgdex.net/zh/neo/neo4/logo",
-        "symbol": "https://assets.tcgdex.net/zh/neo/neo4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/neo/neo4/symbol.png",
         "serieId": "neo",
         "official": 105,
         "total": 113
@@ -16749,7 +16749,7 @@ object EmbeddedCatalogData {
         "name": "Neo Genesis",
         "releaseDate": "2000-12-16",
         "logo": "https://assets.tcgdex.net/zh/neo/neo1/logo",
-        "symbol": "https://assets.tcgdex.net/zh/neo/neo1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/neo/neo1/symbol.png",
         "serieId": "neo",
         "official": 111,
         "total": 111
@@ -16759,7 +16759,7 @@ object EmbeddedCatalogData {
         "name": "Neo Discovery",
         "releaseDate": "2001-06-01",
         "logo": "https://assets.tcgdex.net/zh/neo/neo2/logo",
-        "symbol": "https://assets.tcgdex.net/zh/neo/neo2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/neo/neo2/symbol.png",
         "serieId": "neo",
         "official": 75,
         "total": 75
@@ -16769,7 +16769,7 @@ object EmbeddedCatalogData {
         "name": "Southern Islands",
         "releaseDate": "2001-07-31",
         "logo": "https://assets.tcgdex.net/zh/neo/si1/logo",
-        "symbol": "https://assets.tcgdex.net/zh/neo/si1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/neo/si1/symbol.png",
         "serieId": "neo",
         "official": 18,
         "total": 18
@@ -16779,7 +16779,7 @@ object EmbeddedCatalogData {
         "name": "Neo Revelation",
         "releaseDate": "2001-09-21",
         "logo": "https://assets.tcgdex.net/zh/neo/neo3/logo",
-        "symbol": "https://assets.tcgdex.net/zh/neo/neo3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/neo/neo3/symbol.png",
         "serieId": "neo",
         "official": 64,
         "total": 66
@@ -16789,7 +16789,7 @@ object EmbeddedCatalogData {
         "name": "Ultra Prism",
         "releaseDate": "2018-02-02",
         "logo": "https://assets.tcgdex.net/zh/sm/sm5/logo",
-        "symbol": "https://assets.tcgdex.net/zh/sm/sm5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm5/symbol.png",
         "serieId": "sm",
         "official": 156,
         "total": 173
@@ -16799,7 +16799,7 @@ object EmbeddedCatalogData {
         "name": "Unbroken Bonds",
         "releaseDate": "2019-05-03",
         "logo": "https://assets.tcgdex.net/zh/sm/sm10/logo",
-        "symbol": "https://assets.tcgdex.net/zh/sm/sm10/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm10/symbol.png",
         "serieId": "sm",
         "official": 214,
         "total": 234
@@ -16809,7 +16809,7 @@ object EmbeddedCatalogData {
         "name": "Cosmic Eclipse",
         "releaseDate": "2019-11-01",
         "logo": "https://assets.tcgdex.net/zh/sm/sm12/logo",
-        "symbol": "https://assets.tcgdex.net/zh/sm/sm12/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm12/symbol.png",
         "serieId": "sm",
         "official": 236,
         "total": 271
@@ -16819,7 +16819,7 @@ object EmbeddedCatalogData {
         "name": "Yellow A Alternate",
         "releaseDate": "2019-08-23",
         "logo": "https://assets.tcgdex.net/zh/sm/sma/logo",
-        "symbol": "https://assets.tcgdex.net/zh/sm/sma/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sma/symbol.png",
         "serieId": "sm",
         "official": 94,
         "total": 94
@@ -16829,7 +16829,7 @@ object EmbeddedCatalogData {
         "name": "Unified Minds",
         "releaseDate": "2019-08-02",
         "logo": "https://assets.tcgdex.net/zh/sm/sm11/logo",
-        "symbol": "https://assets.tcgdex.net/zh/sm/sm11/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm11/symbol.png",
         "serieId": "sm",
         "official": 236,
         "total": 258
@@ -16839,7 +16839,7 @@ object EmbeddedCatalogData {
         "name": "Detective Pikachu",
         "releaseDate": "2019-03-29",
         "logo": "https://assets.tcgdex.net/zh/sm/det1/logo",
-        "symbol": "https://assets.tcgdex.net/zh/sm/det1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/det1/symbol.png",
         "serieId": "sm",
         "official": 18,
         "total": 18
@@ -16849,7 +16849,7 @@ object EmbeddedCatalogData {
         "name": "Sun & Moon",
         "releaseDate": "2017-02-03",
         "logo": "https://assets.tcgdex.net/zh/sm/sm1/logo",
-        "symbol": "https://assets.tcgdex.net/zh/sm/sm1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm1/symbol.png",
         "serieId": "sm",
         "official": 149,
         "total": 172
@@ -16859,7 +16859,7 @@ object EmbeddedCatalogData {
         "name": "Hidden Fates",
         "releaseDate": "2019-08-23",
         "logo": "https://assets.tcgdex.net/zh/sm/sm115/logo",
-        "symbol": "https://assets.tcgdex.net/zh/sm/sm115/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm115/symbol.png",
         "serieId": "sm",
         "official": 68,
         "total": 69
@@ -16869,7 +16869,7 @@ object EmbeddedCatalogData {
         "name": "Forbidden Light",
         "releaseDate": "2018-05-04",
         "logo": "https://assets.tcgdex.net/zh/sm/sm6/logo",
-        "symbol": "https://assets.tcgdex.net/zh/sm/sm6/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm6/symbol.png",
         "serieId": "sm",
         "official": 131,
         "total": 146
@@ -16879,7 +16879,7 @@ object EmbeddedCatalogData {
         "name": "Celestial Storm",
         "releaseDate": "2018-08-03",
         "logo": "https://assets.tcgdex.net/zh/sm/sm7/logo",
-        "symbol": "https://assets.tcgdex.net/zh/sm/sm7/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm7/symbol.png",
         "serieId": "sm",
         "official": 168,
         "total": 183
@@ -16889,7 +16889,7 @@ object EmbeddedCatalogData {
         "name": "Dragon Majesty",
         "releaseDate": "2018-09-07",
         "logo": "https://assets.tcgdex.net/zh/sm/sm7.5/logo",
-        "symbol": "https://assets.tcgdex.net/zh/sm/sm7.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm7.5/symbol.png",
         "serieId": "sm",
         "official": 70,
         "total": 78
@@ -16899,7 +16899,7 @@ object EmbeddedCatalogData {
         "name": "Shining Legends",
         "releaseDate": "2017-10-06",
         "logo": "https://assets.tcgdex.net/zh/sm/sm3.5/logo",
-        "symbol": "https://assets.tcgdex.net/zh/sm/sm3.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm3.5/symbol.png",
         "serieId": "sm",
         "official": 73,
         "total": 78
@@ -16909,7 +16909,7 @@ object EmbeddedCatalogData {
         "name": "Team Up",
         "releaseDate": "2019-01-31",
         "logo": "https://assets.tcgdex.net/zh/sm/sm9/logo",
-        "symbol": "https://assets.tcgdex.net/zh/sm/sm9/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm9/symbol.png",
         "serieId": "sm",
         "official": 181,
         "total": 196
@@ -16919,7 +16919,7 @@ object EmbeddedCatalogData {
         "name": "Lost Thunder",
         "releaseDate": "2018-11-02",
         "logo": "https://assets.tcgdex.net/zh/sm/sm8/logo",
-        "symbol": "https://assets.tcgdex.net/zh/sm/sm8/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm8/symbol.png",
         "serieId": "sm",
         "official": 214,
         "total": 236
@@ -16929,7 +16929,7 @@ object EmbeddedCatalogData {
         "name": "Guardians Rising",
         "releaseDate": "2017-05-05",
         "logo": "https://assets.tcgdex.net/zh/sm/sm2/logo",
-        "symbol": "https://assets.tcgdex.net/zh/sm/sm2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm2/symbol.png",
         "serieId": "sm",
         "official": 145,
         "total": 169
@@ -16939,7 +16939,7 @@ object EmbeddedCatalogData {
         "name": "Crimson Invasion",
         "releaseDate": "2017-11-03",
         "logo": "https://assets.tcgdex.net/zh/sm/sm4/logo",
-        "symbol": "https://assets.tcgdex.net/zh/sm/sm4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm4/symbol.png",
         "serieId": "sm",
         "official": 111,
         "total": 125
@@ -16949,7 +16949,7 @@ object EmbeddedCatalogData {
         "name": "Burning Shadows",
         "releaseDate": "2017-08-04",
         "logo": "https://assets.tcgdex.net/zh/sm/sm3/logo",
-        "symbol": "https://assets.tcgdex.net/zh/sm/sm3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/sm3/symbol.png",
         "serieId": "sm",
         "official": 147,
         "total": 169
@@ -16959,7 +16959,7 @@ object EmbeddedCatalogData {
         "name": "SM Black Star Promos",
         "releaseDate": "2017-02-03",
         "logo": "https://assets.tcgdex.net/zh/sm/smp/logo",
-        "symbol": "https://assets.tcgdex.net/zh/sm/smp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sm/smp/symbol.png",
         "serieId": "sm",
         "official": 236,
         "total": 244
@@ -16969,7 +16969,7 @@ object EmbeddedCatalogData {
         "name": "MEP Black Star Promos",
         "releaseDate": "2025-09-26",
         "logo": "https://assets.tcgdex.net/zh/me/mep/logo",
-        "symbol": "https://assets.tcgdex.net/zh/me/mep/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/me/mep/symbol.png",
         "serieId": "me",
         "official": 0,
         "total": 10
@@ -16979,7 +16979,7 @@ object EmbeddedCatalogData {
         "name": "Mega Evolution",
         "releaseDate": "2025-09-26",
         "logo": "https://assets.tcgdex.net/zh/me/me01/logo",
-        "symbol": "https://assets.tcgdex.net/zh/me/me01/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/me/me01/symbol.png",
         "serieId": "me",
         "official": 132,
         "total": 188
@@ -16989,7 +16989,7 @@ object EmbeddedCatalogData {
         "name": "Phantasmal Flames",
         "releaseDate": "2025-11-14",
         "logo": "https://assets.tcgdex.net/zh/me/me02/logo",
-        "symbol": "https://assets.tcgdex.net/zh/me/me02/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/me/me02/symbol.png",
         "serieId": "me",
         "official": 94,
         "total": 130
@@ -16999,7 +16999,7 @@ object EmbeddedCatalogData {
         "name": "HeartGold SoulSilver",
         "releaseDate": "2010-02-10",
         "logo": "https://assets.tcgdex.net/zh/hgss/hgss1/logo",
-        "symbol": "https://assets.tcgdex.net/zh/hgss/hgss1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/hgss/hgss1/symbol.png",
         "serieId": "hgss",
         "official": 123,
         "total": 124
@@ -17009,7 +17009,7 @@ object EmbeddedCatalogData {
         "name": "Unleashed",
         "releaseDate": "2010-05-12",
         "logo": "https://assets.tcgdex.net/zh/hgss/hgss2/logo",
-        "symbol": "https://assets.tcgdex.net/zh/hgss/hgss2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/hgss/hgss2/symbol.png",
         "serieId": "hgss",
         "official": 95,
         "total": 96
@@ -17019,7 +17019,7 @@ object EmbeddedCatalogData {
         "name": "Triumphant",
         "releaseDate": "2010-11-03",
         "logo": "https://assets.tcgdex.net/zh/hgss/hgss4/logo",
-        "symbol": "https://assets.tcgdex.net/zh/hgss/hgss4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/hgss/hgss4/symbol.png",
         "serieId": "hgss",
         "official": 102,
         "total": 103
@@ -17029,7 +17029,7 @@ object EmbeddedCatalogData {
         "name": "HGSS Black Star Promos",
         "releaseDate": "2010-02-11",
         "logo": "https://assets.tcgdex.net/zh/hgss/hgssp/logo",
-        "symbol": "https://assets.tcgdex.net/zh/hgss/hgssp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/hgss/hgssp/symbol.png",
         "serieId": "hgss",
         "official": 25,
         "total": 25
@@ -17039,7 +17039,7 @@ object EmbeddedCatalogData {
         "name": "Undaunted",
         "releaseDate": "2010-08-18",
         "logo": "https://assets.tcgdex.net/zh/hgss/hgss3/logo",
-        "symbol": "https://assets.tcgdex.net/zh/hgss/hgss3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/hgss/hgss3/symbol.png",
         "serieId": "hgss",
         "official": 90,
         "total": 91
@@ -17049,7 +17049,7 @@ object EmbeddedCatalogData {
         "name": "Skyridge",
         "releaseDate": "2003-05-12",
         "logo": "https://assets.tcgdex.net/zh/ecard/ecard3/logo",
-        "symbol": "https://assets.tcgdex.net/zh/ecard/ecard3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ecard/ecard3/symbol.png",
         "serieId": "ecard",
         "official": 144,
         "total": 182
@@ -17059,7 +17059,7 @@ object EmbeddedCatalogData {
         "name": "Aquapolis",
         "releaseDate": "2003-01-15",
         "logo": "https://assets.tcgdex.net/zh/ecard/ecard2/logo",
-        "symbol": "https://assets.tcgdex.net/zh/ecard/ecard2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ecard/ecard2/symbol.png",
         "serieId": "ecard",
         "official": 147,
         "total": 186
@@ -17069,7 +17069,7 @@ object EmbeddedCatalogData {
         "name": "Sample",
         "releaseDate": "2002-08-01",
         "logo": "https://assets.tcgdex.net/zh/ecard/sp/logo",
-        "symbol": "https://assets.tcgdex.net/zh/ecard/sp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ecard/sp/symbol.png",
         "serieId": "ecard",
         "official": 10,
         "total": 10
@@ -17079,7 +17079,7 @@ object EmbeddedCatalogData {
         "name": "Best of game",
         "releaseDate": "2002-12-01",
         "logo": "https://assets.tcgdex.net/zh/ecard/bog/logo",
-        "symbol": "https://assets.tcgdex.net/zh/ecard/bog/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ecard/bog/symbol.png",
         "serieId": "ecard",
         "official": 9,
         "total": 9
@@ -17089,7 +17089,7 @@ object EmbeddedCatalogData {
         "name": "Expedition Base Set",
         "releaseDate": "2002-09-15",
         "logo": "https://assets.tcgdex.net/zh/ecard/ecard1/logo",
-        "symbol": "https://assets.tcgdex.net/zh/ecard/ecard1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/ecard/ecard1/symbol.png",
         "serieId": "ecard",
         "official": 165,
         "total": 165
@@ -17099,7 +17099,7 @@ object EmbeddedCatalogData {
         "name": "Paldean Fates",
         "releaseDate": "2024-01-26",
         "logo": "https://assets.tcgdex.net/zh/sv/sv04.5/logo",
-        "symbol": "https://assets.tcgdex.net/zh/sv/sv04.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv04.5/symbol.png",
         "serieId": "sv",
         "official": 91,
         "total": 245
@@ -17109,7 +17109,7 @@ object EmbeddedCatalogData {
         "name": "Shrouded Fable",
         "releaseDate": "2024-08-02",
         "logo": "https://assets.tcgdex.net/zh/sv/sv06.5/logo",
-        "symbol": "https://assets.tcgdex.net/zh/sv/sv06.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv06.5/symbol.png",
         "serieId": "sv",
         "official": 64,
         "total": 99
@@ -17119,7 +17119,7 @@ object EmbeddedCatalogData {
         "name": "Prismatic Evolutions",
         "releaseDate": "2025-01-17",
         "logo": "https://assets.tcgdex.net/zh/sv/sv08.5/logo",
-        "symbol": "https://assets.tcgdex.net/zh/sv/sv08.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv08.5/symbol.png",
         "serieId": "sv",
         "official": 131,
         "total": 180
@@ -17129,7 +17129,7 @@ object EmbeddedCatalogData {
         "name": "White Flare",
         "releaseDate": "2025-07-17",
         "logo": "https://assets.tcgdex.net/zh/sv/sv10.5w/logo",
-        "symbol": "https://assets.tcgdex.net/zh/sv/sv10.5w/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv10.5w/symbol.png",
         "serieId": "sv",
         "official": 86,
         "total": 173
@@ -17139,7 +17139,7 @@ object EmbeddedCatalogData {
         "name": "Paldea Evolved",
         "releaseDate": "2023-06-09",
         "logo": "https://assets.tcgdex.net/zh/sv/sv02/logo",
-        "symbol": "https://assets.tcgdex.net/zh/sv/sv02/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv02/symbol.png",
         "serieId": "sv",
         "official": 193,
         "total": 279
@@ -17149,7 +17149,7 @@ object EmbeddedCatalogData {
         "name": "151",
         "releaseDate": "2023-09-22",
         "logo": "https://assets.tcgdex.net/zh/sv/sv03.5/logo",
-        "symbol": "https://assets.tcgdex.net/zh/sv/sv03.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv03.5/symbol.png",
         "serieId": "sv",
         "official": 165,
         "total": 207
@@ -17159,7 +17159,7 @@ object EmbeddedCatalogData {
         "name": "Destined Rivals",
         "releaseDate": "2025-05-30",
         "logo": "https://assets.tcgdex.net/zh/sv/sv10/logo",
-        "symbol": "https://assets.tcgdex.net/zh/sv/sv10/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv10/symbol.png",
         "serieId": "sv",
         "official": 182,
         "total": 244
@@ -17169,7 +17169,7 @@ object EmbeddedCatalogData {
         "name": "Paradox Rift",
         "releaseDate": "2023-11-03",
         "logo": "https://assets.tcgdex.net/zh/sv/sv04/logo",
-        "symbol": "https://assets.tcgdex.net/zh/sv/sv04/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv04/symbol.png",
         "serieId": "sv",
         "official": 182,
         "total": 266
@@ -17179,7 +17179,7 @@ object EmbeddedCatalogData {
         "name": "Obsidian Flames",
         "releaseDate": "2023-08-11",
         "logo": "https://assets.tcgdex.net/zh/sv/sv03/logo",
-        "symbol": "https://assets.tcgdex.net/zh/sv/sv03/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv03/symbol.png",
         "serieId": "sv",
         "official": 197,
         "total": 230
@@ -17189,7 +17189,7 @@ object EmbeddedCatalogData {
         "name": "Surging Sparks",
         "releaseDate": "2024-11-08",
         "logo": "https://assets.tcgdex.net/zh/sv/sv08/logo",
-        "symbol": "https://assets.tcgdex.net/zh/sv/sv08/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv08/symbol.png",
         "serieId": "sv",
         "official": 191,
         "total": 252
@@ -17199,7 +17199,7 @@ object EmbeddedCatalogData {
         "name": "Black Bolt",
         "releaseDate": "2025-07-17",
         "logo": "https://assets.tcgdex.net/zh/sv/sv10.5b/logo",
-        "symbol": "https://assets.tcgdex.net/zh/sv/sv10.5b/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv10.5b/symbol.png",
         "serieId": "sv",
         "official": 86,
         "total": 172
@@ -17209,7 +17209,7 @@ object EmbeddedCatalogData {
         "name": "Twilight Masquerade",
         "releaseDate": "2024-05-24",
         "logo": "https://assets.tcgdex.net/zh/sv/sv06/logo",
-        "symbol": "https://assets.tcgdex.net/zh/sv/sv06/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv06/symbol.png",
         "serieId": "sv",
         "official": 167,
         "total": 226
@@ -17219,7 +17219,7 @@ object EmbeddedCatalogData {
         "name": "Temporal Forces",
         "releaseDate": "2024-03-22",
         "logo": "https://assets.tcgdex.net/zh/sv/sv05/logo",
-        "symbol": "https://assets.tcgdex.net/zh/sv/sv05/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv05/symbol.png",
         "serieId": "sv",
         "official": 162,
         "total": 218
@@ -17229,7 +17229,7 @@ object EmbeddedCatalogData {
         "name": "Stellar Crown",
         "releaseDate": "2024-09-13",
         "logo": "https://assets.tcgdex.net/zh/sv/sv07/logo",
-        "symbol": "https://assets.tcgdex.net/zh/sv/sv07/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv07/symbol.png",
         "serieId": "sv",
         "official": 142,
         "total": 175
@@ -17239,7 +17239,7 @@ object EmbeddedCatalogData {
         "name": "SVP Black Star Promos",
         "releaseDate": "2023-03-31",
         "logo": "https://assets.tcgdex.net/zh/sv/svp/logo",
-        "symbol": "https://assets.tcgdex.net/zh/sv/svp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/svp/symbol.png",
         "serieId": "sv",
         "official": 0,
         "total": 219
@@ -17249,7 +17249,7 @@ object EmbeddedCatalogData {
         "name": "Scarlet & Violet",
         "releaseDate": "2023-03-31",
         "logo": "https://assets.tcgdex.net/zh/sv/sv01/logo",
-        "symbol": "https://assets.tcgdex.net/zh/sv/sv01/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv01/symbol.png",
         "serieId": "sv",
         "official": 198,
         "total": 258
@@ -17259,7 +17259,7 @@ object EmbeddedCatalogData {
         "name": "Journey Together",
         "releaseDate": "2025-03-28",
         "logo": "https://assets.tcgdex.net/zh/sv/sv09/logo",
-        "symbol": "https://assets.tcgdex.net/zh/sv/sv09/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/sv/sv09/symbol.png",
         "serieId": "sv",
         "official": 159,
         "total": 190
@@ -17269,7 +17269,7 @@ object EmbeddedCatalogData {
         "name": "Yello A Alternate",
         "releaseDate": "2014-02-05",
         "logo": "https://assets.tcgdex.net/zh/xy/xya/logo",
-        "symbol": "https://assets.tcgdex.net/zh/xy/xya/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xya/symbol.png",
         "serieId": "xy",
         "official": 6,
         "total": 6
@@ -17279,7 +17279,7 @@ object EmbeddedCatalogData {
         "name": "Roaring Skies",
         "releaseDate": "2015-05-06",
         "logo": "https://assets.tcgdex.net/zh/xy/xy6/logo",
-        "symbol": "https://assets.tcgdex.net/zh/xy/xy6/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy6/symbol.png",
         "serieId": "xy",
         "official": 108,
         "total": 112
@@ -17289,7 +17289,7 @@ object EmbeddedCatalogData {
         "name": "Ancient Origins",
         "releaseDate": "2015-08-12",
         "logo": "https://assets.tcgdex.net/zh/xy/xy7/logo",
-        "symbol": "https://assets.tcgdex.net/zh/xy/xy7/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy7/symbol.png",
         "serieId": "xy",
         "official": 98,
         "total": 101
@@ -17299,7 +17299,7 @@ object EmbeddedCatalogData {
         "name": "BREAKpoint",
         "releaseDate": "2016-02-03",
         "logo": "https://assets.tcgdex.net/zh/xy/xy9/logo",
-        "symbol": "https://assets.tcgdex.net/zh/xy/xy9/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy9/symbol.png",
         "serieId": "xy",
         "official": 122,
         "total": 126
@@ -17309,7 +17309,7 @@ object EmbeddedCatalogData {
         "name": "Primal Clash",
         "releaseDate": "2015-02-04",
         "logo": "https://assets.tcgdex.net/zh/xy/xy5/logo",
-        "symbol": "https://assets.tcgdex.net/zh/xy/xy5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy5/symbol.png",
         "serieId": "xy",
         "official": 160,
         "total": 164
@@ -17319,7 +17319,7 @@ object EmbeddedCatalogData {
         "name": "XY Black Star Promos",
         "releaseDate": "2013-10-12",
         "logo": "https://assets.tcgdex.net/zh/xy/xyp/logo",
-        "symbol": "https://assets.tcgdex.net/zh/xy/xyp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xyp/symbol.png",
         "serieId": "xy",
         "official": 211,
         "total": 216
@@ -17329,7 +17329,7 @@ object EmbeddedCatalogData {
         "name": "Kalos Starter Set",
         "releaseDate": "2013-11-08",
         "logo": "https://assets.tcgdex.net/zh/xy/xy0/logo",
-        "symbol": "https://assets.tcgdex.net/zh/xy/xy0/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy0/symbol.png",
         "serieId": "xy",
         "official": 39,
         "total": 39
@@ -17339,7 +17339,7 @@ object EmbeddedCatalogData {
         "name": "Flashfire",
         "releaseDate": "2014-05-07",
         "logo": "https://assets.tcgdex.net/zh/xy/xy2/logo",
-        "symbol": "https://assets.tcgdex.net/zh/xy/xy2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy2/symbol.png",
         "serieId": "xy",
         "official": 106,
         "total": 110
@@ -17349,7 +17349,7 @@ object EmbeddedCatalogData {
         "name": "BREAKthrough",
         "releaseDate": "2015-11-04",
         "logo": "https://assets.tcgdex.net/zh/xy/xy8/logo",
-        "symbol": "https://assets.tcgdex.net/zh/xy/xy8/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy8/symbol.png",
         "serieId": "xy",
         "official": 162,
         "total": 165
@@ -17359,7 +17359,7 @@ object EmbeddedCatalogData {
         "name": "Evolutions",
         "releaseDate": "2016-11-02",
         "logo": "https://assets.tcgdex.net/zh/xy/xy12/logo",
-        "symbol": "https://assets.tcgdex.net/zh/xy/xy12/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy12/symbol.png",
         "serieId": "xy",
         "official": 108,
         "total": 113
@@ -17369,7 +17369,7 @@ object EmbeddedCatalogData {
         "name": "Double Crisis",
         "releaseDate": "2015-03-25",
         "logo": "https://assets.tcgdex.net/zh/xy/dc1/logo",
-        "symbol": "https://assets.tcgdex.net/zh/xy/dc1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/dc1/symbol.png",
         "serieId": "xy",
         "official": 34,
         "total": 34
@@ -17379,7 +17379,7 @@ object EmbeddedCatalogData {
         "name": "Generations",
         "releaseDate": "2016-02-22",
         "logo": "https://assets.tcgdex.net/zh/xy/g1/logo",
-        "symbol": "https://assets.tcgdex.net/zh/xy/g1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/g1/symbol.png",
         "serieId": "xy",
         "official": 83,
         "total": 117
@@ -17389,7 +17389,7 @@ object EmbeddedCatalogData {
         "name": "XY",
         "releaseDate": "2014-02-05",
         "logo": "https://assets.tcgdex.net/zh/xy/xy1/logo",
-        "symbol": "https://assets.tcgdex.net/zh/xy/xy1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy1/symbol.png",
         "serieId": "xy",
         "official": 146,
         "total": 146
@@ -17399,7 +17399,7 @@ object EmbeddedCatalogData {
         "name": "Steam Siege",
         "releaseDate": "2016-08-03",
         "logo": "https://assets.tcgdex.net/zh/xy/xy11/logo",
-        "symbol": "https://assets.tcgdex.net/zh/xy/xy11/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy11/symbol.png",
         "serieId": "xy",
         "official": 114,
         "total": 116
@@ -17409,7 +17409,7 @@ object EmbeddedCatalogData {
         "name": "Fates Collide",
         "releaseDate": "2016-05-02",
         "logo": "https://assets.tcgdex.net/zh/xy/xy10/logo",
-        "symbol": "https://assets.tcgdex.net/zh/xy/xy10/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy10/symbol.png",
         "serieId": "xy",
         "official": 124,
         "total": 129
@@ -17419,7 +17419,7 @@ object EmbeddedCatalogData {
         "name": "Furious Fists",
         "releaseDate": "2014-08-13",
         "logo": "https://assets.tcgdex.net/zh/xy/xy3/logo",
-        "symbol": "https://assets.tcgdex.net/zh/xy/xy3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy3/symbol.png",
         "serieId": "xy",
         "official": 111,
         "total": 114
@@ -17429,7 +17429,7 @@ object EmbeddedCatalogData {
         "name": "Phantom Forces",
         "releaseDate": "2014-11-05",
         "logo": "https://assets.tcgdex.net/zh/xy/xy4/logo",
-        "symbol": "https://assets.tcgdex.net/zh/xy/xy4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/xy/xy4/symbol.png",
         "serieId": "xy",
         "official": 119,
         "total": 124
@@ -17439,7 +17439,7 @@ object EmbeddedCatalogData {
         "name": "HS trainer Kit (Gyarados)",
         "releaseDate": "2010-05-01",
         "logo": "https://assets.tcgdex.net/zh/tk/tk-hs-g/logo",
-        "symbol": "https://assets.tcgdex.net/zh/tk/tk-hs-g/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-hs-g/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 1
@@ -17449,7 +17449,7 @@ object EmbeddedCatalogData {
         "name": "EX trainer Kit 2 (Plusle)",
         "releaseDate": "2006-03-01",
         "logo": "https://assets.tcgdex.net/zh/tk/tk-ex-p/logo",
-        "symbol": "https://assets.tcgdex.net/zh/tk/tk-ex-p/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-ex-p/symbol.png",
         "serieId": "tk",
         "official": 12,
         "total": 12
@@ -17459,7 +17459,7 @@ object EmbeddedCatalogData {
         "name": "EX trainer Kit 2 (Minun)",
         "releaseDate": "2006-03-01",
         "logo": "https://assets.tcgdex.net/zh/tk/tk-ex-m/logo",
-        "symbol": "https://assets.tcgdex.net/zh/tk/tk-ex-m/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-ex-m/symbol.png",
         "serieId": "tk",
         "official": 12,
         "total": 12
@@ -17469,7 +17469,7 @@ object EmbeddedCatalogData {
         "name": "DP trainer Kit (Lucario)",
         "releaseDate": "2007-09-01",
         "logo": "https://assets.tcgdex.net/zh/tk/tk-dp-l/logo",
-        "symbol": "https://assets.tcgdex.net/zh/tk/tk-dp-l/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-dp-l/symbol.png",
         "serieId": "tk",
         "official": 11,
         "total": 11
@@ -17479,7 +17479,7 @@ object EmbeddedCatalogData {
         "name": "SM trainer Kit (Alolan Raichu)",
         "releaseDate": "2017-04-21",
         "logo": "https://assets.tcgdex.net/zh/tk/tk-sm-r/logo",
-        "symbol": "https://assets.tcgdex.net/zh/tk/tk-sm-r/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-sm-r/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 19
@@ -17489,7 +17489,7 @@ object EmbeddedCatalogData {
         "name": "XY trainer Kit (Latias)",
         "releaseDate": "2015-04-29",
         "logo": "https://assets.tcgdex.net/zh/tk/tk-xy-latia/logo",
-        "symbol": "https://assets.tcgdex.net/zh/tk/tk-xy-latia/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-xy-latia/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -17499,7 +17499,7 @@ object EmbeddedCatalogData {
         "name": "HS trainer Kit (Raichu)",
         "releaseDate": "2010-05-01",
         "logo": "https://assets.tcgdex.net/zh/tk/tk-hs-r/logo",
-        "symbol": "https://assets.tcgdex.net/zh/tk/tk-hs-r/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-hs-r/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 1
@@ -17509,7 +17509,7 @@ object EmbeddedCatalogData {
         "name": "EX trainer Kit (Latios)",
         "releaseDate": "2004-07-01",
         "logo": "https://assets.tcgdex.net/zh/tk/tk-ex-latio/logo",
-        "symbol": "https://assets.tcgdex.net/zh/tk/tk-ex-latio/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-ex-latio/symbol.png",
         "serieId": "tk",
         "official": 10,
         "total": 10
@@ -17519,7 +17519,7 @@ object EmbeddedCatalogData {
         "name": "BW trainer Kit (Excadrill)",
         "releaseDate": "2011-09-01",
         "logo": "https://assets.tcgdex.net/zh/tk/tk-bw-e/logo",
-        "symbol": "https://assets.tcgdex.net/zh/tk/tk-bw-e/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-bw-e/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -17529,7 +17529,7 @@ object EmbeddedCatalogData {
         "name": "XY trainer Kit (Pikachu Libre)",
         "releaseDate": "2016-04-27",
         "logo": "https://assets.tcgdex.net/zh/tk/tk-xy-p/logo",
-        "symbol": "https://assets.tcgdex.net/zh/tk/tk-xy-p/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-xy-p/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -17539,7 +17539,7 @@ object EmbeddedCatalogData {
         "name": "XY trainer Kit (Latios)",
         "releaseDate": "2015-04-29",
         "logo": "https://assets.tcgdex.net/zh/tk/tk-xy-latio/logo",
-        "symbol": "https://assets.tcgdex.net/zh/tk/tk-xy-latio/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-xy-latio/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -17549,7 +17549,7 @@ object EmbeddedCatalogData {
         "name": "SM trainer Kit (Lycanroc)",
         "releaseDate": "2017-04-21",
         "logo": "https://assets.tcgdex.net/zh/tk/tk-sm-l/logo",
-        "symbol": "https://assets.tcgdex.net/zh/tk/tk-sm-l/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-sm-l/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 18
@@ -17559,7 +17559,7 @@ object EmbeddedCatalogData {
         "name": "EX trainer Kit (Latias)",
         "releaseDate": "2004-07-01",
         "logo": "https://assets.tcgdex.net/zh/tk/tk-ex-latia/logo",
-        "symbol": "https://assets.tcgdex.net/zh/tk/tk-ex-latia/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-ex-latia/symbol.png",
         "serieId": "tk",
         "official": 10,
         "total": 10
@@ -17569,7 +17569,7 @@ object EmbeddedCatalogData {
         "name": "XY trainer Kit (Suicune)",
         "releaseDate": "2016-04-27",
         "logo": "https://assets.tcgdex.net/zh/tk/tk-xy-su/logo",
-        "symbol": "https://assets.tcgdex.net/zh/tk/tk-xy-su/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-xy-su/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -17579,7 +17579,7 @@ object EmbeddedCatalogData {
         "name": "DP trainer Kit (Manaphy)",
         "releaseDate": "2007-09-01",
         "logo": "https://assets.tcgdex.net/zh/tk/tk-dp-m/logo",
-        "symbol": "https://assets.tcgdex.net/zh/tk/tk-dp-m/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-dp-m/symbol.png",
         "serieId": "tk",
         "official": 12,
         "total": 12
@@ -17589,7 +17589,7 @@ object EmbeddedCatalogData {
         "name": "XY trainer Kit (Wigglytuff)",
         "releaseDate": "2014-11-01",
         "logo": "https://assets.tcgdex.net/zh/tk/tk-xy-w/logo",
-        "symbol": "https://assets.tcgdex.net/zh/tk/tk-xy-w/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-xy-w/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -17599,7 +17599,7 @@ object EmbeddedCatalogData {
         "name": "BW trainer Kit (Zoroark)",
         "releaseDate": "2011-09-01",
         "logo": "https://assets.tcgdex.net/zh/tk/tk-bw-z/logo",
-        "symbol": "https://assets.tcgdex.net/zh/tk/tk-bw-z/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-bw-z/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -17609,7 +17609,7 @@ object EmbeddedCatalogData {
         "name": "XY trainer Kit (Noivern)",
         "releaseDate": "2014-03-12",
         "logo": "https://assets.tcgdex.net/zh/tk/tk-xy-n/logo",
-        "symbol": "https://assets.tcgdex.net/zh/tk/tk-xy-n/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-xy-n/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -17619,7 +17619,7 @@ object EmbeddedCatalogData {
         "name": "XY trainer Kit (Sylveon)",
         "releaseDate": "2014-03-12",
         "logo": "https://assets.tcgdex.net/zh/tk/tk-xy-sy/logo",
-        "symbol": "https://assets.tcgdex.net/zh/tk/tk-xy-sy/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-xy-sy/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -17629,7 +17629,7 @@ object EmbeddedCatalogData {
         "name": "XY trainer Kit (Bisharp)",
         "releaseDate": "2014-11-01",
         "logo": "https://assets.tcgdex.net/zh/tk/tk-xy-b/logo",
-        "symbol": "https://assets.tcgdex.net/zh/tk/tk-xy-b/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/tk/tk-xy-b/symbol.png",
         "serieId": "tk",
         "official": 30,
         "total": 30
@@ -17639,7 +17639,7 @@ object EmbeddedCatalogData {
         "name": "Arceus",
         "releaseDate": "2009-11-04",
         "logo": "https://assets.tcgdex.net/zh/pl/pl4/logo",
-        "symbol": "https://assets.tcgdex.net/zh/pl/pl4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pl/pl4/symbol.png",
         "serieId": "pl",
         "official": 99,
         "total": 111
@@ -17649,7 +17649,7 @@ object EmbeddedCatalogData {
         "name": "Supreme Victors",
         "releaseDate": "2009-08-19",
         "logo": "https://assets.tcgdex.net/zh/pl/pl3/logo",
-        "symbol": "https://assets.tcgdex.net/zh/pl/pl3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pl/pl3/symbol.png",
         "serieId": "pl",
         "official": 147,
         "total": 153
@@ -17659,7 +17659,7 @@ object EmbeddedCatalogData {
         "name": "Rising Rivals",
         "releaseDate": "2009-05-16",
         "logo": "https://assets.tcgdex.net/zh/pl/pl2/logo",
-        "symbol": "https://assets.tcgdex.net/zh/pl/pl2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pl/pl2/symbol.png",
         "serieId": "pl",
         "official": 111,
         "total": 120
@@ -17669,7 +17669,7 @@ object EmbeddedCatalogData {
         "name": "Pokémon Rumble",
         "releaseDate": "2009-12-02",
         "logo": "https://assets.tcgdex.net/zh/pl/ru1/logo",
-        "symbol": "https://assets.tcgdex.net/zh/pl/ru1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pl/ru1/symbol.png",
         "serieId": "pl",
         "official": 16,
         "total": 16
@@ -17679,7 +17679,7 @@ object EmbeddedCatalogData {
         "name": "Platinum",
         "releaseDate": "2009-02-11",
         "logo": "https://assets.tcgdex.net/zh/pl/pl1/logo",
-        "symbol": "https://assets.tcgdex.net/zh/pl/pl1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/pl/pl1/symbol.png",
         "serieId": "pl",
         "official": 127,
         "total": 133
@@ -17689,7 +17689,7 @@ object EmbeddedCatalogData {
         "name": "Gym Challenge",
         "releaseDate": "2000-10-16",
         "logo": "https://assets.tcgdex.net/zh/gym/gym2/logo",
-        "symbol": "https://assets.tcgdex.net/zh/gym/gym2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/gym/gym2/symbol.png",
         "serieId": "gym",
         "official": 132,
         "total": 132
@@ -17699,7 +17699,7 @@ object EmbeddedCatalogData {
         "name": "Gym Heroes",
         "releaseDate": "2000-08-14",
         "logo": "https://assets.tcgdex.net/zh/gym/gym1/logo",
-        "symbol": "https://assets.tcgdex.net/zh/gym/gym1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/gym/gym1/symbol.png",
         "serieId": "gym",
         "official": 132,
         "total": 132
@@ -17709,7 +17709,7 @@ object EmbeddedCatalogData {
         "name": "Shining Fates",
         "releaseDate": "2021-02-19",
         "logo": "https://assets.tcgdex.net/zh/swsh/swsh4.5/logo",
-        "symbol": "https://assets.tcgdex.net/zh/swsh/swsh4.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh4.5/symbol.png",
         "serieId": "swsh",
         "official": 72,
         "total": 195
@@ -17719,7 +17719,7 @@ object EmbeddedCatalogData {
         "name": "Astral Radiance",
         "releaseDate": "2022-05-27",
         "logo": "https://assets.tcgdex.net/zh/swsh/swsh10/logo",
-        "symbol": "https://assets.tcgdex.net/zh/swsh/swsh10/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh10/symbol.png",
         "serieId": "swsh",
         "official": 189,
         "total": 246
@@ -17729,7 +17729,7 @@ object EmbeddedCatalogData {
         "name": "Fusion Strike",
         "releaseDate": "2021-11-12",
         "logo": "https://assets.tcgdex.net/zh/swsh/swsh8/logo",
-        "symbol": "https://assets.tcgdex.net/zh/swsh/swsh8/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh8/symbol.png",
         "serieId": "swsh",
         "official": 264,
         "total": 284
@@ -17739,7 +17739,7 @@ object EmbeddedCatalogData {
         "name": "Evolving Skies",
         "releaseDate": "2021-08-27",
         "logo": "https://assets.tcgdex.net/zh/swsh/swsh7/logo",
-        "symbol": "https://assets.tcgdex.net/zh/swsh/swsh7/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh7/symbol.png",
         "serieId": "swsh",
         "official": 203,
         "total": 237
@@ -17749,7 +17749,7 @@ object EmbeddedCatalogData {
         "name": "Crown Zenith",
         "releaseDate": "2023-01-20",
         "logo": "https://assets.tcgdex.net/zh/swsh/swsh12.5/logo",
-        "symbol": "https://assets.tcgdex.net/zh/swsh/swsh12.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh12.5/symbol.png",
         "serieId": "swsh",
         "official": 159,
         "total": 230
@@ -17759,7 +17759,7 @@ object EmbeddedCatalogData {
         "name": "Champion's Path",
         "releaseDate": "2020-09-25",
         "logo": "https://assets.tcgdex.net/zh/swsh/swsh3.5/logo",
-        "symbol": "https://assets.tcgdex.net/zh/swsh/swsh3.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh3.5/symbol.png",
         "serieId": "swsh",
         "official": 70,
         "total": 80
@@ -17769,7 +17769,7 @@ object EmbeddedCatalogData {
         "name": "Celebrations",
         "releaseDate": "2021-10-08",
         "logo": "https://assets.tcgdex.net/zh/swsh/cel25/logo",
-        "symbol": "https://assets.tcgdex.net/zh/swsh/cel25/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/cel25/symbol.png",
         "serieId": "swsh",
         "official": 25,
         "total": 51
@@ -17779,7 +17779,7 @@ object EmbeddedCatalogData {
         "name": "Battle Styles",
         "releaseDate": "2021-03-19",
         "logo": "https://assets.tcgdex.net/zh/swsh/swsh5/logo",
-        "symbol": "https://assets.tcgdex.net/zh/swsh/swsh5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh5/symbol.png",
         "serieId": "swsh",
         "official": 163,
         "total": 183
@@ -17789,7 +17789,7 @@ object EmbeddedCatalogData {
         "name": "Silver Tempest",
         "releaseDate": "2022-11-11",
         "logo": "https://assets.tcgdex.net/zh/swsh/swsh12/logo",
-        "symbol": "https://assets.tcgdex.net/zh/swsh/swsh12/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh12/symbol.png",
         "serieId": "swsh",
         "official": 195,
         "total": 245
@@ -17799,7 +17799,7 @@ object EmbeddedCatalogData {
         "name": "Vivid Voltage",
         "releaseDate": "2020-11-13",
         "logo": "https://assets.tcgdex.net/zh/swsh/swsh4/logo",
-        "symbol": "https://assets.tcgdex.net/zh/swsh/swsh4/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh4/symbol.png",
         "serieId": "swsh",
         "official": 185,
         "total": 203
@@ -17809,7 +17809,7 @@ object EmbeddedCatalogData {
         "name": "Chilling Reign",
         "releaseDate": "2021-06-18",
         "logo": "https://assets.tcgdex.net/zh/swsh/swsh6/logo",
-        "symbol": "https://assets.tcgdex.net/zh/swsh/swsh6/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh6/symbol.png",
         "serieId": "swsh",
         "official": 198,
         "total": 233
@@ -17819,7 +17819,7 @@ object EmbeddedCatalogData {
         "name": "Lost Origin",
         "releaseDate": "2022-09-09",
         "logo": "https://assets.tcgdex.net/zh/swsh/swsh11/logo",
-        "symbol": "https://assets.tcgdex.net/zh/swsh/swsh11/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh11/symbol.png",
         "serieId": "swsh",
         "official": 196,
         "total": 247
@@ -17829,7 +17829,7 @@ object EmbeddedCatalogData {
         "name": "Darkness Ablaze",
         "releaseDate": "2020-08-14",
         "logo": "https://assets.tcgdex.net/zh/swsh/swsh3/logo",
-        "symbol": "https://assets.tcgdex.net/zh/swsh/swsh3/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh3/symbol.png",
         "serieId": "swsh",
         "official": 189,
         "total": 201
@@ -17839,7 +17839,7 @@ object EmbeddedCatalogData {
         "name": "Rebel Clash",
         "releaseDate": "2020-05-01",
         "logo": "https://assets.tcgdex.net/zh/swsh/swsh2/logo",
-        "symbol": "https://assets.tcgdex.net/zh/swsh/swsh2/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh2/symbol.png",
         "serieId": "swsh",
         "official": 192,
         "total": 209
@@ -17849,7 +17849,7 @@ object EmbeddedCatalogData {
         "name": "SWSH Black Star Promos",
         "releaseDate": "2019-11-15",
         "logo": "https://assets.tcgdex.net/zh/swsh/swshp/logo",
-        "symbol": "https://assets.tcgdex.net/zh/swsh/swshp/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swshp/symbol.png",
         "serieId": "swsh",
         "official": 107,
         "total": 287
@@ -17859,7 +17859,7 @@ object EmbeddedCatalogData {
         "name": "Pokémon Futsal 2020",
         "releaseDate": "2020-09-11",
         "logo": "https://assets.tcgdex.net/zh/swsh/fut2020/logo",
-        "symbol": "https://assets.tcgdex.net/zh/swsh/fut2020/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/fut2020/symbol.png",
         "serieId": "swsh",
         "official": 5,
         "total": 5
@@ -17869,7 +17869,7 @@ object EmbeddedCatalogData {
         "name": "Pokémon GO",
         "releaseDate": "2022-07-01",
         "logo": "https://assets.tcgdex.net/zh/swsh/swsh10.5/logo",
-        "symbol": "https://assets.tcgdex.net/zh/swsh/swsh10.5/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh10.5/symbol.png",
         "serieId": "swsh",
         "official": 78,
         "total": 88
@@ -17879,7 +17879,7 @@ object EmbeddedCatalogData {
         "name": "Brilliant Stars",
         "releaseDate": "2022-02-25",
         "logo": "https://assets.tcgdex.net/zh/swsh/swsh9/logo",
-        "symbol": "https://assets.tcgdex.net/zh/swsh/swsh9/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh9/symbol.png",
         "serieId": "swsh",
         "official": 172,
         "total": 216
@@ -17889,7 +17889,7 @@ object EmbeddedCatalogData {
         "name": "Sword & Shield",
         "releaseDate": "2020-02-07",
         "logo": "https://assets.tcgdex.net/zh/swsh/swsh1/logo",
-        "symbol": "https://assets.tcgdex.net/zh/swsh/swsh1/symbol",
+        "symbol": "https://assets.tcgdex.net/univ/swsh/swsh1/symbol.png",
         "serieId": "swsh",
         "official": 202,
         "total": 216
@@ -136136,7 +136136,7 @@ object EmbeddedCatalogData {
   private val illustratorsIndex: String? = """
 {
     "version": 1,
-    "generatedAt": 1763242725432,
+    "generatedAt": 1763302423759,
     "artists": [
         {
             "name": "Hideki Ishikawa",

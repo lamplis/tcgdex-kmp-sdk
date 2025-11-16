@@ -567,7 +567,8 @@ object GenerateEmbeddedCatalog {
                 System.getProperty("localDbPath")
                     ?: System.getenv("TCGDEX_LOCAL_DB")
                     ?: "/Users/admin/workspace/cards-database/data/"
-            val offlineOnly: Boolean = (System.getProperty("offlineOnly") ?: "").equals("true", ignoreCase = true)
+            // Enforce offline-only generation regardless of properties/environment
+            val offlineOnly: Boolean = true
             val localDbPath: Path? = localDbPathStr?.let { Path.of(it) }
             val useLocal: Boolean = localDbPath != null && Files.isDirectory(localDbPath)
             val seriesFilter: String? = System.getProperty("seriesFilter")?.trim()?.takeIf { it.isNotEmpty() }
@@ -1002,12 +1003,34 @@ object GenerateEmbeddedCatalog {
                 setsMap: MutableMap<String, String>,
                 illustratorsMap: MutableMap<String, String>,
                 manifest: ImageManifest? = null,
+                csvWriter: java.io.BufferedWriter? = null,
             ) {
                 fun releaseKey(date: String?): Int = date?.replace("-", "")?.toIntOrNull() ?: 0
 
                 fun parseLocalNumber(num: String?): Int = num?.takeWhile { it.isDigit() }?.toIntOrNull() ?: Int.MAX_VALUE
 
                 fun numPath(num: String): String = num.takeWhile { it.isDigit() }.ifBlank { num }
+
+                fun csvEscape(v: String?): String {
+                    val s = v ?: ""
+                    val needsQuotes = s.indexOfAny(charArrayOf(',', '"', '\n', '\r')) >= 0
+                    val escaped = s.replace("\"", "\"\"")
+                    return if (needsQuotes) "\"$escaped\"" else escaped
+                }
+
+                fun computeMissingReason(
+                    manifestLocal: ImageManifest?,
+                    langLocal: String,
+                    serieIdLocal: String,
+                    setIdLocal: String,
+                    cardNumberLocal: String,
+                ): String {
+                    if (manifestLocal == null) return "NO_MANIFEST"
+                    val langMap = manifestLocal[langLocal.lowercase()] ?: return "LANG_MISSING"
+                    val serieMap = langMap[serieIdLocal] ?: return "SERIE_MISSING"
+                    val setMap = serieMap[setIdLocal] ?: return "SET_MISSING"
+                    return if (!setMap.contains(cardNumberLocal)) "CARD_MISSING" else "UNKNOWN"
+                }
 
                 val filteredSeries = scan.series.filter { !isTcgp(it.id) }
                 val filteredSets = scan.sets.filter { !isTcgp(it.seriesId) && !isTcgpSetId(it.id) }
@@ -1020,12 +1043,13 @@ object GenerateEmbeddedCatalog {
                     filteredSets.map { s ->
                         val name = s.names[lang] ?: s.names["en"] ?: s.fileBase
                         val assetBase = "https://assets.tcgdex.net/" + lang.lowercase() + "/" + s.seriesId + "/" + s.id
+                        val symbolUniv = "https://assets.tcgdex.net/univ/" + s.seriesId + "/" + s.id + "/symbol.png"
                         SetOut(
                             id = s.id,
                             name = name,
                             releaseDate = s.releaseDate,
                             logo = assetBase + "/logo",
-                            symbol = assetBase + "/symbol",
+                            symbol = symbolUniv,
                             serieId = s.seriesId,
                             official = s.official,
                             total = s.total,
@@ -1085,6 +1109,25 @@ object GenerateEmbeddedCatalog {
                                             "https://assets.tcgdex.net/" + lang.lowercase() + "/" + s.seriesId + "/" + resolvedSetId + "/" + exactNumber
                                         } else {
                                             cardsWithoutImages++
+                                            // Write CSV row for missing image
+                                            runCatching {
+                                                val reason = computeMissingReason(manifest, lang, s.seriesId, s.id, exactNumber)
+                                                val row =
+                                                    listOf(
+                                                        lang.lowercase(),
+                                                        s.seriesId,
+                                                        s.id,
+                                                        setName,
+                                                        exactNumber,
+                                                        s.id + "-" + exactNumber,
+                                                        nm,
+                                                        reason,
+                                                    ).joinToString(",") { csvEscape(it) }
+                                                csvWriter?.apply {
+                                                    write(row)
+                                                    newLine()
+                                                }
+                                            }
                                             null
                                         }
                                     val variantsArray = cp.variants // already VariantOut preserving fields
@@ -1114,6 +1157,7 @@ object GenerateEmbeddedCatalog {
                             Files.createDirectories(langSetsDirLocal)
                             val setName = s.names[lang] ?: s.names["en"] ?: s.fileBase
                             val assetBaseLocal = "https://assets.tcgdex.net/" + lang.lowercase() + "/" + s.seriesId + "/" + s.id
+                            val symbolUniv = "https://assets.tcgdex.net/univ/" + s.seriesId + "/" + s.id + "/symbol.png"
                             val cardCountVal = s.total ?: s.official ?: cardsForLang.size
                             val out =
                                 SetDetailsOut(
@@ -1123,7 +1167,7 @@ object GenerateEmbeddedCatalog {
                                     releaseDate = s.releaseDate,
                                     cardCount = cardCountVal,
                                     logo = assetBaseLocal + "/logo",
-                                    symbol = assetBaseLocal + "/symbol",
+                                    symbol = symbolUniv,
                                     cards = cardsForLang,
                                 )
                             Files.writeString(
@@ -1500,6 +1544,26 @@ object GenerateEmbeddedCatalog {
             } catch (_: Throwable) {
             }
             println(coverageReport.toString().trim())
+            // Initialize missing-images CSV writer once for all languages (always generate)
+            val missingCsvPathPropEarly = System.getProperty("missingCsvPath")?.trim()?.takeIf { it.isNotEmpty() }
+            val missingCsvPathEarly =
+                missingCsvPathPropEarly?.let { Path.of(it) }
+                    ?: Path.of(System.getProperty("user.dir")).resolve("missing_card_images.csv")
+            val csvWriter: java.io.BufferedWriter? =
+                runCatching {
+                    Files.createDirectories(missingCsvPathEarly.parent ?: Path.of(System.getProperty("user.dir")))
+                    Files.newBufferedWriter(
+                        missingCsvPathEarly,
+                        StandardOpenOption.CREATE,
+                        StandardOpenOption.TRUNCATE_EXISTING,
+                        StandardOpenOption.WRITE,
+                    ).also {
+                        it.write("language,serieId,setId,setName,cardNumber,cardId,cardName,reason")
+                        it.newLine()
+                    }
+                }.onFailure {
+                    log("[warn] Unable to open CSV writer at: " + missingCsvPathEarly + " reason=" + (it.message ?: "unknown"))
+                }.getOrNull()
             // Enforce optional gates
             if (manifestStrictGate) {
                 val failingLangs =
@@ -1509,6 +1573,7 @@ object GenerateEmbeddedCatalog {
                         setCov < minSetCoverage || cardCov < minCardCoverage
                     }.map { it.lang }
                 if (failingLangs.isNotEmpty()) {
+                    runCatching { csvWriter?.close() }
                     log(
                         "[x] Aborting: manifest coverage below thresholds. minSetCoverage=" + minSetCoverage + " minCardCoverage=" + minCardCoverage +
                             " failingLangs=" + failingLangs.joinToString(","),
@@ -1541,6 +1606,7 @@ object GenerateEmbeddedCatalog {
                             setsMap = setsMap,
                             illustratorsMap = illustratorsMap,
                             manifest = manifest,
+                            csvWriter = csvWriter,
                         )
                         val tLang1 = System.nanoTime()
                         log(
@@ -1554,124 +1620,10 @@ object GenerateEmbeddedCatalog {
                             log("[i] offlineOnly=true; skipping remote set details for lang=" + lang)
                             continue
                         } else {
-                            val langDir = outBasePath.resolve(lang)
-                            val langSetsDir = langDir.resolve("sets")
-                            Files.createDirectories(langSetsDir)
-                            val setsForLang =
-                                runCatching {
-                                    Json { ignoreUnknownKeys = true }.decodeFromString<List<SetOut>>(setsMap[lang.lowercase()]!!)
-                                }.getOrElse { emptyList() }
-                            var processedRemote = 0
-                            for (so in setsForLang) {
-                                try {
-                                    val url = "https://api.tcgdex.net/v2/" + lang + "/sets/" + so.id
-                                    val raw = http.get(url).bodyAsText()
-                                    val element = json.parseToJsonElement(raw)
-                                    val obj = element.jsonObject
-                                    val cardsCount = obj["cards"]?.jsonArray?.size ?: 0
-                                    val cc = obj["cardCount"] as? JsonObject
-                                    val expected =
-                                        cc?.get("total")?.jsonPrimitive?.content?.toIntOrNull()
-                                            ?: cc?.get("official")?.jsonPrimitive?.content?.toIntOrNull()
-                                    if (expected != null && cardsCount != expected) {
-                                        log(
-                                            "[warn] Card count mismatch for " + lang + ":" + so.id + " expected=" + expected + " actual=" + cardsCount + " – normalizing anyway",
-                                        )
-                                    }
-
-                                    // Normalize remote payload to canonical SetDetailsOut with enriched fields
-                                    fun zeroPad(
-                                        num: Int?,
-                                        width: Int = 3,
-                                    ): String {
-                                        if (num == null || num <= 0) return "000"
-                                        return num.toString().padStart(width, '0')
-                                    }
-
-                                    fun extractLocalNumber(co: JsonObject): String {
-                                        // Prefer explicit localId, fallback to last path segment of image URL
-                                        val localIdStr = co["localId"]?.jsonPrimitive?.content
-                                        val asInt = localIdStr?.filter { it.isDigit() }?.toIntOrNull()
-                                        if (asInt != null) return zeroPad(asInt)
-                                        val imageStr = co["image"]?.jsonPrimitive?.content
-                                        val tail =
-                                            imageStr?.substringAfterLast(
-                                                '/',
-                                                missingDelimiterValue = "",
-                                            )?.filter { it.isDigit() }?.toIntOrNull()
-                                        if (tail != null) return zeroPad(tail)
-                                        return "000"
-                                    }
-                                    val serieIdVal = so.serieId ?: deriveSerieIdFromSetId(so.id)
-                                    val localCardsIndex =
-                                        cachedLocalScan
-                                            ?.setIdToCards
-                                            ?.get(so.id)
-                                            ?.associateBy { it.number }
-                                            ?: emptyMap()
-                                    val cardsJson: List<JsonElement> = obj["cards"]?.jsonArray?.toList() ?: emptyList()
-                                    val cards =
-                                        cardsJson
-                                            .mapNotNull { e ->
-                                                val co = e.jsonObject
-                                                val number = extractLocalNumber(co)
-                                                val nameValue = co["name"]?.jsonPrimitive?.content
-                                                val nameResolved =
-                                                    nameValue ?: localCardsIndex[number]?.names?.get(lang.lowercase())
-                                                        ?: localCardsIndex[number]?.names?.get("en")
-                                                        ?: ("#" + number)
-                                                val illustratorResolved =
-                                                    co["illustrator"]?.jsonPrimitive?.content
-                                                        ?.takeIf { it.isNotBlank() }
-                                                        ?: localCardsIndex[number]?.illustrator
-                                                val imageBaseFromApi = co["image"]?.jsonPrimitive?.content
-                                                val imageBaseResolved =
-                                                    if (imageBaseFromApi != null) {
-                                                        imageBaseFromApi
-                                                    } else {
-                                                        // Fallback: check manifest before generating URL
-                                                        val fallbackNumber = number.trimStart('0').ifBlank { "0" }
-                                                        if (imageExistsInManifest(manifest, lang, serieIdVal, so.id, number)) {
-                                                            "https://assets.tcgdex.net/" + lang.lowercase() + "/" + serieIdVal + "/" + so.id + "/" + fallbackNumber
-                                                        } else {
-                                                            null
-                                                        }
-                                                    }
-                                                CardDetailOut(
-                                                    id = so.id + "-" + number,
-                                                    number = number,
-                                                    name = nameResolved,
-                                                    illustrator = illustratorResolved,
-                                                    imageBase = imageBaseResolved,
-                                                )
-                                            }
-                                            .sortedBy { it.number.takeWhile { ch -> ch.isDigit() }.toIntOrNull() ?: Int.MAX_VALUE }
-                                    val out =
-                                        SetDetailsOut(
-                                            id = so.id,
-                                            serieId = serieIdVal,
-                                            name = so.name,
-                                            releaseDate = so.releaseDate,
-                                            cardCount = expected,
-                                            logo = so.logo,
-                                            symbol = so.symbol,
-                                            cards = cards,
-                                        )
-                                    Files.writeString(
-                                        langSetsDir.resolve(so.id + ".json"),
-                                        json.encodeToString(out),
-                                        StandardOpenOption.CREATE,
-                                        StandardOpenOption.TRUNCATE_EXISTING,
-                                        StandardOpenOption.WRITE,
-                                    )
-                                    processedRemote++
-                                    if (processedRemote % kotlin.math.max(1, progressEvery) == 0) {
-                                        log("lang=" + lang + ": wrote remote set details " + processedRemote + "/" + setsForLang.size)
-                                    }
-                                } catch (t: Throwable) {
-                                    log("[warn] Failed remote detail for " + lang + ":" + so.id + ": " + (t.message ?: "unknown"))
-                                }
-                            }
+                            // Remote generation disabled (offline-only enforced). Original remote code commented out.
+                            /*
+                            ... remote normalization and API fetch was here ...
+                            */
                         }
                         continue
                     } catch (t: Throwable) {
@@ -1785,7 +1737,7 @@ object GenerateEmbeddedCatalog {
                                             if (logo.isNullOrBlank() || symbol.isNullOrBlank()) {
                                                 val assetBase = "https://assets.tcgdex.net/" + lang.lowercase() + "/" + serieId + "/" + setId
                                                 if (logo.isNullOrBlank()) logo = assetBase + "/logo"
-                                                if (symbol.isNullOrBlank()) symbol = assetBase + "/symbol"
+                                                if (symbol.isNullOrBlank()) symbol = "https://assets.tcgdex.net/univ/" + serieId + "/" + setId + "/symbol.png"
                                             }
                                             val official = extractIntFieldInObject(c, "cardCount", "official")
 
@@ -2420,6 +2372,9 @@ object GenerateEmbeddedCatalog {
                 }
                 // Remote generation disabled (local-only enforced).
             }
+
+            // Close CSV writer for missing images (if open)
+            runCatching { csvWriter?.close() }
 
             // Also write a Kotlin source with embedded data to keep loading platform-agnostic
             val pkg = "app.cardium.tcgdex.sdk.embedded"
