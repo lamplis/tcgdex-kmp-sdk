@@ -1,0 +1,58 @@
+{
+    "illustrator": "Framestore",
+    "series": [
+        {
+            "id": "sm",
+            "name": "Sun & Moon",
+            "releaseDate": "2017-02-03",
+            "sets": [
+                {
+                    "id": "det1",
+                    "name": "Detective Pikachu",
+                    "releaseDate": "2019-03-29",
+                    "cards": [
+                        {
+                            "id": "det1-18",
+                            "number": "18"
+                        },
+                        {
+                            "id": "det1-15",
+                            "number": "15"
+                        },
+                        {
+                            "id": "det1-14",
+                            "number": "14"
+                        },
+                        {
+                            "id": "det1-8",
+                            "number": "8"
+                        },
+                        {
+                            "id": "det1-7",
+                            "number": "7"
+                        },
+                        {
+                            "id": "det1-5",
+                            "number": "5"
+                        },
+                        {
+                            "id": "det1-2",
+                            "number": "2"
+                        }
+                    ]
+                },
+                {
+                    "id": "smp",
+                    "name": "SM Black Star Promos",
+                    "releaseDate": "2017-02-03",
+                    "cards": [
+                        {
+                            "id": "smp-SM195",
+                            "number": "SM195"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

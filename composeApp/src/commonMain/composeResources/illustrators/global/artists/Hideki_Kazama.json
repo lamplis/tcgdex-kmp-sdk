@@ -1,0 +1,52 @@
+{
+    "illustrator": "Hideki Kazama",
+    "series": [
+        {
+            "id": "neo",
+            "name": "Neo",
+            "releaseDate": "2000-12-16",
+            "sets": [
+                {
+                    "id": "neo4",
+                    "name": "Neo Destiny",
+                    "releaseDate": "2002-02-28",
+                    "cards": [
+                        {
+                            "id": "neo4-99",
+                            "number": "99"
+                        }
+                    ]
+                },
+                {
+                    "id": "neo1",
+                    "name": "Neo Genesis",
+                    "releaseDate": "2000-12-16",
+                    "cards": [
+                        {
+                            "id": "neo1-105",
+                            "number": "105"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "base",
+            "name": "Base",
+            "releaseDate": "1999-01-09",
+            "sets": [
+                {
+                    "id": "basep",
+                    "name": "Wizards Black Star Promos",
+                    "releaseDate": "1999-07-01",
+                    "cards": [
+                        {
+                            "id": "basep-38",
+                            "number": "38"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

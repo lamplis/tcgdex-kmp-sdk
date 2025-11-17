@@ -1,0 +1,41 @@
+{
+    "illustrator": "Kunihiko Yuyama",
+    "series": [
+        {
+            "id": "dp",
+            "name": "Diamond & Pearl",
+            "releaseDate": "2007-05-01",
+            "sets": [
+                {
+                    "id": "dpp",
+                    "name": "DP Black Star Promos",
+                    "releaseDate": "2007-05-01",
+                    "cards": [
+                        {
+                            "id": "dpp-DP50",
+                            "number": "DP50"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "base",
+            "name": "Base",
+            "releaseDate": "1999-01-09",
+            "sets": [
+                {
+                    "id": "basep",
+                    "name": "Wizards Black Star Promos",
+                    "releaseDate": "1999-07-01",
+                    "cards": [
+                        {
+                            "id": "basep-18",
+                            "number": "18"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

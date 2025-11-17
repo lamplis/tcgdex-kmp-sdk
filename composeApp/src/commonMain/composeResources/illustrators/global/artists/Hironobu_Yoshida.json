@@ -1,0 +1,343 @@
+{
+    "illustrator": "Hironobu Yoshida",
+    "series": [
+        {
+            "id": "sm",
+            "name": "Sun & Moon",
+            "releaseDate": "2017-02-03",
+            "sets": [
+                {
+                    "id": "sm7.5",
+                    "name": "Dragon Majesty",
+                    "releaseDate": "2018-09-07",
+                    "cards": [
+                        {
+                            "id": "sm7.5-22",
+                            "number": "22"
+                        }
+                    ]
+                },
+                {
+                    "id": "sm7",
+                    "name": "Celestial Storm",
+                    "releaseDate": "2018-08-03",
+                    "cards": [
+                        {
+                            "id": "sm7-87",
+                            "number": "87"
+                        },
+                        {
+                            "id": "sm7-75",
+                            "number": "75"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "pl",
+            "name": "Platinum",
+            "releaseDate": "2009-02-11",
+            "sets": [
+                {
+                    "id": "pl4",
+                    "name": "Arceus",
+                    "releaseDate": "2009-11-04",
+                    "cards": [
+                        {
+                            "id": "pl4-67",
+                            "number": "67"
+                        }
+                    ]
+                },
+                {
+                    "id": "pl3",
+                    "name": "Supreme Victors",
+                    "releaseDate": "2009-08-19",
+                    "cards": [
+                        {
+                            "id": "pl3-83",
+                            "number": "83"
+                        },
+                        {
+                            "id": "pl3-4",
+                            "number": "4"
+                        }
+                    ]
+                },
+                {
+                    "id": "pl2",
+                    "name": "Rising Rivals",
+                    "releaseDate": "2009-05-16",
+                    "cards": [
+                        {
+                            "id": "pl2-RT2",
+                            "number": "RT2"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "dp",
+            "name": "Diamond & Pearl",
+            "releaseDate": "2007-05-01",
+            "sets": [
+                {
+                    "id": "dp4",
+                    "name": "Great Encounters",
+                    "releaseDate": "2008-02-01",
+                    "cards": [
+                        {
+                            "id": "dp4-5",
+                            "number": "5"
+                        }
+                    ]
+                },
+                {
+                    "id": "dp3",
+                    "name": "Secret Wonders",
+                    "releaseDate": "2007-11-01",
+                    "cards": [
+                        {
+                            "id": "dp3-99",
+                            "number": "99"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "tk",
+            "name": "Trainer kits",
+            "releaseDate": "2004-07-01",
+            "sets": [
+                {
+                    "id": "tk-ex-latia",
+                    "name": "EX trainer Kit (Latias)",
+                    "releaseDate": "2004-07-01",
+                    "cards": [
+                        {
+                            "id": "tk-ex-latia-7",
+                            "number": "7"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ex",
+            "name": "EX",
+            "releaseDate": "2003-07-01",
+            "sets": [
+                {
+                    "id": "ex9",
+                    "name": "Emerald",
+                    "releaseDate": "2005-05-09",
+                    "cards": [
+                        {
+                            "id": "ex9-2",
+                            "number": "2"
+                        }
+                    ]
+                },
+                {
+                    "id": "ex8",
+                    "name": "Deoxys",
+                    "releaseDate": "2005-02-01",
+                    "cards": [
+                        {
+                            "id": "ex8-18",
+                            "number": "18"
+                        },
+                        {
+                            "id": "ex8-17",
+                            "number": "17"
+                        },
+                        {
+                            "id": "ex8-16",
+                            "number": "16"
+                        }
+                    ]
+                },
+                {
+                    "id": "ex3",
+                    "name": "Dragon",
+                    "releaseDate": "2003-11-24",
+                    "cards": [
+                        {
+                            "id": "ex3-77",
+                            "number": "77"
+                        },
+                        {
+                            "id": "ex3-65",
+                            "number": "65"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ecard",
+            "name": "E-Card",
+            "releaseDate": "2002-08-01",
+            "sets": [
+                {
+                    "id": "ecard2",
+                    "name": "Aquapolis",
+                    "releaseDate": "2003-01-15",
+                    "cards": [
+                        {
+                            "id": "ecard2-150",
+                            "number": "150"
+                        }
+                    ]
+                },
+                {
+                    "id": "ecard1",
+                    "name": "Expedition Base Set",
+                    "releaseDate": "2002-09-15",
+                    "cards": [
+                        {
+                            "id": "ecard1-121",
+                            "number": "121"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "neo",
+            "name": "Neo",
+            "releaseDate": "2000-12-16",
+            "sets": [
+                {
+                    "id": "neo4",
+                    "name": "Neo Destiny",
+                    "releaseDate": "2002-02-28",
+                    "cards": [
+                        {
+                            "id": "neo4-111",
+                            "number": "111"
+                        },
+                        {
+                            "id": "neo4-109",
+                            "number": "109"
+                        },
+                        {
+                            "id": "neo4-108",
+                            "number": "108"
+                        },
+                        {
+                            "id": "neo4-107",
+                            "number": "107"
+                        },
+                        {
+                            "id": "neo4-106",
+                            "number": "106"
+                        }
+                    ]
+                },
+                {
+                    "id": "neo3",
+                    "name": "Neo Revelation",
+                    "releaseDate": "2001-09-21",
+                    "cards": [
+                        {
+                            "id": "neo3-46",
+                            "number": "46"
+                        },
+                        {
+                            "id": "neo3-3",
+                            "number": "3"
+                        }
+                    ]
+                },
+                {
+                    "id": "neo2",
+                    "name": "Neo Discovery",
+                    "releaseDate": "2001-06-01",
+                    "cards": [
+                        {
+                            "id": "neo2-57",
+                            "number": "57"
+                        },
+                        {
+                            "id": "neo2-45",
+                            "number": "45"
+                        },
+                        {
+                            "id": "neo2-35",
+                            "number": "35"
+                        },
+                        {
+                            "id": "neo2-31",
+                            "number": "31"
+                        },
+                        {
+                            "id": "neo2-30",
+                            "number": "30"
+                        },
+                        {
+                            "id": "neo2-16",
+                            "number": "16"
+                        },
+                        {
+                            "id": "neo2-12",
+                            "number": "12"
+                        },
+                        {
+                            "id": "neo2-11",
+                            "number": "11"
+                        }
+                    ]
+                },
+                {
+                    "id": "neo1",
+                    "name": "Neo Genesis",
+                    "releaseDate": "2000-12-16",
+                    "cards": [
+                        {
+                            "id": "neo1-81",
+                            "number": "81"
+                        },
+                        {
+                            "id": "neo1-59",
+                            "number": "59"
+                        },
+                        {
+                            "id": "neo1-26",
+                            "number": "26"
+                        },
+                        {
+                            "id": "neo1-9",
+                            "number": "9"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "base",
+            "name": "Base",
+            "releaseDate": "1999-01-09",
+            "sets": [
+                {
+                    "id": "basep",
+                    "name": "Wizards Black Star Promos",
+                    "releaseDate": "1999-07-01",
+                    "cards": [
+                        {
+                            "id": "basep-45",
+                            "number": "45"
+                        },
+                        {
+                            "id": "basep-33",
+                            "number": "33"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

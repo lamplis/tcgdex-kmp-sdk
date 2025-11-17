@@ -193,9 +193,17 @@ object GenerateEmbeddedCatalog {
                     prettyPrint = true
                     ignoreUnknownKeys = true
                 }
+            // Output base for embedded catalog JSONs.
+            // Prefer repo-relative Compose resources path to avoid absolute paths:
+            //   composeApp/src/commonMain/composeResources/files/tcgdex
+            // Can be overridden with:
+            //   -DoutputDir=... or env TCGDEX_EMBED_OUT
             val outBase =
                 System.getProperty("outputDir")
-                    ?: (System.getenv("TCGDEX_EMBED_OUT") ?: "${System.getProperty("user.dir")}/src/commonMain/resources/tcgdex")
+                    ?: (System.getenv("TCGDEX_EMBED_OUT")
+                        ?: (Path.of(System.getProperty("user.dir"))
+                            .resolve("composeApp/src/commonMain/composeResources/files/tcgdex")
+                            .toString()))
             val outBasePath = Path.of(outBase)
             Files.createDirectories(outBasePath)
 
@@ -1048,7 +1056,7 @@ object GenerateEmbeddedCatalog {
                             id = s.id,
                             name = name,
                             releaseDate = s.releaseDate,
-                            logo = assetBase + "/logo",
+                            logo = assetBase + "/logo.png",
                             symbol = symbolUniv,
                             serieId = s.seriesId,
                             official = s.official,
@@ -1079,6 +1087,7 @@ object GenerateEmbeddedCatalog {
                 val orderedSeries = filteredSeries.sortedBy { releaseKey(it.earliestReleaseDate) }
                 var writtenSets = 0
                 var writtenCards = 0
+                var numberMismatches = 0
                 for (serie in orderedSeries) {
                     val setsOfSerie =
                         filteredSets
@@ -1097,6 +1106,26 @@ object GenerateEmbeddedCatalog {
                                 .map { cp ->
                                     val nm = cp.names[lang] ?: cp.names["en"] ?: ("#" + cp.number)
                                     val exactNumber = cp.number
+                                    // Validation: card.number MUST equal DB filename (cp.number)
+                                    if (exactNumber != cp.number) {
+                                        numberMismatches++
+                                        val reason = "NUMBER_MISMATCH"
+                                        val row =
+                                            listOf(
+                                                lang.lowercase(),
+                                                s.seriesId,
+                                                s.id,
+                                                setName,
+                                                exactNumber,
+                                                s.id + "-" + exactNumber,
+                                                nm,
+                                                reason,
+                                            ).joinToString(",") { csvEscape(it) }
+                                        csvWriter?.apply {
+                                            write(row)
+                                            newLine()
+                                        }
+                                    }
                                     // Strict original behavior:
                                     // - no language fallback
                                     // - no number normalization (use exact file name)
@@ -1166,7 +1195,7 @@ object GenerateEmbeddedCatalog {
                                     name = setName,
                                     releaseDate = s.releaseDate,
                                     cardCount = cardCountVal,
-                                    logo = assetBaseLocal + "/logo",
+                                    logo = assetBaseLocal + "/logo.png",
                                     symbol = symbolUniv,
                                     cards = cardsForLang,
                                 )
@@ -1189,6 +1218,11 @@ object GenerateEmbeddedCatalog {
                 println(
                     "[gen] lang=" + lang + " phaseB write: sets=" + writtenSets + " cards=" + writtenCards + " in " + ((tWrite1 - tWrite0) / 1_000_000) + " ms",
                 )
+                if (numberMismatches > 0) {
+                    val fail = (System.getProperty("failOnNumberMismatch") == "true")
+                    val msg = "[!] number mismatches detected: $numberMismatches (failOnNumberMismatch=$fail)"
+                    if (fail) error(msg) else println(msg)
+                }
                 val artists =
                     scan.illustrators.entries
                         .sortedByDescending { it.value.total }
@@ -1249,7 +1283,7 @@ object GenerateEmbeddedCatalog {
                 // Write catalog metadata with generation timestamp for cache versioning
                 val catalogMetadata =
                     mapOf(
-                        "version" to JsonPrimitive(1),
+                        "version" to JsonPrimitive(2),
                         "generatedAt" to JsonPrimitive(System.currentTimeMillis()),
                         "language" to JsonPrimitive(lang.lowercase()),
                     )
@@ -1290,7 +1324,12 @@ object GenerateEmbeddedCatalog {
                         System.getProperty("illustratorsScope")
                             ?: System.getenv("TCGDEX_ILLUSTRATORS_SCOPE")
                             ?: "global"
-                    val illustratorsBaseDir = Path.of(System.getProperty("user.dir")).resolve("src/commonMain/resources/illustrators")
+                    // Illustrators live under Compose resources alongside catalog files:
+                    //   composeApp/src/commonMain/composeResources/illustrators/{scope}/...
+                    // Keep this repo-relative to avoid absolute paths.
+                    val illustratorsBaseDir =
+                        Path.of(System.getProperty("user.dir"))
+                            .resolve("composeApp/src/commonMain/composeResources/illustrators")
                     val scopeDir = illustratorsBaseDir.resolve(illustratorsScope)
                     val artistsDir = scopeDir.resolve("artists")
                     Files.createDirectories(artistsDir)
@@ -2382,35 +2421,36 @@ object GenerateEmbeddedCatalog {
                 Path.of(System.getProperty("user.dir"))
                     .resolve("src/commonMain/kotlin/${pkg.replace('.', '/')} ".trim())
             Files.createDirectories(targetDir)
+            // Generate a small Kotlin facade that lazy-loads JSONs from resources at runtime.
+            // This drastically reduces source size by avoiding embedded large strings.
+            val artistFilesOnly = illustratorFiles.keys.toList()
             val kt =
                 buildString {
                     appendLine("package $pkg")
                     appendLine()
                     appendLine("object EmbeddedCatalogData {")
-                    appendLine("  private val seriesByLang: Map<String, String> = mapOf(")
-                    seriesMap.forEach { (lang, payload) ->
-                        appendLine("    \"$lang\" to ${toKotlinTripleQuoted(payload)},")
+                    appendLine("  private val artistFiles: List<String> = listOf(")
+                    artistFilesOnly.forEach { file ->
+                        appendLine("    ${toKotlinTripleQuoted(file)},")
                     }
                     appendLine("  )")
-                    appendLine("  private val setsByLang: Map<String, String> = mapOf(")
-                    setsMap.forEach { (lang, payload) ->
-                        appendLine("    \"$lang\" to ${toKotlinTripleQuoted(payload)},")
-                    }
-                    appendLine("  )")
-                    // New language-agnostic illustrators assets
-                    appendLine("  private val illustratorsByArtist: Map<String, String> = mapOf(")
-                    illustratorFiles.forEach { (artistFile, payload) ->
-                        appendLine("    \"$artistFile\" to ${toKotlinTripleQuoted(payload)},")
-                    }
-                    appendLine("  )")
-                    appendLine(
-                        "  private val illustratorsIndex: String? = ${illustratorsIndexGlobal?.let { toKotlinTripleQuoted(it) } ?: "null"}",
-                    )
-                    appendLine("  fun seriesJson(lang: String): String? = seriesByLang[lang.lowercase()]")
-                    appendLine("  fun setsJson(lang: String): String? = setsByLang[lang.lowercase()]")
-                    appendLine("  fun illustratorsIndexJson(): String? = illustratorsIndex")
-                    appendLine("  fun illustratorCollectionJson(artistFileName: String): String? = illustratorsByArtist[artistFileName]")
-                    appendLine("  fun illustratorArtistFiles(): List<String> = illustratorsByArtist.keys.toList()")
+                    appendLine()
+                    appendLine("  fun seriesJson(lang: String): String? =")
+                    appendLine("    EmbeddedResourceLoader.readText(\"composeResources/files/tcgdex/\${lang.lowercase()}/series.json\")")
+                    appendLine()
+                    appendLine("  fun setsJson(lang: String): String? =")
+                    appendLine("    EmbeddedResourceLoader.readText(\"composeResources/files/tcgdex/\${lang.lowercase()}/sets.json\")")
+                    appendLine()
+                    appendLine("  fun setDetailsJson(lang: String, setId: String): String? =")
+                    appendLine("    EmbeddedResourceLoader.readText(\"composeResources/files/tcgdex/\${lang.lowercase()}/sets/\$setId.json\")")
+                    appendLine()
+                    appendLine("  fun illustratorsIndexJson(): String? =")
+                    appendLine("    EmbeddedResourceLoader.readText(\"composeResources/illustrators/global/illustrators-index.json\")")
+                    appendLine()
+                    appendLine("  fun illustratorCollectionJson(artistFileName: String): String? =")
+                    appendLine("    EmbeddedResourceLoader.readText(\"composeResources/illustrators/\$artistFileName\")")
+                    appendLine()
+                    appendLine("  fun illustratorArtistFiles(): List<String> = artistFiles")
                     appendLine("}")
                     appendLine()
                 }

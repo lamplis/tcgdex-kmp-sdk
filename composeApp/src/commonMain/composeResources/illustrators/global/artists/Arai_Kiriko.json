@@ -1,0 +1,45 @@
+{
+    "illustrator": "Arai Kiriko",
+    "series": [
+        {
+            "id": "me",
+            "name": "Mega Evolution",
+            "releaseDate": "2025-09-26",
+            "sets": [
+                {
+                    "id": "me01",
+                    "name": "Mega Evolution",
+                    "releaseDate": "2025-09-26",
+                    "cards": [
+                        {
+                            "id": "me01-145",
+                            "number": "145"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "sv",
+            "name": "Scarlet & Violet",
+            "releaseDate": "2023-03-31",
+            "sets": [
+                {
+                    "id": "sv03.5",
+                    "name": "151",
+                    "releaseDate": "2023-09-22",
+                    "cards": [
+                        {
+                            "id": "sv03.5-121",
+                            "number": "121"
+                        },
+                        {
+                            "id": "sv03.5-120",
+                            "number": "120"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

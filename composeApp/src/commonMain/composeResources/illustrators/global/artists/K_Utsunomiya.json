@@ -1,0 +1,50 @@
+{
+    "illustrator": "K. Utsunomiya",
+    "series": [
+        {
+            "id": "ex",
+            "name": "EX",
+            "releaseDate": "2003-07-01",
+            "sets": [
+                {
+                    "id": "ex6",
+                    "name": "FireRed & LeafGreen",
+                    "releaseDate": "2004-09-01",
+                    "cards": [
+                        {
+                            "id": "ex6-100",
+                            "number": "100"
+                        },
+                        {
+                            "id": "ex6-96",
+                            "number": "96"
+                        }
+                    ]
+                },
+                {
+                    "id": "ex4",
+                    "name": "Team Magma vs Team Aqua",
+                    "releaseDate": "2004-03-01",
+                    "cards": [
+                        {
+                            "id": "ex4-29",
+                            "number": "29"
+                        },
+                        {
+                            "id": "ex4-24",
+                            "number": "24"
+                        },
+                        {
+                            "id": "ex4-4",
+                            "number": "4"
+                        },
+                        {
+                            "id": "ex4-1",
+                            "number": "1"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

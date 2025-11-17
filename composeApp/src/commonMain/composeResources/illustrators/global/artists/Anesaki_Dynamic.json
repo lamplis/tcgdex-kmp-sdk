@@ -1,0 +1,826 @@
+{
+    "illustrator": "Anesaki Dynamic",
+    "series": [
+        {
+            "id": "me",
+            "name": "Mega Evolution",
+            "releaseDate": "2025-09-26",
+            "sets": [
+                {
+                    "id": "me01",
+                    "name": "Mega Evolution",
+                    "releaseDate": "2025-09-26",
+                    "cards": [
+                        {
+                            "id": "me01-093",
+                            "number": "093"
+                        },
+                        {
+                            "id": "me01-038",
+                            "number": "038"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "sv",
+            "name": "Scarlet & Violet",
+            "releaseDate": "2023-03-31",
+            "sets": [
+                {
+                    "id": "sv09",
+                    "name": "Journey Together",
+                    "releaseDate": "2025-03-28",
+                    "cards": [
+                        {
+                            "id": "sv09-128",
+                            "number": "128"
+                        },
+                        {
+                            "id": "sv09-060",
+                            "number": "060"
+                        },
+                        {
+                            "id": "sv09-015",
+                            "number": "015"
+                        }
+                    ]
+                },
+                {
+                    "id": "sv08",
+                    "name": "Surging Sparks",
+                    "releaseDate": "2024-11-08",
+                    "cards": [
+                        {
+                            "id": "sv08-153",
+                            "number": "153"
+                        },
+                        {
+                            "id": "sv08-151",
+                            "number": "151"
+                        },
+                        {
+                            "id": "sv08-095",
+                            "number": "095"
+                        }
+                    ]
+                },
+                {
+                    "id": "sv07",
+                    "name": "Stellar Crown",
+                    "releaseDate": "2024-09-13",
+                    "cards": [
+                        {
+                            "id": "sv07-055",
+                            "number": "055"
+                        }
+                    ]
+                },
+                {
+                    "id": "sv06.5",
+                    "name": "Shrouded Fable",
+                    "releaseDate": "2024-08-02",
+                    "cards": [
+                        {
+                            "id": "sv06.5-024",
+                            "number": "024"
+                        }
+                    ]
+                },
+                {
+                    "id": "sv06",
+                    "name": "Twilight Masquerade",
+                    "releaseDate": "2024-05-24",
+                    "cards": [
+                        {
+                            "id": "sv06-110",
+                            "number": "110"
+                        },
+                        {
+                            "id": "sv06-076",
+                            "number": "076"
+                        },
+                        {
+                            "id": "sv06-005",
+                            "number": "005"
+                        }
+                    ]
+                },
+                {
+                    "id": "sv05",
+                    "name": "Temporal Forces",
+                    "releaseDate": "2024-03-22",
+                    "cards": [
+                        {
+                            "id": "sv05-135",
+                            "number": "135"
+                        },
+                        {
+                            "id": "sv05-094",
+                            "number": "094"
+                        }
+                    ]
+                },
+                {
+                    "id": "sv04.5",
+                    "name": "Paldean Fates",
+                    "releaseDate": "2024-01-26",
+                    "cards": [
+                        {
+                            "id": "sv04.5-065",
+                            "number": "065"
+                        },
+                        {
+                            "id": "sv04.5-047",
+                            "number": "047"
+                        }
+                    ]
+                },
+                {
+                    "id": "sv04",
+                    "name": "Paradox Rift",
+                    "releaseDate": "2023-11-03",
+                    "cards": [
+                        {
+                            "id": "sv04-123",
+                            "number": "123"
+                        },
+                        {
+                            "id": "sv04-107",
+                            "number": "107"
+                        },
+                        {
+                            "id": "sv04-106",
+                            "number": "106"
+                        },
+                        {
+                            "id": "sv04-057",
+                            "number": "057"
+                        }
+                    ]
+                },
+                {
+                    "id": "sv03.5",
+                    "name": "151",
+                    "releaseDate": "2023-09-22",
+                    "cards": [
+                        {
+                            "id": "sv03.5-085",
+                            "number": "085"
+                        },
+                        {
+                            "id": "sv03.5-084",
+                            "number": "084"
+                        }
+                    ]
+                },
+                {
+                    "id": "sv03",
+                    "name": "Obsidian Flames",
+                    "releaseDate": "2023-08-11",
+                    "cards": [
+                        {
+                            "id": "sv03-072",
+                            "number": "072"
+                        },
+                        {
+                            "id": "sv03-065",
+                            "number": "065"
+                        },
+                        {
+                            "id": "sv03-012",
+                            "number": "012"
+                        }
+                    ]
+                },
+                {
+                    "id": "sv02",
+                    "name": "Paldea Evolved",
+                    "releaseDate": "2023-06-09",
+                    "cards": [
+                        {
+                            "id": "sv02-218",
+                            "number": "218"
+                        },
+                        {
+                            "id": "sv02-145",
+                            "number": "145"
+                        },
+                        {
+                            "id": "sv02-123",
+                            "number": "123"
+                        },
+                        {
+                            "id": "sv02-056",
+                            "number": "056"
+                        },
+                        {
+                            "id": "sv02-026",
+                            "number": "026"
+                        },
+                        {
+                            "id": "sv02-021",
+                            "number": "021"
+                        }
+                    ]
+                },
+                {
+                    "id": "svp",
+                    "name": "SVP Black Star Promos",
+                    "releaseDate": "2023-03-31",
+                    "cards": [
+                        {
+                            "id": "svp-209",
+                            "number": "209"
+                        },
+                        {
+                            "id": "svp-091",
+                            "number": "091"
+                        },
+                        {
+                            "id": "svp-020",
+                            "number": "020"
+                        },
+                        {
+                            "id": "svp-009",
+                            "number": "009"
+                        }
+                    ]
+                },
+                {
+                    "id": "sv01",
+                    "name": "Scarlet & Violet",
+                    "releaseDate": "2023-03-31",
+                    "cards": [
+                        {
+                            "id": "sv01-142",
+                            "number": "142"
+                        },
+                        {
+                            "id": "sv01-134",
+                            "number": "134"
+                        },
+                        {
+                            "id": "sv01-109",
+                            "number": "109"
+                        },
+                        {
+                            "id": "sv01-060",
+                            "number": "060"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "swsh",
+            "name": "Sword & Shield",
+            "releaseDate": "2019-11-15",
+            "sets": [
+                {
+                    "id": "swsh8",
+                    "name": "Fusion Strike",
+                    "releaseDate": "2021-11-12",
+                    "cards": [
+                        {
+                            "id": "swsh8-65",
+                            "number": "65"
+                        },
+                        {
+                            "id": "swsh8-57",
+                            "number": "57"
+                        },
+                        {
+                            "id": "swsh8-27",
+                            "number": "27"
+                        }
+                    ]
+                },
+                {
+                    "id": "swsh7",
+                    "name": "Evolving Skies",
+                    "releaseDate": "2021-08-27",
+                    "cards": [
+                        {
+                            "id": "swsh7-218",
+                            "number": "218"
+                        },
+                        {
+                            "id": "swsh7-120",
+                            "number": "120"
+                        },
+                        {
+                            "id": "swsh7-66",
+                            "number": "66"
+                        }
+                    ]
+                },
+                {
+                    "id": "swsh6",
+                    "name": "Chilling Reign",
+                    "releaseDate": "2021-06-18",
+                    "cards": [
+                        {
+                            "id": "swsh6-120",
+                            "number": "120"
+                        },
+                        {
+                            "id": "swsh6-102",
+                            "number": "102"
+                        },
+                        {
+                            "id": "swsh6-101",
+                            "number": "101"
+                        },
+                        {
+                            "id": "swsh6-92",
+                            "number": "92"
+                        }
+                    ]
+                },
+                {
+                    "id": "swsh5",
+                    "name": "Battle Styles",
+                    "releaseDate": "2021-03-19",
+                    "cards": [
+                        {
+                            "id": "swsh5-31",
+                            "number": "31"
+                        },
+                        {
+                            "id": "swsh5-25",
+                            "number": "25"
+                        },
+                        {
+                            "id": "swsh5-15",
+                            "number": "15"
+                        }
+                    ]
+                },
+                {
+                    "id": "swsh4.5",
+                    "name": "Shining Fates",
+                    "releaseDate": "2021-02-19",
+                    "cards": [
+                        {
+                            "id": "swsh4.5-21",
+                            "number": "21"
+                        },
+                        {
+                            "id": "swsh4.5-13",
+                            "number": "13"
+                        }
+                    ]
+                },
+                {
+                    "id": "swsh4",
+                    "name": "Vivid Voltage",
+                    "releaseDate": "2020-11-13",
+                    "cards": [
+                        {
+                            "id": "swsh4-122",
+                            "number": "122"
+                        },
+                        {
+                            "id": "swsh4-95",
+                            "number": "95"
+                        }
+                    ]
+                },
+                {
+                    "id": "swsh3.5",
+                    "name": "Champion's Path",
+                    "releaseDate": "2020-09-25",
+                    "cards": [
+                        {
+                            "id": "swsh3.5-26",
+                            "number": "26"
+                        }
+                    ]
+                },
+                {
+                    "id": "swsh3",
+                    "name": "Darkness Ablaze",
+                    "releaseDate": "2020-08-14",
+                    "cards": [
+                        {
+                            "id": "swsh3-134",
+                            "number": "134"
+                        },
+                        {
+                            "id": "swsh3-124",
+                            "number": "124"
+                        },
+                        {
+                            "id": "swsh3-77",
+                            "number": "77"
+                        },
+                        {
+                            "id": "swsh3-25",
+                            "number": "25"
+                        }
+                    ]
+                },
+                {
+                    "id": "swsh2",
+                    "name": "Rebel Clash",
+                    "releaseDate": "2020-05-01",
+                    "cards": [
+                        {
+                            "id": "swsh2-131",
+                            "number": "131"
+                        },
+                        {
+                            "id": "swsh2-104",
+                            "number": "104"
+                        }
+                    ]
+                },
+                {
+                    "id": "swsh1",
+                    "name": "Sword & Shield",
+                    "releaseDate": "2020-02-07",
+                    "cards": [
+                        {
+                            "id": "swsh1-151",
+                            "number": "151"
+                        },
+                        {
+                            "id": "swsh1-39",
+                            "number": "39"
+                        },
+                        {
+                            "id": "swsh1-14",
+                            "number": "14"
+                        }
+                    ]
+                },
+                {
+                    "id": "swshp",
+                    "name": "SWSH Black Star Promos",
+                    "releaseDate": "2019-11-15",
+                    "cards": [
+                        {
+                            "id": "swshp-SWSH112",
+                            "number": "SWSH112"
+                        },
+                        {
+                            "id": "swshp-SWSH047",
+                            "number": "SWSH047"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "sm",
+            "name": "Sun & Moon",
+            "releaseDate": "2017-02-03",
+            "sets": [
+                {
+                    "id": "sm12",
+                    "name": "Cosmic Eclipse",
+                    "releaseDate": "2019-11-01",
+                    "cards": [
+                        {
+                            "id": "sm12-106",
+                            "number": "106"
+                        },
+                        {
+                            "id": "sm12-79",
+                            "number": "79"
+                        },
+                        {
+                            "id": "sm12-21",
+                            "number": "21"
+                        },
+                        {
+                            "id": "sm12-14",
+                            "number": "14"
+                        }
+                    ]
+                },
+                {
+                    "id": "sma",
+                    "name": "Yellow A Alternate",
+                    "releaseDate": "2019-08-23",
+                    "cards": [
+                        {
+                            "id": "sma-SV12",
+                            "number": "SV12"
+                        },
+                        {
+                            "id": "sma-SV33",
+                            "number": "SV33"
+                        }
+                    ]
+                },
+                {
+                    "id": "sm115",
+                    "name": "Hidden Fates",
+                    "releaseDate": "2019-08-23",
+                    "cards": [
+                        {
+                            "id": "sm115-22",
+                            "number": "22"
+                        }
+                    ]
+                },
+                {
+                    "id": "sm11",
+                    "name": "Unified Minds",
+                    "releaseDate": "2019-08-02",
+                    "cards": [
+                        {
+                            "id": "sm11-178",
+                            "number": "178"
+                        },
+                        {
+                            "id": "sm11-156",
+                            "number": "156"
+                        },
+                        {
+                            "id": "sm11-122",
+                            "number": "122"
+                        },
+                        {
+                            "id": "sm11-68",
+                            "number": "68"
+                        }
+                    ]
+                },
+                {
+                    "id": "sm10",
+                    "name": "Unbroken Bonds",
+                    "releaseDate": "2019-05-03",
+                    "cards": [
+                        {
+                            "id": "sm10-127",
+                            "number": "127"
+                        },
+                        {
+                            "id": "sm10-116",
+                            "number": "116"
+                        },
+                        {
+                            "id": "sm10-66",
+                            "number": "66"
+                        },
+                        {
+                            "id": "sm10-50",
+                            "number": "50"
+                        },
+                        {
+                            "id": "sm10-15",
+                            "number": "15"
+                        },
+                        {
+                            "id": "sm10-7",
+                            "number": "7"
+                        }
+                    ]
+                },
+                {
+                    "id": "sm9",
+                    "name": "Team Up",
+                    "releaseDate": "2019-01-31",
+                    "cards": [
+                        {
+                            "id": "sm9-131",
+                            "number": "131"
+                        },
+                        {
+                            "id": "sm9-114",
+                            "number": "114"
+                        },
+                        {
+                            "id": "sm9-105",
+                            "number": "105"
+                        },
+                        {
+                            "id": "sm9-80",
+                            "number": "80"
+                        },
+                        {
+                            "id": "sm9-72",
+                            "number": "72"
+                        },
+                        {
+                            "id": "sm9-63",
+                            "number": "63"
+                        }
+                    ]
+                },
+                {
+                    "id": "sm8",
+                    "name": "Lost Thunder",
+                    "releaseDate": "2018-11-02",
+                    "cards": [
+                        {
+                            "id": "sm8-126",
+                            "number": "126"
+                        },
+                        {
+                            "id": "sm8-102",
+                            "number": "102"
+                        },
+                        {
+                            "id": "sm8-87",
+                            "number": "87"
+                        },
+                        {
+                            "id": "sm8-59",
+                            "number": "59"
+                        }
+                    ]
+                },
+                {
+                    "id": "sm7.5",
+                    "name": "Dragon Majesty",
+                    "releaseDate": "2018-09-07",
+                    "cards": [
+                        {
+                            "id": "sm7.5-35",
+                            "number": "35"
+                        }
+                    ]
+                },
+                {
+                    "id": "sm7",
+                    "name": "Celestial Storm",
+                    "releaseDate": "2018-08-03",
+                    "cards": [
+                        {
+                            "id": "sm7-108",
+                            "number": "108"
+                        },
+                        {
+                            "id": "sm7-107",
+                            "number": "107"
+                        },
+                        {
+                            "id": "sm7-40",
+                            "number": "40"
+                        }
+                    ]
+                },
+                {
+                    "id": "sm6",
+                    "name": "Forbidden Light",
+                    "releaseDate": "2018-05-04",
+                    "cards": [
+                        {
+                            "id": "sm6-100",
+                            "number": "100"
+                        },
+                        {
+                            "id": "sm6-80",
+                            "number": "80"
+                        },
+                        {
+                            "id": "sm6-49",
+                            "number": "49"
+                        },
+                        {
+                            "id": "sm6-10",
+                            "number": "10"
+                        }
+                    ]
+                },
+                {
+                    "id": "sm5",
+                    "name": "Ultra Prism",
+                    "releaseDate": "2018-02-02",
+                    "cards": [
+                        {
+                            "id": "sm5-44",
+                            "number": "44"
+                        },
+                        {
+                            "id": "sm5-29",
+                            "number": "29"
+                        },
+                        {
+                            "id": "sm5-27",
+                            "number": "27"
+                        },
+                        {
+                            "id": "sm5-12",
+                            "number": "12"
+                        }
+                    ]
+                },
+                {
+                    "id": "sm4",
+                    "name": "Crimson Invasion",
+                    "releaseDate": "2017-11-03",
+                    "cards": [
+                        {
+                            "id": "sm4-88",
+                            "number": "88"
+                        },
+                        {
+                            "id": "sm4-62",
+                            "number": "62"
+                        },
+                        {
+                            "id": "sm4-14",
+                            "number": "14"
+                        },
+                        {
+                            "id": "sm4-5",
+                            "number": "5"
+                        }
+                    ]
+                },
+                {
+                    "id": "sm3",
+                    "name": "Burning Shadows",
+                    "releaseDate": "2017-08-04",
+                    "cards": [
+                        {
+                            "id": "sm3-92",
+                            "number": "92"
+                        },
+                        {
+                            "id": "sm3-60",
+                            "number": "60"
+                        },
+                        {
+                            "id": "sm3-24",
+                            "number": "24"
+                        }
+                    ]
+                },
+                {
+                    "id": "sm2",
+                    "name": "Guardians Rising",
+                    "releaseDate": "2017-05-05",
+                    "cards": [
+                        {
+                            "id": "sm2-81",
+                            "number": "81"
+                        }
+                    ]
+                },
+                {
+                    "id": "smp",
+                    "name": "SM Black Star Promos",
+                    "releaseDate": "2017-02-03",
+                    "cards": [
+                        {
+                            "id": "smp-SM149",
+                            "number": "SM149"
+                        },
+                        {
+                            "id": "smp-SM158",
+                            "number": "SM158"
+                        },
+                        {
+                            "id": "smp-SM129",
+                            "number": "SM129"
+                        },
+                        {
+                            "id": "smp-SM54",
+                            "number": "SM54"
+                        },
+                        {
+                            "id": "smp-SM193",
+                            "number": "SM193"
+                        }
+                    ]
+                },
+                {
+                    "id": "sm1",
+                    "name": "Sun & Moon",
+                    "releaseDate": "2017-02-03",
+                    "cards": [
+                        {
+                            "id": "sm1-88",
+                            "number": "88"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "xy",
+            "name": "XY",
+            "releaseDate": "2013-10-12",
+            "sets": [
+                {
+                    "id": "xy11",
+                    "name": "Steam Siege",
+                    "releaseDate": "2016-08-03",
+                    "cards": [
+                        {
+                            "id": "xy11-89",
+                            "number": "89"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

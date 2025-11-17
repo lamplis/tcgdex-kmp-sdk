@@ -1,0 +1,59 @@
+{
+    "illustrator": "kanahei",
+    "series": [
+        {
+            "id": "swsh",
+            "name": "Sword & Shield",
+            "releaseDate": "2019-11-15",
+            "sets": [
+                {
+                    "id": "swsh2",
+                    "name": "Rebel Clash",
+                    "releaseDate": "2020-05-01",
+                    "cards": [
+                        {
+                            "id": "swsh2-39",
+                            "number": "39"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "sm",
+            "name": "Sun & Moon",
+            "releaseDate": "2017-02-03",
+            "sets": [
+                {
+                    "id": "sm10",
+                    "name": "Unbroken Bonds",
+                    "releaseDate": "2019-05-03",
+                    "cards": [
+                        {
+                            "id": "sm10-158",
+                            "number": "158"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "xy",
+            "name": "XY",
+            "releaseDate": "2013-10-12",
+            "sets": [
+                {
+                    "id": "g1",
+                    "name": "Generations",
+                    "releaseDate": "2016-02-22",
+                    "cards": [
+                        {
+                            "id": "g1-RC10",
+                            "number": "RC10"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

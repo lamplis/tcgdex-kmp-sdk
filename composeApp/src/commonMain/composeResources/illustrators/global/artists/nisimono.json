@@ -1,0 +1,86 @@
+{
+    "illustrator": "nisimono",
+    "series": [
+        {
+            "id": "me",
+            "name": "Mega Evolution",
+            "releaseDate": "2025-09-26",
+            "sets": [
+                {
+                    "id": "me01",
+                    "name": "Mega Evolution",
+                    "releaseDate": "2025-09-26",
+                    "cards": [
+                        {
+                            "id": "me01-009",
+                            "number": "009"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "sv",
+            "name": "Scarlet & Violet",
+            "releaseDate": "2023-03-31",
+            "sets": [
+                {
+                    "id": "sv06",
+                    "name": "Twilight Masquerade",
+                    "releaseDate": "2024-05-24",
+                    "cards": [
+                        {
+                            "id": "sv06-073",
+                            "number": "073"
+                        }
+                    ]
+                },
+                {
+                    "id": "sv05",
+                    "name": "Temporal Forces",
+                    "releaseDate": "2024-03-22",
+                    "cards": [
+                        {
+                            "id": "sv05-124",
+                            "number": "124"
+                        }
+                    ]
+                },
+                {
+                    "id": "sv04",
+                    "name": "Paradox Rift",
+                    "releaseDate": "2023-11-03",
+                    "cards": [
+                        {
+                            "id": "sv04-208",
+                            "number": "208"
+                        },
+                        {
+                            "id": "sv04-078",
+                            "number": "078"
+                        }
+                    ]
+                },
+                {
+                    "id": "sv03.5",
+                    "name": "151",
+                    "releaseDate": "2023-09-22",
+                    "cards": [
+                        {
+                            "id": "sv03.5-015",
+                            "number": "015"
+                        },
+                        {
+                            "id": "sv03.5-014",
+                            "number": "014"
+                        },
+                        {
+                            "id": "sv03.5-013",
+                            "number": "013"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+{
+    "illustrator": "Benimaru Itoh",
+    "series": [
+        {
+            "id": "gym",
+            "name": "Gym",
+            "releaseDate": "2000-08-14",
+            "sets": [
+                {
+                    "id": "gym1",
+                    "name": "Gym Heroes",
+                    "releaseDate": "2000-08-14",
+                    "cards": [
+                        {
+                            "id": "gym1-21",
+                            "number": "21"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "base",
+            "name": "Base",
+            "releaseDate": "1999-01-09",
+            "sets": [
+                {
+                    "id": "basep",
+                    "name": "Wizards Black Star Promos",
+                    "releaseDate": "1999-07-01",
+                    "cards": [
+                        {
+                            "id": "basep-14",
+                            "number": "14"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

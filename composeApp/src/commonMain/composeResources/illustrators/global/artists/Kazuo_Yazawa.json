@@ -1,0 +1,122 @@
+{
+    "illustrator": "Kazuo Yazawa",
+    "series": [
+        {
+            "id": "swsh",
+            "name": "Sword & Shield",
+            "releaseDate": "2019-11-15",
+            "sets": [
+                {
+                    "id": "cel25",
+                    "name": "Celebrations",
+                    "releaseDate": "2021-10-08",
+                    "cards": [
+                        {
+                            "id": "cel25-9A",
+                            "number": "9A"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "pop",
+            "name": "POP",
+            "releaseDate": "2003-10-01",
+            "sets": [
+                {
+                    "id": "pop2",
+                    "name": "POP Series 2",
+                    "releaseDate": "2005-08-01",
+                    "cards": [
+                        {
+                            "id": "pop2-10",
+                            "number": "10"
+                        }
+                    ]
+                },
+                {
+                    "id": "np",
+                    "name": "Nintendo Black Star Promos",
+                    "releaseDate": "2003-10-01",
+                    "cards": [
+                        {
+                            "id": "np-2",
+                            "number": "2"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ex",
+            "name": "EX",
+            "releaseDate": "2003-07-01",
+            "sets": [
+                {
+                    "id": "ex9",
+                    "name": "Emerald",
+                    "releaseDate": "2005-05-09",
+                    "cards": [
+                        {
+                            "id": "ex9-80",
+                            "number": "80"
+                        },
+                        {
+                            "id": "ex9-78",
+                            "number": "78"
+                        }
+                    ]
+                },
+                {
+                    "id": "ex4",
+                    "name": "Team Magma vs Team Aqua",
+                    "releaseDate": "2004-03-01",
+                    "cards": [
+                        {
+                            "id": "ex4-49",
+                            "number": "49"
+                        },
+                        {
+                            "id": "ex4-9",
+                            "number": "9"
+                        }
+                    ]
+                },
+                {
+                    "id": "ex1",
+                    "name": "Ruby & Sapphire",
+                    "releaseDate": "2003-07-01",
+                    "cards": [
+                        {
+                            "id": "ex1-85",
+                            "number": "85"
+                        },
+                        {
+                            "id": "ex1-84",
+                            "number": "84"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ecard",
+            "name": "E-Card",
+            "releaseDate": "2002-08-01",
+            "sets": [
+                {
+                    "id": "ecard2",
+                    "name": "Aquapolis",
+                    "releaseDate": "2003-01-15",
+                    "cards": [
+                        {
+                            "id": "ecard2-131",
+                            "number": "131"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

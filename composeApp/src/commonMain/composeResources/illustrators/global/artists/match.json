@@ -1,0 +1,951 @@
+{
+    "illustrator": "match",
+    "series": [
+        {
+            "id": "sm",
+            "name": "Sun & Moon",
+            "releaseDate": "2017-02-03",
+            "sets": [
+                {
+                    "id": "sm6",
+                    "name": "Forbidden Light",
+                    "releaseDate": "2018-05-04",
+                    "cards": [
+                        {
+                            "id": "sm6-3",
+                            "number": "3"
+                        }
+                    ]
+                },
+                {
+                    "id": "sm5",
+                    "name": "Ultra Prism",
+                    "releaseDate": "2018-02-02",
+                    "cards": [
+                        {
+                            "id": "sm5-115",
+                            "number": "115"
+                        },
+                        {
+                            "id": "sm5-71",
+                            "number": "71"
+                        },
+                        {
+                            "id": "sm5-37",
+                            "number": "37"
+                        }
+                    ]
+                },
+                {
+                    "id": "sm3.5",
+                    "name": "Shining Legends",
+                    "releaseDate": "2017-10-06",
+                    "cards": [
+                        {
+                            "id": "sm3.5-30",
+                            "number": "30"
+                        }
+                    ]
+                },
+                {
+                    "id": "sm3",
+                    "name": "Burning Shadows",
+                    "releaseDate": "2017-08-04",
+                    "cards": [
+                        {
+                            "id": "sm3-42",
+                            "number": "42"
+                        }
+                    ]
+                },
+                {
+                    "id": "sm2",
+                    "name": "Guardians Rising",
+                    "releaseDate": "2017-05-05",
+                    "cards": [
+                        {
+                            "id": "sm2-98",
+                            "number": "98"
+                        },
+                        {
+                            "id": "sm2-97",
+                            "number": "97"
+                        },
+                        {
+                            "id": "sm2-41",
+                            "number": "41"
+                        },
+                        {
+                            "id": "sm2-8",
+                            "number": "8"
+                        }
+                    ]
+                },
+                {
+                    "id": "smp",
+                    "name": "SM Black Star Promos",
+                    "releaseDate": "2017-02-03",
+                    "cards": [
+                        {
+                            "id": "smp-SM21",
+                            "number": "SM21"
+                        },
+                        {
+                            "id": "smp-SM09",
+                            "number": "SM09"
+                        },
+                        {
+                            "id": "smp-SM06",
+                            "number": "SM06"
+                        },
+                        {
+                            "id": "smp-SM07",
+                            "number": "SM07"
+                        },
+                        {
+                            "id": "smp-SM76",
+                            "number": "SM76"
+                        },
+                        {
+                            "id": "smp-SM03",
+                            "number": "SM03"
+                        }
+                    ]
+                },
+                {
+                    "id": "sm1",
+                    "name": "Sun & Moon",
+                    "releaseDate": "2017-02-03",
+                    "cards": [
+                        {
+                            "id": "sm1-109",
+                            "number": "109"
+                        },
+                        {
+                            "id": "sm1-87",
+                            "number": "87"
+                        },
+                        {
+                            "id": "sm1-77",
+                            "number": "77"
+                        },
+                        {
+                            "id": "sm1-62",
+                            "number": "62"
+                        },
+                        {
+                            "id": "sm1-46",
+                            "number": "46"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "xy",
+            "name": "XY",
+            "releaseDate": "2013-10-12",
+            "sets": [
+                {
+                    "id": "xy11",
+                    "name": "Steam Siege",
+                    "releaseDate": "2016-08-03",
+                    "cards": [
+                        {
+                            "id": "xy11-70",
+                            "number": "70"
+                        },
+                        {
+                            "id": "xy11-42",
+                            "number": "42"
+                        },
+                        {
+                            "id": "xy11-6",
+                            "number": "6"
+                        }
+                    ]
+                },
+                {
+                    "id": "xy10",
+                    "name": "Fates Collide",
+                    "releaseDate": "2016-05-02",
+                    "cards": [
+                        {
+                            "id": "xy10-46",
+                            "number": "46"
+                        },
+                        {
+                            "id": "xy10-42",
+                            "number": "42"
+                        },
+                        {
+                            "id": "xy10-33",
+                            "number": "33"
+                        }
+                    ]
+                },
+                {
+                    "id": "g1",
+                    "name": "Generations",
+                    "releaseDate": "2016-02-22",
+                    "cards": [
+                        {
+                            "id": "g1-48",
+                            "number": "48"
+                        },
+                        {
+                            "id": "g1-30",
+                            "number": "30"
+                        },
+                        {
+                            "id": "g1-8",
+                            "number": "8"
+                        }
+                    ]
+                },
+                {
+                    "id": "xy9",
+                    "name": "BREAKpoint",
+                    "releaseDate": "2016-02-03",
+                    "cards": [
+                        {
+                            "id": "xy9-87",
+                            "number": "87"
+                        },
+                        {
+                            "id": "xy9-15",
+                            "number": "15"
+                        },
+                        {
+                            "id": "xy9-11",
+                            "number": "11"
+                        },
+                        {
+                            "id": "xy9-10",
+                            "number": "10"
+                        }
+                    ]
+                },
+                {
+                    "id": "xy8",
+                    "name": "BREAKthrough",
+                    "releaseDate": "2015-11-04",
+                    "cards": [
+                        {
+                            "id": "xy8-130",
+                            "number": "130"
+                        },
+                        {
+                            "id": "xy8-88",
+                            "number": "88"
+                        },
+                        {
+                            "id": "xy8-87",
+                            "number": "87"
+                        },
+                        {
+                            "id": "xy8-78",
+                            "number": "78"
+                        },
+                        {
+                            "id": "xy8-71",
+                            "number": "71"
+                        }
+                    ]
+                },
+                {
+                    "id": "xy7",
+                    "name": "Ancient Origins",
+                    "releaseDate": "2015-08-12",
+                    "cards": [
+                        {
+                            "id": "xy7-53",
+                            "number": "53"
+                        },
+                        {
+                            "id": "xy7-12",
+                            "number": "12"
+                        }
+                    ]
+                },
+                {
+                    "id": "xy6",
+                    "name": "Roaring Skies",
+                    "releaseDate": "2015-05-06",
+                    "cards": [
+                        {
+                            "id": "xy6-25",
+                            "number": "25"
+                        },
+                        {
+                            "id": "xy6-8",
+                            "number": "8"
+                        }
+                    ]
+                },
+                {
+                    "id": "xy5",
+                    "name": "Primal Clash",
+                    "releaseDate": "2015-02-04",
+                    "cards": [
+                        {
+                            "id": "xy5-112",
+                            "number": "112"
+                        },
+                        {
+                            "id": "xy5-72",
+                            "number": "72"
+                        },
+                        {
+                            "id": "xy5-63",
+                            "number": "63"
+                        },
+                        {
+                            "id": "xy5-7",
+                            "number": "7"
+                        },
+                        {
+                            "id": "xy5-4",
+                            "number": "4"
+                        }
+                    ]
+                },
+                {
+                    "id": "xy4",
+                    "name": "Phantom Forces",
+                    "releaseDate": "2014-11-05",
+                    "cards": [
+                        {
+                            "id": "xy4-88",
+                            "number": "88"
+                        },
+                        {
+                            "id": "xy4-61",
+                            "number": "61"
+                        },
+                        {
+                            "id": "xy4-31",
+                            "number": "31"
+                        },
+                        {
+                            "id": "xy4-14",
+                            "number": "14"
+                        }
+                    ]
+                },
+                {
+                    "id": "xy3",
+                    "name": "Furious Fists",
+                    "releaseDate": "2014-08-13",
+                    "cards": [
+                        {
+                            "id": "xy3-70",
+                            "number": "70"
+                        },
+                        {
+                            "id": "xy3-67",
+                            "number": "67"
+                        },
+                        {
+                            "id": "xy3-48",
+                            "number": "48"
+                        }
+                    ]
+                },
+                {
+                    "id": "xy2",
+                    "name": "Flashfire",
+                    "releaseDate": "2014-05-07",
+                    "cards": [
+                        {
+                            "id": "xy2-51",
+                            "number": "51"
+                        },
+                        {
+                            "id": "xy2-38",
+                            "number": "38"
+                        },
+                        {
+                            "id": "xy2-10",
+                            "number": "10"
+                        }
+                    ]
+                },
+                {
+                    "id": "xy1",
+                    "name": "XY",
+                    "releaseDate": "2014-02-05",
+                    "cards": [
+                        {
+                            "id": "xy1-108",
+                            "number": "108"
+                        },
+                        {
+                            "id": "xy1-71",
+                            "number": "71"
+                        }
+                    ]
+                },
+                {
+                    "id": "xyp",
+                    "name": "XY Black Star Promos",
+                    "releaseDate": "2013-10-12",
+                    "cards": [
+                        {
+                            "id": "xyp-XY137",
+                            "number": "XY137"
+                        },
+                        {
+                            "id": "xyp-XY57",
+                            "number": "XY57"
+                        },
+                        {
+                            "id": "xyp-XY21",
+                            "number": "XY21"
+                        },
+                        {
+                            "id": "xyp-XY92",
+                            "number": "XY92"
+                        },
+                        {
+                            "id": "xyp-XY101",
+                            "number": "XY101"
+                        },
+                        {
+                            "id": "xyp-XY100",
+                            "number": "XY100"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "mc",
+            "name": "McDonald's Collection",
+            "releaseDate": "2011-06-17",
+            "sets": [
+                {
+                    "id": "2012bw",
+                    "name": "Macdonald's Collection 2012",
+                    "releaseDate": "2012-06-15",
+                    "cards": [
+                        {
+                            "id": "2012bw-8",
+                            "number": "8"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "bw",
+            "name": "Black & White",
+            "releaseDate": "2011-04-25",
+            "sets": [
+                {
+                    "id": "bw11",
+                    "name": "Legendary Treasures",
+                    "releaseDate": "2013-11-06",
+                    "cards": [
+                        {
+                            "id": "bw11-106",
+                            "number": "106"
+                        },
+                        {
+                            "id": "bw11-90",
+                            "number": "90"
+                        },
+                        {
+                            "id": "bw11-17",
+                            "number": "17"
+                        },
+                        {
+                            "id": "bw11-12",
+                            "number": "12"
+                        }
+                    ]
+                },
+                {
+                    "id": "bw10",
+                    "name": "Plasma Blast",
+                    "releaseDate": "2013-08-14",
+                    "cards": [
+                        {
+                            "id": "bw10-48",
+                            "number": "48"
+                        },
+                        {
+                            "id": "bw10-43",
+                            "number": "43"
+                        },
+                        {
+                            "id": "bw10-6",
+                            "number": "6"
+                        }
+                    ]
+                },
+                {
+                    "id": "bw9",
+                    "name": "Plasma Freeze",
+                    "releaseDate": "2013-05-08",
+                    "cards": [
+                        {
+                            "id": "bw9-91",
+                            "number": "91"
+                        },
+                        {
+                            "id": "bw9-77",
+                            "number": "77"
+                        },
+                        {
+                            "id": "bw9-5",
+                            "number": "5"
+                        },
+                        {
+                            "id": "bw9-2",
+                            "number": "2"
+                        }
+                    ]
+                },
+                {
+                    "id": "bw8",
+                    "name": "Plasma Storm",
+                    "releaseDate": "2013-02-06",
+                    "cards": [
+                        {
+                            "id": "bw8-107",
+                            "number": "107"
+                        },
+                        {
+                            "id": "bw8-57",
+                            "number": "57"
+                        },
+                        {
+                            "id": "bw8-47",
+                            "number": "47"
+                        },
+                        {
+                            "id": "bw8-45",
+                            "number": "45"
+                        },
+                        {
+                            "id": "bw8-43",
+                            "number": "43"
+                        },
+                        {
+                            "id": "bw8-31",
+                            "number": "31"
+                        },
+                        {
+                            "id": "bw8-28",
+                            "number": "28"
+                        }
+                    ]
+                },
+                {
+                    "id": "bw7",
+                    "name": "Boundaries Crossed",
+                    "releaseDate": "2012-11-07",
+                    "cards": [
+                        {
+                            "id": "bw7-73",
+                            "number": "73"
+                        },
+                        {
+                            "id": "bw7-41",
+                            "number": "41"
+                        },
+                        {
+                            "id": "bw7-40",
+                            "number": "40"
+                        },
+                        {
+                            "id": "bw7-39",
+                            "number": "39"
+                        },
+                        {
+                            "id": "bw7-34",
+                            "number": "34"
+                        },
+                        {
+                            "id": "bw7-32",
+                            "number": "32"
+                        },
+                        {
+                            "id": "bw7-21",
+                            "number": "21"
+                        }
+                    ]
+                },
+                {
+                    "id": "dv1",
+                    "name": "Dragon Vault",
+                    "releaseDate": "2012-10-05",
+                    "cards": [
+                        {
+                            "id": "dv1-15",
+                            "number": "15"
+                        }
+                    ]
+                },
+                {
+                    "id": "bw6",
+                    "name": "Dragons Exalted",
+                    "releaseDate": "2012-08-15",
+                    "cards": [
+                        {
+                            "id": "bw6-106",
+                            "number": "106"
+                        },
+                        {
+                            "id": "bw6-102",
+                            "number": "102"
+                        },
+                        {
+                            "id": "bw6-82",
+                            "number": "82"
+                        },
+                        {
+                            "id": "bw6-26",
+                            "number": "26"
+                        },
+                        {
+                            "id": "bw6-9",
+                            "number": "9"
+                        }
+                    ]
+                },
+                {
+                    "id": "bw5",
+                    "name": "Dark Explorers",
+                    "releaseDate": "2012-05-09",
+                    "cards": [
+                        {
+                            "id": "bw5-73",
+                            "number": "73"
+                        },
+                        {
+                            "id": "bw5-20",
+                            "number": "20"
+                        }
+                    ]
+                },
+                {
+                    "id": "bw4",
+                    "name": "Next Destinies",
+                    "releaseDate": "2012-02-08",
+                    "cards": [
+                        {
+                            "id": "bw4-77",
+                            "number": "77"
+                        },
+                        {
+                            "id": "bw4-72",
+                            "number": "72"
+                        },
+                        {
+                            "id": "bw4-65",
+                            "number": "65"
+                        },
+                        {
+                            "id": "bw4-53",
+                            "number": "53"
+                        }
+                    ]
+                },
+                {
+                    "id": "bw3",
+                    "name": "Noble Victories",
+                    "releaseDate": "2011-11-16",
+                    "cards": [
+                        {
+                            "id": "bw3-69",
+                            "number": "69"
+                        },
+                        {
+                            "id": "bw3-49",
+                            "number": "49"
+                        },
+                        {
+                            "id": "bw3-36",
+                            "number": "36"
+                        },
+                        {
+                            "id": "bw3-28",
+                            "number": "28"
+                        },
+                        {
+                            "id": "bw3-26",
+                            "number": "26"
+                        },
+                        {
+                            "id": "bw3-9",
+                            "number": "9"
+                        }
+                    ]
+                },
+                {
+                    "id": "bw2",
+                    "name": "Emerging Powers",
+                    "releaseDate": "2011-08-31",
+                    "cards": [
+                        {
+                            "id": "bw2-58",
+                            "number": "58"
+                        },
+                        {
+                            "id": "bw2-54",
+                            "number": "54"
+                        },
+                        {
+                            "id": "bw2-42",
+                            "number": "42"
+                        },
+                        {
+                            "id": "bw2-24",
+                            "number": "24"
+                        },
+                        {
+                            "id": "bw2-2",
+                            "number": "2"
+                        }
+                    ]
+                },
+                {
+                    "id": "bw1",
+                    "name": "Black & White",
+                    "releaseDate": "2011-04-25",
+                    "cards": [
+                        {
+                            "id": "bw1-83",
+                            "number": "83"
+                        },
+                        {
+                            "id": "bw1-79",
+                            "number": "79"
+                        },
+                        {
+                            "id": "bw1-58",
+                            "number": "58"
+                        },
+                        {
+                            "id": "bw1-21",
+                            "number": "21"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "col",
+            "name": "Call of Legends",
+            "releaseDate": "2011-02-09",
+            "sets": [
+                {
+                    "id": "col1",
+                    "name": "Call of Legends",
+                    "releaseDate": "2011-02-09",
+                    "cards": [
+                        {
+                            "id": "col1-13",
+                            "number": "13"
+                        },
+                        {
+                            "id": "col1-11",
+                            "number": "11"
+                        },
+                        {
+                            "id": "col1-4",
+                            "number": "4"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "hgss",
+            "name": "HeartGold & SoulSilver",
+            "releaseDate": "2010-02-10",
+            "sets": [
+                {
+                    "id": "hgss4",
+                    "name": "Triumphant",
+                    "releaseDate": "2010-11-03",
+                    "cards": [
+                        {
+                            "id": "hgss4-70",
+                            "number": "70"
+                        },
+                        {
+                            "id": "hgss4-46",
+                            "number": "46"
+                        },
+                        {
+                            "id": "hgss4-17",
+                            "number": "17"
+                        },
+                        {
+                            "id": "hgss4-6",
+                            "number": "6"
+                        }
+                    ]
+                },
+                {
+                    "id": "hgss3",
+                    "name": "Undaunted",
+                    "releaseDate": "2010-08-18",
+                    "cards": [
+                        {
+                            "id": "hgss3-42",
+                            "number": "42"
+                        },
+                        {
+                            "id": "hgss3-32",
+                            "number": "32"
+                        },
+                        {
+                            "id": "hgss3-29",
+                            "number": "29"
+                        },
+                        {
+                            "id": "hgss3-2",
+                            "number": "2"
+                        }
+                    ]
+                },
+                {
+                    "id": "hgss2",
+                    "name": "Unleashed",
+                    "releaseDate": "2010-05-12",
+                    "cards": [
+                        {
+                            "id": "hgss2-67",
+                            "number": "67"
+                        },
+                        {
+                            "id": "hgss2-66",
+                            "number": "66"
+                        },
+                        {
+                            "id": "hgss2-47",
+                            "number": "47"
+                        },
+                        {
+                            "id": "hgss2-31",
+                            "number": "31"
+                        },
+                        {
+                            "id": "hgss2-28",
+                            "number": "28"
+                        },
+                        {
+                            "id": "hgss2-10",
+                            "number": "10"
+                        }
+                    ]
+                },
+                {
+                    "id": "hgssp",
+                    "name": "HGSS Black Star Promos",
+                    "releaseDate": "2010-02-11",
+                    "cards": [
+                        {
+                            "id": "hgssp-HGSS04",
+                            "number": "HGSS04"
+                        },
+                        {
+                            "id": "hgssp-HGSS15",
+                            "number": "HGSS15"
+                        }
+                    ]
+                },
+                {
+                    "id": "hgss1",
+                    "name": "HeartGold SoulSilver",
+                    "releaseDate": "2010-02-10",
+                    "cards": [
+                        {
+                            "id": "hgss1-88",
+                            "number": "88"
+                        },
+                        {
+                            "id": "hgss1-78",
+                            "number": "78"
+                        },
+                        {
+                            "id": "hgss1-28",
+                            "number": "28"
+                        },
+                        {
+                            "id": "hgss1-10",
+                            "number": "10"
+                        },
+                        {
+                            "id": "hgss1-9",
+                            "number": "9"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "tk",
+            "name": "Trainer kits",
+            "releaseDate": "2004-07-01",
+            "sets": [
+                {
+                    "id": "tk-xy-p",
+                    "name": "XY trainer Kit (Pikachu Libre)",
+                    "releaseDate": "2016-04-27",
+                    "cards": [
+                        {
+                            "id": "tk-xy-p-22",
+                            "number": "22"
+                        },
+                        {
+                            "id": "tk-xy-p-13",
+                            "number": "13"
+                        }
+                    ]
+                },
+                {
+                    "id": "tk-bw-z",
+                    "name": "BW trainer Kit (Zoroark)",
+                    "releaseDate": "2011-09-01",
+                    "cards": [
+                        {
+                            "id": "tk-bw-z-2",
+                            "number": "2"
+                        }
+                    ]
+                },
+                {
+                    "id": "tk-bw-e",
+                    "name": "BW trainer Kit (Excadrill)",
+                    "releaseDate": "2011-09-01",
+                    "cards": [
+                        {
+                            "id": "tk-bw-e-29",
+                            "number": "29"
+                        },
+                        {
+                            "id": "tk-bw-e-11",
+                            "number": "11"
+                        }
+                    ]
+                },
+                {
+                    "id": "tk-hs-r",
+                    "name": "HS trainer Kit (Raichu)",
+                    "releaseDate": "2010-05-01",
+                    "cards": [
+                        {
+                            "id": "tk-hs-r-19",
+                            "number": "19"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

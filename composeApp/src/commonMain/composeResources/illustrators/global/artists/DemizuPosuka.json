@@ -1,0 +1,67 @@
+{
+    "illustrator": "DemizuPosuka",
+    "series": [
+        {
+            "id": "sm",
+            "name": "Sun & Moon",
+            "releaseDate": "2017-02-03",
+            "sets": [
+                {
+                    "id": "sm3.5",
+                    "name": "Shining Legends",
+                    "releaseDate": "2017-10-06",
+                    "cards": [
+                        {
+                            "id": "sm3.5-36",
+                            "number": "36"
+                        }
+                    ]
+                },
+                {
+                    "id": "sm1",
+                    "name": "Sun & Moon",
+                    "releaseDate": "2017-02-03",
+                    "cards": [
+                        {
+                            "id": "sm1-56",
+                            "number": "56"
+                        },
+                        {
+                            "id": "sm1-6",
+                            "number": "6"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "xy",
+            "name": "XY",
+            "releaseDate": "2013-10-12",
+            "sets": [
+                {
+                    "id": "xy11",
+                    "name": "Steam Siege",
+                    "releaseDate": "2016-08-03",
+                    "cards": [
+                        {
+                            "id": "xy11-27",
+                            "number": "27"
+                        }
+                    ]
+                },
+                {
+                    "id": "g1",
+                    "name": "Generations",
+                    "releaseDate": "2016-02-22",
+                    "cards": [
+                        {
+                            "id": "g1-15",
+                            "number": "15"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

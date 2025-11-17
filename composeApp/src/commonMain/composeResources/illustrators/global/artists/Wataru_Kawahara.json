@@ -1,0 +1,233 @@
+{
+    "illustrator": "Wataru Kawahara",
+    "series": [
+        {
+            "id": "col",
+            "name": "Call of Legends",
+            "releaseDate": "2011-02-09",
+            "sets": [
+                {
+                    "id": "col1",
+                    "name": "Call of Legends",
+                    "releaseDate": "2011-02-09",
+                    "cards": [
+                        {
+                            "id": "col1-80",
+                            "number": "80"
+                        },
+                        {
+                            "id": "col1-69",
+                            "number": "69"
+                        },
+                        {
+                            "id": "col1-51",
+                            "number": "51"
+                        },
+                        {
+                            "id": "col1-39",
+                            "number": "39"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "hgss",
+            "name": "HeartGold & SoulSilver",
+            "releaseDate": "2010-02-10",
+            "sets": [
+                {
+                    "id": "hgss4",
+                    "name": "Triumphant",
+                    "releaseDate": "2010-11-03",
+                    "cards": [
+                        {
+                            "id": "hgss4-88",
+                            "number": "88"
+                        }
+                    ]
+                },
+                {
+                    "id": "hgss2",
+                    "name": "Unleashed",
+                    "releaseDate": "2010-05-12",
+                    "cards": [
+                        {
+                            "id": "hgss2-89",
+                            "number": "89"
+                        },
+                        {
+                            "id": "hgss2-88",
+                            "number": "88"
+                        },
+                        {
+                            "id": "hgss2-87",
+                            "number": "87"
+                        },
+                        {
+                            "id": "hgss2-83",
+                            "number": "83"
+                        },
+                        {
+                            "id": "hgss2-76",
+                            "number": "76"
+                        },
+                        {
+                            "id": "hgss2-74",
+                            "number": "74"
+                        },
+                        {
+                            "id": "hgss2-46",
+                            "number": "46"
+                        },
+                        {
+                            "id": "hgss2-44",
+                            "number": "44"
+                        },
+                        {
+                            "id": "hgss2-33",
+                            "number": "33"
+                        },
+                        {
+                            "id": "hgss2-4",
+                            "number": "4"
+                        },
+                        {
+                            "id": "hgss2-1",
+                            "number": "1"
+                        }
+                    ]
+                },
+                {
+                    "id": "hgssp",
+                    "name": "HGSS Black Star Promos",
+                    "releaseDate": "2010-02-11",
+                    "cards": [
+                        {
+                            "id": "hgssp-HGSS10",
+                            "number": "HGSS10"
+                        },
+                        {
+                            "id": "hgssp-HGSS11",
+                            "number": "HGSS11"
+                        },
+                        {
+                            "id": "hgssp-HGSS09",
+                            "number": "HGSS09"
+                        }
+                    ]
+                },
+                {
+                    "id": "hgss1",
+                    "name": "HeartGold SoulSilver",
+                    "releaseDate": "2010-02-10",
+                    "cards": [
+                        {
+                            "id": "hgss1-123",
+                            "number": "123"
+                        },
+                        {
+                            "id": "hgss1-110",
+                            "number": "110"
+                        },
+                        {
+                            "id": "hgss1-99",
+                            "number": "99"
+                        },
+                        {
+                            "id": "hgss1-91",
+                            "number": "91"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "pl",
+            "name": "Platinum",
+            "releaseDate": "2009-02-11",
+            "sets": [
+                {
+                    "id": "pl4",
+                    "name": "Arceus",
+                    "releaseDate": "2009-11-04",
+                    "cards": [
+                        {
+                            "id": "pl4-87",
+                            "number": "87"
+                        },
+                        {
+                            "id": "pl4-83",
+                            "number": "83"
+                        },
+                        {
+                            "id": "pl4-53",
+                            "number": "53"
+                        },
+                        {
+                            "id": "pl4-AR3",
+                            "number": "AR3"
+                        },
+                        {
+                            "id": "pl4-AR6",
+                            "number": "AR6"
+                        }
+                    ]
+                },
+                {
+                    "id": "pl3",
+                    "name": "Supreme Victors",
+                    "releaseDate": "2009-08-19",
+                    "cards": [
+                        {
+                            "id": "pl3-143",
+                            "number": "143"
+                        },
+                        {
+                            "id": "pl3-140",
+                            "number": "140"
+                        },
+                        {
+                            "id": "pl3-134",
+                            "number": "134"
+                        },
+                        {
+                            "id": "pl3-23",
+                            "number": "23"
+                        },
+                        {
+                            "id": "pl3-20",
+                            "number": "20"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "dp",
+            "name": "Diamond & Pearl",
+            "releaseDate": "2007-05-01",
+            "sets": [
+                {
+                    "id": "dpp",
+                    "name": "DP Black Star Promos",
+                    "releaseDate": "2007-05-01",
+                    "cards": [
+                        {
+                            "id": "dpp-DP51",
+                            "number": "DP51"
+                        },
+                        {
+                            "id": "dpp-DP45",
+                            "number": "DP45"
+                        },
+                        {
+                            "id": "dpp-DP52",
+                            "number": "DP52"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

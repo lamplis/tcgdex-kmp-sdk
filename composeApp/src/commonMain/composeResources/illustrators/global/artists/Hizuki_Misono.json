@@ -1,0 +1,42 @@
+{
+    "illustrator": "Hizuki Misono",
+    "series": [
+        {
+            "id": "ecard",
+            "name": "E-Card",
+            "releaseDate": "2002-08-01",
+            "sets": [
+                {
+                    "id": "ecard3",
+                    "name": "Skyridge",
+                    "releaseDate": "2003-05-12",
+                    "cards": [
+                        {
+                            "id": "ecard3-65",
+                            "number": "65"
+                        },
+                        {
+                            "id": "ecard3-34",
+                            "number": "34"
+                        }
+                    ]
+                },
+                {
+                    "id": "ecard2",
+                    "name": "Aquapolis",
+                    "releaseDate": "2003-01-15",
+                    "cards": [
+                        {
+                            "id": "ecard2-107",
+                            "number": "107"
+                        },
+                        {
+                            "id": "ecard2-93",
+                            "number": "93"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

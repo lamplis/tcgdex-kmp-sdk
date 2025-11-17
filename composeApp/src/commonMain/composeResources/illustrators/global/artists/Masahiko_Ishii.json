@@ -1,0 +1,89 @@
+{
+    "illustrator": "Masahiko Ishii",
+    "series": [
+        {
+            "id": "swsh",
+            "name": "Sword & Shield",
+            "releaseDate": "2019-11-15",
+            "sets": [
+                {
+                    "id": "cel25",
+                    "name": "Celebrations",
+                    "releaseDate": "2021-10-08",
+                    "cards": [
+                        {
+                            "id": "cel25-93A",
+                            "number": "93A"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "dp",
+            "name": "Diamond & Pearl",
+            "releaseDate": "2007-05-01",
+            "sets": [
+                {
+                    "id": "dp1",
+                    "name": "Diamond & Pearl",
+                    "releaseDate": "2007-05-01",
+                    "cards": [
+                        {
+                            "id": "dp1-26",
+                            "number": "26"
+                        },
+                        {
+                            "id": "dp1-17",
+                            "number": "17"
+                        },
+                        {
+                            "id": "dp1-16",
+                            "number": "16"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "tk",
+            "name": "Trainer kits",
+            "releaseDate": "2004-07-01",
+            "sets": [
+                {
+                    "id": "tk-dp-m",
+                    "name": "DP trainer Kit (Manaphy)",
+                    "releaseDate": "2007-09-01",
+                    "cards": [
+                        {
+                            "id": "tk-dp-m-2",
+                            "number": "2"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "ex",
+            "name": "EX",
+            "releaseDate": "2003-07-01",
+            "sets": [
+                {
+                    "id": "ex15",
+                    "name": "Dragon Frontiers",
+                    "releaseDate": "2006-11-08",
+                    "cards": [
+                        {
+                            "id": "ex15-94",
+                            "number": "94"
+                        },
+                        {
+                            "id": "ex15-93",
+                            "number": "93"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

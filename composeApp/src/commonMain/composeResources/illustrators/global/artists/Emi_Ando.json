@@ -1,0 +1,85 @@
+{
+    "illustrator": "Emi Ando",
+    "series": [
+        {
+            "id": "swsh",
+            "name": "Sword & Shield",
+            "releaseDate": "2019-11-15",
+            "sets": [
+                {
+                    "id": "swsh4",
+                    "name": "Vivid Voltage",
+                    "releaseDate": "2020-11-13",
+                    "cards": [
+                        {
+                            "id": "swsh4-153",
+                            "number": "153"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "sm",
+            "name": "Sun & Moon",
+            "releaseDate": "2017-02-03",
+            "sets": [
+                {
+                    "id": "sm3.5",
+                    "name": "Shining Legends",
+                    "releaseDate": "2017-10-06",
+                    "cards": [
+                        {
+                            "id": "sm3.5-45",
+                            "number": "45"
+                        },
+                        {
+                            "id": "sm3.5-17",
+                            "number": "17"
+                        }
+                    ]
+                },
+                {
+                    "id": "smp",
+                    "name": "SM Black Star Promos",
+                    "releaseDate": "2017-02-03",
+                    "cards": [
+                        {
+                            "id": "smp-SM85",
+                            "number": "SM85"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "xy",
+            "name": "XY",
+            "releaseDate": "2013-10-12",
+            "sets": [
+                {
+                    "id": "xy6",
+                    "name": "Roaring Skies",
+                    "releaseDate": "2015-05-06",
+                    "cards": [
+                        {
+                            "id": "xy6-107",
+                            "number": "107"
+                        }
+                    ]
+                },
+                {
+                    "id": "xy2",
+                    "name": "Flashfire",
+                    "releaseDate": "2014-05-07",
+                    "cards": [
+                        {
+                            "id": "xy2-106",
+                            "number": "106"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -91,6 +91,7 @@ tasks.withType<KotlinCompilationTask<*>>().configureEach {
     val treatWarningsAsErrors = !(taskName.contains("kotlinjvm") || taskName.contains("jvm"))
     compilerOptions {
         allWarningsAsErrors.set(treatWarningsAsErrors)
+        freeCompilerArgs.add("-Xexpect-actual-classes")
     }
 }
 
@@ -102,8 +103,9 @@ tasks.register<JavaExec>("generateEmbeddedCatalog") {
     val jvmMain = kotlin.targets.getByName("jvm").compilations.getByName("main")
     dependsOn(jvmMain.compileTaskProvider)
     classpath = files(jvmMain.output.allOutputs, jvmMain.runtimeDependencyFiles)
-    // Write under module resources by default
-    systemProperty("outputDir", project.projectDir.resolve("src/commonMain/resources/tcgdex").absolutePath)
+    // Write JSONs under app composeResources/files so they are packaged to assets/composeResources/files/ at runtime
+    val composeAppProject = rootProject.project(":composeApp")
+    systemProperty("outputDir", composeAppProject.projectDir.resolve("src/commonMain/composeResources/files/tcgdex").absolutePath)
     // Ensure missing-images CSV is always generated at module root by default
     systemProperty("missingCsvPath", project.projectDir.resolve("missing_card_images.csv").absolutePath)
     // Pass-through optional tuning properties for faster debug runs and local mode

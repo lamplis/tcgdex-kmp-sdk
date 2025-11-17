@@ -1,0 +1,78 @@
+{
+    "illustrator": "Yuri Umemura",
+    "series": [
+        {
+            "id": "bw",
+            "name": "Black & White",
+            "releaseDate": "2011-04-25",
+            "sets": [
+                {
+                    "id": "bw7",
+                    "name": "Boundaries Crossed",
+                    "releaseDate": "2012-11-07",
+                    "cards": [
+                        {
+                            "id": "bw7-131",
+                            "number": "131"
+                        }
+                    ]
+                },
+                {
+                    "id": "bw1",
+                    "name": "Black & White",
+                    "releaseDate": "2011-04-25",
+                    "cards": [
+                        {
+                            "id": "bw1-97",
+                            "number": "97"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "col",
+            "name": "Call of Legends",
+            "releaseDate": "2011-02-09",
+            "sets": [
+                {
+                    "id": "col1",
+                    "name": "Call of Legends",
+                    "releaseDate": "2011-02-09",
+                    "cards": [
+                        {
+                            "id": "col1-SL6",
+                            "number": "SL6"
+                        },
+                        {
+                            "id": "col1-SL3",
+                            "number": "SL3"
+                        },
+                        {
+                            "id": "col1-SL4",
+                            "number": "SL4"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "hgss",
+            "name": "HeartGold & SoulSilver",
+            "releaseDate": "2010-02-10",
+            "sets": [
+                {
+                    "id": "hgssp",
+                    "name": "HGSS Black Star Promos",
+                    "releaseDate": "2010-02-11",
+                    "cards": [
+                        {
+                            "id": "hgssp-HGSS20",
+                            "number": "HGSS20"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

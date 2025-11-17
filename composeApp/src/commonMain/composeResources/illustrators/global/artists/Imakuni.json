@@ -1,0 +1,41 @@
+{
+    "illustrator": "Imakuni?",
+    "series": [
+        {
+            "id": "xy",
+            "name": "XY",
+            "releaseDate": "2013-10-12",
+            "sets": [
+                {
+                    "id": "xy12",
+                    "name": "Evolutions",
+                    "releaseDate": "2016-11-02",
+                    "cards": [
+                        {
+                            "id": "xy12-112",
+                            "number": "112"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "neo",
+            "name": "Neo",
+            "releaseDate": "2000-12-16",
+            "sets": [
+                {
+                    "id": "neo4",
+                    "name": "Neo Destiny",
+                    "releaseDate": "2002-02-28",
+                    "cards": [
+                        {
+                            "id": "neo4-100",
+                            "number": "100"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

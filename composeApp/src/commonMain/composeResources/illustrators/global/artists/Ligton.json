@@ -1,0 +1,67 @@
+{
+    "illustrator": "Ligton",
+    "series": [
+        {
+            "id": "me",
+            "name": "Mega Evolution",
+            "releaseDate": "2025-09-26",
+            "sets": [
+                {
+                    "id": "me01",
+                    "name": "Mega Evolution",
+                    "releaseDate": "2025-09-26",
+                    "cards": [
+                        {
+                            "id": "me01-142",
+                            "number": "142"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "sv",
+            "name": "Scarlet & Violet",
+            "releaseDate": "2023-03-31",
+            "sets": [
+                {
+                    "id": "sv08.5",
+                    "name": "Prismatic Evolutions",
+                    "releaseDate": "2025-01-17",
+                    "cards": [
+                        {
+                            "id": "sv08.5-173",
+                            "number": "173"
+                        }
+                    ]
+                },
+                {
+                    "id": "sv08",
+                    "name": "Surging Sparks",
+                    "releaseDate": "2024-11-08",
+                    "cards": [
+                        {
+                            "id": "sv08-149",
+                            "number": "149"
+                        }
+                    ]
+                },
+                {
+                    "id": "sv06",
+                    "name": "Twilight Masquerade",
+                    "releaseDate": "2024-05-24",
+                    "cards": [
+                        {
+                            "id": "sv06-088",
+                            "number": "088"
+                        },
+                        {
+                            "id": "sv06-060",
+                            "number": "060"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
