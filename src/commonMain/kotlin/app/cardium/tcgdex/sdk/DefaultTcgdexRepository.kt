@@ -51,7 +51,9 @@ class DefaultTcgdexRepository(
     // =========================================================================
 
     override suspend fun getAllSeries(language: String): List<Serie> = withContext(dispatcher) {
-        queries.getAllSeriesByLanguage(language).executeAsList().map { it.toModel() }
+        val result = queries.getAllSeriesByLanguage(language).executeAsList()
+        println("[Tcgdex][i] getAllSeries($language) returned ${result.size} rows")
+        result.map { it.toModel() }
     }
 
     override suspend fun getSerieById(serieId: String, language: String): Serie? = withContext(dispatcher) {
@@ -63,8 +65,28 @@ class DefaultTcgdexRepository(
     // =========================================================================
 
     override suspend fun getAllSets(language: String): List<CardSet> = withContext(dispatcher) {
+        // Debug: check database state
+        try {
+            val availableLanguages = queries.getAvailableLanguages().executeAsList()
+            println("[Tcgdex][i] Available languages in DB: $availableLanguages")
+            
+            // Debug: count sets per language
+            val allSets = queries.countAllSets().executeAsOne()
+            println("[Tcgdex][i] Total sets in DB: $allSets")
+            
+            // Debug: count sets for specific language using raw count
+            val frCount = queries.countSetsByLanguage("fr").executeAsOne()
+            val enCount = queries.countSetsByLanguage("en").executeAsOne()
+            println("[Tcgdex][i] Sets by language: fr=$frCount, en=$enCount")
+        } catch (e: Exception) {
+            println("[Tcgdex][x] Failed to get DB stats: ${e.message}")
+            e.printStackTrace()
+        }
+        
         // Use the query that includes serie_name for complete CardSet data
-        queries.getAllSetsByLanguage(language).executeAsList().map { set ->
+        val result = queries.getAllSetsByLanguage(language).executeAsList()
+        println("[Tcgdex][i] getAllSets($language) returned ${result.size} rows")
+        result.map { set ->
             // Fetch serie name separately for the basic Sets result
             val serieName = queries.getSeriesById(set.serie_id, language)
                 .executeAsOneOrNull()?.name
@@ -131,7 +153,9 @@ class DefaultTcgdexRepository(
     // =========================================================================
 
     override suspend fun getAllIllustrators(): List<Illustrator> = withContext(dispatcher) {
-        queries.getAllIllustrators().executeAsList().map { it.toModel() }
+        val result = queries.getAllIllustrators().executeAsList()
+        println("[Tcgdex][i] getAllIllustrators() returned ${result.size} rows")
+        result.map { it.toModel() }
     }
 
     override suspend fun getIllustratorsWithCounts(language: String): List<IllustratorWithCount> =

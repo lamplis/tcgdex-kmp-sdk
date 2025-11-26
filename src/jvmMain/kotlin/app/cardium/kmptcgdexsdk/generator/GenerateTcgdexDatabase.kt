@@ -54,6 +54,11 @@ fun main(args: Array<String>) {
     // Track unique illustrators and rarities (language-agnostic)
     val illustrators = mutableMapOf<String, String>() // id -> name
     val rarities = mutableMapOf<String, String>() // id -> name
+    
+    // Track missing images for Pokecardex fallback index
+    val missingImages = mutableListOf<MissingImagesIndexGenerator.MissingImageEntry>()
+    // Track all cards per language for cross-language comparison
+    val cardsByLanguage = mutableMapOf<String, MutableSet<String>>() // language -> set of card IDs
 
     for (language in config.languages) {
         val langDir = File(config.datasetDir, language)
@@ -113,13 +118,40 @@ fun main(args: Array<String>) {
         val cardsFile = File(langDir, "cards.json")
         if (cardsFile.exists()) {
             val cardsJson = json.parseToJsonElement(cardsFile.readText()).jsonArray
+            val langCardIds = cardsByLanguage.getOrPut(language) { mutableSetOf() }
+            
             for (cardElement in cardsJson) {
                 val card = cardElement.jsonObject
                 val id = card.getString("id") ?: continue
                 val localId = card.getString("localId") ?: id.substringAfterLast("-")
                 val setId = card.getNestedString("set", "id") ?: continue
                 val name = card.getString("name") ?: id
-                val imageUrl = card.getString("image") ?: continue
+                val imageUrl = card.getString("image")
+                
+                // Track card ID for cross-language comparison
+                langCardIds.add(id)
+
+                // Track missing images (null or empty imageUrl)
+                if (imageUrl.isNullOrBlank()) {
+                    val pokecardexUrl = MissingImagesIndexGenerator.buildPokecardexUrl(
+                        setId = setId,
+                        localId = localId,
+                        language = language,
+                        hd = false,
+                    )
+                    missingImages.add(
+                        MissingImagesIndexGenerator.MissingImageEntry(
+                            language = language,
+                            cardId = id,
+                            setId = setId,
+                            localId = localId,
+                            tcgdexUrl = null,
+                            pokecardexUrl = pokecardexUrl,
+                        ),
+                    )
+                    // Skip cards without images in the database
+                    continue
+                }
 
                 // Extract illustrator
                 val illustratorName = card.getString("illustrator")
@@ -188,9 +220,30 @@ fun main(args: Array<String>) {
         db.tcgdexQueries.insertRarity(id, name)
     }
 
+    // Set the database version to match SQLDelight's Schema.version (1)
+    // This is required for Android's SQLiteOpenHelper to recognize the database
+    // as already created and not call onCreate()
+    driver.execute(null, "PRAGMA user_version = 1", 0)
+    println("[Tcgdex] Set user_version = 1")
+
     driver.close()
     println("[Tcgdex] Database generation complete: ${outputFile.absolutePath}")
     println("[Tcgdex] File size: ${outputFile.length() / 1024 / 1024} MB")
+    
+    // Generate missing images CSV index
+    if (missingImages.isNotEmpty()) {
+        val outputDir = outputFile.parentFile ?: File(".")
+        MissingImagesIndexGenerator.generateCsv(missingImages, outputDir)
+        
+        // Log summary by language
+        val byLanguage = missingImages.groupBy { it.language }
+        for ((lang, entries) in byLanguage.toSortedMap()) {
+            val withFallback = entries.count { it.pokecardexUrl != null }
+            println("[Tcgdex]   $lang: ${entries.size} missing (${withFallback} with Pokecardex fallback)")
+        }
+    } else {
+        println("[Tcgdex] No missing images detected")
+    }
 }
 
 private data class Config(

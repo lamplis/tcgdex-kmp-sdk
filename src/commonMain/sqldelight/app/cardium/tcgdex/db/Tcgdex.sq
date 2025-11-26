@@ -222,6 +222,14 @@ WHERE id = :id AND language = :language;
 getAvailableLanguages:
 SELECT DISTINCT language FROM series ORDER BY language;
 
+-- Count all sets in the database (for debugging)
+countAllSets:
+SELECT COUNT(*) FROM sets;
+
+-- Count sets by language (for debugging)
+countSetsByLanguage:
+SELECT COUNT(*) FROM sets WHERE language = :language;
+
 -- =============================================================================
 -- SET QUERIES
 -- =============================================================================
