@@ -1,76 +1,105 @@
+import org.gradle.api.tasks.Copy
+import org.gradle.api.tasks.JavaExec
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
-import org.jetbrains.kotlin.gradle.tasks.KotlinCompilationTask
-import io.gitlab.arturbosch.detekt.Detekt
 
 plugins {
     alias(libs.plugins.kotlinMultiplatform)
     alias(libs.plugins.androidLibrary)
+    alias(libs.plugins.sqldelight)
+    alias(libs.plugins.kotlinSerialization)
     alias(libs.plugins.ktlint)
     alias(libs.plugins.detekt)
-    kotlin("plugin.serialization") version "2.2.20"
 }
 
-// Exclude massive embedded data file from format/lint to avoid OOM
 ktlint {
     ignoreFailures.set(true)
-    reporters {
-        reporter(org.jlleitschuh.gradle.ktlint.reporter.ReporterType.PLAIN)
-        reporter(org.jlleitschuh.gradle.ktlint.reporter.ReporterType.CHECKSTYLE)
-    }
     filter {
-        exclude("**/generated/**")
         exclude("**/build/**")
-        exclude("**/EmbeddedCatalogData.kt")
+        exclude("**/generated/**")
     }
+}
+
+// -----------------------------------------------------------------------------
+// TCGdex Database Generation Configuration
+// -----------------------------------------------------------------------------
+// Languages to include in the offline database. Comma-separated list.
+// Default: "en,fr" (English and French)
+// Override via: ./gradlew ... -Ptcgdex.languages=en,fr,de,es
+val tcgdexLanguages = providers.gradleProperty("tcgdex.languages").orElse("en,fr")
+// Legacy single-language property (deprecated, use tcgdex.languages instead)
+val tcgdexLanguageLegacy = providers.gradleProperty("tcgdex.language").orElse("")
+// Force regeneration even if inputs haven't changed
+val tcgdexForce = providers.gradleProperty("tcgdex.force").map { it.toBoolean() }.orElse(false)
+val releaseRequested = gradle.startParameter.taskNames.any { it.contains("Release", ignoreCase = true) }
+val datasetRootDir = rootProject.layout.projectDirectory.dir("libs/cards-database/server/generated")
+val generatedDbDir = layout.buildDirectory.dir("generated/tcgdex/resources")
+val generatedDbFile = generatedDbDir.map { it.file("tcgdex.db") }
+
+// Resolve final languages list (prefer new property, fall back to legacy)
+val resolvedLanguages: String = if (tcgdexLanguageLegacy.get().isNotBlank()) {
+    tcgdexLanguageLegacy.get()
+} else {
+    tcgdexLanguages.get()
 }
 
 kotlin {
+    applyDefaultHierarchyTemplate()
+
     androidTarget {
         compilerOptions {
             jvmTarget.set(JvmTarget.JVM_17)
         }
     }
 
-    // Add JVM target to support shared:jvm consumption
-    jvm()
+    iosArm64()
+    iosSimulatorArm64()
 
-    listOf(
-        iosArm64(),
-        iosX64(), // Intel simulator support
-        iosSimulatorArm64(),
-    )
+    jvm {
+        compilerOptions {
+            jvmTarget.set(JvmTarget.JVM_17)
+        }
+    }
 
     sourceSets {
-        commonMain.dependencies {
-            implementation(libs.ktor.client.core)
-            implementation(libs.ktor.client.content.negotiation)
-            implementation(libs.ktor.serialization.kotlinx.json)
-            implementation(libs.kotlinx.datetime)
-            implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.7.3")
+        val commonMain by getting {
+            resources.srcDir(generatedDbDir)
+            dependencies {
+                implementation(libs.kotlinx.coroutines.core)
+                implementation(libs.kotlinx.serialization.json)
+                implementation(libs.sqldelight.runtime)
+                implementation(libs.sqldelight.coroutines)
+                implementation(libs.okio)
+            }
         }
-        commonTest.dependencies {
-            implementation(libs.kotlin.test)
+        val androidMain by getting {
+            dependencies {
+                implementation(libs.sqldelight.android.driver)
+            }
         }
-        androidMain.dependencies {
-            implementation(libs.ktor.client.cio)
+        val iosMain by getting {
+            dependencies {
+                implementation(libs.sqldelight.native.driver)
+            }
         }
-        jvmMain.dependencies {
-            implementation(libs.ktor.client.cio)
+        val jvmMain by getting {
+            dependencies {
+                implementation(libs.sqldelight.sqlite.driver)
+            }
         }
-        iosMain.dependencies {
-            implementation(libs.ktor.client.darwin)
+        val commonTest by getting {
+            dependencies {
+                implementation(libs.kotlin.test)
+            }
         }
     }
 }
 
 android {
-    namespace = "app.cardium.tcgdex.sdk"
+    namespace = "app.cardium.kmptcgdexsdk"
     compileSdk = libs.versions.android.compileSdk.get().toInt()
 
     defaultConfig {
         minSdk = libs.versions.android.minSdk.get().toInt()
-        targetSdk = libs.versions.android.targetSdk.get().toInt()
-        consumerProguardFiles("consumer-rules.pro")
     }
 
     compileOptions {
@@ -78,73 +107,58 @@ android {
         targetCompatibility = JavaVersion.VERSION_17
     }
 
-    packaging {
-        resources {
-            excludes += "/META-INF/{AL2.0,LGPL2.1}"
+    sourceSets["main"].resources.srcDir("src/commonMain/resources")
+}
+
+sqldelight {
+    databases {
+        create("TcgdexDatabase") {
+            packageName.set("app.cardium.tcgdex.db")
+            schemaOutputDirectory.set(file("src/commonMain/sqldelight"))
+            srcDirs(
+                "src/commonMain/sqldelight",
+            )
         }
     }
 }
 
-// Fail on warnings for production targets; allow warnings in JVM tools (generator)
-tasks.withType<KotlinCompilationTask<*>>().configureEach {
-    val taskName = name.lowercase()
-    val treatWarningsAsErrors = !(taskName.contains("kotlinjvm") || taskName.contains("jvm"))
-    compilerOptions {
-        allWarningsAsErrors.set(treatWarningsAsErrors)
-        freeCompilerArgs.add("-Xexpect-actual-classes")
-    }
-}
+val compileKotlinJvmTask = tasks.named("compileKotlinJvm")
+val jvmRuntimeConfig = configurations.named("jvmRuntimeClasspath")
 
-// Generator: fetch catalog via SDK and write JSON to src/commonMain/resources/tcgdex/<lang>/
-tasks.register<JavaExec>("generateEmbeddedCatalog") {
+val generateTcgdexDatabase by tasks.registering(JavaExec::class) {
     group = "tcgdex"
-    description = "Generate embedded TCGdex catalog JSONs for all languages"
-    mainClass.set("tools.GenerateEmbeddedCatalog")
-    val jvmMain = kotlin.targets.getByName("jvm").compilations.getByName("main")
-    dependsOn(jvmMain.compileTaskProvider)
-    classpath = files(jvmMain.output.allOutputs, jvmMain.runtimeDependencyFiles)
-    // Write JSONs under app composeResources/files so they are packaged to assets/composeResources/files/ at runtime
-    val composeAppProject = rootProject.project(":composeApp")
-    systemProperty("outputDir", composeAppProject.projectDir.resolve("src/commonMain/composeResources/files/tcgdex").absolutePath)
-    // Ensure missing-images CSV is always generated at module root by default
-    systemProperty("missingCsvPath", project.projectDir.resolve("missing_card_images.csv").absolutePath)
-    // Pass-through optional tuning properties for faster debug runs and local mode
-    val keys = listOf("langs", "limitSets", "progressEvery", "skipDetails", "localDbPath", "offlineOnly", "verbose", "seriesFilter")
-    keys.forEach { key ->
-        val fromProject = project.findProperty(key)?.toString()
-        val fromSystem = System.getProperty(key)
-        val fromEnv = System.getenv(key.uppercase())
-        val value = fromProject ?: fromSystem ?: fromEnv
-        if (!value.isNullOrBlank()) {
-            systemProperty(key, value)
+    description = "Generates the offline tcgdex SQLite database from the local dataset for all configured languages."
+    mainClass.set("app.cardium.kmptcgdexsdk.build.GenerateTcgdexDatabaseKt")
+
+    val output = generatedDbFile.get().asFile
+    val forceFlag = if (tcgdexForce.get() || releaseRequested) "true" else "false"
+    val languagesList = resolvedLanguages.split(",").map { it.trim().lowercase() }.filter { it.isNotEmpty() }
+
+    // Mark all language directories as inputs for incremental builds
+    languagesList.forEach { lang ->
+        val langDir = datasetRootDir.dir(lang).asFile
+        if (langDir.exists()) {
+            inputs.dir(langDir)
         }
     }
-    // Default: run generator offline unless explicitly overridden
-    val offlineProvided =
-        (
-            project.findProperty("offlineOnly")?.toString()
-                ?: System.getProperty("offlineOnly")
-                ?: System.getenv("OFFLINEONLY")
-        )
-            ?.isNotBlank() == true
-    if (!offlineProvided) {
-        systemProperty("offlineOnly", "true")
+    outputs.file(output)
+
+    doFirst {
+        generatedDbDir.get().asFile.mkdirs()
+        println("[Tcgdex] Generating database for languages: $languagesList")
     }
+
+    args(
+        "--dataset=${datasetRootDir.asFile.absolutePath}",
+        "--languages=${languagesList.joinToString(",")}",
+        "--output=${output.absolutePath}",
+        "--force=$forceFlag",
+    )
+
+    classpath = files(layout.buildDirectory.dir("classes/kotlin/jvm/main")) + jvmRuntimeConfig.get()
+    dependsOn(compileKotlinJvmTask)
 }
 
-// Also wire Android library assembleRelease to trigger generation
-tasks.matching { it.name == "assembleRelease" || it.name == "bundleReleaseAar" }.configureEach {
-    dependsOn("generateEmbeddedCatalog")
-}
-
-// Wire Android library Debug packaging tasks to trigger generation during development
-tasks.matching { it.name == "assembleDebug" || it.name == "bundleDebugAar" }.configureEach {
-    dependsOn("generateEmbeddedCatalog")
-}
-
-// Detekt: exclude heavy embedded data file and build directories to prevent timeouts/OOM
-tasks.withType<Detekt>().configureEach {
-    exclude("**/EmbeddedCatalogData.kt")
-    exclude("**/build/**")
-    jvmTarget = "17"
+tasks.withType<Copy>().matching { it.name.contains("ProcessResources") }.configureEach {
+    dependsOn(generateTcgdexDatabase)
 }

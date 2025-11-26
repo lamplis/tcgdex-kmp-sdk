@@ -1,0 +1,348 @@
+-- =============================================================================
+-- TCGdex Offline Database Schema
+-- =============================================================================
+-- This schema stores a multi-language snapshot of the TCGdex card catalog.
+-- Each entity (series, sets, cards) is stored per-language, allowing the app
+-- to query localized names and image URLs at runtime without network access.
+--
+-- Key design decisions:
+-- 1. Composite primary keys (id, language) allow the same logical entity to
+--    exist in multiple languages.
+-- 2. Image URLs are language-specific (TCGdex assets use language in the path).
+-- 3. Illustrators and rarities are language-agnostic (names are in original form).
+-- =============================================================================
+
+-- -----------------------------------------------------------------------------
+-- Series table: Top-level groupings of sets (e.g., "Scarlet & Violet", "Sword & Shield")
+-- -----------------------------------------------------------------------------
+CREATE TABLE series (
+    id TEXT NOT NULL,
+    language TEXT NOT NULL,
+    name TEXT NOT NULL,
+    position INTEGER NOT NULL DEFAULT 0,
+    PRIMARY KEY (id, language)
+);
+
+CREATE INDEX series_language_idx ON series(language);
+
+-- -----------------------------------------------------------------------------
+-- Sets table: Individual card sets within a series
+-- -----------------------------------------------------------------------------
+CREATE TABLE sets (
+    id TEXT NOT NULL,
+    language TEXT NOT NULL,
+    serie_id TEXT NOT NULL,
+    name TEXT NOT NULL,
+    logo_url TEXT,
+    symbol_url TEXT,
+    card_count_total INTEGER NOT NULL,
+    card_count_official INTEGER NOT NULL,
+    release_date TEXT,
+    PRIMARY KEY (id, language),
+    FOREIGN KEY (serie_id, language) REFERENCES series(id, language) ON DELETE CASCADE
+);
+
+CREATE INDEX sets_serie_id_idx ON sets(serie_id, language);
+CREATE INDEX sets_language_idx ON sets(language);
+CREATE INDEX sets_release_date_idx ON sets(release_date);
+
+-- -----------------------------------------------------------------------------
+-- Illustrators table: Card artists (language-agnostic, original names)
+-- -----------------------------------------------------------------------------
+CREATE TABLE illustrators (
+    id TEXT NOT NULL PRIMARY KEY,
+    name TEXT NOT NULL
+);
+
+-- -----------------------------------------------------------------------------
+-- Rarities table: Card rarity classifications (language-agnostic slugs)
+-- -----------------------------------------------------------------------------
+CREATE TABLE rarities (
+    id TEXT NOT NULL PRIMARY KEY,
+    name TEXT NOT NULL
+);
+
+-- -----------------------------------------------------------------------------
+-- Cards table: Individual cards with localized names and image URLs
+-- -----------------------------------------------------------------------------
+CREATE TABLE cards (
+    id TEXT NOT NULL,
+    language TEXT NOT NULL,
+    local_id TEXT NOT NULL,
+    local_number_sort INTEGER NOT NULL DEFAULT 0,
+    set_id TEXT NOT NULL,
+    pokemon_dex_id INTEGER,
+    rarity_id TEXT REFERENCES rarities(id),
+    illustrator_id TEXT REFERENCES illustrators(id),
+    name TEXT NOT NULL,
+    image_url TEXT NOT NULL,
+    category TEXT,
+    types TEXT,
+    supertype TEXT,
+    regulation_mark TEXT,
+    PRIMARY KEY (id, language),
+    FOREIGN KEY (set_id, language) REFERENCES sets(id, language) ON DELETE CASCADE
+);
+
+CREATE INDEX cards_set_idx ON cards(set_id, language);
+CREATE INDEX cards_language_idx ON cards(language);
+CREATE INDEX cards_illustrator_idx ON cards(illustrator_id);
+CREATE INDEX cards_rarity_idx ON cards(rarity_id);
+CREATE INDEX cards_dex_idx ON cards(pokemon_dex_id);
+CREATE INDEX cards_name_idx ON cards(name);
+
+-- -----------------------------------------------------------------------------
+-- View: card_with_set - Denormalized view joining cards with their set and series
+-- Used by most card queries to avoid repeated joins.
+-- -----------------------------------------------------------------------------
+CREATE VIEW card_with_set AS
+SELECT
+    cards.id,
+    cards.language,
+    cards.local_id,
+    cards.local_number_sort,
+    cards.set_id,
+    cards.name,
+    cards.image_url,
+    cards.rarity_id,
+    rarities.name AS rarity_name,
+    cards.illustrator_id,
+    illustrators.name AS illustrator_name,
+    cards.pokemon_dex_id,
+    cards.category,
+    cards.types,
+    cards.supertype,
+    cards.regulation_mark,
+    sets.card_count_official AS set_card_count_official,
+    sets.card_count_total AS set_card_count_total,
+    sets.name AS set_name,
+    sets.logo_url AS set_logo_url,
+    sets.symbol_url AS set_symbol_url,
+    sets.serie_id,
+    series.name AS serie_name,
+    sets.release_date AS set_release_date
+FROM cards
+INNER JOIN sets ON sets.id = cards.set_id AND sets.language = cards.language
+INNER JOIN series ON series.id = sets.serie_id AND series.language = sets.language
+LEFT JOIN illustrators ON illustrators.id = cards.illustrator_id
+LEFT JOIN rarities ON rarities.id = cards.rarity_id;
+
+-- =============================================================================
+-- INSERT STATEMENTS
+-- =============================================================================
+
+insertSerie:
+INSERT OR REPLACE INTO series(id, language, name, position)
+VALUES (:id, :language, :name, :position);
+
+insertSet:
+INSERT OR REPLACE INTO sets(
+    id,
+    language,
+    serie_id,
+    name,
+    logo_url,
+    symbol_url,
+    card_count_total,
+    card_count_official,
+    release_date
+)
+VALUES (
+    :id,
+    :language,
+    :serieId,
+    :name,
+    :logoUrl,
+    :symbolUrl,
+    :cardCountTotal,
+    :cardCountOfficial,
+    :releaseDate
+);
+
+insertIllustrator:
+INSERT OR REPLACE INTO illustrators(id, name)
+VALUES (:id, :name);
+
+insertRarity:
+INSERT OR REPLACE INTO rarities(id, name)
+VALUES (:id, :name);
+
+insertCard:
+INSERT OR REPLACE INTO cards(
+    id,
+    language,
+    local_id,
+    local_number_sort,
+    set_id,
+    pokemon_dex_id,
+    rarity_id,
+    illustrator_id,
+    name,
+    image_url,
+    category,
+    types,
+    supertype,
+    regulation_mark
+)
+VALUES (
+    :id,
+    :language,
+    :localId,
+    :localNumberSort,
+    :setId,
+    :pokemonDexId,
+    :rarityId,
+    :illustratorId,
+    :name,
+    :imageUrl,
+    :category,
+    :types,
+    :supertype,
+    :regulationMark
+);
+
+-- =============================================================================
+-- SERIES QUERIES
+-- =============================================================================
+
+-- Get all series for a specific language, ordered by position
+getAllSeriesByLanguage:
+SELECT *
+FROM series
+WHERE language = :language
+ORDER BY position ASC, id;
+
+-- Get series by ID and language
+getSeriesById:
+SELECT *
+FROM series
+WHERE id = :id AND language = :language;
+
+-- Get all available languages in the database
+getAvailableLanguages:
+SELECT DISTINCT language FROM series ORDER BY language;
+
+-- =============================================================================
+-- SET QUERIES
+-- =============================================================================
+
+-- Get all sets for a specific language
+getAllSetsByLanguage:
+SELECT *
+FROM sets
+WHERE language = :language
+ORDER BY release_date DESC, id;
+
+-- Get sets for a specific series and language
+getSetsForSerie:
+SELECT *
+FROM sets
+WHERE serie_id = :serieId AND language = :language
+ORDER BY release_date DESC, card_count_official DESC, id;
+
+-- Get a specific set by ID and language
+getSetById:
+SELECT *
+FROM sets
+WHERE id = :id AND language = :language;
+
+-- Get set with series name for display
+getSetWithSerieName:
+SELECT
+    sets.*,
+    series.name AS serie_name
+FROM sets
+INNER JOIN series ON series.id = sets.serie_id AND series.language = sets.language
+WHERE sets.id = :id AND sets.language = :language;
+
+-- =============================================================================
+-- CARD QUERIES
+-- =============================================================================
+
+-- Get all cards for a set (with denormalized view)
+getCardsForSet:
+SELECT *
+FROM card_with_set
+WHERE set_id = :setId AND language = :language
+ORDER BY local_number_sort, local_id;
+
+-- Get cards by illustrator (across all sets in a language)
+getCardsForIllustrator:
+SELECT *
+FROM card_with_set
+WHERE illustrator_id = :illustratorId AND language = :language
+ORDER BY set_release_date DESC, set_id, local_number_sort, local_id;
+
+-- Get cards by rarity
+getCardsForRarity:
+SELECT *
+FROM card_with_set
+WHERE rarity_id = :rarityId AND language = :language
+ORDER BY set_release_date DESC, set_id, local_number_sort, local_id;
+
+-- Get cards by Pokédex ID
+getCardsForDexId:
+SELECT *
+FROM card_with_set
+WHERE pokemon_dex_id = :dexId AND language = :language
+ORDER BY set_release_date DESC, set_id, local_number_sort, local_id;
+
+-- Get a specific card by ID and language
+getCardById:
+SELECT *
+FROM card_with_set
+WHERE id = :id AND language = :language;
+
+-- Search cards by name (case-insensitive partial match)
+searchCardsByName:
+SELECT *
+FROM card_with_set
+WHERE language = :language AND lower(name) LIKE '%' || lower(:query) || '%'
+ORDER BY name, set_release_date DESC, local_number_sort, local_id
+LIMIT :limit OFFSET :offset;
+
+-- Count cards matching a name search
+countCardsByName:
+SELECT COUNT(*)
+FROM cards
+WHERE language = :language AND lower(name) LIKE '%' || lower(:query) || '%';
+
+-- =============================================================================
+-- ILLUSTRATOR & RARITY QUERIES
+-- =============================================================================
+
+-- Get all illustrators (language-agnostic)
+getAllIllustrators:
+SELECT *
+FROM illustrators
+ORDER BY name;
+
+-- Get illustrator by ID
+getIllustratorById:
+SELECT *
+FROM illustrators
+WHERE id = :id;
+
+-- Get all rarities (language-agnostic)
+getAllRarities:
+SELECT *
+FROM rarities
+ORDER BY name;
+
+-- Get rarity by ID
+getRarityById:
+SELECT *
+FROM rarities
+WHERE id = :id;
+
+-- Count cards per illustrator (for a specific language)
+countCardsPerIllustrator:
+SELECT
+    illustrators.id,
+    illustrators.name,
+    COUNT(cards.id) AS card_count
+FROM illustrators
+LEFT JOIN cards ON cards.illustrator_id = illustrators.id AND cards.language = :language
+GROUP BY illustrators.id, illustrators.name
+HAVING card_count > 0
+ORDER BY card_count DESC, illustrators.name;
