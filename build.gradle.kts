@@ -128,7 +128,7 @@ val jvmRuntimeConfig = configurations.named("jvmRuntimeClasspath")
 val generateTcgdexDatabase by tasks.registering(JavaExec::class) {
     group = "tcgdex"
     description = "Generates the offline tcgdex SQLite database from the local dataset for all configured languages."
-    mainClass.set("app.cardium.kmptcgdexsdk.build.GenerateTcgdexDatabaseKt")
+    mainClass.set("app.cardium.kmptcgdexsdk.generator.GenerateTcgdexDatabaseKt")
 
     val output = generatedDbFile.get().asFile
     val forceFlag = if (tcgdexForce.get() || releaseRequested) "true" else "false"
