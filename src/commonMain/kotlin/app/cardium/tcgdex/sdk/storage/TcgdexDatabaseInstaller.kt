@@ -36,6 +36,21 @@ object TcgdexDatabaseInstaller {
     const val DATABASE_FILE_NAME = "tcgdex.db"
 
     /**
+     * Logical schema/data version of the bundled database.
+     *
+     * This version is stored in two places:
+     * 1. `PRAGMA user_version` inside the SQLite file (set during generation)
+     * 2. A sidecar metadata file (`tcgdex.db.meta`) stored next to the database
+     *
+     * The metadata file enables lightweight version checks before touching SQLite,
+     * ensuring the bundled database is re-installed after schema changes even if
+     * the file size stays the same.
+     */
+    const val DATABASE_USER_VERSION = 2
+
+    private const val METADATA_SUFFIX = ".meta"
+
+    /**
      * Installs the bundled database to the specified destination if needed.
      *
      * Installation is performed if:
@@ -58,9 +73,20 @@ object TcgdexDatabaseInstaller {
 
         // Check if installation is needed based on file size
         val existingSize = fileSystem.metadataOrNull(destination)?.size?.toLong()
-        val needsCopy = force || existingSize != bytes.size.toLong()
+        val metadataPath = destination.parent?.resolve("${destination.name}$METADATA_SUFFIX")
+        val metadataVersion = metadataPath?.let { path ->
+            runCatching {
+                fileSystem.metadataOrNull(path)?.let {
+                    fileSystem.read(path) { readUtf8().trim().toInt() }
+                }
+            }.getOrNull()
+        }
+        val needsCopy =
+            force ||
+                existingSize != bytes.size.toLong() ||
+                metadataVersion != DATABASE_USER_VERSION
 
-        println("[Tcgdex][i] installIfNeeded dest=$destination force=$force existingSize=$existingSize targetSize=${bytes.size} needsCopy=$needsCopy")
+        println("[Tcgdex][i] installIfNeeded dest=$destination force=$force existingSize=$existingSize targetSize=${bytes.size} metadata=$metadataVersion needsCopy=$needsCopy")
 
         if (!needsCopy) return false
 
@@ -74,6 +100,14 @@ object TcgdexDatabaseInstaller {
         // Copy the database to the destination
         fileSystem.write(destination) { write(bytes) }
         println("[Tcgdex][i] Wrote ${bytes.size} bytes to $destination")
+
+        // Persist the logical version alongside the database
+        metadataPath?.let { path ->
+            fileSystem.write(path) {
+                writeUtf8(DATABASE_USER_VERSION.toString())
+            }
+            println("[Tcgdex][i] Wrote metadata version ${DATABASE_USER_VERSION} to $path")
+        }
         return true
     }
 }

@@ -4,6 +4,7 @@ package app.cardium.kmptcgdexsdk.generator
 
 import app.cash.sqldelight.driver.jdbc.sqlite.JdbcSqliteDriver
 import app.cardium.tcgdex.db.TcgdexDatabase
+import app.cardium.tcgdex.sdk.storage.TcgdexDatabaseInstaller
 import java.io.File
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.json.JsonArray
@@ -61,7 +62,11 @@ fun main(args: Array<String>) {
     val cardsByLanguage = mutableMapOf<String, MutableSet<String>>() // language -> set of card IDs
     val englishCardCache = mutableMapOf<String, JsonObject>()
 
-    fun insertCard(language: String, card: JsonObject) {
+    fun insertCard(
+        language: String,
+        card: JsonObject,
+        originLanguage: String = language,
+    ) {
         val langCardIds = cardsByLanguage.getOrPut(language) { mutableSetOf() }
         val id = card.getString("id") ?: return
         if (!langCardIds.add(id)) {
@@ -130,6 +135,7 @@ fun main(args: Array<String>) {
             illustratorId = illustratorId,
             name = name,
             imageUrl = imageUrl,
+            originLanguage = originLanguage,
             category = category,
             types = types,
             supertype = supertype,
@@ -197,7 +203,7 @@ fun main(args: Array<String>) {
             val cardsJson = json.parseToJsonElement(cardsFile.readText()).jsonArray
             for (cardElement in cardsJson) {
                 val card = cardElement.jsonObject
-                insertCard(language, card)
+                insertCard(language, card, originLanguage = language)
                 if (language == "en") {
                     val id = card.getString("id")
                     if (id != null) {
@@ -216,7 +222,7 @@ fun main(args: Array<String>) {
         println("[Tcgdex][!] Adding ${englishOnlyIds.size} English fallbacks to French dataset")
         englishOnlyIds.sorted().forEach { id ->
             val card = englishCardCache[id] ?: return@forEach
-            insertCard(language = "fr", card = card)
+            insertCard(language = "fr", card = card, originLanguage = "en")
         }
     }
 
@@ -231,11 +237,10 @@ fun main(args: Array<String>) {
         db.tcgdexQueries.insertRarity(id, name)
     }
 
-    // Set the database version to match SQLDelight's Schema.version (1)
-    // This is required for Android's SQLiteOpenHelper to recognize the database
-    // as already created and not call onCreate()
-    driver.execute(null, "PRAGMA user_version = 1", 0)
-    println("[Tcgdex] Set user_version = 1")
+    // Set the logical database version for runtime installation guards.
+    // This must stay in sync with TcgdexDatabaseInstaller.DATABASE_USER_VERSION.
+    driver.execute(null, "PRAGMA user_version = ${TcgdexDatabaseInstaller.DATABASE_USER_VERSION}", 0)
+    println("[Tcgdex] Set user_version = ${TcgdexDatabaseInstaller.DATABASE_USER_VERSION}")
 
     driver.close()
     println("[Tcgdex] Database generation complete: ${outputFile.absolutePath}")

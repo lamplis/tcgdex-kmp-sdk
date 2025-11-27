@@ -83,6 +83,7 @@ data class Card(
     val setId: String,
     val setName: String,
     val setLanguage: String,
+    val originLanguage: String?,
     val serieId: String,
     val serieName: String?,
     val name: String,
