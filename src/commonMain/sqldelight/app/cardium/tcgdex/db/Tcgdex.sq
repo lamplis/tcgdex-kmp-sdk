@@ -75,7 +75,7 @@ CREATE TABLE cards (
     rarity_id TEXT REFERENCES rarities(id),
     illustrator_id TEXT REFERENCES illustrators(id),
     name TEXT NOT NULL,
-    image_url TEXT NOT NULL,
+    image_url TEXT,
     category TEXT,
     types TEXT,
     supertype TEXT,

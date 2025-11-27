@@ -149,8 +149,8 @@ fun main(args: Array<String>) {
                             pokecardexUrl = pokecardexUrl,
                         ),
                     )
-                    // Skip cards without images in the database
-                    continue
+                    // Note: We still insert cards without images into the database
+                    // The UI will handle missing images with fallbacks
                 }
 
                 // Extract illustrator

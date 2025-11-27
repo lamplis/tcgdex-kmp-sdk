@@ -230,7 +230,7 @@ private fun GetSetWithSerieName.toModel(): CardSet = CardSet(
  * The view pre-joins cards with sets, series, illustrators, and rarities.
  */
 private fun Card_with_set.toModel(): Card {
-    val baseImage = selectBaseImageUrl(image_url) ?: image_url
+    val baseImage = image_url?.let { selectBaseImageUrl(it) ?: it }
     return Card(
     id = id,
     localId = local_id,
@@ -241,8 +241,8 @@ private fun Card_with_set.toModel(): Card {
     serieName = serie_name,
     name = name,
         imageUrl = baseImage,
-        thumbnailUrl = toThumbnailUrl(baseImage) ?: "$baseImage/low.png",
-        highQualityUrl = toHighQualityUrl(baseImage) ?: "$baseImage/high.png",
+        thumbnailUrl = baseImage?.let { toThumbnailUrl(it) ?: "$it/low.png" },
+        highQualityUrl = baseImage?.let { toHighQualityUrl(it) ?: "$it/high.png" },
     rarityId = rarity_id,
     rarityName = rarity_name,
     illustratorId = illustrator_id,
