@@ -59,6 +59,83 @@ fun main(args: Array<String>) {
     val missingImages = mutableListOf<MissingImagesIndexGenerator.MissingImageEntry>()
     // Track all cards per language for cross-language comparison
     val cardsByLanguage = mutableMapOf<String, MutableSet<String>>() // language -> set of card IDs
+    val englishCardCache = mutableMapOf<String, JsonObject>()
+
+    fun insertCard(language: String, card: JsonObject) {
+        val langCardIds = cardsByLanguage.getOrPut(language) { mutableSetOf() }
+        val id = card.getString("id") ?: return
+        if (!langCardIds.add(id)) {
+            return
+        }
+
+        val localId = card.getString("localId") ?: id.substringAfterLast("-")
+        val setId = card.getNestedString("set", "id") ?: return
+        val name = card.getString("name") ?: id
+        val imageUrl = card.getString("image")
+
+        if (imageUrl.isNullOrBlank()) {
+            val pokecardexUrl = MissingImagesIndexGenerator.buildPokecardexUrl(
+                setId = setId,
+                localId = localId,
+                language = language,
+                hd = false,
+            )
+            missingImages.add(
+                MissingImagesIndexGenerator.MissingImageEntry(
+                    language = language,
+                    cardId = id,
+                    setId = setId,
+                    localId = localId,
+                    tcgdexUrl = null,
+                    pokecardexUrl = pokecardexUrl,
+                ),
+            )
+        }
+
+        val illustratorName = card.getString("illustrator")
+        val illustratorId = if (illustratorName != null) {
+            val slug = slugify(illustratorName)
+            illustrators[slug] = illustratorName
+            slug
+        } else {
+            null
+        }
+
+        val rarityName = card.getString("rarity")
+        val rarityId = if (rarityName != null) {
+            val slug = slugify(rarityName)
+            rarities[slug] = rarityName
+            slug
+        } else {
+            null
+        }
+
+        val dexIds = card.getIntArray("dexId")
+        val pokemonDexId = dexIds?.firstOrNull()
+
+        val types = card.getStringArray("types")?.joinToString(",")
+        val category = card.getString("category")
+        val supertype = card.getString("supertype")
+        val regulationMark = card.getString("regulationMark")
+        val localNumberSort = extractNumericPart(localId)
+
+        db.tcgdexQueries.insertCard(
+            id = id,
+            language = language,
+            localId = localId,
+            localNumberSort = localNumberSort.toLong(),
+            setId = setId,
+            pokemonDexId = pokemonDexId?.toLong(),
+            rarityId = rarityId,
+            illustratorId = illustratorId,
+            name = name,
+            imageUrl = imageUrl,
+            category = category,
+            types = types,
+            supertype = supertype,
+            regulationMark = regulationMark,
+        )
+    }
 
     for (language in config.languages) {
         val langDir = File(config.datasetDir, language)
@@ -118,94 +195,28 @@ fun main(args: Array<String>) {
         val cardsFile = File(langDir, "cards.json")
         if (cardsFile.exists()) {
             val cardsJson = json.parseToJsonElement(cardsFile.readText()).jsonArray
-            val langCardIds = cardsByLanguage.getOrPut(language) { mutableSetOf() }
-            
             for (cardElement in cardsJson) {
                 val card = cardElement.jsonObject
-                val id = card.getString("id") ?: continue
-                val localId = card.getString("localId") ?: id.substringAfterLast("-")
-                val setId = card.getNestedString("set", "id") ?: continue
-                val name = card.getString("name") ?: id
-                val imageUrl = card.getString("image")
-                
-                // Track card ID for cross-language comparison
-                langCardIds.add(id)
-
-                // Track missing images (null or empty imageUrl)
-                if (imageUrl.isNullOrBlank()) {
-                    val pokecardexUrl = MissingImagesIndexGenerator.buildPokecardexUrl(
-                        setId = setId,
-                        localId = localId,
-                        language = language,
-                        hd = false,
-                    )
-                    missingImages.add(
-                        MissingImagesIndexGenerator.MissingImageEntry(
-                            language = language,
-                            cardId = id,
-                            setId = setId,
-                            localId = localId,
-                            tcgdexUrl = null,
-                            pokecardexUrl = pokecardexUrl,
-                        ),
-                    )
-                    // Note: We still insert cards without images into the database
-                    // The UI will handle missing images with fallbacks
+                insertCard(language, card)
+                if (language == "en") {
+                    val id = card.getString("id")
+                    if (id != null) {
+                        englishCardCache[id] = card
+                    }
                 }
-
-                // Extract illustrator
-                val illustratorName = card.getString("illustrator")
-                val illustratorId = if (illustratorName != null) {
-                    val slug = slugify(illustratorName)
-                    illustrators[slug] = illustratorName
-                    slug
-                } else {
-                    null
-                }
-
-                // Extract rarity
-                val rarityName = card.getString("rarity")
-                val rarityId = if (rarityName != null) {
-                    val slug = slugify(rarityName)
-                    rarities[slug] = rarityName
-                    slug
-                } else {
-                    null
-                }
-
-                // Extract dex IDs
-                val dexIds = card.getIntArray("dexId")
-                val pokemonDexId = dexIds?.firstOrNull()
-
-                // Extract types
-                val types = card.getStringArray("types")?.joinToString(",")
-
-                // Extract category and supertype
-                val category = card.getString("category")
-                val supertype = card.getString("supertype")
-                val regulationMark = card.getString("regulationMark")
-
-                // Calculate sort number from localId
-                val localNumberSort = extractNumericPart(localId)
-
-                db.tcgdexQueries.insertCard(
-                    id = id,
-                    language = language,
-                    localId = localId,
-                    localNumberSort = localNumberSort.toLong(),
-                    setId = setId,
-                    pokemonDexId = pokemonDexId?.toLong(),
-                    rarityId = rarityId,
-                    illustratorId = illustratorId,
-                    name = name,
-                    imageUrl = imageUrl,
-                    category = category,
-                    types = types,
-                    supertype = supertype,
-                    regulationMark = regulationMark,
-                )
             }
             println("[Tcgdex]   Cards: ${cardsJson.size}")
+        }
+    }
+
+    // Backfill missing French cards with English data when available
+    val frenchIds = cardsByLanguage["fr"] ?: emptySet()
+    val englishOnlyIds = englishCardCache.keys - frenchIds
+    if (englishOnlyIds.isNotEmpty()) {
+        println("[Tcgdex][!] Adding ${englishOnlyIds.size} English fallbacks to French dataset")
+        englishOnlyIds.sorted().forEach { id ->
+            val card = englishCardCache[id] ?: return@forEach
+            insertCard(language = "fr", card = card)
         }
     }
 
