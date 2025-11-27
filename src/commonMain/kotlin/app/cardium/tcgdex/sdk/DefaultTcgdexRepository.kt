@@ -202,7 +202,7 @@ class DefaultTcgdexRepository(
     override suspend fun getCardsForPokemonInSet(dexId: Int, setId: String, language: String): List<Card> =
         withContext(dispatcher) {
             queries.getCardsForDexIdInSet(dexId.toLong(), setId, language).executeAsList().map { it.toModel() }
-        }
+    }
 
     // =========================================================================
     // Utility Queries
