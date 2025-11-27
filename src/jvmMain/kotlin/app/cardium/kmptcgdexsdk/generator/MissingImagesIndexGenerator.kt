@@ -23,8 +23,9 @@ object MissingImagesIndexGenerator {
      */
     private val setMapping: Map<String, String> = mapOf(
         // Mega Evolution (2025)
-        "sv09" to "PFL",
-        "sv09pt5" to "MEG",
+        "me02" to "PFL",
+        "me01" to "MEG",
+        "mep" to "MEP",
         
         // Scarlet & Violet era
         "sv08pt5" to "PRE",
@@ -118,6 +119,11 @@ object MissingImagesIndexGenerator {
         "hgss2" to "UL",
         "hgss1" to "HGSS",
         "hgssp" to "PRHS",
+        
+        // Sun & Moon special sets
+        "sm3.5" to "SLE",
+        "sm7.5" to "SM75",
+        "sma" to "SMA",
         
         // Platinum era
         "pl4" to "AR",
