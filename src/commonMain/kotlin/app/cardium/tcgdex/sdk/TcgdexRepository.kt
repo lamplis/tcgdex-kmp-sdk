@@ -4,6 +4,8 @@ import app.cardium.tcgdex.sdk.model.Card
 import app.cardium.tcgdex.sdk.model.CardSet
 import app.cardium.tcgdex.sdk.model.Illustrator
 import app.cardium.tcgdex.sdk.model.IllustratorWithCount
+import app.cardium.tcgdex.sdk.model.PokemonDexEntry
+import app.cardium.tcgdex.sdk.model.PokemonSetCardCount
 import app.cardium.tcgdex.sdk.model.Rarity
 import app.cardium.tcgdex.sdk.model.Serie
 
@@ -172,6 +174,46 @@ interface TcgdexRepository {
      * @return List of rarities ordered by name
      */
     suspend fun getAllRarities(): List<Rarity>
+
+    // =========================================================================
+    // Pokémon Dex Queries
+    // =========================================================================
+
+    /**
+     * Returns all unique Pokémon dex IDs with card counts.
+     *
+     * Used for the Pokédex collection screen to show all Pokémon with cards.
+     * Excludes TCGP (TCG Pocket) cards.
+     *
+     * @param language ISO language code
+     * @return List of Pokémon entries ordered by dex ID
+     */
+    suspend fun getAllPokemonDexEntries(language: String): List<PokemonDexEntry>
+
+    /**
+     * Returns card counts per set for a specific Pokémon.
+     *
+     * Used for grouping cards by set in the Pokémon gallery view.
+     * Excludes TCGP (TCG Pocket) cards.
+     *
+     * @param dexId National Pokédex number
+     * @param language ISO language code
+     * @return List of set card counts ordered by release date (newest first)
+     */
+    suspend fun getCardCountsPerSetForPokemon(dexId: Int, language: String): List<PokemonSetCardCount>
+
+    /**
+     * Returns all cards for a Pokémon in a specific set.
+     *
+     * Used for rendering the card grid within a set section.
+     * Excludes TCGP (TCG Pocket) cards.
+     *
+     * @param dexId National Pokédex number
+     * @param setId Set identifier
+     * @param language ISO language code
+     * @return List of cards ordered by card number
+     */
+    suspend fun getCardsForPokemonInSet(dexId: Int, setId: String, language: String): List<Card>
 
     // =========================================================================
     // Utility Queries

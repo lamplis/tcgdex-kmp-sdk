@@ -12,6 +12,8 @@ import app.cardium.tcgdex.sdk.model.Card
 import app.cardium.tcgdex.sdk.model.CardSet
 import app.cardium.tcgdex.sdk.model.Illustrator
 import app.cardium.tcgdex.sdk.model.IllustratorWithCount
+import app.cardium.tcgdex.sdk.model.PokemonDexEntry
+import app.cardium.tcgdex.sdk.model.PokemonSetCardCount
 import app.cardium.tcgdex.sdk.model.Rarity
 import app.cardium.tcgdex.sdk.model.Serie
 import app.cardium.tcgdex.sdk.util.selectBaseImageUrl
@@ -166,6 +168,41 @@ class DefaultTcgdexRepository(
     override suspend fun getAllRarities(): List<Rarity> = withContext(dispatcher) {
         queries.getAllRarities().executeAsList().map { it.toModel() }
     }
+
+    // =========================================================================
+    // Pokémon Dex Queries
+    // =========================================================================
+
+    override suspend fun getAllPokemonDexEntries(language: String): List<PokemonDexEntry> =
+        withContext(dispatcher) {
+            queries.getAllPokemonDexIds(language).executeAsList().map { row ->
+                PokemonDexEntry(
+                    dexId = row.dex_id!!.toInt(),
+                    name = row.pokemon_name ?: "Unknown",
+                    cardCount = row.card_count.toInt()
+                )
+            }
+        }
+
+    override suspend fun getCardCountsPerSetForPokemon(dexId: Int, language: String): List<PokemonSetCardCount> =
+        withContext(dispatcher) {
+            queries.getCardCountsPerSetForDexId(dexId.toLong(), language).executeAsList().map { row ->
+                PokemonSetCardCount(
+                    setId = row.set_id ?: "",
+                    setName = row.set_name ?: "",
+                    releaseDate = row.release_date,
+                    serieId = row.serie_id ?: "",
+                    serieName = row.serie_name,
+                    logoUrl = row.logo_url,
+                    cardCount = row.card_count.toInt()
+                )
+            }
+        }
+
+    override suspend fun getCardsForPokemonInSet(dexId: Int, setId: String, language: String): List<Card> =
+        withContext(dispatcher) {
+            queries.getCardsForDexIdInSet(dexId.toLong(), setId, language).executeAsList().map { it.toModel() }
+        }
 
     // =========================================================================
     // Utility Queries

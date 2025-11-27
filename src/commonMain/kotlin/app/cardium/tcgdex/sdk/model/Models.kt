@@ -142,3 +142,41 @@ data class Rarity(
     val id: String,
     val name: String
 )
+
+/**
+ * A Pokémon entry in the Pokédex index.
+ *
+ * Aggregates card counts for a specific Pokémon across all sets.
+ *
+ * @property dexId National Pokédex number
+ * @property name Representative Pokémon name (from the first card found)
+ * @property cardCount Total number of cards featuring this Pokémon
+ */
+data class PokemonDexEntry(
+    val dexId: Int,
+    val name: String,
+    val cardCount: Int
+)
+
+/**
+ * Per-set card count for a specific Pokémon.
+ *
+ * Used for grouping cards by set in the Pokémon gallery view.
+ *
+ * @property setId Set identifier
+ * @property setName Localized set name
+ * @property releaseDate Set release date (YYYY-MM-DD)
+ * @property serieId Parent series identifier
+ * @property serieName Localized series name
+ * @property logoUrl Set logo URL
+ * @property cardCount Number of cards for this Pokémon in this set
+ */
+data class PokemonSetCardCount(
+    val setId: String,
+    val setName: String,
+    val releaseDate: String?,
+    val serieId: String,
+    val serieName: String?,
+    val logoUrl: String?,
+    val cardCount: Int
+)
