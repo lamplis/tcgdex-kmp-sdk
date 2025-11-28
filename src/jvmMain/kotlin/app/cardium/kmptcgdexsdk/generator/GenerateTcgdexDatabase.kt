@@ -116,7 +116,6 @@ fun main(args: Array<String>) {
         }
 
         val dexIds = card.getIntArray("dexId")
-        val pokemonDexId = dexIds?.firstOrNull()
 
         val types = card.getStringArray("types")?.joinToString(",")
         val category = card.getString("category")
@@ -130,7 +129,6 @@ fun main(args: Array<String>) {
             localId = localId,
             localNumberSort = localNumberSort.toLong(),
             setId = setId,
-            pokemonDexId = pokemonDexId?.toLong(),
             rarityId = rarityId,
             illustratorId = illustratorId,
             name = name,
@@ -141,6 +139,15 @@ fun main(args: Array<String>) {
             supertype = supertype,
             regulationMark = regulationMark,
         )
+
+        // Insert card-Pokémon relationships for ALL dex IDs (supports multi-Pokémon cards)
+        dexIds?.forEach { dexId ->
+            db.tcgdexQueries.insertCardPokemon(
+                cardId = id,
+                language = language,
+                pokemonDexId = dexId.toLong(),
+            )
+        }
     }
 
     for (language in config.languages) {

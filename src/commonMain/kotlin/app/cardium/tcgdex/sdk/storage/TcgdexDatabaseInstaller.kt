@@ -46,7 +46,7 @@ object TcgdexDatabaseInstaller {
      * ensuring the bundled database is re-installed after schema changes even if
      * the file size stays the same.
      */
-    const val DATABASE_USER_VERSION = 2
+    const val DATABASE_USER_VERSION = 3
 
     private const val METADATA_SUFFIX = ".meta"
 

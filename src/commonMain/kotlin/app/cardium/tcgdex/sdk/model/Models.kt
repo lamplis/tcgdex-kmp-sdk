@@ -178,5 +178,6 @@ data class PokemonSetCardCount(
     val serieId: String,
     val serieName: String?,
     val logoUrl: String?,
+    val symbolUrl: String?,
     val cardCount: Int
 )

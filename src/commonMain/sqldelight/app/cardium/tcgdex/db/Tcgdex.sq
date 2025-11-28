@@ -71,7 +71,6 @@ CREATE TABLE cards (
     local_id TEXT NOT NULL,
     local_number_sort INTEGER NOT NULL DEFAULT 0,
     set_id TEXT NOT NULL,
-    pokemon_dex_id INTEGER,
     rarity_id TEXT REFERENCES rarities(id),
     illustrator_id TEXT REFERENCES illustrators(id),
     name TEXT NOT NULL,
@@ -89,12 +88,27 @@ CREATE INDEX cards_set_idx ON cards(set_id, language);
 CREATE INDEX cards_language_idx ON cards(language);
 CREATE INDEX cards_illustrator_idx ON cards(illustrator_id);
 CREATE INDEX cards_rarity_idx ON cards(rarity_id);
-CREATE INDEX cards_dex_idx ON cards(pokemon_dex_id);
 CREATE INDEX cards_name_idx ON cards(name);
+
+-- -----------------------------------------------------------------------------
+-- Card-Pokémon junction table: Links cards to one or more Pokédex IDs
+-- Supports multi-Pokémon cards (TAG TEAMs, Buried Fossil, etc.)
+-- -----------------------------------------------------------------------------
+CREATE TABLE card_pokemon (
+    card_id TEXT NOT NULL,
+    language TEXT NOT NULL,
+    pokemon_dex_id INTEGER NOT NULL,
+    PRIMARY KEY (card_id, language, pokemon_dex_id),
+    FOREIGN KEY (card_id, language) REFERENCES cards(id, language) ON DELETE CASCADE
+);
+
+CREATE INDEX card_pokemon_dex_idx ON card_pokemon(pokemon_dex_id, language);
+CREATE INDEX card_pokemon_card_idx ON card_pokemon(card_id, language);
 
 -- -----------------------------------------------------------------------------
 -- View: card_with_set - Denormalized view joining cards with their set and series
 -- Used by most card queries to avoid repeated joins.
+-- Note: Does NOT include pokemon_dex_id - use card_with_pokemon view for Pokédex queries
 -- -----------------------------------------------------------------------------
 CREATE VIEW card_with_set AS
 SELECT
@@ -110,7 +124,6 @@ SELECT
     rarities.name AS rarity_name,
     cards.illustrator_id,
     illustrators.name AS illustrator_name,
-    cards.pokemon_dex_id,
     cards.category,
     cards.types,
     cards.supertype,
@@ -124,6 +137,44 @@ SELECT
     series.name AS serie_name,
     sets.release_date AS set_release_date
 FROM cards
+INNER JOIN sets ON sets.id = cards.set_id AND sets.language = cards.language
+INNER JOIN series ON series.id = sets.serie_id AND series.language = sets.language
+LEFT JOIN illustrators ON illustrators.id = cards.illustrator_id
+LEFT JOIN rarities ON rarities.id = cards.rarity_id;
+
+-- -----------------------------------------------------------------------------
+-- View: card_with_pokemon - Cards joined with their Pokédex IDs via junction table
+-- Used for Pokédex queries where a card may appear multiple times (once per dex ID)
+-- -----------------------------------------------------------------------------
+CREATE VIEW card_with_pokemon AS
+SELECT
+    cards.id,
+    cards.language,
+    cards.local_id,
+    cards.local_number_sort,
+    cards.set_id,
+    cards.name,
+    cards.image_url,
+    cards.origin_language,
+    cards.rarity_id,
+    rarities.name AS rarity_name,
+    cards.illustrator_id,
+    illustrators.name AS illustrator_name,
+    card_pokemon.pokemon_dex_id,
+    cards.category,
+    cards.types,
+    cards.supertype,
+    cards.regulation_mark,
+    sets.card_count_official AS set_card_count_official,
+    sets.card_count_total AS set_card_count_total,
+    sets.name AS set_name,
+    sets.logo_url AS set_logo_url,
+    sets.symbol_url AS set_symbol_url,
+    sets.serie_id,
+    series.name AS serie_name,
+    sets.release_date AS set_release_date
+FROM cards
+INNER JOIN card_pokemon ON card_pokemon.card_id = cards.id AND card_pokemon.language = cards.language
 INNER JOIN sets ON sets.id = cards.set_id AND sets.language = cards.language
 INNER JOIN series ON series.id = sets.serie_id AND series.language = sets.language
 LEFT JOIN illustrators ON illustrators.id = cards.illustrator_id
@@ -176,7 +227,6 @@ INSERT OR REPLACE INTO cards(
     local_id,
     local_number_sort,
     set_id,
-    pokemon_dex_id,
     rarity_id,
     illustrator_id,
     name,
@@ -193,7 +243,6 @@ VALUES (
     :localId,
     :localNumberSort,
     :setId,
-    :pokemonDexId,
     :rarityId,
     :illustratorId,
     :name,
@@ -204,6 +253,11 @@ VALUES (
     :supertype,
     :regulationMark
 );
+
+-- Insert a card-Pokémon relationship (call once per dex ID for multi-Pokémon cards)
+insertCardPokemon:
+INSERT OR REPLACE INTO card_pokemon(card_id, language, pokemon_dex_id)
+VALUES (:cardId, :language, :pokemonDexId);
 
 -- =============================================================================
 -- SERIES QUERIES
@@ -292,10 +346,10 @@ FROM card_with_set
 WHERE rarity_id = :rarityId AND language = :language
 ORDER BY set_release_date DESC, set_id, local_number_sort, local_id;
 
--- Get cards by Pokédex ID
+-- Get cards by Pokédex ID (uses junction table for multi-Pokémon support)
 getCardsForDexId:
 SELECT *
-FROM card_with_set
+FROM card_with_pokemon
 WHERE pokemon_dex_id = :dexId AND language = :language
 ORDER BY set_release_date DESC, set_id, local_number_sort, local_id;
 
@@ -361,17 +415,19 @@ ORDER BY card_count DESC, illustrators.name;
 
 -- =============================================================================
 -- POKÉMON DEX QUERIES (Pokédex collection support)
+-- Uses card_with_pokemon view to support multi-Pokémon cards (TAG TEAMs, etc.)
 -- =============================================================================
 
 -- Get all unique Pokémon dex IDs with card counts for a language
 -- Returns: dexId, representative name (first card's name), total card count
 -- Excludes TCGP (TCG Pocket) cards via serie_id filter
+-- Note: A card with multiple dex IDs (e.g., TAG TEAM) is counted once per dex ID
 getAllPokemonDexIds:
 SELECT
     pokemon_dex_id AS dex_id,
     MIN(name) AS pokemon_name,
     COUNT(*) AS card_count
-FROM card_with_set
+FROM card_with_pokemon
 WHERE pokemon_dex_id IS NOT NULL
     AND language = :language
     AND serie_id != 'tcgp'
@@ -388,18 +444,19 @@ SELECT
     serie_id,
     serie_name,
     set_logo_url AS logo_url,
+    set_symbol_url AS symbol_url,
     COUNT(*) AS card_count
-FROM card_with_set
+FROM card_with_pokemon
 WHERE pokemon_dex_id = :dexId
     AND language = :language
     AND serie_id != 'tcgp'
-GROUP BY set_id, set_name, set_release_date, serie_id, serie_name, set_logo_url
+GROUP BY set_id, set_name, set_release_date, serie_id, serie_name, set_logo_url, set_symbol_url
 ORDER BY set_release_date DESC, set_id;
 
 -- Get all cards for a Pokémon in a specific set (for gallery rendering)
 getCardsForDexIdInSet:
 SELECT *
-FROM card_with_set
+FROM card_with_pokemon
 WHERE pokemon_dex_id = :dexId
     AND set_id = :setId
     AND language = :language

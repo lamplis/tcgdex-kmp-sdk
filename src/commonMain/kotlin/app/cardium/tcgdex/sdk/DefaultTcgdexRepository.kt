@@ -1,5 +1,6 @@
 package app.cardium.tcgdex.sdk
 
+import app.cardium.tcgdex.db.Card_with_pokemon
 import app.cardium.tcgdex.db.Card_with_set
 import app.cardium.tcgdex.db.CountCardsPerIllustrator
 import app.cardium.tcgdex.db.GetSetWithSerieName
@@ -188,12 +189,13 @@ class DefaultTcgdexRepository(
         withContext(dispatcher) {
             queries.getCardCountsPerSetForDexId(dexId.toLong(), language).executeAsList().map { row ->
                 PokemonSetCardCount(
-                    setId = row.set_id ?: "",
-                    setName = row.set_name ?: "",
+                    setId = row.set_id,
+                    setName = row.set_name,
                     releaseDate = row.release_date,
-                    serieId = row.serie_id ?: "",
+                    serieId = row.serie_id,
                     serieName = row.serie_name,
                     logoUrl = row.logo_url,
+                    symbolUrl = row.symbol_url,
                     cardCount = row.card_count.toInt()
                 )
             }
@@ -265,6 +267,7 @@ private fun GetSetWithSerieName.toModel(): CardSet = CardSet(
 /**
  * Maps a SQLDelight Card_with_set view row to a domain Card model.
  * The view pre-joins cards with sets, series, illustrators, and rarities.
+ * Note: This view does NOT include pokemon_dex_id (use Card_with_pokemon for Pokédex queries).
  */
 private fun Card_with_set.toModel(): Card {
     val baseImage = image_url?.let { selectBaseImageUrl(it) ?: it }
@@ -285,7 +288,42 @@ private fun Card_with_set.toModel(): Card {
         rarityName = rarity_name,
         illustratorId = illustrator_id,
         illustratorName = illustrator_name,
-        pokemonDexId = pokemon_dex_id?.toInt(),
+        pokemonDexId = null, // card_with_set doesn't include dex ID
+        regulationMark = regulation_mark,
+        category = category,
+        types = parseTypes(types),
+        supertype = supertype,
+        reference = buildReference(local_id, set_card_count_official.toInt()),
+        setOfficialCardCount = set_card_count_official.toInt(),
+        setReleaseDate = set_release_date,
+    )
+}
+
+/**
+ * Maps a SQLDelight Card_with_pokemon view row to a domain Card model.
+ * The view joins cards with the card_pokemon junction table to support multi-Pokémon cards.
+ * Used for Pokédex queries where a card may appear multiple times (once per dex ID).
+ */
+private fun Card_with_pokemon.toModel(): Card {
+    val baseImage = image_url?.let { selectBaseImageUrl(it) ?: it }
+    return Card(
+        id = id,
+        localId = local_id,
+        setId = set_id,
+        setName = set_name,
+        setLanguage = language,
+        originLanguage = origin_language,
+        serieId = serie_id,
+        serieName = serie_name,
+        name = name,
+        imageUrl = baseImage,
+        thumbnailUrl = baseImage?.let { toThumbnailUrl(it) ?: "$it/low.png" },
+        highQualityUrl = baseImage?.let { toHighQualityUrl(it) ?: "$it/high.png" },
+        rarityId = rarity_id,
+        rarityName = rarity_name,
+        illustratorId = illustrator_id,
+        illustratorName = illustrator_name,
+        pokemonDexId = pokemon_dex_id.toInt(),
         regulationMark = regulation_mark,
         category = category,
         types = parseTypes(types),
