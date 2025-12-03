@@ -178,12 +178,18 @@ object MissingImagesIndexGenerator {
         "base1" to "BS",
         "basep" to "PRWC",
         
-        // Special sets
+        // Special sets - McDonald's
         "mcd19" to "MC9",
         "mcd21" to "MC10US",
         "mcd22" to "MC11US",
         "mcd23" to "M23",
         "mcd24" to "M24",
+        // TCGdex McDonald's set IDs (different from mcd* format)
+        "2024sv" to "M24",
+        "2023sv" to "M23",
+        "2022swsh" to "MC11US",
+        "2021swsh" to "MC10US",
+        "2019sm" to "MC9",
         "det1" to "DPK",
     )
 

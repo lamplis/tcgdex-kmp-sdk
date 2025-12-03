@@ -45,8 +45,24 @@ object TcgdexDatabaseInstaller {
      * The metadata file enables lightweight version checks before touching SQLite,
      * ensuring the bundled database is re-installed after schema changes even if
      * the file size stays the same.
+     *
+     * ## VERSION HISTORY
+     * - Version 5: All 9 languages for pokemon_species (de, en, es, fr, it, ja, ko, zh-cn, zh-tw)
+     * - Version 1: Initial schema
+     * - Version 2: Added card_pokemon junction table for multi-Pokémon cards
+     * - Version 3: Added additional indexes
+     * - Version 4: Added pokemon_species table for canonical Pokémon names
+     *              (fixes TAG TEAM card names appearing in Pokédex list)
+     *
+     * ## IMPORTANT: After bumping this version, you MUST:
+     * 1. Regenerate the database: `./gradlew :libs:tcgdex-kmp-sdk:generateTcgdexDatabase -Ptcgdex.force=true`
+     * 2. Copy to iOS: `cp libs/tcgdex-kmp-sdk/build/generated/tcgdex/resources/tcgdex.db iosApp/iosApp/Resources/tcgdex.db`
+     * 3. Copy to Android: `cp libs/tcgdex-kmp-sdk/build/generated/tcgdex/resources/tcgdex.db composeApp/src/androidMain/assets/tcgdex.db`
+     * 4. Rebuild both platforms
+     *
+     * @see docs/POKEDEX_DATA_REMEDIATION.md for more details
      */
-    const val DATABASE_USER_VERSION = 3
+    const val DATABASE_USER_VERSION = 5
 
     private const val METADATA_SUFFIX = ".meta"
 

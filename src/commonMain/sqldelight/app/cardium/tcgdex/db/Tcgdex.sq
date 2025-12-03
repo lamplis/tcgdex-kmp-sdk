@@ -106,6 +106,19 @@ CREATE INDEX card_pokemon_dex_idx ON card_pokemon(pokemon_dex_id, language);
 CREATE INDEX card_pokemon_card_idx ON card_pokemon(card_id, language);
 
 -- -----------------------------------------------------------------------------
+-- Pokémon Species table: Canonical species names from the official Pokédex
+-- Provides localized names independent of card titles (avoids TAG TEAM naming issues)
+-- -----------------------------------------------------------------------------
+CREATE TABLE pokemon_species (
+    dex_id INTEGER NOT NULL,
+    language TEXT NOT NULL,
+    name TEXT NOT NULL,
+    PRIMARY KEY (dex_id, language)
+);
+
+CREATE INDEX pokemon_species_dex_idx ON pokemon_species(dex_id);
+
+-- -----------------------------------------------------------------------------
 -- View: card_with_set - Denormalized view joining cards with their set and series
 -- Used by most card queries to avoid repeated joins.
 -- Note: Does NOT include pokemon_dex_id - use card_with_pokemon view for Pokédex queries
@@ -258,6 +271,11 @@ VALUES (
 insertCardPokemon:
 INSERT OR REPLACE INTO card_pokemon(card_id, language, pokemon_dex_id)
 VALUES (:cardId, :language, :pokemonDexId);
+
+-- Insert a Pokémon species canonical name
+insertPokemonSpecies:
+INSERT OR REPLACE INTO pokemon_species(dex_id, language, name)
+VALUES (:dexId, :language, :name);
 
 -- =============================================================================
 -- SERIES QUERIES
@@ -419,20 +437,22 @@ ORDER BY card_count DESC, illustrators.name;
 -- =============================================================================
 
 -- Get all unique Pokémon dex IDs with card counts for a language
--- Returns: dexId, representative name (first card's name), total card count
+-- Returns: dexId, canonical species name (from pokemon_species table), total card count
 -- Excludes TCGP (TCG Pocket) cards via serie_id filter
 -- Note: A card with multiple dex IDs (e.g., TAG TEAM) is counted once per dex ID
+-- Note: Uses COALESCE to fall back to card name if species table is missing entry
 getAllPokemonDexIds:
 SELECT
-    pokemon_dex_id AS dex_id,
-    MIN(name) AS pokemon_name,
+    cwp.pokemon_dex_id AS dex_id,
+    COALESCE(ps.name, MIN(cwp.name)) AS pokemon_name,
     COUNT(*) AS card_count
-FROM card_with_pokemon
-WHERE pokemon_dex_id IS NOT NULL
-    AND language = :language
-    AND serie_id != 'tcgp'
-GROUP BY pokemon_dex_id
-ORDER BY pokemon_dex_id ASC;
+FROM card_with_pokemon cwp
+LEFT JOIN pokemon_species ps ON ps.dex_id = cwp.pokemon_dex_id AND ps.language = cwp.language
+WHERE cwp.pokemon_dex_id IS NOT NULL
+    AND cwp.language = :language
+    AND cwp.serie_id != 'tcgp'
+GROUP BY cwp.pokemon_dex_id
+ORDER BY cwp.pokemon_dex_id ASC;
 
 -- Get card counts per set for a specific Pokémon (for gallery grouping)
 -- Returns: setId, setName, releaseDate, serieId, serieName, logoUrl, cardCount

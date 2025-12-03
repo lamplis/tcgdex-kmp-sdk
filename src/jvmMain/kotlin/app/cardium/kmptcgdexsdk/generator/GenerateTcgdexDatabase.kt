@@ -55,12 +55,20 @@ fun main(args: Array<String>) {
     // Track unique illustrators and rarities (language-agnostic)
     val illustrators = mutableMapOf<String, String>() // id -> name
     val rarities = mutableMapOf<String, String>() // id -> name
-    
+
+    // Load Pokémon species data for canonical names
+    // Map: dexId -> Map<language, name>
+    val pokemonSpecies = loadPokemonSpecies(config.datasetDir, json)
+    println("[Tcgdex] Loaded ${pokemonSpecies.size} Pokémon species entries")
+
     // Track missing images for Pokecardex fallback index
     val missingImages = mutableListOf<MissingImagesIndexGenerator.MissingImageEntry>()
     // Track all cards per language for cross-language comparison
     val cardsByLanguage = mutableMapOf<String, MutableSet<String>>() // language -> set of card IDs
     val englishCardCache = mutableMapOf<String, JsonObject>()
+    
+    // Valid dex IDs from pokemon-species.json (used for validation)
+    val validDexIds = pokemonSpecies.keys
 
     fun insertCard(
         language: String,
@@ -123,6 +131,23 @@ fun main(args: Array<String>) {
         val regulationMark = card.getString("regulationMark")
         val localNumberSort = extractNumericPart(localId)
 
+        if (category == "Pokemon" && name.isNotBlank() && isMultiPokemonName(name)) {
+            val expectedSpecies = countDistinctSpeciesFromName(name)
+            val actualDexCount = dexIds?.toSet()?.size ?: 0
+            if (expectedSpecies > 1 && actualDexCount < expectedSpecies) {
+                throw IllegalArgumentException(
+                    """
+                    [Tcgdex][x] INCOMPLETE MULTI-POKÉMON DEX IDS - BUILD FAILED
+                    Card: $id (set: $setId, language: $language)
+                    Name: $name
+                    Expected $expectedSpecies dexId entries, found $actualDexCount (current: ${dexIds?.joinToString(", ") ?: "none"})
+                    
+                    Update libs/cards-database data so every Pokémon listed in the card name appears in dexId.
+                    """.trimIndent(),
+                )
+            }
+        }
+
         db.tcgdexQueries.insertCard(
             id = id,
             language = language,
@@ -141,7 +166,24 @@ fun main(args: Array<String>) {
         )
 
         // Insert card-Pokémon relationships for ALL dex IDs (supports multi-Pokémon cards)
+        // VALIDATION: Ensure all dex IDs exist in pokemon-species.json to prevent phantom Pokédex entries
         dexIds?.forEach { dexId ->
+            if (dexId !in validDexIds) {
+                throw IllegalArgumentException(
+                    """
+                    [Tcgdex][x] INVALID DEX ID DETECTED - BUILD FAILED
+                    Card: $id (set: $setId, language: $language)
+                    Invalid dexId: $dexId
+                    
+                    This dex ID does not exist in pokemon-species.json.
+                    Possible causes:
+                    1. Typo in the card data (e.g., 9012 instead of 912)
+                    2. Missing species in pokemon-species.json (run 'bun run download-pokedex' in workdir)
+                    
+                    Fix the card data in libs/cards-database/data/... and regenerate.
+                    """.trimIndent()
+                )
+            }
             db.tcgdexQueries.insertCardPokemon(
                 cardId = id,
                 language = language,
@@ -233,6 +275,47 @@ fun main(args: Array<String>) {
         }
     }
 
+    // Insert Pokémon species canonical names for ALL available languages in pokemon-species.json
+    // This includes: en, fr, de, es, it, ja, ko, zh-cn, zh-tw, pt-br (and any others in the file)
+    // We insert for all languages, not just config.languages, so Pokédex works in any locale
+    println("[Tcgdex] Inserting Pokémon species names for all languages...")
+    val allSpeciesLanguages = pokemonSpecies.values
+        .flatMap { it.keys }
+        .toSet()
+        .sorted()
+    println("[Tcgdex]   Available species languages: $allSpeciesLanguages")
+    
+    for (language in allSpeciesLanguages) {
+        var speciesInserted = 0
+        for ((dexId, names) in pokemonSpecies) {
+            // Use localized name if available, otherwise fall back to English
+            val name = names[language] ?: names["en"] ?: continue
+            db.tcgdexQueries.insertPokemonSpecies(
+                dexId = dexId.toLong(),
+                language = language,
+                name = name,
+            )
+            speciesInserted++
+        }
+        println("[Tcgdex]   $language: $speciesInserted species")
+    }
+    
+    // Also insert for pt (Portuguese) mapped from pt-br if pt-br exists
+    // TCGdex uses "pt" but pokemon-species.json uses "pt-br"
+    if ("pt-br" in allSpeciesLanguages && "pt" !in allSpeciesLanguages) {
+        var speciesInserted = 0
+        for ((dexId, names) in pokemonSpecies) {
+            val name = names["pt-br"] ?: names["en"] ?: continue
+            db.tcgdexQueries.insertPokemonSpecies(
+                dexId = dexId.toLong(),
+                language = "pt",
+                name = name,
+            )
+            speciesInserted++
+        }
+        println("[Tcgdex]   pt (from pt-br): $speciesInserted species")
+    }
+
     // Insert illustrators and rarities (language-agnostic)
     println("[Tcgdex] Inserting ${illustrators.size} illustrators...")
     for ((id, name) in illustrators) {
@@ -248,6 +331,14 @@ fun main(args: Array<String>) {
     // This must stay in sync with TcgdexDatabaseInstaller.DATABASE_USER_VERSION.
     driver.execute(null, "PRAGMA user_version = ${TcgdexDatabaseInstaller.DATABASE_USER_VERSION}", 0)
     println("[Tcgdex] Set user_version = ${TcgdexDatabaseInstaller.DATABASE_USER_VERSION}")
+
+    // Ensure database is in a portable state for iOS compatibility:
+    // 1. Set journal_mode to DELETE (not WAL) for bundled databases
+    // 2. Run integrity check to verify database is valid
+    // 3. VACUUM to compact and ensure clean state
+    driver.execute(null, "PRAGMA journal_mode = DELETE", 0)
+    driver.execute(null, "VACUUM", 0)
+    println("[Tcgdex] Database vacuumed for iOS compatibility")
 
     driver.close()
     println("[Tcgdex] Database generation complete: ${outputFile.absolutePath}")
@@ -326,6 +417,144 @@ private fun JsonObject.getIntArray(key: String): List<Int>? {
     return element.mapNotNull { it.jsonPrimitive.intOrNull }
 }
 
+private val CARD_SUFFIXES = listOf(
+    " EX",
+    " ex",
+    "-EX",
+    "-ex",
+    " GX",
+    "-GX",
+    " V",
+    "-V",
+    " VMAX",
+    " VSTAR",
+    " V-UNION",
+    " BREAK",
+    " LV.X",
+    " Prime",
+    " PRIME",
+    " SP",
+    " FB",
+    " GL",
+    " C",
+    " G",
+    " E4",
+    " δ",
+    " Star",
+    " ☆",
+    "★",
+    " LEGEND",
+    "-LEGEND",
+)
+
+private val REGIONAL_PATTERNS = listOf(
+    Regex("^Alolan ", RegexOption.IGNORE_CASE),
+    Regex("^Alola ", RegexOption.IGNORE_CASE),
+    Regex("^Galarian ", RegexOption.IGNORE_CASE),
+    Regex("^Galar ", RegexOption.IGNORE_CASE),
+    Regex("^Hisuian ", RegexOption.IGNORE_CASE),
+    Regex("^Hisui ", RegexOption.IGNORE_CASE),
+    Regex("^Paldean ", RegexOption.IGNORE_CASE),
+    Regex("^Paldea ", RegexOption.IGNORE_CASE),
+    Regex("d'Alola$", RegexOption.IGNORE_CASE),
+    Regex("de Galar$", RegexOption.IGNORE_CASE),
+    Regex("de Hisui$", RegexOption.IGNORE_CASE),
+    Regex("de Paldea$", RegexOption.IGNORE_CASE),
+    Regex("^Alola-", RegexOption.IGNORE_CASE),
+    Regex("^Galar-", RegexOption.IGNORE_CASE),
+    Regex("^Hisui-", RegexOption.IGNORE_CASE),
+    Regex("^Paldea-", RegexOption.IGNORE_CASE),
+)
+
+private val MEGA_PATTERNS = listOf(
+    Regex("^Mega ", RegexOption.IGNORE_CASE),
+    Regex("^M ", RegexOption.IGNORE_CASE),
+    Regex("^Méga-", RegexOption.IGNORE_CASE),
+    Regex("^Méga ", RegexOption.IGNORE_CASE),
+    Regex("^M-", RegexOption.IGNORE_CASE),
+)
+
+private val SPECIAL_FORM_PATTERNS = listOf(
+    Regex("^Primal ", RegexOption.IGNORE_CASE),
+    Regex("^Primo-", RegexOption.IGNORE_CASE),
+    Regex("^Origin Forme ", RegexOption.IGNORE_CASE),
+    Regex("^Altered Forme ", RegexOption.IGNORE_CASE),
+    Regex("^Sky Forme ", RegexOption.IGNORE_CASE),
+    Regex("^Land Forme ", RegexOption.IGNORE_CASE),
+    Regex("^Therian Forme ", RegexOption.IGNORE_CASE),
+    Regex("^Incarnate Forme ", RegexOption.IGNORE_CASE),
+    Regex("^Black Kyurem", RegexOption.IGNORE_CASE),
+    Regex("^White Kyurem", RegexOption.IGNORE_CASE),
+    Regex("^Dusk Mane ", RegexOption.IGNORE_CASE),
+    Regex("^Dawn Wings ", RegexOption.IGNORE_CASE),
+    Regex("^Ultra ", RegexOption.IGNORE_CASE),
+    Regex("^Crowned ", RegexOption.IGNORE_CASE),
+    Regex("^Ice Rider ", RegexOption.IGNORE_CASE),
+    Regex("^Shadow Rider ", RegexOption.IGNORE_CASE),
+    Regex("^Single Strike ", RegexOption.IGNORE_CASE),
+    Regex("^Rapid Strike ", RegexOption.IGNORE_CASE),
+    Regex("^Bloodmoon ", RegexOption.IGNORE_CASE),
+    Regex("^Rocket's ", RegexOption.IGNORE_CASE),
+    Regex("^Dark ", RegexOption.IGNORE_CASE),
+    Regex("^Light ", RegexOption.IGNORE_CASE),
+    Regex("^Shining ", RegexOption.IGNORE_CASE),
+    Regex("^_____'s ", RegexOption.IGNORE_CASE),
+    Regex("^Radiant ", RegexOption.IGNORE_CASE),
+    Regex(" with .+$", RegexOption.IGNORE_CASE),
+    Regex("^Surfing ", RegexOption.IGNORE_CASE),
+    Regex("^Flying ", RegexOption.IGNORE_CASE),
+    Regex("^Detective ", RegexOption.IGNORE_CASE),
+)
+
+private val TAG_TEAM_SEPARATORS = listOf(" & ", " et ", " und ", " e ", " y ")
+
+private fun isMultiPokemonName(name: String): Boolean {
+    return TAG_TEAM_SEPARATORS.any { name.contains(it) }
+}
+
+private fun splitMultiPokemonName(name: String): List<String> {
+    for (separator in TAG_TEAM_SEPARATORS) {
+        if (name.contains(separator)) {
+            return name.split(separator).map { it.trim() }
+        }
+    }
+    return listOf(name)
+}
+
+private fun countDistinctSpeciesFromName(name: String): Int {
+    val parts = splitMultiPokemonName(name)
+    val normalized = parts.map { normalizePokemonName(it) }.filter { it.isNotBlank() }
+    val distinct = normalized.toSet().size
+    return if (distinct > 0) distinct else parts.size
+}
+
+private fun normalizePokemonName(rawName: String): String {
+    var normalized = rawName.trim()
+    normalized = normalized.replace('\u2019', '\'')
+
+    CARD_SUFFIXES.forEach { suffix ->
+        if (normalized.endsWith(suffix)) {
+            normalized = normalized.dropLast(suffix.length).trim()
+        }
+    }
+
+    REGIONAL_PATTERNS.forEach { pattern ->
+        normalized = normalized.replace(pattern, "").trim()
+    }
+
+    MEGA_PATTERNS.forEach { pattern ->
+        normalized = normalized.replace(pattern, "").trim()
+    }
+
+    SPECIAL_FORM_PATTERNS.forEach { pattern ->
+        normalized = normalized.replace(pattern, "").trim()
+    }
+
+    normalized = normalized.replace(Regex(" [XY]$", RegexOption.IGNORE_CASE), "").trim()
+
+    return normalized.lowercase()
+}
+
 private fun JsonObject.getStringArray(key: String): List<String>? {
     val element = this[key] ?: return null
     if (element is JsonNull) return null
@@ -344,5 +573,71 @@ private fun extractNumericPart(localId: String): Int {
     // Extract leading numeric part for sorting (e.g., "001" -> 1, "TG01" -> 1, "SWSH001" -> 1)
     val numericPart = localId.filter { it.isDigit() }
     return numericPart.toIntOrNull() ?: 0
+}
+
+/**
+ * Loads Pokémon species data from the pokemon-species.json file.
+ *
+ * This data is used to populate the `pokemon_species` table with canonical species names
+ * from the official Pokédex. This fixes the issue where TAG TEAM card names (e.g.,
+ * "Celebi et Florizarre GX") would appear in the Pokédex list instead of the canonical
+ * species name (e.g., "Florizarre" / "Venusaur").
+ *
+ * The file is located in the workdir directory relative to the dataset directory:
+ * `libs/cards-database/workdir/pokemon-species.json`
+ *
+ * This file is downloaded from PokeAPI using `bun run download-pokedex` in the workdir.
+ *
+ * @param datasetDir Path to the dataset directory (e.g., libs/cards-database/server/generated)
+ * @param json JSON parser instance
+ * @return Map of dexId -> Map<language, name> for canonical species names
+ *
+ * @see docs/POKEDEX_DATA_REMEDIATION.md for more details
+ */
+private fun loadPokemonSpecies(datasetDir: String, json: Json): Map<Int, Map<String, String>> {
+    // pokemon-species.json is in libs/cards-database/workdir/
+    // datasetDir is typically libs/cards-database/server/generated
+    val workdirPath = File(datasetDir).parentFile?.parentFile?.resolve("workdir")
+    val speciesFile = workdirPath?.resolve("pokemon-species.json")
+
+    if (speciesFile == null || !speciesFile.exists()) {
+        println("[Tcgdex][!] pokemon-species.json not found at: $speciesFile")
+        return emptyMap()
+    }
+
+    val result = mutableMapOf<Int, Map<String, String>>()
+
+    try {
+        val speciesArray = json.parseToJsonElement(speciesFile.readText()).jsonArray
+        for (element in speciesArray) {
+            val obj = element.jsonObject
+            val dexId = obj["dexId"]?.jsonPrimitive?.intOrNull ?: continue
+            val englishName = obj["englishName"]?.jsonPrimitive?.contentOrNull
+            val namesObj = obj["names"]?.jsonObject
+
+            val names = mutableMapOf<String, String>()
+
+            // Add English name as fallback
+            if (englishName != null) {
+                names["en"] = englishName
+            }
+
+            // Add localized names
+            namesObj?.forEach { (lang, nameElement) ->
+                val name = nameElement.jsonPrimitive.contentOrNull
+                if (name != null) {
+                    names[lang] = name
+                }
+            }
+
+            if (names.isNotEmpty()) {
+                result[dexId] = names
+            }
+        }
+    } catch (e: Exception) {
+        println("[Tcgdex][x] Error loading pokemon-species.json: ${e.message}")
+    }
+
+    return result
 }
 
