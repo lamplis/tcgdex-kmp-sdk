@@ -76,6 +76,11 @@ data class CardSet(
  * @property reference Display reference string (e.g., "001/198")
  * @property setOfficialCardCount Official card count of the parent set
  * @property setReleaseDate Release date of the parent set
+ * @property priceCardmarketTrend Cardmarket trend price in EUR (embedded at build time)
+ * @property priceCardmarketAvg Cardmarket average sell price in EUR
+ * @property priceCardmarketLow Cardmarket low price in EUR
+ * @property priceUpdatedIso ISO 8601 timestamp when price was fetched
+ * @property priceUnit Currency unit (always "EUR" for Cardmarket)
  */
 data class Card(
     val id: String,
@@ -101,8 +106,21 @@ data class Card(
     val regulationMark: String?,
     val reference: String,
     val setOfficialCardCount: Int,
-    val setReleaseDate: String?
-)
+    val setReleaseDate: String?,
+    // Embedded Cardmarket EUR pricing snapshot (generated at build time)
+    val priceCardmarketTrend: Double? = null,
+    val priceCardmarketAvg: Double? = null,
+    val priceCardmarketLow: Double? = null,
+    val priceUpdatedIso: String? = null,
+    val priceUnit: String? = null,
+) {
+    /**
+     * Returns the best available price in EUR.
+     * Priority: trend (most accurate) -> average sell -> low price.
+     */
+    val bestPrice: Double?
+        get() = priceCardmarketTrend ?: priceCardmarketAvg ?: priceCardmarketLow
+}
 
 /**
  * An illustrator (card artist).

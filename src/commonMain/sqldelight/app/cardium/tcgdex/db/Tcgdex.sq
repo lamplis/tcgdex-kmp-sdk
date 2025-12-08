@@ -65,6 +65,13 @@ CREATE TABLE rarities (
 -- -----------------------------------------------------------------------------
 -- Cards table: Individual cards with localized names and image URLs
 -- -----------------------------------------------------------------------------
+-- Pricing columns store embedded Cardmarket EUR snapshot (generated at build time):
+-- - price_cardmarket_trend: Cardmarket trend price in EUR (primary display price)
+-- - price_cardmarket_avg: Cardmarket average sell price in EUR
+-- - price_cardmarket_low: Cardmarket low price in EUR
+-- - price_updated_iso: ISO 8601 timestamp when price was fetched from Cardmarket
+-- - price_unit: Currency unit (always "EUR" for Cardmarket)
+-- -----------------------------------------------------------------------------
 CREATE TABLE cards (
     id TEXT NOT NULL,
     language TEXT NOT NULL,
@@ -80,6 +87,12 @@ CREATE TABLE cards (
     types TEXT,
     supertype TEXT,
     regulation_mark TEXT,
+    -- Embedded Cardmarket EUR pricing snapshot
+    price_cardmarket_trend REAL,
+    price_cardmarket_avg REAL,
+    price_cardmarket_low REAL,
+    price_updated_iso TEXT,
+    price_unit TEXT,
     PRIMARY KEY (id, language),
     FOREIGN KEY (set_id, language) REFERENCES sets(id, language) ON DELETE CASCADE
 );
@@ -122,6 +135,7 @@ CREATE INDEX pokemon_species_dex_idx ON pokemon_species(dex_id);
 -- View: card_with_set - Denormalized view joining cards with their set and series
 -- Used by most card queries to avoid repeated joins.
 -- Note: Does NOT include pokemon_dex_id - use card_with_pokemon view for Pokédex queries
+-- Includes embedded Cardmarket EUR pricing snapshot columns.
 -- -----------------------------------------------------------------------------
 CREATE VIEW card_with_set AS
 SELECT
@@ -141,6 +155,11 @@ SELECT
     cards.types,
     cards.supertype,
     cards.regulation_mark,
+    cards.price_cardmarket_trend,
+    cards.price_cardmarket_avg,
+    cards.price_cardmarket_low,
+    cards.price_updated_iso,
+    cards.price_unit,
     sets.card_count_official AS set_card_count_official,
     sets.card_count_total AS set_card_count_total,
     sets.name AS set_name,
@@ -158,6 +177,7 @@ LEFT JOIN rarities ON rarities.id = cards.rarity_id;
 -- -----------------------------------------------------------------------------
 -- View: card_with_pokemon - Cards joined with their Pokédex IDs via junction table
 -- Used for Pokédex queries where a card may appear multiple times (once per dex ID)
+-- Includes embedded Cardmarket EUR pricing snapshot columns.
 -- -----------------------------------------------------------------------------
 CREATE VIEW card_with_pokemon AS
 SELECT
@@ -178,6 +198,11 @@ SELECT
     cards.types,
     cards.supertype,
     cards.regulation_mark,
+    cards.price_cardmarket_trend,
+    cards.price_cardmarket_avg,
+    cards.price_cardmarket_low,
+    cards.price_updated_iso,
+    cards.price_unit,
     sets.card_count_official AS set_card_count_official,
     sets.card_count_total AS set_card_count_total,
     sets.name AS set_name,
@@ -248,7 +273,12 @@ INSERT OR REPLACE INTO cards(
     category,
     types,
     supertype,
-    regulation_mark
+    regulation_mark,
+    price_cardmarket_trend,
+    price_cardmarket_avg,
+    price_cardmarket_low,
+    price_updated_iso,
+    price_unit
 )
 VALUES (
     :id,
@@ -264,7 +294,12 @@ VALUES (
     :category,
     :types,
     :supertype,
-    :regulationMark
+    :regulationMark,
+    :priceCardmarketTrend,
+    :priceCardmarketAvg,
+    :priceCardmarketLow,
+    :priceUpdatedIso,
+    :priceUnit
 );
 
 -- Insert a card-Pokémon relationship (call once per dex ID for multi-Pokémon cards)

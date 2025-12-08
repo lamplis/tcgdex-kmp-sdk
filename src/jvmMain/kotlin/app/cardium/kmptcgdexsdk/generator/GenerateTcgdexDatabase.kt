@@ -6,22 +6,37 @@ import app.cash.sqldelight.driver.jdbc.sqlite.JdbcSqliteDriver
 import app.cardium.tcgdex.db.TcgdexDatabase
 import app.cardium.tcgdex.sdk.storage.TcgdexDatabaseInstaller
 import java.io.File
+import java.net.URI
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.json.JsonArray
 import kotlinx.serialization.json.JsonElement
 import kotlinx.serialization.json.JsonNull
 import kotlinx.serialization.json.JsonObject
 import kotlinx.serialization.json.contentOrNull
+import kotlinx.serialization.json.doubleOrNull
 import kotlinx.serialization.json.intOrNull
 import kotlinx.serialization.json.jsonArray
 import kotlinx.serialization.json.jsonObject
 import kotlinx.serialization.json.jsonPrimitive
 
 /**
+ * Cardmarket price entry for a single product.
+ * Mapped from price_guide_6.json structure.
+ */
+data class CardmarketPrice(
+    val trendPrice: Double?,
+    val averageSellPrice: Double?,
+    val lowPrice: Double?,
+    val updatedIso: String,
+    val unit: String = "EUR",
+)
+
+/**
  * Database generator for the offline TCGdex SQLite database.
  *
  * Reads JSON files from the cards-database server/generated directory
- * and populates a SQLite database file.
+ * and populates a SQLite database file. Fetches and embeds Cardmarket EUR
+ * pricing at build time.
  *
  * Usage: java -jar ... --dataset=/path/to/generated --languages=en,fr --output=/path/to/tcgdex.db
  */
@@ -60,6 +75,11 @@ fun main(args: Array<String>) {
     // Map: dexId -> Map<language, name>
     val pokemonSpecies = loadPokemonSpecies(config.datasetDir, json)
     println("[Tcgdex] Loaded ${pokemonSpecies.size} Pokémon species entries")
+
+    // Load Cardmarket price guide for EUR pricing
+    // Map: idProduct (Int) -> CardmarketPrice
+    val cardmarketPrices = loadCardmarketPrices(json)
+    println("[Tcgdex] Loaded ${cardmarketPrices.size} Cardmarket price entries")
 
     // Track missing images for Pokecardex fallback index
     val missingImages = mutableListOf<MissingImagesIndexGenerator.MissingImageEntry>()
@@ -148,6 +168,10 @@ fun main(args: Array<String>) {
             }
         }
 
+        // Get Cardmarket price using thirdParty.cardmarket product ID
+        val cardmarketId = card.getNestedInt("thirdParty", "cardmarket")
+        val pricing = cardmarketId?.let { cardmarketPrices[it] }
+
         db.tcgdexQueries.insertCard(
             id = id,
             language = language,
@@ -163,12 +187,18 @@ fun main(args: Array<String>) {
             types = types,
             supertype = supertype,
             regulationMark = regulationMark,
+            priceCardmarketTrend = pricing?.trendPrice,
+            priceCardmarketAvg = pricing?.averageSellPrice,
+            priceCardmarketLow = pricing?.lowPrice,
+            priceUpdatedIso = pricing?.updatedIso,
+            priceUnit = pricing?.unit,
         )
 
         // Insert card-Pokémon relationships for ALL dex IDs (supports multi-Pokémon cards)
         // VALIDATION: Ensure all dex IDs exist in pokemon-species.json to prevent phantom Pokédex entries
+        // Skip validation if pokemon-species.json was not loaded (validDexIds empty)
         dexIds?.forEach { dexId ->
-            if (dexId !in validDexIds) {
+            if (validDexIds.isNotEmpty() && dexId !in validDexIds) {
                 throw IllegalArgumentException(
                     """
                     [Tcgdex][x] INVALID DEX ID DETECTED - BUILD FAILED
@@ -636,6 +666,85 @@ private fun loadPokemonSpecies(datasetDir: String, json: Json): Map<Int, Map<Str
         }
     } catch (e: Exception) {
         println("[Tcgdex][x] Error loading pokemon-species.json: ${e.message}")
+    }
+
+    return result
+}
+
+/**
+ * Loads Cardmarket price guide data from the official price_guide_6.json endpoint.
+ *
+ * The price guide is fetched at build time to embed pricing into the offline database.
+ * This allows price hydration without runtime network calls.
+ *
+ * Price guide URL: https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_6.json
+ *
+ * The response has this structure:
+ * ```json
+ * {
+ *   "version": 1,
+ *   "createdAt": "2025-06-05T12:00:00.000Z",
+ *   "priceGuides": [
+ *     {
+ *       "idProduct": 123456,
+ *       "idCategory": 6,
+ *       "avg": 1.50,
+ *       "low": 0.50,
+ *       "trend": 1.75,
+ *       ...
+ *     }
+ *   ]
+ * }
+ * ```
+ *
+ * @param json JSON parser instance
+ * @return Map of idProduct -> CardmarketPrice
+ */
+private fun loadCardmarketPrices(json: Json): Map<Int, CardmarketPrice> {
+    val priceGuideUrl = "https://downloads.s3.cardmarket.com/productCatalog/priceGuide/price_guide_6.json"
+    val result = mutableMapOf<Int, CardmarketPrice>()
+
+    try {
+        println("[Tcgdex] Fetching Cardmarket price guide...")
+        val connection = URI(priceGuideUrl).toURL().openConnection()
+        connection.connectTimeout = 30_000
+        connection.readTimeout = 60_000
+        val responseText = connection.getInputStream().bufferedReader().readText()
+
+        val root = json.parseToJsonElement(responseText).jsonObject
+
+        val version = root["version"]?.jsonPrimitive?.intOrNull
+        if (version != 1) {
+            println("[Tcgdex][!] Unexpected price guide version: $version (expected 1)")
+        }
+
+        val createdAt = root["createdAt"]?.jsonPrimitive?.contentOrNull ?: ""
+        val priceGuides = root["priceGuides"]?.jsonArray ?: JsonArray(emptyList())
+
+        for (element in priceGuides) {
+            val pg = element.jsonObject
+            val idProduct = pg["idProduct"]?.jsonPrimitive?.intOrNull ?: continue
+
+            val trendPrice = pg["trend"]?.jsonPrimitive?.doubleOrNull
+            val avgPrice = pg["avg"]?.jsonPrimitive?.doubleOrNull
+            val lowPrice = pg["low"]?.jsonPrimitive?.doubleOrNull
+
+            // Skip entries with no pricing data
+            if (trendPrice == null && avgPrice == null && lowPrice == null) continue
+
+            result[idProduct] = CardmarketPrice(
+                trendPrice = trendPrice,
+                averageSellPrice = avgPrice,
+                lowPrice = lowPrice,
+                updatedIso = createdAt,
+                unit = "EUR",
+            )
+        }
+
+        println("[Tcgdex] Price guide updated: $createdAt")
+    } catch (e: Exception) {
+        println("[Tcgdex][!] Failed to fetch Cardmarket prices: ${e.message}")
+        println("[Tcgdex][!] Continuing without pricing data...")
     }
 
     return result

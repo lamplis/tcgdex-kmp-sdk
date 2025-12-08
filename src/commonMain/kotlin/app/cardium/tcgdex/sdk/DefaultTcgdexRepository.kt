@@ -317,6 +317,7 @@ private fun GetSetWithSerieName.toModel(): CardSet = CardSet(
  * Maps a SQLDelight Card_with_set view row to a domain Card model.
  * The view pre-joins cards with sets, series, illustrators, and rarities.
  * Note: This view does NOT include pokemon_dex_id (use Card_with_pokemon for Pokédex queries).
+ * Includes embedded Cardmarket EUR pricing snapshot.
  */
 private fun Card_with_set.toModel(): Card {
     val baseImage = image_url?.let { selectBaseImageUrl(it) ?: it }
@@ -345,6 +346,12 @@ private fun Card_with_set.toModel(): Card {
         reference = buildReference(local_id, set_card_count_official.toInt()),
         setOfficialCardCount = set_card_count_official.toInt(),
         setReleaseDate = set_release_date,
+        // Embedded Cardmarket EUR pricing snapshot
+        priceCardmarketTrend = price_cardmarket_trend,
+        priceCardmarketAvg = price_cardmarket_avg,
+        priceCardmarketLow = price_cardmarket_low,
+        priceUpdatedIso = price_updated_iso,
+        priceUnit = price_unit,
     )
 }
 
@@ -352,6 +359,7 @@ private fun Card_with_set.toModel(): Card {
  * Maps a SQLDelight Card_with_pokemon view row to a domain Card model.
  * The view joins cards with the card_pokemon junction table to support multi-Pokémon cards.
  * Used for Pokédex queries where a card may appear multiple times (once per dex ID).
+ * Includes embedded Cardmarket EUR pricing snapshot.
  */
 private fun Card_with_pokemon.toModel(): Card {
     val baseImage = image_url?.let { selectBaseImageUrl(it) ?: it }
@@ -380,6 +388,12 @@ private fun Card_with_pokemon.toModel(): Card {
         reference = buildReference(local_id, set_card_count_official.toInt()),
         setOfficialCardCount = set_card_count_official.toInt(),
         setReleaseDate = set_release_date,
+        // Embedded Cardmarket EUR pricing snapshot
+        priceCardmarketTrend = price_cardmarket_trend,
+        priceCardmarketAvg = price_cardmarket_avg,
+        priceCardmarketLow = price_cardmarket_low,
+        priceUpdatedIso = price_updated_iso,
+        priceUnit = price_unit,
     )
 }
 
