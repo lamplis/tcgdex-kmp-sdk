@@ -152,6 +152,55 @@ class DefaultTcgdexRepository(
     }
 
     // =========================================================================
+    // Local ID / Reference Search Queries
+    // =========================================================================
+
+    override suspend fun searchCardsByLocalId(localId: String, language: String, limit: Int): List<Card> =
+        withContext(dispatcher) {
+            queries.searchCardsByLocalId(language, localId, limit.toLong())
+                .executeAsList()
+                .map { it.toModel() }
+        }
+
+    override suspend fun searchCardsByLocalIdInSet(localId: String, setId: String, language: String): List<Card> =
+        withContext(dispatcher) {
+            queries.searchCardsByLocalIdInSet(language, setId, localId)
+                .executeAsList()
+                .map { it.toModel() }
+        }
+
+    override suspend fun searchCardsByLocalIdAndCardCount(
+        localId: String,
+        cardCount: Int,
+        language: String,
+        limit: Int
+    ): List<Card> = withContext(dispatcher) {
+        queries.searchCardsByLocalIdAndCardCount(language, localId, cardCount.toLong(), limit.toLong())
+            .executeAsList()
+            .map { it.toModel() }
+    }
+
+    override suspend fun searchSetsByName(query: String, language: String, limit: Int): List<CardSet> =
+        withContext(dispatcher) {
+            queries.searchSetsByName(language, query, limit.toLong())
+                .executeAsList()
+                .map { row ->
+                    CardSet(
+                        id = row.id,
+                        serieId = row.serie_id,
+                        serieName = row.serie_name,
+                        name = row.name,
+                        language = row.language,
+                        logoUrl = row.logo_url,
+                        symbolUrl = row.symbol_url,
+                        cardCountOfficial = row.card_count_official.toInt(),
+                        cardCountTotal = row.card_count_total.toInt(),
+                        releaseDate = row.release_date
+                    )
+                }
+        }
+
+    // =========================================================================
     // Illustrator & Rarity Queries
     // =========================================================================
 

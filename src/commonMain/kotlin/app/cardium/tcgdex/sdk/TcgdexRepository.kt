@@ -148,6 +148,55 @@ interface TcgdexRepository {
     suspend fun countCardsByName(query: String, language: String): Long
 
     // =========================================================================
+    // Local ID / Reference Search Queries
+    // =========================================================================
+
+    /**
+     * Searches for cards by local ID (e.g., "001", "TG09").
+     * Excludes TCGP (TCG Pocket) cards.
+     *
+     * @param localId The card's local ID within its set
+     * @param language ISO language code
+     * @param limit Maximum number of results
+     * @return List of cards matching the local ID, ordered by release date (newest first)
+     */
+    suspend fun searchCardsByLocalId(localId: String, language: String, limit: Int): List<Card>
+
+    /**
+     * Searches for a card by local ID within a specific set.
+     * Excludes TCGP (TCG Pocket) cards.
+     *
+     * @param localId The card's local ID within its set
+     * @param setId The set identifier
+     * @param language ISO language code
+     * @return List of cards (usually 0 or 1) matching the local ID in the set
+     */
+    suspend fun searchCardsByLocalIdInSet(localId: String, setId: String, language: String): List<Card>
+
+    /**
+     * Searches for cards by local ID and official card count (for "X/Y" format).
+     * Excludes TCGP (TCG Pocket) cards.
+     *
+     * @param localId The card's local ID (X in "X/Y")
+     * @param cardCount The set's official card count (Y in "X/Y")
+     * @param language ISO language code
+     * @param limit Maximum number of results
+     * @return List of cards matching the criteria
+     */
+    suspend fun searchCardsByLocalIdAndCardCount(localId: String, cardCount: Int, language: String, limit: Int): List<Card>
+
+    /**
+     * Searches for sets by name (partial match).
+     * Excludes TCGP (TCG Pocket) sets.
+     *
+     * @param query Search query (e.g., "151" to match "Pokémon 151")
+     * @param language ISO language code
+     * @param limit Maximum number of results
+     * @return List of sets matching the name query
+     */
+    suspend fun searchSetsByName(query: String, language: String, limit: Int): List<CardSet>
+
+    // =========================================================================
     // Illustrator & Rarity Queries (Language-Agnostic)
     // =========================================================================
 

@@ -482,3 +482,69 @@ WHERE pokemon_dex_id = :dexId
     AND language = :language
     AND serie_id != 'tcgp'
 ORDER BY local_number_sort, local_id;
+
+-- =============================================================================
+-- LOCAL ID / REFERENCE SEARCH QUERIES
+-- Used for numeric reference searches like "001/165", "sv08-001", "sv08 001"
+-- =============================================================================
+
+-- Search cards by local_id (exact match, across all sets)
+-- Excludes TCGP cards
+searchCardsByLocalId:
+SELECT *
+FROM card_with_set
+WHERE language = :language
+    AND local_id = :localId
+    AND serie_id != 'tcgp'
+ORDER BY set_release_date DESC, set_id, local_number_sort
+LIMIT :limit;
+
+-- Search cards by local_id within a specific set
+-- Excludes TCGP cards
+searchCardsByLocalIdInSet:
+SELECT *
+FROM card_with_set
+WHERE language = :language
+    AND set_id = :setId
+    AND local_id = :localId
+    AND serie_id != 'tcgp'
+ORDER BY local_number_sort;
+
+-- Find sets by official card count (for matching "X/Y" format where Y is the count)
+-- Excludes TCGP sets
+findSetsByCardCount:
+SELECT *
+FROM sets
+INNER JOIN series ON series.id = sets.serie_id AND series.language = sets.language
+WHERE sets.language = :language
+    AND sets.card_count_official = :cardCount
+    AND sets.serie_id != 'tcgp'
+ORDER BY sets.release_date DESC;
+
+-- Search cards by local_id within sets matching a specific card count
+-- Used for "001/165" format searches
+-- Excludes TCGP cards
+searchCardsByLocalIdAndCardCount:
+SELECT cws.*
+FROM card_with_set cws
+INNER JOIN sets s ON s.id = cws.set_id AND s.language = cws.language
+WHERE cws.language = :language
+    AND cws.local_id = :localId
+    AND s.card_count_official = :cardCount
+    AND cws.serie_id != 'tcgp'
+ORDER BY cws.set_release_date DESC, cws.set_id, cws.local_number_sort
+LIMIT :limit;
+
+-- Search sets by name (partial match, for "151" matching "Pokémon 151")
+-- Excludes TCGP sets
+searchSetsByName:
+SELECT
+    sets.*,
+    series.name AS serie_name
+FROM sets
+INNER JOIN series ON series.id = sets.serie_id AND series.language = sets.language
+WHERE sets.language = :language
+    AND lower(sets.name) LIKE '%' || lower(:query) || '%'
+    AND sets.serie_id != 'tcgp'
+ORDER BY sets.release_date DESC
+LIMIT :limit;
