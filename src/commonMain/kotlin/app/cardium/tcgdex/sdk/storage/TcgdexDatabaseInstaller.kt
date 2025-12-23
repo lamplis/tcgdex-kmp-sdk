@@ -47,6 +47,8 @@ object TcgdexDatabaseInstaller {
      * the file size stays the same.
      *
      * ## VERSION HISTORY
+     * - Version 7: Added evolution chain data (evolves_from, evolves_to) to pokemon_species table.
+     *              Evolution data sourced from PokeAPI via the Pokédex API.
      * - Version 6: Added Cardmarket EUR pricing columns (trend, avg, low, updated, unit)
      *              Pricing is embedded at build time from Cardmarket price guide.
      * - Version 5: All 9 languages for pokemon_species (de, en, es, fr, it, ja, ko, zh-cn, zh-tw)
@@ -64,7 +66,7 @@ object TcgdexDatabaseInstaller {
      *
      * @see docs/POKEDEX_DATA_REMEDIATION.md for more details
      */
-    const val DATABASE_USER_VERSION = 6
+    const val DATABASE_USER_VERSION = 7
 
     private const val METADATA_SUFFIX = ".meta"
 

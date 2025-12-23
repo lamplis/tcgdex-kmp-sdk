@@ -32,6 +32,16 @@ data class CardmarketPrice(
 )
 
 /**
+ * Pokémon species data with localized names and evolution chain.
+ */
+data class PokemonSpeciesData(
+    val dexId: Int,
+    val names: Map<String, String>,
+    val evolvesFrom: Int?,
+    val evolvesTo: List<Int>,
+)
+
+/**
  * Database generator for the offline TCGdex SQLite database.
  *
  * Reads JSON files from the cards-database server/generated directory
@@ -308,22 +318,25 @@ fun main(args: Array<String>) {
     // Insert Pokémon species canonical names for ALL available languages in pokemon-species.json
     // This includes: en, fr, de, es, it, ja, ko, zh-cn, zh-tw, pt-br (and any others in the file)
     // We insert for all languages, not just config.languages, so Pokédex works in any locale
-    println("[Tcgdex] Inserting Pokémon species names for all languages...")
+    println("[Tcgdex] Inserting Pokémon species names with evolution chains for all languages...")
     val allSpeciesLanguages = pokemonSpecies.values
-        .flatMap { it.keys }
+        .flatMap { it.names.keys }
         .toSet()
         .sorted()
     println("[Tcgdex]   Available species languages: $allSpeciesLanguages")
     
     for (language in allSpeciesLanguages) {
         var speciesInserted = 0
-        for ((dexId, names) in pokemonSpecies) {
+        for ((dexId, species) in pokemonSpecies) {
             // Use localized name if available, otherwise fall back to English
-            val name = names[language] ?: names["en"] ?: continue
+            val name = species.names[language] ?: species.names["en"] ?: continue
+            val evolvesToStr = species.evolvesTo.joinToString(",")
             db.tcgdexQueries.insertPokemonSpecies(
                 dexId = dexId.toLong(),
                 language = language,
                 name = name,
+                evolvesFrom = species.evolvesFrom?.toLong(),
+                evolvesTo = evolvesToStr.ifEmpty { null },
             )
             speciesInserted++
         }
@@ -334,12 +347,15 @@ fun main(args: Array<String>) {
     // TCGdex uses "pt" but pokemon-species.json uses "pt-br"
     if ("pt-br" in allSpeciesLanguages && "pt" !in allSpeciesLanguages) {
         var speciesInserted = 0
-        for ((dexId, names) in pokemonSpecies) {
-            val name = names["pt-br"] ?: names["en"] ?: continue
+        for ((dexId, species) in pokemonSpecies) {
+            val name = species.names["pt-br"] ?: species.names["en"] ?: continue
+            val evolvesToStr = species.evolvesTo.joinToString(",")
             db.tcgdexQueries.insertPokemonSpecies(
                 dexId = dexId.toLong(),
                 language = "pt",
                 name = name,
+                evolvesFrom = species.evolvesFrom?.toLong(),
+                evolvesTo = evolvesToStr.ifEmpty { null },
             )
             speciesInserted++
         }
@@ -624,18 +640,34 @@ private fun extractNumericPart(localId: String): Int {
  *
  * @see docs/POKEDEX_DATA_REMEDIATION.md for more details
  */
-private fun loadPokemonSpecies(datasetDir: String, json: Json): Map<Int, Map<String, String>> {
-    // pokemon-species.json is in libs/cards-database/workdir/
-    // datasetDir is typically libs/cards-database/server/generated
-    val workdirPath = File(datasetDir).parentFile?.parentFile?.resolve("workdir")
-    val speciesFile = workdirPath?.resolve("pokemon-species.json")
+private fun resolvePokemonSpeciesFile(datasetDir: String): File? {
+    val repositoryRoot = File(datasetDir).parentFile?.parentFile
+    val candidates = listOfNotNull(
+        repositoryRoot?.resolve("workdir")?.resolve("pokemon-species.json"),
+        repositoryRoot?.resolve("scripts")?.resolve("pokedexIdFixer")?.resolve("pokemon-species.json"),
+    )
+
+    for (candidate in candidates) {
+        if (candidate.exists()) {
+            return candidate
+        }
+    }
+    return null
+}
+
+private fun loadPokemonSpecies(datasetDir: String, json: Json): Map<Int, PokemonSpeciesData> {
+    // pokemon-species.json is expected in libs/cards-database/workdir/, but we also
+    // support the monorepo layout where the tools live under scripts/pokedexIdFixer.
+    val speciesFile = resolvePokemonSpeciesFile(datasetDir)
 
     if (speciesFile == null || !speciesFile.exists()) {
-        println("[Tcgdex][!] pokemon-species.json not found at: $speciesFile")
+        println("[Tcgdex][!] pokemon-species.json not found. Looked under workdir/ and scripts/pokedexIdFixer/")
         return emptyMap()
     }
 
-    val result = mutableMapOf<Int, Map<String, String>>()
+    println("[Tcgdex] Loading pokemon-species.json from ${speciesFile.absolutePath}")
+
+    val result = mutableMapOf<Int, PokemonSpeciesData>()
 
     try {
         val speciesArray = json.parseToJsonElement(speciesFile.readText()).jsonArray
@@ -660,8 +692,21 @@ private fun loadPokemonSpecies(datasetDir: String, json: Json): Map<Int, Map<Str
                 }
             }
 
+            // Load evolution data
+            val evolvesFrom = obj["evolvesFrom"]?.let {
+                if (it is JsonNull) null else it.jsonPrimitive.intOrNull
+            }
+            val evolvesTo = obj["evolvesTo"]?.jsonArray?.mapNotNull {
+                it.jsonPrimitive.intOrNull
+            } ?: emptyList()
+
             if (names.isNotEmpty()) {
-                result[dexId] = names
+                result[dexId] = PokemonSpeciesData(
+                    dexId = dexId,
+                    names = names,
+                    evolvesFrom = evolvesFrom,
+                    evolvesTo = evolvesTo,
+                )
             }
         }
     } catch (e: Exception) {

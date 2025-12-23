@@ -121,15 +121,19 @@ CREATE INDEX card_pokemon_card_idx ON card_pokemon(card_id, language);
 -- -----------------------------------------------------------------------------
 -- Pokémon Species table: Canonical species names from the official Pokédex
 -- Provides localized names independent of card titles (avoids TAG TEAM naming issues)
+-- Includes evolution chain data (evolvesFrom/evolvesTo as dexIds)
 -- -----------------------------------------------------------------------------
 CREATE TABLE pokemon_species (
     dex_id INTEGER NOT NULL,
     language TEXT NOT NULL,
     name TEXT NOT NULL,
+    evolves_from INTEGER,  -- dexId of the species this Pokémon evolves from (null if base form)
+    evolves_to TEXT,       -- Comma-separated dexIds this Pokémon can evolve into (empty if final form)
     PRIMARY KEY (dex_id, language)
 );
 
 CREATE INDEX pokemon_species_dex_idx ON pokemon_species(dex_id);
+CREATE INDEX pokemon_species_evolves_from_idx ON pokemon_species(evolves_from);
 
 -- -----------------------------------------------------------------------------
 -- View: card_with_set - Denormalized view joining cards with their set and series
@@ -307,10 +311,10 @@ insertCardPokemon:
 INSERT OR REPLACE INTO card_pokemon(card_id, language, pokemon_dex_id)
 VALUES (:cardId, :language, :pokemonDexId);
 
--- Insert a Pokémon species canonical name
+-- Insert a Pokémon species canonical name with evolution chain
 insertPokemonSpecies:
-INSERT OR REPLACE INTO pokemon_species(dex_id, language, name)
-VALUES (:dexId, :language, :name);
+INSERT OR REPLACE INTO pokemon_species(dex_id, language, name, evolves_from, evolves_to)
+VALUES (:dexId, :language, :name, :evolvesFrom, :evolvesTo);
 
 -- =============================================================================
 -- SERIES QUERIES
@@ -471,8 +475,8 @@ ORDER BY card_count DESC, illustrators.name;
 -- Uses card_with_pokemon view to support multi-Pokémon cards (TAG TEAMs, etc.)
 -- =============================================================================
 
--- Get all unique Pokémon dex IDs with card counts for a language
--- Returns: dexId, canonical species name (from pokemon_species table), total card count
+-- Get all unique Pokémon dex IDs with card counts and evolution data for a language
+-- Returns: dexId, canonical species name (from pokemon_species table), total card count, evolution chain
 -- Excludes TCGP (TCG Pocket) cards via serie_id filter
 -- Note: A card with multiple dex IDs (e.g., TAG TEAM) is counted once per dex ID
 -- Note: Uses COALESCE to fall back to card name if species table is missing entry
@@ -480,7 +484,9 @@ getAllPokemonDexIds:
 SELECT
     cwp.pokemon_dex_id AS dex_id,
     COALESCE(ps.name, MIN(cwp.name)) AS pokemon_name,
-    COUNT(*) AS card_count
+    COUNT(*) AS card_count,
+    ps.evolves_from,
+    ps.evolves_to
 FROM card_with_pokemon cwp
 LEFT JOIN pokemon_species ps ON ps.dex_id = cwp.pokemon_dex_id AND ps.language = cwp.language
 WHERE cwp.pokemon_dex_id IS NOT NULL
@@ -488,6 +494,17 @@ WHERE cwp.pokemon_dex_id IS NOT NULL
     AND cwp.serie_id != 'tcgp'
 GROUP BY cwp.pokemon_dex_id
 ORDER BY cwp.pokemon_dex_id ASC;
+
+-- Get a Pokémon species by dex ID with evolution data
+-- Returns: name, evolvesFrom, evolvesTo for the specified dexId and language
+getPokemonSpeciesByDexId:
+SELECT
+    dex_id,
+    name,
+    evolves_from,
+    evolves_to
+FROM pokemon_species
+WHERE dex_id = :dexId AND language = :language;
 
 -- Get card counts per set for a specific Pokémon (for gallery grouping)
 -- Returns: setId, setName, releaseDate, serieId, serieName, logoUrl, cardCount
