@@ -234,6 +234,17 @@ class DefaultTcgdexRepository(
             }
         }
 
+    override suspend fun getAllCardIdsByPokemon(language: String): Map<Int, Set<String>> =
+        withContext(dispatcher) {
+            val result = mutableMapOf<Int, MutableSet<String>>()
+            queries.getAllCardIdsByPokemon(language).executeAsList().forEach { row ->
+                val dexId = row.dex_id?.toInt() ?: return@forEach
+                val cardId = row.card_id ?: return@forEach
+                result.getOrPut(dexId) { mutableSetOf() }.add(cardId)
+            }
+            result.mapValues { it.value.toSet() }
+        }
+
     override suspend fun getCardCountsPerSetForPokemon(dexId: Int, language: String): List<PokemonSetCardCount> =
         withContext(dispatcher) {
             queries.getCardCountsPerSetForDexId(dexId.toLong(), language).executeAsList().map { row ->
@@ -253,7 +264,12 @@ class DefaultTcgdexRepository(
     override suspend fun getCardsForPokemonInSet(dexId: Int, setId: String, language: String): List<Card> =
         withContext(dispatcher) {
             queries.getCardsForDexIdInSet(dexId.toLong(), setId, language).executeAsList().map { it.toModel() }
-    }
+        }
+
+    override suspend fun getDexIdForCard(cardId: String, language: String): Int? =
+        withContext(dispatcher) {
+            queries.getDexIdForCard(cardId, language).executeAsOneOrNull()?.toInt()
+        }
 
     // =========================================================================
     // Utility Queries

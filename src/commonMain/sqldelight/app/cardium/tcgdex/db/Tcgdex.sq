@@ -495,6 +495,19 @@ WHERE cwp.pokemon_dex_id IS NOT NULL
 GROUP BY cwp.pokemon_dex_id
 ORDER BY cwp.pokemon_dex_id ASC;
 
+-- Get all card IDs grouped by Pokémon dex ID
+-- Used for computing owned card counts in the Pokédex list
+-- Excludes TCGP (TCG Pocket) cards
+getAllCardIdsByPokemon:
+SELECT
+    pokemon_dex_id AS dex_id,
+    id AS card_id
+FROM card_with_pokemon
+WHERE pokemon_dex_id IS NOT NULL
+    AND language = :language
+    AND serie_id != 'tcgp'
+ORDER BY pokemon_dex_id ASC;
+
 -- Get a Pokémon species by dex ID with evolution data
 -- Returns: name, evolvesFrom, evolvesTo for the specified dexId and language
 getPokemonSpeciesByDexId:
@@ -534,6 +547,17 @@ WHERE pokemon_dex_id = :dexId
     AND language = :language
     AND serie_id != 'tcgp'
 ORDER BY local_number_sort, local_id;
+
+-- Get Pokémon dex ID for a specific card (reverse lookup for species)
+-- Returns the first dex ID associated with the card (multi-Pokémon cards may have several)
+-- Used by dashboard stats to resolve species from owned card IDs
+getDexIdForCard:
+SELECT pokemon_dex_id
+FROM card_with_pokemon
+WHERE id = :cardId
+    AND language = :language
+    AND pokemon_dex_id IS NOT NULL
+LIMIT 1;
 
 -- =============================================================================
 -- LOCAL ID / REFERENCE SEARCH QUERIES

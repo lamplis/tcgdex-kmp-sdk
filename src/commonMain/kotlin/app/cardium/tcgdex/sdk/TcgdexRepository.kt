@@ -240,6 +240,17 @@ interface TcgdexRepository {
     suspend fun getAllPokemonDexEntries(language: String): List<PokemonDexEntry>
 
     /**
+     * Returns all card IDs grouped by Pokémon dex ID.
+     *
+     * Used for computing owned card counts in the Pokédex list view.
+     * Excludes TCGP (TCG Pocket) cards.
+     *
+     * @param language ISO language code
+     * @return Map from dex ID to set of card IDs
+     */
+    suspend fun getAllCardIdsByPokemon(language: String): Map<Int, Set<String>>
+
+    /**
      * Returns card counts per set for a specific Pokémon.
      *
      * Used for grouping cards by set in the Pokémon gallery view.
@@ -263,6 +274,18 @@ interface TcgdexRepository {
      * @return List of cards ordered by card number
      */
     suspend fun getCardsForPokemonInSet(dexId: Int, setId: String, language: String): List<Card>
+
+    /**
+     * Returns the Pokémon dex ID for a specific card.
+     *
+     * Used for reverse lookup when computing species counts from owned card IDs.
+     * For multi-Pokémon cards (TAG TEAM), returns the first dex ID.
+     *
+     * @param cardId Card identifier (e.g., "sv01-001")
+     * @param language ISO language code
+     * @return Dex ID if the card has a Pokémon, null otherwise
+     */
+    suspend fun getDexIdForCard(cardId: String, language: String): Int?
 
     // =========================================================================
     // Utility Queries
