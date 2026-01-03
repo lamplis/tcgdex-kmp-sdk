@@ -64,6 +64,8 @@ data class CardSet(
  * @property imageUrl Base URL to the card image (language-specific, without quality suffix)
  * @property thumbnailUrl Low-resolution image URL (imageUrl + /low.png)
  * @property highQualityUrl High-resolution image URL (imageUrl + /high.png)
+ * @property fallbackImageUrl Direct URL to a non-TCGdex fallback asset (e.g., Poképedia PNG)
+ * @property fallbackImageSource Identifier for the fallback provider ("pokepedia", etc.)
  * @property rarityId Rarity slug ID, or null if unknown
  * @property rarityName Original rarity name, or null
  * @property illustratorId Illustrator slug ID, or null
@@ -95,6 +97,8 @@ data class Card(
     val imageUrl: String?,
     val thumbnailUrl: String?,
     val highQualityUrl: String?,
+    val fallbackImageUrl: String?,
+    val fallbackImageSource: String?,
     val rarityId: String?,
     val rarityName: String?,
     val illustratorId: String?,

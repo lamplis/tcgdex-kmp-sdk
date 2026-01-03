@@ -6,6 +6,7 @@ import app.cash.sqldelight.driver.jdbc.sqlite.JdbcSqliteDriver
 import app.cardium.tcgdex.db.TcgdexDatabase
 import app.cardium.tcgdex.sdk.storage.TcgdexDatabaseInstaller
 import java.io.File
+import java.net.HttpURLConnection
 import java.net.URI
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.json.JsonArray
@@ -18,6 +19,9 @@ import kotlinx.serialization.json.intOrNull
 import kotlinx.serialization.json.jsonArray
 import kotlinx.serialization.json.jsonObject
 import kotlinx.serialization.json.jsonPrimitive
+import kotlinx.serialization.encodeToString
+import kotlinx.serialization.decodeFromString
+import kotlinx.serialization.Serializable
 
 /**
  * Cardmarket price entry for a single product.
@@ -76,6 +80,12 @@ fun main(args: Array<String>) {
     val db = TcgdexDatabase(driver)
 
     val json = Json { ignoreUnknownKeys = true }
+    val defaultPokepediaFile = config.pokepediaMissingFile
+        ?: resolvePokepediaMissingTree(config.datasetDir)?.absolutePath
+    val pokepediaFallbacks = loadPokepediaFallbacks(
+        missingFilePath = defaultPokepediaFile,
+        json = json,
+    )
 
     // Track unique illustrators and rarities (language-agnostic)
     val illustrators = mutableMapOf<String, String>() // id -> name
@@ -115,6 +125,13 @@ fun main(args: Array<String>) {
         val setId = card.getNestedString("set", "id") ?: return
         val name = card.getString("name") ?: id
         val imageUrl = card.getString("image")
+        val fallbackImageUrl =
+            if (language.equals("fr", ignoreCase = true)) {
+                pokepediaFallbacks[id]
+            } else {
+                null
+            }
+        val fallbackImageSource = fallbackImageUrl?.let { POKEPEDIA_SOURCE }
 
         if (imageUrl.isNullOrBlank()) {
             val pokecardexUrl = MissingImagesIndexGenerator.buildPokecardexUrl(
@@ -192,6 +209,8 @@ fun main(args: Array<String>) {
             illustratorId = illustratorId,
             name = name,
             imageUrl = imageUrl,
+            fallbackImageUrl = fallbackImageUrl,
+            fallbackImageSource = fallbackImageSource,
             originLanguage = originLanguage,
             category = category,
             types = types,
@@ -411,6 +430,7 @@ private data class Config(
     val languages: List<String>,
     val outputFile: String,
     val force: Boolean,
+    val pokepediaMissingFile: String?,
 )
 
 private fun parseArgs(args: Array<String>): Config {
@@ -418,6 +438,7 @@ private fun parseArgs(args: Array<String>): Config {
     var languages = listOf("en", "fr")
     var outputFile = "tcgdex.db"
     var force = false
+    var pokepediaMissingFile: String? = null
 
     for (arg in args) {
         when {
@@ -425,11 +446,12 @@ private fun parseArgs(args: Array<String>): Config {
             arg.startsWith("--languages=") -> languages = arg.removePrefix("--languages=").split(",").map { it.trim() }
             arg.startsWith("--output=") -> outputFile = arg.removePrefix("--output=")
             arg.startsWith("--force=") -> force = arg.removePrefix("--force=").toBoolean()
+            arg.startsWith("--pokepedia-missing=") -> pokepediaMissingFile = arg.removePrefix("--pokepedia-missing=")
         }
     }
 
     require(datasetDir.isNotBlank()) { "Missing required argument: --dataset=/path/to/generated" }
-    return Config(datasetDir, languages, outputFile, force)
+    return Config(datasetDir, languages, outputFile, force, pokepediaMissingFile)
 }
 
 private fun JsonObject.getString(key: String): String? {
@@ -655,6 +677,21 @@ private fun resolvePokemonSpeciesFile(datasetDir: String): File? {
     return null
 }
 
+private fun resolvePokepediaMissingTree(datasetDir: String): File? {
+    val projectRoot = File(datasetDir)
+        .parentFile // server
+        ?.parentFile // cards-database
+        ?.parentFile // libs
+        ?.parentFile // project root
+    val candidate = projectRoot
+        ?.resolve("libs")
+        ?.resolve("tcgdex-kmp-sdk")
+        ?.resolve("resources")
+        ?.resolve("pokepedia")
+        ?.resolve("missing-fr-card-images-tree.json")
+    return candidate?.takeIf { it.exists() }
+}
+
 private fun loadPokemonSpecies(datasetDir: String, json: Json): Map<Int, PokemonSpeciesData> {
     // pokemon-species.json is expected in libs/cards-database/workdir/, but we also
     // support the monorepo layout where the tools live under scripts/pokedexIdFixer.
@@ -793,5 +830,158 @@ private fun loadCardmarketPrices(json: Json): Map<Int, CardmarketPrice> {
     }
 
     return result
+}
+
+// =============================================================================
+// Poképedia fallback harvesting
+// =============================================================================
+
+private const val POKEPEDIA_SOURCE = "pokepedia"
+private val ogImageRegex = Regex("<meta[^>]+property=[\"']og:image[\"'][^>]+content=[\"']([^\"']+)[\"'][^>]*>", RegexOption.IGNORE_CASE)
+private val pokepediaThumbRegex = Regex("(https?://[^/]+/images)/thumb/([^/]+/[^/]+/[^/]+)/(?:\\d+px-)?[^/]+$", RegexOption.IGNORE_CASE)
+private val pokepediaCacheFile = File("libs/tcgdex-kmp-sdk/build/cache/pokepedia_fallbacks.json")
+
+@Serializable
+private data class MissingFrRoot(
+    val series: List<MissingFrSeries> = emptyList(),
+)
+
+@Serializable
+private data class MissingFrSeries(
+    val sets: List<MissingFrSet> = emptyList(),
+)
+
+@Serializable
+private data class MissingFrSet(
+    val cards: List<MissingFrCard> = emptyList(),
+)
+
+@Serializable
+private data class MissingFrCard(
+    val cardId: String,
+    val pokepediaCardUrl: String? = null,
+    val reason: String? = null,
+)
+
+private fun MissingFrRoot.flattenCards(): List<MissingFrCard> =
+    series.flatMap { serie -> serie.sets }.flatMap { it.cards }
+
+private fun loadPokepediaFallbacks(
+    missingFilePath: String?,
+    json: Json,
+): Map<String, String> {
+    if (missingFilePath.isNullOrBlank()) {
+        println("[Tcgdex][i] Pokepedia missing tree not provided, skipping fallback import")
+        return emptyMap()
+    }
+
+    val file = File(missingFilePath)
+    if (!file.exists()) {
+        println("[Tcgdex][!] Pokepedia missing tree not found: $missingFilePath")
+        return emptyMap()
+    }
+
+    return runCatching {
+        val root = json.decodeFromString<MissingFrRoot>(file.readText())
+        val cards = root.flattenCards()
+
+        if (cards.isEmpty()) {
+            println("[Tcgdex][i] Pokepedia missing tree contained no cards")
+            return emptyMap()
+        }
+
+        val cache = loadPokepediaCache(json)
+        var reused = 0
+        var fetched = 0
+        val resolved = mutableMapOf<String, String>()
+
+        val resolvable =
+            cards.filter {
+                !it.pokepediaCardUrl.isNullOrBlank() &&
+                    it.cardId.isNotBlank() &&
+                    !it.reason.equals("POKEPEDIA_THUMBNAIL_MISSING", ignoreCase = true)
+            }
+
+        println("[Tcgdex][i] Resolving Pokepedia fallbacks for ${resolvable.size} French cards...")
+
+        for (entry in resolvable) {
+            val cardId = entry.cardId
+            val cached = cache[cardId]
+            if (cached != null) {
+                resolved[cardId] = cached
+                reused++
+                continue
+            }
+
+            val resolvedUrl = fetchPokepediaImage(entry.pokepediaCardUrl!!)
+            if (resolvedUrl != null) {
+                resolved[cardId] = resolvedUrl
+                cache[cardId] = resolvedUrl
+                fetched++
+            }
+        }
+
+        if (fetched > 0) {
+            savePokepediaCache(json, cache)
+        }
+
+        println("[Tcgdex][i] Pokepedia fallbacks ready: total=${resolved.size}, reused=$reused, fetched=$fetched")
+        resolved
+    }.onFailure {
+        println("[Tcgdex][x] Failed to load Pokepedia fallback data: ${it.message}")
+    }.getOrDefault(emptyMap())
+}
+
+private fun loadPokepediaCache(json: Json): MutableMap<String, String> {
+    return if (pokepediaCacheFile.exists()) {
+        runCatching {
+            json.decodeFromString<MutableMap<String, String>>(pokepediaCacheFile.readText())
+        }.getOrElse {
+            println("[Tcgdex][!] Failed to read Pokepedia cache: ${it.message}")
+            mutableMapOf()
+        }
+    } else {
+        mutableMapOf()
+    }
+}
+
+private fun savePokepediaCache(json: Json, cache: Map<String, String>) {
+    pokepediaCacheFile.parentFile?.mkdirs()
+    pokepediaCacheFile.writeText(json.encodeToString(cache))
+}
+
+private fun fetchPokepediaImage(cardUrl: String): String? {
+    return runCatching {
+        val connection = URI(cardUrl).toURL().openConnection() as HttpURLConnection
+        connection.connectTimeout = 15_000
+        connection.readTimeout = 30_000
+        connection.setRequestProperty("User-Agent", "CardiumGenerator/1.0 (+https://github.com/cardium-app)")
+
+        try {
+            connection.inputStream.bufferedReader().use { reader ->
+                val html = reader.readText()
+                val match = ogImageRegex.find(html)
+                val rawUrl = match?.groupValues?.getOrNull(1)
+                normalizePokepediaImageUrl(rawUrl)
+            }
+        } finally {
+            connection.disconnect()
+        }
+    }.onFailure {
+        println("[Tcgdex][!] Failed to resolve Pokepedia image for $cardUrl: ${it.message}")
+    }.getOrNull()
+}
+
+private fun normalizePokepediaImageUrl(rawUrl: String?): String? {
+    if (rawUrl.isNullOrBlank()) return null
+    val sanitized = rawUrl.trim().replace("&amp;", "&")
+    val match = pokepediaThumbRegex.find(sanitized)
+    return if (match != null) {
+        val base = match.groupValues[1]
+        val path = match.groupValues[2]
+        "$base/$path"
+    } else {
+        sanitized
+    }
 }
 
