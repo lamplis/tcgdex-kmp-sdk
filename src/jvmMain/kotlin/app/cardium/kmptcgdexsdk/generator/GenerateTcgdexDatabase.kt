@@ -850,30 +850,35 @@ private const val POKEPEDIA_SOURCE = "pokepedia"
 
 @Serializable
 private data class MissingFrRoot(
+    val generatedAt: String? = null,
+    val databasePath: String? = null,
+    val language: String? = null,
+    val totalCards: Int? = null,
+    val resolvedCards: Int? = null,
+    val unresolvedCards: Int? = null,
+    val unresolvedReasons: Map<String, Int> = emptyMap(),
     val series: List<MissingFrSeries> = emptyList(),
 )
 
 @Serializable
 private data class MissingFrSeries(
+    val seriesId: String? = null,
+    val name: String? = null,
+    val position: Int? = null,
     val sets: List<MissingFrSet> = emptyList(),
 )
 
 @Serializable
 private data class MissingFrSet(
-    val cards: List<MissingFrCard> = emptyList(),
+    val setId: String? = null,
+    val name: String? = null,
+    val releaseDate: String? = null,
+    val cardCountTotal: Int? = null,
+    val pokepediaSetUrl: String? = null,
+    val cards: List<JsonObject> = emptyList(),
 )
 
-@Serializable
-private data class MissingFrCard(
-    val cardId: String,
-    val pokepediaCardUrl: String? = null,
-    val pokepediaHdUrl: String? = null,
-    val pokepediaThumbnailUrl: String? = null,
-    val reason: String? = null,
-    val resolutionStatus: String? = null,
-)
-
-private fun MissingFrRoot.flattenCards(): List<MissingFrCard> =
+private fun MissingFrRoot.flattenCards(): List<JsonObject> =
     series.flatMap { serie -> serie.sets }.flatMap { it.cards }
 
 private fun loadPokepediaFallbacks(
@@ -901,23 +906,24 @@ private fun loadPokepediaFallbacks(
         }
 
         val resolved = mutableMapOf<String, String>()
-        var count = 0
         var skipped = 0
 
         for (entry in cards) {
-            if (entry.cardId.isBlank()) continue
-            if (entry.reason.equals("POKEPEDIA_THUMBNAIL_MISSING", ignoreCase = true)) {
+            val cardId = entry["cardId"]?.jsonPrimitive?.contentOrNull?.trim()
+            if (cardId.isNullOrBlank()) continue
+
+            val reason = entry["reason"]?.jsonPrimitive?.contentOrNull
+            if (reason.equals("POKEPEDIA_THUMBNAIL_MISSING", ignoreCase = true)) {
                 skipped++
                 continue
             }
 
             // Use pre-resolved URLs from the tree (pokepediaHdUrl or pokepediaThumbnailUrl)
-            val preResolvedUrl = entry.pokepediaHdUrl?.takeIf { it.isNotBlank() }
-                ?: entry.pokepediaThumbnailUrl?.takeIf { it.isNotBlank() }
+            val preResolvedUrl = entry["pokepediaHdUrl"]?.jsonPrimitive?.contentOrNull?.takeIf { it.isNotBlank() }
+                ?: entry["pokepediaThumbnailUrl"]?.jsonPrimitive?.contentOrNull?.takeIf { it.isNotBlank() }
 
             if (preResolvedUrl != null) {
-                resolved[entry.cardId] = preResolvedUrl
-                count++
+                resolved[cardId] = preResolvedUrl
             }
         }
 
@@ -934,82 +940,46 @@ private fun loadPokepediaFallbacks(
  */
 private fun regenerateUnresolvedFile(treeFile: File, json: Json) {
     runCatching {
-        // Read the full tree JSON as JsonObject to preserve all metadata
-        val rootJson = json.parseToJsonElement(treeFile.readText()).jsonObject
-        
-        // Filter series to only include sets with unresolved cards
-        val unresolvedSeries = rootJson["series"]?.jsonArray?.mapNotNull { seriesElement ->
-            val seriesObj = seriesElement.jsonObject
-            val unresolvedSets = seriesObj["sets"]?.jsonArray?.mapNotNull { setElement ->
-                val setObj = setElement.jsonObject
-                val unresolvedCards = setObj["cards"]?.jsonArray?.filter { cardElement ->
-                    val cardObj = cardElement.jsonObject
-                    cardObj["resolutionStatus"]?.jsonPrimitive?.contentOrNull == "unresolved"
-                } ?: emptyList()
-                
+        val root = json.decodeFromString<MissingFrRoot>(treeFile.readText())
+
+        val unresolvedSeries = root.series.mapNotNull { series ->
+            val unresolvedSets = series.sets.mapNotNull { set ->
+                val unresolvedCards = set.cards.filter { card ->
+                    val status = card["resolutionStatus"]?.jsonPrimitive?.contentOrNull
+                    status.equals("unresolved", ignoreCase = true)
+                }
+
                 if (unresolvedCards.isNotEmpty()) {
-                    // Create new set object with only unresolved cards
-                    buildJsonObject {
-                        put("setId", JsonPrimitive(setObj["setId"]?.jsonPrimitive?.contentOrNull ?: ""))
-                        put("name", JsonPrimitive(setObj["name"]?.jsonPrimitive?.contentOrNull ?: ""))
-                        setObj["releaseDate"]?.jsonPrimitive?.contentOrNull?.let { put("releaseDate", JsonPrimitive(it)) }
-                        put("cardCountTotal", JsonPrimitive(unresolvedCards.size))
-                        setObj["pokepediaSetUrl"]?.jsonPrimitive?.contentOrNull?.let { put("pokepediaSetUrl", JsonPrimitive(it)) }
-                        put("cards", buildJsonArray { unresolvedCards.forEach { add(it) } })
-                    }
+                    set.copy(
+                        cards = unresolvedCards,
+                        cardCountTotal = unresolvedCards.size,
+                    )
                 } else {
                     null
                 }
-            } ?: emptyList()
-            
+            }
+
             if (unresolvedSets.isNotEmpty()) {
-                // Create new series object with only sets containing unresolved cards
-                buildJsonObject {
-                    put("seriesId", JsonPrimitive(seriesObj["seriesId"]?.jsonPrimitive?.contentOrNull ?: ""))
-                    put("name", JsonPrimitive(seriesObj["name"]?.jsonPrimitive?.contentOrNull ?: ""))
-                    put("position", JsonPrimitive(seriesObj["position"]?.jsonPrimitive?.intOrNull ?: 0))
-                    put("sets", buildJsonArray { unresolvedSets.forEach { add(it) } })
-                }
+                series.copy(sets = unresolvedSets)
             } else {
                 null
             }
-        } ?: emptyList()
-        
-        // Count unresolved cards and reasons
-        var unresolvedCount = 0
-        val unresolvedReasons = mutableMapOf<String, Int>()
-        
-        unresolvedSeries.forEach { seriesElement ->
-            val seriesObj = seriesElement.jsonObject
-            seriesObj["sets"]?.jsonArray?.forEach { setElement ->
-                val setObj = setElement.jsonObject
-                setObj["cards"]?.jsonArray?.forEach { cardElement ->
-                    unresolvedCount++
-                    val reason = cardElement.jsonObject["reason"]?.jsonPrimitive?.contentOrNull
-                    if (reason != null) {
-                        unresolvedReasons[reason] = (unresolvedReasons[reason] ?: 0) + 1
-                    }
-                }
-            }
         }
-        
-        // Build the unresolved root object
-        val unresolvedRoot = buildJsonObject {
-            put("generatedAt", JsonPrimitive(rootJson["generatedAt"]?.jsonPrimitive?.contentOrNull ?: ""))
-            put("databasePath", JsonPrimitive(rootJson["databasePath"]?.jsonPrimitive?.contentOrNull ?: ""))
-            put("language", JsonPrimitive(rootJson["language"]?.jsonPrimitive?.contentOrNull ?: ""))
-            put("totalCards", JsonPrimitive(unresolvedCount))
-            put("resolvedCards", JsonPrimitive(0))
-            put("unresolvedCards", JsonPrimitive(unresolvedCount))
-            put("unresolvedReasons", buildJsonObject {
-                unresolvedReasons.forEach { (reason, count) ->
-                    put(reason, JsonPrimitive(count))
-                }
-            })
-            put("series", buildJsonArray { unresolvedSeries.forEach { add(it) } })
-        }
-        
-        // Write to unresolved file
+
+        val unresolvedCards = unresolvedSeries.flatMap { it.sets }.flatMap { it.cards }
+        val unresolvedCount = unresolvedCards.size
+        val unresolvedReasons = unresolvedCards.mapNotNull { card ->
+            card["reason"]?.jsonPrimitive?.contentOrNull
+        }.groupingBy { it }.eachCount()
+
+        val unresolvedRoot = root.copy(
+            totalCards = unresolvedCount,
+            resolvedCards = 0,
+            unresolvedCards = unresolvedCount,
+            unresolvedReasons = unresolvedReasons,
+            series = unresolvedSeries,
+        )
+
         val outputFile = treeFile.resolveSibling("missing-fr-card-images-unresolved.json")
         outputFile.writeText(json.encodeToString(unresolvedRoot))
         println("[Tcgdex] Regenerated unresolved file: ${outputFile.absolutePath} ($unresolvedCount cards)")
