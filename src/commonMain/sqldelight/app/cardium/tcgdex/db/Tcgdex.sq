@@ -104,6 +104,7 @@ CREATE INDEX cards_language_idx ON cards(language);
 CREATE INDEX cards_illustrator_idx ON cards(illustrator_id);
 CREATE INDEX cards_rarity_idx ON cards(rarity_id);
 CREATE INDEX cards_name_idx ON cards(name);
+CREATE INDEX IF NOT EXISTS idx_cards_rarity_series ON cards(language, rarity_id);
 
 -- -----------------------------------------------------------------------------
 -- Card-Pokémon junction table: Links cards to one or more Pokédex IDs
@@ -634,3 +635,52 @@ WHERE sets.language = :language
     AND sets.serie_id != 'tcgp'
 ORDER BY sets.release_date DESC
 LIMIT :limit;
+
+-- =============================================================================
+-- RARITY AGGREGATION QUERIES
+-- Used for rarity debug screen - aggregates rarity data per series
+-- =============================================================================
+
+-- Get rarities grouped by series with card counts and sample card ID
+-- Returns aggregated data to avoid loading all cards (~10k+) into memory
+-- Excludes TCGP (TCG Pocket) cards
+getRaritiesGroupedBySeries:
+SELECT
+    series.id AS series_id,
+    series.name AS series_name,
+    series.position AS series_position,
+    cards.rarity_id,
+    rarities.name AS rarity_name,
+    COUNT(*) AS card_count,
+    MIN(cards.id) AS sample_card_id
+FROM cards
+INNER JOIN sets ON sets.id = cards.set_id AND sets.language = cards.language
+INNER JOIN series ON series.id = sets.serie_id AND series.language = sets.language
+LEFT JOIN rarities ON rarities.id = cards.rarity_id
+WHERE cards.language = :language
+    AND series.id != 'tcgp'
+GROUP BY series.id, series.name, series.position, cards.rarity_id, rarities.name
+ORDER BY series.position DESC, cards.rarity_id;
+
+-- Get rarities grouped by series AND set with card counts
+-- Returns hierarchical data: Series -> Set -> Rarity
+-- Excludes TCGP (TCG Pocket) cards
+getRaritiesGroupedBySeriesAndSet:
+SELECT
+    series.id AS series_id,
+    series.name AS series_name,
+    series.position AS series_position,
+    sets.id AS set_id,
+    sets.name AS set_name,
+    sets.release_date AS set_release_date,
+    cards.rarity_id,
+    rarities.name AS rarity_name,
+    COUNT(*) AS card_count
+FROM cards
+INNER JOIN sets ON sets.id = cards.set_id AND sets.language = cards.language
+INNER JOIN series ON series.id = sets.serie_id AND series.language = sets.language
+LEFT JOIN rarities ON rarities.id = cards.rarity_id
+WHERE cards.language = :language
+    AND series.id != 'tcgp'
+GROUP BY series.id, series.name, series.position, sets.id, sets.name, sets.release_date, cards.rarity_id, rarities.name
+ORDER BY series.position DESC, sets.release_date DESC, cards.rarity_id;

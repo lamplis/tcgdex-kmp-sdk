@@ -7,6 +7,8 @@ import app.cardium.tcgdex.sdk.model.IllustratorWithCount
 import app.cardium.tcgdex.sdk.model.PokemonDexEntry
 import app.cardium.tcgdex.sdk.model.PokemonSetCardCount
 import app.cardium.tcgdex.sdk.model.Rarity
+import app.cardium.tcgdex.sdk.model.RarityAggregate
+import app.cardium.tcgdex.sdk.model.RarityAggregateBySet
 import app.cardium.tcgdex.sdk.model.Serie
 
 /**
@@ -297,4 +299,31 @@ interface TcgdexRepository {
      * @return List of ISO language codes (e.g., ["en", "fr"])
      */
     suspend fun getAvailableLanguages(): List<String>
+
+    // =========================================================================
+    // Rarity Aggregation Queries
+    // =========================================================================
+
+    /**
+     * Returns rarity data aggregated by series.
+     *
+     * This is an optimized query for the rarity debug screen that avoids loading
+     * all cards into memory. Instead, it returns counts and sample card IDs per
+     * (series, rarity) combination.
+     *
+     * @param language ISO language code
+     * @return List of aggregated rarity data, grouped by series (newest first)
+     */
+    suspend fun getRaritiesGroupedBySeries(language: String): List<RarityAggregate>
+
+    /**
+     * Returns rarity data aggregated by series AND set.
+     *
+     * This provides hierarchical data: Series -> Set -> Rarity.
+     * Each row represents a unique (series, set, rarity) combination.
+     *
+     * @param language ISO language code
+     * @return List of aggregated rarity data, grouped by series then set (newest first)
+     */
+    suspend fun getRaritiesGroupedBySeriesAndSet(language: String): List<RarityAggregateBySet>
 }

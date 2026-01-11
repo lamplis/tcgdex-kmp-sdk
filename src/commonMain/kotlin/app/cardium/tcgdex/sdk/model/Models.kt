@@ -203,3 +203,53 @@ data class PokemonSetCardCount(
     val symbolUrl: String?,
     val cardCount: Int
 )
+
+/**
+ * Aggregated rarity data per series.
+ *
+ * Used by the rarity debug screen to display rarity counts without loading all cards.
+ * Each row represents a unique (series, rarity) combination with a count and sample card.
+ *
+ * @property seriesId Series identifier
+ * @property seriesName Localized series name
+ * @property seriesPosition Series display order (higher = newer)
+ * @property rarityId Rarity slug ID, or null for unknown rarities
+ * @property rarityName Original rarity name, or null
+ * @property cardCount Number of cards with this rarity in this series
+ * @property sampleCardId ID of a sample card (MIN cardId) for preview on tap
+ */
+data class RarityAggregate(
+    val seriesId: String,
+    val seriesName: String,
+    val seriesPosition: Int,
+    val rarityId: String?,
+    val rarityName: String?,
+    val cardCount: Int,
+    val sampleCardId: String,
+)
+
+/**
+ * Aggregated rarity data grouped by series AND set.
+ * Each row represents a unique (series, set, rarity) combination.
+ *
+ * @property seriesId Series identifier
+ * @property seriesName Localized series name
+ * @property seriesPosition Series display order (higher = newer)
+ * @property setId Set identifier
+ * @property setName Localized set name
+ * @property setReleaseDate Set release date (ISO format)
+ * @property rarityId Rarity slug ID, or null for unknown rarities
+ * @property rarityName Original rarity name, or null
+ * @property cardCount Number of cards with this rarity in this set
+ */
+data class RarityAggregateBySet(
+    val seriesId: String,
+    val seriesName: String,
+    val seriesPosition: Int,
+    val setId: String,
+    val setName: String,
+    val setReleaseDate: String?,
+    val rarityId: String?,
+    val rarityName: String?,
+    val cardCount: Int,
+)

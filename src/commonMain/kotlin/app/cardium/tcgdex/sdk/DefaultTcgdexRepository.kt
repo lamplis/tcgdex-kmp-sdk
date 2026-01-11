@@ -16,6 +16,8 @@ import app.cardium.tcgdex.sdk.model.IllustratorWithCount
 import app.cardium.tcgdex.sdk.model.PokemonDexEntry
 import app.cardium.tcgdex.sdk.model.PokemonSetCardCount
 import app.cardium.tcgdex.sdk.model.Rarity
+import app.cardium.tcgdex.sdk.model.RarityAggregate
+import app.cardium.tcgdex.sdk.model.RarityAggregateBySet
 import app.cardium.tcgdex.sdk.model.Serie
 import app.cardium.tcgdex.sdk.util.selectBaseImageUrl
 import app.cardium.tcgdex.sdk.util.toHighQualityUrl
@@ -278,6 +280,48 @@ class DefaultTcgdexRepository(
     override suspend fun getAvailableLanguages(): List<String> = withContext(dispatcher) {
         queries.getAvailableLanguages().executeAsList()
     }
+
+    // =========================================================================
+    // Rarity Aggregation Queries
+    // =========================================================================
+
+    override suspend fun getRaritiesGroupedBySeries(language: String): List<RarityAggregate> =
+        withContext(dispatcher) {
+            val result = queries.getRaritiesGroupedBySeries(language).executeAsList()
+            println("[Tcgdex][i] getRaritiesGroupedBySeries($language) returned ${result.size} rows")
+            // Filter out any rows without a sample card (shouldn't happen, but SQL returns nullable)
+            result.mapNotNull { row ->
+                val sampleCardId = row.sample_card_id ?: return@mapNotNull null
+                RarityAggregate(
+                    seriesId = row.series_id,
+                    seriesName = row.series_name,
+                    seriesPosition = row.series_position.toInt(),
+                    rarityId = row.rarity_id,
+                    rarityName = row.rarity_name,
+                    cardCount = row.card_count.toInt(),
+                    sampleCardId = sampleCardId,
+                )
+            }
+        }
+
+    override suspend fun getRaritiesGroupedBySeriesAndSet(language: String): List<RarityAggregateBySet> =
+        withContext(dispatcher) {
+            val result = queries.getRaritiesGroupedBySeriesAndSet(language).executeAsList()
+            println("[Tcgdex][i] getRaritiesGroupedBySeriesAndSet($language) returned ${result.size} rows")
+            result.map { row ->
+                RarityAggregateBySet(
+                    seriesId = row.series_id,
+                    seriesName = row.series_name,
+                    seriesPosition = row.series_position.toInt(),
+                    setId = row.set_id,
+                    setName = row.set_name,
+                    setReleaseDate = row.set_release_date,
+                    rarityId = row.rarity_id,
+                    rarityName = row.rarity_name,
+                    cardCount = row.card_count.toInt(),
+                )
+            }
+        }
 }
 
 // =============================================================================
