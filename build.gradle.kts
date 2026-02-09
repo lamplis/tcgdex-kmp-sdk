@@ -19,6 +19,13 @@ ktlint {
     }
 }
 
+// Force sqlite-jdbc to iOS-compatible version for database generation (see plan: fix iOS DB corruption)
+configurations.all {
+    resolutionStrategy {
+        force("org.xerial:sqlite-jdbc:3.39.4.1")
+    }
+}
+
 // -----------------------------------------------------------------------------
 // TCGdex Database Generation Configuration
 // -----------------------------------------------------------------------------
@@ -34,6 +41,11 @@ val releaseRequested = gradle.startParameter.taskNames.any { it.contains("Releas
 val datasetRootDir = rootProject.layout.projectDirectory.dir("libs/cards-database/server/generated")
 val generatedDbDir = layout.buildDirectory.dir("generated/tcgdex/resources")
 val generatedDbFile = generatedDbDir.map { it.file("tcgdex.db") }
+val tcgdexCardmarketExport = providers.gradleProperty("tcgdex.cardmarket.export").orNull
+val defaultCardmarketExport = rootProject.layout.projectDirectory
+    .dir("../poke-browser/export")
+    .file("cardmarket-prices.json")
+    .asFile
 
 // Resolve final languages list (prefer new property, fall back to legacy)
 val resolvedLanguages: String = if (tcgdexLanguageLegacy.get().isNotBlank()) {
@@ -84,6 +96,12 @@ kotlin {
         val jvmMain by getting {
             dependencies {
                 implementation(libs.sqldelight.sqlite.driver)
+                // Pin sqlite-jdbc to a version compatible with iOS system SQLite.
+                // iOS 16+ ships with Apple's SQLite ~3.39.x. Using 3.39.4.1 ensures
+                // the generated DB pages are readable by the iOS system library.
+                implementation("org.xerial:sqlite-jdbc:3.39.4.1") {
+                    because("iOS links system libsqlite3 (~3.39.x); generator must produce compatible pages")
+                }
             }
         }
         val commonTest by getting {
@@ -133,6 +151,8 @@ val generateTcgdexDatabase by tasks.registering(JavaExec::class) {
     val output = generatedDbFile.get().asFile
     val forceFlag = if (tcgdexForce.get() || releaseRequested) "true" else "false"
     val languagesList = resolvedLanguages.split(",").map { it.trim().lowercase() }.filter { it.isNotEmpty() }
+    val exportFile = tcgdexCardmarketExport?.let { file(it) } ?: defaultCardmarketExport
+    val resolvedExportFile = exportFile.takeIf { it.exists() }
 
     // Mark all language directories as inputs for incremental builds
     languagesList.forEach { lang ->
@@ -140,6 +160,9 @@ val generateTcgdexDatabase by tasks.registering(JavaExec::class) {
         if (langDir.exists()) {
             inputs.dir(langDir)
         }
+    }
+    if (resolvedExportFile != null) {
+        inputs.file(resolvedExportFile)
     }
     outputs.file(output)
 
@@ -154,6 +177,9 @@ val generateTcgdexDatabase by tasks.registering(JavaExec::class) {
         "--output=${output.absolutePath}",
         "--force=$forceFlag",
     )
+    if (resolvedExportFile != null) {
+        args("--cardmarket-export=${resolvedExportFile.absolutePath}")
+    }
 
     classpath = files(layout.buildDirectory.dir("classes/kotlin/jvm/main")) + jvmRuntimeConfig.get()
     dependsOn(compileKotlinJvmTask)

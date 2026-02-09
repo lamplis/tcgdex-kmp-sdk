@@ -37,6 +37,18 @@ data class CardmarketPrice(
     val unit: String = "EUR",
 )
 
+data class CardmarketExportPrice(
+    val medianPrice: Double?,
+    val avgPrice: Double?,
+    val minPrice: Double?,
+    val currency: String?,
+)
+
+data class CardmarketExportPrices(
+    val updatedIso: String,
+    val prices: Map<String, Map<String, CardmarketExportPrice>>,
+)
+
 /**
  * Pokémon species data with localized names and evolution chain.
  */
@@ -97,11 +109,20 @@ fun main(args: Array<String>) {
     // Map: dexId -> Map<language, name>
     val pokemonSpecies = loadPokemonSpecies(config.datasetDir, json)
     println("[Tcgdex] Loaded ${pokemonSpecies.size} Pokémon species entries")
+    val pokemonNameIndex = buildPokemonNameIndex(pokemonSpecies)
 
     // Load Cardmarket price guide for EUR pricing
     // Map: idProduct (Int) -> CardmarketPrice
     val cardmarketPrices = loadCardmarketPrices(json)
     println("[Tcgdex] Loaded ${cardmarketPrices.size} Cardmarket price entries")
+
+    // Load internal Cardmarket export (language-specific)
+    val exportPricingData = loadCardmarketExportPrices(config.cardmarketExportFile, json)
+    val cardmarketExportPrices = exportPricingData?.prices ?: emptyMap()
+    val exportUpdatedIso = exportPricingData?.updatedIso?.takeIf { it.isNotBlank() }
+    if (cardmarketExportPrices.isNotEmpty()) {
+        println("[Tcgdex] Loaded ${cardmarketExportPrices.size} Cardmarket export cards")
+    }
 
     // Track missing images for Pokecardex fallback index
     val missingImages = mutableListOf<MissingImagesIndexGenerator.MissingImageEntry>()
@@ -180,26 +201,53 @@ fun main(args: Array<String>) {
         val regulationMark = card.getString("regulationMark")
         val localNumberSort = extractNumericPart(localId)
 
-        if (category == "Pokemon" && name.isNotBlank() && isMultiPokemonName(name)) {
+        val resolvedDexIds = if (category == "Pokemon" && name.isNotBlank() && isMultiPokemonName(name)) {
             val expectedSpecies = countDistinctSpeciesFromName(name)
-            val actualDexCount = dexIds?.toSet()?.size ?: 0
-            if (expectedSpecies > 1 && actualDexCount < expectedSpecies) {
+            val actualDexIds = dexIds?.toSet() ?: emptySet()
+            val inferredDexIds = inferDexIdsFromName(
+                name = name,
+                language = language,
+                pokemonNameIndex = pokemonNameIndex,
+            ).toSet()
+            val mergedDexIds = (actualDexIds + inferredDexIds).toList()
+            if (expectedSpecies > 1 && mergedDexIds.toSet().size < expectedSpecies) {
                 throw IllegalArgumentException(
                     """
                     [Tcgdex][x] INCOMPLETE MULTI-POKÉMON DEX IDS - BUILD FAILED
                     Card: $id (set: $setId, language: $language)
                     Name: $name
-                    Expected $expectedSpecies dexId entries, found $actualDexCount (current: ${dexIds?.joinToString(", ") ?: "none"})
+                    Expected $expectedSpecies dexId entries, found ${actualDexIds.size} (current: ${dexIds?.joinToString(", ") ?: "none"})
                     
                     Update libs/cards-database data so every Pokémon listed in the card name appears in dexId.
                     """.trimIndent(),
                 )
             }
+            if (mergedDexIds.isNotEmpty() && mergedDexIds.toSet().size > actualDexIds.size) {
+                println("[Tcgdex][!] Inferred missing dexId entries for $id: ${mergedDexIds.joinToString(", ")}")
+            }
+            if (mergedDexIds.isNotEmpty()) mergedDexIds else dexIds
+        } else {
+            dexIds
         }
 
-        // Get Cardmarket price using thirdParty.cardmarket product ID
+        // Get Cardmarket price using internal export (language-specific), fall back to S3 price guide
+        val exportLanguage = language.lowercase()
+        val exportPricing = cardmarketExportPrices[id]?.let { langMap ->
+            langMap[exportLanguage] ?: langMap["fr"]
+        }
         val cardmarketId = card.getNestedInt("thirdParty", "cardmarket")
-        val pricing = cardmarketId?.let { cardmarketPrices[it] }
+        val s3Pricing = cardmarketId?.let { cardmarketPrices[it] }
+        val pricing = if (exportPricing != null) {
+            CardmarketPrice(
+                trendPrice = exportPricing.medianPrice,
+                averageSellPrice = exportPricing.avgPrice,
+                lowPrice = exportPricing.minPrice,
+                updatedIso = exportUpdatedIso ?: "",
+                unit = exportPricing.currency ?: "EUR",
+            )
+        } else {
+            s3Pricing
+        }
 
         db.tcgdexQueries.insertCard(
             id = id,
@@ -228,13 +276,20 @@ fun main(args: Array<String>) {
         // Insert card-Pokémon relationships for ALL dex IDs (supports multi-Pokémon cards)
         // VALIDATION: Ensure all dex IDs exist in pokemon-species.json to prevent phantom Pokédex entries
         // Skip validation if pokemon-species.json was not loaded (validDexIds empty)
-        dexIds?.forEach { dexId ->
-            if (validDexIds.isNotEmpty() && dexId !in validDexIds) {
+        val normalizedDexIds = resolvedDexIds?.mapNotNull { dexId ->
+            normalizeDexId(dexId, validDexIds)
+        }
+
+        if (validDexIds.isNotEmpty()) {
+            val invalidDexIds = resolvedDexIds?.filter { dexId ->
+                normalizeDexId(dexId, validDexIds) == null
+            }.orEmpty()
+            if (invalidDexIds.isNotEmpty()) {
                 throw IllegalArgumentException(
                     """
                     [Tcgdex][x] INVALID DEX ID DETECTED - BUILD FAILED
                     Card: $id (set: $setId, language: $language)
-                    Invalid dexId: $dexId
+                    Invalid dexId: ${invalidDexIds.joinToString(", ")}
                     
                     This dex ID does not exist in pokemon-species.json.
                     Possible causes:
@@ -245,6 +300,9 @@ fun main(args: Array<String>) {
                     """.trimIndent()
                 )
             }
+        }
+
+        normalizedDexIds?.forEach { dexId ->
             db.tcgdexQueries.insertCardPokemon(
                 cardId = id,
                 language = language,
@@ -441,6 +499,7 @@ private data class Config(
     val outputFile: String,
     val force: Boolean,
     val pokepediaMissingFile: String?,
+    val cardmarketExportFile: String?,
 )
 
 private fun parseArgs(args: Array<String>): Config {
@@ -449,6 +508,7 @@ private fun parseArgs(args: Array<String>): Config {
     var outputFile = "tcgdex.db"
     var force = false
     var pokepediaMissingFile: String? = null
+    var cardmarketExportFile: String? = null
 
     for (arg in args) {
         when {
@@ -457,11 +517,12 @@ private fun parseArgs(args: Array<String>): Config {
             arg.startsWith("--output=") -> outputFile = arg.removePrefix("--output=")
             arg.startsWith("--force=") -> force = arg.removePrefix("--force=").toBoolean()
             arg.startsWith("--pokepedia-missing=") -> pokepediaMissingFile = arg.removePrefix("--pokepedia-missing=")
+            arg.startsWith("--cardmarket-export=") -> cardmarketExportFile = arg.removePrefix("--cardmarket-export=")
         }
     }
 
     require(datasetDir.isNotBlank()) { "Missing required argument: --dataset=/path/to/generated" }
-    return Config(datasetDir, languages, outputFile, force, pokepediaMissingFile)
+    return Config(datasetDir, languages, outputFile, force, pokepediaMissingFile, cardmarketExportFile)
 }
 
 private fun JsonObject.getString(key: String): String? {
@@ -486,6 +547,12 @@ private fun JsonObject.getNestedInt(vararg keys: String): Int? {
         if (current is JsonNull) return null
     }
     return current.jsonPrimitive.intOrNull
+}
+
+private fun JsonObject.getDouble(key: String): Double? {
+    val element = this[key] ?: return null
+    if (element is JsonNull) return null
+    return element.jsonPrimitive.doubleOrNull
 }
 
 private fun JsonObject.getIntArray(key: String): List<Int>? {
@@ -645,6 +712,53 @@ private fun slugify(text: String): String {
         .lowercase()
         .replace(Regex("[^a-z0-9]+"), "-")
         .trim('-')
+}
+
+private fun buildPokemonNameIndex(
+    pokemonSpecies: Map<Int, PokemonSpeciesData>,
+): Map<String, Map<String, Int>> {
+    val index = mutableMapOf<String, MutableMap<String, Int>>()
+    for ((dexId, species) in pokemonSpecies) {
+        for ((language, name) in species.names) {
+            val normalized = normalizePokemonName(name)
+            if (normalized.isBlank()) continue
+            val langIndex = index.getOrPut(language.lowercase()) { mutableMapOf() }
+            langIndex.putIfAbsent(normalized, dexId)
+        }
+    }
+    return index
+}
+
+private fun inferDexIdsFromName(
+    name: String,
+    language: String,
+    pokemonNameIndex: Map<String, Map<String, Int>>,
+): List<Int> {
+    val parts = splitMultiPokemonName(name)
+    val langIndex = pokemonNameIndex[language.lowercase()]
+    val enIndex = pokemonNameIndex["en"]
+    return parts.mapNotNull { part ->
+        val normalized = normalizePokemonName(part)
+        langIndex?.get(normalized) ?: enIndex?.get(normalized)
+    }
+}
+
+private fun normalizeDexId(dexId: Int, validDexIds: Set<Int>): Int? {
+    if (validDexIds.isEmpty()) {
+        return dexId
+    }
+    if (dexId in validDexIds) {
+        return dexId
+    }
+    val dexString = dexId.toString()
+    if (dexString.startsWith("90") && dexString.length >= 3) {
+        val normalized = (dexString.first() + dexString.drop(2)).toIntOrNull()
+        if (normalized != null && normalized in validDexIds) {
+            println("[Tcgdex][!] Normalized invalid dexId $dexId -> $normalized")
+            return normalized
+        }
+    }
+    return null
 }
 
 private fun extractNumericPart(localId: String): Int {
@@ -840,6 +954,92 @@ private fun loadCardmarketPrices(json: Json): Map<Int, CardmarketPrice> {
     }
 
     return result
+}
+
+private fun loadCardmarketExportPrices(
+    exportFilePath: String?,
+    json: Json,
+): CardmarketExportPrices? {
+    if (exportFilePath.isNullOrBlank()) {
+        println("[Tcgdex][i] No Cardmarket export file provided, skipping export import")
+        return null
+    }
+
+    val file = File(exportFilePath)
+    if (!file.exists()) {
+        println("[Tcgdex][!] Cardmarket export file not found: $exportFilePath")
+        return null
+    }
+
+    return runCatching {
+        val root = json.parseToJsonElement(file.readText()).jsonObject
+        val exportDate = root["exportDate"]?.jsonPrimitive?.contentOrNull ?: ""
+        val series = root["series"]?.jsonArray ?: JsonArray(emptyList())
+
+        val pricesByCard = mutableMapOf<String, MutableMap<String, CardmarketExportPrice>>()
+        val languages = mutableSetOf<String>()
+        var cardCount = 0
+        var pricedCardCount = 0
+        var priceEntryCount = 0
+
+        for (seriesElement in series) {
+            val seriesObj = seriesElement.jsonObject
+            val sets = seriesObj["sets"]?.jsonArray ?: JsonArray(emptyList())
+            for (setElement in sets) {
+                val setObj = setElement.jsonObject
+                val cards = setObj["cards"]?.jsonArray ?: JsonArray(emptyList())
+                for (cardElement in cards) {
+                    val cardObj = cardElement.jsonObject
+                    val cardId = cardObj["tcgdexCardId"]?.jsonPrimitive?.contentOrNull?.trim()
+                    if (cardId.isNullOrBlank()) continue
+                    cardCount++
+
+                    val cardmarket = cardObj["cardmarket"] as? JsonObject
+                    val pricesObj = cardmarket?.get("prices") as? JsonObject
+                    if (pricesObj == null || pricesObj.isEmpty()) continue
+
+                    var hasPrice = false
+                    for ((lang, priceElement) in pricesObj) {
+                        val priceObj = priceElement as? JsonObject ?: continue
+                        val medianPrice = priceObj.getDouble("medianPrice")
+                        val avgPrice = priceObj.getDouble("avgPrice")
+                        val minPrice = priceObj.getDouble("minPrice")
+                        if (medianPrice == null && avgPrice == null && minPrice == null) continue
+
+                        val currency = priceObj["currency"]?.jsonPrimitive?.contentOrNull
+                        val exportPrice = CardmarketExportPrice(
+                            medianPrice = medianPrice,
+                            avgPrice = avgPrice,
+                            minPrice = minPrice,
+                            currency = currency,
+                        )
+
+                        val langMap = pricesByCard.getOrPut(cardId) { mutableMapOf() }
+                        langMap[lang.lowercase()] = exportPrice
+                        languages.add(lang.lowercase())
+                        priceEntryCount++
+                        hasPrice = true
+                    }
+
+                    if (hasPrice) {
+                        pricedCardCount++
+                    }
+                }
+            }
+        }
+
+        println(
+            "[Tcgdex] Cardmarket export loaded: cards=$cardCount priced=$pricedCardCount entries=$priceEntryCount " +
+                "languages=${languages.sorted()} updated=$exportDate",
+        )
+
+        CardmarketExportPrices(
+            updatedIso = exportDate,
+            prices = pricesByCard,
+        )
+    }.onFailure {
+        println("[Tcgdex][!] Failed to load Cardmarket export: ${it.message}")
+    }.getOrNull()
 }
 
 // =============================================================================
