@@ -273,6 +273,24 @@ class DefaultTcgdexRepository(
             queries.getDexIdForCard(cardId, language).executeAsOneOrNull()?.toInt()
         }
 
+    override suspend fun getDexIdsForCards(cardIds: List<String>, language: String): Map<String, Int> =
+        withContext(dispatcher) {
+            if (cardIds.isEmpty()) return@withContext emptyMap()
+
+            val rows = queries.getDexIdsForCards(cardIds, language).executeAsList()
+            val result = mutableMapOf<String, Int>()
+
+            // card_with_pokemon can contain multiple rows for a single card (multi-Pokémon cards).
+            // Preserve legacy semantics from getDexIdForCard(): keep the first dex ID we see per card.
+            for (row in rows) {
+                val dex = row.pokemon_dex_id?.toInt() ?: continue
+                if (!result.containsKey(row.id)) {
+                    result[row.id] = dex
+                }
+            }
+            result
+        }
+
     // =========================================================================
     // Utility Queries
     // =========================================================================

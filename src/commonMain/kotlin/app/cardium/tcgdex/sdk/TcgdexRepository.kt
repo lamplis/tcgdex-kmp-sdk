@@ -289,6 +289,17 @@ interface TcgdexRepository {
      */
     suspend fun getDexIdForCard(cardId: String, language: String): Int?
 
+    /**
+     * Returns Pokémon dex IDs for many card IDs in a single query.
+     *
+     * Used to efficiently compute species counts from a large set of owned card IDs.
+     *
+     * @param cardIds Card identifiers (e.g., ["sv01-001", "sv01-002"])
+     * @param language ISO language code
+     * @return Map of cardId -> dexId for cards that have a dex ID in that language
+     */
+    suspend fun getDexIdsForCards(cardIds: List<String>, language: String): Map<String, Int>
+
     // =========================================================================
     // Utility Queries
     // =========================================================================

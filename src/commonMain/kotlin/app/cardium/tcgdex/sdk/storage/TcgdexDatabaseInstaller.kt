@@ -1,7 +1,6 @@
 package app.cardium.tcgdex.sdk.storage
 
 import okio.FileSystem
-import okio.FileSystem.Companion.SYSTEM
 import okio.Path
 
 /**
@@ -86,7 +85,7 @@ object TcgdexDatabaseInstaller {
      * @return true if the database was copied, false if it was already up-to-date
      */
     fun installIfNeeded(
-        fileSystem: FileSystem = SYSTEM,
+        fileSystem: FileSystem = platformFileSystem(),
         destination: Path,
         force: Boolean = false
     ): Boolean {

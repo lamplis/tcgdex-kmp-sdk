@@ -6,8 +6,8 @@ import app.cash.sqldelight.db.SqlDriver
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.Dispatchers
 import okio.FileSystem
-import okio.FileSystem.Companion.SYSTEM
 import okio.Path
+import app.cardium.tcgdex.sdk.storage.platformFileSystem
 
 /**
  * Entry point for the offline TCGdex SDK.
@@ -84,7 +84,7 @@ object TcgdexSdk {
      */
     fun installBundledDatabase(
         destination: Path,
-        fileSystem: FileSystem = SYSTEM,
+        fileSystem: FileSystem = platformFileSystem(),
         force: Boolean = false
     ): Boolean = TcgdexDatabaseInstaller.installIfNeeded(
         fileSystem = fileSystem,

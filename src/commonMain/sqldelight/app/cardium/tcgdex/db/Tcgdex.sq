@@ -570,6 +570,15 @@ WHERE id = :cardId
     AND pokemon_dex_id IS NOT NULL
 LIMIT 1;
 
+-- Batch dex lookup for multiple card IDs (used by dashboard stats).
+-- Returns one row per (cardId, dexId) match; callers may collapse to Map and/or distinct dex IDs.
+getDexIdsForCards:
+SELECT id, pokemon_dex_id
+FROM card_with_pokemon
+WHERE id IN ?
+    AND language = :language
+    AND pokemon_dex_id IS NOT NULL;
+
 -- =============================================================================
 -- LOCAL ID / REFERENCE SEARCH QUERIES
 -- Used for numeric reference searches like "001/165", "sv08-001", "sv08 001"

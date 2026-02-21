@@ -4,7 +4,7 @@ import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 
 plugins {
     alias(libs.plugins.kotlinMultiplatform)
-    alias(libs.plugins.androidLibrary)
+    alias(libs.plugins.androidMultiplatformLibrary)
     alias(libs.plugins.sqldelight)
     alias(libs.plugins.kotlinSerialization)
     alias(libs.plugins.ktlint)
@@ -57,7 +57,10 @@ val resolvedLanguages: String = if (tcgdexLanguageLegacy.get().isNotBlank()) {
 kotlin {
     applyDefaultHierarchyTemplate()
 
-    androidTarget {
+    androidLibrary {
+        namespace = "app.cardium.kmptcgdexsdk"
+        compileSdk = libs.versions.android.compileSdk.get().toInt()
+        minSdk = libs.versions.android.minSdk.get().toInt()
         compilerOptions {
             jvmTarget.set(JvmTarget.JVM_17)
         }
@@ -112,21 +115,6 @@ kotlin {
     }
 }
 
-android {
-    namespace = "app.cardium.kmptcgdexsdk"
-    compileSdk = libs.versions.android.compileSdk.get().toInt()
-
-    defaultConfig {
-        minSdk = libs.versions.android.minSdk.get().toInt()
-    }
-
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_17
-        targetCompatibility = JavaVersion.VERSION_17
-    }
-
-    sourceSets["main"].resources.srcDir("src/commonMain/resources")
-}
 
 sqldelight {
     databases {
@@ -185,6 +173,11 @@ val generateTcgdexDatabase by tasks.registering(JavaExec::class) {
     dependsOn(compileKotlinJvmTask)
 }
 
-tasks.withType<Copy>().matching { it.name.contains("ProcessResources") }.configureEach {
+tasks.withType<Copy>().matching { it.name.contains("ProcessResources") || it.name.contains("processAndroidMain") }.configureEach {
+    dependsOn(generateTcgdexDatabase)
+}
+
+// Ensure processAndroidMainJavaRes (new androidLibrary plugin task) depends on database generation
+tasks.matching { it.name == "processAndroidMainJavaRes" }.configureEach {
     dependsOn(generateTcgdexDatabase)
 }
