@@ -2,6 +2,7 @@ package app.cardium.tcgdex.sdk
 
 import app.cardium.tcgdex.db.Card_with_pokemon
 import app.cardium.tcgdex.db.Card_with_set
+import app.cardium.tcgdex.db.Card_prices
 import app.cardium.tcgdex.db.CountCardsPerIllustrator
 import app.cardium.tcgdex.db.GetSetWithSerieName
 import app.cardium.tcgdex.db.Illustrators
@@ -10,6 +11,7 @@ import app.cardium.tcgdex.db.Series
 import app.cardium.tcgdex.db.Sets
 import app.cardium.tcgdex.db.TcgdexDatabase
 import app.cardium.tcgdex.sdk.model.Card
+import app.cardium.tcgdex.sdk.model.CardPrice
 import app.cardium.tcgdex.sdk.model.CardSet
 import app.cardium.tcgdex.sdk.model.Illustrator
 import app.cardium.tcgdex.sdk.model.IllustratorWithCount
@@ -137,6 +139,38 @@ class DefaultTcgdexRepository(
     override suspend fun getCardById(cardId: String, language: String): Card? = withContext(dispatcher) {
         queries.getCardById(cardId, language).executeAsOneOrNull()?.toModel()
     }
+
+    override suspend fun getCardPrices(cardId: String, language: String): List<CardPrice> =
+        withContext(dispatcher) {
+            queries.getCardPrices(cardId, language).executeAsList().map { it.toModel() }
+        }
+
+    override suspend fun getRecommendedPrice(cardId: String, language: String, sellerCountry: String): Double? =
+        withContext(dispatcher) {
+            queries.getRecommendedPriceForCard(cardId, language, sellerCountry).executeAsOneOrNull()?.recommended_price
+        }
+
+    override suspend fun getAllSellerCountries(): List<String> =
+        withContext(dispatcher) {
+            queries.getAllSellerCountries().executeAsList().map { it.trim() }.distinct()
+        }
+
+    override suspend fun getCardsByIds(cardIds: Collection<String>, language: String): Map<String, Card> =
+        withContext(dispatcher) {
+            if (cardIds.isEmpty()) return@withContext emptyMap()
+
+            // SQLite has a limit on the number of bound variables; chunk to stay safe.
+            val result = LinkedHashMap<String, Card>(cardIds.size)
+            cardIds.toList().chunked(500).forEach { chunk ->
+                queries.getCardsByIds(chunk, language)
+                    .executeAsList()
+                    .forEach { row ->
+                        val model = row.toModel()
+                        result[model.id] = model
+                    }
+            }
+            result
+        }
 
     override suspend fun searchCardsByName(
         query: String,
@@ -478,6 +512,22 @@ private fun Card_with_pokemon.toModel(): Card {
         priceUnit = price_unit,
     )
 }
+
+private fun Card_prices.toModel(): CardPrice = CardPrice(
+    cardId = card_id,
+    cardLanguage = card_language,
+    variant = variant,
+    priceLanguage = price_language,
+    sellerCountry = seller_country,
+    currency = currency,
+    minPrice = min_price,
+    avgPrice = avg_price,
+    medianPrice = median_price,
+    maxPrice = max_price,
+    recommendedPrice = recommended_price,
+    availableCount = available_count,
+    productId = product_id,
+)
 
 /**
  * Maps a SQLDelight Illustrators row to a domain Illustrator model.

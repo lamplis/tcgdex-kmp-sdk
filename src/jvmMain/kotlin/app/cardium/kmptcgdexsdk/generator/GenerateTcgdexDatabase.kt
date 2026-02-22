@@ -41,12 +41,29 @@ data class CardmarketExportPrice(
     val medianPrice: Double?,
     val avgPrice: Double?,
     val minPrice: Double?,
+    val maxPrice: Double?,
+    val recommendedPrice: Double?,
+    val availableCount: Int?,
     val currency: String?,
+)
+
+data class CardmarketExportVariant(
+    val version: String?,
+    val productId: Int?,
+    val label: String?,
+    // prices[priceLanguage][sellerCountry] -> CardmarketExportPrice
+    val prices: Map<String, Map<String, CardmarketExportPrice>>,
+)
+
+data class CardmarketExportCard(
+    val tcgdexCardId: String,
+    val name: String?,
+    val variants: List<CardmarketExportVariant>,
 )
 
 data class CardmarketExportPrices(
     val updatedIso: String,
-    val prices: Map<String, Map<String, CardmarketExportPrice>>,
+    val cards: Map<String, CardmarketExportCard>,
 )
 
 /**
@@ -118,10 +135,10 @@ fun main(args: Array<String>) {
 
     // Load internal Cardmarket export (language-specific)
     val exportPricingData = loadCardmarketExportPrices(config.cardmarketExportFile, json)
-    val cardmarketExportPrices = exportPricingData?.prices ?: emptyMap()
+    val cardmarketExportCards = exportPricingData?.cards ?: emptyMap()
     val exportUpdatedIso = exportPricingData?.updatedIso?.takeIf { it.isNotBlank() }
-    if (cardmarketExportPrices.isNotEmpty()) {
-        println("[Tcgdex] Loaded ${cardmarketExportPrices.size} Cardmarket export cards")
+    if (cardmarketExportCards.isNotEmpty()) {
+        println("[Tcgdex] Loaded ${cardmarketExportCards.size} Cardmarket export cards")
     }
 
     // Track missing images for Pokecardex fallback index
@@ -230,20 +247,37 @@ fun main(args: Array<String>) {
             dexIds
         }
 
-        // Get Cardmarket price using internal export (language-specific), fall back to S3 price guide
+        // Get Cardmarket price using internal export (variant + country + price-language),
+        // fall back to S3 price guide.
+        //
+        // Legacy columns in cards table store the default seller-country recommended price (FR),
+        // so existing UI stays compatible and shows the recommended price by default.
         val exportLanguage = language.lowercase()
-        val exportPricing = cardmarketExportPrices[id]?.let { langMap ->
-            langMap[exportLanguage] ?: langMap["fr"]
+        val defaultSellerCountry = "FR"
+        val exportCard = cardmarketExportCards[id]
+
+        fun selectDefaultVariant(variants: List<CardmarketExportVariant>): CardmarketExportVariant? =
+            variants.firstOrNull { it.version?.equals("Normal", ignoreCase = true) == true } ?: variants.firstOrNull()
+
+        fun selectLegacyExportPrice(card: CardmarketExportCard): CardmarketExportPrice? {
+            val variant = selectDefaultVariant(card.variants) ?: return null
+            val byLang = variant.prices[exportLanguage] ?: variant.prices["fr"] ?: return null
+            return byLang[defaultSellerCountry] ?: byLang.entries.firstOrNull()?.value
         }
+
+        val exportLegacyPrice = exportCard?.let(::selectLegacyExportPrice)
         val cardmarketId = card.getNestedInt("thirdParty", "cardmarket")
         val s3Pricing = cardmarketId?.let { cardmarketPrices[it] }
-        val pricing = if (exportPricing != null) {
+        val pricing = if (exportLegacyPrice != null) {
             CardmarketPrice(
-                trendPrice = exportPricing.medianPrice,
-                averageSellPrice = exportPricing.avgPrice,
-                lowPrice = exportPricing.minPrice,
+                trendPrice = exportLegacyPrice.recommendedPrice
+                    ?: exportLegacyPrice.medianPrice
+                    ?: exportLegacyPrice.avgPrice
+                    ?: exportLegacyPrice.minPrice,
+                averageSellPrice = exportLegacyPrice.avgPrice ?: exportLegacyPrice.medianPrice,
+                lowPrice = exportLegacyPrice.minPrice,
                 updatedIso = exportUpdatedIso ?: "",
-                unit = exportPricing.currency ?: "EUR",
+                unit = exportLegacyPrice.currency ?: "EUR",
             )
         } else {
             s3Pricing
@@ -272,6 +306,35 @@ fun main(args: Array<String>) {
             priceUpdatedIso = pricing?.updatedIso,
             priceUnit = pricing?.unit,
         )
+
+        // Persist all export prices (all variants, all price languages, all seller countries).
+        // This enables user-level seller-country selection in the app.
+        if (exportCard != null) {
+            for (variant in exportCard.variants) {
+                val variantKey = variant.version?.takeIf { it.isNotBlank() }
+                    ?: variant.label?.takeIf { it.isNotBlank() }
+                    ?: ""
+                for ((priceLang, byCountry) in variant.prices) {
+                    for ((sellerCountry, price) in byCountry) {
+                        db.tcgdexQueries.insertCardPrice(
+                            cardId = id,
+                            cardLanguage = language,
+                            variant = variantKey,
+                            priceLanguage = priceLang,
+                            sellerCountry = sellerCountry,
+                            currency = price.currency ?: "EUR",
+                            minPrice = price.minPrice,
+                            avgPrice = price.avgPrice,
+                            medianPrice = price.medianPrice,
+                            maxPrice = price.maxPrice,
+                            recommendedPrice = price.recommendedPrice,
+                            availableCount = price.availableCount?.toLong(),
+                            productId = variant.productId?.toLong(),
+                        )
+                    }
+                }
+            }
+        }
 
         // Insert card-Pokémon relationships for ALL dex IDs (supports multi-Pokémon cards)
         // VALIDATION: Ensure all dex IDs exist in pokemon-species.json to prevent phantom Pokédex entries
@@ -972,70 +1035,129 @@ private fun loadCardmarketExportPrices(
     }
 
     return runCatching {
-        val root = json.parseToJsonElement(file.readText()).jsonObject
-        val exportDate = root["exportDate"]?.jsonPrimitive?.contentOrNull ?: ""
-        val series = root["series"]?.jsonArray ?: JsonArray(emptyList())
+        fun JsonObject.stringOrNull(key: String): String? =
+            (this[key] as? JsonPrimitive)?.contentOrNull
 
-        val pricesByCard = mutableMapOf<String, MutableMap<String, CardmarketExportPrice>>()
+        fun JsonObject.intOrNullSafe(key: String): Int? =
+            (this[key] as? JsonPrimitive)?.intOrNull
+
+        fun JsonObject.doubleOrNullSafe(key: String): Double? =
+            (this[key] as? JsonPrimitive)?.doubleOrNull
+
+        val root = json.parseToJsonElement(file.readText()).jsonObject
+        val exportDate = root.stringOrNull("exportDate") ?: ""
+        val series = (root["series"] as? JsonArray) ?: JsonArray(emptyList())
+
+        val cardsById = mutableMapOf<String, CardmarketExportCard>()
         val languages = mutableSetOf<String>()
+        val countries = mutableSetOf<String>()
         var cardCount = 0
-        var pricedCardCount = 0
+        var variantCount = 0
+        var pricedVariantCount = 0
         var priceEntryCount = 0
 
         for (seriesElement in series) {
-            val seriesObj = seriesElement.jsonObject
-            val sets = seriesObj["sets"]?.jsonArray ?: JsonArray(emptyList())
+            val seriesObj = seriesElement as? JsonObject ?: continue
+            val sets = (seriesObj["sets"] as? JsonArray) ?: JsonArray(emptyList())
             for (setElement in sets) {
-                val setObj = setElement.jsonObject
-                val cards = setObj["cards"]?.jsonArray ?: JsonArray(emptyList())
+                val setObj = setElement as? JsonObject ?: continue
+                val cards = (setObj["cards"] as? JsonArray) ?: JsonArray(emptyList())
                 for (cardElement in cards) {
-                    val cardObj = cardElement.jsonObject
-                    val cardId = cardObj["tcgdexCardId"]?.jsonPrimitive?.contentOrNull?.trim()
+                    val cardObj = cardElement as? JsonObject ?: continue
+                    val cardId = cardObj.stringOrNull("tcgdexCardId")?.trim()
                     if (cardId.isNullOrBlank()) continue
                     cardCount++
 
-                    val cardmarket = cardObj["cardmarket"] as? JsonObject
-                    val pricesObj = cardmarket?.get("prices") as? JsonObject
-                    if (pricesObj == null || pricesObj.isEmpty()) continue
+                    val cardName = cardObj.stringOrNull("name")
+                    val variantsArray = (cardObj["variants"] as? JsonArray) ?: JsonArray(emptyList())
+                    if (variantsArray.isEmpty()) continue
 
-                    var hasPrice = false
-                    for ((lang, priceElement) in pricesObj) {
-                        val priceObj = priceElement as? JsonObject ?: continue
-                        val medianPrice = priceObj.getDouble("medianPrice")
-                        val avgPrice = priceObj.getDouble("avgPrice")
-                        val minPrice = priceObj.getDouble("minPrice")
-                        if (medianPrice == null && avgPrice == null && minPrice == null) continue
+                    val variants = buildList {
+                        for (variantElement in variantsArray) {
+                            val variantObj = variantElement as? JsonObject ?: continue
+                            val version = variantObj.stringOrNull("version")?.trim()
+                            val productId = variantObj.intOrNullSafe("productId")
+                            val label = variantObj.stringOrNull("label")?.trim()
 
-                        val currency = priceObj["currency"]?.jsonPrimitive?.contentOrNull
-                        val exportPrice = CardmarketExportPrice(
-                            medianPrice = medianPrice,
-                            avgPrice = avgPrice,
-                            minPrice = minPrice,
-                            currency = currency,
-                        )
+                            val pricesObj = variantObj["prices"] as? JsonObject
+                            if (pricesObj == null || pricesObj.isEmpty()) continue
 
-                        val langMap = pricesByCard.getOrPut(cardId) { mutableMapOf() }
-                        langMap[lang.lowercase()] = exportPrice
-                        languages.add(lang.lowercase())
-                        priceEntryCount++
-                        hasPrice = true
+                            val prices: MutableMap<String, MutableMap<String, CardmarketExportPrice>> = mutableMapOf()
+                            var hasAnyPrice = false
+
+                            for ((priceLangRaw, priceLangElement) in pricesObj) {
+                                val priceLang = priceLangRaw.lowercase().trim()
+                                val byCountryObj = priceLangElement as? JsonObject ?: continue
+
+                                for ((countryRaw, countryElement) in byCountryObj) {
+                                    val country = countryRaw.uppercase().trim()
+                                    val priceObj = countryElement as? JsonObject ?: continue
+
+                                    val exportPrice = CardmarketExportPrice(
+                                        medianPrice = priceObj.doubleOrNullSafe("medianPrice"),
+                                        avgPrice = priceObj.doubleOrNullSafe("avgPrice"),
+                                        minPrice = priceObj.doubleOrNullSafe("minPrice"),
+                                        maxPrice = priceObj.doubleOrNullSafe("maxPrice"),
+                                        recommendedPrice = priceObj.doubleOrNullSafe("recommendedPrice"),
+                                        availableCount = priceObj.intOrNullSafe("availableCount"),
+                                        currency = priceObj.stringOrNull("currency"),
+                                    )
+
+                                    // Skip entries with absolutely no numeric pricing data
+                                    if (
+                                        exportPrice.recommendedPrice == null &&
+                                        exportPrice.medianPrice == null &&
+                                        exportPrice.avgPrice == null &&
+                                        exportPrice.minPrice == null &&
+                                        exportPrice.maxPrice == null
+                                    ) {
+                                        continue
+                                    }
+
+                                    val langMap = prices.getOrPut(priceLang) { mutableMapOf() }
+                                    langMap[country] = exportPrice
+                                    languages.add(priceLang)
+                                    countries.add(country)
+                                    priceEntryCount++
+                                    hasAnyPrice = true
+                                }
+                            }
+
+                            if (!hasAnyPrice) continue
+
+                            variantCount++
+                            pricedVariantCount++
+                            add(
+                                CardmarketExportVariant(
+                                    version = version,
+                                    productId = productId,
+                                    label = label,
+                                    prices = prices,
+                                ),
+                            )
+                        }
                     }
 
-                    if (hasPrice) {
-                        pricedCardCount++
-                    }
+                    if (variants.isEmpty()) continue
+
+                    cardsById[cardId] = CardmarketExportCard(
+                        tcgdexCardId = cardId,
+                        name = cardName,
+                        variants = variants,
+                    )
                 }
             }
         }
 
         println(
-            "[Tcgdex] Cardmarket export loaded: cards=$cardCount priced=$pricedCardCount entries=$priceEntryCount " +
-                "languages=${languages.sorted()} updated=$exportDate",
+            "[Tcgdex] Cardmarket export loaded: cards=$cardCount cardsWithPrices=${cardsById.size} " +
+                "variants=$variantCount pricedVariants=$pricedVariantCount entries=$priceEntryCount " +
+                "languages=${languages.sorted()} countries=${countries.sorted()} updated=$exportDate",
         )
 
         CardmarketExportPrices(
             updatedIso = exportDate,
-            prices = pricesByCard,
+            cards = cardsById,
         )
     }.onFailure {
         println("[Tcgdex][!] Failed to load Cardmarket export: ${it.message}")

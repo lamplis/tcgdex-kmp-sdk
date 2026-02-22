@@ -127,6 +127,28 @@ data class Card(
 }
 
 /**
+ * Detailed Cardmarket pricing row for a card.
+ *
+ * This model mirrors the `card_prices` table. It stores per-variant prices,
+ * per price-language, and per seller-country.
+ */
+data class CardPrice(
+    val cardId: String,
+    val cardLanguage: String,
+    val variant: String,
+    val priceLanguage: String,
+    val sellerCountry: String,
+    val currency: String,
+    val minPrice: Double?,
+    val avgPrice: Double?,
+    val medianPrice: Double?,
+    val maxPrice: Double?,
+    val recommendedPrice: Double?,
+    val availableCount: Long?,
+    val productId: Long?,
+)
+
+/**
  * An illustrator (card artist).
  *
  * Illustrators are stored with their original names (language-agnostic).

@@ -43,7 +43,7 @@ val generatedDbDir = layout.buildDirectory.dir("generated/tcgdex/resources")
 val generatedDbFile = generatedDbDir.map { it.file("tcgdex.db") }
 val tcgdexCardmarketExport = providers.gradleProperty("tcgdex.cardmarket.export").orNull
 val defaultCardmarketExport = rootProject.layout.projectDirectory
-    .dir("../poke-browser/export")
+    .dir("exports/prices")
     .file("cardmarket-prices.json")
     .asFile
 

@@ -1,6 +1,7 @@
 package app.cardium.tcgdex.sdk
 
 import app.cardium.tcgdex.sdk.model.Card
+import app.cardium.tcgdex.sdk.model.CardPrice
 import app.cardium.tcgdex.sdk.model.CardSet
 import app.cardium.tcgdex.sdk.model.Illustrator
 import app.cardium.tcgdex.sdk.model.IllustratorWithCount
@@ -128,6 +129,43 @@ interface TcgdexRepository {
      * @return The card with full metadata if found, null otherwise
      */
     suspend fun getCardById(cardId: String, language: String): Card?
+
+    /**
+     * Returns all Cardmarket export prices stored for a card (all variants / languages / countries).
+     *
+     * @param cardId The card identifier (e.g., "sv01-001")
+     * @param language The language of the card record (same language used for getCardById)
+     */
+    suspend fun getCardPrices(cardId: String, language: String): List<CardPrice>
+
+    /**
+     * Returns the recommended price for a card for the requested seller country.
+     *
+     * This is used when the user selects a preferred seller country in settings.
+     *
+     * @param cardId The card identifier
+     * @param language The language of the card record
+     * @param sellerCountry Seller country code (e.g., "FR", "BE")
+     */
+    suspend fun getRecommendedPrice(cardId: String, language: String, sellerCountry: String): Double?
+
+    /**
+     * Returns all seller countries present in the database.
+     * Intended for populating a settings dropdown (Account page).
+     */
+    suspend fun getAllSellerCountries(): List<String>
+
+    /**
+     * Batch lookup for multiple cards by ID.
+     *
+     * This is the preferred API when callers have a list of card IDs (e.g., container galleries,
+     * trade user content) to avoid N+1 individual database queries.
+     *
+     * @param cardIds Card identifiers to fetch
+     * @param language ISO language code
+     * @return Map of cardId -> Card for all found cards (missing IDs are omitted)
+     */
+    suspend fun getCardsByIds(cardIds: Collection<String>, language: String): Map<String, Card>
 
     /**
      * Searches for cards by name (case-insensitive partial match).

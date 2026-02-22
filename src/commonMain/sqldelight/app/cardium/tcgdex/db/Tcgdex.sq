@@ -107,6 +107,36 @@ CREATE INDEX cards_name_idx ON cards(name);
 CREATE INDEX IF NOT EXISTS idx_cards_rarity_series ON cards(language, rarity_id);
 
 -- -----------------------------------------------------------------------------
+-- Card Prices table: Detailed Cardmarket pricing (variant + language + country)
+-- -----------------------------------------------------------------------------
+-- This table stores ALL Cardmarket export prices per card:
+-- - variant: e.g. "Normal", "Reverse", "1stEdition" (source-dependent)
+-- - price_language: language key of the price entry in the export JSON (e.g. "fr")
+-- - seller_country: seller country code (e.g. "FR", "BE")
+-- Note: cards table keeps legacy flat pricing columns for backward compatibility.
+-- -----------------------------------------------------------------------------
+CREATE TABLE card_prices (
+    card_id TEXT NOT NULL,
+    card_language TEXT NOT NULL,
+    variant TEXT NOT NULL DEFAULT '',
+    price_language TEXT NOT NULL,
+    seller_country TEXT NOT NULL,
+    currency TEXT NOT NULL DEFAULT 'EUR',
+    min_price REAL,
+    avg_price REAL,
+    median_price REAL,
+    max_price REAL,
+    recommended_price REAL,
+    available_count INTEGER,
+    product_id INTEGER,
+    PRIMARY KEY (card_id, card_language, variant, price_language, seller_country),
+    FOREIGN KEY (card_id, card_language) REFERENCES cards(id, language) ON DELETE CASCADE
+);
+
+CREATE INDEX card_prices_card_idx ON card_prices(card_id, card_language);
+CREATE INDEX card_prices_country_idx ON card_prices(seller_country);
+
+-- -----------------------------------------------------------------------------
 -- Card-Pokémon junction table: Links cards to one or more Pokédex IDs
 -- Supports multi-Pokémon cards (TAG TEAMs, Buried Fossil, etc.)
 -- -----------------------------------------------------------------------------
@@ -317,6 +347,38 @@ VALUES (
     :priceUnit
 );
 
+insertCardPrice:
+INSERT OR REPLACE INTO card_prices(
+    card_id,
+    card_language,
+    variant,
+    price_language,
+    seller_country,
+    currency,
+    min_price,
+    avg_price,
+    median_price,
+    max_price,
+    recommended_price,
+    available_count,
+    product_id
+)
+VALUES (
+    :cardId,
+    :cardLanguage,
+    :variant,
+    :priceLanguage,
+    :sellerCountry,
+    :currency,
+    :minPrice,
+    :avgPrice,
+    :medianPrice,
+    :maxPrice,
+    :recommendedPrice,
+    :availableCount,
+    :productId
+);
+
 -- Insert a card-Pokémon relationship (call once per dex ID for multi-Pokémon cards)
 insertCardPokemon:
 INSERT OR REPLACE INTO card_pokemon(card_id, language, pokemon_dex_id)
@@ -426,6 +488,39 @@ getCardById:
 SELECT *
 FROM card_with_set
 WHERE id = :id AND language = :language;
+
+-- Get all detailed prices for a card (all variants/languages/countries)
+getCardPrices:
+SELECT *
+FROM card_prices
+WHERE card_id = :cardId
+    AND card_language = :cardLanguage
+ORDER BY variant, price_language, seller_country;
+
+-- Get recommended price for a card for the requested seller country.
+-- Prefer the "Normal" variant when present (fallback to first variant).
+getRecommendedPriceForCard:
+SELECT recommended_price
+FROM card_prices
+WHERE card_id = :cardId
+    AND card_language = :cardLanguage
+    AND price_language = :cardLanguage
+    AND seller_country = :sellerCountry
+ORDER BY CASE WHEN variant = 'Normal' THEN 1 ELSE 0 END DESC, variant ASC
+LIMIT 1;
+
+-- Get all seller countries present in the database (for account preference dropdown)
+getAllSellerCountries:
+SELECT DISTINCT seller_country
+FROM card_prices
+ORDER BY seller_country ASC;
+
+-- Batch lookup for multiple card IDs (used to avoid N+1 queries in UI/use-cases)
+getCardsByIds:
+SELECT *
+FROM card_with_set
+WHERE id IN ?
+    AND language = :language;
 
 -- Search cards by name (case-insensitive partial match)
 searchCardsByName:
