@@ -7,6 +7,7 @@ import app.cardium.tcgdex.db.TcgdexDatabase
 import app.cardium.tcgdex.sdk.storage.TcgdexDatabaseInstaller
 import java.io.File
 import java.net.URI
+import java.text.Normalizer
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.json.JsonArray
 import kotlinx.serialization.json.JsonElement
@@ -128,6 +129,14 @@ fun main(args: Array<String>) {
     println("[Tcgdex] Loaded ${pokemonSpecies.size} Pokémon species entries")
     val pokemonNameIndex = buildPokemonNameIndex(pokemonSpecies)
 
+    // Map localized rarity names (e.g., FR "Méga Attaque Rare") back to the English rarity
+    // name (e.g., "Mega Attack Rare") so rarity IDs are always English slugs.
+    val rarityReverseTranslations = loadRarityReverseTranslations(
+        datasetDir = config.datasetDir,
+        languages = config.languages,
+        json = json,
+    )
+
     // Load Cardmarket price guide for EUR pricing
     // Map: idProduct (Int) -> CardmarketPrice
     val cardmarketPrices = loadCardmarketPrices(json)
@@ -203,8 +212,16 @@ fun main(args: Array<String>) {
 
         val rarityName = card.getString("rarity")
         val rarityId = if (rarityName != null) {
-            val slug = slugify(rarityName)
-            rarities[slug] = rarityName
+            val langKey = language.lowercase()
+            val englishName =
+                if (langKey == "en") {
+                    rarityName
+                } else {
+                    rarityReverseTranslations[langKey]?.get(rarityName) ?: rarityName
+                }
+
+            val slug = slugify(englishName)
+            rarities[slug] = englishName
             slug
         } else {
             null
@@ -771,7 +788,10 @@ private fun JsonObject.getStringArray(key: String): List<String>? {
 }
 
 private fun slugify(text: String): String {
-    return text
+    // Normalize diacritics to ASCII letters (e.g., "é" -> "e") before slugging.
+    // This prevents broken slugs like "m-ga" for "méga".
+    return Normalizer.normalize(text, Normalizer.Form.NFD)
+        .replace(Regex("\\p{InCombiningDiacriticalMarks}+"), "")
         .lowercase()
         .replace(Regex("[^a-z0-9]+"), "-")
         .trim('-')
@@ -877,6 +897,42 @@ private fun resolvePokepediaMissingTree(datasetDir: String): File? {
         ?.resolve("pokepedia")
         ?.resolve("missing-fr-card-images-tree.json")
     return candidate?.takeIf { it.exists() }
+}
+
+private fun loadRarityReverseTranslations(
+    datasetDir: String,
+    languages: List<String>,
+    json: Json,
+): Map<String, Map<String, String>> {
+    // cards-database translation files live at:
+    // libs/cards-database/meta/translations/{lang}.json
+    //
+    // The dataset dir passed to the generator is:
+    // libs/cards-database/server/generated
+    //
+    // So relative path is: ../../meta/translations
+    val translationsDir = File(datasetDir, "../../meta/translations").canonicalFile
+
+    val result = mutableMapOf<String, Map<String, String>>()
+    for (language in languages) {
+        val lang = language.lowercase()
+        if (lang == "en") continue
+
+        val file = File(translationsDir, "$lang.json")
+        if (!file.exists()) continue
+
+        val obj = json.parseToJsonElement(file.readText()).jsonObject
+        val rarityObj = obj["rarity"]?.jsonObject ?: continue
+
+        // Invert map: localized display name -> English canonical name
+        val reversed = mutableMapOf<String, String>()
+        for ((englishName, localizedElement) in rarityObj) {
+            val localizedName = localizedElement.jsonPrimitive.contentOrNull ?: continue
+            reversed[localizedName] = englishName
+        }
+        result[lang] = reversed
+    }
+    return result
 }
 
 private fun loadPokemonSpecies(datasetDir: String, json: Json): Map<Int, PokemonSpeciesData> {
