@@ -77,6 +77,57 @@ data class PokemonSpeciesData(
     val evolvesTo: List<Int>,
 )
 
+@Serializable
+private data class SetAliasConfigFile(
+    val version: Int = 1,
+    val languages: List<String> = listOf("en", "fr"),
+    val seriesPrefixAliases: Map<String, SeriesPrefixAliasConfig> = emptyMap(),
+    val tokenization: SetAliasTokenizationConfig = SetAliasTokenizationConfig(),
+    val setOverrides: Map<String, SetAliasOverrideConfig> = emptyMap(),
+)
+
+@Serializable
+private data class SeriesPrefixAliasConfig(
+    val en: List<String> = emptyList(),
+    val fr: List<String> = emptyList(),
+    val allowTrailingFiveDecimal: Boolean = false,
+)
+
+@Serializable
+private data class SetAliasTokenizationConfig(
+    val minTokenLength: Int = 3,
+    val stopwords: Map<String, List<String>> = emptyMap(),
+)
+
+@Serializable
+private data class SetAliasOverrideConfig(
+    val extraAliases: Map<String, List<String>> = emptyMap(),
+)
+
+private data class ParsedSetAliasSource(
+    val setId: String,
+    val releaseDate: String?,
+    val enName: String?,
+    val frName: String?,
+    val officialAbbreviation: String?,
+    val frenchAbbreviation: String?,
+    val tcgOnline: String?,
+)
+
+private data class GeneratedSetAliasSeed(
+    val setId: String,
+    val releaseDate: String?,
+    val enName: String?,
+    val frName: String?,
+    val officialAbbreviation: String?,
+    val frenchAbbreviation: String?,
+    val tcgOnline: String?,
+    val enExtraAliases: List<String>,
+    val frExtraAliases: List<String>,
+    val enSeriesAliases: List<String>,
+    val frSeriesAliases: List<String>,
+)
+
 /**
  * Database generator for the offline TCGdex SQLite database.
  *
@@ -88,11 +139,17 @@ data class PokemonSpeciesData(
  */
 fun main(args: Array<String>) {
     val config = parseArgs(args)
+    val projectRoot = resolveProjectRoot(config.datasetDir)
+    val setAliasesConfigFile = resolveSetAliasesConfigFile(projectRoot, config.setAliasesConfigFile)
+
     println("[Tcgdex] Starting database generation...")
     println("[Tcgdex] Dataset: ${config.datasetDir}")
     println("[Tcgdex] Languages: ${config.languages}")
     println("[Tcgdex] Output: ${config.outputFile}")
     println("[Tcgdex] Force: ${config.force}")
+    println("[Tcgdex] Set aliases config: ${setAliasesConfigFile.absolutePath}")
+
+    generateSetAliasIndex(projectRoot = projectRoot, configFile = setAliasesConfigFile)
 
     val outputFile = File(config.outputFile)
     if (outputFile.exists()) {
@@ -580,6 +637,7 @@ private data class Config(
     val force: Boolean,
     val pokepediaMissingFile: String?,
     val cardmarketExportFile: String?,
+    val setAliasesConfigFile: String?,
 )
 
 private fun parseArgs(args: Array<String>): Config {
@@ -589,6 +647,7 @@ private fun parseArgs(args: Array<String>): Config {
     var force = false
     var pokepediaMissingFile: String? = null
     var cardmarketExportFile: String? = null
+    var setAliasesConfigFile: String? = null
 
     for (arg in args) {
         when {
@@ -598,11 +657,572 @@ private fun parseArgs(args: Array<String>): Config {
             arg.startsWith("--force=") -> force = arg.removePrefix("--force=").toBoolean()
             arg.startsWith("--pokepedia-missing=") -> pokepediaMissingFile = arg.removePrefix("--pokepedia-missing=")
             arg.startsWith("--cardmarket-export=") -> cardmarketExportFile = arg.removePrefix("--cardmarket-export=")
+            arg.startsWith("--set-aliases-config=") -> setAliasesConfigFile = arg.removePrefix("--set-aliases-config=")
         }
     }
 
     require(datasetDir.isNotBlank()) { "Missing required argument: --dataset=/path/to/generated" }
-    return Config(datasetDir, languages, outputFile, force, pokepediaMissingFile, cardmarketExportFile)
+    return Config(
+        datasetDir = datasetDir,
+        languages = languages,
+        outputFile = outputFile,
+        force = force,
+        pokepediaMissingFile = pokepediaMissingFile,
+        cardmarketExportFile = cardmarketExportFile,
+        setAliasesConfigFile = setAliasesConfigFile,
+    )
+}
+
+private fun resolveProjectRoot(datasetDir: String): File {
+    var current = File(datasetDir).absoluteFile
+    while (true) {
+        val hasComposeApp = File(current, "composeApp").exists()
+        val hasTools = File(current, "tools").exists()
+        if (hasComposeApp && hasTools) return current
+        val parent = current.parentFile ?: break
+        if (parent == current) break
+        current = parent
+    }
+    error("Unable to resolve project root from dataset path: $datasetDir")
+}
+
+private fun resolveSetAliasesConfigFile(projectRoot: File, explicitPath: String?): File {
+    val file =
+        if (explicitPath.isNullOrBlank()) {
+            File(projectRoot, "tools/set-aliases-config.json")
+        } else {
+            File(explicitPath)
+        }
+    require(file.exists()) {
+        "Set aliases config file not found: ${file.absolutePath}"
+    }
+    return file
+}
+
+private fun generateSetAliasIndex(
+    projectRoot: File,
+    configFile: File,
+) {
+    val json = Json { ignoreUnknownKeys = true }
+    val aliasConfig = json.decodeFromString<SetAliasConfigFile>(configFile.readText())
+    val seeds = collectGeneratedSetAliasSeeds(projectRoot, aliasConfig)
+    val outputFile = File(projectRoot, "composeApp/src/commonMain/kotlin/app/cardium/search/generated/SetAliasIndex.kt")
+    outputFile.parentFile.mkdirs()
+
+    val source = buildSetAliasIndexSource(aliasConfig = aliasConfig, seeds = seeds)
+    writeFileIfChanged(outputFile, source)
+    println("[Tcgdex] SetAliasIndex generated for ${seeds.size} sets")
+}
+
+private fun collectGeneratedSetAliasSeeds(
+    projectRoot: File,
+    aliasConfig: SetAliasConfigFile,
+): List<GeneratedSetAliasSeed> {
+    val dataRoot = File(projectRoot, "libs/cards-database/data")
+    require(dataRoot.exists()) {
+        "cards-database data directory not found: ${dataRoot.absolutePath}"
+    }
+
+    val setFiles =
+        dataRoot
+            .walkTopDown()
+            .filter { file ->
+                file.isFile &&
+                    file.extension == "ts" &&
+                    file.relativeTo(dataRoot).invariantSeparatorsPath.contains("/")
+            }.toList()
+            .sortedBy { it.relativeTo(dataRoot).invariantSeparatorsPath }
+
+    val overridesBySetId =
+        aliasConfig.setOverrides.mapKeys { (setId, _) ->
+            normalizeAliasForLookup(setId)
+        }
+
+    val mergedBySetId = linkedMapOf<String, GeneratedSetAliasSeed>()
+    for (file in setFiles) {
+        val content = file.readText()
+        val parsed = parseSetAliasSourceFile(content) ?: continue
+
+        val setId = parsed.setId.trim()
+        if (setId.isBlank()) continue
+        // TCG Pocket set IDs are uppercase (A1, A2, B1, P-A). They are forbidden in Cardium.
+        if (setId.any { it.isUpperCase() }) continue
+
+        val seriesKey =
+            Regex("^[a-z]+")
+                .find(setId.lowercase())
+                ?.value
+                ?: ""
+        val seriesRule = aliasConfig.seriesPrefixAliases[seriesKey]
+        val enSeriesAliases = buildSeriesAliasesForSetId(setId = setId, prefixes = seriesRule?.en.orEmpty(), seriesRule?.allowTrailingFiveDecimal == true)
+        val frSeriesAliases = buildSeriesAliasesForSetId(setId = setId, prefixes = seriesRule?.fr.orEmpty(), seriesRule?.allowTrailingFiveDecimal == true)
+
+        val override = overridesBySetId[normalizeAliasForLookup(setId)]
+        val enExtraAliases = override?.extraAliases?.get("en").orEmpty().distinct()
+        val frExtraAliases = override?.extraAliases?.get("fr").orEmpty().distinct()
+
+        val candidate =
+            GeneratedSetAliasSeed(
+                setId = setId,
+                releaseDate = parsed.releaseDate,
+                enName = parsed.enName,
+                frName = parsed.frName,
+                officialAbbreviation = parsed.officialAbbreviation,
+                frenchAbbreviation = parsed.frenchAbbreviation,
+                tcgOnline = parsed.tcgOnline,
+                enExtraAliases = enExtraAliases,
+                frExtraAliases = frExtraAliases,
+                enSeriesAliases = enSeriesAliases,
+                frSeriesAliases = frSeriesAliases,
+            )
+
+        val existing = mergedBySetId[setId]
+        mergedBySetId[setId] = if (existing == null) candidate else mergeGeneratedSetAliasSeed(existing, candidate)
+    }
+
+    return mergedBySetId
+        .values
+        .sortedBy { it.setId }
+}
+
+private fun mergeGeneratedSetAliasSeed(
+    existing: GeneratedSetAliasSeed,
+    candidate: GeneratedSetAliasSeed,
+): GeneratedSetAliasSeed {
+    fun pick(existingValue: String?, candidateValue: String?): String? =
+        if (!existingValue.isNullOrBlank()) existingValue else candidateValue
+
+    return GeneratedSetAliasSeed(
+        setId = existing.setId,
+        releaseDate = pick(existing.releaseDate, candidate.releaseDate),
+        enName = pick(existing.enName, candidate.enName),
+        frName = pick(existing.frName, candidate.frName),
+        officialAbbreviation = pick(existing.officialAbbreviation, candidate.officialAbbreviation),
+        frenchAbbreviation = pick(existing.frenchAbbreviation, candidate.frenchAbbreviation),
+        tcgOnline = pick(existing.tcgOnline, candidate.tcgOnline),
+        enExtraAliases = (existing.enExtraAliases + candidate.enExtraAliases).distinct(),
+        frExtraAliases = (existing.frExtraAliases + candidate.frExtraAliases).distinct(),
+        enSeriesAliases = (existing.enSeriesAliases + candidate.enSeriesAliases).distinct(),
+        frSeriesAliases = (existing.frSeriesAliases + candidate.frSeriesAliases).distinct(),
+    )
+}
+
+private data class ParsedSeriesNumber(
+    val majorRaw: String,
+    val majorNoPad: String,
+    val minor: String?,
+    val suffixLetter: String?,
+)
+
+private fun buildSeriesAliasesForSetId(
+    setId: String,
+    prefixes: List<String>,
+    allowTrailingFiveDecimal: Boolean,
+): List<String> {
+    if (prefixes.isEmpty()) return emptyList()
+
+    val parsed = parseSeriesNumberFromSetId(setId, allowTrailingFiveDecimal) ?: return emptyList()
+    val suffixLetter = parsed.suffixLetter.orEmpty()
+    val aliases = linkedSetOf<String>()
+    for (prefix in prefixes) {
+        val cleanPrefix = prefix.trim()
+        if (cleanPrefix.isEmpty()) continue
+        if (parsed.minor == null) {
+            val raw = "${parsed.majorRaw}$suffixLetter"
+            val noPad = "${parsed.majorNoPad}$suffixLetter"
+            aliases += "$cleanPrefix$raw"
+            aliases += "$cleanPrefix$noPad"
+            aliases += "$cleanPrefix $raw"
+            aliases += "$cleanPrefix $noPad"
+        } else {
+            val dotRaw = "${parsed.majorRaw}.${parsed.minor}$suffixLetter"
+            val dotNoPad = "${parsed.majorNoPad}.${parsed.minor}$suffixLetter"
+            val commaRaw = "${parsed.majorRaw},${parsed.minor}$suffixLetter"
+            val commaNoPad = "${parsed.majorNoPad},${parsed.minor}$suffixLetter"
+            val compactRaw = "${parsed.majorRaw}${parsed.minor}$suffixLetter"
+            val compactNoPad = "${parsed.majorNoPad}${parsed.minor}$suffixLetter"
+
+            aliases += "$cleanPrefix$dotRaw"
+            aliases += "$cleanPrefix$dotNoPad"
+            aliases += "$cleanPrefix$commaRaw"
+            aliases += "$cleanPrefix$commaNoPad"
+            aliases += "$cleanPrefix$compactRaw"
+            aliases += "$cleanPrefix$compactNoPad"
+            aliases += "$cleanPrefix $dotRaw"
+            aliases += "$cleanPrefix $dotNoPad"
+        }
+    }
+    return aliases.toList()
+}
+
+private fun parseSeriesNumberFromSetId(
+    setId: String,
+    allowTrailingFiveDecimal: Boolean,
+): ParsedSeriesNumber? {
+    val normalized = setId.lowercase()
+    val prefixMatch = Regex("^[a-z]+").find(normalized) ?: return null
+    val suffixRaw = normalized.removePrefix(prefixMatch.value)
+    if (suffixRaw.isBlank()) return null
+    if (!suffixRaw.first().isDigit()) return null
+
+    val suffixWithDot = suffixRaw.replace("pt", ".")
+    val standardMatch = Regex("^(\\d+)(?:[._](\\d+))?([a-z])?$").matchEntire(suffixWithDot)
+    if (standardMatch != null) {
+        val majorDigits = standardMatch.groupValues[1]
+        val explicitMinor = standardMatch.groupValues[2].ifBlank { null }
+        val suffixLetter = standardMatch.groupValues[3].ifBlank { null }
+
+        // Compact ".5" encoding (e.g., "sm115" -> 11.5) should only apply to
+        // 3+ digit suffixes to avoid misclassifying regular padded set numbers
+        // like "sv05" as "sv0.5".
+        if (explicitMinor == null && allowTrailingFiveDecimal && majorDigits.length >= 3 && majorDigits.endsWith("5")) {
+            val majorRaw = majorDigits.dropLast(1)
+            if (majorRaw.isNotBlank()) {
+                val majorNoPad = majorRaw.toIntOrNull()?.toString() ?: majorRaw.trimStart('0').ifBlank { "0" }
+                return ParsedSeriesNumber(
+                    majorRaw = majorRaw,
+                    majorNoPad = majorNoPad,
+                    minor = "5",
+                    suffixLetter = suffixLetter,
+                )
+            }
+        }
+
+        val majorRaw = majorDigits
+        val majorNoPad = majorRaw.toIntOrNull()?.toString() ?: majorRaw.trimStart('0').ifBlank { "0" }
+        return ParsedSeriesNumber(
+            majorRaw = majorRaw,
+            majorNoPad = majorNoPad,
+            minor = explicitMinor,
+            suffixLetter = suffixLetter,
+        )
+    }
+
+    return null
+}
+
+private fun parseSetAliasSourceFile(content: String): ParsedSetAliasSource? {
+    val setId = extractStringProperty(content, "id") ?: return null
+    val releaseDate = extractStringProperty(content, "releaseDate")
+    val tcgOnline = extractStringProperty(content, "tcgOnline")
+
+    val nameBlock = extractObjectBlock(content, "name")
+    val enName = nameBlock?.let { extractStringProperty(it, "en") }
+    val frName = nameBlock?.let { extractStringProperty(it, "fr") }
+
+    val abbreviationsBlock = extractObjectBlock(content, "abbreviations")
+    val officialAbbreviation = abbreviationsBlock?.let { extractStringProperty(it, "official") }
+    val frenchAbbreviation = abbreviationsBlock?.let { extractStringProperty(it, "fr") }
+
+    return ParsedSetAliasSource(
+        setId = setId,
+        releaseDate = releaseDate,
+        enName = enName,
+        frName = frName,
+        officialAbbreviation = officialAbbreviation,
+        frenchAbbreviation = frenchAbbreviation,
+        tcgOnline = tcgOnline,
+    )
+}
+
+private fun extractObjectBlock(
+    source: String,
+    propertyName: String,
+): String? {
+    val propertyRegex = Regex("\\b${Regex.escape(propertyName)}\\s*:\\s*\\{")
+    val match = propertyRegex.find(source) ?: return null
+    val openBraceIndex = source.indexOf('{', match.range.first)
+    if (openBraceIndex < 0) return null
+
+    var depth = 0
+    var index = openBraceIndex
+    var inSingleQuotes = false
+    var inDoubleQuotes = false
+    var escaped = false
+
+    while (index < source.length) {
+        val char = source[index]
+
+        if (escaped) {
+            escaped = false
+            index++
+            continue
+        }
+
+        if (char == '\\') {
+            escaped = true
+            index++
+            continue
+        }
+
+        if (!inDoubleQuotes && char == '\'') {
+            inSingleQuotes = !inSingleQuotes
+            index++
+            continue
+        }
+
+        if (!inSingleQuotes && char == '"') {
+            inDoubleQuotes = !inDoubleQuotes
+            index++
+            continue
+        }
+
+        if (!inSingleQuotes && !inDoubleQuotes) {
+            if (char == '{') depth++
+            if (char == '}') {
+                depth--
+                if (depth == 0) {
+                    return source.substring(openBraceIndex + 1, index)
+                }
+            }
+        }
+
+        index++
+    }
+
+    return null
+}
+
+private fun extractStringProperty(
+    source: String,
+    key: String,
+): String? {
+    val propertyRegex = Regex("\\b${Regex.escape(key)}\\s*:\\s*(\"(?:[^\"\\\\]|\\\\.)*\"|'(?:[^'\\\\]|\\\\.)*')")
+    val match = propertyRegex.find(source) ?: return null
+    val quotedLiteral = match.groupValues[1]
+    if (quotedLiteral.length < 2) return null
+    val rawValue = quotedLiteral.substring(1, quotedLiteral.length - 1)
+    return decodeTsStringLiteral(rawValue).trim().ifBlank { null }
+}
+
+private fun decodeTsStringLiteral(raw: String): String {
+    return raw
+        .replace("\\\"", "\"")
+        .replace("\\'", "'")
+        .replace("\\\\", "\\")
+}
+
+private fun normalizeAliasForLookup(value: String?): String {
+    if (value.isNullOrBlank()) return ""
+    val normalized = Normalizer.normalize(value.lowercase(), Normalizer.Form.NFD)
+    return normalized.filter { ch -> Character.getType(ch) != Character.NON_SPACING_MARK.toInt() }
+}
+
+private fun buildSetAliasIndexSource(
+    aliasConfig: SetAliasConfigFile,
+    seeds: List<GeneratedSetAliasSeed>,
+): String {
+    val minTokenLength = aliasConfig.tokenization.minTokenLength.coerceAtLeast(1)
+
+    val stopwordsByLanguage =
+        aliasConfig.tokenization.stopwords
+            .mapValues { (_, words) ->
+                words
+                    .map(::normalizeAliasForLookup)
+                    .filter { it.isNotBlank() }
+                    .distinct()
+                    .sorted()
+            }.toSortedMap()
+
+    val stopwordsLiteral =
+        if (stopwordsByLanguage.isEmpty()) {
+            "emptyMap()"
+        } else {
+            stopwordsByLanguage.entries.joinToString(
+                prefix = "mapOf(\n",
+                postfix = "\n    )",
+                separator = ",\n",
+            ) { (language, words) ->
+                "        ${toKotlinStringLiteral(language)} to ${toKotlinSetLiteral(words)}"
+            }
+        }
+
+    val seedLiteral =
+        if (seeds.isEmpty()) {
+            "emptyList()"
+        } else {
+            seeds.joinToString(
+                prefix = "listOf(\n",
+                postfix = "\n    )",
+                separator = ",\n",
+            ) { seed ->
+                buildString {
+                    append("        SetAliasSeed(")
+                    append("setId = ${toKotlinStringLiteral(seed.setId)}, ")
+                    append("releaseDate = ${toKotlinNullableStringLiteral(seed.releaseDate)}, ")
+                    append("enName = ${toKotlinNullableStringLiteral(seed.enName)}, ")
+                    append("frName = ${toKotlinNullableStringLiteral(seed.frName)}, ")
+                    append("officialAbbreviation = ${toKotlinNullableStringLiteral(seed.officialAbbreviation)}, ")
+                    append("frenchAbbreviation = ${toKotlinNullableStringLiteral(seed.frenchAbbreviation)}, ")
+                    append("tcgOnline = ${toKotlinNullableStringLiteral(seed.tcgOnline)}, ")
+                    append("enExtraAliases = ${toKotlinListLiteral(seed.enExtraAliases)}, ")
+                    append("frExtraAliases = ${toKotlinListLiteral(seed.frExtraAliases)}, ")
+                    append("enSeriesAliases = ${toKotlinListLiteral(seed.enSeriesAliases)}, ")
+                    append("frSeriesAliases = ${toKotlinListLiteral(seed.frSeriesAliases)}")
+                    append(")")
+                }
+            }
+        }
+
+    return """
+        |package app.cardium.search.generated
+        |
+        |import app.cardium.utils.normalizeCode
+        |
+        |/**
+        | * Generated by GenerateTcgdexDatabase.
+        | * Do not edit manually.
+        | */
+        |data class SetAliasHit(
+        |    val setId: String,
+        |    val language: String,
+        |    val releaseDate: String?,
+        |)
+        |
+        |object SetAliasIndex {
+        |    private data class SetAliasSeed(
+        |        val setId: String,
+        |        val releaseDate: String?,
+        |        val enName: String?,
+        |        val frName: String?,
+        |        val officialAbbreviation: String?,
+        |        val frenchAbbreviation: String?,
+        |        val tcgOnline: String?,
+        |        val enExtraAliases: List<String>,
+        |        val frExtraAliases: List<String>,
+        |        val enSeriesAliases: List<String>,
+        |        val frSeriesAliases: List<String>,
+        |    )
+        |
+        |    private const val MIN_TOKEN_LENGTH: Int = $minTokenLength
+        |
+        |    private val STOPWORDS_BY_LANGUAGE: Map<String, Set<String>> =
+        |    $stopwordsLiteral
+        |
+        |    private val SEEDS: List<SetAliasSeed> =
+        |    $seedLiteral
+        |
+        |    private val ALIAS_TO_HITS: Map<String, List<SetAliasHit>> by lazy {
+        |        val byAlias = mutableMapOf<String, MutableMap<String, SetAliasHit>>()
+        |        for (seed in SEEDS) {
+        |            val aliases = mutableSetOf<Pair<String, String>>()
+        |            addAlias(aliases, seed.setId, "en")
+        |            addAlias(aliases, seed.officialAbbreviation, "en")
+        |            addAlias(aliases, seed.frenchAbbreviation, "fr")
+        |            addAlias(aliases, seed.tcgOnline, "en")
+        |
+        |            addNameAliases(aliases, seed.enName, "en")
+        |            addNameAliases(aliases, seed.frName, "fr")
+        |
+        |            seed.enExtraAliases.forEach { addAlias(aliases, it, "en") }
+        |            seed.frExtraAliases.forEach { addAlias(aliases, it, "fr") }
+        |            seed.enSeriesAliases.forEach { addAlias(aliases, it, "en") }
+        |            seed.frSeriesAliases.forEach { addAlias(aliases, it, "fr") }
+        |
+        |            for ((alias, language) in aliases) {
+        |                val normalizedAlias = normalizeCode(alias)
+        |                if (normalizedAlias.isBlank()) continue
+        |                val bySetId = byAlias.getOrPut(normalizedAlias) { mutableMapOf() }
+        |                val previous = bySetId[seed.setId]
+        |                if (previous == null || (seed.releaseDate ?: "") > (previous.releaseDate ?: "")) {
+        |                    bySetId[seed.setId] = SetAliasHit(setId = seed.setId, language = language, releaseDate = seed.releaseDate)
+        |                }
+        |            }
+        |        }
+        |
+        |        byAlias.mapValues { (_, valuesBySetId) ->
+        |            valuesBySetId
+        |                .values
+        |                .sortedWith(
+        |                    compareByDescending<SetAliasHit> { it.releaseDate ?: "" }
+        |                        .thenBy { it.setId },
+        |                )
+        |        }
+        |    }
+        |
+        |    fun resolve(alias: String, language: String?): List<SetAliasHit> {
+        |        val normalizedAlias = normalizeCode(alias)
+        |        if (normalizedAlias.isBlank()) return emptyList()
+        |        return ALIAS_TO_HITS[normalizedAlias] ?: emptyList()
+        |    }
+        |
+        |    private fun addAlias(
+        |        target: MutableSet<Pair<String, String>>,
+        |        value: String?,
+        |        language: String,
+        |    ) {
+        |        if (value.isNullOrBlank()) return
+        |        target += value to language
+        |    }
+        |
+        |    private fun addNameAliases(
+        |        target: MutableSet<Pair<String, String>>,
+        |        value: String?,
+        |        language: String,
+        |    ) {
+        |        if (value.isNullOrBlank()) return
+        |        addAlias(target, value, language)
+        |
+        |        val normalized = normalizeCode(value)
+        |        if (normalized.isBlank()) return
+        |        val stopwords = STOPWORDS_BY_LANGUAGE[language].orEmpty()
+        |        val tokens =
+        |            normalized
+        |                .split(Regex("[^a-z0-9]+"))
+        |                .filter { token ->
+        |                    token.isNotBlank() &&
+        |                        token.length >= MIN_TOKEN_LENGTH &&
+        |                        token !in stopwords
+        |                }
+        |        tokens.forEach { addAlias(target, it, language) }
+        |    }
+        |}
+        |
+    """.trimMargin()
+}
+
+private fun toKotlinStringLiteral(value: String): String = "\"${escapeKotlinString(value)}\""
+
+private fun toKotlinNullableStringLiteral(value: String?): String = value?.let(::toKotlinStringLiteral) ?: "null"
+
+private fun toKotlinListLiteral(values: List<String>): String {
+    if (values.isEmpty()) return "emptyList()"
+    return values
+        .distinct()
+        .sorted()
+        .joinToString(prefix = "listOf(", postfix = ")") { toKotlinStringLiteral(it) }
+}
+
+private fun toKotlinSetLiteral(values: List<String>): String {
+    if (values.isEmpty()) return "emptySet()"
+    return values
+        .distinct()
+        .sorted()
+        .joinToString(prefix = "setOf(", postfix = ")") { toKotlinStringLiteral(it) }
+}
+
+private fun escapeKotlinString(value: String): String {
+    val out = StringBuilder(value.length + 16)
+    for (char in value) {
+        when (char) {
+            '\\' -> out.append("\\\\")
+            '"' -> out.append("\\\"")
+            '\n' -> out.append("\\n")
+            '\r' -> out.append("\\r")
+            '\t' -> out.append("\\t")
+            else -> out.append(char)
+        }
+    }
+    return out.toString()
+}
+
+private fun writeFileIfChanged(
+    outputFile: File,
+    content: String,
+) {
+    val current = outputFile.takeIf(File::exists)?.readText()
+    if (current == content) return
+    outputFile.writeText(content)
 }
 
 private fun JsonObject.getString(key: String): String? {
@@ -845,7 +1465,13 @@ private fun normalizeDexId(dexId: Int, validDexIds: Set<Int>): Int? {
 }
 
 private fun extractNumericPart(localId: String): Int {
-    // Extract leading numeric part for sorting (e.g., "001" -> 1, "TG01" -> 1, "SWSH001" -> 1)
+    // Keep "unnumbered" cards at the end of a set to avoid collisions with real
+    // numeric refs like "001" (e.g., "UNNUMBERED-001" should not sort as 1).
+    if (localId.contains("unnumbered", ignoreCase = true)) {
+        return 999_999
+    }
+
+    // Extract numeric part for sorting (e.g., "001" -> 1, "TG01" -> 1, "SWSH001" -> 1)
     val numericPart = localId.filter { it.isDigit() }
     return numericPart.toIntOrNull() ?: 0
 }

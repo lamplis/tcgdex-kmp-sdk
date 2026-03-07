@@ -46,6 +46,7 @@ val defaultCardmarketExport = rootProject.layout.projectDirectory
     .dir("exports/prices")
     .file("cardmarket-prices.json")
     .asFile
+val setAliasesConfigFile = rootProject.layout.projectDirectory.file("tools/set-aliases-config.json").asFile
 
 // Resolve final languages list (prefer new property, fall back to legacy)
 val resolvedLanguages: String = if (tcgdexLanguageLegacy.get().isNotBlank()) {
@@ -152,6 +153,9 @@ val generateTcgdexDatabase by tasks.registering(JavaExec::class) {
     if (resolvedExportFile != null) {
         inputs.file(resolvedExportFile)
     }
+    if (setAliasesConfigFile.exists()) {
+        inputs.file(setAliasesConfigFile)
+    }
     outputs.file(output)
 
     doFirst {
@@ -167,6 +171,9 @@ val generateTcgdexDatabase by tasks.registering(JavaExec::class) {
     )
     if (resolvedExportFile != null) {
         args("--cardmarket-export=${resolvedExportFile.absolutePath}")
+    }
+    if (setAliasesConfigFile.exists()) {
+        args("--set-aliases-config=${setAliasesConfigFile.absolutePath}")
     }
 
     classpath = files(layout.buildDirectory.dir("classes/kotlin/jvm/main")) + jvmRuntimeConfig.get()
