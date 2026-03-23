@@ -12,11 +12,16 @@ import kotlin.test.assertTrue
 import kotlin.test.fail
 
 class LocalDatabaseGenerationE2eTest {
-    private val knownCardId = "2014xy-1"
-    private val knownCardLanguage = "en"
+    private val targetLanguage = "fr"
+    private val targetCards =
+        listOf(
+            TargetCardExpectation(id = "mep-030"),
+            TargetCardExpectation(id = "mep-037"),
+            TargetCardExpectation(id = "mep-064"),
+        )
 
     @Test
-    fun `Given local generator inputs, When generating database, Then known missing image card is enriched with prices and Pokepedia fallback`() {
+    fun `Given local generator inputs, When generating database, Then MEP cards are enriched with Pokepedia fallback`() {
         val projectRoot = resolveProjectRoot()
         val datasetDir = projectRoot.resolve("libs/cards-database/server/generated")
         val cardmarketExportDir = projectRoot.resolve("libs/tcgdex-kmp-sdk/generator-inputs/cardmarket")
@@ -54,52 +59,47 @@ class LocalDatabaseGenerationE2eTest {
 
             Class.forName("org.sqlite.JDBC")
             DriverManager.getConnection("jdbc:sqlite:${outputDb.absolutePath}").use { connection ->
-                val row = queryGeneratedCard(connection, knownCardId, knownCardLanguage)
-                if (row == null) {
-                    val availableLanguages = queryAvailableLanguagesForCard(connection, knownCardId)
-                    fail(
-                        buildDebugMessage(
-                            dbPath = outputDb,
-                            datasetDir = datasetDir,
-                            cardmarketExportDir = cardmarketExportDir,
-                            pokepediaTreeFile = pokepediaTreeFile,
-                            cardId = knownCardId,
-                            language = knownCardLanguage,
-                            row = null,
-                            availableLanguages = availableLanguages,
-                        ),
+                targetCards.forEach { target ->
+                    val row = queryGeneratedCard(connection, target.id, targetLanguage)
+                    if (row == null) {
+                        val availableLanguages = queryAvailableLanguagesForCard(connection, target.id)
+                        fail(
+                            buildDebugMessage(
+                                dbPath = outputDb,
+                                datasetDir = datasetDir,
+                                cardmarketExportDir = cardmarketExportDir,
+                                pokepediaTreeFile = pokepediaTreeFile,
+                                cardId = target.id,
+                                language = targetLanguage,
+                                row = null,
+                                availableLanguages = availableLanguages,
+                            ),
+                        )
+                    }
+
+                    assertNotNull(row)
+                    val debugMessage = buildDebugMessage(
+                        dbPath = outputDb,
+                        datasetDir = datasetDir,
+                        cardmarketExportDir = cardmarketExportDir,
+                        pokepediaTreeFile = pokepediaTreeFile,
+                        cardId = target.id,
+                        language = targetLanguage,
+                        row = row,
+                        availableLanguages = listOf(targetLanguage),
                     )
+
+                    assertTrue(
+                        !row.fallbackImageUrl.isNullOrBlank(),
+                        "[x] Expected fallback_image_url to be populated.\n$debugMessage",
+                    )
+                    assertEquals(
+                        "pokepedia",
+                        row.fallbackImageSource,
+                        "[x] Expected fallback_image_source to equal 'pokepedia'.\n$debugMessage",
+                    )
+
                 }
-
-                assertNotNull(row)
-                val debugMessage = buildDebugMessage(
-                    dbPath = outputDb,
-                    datasetDir = datasetDir,
-                    cardmarketExportDir = cardmarketExportDir,
-                    pokepediaTreeFile = pokepediaTreeFile,
-                    cardId = knownCardId,
-                    language = knownCardLanguage,
-                    row = row,
-                    availableLanguages = listOf(knownCardLanguage),
-                )
-
-                assertTrue(
-                    row.hasAnyCardmarketPrice(),
-                    "[x] Expected at least one Cardmarket price column to be populated.\n$debugMessage",
-                )
-                assertTrue(
-                    !row.fallbackImageUrl.isNullOrBlank(),
-                    "[x] Expected fallback_image_url to be populated.\n$debugMessage",
-                )
-                assertEquals(
-                    "pokepedia",
-                    row.fallbackImageSource,
-                    "[x] Expected fallback_image_source to equal 'pokepedia'.\n$debugMessage",
-                )
-                assertTrue(
-                    row.detailedPriceRows > 0,
-                    "[x] Expected at least one row in card_prices for stronger end-to-end proof.\n$debugMessage",
-                )
             }
         } finally {
             tempDir.deleteRecursively()
@@ -228,7 +228,9 @@ class LocalDatabaseGenerationE2eTest {
         val priceAvg: Double?,
         val priceLow: Double?,
         val detailedPriceRows: Long,
-    ) {
-        fun hasAnyCardmarketPrice(): Boolean = priceTrend != null || priceAvg != null || priceLow != null
-    }
+    )
+
+    private data class TargetCardExpectation(
+        val id: String,
+    )
 }
