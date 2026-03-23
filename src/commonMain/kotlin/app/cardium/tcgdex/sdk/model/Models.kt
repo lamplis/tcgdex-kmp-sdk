@@ -175,6 +175,22 @@ data class IllustratorWithCount(
 )
 
 /**
+ * Lightweight card row for illustrator count aggregation.
+ *
+ * Keeps only fields required to resolve BasicSet/MasterSet virtual variants
+ * without loading full card payloads per illustrator.
+ */
+data class IllustratorCardIdEntry(
+    val cardId: String,
+    val illustratorId: String,
+    val rarityId: String?,
+    val setReleaseDate: String?,
+    val setId: String?,
+    val localId: String?,
+    val category: String?,
+)
+
+/**
  * A card rarity classification.
  *
  * Rarities are stored with slugified IDs for consistency.

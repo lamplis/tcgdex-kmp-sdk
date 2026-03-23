@@ -14,6 +14,7 @@ import app.cardium.tcgdex.sdk.model.Card
 import app.cardium.tcgdex.sdk.model.CardPrice
 import app.cardium.tcgdex.sdk.model.CardSet
 import app.cardium.tcgdex.sdk.model.Illustrator
+import app.cardium.tcgdex.sdk.model.IllustratorCardIdEntry
 import app.cardium.tcgdex.sdk.model.IllustratorWithCount
 import app.cardium.tcgdex.sdk.model.PokemonDexEntry
 import app.cardium.tcgdex.sdk.model.PokemonSetCardCount
@@ -183,6 +184,17 @@ class DefaultTcgdexRepository(
             .map { it.toModel() }
     }
 
+    override suspend fun searchCardsByNameFts(
+        query: String,
+        language: String,
+        limit: Int,
+        offset: Int
+    ): List<Card> = withContext(dispatcher) {
+        queries.searchCardsByNameFts(language, query, limit.toLong(), offset.toLong())
+            .executeAsList()
+            .map { it.toModel() }
+    }
+
     override suspend fun countCardsByName(query: String, language: String): Long = withContext(dispatcher) {
         queries.countCardsByName(language, query).executeAsOne()
     }
@@ -249,6 +261,30 @@ class DefaultTcgdexRepository(
     override suspend fun getIllustratorsWithCounts(language: String): List<IllustratorWithCount> =
         withContext(dispatcher) {
             queries.countCardsPerIllustrator(language).executeAsList().map { it.toModel() }
+        }
+
+    override suspend fun getCardIdsByLanguage(language: String): List<IllustratorCardIdEntry> =
+        withContext(dispatcher) {
+            queries.getCardIdsByLanguage(language).executeAsList().map { row ->
+                IllustratorCardIdEntry(
+                    cardId = row.card_id,
+                    illustratorId = row.illustrator_id,
+                    rarityId = row.rarity_id,
+                    setReleaseDate = row.set_release_date,
+                    setId = row.set_id,
+                    localId = row.local_id,
+                    category = row.category,
+                )
+            }
+        }
+
+    override suspend fun getIllustratorValueSums(language: String): Map<String, Double> =
+        withContext(dispatcher) {
+            queries.getIllustratorValueSumByLanguage(language)
+                .executeAsList()
+                .mapNotNull { row ->
+                    row.total_value?.let { totalValue -> row.illustrator_id to totalValue }
+                }.toMap()
         }
 
     override suspend fun getAllRarities(): List<Rarity> = withContext(dispatcher) {

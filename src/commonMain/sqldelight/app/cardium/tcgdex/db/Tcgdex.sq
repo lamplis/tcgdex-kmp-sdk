@@ -107,6 +107,23 @@ CREATE INDEX cards_name_idx ON cards(name);
 CREATE INDEX IF NOT EXISTS idx_cards_rarity_series ON cards(language, rarity_id);
 
 -- -----------------------------------------------------------------------------
+-- Cards FTS table: Accent-insensitive card name search
+-- -----------------------------------------------------------------------------
+CREATE VIRTUAL TABLE cards_fts USING fts5(
+    card_id UNINDEXED,
+    language UNINDEXED,
+    name,
+    tokenize = 'unicode61 remove_diacritics 2'
+);
+
+CREATE TRIGGER cards_fts_after_insert
+AFTER INSERT ON cards
+BEGIN
+    INSERT INTO cards_fts(card_id, language, name)
+    VALUES (new.id, new.language, new.name);
+END;
+
+-- -----------------------------------------------------------------------------
 -- Card Prices table: Detailed Cardmarket pricing (variant + language + country)
 -- -----------------------------------------------------------------------------
 -- This table stores ALL Cardmarket export prices per card:
@@ -434,7 +451,18 @@ getSetsForSerie:
 SELECT *
 FROM sets
 WHERE serie_id = :serieId AND language = :language
-ORDER BY release_date DESC, card_count_official DESC, id;
+ORDER BY
+  release_date DESC,
+  CASE
+    WHEN lower(id) LIKE '%promo%'
+      OR lower(id) LIKE 'svp%'
+      OR lower(id) LIKE '%p'
+      OR lower(coalesce(name, '')) LIKE '%promo%'
+    THEN 1
+    ELSE 0
+  END ASC,
+  card_count_official DESC,
+  id;
 
 -- Get a specific set by ID and language
 getSetById:
@@ -530,6 +558,18 @@ WHERE language = :language AND lower(name) LIKE '%' || lower(:query) || '%'
 ORDER BY name, set_release_date DESC, local_number_sort, local_id
 LIMIT :limit OFFSET :offset;
 
+-- Search cards by name using FTS5 unicode61 tokenizer (accent-insensitive)
+searchCardsByNameFts:
+SELECT cws.*
+FROM cards_fts
+INNER JOIN card_with_set cws
+    ON cws.id = cards_fts.card_id
+    AND cws.language = cards_fts.language
+WHERE cards_fts.language = :language
+    AND cards_fts MATCH :query
+ORDER BY cws.name, cws.set_release_date DESC, cws.local_number_sort, cws.local_id
+LIMIT :limit OFFSET :offset;
+
 -- Count cards matching a name search
 countCardsByName:
 SELECT COUNT(*)
@@ -575,6 +615,35 @@ LEFT JOIN cards ON cards.illustrator_id = illustrators.id AND cards.language = :
 GROUP BY illustrators.id, illustrators.name
 HAVING card_count > 0
 ORDER BY card_count DESC, illustrators.name;
+
+-- Lightweight rows for illustrator aggregation (owned/total counts)
+-- Excludes TCGP cards
+getCardIdsByLanguage:
+SELECT
+    id AS card_id,
+    illustrator_id,
+    rarity_id,
+    set_release_date,
+    set_id,
+    local_id,
+    category
+FROM card_with_set
+WHERE language = :language
+    AND serie_id != 'tcgp'
+    AND illustrator_id IS NOT NULL
+ORDER BY illustrator_id, id;
+
+-- Sum embedded bestPrice per illustrator for value sort.
+-- Uses bestPrice priority: trend -> avg -> low.
+getIllustratorValueSumByLanguage:
+SELECT
+    illustrator_id,
+    SUM(COALESCE(price_cardmarket_trend, price_cardmarket_avg, price_cardmarket_low, 0.0)) AS total_value
+FROM card_with_set
+WHERE language = :language
+    AND serie_id != 'tcgp'
+    AND illustrator_id IS NOT NULL
+GROUP BY illustrator_id;
 
 -- =============================================================================
 -- POKÉMON DEX QUERIES (Pokédex collection support)

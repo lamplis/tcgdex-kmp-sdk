@@ -118,6 +118,16 @@ object TcgdexDatabaseInstaller {
             }
         }
 
+        // Delete stale SQLite companion files (WAL, SHM, journal) before overwriting.
+        // NativeSqliteDriver uses WAL mode, so these files may exist from a previous DB version.
+        // Leaving them causes "database disk image is malformed" because the old WAL references
+        // pages from the previous (structurally different) database.
+        for (suffix in listOf("-wal", "-shm", "-journal")) {
+            destination.parent?.resolve("${destination.name}$suffix")?.let { companion ->
+                runCatching { fileSystem.delete(companion, mustExist = false) }
+            }
+        }
+
         // Copy the database to the destination
         fileSystem.write(destination) { write(bytes) }
         println("[Tcgdex][i] Wrote ${bytes.size} bytes to $destination")

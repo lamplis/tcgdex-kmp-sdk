@@ -4,6 +4,7 @@ import app.cardium.tcgdex.sdk.model.Card
 import app.cardium.tcgdex.sdk.model.CardPrice
 import app.cardium.tcgdex.sdk.model.CardSet
 import app.cardium.tcgdex.sdk.model.Illustrator
+import app.cardium.tcgdex.sdk.model.IllustratorCardIdEntry
 import app.cardium.tcgdex.sdk.model.IllustratorWithCount
 import app.cardium.tcgdex.sdk.model.PokemonDexEntry
 import app.cardium.tcgdex.sdk.model.PokemonSetCardCount
@@ -179,6 +180,20 @@ interface TcgdexRepository {
     suspend fun searchCardsByName(query: String, language: String, limit: Int, offset: Int): List<Card>
 
     /**
+     * Searches for cards by name using the FTS5 unicode61 tokenizer.
+     *
+     * This search is accent-insensitive and case-insensitive when the query is normalized
+     * to FTS tokens (for example: `"evoli" "ex"`).
+     *
+     * @param query FTS5 query expression
+     * @param language ISO language code
+     * @param limit Maximum number of results to return
+     * @param offset Number of results to skip (for pagination)
+     * @return List of matching cards ordered by name
+     */
+    suspend fun searchCardsByNameFts(query: String, language: String, limit: Int, offset: Int): List<Card>
+
+    /**
      * Counts the total number of cards matching a name search.
      *
      * @param query Search query
@@ -255,6 +270,28 @@ interface TcgdexRepository {
      * @return List of illustrators with counts, ordered by count (highest first)
      */
     suspend fun getIllustratorsWithCounts(language: String): List<IllustratorWithCount>
+
+    /**
+     * Returns lightweight card rows for illustrator aggregations in a language.
+     *
+     * Excludes TCGP cards. Each row contains only fields required to derive
+     * BasicSet/MasterSet variant IDs efficiently.
+     *
+     * @param language ISO language code
+     * @return Flat list of card rows keyed by illustratorId
+     */
+    suspend fun getCardIdsByLanguage(language: String): List<IllustratorCardIdEntry>
+
+    /**
+     * Returns summed card values per illustrator for a language.
+     *
+     * Value per card uses embedded bestPrice priority:
+     * trend -> average sell -> low.
+     *
+     * @param language ISO language code
+     * @return Map from illustratorId to total value
+     */
+    suspend fun getIllustratorValueSums(language: String): Map<String, Double>
 
     /**
      * Returns all rarities in the database.

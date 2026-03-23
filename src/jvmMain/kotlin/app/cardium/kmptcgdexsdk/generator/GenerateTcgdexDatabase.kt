@@ -112,6 +112,7 @@ private data class ParsedSetAliasSource(
     val officialAbbreviation: String?,
     val frenchAbbreviation: String?,
     val tcgOnline: String?,
+    val cardmarketExpansionId: Int?,
 )
 
 private data class GeneratedSetAliasSeed(
@@ -141,6 +142,9 @@ fun main(args: Array<String>) {
     val config = parseArgs(args)
     val projectRoot = resolveProjectRoot(config.datasetDir)
     val setAliasesConfigFile = resolveSetAliasesConfigFile(projectRoot, config.setAliasesConfigFile)
+    val datasetsByLanguage = config.languages.associateWith { language ->
+        resolveLanguageDataset(config.datasetDir, language)
+    }
 
     println("[Tcgdex] Starting database generation...")
     println("[Tcgdex] Dataset: ${config.datasetDir}")
@@ -148,8 +152,16 @@ fun main(args: Array<String>) {
     println("[Tcgdex] Output: ${config.outputFile}")
     println("[Tcgdex] Force: ${config.force}")
     println("[Tcgdex] Set aliases config: ${setAliasesConfigFile.absolutePath}")
+    println("[Tcgdex] Validated generated datasets for languages: ${datasetsByLanguage.keys.sorted()}")
+    if (!config.cardmarketExpansionsFile.isNullOrBlank()) {
+        println("[Tcgdex] Cardmarket expansions source: ${config.cardmarketExpansionsFile}")
+    }
 
-    generateSetAliasIndex(projectRoot = projectRoot, configFile = setAliasesConfigFile)
+    generateSetAliasIndex(
+        projectRoot = projectRoot,
+        configFile = setAliasesConfigFile,
+        cardmarketExpansionsFile = config.cardmarketExpansionsFile,
+    )
 
     val outputFile = File(config.outputFile)
     if (outputFile.exists()) {
@@ -171,6 +183,9 @@ fun main(args: Array<String>) {
     val json = Json { ignoreUnknownKeys = true }
     val defaultPokepediaFile = config.pokepediaMissingFile
         ?: resolvePokepediaMissingTree(config.datasetDir)?.absolutePath
+    if (defaultPokepediaFile != null) {
+        println("[Tcgdex] Pokepedia missing tree source: $defaultPokepediaFile")
+    }
     val pokepediaFallbacks = loadPokepediaFallbacks(
         missingFilePath = defaultPokepediaFile,
         json = json,
@@ -200,7 +215,11 @@ fun main(args: Array<String>) {
     println("[Tcgdex] Loaded ${cardmarketPrices.size} Cardmarket price entries")
 
     // Load internal Cardmarket export (language-specific)
-    val exportPricingData = loadCardmarketExportPrices(config.cardmarketExportFile, json)
+    val exportPricingData = loadCardmarketExportPrices(
+        projectRoot = projectRoot,
+        exportFilePath = config.cardmarketExportFile,
+        json = json,
+    )
     val cardmarketExportCards = exportPricingData?.cards ?: emptyMap()
     val exportUpdatedIso = exportPricingData?.updatedIso?.takeIf { it.isNotBlank() }
     if (cardmarketExportCards.isNotEmpty()) {
@@ -232,7 +251,13 @@ fun main(args: Array<String>) {
         val name = card.getString("name") ?: id
         val imageUrl = card.getString("image")
         val fallbackImageUrl =
-            if (language.equals("fr", ignoreCase = true)) {
+            if (imageUrl.isNullOrBlank()) {
+                // When there is no TCGdex CDN image at all, apply Pokepedia fallback for
+                // every language so non-French users don't see "Picture missing".
+                pokepediaFallbacks[id]
+            } else if (language.equals("fr", ignoreCase = true)) {
+                // When TCGdex images exist, Pokepedia is only needed as a backup for French
+                // (in case the French TCGdex image URL fails at runtime).
                 pokepediaFallbacks[id]
             } else {
                 null
@@ -449,86 +474,78 @@ fun main(args: Array<String>) {
     }
 
     for (language in config.languages) {
-        val langDir = File(config.datasetDir, language)
-        if (!langDir.exists()) {
-            println("[Tcgdex] Warning: Language directory not found: $langDir")
-            continue
-        }
+        val dataset = datasetsByLanguage.getValue(language)
 
         println("[Tcgdex] Processing language: $language")
 
         // Load series
-        val seriesFile = File(langDir, "series.json")
-        if (seriesFile.exists()) {
-            val seriesJson = json.parseToJsonElement(seriesFile.readText()).jsonArray
-            var position = 0
-            for (serieElement in seriesJson) {
-                val serie = serieElement.jsonObject
-                val id = serie.getString("id") ?: continue
-                val name = serie.getString("name") ?: id
-                db.tcgdexQueries.insertSerie(id, language, name, position.toLong())
-                position++
-            }
-            println("[Tcgdex]   Series: ${seriesJson.size}")
+        val seriesJson = json.parseToJsonElement(dataset.seriesFile.readText()).jsonArray
+        var position = 0
+        for (serieElement in seriesJson) {
+            val serie = serieElement.jsonObject
+            val id = serie.getString("id") ?: continue
+            val name = serie.getString("name") ?: id
+            db.tcgdexQueries.insertSerie(id, language, name, position.toLong())
+            position++
         }
+        println("[Tcgdex]   Series: ${seriesJson.size}")
 
         // Load sets
-        val setsFile = File(langDir, "sets.json")
-        if (setsFile.exists()) {
-            val setsJson = json.parseToJsonElement(setsFile.readText()).jsonArray
-            for (setElement in setsJson) {
-                val set = setElement.jsonObject
-                val id = set.getString("id") ?: continue
-                val serieId = set.getNestedString("serie", "id") ?: continue
-                val name = set.getString("name") ?: id
-                val logoUrl = set.getString("logo")
-                val symbolUrl = set.getString("symbol")
-                val cardCountTotal = set.getNestedInt("cardCount", "total") ?: 0
-                val cardCountOfficial = set.getNestedInt("cardCount", "official") ?: cardCountTotal
-                val releaseDate = set.getString("releaseDate")
+        val setsJson = json.parseToJsonElement(dataset.setsFile.readText()).jsonArray
+        for (setElement in setsJson) {
+            val set = setElement.jsonObject
+            val id = set.getString("id") ?: continue
+            val serieId = set.getNestedString("serie", "id") ?: continue
+            val name = set.getString("name") ?: id
+            val logoUrl = set.getString("logo")
+            val symbolUrl = set.getString("symbol")
+            val cardCountTotal = set.getNestedInt("cardCount", "total") ?: 0
+            val cardCountOfficial = set.getNestedInt("cardCount", "official") ?: cardCountTotal
+            val releaseDate = set.getString("releaseDate")
 
-                db.tcgdexQueries.insertSet(
-                    id = id,
-                    language = language,
-                    serieId = serieId,
-                    name = name,
-                    logoUrl = logoUrl,
-                    symbolUrl = symbolUrl,
-                    cardCountTotal = cardCountTotal.toLong(),
-                    cardCountOfficial = cardCountOfficial.toLong(),
-                    releaseDate = releaseDate,
-                )
-            }
-            println("[Tcgdex]   Sets: ${setsJson.size}")
+            db.tcgdexQueries.insertSet(
+                id = id,
+                language = language,
+                serieId = serieId,
+                name = name,
+                logoUrl = logoUrl,
+                symbolUrl = symbolUrl,
+                cardCountTotal = cardCountTotal.toLong(),
+                cardCountOfficial = cardCountOfficial.toLong(),
+                releaseDate = releaseDate,
+            )
         }
+        println("[Tcgdex]   Sets: ${setsJson.size}")
 
         // Load cards
-        val cardsFile = File(langDir, "cards.json")
-        if (cardsFile.exists()) {
-            val cardsJson = json.parseToJsonElement(cardsFile.readText()).jsonArray
-            for (cardElement in cardsJson) {
-                val card = cardElement.jsonObject
-                insertCard(language, card, originLanguage = language)
-                if (language == "en") {
-                    val id = card.getString("id")
-                    if (id != null) {
-                        englishCardCache[id] = card
-                    }
+        val cardsJson = json.parseToJsonElement(dataset.cardsFile.readText()).jsonArray
+        for (cardElement in cardsJson) {
+            val card = cardElement.jsonObject
+            insertCard(language, card, originLanguage = language)
+            if (language == "en") {
+                val id = card.getString("id")
+                if (id != null) {
+                    englishCardCache[id] = card
                 }
             }
-            println("[Tcgdex]   Cards: ${cardsJson.size}")
         }
+        println("[Tcgdex]   Cards: ${cardsJson.size}")
     }
 
     // Backfill missing French cards with English data when available
-    val frenchIds = cardsByLanguage["fr"] ?: emptySet()
-    val englishOnlyIds = englishCardCache.keys - frenchIds
-    if (englishOnlyIds.isNotEmpty()) {
-        println("[Tcgdex][!] Adding ${englishOnlyIds.size} English fallbacks to French dataset")
-        englishOnlyIds.sorted().forEach { id ->
-            val card = englishCardCache[id] ?: return@forEach
-            insertCard(language = "fr", card = card, originLanguage = "en")
+    val shouldBackfillFrenchFromEnglish = "fr" in datasetsByLanguage && "en" in datasetsByLanguage
+    if (shouldBackfillFrenchFromEnglish) {
+        val frenchIds = cardsByLanguage["fr"] ?: emptySet()
+        val englishOnlyIds = englishCardCache.keys - frenchIds
+        if (englishOnlyIds.isNotEmpty()) {
+            println("[Tcgdex][!] Adding ${englishOnlyIds.size} English fallbacks to French dataset")
+            englishOnlyIds.sorted().forEach { id ->
+                val card = englishCardCache[id] ?: return@forEach
+                insertCard(language = "fr", card = card, originLanguage = "en")
+            }
         }
+    } else {
+        println("[Tcgdex] Skipping French fallback because both en and fr were not requested")
     }
 
     // Insert Pokémon species canonical names for ALL available languages in pokemon-species.json
@@ -589,6 +606,20 @@ fun main(args: Array<String>) {
         db.tcgdexQueries.insertRarity(id, name)
     }
 
+    // Rebuild FTS index from final cards snapshot.
+    // We do this explicitly at the end to avoid stale entries when cards are replaced.
+    driver.execute(null, "DELETE FROM cards_fts", 0)
+    driver.execute(
+        null,
+        """
+        INSERT INTO cards_fts(card_id, language, name)
+        SELECT id, language, name
+        FROM cards
+        """.trimIndent(),
+        0,
+    )
+    println("[Tcgdex] Rebuilt cards_fts index")
+
     // Set the logical database version for runtime installation guards.
     // This must stay in sync with TcgdexDatabaseInstaller.DATABASE_USER_VERSION.
     driver.execute(null, "PRAGMA user_version = ${TcgdexDatabaseInstaller.DATABASE_USER_VERSION}", 0)
@@ -638,7 +669,48 @@ private data class Config(
     val pokepediaMissingFile: String?,
     val cardmarketExportFile: String?,
     val setAliasesConfigFile: String?,
+    val cardmarketExpansionsFile: String?,
 )
+
+private data class LanguageDatasetFiles(
+    val language: String,
+    val langDir: File,
+    val seriesFile: File,
+    val setsFile: File,
+    val cardsFile: File,
+)
+
+private fun resolveLanguageDataset(datasetDir: String, language: String): LanguageDatasetFiles {
+    val langDir = File(datasetDir, language)
+    require(langDir.exists() && langDir.isDirectory) {
+        "[Tcgdex][x] Missing generated language directory for '$language': ${langDir.absolutePath}\n" +
+            "Run `cd libs/cards-database/server && bun run compile` before generating tcgdex.db."
+    }
+
+    val seriesFile = File(langDir, "series.json")
+    val setsFile = File(langDir, "sets.json")
+    val cardsFile = File(langDir, "cards.json")
+    val missingOrEmptyFiles = listOf(seriesFile, setsFile, cardsFile)
+        .filterNot { it.exists() && it.isFile && it.length() > 0L }
+
+    require(missingOrEmptyFiles.isEmpty()) {
+        buildString {
+            append("[Tcgdex][x] Incomplete generated dataset for '$language'. Missing or empty files:")
+            missingOrEmptyFiles.forEach { file ->
+                append("\n - ${file.absolutePath}")
+            }
+            append("\nRun `cd libs/cards-database/server && bun run compile` before generating tcgdex.db.")
+        }
+    }
+
+    return LanguageDatasetFiles(
+        language = language,
+        langDir = langDir,
+        seriesFile = seriesFile,
+        setsFile = setsFile,
+        cardsFile = cardsFile,
+    )
+}
 
 private fun parseArgs(args: Array<String>): Config {
     var datasetDir = ""
@@ -648,6 +720,7 @@ private fun parseArgs(args: Array<String>): Config {
     var pokepediaMissingFile: String? = null
     var cardmarketExportFile: String? = null
     var setAliasesConfigFile: String? = null
+    var cardmarketExpansionsFile: String? = null
 
     for (arg in args) {
         when {
@@ -658,6 +731,7 @@ private fun parseArgs(args: Array<String>): Config {
             arg.startsWith("--pokepedia-missing=") -> pokepediaMissingFile = arg.removePrefix("--pokepedia-missing=")
             arg.startsWith("--cardmarket-export=") -> cardmarketExportFile = arg.removePrefix("--cardmarket-export=")
             arg.startsWith("--set-aliases-config=") -> setAliasesConfigFile = arg.removePrefix("--set-aliases-config=")
+            arg.startsWith("--cardmarket-expansions=") -> cardmarketExpansionsFile = arg.removePrefix("--cardmarket-expansions=")
         }
     }
 
@@ -670,6 +744,7 @@ private fun parseArgs(args: Array<String>): Config {
         pokepediaMissingFile = pokepediaMissingFile,
         cardmarketExportFile = cardmarketExportFile,
         setAliasesConfigFile = setAliasesConfigFile,
+        cardmarketExpansionsFile = cardmarketExpansionsFile,
     )
 }
 
@@ -699,13 +774,107 @@ private fun resolveSetAliasesConfigFile(projectRoot: File, explicitPath: String?
     return file
 }
 
+private fun loadCardmarketExpansionAbbreviations(
+    projectRoot: File,
+    explicitSource: String?,
+    json: Json,
+): Map<Int, String> {
+    val defaultSources =
+        listOf(
+            "libs/cards-database/var/models/cardmarket/expansions_6.json",
+            "libs/cards-database/var/models/cardmarket/expansions.json",
+            "https://apiv2.cardmarket.com/ws/v2.0/games/6/expansions",
+        )
+    val sources = buildList {
+        explicitSource?.takeIf { it.isNotBlank() }?.let { add(it.trim()) }
+        addAll(defaultSources)
+    }.distinct()
+
+    for (source in sources) {
+        val raw = readTextSource(projectRoot, source) ?: continue
+        val parsed = parseCardmarketExpansionAbbreviations(raw, json)
+        if (parsed.isNotEmpty()) {
+            println("[Tcgdex] Cardmarket expansions loaded from: $source")
+            return parsed
+        }
+    }
+
+    return emptyMap()
+}
+
+private fun readTextSource(projectRoot: File, source: String): String? {
+    return runCatching {
+        val trimmed = source.trim()
+        if (trimmed.startsWith("http://") || trimmed.startsWith("https://")) {
+            val connection = URI(trimmed).toURL().openConnection()
+            connection.connectTimeout = 15_000
+            connection.readTimeout = 30_000
+            connection.getInputStream().bufferedReader().readText()
+        } else {
+            val explicitFile = File(trimmed)
+            val file =
+                when {
+                    explicitFile.isAbsolute -> explicitFile
+                    explicitFile.exists() -> explicitFile
+                    else -> File(projectRoot, trimmed)
+                }
+            if (!file.exists()) return null
+            file.readText()
+        }
+    }.getOrNull()
+}
+
+private fun parseCardmarketExpansionAbbreviations(
+    raw: String,
+    json: Json,
+): Map<Int, String> {
+    val parsed = mutableMapOf<Int, String>()
+    val root = runCatching { json.parseToJsonElement(raw) }.getOrNull() ?: return emptyMap()
+
+    fun walk(element: JsonElement) {
+        when (element) {
+            is JsonObject -> {
+                val expansionId = element["idExpansion"]?.jsonPrimitive?.intOrNull
+                val abbreviation =
+                    element["abbreviation"]
+                        ?.jsonPrimitive
+                        ?.contentOrNull
+                        ?.trim()
+                        ?.takeIf { it.isNotBlank() }
+                if (expansionId != null && abbreviation != null) {
+                    parsed[expansionId] = abbreviation
+                }
+                element.values.forEach(::walk)
+            }
+
+            is JsonArray -> element.forEach(::walk)
+            else -> Unit
+        }
+    }
+
+    walk(root)
+    return parsed
+}
+
 private fun generateSetAliasIndex(
     projectRoot: File,
     configFile: File,
+    cardmarketExpansionsFile: String? = null,
 ) {
     val json = Json { ignoreUnknownKeys = true }
     val aliasConfig = json.decodeFromString<SetAliasConfigFile>(configFile.readText())
-    val seeds = collectGeneratedSetAliasSeeds(projectRoot, aliasConfig)
+    val cardmarketAbbreviationsByExpansionId =
+        loadCardmarketExpansionAbbreviations(
+            projectRoot = projectRoot,
+            explicitSource = cardmarketExpansionsFile,
+            json = json,
+        )
+    if (cardmarketAbbreviationsByExpansionId.isNotEmpty()) {
+        println("[Tcgdex] Loaded ${cardmarketAbbreviationsByExpansionId.size} Cardmarket expansion abbreviations")
+    } else {
+        println("[Tcgdex][i] No Cardmarket expansion abbreviations loaded (continuing)")
+    }
+    val seeds = collectGeneratedSetAliasSeeds(projectRoot, aliasConfig, cardmarketAbbreviationsByExpansionId)
     val outputFile = File(projectRoot, "composeApp/src/commonMain/kotlin/app/cardium/search/generated/SetAliasIndex.kt")
     outputFile.parentFile.mkdirs()
 
@@ -717,6 +886,7 @@ private fun generateSetAliasIndex(
 private fun collectGeneratedSetAliasSeeds(
     projectRoot: File,
     aliasConfig: SetAliasConfigFile,
+    cardmarketAbbreviationsByExpansionId: Map<Int, String>,
 ): List<GeneratedSetAliasSeed> {
     val dataRoot = File(projectRoot, "libs/cards-database/data")
     require(dataRoot.exists()) {
@@ -758,7 +928,15 @@ private fun collectGeneratedSetAliasSeeds(
         val frSeriesAliases = buildSeriesAliasesForSetId(setId = setId, prefixes = seriesRule?.fr.orEmpty(), seriesRule?.allowTrailingFiveDecimal == true)
 
         val override = overridesBySetId[normalizeAliasForLookup(setId)]
-        val enExtraAliases = override?.extraAliases?.get("en").orEmpty().distinct()
+        val cardmarketAliases =
+            buildList {
+                parsed.cardmarketExpansionId?.let { add(it.toString()) }
+                parsed.cardmarketExpansionId
+                    ?.let { cardmarketAbbreviationsByExpansionId[it] }
+                    ?.takeIf { it.isNotBlank() }
+                    ?.let { add(it) }
+            }
+        val enExtraAliases = (override?.extraAliases?.get("en").orEmpty() + cardmarketAliases).distinct()
         val frExtraAliases = override?.extraAliases?.get("fr").orEmpty().distinct()
 
         val candidate =
@@ -913,6 +1091,8 @@ private fun parseSetAliasSourceFile(content: String): ParsedSetAliasSource? {
     val abbreviationsBlock = extractObjectBlock(content, "abbreviations")
     val officialAbbreviation = abbreviationsBlock?.let { extractStringProperty(it, "official") }
     val frenchAbbreviation = abbreviationsBlock?.let { extractStringProperty(it, "fr") }
+    val thirdPartyBlock = extractObjectBlock(content, "thirdParty")
+    val cardmarketExpansionId = thirdPartyBlock?.let { extractIntProperty(it, "cardmarket") }
 
     return ParsedSetAliasSource(
         setId = setId,
@@ -922,6 +1102,7 @@ private fun parseSetAliasSourceFile(content: String): ParsedSetAliasSource? {
         officialAbbreviation = officialAbbreviation,
         frenchAbbreviation = frenchAbbreviation,
         tcgOnline = tcgOnline,
+        cardmarketExpansionId = cardmarketExpansionId,
     )
 }
 
@@ -993,6 +1174,15 @@ private fun extractStringProperty(
     if (quotedLiteral.length < 2) return null
     val rawValue = quotedLiteral.substring(1, quotedLiteral.length - 1)
     return decodeTsStringLiteral(rawValue).trim().ifBlank { null }
+}
+
+private fun extractIntProperty(
+    source: String,
+    key: String,
+): Int? {
+    val propertyRegex = Regex("\\b${Regex.escape(key)}\\s*:\\s*(-?\\d+)")
+    val match = propertyRegex.find(source) ?: return null
+    return match.groupValues[1].toIntOrNull()
 }
 
 private fun decodeTsStringLiteral(raw: String): String {
@@ -1102,6 +1292,13 @@ private fun buildSetAliasIndexSource(
         |    private val SEEDS: List<SetAliasSeed> =
         |    $seedLiteral
         |
+        |    private val SET_ID_TO_ABBREVIATION: Map<String, String> by lazy {
+        |        SEEDS
+        |            .mapNotNull { seed ->
+        |                seed.officialAbbreviation?.let { seed.setId to it }
+        |            }.toMap()
+        |    }
+        |
         |    private val ALIAS_TO_HITS: Map<String, List<SetAliasHit>> by lazy {
         |        val byAlias = mutableMapOf<String, MutableMap<String, SetAliasHit>>()
         |        for (seed in SEEDS) {
@@ -1145,6 +1342,8 @@ private fun buildSetAliasIndexSource(
         |        if (normalizedAlias.isBlank()) return emptyList()
         |        return ALIAS_TO_HITS[normalizedAlias] ?: emptyList()
         |    }
+        |
+        |    fun getOfficialAbbreviation(setId: String): String? = SET_ID_TO_ABBREVIATION[setId]
         |
         |    private fun addAlias(
         |        target: MutableSet<Pair<String, String>>,
@@ -1510,19 +1709,23 @@ private fun resolvePokemonSpeciesFile(datasetDir: String): File? {
     return null
 }
 
-private fun resolvePokepediaMissingTree(datasetDir: String): File? {
-    val projectRoot = File(datasetDir)
-        .parentFile // server
-        ?.parentFile // cards-database
-        ?.parentFile // libs
-        ?.parentFile // project root
-    val candidate = projectRoot
-        ?.resolve("libs")
-        ?.resolve("tcgdex-kmp-sdk")
-        ?.resolve("resources")
-        ?.resolve("pokepedia")
-        ?.resolve("missing-fr-card-images-tree.json")
-    return candidate?.takeIf { it.exists() }
+internal fun resolvePokepediaMissingTree(datasetDir: String): File? {
+    val projectRoot = runCatching { resolveProjectRoot(datasetDir) }.getOrNull() ?: return null
+    val canonical = projectRoot
+        .resolve("libs/tcgdex-kmp-sdk/generator-inputs/pokepedia/missing-fr-card-images-tree.json")
+    if (canonical.exists()) {
+        return canonical
+    }
+
+    val legacy = projectRoot
+        .resolve("libs/tcgdex-kmp-sdk/resources/pokepedia/missing-fr-card-images-tree.json")
+    if (legacy.exists()) {
+        println("[Tcgdex][!] DEPRECATED: Using legacy Pokepedia tree path: ${legacy.absolutePath}")
+        println("[Tcgdex][i] Move it to: ${canonical.absolutePath}")
+        return legacy
+    }
+
+    return null
 }
 
 private fun loadRarityReverseTranslations(
@@ -1701,30 +1904,108 @@ private fun loadCardmarketPrices(json: Json): Map<Int, CardmarketPrice> {
     return result
 }
 
-private fun loadCardmarketExportPrices(
-    exportFilePath: String?,
+private fun mergeCardmarketVariantPrices(
+    existing: CardmarketExportVariant,
+    incoming: CardmarketExportVariant,
+): CardmarketExportVariant {
+    val mergedPrices: MutableMap<String, MutableMap<String, CardmarketExportPrice>> =
+        existing.prices
+            .mapValues { (_, byCountry) -> byCountry.toMutableMap() }
+            .toMutableMap()
+
+    for ((priceLang, incomingByCountry) in incoming.prices) {
+        val langBucket = mergedPrices.getOrPut(priceLang) { mutableMapOf() }
+        for ((country, price) in incomingByCountry) {
+            langBucket[country] = price
+        }
+    }
+
+    return CardmarketExportVariant(
+        version = existing.version ?: incoming.version,
+        productId = existing.productId ?: incoming.productId,
+        label = existing.label ?: incoming.label,
+        prices = mergedPrices.mapValues { (_, byCountry) -> byCountry.toMap() },
+    )
+}
+
+private fun mergeCardmarketExportCards(
+    target: MutableMap<String, CardmarketExportCard>,
+    incoming: Map<String, CardmarketExportCard>,
+) {
+    for ((cardId, incomingCard) in incoming) {
+        val existingCard = target[cardId]
+        if (existingCard == null) {
+            target[cardId] = incomingCard
+            continue
+        }
+
+        val mergedVariants = existingCard.variants.toMutableList()
+        for (incomingVariant in incomingCard.variants) {
+            val existingIndex = mergedVariants.indexOfFirst {
+                it.version == incomingVariant.version &&
+                    it.productId == incomingVariant.productId &&
+                    it.label == incomingVariant.label
+            }
+            if (existingIndex >= 0) {
+                mergedVariants[existingIndex] = mergeCardmarketVariantPrices(
+                    mergedVariants[existingIndex],
+                    incomingVariant,
+                )
+            } else {
+                mergedVariants.add(incomingVariant)
+            }
+        }
+
+        mergedVariants.sortWith(
+            compareBy<CardmarketExportVariant>(
+                { it.version ?: "" },
+                { it.productId ?: Int.MAX_VALUE },
+                { it.label ?: "" },
+            ),
+        )
+
+        target[cardId] = CardmarketExportCard(
+            tcgdexCardId = cardId,
+            name = existingCard.name ?: incomingCard.name,
+            variants = mergedVariants,
+        )
+    }
+}
+
+internal fun parseCardmarketExportFile(
+    file: File,
     json: Json,
 ): CardmarketExportPrices? {
-    if (exportFilePath.isNullOrBlank()) {
-        println("[Tcgdex][i] No Cardmarket export file provided, skipping export import")
-        return null
-    }
-
-    val file = File(exportFilePath)
-    if (!file.exists()) {
-        println("[Tcgdex][!] Cardmarket export file not found: $exportFilePath")
-        return null
-    }
-
     return runCatching {
         fun JsonObject.stringOrNull(key: String): String? =
             (this[key] as? JsonPrimitive)?.contentOrNull
 
-        fun JsonObject.intOrNullSafe(key: String): Int? =
-            (this[key] as? JsonPrimitive)?.intOrNull
+        val conditionPriority = listOf("NM", "MT", "EX", "GD", "LP", "PL", "PO")
 
-        fun JsonObject.doubleOrNullSafe(key: String): Double? =
-            (this[key] as? JsonPrimitive)?.doubleOrNull
+        fun JsonElement.doubleFromConditionMapOrNull(): Double? {
+            val obj = this as? JsonObject ?: return null
+            for (condition in conditionPriority) {
+                val value = (obj[condition] as? JsonPrimitive)?.doubleOrNull
+                if (value != null) return value
+            }
+            return obj.values.mapNotNull { (it as? JsonPrimitive)?.doubleOrNull }.firstOrNull()
+        }
+
+        fun JsonObject.doubleOrNullSafe(key: String): Double? {
+            val value = this[key] ?: return null
+            return when (value) {
+                is JsonPrimitive -> value.doubleOrNull
+                else -> value.doubleFromConditionMapOrNull()
+            }
+        }
+
+        fun JsonObject.intOrNullSafe(key: String): Int? {
+            val value = this[key] ?: return null
+            return when (value) {
+                is JsonPrimitive -> value.intOrNull
+                else -> value.doubleFromConditionMapOrNull()?.toInt()
+            }
+        }
 
         val root = json.parseToJsonElement(file.readText()).jsonObject
         val exportDate = root.stringOrNull("exportDate") ?: ""
@@ -1785,7 +2066,6 @@ private fun loadCardmarketExportPrices(
                                         currency = priceObj.stringOrNull("currency"),
                                     )
 
-                                    // Skip entries with absolutely no numeric pricing data
                                     if (
                                         exportPrice.recommendedPrice == null &&
                                         exportPrice.medianPrice == null &&
@@ -1832,7 +2112,7 @@ private fun loadCardmarketExportPrices(
         }
 
         println(
-            "[Tcgdex] Cardmarket export loaded: cards=$cardCount cardsWithPrices=${cardsById.size} " +
+            "[Tcgdex] Parsed Cardmarket export file ${file.name}: cards=$cardCount cardsWithPrices=${cardsById.size} " +
                 "variants=$variantCount pricedVariants=$pricedVariantCount entries=$priceEntryCount " +
                 "languages=${languages.sorted()} countries=${countries.sorted()} updated=$exportDate",
         )
@@ -1842,8 +2122,121 @@ private fun loadCardmarketExportPrices(
             cards = cardsById,
         )
     }.onFailure {
-        println("[Tcgdex][!] Failed to load Cardmarket export: ${it.message}")
+        println("[Tcgdex][!] Failed to parse Cardmarket export file ${file.absolutePath}: ${it.message}")
     }.getOrNull()
+}
+
+internal fun resolveDefaultCardmarketExportPath(projectRoot: File): File? {
+    val canonical = projectRoot.resolve("libs/tcgdex-kmp-sdk/generator-inputs/cardmarket")
+    if (canonical.exists()) {
+        return canonical
+    }
+
+    val legacy = projectRoot.resolve("exports/prices")
+    if (legacy.exists()) {
+        println("[Tcgdex][!] DEPRECATED: Using legacy Cardmarket export path: ${legacy.absolutePath}")
+        println("[Tcgdex][i] Move exports to: ${canonical.absolutePath}")
+        return legacy
+    }
+
+    return null
+}
+
+internal fun loadCardmarketExportPrices(
+    projectRoot: File,
+    exportFilePath: String?,
+    json: Json,
+): CardmarketExportPrices? {
+    val source =
+        if (!exportFilePath.isNullOrBlank()) {
+            File(exportFilePath).also { explicit ->
+                if (!explicit.exists()) {
+                    println("[Tcgdex][!] Cardmarket export path not found: ${explicit.absolutePath}")
+                }
+            }.takeIf { it.exists() }
+        } else {
+            resolveDefaultCardmarketExportPath(projectRoot)
+        }
+
+    if (source == null) {
+        println("[Tcgdex][i] No Cardmarket export input found, skipping export import")
+        return null
+    }
+
+    println("[Tcgdex] Cardmarket export source: ${source.absolutePath}")
+
+    val exportFiles: List<File> =
+        if (source.isDirectory) {
+            val perLanguageFiles = source
+                .listFiles()
+                ?.filter { file ->
+                    file.isFile && Regex("""cardmarket-prices-[a-z]{2}\.json""").matches(file.name)
+                }
+                ?.sortedBy { it.name }
+                .orEmpty()
+            if (perLanguageFiles.isNotEmpty()) {
+                perLanguageFiles
+            } else {
+                val monolithic = File(source, "cardmarket-prices.json")
+                if (monolithic.exists()) listOf(monolithic) else emptyList()
+            }
+        } else {
+            listOf(source)
+        }
+
+    if (exportFiles.isEmpty()) {
+        println("[Tcgdex][!] No Cardmarket export JSON files found at: ${source.absolutePath}")
+        return null
+    }
+
+    val mergedCards = mutableMapOf<String, CardmarketExportCard>()
+    var mergedUpdatedIso = ""
+    for (exportFile in exportFiles) {
+        val parsed = parseCardmarketExportFile(exportFile, json) ?: continue
+        mergeCardmarketExportCards(mergedCards, parsed.cards)
+        if (parsed.updatedIso > mergedUpdatedIso) {
+            mergedUpdatedIso = parsed.updatedIso
+        }
+    }
+
+    if (mergedCards.isEmpty()) {
+        println("[Tcgdex][!] Cardmarket export files were readable but no priced cards were found")
+        return null
+    }
+
+    val languages = mutableSetOf<String>()
+    val countries = mutableSetOf<String>()
+    var variantCount = 0
+    var pricedVariantCount = 0
+    var priceEntryCount = 0
+    for (card in mergedCards.values) {
+        for (variant in card.variants) {
+            variantCount++
+            var variantHasPrice = false
+            for ((priceLang, byCountry) in variant.prices) {
+                languages.add(priceLang)
+                for ((country, _) in byCountry) {
+                    countries.add(country)
+                    priceEntryCount++
+                    variantHasPrice = true
+                }
+            }
+            if (variantHasPrice) {
+                pricedVariantCount++
+            }
+        }
+    }
+
+    println(
+        "[Tcgdex] Cardmarket export loaded from ${exportFiles.size} file(s): cardsWithPrices=${mergedCards.size} " +
+            "variants=$variantCount pricedVariants=$pricedVariantCount entries=$priceEntryCount " +
+            "languages=${languages.sorted()} countries=${countries.sorted()} updated=$mergedUpdatedIso",
+    )
+
+    return CardmarketExportPrices(
+        updatedIso = mergedUpdatedIso,
+        cards = mergedCards,
+    )
 }
 
 // =============================================================================
@@ -1885,7 +2278,7 @@ private data class MissingFrSet(
 private fun MissingFrRoot.flattenCards(): List<JsonObject> =
     series.flatMap { serie -> serie.sets }.flatMap { it.cards }
 
-private fun loadPokepediaFallbacks(
+internal fun loadPokepediaFallbacks(
     missingFilePath: String?,
     json: Json,
 ): Map<String, String> {
@@ -1942,7 +2335,7 @@ private fun loadPokepediaFallbacks(
  * Regenerates the unresolved JSON file from the tree file by filtering only unresolved cards.
  * This ensures both files stay synchronized after database generation.
  */
-private fun regenerateUnresolvedFile(treeFile: File, json: Json) {
+internal fun regenerateUnresolvedFile(treeFile: File, json: Json) {
     runCatching {
         val root = json.decodeFromString<MissingFrRoot>(treeFile.readText())
 
