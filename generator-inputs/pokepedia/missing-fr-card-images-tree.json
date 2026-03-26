@@ -1,13 +1,12 @@
 {
-  "generatedAt": "2026-03-23T20:22:34.816Z",
-  "databasePath": "/Users/admin/workspace/cardium/libs/tcgdex-kmp-sdk/build/generated/tcgdex/resources/tcgdex.db",
+  "generatedAt": "2026-03-26T12:15:08.464Z",
+  "databasePath": "/Users/admin/workspace/cardium/iosApp/iosApp/Resources/tcgdex.db",
   "language": "fr",
-  "totalCards": 3447,
-  "resolvedCards": 3356,
-  "unresolvedCards": 91,
+  "totalCards": 3462,
+  "resolvedCards": 3372,
+  "unresolvedCards": 90,
   "unresolvedReasons": {
-    "POKEPEDIA_CARD_IMAGE_NOT_FOUND": 90,
-    "POKEPEDIA_CARD_NOT_FOUND": 1
+    "POKEPEDIA_CARD_IMAGE_NOT_FOUND": 90
   },
   "series": [
     {
@@ -33482,24 +33481,74 @@
           "pokepediaSetUrl": "https://www.pokepedia.fr/C%C3%A9l%C3%A9brations_(JCC)",
           "cards": [
             {
+              "cardId": "cel25-1",
+              "localId": "1",
+              "localNumberSort": 1,
+              "name": "Ho-Oh",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/5/58/Carte_C%C3%A9l%C3%A9brations_001.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/5/58/Carte_C%C3%A9l%C3%A9brations_001.png/490px-Carte_C%C3%A9l%C3%A9brations_001.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Ho-Oh_(C%C3%A9l%C3%A9brations_001)"
+            },
+            {
               "cardId": "cel25-2A",
               "localId": "2A",
               "localNumberSort": 2,
-              "name": "Reshiram",
+              "name": "Tortank",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/c/ca/Carte_Set_de_Base_2.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/c/ca/Carte_Set_de_Base_2.png/490px-Carte_Set_de_Base_2.png",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/1/1b/Carte_Set_de_Base_2_(C%C3%A9l%C3%A9brations).png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/1/1b/Carte_Set_de_Base_2_%28C%C3%A9l%C3%A9brations%29.png/490px-Carte_Set_de_Base_2_%28C%C3%A9l%C3%A9brations%29.png",
               "pokepediaCardUrl": "https://www.pokepedia.fr/Tortank_(Set_de_Base_2)"
+            },
+            {
+              "cardId": "cel25-3",
+              "localId": "3",
+              "localNumberSort": 3,
+              "name": "Kyogre",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/5/50/Carte_C%C3%A9l%C3%A9brations_003.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/5/50/Carte_C%C3%A9l%C3%A9brations_003.png/490px-Carte_C%C3%A9l%C3%A9brations_003.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Kyogre_(C%C3%A9l%C3%A9brations_003)"
             },
             {
               "cardId": "cel25-4A",
               "localId": "4A",
               "localNumberSort": 4,
-              "name": "Palkia",
+              "name": "Dracaufeu",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/e/ee/Carte_Set_de_Base_4.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/e/ee/Carte_Set_de_Base_4.png/490px-Carte_Set_de_Base_4.png",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/d/d9/Carte_Set_de_Base_4_(C%C3%A9l%C3%A9brations).png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/d/d9/Carte_Set_de_Base_4_%28C%C3%A9l%C3%A9brations%29.png/490px-Carte_Set_de_Base_4_%28C%C3%A9l%C3%A9brations%29.png",
               "pokepediaCardUrl": "https://www.pokepedia.fr/Dracaufeu_(Set_de_Base_4)"
+            },
+            {
+              "cardId": "cel25-5",
+              "localId": "5",
+              "localNumberSort": 5,
+              "name": "Pikachu",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/e/ec/Carte_C%C3%A9l%C3%A9brations_005.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/e/ec/Carte_C%C3%A9l%C3%A9brations_005.png/490px-Carte_C%C3%A9l%C3%A9brations_005.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Pikachu_(C%C3%A9l%C3%A9brations_005)"
+            },
+            {
+              "cardId": "cel25-6",
+              "localId": "6",
+              "localNumberSort": 6,
+              "name": "Pikachu Volant-V",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/b/bf/Carte_C%C3%A9l%C3%A9brations_006.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/b/bf/Carte_C%C3%A9l%C3%A9brations_006.png/490px-Carte_C%C3%A9l%C3%A9brations_006.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Pikachu_Volant-V_(C%C3%A9l%C3%A9brations_006)"
+            },
+            {
+              "cardId": "cel25-7",
+              "localId": "7",
+              "localNumberSort": 7,
+              "name": "Pikachu Volant-VMAX",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/0/05/Carte_C%C3%A9l%C3%A9brations_007.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/0/05/Carte_C%C3%A9l%C3%A9brations_007.png/490px-Carte_C%C3%A9l%C3%A9brations_007.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Pikachu_Volant-VMAX_(C%C3%A9l%C3%A9brations_007)"
             },
             {
               "cardId": "cel25-8A",
@@ -33507,8 +33556,8 @@
               "localNumberSort": 8,
               "name": "Pikachu Surfeur-V",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/7/76/Carte_Team_Rocket_8.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/7/76/Carte_Team_Rocket_8.png/490px-Carte_Team_Rocket_8.png",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/9/9c/Carte_Team_Rocket_8_(C%C3%A9l%C3%A9brations).png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/9/9c/Carte_Team_Rocket_8_%28C%C3%A9l%C3%A9brations%29.png/490px-Carte_Team_Rocket_8_%28C%C3%A9l%C3%A9brations%29.png",
               "pokepediaCardUrl": "https://www.pokepedia.fr/L%C3%A9viator_obscur_(Team_Rocket_8)"
             },
             {
@@ -33517,48 +33566,148 @@
               "localNumberSort": 9,
               "name": "Pikachu Surfeur-VMAX",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/9/96/Carte_EX_Team_Magma_VS_Team_Aqua_9.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/9/96/Carte_EX_Team_Magma_VS_Team_Aqua_9.png/490px-Carte_EX_Team_Magma_VS_Team_Aqua_9.png",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/7/7e/Carte_EX_Team_Magma_VS_Team_Aqua_9_(C%C3%A9l%C3%A9brations).png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/7/7e/Carte_EX_Team_Magma_VS_Team_Aqua_9_%28C%C3%A9l%C3%A9brations%29.png/490px-Carte_EX_Team_Magma_VS_Team_Aqua_9_%28C%C3%A9l%C3%A9brations%29.png",
               "pokepediaCardUrl": "https://www.pokepedia.fr/Groudon_de_Team_Magma_(EX_Team_Magma_VS_Team_Aqua_9)"
             },
             {
-              "cardId": "cel25-15A",
-              "localId": "15A",
-              "localNumberSort": 15,
-              "name": "Lunala",
+              "cardId": "cel25-10",
+              "localId": "10",
+              "localNumberSort": 10,
+              "name": "Zekrom",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/4/48/Carte_Set_de_Base_15.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/4/48/Carte_Set_de_Base_15.png/490px-Carte_Set_de_Base_15.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Florizarre_(Set_de_Base_15)"
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/6/63/Carte_C%C3%A9l%C3%A9brations_010.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/6/63/Carte_C%C3%A9l%C3%A9brations_010.png/490px-Carte_C%C3%A9l%C3%A9brations_010.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Zekrom_(C%C3%A9l%C3%A9brations_010)"
+            },
+            {
+              "cardId": "cel25-11",
+              "localId": "11",
+              "localNumberSort": 11,
+              "name": "Mew",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/7/75/Carte_C%C3%A9l%C3%A9brations_011.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/7/75/Carte_C%C3%A9l%C3%A9brations_011.png/490px-Carte_C%C3%A9l%C3%A9brations_011.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Mew_(C%C3%A9l%C3%A9brations_011)"
+            },
+            {
+              "cardId": "cel25-12",
+              "localId": "12",
+              "localNumberSort": 12,
+              "name": "Xerneas",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/1/19/Carte_C%C3%A9l%C3%A9brations_012.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/1/19/Carte_C%C3%A9l%C3%A9brations_012.png/490px-Carte_C%C3%A9l%C3%A9brations_012.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Xerneas_(C%C3%A9l%C3%A9brations_012)"
+            },
+            {
+              "cardId": "cel25-13",
+              "localId": "13",
+              "localNumberSort": 13,
+              "name": "Cosmog",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/c/c5/Carte_C%C3%A9l%C3%A9brations_013.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/c/c5/Carte_C%C3%A9l%C3%A9brations_013.png/490px-Carte_C%C3%A9l%C3%A9brations_013.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Cosmog_(C%C3%A9l%C3%A9brations_013)"
+            },
+            {
+              "cardId": "cel25-14",
+              "localId": "14",
+              "localNumberSort": 14,
+              "name": "Cosmovum",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/b/bc/Carte_C%C3%A9l%C3%A9brations_014.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/b/bc/Carte_C%C3%A9l%C3%A9brations_014.png/490px-Carte_C%C3%A9l%C3%A9brations_014.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Cosmovum_(C%C3%A9l%C3%A9brations_014)"
+            },
+            {
+              "cardId": "cel25-16",
+              "localId": "16",
+              "localNumberSort": 16,
+              "name": "Zacian-V",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/2/2f/Carte_C%C3%A9l%C3%A9brations_016.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/2/2f/Carte_C%C3%A9l%C3%A9brations_016.png/490px-Carte_C%C3%A9l%C3%A9brations_016.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Zacian-V_(C%C3%A9l%C3%A9brations_016)"
             },
             {
               "cardId": "cel25-17A",
               "localId": "17A",
               "localNumberSort": 17,
-              "name": "Groudon",
+              "name": "Noctali ☆",
               "resolutionStatus": "resolved",
               "pokepediaHdUrl": "https://www.pokepedia.fr/images/3/39/Carte_POP_Series_5_17_(C%C3%A9l%C3%A9brations).png",
               "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/3/39/Carte_POP_Series_5_17_%28C%C3%A9l%C3%A9brations%29.png/490px-Carte_POP_Series_5_17_%28C%C3%A9l%C3%A9brations%29.png",
               "pokepediaCardUrl": "https://www.pokepedia.fr/Noctali_%E2%98%86_(POP_Series_5_17)"
             },
             {
+              "cardId": "cel25-18",
+              "localId": "18",
+              "localNumberSort": 18,
+              "name": "Zamazenta-V",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/7/76/Carte_C%C3%A9l%C3%A9brations_018.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/7/76/Carte_C%C3%A9l%C3%A9brations_018.png/490px-Carte_C%C3%A9l%C3%A9brations_018.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Zamazenta-V_(C%C3%A9l%C3%A9brations_018)"
+            },
+            {
+              "cardId": "cel25-19",
+              "localId": "19",
+              "localNumberSort": 19,
+              "name": "Yveltal",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/5/5a/Carte_C%C3%A9l%C3%A9brations_019.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/5/5a/Carte_C%C3%A9l%C3%A9brations_019.png/490px-Carte_C%C3%A9l%C3%A9brations_019.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Yveltal_(C%C3%A9l%C3%A9brations_019)"
+            },
+            {
               "cardId": "cel25-20A",
               "localId": "20A",
               "localNumberSort": 20,
-              "name": "Dialga",
+              "name": "Mélo",
               "resolutionStatus": "resolved",
               "pokepediaHdUrl": "https://www.pokepedia.fr/images/e/e6/Carte_Neo_Genesis_20_(C%C3%A9l%C3%A9brations).png",
               "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/e/e6/Carte_Neo_Genesis_20_%28C%C3%A9l%C3%A9brations%29.png/490px-Carte_Neo_Genesis_20_%28C%C3%A9l%C3%A9brations%29.png",
               "pokepediaCardUrl": "https://www.pokepedia.fr/M%C3%A9lo_(Neo_Genesis_20)"
             },
             {
+              "cardId": "cel25-21",
+              "localId": "21",
+              "localNumberSort": 21,
+              "name": "Solgaleo",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/0/00/Carte_C%C3%A9l%C3%A9brations_021.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/0/00/Carte_C%C3%A9l%C3%A9brations_021.png/490px-Carte_C%C3%A9l%C3%A9brations_021.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Solgaleo_(C%C3%A9l%C3%A9brations_021)"
+            },
+            {
+              "cardId": "cel25-22",
+              "localId": "22",
+              "localNumberSort": 22,
+              "name": "Lugia",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/1/1c/Carte_C%C3%A9l%C3%A9brations_022.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/1/1c/Carte_C%C3%A9l%C3%A9brations_022.png/490px-Carte_C%C3%A9l%C3%A9brations_022.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Lugia_(C%C3%A9l%C3%A9brations_022)"
+            },
+            {
+              "cardId": "cel25-23",
+              "localId": "23",
+              "localNumberSort": 23,
+              "name": "Recherches Professorales",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/4/4d/Carte_C%C3%A9l%C3%A9brations_023.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/4/4d/Carte_C%C3%A9l%C3%A9brations_023.png/490px-Carte_C%C3%A9l%C3%A9brations_023.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Recherches_Professorales_(C%C3%A9l%C3%A9brations_023)"
+            },
+            {
               "cardId": "cel25-24A",
               "localId": "24A",
               "localNumberSort": 24,
-              "name": "Recherches Professorales",
+              "name": "Pikachu de ________",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/d/de/Carte_Promo_Wizards_24.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/d/de/Carte_Promo_Wizards_24.png/490px-Carte_Promo_Wizards_24.png",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/c/cc/Carte_Promo_Wizards_24_(C%C3%A9l%C3%A9brations).png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/c/cc/Carte_Promo_Wizards_24_%28C%C3%A9l%C3%A9brations%29.png/490px-Carte_Promo_Wizards_24_%28C%C3%A9l%C3%A9brations%29.png",
               "pokepediaCardUrl": "https://www.pokepedia.fr/Pikachu_de_(Promo_Wizards_24)"
             },
             {
@@ -33566,9 +33715,10 @@
               "localId": "25",
               "localNumberSort": 25,
               "name": "Mew",
-              "resolutionStatus": "unresolved",
-              "reason": "POKEPEDIA_CARD_NOT_FOUND",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/C%C3%A9l%C3%A9brations_(JCC)"
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/2/24/Carte_C%C3%A9l%C3%A9brations_025.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/2/24/Carte_C%C3%A9l%C3%A9brations_025.png/490px-Carte_C%C3%A9l%C3%A9brations_025.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Mew_(C%C3%A9l%C3%A9brations_025)"
             },
             {
               "cardId": "cel25-54A",
@@ -33576,8 +33726,8 @@
               "localNumberSort": 54,
               "name": "Mewtwo-EX",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/4/49/Carte_Noir_%26_Blanc_Destin%C3%A9es_Futures_54.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/4/49/Carte_Noir_%26_Blanc_Destin%C3%A9es_Futures_54.png/490px-Carte_Noir_%26_Blanc_Destin%C3%A9es_Futures_54.png",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/6/6a/Carte_Noir_%26_Blanc_Destin%C3%A9es_Futures_54_(C%C3%A9l%C3%A9brations).png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/6/6a/Carte_Noir_%26_Blanc_Destin%C3%A9es_Futures_54_%28C%C3%A9l%C3%A9brations%29.png/490px-Carte_Noir_%26_Blanc_Destin%C3%A9es_Futures_54_%28C%C3%A9l%C3%A9brations%29.png",
               "pokepediaCardUrl": "https://www.pokepedia.fr/Mewtwo-EX_(Noir_%26_Blanc_Destin%C3%A9es_Futures_54)"
             },
             {
@@ -33586,8 +33736,8 @@
               "localNumberSort": 60,
               "name": "Tokopiyon-GX",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/2/25/Carte_Soleil_et_Lune_Gardiens_Ascendants_60.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/2/25/Carte_Soleil_et_Lune_Gardiens_Ascendants_60.png/490px-Carte_Soleil_et_Lune_Gardiens_Ascendants_60.png",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/1/10/Carte_Soleil_et_Lune_Gardiens_Ascendants_60_(C%C3%A9l%C3%A9brations).png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/1/10/Carte_Soleil_et_Lune_Gardiens_Ascendants_60_%28C%C3%A9l%C3%A9brations%29.png/490px-Carte_Soleil_et_Lune_Gardiens_Ascendants_60_%28C%C3%A9l%C3%A9brations%29.png",
               "pokepediaCardUrl": "https://www.pokepedia.fr/Tokopiyon-GX_(Soleil_et_Lune_Gardiens_Ascendants_60)"
             },
             {
@@ -33596,8 +33746,8 @@
               "localNumberSort": 66,
               "name": "Magicarpe Brillant",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/8/86/Carte_Neo_Revelation_66.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/8/86/Carte_Neo_Revelation_66.png/490px-Carte_Neo_Revelation_66.png",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/1/17/Carte_Neo_Revelation_66_(C%C3%A9l%C3%A9brations).png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/1/17/Carte_Neo_Revelation_66_%28C%C3%A9l%C3%A9brations%29.png/490px-Carte_Neo_Revelation_66_%28C%C3%A9l%C3%A9brations%29.png",
               "pokepediaCardUrl": "https://www.pokepedia.fr/Magicarpe_Brillant_(Neo_Revelation_66)"
             },
             {
@@ -33606,8 +33756,8 @@
               "localNumberSort": 73,
               "name": "Faux Professeur Chen",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/4/45/Carte_Set_de_Base_73.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/4/45/Carte_Set_de_Base_73.png/490px-Carte_Set_de_Base_73.png",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/3/39/Carte_Set_de_Base_73_(C%C3%A9l%C3%A9brations).png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/3/39/Carte_Set_de_Base_73_%28C%C3%A9l%C3%A9brations%29.png/490px-Carte_Set_de_Base_73_%28C%C3%A9l%C3%A9brations%29.png",
               "pokepediaCardUrl": "https://www.pokepedia.fr/Faux_Professeur_Chen_(Set_de_Base_73)"
             },
             {
@@ -33616,8 +33766,8 @@
               "localNumberSort": 76,
               "name": "M-Rayquaza-EX",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/e/e8/Carte_XY_Ciel_Rugissant_76.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/e/e8/Carte_XY_Ciel_Rugissant_76.png/490px-Carte_XY_Ciel_Rugissant_76.png",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/1/18/Carte_XY_Ciel_Rugissant_76_(C%C3%A9l%C3%A9brations).png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/1/18/Carte_XY_Ciel_Rugissant_76_%28C%C3%A9l%C3%A9brations%29.png/490px-Carte_XY_Ciel_Rugissant_76_%28C%C3%A9l%C3%A9brations%29.png",
               "pokepediaCardUrl": "https://www.pokepedia.fr/M-Rayquaza-EX_(XY_Ciel_Rugissant_76)"
             },
             {
@@ -33636,8 +33786,8 @@
               "localNumberSort": 88,
               "name": "Mew ex",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/0/07/Carte_EX_Cr%C3%A9ateurs_de_l%C3%A9gendes_88.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/0/07/Carte_EX_Cr%C3%A9ateurs_de_l%C3%A9gendes_88.png/490px-Carte_EX_Cr%C3%A9ateurs_de_l%C3%A9gendes_88.png",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/5/50/Carte_EX_Cr%C3%A9ateurs_de_l%C3%A9gendes_88_(C%C3%A9l%C3%A9brations).png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/5/50/Carte_EX_Cr%C3%A9ateurs_de_l%C3%A9gendes_88_%28C%C3%A9l%C3%A9brations%29.png/490px-Carte_EX_Cr%C3%A9ateurs_de_l%C3%A9gendes_88_%28C%C3%A9l%C3%A9brations%29.png",
               "pokepediaCardUrl": "https://www.pokepedia.fr/Mew_ex_(EX_Cr%C3%A9ateurs_de_l%C3%A9gendes_88)"
             },
             {
@@ -33646,8 +33796,8 @@
               "localNumberSort": 93,
               "name": "Gardevoir ex δ",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/3/34/Carte_EX_%C3%8Ele_des_Dragons_93.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/3/34/Carte_EX_%C3%8Ele_des_Dragons_93.png/490px-Carte_EX_%C3%8Ele_des_Dragons_93.png",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/4/42/Carte_EX_%C3%8Ele_des_Dragons_93_(C%C3%A9l%C3%A9brations).png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/4/42/Carte_EX_%C3%8Ele_des_Dragons_93_%28C%C3%A9l%C3%A9brations%29.png/490px-Carte_EX_%C3%8Ele_des_Dragons_93_%28C%C3%A9l%C3%A9brations%29.png",
               "pokepediaCardUrl": "https://www.pokepedia.fr/Gardevoir_ex_%CE%B4_(EX_%C3%8Ele_des_Dragons_93)"
             },
             {
@@ -33656,8 +33806,8 @@
               "localNumberSort": 97,
               "name": "Xerneas-EX",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/d/d0/Carte_XY_97.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/d/d0/Carte_XY_97.png/490px-Carte_XY_97.png",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/2/2a/Carte_XY_97_(C%C3%A9l%C3%A9brations).png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/2/2a/Carte_XY_97_%28C%C3%A9l%C3%A9brations%29.png/490px-Carte_XY_97_%28C%C3%A9l%C3%A9brations%29.png",
               "pokepediaCardUrl": "https://www.pokepedia.fr/Xerneas-EX_(XY_97)"
             },
             {
@@ -33666,8 +33816,8 @@
               "localNumberSort": 107,
               "name": "Donphan",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/8/8a/Carte_HeartGold_%26_SoulSilver_107.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/8/8a/Carte_HeartGold_%26_SoulSilver_107.png/490px-Carte_HeartGold_%26_SoulSilver_107.png",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/1/16/Carte_HeartGold_%26_SoulSilver_107_(C%C3%A9l%C3%A9brations).png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/1/16/Carte_HeartGold_%26_SoulSilver_107_%28C%C3%A9l%C3%A9brations%29.png/490px-Carte_HeartGold_%26_SoulSilver_107_%28C%C3%A9l%C3%A9brations%29.png",
               "pokepediaCardUrl": "https://www.pokepedia.fr/Donphan_(HeartGold_%26_SoulSilver_107)"
             },
             {
@@ -33686,8 +33836,8 @@
               "localNumberSort": 113,
               "name": "Reshiram",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/7/70/Carte_Noir_%26_Blanc_113.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/7/70/Carte_Noir_%26_Blanc_113.png/490px-Carte_Noir_%26_Blanc_113.png",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/b/ba/Carte_Noir_%26_Blanc_113_(C%C3%A9l%C3%A9brations).png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/b/ba/Carte_Noir_%26_Blanc_113_%28C%C3%A9l%C3%A9brations%29.png/490px-Carte_Noir_%26_Blanc_113_%28C%C3%A9l%C3%A9brations%29.png",
               "pokepediaCardUrl": "https://www.pokepedia.fr/Reshiram_(Noir_%26_Blanc_113)"
             },
             {
@@ -33696,8 +33846,8 @@
               "localNumberSort": 114,
               "name": "Zekrom",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/b/bf/Carte_Noir_%26_Blanc_114.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/b/bf/Carte_Noir_%26_Blanc_114.png/490px-Carte_Noir_%26_Blanc_114.png",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/b/b6/Carte_Noir_%26_Blanc_114_(C%C3%A9l%C3%A9brations).png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/b/b6/Carte_Noir_%26_Blanc_114_%28C%C3%A9l%C3%A9brations%29.png/490px-Carte_Noir_%26_Blanc_114_%28C%C3%A9l%C3%A9brations%29.png",
               "pokepediaCardUrl": "https://www.pokepedia.fr/Zekrom_(Noir_%26_Blanc_114)"
             },
             {
@@ -33706,49 +33856,49 @@
               "localNumberSort": 145,
               "name": "Carchacrok C NIV.X",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/6/6d/Carte_Platine_Vainqueurs_Supr%C3%AAmes_145.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/6/6d/Carte_Platine_Vainqueurs_Supr%C3%AAmes_145.png/490px-Carte_Platine_Vainqueurs_Supr%C3%AAmes_145.png",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/8/84/Carte_Platine_Vainqueurs_Supr%C3%AAmes_145_(C%C3%A9l%C3%A9brations).png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/8/84/Carte_Platine_Vainqueurs_Supr%C3%AAmes_145_%28C%C3%A9l%C3%A9brations%29.png/490px-Carte_Platine_Vainqueurs_Supr%C3%AAmes_145_%28C%C3%A9l%C3%A9brations%29.png",
               "pokepediaCardUrl": "https://www.pokepedia.fr/Carchacrok_C_NIV.X_(Platine_Vainqueurs_Supr%C3%AAmes_145)"
             },
             {
               "cardId": "cel25-15A1",
               "localId": "15A1",
               "localNumberSort": 151,
-              "name": "Lunala",
+              "name": "Florizarre",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/4/48/Carte_Set_de_Base_15.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/4/48/Carte_Set_de_Base_15.png/490px-Carte_Set_de_Base_15.png",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/1/12/Carte_Set_de_Base_15_(C%C3%A9l%C3%A9brations).png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/1/12/Carte_Set_de_Base_15_%28C%C3%A9l%C3%A9brations%29.png/490px-Carte_Set_de_Base_15_%28C%C3%A9l%C3%A9brations%29.png",
               "pokepediaCardUrl": "https://www.pokepedia.fr/Florizarre_(Set_de_Base_15)"
             },
             {
               "cardId": "cel25-15A2",
               "localId": "15A2",
               "localNumberSort": 152,
-              "name": "Lunala",
+              "name": "Et voila les Team Rocket !",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/4/48/Carte_Set_de_Base_15.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/4/48/Carte_Set_de_Base_15.png/490px-Carte_Set_de_Base_15.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Florizarre_(Set_de_Base_15)"
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/c/c7/Carte_Team_Rocket_15_(C%C3%A9l%C3%A9brations).png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/c/c7/Carte_Team_Rocket_15_%28C%C3%A9l%C3%A9brations%29.png/490px-Carte_Team_Rocket_15_%28C%C3%A9l%C3%A9brations%29.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Et_voila_les_Team_Rocket_!_(Team_Rocket_15)"
             },
             {
               "cardId": "cel25-15A3",
               "localId": "15A3",
               "localNumberSort": 153,
-              "name": "Lunala",
+              "name": "Électhor de Rocket",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/4/48/Carte_Set_de_Base_15.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/4/48/Carte_Set_de_Base_15.png/490px-Carte_Set_de_Base_15.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Florizarre_(Set_de_Base_15)"
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/a/a3/Carte_Gym_Challenge_15_(C%C3%A9l%C3%A9brations).png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/a/a3/Carte_Gym_Challenge_15_%28C%C3%A9l%C3%A9brations%29.png/490px-Carte_Gym_Challenge_15_%28C%C3%A9l%C3%A9brations%29.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89lecthor_de_Rocket_(Gym_Challenge_15)"
             },
             {
               "cardId": "cel25-15A4",
               "localId": "15A4",
               "localNumberSort": 154,
-              "name": "Lunala",
+              "name": "Kaorine",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/4/48/Carte_Set_de_Base_15.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/4/48/Carte_Set_de_Base_15.png/490px-Carte_Set_de_Base_15.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Florizarre_(Set_de_Base_15)"
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/c/cf/Carte_Diamant_%26_Perle_Duels_au_sommet_15_(C%C3%A9l%C3%A9brations).png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/c/cf/Carte_Diamant_%26_Perle_Duels_au_sommet_15_%28C%C3%A9l%C3%A9brations%29.png/490px-Carte_Diamant_%26_Perle_Duels_au_sommet_15_%28C%C3%A9l%C3%A9brations%29.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Kaorine_(Diamant_%26_Perle_Duels_au_sommet_15)"
             }
           ]
         }
