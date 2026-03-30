@@ -267,6 +267,7 @@ val jvmTestTask = tasks.named<Test>("jvmTest")
 
 jvmTestTask.configure {
     dependsOn(compileCardsDatabaseGenerated)
+    maxHeapSize = "1536m"
 }
 
 tasks.register<Test>("generatorE2eTest") {
@@ -276,6 +277,7 @@ tasks.register<Test>("generatorE2eTest") {
     testClassesDirs = baseJvmTest.testClassesDirs
     classpath = baseJvmTest.classpath
     dependsOn(compileCardsDatabaseGenerated)
+    maxHeapSize = "1536m"
     shouldRunAfter(jvmTestTask)
     filter {
         includeTestsMatching("*LocalDatabaseGenerationE2eTest")

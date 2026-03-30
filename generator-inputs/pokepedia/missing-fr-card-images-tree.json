@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-03-26T12:15:08.464Z",
+  "generatedAt": "2026-03-30T00:05:15.353Z",
   "databasePath": "/Users/admin/workspace/cardium/iosApp/iosApp/Resources/tcgdex.db",
   "language": "fr",
-  "totalCards": 3462,
-  "resolvedCards": 3372,
+  "totalCards": 3586,
+  "resolvedCards": 3496,
   "unresolvedCards": 90,
   "unresolvedReasons": {
     "POKEPEDIA_CARD_IMAGE_NOT_FOUND": 90
@@ -21585,7 +21585,7 @@
         },
         {
           "setId": "2014xy",
-          "name": "Promo McDonald's 2014",
+          "name": "Collection McDonald's 2014",
           "releaseDate": "2014-05-23",
           "cardCountTotal": 12,
           "pokepediaSetUrl": "https://www.pokepedia.fr/Collection_McDonald%27s_2014",
@@ -22101,7 +22101,7 @@
         },
         {
           "setId": "2018sm-fr",
-          "name": "Promo McDonald's 2018",
+          "name": "Collection McDonald's 2018",
           "releaseDate": "2018-06-13",
           "cardCountTotal": 40,
           "pokepediaSetUrl": "https://www.pokepedia.fr/Collection_McDonald%27s_2018_(France)",
@@ -33477,7 +33477,7 @@
           "setId": "cel25",
           "name": "Célébrations",
           "releaseDate": "2021-10-08",
-          "cardCountTotal": 51,
+          "cardCountTotal": 50,
           "pokepediaSetUrl": "https://www.pokepedia.fr/C%C3%A9l%C3%A9brations_(JCC)",
           "cards": [
             {
@@ -35235,6 +35235,1255 @@
               "resolutionStatus": "unresolved",
               "reason": "POKEPEDIA_CARD_IMAGE_NOT_FOUND",
               "pokepediaCardUrl": "https://www.pokepedia.fr/index.php?title=Ptyranidur_(Promo_ME_070)&action=edit&redlink=1"
+            }
+          ]
+        },
+        {
+          "setId": "me03",
+          "name": "Équilibre Parfait",
+          "releaseDate": "2026-04-11",
+          "cardCountTotal": 124,
+          "pokepediaSetUrl": "https://www.pokepedia.fr/M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait",
+          "cards": [
+            {
+              "cardId": "me03-001",
+              "localId": "001",
+              "localNumberSort": 1,
+              "name": "Mimigal",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/d/d1/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_001.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/d/d1/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_001.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_001.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Mimigal_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_001)"
+            },
+            {
+              "cardId": "me03-002",
+              "localId": "002",
+              "localNumberSort": 2,
+              "name": "Migalos",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/c/c0/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_002.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/c/c0/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_002.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_002.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Migalos_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_002)"
+            },
+            {
+              "cardId": "me03-003",
+              "localId": "003",
+              "localNumberSort": 3,
+              "name": "Shaymin",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/8/80/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_003.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/8/80/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_003.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_003.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Shaymin_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_003)"
+            },
+            {
+              "cardId": "me03-004",
+              "localId": "004",
+              "localNumberSort": 4,
+              "name": "Vipélierre",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/0/01/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_004.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/0/01/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_004.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_004.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Vip%C3%A9lierre_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_004)"
+            },
+            {
+              "cardId": "me03-005",
+              "localId": "005",
+              "localNumberSort": 5,
+              "name": "Lianaja",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/e/e4/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_005.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/e/e4/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_005.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_005.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Lianaja_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_005)"
+            },
+            {
+              "cardId": "me03-006",
+              "localId": "006",
+              "localNumberSort": 6,
+              "name": "Majaspic",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/b/b6/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_006.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/b/b6/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_006.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_006.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Majaspic_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_006)"
+            },
+            {
+              "cardId": "me03-007",
+              "localId": "007",
+              "localNumberSort": 7,
+              "name": "Lépidonille",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/b/b3/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_007.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/b/b3/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_007.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_007.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/L%C3%A9pidonille_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_007)"
+            },
+            {
+              "cardId": "me03-008",
+              "localId": "008",
+              "localNumberSort": 8,
+              "name": "Pérégrain",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/5/56/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_008.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/5/56/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_008.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_008.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/P%C3%A9r%C3%A9grain_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_008)"
+            },
+            {
+              "cardId": "me03-009",
+              "localId": "009",
+              "localNumberSort": 9,
+              "name": "Prismillon",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/6/69/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_009.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/6/69/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_009.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_009.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Prismillon_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_009)"
+            },
+            {
+              "cardId": "me03-010",
+              "localId": "010",
+              "localNumberSort": 10,
+              "name": "Brindibou",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/4/4f/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_010.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/4/4f/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_010.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_010.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Brindibou_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_010)"
+            },
+            {
+              "cardId": "me03-011",
+              "localId": "011",
+              "localNumberSort": 11,
+              "name": "Efflèche",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/3/30/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_011.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/3/30/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_011.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_011.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Effl%C3%A8che_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_011)"
+            },
+            {
+              "cardId": "me03-012",
+              "localId": "012",
+              "localNumberSort": 12,
+              "name": "Archéduc-ex",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/5/54/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_012.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/5/54/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_012.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_012.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Arch%C3%A9duc-ex_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_012)"
+            },
+            {
+              "cardId": "me03-013",
+              "localId": "013",
+              "localNumberSort": 13,
+              "name": "Braisillon",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/1/1d/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_013.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/1/1d/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_013.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_013.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Braisillon_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_013)"
+            },
+            {
+              "cardId": "me03-014",
+              "localId": "014",
+              "localNumberSort": 14,
+              "name": "Flambusard",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/9/9e/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_014.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/9/9e/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_014.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_014.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Flambusard_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_014)"
+            },
+            {
+              "cardId": "me03-015",
+              "localId": "015",
+              "localNumberSort": 15,
+              "name": "Tritox",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/e/e5/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_015.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/e/e5/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_015.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_015.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Tritox_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_015)"
+            },
+            {
+              "cardId": "me03-016",
+              "localId": "016",
+              "localNumberSort": 16,
+              "name": "Malamandre-ex",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/6/6c/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_016.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/6/6c/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_016.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_016.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Malamandre-ex_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_016)"
+            },
+            {
+              "cardId": "me03-017",
+              "localId": "017",
+              "localNumberSort": 17,
+              "name": "Boumata",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/7/72/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_017.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/7/72/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_017.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_017.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Boumata_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_017)"
+            },
+            {
+              "cardId": "me03-018",
+              "localId": "018",
+              "localNumberSort": 18,
+              "name": "Otaria",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/c/ce/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_018.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/c/ce/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_018.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_018.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Otaria_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_018)"
+            },
+            {
+              "cardId": "me03-019",
+              "localId": "019",
+              "localNumberSort": 19,
+              "name": "Lamantine",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/2/2e/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_019.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/2/2e/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_019.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_019.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Lamantine_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_019)"
+            },
+            {
+              "cardId": "me03-020",
+              "localId": "020",
+              "localNumberSort": 20,
+              "name": "Stari",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/0/09/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_020.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/0/09/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_020.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_020.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Stari_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_020)"
+            },
+            {
+              "cardId": "me03-021",
+              "localId": "021",
+              "localNumberSort": 21,
+              "name": "Méga-Staross-ex",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/f/f6/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_021.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/f/f6/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_021.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_021.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/M%C3%A9ga-Staross-ex_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_021)"
+            },
+            {
+              "cardId": "me03-022",
+              "localId": "022",
+              "localNumberSort": 22,
+              "name": "Lokhlass-ex",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/a/aa/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_022.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/a/aa/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_022.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_022.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Lokhlass-ex_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_022)"
+            },
+            {
+              "cardId": "me03-023",
+              "localId": "023",
+              "localNumberSort": 23,
+              "name": "Amagara",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/7/74/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_023.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/7/74/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_023.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_023.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Amagara_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_023)"
+            },
+            {
+              "cardId": "me03-024",
+              "localId": "024",
+              "localNumberSort": 24,
+              "name": "Dragmara",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/8/86/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_024.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/8/86/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_024.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_024.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Dragmara_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_024)"
+            },
+            {
+              "cardId": "me03-025",
+              "localId": "025",
+              "localNumberSort": 25,
+              "name": "Volcanion",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/0/0e/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_025.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/0/0e/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_025.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_025.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Volcanion_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_025)"
+            },
+            {
+              "cardId": "me03-026",
+              "localId": "026",
+              "localNumberSort": 26,
+              "name": "Lixy",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/7/7b/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_026.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/7/7b/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_026.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_026.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Lixy_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_026)"
+            },
+            {
+              "cardId": "me03-027",
+              "localId": "027",
+              "localNumberSort": 27,
+              "name": "Luxio",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/a/ac/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_027.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/a/ac/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_027.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_027.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Luxio_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_027)"
+            },
+            {
+              "cardId": "me03-028",
+              "localId": "028",
+              "localNumberSort": 28,
+              "name": "Luxray",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/c/c8/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_028.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/c/c8/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_028.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_028.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Luxray_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_028)"
+            },
+            {
+              "cardId": "me03-029",
+              "localId": "029",
+              "localNumberSort": 29,
+              "name": "Dedenne",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/d/d6/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_029.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/d/d6/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_029.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_029.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Dedenne_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_029)"
+            },
+            {
+              "cardId": "me03-030",
+              "localId": "030",
+              "localNumberSort": 30,
+              "name": "Mélofée",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/a/a9/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_030.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/a/a9/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_030.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_030.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/M%C3%A9lof%C3%A9e_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_030)"
+            },
+            {
+              "cardId": "me03-031",
+              "localId": "031",
+              "localNumberSort": 31,
+              "name": "Méga-Mélodelfe-ex",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/f/f9/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_031.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/f/f9/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_031.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_031.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/M%C3%A9ga-M%C3%A9lodelfe-ex_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_031)"
+            },
+            {
+              "cardId": "me03-032",
+              "localId": "032",
+              "localNumberSort": 32,
+              "name": "Mysdibule",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/1/12/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_032.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/1/12/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_032.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_032.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Mysdibule_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_032)"
+            },
+            {
+              "cardId": "me03-033",
+              "localId": "033",
+              "localNumberSort": 33,
+              "name": "Psystigri",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/7/7d/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_033.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/7/7d/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_033.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_033.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Psystigri_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_033)"
+            },
+            {
+              "cardId": "me03-034",
+              "localId": "034",
+              "localNumberSort": 34,
+              "name": "Mistigrix",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/7/76/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_034.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/7/76/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_034.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_034.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Mistigrix_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_034)"
+            },
+            {
+              "cardId": "me03-035",
+              "localId": "035",
+              "localNumberSort": 35,
+              "name": "Fluvetin",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/a/ac/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_035.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/a/ac/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_035.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_035.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Fluvetin_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_035)"
+            },
+            {
+              "cardId": "me03-036",
+              "localId": "036",
+              "localNumberSort": 36,
+              "name": "Cocotine",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/5/53/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_036.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/5/53/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_036.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_036.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Cocotine_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_036)"
+            },
+            {
+              "cardId": "me03-037",
+              "localId": "037",
+              "localNumberSort": 37,
+              "name": "Tarinor",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/d/de/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_037.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/d/de/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_037.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_037.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Tarinor_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_037)"
+            },
+            {
+              "cardId": "me03-038",
+              "localId": "038",
+              "localNumberSort": 38,
+              "name": "Tarinorme",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/7/76/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_038.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/7/76/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_038.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_038.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Tarinorme_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_038)"
+            },
+            {
+              "cardId": "me03-039",
+              "localId": "039",
+              "localNumberSort": 39,
+              "name": "Hippopotas",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/3/3c/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_039.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/3/3c/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_039.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_039.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Hippopotas_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_039)"
+            },
+            {
+              "cardId": "me03-040",
+              "localId": "040",
+              "localNumberSort": 40,
+              "name": "Hippodocus",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/d/dc/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_040.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/d/dc/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_040.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_040.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Hippodocus_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_040)"
+            },
+            {
+              "cardId": "me03-041",
+              "localId": "041",
+              "localNumberSort": 41,
+              "name": "Démétéros",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/4/43/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_041.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/4/43/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_041.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_041.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/D%C3%A9m%C3%A9t%C3%A9ros_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_041)"
+            },
+            {
+              "cardId": "me03-042",
+              "localId": "042",
+              "localNumberSort": 42,
+              "name": "Opermine",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/8/8f/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_042.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/8/8f/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_042.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_042.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Opermine_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_042)"
+            },
+            {
+              "cardId": "me03-043",
+              "localId": "043",
+              "localNumberSort": 43,
+              "name": "Golgopathe",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/c/c8/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_043.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/c/c8/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_043.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_043.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Golgopathe_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_043)"
+            },
+            {
+              "cardId": "me03-044",
+              "localId": "044",
+              "localNumberSort": 44,
+              "name": "Ptyranidur",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/b/be/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_044.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/b/be/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_044.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_044.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Ptyranidur_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_044)"
+            },
+            {
+              "cardId": "me03-045",
+              "localId": "045",
+              "localNumberSort": 45,
+              "name": "Rexillius",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/2/29/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_045.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/2/29/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_045.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_045.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Rexillius_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_045)"
+            },
+            {
+              "cardId": "me03-046",
+              "localId": "046",
+              "localNumberSort": 46,
+              "name": "Brutalibré",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/3/33/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_046.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/3/33/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_046.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_046.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Brutalibr%C3%A9_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_046)"
+            },
+            {
+              "cardId": "me03-047",
+              "localId": "047",
+              "localNumberSort": 47,
+              "name": "Méga-Zygarde-ex",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/0/0f/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_047.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/0/0f/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_047.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_047.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/M%C3%A9ga-Zygarde-ex_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_047)"
+            },
+            {
+              "cardId": "me03-048",
+              "localId": "048",
+              "localNumberSort": 48,
+              "name": "Fantominus",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/a/a7/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_048.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/a/a7/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_048.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_048.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Fantominus_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_048)"
+            },
+            {
+              "cardId": "me03-049",
+              "localId": "049",
+              "localNumberSort": 49,
+              "name": "Spectrum",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/1/19/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_049.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/1/19/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_049.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_049.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Spectrum_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_049)"
+            },
+            {
+              "cardId": "me03-050",
+              "localId": "050",
+              "localNumberSort": 50,
+              "name": "Ectoplasma",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/7/7b/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_050.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/7/7b/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_050.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_050.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Ectoplasma_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_050)"
+            },
+            {
+              "cardId": "me03-051",
+              "localId": "051",
+              "localNumberSort": 51,
+              "name": "Rapion",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/7/78/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_051.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/7/78/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_051.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_051.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Rapion_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_051)"
+            },
+            {
+              "cardId": "me03-052",
+              "localId": "052",
+              "localNumberSort": 52,
+              "name": "Drascore",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/c/c1/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_052.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/c/c1/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_052.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_052.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Drascore_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_052)"
+            },
+            {
+              "cardId": "me03-053",
+              "localId": "053",
+              "localNumberSort": 53,
+              "name": "Yveltal-ex",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/2/21/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_053.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/2/21/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_053.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_053.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Yveltal-ex_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_053)"
+            },
+            {
+              "cardId": "me03-054",
+              "localId": "054",
+              "localNumberSort": 54,
+              "name": "Baojian",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/4/4d/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_054.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/4/4d/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_054.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_054.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Baojian_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_054)"
+            },
+            {
+              "cardId": "me03-055",
+              "localId": "055",
+              "localNumberSort": 55,
+              "name": "Méga-Airmure-ex",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/3/31/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_055.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/3/31/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_055.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_055.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/M%C3%A9ga-Airmure-ex_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_055)"
+            },
+            {
+              "cardId": "me03-056",
+              "localId": "056",
+              "localNumberSort": 56,
+              "name": "Monorpale",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/0/03/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_056.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/0/03/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_056.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_056.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Monorpale_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_056)"
+            },
+            {
+              "cardId": "me03-057",
+              "localId": "057",
+              "localNumberSort": 57,
+              "name": "Dimoclès",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/3/31/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_057.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/3/31/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_057.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_057.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Dimocl%C3%A8s_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_057)"
+            },
+            {
+              "cardId": "me03-058",
+              "localId": "058",
+              "localNumberSort": 58,
+              "name": "Exagide",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/c/cc/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_058.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/c/cc/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_058.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_058.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Exagide_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_058)"
+            },
+            {
+              "cardId": "me03-059",
+              "localId": "059",
+              "localNumberSort": 59,
+              "name": "Trousselin",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/d/de/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_059.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/d/de/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_059.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_059.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Trousselin_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_059)"
+            },
+            {
+              "cardId": "me03-060",
+              "localId": "060",
+              "localNumberSort": 60,
+              "name": "Rattata",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/b/b7/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_060.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/b/b7/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_060.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_060.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Rattata_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_060)"
+            },
+            {
+              "cardId": "me03-061",
+              "localId": "061",
+              "localNumberSort": 61,
+              "name": "Rattatac",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/8/8c/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_061.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/8/8c/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_061.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_061.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Rattatac_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_061)"
+            },
+            {
+              "cardId": "me03-062",
+              "localId": "062",
+              "localNumberSort": 62,
+              "name": "Miaouss-ex",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/2/2f/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_062.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/2/2f/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_062.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_062.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Miaouss-ex_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_062)"
+            },
+            {
+              "cardId": "me03-063",
+              "localId": "063",
+              "localNumberSort": 63,
+              "name": "Ronflex",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/0/01/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_063.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/0/01/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_063.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_063.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Ronflex_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_063)"
+            },
+            {
+              "cardId": "me03-064",
+              "localId": "064",
+              "localNumberSort": 64,
+              "name": "Sapereau",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/1/15/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_064.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/1/15/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_064.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_064.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Sapereau_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_064)"
+            },
+            {
+              "cardId": "me03-065",
+              "localId": "065",
+              "localNumberSort": 65,
+              "name": "Excavarenne",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/f/f2/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_065.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/f/f2/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_065.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_065.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Excavarenne_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_065)"
+            },
+            {
+              "cardId": "me03-066",
+              "localId": "066",
+              "localNumberSort": 66,
+              "name": "Passerouge",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/5/5b/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_066.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/5/5b/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_066.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_066.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Passerouge_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_066)"
+            },
+            {
+              "cardId": "me03-067",
+              "localId": "067",
+              "localNumberSort": 67,
+              "name": "Couafarel",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/8/8d/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_067.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/8/8d/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_067.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_067.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Couafarel_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_067)"
+            },
+            {
+              "cardId": "me03-068",
+              "localId": "068",
+              "localNumberSort": 68,
+              "name": "Fossile Mâchoire Ancien",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/f/fe/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_068.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/f/fe/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_068.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_068.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Fossile_M%C3%A2choire_Ancien_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_068)"
+            },
+            {
+              "cardId": "me03-069",
+              "localId": "069",
+              "localNumberSort": 69,
+              "name": "Fossile Nageoire Ancien",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/5/5c/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_069.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/5/5c/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_069.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_069.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Fossile_Nageoire_Ancien_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_069)"
+            },
+            {
+              "cardId": "me03-070",
+              "localId": "070",
+              "localNumberSort": 70,
+              "name": "Cœur Mémoire",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/d/d3/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_070.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/d/d3/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_070.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_070.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/C%C5%93ur_M%C3%A9moire_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_070)"
+            },
+            {
+              "cardId": "me03-071",
+              "localId": "071",
+              "localNumberSort": 71,
+              "name": "Maillet Écrasant",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/3/36/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_071.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/3/36/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_071.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_071.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Maillet_%C3%89crasant_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_071)"
+            },
+            {
+              "cardId": "me03-072",
+              "localId": "072",
+              "localNumberSort": 72,
+              "name": "Recherche d'Énergie",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/6/6f/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_072.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/6/6f/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_072.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_072.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Recherche_d%27%C3%89nergie_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_072)"
+            },
+            {
+              "cardId": "me03-073",
+              "localId": "073",
+              "localNumberSort": 73,
+              "name": "Tape-Énergie",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/6/68/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_073.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/6/68/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_073.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_073.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Tape-%C3%89nergie_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_073)"
+            },
+            {
+              "cardId": "me03-074",
+              "localId": "074",
+              "localNumberSort": 74,
+              "name": "Pelle à Creuser des Trous",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/0/04/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_074.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/0/04/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_074.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_074.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Pelle_%C3%A0_Creuser_des_Trous_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_074)"
+            },
+            {
+              "cardId": "me03-075",
+              "localId": "075",
+              "localNumberSort": 75,
+              "name": "Violine",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/9/95/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_075.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/9/95/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_075.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_075.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Violine_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_075)"
+            },
+            {
+              "cardId": "me03-076",
+              "localId": "076",
+              "localNumberSort": 76,
+              "name": "Juge",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/d/d1/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_076.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/d/d1/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_076.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_076.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Juge_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_076)"
+            },
+            {
+              "cardId": "me03-077",
+              "localId": "077",
+              "localNumberSort": 77,
+              "name": "Illumis",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/5/51/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_077.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/5/51/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_077.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_077.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Illumis_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_077)"
+            },
+            {
+              "cardId": "me03-078",
+              "localId": "078",
+              "localNumberSort": 78,
+              "name": "Galette Illumis",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/8/84/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_078.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/8/84/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_078.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_078.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Galette_Illumis_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_078)"
+            },
+            {
+              "cardId": "me03-079",
+              "localId": "079",
+              "localNumberSort": 79,
+              "name": "Inno",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/4/49/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_079.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/4/49/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_079.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_079.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Inno_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_079)"
+            },
+            {
+              "cardId": "me03-080",
+              "localId": "080",
+              "localNumberSort": 80,
+              "name": "Poké Ball",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/3/38/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_080.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/3/38/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_080.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_080.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Pok%C3%A9_Ball_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_080)"
+            },
+            {
+              "cardId": "me03-081",
+              "localId": "081",
+              "localNumberSort": 81,
+              "name": "Poké Registre",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/b/bd/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_081.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/b/bd/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_081.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_081.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Pok%C3%A9_Registre_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_081)"
+            },
+            {
+              "cardId": "me03-082",
+              "localId": "082",
+              "localNumberSort": 82,
+              "name": "Attrape-Pokémon",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/c/ca/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_082.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/c/ca/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_082.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_082.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Attrape-Pok%C3%A9mon_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_082)"
+            },
+            {
+              "cardId": "me03-083",
+              "localId": "083",
+              "localNumberSort": 83,
+              "name": "Potion",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/a/ab/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_083.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/a/ab/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_083.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_083.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Potion_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_083)"
+            },
+            {
+              "cardId": "me03-084",
+              "localId": "084",
+              "localNumberSort": 84,
+              "name": "Encouragement d'Écho",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/3/30/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_084.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/3/30/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_084.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_084.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Encouragement_d%27%C3%89cho_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_084)"
+            },
+            {
+              "cardId": "me03-085",
+              "localId": "085",
+              "localNumberSort": 85,
+              "name": "Taragon",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/f/f0/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_085.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/f/f0/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_085.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_085.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Taragon_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_085)"
+            },
+            {
+              "cardId": "me03-086",
+              "localId": "086",
+              "localNumberSort": 86,
+              "name": "Énergie Plante Croissante",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/1/1f/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_086.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/1/1f/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_086.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_086.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_Plante_Croissante_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_086)"
+            },
+            {
+              "cardId": "me03-087",
+              "localId": "087",
+              "localNumberSort": 87,
+              "name": "Énergie Combat Rocheuse",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/9/99/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_087.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/9/99/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_087.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_087.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_Combat_Rocheuse_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_087)"
+            },
+            {
+              "cardId": "me03-088",
+              "localId": "088",
+              "localNumberSort": 88,
+              "name": "Énergie Psy Télépathique",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/d/dd/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_088.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/d/dd/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_088.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_088.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_Psy_T%C3%A9l%C3%A9pathique_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_088)"
+            },
+            {
+              "cardId": "me03-089",
+              "localId": "089",
+              "localNumberSort": 89,
+              "name": "Pérégrain",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/5/56/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_089.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/5/56/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_089.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_089.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/P%C3%A9r%C3%A9grain_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_089)"
+            },
+            {
+              "cardId": "me03-090",
+              "localId": "090",
+              "localNumberSort": 90,
+              "name": "Brindibou",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/5/5f/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_090.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/5/5f/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_090.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_090.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Brindibou_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_090)"
+            },
+            {
+              "cardId": "me03-091",
+              "localId": "091",
+              "localNumberSort": 91,
+              "name": "Flambusard",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/a/a2/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_091.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/a/a2/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_091.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_091.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Flambusard_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_091)"
+            },
+            {
+              "cardId": "me03-092",
+              "localId": "092",
+              "localNumberSort": 92,
+              "name": "Dragmara",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/f/f8/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_092.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/f/f8/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_092.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_092.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Dragmara_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_092)"
+            },
+            {
+              "cardId": "me03-093",
+              "localId": "093",
+              "localNumberSort": 93,
+              "name": "Dedenne",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/6/69/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_093.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/6/69/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_093.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_093.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Dedenne_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_093)"
+            },
+            {
+              "cardId": "me03-094",
+              "localId": "094",
+              "localNumberSort": 94,
+              "name": "Mélofée",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/f/f6/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_094.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/f/f6/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_094.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_094.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/M%C3%A9lof%C3%A9e_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_094)"
+            },
+            {
+              "cardId": "me03-095",
+              "localId": "095",
+              "localNumberSort": 95,
+              "name": "Psystigri",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/f/fd/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_095.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/f/fd/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_095.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_095.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Psystigri_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_095)"
+            },
+            {
+              "cardId": "me03-096",
+              "localId": "096",
+              "localNumberSort": 96,
+              "name": "Tarinorme",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/8/80/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_096.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/8/80/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_096.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_096.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Tarinorme_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_096)"
+            },
+            {
+              "cardId": "me03-097",
+              "localId": "097",
+              "localNumberSort": 97,
+              "name": "Drascore",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/2/26/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_097.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/2/26/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_097.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_097.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Drascore_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_097)"
+            },
+            {
+              "cardId": "me03-098",
+              "localId": "098",
+              "localNumberSort": 98,
+              "name": "Dimoclès",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/5/54/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_098.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/5/54/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_098.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_098.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Dimocl%C3%A8s_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_098)"
+            },
+            {
+              "cardId": "me03-099",
+              "localId": "099",
+              "localNumberSort": 99,
+              "name": "Rattatac",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/9/94/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_099.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/9/94/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_099.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_099.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Rattatac_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_099)"
+            },
+            {
+              "cardId": "me03-100",
+              "localId": "100",
+              "localNumberSort": 100,
+              "name": "Archéduc-ex",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/0/0f/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_100.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/0/0f/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_100.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_100.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Arch%C3%A9duc-ex_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_100)"
+            },
+            {
+              "cardId": "me03-101",
+              "localId": "101",
+              "localNumberSort": 101,
+              "name": "Malamandre-ex",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/f/f4/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_101.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/f/f4/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_101.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_101.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Malamandre-ex_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_101)"
+            },
+            {
+              "cardId": "me03-102",
+              "localId": "102",
+              "localNumberSort": 102,
+              "name": "Méga-Staross-ex",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/a/aa/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_102.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/a/aa/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_102.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_102.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/M%C3%A9ga-Staross-ex_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_102)"
+            },
+            {
+              "cardId": "me03-103",
+              "localId": "103",
+              "localNumberSort": 103,
+              "name": "Méga-Mélodelfe-ex",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/b/b4/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_103.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/b/b4/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_103.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_103.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/M%C3%A9ga-M%C3%A9lodelfe-ex_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_103)"
+            },
+            {
+              "cardId": "me03-104",
+              "localId": "104",
+              "localNumberSort": 104,
+              "name": "Méga-Zygarde-ex",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/9/9c/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_104.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/9/9c/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_104.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_104.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/M%C3%A9ga-Zygarde-ex_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_104)"
+            },
+            {
+              "cardId": "me03-105",
+              "localId": "105",
+              "localNumberSort": 105,
+              "name": "Yveltal-ex",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/5/58/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_105.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/5/58/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_105.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_105.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Yveltal-ex_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_105)"
+            },
+            {
+              "cardId": "me03-106",
+              "localId": "106",
+              "localNumberSort": 106,
+              "name": "Méga-Airmure-ex",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/1/10/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_106.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/1/10/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_106.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_106.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/M%C3%A9ga-Airmure-ex_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_106)"
+            },
+            {
+              "cardId": "me03-107",
+              "localId": "107",
+              "localNumberSort": 107,
+              "name": "Miaouss-ex",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/9/97/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_107.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/9/97/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_107.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_107.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Miaouss-ex_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_107)"
+            },
+            {
+              "cardId": "me03-108",
+              "localId": "108",
+              "localNumberSort": 108,
+              "name": "Recycleur d'Énergie",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/0/01/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_108.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/0/01/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_108.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_108.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Recycleur_d%27%C3%89nergie_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_108)"
+            },
+            {
+              "cardId": "me03-109",
+              "localId": "109",
+              "localNumberSort": 109,
+              "name": "Forêt de Vitalité",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/b/b3/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_109.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/b/b3/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_109.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_109.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/For%C3%AAt_de_Vitalit%C3%A9_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_109)"
+            },
+            {
+              "cardId": "me03-110",
+              "localId": "110",
+              "localNumberSort": 110,
+              "name": "Violine",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/1/12/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_110.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/1/12/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_110.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_110.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Violine_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_110)"
+            },
+            {
+              "cardId": "me03-111",
+              "localId": "111",
+              "localNumberSort": 111,
+              "name": "Illumis",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/9/94/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_111.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/9/94/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_111.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_111.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Illumis_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_111)"
+            },
+            {
+              "cardId": "me03-112",
+              "localId": "112",
+              "localNumberSort": 112,
+              "name": "Inno",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/6/66/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_112.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/6/66/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_112.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_112.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Inno_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_112)"
+            },
+            {
+              "cardId": "me03-113",
+              "localId": "113",
+              "localNumberSort": 113,
+              "name": "Poké Registre",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/9/99/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_113.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/9/99/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_113.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_113.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Pok%C3%A9_Registre_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_113)"
+            },
+            {
+              "cardId": "me03-114",
+              "localId": "114",
+              "localNumberSort": 114,
+              "name": "Encouragement d'Écho",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/e/e0/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_114.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/e/e0/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_114.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_114.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Encouragement_d%27%C3%89cho_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_114)"
+            },
+            {
+              "cardId": "me03-115",
+              "localId": "115",
+              "localNumberSort": 115,
+              "name": "Cendre Sacrée",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/9/98/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_115.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/9/98/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_115.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_115.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Cendre_Sacr%C3%A9e_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_115)"
+            },
+            {
+              "cardId": "me03-116",
+              "localId": "116",
+              "localNumberSort": 116,
+              "name": "Taragon",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/2/2d/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_116.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/2/2d/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_116.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_116.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Taragon_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_116)"
+            },
+            {
+              "cardId": "me03-117",
+              "localId": "117",
+              "localNumberSort": 117,
+              "name": "Fortifiant Merveilleux",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/5/5a/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_117.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/5/5a/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_117.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_117.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Fortifiant_Merveilleux_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_117)"
+            },
+            {
+              "cardId": "me03-118",
+              "localId": "118",
+              "localNumberSort": 118,
+              "name": "Méga-Staross-ex",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/f/f9/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_118.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/f/f9/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_118.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_118.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/M%C3%A9ga-Staross-ex_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_118)"
+            },
+            {
+              "cardId": "me03-119",
+              "localId": "119",
+              "localNumberSort": 119,
+              "name": "Méga-Mélodelfe-ex",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/0/0d/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_119.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/0/0d/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_119.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_119.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/M%C3%A9ga-M%C3%A9lodelfe-ex_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_119)"
+            },
+            {
+              "cardId": "me03-120",
+              "localId": "120",
+              "localNumberSort": 120,
+              "name": "Méga-Zygarde-ex",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/b/be/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_120.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/b/be/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_120.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_120.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/M%C3%A9ga-Zygarde-ex_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_120)"
+            },
+            {
+              "cardId": "me03-121",
+              "localId": "121",
+              "localNumberSort": 121,
+              "name": "Miaouss-ex",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/5/52/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_121.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/5/52/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_121.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_121.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Miaouss-ex_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_121)"
+            },
+            {
+              "cardId": "me03-122",
+              "localId": "122",
+              "localNumberSort": 122,
+              "name": "Violine",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/f/ff/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_122.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/f/ff/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_122.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_122.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Violine_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_122)"
+            },
+            {
+              "cardId": "me03-123",
+              "localId": "123",
+              "localNumberSort": 123,
+              "name": "Encouragement d'Écho",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/e/e6/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_123.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/e/e6/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_123.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_123.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Encouragement_d%27%C3%89cho_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_123)"
+            },
+            {
+              "cardId": "me03-124",
+              "localId": "124",
+              "localNumberSort": 124,
+              "name": "Méga-Zygarde-ex",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/b/ba/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_124.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/b/ba/Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_124.png/490px-Carte_M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_124.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/M%C3%A9ga-Zygarde-ex_(M%C3%A9ga-%C3%89volution_%C3%89quilibre_Parfait_124)"
             }
           ]
         }

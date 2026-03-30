@@ -1,13 +1,13 @@
 {
-  "exportDate": "2026-03-26T12:14:03.361733+00:00",
+  "exportDate": "2026-03-30T00:04:29.778330+00:00",
   "language": "es",
   "stats": {
     "seriesCount": 24,
-    "setCount": 186,
-    "cardCount": 21154,
-    "variantCount": 22408,
-    "cardsWithPrices": 2843,
-    "cardsWithoutPrices": 18311
+    "setCount": 187,
+    "cardCount": 21278,
+    "variantCount": 22532,
+    "cardsWithPrices": 2917,
+    "cardsWithoutPrices": 18361
   },
   "series": [
     {
@@ -122243,7 +122243,7 @@
         },
         {
           "setId": "2014xy",
-          "setName": "Promo McDonald's 2014",
+          "setName": "Collection McDonald's 2014",
           "cardmarketExpansionId": null,
           "cards": [
             {
@@ -123658,7 +123658,7 @@
         },
         {
           "setId": "2018sm-fr",
-          "setName": "Promo McDonald's 2018",
+          "setName": "Collection McDonald's 2018",
           "cardmarketExpansionId": 2361,
           "cards": [
             {
@@ -389783,6 +389783,3583 @@
                         },
                         "recommendedPrice": {
                           "NM": 200.0
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "setId": "me03",
+          "setName": "Équilibre Parfait",
+          "cardmarketExpansionId": null,
+          "cards": [
+            {
+              "tcgdexCardId": "me03-001",
+              "name": "Mimigal",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877413,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Spinarak-POR001",
+                  "prices": {}
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-002",
+              "name": "Migalos",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877414,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Ariados-POR002",
+                  "prices": {}
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-003",
+              "name": "Shaymin",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877415,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Shaymin-POR003",
+                  "prices": {
+                    "es": {
+                      "ES": {
+                        "currency": "EUR",
+                        "minPrice": {
+                          "NM": 0.02
+                        },
+                        "avgPrice": {
+                          "NM": 0.02
+                        },
+                        "medianPrice": {
+                          "NM": 0.02
+                        },
+                        "maxPrice": {
+                          "NM": 0.02
+                        },
+                        "availableCount": {
+                          "NM": 1.0
+                        },
+                        "recommendedPrice": {
+                          "NM": 0.02
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-004",
+              "name": "Vipélierre",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877416,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Snivy-POR004",
+                  "prices": {
+                    "es": {
+                      "ES": {
+                        "currency": "EUR",
+                        "minPrice": {
+                          "NM": 0.02
+                        },
+                        "avgPrice": {
+                          "NM": 0.02
+                        },
+                        "medianPrice": {
+                          "NM": 0.02
+                        },
+                        "maxPrice": {
+                          "NM": 0.02
+                        },
+                        "availableCount": {
+                          "NM": 1.0
+                        },
+                        "recommendedPrice": {
+                          "NM": 0.02
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-005",
+              "name": "Lianaja",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877417,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Servine-POR005",
+                  "prices": {
+                    "es": {
+                      "ES": {
+                        "currency": "EUR",
+                        "minPrice": {
+                          "NM": 0.02
+                        },
+                        "avgPrice": {
+                          "NM": 0.02
+                        },
+                        "medianPrice": {
+                          "NM": 0.02
+                        },
+                        "maxPrice": {
+                          "NM": 0.02
+                        },
+                        "availableCount": {
+                          "NM": 1.0
+                        },
+                        "recommendedPrice": {
+                          "NM": 0.02
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-006",
+              "name": "Majaspic",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877418,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Serperior-POR006",
+                  "prices": {
+                    "es": {
+                      "ES": {
+                        "currency": "EUR",
+                        "minPrice": {
+                          "NM": 0.02
+                        },
+                        "avgPrice": {
+                          "NM": 0.02
+                        },
+                        "medianPrice": {
+                          "NM": 0.02
+                        },
+                        "maxPrice": {
+                          "NM": 0.02
+                        },
+                        "availableCount": {
+                          "NM": 4.0
+                        },
+                        "recommendedPrice": {
+                          "NM": 0.02
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-007",
+              "name": "Lépidonille",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877419,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Scatterbug-POR007",
+                  "prices": {}
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-008",
+              "name": "Pérégrain",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877420,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Spewpa-V1-POR008",
+                  "prices": {
+                    "es": {
+                      "ES": {
+                        "currency": "EUR",
+                        "minPrice": {
+                          "NM": 0.02
+                        },
+                        "avgPrice": {
+                          "NM": 0.02
+                        },
+                        "medianPrice": {
+                          "NM": 0.02
+                        },
+                        "maxPrice": {
+                          "NM": 0.02
+                        },
+                        "availableCount": {
+                          "NM": 2.0
+                        },
+                        "recommendedPrice": {
+                          "NM": 0.02
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-009",
+              "name": "Prismillon",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877421,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Vivillon-POR009",
+                  "prices": {
+                    "es": {
+                      "ES": {
+                        "currency": "EUR",
+                        "minPrice": {
+                          "NM": 0.02
+                        },
+                        "avgPrice": {
+                          "NM": 0.02
+                        },
+                        "medianPrice": {
+                          "NM": 0.02
+                        },
+                        "maxPrice": {
+                          "NM": 0.02
+                        },
+                        "availableCount": {
+                          "NM": 2.0
+                        },
+                        "recommendedPrice": {
+                          "NM": 0.02
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-010",
+              "name": "Brindibou",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877422,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Rowlet-V1-POR010",
+                  "prices": {
+                    "es": {
+                      "ES": {
+                        "currency": "EUR",
+                        "minPrice": {
+                          "NM": 0.02
+                        },
+                        "avgPrice": {
+                          "NM": 0.02
+                        },
+                        "medianPrice": {
+                          "NM": 0.02
+                        },
+                        "maxPrice": {
+                          "NM": 0.02
+                        },
+                        "availableCount": {
+                          "NM": 1.0
+                        },
+                        "recommendedPrice": {
+                          "NM": 0.02
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-011",
+              "name": "Efflèche",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877423,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Dartrix-POR011",
+                  "prices": {
+                    "es": {
+                      "ES": {
+                        "currency": "EUR",
+                        "minPrice": {
+                          "NM": 0.02
+                        },
+                        "avgPrice": {
+                          "NM": 0.02
+                        },
+                        "medianPrice": {
+                          "NM": 0.02
+                        },
+                        "maxPrice": {
+                          "NM": 0.02
+                        },
+                        "availableCount": {
+                          "NM": 3.0
+                        },
+                        "recommendedPrice": {
+                          "NM": 0.02
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-012",
+              "name": "Archéduc ex",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877424,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Decidueye-ex-V1-POR012",
+                  "prices": {}
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-013",
+              "name": "Braisillon",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877425,
+                  "label": [
+                    "Vie Base",
+                    "Drea",
+                    "Cone Petemee Nenees Cntr Can Rena"
+                  ],
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Fletchinder-POR013",
+                  "prices": {
+                    "es": {
+                      "ES": {
+                        "currency": "EUR",
+                        "minPrice": {
+                          "NM": 0.02
+                        },
+                        "avgPrice": {
+                          "NM": 0.02
+                        },
+                        "medianPrice": {
+                          "NM": 0.02
+                        },
+                        "maxPrice": {
+                          "NM": 0.02
+                        },
+                        "availableCount": {
+                          "NM": 2.0
+                        },
+                        "recommendedPrice": {
+                          "NM": 0.02
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-014",
+              "name": "Flambusard",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877426,
+                  "label": [
+                    "02 014/058 $"
+                  ],
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Talonflame-V1-POR014",
+                  "prices": {
+                    "es": {
+                      "ES": {
+                        "currency": "EUR",
+                        "minPrice": {
+                          "NM": 0.02
+                        },
+                        "avgPrice": {
+                          "NM": 0.02
+                        },
+                        "medianPrice": {
+                          "NM": 0.02
+                        },
+                        "maxPrice": {
+                          "NM": 0.02
+                        },
+                        "availableCount": {
+                          "NM": 1.0
+                        },
+                        "recommendedPrice": {
+                          "NM": 0.02
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-015",
+              "name": "Tritox",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877427,
+                  "label": [
+                    "Sarat"
+                  ],
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Salandit-POR015",
+                  "prices": {}
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-016",
+              "name": "Malamandre ex",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877428,
+                  "label": [
+                    "Porcmon"
+                  ],
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Salazzle-ex-V1-POR016",
+                  "prices": {}
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-017",
+              "name": "Boumata",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877429,
+                  "label": [
+                    "ore Al",
+                    "Ory",
+                    "Ates"
+                  ],
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Turtonator-POR017",
+                  "prices": {
+                    "es": {
+                      "ES": {
+                        "currency": "EUR",
+                        "minPrice": {
+                          "NM": 0.02
+                        },
+                        "avgPrice": {
+                          "NM": 0.02
+                        },
+                        "medianPrice": {
+                          "NM": 0.02
+                        },
+                        "maxPrice": {
+                          "NM": 0.02
+                        },
+                        "availableCount": {
+                          "NM": 1.0
+                        },
+                        "recommendedPrice": {
+                          "NM": 0.02
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-018",
+              "name": "Otaria",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877430,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Seel-POR018",
+                  "prices": {
+                    "es": {
+                      "ES": {
+                        "currency": "EUR",
+                        "minPrice": {
+                          "NM": 0.02
+                        },
+                        "avgPrice": {
+                          "NM": 0.02
+                        },
+                        "medianPrice": {
+                          "NM": 0.02
+                        },
+                        "maxPrice": {
+                          "NM": 0.02
+                        },
+                        "availableCount": {
+                          "NM": 2.0
+                        },
+                        "recommendedPrice": {
+                          "NM": 0.02
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-019",
+              "name": "Dewgong",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877431,
+                  "label": [
+                    "Wave Spla"
+                  ],
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Dewgong-POR019",
+                  "prices": {
+                    "es": {
+                      "ES": {
+                        "currency": "EUR",
+                        "minPrice": {
+                          "NM": 0.02
+                        },
+                        "avgPrice": {
+                          "NM": 0.02
+                        },
+                        "medianPrice": {
+                          "NM": 0.02
+                        },
+                        "maxPrice": {
+                          "NM": 0.02
+                        },
+                        "availableCount": {
+                          "NM": 2.0
+                        },
+                        "recommendedPrice": {
+                          "NM": 0.02
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-020",
+              "name": "Stari",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877432,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Staryu-POR020",
+                  "prices": {
+                    "es": {
+                      "ES": {
+                        "currency": "EUR",
+                        "minPrice": {
+                          "NM": 0.02
+                        },
+                        "avgPrice": {
+                          "NM": 0.02
+                        },
+                        "medianPrice": {
+                          "NM": 0.02
+                        },
+                        "maxPrice": {
+                          "NM": 0.02
+                        },
+                        "availableCount": {
+                          "NM": 1.0
+                        },
+                        "recommendedPrice": {
+                          "NM": 0.02
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-021",
+              "name": "Mega Staross ex",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877433,
+                  "label": [
+                    "Nebula Beam"
+                  ],
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Mega-Starmie-ex-V1-POR021",
+                  "prices": {}
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-022",
+              "name": "Lokhlass ex",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877434,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Lapras-ex-POR022",
+                  "prices": {}
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-023",
+              "name": "Amagara",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877435,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Amaura-POR023",
+                  "prices": {
+                    "es": {
+                      "ES": {
+                        "currency": "EUR",
+                        "minPrice": {
+                          "NM": 0.02
+                        },
+                        "avgPrice": {
+                          "NM": 0.02
+                        },
+                        "medianPrice": {
+                          "NM": 0.02
+                        },
+                        "maxPrice": {
+                          "NM": 0.02
+                        },
+                        "availableCount": {
+                          "NM": 2.0
+                        },
+                        "recommendedPrice": {
+                          "NM": 0.02
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-024",
+              "name": "Dragmara",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877437,
+                  "label": [
+                    "Freezing Chill"
+                  ],
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Aurorus-V1-POR024",
+                  "prices": {}
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-025",
+              "name": "Volcanion",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877438,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Volcanion-POR025",
+                  "prices": {}
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-026",
+              "name": "Lixy",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877439,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Shinx-POR026",
+                  "prices": {
+                    "es": {
+                      "ES": {
+                        "currency": "EUR",
+                        "minPrice": {
+                          "NM": 0.02
+                        },
+                        "avgPrice": {
+                          "NM": 0.02
+                        },
+                        "medianPrice": {
+                          "NM": 0.02
+                        },
+                        "maxPrice": {
+                          "NM": 0.02
+                        },
+                        "availableCount": {
+                          "NM": 2.0
+                        },
+                        "recommendedPrice": {
+                          "NM": 0.02
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-027",
+              "name": "Luxio",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877440,
+                  "label": [
+                    "Static Shock"
+                  ],
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Luxio-POR027",
+                  "prices": {
+                    "es": {
+                      "ES": {
+                        "currency": "EUR",
+                        "minPrice": {
+                          "NM": 0.02
+                        },
+                        "avgPrice": {
+                          "NM": 0.02
+                        },
+                        "medianPrice": {
+                          "NM": 0.02
+                        },
+                        "maxPrice": {
+                          "NM": 0.02
+                        },
+                        "availableCount": {
+                          "NM": 1.0
+                        },
+                        "recommendedPrice": {
+                          "NM": 0.02
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-028",
+              "name": "Luxray",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877441,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Luxray-POR028",
+                  "prices": {
+                    "es": {
+                      "ES": {
+                        "currency": "EUR",
+                        "minPrice": {
+                          "NM": 0.02
+                        },
+                        "avgPrice": {
+                          "NM": 0.02
+                        },
+                        "medianPrice": {
+                          "NM": 0.02
+                        },
+                        "maxPrice": {
+                          "NM": 0.02
+                        },
+                        "availableCount": {
+                          "NM": 2.0
+                        },
+                        "recommendedPrice": {
+                          "NM": 0.02
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-029",
+              "name": "Dedenne",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877442,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Dedenne-V1-POR029",
+                  "prices": {}
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-030",
+              "name": "Mélofée",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877444,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Clefairy-V1-POR030",
+                  "prices": {
+                    "es": {
+                      "ES": {
+                        "currency": "EUR",
+                        "minPrice": {
+                          "NM": 0.02
+                        },
+                        "avgPrice": {
+                          "NM": 0.02
+                        },
+                        "medianPrice": {
+                          "NM": 0.02
+                        },
+                        "maxPrice": {
+                          "NM": 0.02
+                        },
+                        "availableCount": {
+                          "NM": 3.0
+                        },
+                        "recommendedPrice": {
+                          "NM": 0.02
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-031",
+              "name": "Mega Mélodelfe ex",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877445,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Mega-Clefable-ex-V1-POR031",
+                  "prices": {}
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-032",
+              "name": "Mysdibule",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877446,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Mawile-POR032",
+                  "prices": {
+                    "es": {
+                      "ES": {
+                        "currency": "EUR",
+                        "minPrice": {
+                          "NM": 0.02
+                        },
+                        "avgPrice": {
+                          "NM": 0.02
+                        },
+                        "medianPrice": {
+                          "NM": 0.02
+                        },
+                        "maxPrice": {
+                          "NM": 0.02
+                        },
+                        "availableCount": {
+                          "NM": 2.0
+                        },
+                        "recommendedPrice": {
+                          "NM": 0.02
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-033",
+              "name": "Psystigri",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877447,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Espurr-V1-POR033",
+                  "prices": {
+                    "es": {
+                      "ES": {
+                        "currency": "EUR",
+                        "minPrice": {
+                          "NM": 0.02
+                        },
+                        "avgPrice": {
+                          "NM": 0.02
+                        },
+                        "medianPrice": {
+                          "NM": 0.02
+                        },
+                        "maxPrice": {
+                          "NM": 0.02
+                        },
+                        "availableCount": {
+                          "NM": 1.0
+                        },
+                        "recommendedPrice": {
+                          "NM": 0.02
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-034",
+              "name": "Mistigrix",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877448,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Meowstic-POR034",
+                  "prices": {
+                    "es": {
+                      "ES": {
+                        "currency": "EUR",
+                        "minPrice": {
+                          "NM": 0.02
+                        },
+                        "avgPrice": {
+                          "NM": 0.02
+                        },
+                        "medianPrice": {
+                          "NM": 0.02
+                        },
+                        "maxPrice": {
+                          "NM": 0.02
+                        },
+                        "availableCount": {
+                          "NM": 1.0
+                        },
+                        "recommendedPrice": {
+                          "NM": 0.02
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-035",
+              "name": "Fluvetin",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877449,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Spritzee-POR035",
+                  "prices": {
+                    "es": {
+                      "ES": {
+                        "currency": "EUR",
+                        "minPrice": {
+                          "NM": 0.02
+                        },
+                        "avgPrice": {
+                          "NM": 0.02
+                        },
+                        "medianPrice": {
+                          "NM": 0.02
+                        },
+                        "maxPrice": {
+                          "NM": 0.02
+                        },
+                        "availableCount": {
+                          "NM": 2.0
+                        },
+                        "recommendedPrice": {
+                          "NM": 0.02
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-036",
+              "name": "Cocotine",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877450,
+                  "label": [
+                    "Draining Kiss"
+                  ],
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Aromatisse-POR036",
+                  "prices": {
+                    "es": {
+                      "ES": {
+                        "currency": "EUR",
+                        "minPrice": {
+                          "NM": 0.02
+                        },
+                        "avgPrice": {
+                          "NM": 0.02
+                        },
+                        "medianPrice": {
+                          "NM": 0.02
+                        },
+                        "maxPrice": {
+                          "NM": 0.02
+                        },
+                        "availableCount": {
+                          "NM": 1.0
+                        },
+                        "recommendedPrice": {
+                          "NM": 0.02
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-037",
+              "name": "Tarinor",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877451,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Nosepass-POR037",
+                  "prices": {}
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-038",
+              "name": "Tarinorme",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877452,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Probopass-V1-POR038",
+                  "prices": {
+                    "es": {
+                      "ES": {
+                        "currency": "EUR",
+                        "minPrice": {
+                          "NM": 0.02
+                        },
+                        "avgPrice": {
+                          "NM": 0.02
+                        },
+                        "medianPrice": {
+                          "NM": 0.02
+                        },
+                        "maxPrice": {
+                          "NM": 0.02
+                        },
+                        "availableCount": {
+                          "NM": 1.0
+                        },
+                        "recommendedPrice": {
+                          "NM": 0.02
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-039",
+              "name": "Hippopotas",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877453,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Hippopotas-POR039",
+                  "prices": {
+                    "es": {
+                      "ES": {
+                        "currency": "EUR",
+                        "minPrice": {
+                          "NM": 0.02
+                        },
+                        "avgPrice": {
+                          "NM": 0.02
+                        },
+                        "medianPrice": {
+                          "NM": 0.02
+                        },
+                        "maxPrice": {
+                          "NM": 0.02
+                        },
+                        "availableCount": {
+                          "NM": 1.0
+                        },
+                        "recommendedPrice": {
+                          "NM": 0.02
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-040",
+              "name": "Hippodocus",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877454,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Hippowdon-POR040",
+                  "prices": {
+                    "es": {
+                      "ES": {
+                        "currency": "EUR",
+                        "minPrice": {
+                          "NM": 0.02
+                        },
+                        "avgPrice": {
+                          "NM": 0.02
+                        },
+                        "medianPrice": {
+                          "NM": 0.02
+                        },
+                        "maxPrice": {
+                          "NM": 0.02
+                        },
+                        "availableCount": {
+                          "NM": 1.0
+                        },
+                        "recommendedPrice": {
+                          "NM": 0.02
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-041",
+              "name": "Démétéros",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877455,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Landorus-POR041",
+                  "prices": {
+                    "es": {
+                      "ES": {
+                        "currency": "EUR",
+                        "minPrice": {
+                          "NM": 0.02
+                        },
+                        "avgPrice": {
+                          "NM": 0.02
+                        },
+                        "medianPrice": {
+                          "NM": 0.02
+                        },
+                        "maxPrice": {
+                          "NM": 0.02
+                        },
+                        "availableCount": {
+                          "NM": 5.0
+                        },
+                        "recommendedPrice": {
+                          "NM": 0.02
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-042",
+              "name": "Opermine",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877456,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Binacle-POR042",
+                  "prices": {
+                    "es": {
+                      "ES": {
+                        "currency": "EUR",
+                        "minPrice": {
+                          "NM": 0.02
+                        },
+                        "avgPrice": {
+                          "NM": 0.02
+                        },
+                        "medianPrice": {
+                          "NM": 0.02
+                        },
+                        "maxPrice": {
+                          "NM": 0.02
+                        },
+                        "availableCount": {
+                          "NM": 3.0
+                        },
+                        "recommendedPrice": {
+                          "NM": 0.02
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-043",
+              "name": "Golgopathe",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877457,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Barbaracle-POR043",
+                  "prices": {
+                    "es": {
+                      "ES": {
+                        "currency": "EUR",
+                        "minPrice": {
+                          "NM": 0.02
+                        },
+                        "avgPrice": {
+                          "NM": 0.02
+                        },
+                        "medianPrice": {
+                          "NM": 0.02
+                        },
+                        "maxPrice": {
+                          "NM": 0.02
+                        },
+                        "availableCount": {
+                          "NM": 1.0
+                        },
+                        "recommendedPrice": {
+                          "NM": 0.02
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-044",
+              "name": "Ptyranidur",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877458,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Tyrunt-POR044",
+                  "prices": {
+                    "es": {
+                      "ES": {
+                        "currency": "EUR",
+                        "minPrice": {
+                          "NM": 0.02
+                        },
+                        "avgPrice": {
+                          "NM": 0.02
+                        },
+                        "medianPrice": {
+                          "NM": 0.02
+                        },
+                        "maxPrice": {
+                          "NM": 0.02
+                        },
+                        "availableCount": {
+                          "NM": 1.0
+                        },
+                        "recommendedPrice": {
+                          "NM": 0.02
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-045",
+              "name": "Rexillius",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877459,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Tyrantrum-POR045",
+                  "prices": {
+                    "es": {
+                      "ES": {
+                        "currency": "EUR",
+                        "minPrice": {
+                          "NM": 0.02
+                        },
+                        "avgPrice": {
+                          "NM": 0.02
+                        },
+                        "medianPrice": {
+                          "NM": 0.02
+                        },
+                        "maxPrice": {
+                          "NM": 0.02
+                        },
+                        "availableCount": {
+                          "NM": 2.0
+                        },
+                        "recommendedPrice": {
+                          "NM": 0.02
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-046",
+              "name": "Brutalibré",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877460,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Hawlucha-POR046",
+                  "prices": {
+                    "es": {
+                      "ES": {
+                        "currency": "EUR",
+                        "minPrice": {
+                          "NM": 0.02
+                        },
+                        "avgPrice": {
+                          "NM": 0.02
+                        },
+                        "medianPrice": {
+                          "NM": 0.02
+                        },
+                        "maxPrice": {
+                          "NM": 0.02
+                        },
+                        "availableCount": {
+                          "NM": 1.0
+                        },
+                        "recommendedPrice": {
+                          "NM": 0.02
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-047",
+              "name": "Mega Zygarde ex",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877461,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Mega-Zygarde-ex-V1-POR047",
+                  "prices": {}
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-048",
+              "name": "Fantominus",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877463,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Gastly-POR048",
+                  "prices": {
+                    "es": {
+                      "ES": {
+                        "currency": "EUR",
+                        "minPrice": {
+                          "NM": 0.02
+                        },
+                        "avgPrice": {
+                          "NM": 0.02
+                        },
+                        "medianPrice": {
+                          "NM": 0.02
+                        },
+                        "maxPrice": {
+                          "NM": 0.02
+                        },
+                        "availableCount": {
+                          "NM": 2.0
+                        },
+                        "recommendedPrice": {
+                          "NM": 0.02
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-049",
+              "name": "Spectrum",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877464,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Haunter-POR049",
+                  "prices": {
+                    "es": {
+                      "ES": {
+                        "currency": "EUR",
+                        "minPrice": {
+                          "NM": 0.02
+                        },
+                        "avgPrice": {
+                          "NM": 0.02
+                        },
+                        "medianPrice": {
+                          "NM": 0.02
+                        },
+                        "maxPrice": {
+                          "NM": 0.02
+                        },
+                        "availableCount": {
+                          "NM": 3.0
+                        },
+                        "recommendedPrice": {
+                          "NM": 0.02
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-050",
+              "name": "Ectoplasma",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877465,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Gengar-POR050",
+                  "prices": {
+                    "es": {
+                      "ES": {
+                        "currency": "EUR",
+                        "minPrice": {
+                          "NM": 0.05
+                        },
+                        "avgPrice": {
+                          "NM": 0.05
+                        },
+                        "medianPrice": {
+                          "NM": 0.05
+                        },
+                        "maxPrice": {
+                          "NM": 0.05
+                        },
+                        "availableCount": {
+                          "NM": 3.0
+                        },
+                        "recommendedPrice": {
+                          "NM": 0.05
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-051",
+              "name": "Rapion",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877467,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Skorupi-POR051",
+                  "prices": {
+                    "es": {
+                      "ES": {
+                        "currency": "EUR",
+                        "minPrice": {
+                          "NM": 0.02
+                        },
+                        "avgPrice": {
+                          "NM": 0.02
+                        },
+                        "medianPrice": {
+                          "NM": 0.02
+                        },
+                        "maxPrice": {
+                          "NM": 0.02
+                        },
+                        "availableCount": {
+                          "NM": 1.0
+                        },
+                        "recommendedPrice": {
+                          "NM": 0.02
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-052",
+              "name": "Drascore",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877468,
+                  "label": [
+                    "Hazardous Tail",
+                    "damaec"
+                  ],
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Drapion-V1-POR052",
+                  "prices": {}
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-053",
+              "name": "Yveltal ex",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877469,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Yveltal-ex-V1-POR053",
+                  "prices": {}
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-054",
+              "name": "Baojian",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877470,
+                  "label": [
+                    "Rising Blade"
+                  ],
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Chien-Pao-POR054",
+                  "prices": {
+                    "es": {
+                      "ES": {
+                        "currency": "EUR",
+                        "minPrice": {
+                          "NM": 0.02
+                        },
+                        "avgPrice": {
+                          "NM": 0.02
+                        },
+                        "medianPrice": {
+                          "NM": 0.02
+                        },
+                        "maxPrice": {
+                          "NM": 0.02
+                        },
+                        "availableCount": {
+                          "NM": 3.0
+                        },
+                        "recommendedPrice": {
+                          "NM": 0.02
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-055",
+              "name": "Mega Airmure ex",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877471,
+                  "label": [],
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Mega-Skarmory-ex-V1-POR055",
+                  "prices": {}
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-056",
+              "name": "Monorpale",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877472,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Honedge-POR056",
+                  "prices": {
+                    "es": {
+                      "ES": {
+                        "currency": "EUR",
+                        "minPrice": {
+                          "NM": 0.02
+                        },
+                        "avgPrice": {
+                          "NM": 0.02
+                        },
+                        "medianPrice": {
+                          "NM": 0.02
+                        },
+                        "maxPrice": {
+                          "NM": 0.02
+                        },
+                        "availableCount": {
+                          "NM": 1.0
+                        },
+                        "recommendedPrice": {
+                          "NM": 0.02
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-057",
+              "name": "Dimoclès",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877473,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Doublade-V1-POR057",
+                  "prices": {
+                    "es": {
+                      "ES": {
+                        "currency": "EUR",
+                        "minPrice": {
+                          "NM": 0.02
+                        },
+                        "avgPrice": {
+                          "NM": 0.02
+                        },
+                        "medianPrice": {
+                          "NM": 0.02
+                        },
+                        "maxPrice": {
+                          "NM": 0.02
+                        },
+                        "availableCount": {
+                          "NM": 1.0
+                        },
+                        "recommendedPrice": {
+                          "NM": 0.02
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-058",
+              "name": "Exagide",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877474,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Aegislash-POR058",
+                  "prices": {}
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-059",
+              "name": "Trousselin",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877475,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Klefki-POR059",
+                  "prices": {
+                    "es": {
+                      "ES": {
+                        "currency": "EUR",
+                        "minPrice": {
+                          "NM": 0.02
+                        },
+                        "avgPrice": {
+                          "NM": 0.02
+                        },
+                        "medianPrice": {
+                          "NM": 0.02
+                        },
+                        "maxPrice": {
+                          "NM": 0.02
+                        },
+                        "availableCount": {
+                          "NM": 1.0
+                        },
+                        "recommendedPrice": {
+                          "NM": 0.02
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-060",
+              "name": "Rattata",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877476,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Rattata-POR060",
+                  "prices": {
+                    "es": {
+                      "ES": {
+                        "currency": "EUR",
+                        "minPrice": {
+                          "NM": 0.02
+                        },
+                        "avgPrice": {
+                          "NM": 0.02
+                        },
+                        "medianPrice": {
+                          "NM": 0.02
+                        },
+                        "maxPrice": {
+                          "NM": 0.02
+                        },
+                        "availableCount": {
+                          "NM": 2.0
+                        },
+                        "recommendedPrice": {
+                          "NM": 0.02
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-061",
+              "name": "Rattatac",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877477,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Raticate-V1-POR061",
+                  "prices": {
+                    "es": {
+                      "ES": {
+                        "currency": "EUR",
+                        "minPrice": {
+                          "NM": 0.02
+                        },
+                        "avgPrice": {
+                          "NM": 0.02
+                        },
+                        "medianPrice": {
+                          "NM": 0.02
+                        },
+                        "maxPrice": {
+                          "NM": 0.02
+                        },
+                        "availableCount": {
+                          "NM": 1.0
+                        },
+                        "recommendedPrice": {
+                          "NM": 0.02
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-062",
+              "name": "Miaouss ex",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877478,
+                  "label": [
+                    "Revit",
+                    "Pon Grapher",
+                    "Oszsoss"
+                  ],
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Meowth-ex-V1-POR062",
+                  "prices": {
+                    "es": {
+                      "ES": {
+                        "currency": "EUR",
+                        "minPrice": {
+                          "NM": 9.0
+                        },
+                        "avgPrice": {
+                          "NM": 9.0
+                        },
+                        "medianPrice": {
+                          "NM": 9.0
+                        },
+                        "maxPrice": {
+                          "NM": 9.0
+                        },
+                        "availableCount": {
+                          "NM": 1.0
+                        },
+                        "recommendedPrice": {
+                          "NM": 9.0
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-063",
+              "name": "Ronflex",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877479,
+                  "label": [
+                    "Collapse"
+                  ],
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Snorlax-POR063",
+                  "prices": {
+                    "es": {
+                      "ES": {
+                        "currency": "EUR",
+                        "minPrice": {
+                          "NM": 0.02
+                        },
+                        "avgPrice": {
+                          "NM": 0.02
+                        },
+                        "medianPrice": {
+                          "NM": 0.02
+                        },
+                        "maxPrice": {
+                          "NM": 0.02
+                        },
+                        "availableCount": {
+                          "NM": 1.0
+                        },
+                        "recommendedPrice": {
+                          "NM": 0.02
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-064",
+              "name": "Sapereau",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877480,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Bunnelby-POR064",
+                  "prices": {
+                    "es": {
+                      "ES": {
+                        "currency": "EUR",
+                        "minPrice": {
+                          "NM": 0.02
+                        },
+                        "avgPrice": {
+                          "NM": 0.02
+                        },
+                        "medianPrice": {
+                          "NM": 0.02
+                        },
+                        "maxPrice": {
+                          "NM": 0.02
+                        },
+                        "availableCount": {
+                          "NM": 1.0
+                        },
+                        "recommendedPrice": {
+                          "NM": 0.02
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-065",
+              "name": "Excavarenne",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877481,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Diggersby-POR065",
+                  "prices": {
+                    "es": {
+                      "ES": {
+                        "currency": "EUR",
+                        "minPrice": {
+                          "NM": 0.02
+                        },
+                        "avgPrice": {
+                          "NM": 0.02
+                        },
+                        "medianPrice": {
+                          "NM": 0.02
+                        },
+                        "maxPrice": {
+                          "NM": 0.02
+                        },
+                        "availableCount": {
+                          "NM": 1.0
+                        },
+                        "recommendedPrice": {
+                          "NM": 0.02
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-066",
+              "name": "Passerouge",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877482,
+                  "label": [
+                    "Your Deck Pokmon With Resistance",
+                    "Pal Chem And Put Them Into Your Hand Then Shuffle",
+                    "Deck"
+                  ],
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Fletchling-POR066",
+                  "prices": {
+                    "es": {
+                      "ES": {
+                        "currency": "EUR",
+                        "minPrice": {
+                          "NM": 0.02
+                        },
+                        "avgPrice": {
+                          "NM": 0.02
+                        },
+                        "medianPrice": {
+                          "NM": 0.02
+                        },
+                        "maxPrice": {
+                          "NM": 0.02
+                        },
+                        "availableCount": {
+                          "NM": 2.0
+                        },
+                        "recommendedPrice": {
+                          "NM": 0.02
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-067",
+              "name": "Couafarel",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877483,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Furfrou-POR067",
+                  "prices": {
+                    "es": {
+                      "ES": {
+                        "currency": "EUR",
+                        "minPrice": {
+                          "NM": 0.02
+                        },
+                        "avgPrice": {
+                          "NM": 0.02
+                        },
+                        "medianPrice": {
+                          "NM": 0.02
+                        },
+                        "maxPrice": {
+                          "NM": 0.02
+                        },
+                        "availableCount": {
+                          "NM": 1.0
+                        },
+                        "recommendedPrice": {
+                          "NM": 0.02
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-068",
+              "name": "Antique Jaw Fossil",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877484,
+                  "label": [
+                    "Atu Odasma",
+                    "Soni Seaemeeaaanaanneen",
+                    "gets Ccs Oss",
+                    "Doris Peewee Ererte Creo Can Moea"
+                  ],
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Antique-Jaw-Fossil-POR068",
+                  "prices": {
+                    "es": {
+                      "ES": {
+                        "currency": "EUR",
+                        "minPrice": {
+                          "NM": 0.02
+                        },
+                        "avgPrice": {
+                          "NM": 0.02
+                        },
+                        "medianPrice": {
+                          "NM": 0.02
+                        },
+                        "maxPrice": {
+                          "NM": 0.02
+                        },
+                        "availableCount": {
+                          "NM": 3.0
+                        },
+                        "recommendedPrice": {
+                          "NM": 0.02
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-069",
+              "name": "Antique Sail Fossil",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877485,
+                  "label": [
+                    "You May Play Any Number Of Kem Car",
+                    "Eta 069088 Pa Atelier",
+                    "O00 Petes Temnenes Crvanrens Gab Peta"
+                  ],
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Antique-Sail-Fossil-POR069",
+                  "prices": {}
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-070",
+              "name": "Core Memory",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877486,
+                  "label": [
+                    "Goa Any Of To Your",
+                    "During Your Ara You Much Only",
+                    "Oet Pos Denon Tool A Exch Avd"
+                  ],
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Core-Memory-POR070",
+                  "prices": {}
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-071",
+              "name": "Maillet Écrasant",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877487,
+                  "label": [
+                    "02"
+                  ],
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Crushing-Hammer-POR071",
+                  "prices": {}
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-072",
+              "name": "Recherche d'Énergie",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877488,
+                  "label": [
+                    "Boye Beck",
+                    "Qos Ovao88",
+                    "Oven Tomes Wonente Crmenran Ghat Ped"
+                  ],
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Energy-Search-POR072",
+                  "prices": {}
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-073",
+              "name": "Energy Swatter",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877489,
+                  "label": [
+                    "You Number Of Kem",
+                    "Beach",
+                    "Ped"
+                  ],
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Energy-Swatter-POR073",
+                  "prices": {
+                    "es": {
+                      "ES": {
+                        "currency": "EUR",
+                        "minPrice": {
+                          "NM": 0.02
+                        },
+                        "avgPrice": {
+                          "NM": 0.02
+                        },
+                        "medianPrice": {
+                          "NM": 0.02
+                        },
+                        "maxPrice": {
+                          "NM": 0.02
+                        },
+                        "availableCount": {
+                          "NM": 1.0
+                        },
+                        "recommendedPrice": {
+                          "NM": 0.02
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-074",
+              "name": "Digging Shovel",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877490,
+                  "label": [
+                    "Pox Oj 074088",
+                    "Curie Etemee Erences Conve Can Polar"
+                  ],
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Digging-Shovel-POR074",
+                  "prices": {
+                    "es": {
+                      "ES": {
+                        "currency": "EUR",
+                        "minPrice": {
+                          "NM": 0.02
+                        },
+                        "avgPrice": {
+                          "NM": 0.02
+                        },
+                        "medianPrice": {
+                          "NM": 0.02
+                        },
+                        "maxPrice": {
+                          "NM": 0.02
+                        },
+                        "availableCount": {
+                          "NM": 1.0
+                        },
+                        "recommendedPrice": {
+                          "NM": 0.02
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-075",
+              "name": "Violine",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877492,
+                  "label": [
+                    "Seeeew Morro",
+                    "Geets O7soss",
+                    "Cure Peter Eters Cnr Cant Fate"
+                  ],
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Jacinthe-V1-POR075",
+                  "prices": {
+                    "es": {
+                      "ES": {
+                        "currency": "EUR",
+                        "minPrice": {
+                          "NM": 0.02
+                        },
+                        "avgPrice": {
+                          "NM": 0.02
+                        },
+                        "medianPrice": {
+                          "NM": 0.02
+                        },
+                        "maxPrice": {
+                          "NM": 0.02
+                        },
+                        "availableCount": {
+                          "NM": 1.0
+                        },
+                        "recommendedPrice": {
+                          "NM": 0.02
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-076",
+              "name": "Juge",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877493,
+                  "label": [
+                    "You Muy Play Only Supporter Card During",
+                    "Deed Crercee",
+                    "qurne Ptaeen Temtenes vanes Gti Bel"
+                  ],
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Judge-POR076",
+                  "prices": {}
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-077",
+              "name": "Illumis",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877494,
+                  "label": [
+                    "you Puy Play Only Sends Rd Goring Your",
+                    "Madina Ommerere",
+                    "Curie Rete Eters Cntr Cae Renee"
+                  ],
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Lumiose-City-V1-POR077",
+                  "prices": {
+                    "es": {
+                      "ES": {
+                        "currency": "EUR",
+                        "minPrice": {
+                          "NM": 0.02
+                        },
+                        "avgPrice": {
+                          "NM": 0.02
+                        },
+                        "medianPrice": {
+                          "NM": 0.02
+                        },
+                        "maxPrice": {
+                          "NM": 0.02
+                        },
+                        "availableCount": {
+                          "NM": 2.0
+                        },
+                        "recommendedPrice": {
+                          "NM": 0.02
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-078",
+              "name": "Lumiose Galette",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877495,
+                  "label": [
+                    "Play Any Number Of Kem",
+                    "Shan Oreghia",
+                    "Ged Ovarces",
+                    "Cone Pehooren Tenes Cnr Ghat Pa"
+                  ],
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Lumiose-Galette-POR078",
+                  "prices": {}
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-079",
+              "name": "Inno",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877496,
+                  "label": [
+                    "Supporter Card During"
+                  ],
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Naveen-V1-POR079",
+                  "prices": {}
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-080",
+              "name": "Poké Ball",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877497,
+                  "label": [
+                    "You Muy Play Any Number Of Kem Care",
+                    "Your Turn",
+                    "Oman"
+                  ],
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Poke-Ball-POR080",
+                  "prices": {}
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-081",
+              "name": "Poké Registre",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877498,
+                  "label": [
+                    "Of Kem C",
+                    "You Muy Play Any Number",
+                    "Foe Ae",
+                    "Oven Peaoman Teens Mare Ghar Pupae"
+                  ],
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Poke-Pad-V1-POR081",
+                  "prices": {}
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-082",
+              "name": "Attrape-Pokémon",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877499,
+                  "label": [
+                    "02"
+                  ],
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Pokemon-Catcher-POR082",
+                  "prices": {
+                    "es": {
+                      "ES": {
+                        "currency": "EUR",
+                        "minPrice": {
+                          "NM": 0.02
+                        },
+                        "avgPrice": {
+                          "NM": 0.02
+                        },
+                        "medianPrice": {
+                          "NM": 0.02
+                        },
+                        "maxPrice": {
+                          "NM": 0.02
+                        },
+                        "availableCount": {
+                          "NM": 2.0
+                        },
+                        "recommendedPrice": {
+                          "NM": 0.02
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-083",
+              "name": "Potion",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877500,
+                  "label": [
+                    "02"
+                  ],
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Potion-POR083",
+                  "prices": {
+                    "es": {
+                      "ES": {
+                        "currency": "EUR",
+                        "minPrice": {
+                          "NM": 0.02
+                        },
+                        "avgPrice": {
+                          "NM": 0.02
+                        },
+                        "medianPrice": {
+                          "NM": 0.02
+                        },
+                        "maxPrice": {
+                          "NM": 0.02
+                        },
+                        "availableCount": {
+                          "NM": 1.0
+                        },
+                        "recommendedPrice": {
+                          "NM": 0.02
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-084",
+              "name": "Rosa's Encouragement",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877501,
+                  "label": [
+                    "Nty T Supporter Card During"
+                  ],
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Rosas-Encouragement-V1-POR084",
+                  "prices": {}
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-085",
+              "name": "Taragon",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877502,
+                  "label": [
+                    "You May Play Only T Supporcer Card",
+                    "Pete Ai Kemrpene",
+                    "Fon Cessoss",
+                    "G08 Petes Teenie Wanes Gabe Peas"
+                  ],
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Tarragon-V1-POR085",
+                  "prices": {}
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-086",
+              "name": "Grow [G] Energy",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877503,
+                  "label": [
+                    "Oed",
+                    "Ooeross",
+                    "Preteen Trmnente Orman Ren Cane Poe"
+                  ],
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Grow-G-Energy-POR086",
+                  "prices": {}
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-087",
+              "name": "Rock [F] Energy",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877504,
+                  "label": [
+                    "Ste Netter Bog",
+                    "Oo Ew Se Sey",
+                    "Petter Wereree Comoe Cane Fore"
+                  ],
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Rock-F-Energy-POR087",
+                  "prices": {}
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-088",
+              "name": "Telepath [P] Energy",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877505,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Telepath-P-Energy-POR088",
+                  "prices": {}
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-089",
+              "name": "Pérégrain",
+              "variants": [
+                {
+                  "version": "V2",
+                  "productId": 877506,
+                  "label": [
+                    "Within",
+                    "Os Att Ot Dei",
+                    "Betes"
+                  ],
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Spewpa-V2-POR089",
+                  "prices": {}
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-090",
+              "name": "Brindibou",
+              "variants": [
+                {
+                  "version": "V2",
+                  "productId": 877507,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Rowlet-V2-POR090",
+                  "prices": {}
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-091",
+              "name": "Flambusard",
+              "variants": [
+                {
+                  "version": "V2",
+                  "productId": 877508,
+                  "label": [
+                    "Ca Ean",
+                    "Otis"
+                  ],
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Talonflame-V2-POR091",
+                  "prices": {
+                    "es": {
+                      "ES": {
+                        "currency": "EUR",
+                        "minPrice": {
+                          "NM": 4.0
+                        },
+                        "avgPrice": {
+                          "NM": 4.36
+                        },
+                        "medianPrice": {
+                          "NM": 4.5
+                        },
+                        "maxPrice": {
+                          "NM": 4.5
+                        },
+                        "availableCount": {
+                          "NM": 5.0
+                        },
+                        "recommendedPrice": {
+                          "NM": 4.5
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-092",
+              "name": "Dragmara",
+              "variants": [
+                {
+                  "version": "V2",
+                  "productId": 877509,
+                  "label": [
+                    "See Oxtimo My am O00",
+                    "Expences",
+                    "Ieiedyapaal",
+                    "Caterers Eee"
+                  ],
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Aurorus-V2-POR092",
+                  "prices": {
+                    "es": {
+                      "ES": {
+                        "currency": "EUR",
+                        "minPrice": {
+                          "NM": 4.5
+                        },
+                        "avgPrice": {
+                          "NM": 4.75
+                        },
+                        "medianPrice": {
+                          "NM": 4.75
+                        },
+                        "maxPrice": {
+                          "NM": 5.0
+                        },
+                        "availableCount": {
+                          "NM": 2.0
+                        },
+                        "recommendedPrice": {
+                          "NM": 5.0
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-093",
+              "name": "Dedenne",
+              "variants": [
+                {
+                  "version": "V2",
+                  "productId": 877510,
+                  "label": [
+                    "Fas",
+                    "Eroey",
+                    "Oren",
+                    "Oris Nae Henne Omer Gana Pta"
+                  ],
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Dedenne-V2-POR093",
+                  "prices": {
+                    "es": {
+                      "ES": {
+                        "currency": "EUR",
+                        "minPrice": {
+                          "MT": 5.0,
+                          "NM": 5.9
+                        },
+                        "avgPrice": {
+                          "MT": 5.0,
+                          "NM": 5.96
+                        },
+                        "medianPrice": {
+                          "MT": 5.0,
+                          "NM": 6.0
+                        },
+                        "maxPrice": {
+                          "MT": 5.0,
+                          "NM": 6.0
+                        },
+                        "availableCount": {
+                          "MT": 1.0,
+                          "NM": 5.0
+                        },
+                        "recommendedPrice": {
+                          "MT": 5.0,
+                          "NM": 6.0
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-094",
+              "name": "Mélofée",
+              "variants": [
+                {
+                  "version": "V2",
+                  "productId": 877511,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Clefairy-V2-POR094",
+                  "prices": {
+                    "es": {
+                      "ES": {
+                        "currency": "EUR",
+                        "minPrice": {
+                          "NM": 13.0
+                        },
+                        "avgPrice": {
+                          "NM": 14.62
+                        },
+                        "medianPrice": {
+                          "NM": 14.0
+                        },
+                        "maxPrice": {
+                          "NM": 17.0
+                        },
+                        "availableCount": {
+                          "NM": 8.0
+                        },
+                        "recommendedPrice": {
+                          "NM": 14.0
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-095",
+              "name": "Psystigri",
+              "variants": [
+                {
+                  "version": "V2",
+                  "productId": 877512,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Espurr-V2-POR095",
+                  "prices": {}
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-096",
+              "name": "Tarinorme",
+              "variants": [
+                {
+                  "version": "V2",
+                  "productId": 877513,
+                  "label": [
+                    "icerating Nose 260"
+                  ],
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Probopass-V2-POR096",
+                  "prices": {}
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-097",
+              "name": "Drascore",
+              "variants": [
+                {
+                  "version": "V2",
+                  "productId": 877514,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Drapion-V2-POR097",
+                  "prices": {}
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-098",
+              "name": "Dimoclès",
+              "variants": [
+                {
+                  "version": "V2",
+                  "productId": 877515,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Doublade-V2-POR098",
+                  "prices": {}
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-099",
+              "name": "Rattatac",
+              "variants": [
+                {
+                  "version": "V2",
+                  "productId": 877516,
+                  "label": [
+                    "Rvs",
+                    "Penns Phonan Tensenes"
+                  ],
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Raticate-V2-POR099",
+                  "prices": {
+                    "es": {
+                      "ES": {
+                        "currency": "EUR",
+                        "minPrice": {
+                          "NM": 5.0
+                        },
+                        "avgPrice": {
+                          "NM": 5.0
+                        },
+                        "medianPrice": {
+                          "NM": 5.0
+                        },
+                        "maxPrice": {
+                          "NM": 5.0
+                        },
+                        "availableCount": {
+                          "NM": 4.0
+                        },
+                        "recommendedPrice": {
+                          "NM": 5.0
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-100",
+              "name": "Archéduc ex",
+              "variants": [
+                {
+                  "version": "V2",
+                  "productId": 877517,
+                  "label": [
+                    "Arrow 240"
+                  ],
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Decidueye-ex-V2-POR100",
+                  "prices": {
+                    "es": {
+                      "ES": {
+                        "currency": "EUR",
+                        "minPrice": {
+                          "MT": 4.0
+                        },
+                        "avgPrice": {
+                          "MT": 4.0
+                        },
+                        "medianPrice": {
+                          "MT": 4.0
+                        },
+                        "maxPrice": {
+                          "MT": 4.0
+                        },
+                        "availableCount": {
+                          "MT": 1.0
+                        },
+                        "recommendedPrice": {
+                          "MT": 4.0
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-101",
+              "name": "Malamandre ex",
+              "variants": [
+                {
+                  "version": "V2",
+                  "productId": 877518,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Salazzle-ex-V2-POR101",
+                  "prices": {}
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-102",
+              "name": "Mega Staross ex",
+              "variants": [
+                {
+                  "version": "V2",
+                  "productId": 877519,
+                  "label": [
+                    "Nebula Beam"
+                  ],
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Mega-Starmie-ex-V2-POR102",
+                  "prices": {
+                    "es": {
+                      "ES": {
+                        "currency": "EUR",
+                        "minPrice": {
+                          "NM": 11.4
+                        },
+                        "avgPrice": {
+                          "NM": 11.4
+                        },
+                        "medianPrice": {
+                          "NM": 11.4
+                        },
+                        "maxPrice": {
+                          "NM": 11.4
+                        },
+                        "availableCount": {
+                          "NM": 1.0
+                        },
+                        "recommendedPrice": {
+                          "NM": 11.4
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-103",
+              "name": "Mega Mélodelfe ex",
+              "variants": [
+                {
+                  "version": "V2",
+                  "productId": 877520,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Mega-Clefable-ex-V2-POR103",
+                  "prices": {}
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-104",
+              "name": "Mega Zygarde ex",
+              "variants": [
+                {
+                  "version": "V2",
+                  "productId": 877521,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Mega-Zygarde-ex-V2-POR104",
+                  "prices": {
+                    "es": {
+                      "ES": {
+                        "currency": "EUR",
+                        "minPrice": {
+                          "NM": 10.0
+                        },
+                        "avgPrice": {
+                          "NM": 10.0
+                        },
+                        "medianPrice": {
+                          "NM": 10.0
+                        },
+                        "maxPrice": {
+                          "NM": 10.0
+                        },
+                        "availableCount": {
+                          "NM": 1.0
+                        },
+                        "recommendedPrice": {
+                          "NM": 10.0
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-105",
+              "name": "Yveltal ex",
+              "variants": [
+                {
+                  "version": "V2",
+                  "productId": 877522,
+                  "label": [
+                    "Dark Strike 210",
+                    "Jda"
+                  ],
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Yveltal-ex-V2-POR105",
+                  "prices": {
+                    "es": {
+                      "ES": {
+                        "currency": "EUR",
+                        "minPrice": {
+                          "NM": 6.9
+                        },
+                        "avgPrice": {
+                          "NM": 6.96
+                        },
+                        "medianPrice": {
+                          "NM": 6.97
+                        },
+                        "maxPrice": {
+                          "NM": 7.0
+                        },
+                        "availableCount": {
+                          "NM": 4.0
+                        },
+                        "recommendedPrice": {
+                          "NM": 7.0
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-106",
+              "name": "Mega Airmure ex",
+              "variants": [
+                {
+                  "version": "V2",
+                  "productId": 877523,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Mega-Skarmory-ex-V2-POR106",
+                  "prices": {
+                    "es": {
+                      "ES": {
+                        "currency": "EUR",
+                        "minPrice": {
+                          "NM": 5.5
+                        },
+                        "avgPrice": {
+                          "NM": 5.75
+                        },
+                        "medianPrice": {
+                          "NM": 5.75
+                        },
+                        "maxPrice": {
+                          "NM": 6.0
+                        },
+                        "availableCount": {
+                          "NM": 2.0
+                        },
+                        "recommendedPrice": {
+                          "NM": 6.0
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-107",
+              "name": "Miaouss ex",
+              "variants": [
+                {
+                  "version": "V2",
+                  "productId": 877524,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Meowth-ex-V2-POR107",
+                  "prices": {}
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-108",
+              "name": "Recycleur d'Énergie",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877525,
+                  "label": [
+                    "You May Play Any Number Of Kens Cas",
+                    "Your Cura",
+                    "Grre Petanes Wetenee Cen Ows Care Baa"
+                  ],
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Energy-Recycler-POR108",
+                  "prices": {
+                    "es": {
+                      "ES": {
+                        "currency": "EUR",
+                        "minPrice": {
+                          "NM": 5.0
+                        },
+                        "avgPrice": {
+                          "NM": 5.0
+                        },
+                        "medianPrice": {
+                          "NM": 5.0
+                        },
+                        "maxPrice": {
+                          "NM": 5.0
+                        },
+                        "availableCount": {
+                          "NM": 2.0
+                        },
+                        "recommendedPrice": {
+                          "NM": 5.0
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-109",
+              "name": "Forêt de Vitalité",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877526,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Forest-of-Vitality-POR109",
+                  "prices": {}
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-110",
+              "name": "Violine",
+              "variants": [
+                {
+                  "version": "V2",
+                  "productId": 877527,
+                  "label": [
+                    "Supporter Card During"
+                  ],
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Jacinthe-V2-POR110",
+                  "prices": {}
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-111",
+              "name": "Illumis",
+              "variants": [
+                {
+                  "version": "V2",
+                  "productId": 877528,
+                  "label": [
+                    "J Iya",
+                    "Orx Ba To Thee Gen",
+                    "Ont Wre"
+                  ],
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Lumiose-City-V2-POR111",
+                  "prices": {}
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-112",
+              "name": "Inno",
+              "variants": [
+                {
+                  "version": "V2",
+                  "productId": 877529,
+                  "label": [
+                    "Tou m"
+                  ],
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Naveen-V2-POR112",
+                  "prices": {}
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-113",
+              "name": "Poké Registre",
+              "variants": [
+                {
+                  "version": "V2",
+                  "productId": 877530,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Poke-Pad-V2-POR113",
+                  "prices": {}
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-114",
+              "name": "Rosa's Encouragement",
+              "variants": [
+                {
+                  "version": "V2",
+                  "productId": 877531,
+                  "label": [
+                    "Tou Pay Pray Care Curing",
+                    "Your Tura",
+                    "Game"
+                  ],
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Rosas-Encouragement-V2-POR114",
+                  "prices": {}
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-115",
+              "name": "Cendre Sacrée",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877532,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Sacred-Ash-POR115",
+                  "prices": {}
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-116",
+              "name": "Taragon",
+              "variants": [
+                {
+                  "version": "V2",
+                  "productId": 877533,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Tarragon-V2-POR116",
+                  "prices": {}
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-117",
+              "name": "Fortifiant Merveilleux",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 877534,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Wondrous-Patch-POR117",
+                  "prices": {}
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-118",
+              "name": "Mega Staross ex",
+              "variants": [
+                {
+                  "version": "V3",
+                  "productId": 877535,
+                  "label": [
+                    "NebulaBBeam"
+                  ],
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Mega-Starmie-ex-V3-POR118",
+                  "prices": {
+                    "es": {
+                      "ES": {
+                        "currency": "EUR",
+                        "minPrice": {
+                          "NM": 57.0
+                        },
+                        "avgPrice": {
+                          "NM": 61.71
+                        },
+                        "medianPrice": {
+                          "NM": 60.0
+                        },
+                        "maxPrice": {
+                          "NM": 70.0
+                        },
+                        "availableCount": {
+                          "NM": 7.0
+                        },
+                        "recommendedPrice": {
+                          "NM": 60.0
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-119",
+              "name": "Mega Mélodelfe ex",
+              "variants": [
+                {
+                  "version": "V3",
+                  "productId": 877536,
+                  "label": [
+                    "Eevseas",
+                    "Naeate",
+                    "1197088"
+                  ],
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Mega-Clefable-ex-V3-POR119",
+                  "prices": {
+                    "es": {
+                      "ES": {
+                        "currency": "EUR",
+                        "minPrice": {
+                          "NM": 54.95
+                        },
+                        "avgPrice": {
+                          "NM": 54.95
+                        },
+                        "medianPrice": {
+                          "NM": 54.95
+                        },
+                        "maxPrice": {
+                          "NM": 54.95
+                        },
+                        "availableCount": {
+                          "NM": 1.0
+                        },
+                        "recommendedPrice": {
+                          "NM": 54.95
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-120",
+              "name": "Mega Zygarde ex",
+              "variants": [
+                {
+                  "version": "V3",
+                  "productId": 877537,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Mega-Zygarde-ex-V3-POR120",
+                  "prices": {
+                    "es": {
+                      "ES": {
+                        "currency": "EUR",
+                        "minPrice": {
+                          "NM": 50.0
+                        },
+                        "avgPrice": {
+                          "NM": 71.09
+                        },
+                        "medianPrice": {
+                          "NM": 69.95
+                        },
+                        "maxPrice": {
+                          "NM": 90.0
+                        },
+                        "availableCount": {
+                          "NM": 11.0
+                        },
+                        "recommendedPrice": {
+                          "NM": 60.0
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-121",
+              "name": "Miaouss ex",
+              "variants": [
+                {
+                  "version": "V3",
+                  "productId": 877538,
+                  "label": [
+                    "Orfiosnig Your",
+                    "Mtg Cios",
+                    "Sestpot",
+                    "Pokemon x Rule"
+                  ],
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Meowth-ex-V3-POR121",
+                  "prices": {
+                    "es": {
+                      "ES": {
+                        "currency": "EUR",
+                        "minPrice": {
+                          "NM": 93.0
+                        },
+                        "avgPrice": {
+                          "NM": 93.0
+                        },
+                        "medianPrice": {
+                          "NM": 93.0
+                        },
+                        "maxPrice": {
+                          "NM": 93.0
+                        },
+                        "availableCount": {
+                          "NM": 1.0
+                        },
+                        "recommendedPrice": {
+                          "NM": 93.0
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-122",
+              "name": "Violine",
+              "variants": [
+                {
+                  "version": "V3",
+                  "productId": 877539,
+                  "label": [
+                    "Ange Fronig",
+                    "Vad Te",
+                    "May Play Onty T Supporter Card Curing"
+                  ],
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Jacinthe-V3-POR122",
+                  "prices": {
+                    "es": {
+                      "ES": {
+                        "currency": "EUR",
+                        "minPrice": {
+                          "NM": 27.5
+                        },
+                        "avgPrice": {
+                          "NM": 28.79
+                        },
+                        "medianPrice": {
+                          "NM": 28.5
+                        },
+                        "maxPrice": {
+                          "NM": 30.0
+                        },
+                        "availableCount": {
+                          "NM": 5.0
+                        },
+                        "recommendedPrice": {
+                          "NM": 28.5
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-123",
+              "name": "Rosa's Encouragement",
+              "variants": [
+                {
+                  "version": "V3",
+                  "productId": 877540,
+                  "label": [
+                    "Sue",
+                    "You Tay Play Only Supporter Card During",
+                    "10h Niewen Wenenes Lroenoes Abel Oral"
+                  ],
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Rosas-Encouragement-V3-POR123",
+                  "prices": {
+                    "es": {
+                      "ES": {
+                        "currency": "EUR",
+                        "minPrice": {
+                          "NM": 70.0
+                        },
+                        "avgPrice": {
+                          "NM": 70.0
+                        },
+                        "medianPrice": {
+                          "NM": 70.0
+                        },
+                        "maxPrice": {
+                          "NM": 70.0
+                        },
+                        "availableCount": {
+                          "NM": 1.0
+                        },
+                        "recommendedPrice": {
+                          "NM": 70.0
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "me03-124",
+              "name": "Mega Zygarde ex",
+              "variants": [
+                {
+                  "version": "V4",
+                  "productId": 877541,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Perfect-Order/Mega-Zygarde-ex-V4-POR124",
+                  "prices": {
+                    "es": {
+                      "ES": {
+                        "currency": "EUR",
+                        "minPrice": {
+                          "NM": 115.0
+                        },
+                        "avgPrice": {
+                          "NM": 136.0
+                        },
+                        "medianPrice": {
+                          "NM": 149.99
+                        },
+                        "maxPrice": {
+                          "NM": 150.0
+                        },
+                        "availableCount": {
+                          "NM": 5.0
+                        },
+                        "recommendedPrice": {
+                          "NM": 149.99
                         }
                       }
                     }

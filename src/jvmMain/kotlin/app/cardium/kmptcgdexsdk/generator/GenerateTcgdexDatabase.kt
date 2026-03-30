@@ -231,6 +231,7 @@ fun main(args: Array<String>) {
     // Track all cards per language for cross-language comparison
     val cardsByLanguage = mutableMapOf<String, MutableSet<String>>() // language -> set of card IDs
     val englishCardCache = mutableMapOf<String, JsonObject>()
+    val frenchCardCache = mutableMapOf<String, JsonObject>()
     
     // Valid dex IDs from pokemon-species.json (used for validation)
     val validDexIds = pokemonSpecies.keys
@@ -294,7 +295,7 @@ fun main(args: Array<String>) {
 
         val rarityName = card.getString("rarity")
         val rarityId = if (rarityName != null) {
-            val langKey = language.lowercase()
+            val langKey = originLanguage.lowercase()
             val englishName =
                 if (langKey == "en") {
                     rarityName
@@ -527,6 +528,11 @@ fun main(args: Array<String>) {
                 if (id != null) {
                     englishCardCache[id] = card
                 }
+            } else if (language == "fr") {
+                val id = card.getString("id")
+                if (id != null) {
+                    frenchCardCache[id] = card
+                }
             }
         }
         println("[Tcgdex]   Cards: ${cardsJson.size}")
@@ -542,6 +548,16 @@ fun main(args: Array<String>) {
             englishOnlyIds.sorted().forEach { id ->
                 val card = englishCardCache[id] ?: return@forEach
                 insertCard(language = "fr", card = card, originLanguage = "en")
+            }
+        }
+
+        val englishIds = cardsByLanguage["en"] ?: emptySet()
+        val frenchOnlyIds = frenchCardCache.keys - englishIds
+        if (frenchOnlyIds.isNotEmpty()) {
+            println("[Tcgdex][!] Adding ${frenchOnlyIds.size} French fallbacks to English dataset")
+            frenchOnlyIds.sorted().forEach { id ->
+                val card = frenchCardCache[id] ?: return@forEach
+                insertCard(language = "en", card = card, originLanguage = "fr")
             }
         }
     } else {
