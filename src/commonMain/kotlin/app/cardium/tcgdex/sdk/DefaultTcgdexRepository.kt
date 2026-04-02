@@ -156,6 +156,11 @@ class DefaultTcgdexRepository(
             queries.getAllSellerCountries().executeAsList().map { it.trim() }.distinct()
         }
 
+    override suspend fun getLatestPriceUpdateIso(): String? =
+        withContext(dispatcher) {
+            queries.getLatestPriceUpdateIso().executeAsOneOrNull()?.latest_price_update_iso
+        }
+
     override suspend fun getCardsByIds(cardIds: Collection<String>, language: String): Map<String, Card> =
         withContext(dispatcher) {
             if (cardIds.isEmpty()) return@withContext emptyMap()

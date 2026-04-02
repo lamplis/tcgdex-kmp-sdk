@@ -157,6 +157,14 @@ interface TcgdexRepository {
     suspend fun getAllSellerCountries(): List<String>
 
     /**
+     * Returns the latest known Cardmarket price update timestamp across all cards.
+     *
+     * The value is stored as an ISO-8601 string in the database when the embedded
+     * pricing snapshot is generated at build time.
+     */
+    suspend fun getLatestPriceUpdateIso(): String? = null
+
+    /**
      * Batch lookup for multiple cards by ID.
      *
      * This is the preferred API when callers have a list of card IDs (e.g., container galleries,

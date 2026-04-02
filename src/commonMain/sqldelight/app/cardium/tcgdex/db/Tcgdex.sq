@@ -543,6 +543,13 @@ SELECT DISTINCT seller_country
 FROM card_prices
 ORDER BY seller_country ASC;
 
+-- Get the latest embedded Cardmarket update timestamp across cards.
+getLatestPriceUpdateIso:
+SELECT MAX(price_updated_iso) AS latest_price_update_iso
+FROM cards
+WHERE price_updated_iso IS NOT NULL
+    AND TRIM(price_updated_iso) != '';
+
 -- Batch lookup for multiple card IDs (used to avoid N+1 queries in UI/use-cases)
 getCardsByIds:
 SELECT *
