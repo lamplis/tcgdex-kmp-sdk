@@ -93,7 +93,7 @@ object TcgdexDatabaseInstaller {
         val bytes = loadDatabaseAsset()
 
         // Check if installation is needed based on file size
-        val existingSize = fileSystem.metadataOrNull(destination)?.size?.toLong()
+        val existingSize = fileSystem.metadataOrNull(destination)?.size
         val metadataPath = destination.parent?.resolve("${destination.name}$METADATA_SUFFIX")
         val metadataVersion = metadataPath?.let { path ->
             runCatching {

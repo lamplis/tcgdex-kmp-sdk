@@ -304,7 +304,7 @@ class DefaultTcgdexRepository(
         withContext(dispatcher) {
             queries.getAllPokemonDexIds(language).executeAsList().map { row ->
                 PokemonDexEntry(
-                    dexId = row.dex_id!!.toInt(),
+                    dexId = row.dex_id.toInt(),
                     name = row.pokemon_name ?: "Unknown",
                     cardCount = row.card_count.toInt()
                 )
@@ -315,8 +315,8 @@ class DefaultTcgdexRepository(
         withContext(dispatcher) {
             val result = mutableMapOf<Int, MutableSet<String>>()
             queries.getAllCardIdsByPokemon(language).executeAsList().forEach { row ->
-                val dexId = row.dex_id?.toInt() ?: return@forEach
-                val cardId = row.card_id ?: return@forEach
+                val dexId = row.dex_id.toInt()
+                val cardId = row.card_id
                 result.getOrPut(dexId) { mutableSetOf() }.add(cardId)
             }
             result.mapValues { it.value.toSet() }
@@ -358,7 +358,7 @@ class DefaultTcgdexRepository(
             // card_with_pokemon can contain multiple rows for a single card (multi-Pokémon cards).
             // Preserve legacy semantics from getDexIdForCard(): keep the first dex ID we see per card.
             for (row in rows) {
-                val dex = row.pokemon_dex_id?.toInt() ?: continue
+                val dex = row.pokemon_dex_id.toInt()
                 if (!result.containsKey(row.id)) {
                     result[row.id] = dex
                 }
