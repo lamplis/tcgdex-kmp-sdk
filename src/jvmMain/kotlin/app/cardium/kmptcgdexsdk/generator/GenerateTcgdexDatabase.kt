@@ -347,41 +347,15 @@ fun main(args: Array<String>) {
             dexIds
         }
 
-        // Get Cardmarket price using internal export (variant + country + price-language),
-        // fall back to S3 price guide.
+        // Pricing: store exact data only; fallback is handled at runtime.
         //
-        // Legacy columns in cards table store the default seller-country recommended price (FR),
-        // so existing UI stays compatible and shows the recommended price by default.
-        val exportLanguage = language.lowercase()
-        val defaultSellerCountry = "FR"
+        // Flat columns in the cards table store the price-guide (GLOBAL) baseline.
+        // The card_prices table stores:
+        //   - poke-browser export rows with real seller countries (exact per-country data)
+        //   - price-guide row with seller_country = 'GLOBAL' (language-agnostic baseline)
         val exportCard = cardmarketExportCards[id]
-
-        fun selectDefaultVariant(variants: List<CardmarketExportVariant>): CardmarketExportVariant? =
-            variants.firstOrNull { it.version?.equals("Normal", ignoreCase = true) == true } ?: variants.firstOrNull()
-
-        fun selectLegacyExportPrice(card: CardmarketExportCard): CardmarketExportPrice? {
-            val variant = selectDefaultVariant(card.variants) ?: return null
-            val byLang = variant.prices[exportLanguage] ?: variant.prices["fr"] ?: return null
-            return byLang[defaultSellerCountry] ?: byLang.entries.firstOrNull()?.value
-        }
-
-        val exportLegacyPrice = exportCard?.let(::selectLegacyExportPrice)
         val cardmarketId = card.getNestedInt("thirdParty", "cardmarket")
         val s3Pricing = cardmarketId?.let { cardmarketPrices[it] }
-        val pricing = if (exportLegacyPrice != null) {
-            CardmarketPrice(
-                trendPrice = exportLegacyPrice.recommendedPrice
-                    ?: exportLegacyPrice.medianPrice
-                    ?: exportLegacyPrice.avgPrice
-                    ?: exportLegacyPrice.minPrice,
-                averageSellPrice = exportLegacyPrice.avgPrice ?: exportLegacyPrice.medianPrice,
-                lowPrice = exportLegacyPrice.minPrice,
-                updatedIso = exportUpdatedIso ?: "",
-                unit = exportLegacyPrice.currency ?: "EUR",
-            )
-        } else {
-            s3Pricing
-        }
 
         db.tcgdexQueries.insertCard(
             id = id,
@@ -400,15 +374,14 @@ fun main(args: Array<String>) {
             types = types,
             supertype = supertype,
             regulationMark = regulationMark,
-            priceCardmarketTrend = pricing?.trendPrice,
-            priceCardmarketAvg = pricing?.averageSellPrice,
-            priceCardmarketLow = pricing?.lowPrice,
-            priceUpdatedIso = pricing?.updatedIso,
-            priceUnit = pricing?.unit,
+            priceCardmarketTrend = s3Pricing?.trendPrice,
+            priceCardmarketAvg = s3Pricing?.averageSellPrice,
+            priceCardmarketLow = s3Pricing?.lowPrice,
+            priceUpdatedIso = s3Pricing?.updatedIso,
+            priceUnit = s3Pricing?.unit,
         )
 
-        // Persist all export prices (all variants, all price languages, all seller countries).
-        // This enables user-level seller-country selection in the app.
+        // Persist exact export prices (all variants, all price languages, all seller countries).
         if (exportCard != null) {
             for (variant in exportCard.variants) {
                 val variantKey = variant.version?.takeIf { it.isNotBlank() }
@@ -430,10 +403,31 @@ fun main(args: Array<String>) {
                             recommendedPrice = price.recommendedPrice,
                             availableCount = price.availableCount?.toLong(),
                             productId = variant.productId?.toLong(),
+                            updatedIso = exportUpdatedIso ?: "",
                         )
                     }
                 }
             }
+        }
+
+        // Insert price guide as GLOBAL baseline (language-agnostic, no seller country).
+        if (s3Pricing != null) {
+            db.tcgdexQueries.insertCardPrice(
+                cardId = id,
+                cardLanguage = language,
+                variant = "Normal",
+                priceLanguage = "",
+                sellerCountry = "GLOBAL",
+                currency = s3Pricing.unit,
+                minPrice = s3Pricing.lowPrice,
+                avgPrice = s3Pricing.averageSellPrice,
+                medianPrice = null,
+                maxPrice = null,
+                recommendedPrice = s3Pricing.trendPrice,
+                availableCount = null,
+                productId = cardmarketId.toLong(),
+                updatedIso = s3Pricing.updatedIso,
+            )
         }
 
         // Insert card-Pokémon relationships for ALL dex IDs (supports multi-Pokémon cards)

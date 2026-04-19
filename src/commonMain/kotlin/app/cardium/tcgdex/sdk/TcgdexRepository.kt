@@ -151,18 +151,39 @@ interface TcgdexRepository {
     suspend fun getRecommendedPrice(cardId: String, language: String, sellerCountry: String): Double?
 
     /**
+     * Batch lookup of recommended prices for multiple cards.
+     *
+     * Returns a map of cardId to the best recommended price (using the same
+     * price_language fallback as [getRecommendedPrice]).
+     *
+     * @param cardIds Card identifiers to look up
+     * @param language The catalog language of the card rows
+     * @param sellerCountry Seller country code (e.g., "FR")
+     */
+    suspend fun getRecommendedPrices(
+        cardIds: Collection<String>,
+        language: String,
+        sellerCountry: String,
+    ): Map<String, Double> = emptyMap()
+
+    /**
      * Returns all seller countries present in the database.
      * Intended for populating a settings dropdown (Account page).
      */
     suspend fun getAllSellerCountries(): List<String>
 
     /**
-     * Returns the latest known Cardmarket price update timestamp across all cards.
+     * Returns the latest price-guide (GLOBAL) update timestamp.
      *
      * The value is stored as an ISO-8601 string in the database when the embedded
      * pricing snapshot is generated at build time.
      */
     suspend fun getLatestPriceUpdateIso(): String? = null
+
+    /**
+     * Returns the latest poke-browser export update timestamp.
+     */
+    suspend fun getLatestExportPriceUpdateIso(): String? = null
 
     /**
      * Batch lookup for multiple cards by ID.

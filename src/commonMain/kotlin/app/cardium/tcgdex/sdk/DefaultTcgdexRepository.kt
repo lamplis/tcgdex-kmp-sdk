@@ -148,8 +148,29 @@ class DefaultTcgdexRepository(
 
     override suspend fun getRecommendedPrice(cardId: String, language: String, sellerCountry: String): Double? =
         withContext(dispatcher) {
-            queries.getRecommendedPriceForCard(cardId, language, sellerCountry).executeAsOneOrNull()?.recommended_price
+            val row = queries.getRecommendedPriceForCard(cardId, language, sellerCountry).executeAsOneOrNull()
+            row?.recommended_price ?: row?.avg_price ?: row?.min_price
         }
+
+    override suspend fun getRecommendedPrices(
+        cardIds: Collection<String>,
+        language: String,
+        sellerCountry: String,
+    ): Map<String, Double> = withContext(dispatcher) {
+        if (cardIds.isEmpty()) return@withContext emptyMap()
+        val result = mutableMapOf<String, Double>()
+        cardIds.toList().chunked(500).forEach { chunk ->
+            queries.getBatchRecommendedPrices(sellerCountry, language, chunk)
+                .executeAsList()
+                .forEach { row ->
+                    val price = row.recommended_price ?: row.avg_price ?: row.min_price
+                    if (price != null) {
+                        result[row.card_id] = price
+                    }
+                }
+        }
+        result
+    }
 
     override suspend fun getAllSellerCountries(): List<String> =
         withContext(dispatcher) {
@@ -159,6 +180,11 @@ class DefaultTcgdexRepository(
     override suspend fun getLatestPriceUpdateIso(): String? =
         withContext(dispatcher) {
             queries.getLatestPriceUpdateIso().executeAsOneOrNull()?.latest_price_update_iso
+        }
+
+    override suspend fun getLatestExportPriceUpdateIso(): String? =
+        withContext(dispatcher) {
+            queries.getLatestExportPriceUpdateIso().executeAsOneOrNull()?.latest_export_update_iso
         }
 
     override suspend fun getCardsByIds(cardIds: Collection<String>, language: String): Map<String, Card> =

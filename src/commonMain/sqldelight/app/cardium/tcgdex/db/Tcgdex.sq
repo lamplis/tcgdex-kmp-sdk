@@ -146,12 +146,13 @@ CREATE TABLE card_prices (
     recommended_price REAL,
     available_count INTEGER,
     product_id INTEGER,
+    updated_iso TEXT NOT NULL DEFAULT '',
     PRIMARY KEY (card_id, card_language, variant, price_language, seller_country),
     FOREIGN KEY (card_id, card_language) REFERENCES cards(id, language) ON DELETE CASCADE
 );
 
-CREATE INDEX card_prices_card_idx ON card_prices(card_id, card_language);
-CREATE INDEX card_prices_country_idx ON card_prices(seller_country);
+CREATE INDEX card_prices_lookup_idx ON card_prices(card_id, card_language, seller_country);
+CREATE INDEX card_prices_country_updated_idx ON card_prices(seller_country, updated_iso);
 
 -- -----------------------------------------------------------------------------
 -- Card-Pokémon junction table: Links cards to one or more Pokédex IDs
@@ -378,7 +379,8 @@ INSERT OR REPLACE INTO card_prices(
     max_price,
     recommended_price,
     available_count,
-    product_id
+    product_id,
+    updated_iso
 )
 VALUES (
     :cardId,
@@ -393,7 +395,8 @@ VALUES (
     :maxPrice,
     :recommendedPrice,
     :availableCount,
-    :productId
+    :productId,
+    :updatedIso
 );
 
 -- Insert a card-Pokémon relationship (call once per dex ID for multi-Pokémon cards)
@@ -525,30 +528,86 @@ WHERE card_id = :cardId
     AND card_language = :cardLanguage
 ORDER BY variant, price_language, seller_country;
 
--- Get recommended price for a card for the requested seller country.
--- Prefer the "Normal" variant when present (fallback to first variant).
+-- Get recommended price for a card.
+-- Prefers the user's sellerCountry, falls back to GLOBAL (price guide).
+-- Within a country tier, prefers cardLanguage price_language, then Normal variant.
 getRecommendedPriceForCard:
-SELECT recommended_price
+SELECT recommended_price, avg_price, min_price, updated_iso
 FROM card_prices
 WHERE card_id = :cardId
     AND card_language = :cardLanguage
-    AND price_language = :cardLanguage
-    AND seller_country = :sellerCountry
-ORDER BY CASE WHEN variant = 'Normal' THEN 1 ELSE 0 END DESC, variant ASC
+    AND (seller_country = :sellerCountry OR seller_country = 'GLOBAL')
+ORDER BY
+    CASE seller_country WHEN :sellerCountry THEN 0 ELSE 1 END ASC,
+    CASE price_language
+        WHEN :cardLanguage THEN 0
+        WHEN 'fr' THEN 1
+        WHEN 'en' THEN 2
+        ELSE 3
+    END ASC,
+    CASE WHEN variant = 'Normal' THEN 0 ELSE 1 END ASC,
+    price_language ASC,
+    variant ASC
 LIMIT 1;
+
+-- Batch recommended prices for multiple cards (same fallback as single-card).
+-- Returns one row per card_id with the best-matching price.
+getBatchRecommendedPrices:
+SELECT cp.card_id, cp.recommended_price, cp.avg_price, cp.min_price, cp.updated_iso
+FROM card_prices cp
+INNER JOIN (
+    SELECT card_id,
+        MIN(
+            CASE seller_country WHEN :sellerCountry THEN 0 ELSE 1 END * 10000 +
+            CASE price_language
+                WHEN :cardLanguage THEN 0
+                WHEN 'fr' THEN 1
+                WHEN 'en' THEN 2
+                ELSE 3
+            END * 100 +
+            CASE WHEN variant = 'Normal' THEN 0 ELSE 1 END
+        ) AS best_rank
+    FROM card_prices
+    WHERE card_id IN ?
+        AND card_language = :cardLanguage
+        AND (seller_country = :sellerCountry OR seller_country = 'GLOBAL')
+    GROUP BY card_id
+) best ON cp.card_id = best.card_id
+    AND cp.card_language = :cardLanguage
+    AND (cp.seller_country = :sellerCountry OR cp.seller_country = 'GLOBAL')
+    AND (
+        CASE cp.seller_country WHEN :sellerCountry THEN 0 ELSE 1 END * 10000 +
+        CASE cp.price_language
+            WHEN :cardLanguage THEN 0
+            WHEN 'fr' THEN 1
+            WHEN 'en' THEN 2
+            ELSE 3
+        END * 100 +
+        CASE WHEN cp.variant = 'Normal' THEN 0 ELSE 1 END
+    ) = best.best_rank
+GROUP BY cp.card_id;
 
 -- Get all seller countries present in the database (for account preference dropdown)
 getAllSellerCountries:
 SELECT DISTINCT seller_country
 FROM card_prices
+WHERE seller_country != 'GLOBAL'
 ORDER BY seller_country ASC;
 
--- Get the latest embedded Cardmarket update timestamp across cards.
+-- Get the latest price-guide (GLOBAL) update timestamp.
 getLatestPriceUpdateIso:
 SELECT MAX(price_updated_iso) AS latest_price_update_iso
 FROM cards
 WHERE price_updated_iso IS NOT NULL
     AND TRIM(price_updated_iso) != '';
+
+-- Get the latest poke-browser export update timestamp.
+getLatestExportPriceUpdateIso:
+SELECT MAX(updated_iso) AS latest_export_update_iso
+FROM card_prices
+WHERE seller_country != 'GLOBAL'
+    AND updated_iso IS NOT NULL
+    AND TRIM(updated_iso) != '';
 
 -- Batch lookup for multiple card IDs (used to avoid N+1 queries in UI/use-cases)
 getCardsByIds:
