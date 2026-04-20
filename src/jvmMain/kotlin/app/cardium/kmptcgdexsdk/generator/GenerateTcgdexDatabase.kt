@@ -354,7 +354,7 @@ fun main(args: Array<String>) {
         //   - poke-browser export rows with real seller countries (exact per-country data)
         //   - price-guide row with seller_country = 'GLOBAL' (language-agnostic baseline)
         val exportCard = cardmarketExportCards[id]
-        val cardmarketId = card.getNestedInt("thirdParty", "cardmarket")
+        val cardmarketId = resolveMarketplaceId(card, "cardmarket")
         val s3Pricing = cardmarketId?.let { cardmarketPrices[it] }
 
         db.tcgdexQueries.insertCard(
@@ -1456,6 +1456,40 @@ private fun JsonObject.getNestedInt(vararg keys: String): Int? {
         if (current is JsonNull) return null
     }
     return current.jsonPrimitive.intOrNull
+}
+
+/**
+ * Resolves a marketplace product ID from a compiled card JSON object.
+ *
+ * During the progressive migration of `cards-database`, Cardmarket/TCGPlayer IDs
+ * may live at the card root (`thirdParty.<marketplace>`) or under per-variant
+ * objects (`variants_detailed[].thirdParty.<marketplace>`).
+ *
+ * Precedence (deterministic, first non-null wins):
+ *   1. Normal variant in `variants_detailed` with `thirdParty.<marketplace>`
+ *   2. Legacy root `thirdParty.<marketplace>`
+ *   3. First non-normal variant in `variants_detailed` that defines the ID
+ */
+internal fun resolveMarketplaceId(card: JsonObject, marketplace: String): Int? {
+    fun variantMarketplaceId(variant: JsonObject): Int? =
+        (variant["thirdParty"] as? JsonObject)
+            ?.get(marketplace)
+            ?.takeIf { it !is JsonNull }
+            ?.jsonPrimitive?.intOrNull
+
+    val detailedVariants = (card["variants_detailed"] as? JsonArray)
+        ?.mapNotNull { it as? JsonObject }
+
+    val normalVariantId = detailedVariants
+        ?.firstOrNull { it["type"]?.jsonPrimitive?.contentOrNull?.equals("normal", ignoreCase = true) == true }
+        ?.let { variantMarketplaceId(it) }
+    if (normalVariantId != null) return normalVariantId
+
+    val rootId = card.getNestedInt("thirdParty", marketplace)
+    if (rootId != null) return rootId
+
+    return detailedVariants
+        ?.firstNotNullOfOrNull { variantMarketplaceId(it) }
 }
 
 private fun JsonObject.getDouble(key: String): Double? {

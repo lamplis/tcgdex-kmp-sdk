@@ -49,3 +49,19 @@ Pokepedia fallback metadata.
 - Legacy `cardium/exports/prices` and `cardium/exports/missing-cards` are compatibility-only.
 - Legacy `libs/tcgdex-kmp-sdk/resources/pokepedia` is compatibility-only.
 - New work must target `generator-inputs/` directly.
+
+### Marketplace ID migration (thirdParty)
+
+`cards-database` is progressively migrating Cardmarket/TCGPlayer product IDs from
+the card root (`thirdParty.cardmarket`) to per-variant objects
+(`variants_detailed[].thirdParty.cardmarket`). Both schemas coexist during
+migration and the generator resolves the Cardmarket product ID using deterministic
+precedence:
+
+1. `variants_detailed[]` entry with `type: "normal"` and `thirdParty.<marketplace>`
+2. Root-level `thirdParty.<marketplace>` (legacy)
+3. First non-normal variant in `variants_detailed` that defines the marketplace ID
+
+This ensures pricing continues to work for both migrated and unmigrated cards.
+Once migration completes, the root-level `thirdParty` lookup becomes a no-op
+fallback.
