@@ -1,13 +1,13 @@
 {
-  "exportDate": "2026-04-19T23:08:39.991375+00:00",
+  "exportDate": "2026-04-21T19:54:07.169458+00:00",
   "language": "es",
   "stats": {
     "seriesCount": 24,
     "setCount": 187,
-    "cardCount": 20906,
-    "variantCount": 23051,
-    "cardsWithPrices": 3311,
-    "cardsWithoutPrices": 17595
+    "cardCount": 20913,
+    "variantCount": 23067,
+    "cardsWithPrices": 3312,
+    "cardsWithoutPrices": 17601
   },
   "series": [
     {
@@ -36289,7 +36289,7 @@
         {
           "setId": "exu",
           "setName": "EX Forces Cachées Collection Zarbi",
-          "cardmarketExpansionId": null,
+          "cardmarketExpansionId": 1548,
           "cards": [
             {
               "tcgdexCardId": "exu-001",
@@ -48003,7 +48003,7 @@
         {
           "setId": "np",
           "setName": "Promo Nintendo",
-          "cardmarketExpansionId": null,
+          "cardmarketExpansionId": 1608,
           "cards": [
             {
               "tcgdexCardId": "np-001",
@@ -51057,7 +51057,7 @@
         {
           "setId": "tk-ex-latio",
           "setName": "EX Kit dresseur (Latios)",
-          "cardmarketExpansionId": null,
+          "cardmarketExpansionId": 1626,
           "cards": [
             {
               "tcgdexCardId": "tk-ex-latio-1LATIOS-1",
@@ -51209,7 +51209,7 @@
         {
           "setId": "tk-ex-latia",
           "setName": "EX Kit dresseur (Latias)",
-          "cardmarketExpansionId": null,
+          "cardmarketExpansionId": 1626,
           "cards": [
             {
               "tcgdexCardId": "tk-ex-latia-1",
@@ -51365,7 +51365,7 @@
         {
           "setId": "tk-ex-p",
           "setName": "EX Kit dresseur (Positi)",
-          "cardmarketExpansionId": null,
+          "cardmarketExpansionId": 1627,
           "cards": [
             {
               "tcgdexCardId": "tk-ex-p-2P2",
@@ -51544,7 +51544,7 @@
         {
           "setId": "tk-ex-m",
           "setName": "EX Kit dresseur (Négapi)",
-          "cardmarketExpansionId": null,
+          "cardmarketExpansionId": 1627,
           "cards": [
             {
               "tcgdexCardId": "tk-ex-m-2BLUE-10",
@@ -51707,7 +51707,7 @@
         {
           "setId": "tk-dp-l",
           "setName": "DP Kit dresseur (Lucario)",
-          "cardmarketExpansionId": null,
+          "cardmarketExpansionId": 1628,
           "cards": [
             {
               "tcgdexCardId": "tk-dp-l-31-GOLD",
@@ -51873,7 +51873,7 @@
         {
           "setId": "tk-dp-m",
           "setName": "DP Kit dresseur (Manaphy)",
-          "cardmarketExpansionId": null,
+          "cardmarketExpansionId": 1628,
           "cards": [
             {
               "tcgdexCardId": "tk-dp-m-31-BLUE",
@@ -52036,7 +52036,7 @@
         {
           "setId": "tk-hs-g",
           "setName": "HS Kit du dresseur (Léviator)",
-          "cardmarketExpansionId": null,
+          "cardmarketExpansionId": 1629,
           "cards": [
             {
               "tcgdexCardId": "tk-hs-g-4BLUE-1",
@@ -52433,7 +52433,7 @@
         {
           "setId": "tk-hs-r",
           "setName": "HS Kit du dresseur (Raichu)",
-          "cardmarketExpansionId": null,
+          "cardmarketExpansionId": 1629,
           "cards": [
             {
               "tcgdexCardId": "tk-hs-r-4R10",
@@ -52840,7 +52840,7 @@
         {
           "setId": "tk-bw-e",
           "setName": "BW Kit du dresseur (Minitaupe)",
-          "cardmarketExpansionId": null,
+          "cardmarketExpansionId": 1630,
           "cards": [
             {
               "tcgdexCardId": "tk-bw-e-1",
@@ -53056,6 +53056,15 @@
                   "label": [],
                   "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/BW-Trainer-Kit/Fighting-Energy-TK520E",
                   "prices": {}
+                },
+                {
+                  "version": "V1",
+                  "productId": 280067,
+                  "label": [
+                    "Lax"
+                  ],
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/BW-Trainer-Kit/Darkness-Energy-TK520E",
+                  "prices": {}
                 }
               ]
             },
@@ -53253,7 +53262,7 @@
         {
           "setId": "tk-bw-z",
           "setName": "BW Kit du dresseur (Zoroark)",
-          "cardmarketExpansionId": null,
+          "cardmarketExpansionId": 1630,
           "cards": [
             {
               "tcgdexCardId": "tk-bw-z-17",
@@ -53512,21 +53521,6 @@
               ]
             },
             {
-              "tcgdexCardId": "tk-bw-z-520E",
-              "name": "Énergie Obscurité",
-              "variants": [
-                {
-                  "version": "V1",
-                  "productId": 280067,
-                  "label": [
-                    "Lax"
-                  ],
-                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/BW-Trainer-Kit/Darkness-Energy-TK520E",
-                  "prices": {}
-                }
-              ]
-            },
-            {
               "tcgdexCardId": "tk-bw-z-521Z",
               "name": "Poichigeon",
               "variants": [
@@ -53689,7 +53683,7 @@
         {
           "setId": "tk-xy-n",
           "setName": "XY Kit du dresseur (Bruyverne)",
-          "cardmarketExpansionId": null,
+          "cardmarketExpansionId": 1631,
           "cards": [
             {
               "tcgdexCardId": "tk-xy-n-1",
@@ -54132,7 +54126,7 @@
         {
           "setId": "tk-xy-sy",
           "setName": "XY Kit du dresseur (Nymphali)",
-          "cardmarketExpansionId": null,
+          "cardmarketExpansionId": 1631,
           "cards": [
             {
               "tcgdexCardId": "tk-xy-sy-1",
@@ -54546,8 +54540,21 @@
         {
           "setId": "tk-xy-w",
           "setName": "XY Kit du dresseur (Grodoudou)",
-          "cardmarketExpansionId": null,
+          "cardmarketExpansionId": 1632,
           "cards": [
+            {
+              "tcgdexCardId": "tk-xy-w-1",
+              "name": "Sucroquin",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 281931,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/XY-Trainer-Kit-Bisharp-Wigglytuff/Swirlix-TK71W",
+                  "prices": {}
+                }
+              ]
+            },
             {
               "tcgdexCardId": "tk-xy-w-10",
               "name": "Énergie Fée",
@@ -54577,13 +54584,26 @@
               ]
             },
             {
+              "tcgdexCardId": "tk-xy-w-12",
+              "name": "Jigglypuff",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 281953,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/XY-Trainer-Kit-Bisharp-Wigglytuff/Jigglypuff-TK712W",
+                  "prices": {}
+                }
+              ]
+            },
+            {
               "tcgdexCardId": "tk-xy-w-13",
               "name": "Mélofée",
               "variants": [
                 {
                   "version": "V1",
                   "productId": 281955,
-                  "label": [],
+                  "label": null,
                   "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/XY-Trainer-Kit-Bisharp-Wigglytuff/Clefairy-TK713W",
                   "prices": {}
                 }
@@ -54596,8 +54616,24 @@
                 {
                   "version": "V1",
                   "productId": 281957,
-                  "label": [],
+                  "label": null,
                   "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/XY-Trainer-Kit-Bisharp-Wigglytuff/Wigglytuff-TK714W",
+                  "prices": {}
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "tk-xy-w-15",
+              "name": "Potion",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 281959,
+                  "label": [
+                    "Shee Orephuc",
+                    "Partaaepicttnn Stan"
+                  ],
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/XY-Trainer-Kit-Bisharp-Wigglytuff/Potion-TK715W",
                   "prices": {}
                 }
               ]
@@ -54609,8 +54645,23 @@
                 {
                   "version": "V1",
                   "productId": 281960,
-                  "label": [],
+                  "label": null,
                   "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/XY-Trainer-Kit-Bisharp-Wigglytuff/Clefable-TK716W",
+                  "prices": {}
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "tk-xy-w-17",
+              "name": "Énergie Fée",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 281962,
+                  "label": [
+                    "En 0 Srd Ooo"
+                  ],
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/XY-Trainer-Kit-Bisharp-Wigglytuff/Fairy-Energy-TK717W",
                   "prices": {}
                 }
               ]
@@ -54622,7 +54673,7 @@
                 {
                   "version": "V1",
                   "productId": 281964,
-                  "label": [],
+                  "label": null,
                   "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/XY-Trainer-Kit-Bisharp-Wigglytuff/Swirlix-TK718W",
                   "prices": {}
                 }
@@ -54635,7 +54686,7 @@
                 {
                   "version": "V1",
                   "productId": 281966,
-                  "label": [],
+                  "label": null,
                   "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/XY-Trainer-Kit-Bisharp-Wigglytuff/Clefairy-TK719W",
                   "prices": {}
                 }
@@ -54655,6 +54706,22 @@
               ]
             },
             {
+              "tcgdexCardId": "tk-xy-w-20",
+              "name": "Potion",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 281969,
+                  "label": [
+                    "Shee Orephuc",
+                    "Partaaepicttnn Stan"
+                  ],
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/XY-Trainer-Kit-Bisharp-Wigglytuff/Potion-TK720W",
+                  "prices": {}
+                }
+              ]
+            },
+            {
               "tcgdexCardId": "tk-xy-w-21",
               "name": "Énergie Fée",
               "variants": [
@@ -54665,6 +54732,21 @@
                     "Ee Wey"
                   ],
                   "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/XY-Trainer-Kit-Bisharp-Wigglytuff/Fairy-Energy-TK721W",
+                  "prices": {}
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "tk-xy-w-22",
+              "name": "Énergie Fée",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 281973,
+                  "label": [
+                    "Ee Pee"
+                  ],
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/XY-Trainer-Kit-Bisharp-Wigglytuff/Fairy-Energy-TK722W",
                   "prices": {}
                 }
               ]
@@ -54704,7 +54786,7 @@
                 {
                   "version": "V1",
                   "productId": 281978,
-                  "label": [],
+                  "label": null,
                   "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/XY-Trainer-Kit-Bisharp-Wigglytuff/Jigglypuff-TK725W",
                   "prices": {}
                 }
@@ -54747,7 +54829,7 @@
                 {
                   "version": "V1",
                   "productId": 281985,
-                  "label": [],
+                  "label": null,
                   "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/XY-Trainer-Kit-Bisharp-Wigglytuff/Clefable-TK728W",
                   "prices": {}
                 }
@@ -54767,13 +54849,29 @@
               ]
             },
             {
+              "tcgdexCardId": "tk-xy-w-3",
+              "name": "Énergie Fée",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 281935,
+                  "label": [
+                    "Jia A",
+                    "e Eee"
+                  ],
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/XY-Trainer-Kit-Bisharp-Wigglytuff/Fairy-Energy-TK73W",
+                  "prices": {}
+                }
+              ]
+            },
+            {
               "tcgdexCardId": "tk-xy-w-30",
               "name": "Wigglytuff",
               "variants": [
                 {
                   "version": "V1",
                   "productId": 281989,
-                  "label": [],
+                  "label": null,
                   "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/XY-Trainer-Kit-Bisharp-Wigglytuff/Wigglytuff-TK730W",
                   "prices": {}
                 }
@@ -54786,7 +54884,7 @@
                 {
                   "version": "V1",
                   "productId": 281936,
-                  "label": [],
+                  "label": null,
                   "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/XY-Trainer-Kit-Bisharp-Wigglytuff/Sentret-TK74W",
                   "prices": {}
                 }
@@ -54840,125 +54938,6 @@
               ]
             },
             {
-              "tcgdexCardId": "tk-xy-w-712W",
-              "name": "Jigglypuff",
-              "variants": [
-                {
-                  "version": "V1",
-                  "productId": 281953,
-                  "label": [],
-                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/XY-Trainer-Kit-Bisharp-Wigglytuff/Jigglypuff-TK712W",
-                  "prices": {}
-                }
-              ]
-            },
-            {
-              "tcgdexCardId": "tk-xy-w-715W",
-              "name": "Potion",
-              "variants": [
-                {
-                  "version": "V1",
-                  "productId": 281959,
-                  "label": [
-                    "Shee Orephuc",
-                    "Partaaepicttnn Stan"
-                  ],
-                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/XY-Trainer-Kit-Bisharp-Wigglytuff/Potion-TK715W",
-                  "prices": {}
-                }
-              ]
-            },
-            {
-              "tcgdexCardId": "tk-xy-w-717W",
-              "name": "Énergie Fée",
-              "variants": [
-                {
-                  "version": "V1",
-                  "productId": 281962,
-                  "label": [
-                    "En 0 Srd Ooo"
-                  ],
-                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/XY-Trainer-Kit-Bisharp-Wigglytuff/Fairy-Energy-TK717W",
-                  "prices": {}
-                }
-              ]
-            },
-            {
-              "tcgdexCardId": "tk-xy-w-71W",
-              "name": "Sucroquin",
-              "variants": [
-                {
-                  "version": "V1",
-                  "productId": 281931,
-                  "label": [],
-                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/XY-Trainer-Kit-Bisharp-Wigglytuff/Swirlix-TK71W",
-                  "prices": {}
-                }
-              ]
-            },
-            {
-              "tcgdexCardId": "tk-xy-w-720W",
-              "name": "Potion",
-              "variants": [
-                {
-                  "version": "V1",
-                  "productId": 281969,
-                  "label": [
-                    "Shee Orephuc",
-                    "Partaaepicttnn Stan"
-                  ],
-                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/XY-Trainer-Kit-Bisharp-Wigglytuff/Potion-TK720W",
-                  "prices": {}
-                }
-              ]
-            },
-            {
-              "tcgdexCardId": "tk-xy-w-722W",
-              "name": "Énergie Fée",
-              "variants": [
-                {
-                  "version": "V1",
-                  "productId": 281973,
-                  "label": [
-                    "Ee Pee"
-                  ],
-                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/XY-Trainer-Kit-Bisharp-Wigglytuff/Fairy-Energy-TK722W",
-                  "prices": {}
-                }
-              ]
-            },
-            {
-              "tcgdexCardId": "tk-xy-w-73W",
-              "name": "Énergie Fée",
-              "variants": [
-                {
-                  "version": "V1",
-                  "productId": 281935,
-                  "label": [
-                    "Jia A",
-                    "e Eee"
-                  ],
-                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/XY-Trainer-Kit-Bisharp-Wigglytuff/Fairy-Energy-TK73W",
-                  "prices": {}
-                }
-              ]
-            },
-            {
-              "tcgdexCardId": "tk-xy-w-79W",
-              "name": "Énergie Fée",
-              "variants": [
-                {
-                  "version": "V1",
-                  "productId": 281947,
-                  "label": [
-                    "-6- -Mmsel bo"
-                  ],
-                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/XY-Trainer-Kit-Bisharp-Wigglytuff/Fairy-Energy-TK79W",
-                  "prices": {}
-                }
-              ]
-            },
-            {
               "tcgdexCardId": "tk-xy-w-8",
               "name": "Énergie Fée",
               "variants": [
@@ -54973,13 +54952,28 @@
                   "prices": {}
                 }
               ]
+            },
+            {
+              "tcgdexCardId": "tk-xy-w-9",
+              "name": "Énergie Fée",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 281947,
+                  "label": [
+                    "-6- -Mmsel bo"
+                  ],
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/XY-Trainer-Kit-Bisharp-Wigglytuff/Fairy-Energy-TK79W",
+                  "prices": {}
+                }
+              ]
             }
           ]
         },
         {
           "setId": "tk-xy-b",
           "setName": "XY Kit du dresseur (Scalproie)",
-          "cardmarketExpansionId": null,
+          "cardmarketExpansionId": 1632,
           "cards": [
             {
               "tcgdexCardId": "tk-xy-b-1",
@@ -55085,7 +55079,9 @@
                 {
                   "version": "V1",
                   "productId": 281961,
-                  "label": null,
+                  "label": [
+                    "90# Metal Claw"
+                  ],
                   "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/XY-Trainer-Kit-Bisharp-Wigglytuff/Bisharp-TK716B",
                   "prices": {}
                 }
@@ -55135,6 +55131,21 @@
               ]
             },
             {
+              "tcgdexCardId": "tk-xy-b-2",
+              "name": "Énergie Métal",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 281932,
+                  "label": [
+                    "Bt Tl A Bh The Hit"
+                  ],
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/XY-Trainer-Kit-Bisharp-Wigglytuff/Metal-Energy-TK72B",
+                  "prices": {}
+                }
+              ]
+            },
+            {
               "tcgdexCardId": "tk-xy-b-20",
               "name": "Trovato",
               "variants": [
@@ -55173,6 +55184,19 @@
                     "Bt Tl A Bh The Hit"
                   ],
                   "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/XY-Trainer-Kit-Bisharp-Wigglytuff/Metal-Energy-TK722B",
+                  "prices": {}
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "tk-xy-b-23",
+              "name": "Dimoclès",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 281975,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/XY-Trainer-Kit-Bisharp-Wigglytuff/Doublade-TK723B",
                   "prices": {}
                 }
               ]
@@ -55289,7 +55313,12 @@
                 {
                   "version": "V1",
                   "productId": 281988,
-                  "label": null,
+                  "label": [
+                    "Uectal Liaw",
+                    "Femara",
+                    "Fins",
+                    "Phew"
+                  ],
                   "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/XY-Trainer-Kit-Bisharp-Wigglytuff/Bisharp-TK730B",
                   "prices": {}
                 }
@@ -55356,34 +55385,6 @@
               ]
             },
             {
-              "tcgdexCardId": "tk-xy-b-723B",
-              "name": "Dimoclès",
-              "variants": [
-                {
-                  "version": "V1",
-                  "productId": 281975,
-                  "label": null,
-                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/XY-Trainer-Kit-Bisharp-Wigglytuff/Doublade-TK723B",
-                  "prices": {}
-                }
-              ]
-            },
-            {
-              "tcgdexCardId": "tk-xy-b-72B",
-              "name": "Énergie Métal",
-              "variants": [
-                {
-                  "version": "V1",
-                  "productId": 281932,
-                  "label": [
-                    "Bt Tl A Bh The Hit"
-                  ],
-                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/XY-Trainer-Kit-Bisharp-Wigglytuff/Metal-Energy-TK72B",
-                  "prices": {}
-                }
-              ]
-            },
-            {
               "tcgdexCardId": "tk-xy-b-8",
               "name": "Énergie Métal",
               "variants": [
@@ -55418,7 +55419,7 @@
         {
           "setId": "tk-xy-latia",
           "setName": "XY Kit du dresseur (Latias)",
-          "cardmarketExpansionId": null,
+          "cardmarketExpansionId": 1683,
           "cards": [
             {
               "tcgdexCardId": "tk-xy-latia-15",
@@ -55862,7 +55863,7 @@
         {
           "setId": "tk-xy-latio",
           "setName": "XY Kit du dresseur (Latios)",
-          "cardmarketExpansionId": null,
+          "cardmarketExpansionId": 1683,
           "cards": [
             {
               "tcgdexCardId": "tk-xy-latio-12",
@@ -56273,7 +56274,7 @@
         {
           "setId": "tk-xy-p",
           "setName": "XY Kit du dresseur (Pikachu Libre)",
-          "cardmarketExpansionId": null,
+          "cardmarketExpansionId": 1707,
           "cards": [
             {
               "tcgdexCardId": "tk-xy-p-12",
@@ -56676,7 +56677,7 @@
         {
           "setId": "tk-xy-su",
           "setName": "XY Kit du dresseur (Suicune)",
-          "cardmarketExpansionId": null,
+          "cardmarketExpansionId": 1707,
           "cards": [
             {
               "tcgdexCardId": "tk-xy-su-11",
@@ -57089,7 +57090,7 @@
         {
           "setId": "tk-sm-r",
           "setName": "SM Kit du dresseur (Raichu d'Alola)",
-          "cardmarketExpansionId": null,
+          "cardmarketExpansionId": 1758,
           "cards": [
             {
               "tcgdexCardId": "tk-sm-r-10A01",
@@ -57761,7 +57762,7 @@
         {
           "setId": "tk-sm-l",
           "setName": "SM Kit du dresseur (Lougarox)",
-          "cardmarketExpansionId": null,
+          "cardmarketExpansionId": 1758,
           "cards": [
             {
               "tcgdexCardId": "tk-sm-l-10L03",
@@ -58358,7 +58359,7 @@
         {
           "setId": "dpp",
           "setName": "Promo DP",
-          "cardmarketExpansionId": null,
+          "cardmarketExpansionId": 1609,
           "cards": [
             {
               "tcgdexCardId": "dpp-001",
@@ -85788,7 +85789,7 @@
         {
           "setId": "hgssp",
           "setName": "Promo HGSS",
-          "cardmarketExpansionId": null,
+          "cardmarketExpansionId": 1610,
           "cards": [
             {
               "tcgdexCardId": "hgssp-001",
@@ -94417,7 +94418,7 @@
         {
           "setId": "bwp",
           "setName": "Promo BW",
-          "cardmarketExpansionId": null,
+          "cardmarketExpansionId": 1611,
           "cards": [
             {
               "tcgdexCardId": "bwp-002",
@@ -118056,7 +118057,7 @@
         {
           "setId": "2011bw",
           "setName": "Collection McDonald's 2011",
-          "cardmarketExpansionId": null,
+          "cardmarketExpansionId": 1623,
           "cards": [
             {
               "tcgdexCardId": "2011bw-11001",
@@ -118376,7 +118377,7 @@
         {
           "setId": "2012bw",
           "setName": "Collection McDonald's 2012",
-          "cardmarketExpansionId": null,
+          "cardmarketExpansionId": 1624,
           "cards": [
             {
               "tcgdexCardId": "2012bw-12",
@@ -118641,7 +118642,7 @@
         {
           "setId": "2013bw",
           "setName": "Collection McDonald's 2013",
-          "cardmarketExpansionId": null,
+          "cardmarketExpansionId": 2352,
           "cards": [
             {
               "tcgdexCardId": "2013bw-001",
@@ -118806,7 +118807,7 @@
         {
           "setId": "2014xy",
           "setName": "Collection McDonald's 2014",
-          "cardmarketExpansionId": null,
+          "cardmarketExpansionId": 1625,
           "cards": [
             {
               "tcgdexCardId": "2014xy-001",
@@ -118971,7 +118972,7 @@
         {
           "setId": "2015xy",
           "setName": "Collection McDonald's 2015",
-          "cardmarketExpansionId": null,
+          "cardmarketExpansionId": 1741,
           "cards": [
             {
               "tcgdexCardId": "2015xy-1",
@@ -119139,7 +119140,7 @@
         {
           "setId": "2016xy",
           "setName": "Collection McDonald's 2016",
-          "cardmarketExpansionId": null,
+          "cardmarketExpansionId": 1752,
           "cards": [
             {
               "tcgdexCardId": "2016xy-11",
@@ -119513,7 +119514,7 @@
         {
           "setId": "2017sm",
           "setName": "Collection McDonald's 2017",
-          "cardmarketExpansionId": null,
+          "cardmarketExpansionId": 1845,
           "cards": [
             {
               "tcgdexCardId": "2017sm-12",
@@ -120616,7 +120617,7 @@
         {
           "setId": "2019sm-fr",
           "setName": "Collection McDonald's 2019",
-          "cardmarketExpansionId": null,
+          "cardmarketExpansionId": 3354,
           "cards": [
             {
               "tcgdexCardId": "2019sm-fr-001",
@@ -121493,7 +121494,7 @@
         {
           "setId": "2021swsh",
           "setName": "Collection McDonald's 2021",
-          "cardmarketExpansionId": null,
+          "cardmarketExpansionId": 3738,
           "cards": [
             {
               "tcgdexCardId": "2021swsh-1",
@@ -122065,7 +122066,7 @@
         {
           "setId": "2022swsh",
           "setName": "Collection McDonald's 2022",
-          "cardmarketExpansionId": null,
+          "cardmarketExpansionId": 5135,
           "cards": [
             {
               "tcgdexCardId": "2022swsh-1",
@@ -122732,7 +122733,7 @@
         {
           "setId": "2023sv",
           "setName": "Collection McDonald's 2023",
-          "cardmarketExpansionId": null,
+          "cardmarketExpansionId": 5430,
           "cards": [
             {
               "tcgdexCardId": "2023sv-001",
@@ -122940,7 +122941,7 @@
         {
           "setId": "2024sv",
           "setName": "Collection McDonald's 2024",
-          "cardmarketExpansionId": null,
+          "cardmarketExpansionId": 5978,
           "cards": [
             {
               "tcgdexCardId": "2024sv-001",
@@ -145854,7 +145855,7 @@
         {
           "setId": "dc1",
           "setName": "Double Danger",
-          "cardmarketExpansionId": 1648,
+          "cardmarketExpansionId": 4124,
           "cards": [
             {
               "tcgdexCardId": "dc1-1001",
@@ -151191,7 +151192,7 @@
         {
           "setId": "xy8",
           "setName": "Impulsion Turbo",
-          "cardmarketExpansionId": 1678,
+          "cardmarketExpansionId": 1687,
           "cards": [
             {
               "tcgdexCardId": "xy8-001",
@@ -153943,7 +153944,7 @@
         {
           "setId": "xy9",
           "setName": "Rupture Turbo",
-          "cardmarketExpansionId": 1687,
+          "cardmarketExpansionId": 1678,
           "cards": [
             {
               "tcgdexCardId": "xy9-012",
@@ -170689,7 +170690,7 @@
         {
           "setId": "smp",
           "setName": "Promo SM",
-          "cardmarketExpansionId": null,
+          "cardmarketExpansionId": 3324,
           "cards": [
             {
               "tcgdexCardId": "smp-001",
@@ -269081,23 +269082,6 @@
           "cards": [
             {
               "tcgdexCardId": "cel25-001",
-              "name": "Dracaufeu",
-              "variants": [
-                {
-                  "version": "V1",
-                  "productId": 576772,
-                  "label": [
-                    "Ne Hal",
-                    "Temon Length",
-                    "Pokmon power Energy Burn Precerre"
-                  ],
-                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Celebrations/Charizard-V1-CELBS-4",
-                  "prices": {}
-                }
-              ]
-            },
-            {
-              "tcgdexCardId": "cel25-001",
               "name": "Ho-Oh",
               "variants": [
                 {
@@ -269105,24 +269089,9 @@
                   "productId": 576746,
                   "label": [
                     "Sacred Fire",
-                    "This Attack Does So Damage To Of Your",
-                    "Pokmon Dont Apply Weakness And Resistance For Benched",
-                    "Eien 19n"
+                    "Pokcmo Jiinarg Benched"
                   ],
                   "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Celebrations/Ho-Oh",
-                  "prices": {}
-                }
-              ]
-            },
-            {
-              "tcgdexCardId": "cel25-002",
-              "name": "Dracaufeu",
-              "variants": [
-                {
-                  "version": "V2",
-                  "productId": 580162,
-                  "label": [],
-                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Celebrations/Charizard-V2",
                   "prices": {}
                 }
               ]
@@ -269136,24 +269105,10 @@
                   "productId": 576747,
                   "label": [
                     "Scorching Wind",
-                    "This Attack Does Damage To Each Of Your",
-                    "Benched Pokmon Dont Apply Weokness And",
-                    "For Benched Pokmon"
+                    "This artack doc; 20 damaz?",
+                    "Benched Pokemon"
                   ],
                   "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Celebrations/Reshiram-V1-CEL002",
-                  "prices": {}
-                }
-              ]
-            },
-            {
-              "tcgdexCardId": "cel25-003",
-              "name": "Léviator obscur",
-              "variants": [
-                {
-                  "version": "V1",
-                  "productId": 576775,
-                  "label": null,
-                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Celebrations/Dark-Gyarados",
                   "prices": {}
                 }
               ]
@@ -269175,6 +269130,13 @@
               "tcgdexCardId": "cel25-004",
               "name": "Palkia",
               "variants": [
+                {
+                  "version": "V1",
+                  "productId": 576749,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Celebrations/Palkia",
+                  "prices": {}
+                },
                 {
                   "version": "V1",
                   "productId": 576749,
@@ -269204,7 +269166,11 @@
                 {
                   "version": "V1",
                   "productId": 576751,
-                  "label": null,
+                  "label": [
+                    "Cone Bt Laila Sirs",
+                    "Your Opponents",
+                    "Sat Ahtaece Al Oeeaerice"
+                  ],
                   "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Celebrations/Flying-Pikachu-V",
                   "prices": {}
                 }
@@ -269235,18 +269201,12 @@
                   "label": null,
                   "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Celebrations/Surfing-Pikachu-V",
                   "prices": {}
-                }
-              ]
-            },
-            {
-              "tcgdexCardId": "cel25-008",
-              "name": "Pikachu",
-              "variants": [
+                },
                 {
-                  "version": "V2",
-                  "productId": 580161,
+                  "version": "V1",
+                  "productId": 576753,
                   "label": null,
-                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Celebrations/Pikachu-V2-CELBS-58",
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Celebrations/Surfing-Pikachu-V",
                   "prices": {}
                 }
               ]
@@ -269266,6 +269226,55 @@
                   ],
                   "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Celebrations/Surfing-Pikachu-VMAX",
                   "prices": {}
+                },
+                {
+                  "version": "V1",
+                  "productId": 576754,
+                  "label": [
+                    "Damageqto To Excheot You",
+                    "dont T Pp Weck Wredhets Aid",
+                    "Mar Cil",
+                    "Den You Potdon Vle"
+                  ],
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Celebrations/Surfing-Pikachu-VMAX",
+                  "prices": {}
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "cel25-010",
+              "name": "Zekrom",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 576755,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Celebrations/Zekrom-V1-CEL010",
+                  "prices": {
+                    "es": {
+                      "FR": {
+                        "currency": "EUR",
+                        "minPrice": {
+                          "EX": 0.05
+                        },
+                        "avgPrice": {
+                          "EX": 0.05
+                        },
+                        "medianPrice": {
+                          "EX": 0.05
+                        },
+                        "maxPrice": {
+                          "EX": 0.05
+                        },
+                        "availableCount": {
+                          "EX": 1.0
+                        },
+                        "recommendedPrice": {
+                          "EX": 0.05
+                        }
+                      }
+                    }
+                  }
                 }
               ]
             },
@@ -269289,7 +269298,9 @@
                 {
                   "version": "V1",
                   "productId": 576757,
-                  "label": null,
+                  "label": [
+                    "Aurora Horns"
+                  ],
                   "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Celebrations/Xerneas",
                   "prices": {}
                 }
@@ -269322,40 +269333,25 @@
               ]
             },
             {
-              "tcgdexCardId": "cel25-014",
-              "name": "Groudon de Team Magma",
-              "variants": [
-                {
-                  "version": "V1",
-                  "productId": 576781,
-                  "label": null,
-                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Celebrations/Team-Magmas-Groudon",
-                  "prices": {}
-                }
-              ]
-            },
-            {
               "tcgdexCardId": "cel25-015",
               "name": "Lunala",
               "variants": [
                 {
                   "version": "V1",
                   "productId": 576760,
-                  "label": null,
+                  "label": [
+                    "Gamapc"
+                  ],
                   "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Celebrations/Lunala",
                   "prices": {}
-                }
-              ]
-            },
-            {
-              "tcgdexCardId": "cel25-016",
-              "name": "Florizarre",
-              "variants": [
+                },
                 {
                   "version": "V1",
-                  "productId": 576773,
-                  "label": null,
-                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Celebrations/Venusaur",
+                  "productId": 576760,
+                  "label": [
+                    "Gamapc"
+                  ],
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Celebrations/Lunala",
                   "prices": {}
                 }
               ]
@@ -269383,6 +269379,13 @@
                   "label": null,
                   "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Celebrations/Groudon",
                   "prices": {}
+                },
+                {
+                  "version": "V1",
+                  "productId": 576762,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Celebrations/Groudon",
+                  "prices": {}
                 }
               ]
             },
@@ -269393,7 +269396,9 @@
                 {
                   "version": "V1",
                   "productId": 576763,
-                  "label": null,
+                  "label": [
+                    "Heavy Impact"
+                  ],
                   "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Celebrations/Zamazenta-V",
                   "prices": {}
                 }
@@ -269406,7 +269411,9 @@
                 {
                   "version": "V1",
                   "productId": 576764,
-                  "label": null,
+                  "label": [
+                    "Dark Feather"
+                  ],
                   "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Celebrations/Yveltal",
                   "prices": {
                     "es": {
@@ -269443,7 +269450,20 @@
                 {
                   "version": "V1",
                   "productId": 576765,
-                  "label": null,
+                  "label": [
+                    "Meta Blast",
+                    "damazc"
+                  ],
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Celebrations/Dialga",
+                  "prices": {}
+                },
+                {
+                  "version": "V1",
+                  "productId": 576765,
+                  "label": [
+                    "Meta Blast",
+                    "damazc"
+                  ],
                   "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Celebrations/Dialga",
                   "prices": {}
                 }
@@ -269521,7 +269541,7 @@
               "name": "Recherches Professorales - Professor Chen",
               "variants": [
                 {
-                  "version": "V2",
+                  "version": "V1",
                   "productId": 576769,
                   "label": [
                     "You Ty Mar Oby Gly Sopporter Gard Poring",
@@ -269531,21 +269551,17 @@
                   ],
                   "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Celebrations/Professors-Research-Professor-Oak-V2-CEL024",
                   "prices": {}
-                }
-              ]
-            },
-            {
-              "tcgdexCardId": "cel25-024",
-              "name": "Pikachu Volant VMAX",
-              "variants": [
+                },
                 {
-                  "version": "V1",
-                  "productId": 853935,
+                  "version": "V2",
+                  "productId": 576769,
                   "label": [
-                    "Stee As Ti Atme F Agy",
-                    "Enaupeaet"
+                    "You Ty Mar Oby Gly Sopporter Gard Poring",
+                    "Surrh",
+                    "Favors",
+                    "Prrs Pohem Sess Me-Eereo 1 Crew Aes Label Can"
                   ],
-                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Pikachu-Legendary-Celebration/Flying-Pikachu-VMAX-CSDC024",
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Celebrations/Professors-Research-Professor-Oak-V2-CEL024",
                   "prices": {}
                 }
               ]
@@ -269568,70 +269584,68 @@
               ]
             },
             {
-              "tcgdexCardId": "cel25-114",
-              "name": "Zekrom",
+              "tcgdexCardId": "cel25-107A",
+              "name": "Donphan",
               "variants": [
                 {
                   "version": "V1",
-                  "productId": 576755,
+                  "productId": 576789,
                   "label": null,
-                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Celebrations/Zekrom-V1-CEL010",
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Celebrations/Donphan-CELHS-107",
+                  "prices": {}
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "cel25-109A",
+              "name": "Luxray [GL] LV.X",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 576787,
+                  "label": [
+                    "Flash Impact"
+                  ],
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Celebrations/Luxray-GL-LVX-CELRR-109",
                   "prices": {
                     "es": {
                       "FR": {
                         "currency": "EUR",
                         "minPrice": {
-                          "EX": 0.05
+                          "NM": 15.0
                         },
                         "avgPrice": {
-                          "EX": 0.05
+                          "NM": 15.0
                         },
                         "medianPrice": {
-                          "EX": 0.05
+                          "NM": 15.0
                         },
                         "maxPrice": {
-                          "EX": 0.05
+                          "NM": 15.0
                         },
                         "availableCount": {
-                          "EX": 1.0
+                          "NM": 1.0
                         },
                         "recommendedPrice": {
-                          "EX": 0.05
+                          "NM": 15.0
                         }
                       }
                     }
                   }
-                },
-                {
-                  "version": "V2",
-                  "productId": 576791,
-                  "label": null,
-                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Celebrations/Zekrom-V2",
-                  "prices": {}
                 }
               ]
             },
             {
-              "tcgdexCardId": "cel25-15",
-              "name": "Électhor de Rocket",
-              "variants": [
-                {
-                  "version": "V1",
-                  "productId": 576777,
-                  "label": null,
-                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Celebrations/Rockets-Zapdos",
-                  "prices": {}
-                }
-              ]
-            },
-            {
-              "tcgdexCardId": "cel25-2A",
+              "tcgdexCardId": "cel25-113A",
               "name": "Reshiram",
               "variants": [
                 {
                   "version": "V2",
                   "productId": 576790,
-                  "label": null,
+                  "label": [
+                    "Blue Flare",
+                    "Encrgy attached"
+                  ],
                   "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Celebrations/Reshiram-V2",
                   "prices": {
                     "es": {
@@ -269662,14 +269676,171 @@
               ]
             },
             {
-              "tcgdexCardId": "cel25-45",
+              "tcgdexCardId": "cel25-114A",
+              "name": "Zekrom",
+              "variants": [
+                {
+                  "version": "V2",
+                  "productId": 576791,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Celebrations/Zekrom-V2",
+                  "prices": {}
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "cel25-145A",
+              "name": "Carchacrok [C] LV.X",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 576788,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Celebrations/Garchomp-C-LVX-CELSV-145",
+                  "prices": {}
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "cel25-15A1",
+              "name": "Florizarre",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 576773,
+                  "label": [
+                    "Solarbeam"
+                  ],
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Celebrations/Venusaur",
+                  "prices": {}
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "cel25-15A2",
+              "name": "Et voila les Team Rocket !",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 576776,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Celebrations/Here-Comes-Team-Rocket",
+                  "prices": {}
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "cel25-15A3",
+              "name": "Électhor de Rocket",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 576777,
+                  "label": [
+                    "Electroburn Rockers Zapdos coes",
+                    "047e",
+                    "ribei"
+                  ],
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Celebrations/Rockets-Zapdos",
+                  "prices": {}
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "cel25-15A4",
               "name": "Claydol Lv.45 (GE 15) - Celebrations",
               "variants": [
                 {
                   "version": "V1",
                   "productId": 576786,
-                  "label": null,
+                  "label": [
+                    "hand Th power cn\"t",
+                    "Spinning Attack"
+                  ],
                   "cardUrl": "https://www.cardmarket.com/en/Pokemon/Products/Singles/Celebrations/Claydol-Lv45",
+                  "prices": {}
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "cel25-17A",
+              "name": "Noctali Gold Star",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 576785,
+                  "label": [
+                    "Feint Attack",
+                    "dumure ixt"
+                  ],
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Celebrations/Umbreon-Gold-Star-CELPOP5-17",
+                  "prices": {}
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "cel25-20A",
+              "name": "Mélo",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 576779,
+                  "label": [
+                    "Your deck; Lhen draw cards.",
+                    "cakne"
+                  ],
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Celebrations/Cleffa",
+                  "prices": {}
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "cel25-24A",
+              "name": "_____'s Pikachu",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 576778,
+                  "label": [
+                    "docs 30 damags,",
+                    "Birthdata"
+                  ],
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Celebrations/s-Pikachu",
+                  "prices": {}
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "cel25-2A",
+              "name": "Tortank",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 576771,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Celebrations/Blastoise",
+                  "prices": {}
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "cel25-4A",
+              "name": "Dracaufeu",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 576772,
+                  "label": [
+                    "Fame Pokemon Lenrth: 5 Poxer; Energr Burn"
+                  ],
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Celebrations/Charizard-V1-CELBS-4",
+                  "prices": {}
+                },
+                {
+                  "version": "V2",
+                  "productId": 580162,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Celebrations/Charizard-V2",
                   "prices": {}
                 }
               ]
@@ -269682,9 +269853,8 @@
                   "version": "V1",
                   "productId": 576792,
                   "label": [
-                    "Does Damage Times The Amount Of Energy Attached",
-                    "This Pokmon And The Defending",
-                    "Bea Ew"
+                    "X Ball 20*",
+                    "Docs 20 damagc timcs thc amount ofEncrgy atradkcd Defending Pokemon:"
                   ],
                   "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Celebrations/Mewtwo-EX",
                   "prices": {}
@@ -269692,14 +269862,21 @@
               ]
             },
             {
-              "tcgdexCardId": "cel25-58",
+              "tcgdexCardId": "cel25-58A",
               "name": "Pikachu",
               "variants": [
+                {
+                  "version": "V2",
+                  "productId": 580161,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Celebrations/Pikachu-V2-CELBS-58",
+                  "prices": {}
+                },
                 {
                   "version": "V3",
                   "productId": 605985,
                   "label": [
-                    "Attention Oversized Card",
+                    "Attention: Oversized Card",
                     "Not Tournament Legal"
                   ],
                   "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Celebrations/Pikachu-V3-CELBS-58",
@@ -269725,6 +269902,19 @@
               ]
             },
             {
+              "tcgdexCardId": "cel25-66A",
+              "name": "Magicarpe Brillant",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 576780,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Celebrations/Shining-Magikarp",
+                  "prices": {}
+                }
+              ]
+            },
+            {
               "tcgdexCardId": "cel25-73A",
               "name": "Faux Professeur Chen",
               "variants": [
@@ -269738,16 +269928,15 @@
               ]
             },
             {
-              "tcgdexCardId": "cel25-76",
+              "tcgdexCardId": "cel25-76A",
               "name": "MRayquaza EX",
               "variants": [
                 {
                   "version": "V1",
                   "productId": 576794,
                   "label": [
-                    "Emerald Break 30x",
-                    "Does Damage Times The Number",
-                    "Han Been"
+                    "Emerald Break 30 *",
+                    "Fokemian damzge"
                   ],
                   "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Celebrations/MRayquaza-EX",
                   "prices": {}
@@ -269761,7 +269950,11 @@
                 {
                   "version": "V1",
                   "productId": 576782,
-                  "label": null,
+                  "label": [
+                    "Each player shuffles his or her hand",
+                    "intonis or her deck Inen each player counts nis or her Prize cards lelt",
+                    "and draws Up t0 that many cards. (You draw your cards (irsc )"
+                  ],
                   "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Celebrations/Rockets-Admin",
                   "prices": {}
                 }
@@ -269775,11 +269968,40 @@
                   "version": "V1",
                   "productId": 576783,
                   "label": [
-                    "Use The Attacks Of All Pok",
-                    "Ovm You Still Need The Nec",
-                    "Use Each Attack"
+                    "Versatile",
+                    "the atcacks of all Poke",
+                    "(You still need",
+                    "Each arack:"
                   ],
                   "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Celebrations/Mew-ex",
+                  "prices": {}
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "cel25-8A",
+              "name": "Léviator obscur",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 576775,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Celebrations/Dark-Gyarados",
+                  "prices": {}
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "cel25-93A",
+              "name": "Gardevoir ex δ Delta Species",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 576784,
+                  "label": [
+                    "Markcr"
+                  ],
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Celebrations/Gardevoir-ex-Delta-Species",
                   "prices": {}
                 }
               ]
@@ -269798,21 +270020,14 @@
               ]
             },
             {
-              "tcgdexCardId": "cel25-POP005",
-              "name": "Noctali Gold Star",
+              "tcgdexCardId": "cel25-9A",
+              "name": "Groudon de Team Magma",
               "variants": [
                 {
                   "version": "V1",
-                  "productId": 576785,
-                  "label": [
-                    "Feint Attack",
-                    "Choose I Of Your Epponents Potutmon This Attack Does",
-                    "Durage To Thit Pokmon This Attads Damage Isnt",
-                    "Affected By Weakness Ressturnce Pokt-Powers Pok-",
-                    "Bodes Or Ary Ocher Effecss On That Pokimon",
-                    "Eeletoann"
-                  ],
-                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Celebrations/Umbreon-Gold-Star-CELPOP5-17",
+                  "productId": 576781,
+                  "label": null,
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Celebrations/Team-Magmas-Groudon",
                   "prices": {}
                 }
               ]
@@ -286647,7 +286862,7 @@
         {
           "setId": "swsh10.5",
           "setName": "Pokémon GO",
-          "cardmarketExpansionId": 4786,
+          "cardmarketExpansionId": 5051,
           "cards": [
             {
               "tcgdexCardId": "swsh10.5-001",
@@ -365564,7 +365779,7 @@
         {
           "setId": "sv10",
           "setName": "Rivalités Destinées",
-          "cardmarketExpansionId": null,
+          "cardmarketExpansionId": 6096,
           "cards": [
             {
               "tcgdexCardId": "sv10-001",
@@ -430612,7 +430827,7 @@
         {
           "setId": "fut2020",
           "setName": "fut2020",
-          "cardmarketExpansionId": null,
+          "cardmarketExpansionId": 3510,
           "cards": [
             {
               "tcgdexCardId": "fut2020-20001",
@@ -434343,7 +434558,7 @@
         {
           "setId": "2018sm",
           "setName": "2018sm",
-          "cardmarketExpansionId": null,
+          "cardmarketExpansionId": 2404,
           "cards": [
             {
               "tcgdexCardId": "2018sm-1",
@@ -434821,7 +435036,7 @@
         {
           "setId": "2019sm",
           "setName": "2019sm",
-          "cardmarketExpansionId": null,
+          "cardmarketExpansionId": 2829,
           "cards": [
             {
               "tcgdexCardId": "2019sm-11",
@@ -446438,6 +446653,22 @@
                   "productId": 273947,
                   "label": null,
                   "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Base-Set-2/Electabuzz-B224",
+                  "prices": {}
+                }
+              ]
+            },
+            {
+              "tcgdexCardId": "base4-025",
+              "name": "Électrode",
+              "variants": [
+                {
+                  "version": "V1",
+                  "productId": 273948,
+                  "label": [
+                    "Ele-troce Ccrhy Fimhied",
+                    "Electric Shock Frp 50"
+                  ],
+                  "cardUrl": "https://www.cardmarket.com/fr/Pokemon/Products/Singles/Base-Set-2/Electrode-B225",
                   "prices": {}
                 }
               ]
