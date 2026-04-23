@@ -64,7 +64,14 @@ class CardmarketExportLoadingTest {
         assertEquals(1, card.variants.size)
         val variant = card.variants.first()
         assertEquals(123, variant.productId)
-        assertEquals(2.9, variant.prices["fr"]?.get("FR")?.recommendedPrice)
+        // The generator stores one CardmarketExportPrice per Cardmarket condition bucket
+        // (here only "NM"); the database row is identified by (priceLanguage, sellerCountry, condition).
+        val nmPrice = variant.prices["fr"]?.get("FR")?.get("NM")
+        assertNotNull(nmPrice)
+        assertEquals("NM", nmPrice.condition)
+        assertEquals(2.9, nmPrice.recommendedPrice)
+        assertEquals(2.8, nmPrice.avgPrice)
+        assertEquals(1.9, nmPrice.minPrice)
     }
 
     @Test

@@ -129,8 +129,14 @@ data class Card(
 /**
  * Detailed Cardmarket pricing row for a card.
  *
- * This model mirrors the `card_prices` table. It stores per-variant prices,
- * per price-language, and per seller-country.
+ * This model mirrors the `card_prices` table. One row exists per
+ * (variant, priceLanguage, sellerCountry, condition). The database stores the
+ * raw Cardmarket data verbatim (no collapse across conditions, no fallback
+ * between tiers); callers are responsible for picking the condition to display.
+ *
+ * @property condition Cardmarket condition grade (e.g. "NM", "MT", "EX", "GD",
+ *   "LP", "PL", "PO"). Empty string means the row is the GLOBAL price-guide
+ *   baseline, which is condition-agnostic.
  */
 data class CardPrice(
     val cardId: String,
@@ -138,6 +144,7 @@ data class CardPrice(
     val variant: String,
     val priceLanguage: String,
     val sellerCountry: String,
+    val condition: String,
     val currency: String,
     val minPrice: Double?,
     val avgPrice: Double?,

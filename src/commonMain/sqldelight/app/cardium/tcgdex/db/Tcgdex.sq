@@ -124,12 +124,16 @@ BEGIN
 END;
 
 -- -----------------------------------------------------------------------------
--- Card Prices table: Detailed Cardmarket pricing (variant + language + country)
+-- Card Prices table: Detailed Cardmarket pricing (variant + language + country + condition)
 -- -----------------------------------------------------------------------------
--- This table stores ALL Cardmarket export prices per card:
+-- This table stores ALL Cardmarket export prices per card, per Cardmarket condition:
 -- - variant: e.g. "Normal", "Reverse", "1stEdition" (source-dependent)
 -- - price_language: language key of the price entry in the export JSON (e.g. "fr")
 -- - seller_country: seller country code (e.g. "FR", "BE")
+-- - condition: Cardmarket condition grade (e.g. "NM", "MT", "EX", "GD", "LP", "PL", "PO").
+--              Empty string '' is reserved for the GLOBAL price-guide baseline which is
+--              condition-agnostic. Raw per-condition storage -- the database never mixes
+--              conditions nor falls back between them; that is an app-layer concern.
 -- Note: cards table keeps legacy flat pricing columns for backward compatibility.
 -- -----------------------------------------------------------------------------
 CREATE TABLE card_prices (
@@ -138,6 +142,7 @@ CREATE TABLE card_prices (
     variant TEXT NOT NULL DEFAULT '',
     price_language TEXT NOT NULL,
     seller_country TEXT NOT NULL,
+    condition TEXT NOT NULL DEFAULT '',
     currency TEXT NOT NULL DEFAULT 'EUR',
     min_price REAL,
     avg_price REAL,
@@ -147,11 +152,11 @@ CREATE TABLE card_prices (
     available_count INTEGER,
     product_id INTEGER,
     updated_iso TEXT NOT NULL DEFAULT '',
-    PRIMARY KEY (card_id, card_language, variant, price_language, seller_country),
+    PRIMARY KEY (card_id, card_language, variant, price_language, seller_country, condition),
     FOREIGN KEY (card_id, card_language) REFERENCES cards(id, language) ON DELETE CASCADE
 );
 
-CREATE INDEX card_prices_lookup_idx ON card_prices(card_id, card_language, seller_country);
+CREATE INDEX card_prices_lookup_idx ON card_prices(card_id, card_language, seller_country, condition);
 CREATE INDEX card_prices_country_updated_idx ON card_prices(seller_country, updated_iso);
 
 -- -----------------------------------------------------------------------------
@@ -372,6 +377,7 @@ INSERT OR REPLACE INTO card_prices(
     variant,
     price_language,
     seller_country,
+    condition,
     currency,
     min_price,
     avg_price,
@@ -388,6 +394,7 @@ VALUES (
     :variant,
     :priceLanguage,
     :sellerCountry,
+    :condition,
     :currency,
     :minPrice,
     :avgPrice,
@@ -528,11 +535,11 @@ WHERE card_id = :cardId
     AND card_language = :cardLanguage
 ORDER BY variant, price_language, seller_country;
 
--- Get recommended price for a card.
--- Prefers the user's sellerCountry, falls back to GLOBAL (price guide).
--- Within a country tier, prefers cardLanguage price_language, then Normal variant.
-getRecommendedPriceForCard:
-SELECT recommended_price, avg_price, min_price, updated_iso
+-- Get every card_prices row for a single card matching the requested seller country
+-- (plus the GLOBAL baseline). The database returns raw per-condition rows -- no
+-- collapse, no fallback. The app decides which condition to display.
+getCardPriceRowsForCard:
+SELECT *
 FROM card_prices
 WHERE card_id = :cardId
     AND card_language = :cardLanguage
@@ -547,45 +554,31 @@ ORDER BY
     END ASC,
     CASE WHEN variant = 'Normal' THEN 0 ELSE 1 END ASC,
     price_language ASC,
-    variant ASC
-LIMIT 1;
+    variant ASC,
+    condition ASC;
 
--- Batch recommended prices for multiple cards (same fallback as single-card).
--- Returns one row per card_id with the best-matching price.
-getBatchRecommendedPrices:
-SELECT cp.card_id, cp.recommended_price, cp.avg_price, cp.min_price, cp.updated_iso
-FROM card_prices cp
-INNER JOIN (
-    SELECT card_id,
-        MIN(
-            CASE seller_country WHEN :sellerCountry THEN 0 ELSE 1 END * 10000 +
-            CASE price_language
-                WHEN :cardLanguage THEN 0
-                WHEN 'fr' THEN 1
-                WHEN 'en' THEN 2
-                ELSE 3
-            END * 100 +
-            CASE WHEN variant = 'Normal' THEN 0 ELSE 1 END
-        ) AS best_rank
-    FROM card_prices
-    WHERE card_id IN ?
-        AND card_language = :cardLanguage
-        AND (seller_country = :sellerCountry OR seller_country = 'GLOBAL')
-    GROUP BY card_id
-) best ON cp.card_id = best.card_id
-    AND cp.card_language = :cardLanguage
-    AND (cp.seller_country = :sellerCountry OR cp.seller_country = 'GLOBAL')
-    AND (
-        CASE cp.seller_country WHEN :sellerCountry THEN 0 ELSE 1 END * 10000 +
-        CASE cp.price_language
-            WHEN :cardLanguage THEN 0
-            WHEN 'fr' THEN 1
-            WHEN 'en' THEN 2
-            ELSE 3
-        END * 100 +
-        CASE WHEN cp.variant = 'Normal' THEN 0 ELSE 1 END
-    ) = best.best_rank
-GROUP BY cp.card_id;
+-- Batch variant of getCardPriceRowsForCard. Returns all raw per-condition rows
+-- for the given card IDs (country filtered to sellerCountry + GLOBAL).
+-- Callers group by card_id and let the app picker decide the displayed price.
+getCardPriceRowsByCountry:
+SELECT *
+FROM card_prices
+WHERE card_id IN ?
+    AND card_language = :cardLanguage
+    AND (seller_country = :sellerCountry OR seller_country = 'GLOBAL')
+ORDER BY
+    card_id ASC,
+    CASE seller_country WHEN :sellerCountry THEN 0 ELSE 1 END ASC,
+    CASE price_language
+        WHEN :cardLanguage THEN 0
+        WHEN 'fr' THEN 1
+        WHEN 'en' THEN 2
+        ELSE 3
+    END ASC,
+    CASE WHEN variant = 'Normal' THEN 0 ELSE 1 END ASC,
+    price_language ASC,
+    variant ASC,
+    condition ASC;
 
 -- Get all seller countries present in the database (for account preference dropdown)
 getAllSellerCountries:

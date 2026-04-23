@@ -140,31 +140,39 @@ interface TcgdexRepository {
     suspend fun getCardPrices(cardId: String, language: String): List<CardPrice>
 
     /**
-     * Returns the recommended price for a card for the requested seller country.
+     * Returns every raw [CardPrice] row for a card that matches the requested seller
+     * country (plus the GLOBAL price-guide baseline). The database returns one row per
+     * Cardmarket condition bucket; it never collapses or falls back across conditions.
      *
-     * This is used when the user selects a preferred seller country in settings.
+     * Callers (the app layer) are responsible for picking the row to display based on
+     * the user's preferred condition.
+     *
+     * Rows are ordered with the user's seller country first, matching price language
+     * first, then Normal variant preference.
      *
      * @param cardId The card identifier
-     * @param language The language of the card record
+     * @param language The language of the card record (card_language column)
      * @param sellerCountry Seller country code (e.g., "FR", "BE")
      */
-    suspend fun getRecommendedPrice(cardId: String, language: String, sellerCountry: String): Double?
+    suspend fun getCardPricesForCard(
+        cardId: String,
+        language: String,
+        sellerCountry: String,
+    ): List<CardPrice>
 
     /**
-     * Batch lookup of recommended prices for multiple cards.
-     *
-     * Returns a map of cardId to the best recommended price (using the same
-     * price_language fallback as [getRecommendedPrice]).
+     * Batch variant of [getCardPricesForCard]. Returns raw per-condition rows for the
+     * requested cards. Keys without rows are absent from the returned map.
      *
      * @param cardIds Card identifiers to look up
      * @param language The catalog language of the card rows
      * @param sellerCountry Seller country code (e.g., "FR")
      */
-    suspend fun getRecommendedPrices(
+    suspend fun getCardPricesForCards(
         cardIds: Collection<String>,
         language: String,
         sellerCountry: String,
-    ): Map<String, Double> = emptyMap()
+    ): Map<String, List<CardPrice>> = emptyMap()
 
     /**
      * Returns all seller countries present in the database.

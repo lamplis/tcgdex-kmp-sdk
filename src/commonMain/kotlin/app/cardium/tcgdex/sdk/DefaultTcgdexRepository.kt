@@ -146,30 +146,31 @@ class DefaultTcgdexRepository(
             queries.getCardPrices(cardId, language).executeAsList().map { it.toModel() }
         }
 
-    override suspend fun getRecommendedPrice(cardId: String, language: String, sellerCountry: String): Double? =
-        withContext(dispatcher) {
-            val row = queries.getRecommendedPriceForCard(cardId, language, sellerCountry).executeAsOneOrNull()
-            row?.recommended_price ?: row?.avg_price ?: row?.min_price
-        }
+    override suspend fun getCardPricesForCard(
+        cardId: String,
+        language: String,
+        sellerCountry: String,
+    ): List<CardPrice> = withContext(dispatcher) {
+        queries.getCardPriceRowsForCard(cardId, language, sellerCountry)
+            .executeAsList()
+            .map { it.toModel() }
+    }
 
-    override suspend fun getRecommendedPrices(
+    override suspend fun getCardPricesForCards(
         cardIds: Collection<String>,
         language: String,
         sellerCountry: String,
-    ): Map<String, Double> = withContext(dispatcher) {
+    ): Map<String, List<CardPrice>> = withContext(dispatcher) {
         if (cardIds.isEmpty()) return@withContext emptyMap()
-        val result = mutableMapOf<String, Double>()
+        val result = LinkedHashMap<String, MutableList<CardPrice>>()
         cardIds.toList().chunked(500).forEach { chunk ->
-            queries.getBatchRecommendedPrices(sellerCountry, language, chunk)
+            queries.getCardPriceRowsByCountry(chunk, language, sellerCountry)
                 .executeAsList()
                 .forEach { row ->
-                    val price = row.recommended_price ?: row.avg_price ?: row.min_price
-                    if (price != null) {
-                        result[row.card_id] = price
-                    }
+                    result.getOrPut(row.card_id) { mutableListOf() }.add(row.toModel())
                 }
         }
-        result
+        result.mapValues { it.value.toList() }
     }
 
     override suspend fun getAllSellerCountries(): List<String> =
@@ -586,6 +587,7 @@ private fun Card_prices.toModel(): CardPrice = CardPrice(
     variant = variant,
     priceLanguage = price_language,
     sellerCountry = seller_country,
+    condition = condition,
     currency = currency,
     minPrice = min_price,
     avgPrice = avg_price,
