@@ -1,18 +1,25 @@
 package app.cardium.tcgdex.sdk
 
+import androidx.sqlite.driver.bundled.BundledSQLiteDriver
 import app.cardium.tcgdex.db.TcgdexDatabase
-import app.cash.sqldelight.driver.jdbc.sqlite.JdbcSqliteDriver
+import com.eygraber.sqldelight.androidx.driver.AndroidxSqliteDatabaseType
+import com.eygraber.sqldelight.androidx.driver.AndroidxSqliteDriver
 import kotlinx.coroutines.runBlocking
 import kotlin.test.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertNull
 import kotlin.test.assertTrue
 
+private fun newInMemoryDriver() = AndroidxSqliteDriver(
+    driver = BundledSQLiteDriver(),
+    databaseType = AndroidxSqliteDatabaseType.Memory,
+    schema = TcgdexDatabase.Schema,
+)
+
 class DefaultTcgdexRepositoryPriceUpdateTest {
     @Test
     fun `Given cards with embedded price timestamps, When querying latest price update, Then most recent ISO is returned`() = runBlocking {
-        val driver = JdbcSqliteDriver(JdbcSqliteDriver.IN_MEMORY)
-        TcgdexDatabase.Schema.create(driver)
+        val driver = newInMemoryDriver()
         val database = TcgdexDatabase(driver)
         val queries = database.tcgdexQueries
 
@@ -88,8 +95,7 @@ class DefaultTcgdexRepositoryPriceUpdateTest {
 
     @Test
     fun `Given no cards with embedded price timestamps, When querying latest price update, Then null is returned`() = runBlocking {
-        val driver = JdbcSqliteDriver(JdbcSqliteDriver.IN_MEMORY)
-        TcgdexDatabase.Schema.create(driver)
+        val driver = newInMemoryDriver()
         val repository = DefaultTcgdexRepository(TcgdexDatabase(driver))
 
         assertNull(repository.getLatestPriceUpdateIso())
@@ -101,8 +107,7 @@ class DefaultTcgdexRepositoryPriceUpdateTest {
         // Reproduces me02.5-276 FR: the database stores each Cardmarket condition bucket as
         // its own row (NM=0, MT=650) plus the GLOBAL price-guide baseline. The repository must
         // return all of them; it must not collapse or fallback between tiers.
-        val driver = JdbcSqliteDriver(JdbcSqliteDriver.IN_MEMORY)
-        TcgdexDatabase.Schema.create(driver)
+        val driver = newInMemoryDriver()
         val database = TcgdexDatabase(driver)
         database.seedCardFk("me02.5-276")
         database.insertPriceRow("me02.5-276", variant = "V1", priceLanguage = "fr", sellerCountry = "FR", condition = "NM", recommendedPrice = 0.0, avgPrice = 443.0, minPrice = 0.0)
@@ -129,8 +134,7 @@ class DefaultTcgdexRepositoryPriceUpdateTest {
 
     @Test
     fun `Given multiple cards, When getCardPricesForCards is called, Then rows are grouped per card id`() = runBlocking {
-        val driver = JdbcSqliteDriver(JdbcSqliteDriver.IN_MEMORY)
-        TcgdexDatabase.Schema.create(driver)
+        val driver = newInMemoryDriver()
         val database = TcgdexDatabase(driver)
         database.seedCardFk("me02-127")
         database.seedCardFk("me02.5-276")
@@ -162,7 +166,7 @@ class DefaultTcgdexRepositoryPriceUpdateTest {
 /**
  * Minimum FK chain (serie/set/card) required before a card_prices row can be inserted.
  */
-private fun TcgdexDatabase.seedCardFk(cardId: String) {
+private suspend fun TcgdexDatabase.seedCardFk(cardId: String) {
     val setId = cardId.substringBeforeLast('-').ifEmpty { "tset" }
     val localId = cardId.substringAfterLast('-').ifEmpty { "001" }
     tcgdexQueries.insertSerie(id = "tserie", language = "fr", name = "Test Serie", position = 0)
@@ -202,7 +206,7 @@ private fun TcgdexDatabase.seedCardFk(cardId: String) {
     )
 }
 
-private fun TcgdexDatabase.insertPriceRow(
+private suspend fun TcgdexDatabase.insertPriceRow(
     cardId: String,
     variant: String,
     priceLanguage: String,

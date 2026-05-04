@@ -21,13 +21,6 @@ ktlint {
     }
 }
 
-// Force sqlite-jdbc to iOS-compatible version for database generation (see plan: fix iOS DB corruption)
-configurations.all {
-    resolutionStrategy {
-        force("org.xerial:sqlite-jdbc:3.39.4.1")
-    }
-}
-
 // -----------------------------------------------------------------------------
 // TCGdex Database Generation Configuration
 // -----------------------------------------------------------------------------
@@ -100,28 +93,11 @@ kotlin {
                 implementation(libs.kotlinx.serialization.json)
                 implementation(libs.sqldelight.runtime)
                 implementation(libs.sqldelight.coroutines)
+                implementation(libs.sqldelight.async.coroutines)
+                implementation(libs.sqldelight.androidx.driver)
+                implementation(libs.androidx.sqlite)
+                implementation(libs.androidx.sqlite.bundled)
                 implementation(libs.okio)
-            }
-        }
-        val androidMain by getting {
-            dependencies {
-                implementation(libs.sqldelight.android.driver)
-            }
-        }
-        val iosMain by getting {
-            dependencies {
-                implementation(libs.sqldelight.native.driver)
-            }
-        }
-        val jvmMain by getting {
-            dependencies {
-                implementation(libs.sqldelight.sqlite.driver)
-                // Pin sqlite-jdbc to a version compatible with iOS system SQLite.
-                // iOS 16+ ships with Apple's SQLite ~3.39.x. Using 3.39.4.1 ensures
-                // the generated DB pages are readable by the iOS system library.
-                implementation("org.xerial:sqlite-jdbc:3.39.4.1") {
-                    because("iOS links system libsqlite3 (~3.39.x); generator must produce compatible pages")
-                }
             }
         }
         val commonTest by getting {
@@ -132,6 +108,10 @@ kotlin {
         val jvmTest by getting {
             dependencies {
                 implementation(libs.kotlin.test)
+                // Xerial sqlite-jdbc is used only by JVM tests to read the
+                // generated database via raw JDBC. Runtime/code uses the
+                // bundled SQLite driver (with guaranteed FTS5).
+                implementation("org.xerial:sqlite-jdbc:3.46.1.3")
             }
         }
     }
@@ -146,6 +126,7 @@ sqldelight {
             srcDirs(
                 "src/commonMain/sqldelight",
             )
+            generateAsync.set(true)
         }
     }
 }

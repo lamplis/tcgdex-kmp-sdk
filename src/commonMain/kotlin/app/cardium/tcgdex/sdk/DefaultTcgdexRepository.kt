@@ -25,6 +25,9 @@ import app.cardium.tcgdex.sdk.model.Serie
 import app.cardium.tcgdex.sdk.util.selectBaseImageUrl
 import app.cardium.tcgdex.sdk.util.toHighQualityUrl
 import app.cardium.tcgdex.sdk.util.toThumbnailUrl
+import app.cash.sqldelight.async.coroutines.awaitAsList
+import app.cash.sqldelight.async.coroutines.awaitAsOne
+import app.cash.sqldelight.async.coroutines.awaitAsOneOrNull
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
@@ -59,13 +62,13 @@ class DefaultTcgdexRepository(
     // =========================================================================
 
     override suspend fun getAllSeries(language: String): List<Serie> = withContext(dispatcher) {
-        val result = queries.getAllSeriesByLanguage(language).executeAsList()
+        val result = queries.getAllSeriesByLanguage(language).awaitAsList()
         println("[Tcgdex][i] getAllSeries($language) returned ${result.size} rows")
         result.map { it.toModel() }
     }
 
     override suspend fun getSerieById(serieId: String, language: String): Serie? = withContext(dispatcher) {
-        queries.getSeriesById(serieId, language).executeAsOneOrNull()?.toModel()
+        queries.getSeriesById(serieId, language).awaitAsOneOrNull()?.toModel()
     }
 
     // =========================================================================
@@ -75,16 +78,16 @@ class DefaultTcgdexRepository(
     override suspend fun getAllSets(language: String): List<CardSet> = withContext(dispatcher) {
         // Debug: check database state
         try {
-            val availableLanguages = queries.getAvailableLanguages().executeAsList()
+            val availableLanguages = queries.getAvailableLanguages().awaitAsList()
             println("[Tcgdex][i] Available languages in DB: $availableLanguages")
             
             // Debug: count sets per language
-            val allSets = queries.countAllSets().executeAsOne()
+            val allSets = queries.countAllSets().awaitAsOne()
             println("[Tcgdex][i] Total sets in DB: $allSets")
             
             // Debug: count sets for specific language using raw count
-            val frCount = queries.countSetsByLanguage("fr").executeAsOne()
-            val enCount = queries.countSetsByLanguage("en").executeAsOne()
+            val frCount = queries.countSetsByLanguage("fr").awaitAsOne()
+            val enCount = queries.countSetsByLanguage("en").awaitAsOne()
             println("[Tcgdex][i] Sets by language: fr=$frCount, en=$enCount")
         } catch (e: Exception) {
             println("[Tcgdex][x] Failed to get DB stats: ${e.message}")
@@ -92,12 +95,12 @@ class DefaultTcgdexRepository(
         }
         
         // Use the query that includes serie_name for complete CardSet data
-        val result = queries.getAllSetsByLanguage(language).executeAsList()
+        val result = queries.getAllSetsByLanguage(language).awaitAsList()
         println("[Tcgdex][i] getAllSets($language) returned ${result.size} rows")
         result.map { set ->
             // Fetch serie name separately for the basic Sets result
             val serieName = queries.getSeriesById(set.serie_id, language)
-                .executeAsOneOrNull()?.name
+                .awaitAsOneOrNull()?.name
             set.toModel(serieName)
         }
     }
@@ -105,12 +108,12 @@ class DefaultTcgdexRepository(
     override suspend fun getSetsForSerie(serieId: String, language: String): List<CardSet> =
         withContext(dispatcher) {
             val serieName = queries.getSeriesById(serieId, language)
-                .executeAsOneOrNull()?.name
-            queries.getSetsForSerie(serieId, language).executeAsList().map { it.toModel(serieName) }
+                .awaitAsOneOrNull()?.name
+            queries.getSetsForSerie(serieId, language).awaitAsList().map { it.toModel(serieName) }
         }
 
     override suspend fun getSetById(setId: String, language: String): CardSet? = withContext(dispatcher) {
-        queries.getSetWithSerieName(setId, language).executeAsOneOrNull()?.toModel()
+        queries.getSetWithSerieName(setId, language).awaitAsOneOrNull()?.toModel()
     }
 
     // =========================================================================
@@ -119,31 +122,31 @@ class DefaultTcgdexRepository(
 
     override suspend fun getCardsForSet(setId: String, language: String): List<Card> =
         withContext(dispatcher) {
-            queries.getCardsForSet(setId, language).executeAsList().map { it.toModel() }
+            queries.getCardsForSet(setId, language).awaitAsList().map { it.toModel() }
         }
 
     override suspend fun getCardsForIllustrator(illustratorId: String, language: String): List<Card> =
         withContext(dispatcher) {
-            queries.getCardsForIllustrator(illustratorId, language).executeAsList().map { it.toModel() }
+            queries.getCardsForIllustrator(illustratorId, language).awaitAsList().map { it.toModel() }
         }
 
     override suspend fun getCardsForRarity(rarityId: String, language: String): List<Card> =
         withContext(dispatcher) {
-            queries.getCardsForRarity(rarityId, language).executeAsList().map { it.toModel() }
+            queries.getCardsForRarity(rarityId, language).awaitAsList().map { it.toModel() }
         }
 
     override suspend fun getCardsForPokemonDexId(dexId: Int, language: String): List<Card> =
         withContext(dispatcher) {
-            queries.getCardsForDexId(dexId.toLong(), language).executeAsList().map { it.toModel() }
+            queries.getCardsForDexId(dexId.toLong(), language).awaitAsList().map { it.toModel() }
         }
 
     override suspend fun getCardById(cardId: String, language: String): Card? = withContext(dispatcher) {
-        queries.getCardById(cardId, language).executeAsOneOrNull()?.toModel()
+        queries.getCardById(cardId, language).awaitAsOneOrNull()?.toModel()
     }
 
     override suspend fun getCardPrices(cardId: String, language: String): List<CardPrice> =
         withContext(dispatcher) {
-            queries.getCardPrices(cardId, language).executeAsList().map { it.toModel() }
+            queries.getCardPrices(cardId, language).awaitAsList().map { it.toModel() }
         }
 
     override suspend fun getCardPricesForCard(
@@ -152,7 +155,7 @@ class DefaultTcgdexRepository(
         sellerCountry: String,
     ): List<CardPrice> = withContext(dispatcher) {
         queries.getCardPriceRowsForCard(cardId, language, sellerCountry)
-            .executeAsList()
+            .awaitAsList()
             .map { it.toModel() }
     }
 
@@ -165,7 +168,7 @@ class DefaultTcgdexRepository(
         val result = LinkedHashMap<String, MutableList<CardPrice>>()
         cardIds.toList().chunked(500).forEach { chunk ->
             queries.getCardPriceRowsByCountry(chunk, language, sellerCountry)
-                .executeAsList()
+                .awaitAsList()
                 .forEach { row ->
                     result.getOrPut(row.card_id) { mutableListOf() }.add(row.toModel())
                 }
@@ -175,17 +178,17 @@ class DefaultTcgdexRepository(
 
     override suspend fun getAllSellerCountries(): List<String> =
         withContext(dispatcher) {
-            queries.getAllSellerCountries().executeAsList().map { it.trim() }.distinct()
+            queries.getAllSellerCountries().awaitAsList().map { it.trim() }.distinct()
         }
 
     override suspend fun getLatestPriceUpdateIso(): String? =
         withContext(dispatcher) {
-            queries.getLatestPriceUpdateIso().executeAsOneOrNull()?.latest_price_update_iso
+            queries.getLatestPriceUpdateIso().awaitAsOneOrNull()?.latest_price_update_iso
         }
 
     override suspend fun getLatestExportPriceUpdateIso(): String? =
         withContext(dispatcher) {
-            queries.getLatestExportPriceUpdateIso().executeAsOneOrNull()?.latest_export_update_iso
+            queries.getLatestExportPriceUpdateIso().awaitAsOneOrNull()?.latest_export_update_iso
         }
 
     override suspend fun getCardsByIds(cardIds: Collection<String>, language: String): Map<String, Card> =
@@ -196,7 +199,7 @@ class DefaultTcgdexRepository(
             val result = LinkedHashMap<String, Card>(cardIds.size)
             cardIds.toList().chunked(500).forEach { chunk ->
                 queries.getCardsByIds(chunk, language)
-                    .executeAsList()
+                    .awaitAsList()
                     .forEach { row ->
                         val model = row.toModel()
                         result[model.id] = model
@@ -212,7 +215,7 @@ class DefaultTcgdexRepository(
         offset: Int
     ): List<Card> = withContext(dispatcher) {
         queries.searchCardsByName(language, query, limit.toLong(), offset.toLong())
-            .executeAsList()
+            .awaitAsList()
             .map { it.toModel() }
     }
 
@@ -223,12 +226,12 @@ class DefaultTcgdexRepository(
         offset: Int
     ): List<Card> = withContext(dispatcher) {
         queries.searchCardsByNameFts(language, query, limit.toLong(), offset.toLong())
-            .executeAsList()
+            .awaitAsList()
             .map { it.toModel() }
     }
 
     override suspend fun countCardsByName(query: String, language: String): Long = withContext(dispatcher) {
-        queries.countCardsByName(language, query).executeAsOne()
+        queries.countCardsByName(language, query).awaitAsOne()
     }
 
     // =========================================================================
@@ -238,14 +241,14 @@ class DefaultTcgdexRepository(
     override suspend fun searchCardsByLocalId(localId: String, language: String, limit: Int): List<Card> =
         withContext(dispatcher) {
             queries.searchCardsByLocalId(language, localId, limit.toLong())
-                .executeAsList()
+                .awaitAsList()
                 .map { it.toModel() }
         }
 
     override suspend fun searchCardsByLocalIdInSet(localId: String, setId: String, language: String): List<Card> =
         withContext(dispatcher) {
             queries.searchCardsByLocalIdInSet(language, setId, localId)
-                .executeAsList()
+                .awaitAsList()
                 .map { it.toModel() }
         }
 
@@ -256,14 +259,14 @@ class DefaultTcgdexRepository(
         limit: Int
     ): List<Card> = withContext(dispatcher) {
         queries.searchCardsByLocalIdAndCardCount(language, localId, cardCount.toLong(), limit.toLong())
-            .executeAsList()
+            .awaitAsList()
             .map { it.toModel() }
     }
 
     override suspend fun searchSetsByName(query: String, language: String, limit: Int): List<CardSet> =
         withContext(dispatcher) {
             queries.searchSetsByName(language, query, limit.toLong())
-                .executeAsList()
+                .awaitAsList()
                 .map { row ->
                     CardSet(
                         id = row.id,
@@ -285,19 +288,19 @@ class DefaultTcgdexRepository(
     // =========================================================================
 
     override suspend fun getAllIllustrators(): List<Illustrator> = withContext(dispatcher) {
-        val result = queries.getAllIllustrators().executeAsList()
+        val result = queries.getAllIllustrators().awaitAsList()
         println("[Tcgdex][i] getAllIllustrators() returned ${result.size} rows")
         result.map { it.toModel() }
     }
 
     override suspend fun getIllustratorsWithCounts(language: String): List<IllustratorWithCount> =
         withContext(dispatcher) {
-            queries.countCardsPerIllustrator(language).executeAsList().map { it.toModel() }
+            queries.countCardsPerIllustrator(language).awaitAsList().map { it.toModel() }
         }
 
     override suspend fun getCardIdsByLanguage(language: String): List<IllustratorCardIdEntry> =
         withContext(dispatcher) {
-            queries.getCardIdsByLanguage(language).executeAsList().map { row ->
+            queries.getCardIdsByLanguage(language).awaitAsList().map { row ->
                 IllustratorCardIdEntry(
                     cardId = row.card_id,
                     illustratorId = row.illustrator_id,
@@ -313,14 +316,14 @@ class DefaultTcgdexRepository(
     override suspend fun getIllustratorValueSums(language: String): Map<String, Double> =
         withContext(dispatcher) {
             queries.getIllustratorValueSumByLanguage(language)
-                .executeAsList()
+                .awaitAsList()
                 .mapNotNull { row ->
                     row.total_value?.let { totalValue -> row.illustrator_id to totalValue }
                 }.toMap()
         }
 
     override suspend fun getAllRarities(): List<Rarity> = withContext(dispatcher) {
-        queries.getAllRarities().executeAsList().map { it.toModel() }
+        queries.getAllRarities().awaitAsList().map { it.toModel() }
     }
 
     // =========================================================================
@@ -329,7 +332,7 @@ class DefaultTcgdexRepository(
 
     override suspend fun getAllPokemonDexEntries(language: String): List<PokemonDexEntry> =
         withContext(dispatcher) {
-            queries.getAllPokemonDexIds(language).executeAsList().map { row ->
+            queries.getAllPokemonDexIds(language).awaitAsList().map { row ->
                 PokemonDexEntry(
                     dexId = row.dex_id.toInt(),
                     name = row.pokemon_name ?: "Unknown",
@@ -341,7 +344,7 @@ class DefaultTcgdexRepository(
     override suspend fun getAllCardIdsByPokemon(language: String): Map<Int, Set<String>> =
         withContext(dispatcher) {
             val result = mutableMapOf<Int, MutableSet<String>>()
-            queries.getAllCardIdsByPokemon(language).executeAsList().forEach { row ->
+            queries.getAllCardIdsByPokemon(language).awaitAsList().forEach { row ->
                 val dexId = row.dex_id.toInt()
                 val cardId = row.card_id
                 result.getOrPut(dexId) { mutableSetOf() }.add(cardId)
@@ -351,7 +354,7 @@ class DefaultTcgdexRepository(
 
     override suspend fun getCardCountsPerSetForPokemon(dexId: Int, language: String): List<PokemonSetCardCount> =
         withContext(dispatcher) {
-            queries.getCardCountsPerSetForDexId(dexId.toLong(), language).executeAsList().map { row ->
+            queries.getCardCountsPerSetForDexId(dexId.toLong(), language).awaitAsList().map { row ->
                 PokemonSetCardCount(
                     setId = row.set_id,
                     setName = row.set_name,
@@ -367,19 +370,19 @@ class DefaultTcgdexRepository(
 
     override suspend fun getCardsForPokemonInSet(dexId: Int, setId: String, language: String): List<Card> =
         withContext(dispatcher) {
-            queries.getCardsForDexIdInSet(dexId.toLong(), setId, language).executeAsList().map { it.toModel() }
+            queries.getCardsForDexIdInSet(dexId.toLong(), setId, language).awaitAsList().map { it.toModel() }
         }
 
     override suspend fun getDexIdForCard(cardId: String, language: String): Int? =
         withContext(dispatcher) {
-            queries.getDexIdForCard(cardId, language).executeAsOneOrNull()?.toInt()
+            queries.getDexIdForCard(cardId, language).awaitAsOneOrNull()?.toInt()
         }
 
     override suspend fun getDexIdsForCards(cardIds: List<String>, language: String): Map<String, Int> =
         withContext(dispatcher) {
             if (cardIds.isEmpty()) return@withContext emptyMap()
 
-            val rows = queries.getDexIdsForCards(cardIds, language).executeAsList()
+            val rows = queries.getDexIdsForCards(cardIds, language).awaitAsList()
             val result = mutableMapOf<String, Int>()
 
             // card_with_pokemon can contain multiple rows for a single card (multi-Pokémon cards).
@@ -398,7 +401,7 @@ class DefaultTcgdexRepository(
     // =========================================================================
 
     override suspend fun getAvailableLanguages(): List<String> = withContext(dispatcher) {
-        queries.getAvailableLanguages().executeAsList()
+        queries.getAvailableLanguages().awaitAsList()
     }
 
     // =========================================================================
@@ -407,7 +410,7 @@ class DefaultTcgdexRepository(
 
     override suspend fun getRaritiesGroupedBySeries(language: String): List<RarityAggregate> =
         withContext(dispatcher) {
-            val result = queries.getRaritiesGroupedBySeries(language).executeAsList()
+            val result = queries.getRaritiesGroupedBySeries(language).awaitAsList()
             println("[Tcgdex][i] getRaritiesGroupedBySeries($language) returned ${result.size} rows")
             // Filter out any rows without a sample card (shouldn't happen, but SQL returns nullable)
             result.mapNotNull { row ->
@@ -426,7 +429,7 @@ class DefaultTcgdexRepository(
 
     override suspend fun getRaritiesGroupedBySeriesAndSet(language: String): List<RarityAggregateBySet> =
         withContext(dispatcher) {
-            val result = queries.getRaritiesGroupedBySeriesAndSet(language).executeAsList()
+            val result = queries.getRaritiesGroupedBySeriesAndSet(language).awaitAsList()
             println("[Tcgdex][i] getRaritiesGroupedBySeriesAndSet($language) returned ${result.size} rows")
             result.map { row ->
                 RarityAggregateBySet(

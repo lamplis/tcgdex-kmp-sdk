@@ -2,12 +2,15 @@
 
 package app.cardium.kmptcgdexsdk.generator
 
-import app.cash.sqldelight.driver.jdbc.sqlite.JdbcSqliteDriver
+import androidx.sqlite.driver.bundled.BundledSQLiteDriver
 import app.cardium.tcgdex.db.TcgdexDatabase
 import app.cardium.tcgdex.sdk.storage.TcgdexDatabaseInstaller
+import com.eygraber.sqldelight.androidx.driver.AndroidxSqliteDatabaseType
+import com.eygraber.sqldelight.androidx.driver.AndroidxSqliteDriver
 import java.io.File
 import java.net.URI
 import java.text.Normalizer
+import kotlinx.coroutines.runBlocking
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.json.JsonArray
 import kotlinx.serialization.json.JsonElement
@@ -142,7 +145,7 @@ private data class GeneratedSetAliasSeed(
  *
  * Usage: java -jar ... --dataset=/path/to/generated --languages=en,fr --output=/path/to/tcgdex.db
  */
-fun main(args: Array<String>) {
+fun main(args: Array<String>) = runBlocking {
     val config = parseArgs(args)
     val projectRoot = resolveProjectRoot(config.datasetDir)
     val setAliasesConfigFile = resolveSetAliasesConfigFile(projectRoot, config.setAliasesConfigFile)
@@ -174,14 +177,17 @@ fun main(args: Array<String>) {
             outputFile.delete()
         } else {
             println("[Tcgdex] Database already exists, skipping generation")
-            return
+            return@runBlocking
         }
     }
 
     outputFile.parentFile?.mkdirs()
 
-    val driver = JdbcSqliteDriver("jdbc:sqlite:${outputFile.absolutePath}")
-    TcgdexDatabase.Schema.create(driver)
+    val driver = AndroidxSqliteDriver(
+        driver = BundledSQLiteDriver(),
+        databaseType = AndroidxSqliteDatabaseType.File(outputFile.absolutePath),
+        schema = TcgdexDatabase.Schema,
+    )
     val db = TcgdexDatabase(driver)
 
     val json = Json { ignoreUnknownKeys = true }
@@ -240,7 +246,7 @@ fun main(args: Array<String>) {
     // Valid dex IDs from pokemon-species.json (used for validation)
     val validDexIds = pokemonSpecies.keys
 
-    fun insertCard(
+    suspend fun insertCard(
         language: String,
         card: JsonObject,
         originLanguage: String = language,
@@ -629,7 +635,7 @@ fun main(args: Array<String>) {
 
     // Rebuild FTS index from final cards snapshot.
     // We do this explicitly at the end to avoid stale entries when cards are replaced.
-    driver.execute(null, "DELETE FROM cards_fts", 0)
+    driver.execute(null, "DELETE FROM cards_fts", 0).await()
     driver.execute(
         null,
         """
@@ -638,20 +644,20 @@ fun main(args: Array<String>) {
         FROM cards
         """.trimIndent(),
         0,
-    )
+    ).await()
     println("[Tcgdex] Rebuilt cards_fts index")
 
     // Set the logical database version for runtime installation guards.
     // This must stay in sync with TcgdexDatabaseInstaller.DATABASE_USER_VERSION.
-    driver.execute(null, "PRAGMA user_version = ${TcgdexDatabaseInstaller.DATABASE_USER_VERSION}", 0)
+    driver.execute(null, "PRAGMA user_version = ${TcgdexDatabaseInstaller.DATABASE_USER_VERSION}", 0).await()
     println("[Tcgdex] Set user_version = ${TcgdexDatabaseInstaller.DATABASE_USER_VERSION}")
 
     // Ensure database is in a portable state for iOS compatibility:
     // 1. Set journal_mode to DELETE (not WAL) for bundled databases
     // 2. Run integrity check to verify database is valid
     // 3. VACUUM to compact and ensure clean state
-    driver.execute(null, "PRAGMA journal_mode = DELETE", 0)
-    driver.execute(null, "VACUUM", 0)
+    driver.execute(null, "PRAGMA journal_mode = DELETE", 0).await()
+    driver.execute(null, "VACUUM", 0).await()
     println("[Tcgdex] Database vacuumed for iOS compatibility")
 
     driver.close()
