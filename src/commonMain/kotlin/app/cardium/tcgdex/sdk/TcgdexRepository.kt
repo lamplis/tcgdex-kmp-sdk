@@ -412,6 +412,23 @@ interface TcgdexRepository {
      */
     suspend fun getDexIdsForCards(cardIds: List<String>, language: String): Map<String, Int>
 
+    /**
+     * Returns computed Pokémon evolution depths for a batch of dex IDs.
+     *
+     * Depth semantics:
+     * - `0` = base/basic Pokémon
+     * - `1` = stage 1 / evolves once from base
+     * - `2` = stage 2 / evolves twice from base
+     *
+     * Implementations may use localized species rows, but the returned depth is
+     * language-independent chain data.
+     *
+     * @param dexIds National Pokédex IDs
+     * @param language ISO language code used to resolve species rows
+     * @return Map from dex ID to computed depth (missing rows default to omission)
+     */
+    suspend fun getEvolutionDepthsForDexIds(dexIds: Collection<Int>, language: String): Map<Int, Int> = emptyMap()
+
     // =========================================================================
     // Utility Queries
     // =========================================================================

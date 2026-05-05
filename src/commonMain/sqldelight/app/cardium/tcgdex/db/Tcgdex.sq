@@ -753,6 +753,17 @@ SELECT
 FROM pokemon_species
 WHERE dex_id = :dexId AND language = :language;
 
+-- Get Pokémon species rows for a batch of dex IDs with evolution data
+getPokemonSpeciesByDexIds:
+SELECT
+    dex_id,
+    name,
+    evolves_from,
+    evolves_to
+FROM pokemon_species
+WHERE dex_id IN ?
+    AND language = :language;
+
 -- Get card counts per set for a specific Pokémon (for gallery grouping)
 -- Returns: setId, setName, releaseDate, serieId, serieName, logoUrl, cardCount
 getCardCountsPerSetForDexId:

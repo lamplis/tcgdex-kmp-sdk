@@ -396,6 +396,62 @@ class DefaultTcgdexRepository(
             result
         }
 
+    override suspend fun getEvolutionDepthsForDexIds(dexIds: Collection<Int>, language: String): Map<Int, Int> =
+        withContext(dispatcher) {
+            if (dexIds.isEmpty()) return@withContext emptyMap()
+
+            val evolvesFromByDex = mutableMapOf<Int, Int?>()
+
+            suspend fun loadSpeciesRows(ids: Collection<Int>, lang: String) {
+                if (ids.isEmpty()) return
+                queries.getPokemonSpeciesByDexIds(ids.map(Int::toLong), lang)
+                    .awaitAsList()
+                    .forEach { row ->
+                        evolvesFromByDex[row.dex_id.toInt()] = row.evolves_from?.toInt()
+                    }
+            }
+
+            val pending = ArrayDeque<Int>()
+            val queued = mutableSetOf<Int>()
+            dexIds.forEach { dexId ->
+                pending.addLast(dexId)
+                queued += dexId
+            }
+
+            while (pending.isNotEmpty()) {
+                val batch = mutableListOf<Int>()
+                while (pending.isNotEmpty() && batch.size < 500) {
+                    batch += pending.removeFirst()
+                }
+
+                loadSpeciesRows(batch, language)
+                val unresolved = batch.filterNot { evolvesFromByDex.containsKey(it) }
+                if (unresolved.isNotEmpty() && language.lowercase() != "en") {
+                    loadSpeciesRows(unresolved, "en")
+                }
+
+                batch.forEach { dexId ->
+                    val parentDexId = evolvesFromByDex[dexId]
+                    if (parentDexId != null && queued.add(parentDexId)) {
+                        pending.addLast(parentDexId)
+                    }
+                }
+            }
+
+            fun computeDepth(dexId: Int): Int {
+                var depth = 0
+                var current = evolvesFromByDex[dexId]
+                val seen = mutableSetOf<Int>()
+                while (current != null && seen.add(current)) {
+                    depth += 1
+                    current = evolvesFromByDex[current]
+                }
+                return depth
+            }
+
+            dexIds.associateWith(::computeDepth)
+        }
+
     // =========================================================================
     // Utility Queries
     // =========================================================================
