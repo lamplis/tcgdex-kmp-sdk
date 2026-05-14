@@ -1,0 +1,31 @@
+{
+  "generatedAt": "2026-05-14T00:00:00Z",
+  "language": "fr",
+  "totalPokemonBaseCards": 1,
+  "sourceCounts": {
+    "tcgdex": 1,
+    "pokepedia": 0,
+    "cardmarket": 0
+  },
+  "missingCardIds": [],
+  "cards": [
+    {
+      "cardId": "me03-001",
+      "language": "fr",
+      "setId": "me03",
+      "localId": "001",
+      "name": "Victini",
+      "category": "Pokemon",
+      "imageSource": "tcgdex",
+      "imageUrl": "https://assets.tcgdex.net/fr/sv/me03/001/high.png",
+      "hashes": [
+        {
+          "dhash": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+          "phash": "BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB",
+          "lighting": "original",
+          "rotation": 0
+        }
+      ]
+    }
+  ]
+}

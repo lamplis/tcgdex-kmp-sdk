@@ -236,8 +236,24 @@ fun main(args: Array<String>) = runBlocking {
         println("[Tcgdex] Loaded ${cardmarketExportCards.size} Cardmarket export cards")
     }
 
+    val recognitionVectors = loadRecognitionVectors(
+        projectRoot = projectRoot,
+        vectorsFilePath = config.recognitionVectorsFile,
+        json = json,
+    )
+    if (recognitionVectors != null) {
+        println(
+            "[Tcgdex] Loaded recognition vectors: cards=${recognitionVectors.rowsByCardLanguage.size} " +
+                "missing=${recognitionVectors.missingCardIds.size}",
+        )
+        require(recognitionVectors.missingCardIds.isEmpty()) {
+            "[Tcgdex][x] Recognition vectors contain missingCardIds: ${recognitionVectors.missingCardIds.joinToString(", ")}"
+        }
+    }
+
     // Track missing images for Pokecardex fallback index
     val missingImages = mutableListOf<MissingImagesIndexGenerator.MissingImageEntry>()
+    val importedRecognitionKeys = mutableSetOf<String>()
     // Track all cards per language for cross-language comparison
     val cardsByLanguage = mutableMapOf<String, MutableSet<String>>() // language -> set of card IDs
     val englishCardCache = mutableMapOf<String, JsonObject>()
@@ -390,6 +406,22 @@ fun main(args: Array<String>) = runBlocking {
             priceUpdatedIso = s3Pricing?.updatedIso,
             priceUnit = s3Pricing?.unit,
         )
+
+        val recognitionKey = "$id::$language"
+        val recognitionRows = recognitionVectors?.rowsByCardLanguage?.get(recognitionKey).orEmpty()
+        for (row in recognitionRows) {
+            db.tcgdexQueries.insertCardRecognitionHash(
+                cardId = id,
+                language = language,
+                imageSource = row.imageSource,
+                imageUrl = row.imageUrl,
+                lighting = row.lighting,
+                rotation = row.rotation.toLong(),
+                dhash = row.dhash,
+                phash = row.phash,
+            )
+            importedRecognitionKeys.add(recognitionKey)
+        }
 
         // Persist exact export prices, one row per (variant, price language, seller country, condition).
         // The generator never reduces condition buckets -- the app decides which condition to display.
@@ -633,6 +665,16 @@ fun main(args: Array<String>) = runBlocking {
         db.tcgdexQueries.insertRarity(id, name)
     }
 
+    if (recognitionVectors != null) {
+        val unresolvedRecognitionKeys = recognitionVectors.rowsByCardLanguage.keys - importedRecognitionKeys
+        require(unresolvedRecognitionKeys.isEmpty()) {
+            "[Tcgdex][x] Recognition vectors reference unknown cards/languages: " +
+                unresolvedRecognitionKeys.sorted().take(10).joinToString(", ") +
+                if (unresolvedRecognitionKeys.size > 10) " ... (+${unresolvedRecognitionKeys.size - 10} more)" else ""
+        }
+        println("[Tcgdex] Imported recognition vector rows for ${importedRecognitionKeys.size} cards")
+    }
+
     // Rebuild FTS index from final cards snapshot.
     // We do this explicitly at the end to avoid stale entries when cards are replaced.
     driver.execute(null, "DELETE FROM cards_fts", 0).await()
@@ -694,6 +736,7 @@ private data class Config(
     val outputFile: String,
     val force: Boolean,
     val pokepediaMissingFile: String?,
+    val recognitionVectorsFile: String?,
     val cardmarketExportFile: String?,
     val setAliasesConfigFile: String?,
     val cardmarketExpansionsFile: String?,
@@ -745,6 +788,7 @@ private fun parseArgs(args: Array<String>): Config {
     var outputFile = "tcgdex.db"
     var force = false
     var pokepediaMissingFile: String? = null
+    var recognitionVectorsFile: String? = null
     var cardmarketExportFile: String? = null
     var setAliasesConfigFile: String? = null
     var cardmarketExpansionsFile: String? = null
@@ -756,6 +800,7 @@ private fun parseArgs(args: Array<String>): Config {
             arg.startsWith("--output=") -> outputFile = arg.removePrefix("--output=")
             arg.startsWith("--force=") -> force = arg.removePrefix("--force=").toBoolean()
             arg.startsWith("--pokepedia-missing=") -> pokepediaMissingFile = arg.removePrefix("--pokepedia-missing=")
+            arg.startsWith("--recognition-vectors=") -> recognitionVectorsFile = arg.removePrefix("--recognition-vectors=")
             arg.startsWith("--cardmarket-export=") -> cardmarketExportFile = arg.removePrefix("--cardmarket-export=")
             arg.startsWith("--set-aliases-config=") -> setAliasesConfigFile = arg.removePrefix("--set-aliases-config=")
             arg.startsWith("--cardmarket-expansions=") -> cardmarketExpansionsFile = arg.removePrefix("--cardmarket-expansions=")
@@ -769,6 +814,7 @@ private fun parseArgs(args: Array<String>): Config {
         outputFile = outputFile,
         force = force,
         pokepediaMissingFile = pokepediaMissingFile,
+        recognitionVectorsFile = recognitionVectorsFile,
         cardmarketExportFile = cardmarketExportFile,
         setAliasesConfigFile = setAliasesConfigFile,
         cardmarketExpansionsFile = cardmarketExpansionsFile,
@@ -2240,6 +2286,101 @@ internal fun resolveDefaultCardmarketExportPath(projectRoot: File): File? {
     }
 
     return null
+}
+
+@Serializable
+private data class RecognitionHashPayload(
+    val dhash: String,
+    val phash: String,
+    val lighting: String = "original",
+    val rotation: Int = 0,
+)
+
+@Serializable
+private data class RecognitionCardPayload(
+    val cardId: String,
+    val language: String,
+    val imageSource: String,
+    val imageUrl: String,
+    val hashes: List<RecognitionHashPayload> = emptyList(),
+)
+
+@Serializable
+private data class RecognitionVectorsPayload(
+    val generatedAt: String? = null,
+    val language: String? = null,
+    val missingCardIds: List<String> = emptyList(),
+    val cards: List<RecognitionCardPayload> = emptyList(),
+)
+
+private data class RecognitionHashRow(
+    val imageSource: String,
+    val imageUrl: String,
+    val lighting: String,
+    val rotation: Int,
+    val dhash: String,
+    val phash: String,
+)
+
+private data class RecognitionVectorsData(
+    val rowsByCardLanguage: Map<String, List<RecognitionHashRow>>,
+    val missingCardIds: List<String>,
+)
+
+internal fun resolveDefaultRecognitionVectorsPath(projectRoot: File): File? {
+    val canonical = projectRoot.resolve("libs/tcgdex-kmp-sdk/generator-inputs/recognition/card-vectors-fr.json")
+    return canonical.takeIf { it.exists() }
+}
+
+private fun loadRecognitionVectors(
+    projectRoot: File,
+    vectorsFilePath: String?,
+    json: Json,
+): RecognitionVectorsData? {
+    val source =
+        if (!vectorsFilePath.isNullOrBlank()) {
+            File(vectorsFilePath).also { explicit ->
+                if (!explicit.exists()) {
+                    println("[Tcgdex][!] Recognition vectors path not found: ${explicit.absolutePath}")
+                }
+            }.takeIf { it.exists() }
+        } else {
+            resolveDefaultRecognitionVectorsPath(projectRoot)
+        }
+
+    if (source == null) {
+        println("[Tcgdex][i] No recognition vectors input found, skipping recognition import")
+        return null
+    }
+
+    println("[Tcgdex] Recognition vectors source: ${source.absolutePath}")
+
+    return runCatching {
+        val payload = json.decodeFromString<RecognitionVectorsPayload>(source.readText())
+        val grouped = mutableMapOf<String, MutableList<RecognitionHashRow>>()
+        for (entry in payload.cards) {
+            if (entry.cardId.isBlank() || entry.language.isBlank()) continue
+            val rows = grouped.getOrPut("${entry.cardId}::${entry.language}") { mutableListOf() }
+            for (hash in entry.hashes) {
+                rows.add(
+                    RecognitionHashRow(
+                        imageSource = entry.imageSource,
+                        imageUrl = entry.imageUrl,
+                        lighting = hash.lighting,
+                        rotation = hash.rotation,
+                        dhash = hash.dhash.uppercase(),
+                        phash = hash.phash.uppercase(),
+                    ),
+                )
+            }
+        }
+        RecognitionVectorsData(
+            rowsByCardLanguage = grouped.mapValues { (_, rows) -> rows.toList() },
+            missingCardIds = payload.missingCardIds.sorted(),
+        )
+    }.onFailure {
+        println("[Tcgdex][!] Failed to parse recognition vectors file ${source.absolutePath}: ${it.message}")
+    }.getOrNull()
 }
 
 internal fun loadCardmarketExportPrices(

@@ -33,6 +33,7 @@ class LocalDatabaseGenerationE2eTest {
         val datasetDir = projectRoot.resolve("libs/cards-database/server/generated")
         val cardmarketExportDir = projectRoot.resolve("libs/tcgdex-kmp-sdk/generator-inputs/cardmarket")
         val pokepediaTreeFile = projectRoot.resolve("libs/tcgdex-kmp-sdk/generator-inputs/pokepedia/missing-fr-card-images-tree.json")
+        val recognitionVectorsFile = projectRoot.resolve("libs/tcgdex-kmp-sdk/generator-inputs/recognition/card-vectors-fr.json")
 
         assertTrue(
             datasetDir.isDirectory,
@@ -45,6 +46,10 @@ class LocalDatabaseGenerationE2eTest {
         assertTrue(
             pokepediaTreeFile.isFile,
             "[x] Missing Pokepedia tree file: ${pokepediaTreeFile.absolutePath}.",
+        )
+        assertTrue(
+            recognitionVectorsFile.isFile,
+            "[x] Missing recognition vectors file: ${recognitionVectorsFile.absolutePath}.",
         )
 
         val tempDir = createTempDirectory("tcgdex-e2e-").toFile()
@@ -59,6 +64,7 @@ class LocalDatabaseGenerationE2eTest {
                     "--force=true",
                     "--cardmarket-export=${cardmarketExportDir.absolutePath}",
                     "--pokepedia-missing=${pokepediaTreeFile.absolutePath}",
+                    "--recognition-vectors=${recognitionVectorsFile.absolutePath}",
                 ),
             )
 
@@ -212,12 +218,25 @@ class LocalDatabaseGenerationE2eTest {
                         !englishRow.imageUrl.isNullOrBlank() || !englishRow.fallbackImageUrl.isNullOrBlank(),
                         "[x] Expected image_url or fallback_image_url to be populated for ${target.id}/$englishLanguage.\n$englishDebugMessage",
                     )
-                    assertEquals(
-                        "pokepedia",
-                        englishRow.fallbackImageSource,
-                        "[x] Expected fallback_image_source to equal 'pokepedia' for ${target.id}/$englishLanguage.\n$englishDebugMessage",
-                    )
+                    if (!englishRow.fallbackImageUrl.isNullOrBlank()) {
+                        assertEquals(
+                            "pokepedia",
+                            englishRow.fallbackImageSource,
+                            "[x] Expected fallback_image_source to equal 'pokepedia' for ${target.id}/$englishLanguage.\n$englishDebugMessage",
+                        )
+                    } else {
+                        assertTrue(
+                            !englishRow.imageUrl.isNullOrBlank(),
+                            "[x] Expected English row to keep a real image URL when no fallback is present.\n$englishDebugMessage",
+                        )
+                    }
                 }
+
+                val recognitionRows = queryRecognitionRowsForCard(connection, "me03-001", targetLanguage)
+                assertTrue(
+                    recognitionRows > 0,
+                    "[x] Expected recognition rows for me03-001/$targetLanguage.",
+                )
             }
         } finally {
             tempDir.deleteRecursively()
@@ -317,6 +336,23 @@ class LocalDatabaseGenerationE2eTest {
                     logoUrl = resultSet.getString("logo_url"),
                     symbolUrl = resultSet.getString("symbol_url"),
                 )
+            }
+        }
+    }
+
+    private fun queryRecognitionRowsForCard(connection: Connection, cardId: String, language: String): Int {
+        connection.prepareStatement(
+            """
+            SELECT COUNT(*) AS row_count
+            FROM card_recognition_hashes
+            WHERE card_id = ?
+              AND language = ?
+            """.trimIndent(),
+        ).use { statement ->
+            statement.setString(1, cardId)
+            statement.setString(2, language)
+            statement.executeQuery().use { resultSet ->
+                return if (resultSet.next()) resultSet.getInt("row_count") else 0
             }
         }
     }

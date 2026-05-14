@@ -156,6 +156,23 @@ data class CardPrice(
 )
 
 /**
+ * Recognition hash payload for card-matching workflows.
+ *
+ * One row exists per (card, language, lighting, rotation) tuple and stores the
+ * image source metadata together with 256-bit dHash/pHash strings.
+ */
+data class CardRecognitionHash(
+    val cardId: String,
+    val language: String,
+    val imageSource: String,
+    val imageUrl: String,
+    val lighting: String,
+    val rotation: Int,
+    val dhash: String,
+    val phash: String,
+)
+
+/**
  * An illustrator (card artist).
  *
  * Illustrators are stored with their original names (language-agnostic).

@@ -160,6 +160,25 @@ CREATE INDEX card_prices_lookup_idx ON card_prices(card_id, card_language, selle
 CREATE INDEX card_prices_country_updated_idx ON card_prices(seller_country, updated_iso);
 
 -- -----------------------------------------------------------------------------
+-- Card recognition hashes table: per-card perceptual hashes for matcher pipeline
+-- -----------------------------------------------------------------------------
+CREATE TABLE card_recognition_hashes (
+    card_id TEXT NOT NULL,
+    language TEXT NOT NULL,
+    image_source TEXT NOT NULL,
+    image_url TEXT NOT NULL,
+    lighting TEXT NOT NULL DEFAULT 'original',
+    rotation INTEGER NOT NULL DEFAULT 0,
+    dhash TEXT NOT NULL,
+    phash TEXT NOT NULL,
+    PRIMARY KEY (card_id, language, lighting, rotation),
+    FOREIGN KEY (card_id, language) REFERENCES cards(id, language) ON DELETE CASCADE
+);
+
+CREATE INDEX card_recognition_hashes_card_idx ON card_recognition_hashes(card_id, language);
+CREATE INDEX card_recognition_hashes_source_idx ON card_recognition_hashes(image_source, language);
+
+-- -----------------------------------------------------------------------------
 -- Card-Pokémon junction table: Links cards to one or more Pokédex IDs
 -- Supports multi-Pokémon cards (TAG TEAMs, Buried Fossil, etc.)
 -- -----------------------------------------------------------------------------
@@ -406,6 +425,28 @@ VALUES (
     :updatedIso
 );
 
+insertCardRecognitionHash:
+INSERT OR REPLACE INTO card_recognition_hashes(
+    card_id,
+    language,
+    image_source,
+    image_url,
+    lighting,
+    rotation,
+    dhash,
+    phash
+)
+VALUES (
+    :cardId,
+    :language,
+    :imageSource,
+    :imageUrl,
+    :lighting,
+    :rotation,
+    :dhash,
+    :phash
+);
+
 -- Insert a card-Pokémon relationship (call once per dex ID for multi-Pokémon cards)
 insertCardPokemon:
 INSERT OR REPLACE INTO card_pokemon(card_id, language, pokemon_dex_id)
@@ -601,6 +642,27 @@ FROM card_prices
 WHERE seller_country != 'GLOBAL'
     AND updated_iso IS NOT NULL
     AND TRIM(updated_iso) != '';
+
+getCardRecognitionHashesForCard:
+SELECT *
+FROM card_recognition_hashes
+WHERE card_id = :cardId
+    AND language = :language
+ORDER BY rotation ASC, lighting ASC;
+
+getCardRecognitionHashesForPokemon:
+SELECT crh.*
+FROM card_recognition_hashes crh
+INNER JOIN cards c
+    ON c.id = crh.card_id
+    AND c.language = crh.language
+INNER JOIN sets s
+    ON s.id = c.set_id
+    AND s.language = c.language
+WHERE crh.language = :language
+    AND c.category = 'Pokemon'
+    AND s.serie_id != 'tcgp'
+ORDER BY crh.card_id ASC, crh.rotation ASC, crh.lighting ASC;
 
 -- Batch lookup for multiple card IDs (used to avoid N+1 queries in UI/use-cases)
 getCardsByIds:

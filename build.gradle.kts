@@ -47,6 +47,8 @@ val tcgdexCardmarketExportEnv = providers.environmentVariable("TCGDEX_CARDMARKET
 val tcgdexCardmarketExpansions = providers.gradleProperty("tcgdex.cardmarket.expansions").orNull
 val tcgdexPokepediaMissing = providers.gradleProperty("tcgdex.pokepediaMissing").orNull
 val tcgdexPokepediaMissingEnv = providers.environmentVariable("TCGDEX_POKEPEDIA_MISSING").orNull
+val tcgdexRecognitionVectors = providers.gradleProperty("tcgdex.recognitionVectors").orNull
+val tcgdexRecognitionVectorsEnv = providers.environmentVariable("TCGDEX_RECOGNITION_VECTORS").orNull
 val generatorInputsDir = layout.projectDirectory
     .dir("generator-inputs")
 val defaultCardmarketExport = generatorInputsDir
@@ -54,6 +56,9 @@ val defaultCardmarketExport = generatorInputsDir
     .asFile
 val defaultPokepediaMissing = generatorInputsDir
     .file("pokepedia/missing-fr-card-images-tree.json")
+    .asFile
+val defaultRecognitionVectors = generatorInputsDir
+    .file("recognition/card-vectors-fr.json")
     .asFile
 val setAliasesConfigFile = rootProject.layout.projectDirectory.file("tools/set-aliases-config.json").asFile
 
@@ -230,6 +235,14 @@ val generateTcgdexDatabase by tasks.registering(JavaExec::class) {
         } else {
             defaultPokepediaMissing
         }.takeIf { it.exists() }
+    val resolvedRecognitionVectorsFile =
+        if (!tcgdexRecognitionVectors.isNullOrBlank()) {
+            file(tcgdexRecognitionVectors)
+        } else if (!tcgdexRecognitionVectorsEnv.isNullOrBlank()) {
+            file(tcgdexRecognitionVectorsEnv)
+        } else {
+            defaultRecognitionVectors
+        }.takeIf { it.exists() }
 
     inputs.dir(datasetRootDir)
     if (resolvedExportPath != null) {
@@ -250,6 +263,9 @@ val generateTcgdexDatabase by tasks.registering(JavaExec::class) {
     }
     if (resolvedPokepediaMissingFile != null) {
         inputs.file(resolvedPokepediaMissingFile)
+    }
+    if (resolvedRecognitionVectorsFile != null) {
+        inputs.file(resolvedRecognitionVectorsFile)
     }
     outputs.file(output)
 
@@ -275,6 +291,9 @@ val generateTcgdexDatabase by tasks.registering(JavaExec::class) {
     }
     if (resolvedPokepediaMissingFile != null) {
         args("--pokepedia-missing=${resolvedPokepediaMissingFile.absolutePath}")
+    }
+    if (resolvedRecognitionVectorsFile != null) {
+        args("--recognition-vectors=${resolvedRecognitionVectorsFile.absolutePath}")
     }
 
     classpath = files(layout.buildDirectory.dir("classes/kotlin/jvm/main")) + jvmRuntimeConfig.get()

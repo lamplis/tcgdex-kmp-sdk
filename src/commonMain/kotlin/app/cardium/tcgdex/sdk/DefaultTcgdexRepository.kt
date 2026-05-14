@@ -3,6 +3,7 @@ package app.cardium.tcgdex.sdk
 import app.cardium.tcgdex.db.Card_with_pokemon
 import app.cardium.tcgdex.db.Card_with_set
 import app.cardium.tcgdex.db.Card_prices
+import app.cardium.tcgdex.db.Card_recognition_hashes
 import app.cardium.tcgdex.db.CountCardsPerIllustrator
 import app.cardium.tcgdex.db.GetSetWithSerieName
 import app.cardium.tcgdex.db.Illustrators
@@ -12,6 +13,7 @@ import app.cardium.tcgdex.db.Sets
 import app.cardium.tcgdex.db.TcgdexDatabase
 import app.cardium.tcgdex.sdk.model.Card
 import app.cardium.tcgdex.sdk.model.CardPrice
+import app.cardium.tcgdex.sdk.model.CardRecognitionHash
 import app.cardium.tcgdex.sdk.model.CardSet
 import app.cardium.tcgdex.sdk.model.Illustrator
 import app.cardium.tcgdex.sdk.model.IllustratorCardIdEntry
@@ -143,6 +145,20 @@ class DefaultTcgdexRepository(
     override suspend fun getCardById(cardId: String, language: String): Card? = withContext(dispatcher) {
         queries.getCardById(cardId, language).awaitAsOneOrNull()?.toModel()
     }
+
+    override suspend fun getRecognitionHashesForCard(cardId: String, language: String): List<CardRecognitionHash> =
+        withContext(dispatcher) {
+            queries.getCardRecognitionHashesForCard(cardId, language)
+                .awaitAsList()
+                .map { it.toModel() }
+        }
+
+    override suspend fun getRecognitionHashesForPokemon(language: String): List<CardRecognitionHash> =
+        withContext(dispatcher) {
+            queries.getCardRecognitionHashesForPokemon(language)
+                .awaitAsList()
+                .map { it.toModel() }
+        }
 
     override suspend fun getCardPrices(cardId: String, language: String): List<CardPrice> =
         withContext(dispatcher) {
@@ -655,6 +671,17 @@ private fun Card_prices.toModel(): CardPrice = CardPrice(
     recommendedPrice = recommended_price,
     availableCount = available_count,
     productId = product_id,
+)
+
+private fun Card_recognition_hashes.toModel(): CardRecognitionHash = CardRecognitionHash(
+    cardId = card_id,
+    language = language,
+    imageSource = image_source,
+    imageUrl = image_url,
+    lighting = lighting,
+    rotation = rotation.toInt(),
+    dhash = dhash,
+    phash = phash,
 )
 
 /**

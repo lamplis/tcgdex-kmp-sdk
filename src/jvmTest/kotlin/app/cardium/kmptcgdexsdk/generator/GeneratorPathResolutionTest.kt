@@ -73,6 +73,25 @@ class GeneratorPathResolutionTest {
         assertEquals(canonical.absolutePath, resolved.absolutePath)
     }
 
+    @Test
+    fun `Given canonical recognition vectors file exists, When resolveDefaultRecognitionVectorsPath called, Then returns canonical file`() {
+        val root = createCardiumLikeRoot()
+        val canonical = root.resolve("libs/tcgdex-kmp-sdk/generator-inputs/recognition/card-vectors-fr.json")
+        canonical.parentFile.mkdirs()
+        canonical.writeText("""{"cards":[]}""")
+
+        val resolved = resolveDefaultRecognitionVectorsPath(root)
+        assertNotNull(resolved)
+        assertEquals(canonical.absolutePath, resolved.absolutePath)
+    }
+
+    @Test
+    fun `Given no recognition vectors file exists, When resolveDefaultRecognitionVectorsPath called, Then returns null`() {
+        val root = createCardiumLikeRoot()
+        val resolved = resolveDefaultRecognitionVectorsPath(root)
+        assertNull(resolved)
+    }
+
     private fun createCardiumLikeRoot(): File {
         val root = createTempDirectory("cardium-root-").toFile()
         root.resolve("composeApp").mkdirs()

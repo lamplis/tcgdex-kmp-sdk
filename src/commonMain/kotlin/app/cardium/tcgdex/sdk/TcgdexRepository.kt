@@ -2,6 +2,7 @@ package app.cardium.tcgdex.sdk
 
 import app.cardium.tcgdex.sdk.model.Card
 import app.cardium.tcgdex.sdk.model.CardPrice
+import app.cardium.tcgdex.sdk.model.CardRecognitionHash
 import app.cardium.tcgdex.sdk.model.CardSet
 import app.cardium.tcgdex.sdk.model.Illustrator
 import app.cardium.tcgdex.sdk.model.IllustratorCardIdEntry
@@ -130,6 +131,21 @@ interface TcgdexRepository {
      * @return The card with full metadata if found, null otherwise
      */
     suspend fun getCardById(cardId: String, language: String): Card?
+
+    /**
+     * Returns recognition hashes for a specific card/language pair.
+     *
+     * @param cardId The card identifier (e.g., "sv01-001")
+     * @param language ISO language code
+     */
+    suspend fun getRecognitionHashesForCard(cardId: String, language: String): List<CardRecognitionHash> = emptyList()
+
+    /**
+     * Returns the full recognition corpus for Pokémon cards in a language.
+     *
+     * @param language ISO language code
+     */
+    suspend fun getRecognitionHashesForPokemon(language: String): List<CardRecognitionHash> = emptyList()
 
     /**
      * Returns all Cardmarket export prices stored for a card (all variants / languages / countries).
