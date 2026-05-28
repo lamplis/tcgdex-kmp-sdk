@@ -186,6 +186,7 @@ CREATE TABLE card_pokemon (
     card_id TEXT NOT NULL,
     language TEXT NOT NULL,
     pokemon_dex_id INTEGER NOT NULL,
+    is_cameo INTEGER NOT NULL DEFAULT 0,
     PRIMARY KEY (card_id, language, pokemon_dex_id),
     FOREIGN KEY (card_id, language) REFERENCES cards(id, language) ON DELETE CASCADE
 );
@@ -277,6 +278,7 @@ SELECT
     cards.illustrator_id,
     illustrators.name AS illustrator_name,
     card_pokemon.pokemon_dex_id,
+    card_pokemon.is_cameo,
     cards.category,
     cards.types,
     cards.supertype,
@@ -449,8 +451,8 @@ VALUES (
 
 -- Insert a card-Pokémon relationship (call once per dex ID for multi-Pokémon cards)
 insertCardPokemon:
-INSERT OR REPLACE INTO card_pokemon(card_id, language, pokemon_dex_id)
-VALUES (:cardId, :language, :pokemonDexId);
+INSERT OR REPLACE INTO card_pokemon(card_id, language, pokemon_dex_id, is_cameo)
+VALUES (:cardId, :language, :pokemonDexId, :isCameo);
 
 -- Insert a Pokémon species canonical name with evolution chain
 insertPokemonSpecies:

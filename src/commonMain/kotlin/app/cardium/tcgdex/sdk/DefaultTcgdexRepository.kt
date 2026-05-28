@@ -609,6 +609,7 @@ private fun Card_with_set.toModel(): Card {
         priceCardmarketLow = price_cardmarket_low,
         priceUpdatedIso = price_updated_iso,
         priceUnit = price_unit,
+        isCameo = false,
     )
 }
 
@@ -653,6 +654,7 @@ private fun Card_with_pokemon.toModel(): Card {
         priceCardmarketLow = price_cardmarket_low,
         priceUpdatedIso = price_updated_iso,
         priceUnit = price_unit,
+        isCameo = is_cameo != 0L,
     )
 }
 

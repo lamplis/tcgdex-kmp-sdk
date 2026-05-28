@@ -46,6 +46,7 @@ object TcgdexDatabaseInstaller {
      * the file size stays the same.
      *
      * ## VERSION HISTORY
+     * - Version 10: Added is_cameo to card_pokemon and persisted cameoDexIds links.
      * - Version 8: Fixed origin_language for McDonald's French cards (was incorrectly set to "en").
      *              Cards that exist in FR with Pokepedia fallback now correctly have origin_language="fr".
      * - Version 7: Added evolution chain data (evolves_from, evolves_to) to pokemon_species table.
@@ -67,7 +68,7 @@ object TcgdexDatabaseInstaller {
      *
      * @see docs/POKEDEX_DATA_REMEDIATION.md for more details
      */
-    const val DATABASE_USER_VERSION = 9
+    const val DATABASE_USER_VERSION = 10
 
     private const val METADATA_SUFFIX = ".meta"
 

@@ -337,6 +337,7 @@ fun main(args: Array<String>) = runBlocking {
         }
 
         val dexIds = card.getIntArray("dexId")
+        val cameoDexIds = card.getIntArray("cameoDexIds")
 
         val types = card.getStringArray("types")?.joinToString(",")
         val category = card.getString("category")
@@ -508,13 +509,50 @@ fun main(args: Array<String>) = runBlocking {
             }
         }
 
+        val normalizedCameoDexIds = cameoDexIds?.mapNotNull { dexId ->
+            normalizeDexId(dexId, validDexIds)
+        }
+
+        if (validDexIds.isNotEmpty()) {
+            val invalidCameoDexIds = cameoDexIds?.filter { dexId ->
+                normalizeDexId(dexId, validDexIds) == null
+            }.orEmpty()
+            if (invalidCameoDexIds.isNotEmpty()) {
+                throw IllegalArgumentException(
+                    """
+                    [Tcgdex][x] INVALID CAMEO DEX ID DETECTED - BUILD FAILED
+                    Card: $id (set: $setId, language: $language)
+                    Invalid cameoDexIds: ${invalidCameoDexIds.joinToString(", ")}
+                    
+                    This cameo dex ID does not exist in pokemon-species.json.
+                    Fix the card data in libs/cards-database/data/... and regenerate.
+                    """.trimIndent()
+                )
+            }
+        }
+
         normalizedDexIds?.forEach { dexId ->
             db.tcgdexQueries.insertCardPokemon(
                 cardId = id,
                 language = language,
                 pokemonDexId = dexId.toLong(),
+                isCameo = 0L,
             )
         }
+
+        val mainDexIdSet = normalizedDexIds?.toSet().orEmpty()
+        normalizedCameoDexIds
+            ?.asSequence()
+            ?.filterNot { it in mainDexIdSet }
+            ?.distinct()
+            ?.forEach { dexId ->
+                db.tcgdexQueries.insertCardPokemon(
+                    cardId = id,
+                    language = language,
+                    pokemonDexId = dexId.toLong(),
+                    isCameo = 1L,
+                )
+            }
     }
 
     for (language in config.languages) {

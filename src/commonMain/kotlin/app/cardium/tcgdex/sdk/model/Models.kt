@@ -83,6 +83,7 @@ data class CardSet(
  * @property priceCardmarketLow Cardmarket low price in EUR
  * @property priceUpdatedIso ISO 8601 timestamp when price was fetched
  * @property priceUnit Currency unit (always "EUR" for Cardmarket)
+ * @property isCameo True when this row comes from cameoDexIds linkage in card_pokemon
  */
 data class Card(
     val id: String,
@@ -117,6 +118,7 @@ data class Card(
     val priceCardmarketLow: Double? = null,
     val priceUpdatedIso: String? = null,
     val priceUnit: String? = null,
+    val isCameo: Boolean = false,
 ) {
     /**
      * Returns the best available price in EUR.
