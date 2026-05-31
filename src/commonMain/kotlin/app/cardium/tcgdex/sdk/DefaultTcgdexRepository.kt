@@ -373,9 +373,9 @@ class DefaultTcgdexRepository(
             queries.getCardCountsPerSetForDexId(dexId.toLong(), language).awaitAsList().map { row ->
                 PokemonSetCardCount(
                     setId = row.set_id,
-                    setName = row.set_name,
+                    setName = row.set_name ?: row.set_id,
                     releaseDate = row.release_date,
-                    serieId = row.serie_id,
+                    serieId = row.serie_id ?: "unknown",
                     serieName = row.serie_name,
                     logoUrl = row.logo_url,
                     symbolUrl = row.symbol_url,
@@ -576,14 +576,17 @@ private fun GetSetWithSerieName.toModel(): CardSet = CardSet(
  */
 private fun Card_with_set.toModel(): Card {
     val baseImage = image_url?.let { selectBaseImageUrl(it) ?: it }
+    val resolvedSetName = set_name ?: set_id
+    val resolvedSerieId = serie_id ?: "unknown"
+    val resolvedSetOfficialCount = set_card_count_official?.toInt() ?: 0
     return Card(
         id = id,
         localId = local_id,
         setId = set_id,
-        setName = set_name,
+        setName = resolvedSetName,
         setLanguage = language,
         originLanguage = origin_language,
-        serieId = serie_id,
+        serieId = resolvedSerieId,
         serieName = serie_name,
         name = name,
         imageUrl = baseImage,
@@ -600,8 +603,8 @@ private fun Card_with_set.toModel(): Card {
         category = category,
         types = parseTypes(types),
         supertype = supertype,
-        reference = buildReference(local_id, set_card_count_official.toInt()),
-        setOfficialCardCount = set_card_count_official.toInt(),
+        reference = buildReference(local_id, resolvedSetOfficialCount),
+        setOfficialCardCount = resolvedSetOfficialCount,
         setReleaseDate = set_release_date,
         // Embedded Cardmarket EUR pricing snapshot
         priceCardmarketTrend = price_cardmarket_trend,
@@ -621,14 +624,17 @@ private fun Card_with_set.toModel(): Card {
  */
 private fun Card_with_pokemon.toModel(): Card {
     val baseImage = image_url?.let { selectBaseImageUrl(it) ?: it }
+    val resolvedSetName = set_name ?: set_id
+    val resolvedSerieId = serie_id ?: "unknown"
+    val resolvedSetOfficialCount = set_card_count_official?.toInt() ?: 0
     return Card(
         id = id,
         localId = local_id,
         setId = set_id,
-        setName = set_name,
+        setName = resolvedSetName,
         setLanguage = language,
         originLanguage = origin_language,
-        serieId = serie_id,
+        serieId = resolvedSerieId,
         serieName = serie_name,
         name = name,
         imageUrl = baseImage,
@@ -645,8 +651,8 @@ private fun Card_with_pokemon.toModel(): Card {
         category = category,
         types = parseTypes(types),
         supertype = supertype,
-        reference = buildReference(local_id, set_card_count_official.toInt()),
-        setOfficialCardCount = set_card_count_official.toInt(),
+        reference = buildReference(local_id, resolvedSetOfficialCount),
+        setOfficialCardCount = resolvedSetOfficialCount,
         setReleaseDate = set_release_date,
         // Embedded Cardmarket EUR pricing snapshot
         priceCardmarketTrend = price_cardmarket_trend,

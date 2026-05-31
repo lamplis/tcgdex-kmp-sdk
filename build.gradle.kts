@@ -72,7 +72,7 @@ val resolvedLanguages: String = if (tcgdexLanguageLegacy.get().isNotBlank()) {
 kotlin {
     applyDefaultHierarchyTemplate()
 
-    androidLibrary {
+    android {
         namespace = "app.cardium.kmptcgdexsdk"
         compileSdk = libs.versions.android.compileSdk.get().toInt()
         minSdk = libs.versions.android.minSdk.get().toInt()
@@ -113,6 +113,7 @@ kotlin {
         val jvmTest by getting {
             dependencies {
                 implementation(libs.kotlin.test)
+                implementation("app.cash.sqldelight:sqlite-driver:2.3.2")
                 // Xerial sqlite-jdbc is used only by JVM tests to read the
                 // generated database via raw JDBC. Runtime/code uses the
                 // bundled SQLite driver (with guaranteed FTS5).

@@ -242,19 +242,26 @@ SELECT
     cards.price_cardmarket_low,
     cards.price_updated_iso,
     cards.price_unit,
-    sets.card_count_official AS set_card_count_official,
-    sets.card_count_total AS set_card_count_total,
-    sets.name AS set_name,
-    sets.logo_url AS set_logo_url,
-    sets.symbol_url AS set_symbol_url,
-    sets.serie_id,
-    series.name AS serie_name,
-    sets.release_date AS set_release_date
+    COALESCE(localized_set.card_count_official, fallback_set.card_count_official) AS set_card_count_official,
+    COALESCE(localized_set.card_count_total, fallback_set.card_count_total) AS set_card_count_total,
+    COALESCE(localized_set.name, fallback_set.name) AS set_name,
+    COALESCE(localized_set.logo_url, fallback_set.logo_url) AS set_logo_url,
+    COALESCE(localized_set.symbol_url, fallback_set.symbol_url) AS set_symbol_url,
+    COALESCE(localized_set.serie_id, fallback_set.serie_id) AS serie_id,
+    COALESCE(localized_series.name, fallback_series.name, COALESCE(localized_set.serie_id, fallback_set.serie_id)) AS serie_name,
+    COALESCE(localized_set.release_date, fallback_set.release_date) AS set_release_date
 FROM cards
-INNER JOIN sets ON sets.id = cards.set_id AND sets.language = cards.language
-INNER JOIN series ON series.id = sets.serie_id AND series.language = sets.language
+LEFT JOIN sets AS localized_set ON localized_set.id = cards.set_id AND localized_set.language = cards.language
+LEFT JOIN sets AS fallback_set ON fallback_set.id = cards.set_id AND fallback_set.language = 'en'
+LEFT JOIN series AS localized_series
+    ON localized_series.id = COALESCE(localized_set.serie_id, fallback_set.serie_id)
+    AND localized_series.language = cards.language
+LEFT JOIN series AS fallback_series
+    ON fallback_series.id = COALESCE(localized_set.serie_id, fallback_set.serie_id)
+    AND fallback_series.language = 'en'
 LEFT JOIN illustrators ON illustrators.id = cards.illustrator_id
-LEFT JOIN rarities ON rarities.id = cards.rarity_id;
+LEFT JOIN rarities ON rarities.id = cards.rarity_id
+WHERE COALESCE(localized_set.id, fallback_set.id) IS NOT NULL;
 
 -- -----------------------------------------------------------------------------
 -- View: card_with_pokemon - Cards joined with their Pokédex IDs via junction table
@@ -288,20 +295,27 @@ SELECT
     cards.price_cardmarket_low,
     cards.price_updated_iso,
     cards.price_unit,
-    sets.card_count_official AS set_card_count_official,
-    sets.card_count_total AS set_card_count_total,
-    sets.name AS set_name,
-    sets.logo_url AS set_logo_url,
-    sets.symbol_url AS set_symbol_url,
-    sets.serie_id,
-    series.name AS serie_name,
-    sets.release_date AS set_release_date
+    COALESCE(localized_set.card_count_official, fallback_set.card_count_official) AS set_card_count_official,
+    COALESCE(localized_set.card_count_total, fallback_set.card_count_total) AS set_card_count_total,
+    COALESCE(localized_set.name, fallback_set.name) AS set_name,
+    COALESCE(localized_set.logo_url, fallback_set.logo_url) AS set_logo_url,
+    COALESCE(localized_set.symbol_url, fallback_set.symbol_url) AS set_symbol_url,
+    COALESCE(localized_set.serie_id, fallback_set.serie_id) AS serie_id,
+    COALESCE(localized_series.name, fallback_series.name, COALESCE(localized_set.serie_id, fallback_set.serie_id)) AS serie_name,
+    COALESCE(localized_set.release_date, fallback_set.release_date) AS set_release_date
 FROM cards
 INNER JOIN card_pokemon ON card_pokemon.card_id = cards.id AND card_pokemon.language = cards.language
-INNER JOIN sets ON sets.id = cards.set_id AND sets.language = cards.language
-INNER JOIN series ON series.id = sets.serie_id AND series.language = sets.language
+LEFT JOIN sets AS localized_set ON localized_set.id = cards.set_id AND localized_set.language = cards.language
+LEFT JOIN sets AS fallback_set ON fallback_set.id = cards.set_id AND fallback_set.language = 'en'
+LEFT JOIN series AS localized_series
+    ON localized_series.id = COALESCE(localized_set.serie_id, fallback_set.serie_id)
+    AND localized_series.language = cards.language
+LEFT JOIN series AS fallback_series
+    ON fallback_series.id = COALESCE(localized_set.serie_id, fallback_set.serie_id)
+    AND fallback_series.language = 'en'
 LEFT JOIN illustrators ON illustrators.id = cards.illustrator_id
-LEFT JOIN rarities ON rarities.id = cards.rarity_id;
+LEFT JOIN rarities ON rarities.id = cards.rarity_id
+WHERE COALESCE(localized_set.id, fallback_set.id) IS NOT NULL;
 
 -- =============================================================================
 -- INSERT STATEMENTS
@@ -465,16 +479,53 @@ VALUES (:dexId, :language, :name, :evolvesFrom, :evolvesTo);
 
 -- Get all series for a specific language, ordered by position
 getAllSeriesByLanguage:
-SELECT *
+SELECT
+    id,
+    language,
+    name,
+    position
 FROM series
 WHERE language = :language
+UNION ALL
+SELECT
+    id,
+    language,
+    name,
+    position
+FROM series
+WHERE language = 'en'
+  AND id NOT IN (
+    SELECT id
+    FROM series
+    WHERE language = :language
+  )
 ORDER BY position ASC, id;
 
 -- Get series by ID and language
 getSeriesById:
-SELECT *
+SELECT
+    id,
+    language,
+    name,
+    position
 FROM series
-WHERE id = :id AND language = :language;
+WHERE id = :id AND language = :language
+UNION ALL
+SELECT
+    id,
+    language,
+    name,
+    position
+FROM series
+WHERE id = :id
+  AND language = 'en'
+  AND NOT EXISTS (
+    SELECT 1
+    FROM series
+    WHERE id = :id
+      AND language = :language
+  )
+LIMIT 1;
 
 -- Get all available languages in the database
 getAvailableLanguages:
@@ -494,16 +545,72 @@ SELECT COUNT(*) FROM sets WHERE language = :language;
 
 -- Get all sets for a specific language
 getAllSetsByLanguage:
-SELECT *
+SELECT
+    id,
+    language,
+    serie_id,
+    name,
+    logo_url,
+    symbol_url,
+    card_count_total,
+    card_count_official,
+    release_date
 FROM sets
 WHERE language = :language
+UNION ALL
+SELECT
+    id,
+    language,
+    serie_id,
+    name,
+    logo_url,
+    symbol_url,
+    card_count_total,
+    card_count_official,
+    release_date
+FROM sets
+WHERE language = 'en'
+  AND id NOT IN (
+    SELECT id
+    FROM sets
+    WHERE language = :language
+  )
 ORDER BY release_date DESC, id;
 
 -- Get sets for a specific series and language
 getSetsForSerie:
-SELECT *
+SELECT
+    id,
+    language,
+    serie_id,
+    name,
+    logo_url,
+    symbol_url,
+    card_count_total,
+    card_count_official,
+    release_date
 FROM sets
 WHERE serie_id = :serieId AND language = :language
+UNION ALL
+SELECT
+    id,
+    language,
+    serie_id,
+    name,
+    logo_url,
+    symbol_url,
+    card_count_total,
+    card_count_official,
+    release_date
+FROM sets
+WHERE serie_id = :serieId
+  AND language = 'en'
+  AND id NOT IN (
+    SELECT id
+    FROM sets
+    WHERE serie_id = :serieId
+      AND language = :language
+  )
 ORDER BY
   release_date DESC,
   CASE
@@ -519,18 +626,96 @@ ORDER BY
 
 -- Get a specific set by ID and language
 getSetById:
-SELECT *
+SELECT
+    id,
+    language,
+    serie_id,
+    name,
+    logo_url,
+    symbol_url,
+    card_count_total,
+    card_count_official,
+    release_date
 FROM sets
-WHERE id = :id AND language = :language;
+WHERE id = :id AND language = :language
+UNION ALL
+SELECT
+    id,
+    language,
+    serie_id,
+    name,
+    logo_url,
+    symbol_url,
+    card_count_total,
+    card_count_official,
+    release_date
+FROM sets
+WHERE id = :id
+  AND language = 'en'
+  AND NOT EXISTS (
+    SELECT 1
+    FROM sets
+    WHERE id = :id
+      AND language = :language
+  )
+LIMIT 1;
 
 -- Get set with series name for display
 getSetWithSerieName:
+WITH effective_set AS (
+    SELECT
+        id,
+        language,
+        serie_id,
+        name,
+        logo_url,
+        symbol_url,
+        card_count_total,
+        card_count_official,
+        release_date
+    FROM sets
+    WHERE id = :id
+      AND language = :language
+    UNION ALL
+    SELECT
+        id,
+        language,
+        serie_id,
+        name,
+        logo_url,
+        symbol_url,
+        card_count_total,
+        card_count_official,
+        release_date
+    FROM sets
+    WHERE id = :id
+      AND language = 'en'
+      AND NOT EXISTS (
+        SELECT 1
+        FROM sets
+        WHERE id = :id
+          AND language = :language
+      )
+)
 SELECT
-    sets.*,
-    series.name AS serie_name
-FROM sets
-INNER JOIN series ON series.id = sets.serie_id AND series.language = sets.language
-WHERE sets.id = :id AND sets.language = :language;
+    effective_set.id,
+    effective_set.language,
+    effective_set.serie_id,
+    effective_set.name,
+    effective_set.logo_url,
+    effective_set.symbol_url,
+    effective_set.card_count_total,
+    effective_set.card_count_official,
+    effective_set.release_date,
+    COALESCE(localized_series.name, fallback_series.name, effective_set.serie_id) AS serie_name
+FROM effective_set
+LEFT JOIN series AS localized_series
+    ON localized_series.id = effective_set.serie_id
+    AND localized_series.language = :language
+LEFT JOIN series AS fallback_series
+    ON fallback_series.id = effective_set.serie_id
+    AND fallback_series.language = 'en'
+LIMIT 1;
 
 -- =============================================================================
 -- CARD QUERIES
