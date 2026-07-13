@@ -89,6 +89,7 @@ CREATE TABLE cards (
     types TEXT,
     supertype TEXT,
     regulation_mark TEXT,
+    hp INTEGER,
     -- Embedded Cardmarket EUR pricing snapshot
     price_cardmarket_trend REAL,
     price_cardmarket_avg REAL,
@@ -171,7 +172,9 @@ CREATE TABLE card_recognition_hashes (
     rotation INTEGER NOT NULL DEFAULT 0,
     dhash TEXT NOT NULL,
     phash TEXT NOT NULL,
-    PRIMARY KEY (card_id, language, lighting, rotation),
+    -- image_url is part of the PK: one card holds multiple vectors, one per
+    -- referential image (pokepedia) and per Cardmarket product/variant print.
+    PRIMARY KEY (card_id, language, image_url, lighting, rotation),
     FOREIGN KEY (card_id, language) REFERENCES cards(id, language) ON DELETE CASCADE
 );
 
@@ -237,6 +240,7 @@ SELECT
     cards.types,
     cards.supertype,
     cards.regulation_mark,
+    cards.hp,
     cards.price_cardmarket_trend,
     cards.price_cardmarket_avg,
     cards.price_cardmarket_low,
@@ -290,6 +294,7 @@ SELECT
     cards.types,
     cards.supertype,
     cards.regulation_mark,
+    cards.hp,
     cards.price_cardmarket_trend,
     cards.price_cardmarket_avg,
     cards.price_cardmarket_low,
@@ -375,6 +380,7 @@ INSERT OR REPLACE INTO cards(
     types,
     supertype,
     regulation_mark,
+    hp,
     price_cardmarket_trend,
     price_cardmarket_avg,
     price_cardmarket_low,
@@ -398,6 +404,7 @@ VALUES (
     :types,
     :supertype,
     :regulationMark,
+    :hp,
     :priceCardmarketTrend,
     :priceCardmarketAvg,
     :priceCardmarketLow,
@@ -717,6 +724,15 @@ LEFT JOIN series AS fallback_series
     AND fallback_series.language = 'en'
 LIMIT 1;
 
+-- Set IDs that have at least one card in the given language, excluding TCGP sets.
+-- Aggregate query used to decide set visibility without loading card lists per set.
+getSetIdsWithCards:
+SELECT DISTINCT cards.set_id
+FROM cards
+JOIN sets ON sets.id = cards.set_id AND sets.language = cards.language
+WHERE cards.language = :language
+  AND lower(sets.serie_id) != 'tcgp';
+
 -- =============================================================================
 -- CARD QUERIES
 -- =============================================================================
@@ -838,6 +854,9 @@ WHERE card_id = :cardId
 ORDER BY rotation ASC, lighting ASC;
 
 getCardRecognitionHashesForPokemon:
+-- Corpus for the scanner rerank. Covers all card categories: the historical
+-- category = 'Pokemon' filter also missed accented FR rows ('Pokémon') and
+-- excluded Trainer/Energy cards from identification.
 SELECT crh.*
 FROM card_recognition_hashes crh
 INNER JOIN cards c
@@ -847,7 +866,6 @@ INNER JOIN sets s
     ON s.id = c.set_id
     AND s.language = c.language
 WHERE crh.language = :language
-    AND c.category = 'Pokemon'
     AND s.serie_id != 'tcgp'
 ORDER BY crh.card_id ASC, crh.rotation ASC, crh.lighting ASC;
 

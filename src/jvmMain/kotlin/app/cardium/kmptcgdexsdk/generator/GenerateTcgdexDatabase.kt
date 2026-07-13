@@ -343,6 +343,7 @@ fun main(args: Array<String>) = runBlocking {
         val category = card.getString("category")
         val supertype = card.getString("supertype")
         val regulationMark = card.getString("regulationMark")
+        val hp = card["hp"]?.let { element -> (element as? JsonPrimitive)?.intOrNull }
         val localNumberSort = extractNumericPart(localId)
 
         val resolvedDexIds = if (category == "Pokemon" && name.isNotBlank() && isMultiPokemonName(name)) {
@@ -401,6 +402,7 @@ fun main(args: Array<String>) = runBlocking {
             types = types,
             supertype = supertype,
             regulationMark = regulationMark,
+            hp = hp?.toLong(),
             priceCardmarketTrend = s3Pricing?.trendPrice,
             priceCardmarketAvg = s3Pricing?.averageSellPrice,
             priceCardmarketLow = s3Pricing?.lowPrice,

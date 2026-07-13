@@ -109,6 +109,8 @@ data class Card(
     val types: List<String>,
     val supertype: String?,
     val regulationMark: String?,
+    // Printed PV/HP for Pokemon cards; null for trainers/energies or unknown
+    val hp: Int? = null,
     val reference: String,
     val setOfficialCardCount: Int,
     val setReleaseDate: String?,

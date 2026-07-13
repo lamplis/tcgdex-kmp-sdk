@@ -83,6 +83,19 @@ interface TcgdexRepository {
      */
     suspend fun getSetById(setId: String, language: String): CardSet?
 
+    /**
+     * Returns the IDs of all sets that contain at least one card in the given
+     * language, excluding TCGP (TCG Pocket) sets.
+     *
+     * This is an aggregate query intended for screen-level visibility checks
+     * (e.g., Master Sets) so callers never need to load full card lists per set
+     * just to test emptiness (avoids N+1 query patterns).
+     *
+     * @param language ISO language code
+     * @return Set of set IDs with at least one card in that language
+     */
+    suspend fun getSetIdsWithCards(language: String): Set<String> = emptySet()
+
     // =========================================================================
     // Card Queries
     // =========================================================================

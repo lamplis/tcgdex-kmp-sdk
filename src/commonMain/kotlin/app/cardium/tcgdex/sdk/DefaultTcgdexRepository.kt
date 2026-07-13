@@ -78,33 +78,20 @@ class DefaultTcgdexRepository(
     // =========================================================================
 
     override suspend fun getAllSets(language: String): List<CardSet> = withContext(dispatcher) {
-        // Debug: check database state
-        try {
-            val availableLanguages = queries.getAvailableLanguages().awaitAsList()
-            println("[Tcgdex][i] Available languages in DB: $availableLanguages")
-            
-            // Debug: count sets per language
-            val allSets = queries.countAllSets().awaitAsOne()
-            println("[Tcgdex][i] Total sets in DB: $allSets")
-            
-            // Debug: count sets for specific language using raw count
-            val frCount = queries.countSetsByLanguage("fr").awaitAsOne()
-            val enCount = queries.countSetsByLanguage("en").awaitAsOne()
-            println("[Tcgdex][i] Sets by language: fr=$frCount, en=$enCount")
-        } catch (e: Exception) {
-            println("[Tcgdex][x] Failed to get DB stats: ${e.message}")
-            e.printStackTrace()
-        }
-        
-        // Use the query that includes serie_name for complete CardSet data
+        // Load series names once (localized rows first, EN fallback rows fill holes)
+        // instead of issuing one getSeriesById query per set row (N+1).
+        val serieNameById = queries.getAllSeriesByLanguage(language)
+            .awaitAsList()
+            .associate { it.id to it.name }
         val result = queries.getAllSetsByLanguage(language).awaitAsList()
         println("[Tcgdex][i] getAllSets($language) returned ${result.size} rows")
         result.map { set ->
-            // Fetch serie name separately for the basic Sets result
-            val serieName = queries.getSeriesById(set.serie_id, language)
-                .awaitAsOneOrNull()?.name
-            set.toModel(serieName)
+            set.toModel(serieNameById[set.serie_id])
         }
+    }
+
+    override suspend fun getSetIdsWithCards(language: String): Set<String> = withContext(dispatcher) {
+        queries.getSetIdsWithCards(language).awaitAsList().toSet()
     }
 
     override suspend fun getSetsForSerie(serieId: String, language: String): List<CardSet> =
@@ -600,6 +587,7 @@ private fun Card_with_set.toModel(): Card {
         illustratorName = illustrator_name,
         pokemonDexId = null, // card_with_set doesn't include dex ID
         regulationMark = regulation_mark,
+        hp = hp?.toInt(),
         category = category,
         types = parseTypes(types),
         supertype = supertype,
@@ -648,6 +636,7 @@ private fun Card_with_pokemon.toModel(): Card {
         illustratorName = illustrator_name,
         pokemonDexId = pokemon_dex_id.toInt(),
         regulationMark = regulation_mark,
+        hp = hp?.toInt(),
         category = category,
         types = parseTypes(types),
         supertype = supertype,

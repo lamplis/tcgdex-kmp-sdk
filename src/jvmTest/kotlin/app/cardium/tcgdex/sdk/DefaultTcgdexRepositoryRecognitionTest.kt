@@ -39,7 +39,7 @@ class DefaultTcgdexRepositoryRecognitionTest {
     }
 
     @Test
-    fun `Given mixed recognition rows, When querying pokemon corpus, Then returns pokemon sources and excludes trainer and tcgp`() = runBlocking {
+    fun `Given mixed recognition rows, When querying the corpus, Then all categories are returned and tcgp is excluded`() = runBlocking {
         val driver = newRecognitionInMemoryDriver()
         val database = TcgdexDatabase(driver)
         seedRecognitionFixtures(database)
@@ -47,11 +47,13 @@ class DefaultTcgdexRepositoryRecognitionTest {
         val repository = DefaultTcgdexRepository(database)
         val rows = repository.getRecognitionHashesForPokemon("fr")
 
-        assertEquals(3, rows.size)
+        // The corpus intentionally covers all card categories (Pokemon + Trainer/Energy);
+        // only TCG Pocket rows are excluded. See getCardRecognitionHashesForPokemon.
+        assertEquals(4, rows.size)
         assertEquals(setOf("tcgdex", "pokepedia", "cardmarket"), rows.map { it.imageSource }.toSet())
-        assertFalse(rows.any { it.cardId == "sv01-100" }, "trainer cards must be excluded")
+        assertTrue(rows.any { it.cardId == "sv01-100" }, "trainer cards are part of the corpus")
         assertFalse(rows.any { it.cardId == "tcgp-001" }, "tcgp cards must be excluded")
-        assertTrue(rows.all { it.cardId in setOf("sv01-001", "sv01-002", "sv02-003") })
+        assertTrue(rows.all { it.cardId in setOf("sv01-001", "sv01-002", "sv02-003", "sv01-100") })
         driver.close()
     }
 }
@@ -113,6 +115,7 @@ private suspend fun seedRecognitionFixtures(database: TcgdexDatabase) {
             types = null,
             supertype = null,
             regulationMark = null,
+            hp = null,
             priceCardmarketTrend = null,
             priceCardmarketAvg = null,
             priceCardmarketLow = null,
