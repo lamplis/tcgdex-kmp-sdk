@@ -277,7 +277,7 @@ fun main(args: Array<String>) = runBlocking {
         val setId = card.getNestedString("set", "id") ?: return
         val name = card.getString("name") ?: id
         val imageUrl = card.getString("image")
-        val fallbackImageUrl =
+        val fallbackImage =
             if (imageUrl.isNullOrBlank()) {
                 // When there is no TCGdex CDN image at all, apply Pokepedia fallback for
                 // every language so non-French users don't see "Picture missing".
@@ -289,7 +289,8 @@ fun main(args: Array<String>) = runBlocking {
             } else {
                 null
             }
-        val fallbackImageSource = fallbackImageUrl?.let { POKEPEDIA_SOURCE }
+        val fallbackImageUrl = fallbackImage?.url
+        val fallbackImageSource = fallbackImage?.source
 
         if (imageUrl.isNullOrBlank()) {
             val pokecardexUrl = MissingImagesIndexGenerator.buildPokecardexUrl(
@@ -707,10 +708,15 @@ fun main(args: Array<String>) = runBlocking {
 
     if (recognitionVectors != null) {
         val unresolvedRecognitionKeys = recognitionVectors.rowsByCardLanguage.keys - importedRecognitionKeys
-        require(unresolvedRecognitionKeys.isEmpty()) {
-            "[Tcgdex][x] Recognition vectors reference unknown cards/languages: " +
-                unresolvedRecognitionKeys.sorted().take(10).joinToString(", ") +
-                if (unresolvedRecognitionKeys.size > 10) " ... (+${unresolvedRecognitionKeys.size - 10} more)" else ""
+        if (unresolvedRecognitionKeys.isNotEmpty()) {
+            // The recognition manifest can lag behind dataset restructures (e.g. cel25
+            // Classic Collection split removed cel25-*A ids). Stale rows are skipped
+            // instead of failing the whole generation.
+            println(
+                "[Tcgdex][!] Recognition vectors reference ${unresolvedRecognitionKeys.size} unknown cards/languages (skipped): " +
+                    unresolvedRecognitionKeys.sorted().take(10).joinToString(", ") +
+                    if (unresolvedRecognitionKeys.size > 10) " ... (+${unresolvedRecognitionKeys.size - 10} more)" else "",
+            )
         }
         println("[Tcgdex] Imported recognition vector rows for ${importedRecognitionKeys.size} cards")
     }
@@ -2529,6 +2535,12 @@ internal fun loadCardmarketExportPrices(
 // =============================================================================
 
 private const val POKEPEDIA_SOURCE = "pokepedia"
+private const val CARDMARKET_SOURCE = "cardmarket"
+
+internal data class FallbackImage(
+    val url: String,
+    val source: String,
+)
 
 @Serializable
 private data class MissingFrRoot(
@@ -2566,7 +2578,7 @@ private fun MissingFrRoot.flattenCards(): List<JsonObject> =
 internal fun loadPokepediaFallbacks(
     missingFilePath: String?,
     json: Json,
-): Map<String, String> {
+): Map<String, FallbackImage> {
     if (missingFilePath.isNullOrBlank()) {
         println("[Tcgdex][i] Pokepedia missing tree not provided, skipping fallback import")
         return emptyMap()
@@ -2587,25 +2599,38 @@ internal fun loadPokepediaFallbacks(
             return emptyMap()
         }
 
-        val resolved = mutableMapOf<String, String>()
+        val resolved = mutableMapOf<String, FallbackImage>()
         var skipped = 0
 
         for (entry in cards) {
             val cardId = entry["cardId"]?.jsonPrimitive?.contentOrNull?.trim()
             if (cardId.isNullOrBlank()) continue
 
+            val status = entry["resolutionStatus"]?.jsonPrimitive?.contentOrNull
             val reason = entry["reason"]?.jsonPrimitive?.contentOrNull
             if (reason.equals("POKEPEDIA_THUMBNAIL_MISSING", ignoreCase = true)) {
                 skipped++
                 continue
             }
 
-            // Use pre-resolved URLs from the tree (pokepediaHdUrl or pokepediaThumbnailUrl)
-            val preResolvedUrl = entry["pokepediaHdUrl"]?.jsonPrimitive?.contentOrNull?.takeIf { it.isNotBlank() }
-                ?: entry["pokepediaThumbnailUrl"]?.jsonPrimitive?.contentOrNull?.takeIf { it.isNotBlank() }
+            val hdUrl = entry["pokepediaHdUrl"]?.jsonPrimitive?.contentOrNull?.takeIf { it.isNotBlank() }
+            val thumbUrl = entry["pokepediaThumbnailUrl"]?.jsonPrimitive?.contentOrNull?.takeIf { it.isNotBlank() }
+            val cardmarketUrl = entry["cardmarketImageUrl"]?.jsonPrimitive?.contentOrNull?.takeIf { it.isNotBlank() }
 
-            if (preResolvedUrl != null) {
-                resolved[cardId] = preResolvedUrl
+            val pokepediaUrl = when {
+                status.equals("resolved", ignoreCase = true) -> hdUrl ?: thumbUrl
+                reason.equals("POKEPEDIA_HD_UNAVAILABLE", ignoreCase = true) -> thumbUrl
+                else -> null
+            }
+
+            val fallback = when {
+                pokepediaUrl != null -> FallbackImage(url = pokepediaUrl, source = POKEPEDIA_SOURCE)
+                cardmarketUrl != null -> FallbackImage(url = cardmarketUrl, source = CARDMARKET_SOURCE)
+                else -> null
+            }
+
+            if (fallback != null) {
+                resolved[cardId] = fallback
             }
         }
 

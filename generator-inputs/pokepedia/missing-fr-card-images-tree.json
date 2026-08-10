@@ -1,15 +1,14 @@
 {
-  "generatedAt": "2026-06-28T20:30:35.559Z",
+  "generatedAt": "2026-07-15T05:43:05.316Z",
   "databasePath": "/Users/admin/workspace/cardium/iosApp/iosApp/Resources/tcgdex.db",
   "language": "fr",
-  "totalCards": 3524,
-  "resolvedCards": 3409,
+  "totalCards": 3406,
+  "resolvedCards": 3291,
   "unresolvedCards": 115,
   "unresolvedReasons": {
-    "POKEPEDIA_CARD_IMAGE_NOT_FOUND": 86,
-    "POKEPEDIA_CARD_NOT_FOUND": 18,
-    "POKEPEDIA_CARD_PAGE_REDLINK": 10,
-    "POKEPEDIA_PROMO_IMAGE_MISMATCH": 1
+    "POKEPEDIA_CARD_IMAGE_NOT_FOUND": 87,
+    "POKEPEDIA_CARD_PAGE_REDLINK": 23,
+    "POKEPEDIA_CARD_NOT_FOUND": 5
   },
   "series": [
     {
@@ -9706,1335 +9705,6 @@
               "pokepediaHdUrl": "https://www.pokepedia.fr/images/1/10/Carte_Diamant_%26_Perle_Tr%C3%A9sors_Myst%C3%A9rieux_124.png",
               "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/1/10/Carte_Diamant_%26_Perle_Tr%C3%A9sors_Myst%C3%A9rieux_124.png",
               "pokepediaCardUrl": "https://www.pokepedia.fr/Alt%C3%A9ration_espace-temps_(Diamant_%26_Perle_Tr%C3%A9sors_Myst%C3%A9rieux_124)"
-            }
-          ]
-        },
-        {
-          "setId": "dp3",
-          "name": "Merveilles Secrètes",
-          "releaseDate": "2007-11-01",
-          "cardCountTotal": 132,
-          "pokepediaSetUrl": "https://www.pokepedia.fr/Diamant_%26_Perle_Merveilles_Secr%C3%A8tes",
-          "cards": [
-            {
-              "cardId": "dp3-1",
-              "localId": "1",
-              "localNumberSort": 1,
-              "name": "Pharamp",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/5/5f/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_1.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/5/5f/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_1.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_1.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Pharamp_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_1)"
-            },
-            {
-              "cardId": "dp3-2",
-              "localId": "2",
-              "localNumberSort": 2,
-              "name": "Tortank",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/1/12/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_2.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/1/12/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_2.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_2.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Tortank_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_2)"
-            },
-            {
-              "cardId": "dp3-3",
-              "localId": "3",
-              "localNumberSort": 3,
-              "name": "Dracaufeu",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/9/99/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_3.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/9/99/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_3.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_3.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Dracaufeu_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_3)"
-            },
-            {
-              "cardId": "dp3-4",
-              "localId": "4",
-              "localNumberSort": 4,
-              "name": "Entei",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/e/e2/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_4.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/e/e2/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_4.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_4.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Entei_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_4)"
-            },
-            {
-              "cardId": "dp3-5",
-              "localId": "5",
-              "localNumberSort": 5,
-              "name": "Libegon",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/2/25/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_5.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/2/25/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_5.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_5.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Libegon_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_5)"
-            },
-            {
-              "cardId": "dp3-6",
-              "localId": "6",
-              "localNumberSort": 6,
-              "name": "Gallame",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/b/b0/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_6.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/b/b0/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_6.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_6.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Gallame_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_6)"
-            },
-            {
-              "cardId": "dp3-7",
-              "localId": "7",
-              "localNumberSort": 7,
-              "name": "Gardevoir",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/3/31/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_7.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/3/31/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_7.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_7.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Gardevoir_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_7)"
-            },
-            {
-              "cardId": "dp3-8",
-              "localId": "8",
-              "localNumberSort": 8,
-              "name": "Tritosor Mer Orient",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/e/eb/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_8.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/e/eb/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_8.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_8.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Tritosor_Mer_Orient_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_8)"
-            },
-            {
-              "cardId": "dp3-9",
-              "localId": "9",
-              "localNumberSort": 9,
-              "name": "Tritosor Mer Occident",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/3/3e/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_9.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/3/3e/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_9.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_9.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Tritosor_Mer_Occident_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_9)"
-            },
-            {
-              "cardId": "dp3-10",
-              "localId": "10",
-              "localNumberSort": 10,
-              "name": "Ho-Oh",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/8/8a/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_10.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/8/8a/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_10.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_10.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Ho-Oh_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_10)"
-            },
-            {
-              "cardId": "dp3-11",
-              "localId": "11",
-              "localNumberSort": 11,
-              "name": "Cotovol",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/b/bb/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_11.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/b/bb/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_11.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_11.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Cotovol_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_11)"
-            },
-            {
-              "cardId": "dp3-12",
-              "localId": "12",
-              "localNumberSort": 12,
-              "name": "Coudlangue",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/1/1c/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_12.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/1/1c/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_12.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_12.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Coudlangue_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_12)"
-            },
-            {
-              "cardId": "dp3-13",
-              "localId": "13",
-              "localNumberSort": 13,
-              "name": "Ludicolo",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/7/71/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_13.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/7/71/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_13.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_13.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Ludicolo_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_13)"
-            },
-            {
-              "cardId": "dp3-14",
-              "localId": "14",
-              "localNumberSort": 14,
-              "name": "Lugia",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/b/b7/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_14.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/b/b7/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_14.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_14.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Lugia_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_14)"
-            },
-            {
-              "cardId": "dp3-15",
-              "localId": "15",
-              "localNumberSort": 15,
-              "name": "Mew",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/d/de/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_15.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/d/de/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_15.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_15.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Mew_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_15)"
-            },
-            {
-              "cardId": "dp3-16",
-              "localId": "16",
-              "localNumberSort": 16,
-              "name": "Raikou",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/a/ae/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_16.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/a/ae/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_16.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_16.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Raikou_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_16)"
-            },
-            {
-              "cardId": "dp3-17",
-              "localId": "17",
-              "localNumberSort": 17,
-              "name": "Roserade",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/2/21/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_17.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/2/21/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_17.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_17.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Roserade_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_17)"
-            },
-            {
-              "cardId": "dp3-18",
-              "localId": "18",
-              "localNumberSort": 18,
-              "name": "Drattak",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/0/08/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_18.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/0/08/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_18.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_18.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Drattak_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_18)"
-            },
-            {
-              "cardId": "dp3-19",
-              "localId": "19",
-              "localNumberSort": 19,
-              "name": "Suicune",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/a/ad/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_19.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/a/ad/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_19.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_19.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Suicune_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_19)"
-            },
-            {
-              "cardId": "dp3-20",
-              "localId": "20",
-              "localNumberSort": 20,
-              "name": "Florizarre",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/f/ff/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_20.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/f/ff/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_20.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_20.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Florizarre_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_20)"
-            },
-            {
-              "cardId": "dp3-21",
-              "localId": "21",
-              "localNumberSort": 21,
-              "name": "Absol",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/e/ef/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_21.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/e/ef/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_21.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_21.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Absol_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_21)"
-            },
-            {
-              "cardId": "dp3-22",
-              "localId": "22",
-              "localNumberSort": 22,
-              "name": "Arcanin",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/2/26/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_22.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/2/26/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_22.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Arcanin_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_22)"
-            },
-            {
-              "cardId": "dp3-23",
-              "localId": "23",
-              "localNumberSort": 23,
-              "name": "Branette",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/c/c2/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_23.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/c/c2/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_23.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_23.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Branette_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_23)"
-            },
-            {
-              "cardId": "dp3-24",
-              "localId": "24",
-              "localNumberSort": 24,
-              "name": "Triopikeur",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/8/88/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_24.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/8/88/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_24.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_24.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Triopikeur_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_24)"
-            },
-            {
-              "cardId": "dp3-25",
-              "localId": "25",
-              "localNumberSort": 25,
-              "name": "Elekable",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/1/10/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_25.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/1/10/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_25.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Elekable_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_25)"
-            },
-            {
-              "cardId": "dp3-26",
-              "localId": "26",
-              "localNumberSort": 26,
-              "name": "Electrode",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/f/ff/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_26.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/f/ff/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_26.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_26.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Electrode_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_26)"
-            },
-            {
-              "cardId": "dp3-27",
-              "localId": "27",
-              "localNumberSort": 27,
-              "name": "Fouinar",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/4/47/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_27.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/4/47/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_27.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_27.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Fouinar_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_27)"
-            },
-            {
-              "cardId": "dp3-28",
-              "localId": "28",
-              "localNumberSort": 28,
-              "name": "Akwakwak",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/c/c9/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_28.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/c/c9/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_28.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_28.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Akwakwak_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_28)"
-            },
-            {
-              "cardId": "dp3-29",
-              "localId": "29",
-              "localNumberSort": 29,
-              "name": "Grolem",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/f/fb/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_29.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/f/fb/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_29.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_29.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Grolem_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_29)"
-            },
-            {
-              "cardId": "dp3-30",
-              "localId": "30",
-              "localNumberSort": 30,
-              "name": "Lippoutou",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/a/ab/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_30.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/a/ab/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_30.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_30.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Lippoutou_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_30)"
-            },
-            {
-              "cardId": "dp3-31",
-              "localId": "31",
-              "localNumberSort": 31,
-              "name": "Maganon",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/0/04/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_31.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/0/04/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_31.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_31.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Maganon_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_31)"
-            },
-            {
-              "cardId": "dp3-32",
-              "localId": "32",
-              "localNumberSort": 32,
-              "name": "Negapi",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/4/4e/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_32.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/4/4e/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_32.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_32.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Negapi_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_32)"
-            },
-            {
-              "cardId": "dp3-33",
-              "localId": "33",
-              "localNumberSort": 33,
-              "name": "Papilord",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/b/b0/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_33.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/b/b0/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_33.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_33.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Papilord_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_33)"
-            },
-            {
-              "cardId": "dp3-34",
-              "localId": "34",
-              "localNumberSort": 34,
-              "name": "Nidoking",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/a/ab/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_34.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/a/ab/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_34.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_34.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Nidoking_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_34)"
-            },
-            {
-              "cardId": "dp3-35",
-              "localId": "35",
-              "localNumberSort": 35,
-              "name": "Roucarnage",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/7/72/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_35.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/7/72/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_35.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_35.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Roucarnage_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_35)"
-            },
-            {
-              "cardId": "dp3-36",
-              "localId": "36",
-              "localNumberSort": 36,
-              "name": "Posipi",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/7/70/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_36.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/7/70/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_36.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_36.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Posipi_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_36)"
-            },
-            {
-              "cardId": "dp3-37",
-              "localId": "37",
-              "localNumberSort": 37,
-              "name": "Sharpedo",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/1/13/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_37.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/1/13/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_37.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_37.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Sharpedo_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_37)"
-            },
-            {
-              "cardId": "dp3-38",
-              "localId": "38",
-              "localNumberSort": 38,
-              "name": "Heliatronc",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/d/d9/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_38.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/d/d9/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_38.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_38.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Heliatronc_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_38)"
-            },
-            {
-              "cardId": "dp3-39",
-              "localId": "39",
-              "localNumberSort": 39,
-              "name": "Zarbi S",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/9/9b/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_39.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/9/9b/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_39.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_39.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Zarbi_S_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_39)"
-            },
-            {
-              "cardId": "dp3-40",
-              "localId": "40",
-              "localNumberSort": 40,
-              "name": "Dimoret",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/7/74/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_40.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/7/74/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_40.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_40.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Dimoret_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_40)"
-            },
-            {
-              "cardId": "dp3-41",
-              "localId": "41",
-              "localNumberSort": 41,
-              "name": "Cheniselle Cape Plante",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/7/79/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_41.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/7/79/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_41.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_41.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Cheniselle_Cape_Plante_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_41)"
-            },
-            {
-              "cardId": "dp3-42",
-              "localId": "42",
-              "localNumberSort": 42,
-              "name": "Cheniselle Cape Sable",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/2/25/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_42.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/2/25/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_42.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_42.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Cheniselle_Cape_Sable_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_42)"
-            },
-            {
-              "cardId": "dp3-43",
-              "localId": "43",
-              "localNumberSort": 43,
-              "name": "Cheniselle Cape Déchet",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/c/ca/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_43.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/c/ca/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_43.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_43.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Cheniselle_Cape_D%C3%A9chet_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_43)"
-            },
-            {
-              "cardId": "dp3-44",
-              "localId": "44",
-              "localNumberSort": 44,
-              "name": "Xatu",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/e/e7/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_44.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/e/e7/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_44.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_44.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Xatu_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_44)"
-            },
-            {
-              "cardId": "dp3-45",
-              "localId": "45",
-              "localNumberSort": 45,
-              "name": "Chapignon",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/6/65/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_45.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/6/65/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_45.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_45.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Chapignon_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_45)"
-            },
-            {
-              "cardId": "dp3-46",
-              "localId": "46",
-              "localNumberSort": 46,
-              "name": "Reptincel",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/0/03/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_46.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/0/03/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_46.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_46.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Reptincel_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_46)"
-            },
-            {
-              "cardId": "dp3-47",
-              "localId": "47",
-              "localNumberSort": 47,
-              "name": "Crustabri",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/e/e7/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_47.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/e/e7/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_47.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_47.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Crustabri_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_47)"
-            },
-            {
-              "cardId": "dp3-48",
-              "localId": "48",
-              "localNumberSort": 48,
-              "name": "Donphan",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/6/6b/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_48.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/6/6b/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_48.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_48.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Donphan_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_48)"
-            },
-            {
-              "cardId": "dp3-49",
-              "localId": "49",
-              "localNumberSort": 49,
-              "name": "Canarticho",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/a/a6/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_49.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/a/a6/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_49.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_49.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Canarticho_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_49)"
-            },
-            {
-              "cardId": "dp3-50",
-              "localId": "50",
-              "localNumberSort": 50,
-              "name": "Lainergie",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/e/e2/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_50.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/e/e2/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_50.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_50.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Lainergie_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_50)"
-            },
-            {
-              "cardId": "dp3-51",
-              "localId": "51",
-              "localNumberSort": 51,
-              "name": "Herbizarre",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/f/f8/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_51.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/f/f8/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_51.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_51.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Herbizarre_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_51)"
-            },
-            {
-              "cardId": "dp3-52",
-              "localId": "52",
-              "localNumberSort": 52,
-              "name": "Kecleon",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/4/42/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_52.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/4/42/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_52.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_52.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Kecleon_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_52)"
-            },
-            {
-              "cardId": "dp3-53",
-              "localId": "53",
-              "localNumberSort": 53,
-              "name": "Kirlia",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/2/26/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_53.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/2/26/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_53.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_53.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Kirlia_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_53)"
-            },
-            {
-              "cardId": "dp3-54",
-              "localId": "54",
-              "localNumberSort": 54,
-              "name": "Lombre",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/0/07/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_54.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/0/07/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_54.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Lombre_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_54)"
-            },
-            {
-              "cardId": "dp3-55",
-              "localId": "55",
-              "localNumberSort": 55,
-              "name": "Écrémeuh",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/2/27/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_55.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/2/27/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_55.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_55.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Ecr%C3%A9meuh_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_55)"
-            },
-            {
-              "cardId": "dp3-56",
-              "localId": "56",
-              "localNumberSort": 56,
-              "name": "Grotadmorv",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/b/b1/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_56.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/b/b1/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_56.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_56.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Grotadmorv_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_56)"
-            },
-            {
-              "cardId": "dp3-57",
-              "localId": "57",
-              "localNumberSort": 57,
-              "name": "Nidorino",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/5/52/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_57.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/5/52/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_57.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_57.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Nidorino_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_57)"
-            },
-            {
-              "cardId": "dp3-58",
-              "localId": "58",
-              "localNumberSort": 58,
-              "name": "Roucoups",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/3/3d/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_58.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/3/3d/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_58.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_58.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Roucoups_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_58)"
-            },
-            {
-              "cardId": "dp3-59",
-              "localId": "59",
-              "localNumberSort": 59,
-              "name": "Scarabrute",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/e/e8/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_59.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/e/e8/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_59.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_59.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Scarabrute_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_59)"
-            },
-            {
-              "cardId": "dp3-60",
-              "localId": "60",
-              "localNumberSort": 60,
-              "name": "Maraiste",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/6/61/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_60.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/6/61/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_60.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_60.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Maraiste_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_60)"
-            },
-            {
-              "cardId": "dp3-61",
-              "localId": "61",
-              "localNumberSort": 61,
-              "name": "Rattatac",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/e/ec/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_61.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/e/ec/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_61.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_61.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Rattatac_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_61)"
-            },
-            {
-              "cardId": "dp3-62",
-              "localId": "62",
-              "localNumberSort": 62,
-              "name": "Roselia",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/4/46/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_62.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/4/46/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_62.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_62.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Roselia_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_62)"
-            },
-            {
-              "cardId": "dp3-63",
-              "localId": "63",
-              "localNumberSort": 63,
-              "name": "Ténéfix",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/e/e0/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_63.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/e/e0/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_63.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/T%C3%A9n%C3%A9fix_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_63)"
-            },
-            {
-              "cardId": "dp3-64",
-              "localId": "64",
-              "localNumberSort": 64,
-              "name": "Drackhaus",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/5/54/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_64.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/5/54/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_64.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Drackhaus_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_64)"
-            },
-            {
-              "cardId": "dp3-65",
-              "localId": "65",
-              "localNumberSort": 65,
-              "name": "Floravol",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/1/1f/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_65.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/1/1f/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_65.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Floravol_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_65)"
-            },
-            {
-              "cardId": "dp3-66",
-              "localId": "66",
-              "localNumberSort": 66,
-              "name": "Queulorior",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/4/47/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_66.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/4/47/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_66.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_66.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Queulorior_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_66)"
-            },
-            {
-              "cardId": "dp3-67",
-              "localId": "67",
-              "localNumberSort": 67,
-              "name": "Lippouti",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/3/3f/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_67.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/3/3f/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_67.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_67.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Lippouti_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_67)"
-            },
-            {
-              "cardId": "dp3-68",
-              "localId": "68",
-              "localNumberSort": 68,
-              "name": "Zarbi K",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/8/8a/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_68.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/8/8a/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_68.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Zarbi_K_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_68)"
-            },
-            {
-              "cardId": "dp3-69",
-              "localId": "69",
-              "localNumberSort": 69,
-              "name": "Zarbi N",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/1/1f/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_69.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/1/1f/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_69.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_69.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Zarbi_N_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_69)"
-            },
-            {
-              "cardId": "dp3-70",
-              "localId": "70",
-              "localNumberSort": 70,
-              "name": "Zarbi O",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/b/b4/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_70.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/b/b4/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_70.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Zarbi_O_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_70)"
-            },
-            {
-              "cardId": "dp3-71",
-              "localId": "71",
-              "localNumberSort": 71,
-              "name": "Zarbi X",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/3/33/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_71.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/3/33/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_71.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_71.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Zarbi_X_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_71)"
-            },
-            {
-              "cardId": "dp3-72",
-              "localId": "72",
-              "localNumberSort": 72,
-              "name": "Zarbi Z",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/c/ce/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_72.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/c/ce/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_72.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_72.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Zarbi_Z_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_72)"
-            },
-            {
-              "cardId": "dp3-73",
-              "localId": "73",
-              "localNumberSort": 73,
-              "name": "Aéromite",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/c/c9/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_73.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/c/c9/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_73.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_73.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/A%C3%A9romite_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_73)"
-            },
-            {
-              "cardId": "dp3-74",
-              "localId": "74",
-              "localNumberSort": 74,
-              "name": "Vibraninf",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/0/08/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_74.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/0/08/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_74.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_74.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Vibraninf_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_74)"
-            },
-            {
-              "cardId": "dp3-75",
-              "localId": "75",
-              "localNumberSort": 75,
-              "name": "Carabaffe",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/b/be/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_75.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/b/be/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_75.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_75.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Carabaffe_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_75)"
-            },
-            {
-              "cardId": "dp3-76",
-              "localId": "76",
-              "localNumberSort": 76,
-              "name": "Draby",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/3/3a/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_76.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/3/3a/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_76.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_76.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Draby_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_76)"
-            },
-            {
-              "cardId": "dp3-77",
-              "localId": "77",
-              "localNumberSort": 77,
-              "name": "Bulbizarre",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/3/31/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_77.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/3/31/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_77.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Bulbizarre_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_77)"
-            },
-            {
-              "cardId": "dp3-78",
-              "localId": "78",
-              "localNumberSort": 78,
-              "name": "Cheniti Cape Plante",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/8/8b/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_78.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/8/8b/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_78.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Cheniti_Cape_Plante_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_78)"
-            },
-            {
-              "cardId": "dp3-79",
-              "localId": "79",
-              "localNumberSort": 79,
-              "name": "Cheniti Cape Sable",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/9/97/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_79.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/9/97/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_79.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Cheniti_Cape_Sable_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_79)"
-            },
-            {
-              "cardId": "dp3-80",
-              "localId": "80",
-              "localNumberSort": 80,
-              "name": "Cheniti Cape Déchet",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/7/72/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_80.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/7/72/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_80.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Cheniti_Cape_D%C3%A9chet_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_80)"
-            },
-            {
-              "cardId": "dp3-81",
-              "localId": "81",
-              "localNumberSort": 81,
-              "name": "Carvanha",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/e/e4/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_81.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/e/e4/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_81.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_81.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Carvanha_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_81)"
-            },
-            {
-              "cardId": "dp3-82",
-              "localId": "82",
-              "localNumberSort": 82,
-              "name": "Salamèche",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/f/f8/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_82.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/f/f8/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_82.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Salam%C3%A8che_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_82)"
-            },
-            {
-              "cardId": "dp3-83",
-              "localId": "83",
-              "localNumberSort": 83,
-              "name": "Mélofée",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/e/e5/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_83.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/e/e5/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_83.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_83.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/M%C3%A9lof%C3%A9e_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_83)"
-            },
-            {
-              "cardId": "dp3-84",
-              "localId": "84",
-              "localNumberSort": 84,
-              "name": "Corayon",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/a/a3/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_84.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/a/a3/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_84.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_84.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Corayon_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_84)"
-            },
-            {
-              "cardId": "dp3-85",
-              "localId": "85",
-              "localNumberSort": 85,
-              "name": "Taupiqueur",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/c/cf/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_85.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/c/cf/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_85.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_85.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Taupiqueur_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_85)"
-            },
-            {
-              "cardId": "dp3-86",
-              "localId": "86",
-              "localNumberSort": 86,
-              "name": "Skélénox",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/c/c4/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_86.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/c/c4/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_86.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Sk%C3%A9l%C3%A9nox_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_86)"
-            },
-            {
-              "cardId": "dp3-87",
-              "localId": "87",
-              "localNumberSort": 87,
-              "name": "Elektek",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/f/f3/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_87.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/f/f3/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_87.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_87.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Elektek_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_87)"
-            },
-            {
-              "cardId": "dp3-88",
-              "localId": "88",
-              "localNumberSort": 88,
-              "name": "Tadmorv",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/9/9d/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_88.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/9/9d/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_88.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_88.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Tadmorv_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_88)"
-            },
-            {
-              "cardId": "dp3-89",
-              "localId": "89",
-              "localNumberSort": 89,
-              "name": "Caninos",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/1/1e/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_89.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/1/1e/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_89.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_89.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Caninos_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_89)"
-            },
-            {
-              "cardId": "dp3-90",
-              "localId": "90",
-              "localNumberSort": 90,
-              "name": "Granivol",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/4/4a/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_90.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/4/4a/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_90.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_90.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Granivol_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_90)"
-            },
-            {
-              "cardId": "dp3-91",
-              "localId": "91",
-              "localNumberSort": 91,
-              "name": "Excelangue",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/0/06/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_91.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/0/06/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_91.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_91.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Excelangue_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_91)"
-            },
-            {
-              "cardId": "dp3-92",
-              "localId": "92",
-              "localNumberSort": 92,
-              "name": "Nénupiot",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/0/0a/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_92.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/0/0a/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_92.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_92.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/N%C3%A9nupiot_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_92)"
-            },
-            {
-              "cardId": "dp3-93",
-              "localId": "93",
-              "localNumberSort": 93,
-              "name": "Magmar",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/6/6e/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_93.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/6/6e/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_93.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_93.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Magmar_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_93)"
-            },
-            {
-              "cardId": "dp3-94",
-              "localId": "94",
-              "localNumberSort": 94,
-              "name": "Wattouat",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/9/91/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_94.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/9/91/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_94.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Wattouat_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_94)"
-            },
-            {
-              "cardId": "dp3-95",
-              "localId": "95",
-              "localNumberSort": 95,
-              "name": "Cornèbre",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/d/d9/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_95.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/d/d9/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_95.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_95.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Corn%C3%A8bre_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_95)"
-            },
-            {
-              "cardId": "dp3-96",
-              "localId": "96",
-              "localNumberSort": 96,
-              "name": "Natu",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/e/ee/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_96.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/e/ee/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_96.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_96.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Natu_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_96)"
-            },
-            {
-              "cardId": "dp3-97",
-              "localId": "97",
-              "localNumberSort": 97,
-              "name": "Nidoran♂",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/7/79/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_97.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/7/79/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_97.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_97.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Nidoran%E2%99%82_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_97)"
-            },
-            {
-              "cardId": "dp3-98",
-              "localId": "98",
-              "localNumberSort": 98,
-              "name": "Phanpy",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/c/c2/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_98.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/c/c2/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_98.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_98.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Phanpy_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_98)"
-            },
-            {
-              "cardId": "dp3-99",
-              "localId": "99",
-              "localNumberSort": 99,
-              "name": "Roucool",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/8/80/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_99.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/8/80/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_99.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_99.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Roucool_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_99)"
-            },
-            {
-              "cardId": "dp3-100",
-              "localId": "100",
-              "localNumberSort": 100,
-              "name": "Psykokwak",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/2/22/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_100.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/2/22/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_100.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_100.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Psykokwak_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_100)"
-            },
-            {
-              "cardId": "dp3-101",
-              "localId": "101",
-              "localNumberSort": 101,
-              "name": "Qwilfish",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/2/2f/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_101.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/2/2f/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_101.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_101.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Qwilfish_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_101)"
-            },
-            {
-              "cardId": "dp3-102",
-              "localId": "102",
-              "localNumberSort": 102,
-              "name": "Tarsal",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/f/fd/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_102.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/f/fd/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_102.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_102.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Tarsal_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_102)"
-            },
-            {
-              "cardId": "dp3-103",
-              "localId": "103",
-              "localNumberSort": 103,
-              "name": "Rattata",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/1/10/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_103.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/1/10/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_103.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_103.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Rattata_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_103)"
-            },
-            {
-              "cardId": "dp3-104",
-              "localId": "104",
-              "localNumberSort": 104,
-              "name": "Fouinette",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/8/87/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_104.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/8/87/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_104.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Fouinette_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_104)"
-            },
-            {
-              "cardId": "dp3-105",
-              "localId": "105",
-              "localNumberSort": 105,
-              "name": "Kokiyas",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/4/42/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_105.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/4/42/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_105.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_105.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Kokiyas_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_105)"
-            },
-            {
-              "cardId": "dp3-106",
-              "localId": "106",
-              "localNumberSort": 106,
-              "name": "Sancoki Mer Orient",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/3/3e/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_106.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/3/3e/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_106.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_106.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Sancoki_Mer_Orient_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_106)"
-            },
-            {
-              "cardId": "dp3-107",
-              "localId": "107",
-              "localNumberSort": 107,
-              "name": "Sancoki Mer Occident",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/0/0d/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_107.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/0/0d/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_107.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_107.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Sancoki_Mer_Occident_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_107)"
-            },
-            {
-              "cardId": "dp3-108",
-              "localId": "108",
-              "localNumberSort": 108,
-              "name": "Balignon",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/b/b2/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_108.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/b/b2/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_108.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_108.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Balignon_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_108)"
-            },
-            {
-              "cardId": "dp3-109",
-              "localId": "109",
-              "localNumberSort": 109,
-              "name": "Caratroc",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/4/4c/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_109.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/4/4c/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_109.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_109.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Caratroc_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_109)"
-            },
-            {
-              "cardId": "dp3-110",
-              "localId": "110",
-              "localNumberSort": 110,
-              "name": "Polichombr",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/4/42/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_110.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/4/42/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_110.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_110.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Polichombr_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_110)"
-            },
-            {
-              "cardId": "dp3-111",
-              "localId": "111",
-              "localNumberSort": 111,
-              "name": "Spinda",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/d/d6/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_111.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/d/d6/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_111.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_111.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Spinda_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_111)"
-            },
-            {
-              "cardId": "dp3-112",
-              "localId": "112",
-              "localNumberSort": 112,
-              "name": "Carapuce",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/d/d1/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_112.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/d/d1/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_112.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_112.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Carapuce_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_112)"
-            },
-            {
-              "cardId": "dp3-113",
-              "localId": "113",
-              "localNumberSort": 113,
-              "name": "Cerfrousse",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/c/c7/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_113.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/c/c7/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_113.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_113.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Cerfrousse_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_113)"
-            },
-            {
-              "cardId": "dp3-114",
-              "localId": "114",
-              "localNumberSort": 114,
-              "name": "Tournegrin",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/1/17/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_114.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/1/17/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_114.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Tournegrin_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_114)"
-            },
-            {
-              "cardId": "dp3-115",
-              "localId": "115",
-              "localNumberSort": 115,
-              "name": "Kraknoix",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/8/85/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_115.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/8/85/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_115.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_115.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Kraknoix_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_115)"
-            },
-            {
-              "cardId": "dp3-116",
-              "localId": "116",
-              "localNumberSort": 116,
-              "name": "Mimitoss",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/3/39/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_116.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/3/39/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_116.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Mimitoss_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_116)"
-            },
-            {
-              "cardId": "dp3-117",
-              "localId": "117",
-              "localNumberSort": 117,
-              "name": "Voltorbe",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/8/83/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_117.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/8/83/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_117.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Voltorbe_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_117)"
-            },
-            {
-              "cardId": "dp3-118",
-              "localId": "118",
-              "localNumberSort": 118,
-              "name": "Axoloto",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/e/eb/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_118.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/e/eb/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_118.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_118.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Axoloto_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_118)"
-            },
-            {
-              "cardId": "dp3-119",
-              "localId": "119",
-              "localNumberSort": 119,
-              "name": "La recherche d'Amelle",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/c/c5/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_119.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/c/c5/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_119.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_119.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/La_recherche_d%27Amelle_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_119)"
-            },
-            {
-              "cardId": "dp3-120",
-              "localId": "120",
-              "localNumberSort": 120,
-              "name": "Maintenance nocturne",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/7/7e/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_120.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/7/7e/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_120.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_120.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Maintenance_nocturne_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_120)"
-            },
-            {
-              "cardId": "dp3-121",
-              "localId": "121",
-              "localNumberSort": 121,
-              "name": "PlusPower",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/f/fc/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_121.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/f/fc/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_121.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_121.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/PlusPower_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_121)"
-            },
-            {
-              "cardId": "dp3-122",
-              "localId": "122",
-              "localNumberSort": 122,
-              "name": "La visite du Prof. Chen",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/6/6f/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_122.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/6/6f/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_122.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_122.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/La_visite_du_Prof._Chen_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_122)"
-            },
-            {
-              "cardId": "dp3-123",
-              "localId": "123",
-              "localNumberSort": 123,
-              "name": "Prof. Sorbier",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/4/4a/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_123.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/4/4a/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_123.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Prof._Sorbier_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_123)"
-            },
-            {
-              "cardId": "dp3-124",
-              "localId": "124",
-              "localNumberSort": 124,
-              "name": "Rival",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/3/32/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_124.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/3/32/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_124.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_124.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Rival_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_124)"
-            },
-            {
-              "cardId": "dp3-125",
-              "localId": "125",
-              "localNumberSort": 125,
-              "name": "La recherche de Rose",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/d/db/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_125.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/d/db/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_125.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/La_recherche_de_Rose_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_125)"
-            },
-            {
-              "cardId": "dp3-126",
-              "localId": "126",
-              "localNumberSort": 126,
-              "name": "Mars de la Team Galaxie",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/b/b8/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_126.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/b/b8/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_126.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_126.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Mars_de_la_Team_Galaxie_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_126)"
-            },
-            {
-              "cardId": "dp3-127",
-              "localId": "127",
-              "localNumberSort": 127,
-              "name": "Potion",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/e/e5/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_127.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/e/e5/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_127.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Potion_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_127)"
-            },
-            {
-              "cardId": "dp3-128",
-              "localId": "128",
-              "localNumberSort": 128,
-              "name": "Échange",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/0/07/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_128.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/0/07/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_128.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_128.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89change_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_128)"
-            },
-            {
-              "cardId": "dp3-129",
-              "localId": "129",
-              "localNumberSort": 129,
-              "name": "Énergie Obscurité",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/4/43/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_129.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/4/43/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_129.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_129.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_Obscurit%C3%A9_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_129)"
-            },
-            {
-              "cardId": "dp3-130",
-              "localId": "130",
-              "localNumberSort": 130,
-              "name": "Énergie Métal",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/1/10/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_130.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/1/10/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_130.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_130.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_M%C3%A9tal_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_130)"
-            },
-            {
-              "cardId": "dp3-131",
-              "localId": "131",
-              "localNumberSort": 131,
-              "name": "Gardevoir",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/f/f5/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_131.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/f/f5/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_131.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_131.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Gardevoir_NIV.X_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_131)"
-            },
-            {
-              "cardId": "dp3-132",
-              "localId": "132",
-              "localNumberSort": 132,
-              "name": "Corboss",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/8/88/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_132.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/8/88/Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_132.png/490px-Carte_Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_132.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Corboss_NIV.X_(Diamant_%26_Perle_Merveilles_Secr%C3%A8tes_132)"
             }
           ]
         },
@@ -25162,7 +23832,7 @@
           "setId": "smp",
           "name": "Promo SM",
           "releaseDate": "2017-02-03",
-          "cardCountTotal": 244,
+          "cardCountTotal": 248,
           "pokepediaSetUrl": "https://www.pokepedia.fr/Promo_SM",
           "cards": [
             {
@@ -27629,7 +26299,7 @@
               "cardId": "smp-SM247",
               "localId": "SM247",
               "localNumberSort": 247,
-              "name": "Reshiram et Dracaufeu-GX",
+              "name": "Reshiram et Dracaufeu GX",
               "resolutionStatus": "resolved",
               "pokepediaHdUrl": "https://www.pokepedia.fr/images/3/3c/Carte_Promo_SM_SM247.png",
               "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/3/3c/Carte_Promo_SM_SM247.png/490px-Carte_Promo_SM_SM247.png",
@@ -27639,7 +26309,7 @@
               "cardId": "smp-SM248",
               "localId": "SM248",
               "localNumberSort": 248,
-              "name": "Pikachu et Zekrom-GX",
+              "name": "Pikachu et Zekrom GX",
               "resolutionStatus": "resolved",
               "pokepediaHdUrl": "https://www.pokepedia.fr/images/7/70/Carte_Promo_SM_SM248.png",
               "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/7/70/Carte_Promo_SM_SM248.png/490px-Carte_Promo_SM_SM248.png",
@@ -32621,7 +31291,7 @@
           "setId": "swshp",
           "name": "Promo SWSH",
           "releaseDate": "2019-11-15",
-          "cardCountTotal": 286,
+          "cardCountTotal": 307,
           "pokepediaSetUrl": "https://www.pokepedia.fr/Promo_SWSH",
           "cards": [
             {
@@ -33365,8 +32035,8 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Special_Delivery_Pikachu_(Promo_SWSH_074)"
             },
             {
-              "cardId": "swshp-SWSH75",
-              "localId": "SWSH75",
+              "cardId": "swshp-SWSH075",
+              "localId": "SWSH075",
               "localNumberSort": 75,
               "name": "Special Delivery Charizard",
               "resolutionStatus": "resolved",
@@ -33465,6 +32135,16 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Blancoton-V_(Promo_SWSH_084)"
             },
             {
+              "cardId": "swshp-SWSH85",
+              "localId": "SWSH85",
+              "localNumberSort": 85,
+              "name": "Fulgudog-V",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/7/74/Carte_Promo_SWSH_SWSH085.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/7/74/Carte_Promo_SWSH_SWSH085.png/490px-Carte_Promo_SWSH_SWSH085.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Fulgudog-V_(Promo_SWSH_085)"
+            },
+            {
               "cardId": "swshp-SWSH177",
               "localId": "SWSH177",
               "localNumberSort": 177,
@@ -33483,6 +32163,136 @@
               "pokepediaHdUrl": "https://www.pokepedia.fr/images/c/c6/Carte_Promo_SWSH_SWSH251.png",
               "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/c/c6/Carte_Promo_SWSH_SWSH251.png/490px-Carte_Promo_SWSH_SWSH251.png",
               "pokepediaCardUrl": "https://www.pokepedia.fr/Ordres_du_Boss_(Promo_SWSH_251)"
+            },
+            {
+              "cardId": "swshp-SWSH282",
+              "localId": "SWSH282",
+              "localNumberSort": 282,
+              "name": "Artikodin de Galar",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/4/4a/Carte_Promo_SWSH_SWSH282.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/4/4a/Carte_Promo_SWSH_SWSH282.png/490px-Carte_Promo_SWSH_SWSH282.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Artikodin_de_Galar_(Promo_SWSH_282)"
+            },
+            {
+              "cardId": "swshp-SWSH283",
+              "localId": "SWSH283",
+              "localNumberSort": 283,
+              "name": "Électhor de Galar",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/8/87/Carte_Promo_SWSH_SWSH283.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/8/87/Carte_Promo_SWSH_SWSH283.png/490px-Carte_Promo_SWSH_SWSH283.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89lecthor_de_Galar_(Promo_SWSH_283)"
+            },
+            {
+              "cardId": "swshp-SWSH284",
+              "localId": "SWSH284",
+              "localNumberSort": 284,
+              "name": "Sulfura de Galar",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/d/d4/Carte_Promo_SWSH_SWSH284.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/d/d4/Carte_Promo_SWSH_SWSH284.png/490px-Carte_Promo_SWSH_SWSH284.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Sulfura_de_Galar_(Promo_SWSH_284)"
+            },
+            {
+              "cardId": "swshp-SWSH287",
+              "localId": "SWSH287",
+              "localNumberSort": 287,
+              "name": "Morpeko V-UNION",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/6/62/Carte_Promo_SWSH_SWSH287-290.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/6/62/Carte_Promo_SWSH_SWSH287-290.png/490px-Carte_Promo_SWSH_SWSH287-290.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Morpeko-V-UNION_(Promo_SWSH_287)"
+            },
+            {
+              "cardId": "swshp-SWSH288",
+              "localId": "SWSH288",
+              "localNumberSort": 288,
+              "name": "Morpeko V-UNION",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/6/62/Carte_Promo_SWSH_SWSH287-290.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/6/62/Carte_Promo_SWSH_SWSH287-290.png/490px-Carte_Promo_SWSH_SWSH287-290.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Morpeko-V-UNION_(Promo_SWSH_288)"
+            },
+            {
+              "cardId": "swshp-SWSH289",
+              "localId": "SWSH289",
+              "localNumberSort": 289,
+              "name": "Morpeko V-UNION",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/6/62/Carte_Promo_SWSH_SWSH287-290.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/6/62/Carte_Promo_SWSH_SWSH287-290.png/490px-Carte_Promo_SWSH_SWSH287-290.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Morpeko-V-UNION_(Promo_SWSH_289)"
+            },
+            {
+              "cardId": "swshp-SWSH290",
+              "localId": "SWSH290",
+              "localNumberSort": 290,
+              "name": "Morpeko V-UNION",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/6/62/Carte_Promo_SWSH_SWSH287-290.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/6/62/Carte_Promo_SWSH_SWSH287-290.png/490px-Carte_Promo_SWSH_SWSH287-290.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Morpeko-V-UNION_(Promo_SWSH_290)"
+            },
+            {
+              "cardId": "swshp-SWSH292",
+              "localId": "SWSH292",
+              "localNumberSort": 292,
+              "name": "Zacian V",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/2/28/Carte_Promo_SWSH_SWSH292.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/2/28/Carte_Promo_SWSH_SWSH292.png/490px-Carte_Promo_SWSH_SWSH292.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Zacian-V_(Promo_SWSH_292)"
+            },
+            {
+              "cardId": "swshp-SWSH293",
+              "localId": "SWSH293",
+              "localNumberSort": 293,
+              "name": "Zamazenta V",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/f/f5/Carte_Promo_SWSH_SWSH293.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/f/f5/Carte_Promo_SWSH_SWSH293.png/490px-Carte_Promo_SWSH_SWSH293.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Zamazenta-V_(Promo_SWSH_293)"
+            },
+            {
+              "cardId": "swshp-SWSH301",
+              "localId": "SWSH301",
+              "localNumberSort": 301,
+              "name": "Lugia V",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/c/cc/Carte_Promo_SWSH_SWSH301.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/c/cc/Carte_Promo_SWSH_SWSH301.png/490px-Carte_Promo_SWSH_SWSH301.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Lugia-V_(Promo_SWSH_301)"
+            },
+            {
+              "cardId": "swshp-SWSH302",
+              "localId": "SWSH302",
+              "localNumberSort": 302,
+              "name": "Sophora",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/d/d8/Carte_Promo_SWSH_SWSH302.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/d/d8/Carte_Promo_SWSH_SWSH302.png/490px-Carte_Promo_SWSH_SWSH302.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Sophora_(Promo_SWSH_302)"
+            },
+            {
+              "cardId": "swshp-SWSH306",
+              "localId": "SWSH306",
+              "localNumberSort": 306,
+              "name": "Arceus V",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/4/4f/Carte_Promo_SWSH_SWSH306.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/4/4f/Carte_Promo_SWSH_SWSH306.png/490px-Carte_Promo_SWSH_SWSH306.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Arceus-V_(Promo_SWSH_306)"
+            },
+            {
+              "cardId": "swshp-SWSH307",
+              "localId": "SWSH307",
+              "localNumberSort": 307,
+              "name": "Arceus VSTAR",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/7/7b/Carte_Promo_SWSH_SWSH307.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/7/7b/Carte_Promo_SWSH_SWSH307.png/490px-Carte_Promo_SWSH_SWSH307.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Arceus-VSTAR_(Promo_SWSH_307)"
             }
           ]
         },
@@ -34760,7 +33570,7 @@
           "setId": "mep",
           "name": "MEP Black Star Promos",
           "releaseDate": "2025-09-26",
-          "cardCountTotal": 52,
+          "cardCountTotal": 110,
           "pokepediaSetUrl": "https://www.pokepedia.fr/Promo_ME",
           "cards": [
             {
@@ -35577,43 +34387,51 @@
               "cardId": "mep-082",
               "localId": "082",
               "localNumberSort": 82,
-              "name": "Miraidon",
+              "name": "Création de Miraidon",
               "resolutionStatus": "unresolved",
               "reason": "POKEPEDIA_CARD_PAGE_REDLINK",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Miraidon_(Promo_ME_082)?action=edit&redlink=1"
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Miraidon_(Promo_ME_082)?action=edit&redlink=1",
+              "cardmarketImageUrl": "https://product-images.s3.cardmarket.com/51/MEP/894261/894261.jpg",
+              "fallbackImageSource": "cardmarket"
             },
             {
               "cardId": "mep-083",
               "localId": "083",
               "localNumberSort": 83,
-              "name": "Flagadoss",
+              "name": "Création de Flagadoss",
               "resolutionStatus": "unresolved",
               "reason": "POKEPEDIA_CARD_PAGE_REDLINK",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Flagadoss_(Promo_ME_083)?action=edit&redlink=1"
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Flagadoss_(Promo_ME_083)?action=edit&redlink=1",
+              "cardmarketImageUrl": "https://product-images.s3.cardmarket.com/51/MEP/894262/894262.jpg",
+              "fallbackImageSource": "cardmarket"
             },
             {
               "cardId": "mep-084",
               "localId": "084",
               "localNumberSort": 84,
-              "name": "Sinistrail",
+              "name": "Création de Sinistrail",
               "resolutionStatus": "unresolved",
               "reason": "POKEPEDIA_CARD_PAGE_REDLINK",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Sinistrail_(Promo_ME_084)?action=edit&redlink=1"
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Sinistrail_(Promo_ME_084)?action=edit&redlink=1",
+              "cardmarketImageUrl": "https://product-images.s3.cardmarket.com/51/MEP/894263/894263.jpg",
+              "fallbackImageSource": "cardmarket"
             },
             {
               "cardId": "mep-085",
               "localId": "085",
               "localNumberSort": 85,
-              "name": "Bastiodon",
+              "name": "Création de Bastiodon",
               "resolutionStatus": "unresolved",
               "reason": "POKEPEDIA_CARD_PAGE_REDLINK",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Bastiodon_(Promo_ME_085)?action=edit&redlink=1"
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Bastiodon_(Promo_ME_085)?action=edit&redlink=1",
+              "cardmarketImageUrl": "https://product-images.s3.cardmarket.com/51/MEP/894264/894264.jpg",
+              "fallbackImageSource": "cardmarket"
             },
             {
               "cardId": "mep-086",
               "localId": "086",
               "localNumberSort": 86,
-              "name": "Ramoloss",
+              "name": "Création de Ramoloss",
               "resolutionStatus": "unresolved",
               "reason": "POKEPEDIA_CARD_PAGE_REDLINK",
               "pokepediaCardUrl": "https://www.pokepedia.fr/Ramoloss_(Promo_ME_086)?action=edit&redlink=1"
@@ -35624,18 +34442,19 @@
               "localNumberSort": 87,
               "name": "Opermine",
               "resolutionStatus": "unresolved",
-              "reason": "POKEPEDIA_PROMO_IMAGE_MISMATCH",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Opermine_(Promo_ME_087)",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/8/80/Porygon-Z-DP.png"
+              "reason": "POKEPEDIA_CARD_IMAGE_NOT_FOUND",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Opermine_(Promo_ME_087)"
             },
             {
               "cardId": "mep-088",
               "localId": "088",
               "localNumberSort": 88,
-              "name": "Zarude",
+              "name": "Création de Zarude",
               "resolutionStatus": "unresolved",
               "reason": "POKEPEDIA_CARD_PAGE_REDLINK",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Zarude_(Promo_ME_088)?action=edit&redlink=1"
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Zarude_(Promo_ME_088)?action=edit&redlink=1",
+              "cardmarketImageUrl": "https://product-images.s3.cardmarket.com/51/MEP/895779/895779.jpg",
+              "fallbackImageSource": "cardmarket"
             },
             {
               "cardId": "mep-089",
@@ -35680,7 +34499,9 @@
               "name": "MEP 093",
               "resolutionStatus": "unresolved",
               "reason": "POKEPEDIA_CARD_NOT_FOUND",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Promo_ME"
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Promo_ME",
+              "cardmarketImageUrl": "https://product-images.s3.cardmarket.com/51/MEP/894884/894884.jpg",
+              "fallbackImageSource": "cardmarket"
             },
             {
               "cardId": "mep-094",
@@ -35688,8 +34509,10 @@
               "localNumberSort": 94,
               "name": "MEP 094",
               "resolutionStatus": "unresolved",
-              "reason": "POKEPEDIA_CARD_NOT_FOUND",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Promo_ME"
+              "reason": "POKEPEDIA_CARD_PAGE_REDLINK",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Noadkoko_d'Alola_(Promo_ME_094)?action=edit&redlink=1",
+              "cardmarketImageUrl": "https://product-images.s3.cardmarket.com/51/MEP/895609/895609.jpg",
+              "fallbackImageSource": "cardmarket"
             },
             {
               "cardId": "mep-095",
@@ -35697,8 +34520,10 @@
               "localNumberSort": 95,
               "name": "MEP 095",
               "resolutionStatus": "unresolved",
-              "reason": "POKEPEDIA_CARD_NOT_FOUND",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Promo_ME"
+              "reason": "POKEPEDIA_CARD_PAGE_REDLINK",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Lucario_(Promo_ME_095)?action=edit&redlink=1",
+              "cardmarketImageUrl": "https://product-images.s3.cardmarket.com/51/MEP/895610/895610.jpg",
+              "fallbackImageSource": "cardmarket"
             },
             {
               "cardId": "mep-096",
@@ -35706,8 +34531,10 @@
               "localNumberSort": 96,
               "name": "MEP 096",
               "resolutionStatus": "unresolved",
-              "reason": "POKEPEDIA_CARD_NOT_FOUND",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Promo_ME"
+              "reason": "POKEPEDIA_CARD_PAGE_REDLINK",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Sulfura_(Promo_ME_096)?action=edit&redlink=1",
+              "cardmarketImageUrl": "https://product-images.s3.cardmarket.com/51/MEP/895606/895606.jpg",
+              "fallbackImageSource": "cardmarket"
             },
             {
               "cardId": "mep-097",
@@ -35715,8 +34542,10 @@
               "localNumberSort": 97,
               "name": "MEP 097",
               "resolutionStatus": "unresolved",
-              "reason": "POKEPEDIA_CARD_NOT_FOUND",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Promo_ME"
+              "reason": "POKEPEDIA_CARD_PAGE_REDLINK",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Artikodin_(Promo_ME_097)?action=edit&redlink=1",
+              "cardmarketImageUrl": "https://product-images.s3.cardmarket.com/51/MEP/895607/895607.jpg",
+              "fallbackImageSource": "cardmarket"
             },
             {
               "cardId": "mep-098",
@@ -35724,8 +34553,10 @@
               "localNumberSort": 98,
               "name": "MEP 098",
               "resolutionStatus": "unresolved",
-              "reason": "POKEPEDIA_CARD_NOT_FOUND",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Promo_ME"
+              "reason": "POKEPEDIA_CARD_PAGE_REDLINK",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89lecthor_(Promo_ME_098)?action=edit&redlink=1",
+              "cardmarketImageUrl": "https://product-images.s3.cardmarket.com/51/MEP/895608/895608.jpg",
+              "fallbackImageSource": "cardmarket"
             },
             {
               "cardId": "mep-099",
@@ -35733,8 +34564,10 @@
               "localNumberSort": 99,
               "name": "MEP 099",
               "resolutionStatus": "unresolved",
-              "reason": "POKEPEDIA_CARD_NOT_FOUND",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Promo_ME"
+              "reason": "POKEPEDIA_CARD_PAGE_REDLINK",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Amphinobi-ex_(Promo_ME_099)?action=edit&redlink=1",
+              "cardmarketImageUrl": "https://product-images.s3.cardmarket.com/51/MEP/895611/895611.jpg",
+              "fallbackImageSource": "cardmarket"
             },
             {
               "cardId": "mep-100",
@@ -35742,8 +34575,10 @@
               "localNumberSort": 100,
               "name": "MEP 100",
               "resolutionStatus": "unresolved",
-              "reason": "POKEPEDIA_CARD_NOT_FOUND",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Promo_ME"
+              "reason": "POKEPEDIA_CARD_PAGE_REDLINK",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Nymphali-ex_(Promo_ME_100)?action=edit&redlink=1",
+              "cardmarketImageUrl": "https://product-images.s3.cardmarket.com/51/MEP/895612/895612.jpg",
+              "fallbackImageSource": "cardmarket"
             },
             {
               "cardId": "mep-101",
@@ -35751,8 +34586,10 @@
               "localNumberSort": 101,
               "name": "MEP 101",
               "resolutionStatus": "unresolved",
-              "reason": "POKEPEDIA_CARD_NOT_FOUND",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Promo_ME"
+              "reason": "POKEPEDIA_CARD_PAGE_REDLINK",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Nidorina_(Promo_ME_101)?action=edit&redlink=1",
+              "cardmarketImageUrl": "https://product-images.s3.cardmarket.com/51/MEP/895604/895604.jpg",
+              "fallbackImageSource": "cardmarket"
             },
             {
               "cardId": "mep-102",
@@ -35760,8 +34597,10 @@
               "localNumberSort": 102,
               "name": "MEP 102",
               "resolutionStatus": "unresolved",
-              "reason": "POKEPEDIA_CARD_NOT_FOUND",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Promo_ME"
+              "reason": "POKEPEDIA_CARD_PAGE_REDLINK",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Victini_(Promo_ME_102)?action=edit&redlink=1",
+              "cardmarketImageUrl": "https://product-images.s3.cardmarket.com/51/MEP/895613/895613.jpg",
+              "fallbackImageSource": "cardmarket"
             },
             {
               "cardId": "mep-103",
@@ -35769,8 +34608,10 @@
               "localNumberSort": 103,
               "name": "MEP 103",
               "resolutionStatus": "unresolved",
-              "reason": "POKEPEDIA_CARD_NOT_FOUND",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Promo_ME"
+              "reason": "POKEPEDIA_CARD_PAGE_REDLINK",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Zeraora_(Promo_ME_103)?action=edit&redlink=1",
+              "cardmarketImageUrl": "https://product-images.s3.cardmarket.com/51/MEP/895614/895614.jpg",
+              "fallbackImageSource": "cardmarket"
             },
             {
               "cardId": "mep-104",
@@ -35778,8 +34619,10 @@
               "localNumberSort": 104,
               "name": "MEP 104",
               "resolutionStatus": "unresolved",
-              "reason": "POKEPEDIA_CARD_NOT_FOUND",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Promo_ME"
+              "reason": "POKEPEDIA_CARD_PAGE_REDLINK",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Mewtwo_(Promo_ME_104)?action=edit&redlink=1",
+              "cardmarketImageUrl": "https://product-images.s3.cardmarket.com/51/MEP/895620/895620.jpg",
+              "fallbackImageSource": "cardmarket"
             },
             {
               "cardId": "mep-105",
@@ -35787,8 +34630,10 @@
               "localNumberSort": 105,
               "name": "MEP 105",
               "resolutionStatus": "unresolved",
-              "reason": "POKEPEDIA_CARD_NOT_FOUND",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Promo_ME"
+              "reason": "POKEPEDIA_CARD_PAGE_REDLINK",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Mew_(Promo_ME_105)?action=edit&redlink=1",
+              "cardmarketImageUrl": "https://product-images.s3.cardmarket.com/51/MEP/895621/895621.jpg",
+              "fallbackImageSource": "cardmarket"
             },
             {
               "cardId": "mep-106",
@@ -35796,44 +34641,54 @@
               "localNumberSort": 106,
               "name": "MEP 106",
               "resolutionStatus": "unresolved",
-              "reason": "POKEPEDIA_CARD_NOT_FOUND",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Promo_ME"
+              "reason": "POKEPEDIA_CARD_PAGE_REDLINK",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/M%C3%A9tamorph_(Promo_ME_106)?action=edit&redlink=1",
+              "cardmarketImageUrl": "https://product-images.s3.cardmarket.com/51/MEP/895619/895619.jpg",
+              "fallbackImageSource": "cardmarket"
             },
             {
               "cardId": "mep-107",
               "localId": "107",
               "localNumberSort": 107,
-              "name": "Pikachu-ex",
+              "name": "Création de Pikachu-ex",
               "resolutionStatus": "unresolved",
               "reason": "POKEPEDIA_CARD_PAGE_REDLINK",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Pikachu-ex_(Promo_ME_107)?action=edit&redlink=1"
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Pikachu-ex_(Promo_ME_107)?action=edit&redlink=1",
+              "cardmarketImageUrl": "https://product-images.s3.cardmarket.com/51/MEP/895615/895615.jpg",
+              "fallbackImageSource": "cardmarket"
             },
             {
               "cardId": "mep-108",
               "localId": "108",
               "localNumberSort": 108,
-              "name": "Mentali-ex",
+              "name": "Création de Mentali-ex",
               "resolutionStatus": "unresolved",
               "reason": "POKEPEDIA_CARD_PAGE_REDLINK",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Mentali-ex_(Promo_ME_108)?action=edit&redlink=1"
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Mentali-ex_(Promo_ME_108)?action=edit&redlink=1",
+              "cardmarketImageUrl": "https://product-images.s3.cardmarket.com/51/MEP/895616/895616.jpg",
+              "fallbackImageSource": "cardmarket"
             },
             {
               "cardId": "mep-109",
               "localId": "109",
               "localNumberSort": 109,
-              "name": "Pikachu-ex",
+              "name": "Création de Pikachu-ex",
               "resolutionStatus": "unresolved",
               "reason": "POKEPEDIA_CARD_PAGE_REDLINK",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Pikachu-ex_(Promo_ME_109)?action=edit&redlink=1"
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Pikachu-ex_(Promo_ME_109)?action=edit&redlink=1",
+              "cardmarketImageUrl": "https://product-images.s3.cardmarket.com/51/MEP/895617/895617.jpg",
+              "fallbackImageSource": "cardmarket"
             },
             {
               "cardId": "mep-110",
               "localId": "110",
               "localNumberSort": 110,
-              "name": "Noctali-ex",
+              "name": "Création de Noctali-ex",
               "resolutionStatus": "unresolved",
               "reason": "POKEPEDIA_CARD_PAGE_REDLINK",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Noctali-ex_(Promo_ME_110)?action=edit&redlink=1"
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Noctali-ex_(Promo_ME_110)?action=edit&redlink=1",
+              "cardmarketImageUrl": "https://product-images.s3.cardmarket.com/51/MEP/895618/895618.jpg",
+              "fallbackImageSource": "cardmarket"
             }
           ]
         }

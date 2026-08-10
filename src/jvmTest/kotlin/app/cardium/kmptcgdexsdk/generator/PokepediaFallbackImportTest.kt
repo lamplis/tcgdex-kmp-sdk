@@ -4,13 +4,14 @@ import kotlin.io.path.createTempFile
 import kotlin.test.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertNull
+import kotlin.test.assertNotNull
 import kotlinx.serialization.json.Json
 
 class PokepediaFallbackImportTest {
     private val json = Json { ignoreUnknownKeys = true }
 
     @Test
-    fun `Given hd and thumbnail urls, When loaded, Then hd is preferred`() {
+    fun `Given resolved card with hd url, When loaded, Then pokepedia hd is preferred`() {
         val tree = createTempFile("pokepedia-tree-", ".json").toFile()
         tree.writeText(
             """
@@ -24,7 +25,8 @@ class PokepediaFallbackImportTest {
                           "cardId":"sv01-001",
                           "resolutionStatus":"resolved",
                           "pokepediaHdUrl":"https://wiki.example/hd.png",
-                          "pokepediaThumbnailUrl":"https://wiki.example/thumb.png"
+                          "pokepediaThumbnailUrl":"https://wiki.example/thumb.png",
+                          "cardmarketImageUrl":"https://product-images.s3.cardmarket.com/51/ABC/123/123.jpg"
                         }
                       ]
                     }
@@ -36,11 +38,14 @@ class PokepediaFallbackImportTest {
         )
 
         val loaded = loadPokepediaFallbacks(tree.absolutePath, json)
-        assertEquals("https://wiki.example/hd.png", loaded["sv01-001"])
+        val fallback = loaded["sv01-001"]
+        assertNotNull(fallback)
+        assertEquals("https://wiki.example/hd.png", fallback.url)
+        assertEquals("pokepedia", fallback.source)
     }
 
     @Test
-    fun `Given thumbnail-only url, When loaded, Then thumbnail is used`() {
+    fun `Given unresolved promo mismatch with cardmarket url, When loaded, Then cardmarket fallback is used`() {
         val tree = createTempFile("pokepedia-tree-", ".json").toFile()
         tree.writeText(
             """
@@ -52,8 +57,10 @@ class PokepediaFallbackImportTest {
                       "cards":[
                         {
                           "cardId":"sv01-002",
-                          "resolutionStatus":"resolved",
-                          "pokepediaThumbnailUrl":"https://wiki.example/thumb-only.png"
+                          "resolutionStatus":"unresolved",
+                          "reason":"PROMO_IMAGE_MISMATCH",
+                          "pokepediaThumbnailUrl":"https://www.pokepedia.fr/images/8/80/Porygon-Z-DP.png",
+                          "cardmarketImageUrl":"https://product-images.s3.cardmarket.com/51/MEP/894884/894884.jpg"
                         }
                       ]
                     }
@@ -65,11 +72,14 @@ class PokepediaFallbackImportTest {
         )
 
         val loaded = loadPokepediaFallbacks(tree.absolutePath, json)
-        assertEquals("https://wiki.example/thumb-only.png", loaded["sv01-002"])
+        val fallback = loaded["sv01-002"]
+        assertNotNull(fallback)
+        assertEquals("https://product-images.s3.cardmarket.com/51/MEP/894884/894884.jpg", fallback.url)
+        assertEquals("cardmarket", fallback.source)
     }
 
     @Test
-    fun `Given unresolved and thumbnail-missing reasons, When loaded, Then they are skipped`() {
+    fun `Given unresolved card without cardmarket url, When loaded, Then no fallback is returned`() {
         val tree = createTempFile("pokepedia-tree-", ".json").toFile()
         tree.writeText(
             """
@@ -82,12 +92,14 @@ class PokepediaFallbackImportTest {
                         {
                           "cardId":"sv01-003",
                           "resolutionStatus":"unresolved",
-                          "reason":"POKEPEDIA_THUMBNAIL_MISSING"
+                          "reason":"POKEPEDIA_CARD_NOT_FOUND",
+                          "pokepediaThumbnailUrl":"https://wiki.example/untrusted-thumb.png"
                         },
                         {
                           "cardId":"sv01-004",
                           "resolutionStatus":"unresolved",
-                          "reason":"POKEPEDIA_CARD_NOT_FOUND"
+                          "reason":"POKEPEDIA_THUMBNAIL_MISSING",
+                          "cardmarketImageUrl":"https://product-images.s3.cardmarket.com/51/MEP/899999/899999.jpg"
                         }
                       ]
                     }
