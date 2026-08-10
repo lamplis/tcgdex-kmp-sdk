@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-07-15T05:43:05.316Z",
+  "generatedAt": "2026-08-10T13:23:34.662Z",
   "databasePath": "/Users/admin/workspace/cardium/iosApp/iosApp/Resources/tcgdex.db",
   "language": "fr",
-  "totalCards": 3406,
-  "resolvedCards": 3291,
-  "unresolvedCards": 115,
+  "totalCards": 3416,
+  "resolvedCards": 3298,
+  "unresolvedCards": 118,
   "unresolvedReasons": {
-    "POKEPEDIA_CARD_IMAGE_NOT_FOUND": 87,
+    "POKEPEDIA_CARD_IMAGE_NOT_FOUND": 86,
     "POKEPEDIA_CARD_PAGE_REDLINK": 23,
-    "POKEPEDIA_CARD_NOT_FOUND": 5
+    "POKEPEDIA_CARD_NOT_FOUND": 9
   },
   "series": [
     {
@@ -34380,7 +34380,7 @@
               "name": "Méga-Amphinobi-ex",
               "resolutionStatus": "resolved",
               "pokepediaHdUrl": "https://www.pokepedia.fr/images/c/cb/Carte_Promo_ME_081.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/c/cb/Carte_Promo_ME_081.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/c/cb/Carte_Promo_ME_081.png/490px-Carte_Promo_ME_081.png",
               "pokepediaCardUrl": "https://www.pokepedia.fr/M%C3%A9ga-Amphinobi-ex_(Promo_ME_081)"
             },
             {
@@ -34388,61 +34388,59 @@
               "localId": "082",
               "localNumberSort": 82,
               "name": "Création de Miraidon",
-              "resolutionStatus": "unresolved",
-              "reason": "POKEPEDIA_CARD_PAGE_REDLINK",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Miraidon_(Promo_ME_082)?action=edit&redlink=1",
-              "cardmarketImageUrl": "https://product-images.s3.cardmarket.com/51/MEP/894261/894261.jpg",
-              "fallbackImageSource": "cardmarket"
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/9/99/Carte_Promo_ME_082.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/9/99/Carte_Promo_ME_082.png/490px-Carte_Promo_ME_082.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Miraidon_(Promo_ME_082)"
             },
             {
               "cardId": "mep-083",
               "localId": "083",
               "localNumberSort": 83,
               "name": "Création de Flagadoss",
-              "resolutionStatus": "unresolved",
-              "reason": "POKEPEDIA_CARD_PAGE_REDLINK",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Flagadoss_(Promo_ME_083)?action=edit&redlink=1",
-              "cardmarketImageUrl": "https://product-images.s3.cardmarket.com/51/MEP/894262/894262.jpg",
-              "fallbackImageSource": "cardmarket"
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/0/0b/Carte_Promo_ME_083.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/0/0b/Carte_Promo_ME_083.png/490px-Carte_Promo_ME_083.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Flagadoss_(Promo_ME_083)"
             },
             {
               "cardId": "mep-084",
               "localId": "084",
               "localNumberSort": 84,
               "name": "Création de Sinistrail",
-              "resolutionStatus": "unresolved",
-              "reason": "POKEPEDIA_CARD_PAGE_REDLINK",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Sinistrail_(Promo_ME_084)?action=edit&redlink=1",
-              "cardmarketImageUrl": "https://product-images.s3.cardmarket.com/51/MEP/894263/894263.jpg",
-              "fallbackImageSource": "cardmarket"
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/0/05/Carte_Promo_ME_084.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/0/05/Carte_Promo_ME_084.png/490px-Carte_Promo_ME_084.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Sinistrail_(Promo_ME_084)"
             },
             {
               "cardId": "mep-085",
               "localId": "085",
               "localNumberSort": 85,
               "name": "Création de Bastiodon",
-              "resolutionStatus": "unresolved",
-              "reason": "POKEPEDIA_CARD_PAGE_REDLINK",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Bastiodon_(Promo_ME_085)?action=edit&redlink=1",
-              "cardmarketImageUrl": "https://product-images.s3.cardmarket.com/51/MEP/894264/894264.jpg",
-              "fallbackImageSource": "cardmarket"
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/a/a3/Carte_Promo_ME_085.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/a/a3/Carte_Promo_ME_085.png/490px-Carte_Promo_ME_085.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Bastiodon_(Promo_ME_085)"
             },
             {
               "cardId": "mep-086",
               "localId": "086",
               "localNumberSort": 86,
               "name": "Création de Ramoloss",
-              "resolutionStatus": "unresolved",
-              "reason": "POKEPEDIA_CARD_PAGE_REDLINK",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Ramoloss_(Promo_ME_086)?action=edit&redlink=1"
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/0/05/Carte_Promo_ME_086.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/0/05/Carte_Promo_ME_086.png/490px-Carte_Promo_ME_086.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Ramoloss_(Promo_ME_086)"
             },
             {
               "cardId": "mep-087",
               "localId": "087",
               "localNumberSort": 87,
               "name": "Opermine",
-              "resolutionStatus": "unresolved",
-              "reason": "POKEPEDIA_CARD_IMAGE_NOT_FOUND",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/1/19/Carte_Promo_ME_087.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/1/19/Carte_Promo_ME_087.png/490px-Carte_Promo_ME_087.png",
               "pokepediaCardUrl": "https://www.pokepedia.fr/Opermine_(Promo_ME_087)"
             },
             {
@@ -34450,11 +34448,10 @@
               "localId": "088",
               "localNumberSort": 88,
               "name": "Création de Zarude",
-              "resolutionStatus": "unresolved",
-              "reason": "POKEPEDIA_CARD_PAGE_REDLINK",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Zarude_(Promo_ME_088)?action=edit&redlink=1",
-              "cardmarketImageUrl": "https://product-images.s3.cardmarket.com/51/MEP/895779/895779.jpg",
-              "fallbackImageSource": "cardmarket"
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/2/24/Carte_Promo_ME_088.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/2/24/Carte_Promo_ME_088.png/490px-Carte_Promo_ME_088.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Zarude_(Promo_ME_088)"
             },
             {
               "cardId": "mep-089",
@@ -34462,8 +34459,8 @@
               "localNumberSort": 89,
               "name": "MEP 089",
               "resolutionStatus": "unresolved",
-              "reason": "POKEPEDIA_CARD_NOT_FOUND",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Promo_ME"
+              "reason": "POKEPEDIA_CARD_PAGE_REDLINK",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/M%C3%A9ga-Zeraora-ex_(Promo_ME_089)?action=edit&redlink=1"
             },
             {
               "cardId": "mep-090",
@@ -34471,8 +34468,8 @@
               "localNumberSort": 90,
               "name": "MEP 090",
               "resolutionStatus": "unresolved",
-              "reason": "POKEPEDIA_CARD_NOT_FOUND",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Promo_ME"
+              "reason": "POKEPEDIA_CARD_PAGE_REDLINK",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/M%C3%A9ga-Darkrai-ex_(Promo_ME_090)?action=edit&redlink=1"
             },
             {
               "cardId": "mep-091",
@@ -34480,8 +34477,8 @@
               "localNumberSort": 91,
               "name": "MEP 091",
               "resolutionStatus": "unresolved",
-              "reason": "POKEPEDIA_CARD_NOT_FOUND",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Promo_ME"
+              "reason": "POKEPEDIA_CARD_PAGE_REDLINK",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/M%C3%A9ga-Dracolosse-ex_(Promo_ME_091)?action=edit&redlink=1"
             },
             {
               "cardId": "mep-092",
@@ -34489,8 +34486,8 @@
               "localNumberSort": 92,
               "name": "MEP 092",
               "resolutionStatus": "unresolved",
-              "reason": "POKEPEDIA_CARD_NOT_FOUND",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Promo_ME"
+              "reason": "POKEPEDIA_CARD_PAGE_REDLINK",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/H%C3%B4tel_%C2%AB_Au_paradis_des_Pok%C3%A9mon_%C2%BB_(Promo_ME_092)?action=edit&redlink=1"
             },
             {
               "cardId": "mep-093",
@@ -34498,8 +34495,8 @@
               "localNumberSort": 93,
               "name": "MEP 093",
               "resolutionStatus": "unresolved",
-              "reason": "POKEPEDIA_CARD_NOT_FOUND",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Promo_ME",
+              "reason": "POKEPEDIA_CARD_PAGE_REDLINK",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Pikachu_(Promo_ME_093)?action=edit&redlink=1",
               "cardmarketImageUrl": "https://product-images.s3.cardmarket.com/51/MEP/894884/894884.jpg",
               "fallbackImageSource": "cardmarket"
             },
@@ -34689,6 +34686,96 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Noctali-ex_(Promo_ME_110)?action=edit&redlink=1",
               "cardmarketImageUrl": "https://product-images.s3.cardmarket.com/51/MEP/895618/895618.jpg",
               "fallbackImageSource": "cardmarket"
+            },
+            {
+              "cardId": "mep-111",
+              "localId": "111",
+              "localNumberSort": 111,
+              "name": "MEP 111",
+              "resolutionStatus": "unresolved",
+              "reason": "POKEPEDIA_CARD_NOT_FOUND",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Promo_ME"
+            },
+            {
+              "cardId": "mep-112",
+              "localId": "112",
+              "localNumberSort": 112,
+              "name": "MEP 112",
+              "resolutionStatus": "unresolved",
+              "reason": "POKEPEDIA_CARD_NOT_FOUND",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Promo_ME"
+            },
+            {
+              "cardId": "mep-113",
+              "localId": "113",
+              "localNumberSort": 113,
+              "name": "MEP 113",
+              "resolutionStatus": "unresolved",
+              "reason": "POKEPEDIA_CARD_NOT_FOUND",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Promo_ME"
+            },
+            {
+              "cardId": "mep-114",
+              "localId": "114",
+              "localNumberSort": 114,
+              "name": "MEP 114",
+              "resolutionStatus": "unresolved",
+              "reason": "POKEPEDIA_CARD_NOT_FOUND",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Promo_ME"
+            },
+            {
+              "cardId": "mep-115",
+              "localId": "115",
+              "localNumberSort": 115,
+              "name": "MEP 115",
+              "resolutionStatus": "unresolved",
+              "reason": "POKEPEDIA_CARD_NOT_FOUND",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Promo_ME"
+            },
+            {
+              "cardId": "mep-116",
+              "localId": "116",
+              "localNumberSort": 116,
+              "name": "MEP 116",
+              "resolutionStatus": "unresolved",
+              "reason": "POKEPEDIA_CARD_NOT_FOUND",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Promo_ME"
+            },
+            {
+              "cardId": "mep-117",
+              "localId": "117",
+              "localNumberSort": 117,
+              "name": "MEP 117",
+              "resolutionStatus": "unresolved",
+              "reason": "POKEPEDIA_CARD_NOT_FOUND",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Promo_ME"
+            },
+            {
+              "cardId": "mep-118",
+              "localId": "118",
+              "localNumberSort": 118,
+              "name": "MEP 118",
+              "resolutionStatus": "unresolved",
+              "reason": "POKEPEDIA_CARD_NOT_FOUND",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Promo_ME"
+            },
+            {
+              "cardId": "mep-119",
+              "localId": "119",
+              "localNumberSort": 119,
+              "name": "MEP 119",
+              "resolutionStatus": "unresolved",
+              "reason": "POKEPEDIA_CARD_NOT_FOUND",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Promo_ME"
+            },
+            {
+              "cardId": "mep-120",
+              "localId": "120",
+              "localNumberSort": 120,
+              "name": "Celebratory Fanfare",
+              "resolutionStatus": "unresolved",
+              "reason": "POKEPEDIA_CARD_PAGE_REDLINK",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Celebratory_Fanfare_(Promo_ME_120)?action=edit&redlink=1"
             }
           ]
         }
