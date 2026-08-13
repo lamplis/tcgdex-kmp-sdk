@@ -8,6 +8,7 @@ import kotlin.io.path.createTempDirectory
 import kotlin.test.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertNotNull
+import kotlin.test.assertNull
 import kotlin.test.assertTrue
 import kotlin.test.fail
 
@@ -237,6 +238,115 @@ class LocalDatabaseGenerationE2eTest {
                     recognitionRows > 0,
                     "[x] Expected recognition rows for me03-001/$targetLanguage.",
                 )
+
+                // Sub-set cards (e.g. Trainer Gallery) have no compiler-provided image because
+                // the CDN manifest only indexes parent set folders. The generator must
+                // synthesize a manifest-confirmed URL under the parent folder.
+                val trainerGalleryRow = queryGeneratedCard(connection, "swsh10tg-TG28", targetLanguage)
+                assertNotNull(
+                    trainerGalleryRow,
+                    "[x] Expected a generated card row for swsh10tg-TG28/$targetLanguage.",
+                )
+                assertEquals(
+                    "https://assets.tcgdex.net/fr/swsh/swsh10/TG28",
+                    trainerGalleryRow.imageUrl,
+                    "[x] Expected synthesized parent-folder image_url for swsh10tg-TG28/$targetLanguage.",
+                )
+
+                val classicCollectionCard = queryGeneratedCard(connection, "cel25cc-CC001", targetLanguage)
+                assertNotNull(
+                    classicCollectionCard,
+                    "[x] Expected a generated card row for cel25cc-CC001/$targetLanguage.",
+                )
+                assertTrue(
+                    classicCollectionCard.imageUrl.isNullOrBlank(),
+                    "[x] Expected cel25cc-CC001/$targetLanguage image_url to stay empty (no CDN asset), " +
+                        "got '${classicCollectionCard.imageUrl}'.",
+                )
+
+                val classicCollectionSet = queryGeneratedSet(connection, "cel25cc", targetLanguage)
+                assertNotNull(
+                    classicCollectionSet,
+                    "[x] Expected a generated set row for cel25cc/$targetLanguage.",
+                )
+                assertEquals(
+                    "cel25",
+                    classicCollectionSet.parentSetId,
+                    "[x] Expected cel25cc parent_set_id to be cel25.",
+                )
+                assertEquals(
+                    "CEL:CC",
+                    classicCollectionSet.abbreviationOfficial,
+                    "[x] Expected cel25cc abbreviation_official to be CEL:CC.",
+                )
+
+                val trainerGallerySet = queryGeneratedSet(connection, "swsh10tg", targetLanguage)
+                assertNotNull(
+                    trainerGallerySet,
+                    "[x] Expected a generated set row for swsh10tg/$targetLanguage.",
+                )
+                assertEquals(
+                    "swsh10",
+                    trainerGallerySet.parentSetId,
+                    "[x] Expected swsh10tg parent_set_id to be swsh10.",
+                )
+                assertEquals(
+                    "ASR:TG",
+                    trainerGallerySet.abbreviationOfficial,
+                    "[x] Expected swsh10tg abbreviation_official to be ASR:TG.",
+                )
+
+                val hiddenFatesVaultSet = queryGeneratedSet(connection, "sm115sv", targetLanguage)
+                assertNotNull(
+                    hiddenFatesVaultSet,
+                    "[x] Expected a generated set row for sm115sv/$targetLanguage.",
+                )
+                assertEquals(
+                    "sm115",
+                    hiddenFatesVaultSet.parentSetId,
+                    "[x] Expected sm115sv parent_set_id to be sm115.",
+                )
+                assertEquals(
+                    "HIF:SV",
+                    hiddenFatesVaultSet.abbreviationOfficial,
+                    "[x] Expected sm115sv abbreviation_official to be HIF:SV.",
+                )
+                assertNull(
+                    queryGeneratedSet(connection, "sma", targetLanguage),
+                    "[x] Expected sma to be remapped away; found a leftover sma set row.",
+                )
+
+                val vaultCard = queryGeneratedCard(connection, "sm115sv-SV1", targetLanguage)
+                assertNotNull(
+                    vaultCard,
+                    "[x] Expected generated card sm115sv-SV1/$targetLanguage.",
+                )
+                assertTrue(
+                    vaultCard.imageUrl.isNullOrBlank(),
+                    "[x] Expected sm115sv-SV1 FR image_url to stay empty (no parent-folder CDN).",
+                )
+                assertEquals(
+                    "pokepedia",
+                    vaultCard.fallbackImageSource,
+                    "[x] Expected sm115sv-SV1 fallback_image_source to be pokepedia.",
+                )
+                assertTrue(
+                    vaultCard.fallbackImageUrl?.contains("Destin") == true,
+                    "[x] Expected sm115sv-SV1 Pokepedia Destinees Occultes fallback URL, got '${vaultCard.fallbackImageUrl}'.",
+                )
+                assertTrue(
+                    vaultCard.detailedPriceRows > 0,
+                    "[x] Expected Cardmarket prices on sm115sv-SV1, got ${vaultCard.detailedPriceRows} rows.",
+                )
+                val vaultRecognitionSources = queryRecognitionSourcesForCard(
+                    connection,
+                    "sm115sv-SV1",
+                    targetLanguage,
+                )
+                assertTrue(
+                    "pokepedia" in vaultRecognitionSources,
+                    "[x] Expected pokepedia recognition hash for sm115sv-SV1, got $vaultRecognitionSources.",
+                )
             }
         } finally {
             tempDir.deleteRecursively()
@@ -316,7 +426,9 @@ class LocalDatabaseGenerationE2eTest {
               language,
               name,
               logo_url,
-              symbol_url
+              symbol_url,
+              abbreviation_official,
+              parent_set_id
             FROM sets
             WHERE id = ?
               AND language = ?
@@ -335,6 +447,8 @@ class LocalDatabaseGenerationE2eTest {
                     name = resultSet.getString("name"),
                     logoUrl = resultSet.getString("logo_url"),
                     symbolUrl = resultSet.getString("symbol_url"),
+                    abbreviationOfficial = resultSet.getString("abbreviation_official"),
+                    parentSetId = resultSet.getString("parent_set_id"),
                 )
             }
         }
@@ -353,6 +467,31 @@ class LocalDatabaseGenerationE2eTest {
             statement.setString(2, language)
             statement.executeQuery().use { resultSet ->
                 return if (resultSet.next()) resultSet.getInt("row_count") else 0
+            }
+        }
+    }
+
+    private fun queryRecognitionSourcesForCard(
+        connection: Connection,
+        cardId: String,
+        language: String,
+    ): Set<String> {
+        connection.prepareStatement(
+            """
+            SELECT DISTINCT image_source
+            FROM card_recognition_hashes
+            WHERE card_id = ?
+              AND language = ?
+            """.trimIndent(),
+        ).use { statement ->
+            statement.setString(1, cardId)
+            statement.setString(2, language)
+            statement.executeQuery().use { resultSet ->
+                val sources = mutableSetOf<String>()
+                while (resultSet.next()) {
+                    sources += resultSet.getString("image_source")
+                }
+                return sources
             }
         }
     }
@@ -455,6 +594,8 @@ class LocalDatabaseGenerationE2eTest {
         val name: String?,
         val logoUrl: String?,
         val symbolUrl: String?,
+        val abbreviationOfficial: String?,
+        val parentSetId: String?,
     )
 
     private data class TargetCardExpectation(

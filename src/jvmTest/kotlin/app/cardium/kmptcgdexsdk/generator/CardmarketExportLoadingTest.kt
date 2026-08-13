@@ -99,4 +99,56 @@ class CardmarketExportLoadingTest {
         assertNotNull(loaded)
         assertNotNull(loaded.cards["sv01-002"])
     }
+
+    @Test
+    fun `Given Hidden Fates vault Cardmarket ids, When loaded, Then they map onto sm115sv unpadded ids`() {
+        val root = createTempDirectory("cardmarket-hifsv-").toFile()
+        val exportDir = root.resolve("exports").apply { mkdirs() }
+        exportDir.resolve("cardmarket-prices-fr.json").writeText(
+            """
+            {
+              "exportDate":"2026-03-01T00:00:00Z",
+              "series":[
+                {
+                  "sets":[
+                    {
+                      "cards":[
+                        {
+                          "tcgdexCardId":"sm115-SV001",
+                          "name":"Scyther",
+                          "variants":[
+                            {
+                              "version":"Normal",
+                              "productId":251401,
+                              "prices":{"fr":{"FR":{"recommendedPrice":{"NM":4.5},"currency":"EUR"}}}
+                            }
+                          ]
+                        },
+                        {
+                          "tcgdexCardId":"sm115-004",
+                          "name":"Paras",
+                          "variants":[
+                            {
+                              "version":"Normal",
+                              "productId":251404,
+                              "prices":{"fr":{"FR":{"recommendedPrice":{"NM":0.2},"currency":"EUR"}}}
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            """.trimIndent(),
+        )
+
+        val loaded = loadCardmarketExportPrices(root, exportDir.absolutePath, json)
+        assertNotNull(loaded)
+        assertNotNull(loaded.cards["sm115sv-SV1"])
+        assertEquals("sm115sv-SV1", loaded.cards.getValue("sm115sv-SV1").tcgdexCardId)
+        assertNotNull(loaded.cards["sm115-004"])
+        assertNull(loaded.cards["sm115-SV001"])
+    }
 }

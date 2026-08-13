@@ -39,6 +39,8 @@ class DefaultTcgdexRepositoryPriceUpdateTest {
             cardCountTotal = 198,
             cardCountOfficial = 198,
             releaseDate = "2023-03-31",
+            abbreviationOfficial = null,
+            parentSetId = null,
         )
         queries.insertCard(
             id = "sv01-001",
@@ -182,6 +184,8 @@ private suspend fun TcgdexDatabase.seedCardFk(cardId: String) {
         cardCountTotal = 100,
         cardCountOfficial = 100,
         releaseDate = "2026-01-01",
+        abbreviationOfficial = null,
+        parentSetId = null,
     )
     tcgdexQueries.insertCard(
         id = cardId,

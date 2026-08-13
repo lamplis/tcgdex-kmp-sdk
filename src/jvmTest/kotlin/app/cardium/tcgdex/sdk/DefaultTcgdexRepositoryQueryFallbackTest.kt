@@ -99,6 +99,8 @@ class DefaultTcgdexRepositoryQueryFallbackTest {
             cardCountTotal = 140,
             cardCountOfficial = 113,
             releaseDate = "2013-11-06",
+            abbreviationOfficial = null,
+            parentSetId = null,
         )
 
         queries.insertCard(

@@ -281,7 +281,9 @@ class DefaultTcgdexRepository(
                         symbolUrl = row.symbol_url,
                         cardCountOfficial = row.card_count_official.toInt(),
                         cardCountTotal = row.card_count_total.toInt(),
-                        releaseDate = row.release_date
+                        releaseDate = row.release_date,
+                        officialAbbreviation = row.abbreviation_official,
+                        parentSetId = row.parent_set_id,
                     )
                 }
         }
@@ -535,7 +537,9 @@ private fun Sets.toModel(serieName: String? = null): CardSet = CardSet(
     symbolUrl = symbol_url,
     cardCountOfficial = card_count_official.toInt(),
     cardCountTotal = card_count_total.toInt(),
-    releaseDate = release_date
+    releaseDate = release_date,
+    officialAbbreviation = abbreviation_official,
+    parentSetId = parent_set_id,
 )
 
 /**
@@ -552,7 +556,9 @@ private fun GetSetWithSerieName.toModel(): CardSet = CardSet(
     symbolUrl = symbol_url,
     cardCountOfficial = card_count_official.toInt(),
     cardCountTotal = card_count_total.toInt(),
-    releaseDate = release_date
+    releaseDate = release_date,
+    officialAbbreviation = abbreviation_official,
+    parentSetId = parent_set_id,
 )
 
 /**

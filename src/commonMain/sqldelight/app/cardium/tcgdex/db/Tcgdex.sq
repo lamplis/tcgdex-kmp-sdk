@@ -38,6 +38,8 @@ CREATE TABLE sets (
     card_count_total INTEGER NOT NULL,
     card_count_official INTEGER NOT NULL,
     release_date TEXT,
+    abbreviation_official TEXT,
+    parent_set_id TEXT,
     PRIMARY KEY (id, language),
     FOREIGN KEY (serie_id, language) REFERENCES series(id, language) ON DELETE CASCADE
 );
@@ -340,7 +342,9 @@ INSERT OR REPLACE INTO sets(
     symbol_url,
     card_count_total,
     card_count_official,
-    release_date
+    release_date,
+    abbreviation_official,
+    parent_set_id
 )
 VALUES (
     :id,
@@ -351,7 +355,9 @@ VALUES (
     :symbolUrl,
     :cardCountTotal,
     :cardCountOfficial,
-    :releaseDate
+    :releaseDate,
+    :abbreviationOfficial,
+    :parentSetId
 );
 
 insertIllustrator:
@@ -561,7 +567,9 @@ SELECT
     symbol_url,
     card_count_total,
     card_count_official,
-    release_date
+    release_date,
+    abbreviation_official,
+    parent_set_id
 FROM sets
 WHERE language = :language
 UNION ALL
@@ -574,7 +582,9 @@ SELECT
     symbol_url,
     card_count_total,
     card_count_official,
-    release_date
+    release_date,
+    abbreviation_official,
+    parent_set_id
 FROM sets
 WHERE language = 'en'
   AND id NOT IN (
@@ -595,7 +605,9 @@ SELECT
     symbol_url,
     card_count_total,
     card_count_official,
-    release_date
+    release_date,
+    abbreviation_official,
+    parent_set_id
 FROM sets
 WHERE serie_id = :serieId AND language = :language
 UNION ALL
@@ -608,7 +620,9 @@ SELECT
     symbol_url,
     card_count_total,
     card_count_official,
-    release_date
+    release_date,
+    abbreviation_official,
+    parent_set_id
 FROM sets
 WHERE serie_id = :serieId
   AND language = 'en'
@@ -642,7 +656,9 @@ SELECT
     symbol_url,
     card_count_total,
     card_count_official,
-    release_date
+    release_date,
+    abbreviation_official,
+    parent_set_id
 FROM sets
 WHERE id = :id AND language = :language
 UNION ALL
@@ -655,7 +671,9 @@ SELECT
     symbol_url,
     card_count_total,
     card_count_official,
-    release_date
+    release_date,
+    abbreviation_official,
+    parent_set_id
 FROM sets
 WHERE id = :id
   AND language = 'en'
@@ -679,7 +697,9 @@ WITH effective_set AS (
         symbol_url,
         card_count_total,
         card_count_official,
-        release_date
+        release_date,
+        abbreviation_official,
+        parent_set_id
     FROM sets
     WHERE id = :id
       AND language = :language
@@ -693,7 +713,9 @@ WITH effective_set AS (
         symbol_url,
         card_count_total,
         card_count_official,
-        release_date
+        release_date,
+        abbreviation_official,
+        parent_set_id
     FROM sets
     WHERE id = :id
       AND language = 'en'
@@ -714,6 +736,8 @@ SELECT
     effective_set.card_count_total,
     effective_set.card_count_official,
     effective_set.release_date,
+    effective_set.abbreviation_official,
+    effective_set.parent_set_id,
     COALESCE(localized_series.name, fallback_series.name, effective_set.serie_id) AS serie_name
 FROM effective_set
 LEFT JOIN series AS localized_series

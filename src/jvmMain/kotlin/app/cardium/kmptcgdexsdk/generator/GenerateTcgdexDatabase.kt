@@ -201,6 +201,14 @@ fun main(args: Array<String>) = runBlocking {
         json = json,
     )
 
+    // CDN assets manifest, used to confirm parent-folder image URLs for sub-sets
+    // (same existence source as the compiler's getCardPictures).
+    val assetsManifest = loadAssetsManifest(
+        manifestFileOverride = config.assetsManifestFile,
+        json = json,
+    )
+    println("[Tcgdex] Loaded assets manifest: ${assetsManifest.size} languages")
+
     // Track unique illustrators and rarities (language-agnostic)
     val illustrators = mutableMapOf<String, String>() // id -> name
     val rarities = mutableMapOf<String, String>() // id -> name
@@ -258,6 +266,8 @@ fun main(args: Array<String>) = runBlocking {
     val cardsByLanguage = mutableMapOf<String, MutableSet<String>>() // language -> set of card IDs
     val englishCardCache = mutableMapOf<String, JsonObject>()
     val frenchCardCache = mutableMapOf<String, JsonObject>()
+    // language -> subSetId -> (serieId, parentSetId) for CDN parent-folder image fallback
+    val subSetParentsByLanguage = mutableMapOf<String, Map<String, Pair<String, String>>>()
     
     // Valid dex IDs from pokemon-species.json (used for validation)
     val validDexIds = pokemonSpecies.keys
@@ -276,7 +286,17 @@ fun main(args: Array<String>) = runBlocking {
         val localId = card.getString("localId") ?: id.substringAfterLast("-")
         val setId = card.getNestedString("set", "id") ?: return
         val name = card.getString("name") ?: id
-        val imageUrl = card.getString("image")
+        // Fallback only: never overwrite an image provided by the TS scan. Known
+        // sub-sets (e.g. swsh10tg) get a manifest-confirmed URL under the parent
+        // set folder (e.g. https://assets.tcgdex.net/fr/swsh/swsh10/TG28).
+        val imageUrl = card.getString("image")?.takeIf { it.isNotBlank() }
+            ?: synthesizeSubSetImageUrl(
+                assetsManifest = assetsManifest,
+                subSetParents = subSetParentsByLanguage[language].orEmpty(),
+                language = language,
+                setId = setId,
+                localId = localId,
+            )
         val fallbackImage =
             if (imageUrl.isNullOrBlank()) {
                 // When there is no TCGdex CDN image at all, apply Pokepedia fallback for
@@ -577,8 +597,25 @@ fun main(args: Array<String>) = runBlocking {
 
         // Load sets
         val setsJson = json.parseToJsonElement(dataset.setsFile.readText()).jsonArray
-        for (setElement in setsJson) {
-            val set = setElement.jsonObject
+        val parsedSets = setsJson.map { rewriteHiddenFatesVaultSetJson(it.jsonObject) }
+        val parentBySubSetId = deriveSubSetParents(parsedSets)
+        val serieIdBySetId = parsedSets.mapNotNull { set ->
+            val setId = set.getString("id") ?: return@mapNotNull null
+            val serieId = set.getNestedString("serie", "id") ?: return@mapNotNull null
+            setId to serieId
+        }.toMap()
+        val subSetParents = parentBySubSetId.mapValues { (subSetId, parentSetId) ->
+            val serieId = serieIdBySetId[parentSetId]
+                ?: error("[Tcgdex][x] Sub-set $subSetId parent $parentSetId has no serie id")
+            serieId to parentSetId
+        }
+        subSetParentsByLanguage[language] = subSetParents
+        if (parentBySubSetId.isNotEmpty()) {
+            val summary = parentBySubSetId.entries.sortedBy { it.key }.joinToString(", ") { "${it.key}->${it.value}" }
+            println("[Tcgdex]   Sub-sets: $summary")
+        }
+
+        for (set in parsedSets) {
             val id = set.getString("id") ?: continue
             val serieId = set.getNestedString("serie", "id") ?: continue
             val name = set.getString("name") ?: id
@@ -587,6 +624,7 @@ fun main(args: Array<String>) = runBlocking {
             val cardCountTotal = set.getNestedInt("cardCount", "total") ?: 0
             val cardCountOfficial = set.getNestedInt("cardCount", "official") ?: cardCountTotal
             val releaseDate = set.getString("releaseDate")
+            val abbreviationOfficial = set.getNestedString("abbreviation", "official")
 
             db.tcgdexQueries.insertSet(
                 id = id,
@@ -598,6 +636,8 @@ fun main(args: Array<String>) = runBlocking {
                 cardCountTotal = cardCountTotal.toLong(),
                 cardCountOfficial = cardCountOfficial.toLong(),
                 releaseDate = releaseDate,
+                abbreviationOfficial = abbreviationOfficial,
+                parentSetId = parentBySubSetId[id],
             )
         }
         println("[Tcgdex]   Sets: ${setsJson.size}")
@@ -605,7 +645,7 @@ fun main(args: Array<String>) = runBlocking {
         // Load cards
         val cardsJson = json.parseToJsonElement(dataset.cardsFile.readText()).jsonArray
         for (cardElement in cardsJson) {
-            val card = cardElement.jsonObject
+            val card = rewriteHiddenFatesVaultCardJson(cardElement.jsonObject)
             insertCard(language, card, originLanguage = language)
             if (language == "en") {
                 val id = card.getString("id")
@@ -786,6 +826,7 @@ private data class Config(
     val cardmarketExportFile: String?,
     val setAliasesConfigFile: String?,
     val cardmarketExpansionsFile: String?,
+    val assetsManifestFile: String?,
 )
 
 private data class LanguageDatasetFiles(
@@ -838,6 +879,7 @@ private fun parseArgs(args: Array<String>): Config {
     var cardmarketExportFile: String? = null
     var setAliasesConfigFile: String? = null
     var cardmarketExpansionsFile: String? = null
+    var assetsManifestFile: String? = null
 
     for (arg in args) {
         when {
@@ -850,6 +892,7 @@ private fun parseArgs(args: Array<String>): Config {
             arg.startsWith("--cardmarket-export=") -> cardmarketExportFile = arg.removePrefix("--cardmarket-export=")
             arg.startsWith("--set-aliases-config=") -> setAliasesConfigFile = arg.removePrefix("--set-aliases-config=")
             arg.startsWith("--cardmarket-expansions=") -> cardmarketExpansionsFile = arg.removePrefix("--cardmarket-expansions=")
+            arg.startsWith("--assets-manifest=") -> assetsManifestFile = arg.removePrefix("--assets-manifest=")
         }
     }
 
@@ -864,6 +907,7 @@ private fun parseArgs(args: Array<String>): Config {
         cardmarketExportFile = cardmarketExportFile,
         setAliasesConfigFile = setAliasesConfigFile,
         cardmarketExpansionsFile = cardmarketExpansionsFile,
+        assetsManifestFile = assetsManifestFile,
     )
 }
 
@@ -1032,10 +1076,20 @@ private fun collectGeneratedSetAliasSeeds(
         val content = file.readText()
         val parsed = parseSetAliasSourceFile(content) ?: continue
 
-        val setId = parsed.setId.trim()
-        if (setId.isBlank()) continue
+        val originalSetId = parsed.setId.trim()
+        if (originalSetId.isBlank()) continue
         // TCG Pocket set IDs are uppercase (A1, A2, B1, P-A). They are forbidden in Cardium.
-        if (setId.any { it.isUpperCase() }) continue
+        if (originalSetId.any { it.isUpperCase() }) continue
+
+        val setId = rewriteHiddenFatesVaultSetId(originalSetId)
+        val officialAbbreviation = rewriteHiddenFatesVaultOfficial(originalSetId, parsed.officialAbbreviation)
+
+        if (officialAbbreviation?.contains(':') == true && parsed.cardmarketExpansionId != null) {
+            throw IllegalStateException(
+                "[Tcgdex][x] Sub-set $setId ($officialAbbreviation) must not declare " +
+                    "its own Cardmarket expansion id; Cardmarket only knows the parent set",
+            )
+        }
 
         val seriesKey =
             Regex("^[a-z]+")
@@ -1047,6 +1101,7 @@ private fun collectGeneratedSetAliasSeeds(
         val frSeriesAliases = buildSeriesAliasesForSetId(setId = setId, prefixes = seriesRule?.fr.orEmpty(), seriesRule?.allowTrailingFiveDecimal == true)
 
         val override = overridesBySetId[normalizeAliasForLookup(setId)]
+            ?: overridesBySetId[normalizeAliasForLookup(originalSetId)]
         val cardmarketAliases =
             buildList {
                 parsed.cardmarketExpansionId?.let { add(it.toString()) }
@@ -1055,7 +1110,13 @@ private fun collectGeneratedSetAliasSeeds(
                     ?.takeIf { it.isNotBlank() }
                     ?.let { add(it) }
             }
-        val enExtraAliases = (override?.extraAliases?.get("en").orEmpty() + cardmarketAliases).distinct()
+        val vaultAliases =
+            if (setId == HIDDEN_FATES_VAULT_SET_ID) {
+                listOf(HIDDEN_FATES_VAULT_SOURCE_SET_ID, "$HIDDEN_FATES_PARENT_SET_ID:sv")
+            } else {
+                emptyList()
+            }
+        val enExtraAliases = (override?.extraAliases?.get("en").orEmpty() + cardmarketAliases + vaultAliases).distinct()
         val frExtraAliases = override?.extraAliases?.get("fr").orEmpty().distinct()
 
         val candidate =
@@ -1064,7 +1125,7 @@ private fun collectGeneratedSetAliasSeeds(
                 releaseDate = parsed.releaseDate,
                 enName = parsed.enName,
                 frName = parsed.frName,
-                officialAbbreviation = parsed.officialAbbreviation,
+                officialAbbreviation = officialAbbreviation,
                 frenchAbbreviation = parsed.frenchAbbreviation,
                 tcgOnline = parsed.tcgOnline,
                 enExtraAliases = enExtraAliases,
@@ -1077,9 +1138,39 @@ private fun collectGeneratedSetAliasSeeds(
         mergedBySetId[setId] = if (existing == null) candidate else mergeGeneratedSetAliasSeed(existing, candidate)
     }
 
+    inheritParentCardmarketAliases(mergedBySetId)
+
     return mergedBySetId
         .values
         .sortedBy { it.setId }
+}
+
+private fun inheritParentCardmarketAliases(
+    seedsBySetId: MutableMap<String, GeneratedSetAliasSeed>,
+) {
+    val officialToSetIds = linkedMapOf<String, MutableList<String>>()
+    for (seed in seedsBySetId.values) {
+        val official = seed.officialAbbreviation?.takeIf { it.isNotBlank() } ?: continue
+        officialToSetIds.getOrPut(official) { mutableListOf() }.add(seed.setId)
+    }
+
+    for (seed in seedsBySetId.values.toList()) {
+        val official = seed.officialAbbreviation ?: continue
+        if (':' !in official) continue
+        val parentOfficial = official.substringBefore(':')
+        val candidates = officialToSetIds[parentOfficial].orEmpty().distinct()
+        if (candidates.size != 1) {
+            error(
+                "[Tcgdex][x] Cannot copy Cardmarket aliases for sub-set ${seed.setId} " +
+                    "(official=$official, parentOfficial=$parentOfficial). " +
+                    "Candidates: ${candidates.joinToString(",").ifBlank { "<none>" }}",
+            )
+        }
+        val parent = seedsBySetId.getValue(candidates.single())
+        seedsBySetId[seed.setId] = seed.copy(
+            enExtraAliases = (seed.enExtraAliases + parent.enExtraAliases).distinct(),
+        )
+    }
 }
 
 private fun mergeGeneratedSetAliasSeed(
@@ -1423,7 +1514,7 @@ private fun buildSetAliasIndexSource(
         |        for (seed in SEEDS) {
         |            val aliases = mutableSetOf<Pair<String, String>>()
         |            addAlias(aliases, seed.setId, "en")
-        |            addAlias(aliases, seed.officialAbbreviation, "en")
+        |            addOfficialAbbreviationAliases(aliases, seed.officialAbbreviation, "en")
         |            addAlias(aliases, seed.frenchAbbreviation, "fr")
         |            addAlias(aliases, seed.tcgOnline, "en")
         |
@@ -1471,6 +1562,19 @@ private fun buildSetAliasIndexSource(
         |    ) {
         |        if (value.isNullOrBlank()) return
         |        target += value to language
+        |    }
+        |
+        |    private fun addOfficialAbbreviationAliases(
+        |        target: MutableSet<Pair<String, String>>,
+        |        value: String?,
+        |        language: String,
+        |    ) {
+        |        if (value.isNullOrBlank()) return
+        |        addAlias(target, value, language)
+        |        if (':' in value) {
+        |            addAlias(target, value.replace(":", " "), language)
+        |            addAlias(target, value.replace(":", ""), language)
+        |        }
         |    }
         |
         |    private fun addNameAliases(
@@ -2208,8 +2312,9 @@ internal fun parseCardmarketExportFile(
                 val cards = (setObj["cards"] as? JsonArray) ?: JsonArray(emptyList())
                 for (cardElement in cards) {
                     val cardObj = cardElement as? JsonObject ?: continue
-                    val cardId = cardObj.stringOrNull("tcgdexCardId")?.trim()
-                    if (cardId.isNullOrBlank()) continue
+                    val rawCardId = cardObj.stringOrNull("tcgdexCardId")?.trim()
+                    if (rawCardId.isNullOrBlank()) continue
+                    val cardId = rewriteHiddenFatesCardmarketExportId(rawCardId)
                     cardCount++
 
                     val cardName = cardObj.stringOrNull("name")
@@ -2406,7 +2511,8 @@ private fun loadRecognitionVectors(
         val grouped = mutableMapOf<String, MutableList<RecognitionHashRow>>()
         for (entry in payload.cards) {
             if (entry.cardId.isBlank() || entry.language.isBlank()) continue
-            val rows = grouped.getOrPut("${entry.cardId}::${entry.language}") { mutableListOf() }
+            val cardId = rewriteHiddenFatesVaultCardId(entry.cardId)
+            val rows = grouped.getOrPut("$cardId::${entry.language}") { mutableListOf() }
             for (hash in entry.hashes) {
                 rows.add(
                     RecognitionHashRow(
@@ -2422,7 +2528,7 @@ private fun loadRecognitionVectors(
         }
         RecognitionVectorsData(
             rowsByCardLanguage = grouped.mapValues { (_, rows) -> rows.toList() },
-            missingCardIds = payload.missingCardIds.sorted(),
+            missingCardIds = payload.missingCardIds.map(::rewriteHiddenFatesVaultCardId).sorted(),
         )
     }.onFailure {
         println("[Tcgdex][!] Failed to parse recognition vectors file ${source.absolutePath}: ${it.message}")
@@ -2603,8 +2709,9 @@ internal fun loadPokepediaFallbacks(
         var skipped = 0
 
         for (entry in cards) {
-            val cardId = entry["cardId"]?.jsonPrimitive?.contentOrNull?.trim()
-            if (cardId.isNullOrBlank()) continue
+            val rawCardId = entry["cardId"]?.jsonPrimitive?.contentOrNull?.trim()
+            if (rawCardId.isNullOrBlank()) continue
+            val cardId = rewriteHiddenFatesVaultCardId(rawCardId)
 
             val status = entry["resolutionStatus"]?.jsonPrimitive?.contentOrNull
             val reason = entry["reason"]?.jsonPrimitive?.contentOrNull
@@ -2639,6 +2746,128 @@ internal fun loadPokepediaFallbacks(
     }.onFailure {
         println("[Tcgdex][x] Failed to load Pokepedia fallback data: ${it.message}")
     }.getOrDefault(emptyMap())
+}
+
+internal const val ASSETS_MANIFEST_URL = "https://assets.tcgdex.net/datas.json"
+
+/**
+ * Loads the TCGdex assets manifest (datas.json), the authoritative index of which
+ * card pictures exist on the CDN: manifest[language][serieId][setId][localId].
+ *
+ * This is the same file the vendored cards-database compiler consults in
+ * getCardPictures (server/compiler/utils/cardUtil.ts), so URL synthesis in this
+ * generator follows the exact same existence guarantee as the upstream API.
+ *
+ * A local file override (--assets-manifest=/path/to/datas.json) is supported for
+ * tests and offline runs. Without an override, a fetch failure aborts generation
+ * loudly so a stale/unreachable manifest can never silently produce a database
+ * with missing image URLs.
+ */
+internal fun loadAssetsManifest(
+    manifestFileOverride: String?,
+    json: Json,
+): JsonObject {
+    val text = if (!manifestFileOverride.isNullOrBlank()) {
+        val file = File(manifestFileOverride)
+        require(file.isFile && file.length() > 0L) {
+            "[Tcgdex][x] Assets manifest override not found or empty: ${file.absolutePath}"
+        }
+        file.readText()
+    } else {
+        try {
+            val client = java.net.http.HttpClient.newBuilder()
+                .connectTimeout(java.time.Duration.ofSeconds(30))
+                .followRedirects(java.net.http.HttpClient.Redirect.NORMAL)
+                .build()
+            val request = java.net.http.HttpRequest.newBuilder(URI.create(ASSETS_MANIFEST_URL))
+                .timeout(java.time.Duration.ofSeconds(60))
+                .GET()
+                .build()
+            val response = client.send(request, java.net.http.HttpResponse.BodyHandlers.ofString())
+            check(response.statusCode() == 200) {
+                "[Tcgdex][x] Assets manifest request returned HTTP ${response.statusCode()}"
+            }
+            response.body()
+        } catch (e: Exception) {
+            throw IllegalStateException(
+                "[Tcgdex][x] Cannot fetch assets manifest from $ASSETS_MANIFEST_URL. " +
+                    "Pass --assets-manifest=/path/to/datas.json to run offline.",
+                e,
+            )
+        }
+    }
+    return json.parseToJsonElement(text).jsonObject
+}
+
+/**
+ * Derives sub-set -> parent set links from official abbreviations of the form
+ * PARENT:CODE (e.g. CEL:CC -> the set whose official is CEL).
+ *
+ * Fails loudly on ambiguity: zero or 2+ parent candidates, or a resolved parent
+ * whose id is not a strict prefix of the sub-set id. Cardmarket and Pokepedia
+ * do not model sub-sets; the parent id is the mapping key they share.
+ */
+internal fun deriveSubSetParents(sets: List<JsonObject>): Map<String, String> {
+    val officialToSetIds = linkedMapOf<String, MutableList<String>>()
+    val colonOfficials = mutableListOf<Pair<String, String>>()
+    for (set in sets) {
+        val id = set.getString("id")?.takeIf { it.isNotBlank() } ?: continue
+        val official = set.getNestedString("abbreviation", "official")?.takeIf { it.isNotBlank() } ?: continue
+        officialToSetIds.getOrPut(official) { mutableListOf() }.add(id)
+        if (':' in official) {
+            colonOfficials += id to official
+        }
+    }
+
+    val parents = linkedMapOf<String, String>()
+    for ((subSetId, official) in colonOfficials) {
+        val parentOfficial = official.substringBefore(':')
+        val candidates = officialToSetIds[parentOfficial].orEmpty().distinct()
+        if (candidates.size != 1) {
+            error(
+                "[Tcgdex][x] Cannot resolve parent for sub-set $subSetId " +
+                    "(official=$official, parentOfficial=$parentOfficial). " +
+                    "Candidates: ${candidates.joinToString(",").ifBlank { "<none>" }}",
+            )
+        }
+        val parentId = candidates.single()
+        if (parentId == subSetId || !subSetId.startsWith(parentId)) {
+            error(
+                "[Tcgdex][x] Sub-set $subSetId (official=$official) resolved parent $parentId " +
+                    "is not a strict prefix of the sub-set id",
+            )
+        }
+        parents[subSetId] = parentId
+    }
+    return parents
+}
+
+/**
+ * Synthesizes a card image URL under the parent set folder for derived sub-sets,
+ * but only when the assets manifest confirms the picture exists
+ * (manifest[language][serieId][parentSetId][localId]). Returns the same
+ * suffix-less URL format the compiler emits; consumers append /high.png or
+ * /low.png.
+ *
+ * [subSetParents] maps sub-set id -> (serieId, parentSetId) from
+ * [deriveSubSetParents]. Proposed URLs that the manifest does not list
+ * (e.g. cel25cc CC001+, sm115sv SV1 under sm115) stay null.
+ */
+internal fun synthesizeSubSetImageUrl(
+    assetsManifest: JsonObject,
+    subSetParents: Map<String, Pair<String, String>>,
+    language: String,
+    setId: String,
+    localId: String,
+): String? {
+    val (serieId, parentSetId) = subSetParents[setId] ?: return null
+    val setEntry = (
+        (assetsManifest[language] as? JsonObject)
+            ?.get(serieId) as? JsonObject
+        )
+        ?.get(parentSetId) as? JsonObject
+    if (setEntry?.containsKey(localId) != true) return null
+    return "https://assets.tcgdex.net/$language/$serieId/$parentSetId/$localId"
 }
 
 /**

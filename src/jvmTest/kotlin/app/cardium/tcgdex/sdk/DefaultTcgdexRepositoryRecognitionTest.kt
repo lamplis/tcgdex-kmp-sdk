@@ -73,6 +73,8 @@ private suspend fun seedRecognitionFixtures(database: TcgdexDatabase) {
         cardCountTotal = 198,
         cardCountOfficial = 198,
         releaseDate = "2023-03-31",
+        abbreviationOfficial = null,
+        parentSetId = null,
     )
     queries.insertSet(
         id = "sv02",
@@ -84,6 +86,8 @@ private suspend fun seedRecognitionFixtures(database: TcgdexDatabase) {
         cardCountTotal = 193,
         cardCountOfficial = 193,
         releaseDate = "2023-06-09",
+        abbreviationOfficial = null,
+        parentSetId = null,
     )
     queries.insertSet(
         id = "tcgp1",
@@ -95,6 +99,8 @@ private suspend fun seedRecognitionFixtures(database: TcgdexDatabase) {
         cardCountTotal = 100,
         cardCountOfficial = 100,
         releaseDate = "2025-01-01",
+        abbreviationOfficial = null,
+        parentSetId = null,
     )
 
     suspend fun insertCard(id: String, setId: String, category: String) {

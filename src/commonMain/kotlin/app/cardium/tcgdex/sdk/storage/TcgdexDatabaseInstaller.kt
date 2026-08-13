@@ -46,6 +46,8 @@ object TcgdexDatabaseInstaller {
      * the file size stays the same.
      *
      * ## VERSION HISTORY
+     * - Version 12: Hidden Fates Shiny Vault remapped from sma to sm115sv (HIF:SV parent sm115).
+     * - Version 11: Added abbreviation_official and parent_set_id to sets (TCGdex sub-set concept, e.g. cel25cc -> cel25 "CEL:CC").
      * - Version 10: Added is_cameo to card_pokemon and persisted cameoDexIds links.
      * - Version 8: Fixed origin_language for McDonald's French cards (was incorrectly set to "en").
      *              Cards that exist in FR with Pokepedia fallback now correctly have origin_language="fr".
@@ -68,7 +70,7 @@ object TcgdexDatabaseInstaller {
      *
      * @see docs/POKEDEX_DATA_REMEDIATION.md for more details
      */
-    const val DATABASE_USER_VERSION = 10
+    const val DATABASE_USER_VERSION = 12
 
     private const val METADATA_SUFFIX = ".meta"
 

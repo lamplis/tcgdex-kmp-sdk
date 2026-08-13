@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-08-10T13:23:34.662Z",
+  "generatedAt": "2026-08-13T18:25:39.175Z",
   "databasePath": "/Users/admin/workspace/cardium/iosApp/iosApp/Resources/tcgdex.db",
   "language": "fr",
-  "totalCards": 3416,
+  "totalCards": 3417,
   "resolvedCards": 3298,
-  "unresolvedCards": 118,
+  "unresolvedCards": 119,
   "unresolvedReasons": {
     "POKEPEDIA_CARD_IMAGE_NOT_FOUND": 86,
     "POKEPEDIA_CARD_PAGE_REDLINK": 23,
-    "POKEPEDIA_CARD_NOT_FOUND": 9
+    "POKEPEDIA_CARD_NOT_FOUND": 10
   },
   "series": [
     {
@@ -29486,7 +29486,7 @@
           "setId": "sm115",
           "name": "Destinées Occultes",
           "releaseDate": "2019-08-23",
-          "cardCountTotal": 69,
+          "cardCountTotal": 70,
           "pokepediaSetUrl": "https://www.pokepedia.fr/Destin%C3%A9es_Occultes",
           "cards": [
             {
@@ -30180,46 +30180,6 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Sulfura,_%C3%89lecthor_et_Artikodin-GX_(Destin%C3%A9es_Occultes_69)"
             },
             {
-              "cardId": "sm115-SV70",
-              "localId": "SV70",
-              "localNumberSort": 70,
-              "name": "Darkrai-GX",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/4/45/Carte_Destin%C3%A9es_Occultes_SV70.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/4/45/Carte_Destin%C3%A9es_Occultes_SV70.png/490px-Carte_Destin%C3%A9es_Occultes_SV70.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Darkrai-GX_(Destin%C3%A9es_Occultes_SV70)"
-            },
-            {
-              "cardId": "sm115-SV71",
-              "localId": "SV71",
-              "localNumberSort": 71,
-              "name": "Engloutyran-GX",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/9/93/Carte_Destin%C3%A9es_Occultes_SV71.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/9/93/Carte_Destin%C3%A9es_Occultes_SV71.png/490px-Carte_Destin%C3%A9es_Occultes_SV71.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Engloutyran-GX_(Destin%C3%A9es_Occultes_SV71)"
-            },
-            {
-              "cardId": "sm115-SV72",
-              "localId": "SV72",
-              "localNumberSort": 72,
-              "name": "Cizayox-GX",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/2/2b/Carte_Destin%C3%A9es_Occultes_SV72.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/2/2b/Carte_Destin%C3%A9es_Occultes_SV72.png/490px-Carte_Destin%C3%A9es_Occultes_SV72.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Cizayox-GX_(Destin%C3%A9es_Occultes_SV72)"
-            },
-            {
-              "cardId": "sm115-SV73",
-              "localId": "SV73",
-              "localNumberSort": 73,
-              "name": "Katagami-GX",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/c/c9/Carte_Destin%C3%A9es_Occultes_SV73.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/c/c9/Carte_Destin%C3%A9es_Occultes_SV73.png/490px-Carte_Destin%C3%A9es_Occultes_SV73.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Katagami-GX_(Destin%C3%A9es_Occultes_SV73)"
-            },
-            {
               "cardId": "sm115-74",
               "localId": "74",
               "localNumberSort": 74,
@@ -30228,68 +30188,18 @@
               "pokepediaHdUrl": "https://www.pokepedia.fr/images/6/67/Carte_Soleil_et_Lune_%C3%89clipse_Cosmique_74.png",
               "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/6/67/Carte_Soleil_et_Lune_%C3%89clipse_Cosmique_74.png/490px-Carte_Soleil_et_Lune_%C3%89clipse_Cosmique_74.png",
               "pokepediaCardUrl": "https://www.pokepedia.fr/Togedemaru_(Soleil_et_Lune_%C3%89clipse_Cosmique_74)"
-            },
-            {
-              "cardId": "sm115-SV75",
-              "localId": "SV75",
-              "localNumberSort": 75,
-              "name": "Gardevoir-GX",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/c/c3/Carte_Destin%C3%A9es_Occultes_SV75.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/c/c3/Carte_Destin%C3%A9es_Occultes_SV75.png/490px-Carte_Destin%C3%A9es_Occultes_SV75.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Gardevoir-GX_(Destin%C3%A9es_Occultes_SV75)"
-            },
-            {
-              "cardId": "sm115-SV76",
-              "localId": "SV76",
-              "localNumberSort": 76,
-              "name": "Nymphali-GX",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/1/14/Carte_Destin%C3%A9es_Occultes_SV76.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/1/14/Carte_Destin%C3%A9es_Occultes_SV76.png/490px-Carte_Destin%C3%A9es_Occultes_SV76.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Nymphali-GX_(Destin%C3%A9es_Occultes_SV76)"
-            },
-            {
-              "cardId": "sm115-SV77",
-              "localId": "SV77",
-              "localNumberSort": 77,
-              "name": "Altaria-GX",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/a/a8/Carte_Destin%C3%A9es_Occultes_SV77.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/a/a8/Carte_Destin%C3%A9es_Occultes_SV77.png/490px-Carte_Destin%C3%A9es_Occultes_SV77.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Altaria-GX_(Destin%C3%A9es_Occultes_SV77)"
-            },
-            {
-              "cardId": "sm115-SV78",
-              "localId": "SV78",
-              "localNumberSort": 78,
-              "name": "Bruyverne-GX",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/5/50/Carte_Destin%C3%A9es_Occultes_SV78.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/5/50/Carte_Destin%C3%A9es_Occultes_SV78.png/490px-Carte_Destin%C3%A9es_Occultes_SV78.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Bruyverne-GX_(Destin%C3%A9es_Occultes_SV78)"
-            },
-            {
-              "cardId": "sm115-SV79",
-              "localId": "SV79",
-              "localNumberSort": 79,
-              "name": "Silvallié-GX",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/9/9e/Carte_Destin%C3%A9es_Occultes_SV79.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/9/9e/Carte_Destin%C3%A9es_Occultes_SV79.png/490px-Carte_Destin%C3%A9es_Occultes_SV79.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Silvalli%C3%A9-GX_(Destin%C3%A9es_Occultes_SV79)"
             }
           ]
         },
         {
-          "setId": "sma",
+          "setId": "sm115sv",
           "name": "Destinées Occultes Coffre Étincelant",
           "releaseDate": "2019-08-23",
           "cardCountTotal": 94,
-          "pokepediaSetUrl": "https://www.pokepedia.fr/Carte_Alternative",
+          "pokepediaSetUrl": "https://www.pokepedia.fr/Destinées_Occultes",
           "cards": [
             {
-              "cardId": "sma-SV1",
+              "cardId": "sm115sv-SV1",
               "localId": "SV1",
               "localNumberSort": 1,
               "name": "Insécateur",
@@ -30299,7 +30209,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Ins%C3%A9cateur_(Destin%C3%A9es_Occultes_SV1)"
             },
             {
-              "cardId": "sma-SV2",
+              "cardId": "sm115sv-SV2",
               "localId": "SV2",
               "localNumberSort": 2,
               "name": "Brindibou",
@@ -30309,7 +30219,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Brindibou_(Destin%C3%A9es_Occultes_SV2)"
             },
             {
-              "cardId": "sma-SV3",
+              "cardId": "sm115sv-SV3",
               "localId": "SV3",
               "localNumberSort": 3,
               "name": "Efflèche",
@@ -30319,7 +30229,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Effl%C3%A8che_(Destin%C3%A9es_Occultes_SV3)"
             },
             {
-              "cardId": "sma-SV4",
+              "cardId": "sm115sv-SV4",
               "localId": "SV4",
               "localNumberSort": 4,
               "name": "Sovkipou",
@@ -30329,7 +30239,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Sovkipou_(Destin%C3%A9es_Occultes_SV4)"
             },
             {
-              "cardId": "sma-SV5",
+              "cardId": "sm115sv-SV5",
               "localId": "SV5",
               "localNumberSort": 5,
               "name": "Cancrelove",
@@ -30339,7 +30249,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Cancrelove_(Destin%C3%A9es_Occultes_SV5)"
             },
             {
-              "cardId": "sma-SV6",
+              "cardId": "sm115sv-SV6",
               "localId": "SV6",
               "localNumberSort": 6,
               "name": "Salamèche",
@@ -30349,7 +30259,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Salam%C3%A8che_(Destin%C3%A9es_Occultes_SV6)"
             },
             {
-              "cardId": "sma-SV7",
+              "cardId": "sm115sv-SV7",
               "localId": "SV7",
               "localNumberSort": 7,
               "name": "Reptincel",
@@ -30359,7 +30269,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Reptincel_(Destin%C3%A9es_Occultes_SV7)"
             },
             {
-              "cardId": "sma-SV8",
+              "cardId": "sm115sv-SV8",
               "localId": "SV8",
               "localNumberSort": 8,
               "name": "Goupix d’Alola",
@@ -30369,7 +30279,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Goupix_d%27Alola_(Destin%C3%A9es_Occultes_SV8)"
             },
             {
-              "cardId": "sma-SV9",
+              "cardId": "sm115sv-SV9",
               "localId": "SV9",
               "localNumberSort": 9,
               "name": "Axoloto",
@@ -30379,7 +30289,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Axoloto_(Destin%C3%A9es_Occultes_SV9)"
             },
             {
-              "cardId": "sma-SV10",
+              "cardId": "sm115sv-SV10",
               "localId": "SV10",
               "localNumberSort": 10,
               "name": "Maraiste",
@@ -30389,7 +30299,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Maraiste_(Destin%C3%A9es_Occultes_SV10)"
             },
             {
-              "cardId": "sma-SV11",
+              "cardId": "sm115sv-SV11",
               "localId": "SV11",
               "localNumberSort": 11,
               "name": "Grenousse",
@@ -30399,7 +30309,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Grenousse_(Destin%C3%A9es_Occultes_SV11)"
             },
             {
-              "cardId": "sma-SV12",
+              "cardId": "sm115sv-SV12",
               "localId": "SV12",
               "localNumberSort": 12,
               "name": "Croâporal",
@@ -30409,7 +30319,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Cro%C3%A2poral_(Destin%C3%A9es_Occultes_SV12)"
             },
             {
-              "cardId": "sma-SV13",
+              "cardId": "sm115sv-SV13",
               "localId": "SV13",
               "localNumberSort": 13,
               "name": "Voltorbe",
@@ -30419,7 +30329,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Voltorbe_(Destin%C3%A9es_Occultes_SV13)"
             },
             {
-              "cardId": "sma-SV14",
+              "cardId": "sm115sv-SV14",
               "localId": "SV14",
               "localNumberSort": 14,
               "name": "Câblifère",
@@ -30429,7 +30339,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/C%C3%A2blif%C3%A8re_(Destin%C3%A9es_Occultes_SV14)"
             },
             {
-              "cardId": "sma-SV15",
+              "cardId": "sm115sv-SV15",
               "localId": "SV15",
               "localNumberSort": 15,
               "name": "Séviper",
@@ -30439,7 +30349,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/S%C3%A9viper_(Destin%C3%A9es_Occultes_SV15)"
             },
             {
-              "cardId": "sma-SV16",
+              "cardId": "sm115sv-SV16",
               "localId": "SV16",
               "localNumberSort": 16,
               "name": "Polichombr",
@@ -30449,7 +30359,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Polichombr_(Destin%C3%A9es_Occultes_SV16)"
             },
             {
-              "cardId": "sma-SV17",
+              "cardId": "sm115sv-SV17",
               "localId": "SV17",
               "localNumberSort": 17,
               "name": "Sepiatop",
@@ -30459,7 +30369,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Sepiatop_(Destin%C3%A9es_Occultes_SV17)"
             },
             {
-              "cardId": "sma-SV18",
+              "cardId": "sm115sv-SV18",
               "localId": "SV18",
               "localNumberSort": 18,
               "name": "Sepiatroce",
@@ -30469,7 +30379,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Sepiatroce_(Destin%C3%A9es_Occultes_SV18)"
             },
             {
-              "cardId": "sma-SV19",
+              "cardId": "sm115sv-SV19",
               "localId": "SV19",
               "localNumberSort": 19,
               "name": "Vémini",
@@ -30479,7 +30389,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/V%C3%A9mini_(Destin%C3%A9es_Occultes_SV19)"
             },
             {
-              "cardId": "sma-SV20",
+              "cardId": "sm115sv-SV20",
               "localId": "SV20",
               "localNumberSort": 20,
               "name": "Simularbre",
@@ -30489,7 +30399,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Simularbre_(Destin%C3%A9es_Occultes_SV20)"
             },
             {
-              "cardId": "sma-SV21",
+              "cardId": "sm115sv-SV21",
               "localId": "SV21",
               "localNumberSort": 21,
               "name": "Riolu",
@@ -30499,7 +30409,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Riolu_(Destin%C3%A9es_Occultes_SV21)"
             },
             {
-              "cardId": "sma-SV22",
+              "cardId": "sm115sv-SV22",
               "localId": "SV22",
               "localNumberSort": 22,
               "name": "Lucario",
@@ -30509,7 +30419,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Lucario_(Destin%C3%A9es_Occultes_SV22)"
             },
             {
-              "cardId": "sma-SV23",
+              "cardId": "sm115sv-SV23",
               "localId": "SV23",
               "localNumberSort": 23,
               "name": "Rocabot",
@@ -30519,7 +30429,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Rocabot_(Destin%C3%A9es_Occultes_SV23)"
             },
             {
-              "cardId": "sma-SV24",
+              "cardId": "sm115sv-SV24",
               "localId": "SV24",
               "localNumberSort": 24,
               "name": "Mouscoto",
@@ -30529,7 +30439,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Mouscoto_(Destin%C3%A9es_Occultes_SV24)"
             },
             {
-              "cardId": "sma-SV25",
+              "cardId": "sm115sv-SV25",
               "localId": "SV25",
               "localNumberSort": 25,
               "name": "Zorua",
@@ -30539,7 +30449,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Zorua_(Destin%C3%A9es_Occultes_SV25)"
             },
             {
-              "cardId": "sma-SV26",
+              "cardId": "sm115sv-SV26",
               "localId": "SV26",
               "localNumberSort": 26,
               "name": "Engloutyran",
@@ -30549,7 +30459,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Engloutyran_(Destin%C3%A9es_Occultes_SV26)"
             },
             {
-              "cardId": "sma-SV27",
+              "cardId": "sm115sv-SV27",
               "localId": "SV27",
               "localNumberSort": 27,
               "name": "Magnéti",
@@ -30559,7 +30469,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Magn%C3%A9ti_(Destin%C3%A9es_Occultes_SV27)"
             },
             {
-              "cardId": "sma-SV28",
+              "cardId": "sm115sv-SV28",
               "localId": "SV28",
               "localNumberSort": 28,
               "name": "Magnéton",
@@ -30569,7 +30479,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Magn%C3%A9ton_(Destin%C3%A9es_Occultes_SV28)"
             },
             {
-              "cardId": "sma-SV29",
+              "cardId": "sm115sv-SV29",
               "localId": "SV29",
               "localNumberSort": 29,
               "name": "Magnézone",
@@ -30579,7 +30489,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Magn%C3%A9zone_(Destin%C3%A9es_Occultes_SV29)"
             },
             {
-              "cardId": "sma-SV30",
+              "cardId": "sm115sv-SV30",
               "localId": "SV30",
               "localNumberSort": 30,
               "name": "Terhal",
@@ -30589,7 +30499,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Terhal_(Destin%C3%A9es_Occultes_SV30)"
             },
             {
-              "cardId": "sma-SV31",
+              "cardId": "sm115sv-SV31",
               "localId": "SV31",
               "localNumberSort": 31,
               "name": "Métang",
@@ -30599,7 +30509,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/M%C3%A9tang_(Destin%C3%A9es_Occultes_SV31)"
             },
             {
-              "cardId": "sma-SV32",
+              "cardId": "sm115sv-SV32",
               "localId": "SV32",
               "localNumberSort": 32,
               "name": "Bamboiselle",
@@ -30609,7 +30519,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Bamboiselle_(Destin%C3%A9es_Occultes_SV32)"
             },
             {
-              "cardId": "sma-SV33",
+              "cardId": "sm115sv-SV33",
               "localId": "SV33",
               "localNumberSort": 33,
               "name": "Katagami",
@@ -30619,7 +30529,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Katagami_(Destin%C3%A9es_Occultes_SV33)"
             },
             {
-              "cardId": "sma-SV34",
+              "cardId": "sm115sv-SV34",
               "localId": "SV34",
               "localNumberSort": 34,
               "name": "Tarsal",
@@ -30629,7 +30539,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Tarsal_(Destin%C3%A9es_Occultes_SV34)"
             },
             {
-              "cardId": "sma-SV35",
+              "cardId": "sm115sv-SV35",
               "localId": "SV35",
               "localNumberSort": 35,
               "name": "Kirlia",
@@ -30639,7 +30549,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Kirlia_(Destin%C3%A9es_Occultes_SV35)"
             },
             {
-              "cardId": "sma-SV36",
+              "cardId": "sm115sv-SV36",
               "localId": "SV36",
               "localNumberSort": 36,
               "name": "Diancie",
@@ -30649,7 +30559,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Diancie_(Destin%C3%A9es_Occultes_SV36)"
             },
             {
-              "cardId": "sma-SV37",
+              "cardId": "sm115sv-SV37",
               "localId": "SV37",
               "localNumberSort": 37,
               "name": "Altaria",
@@ -30659,7 +30569,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Altaria_(Destin%C3%A9es_Occultes_SV37)"
             },
             {
-              "cardId": "sma-SV38",
+              "cardId": "sm115sv-SV38",
               "localId": "SV38",
               "localNumberSort": 38,
               "name": "Griknot",
@@ -30669,7 +30579,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Griknot_(Destin%C3%A9es_Occultes_SV38)"
             },
             {
-              "cardId": "sma-SV39",
+              "cardId": "sm115sv-SV39",
               "localId": "SV39",
               "localNumberSort": 39,
               "name": "Carmache",
@@ -30679,7 +30589,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Carmache_(Destin%C3%A9es_Occultes_SV39)"
             },
             {
-              "cardId": "sma-SV40",
+              "cardId": "sm115sv-SV40",
               "localId": "SV40",
               "localNumberSort": 40,
               "name": "Carchacrok",
@@ -30689,7 +30599,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Carchacrok_(Destin%C3%A9es_Occultes_SV40)"
             },
             {
-              "cardId": "sma-SV41",
+              "cardId": "sm115sv-SV41",
               "localId": "SV41",
               "localNumberSort": 41,
               "name": "Évoli",
@@ -30699,7 +30609,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89voli_(Destin%C3%A9es_Occultes_SV41)"
             },
             {
-              "cardId": "sma-SV42",
+              "cardId": "sm115sv-SV42",
               "localId": "SV42",
               "localNumberSort": 42,
               "name": "Tylton",
@@ -30709,7 +30619,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Tylton_(Destin%C3%A9es_Occultes_SV42)"
             },
             {
-              "cardId": "sma-SV43",
+              "cardId": "sm115sv-SV43",
               "localId": "SV43",
               "localNumberSort": 43,
               "name": "Sonistrelle",
@@ -30719,7 +30629,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Sonistrelle_(Destin%C3%A9es_Occultes_SV43)"
             },
             {
-              "cardId": "sma-SV44",
+              "cardId": "sm115sv-SV44",
               "localId": "SV44",
               "localNumberSort": 44,
               "name": "Gouroutan",
@@ -30729,7 +30639,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Gouroutan_(Destin%C3%A9es_Occultes_SV44)"
             },
             {
-              "cardId": "sma-SV45",
+              "cardId": "sm115sv-SV45",
               "localId": "SV45",
               "localNumberSort": 45,
               "name": "Type:0",
@@ -30739,7 +30649,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Type:0_(Destin%C3%A9es_Occultes_SV45)"
             },
             {
-              "cardId": "sma-SV46",
+              "cardId": "sm115sv-SV46",
               "localId": "SV46",
               "localNumberSort": 46,
               "name": "Phyllali-GX",
@@ -30749,7 +30659,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Phyllali-GX_(Destin%C3%A9es_Occultes_SV46)"
             },
             {
-              "cardId": "sma-SV47",
+              "cardId": "sm115sv-SV47",
               "localId": "SV47",
               "localNumberSort": 47,
               "name": "Archéduc-GX",
@@ -30759,7 +30669,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Arch%C3%A9duc-GX_(Destin%C3%A9es_Occultes_SV47)"
             },
             {
-              "cardId": "sma-SV48",
+              "cardId": "sm115sv-SV48",
               "localId": "SV48",
               "localNumberSort": 48,
               "name": "Sarmuraï-GX",
@@ -30769,7 +30679,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Sarmura%C3%AF-GX_(Destin%C3%A9es_Occultes_SV48)"
             },
             {
-              "cardId": "sma-SV49",
+              "cardId": "sm115sv-SV49",
               "localId": "SV49",
               "localNumberSort": 49,
               "name": "Dracaufeu-GX",
@@ -30779,7 +30689,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Dracaufeu-GX_(Destin%C3%A9es_Occultes_SV49)"
             },
             {
-              "cardId": "sma-SV50",
+              "cardId": "sm115sv-SV50",
               "localId": "SV50",
               "localNumberSort": 50,
               "name": "Ho-Oh-GX",
@@ -30789,7 +30699,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Ho-Oh-GX_(Destin%C3%A9es_Occultes_SV50)"
             },
             {
-              "cardId": "sma-SV51",
+              "cardId": "sm115sv-SV51",
               "localId": "SV51",
               "localNumberSort": 51,
               "name": "Reshiram-GX",
@@ -30799,7 +30709,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Reshiram-GX_(Destin%C3%A9es_Occultes_SV51)"
             },
             {
-              "cardId": "sma-SV52",
+              "cardId": "sm115sv-SV52",
               "localId": "SV52",
               "localNumberSort": 52,
               "name": "Boumata-GX",
@@ -30809,7 +30719,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Boumata-GX_(Destin%C3%A9es_Occultes_SV52)"
             },
             {
-              "cardId": "sma-SV53",
+              "cardId": "sm115sv-SV53",
               "localId": "SV53",
               "localNumberSort": 53,
               "name": "Feunard d’Alola-GX",
@@ -30819,7 +30729,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Feunard_d%27Alola-GX_(Destin%C3%A9es_Occultes_SV53)"
             },
             {
-              "cardId": "sma-SV54",
+              "cardId": "sm115sv-SV54",
               "localId": "SV54",
               "localNumberSort": 54,
               "name": "Artikodin-GX",
@@ -30829,7 +30739,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Artikodin-GX_(Destin%C3%A9es_Occultes_SV54)"
             },
             {
-              "cardId": "sma-SV55",
+              "cardId": "sm115sv-SV55",
               "localId": "SV55",
               "localNumberSort": 55,
               "name": "Givrali-GX",
@@ -30839,7 +30749,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Givrali-GX_(Destin%C3%A9es_Occultes_SV55)"
             },
             {
-              "cardId": "sma-SV56",
+              "cardId": "sm115sv-SV56",
               "localId": "SV56",
               "localNumberSort": 56,
               "name": "Amphinobi-GX",
@@ -30849,7 +30759,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Amphinobi-GX_(Destin%C3%A9es_Occultes_SV56)"
             },
             {
-              "cardId": "sma-SV57",
+              "cardId": "sm115sv-SV57",
               "localId": "SV57",
               "localNumberSort": 57,
               "name": "Électrode-GX",
@@ -30859,7 +30769,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89lectrode-GX_(Destin%C3%A9es_Occultes_SV57)"
             },
             {
-              "cardId": "sma-SV58",
+              "cardId": "sm115sv-SV58",
               "localId": "SV58",
               "localNumberSort": 58,
               "name": "Câblifère-GX",
@@ -30869,7 +30779,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/C%C3%A2blif%C3%A8re-GX_(Destin%C3%A9es_Occultes_SV58)"
             },
             {
-              "cardId": "sma-SV59",
+              "cardId": "sm115sv-SV59",
               "localId": "SV59",
               "localNumberSort": 59,
               "name": "Mewtwo-GX",
@@ -30879,7 +30789,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Mewtwo-GX_(Destin%C3%A9es_Occultes_SV59)"
             },
             {
-              "cardId": "sma-SV60",
+              "cardId": "sm115sv-SV60",
               "localId": "SV60",
               "localNumberSort": 60,
               "name": "Mentali-GX",
@@ -30889,7 +30799,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Mentali-GX_(Destin%C3%A9es_Occultes_SV60)"
             },
             {
-              "cardId": "sma-SV61",
+              "cardId": "sm115sv-SV61",
               "localId": "SV61",
               "localNumberSort": 61,
               "name": "Branette-GX",
@@ -30899,7 +30809,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Branette-GX_(Destin%C3%A9es_Occultes_SV61)"
             },
             {
-              "cardId": "sma-SV62",
+              "cardId": "sm115sv-SV62",
               "localId": "SV62",
               "localNumberSort": 62,
               "name": "Zéroïd-GX",
@@ -30909,7 +30819,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Z%C3%A9ro%C3%AFd-GX_(Destin%C3%A9es_Occultes_SV62)"
             },
             {
-              "cardId": "sma-SV63",
+              "cardId": "sm115sv-SV63",
               "localId": "SV63",
               "localNumberSort": 63,
               "name": "Mandrillon-GX",
@@ -30919,7 +30829,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Mandrillon-GX_(Destin%C3%A9es_Occultes_SV63)"
             },
             {
-              "cardId": "sma-SV64",
+              "cardId": "sm115sv-SV64",
               "localId": "SV64",
               "localNumberSort": 64,
               "name": "Lucario-GX",
@@ -30929,7 +30839,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Lucario-GX_(Destin%C3%A9es_Occultes_SV64)"
             },
             {
-              "cardId": "sma-SV65",
+              "cardId": "sm115sv-SV65",
               "localId": "SV65",
               "localNumberSort": 65,
               "name": "Zygarde-GX",
@@ -30939,7 +30849,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Zygarde-GX_(Destin%C3%A9es_Occultes_SV65)"
             },
             {
-              "cardId": "sma-SV66",
+              "cardId": "sm115sv-SV66",
               "localId": "SV66",
               "localNumberSort": 66,
               "name": "Lougaroc-GX",
@@ -30949,7 +30859,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Lougaroc-GX_(Destin%C3%A9es_Occultes_SV66)"
             },
             {
-              "cardId": "sma-SV67",
+              "cardId": "sm115sv-SV67",
               "localId": "SV67",
               "localNumberSort": 67,
               "name": "Lougaroc-GX",
@@ -30959,7 +30869,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Lougaroc-GX_(Destin%C3%A9es_Occultes_SV67)"
             },
             {
-              "cardId": "sma-SV68",
+              "cardId": "sm115sv-SV68",
               "localId": "SV68",
               "localNumberSort": 68,
               "name": "Mouscoto-GX",
@@ -30969,7 +30879,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Mouscoto-GX_(Destin%C3%A9es_Occultes_SV68)"
             },
             {
-              "cardId": "sma-SV69",
+              "cardId": "sm115sv-SV69",
               "localId": "SV69",
               "localNumberSort": 69,
               "name": "Noctali-GX",
@@ -30979,7 +30889,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Noctali-GX_(Destin%C3%A9es_Occultes_SV69)"
             },
             {
-              "cardId": "sma-SV70",
+              "cardId": "sm115sv-SV70",
               "localId": "SV70",
               "localNumberSort": 70,
               "name": "Darkrai-GX",
@@ -30989,7 +30899,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Darkrai-GX_(Destin%C3%A9es_Occultes_SV70)"
             },
             {
-              "cardId": "sma-SV71",
+              "cardId": "sm115sv-SV71",
               "localId": "SV71",
               "localNumberSort": 71,
               "name": "Engloutyran-GX",
@@ -30999,7 +30909,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Engloutyran-GX_(Destin%C3%A9es_Occultes_SV71)"
             },
             {
-              "cardId": "sma-SV72",
+              "cardId": "sm115sv-SV72",
               "localId": "SV72",
               "localNumberSort": 72,
               "name": "Cizayox-GX",
@@ -31009,7 +30919,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Cizayox-GX_(Destin%C3%A9es_Occultes_SV72)"
             },
             {
-              "cardId": "sma-SV73",
+              "cardId": "sm115sv-SV73",
               "localId": "SV73",
               "localNumberSort": 73,
               "name": "Katagami-GX",
@@ -31019,7 +30929,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Katagami-GX_(Destin%C3%A9es_Occultes_SV73)"
             },
             {
-              "cardId": "sma-SV74",
+              "cardId": "sm115sv-SV74",
               "localId": "SV74",
               "localNumberSort": 74,
               "name": "Ama-Ama-GX",
@@ -31029,7 +30939,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Ama-Ama-GX_(Destin%C3%A9es_Occultes_SV74)"
             },
             {
-              "cardId": "sma-SV75",
+              "cardId": "sm115sv-SV75",
               "localId": "SV75",
               "localNumberSort": 75,
               "name": "Gardevoir-GX",
@@ -31039,7 +30949,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Gardevoir-GX_(Destin%C3%A9es_Occultes_SV75)"
             },
             {
-              "cardId": "sma-SV76",
+              "cardId": "sm115sv-SV76",
               "localId": "SV76",
               "localNumberSort": 76,
               "name": "Nymphali-GX",
@@ -31049,7 +30959,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Nymphali-GX_(Destin%C3%A9es_Occultes_SV76)"
             },
             {
-              "cardId": "sma-SV77",
+              "cardId": "sm115sv-SV77",
               "localId": "SV77",
               "localNumberSort": 77,
               "name": "Altaria-GX",
@@ -31059,7 +30969,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Altaria-GX_(Destin%C3%A9es_Occultes_SV77)"
             },
             {
-              "cardId": "sma-SV78",
+              "cardId": "sm115sv-SV78",
               "localId": "SV78",
               "localNumberSort": 78,
               "name": "Bruyverne-GX",
@@ -31069,7 +30979,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Bruyverne-GX_(Destin%C3%A9es_Occultes_SV78)"
             },
             {
-              "cardId": "sma-SV79",
+              "cardId": "sm115sv-SV79",
               "localId": "SV79",
               "localNumberSort": 79,
               "name": "Silvallié-GX",
@@ -31079,7 +30989,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Silvalli%C3%A9-GX_(Destin%C3%A9es_Occultes_SV79)"
             },
             {
-              "cardId": "sma-SV80",
+              "cardId": "sm115sv-SV80",
               "localId": "SV80",
               "localNumberSort": 80,
               "name": "Draïeul-GX",
@@ -31089,7 +30999,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Dra%C3%AFeul-GX_(Destin%C3%A9es_Occultes_SV80)"
             },
             {
-              "cardId": "sma-SV81",
+              "cardId": "sm115sv-SV81",
               "localId": "SV81",
               "localNumberSort": 81,
               "name": "Employés de la Fondation Æther",
@@ -31099,7 +31009,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Employ%C3%A9s_de_la_Fondation_%C3%86ther_(Destin%C3%A9es_Occultes_SV81)"
             },
             {
-              "cardId": "sma-SV82",
+              "cardId": "sm115sv-SV82",
               "localId": "SV82",
               "localNumberSort": 82,
               "name": "Cynthia",
@@ -31109,7 +31019,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Cynthia_(Destin%C3%A9es_Occultes_SV82)"
             },
             {
-              "cardId": "sma-SV83",
+              "cardId": "sm115sv-SV83",
               "localId": "SV83",
               "localNumberSort": 83,
               "name": "Pêcheur",
@@ -31119,7 +31029,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/P%C3%AAcheur_(Destin%C3%A9es_Occultes_SV83)"
             },
             {
-              "cardId": "sma-SV84",
+              "cardId": "sm115sv-SV84",
               "localId": "SV84",
               "localNumberSort": 84,
               "name": "Guzma",
@@ -31129,7 +31039,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Guzma_(Destin%C3%A9es_Occultes_SV84)"
             },
             {
-              "cardId": "sma-SV85",
+              "cardId": "sm115sv-SV85",
               "localId": "SV85",
               "localNumberSort": 85,
               "name": "Montagnard",
@@ -31139,7 +31049,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Montagnard_(Destin%C3%A9es_Occultes_SV85)"
             },
             {
-              "cardId": "sma-SV86",
+              "cardId": "sm115sv-SV86",
               "localId": "SV86",
               "localNumberSort": 86,
               "name": "Mademoiselle",
@@ -31149,7 +31059,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Mademoiselle_(Destin%C3%A9es_Occultes_SV86)"
             },
             {
-              "cardId": "sma-SV87",
+              "cardId": "sm115sv-SV87",
               "localId": "SV87",
               "localNumberSort": 87,
               "name": "Réserve Naturelle du Paradis Æther",
@@ -31159,7 +31069,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/R%C3%A9serve_Naturelle_du_Paradis_%C3%86ther_(Destin%C3%A9es_Occultes_SV87)"
             },
             {
-              "cardId": "sma-SV88",
+              "cardId": "sm115sv-SV88",
               "localId": "SV88",
               "localNumberSort": 88,
               "name": "Colline Clapotis",
@@ -31169,7 +31079,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Colline_Clapotis_(Destin%C3%A9es_Occultes_SV88)"
             },
             {
-              "cardId": "sma-SV89",
+              "cardId": "sm115sv-SV89",
               "localId": "SV89",
               "localNumberSort": 89,
               "name": "Mont Couronné",
@@ -31179,7 +31089,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Mont_Couronn%C3%A9_(Destin%C3%A9es_Occultes_SV89)"
             },
             {
-              "cardId": "sma-SV90",
+              "cardId": "sm115sv-SV90",
               "localId": "SV90",
               "localNumberSort": 90,
               "name": "Chapelle des Châtiments",
@@ -31189,7 +31099,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Chapelle_des_Ch%C3%A2timents_(Destin%C3%A9es_Occultes_SV90)"
             },
             {
-              "cardId": "sma-SV91",
+              "cardId": "sm115sv-SV91",
               "localId": "SV91",
               "localNumberSort": 91,
               "name": "Tokotoro-GX",
@@ -31199,7 +31109,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Tokotoro-GX_(Destin%C3%A9es_Occultes_SV91)"
             },
             {
-              "cardId": "sma-SV92",
+              "cardId": "sm115sv-SV92",
               "localId": "SV92",
               "localNumberSort": 92,
               "name": "Tokopisco-GX",
@@ -31209,7 +31119,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Tokopisco-GX_(Destin%C3%A9es_Occultes_SV92)"
             },
             {
-              "cardId": "sma-SV93",
+              "cardId": "sm115sv-SV93",
               "localId": "SV93",
               "localNumberSort": 93,
               "name": "Tokorico-GX",
@@ -31219,7 +31129,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Tokorico-GX_(Destin%C3%A9es_Occultes_SV93)"
             },
             {
-              "cardId": "sma-SV94",
+              "cardId": "sm115sv-SV94",
               "localId": "SV94",
               "localNumberSort": 94,
               "name": "Tokopiyon-GX",
@@ -31229,7 +31139,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Tokopiyon-GX_(Destin%C3%A9es_Occultes_SV94)"
             },
             {
-              "cardId": "sma-SV98",
+              "cardId": "sm115sv-SV98",
               "localId": "SV98",
               "localNumberSort": 98,
               "name": "Terreur",
@@ -31239,7 +31149,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Terreur_(XY_Rupture_TURBO_98a)"
             },
             {
-              "cardId": "sma-SV101",
+              "cardId": "sm115sv-SV101",
               "localId": "SV101",
               "localNumberSort": 101,
               "name": "Évoli",
@@ -31249,7 +31159,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89voli_(Soleil_et_Lune_101a)"
             },
             {
-              "cardId": "sma-SV102",
+              "cardId": "sm115sv-SV102",
               "localId": "SV102",
               "localNumberSort": 102,
               "name": "Cercle Chimérique",
@@ -31259,7 +31169,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Cercle_Chim%C3%A9rique_(Soleil_et_Lune_Lumi%C3%A8re_Interdite_102a)"
             },
             {
-              "cardId": "sma-SV103",
+              "cardId": "sm115sv-SV103",
               "localId": "SV103",
               "localNumberSort": 103,
               "name": "Lunala-GX",
@@ -31269,7 +31179,7 @@
               "pokepediaCardUrl": "https://www.pokepedia.fr/Lunala-GX_(Promo_SM_103a)"
             },
             {
-              "cardId": "sma-SV104",
+              "cardId": "sm115sv-SV104",
               "localId": "SV104",
               "localNumberSort": 104,
               "name": "Solgaleo-GX",
@@ -33570,9 +33480,18 @@
           "setId": "mep",
           "name": "MEP Black Star Promos",
           "releaseDate": "2025-09-26",
-          "cardCountTotal": 110,
+          "cardCountTotal": 120,
           "pokepediaSetUrl": "https://www.pokepedia.fr/Promo_ME",
           "cards": [
+            {
+              "cardId": "mep-Museum",
+              "localId": "Museum",
+              "localNumberSort": 0,
+              "name": "Pikachu at the Museum",
+              "resolutionStatus": "unresolved",
+              "reason": "POKEPEDIA_CARD_NOT_FOUND",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Promo_ME"
+            },
             {
               "cardId": "mep-001",
               "localId": "001",
@@ -34772,7 +34691,7 @@
               "cardId": "mep-120",
               "localId": "120",
               "localNumberSort": 120,
-              "name": "Celebratory Fanfare",
+              "name": "120",
               "resolutionStatus": "unresolved",
               "reason": "POKEPEDIA_CARD_PAGE_REDLINK",
               "pokepediaCardUrl": "https://www.pokepedia.fr/Celebratory_Fanfare_(Promo_ME_120)?action=edit&redlink=1"

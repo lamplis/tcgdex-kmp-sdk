@@ -114,4 +114,40 @@ class PokepediaFallbackImportTest {
         assertNull(loaded["sv01-003"])
         assertNull(loaded["sv01-004"])
     }
+
+    @Test
+    fun `Given leftover sma card id, When loaded, Then fallback is keyed as sm115sv`() {
+        val tree = createTempFile("pokepedia-tree-", ".json").toFile()
+        tree.writeText(
+            """
+            {
+              "series":[
+                {
+                  "sets":[
+                    {
+                      "cards":[
+                        {
+                          "cardId":"sma-SV1",
+                          "resolutionStatus":"resolved",
+                          "pokepediaHdUrl":"https://www.pokepedia.fr/images/d/d8/Carte_Destinees_Occultes_SV1.png"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            """.trimIndent(),
+        )
+
+        val loaded = loadPokepediaFallbacks(tree.absolutePath, json)
+        val fallback = loaded["sm115sv-SV1"]
+        assertNotNull(fallback)
+        assertEquals(
+            "https://www.pokepedia.fr/images/d/d8/Carte_Destinees_Occultes_SV1.png",
+            fallback.url,
+        )
+        assertEquals("pokepedia", fallback.source)
+        assertNull(loaded["sma-SV1"])
+    }
 }

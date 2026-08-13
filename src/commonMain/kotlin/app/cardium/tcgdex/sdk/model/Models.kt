@@ -33,6 +33,8 @@ data class Serie(
  * @property cardCountOfficial Number of cards in the official set
  * @property cardCountTotal Total cards including secret rares
  * @property releaseDate Release date in YYYY-MM-DD format, or null if unknown
+ * @property officialAbbreviation Official set code (e.g. "ASR", "CEL:CC" for a sub-set)
+ * @property parentSetId Parent set id when this row is a TCGdex sub-set, otherwise null
  */
 data class CardSet(
     val id: String,
@@ -44,7 +46,9 @@ data class CardSet(
     val symbolUrl: String?,
     val cardCountOfficial: Int,
     val cardCountTotal: Int,
-    val releaseDate: String?
+    val releaseDate: String?,
+    val officialAbbreviation: String? = null,
+    val parentSetId: String? = null,
 )
 
 /**
