@@ -674,6 +674,7 @@ private fun Card_prices.toModel(): CardPrice = CardPrice(
     recommendedPrice = recommended_price,
     availableCount = available_count,
     productId = product_id,
+    updatedIso = updated_iso,
 )
 
 private fun Card_recognition_hashes.toModel(): CardRecognitionHash = CardRecognitionHash(

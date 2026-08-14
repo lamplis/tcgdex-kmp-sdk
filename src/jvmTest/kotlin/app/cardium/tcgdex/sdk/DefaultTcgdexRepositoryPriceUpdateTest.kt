@@ -129,9 +129,11 @@ class DefaultTcgdexRepositoryPriceUpdateTest {
 
         assertEquals(0.0, nm.recommendedPrice)
         assertEquals(443.0, nm.avgPrice)
+        assertEquals("2026-04-22T21:40:21Z", nm.updatedIso)
         assertEquals(650.0, mt.recommendedPrice)
         assertEquals(730.67, global.recommendedPrice)
         assertEquals("", global.condition)
+        assertEquals("2026-04-22T21:40:21Z", global.updatedIso)
 
         driver.close()
     }
@@ -224,6 +226,7 @@ private suspend fun TcgdexDatabase.insertPriceRow(
     minPrice: Double? = null,
     medianPrice: Double? = null,
     maxPrice: Double? = null,
+    updatedIso: String = "2026-04-22T21:40:21Z",
 ) {
     tcgdexQueries.insertCardPrice(
         cardId = cardId,
@@ -240,6 +243,6 @@ private suspend fun TcgdexDatabase.insertPriceRow(
         recommendedPrice = recommendedPrice,
         availableCount = null,
         productId = null,
-        updatedIso = "2026-04-22T21:40:21Z",
+        updatedIso = updatedIso,
     )
 }

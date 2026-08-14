@@ -137,6 +137,8 @@ END;
 --              Empty string '' is reserved for the GLOBAL price-guide baseline which is
 --              condition-agnostic. Raw per-condition storage -- the database never mixes
 --              conditions nor falls back between them; that is an app-layer concern.
+-- - updated_iso: poke-browser lifecycle.captured_at for export rows (fallback exportDate);
+--                price-guide createdAt for seller_country = GLOBAL.
 -- Note: cards table keeps legacy flat pricing columns for backward compatibility.
 -- -----------------------------------------------------------------------------
 CREATE TABLE card_prices (

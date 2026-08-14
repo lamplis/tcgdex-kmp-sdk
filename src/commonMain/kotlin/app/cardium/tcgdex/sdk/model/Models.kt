@@ -145,6 +145,8 @@ data class Card(
  * @property condition Cardmarket condition grade (e.g. "NM", "MT", "EX", "GD",
  *   "LP", "PL", "PO"). Empty string means the row is the GLOBAL price-guide
  *   baseline, which is condition-agnostic.
+ * @property updatedIso ISO 8601 capture date from poke-browser `lifecycle.captured_at`
+ *   for export rows (fallback: file `exportDate`). Price-guide `createdAt` for GLOBAL rows.
  */
 data class CardPrice(
     val cardId: String,
@@ -161,6 +163,7 @@ data class CardPrice(
     val recommendedPrice: Double?,
     val availableCount: Long?,
     val productId: Long?,
+    val updatedIso: String = "",
 )
 
 /**
