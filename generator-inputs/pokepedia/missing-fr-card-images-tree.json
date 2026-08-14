@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-08-14T00:03:23.653Z",
+  "generatedAt": "2026-08-14T00:19:14Z",
   "databasePath": "/Users/admin/workspace/cardium/iosApp/iosApp/Resources/tcgdex.db",
   "language": "fr",
-  "totalCards": 3408,
-  "resolvedCards": 3289,
+  "totalCards": 3423,
+  "resolvedCards": 3304,
   "unresolvedCards": 119,
   "unresolvedReasons": {
     "POKEPEDIA_CARD_IMAGE_NOT_FOUND": 86,
@@ -34695,6 +34695,165 @@
               "resolutionStatus": "unresolved",
               "reason": "POKEPEDIA_CARD_PAGE_REDLINK",
               "pokepediaCardUrl": "https://www.pokepedia.fr/Celebratory_Fanfare_(Promo_ME_120)?action=edit&redlink=1"
+            }
+          ]
+        },
+        {
+          "setId": "me05",
+          "name": "Méga-Évolution Nuit Noire",
+          "releaseDate": "2026-07-17",
+          "cardCountTotal": 15,
+          "pokepediaSetUrl": "https://www.pokepedia.fr/M%C3%A9ga-%C3%89volution_Nuit_Noire",
+          "cards": [
+            {
+              "cardId": "me05-075",
+              "localId": "075",
+              "localNumberSort": 75,
+              "name": "Cloche Ténébreuse",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/4/4d/Carte_M%C3%A9ga-%C3%89volution_Nuit_Noire_075.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/4/4d/Carte_M%C3%A9ga-%C3%89volution_Nuit_Noire_075.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Cloche_T%C3%A9n%C3%A9breuse_(M%C3%A9ga-%C3%89volution_Nuit_Noire_075)"
+            },
+            {
+              "cardId": "me05-076",
+              "localId": "076",
+              "localNumberSort": 76,
+              "name": "Carrière Fossile",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/e/ea/Carte_M%C3%A9ga-%C3%89volution_Nuit_Noire_076.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/e/ea/Carte_M%C3%A9ga-%C3%89volution_Nuit_Noire_076.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Carri%C3%A8re_Fossile_(M%C3%A9ga-%C3%89volution_Nuit_Noire_076)"
+            },
+            {
+              "cardId": "me05-077",
+              "localId": "077",
+              "localNumberSort": 77,
+              "name": "Combat Final de Gladio",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/e/e3/Carte_M%C3%A9ga-%C3%89volution_Nuit_Noire_077.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/e/e3/Carte_M%C3%A9ga-%C3%89volution_Nuit_Noire_077.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Combat_Final_de_Gladio_(M%C3%A9ga-%C3%89volution_Nuit_Noire_077)"
+            },
+            {
+              "cardId": "me05-078",
+              "localId": "078",
+              "localNumberSort": 78,
+              "name": "Albia",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/d/dd/Carte_M%C3%A9ga-%C3%89volution_Nuit_Noire_078.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/d/dd/Carte_M%C3%A9ga-%C3%89volution_Nuit_Noire_078.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Albia_(M%C3%A9ga-%C3%89volution_Nuit_Noire_078)"
+            },
+            {
+              "cardId": "me05-079",
+              "localId": "079",
+              "localNumberSort": 79,
+              "name": "Bridjet",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/c/ce/Carte_M%C3%A9ga-%C3%89volution_Nuit_Noire_079.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/c/ce/Carte_M%C3%A9ga-%C3%89volution_Nuit_Noire_079.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Bridjet_(M%C3%A9ga-%C3%89volution_Nuit_Noire_079)"
+            },
+            {
+              "cardId": "me05-080",
+              "localId": "080",
+              "localNumberSort": 80,
+              "name": "Vitalité d'Ondine",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/9/99/Carte_M%C3%A9ga-%C3%89volution_Nuit_Noire_080.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/9/99/Carte_M%C3%A9ga-%C3%89volution_Nuit_Noire_080.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Vitalit%C3%A9_d'Ondine_(M%C3%A9ga-%C3%89volution_Nuit_Noire_080)"
+            },
+            {
+              "cardId": "me05-081",
+              "localId": "081",
+              "localNumberSort": 81,
+              "name": "Sbire du Clan Dérouillard",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/1/1a/Carte_M%C3%A9ga-%C3%89volution_Nuit_Noire_081.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/1/1a/Carte_M%C3%A9ga-%C3%89volution_Nuit_Noire_081.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Sbire_du_Clan_D%C3%A9rouillard_(M%C3%A9ga-%C3%89volution_Nuit_Noire_081)"
+            },
+            {
+              "cardId": "me05-082",
+              "localId": "082",
+              "localNumberSort": 82,
+              "name": "Bombe Géniale",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/1/12/Carte_M%C3%A9ga-%C3%89volution_Nuit_Noire_082.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/1/12/Carte_M%C3%A9ga-%C3%89volution_Nuit_Noire_082.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Bombe_G%C3%A9niale_(M%C3%A9ga-%C3%89volution_Nuit_Noire_082)"
+            },
+            {
+              "cardId": "me05-083",
+              "localId": "083",
+              "localNumberSort": 83,
+              "name": "Énergie Obscurité Sombre",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/d/d3/Carte_M%C3%A9ga-%C3%89volution_Nuit_Noire_083.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/d/d3/Carte_M%C3%A9ga-%C3%89volution_Nuit_Noire_083.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_Obscurit%C3%A9_Sombre_(M%C3%A9ga-%C3%89volution_Nuit_Noire_083)"
+            },
+            {
+              "cardId": "me05-084",
+              "localId": "084",
+              "localNumberSort": 84,
+              "name": "Énergie Électrique Voltaïque",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/e/ed/Carte_M%C3%A9ga-%C3%89volution_Nuit_Noire_084.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/e/ed/Carte_M%C3%A9ga-%C3%89volution_Nuit_Noire_084.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_%C3%89lectrique_Volta%C3%AFque_(M%C3%A9ga-%C3%89volution_Nuit_Noire_084)"
+            },
+            {
+              "cardId": "me05-085",
+              "localId": "085",
+              "localNumberSort": 85,
+              "name": "Mimantis",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/3/35/Carte_M%C3%A9ga-%C3%89volution_Nuit_Noire_085.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/3/35/Carte_M%C3%A9ga-%C3%89volution_Nuit_Noire_085.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Mimantis_(M%C3%A9ga-%C3%89volution_Nuit_Noire_085)"
+            },
+            {
+              "cardId": "me05-086",
+              "localId": "086",
+              "localNumberSort": 86,
+              "name": "Carmadura",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/6/6e/Carte_M%C3%A9ga-%C3%89volution_Nuit_Noire_086.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/6/6e/Carte_M%C3%A9ga-%C3%89volution_Nuit_Noire_086.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Carmadura_(M%C3%A9ga-%C3%89volution_Nuit_Noire_086)"
+            },
+            {
+              "cardId": "me05-087",
+              "localId": "087",
+              "localNumberSort": 87,
+              "name": "Poissirène",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/7/77/Carte_M%C3%A9ga-%C3%89volution_Nuit_Noire_087.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/7/77/Carte_M%C3%A9ga-%C3%89volution_Nuit_Noire_087.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Poissir%C3%A8ne_(M%C3%A9ga-%C3%89volution_Nuit_Noire_087)"
+            },
+            {
+              "cardId": "me05-088",
+              "localId": "088",
+              "localNumberSort": 88,
+              "name": "Oratoria",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/5/5e/Carte_M%C3%A9ga-%C3%89volution_Nuit_Noire_088.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/5/5e/Carte_M%C3%A9ga-%C3%89volution_Nuit_Noire_088.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Oratoria_(M%C3%A9ga-%C3%89volution_Nuit_Noire_088)"
+            },
+            {
+              "cardId": "me05-089",
+              "localId": "089",
+              "localNumberSort": 89,
+              "name": "Élecsprint",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/1/13/Carte_M%C3%A9ga-%C3%89volution_Nuit_Noire_089.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/1/13/Carte_M%C3%A9ga-%C3%89volution_Nuit_Noire_089.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89lecsprint_(M%C3%A9ga-%C3%89volution_Nuit_Noire_089)"
             }
           ]
         }

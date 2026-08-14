@@ -46,6 +46,7 @@ object TcgdexDatabaseInstaller {
      * the file size stays the same.
      *
      * ## VERSION HISTORY
+     * - Version 13: Added Pokepedia FR fallbacks for Pitch Black / Nuit Noire (me05) cards 075-089.
      * - Version 12: Hidden Fates Shiny Vault remapped from sma to sm115sv (HIF:SV parent sm115).
      * - Version 11: Added abbreviation_official and parent_set_id to sets (TCGdex sub-set concept, e.g. cel25cc -> cel25 "CEL:CC").
      * - Version 10: Added is_cameo to card_pokemon and persisted cameoDexIds links.
@@ -70,7 +71,7 @@ object TcgdexDatabaseInstaller {
      *
      * @see docs/POKEDEX_DATA_REMEDIATION.md for more details
      */
-    const val DATABASE_USER_VERSION = 12
+    const val DATABASE_USER_VERSION = 13
 
     private const val METADATA_SUFFIX = ".meta"
 

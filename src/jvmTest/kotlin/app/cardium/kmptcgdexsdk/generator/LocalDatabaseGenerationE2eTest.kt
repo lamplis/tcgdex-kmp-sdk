@@ -21,6 +21,12 @@ class LocalDatabaseGenerationE2eTest {
             TargetCardExpectation(id = "mep-037"),
             TargetCardExpectation(id = "mep-064"),
         )
+    private val me05FallbackTargetCards =
+        listOf(
+            TargetCardExpectation(id = "me05-075"),
+            TargetCardExpectation(id = "me05-083"),
+            TargetCardExpectation(id = "me05-089"),
+        )
     private val me03AssetTargetCards =
         listOf(
             TargetCardExpectation(id = "me03-001"),
@@ -73,7 +79,7 @@ class LocalDatabaseGenerationE2eTest {
 
             Class.forName("org.sqlite.JDBC")
             DriverManager.getConnection("jdbc:sqlite:${outputDb.absolutePath}").use { connection ->
-                mepFallbackTargetCards.forEach { target ->
+                (mepFallbackTargetCards + me05FallbackTargetCards).forEach { target ->
                     val row = queryGeneratedCard(connection, target.id, targetLanguage)
                     if (row == null) {
                         val availableLanguages = queryAvailableLanguagesForCard(connection, target.id)
