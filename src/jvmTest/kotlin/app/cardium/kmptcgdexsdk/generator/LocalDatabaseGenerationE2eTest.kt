@@ -353,6 +353,15 @@ class LocalDatabaseGenerationE2eTest {
                     "pokepedia" in vaultRecognitionSources,
                     "[x] Expected pokepedia recognition hash for sm115sv-SV1, got $vaultRecognitionSources.",
                 )
+
+                assertTrue(
+                    queryCameoRowCount(connection, englishLanguage) > 0,
+                    "[x] Expected is_cameo=1 rows for en.",
+                )
+                assertTrue(
+                    queryCameoRowCount(connection, targetLanguage) > 0,
+                    "[x] Expected is_cameo=1 rows for fr.",
+                )
             }
         } finally {
             tempDir.deleteRecursively()
@@ -456,6 +465,22 @@ class LocalDatabaseGenerationE2eTest {
                     abbreviationOfficial = resultSet.getString("abbreviation_official"),
                     parentSetId = resultSet.getString("parent_set_id"),
                 )
+            }
+        }
+    }
+
+    private fun queryCameoRowCount(connection: Connection, language: String): Int {
+        connection.prepareStatement(
+            """
+            SELECT COUNT(*) AS row_count
+            FROM card_pokemon
+            WHERE is_cameo = 1
+              AND language = ?
+            """.trimIndent(),
+        ).use { statement ->
+            statement.setString(1, language)
+            statement.executeQuery().use { resultSet ->
+                return if (resultSet.next()) resultSet.getInt("row_count") else 0
             }
         }
     }

@@ -127,6 +127,7 @@ fun main(args: Array<String>) = runBlocking {
     println("[Tcgdex] Force: ${config.force}")
     println("[Tcgdex] Set aliases config: ${setAliasesConfigFile.absolutePath}")
     println("[Tcgdex] Validated generated datasets for languages: ${datasetsByLanguage.keys.sorted()}")
+    assertCameoJsonMatchesSource(File(config.datasetDir), config.languages)
     if (!config.cardmarketExpansionsFile.isNullOrBlank()) {
         println("[Tcgdex] Cardmarket expansions source: ${config.cardmarketExpansionsFile}")
     }
@@ -741,6 +742,10 @@ fun main(args: Array<String>) = runBlocking {
         0,
     ).await()
     println("[Tcgdex] Rebuilt cards_fts index")
+
+    assertCameoRowsPersisted(config.languages) { language ->
+        countCameoRows(driver, language)
+    }
 
     // Set the logical database version for runtime installation guards.
     // This must stay in sync with TcgdexDatabaseInstaller.DATABASE_USER_VERSION.

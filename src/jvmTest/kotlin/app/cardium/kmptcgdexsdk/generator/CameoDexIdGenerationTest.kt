@@ -6,6 +6,7 @@ import java.sql.DriverManager
 import kotlin.io.path.createTempDirectory
 import kotlin.test.Test
 import kotlin.test.assertEquals
+import kotlin.test.assertNotNull
 import kotlin.test.assertTrue
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.json.JsonArray
@@ -33,10 +34,10 @@ class CameoDexIdGenerationTest {
         assertTrue(pokepediaTreeFile.isFile, "[x] Missing Pokepedia tree file: ${pokepediaTreeFile.absolutePath}")
 
         val cameoCard = findCardWithCameo(cardsFile)
-        if (cameoCard == null) {
-            println("[Tcgdex][i] No EN cards with cameoDexIds in ${cardsFile.absolutePath}; skipping cameo assertion")
-            return
-        }
+        assertNotNull(
+            cameoCard,
+            "[x] No EN cards with cameoDexIds in ${cardsFile.absolutePath}. Compiler likely dropped the field.",
+        )
 
         val tempDir = createTempDirectory("tcgdex-cameo-").toFile()
         val outputDb = tempDir.resolve("tcgdex.db")
