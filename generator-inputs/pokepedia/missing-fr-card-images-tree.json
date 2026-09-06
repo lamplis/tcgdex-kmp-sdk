@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-08-14T00:19:14Z",
+  "generatedAt": "2026-09-06T19:13:48.063Z",
   "databasePath": "/Users/admin/workspace/cardium/iosApp/iosApp/Resources/tcgdex.db",
   "language": "fr",
-  "totalCards": 3423,
-  "resolvedCards": 3304,
+  "totalCards": 3465,
+  "resolvedCards": 3346,
   "unresolvedCards": 119,
   "unresolvedReasons": {
     "POKEPEDIA_CARD_IMAGE_NOT_FOUND": 86,
@@ -948,6 +948,435 @@
               "pokepediaHdUrl": "https://www.pokepedia.fr/images/9/9a/Carte_Aquapolis_42.png",
               "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/9/9a/Carte_Aquapolis_42.png/490px-Carte_Aquapolis_42.png",
               "pokepediaCardUrl": "https://www.pokepedia.fr/Empiflor_(Aquapolis_42)"
+            }
+          ]
+        },
+        {
+          "setId": "ecard3",
+          "name": "Skyridge",
+          "releaseDate": "2003-05-12",
+          "cardCountTotal": 182,
+          "pokepediaSetUrl": "https://www.pokepedia.fr/Skyridge",
+          "cards": [
+            {
+              "cardId": "ecard3-H01",
+              "localId": "H01",
+              "localNumberSort": 1,
+              "name": "Alakazam",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/3/3d/Carte_Skyridge_H1.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/3/3d/Carte_Skyridge_H1.png/490px-Carte_Skyridge_H1.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Alakazam_(Skyridge_H1)"
+            },
+            {
+              "cardId": "ecard3-H02",
+              "localId": "H02",
+              "localNumberSort": 2,
+              "name": "Arcanine",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/5/58/Carte_Skyridge_H2.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/5/58/Carte_Skyridge_H2.png/490px-Carte_Skyridge_H2.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Arcanine_(Skyridge_H2)"
+            },
+            {
+              "cardId": "ecard3-H03",
+              "localId": "H03",
+              "localNumberSort": 3,
+              "name": "Articuno",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/a/a7/Carte_Skyridge_H3.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/a/a7/Carte_Skyridge_H3.png/490px-Carte_Skyridge_H3.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Articuno_(Skyridge_H3)"
+            },
+            {
+              "cardId": "ecard3-H04",
+              "localId": "H04",
+              "localNumberSort": 4,
+              "name": "Beedrill",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/9/98/Carte_Skyridge_H4.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/9/98/Carte_Skyridge_H4.png/490px-Carte_Skyridge_H4.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Beedrill_(Skyridge_H4)"
+            },
+            {
+              "cardId": "ecard3-H05",
+              "localId": "H05",
+              "localNumberSort": 5,
+              "name": "Crobat",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/1/10/Carte_Skyridge_H5.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/1/10/Carte_Skyridge_H5.png/490px-Carte_Skyridge_H5.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Crobat_(Skyridge_H5)"
+            },
+            {
+              "cardId": "ecard3-H06",
+              "localId": "H06",
+              "localNumberSort": 6,
+              "name": "Dewgong",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/2/2a/Carte_Skyridge_H6.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/2/2a/Carte_Skyridge_H6.png/490px-Carte_Skyridge_H6.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Dewgong_(Skyridge_H6)"
+            },
+            {
+              "cardId": "ecard3-H07",
+              "localId": "H07",
+              "localNumberSort": 7,
+              "name": "Flareon",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/c/c2/Carte_Skyridge_H7.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/c/c2/Carte_Skyridge_H7.png/490px-Carte_Skyridge_H7.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Flareon_(Skyridge_H7)"
+            },
+            {
+              "cardId": "ecard3-H08",
+              "localId": "H08",
+              "localNumberSort": 8,
+              "name": "Forretress",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/1/16/Carte_Skyridge_H8.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/1/16/Carte_Skyridge_H8.png/490px-Carte_Skyridge_H8.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Forretress_(Skyridge_H8)"
+            },
+            {
+              "cardId": "ecard3-H09",
+              "localId": "H09",
+              "localNumberSort": 9,
+              "name": "Gengar",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/9/93/Carte_Skyridge_H9.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/9/93/Carte_Skyridge_H9.png/490px-Carte_Skyridge_H9.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Gengar_(Skyridge_H9)"
+            },
+            {
+              "cardId": "ecard3-H10",
+              "localId": "H10",
+              "localNumberSort": 10,
+              "name": "Gyarados",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/7/74/Carte_Skyridge_H10.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/7/74/Carte_Skyridge_H10.png/490px-Carte_Skyridge_H10.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Gyarados_(Skyridge_H10)"
+            },
+            {
+              "cardId": "ecard3-H11",
+              "localId": "H11",
+              "localNumberSort": 11,
+              "name": "Houndoom",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/9/92/Carte_Skyridge_H11.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/9/92/Carte_Skyridge_H11.png/490px-Carte_Skyridge_H11.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Houndoom_(Skyridge_H11)"
+            },
+            {
+              "cardId": "ecard3-H12",
+              "localId": "H12",
+              "localNumberSort": 12,
+              "name": "Jolteon",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/a/a5/Carte_Skyridge_H12.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/a/a5/Carte_Skyridge_H12.png/490px-Carte_Skyridge_H12.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Jolteon_(Skyridge_H12)"
+            },
+            {
+              "cardId": "ecard3-H13",
+              "localId": "H13",
+              "localNumberSort": 13,
+              "name": "Kabutops",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/b/b2/Carte_Skyridge_H13.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/b/b2/Carte_Skyridge_H13.png/490px-Carte_Skyridge_H13.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Kabutops_(Skyridge_H13)"
+            },
+            {
+              "cardId": "ecard3-H14",
+              "localId": "H14",
+              "localNumberSort": 14,
+              "name": "Ledian",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/6/62/Carte_Skyridge_H14.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/6/62/Carte_Skyridge_H14.png/490px-Carte_Skyridge_H14.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Ledian_(Skyridge_H14)"
+            },
+            {
+              "cardId": "ecard3-H15",
+              "localId": "H15",
+              "localNumberSort": 15,
+              "name": "Machamp",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/b/b2/Carte_Skyridge_H15.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/b/b2/Carte_Skyridge_H15.png/490px-Carte_Skyridge_H15.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Machamp_(Skyridge_H15)"
+            },
+            {
+              "cardId": "ecard3-H16",
+              "localId": "H16",
+              "localNumberSort": 16,
+              "name": "Magcargo",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/f/fe/Carte_Skyridge_H16.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/f/fe/Carte_Skyridge_H16.png/490px-Carte_Skyridge_H16.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Magcargo_(Skyridge_H16)"
+            },
+            {
+              "cardId": "ecard3-H17",
+              "localId": "H17",
+              "localNumberSort": 17,
+              "name": "Magcargo",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/5/57/Carte_Skyridge_H17.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/5/57/Carte_Skyridge_H17.png/490px-Carte_Skyridge_H17.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Magcargo_(Skyridge_H17)"
+            },
+            {
+              "cardId": "ecard3-H18",
+              "localId": "H18",
+              "localNumberSort": 18,
+              "name": "Magneton",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/b/b0/Carte_Skyridge_H18.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/b/b0/Carte_Skyridge_H18.png/490px-Carte_Skyridge_H18.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Magneton_(Skyridge_H18)"
+            },
+            {
+              "cardId": "ecard3-H19",
+              "localId": "H19",
+              "localNumberSort": 19,
+              "name": "Magneton",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/2/24/Carte_Skyridge_H19.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/2/24/Carte_Skyridge_H19.png/490px-Carte_Skyridge_H19.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Magneton_(Skyridge_H19)"
+            },
+            {
+              "cardId": "ecard3-H20",
+              "localId": "H20",
+              "localNumberSort": 20,
+              "name": "Moltres",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/d/d1/Carte_Skyridge_H20.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/d/d1/Carte_Skyridge_H20.png/490px-Carte_Skyridge_H20.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Moltres_(Skyridge_H20)"
+            },
+            {
+              "cardId": "ecard3-H21",
+              "localId": "H21",
+              "localNumberSort": 21,
+              "name": "Nidoqueen",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/7/7c/Carte_Skyridge_H21.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/7/7c/Carte_Skyridge_H21.png/490px-Carte_Skyridge_H21.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Nidoqueen_(Skyridge_H21)"
+            },
+            {
+              "cardId": "ecard3-H22",
+              "localId": "H22",
+              "localNumberSort": 22,
+              "name": "Piloswine",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/2/2d/Carte_Skyridge_H22.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/2/2d/Carte_Skyridge_H22.png/490px-Carte_Skyridge_H22.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Piloswine_(Skyridge_H22)"
+            },
+            {
+              "cardId": "ecard3-H23",
+              "localId": "H23",
+              "localNumberSort": 23,
+              "name": "Politoed",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/d/d8/Carte_Skyridge_H23.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/d/d8/Carte_Skyridge_H23.png/490px-Carte_Skyridge_H23.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Politoed_(Skyridge_H23)"
+            },
+            {
+              "cardId": "ecard3-H24",
+              "localId": "H24",
+              "localNumberSort": 24,
+              "name": "Poliwrath",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/f/f5/Carte_Skyridge_H24.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/f/f5/Carte_Skyridge_H24.png/490px-Carte_Skyridge_H24.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Poliwrath_(Skyridge_H24)"
+            },
+            {
+              "cardId": "ecard3-H25",
+              "localId": "H25",
+              "localNumberSort": 25,
+              "name": "Raichu",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/4/44/Carte_Skyridge_H25.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/4/44/Carte_Skyridge_H25.png/490px-Carte_Skyridge_H25.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Raichu_(Skyridge_H25)"
+            },
+            {
+              "cardId": "ecard3-H26",
+              "localId": "H26",
+              "localNumberSort": 26,
+              "name": "Raikou",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/c/c5/Carte_Skyridge_H26.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/c/c5/Carte_Skyridge_H26.png/490px-Carte_Skyridge_H26.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Raikou_(Skyridge_H26)"
+            },
+            {
+              "cardId": "ecard3-H27",
+              "localId": "H27",
+              "localNumberSort": 27,
+              "name": "Rhydon",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/5/5d/Carte_Skyridge_H27.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/5/5d/Carte_Skyridge_H27.png/490px-Carte_Skyridge_H27.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Rhydon_(Skyridge_H27)"
+            },
+            {
+              "cardId": "ecard3-H28",
+              "localId": "H28",
+              "localNumberSort": 28,
+              "name": "Starmie",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/5/5d/Carte_Skyridge_H28.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/5/5d/Carte_Skyridge_H28.png/490px-Carte_Skyridge_H28.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Starmie_(Skyridge_H28)"
+            },
+            {
+              "cardId": "ecard3-H29",
+              "localId": "H29",
+              "localNumberSort": 29,
+              "name": "Steelix",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/5/54/Carte_Skyridge_H29.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/5/54/Carte_Skyridge_H29.png/490px-Carte_Skyridge_H29.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Steelix_(Skyridge_H29)"
+            },
+            {
+              "cardId": "ecard3-H30",
+              "localId": "H30",
+              "localNumberSort": 30,
+              "name": "Umbreon",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/0/00/Carte_Skyridge_H30.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/0/00/Carte_Skyridge_H30.png/490px-Carte_Skyridge_H30.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Umbreon_(Skyridge_H30)"
+            },
+            {
+              "cardId": "ecard3-H31",
+              "localId": "H31",
+              "localNumberSort": 31,
+              "name": "Vaporeon",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/5/55/Carte_Skyridge_H31.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/5/55/Carte_Skyridge_H31.png/490px-Carte_Skyridge_H31.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Vaporeon_(Skyridge_H31)"
+            },
+            {
+              "cardId": "ecard3-H32",
+              "localId": "H32",
+              "localNumberSort": 32,
+              "name": "Xatu",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/0/04/Carte_Skyridge_H32.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/0/04/Carte_Skyridge_H32.png/490px-Carte_Skyridge_H32.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Xatu_(Skyridge_H32)"
+            },
+            {
+              "cardId": "ecard3-H33",
+              "localId": "H33",
+              "localNumberSort": 33,
+              "name": "Vaporeon",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/4/45/Carte_Skyridge_33.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/4/45/Carte_Skyridge_33.png/490px-Carte_Skyridge_33.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Vaporeon_(Skyridge_33)"
+            },
+            {
+              "cardId": "ecard3-H34",
+              "localId": "H34",
+              "localNumberSort": 34,
+              "name": "Wigglytuff",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/e/e0/Carte_Skyridge_34.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/e/e0/Carte_Skyridge_34.png/490px-Carte_Skyridge_34.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Wigglytuff_(Skyridge_34)"
+            },
+            {
+              "cardId": "ecard3-H35",
+              "localId": "H35",
+              "localNumberSort": 35,
+              "name": "Xatu",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/4/46/Carte_Skyridge_35.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/4/46/Carte_Skyridge_35.png/490px-Carte_Skyridge_35.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Xatu_(Skyridge_35)"
+            },
+            {
+              "cardId": "ecard3-H36",
+              "localId": "H36",
+              "localNumberSort": 36,
+              "name": "Electrode",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/c/cf/Carte_Skyridge_36.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/c/cf/Carte_Skyridge_36.png/490px-Carte_Skyridge_36.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Electrode_(Skyridge_36)"
+            },
+            {
+              "cardId": "ecard3-H37",
+              "localId": "H37",
+              "localNumberSort": 37,
+              "name": "Kabuto",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/2/29/Carte_Skyridge_37.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/2/29/Carte_Skyridge_37.png/490px-Carte_Skyridge_37.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Kabuto_(Skyridge_37)"
+            },
+            {
+              "cardId": "ecard3-H38",
+              "localId": "H38",
+              "localNumberSort": 38,
+              "name": "Machoke",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/b/b0/Carte_Skyridge_38.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/b/b0/Carte_Skyridge_38.png/490px-Carte_Skyridge_38.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Machoke_(Skyridge_38)"
+            },
+            {
+              "cardId": "ecard3-H39",
+              "localId": "H39",
+              "localNumberSort": 39,
+              "name": "Misdreavus",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/0/06/Carte_Skyridge_39.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/0/06/Carte_Skyridge_39.png/490px-Carte_Skyridge_39.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Misdreavus_(Skyridge_39)"
+            },
+            {
+              "cardId": "ecard3-H40",
+              "localId": "H40",
+              "localNumberSort": 40,
+              "name": "Noctowl",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/5/57/Carte_Skyridge_40.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/5/57/Carte_Skyridge_40.png/490px-Carte_Skyridge_40.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Noctowl_(Skyridge_40)"
+            },
+            {
+              "cardId": "ecard3-H41",
+              "localId": "H41",
+              "localNumberSort": 41,
+              "name": "Omanyte",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/9/98/Carte_Skyridge_41.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/9/98/Carte_Skyridge_41.png/490px-Carte_Skyridge_41.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Omanyte_(Skyridge_41)"
+            },
+            {
+              "cardId": "ecard3-H42",
+              "localId": "H42",
+              "localNumberSort": 42,
+              "name": "Persian",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/3/3d/Carte_Skyridge_42.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/3/3d/Carte_Skyridge_42.png/490px-Carte_Skyridge_42.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Persian_(Skyridge_42)"
             }
           ]
         }

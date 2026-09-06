@@ -368,6 +368,126 @@ class LocalDatabaseGenerationE2eTest {
         }
     }
 
+    @Test
+    fun `Given local generator inputs, When generating database, Then Skyridge H04 uses Pokepedia crystal artwork not numbered 4`() {
+        val projectRoot = resolveProjectRoot()
+        val datasetDir = projectRoot.resolve("libs/cards-database/server/generated")
+        val cardmarketExportDir = projectRoot.resolve("libs/tcgdex-kmp-sdk/generator-inputs/cardmarket")
+        val pokepediaTreeFile = projectRoot.resolve(
+            "libs/tcgdex-kmp-sdk/generator-inputs/pokepedia/missing-fr-card-images-tree.json",
+        )
+        val recognitionVectorsFile = projectRoot.resolve(
+            "libs/tcgdex-kmp-sdk/generator-inputs/recognition/card-vectors-fr.json",
+        )
+
+        assertTrue(
+            datasetDir.isDirectory,
+            "[x] Missing dataset directory: ${datasetDir.absolutePath}. Run :libs:tcgdex-kmp-sdk:compileCardsDatabaseGenerated first.",
+        )
+        assertTrue(
+            cardmarketExportDir.isDirectory,
+            "[x] Missing Cardmarket export directory: ${cardmarketExportDir.absolutePath}.",
+        )
+        assertTrue(
+            pokepediaTreeFile.isFile,
+            "[x] Missing Pokepedia tree file: ${pokepediaTreeFile.absolutePath}.",
+        )
+        assertTrue(
+            recognitionVectorsFile.isFile,
+            "[x] Missing recognition vectors file: ${recognitionVectorsFile.absolutePath}.",
+        )
+
+        val tempDir = createTempDirectory("tcgdex-e2e-ecard3-h04-").toFile()
+        val outputDb = tempDir.resolve("tcgdex.db")
+        val crystalFileName = "Carte_Skyridge_H4.png"
+
+        try {
+            main(
+                arrayOf(
+                    "--dataset=${datasetDir.absolutePath}",
+                    "--languages=en,fr",
+                    "--output=${outputDb.absolutePath}",
+                    "--force=true",
+                    "--cardmarket-export=${cardmarketExportDir.absolutePath}",
+                    "--pokepedia-missing=${pokepediaTreeFile.absolutePath}",
+                    "--recognition-vectors=${recognitionVectorsFile.absolutePath}",
+                ),
+            )
+
+            assertTrue(outputDb.isFile, "[x] Database generation did not create ${outputDb.absolutePath}.")
+
+            Class.forName("org.sqlite.JDBC")
+            DriverManager.getConnection("jdbc:sqlite:${outputDb.absolutePath}").use { connection ->
+                listOf(targetLanguage, englishLanguage).forEach { language ->
+                    val row = queryCardFallbackRow(connection, "ecard3-H04", language)
+                    if (row == null) {
+                        val availableLanguages = queryAvailableLanguagesForCard(connection, "ecard3-H04")
+                        fail(
+                            buildDebugMessage(
+                                dbPath = outputDb,
+                                datasetDir = datasetDir,
+                                cardmarketExportDir = cardmarketExportDir,
+                                pokepediaTreeFile = pokepediaTreeFile,
+                                cardId = "ecard3-H04",
+                                language = language,
+                                row = null,
+                                availableLanguages = availableLanguages,
+                            ),
+                        )
+                    }
+
+                    assertNotNull(row)
+                    val debugMessage = buildDebugMessage(
+                        dbPath = outputDb,
+                        datasetDir = datasetDir,
+                        cardmarketExportDir = cardmarketExportDir,
+                        pokepediaTreeFile = pokepediaTreeFile,
+                        cardId = "ecard3-H04",
+                        language = language,
+                        row = row,
+                        availableLanguages = listOf(englishLanguage, targetLanguage),
+                    )
+
+                    assertTrue(
+                        row.imageUrl.isNullOrBlank(),
+                        "[x] Expected ecard3-H04/$language image_url to stay empty (no CDN asset).\n$debugMessage",
+                    )
+                    assertTrue(
+                        row.fallbackImageUrl?.contains(crystalFileName) == true,
+                        "[x] Expected ecard3-H04/$language Pokepedia fallback to contain $crystalFileName.\n$debugMessage",
+                    )
+                    assertEquals(
+                        "pokepedia",
+                        row.fallbackImageSource,
+                        "[x] Expected ecard3-H04/$language fallback_image_source to equal 'pokepedia'.\n$debugMessage",
+                    )
+                }
+
+                val numberedRow = queryCardFallbackRow(connection, "ecard3-4", targetLanguage)
+                assertNotNull(
+                    numberedRow,
+                    "[x] Expected a generated card row for ecard3-4/$targetLanguage.",
+                )
+                assertTrue(
+                    numberedRow.fallbackImageUrl?.contains(crystalFileName) != true,
+                    "[x] Expected ecard3-4 to keep Articuno artwork, not $crystalFileName. " +
+                        "got fallback='${numberedRow.fallbackImageUrl}'.",
+                )
+                assertTrue(
+                    numberedRow.imageUrl?.contains(crystalFileName) != true,
+                    "[x] Expected ecard3-4 image_url not to be $crystalFileName. " +
+                        "got imageUrl='${numberedRow.imageUrl}'.",
+                )
+                assertTrue(
+                    queryRecognitionRowsForCard(connection, "sm115sv-SV1", targetLanguage) > 0,
+                    "[x] Expected recognition hashes for sm115sv-SV1/$targetLanguage.",
+                )
+            }
+        } finally {
+            tempDir.deleteRecursively()
+        }
+    }
+
     private fun resolveProjectRoot(): File {
         var cursor: File? = File(System.getProperty("user.dir")).absoluteFile
         repeat(8) {
@@ -380,6 +500,47 @@ class LocalDatabaseGenerationE2eTest {
             cursor = candidate.parentFile
         }
         error("[x] Could not resolve project root from ${System.getProperty("user.dir")}.")
+    }
+
+    private fun queryCardFallbackRow(connection: Connection, cardId: String, language: String): GeneratedCardRow? {
+        connection.prepareStatement(
+            """
+            SELECT
+              id,
+              language,
+              name,
+              rarity_id,
+              image_url,
+              fallback_image_url,
+              fallback_image_source
+            FROM cards
+            WHERE id = ?
+              AND language = ?
+            """.trimIndent(),
+        ).use { statement ->
+            statement.setString(1, cardId)
+            statement.setString(2, language)
+            statement.executeQuery().use { resultSet ->
+                if (!resultSet.next()) {
+                    return null
+                }
+                return GeneratedCardRow(
+                    id = resultSet.getString("id"),
+                    language = resultSet.getString("language"),
+                    name = resultSet.getString("name"),
+                    rarityId = resultSet.getString("rarity_id"),
+                    imageUrl = resultSet.getString("image_url"),
+                    fallbackImageUrl = resultSet.getString("fallback_image_url"),
+                    fallbackImageSource = resultSet.getString("fallback_image_source"),
+                    priceTrend = null,
+                    priceAvg = null,
+                    priceLow = null,
+                    setLogoUrl = null,
+                    setSymbolUrl = null,
+                    detailedPriceRows = 0,
+                )
+            }
+        }
     }
 
     private fun queryGeneratedCard(connection: Connection, cardId: String, language: String): GeneratedCardRow? {
