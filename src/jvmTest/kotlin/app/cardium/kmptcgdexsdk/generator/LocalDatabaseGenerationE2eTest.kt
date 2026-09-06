@@ -638,6 +638,100 @@ class LocalDatabaseGenerationE2eTest {
         }
     }
 
+    @Test
+    fun `Given local generator inputs, When generating database, Then tk-ex-m uses Negapi artwork not Posipi Groret`() {
+        val projectRoot = resolveProjectRoot()
+        val datasetDir = projectRoot.resolve("libs/cards-database/server/generated")
+        val cardmarketExportDir = projectRoot.resolve("libs/tcgdex-kmp-sdk/generator-inputs/cardmarket")
+        val pokepediaTreeFile = projectRoot.resolve(
+            "libs/tcgdex-kmp-sdk/generator-inputs/pokepedia/missing-fr-card-images-tree.json",
+        )
+        val recognitionVectorsFile = projectRoot.resolve(
+            "libs/tcgdex-kmp-sdk/generator-inputs/recognition/card-vectors-fr.json",
+        )
+
+        assertTrue(datasetDir.isDirectory, "[x] Missing dataset directory: ${datasetDir.absolutePath}.")
+        assertTrue(pokepediaTreeFile.isFile, "[x] Missing Pokepedia tree file: ${pokepediaTreeFile.absolutePath}.")
+
+        val tempDir = createTempDirectory("tcgdex-e2e-tk-ex-m-").toFile()
+        val outputDb = tempDir.resolve("tcgdex.db")
+
+        try {
+            main(
+                arrayOf(
+                    "--dataset=${datasetDir.absolutePath}",
+                    "--languages=en,fr",
+                    "--output=${outputDb.absolutePath}",
+                    "--force=true",
+                    "--cardmarket-export=${cardmarketExportDir.absolutePath}",
+                    "--pokepedia-missing=${pokepediaTreeFile.absolutePath}",
+                    "--recognition-vectors=${recognitionVectorsFile.absolutePath}",
+                ),
+            )
+
+            assertTrue(outputDb.isFile, "[x] Database generation did not create ${outputDb.absolutePath}.")
+
+            Class.forName("org.sqlite.JDBC")
+            DriverManager.getConnection("jdbc:sqlite:${outputDb.absolutePath}").use { connection ->
+                listOf(targetLanguage, englishLanguage).forEach { language ->
+                    val charmRow = queryCardFallbackRow(connection, "tk-ex-m-2", language)
+                    assertNotNull(charmRow, "[x] Expected a generated card row for tk-ex-m-2/$language.")
+                    assertTrue(
+                        charmRow.imageUrl.isNullOrBlank(),
+                        "[x] Expected tk-ex-m-2/$language image_url to stay empty. got '${charmRow.imageUrl}'.",
+                    )
+                    assertEquals("pokepedia", charmRow.fallbackImageSource)
+                    assertTrue(
+                        containsNegapiToken(charmRow.fallbackImageUrl, "2"),
+                        "[x] Expected tk-ex-m-2/$language fallback to contain Négapi_2. " +
+                            "got '${charmRow.fallbackImageUrl}'.",
+                    )
+                    assertTrue(
+                        charmRow.fallbackImageUrl?.contains("Posipi") != true,
+                        "[x] Expected tk-ex-m-2/$language not to use Posipi art. " +
+                            "got '${charmRow.fallbackImageUrl}'.",
+                    )
+
+                    val reptincelRow = queryCardFallbackRow(connection, "tk-ex-m-3", language)
+                    assertNotNull(reptincelRow, "[x] Expected a generated card row for tk-ex-m-3/$language.")
+                    assertTrue(
+                        reptincelRow.imageUrl.isNullOrBlank(),
+                        "[x] Expected tk-ex-m-3/$language image_url to stay empty. got '${reptincelRow.imageUrl}'.",
+                    )
+                    assertEquals("pokepedia", reptincelRow.fallbackImageSource)
+                    assertTrue(
+                        containsNegapiToken(reptincelRow.fallbackImageUrl, "3"),
+                        "[x] Expected tk-ex-m-3/$language fallback to contain Négapi_3. " +
+                            "got '${reptincelRow.fallbackImageUrl}'.",
+                    )
+                    assertTrue(
+                        reptincelRow.fallbackImageUrl?.contains("Posipi") != true,
+                        "[x] Expected tk-ex-m-3/$language not to use Posipi/Groret art. " +
+                            "got '${reptincelRow.fallbackImageUrl}'.",
+                    )
+
+                    assertPokepediaInternationalFallback(
+                        connection = connection,
+                        dbPath = outputDb,
+                        datasetDir = datasetDir,
+                        cardmarketExportDir = cardmarketExportDir,
+                        pokepediaTreeFile = pokepediaTreeFile,
+                        cardId = "tk-ex-p-3",
+                        language = language,
+                        filename = "Posipi_3.png",
+                    )
+                }
+            }
+        } finally {
+            tempDir.deleteRecursively()
+        }
+    }
+
+    private fun containsNegapiToken(url: String?, localId: String): Boolean {
+        val value = url.orEmpty()
+        return value.contains("Négapi_$localId") || value.contains("N%C3%A9gapi_$localId")
+    }
+
     private fun assertPokepediaInternationalFallback(
         connection: Connection,
         dbPath: File,
