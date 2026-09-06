@@ -488,6 +488,135 @@ class LocalDatabaseGenerationE2eTest {
         }
     }
 
+    @Test
+    fun `Given local generator inputs, When generating database, Then international McDonalds 2018 and 2019 use Pokepedia International artwork`() {
+        val projectRoot = resolveProjectRoot()
+        val datasetDir = projectRoot.resolve("libs/cards-database/server/generated")
+        val cardmarketExportDir = projectRoot.resolve("libs/tcgdex-kmp-sdk/generator-inputs/cardmarket")
+        val pokepediaTreeFile = projectRoot.resolve(
+            "libs/tcgdex-kmp-sdk/generator-inputs/pokepedia/missing-fr-card-images-tree.json",
+        )
+        val recognitionVectorsFile = projectRoot.resolve(
+            "libs/tcgdex-kmp-sdk/generator-inputs/recognition/card-vectors-fr.json",
+        )
+
+        assertTrue(datasetDir.isDirectory, "[x] Missing dataset directory: ${datasetDir.absolutePath}.")
+        assertTrue(pokepediaTreeFile.isFile, "[x] Missing Pokepedia tree file: ${pokepediaTreeFile.absolutePath}.")
+
+        val tempDir = createTempDirectory("tcgdex-e2e-mcdonalds-international-").toFile()
+        val outputDb = tempDir.resolve("tcgdex.db")
+        val international2019 = "Carte_Collection_McDonald's_2019_(International)_1.png"
+        val international2018 = "Carte_Collection_McDonald's_2018_(International)_11.png"
+        val france2019 = "Carte_Collection_McDonald's_2019_(France)_1.png"
+
+        try {
+            main(
+                arrayOf(
+                    "--dataset=${datasetDir.absolutePath}",
+                    "--languages=en,fr",
+                    "--output=${outputDb.absolutePath}",
+                    "--force=true",
+                    "--cardmarket-export=${cardmarketExportDir.absolutePath}",
+                    "--pokepedia-missing=${pokepediaTreeFile.absolutePath}",
+                    "--recognition-vectors=${recognitionVectorsFile.absolutePath}",
+                ),
+            )
+
+            assertTrue(outputDb.isFile, "[x] Database generation did not create ${outputDb.absolutePath}.")
+
+            Class.forName("org.sqlite.JDBC")
+            DriverManager.getConnection("jdbc:sqlite:${outputDb.absolutePath}").use { connection ->
+                listOf(targetLanguage, englishLanguage).forEach { language ->
+                    assertPokepediaInternationalFallback(
+                        connection = connection,
+                        dbPath = outputDb,
+                        datasetDir = datasetDir,
+                        cardmarketExportDir = cardmarketExportDir,
+                        pokepediaTreeFile = pokepediaTreeFile,
+                        cardId = "2019sm-1",
+                        language = language,
+                        filename = international2019,
+                    )
+                    assertPokepediaInternationalFallback(
+                        connection = connection,
+                        dbPath = outputDb,
+                        datasetDir = datasetDir,
+                        cardmarketExportDir = cardmarketExportDir,
+                        pokepediaTreeFile = pokepediaTreeFile,
+                        cardId = "2018sm-11",
+                        language = language,
+                        filename = international2018,
+                    )
+                }
+
+                val franceRow = queryCardFallbackRow(connection, "2019sm-fr-1", targetLanguage)
+                assertNotNull(franceRow, "[x] Expected a generated card row for 2019sm-fr-1/$targetLanguage.")
+                val franceFallback = franceRow.fallbackImageUrl
+                assertTrue(
+                    franceFallback?.contains(france2019) == true,
+                    "[x] Expected 2019sm-fr-1 fallback to contain $france2019. got '$franceFallback'.",
+                )
+                assertTrue(
+                    franceFallback?.contains("(International)") != true,
+                    "[x] Expected 2019sm-fr-1 not to use International artwork. got '$franceFallback'.",
+                )
+            }
+        } finally {
+            tempDir.deleteRecursively()
+        }
+    }
+
+    private fun assertPokepediaInternationalFallback(
+        connection: Connection,
+        dbPath: File,
+        datasetDir: File,
+        cardmarketExportDir: File,
+        pokepediaTreeFile: File,
+        cardId: String,
+        language: String,
+        filename: String,
+    ) {
+        val row = queryCardFallbackRow(connection, cardId, language)
+        if (row == null) {
+            fail(
+                buildDebugMessage(
+                    dbPath = dbPath,
+                    datasetDir = datasetDir,
+                    cardmarketExportDir = cardmarketExportDir,
+                    pokepediaTreeFile = pokepediaTreeFile,
+                    cardId = cardId,
+                    language = language,
+                    row = null,
+                    availableLanguages = queryAvailableLanguagesForCard(connection, cardId),
+                ),
+            )
+        }
+        assertNotNull(row)
+        val debugMessage = buildDebugMessage(
+            dbPath = dbPath,
+            datasetDir = datasetDir,
+            cardmarketExportDir = cardmarketExportDir,
+            pokepediaTreeFile = pokepediaTreeFile,
+            cardId = cardId,
+            language = language,
+            row = row,
+            availableLanguages = listOf(englishLanguage, targetLanguage),
+        )
+        assertTrue(
+            row.imageUrl.isNullOrBlank(),
+            "[x] Expected $cardId/$language image_url to stay empty (no CDN asset).\n$debugMessage",
+        )
+        assertTrue(
+            row.fallbackImageUrl?.contains(filename) == true,
+            "[x] Expected $cardId/$language Pokepedia fallback to contain $filename.\n$debugMessage",
+        )
+        assertEquals(
+            "pokepedia",
+            row.fallbackImageSource,
+            "[x] Expected $cardId/$language fallback_image_source to equal 'pokepedia'.\n$debugMessage",
+        )
+    }
+
     private fun resolveProjectRoot(): File {
         var cursor: File? = File(System.getProperty("user.dir")).absoluteFile
         repeat(8) {

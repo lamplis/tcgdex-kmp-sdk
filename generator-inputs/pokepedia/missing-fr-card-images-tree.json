@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-06T19:13:48.063Z",
+  "generatedAt": "2026-09-06T20:59:31.261Z",
   "databasePath": "/Users/admin/workspace/cardium/iosApp/iosApp/Resources/tcgdex.db",
   "language": "fr",
-  "totalCards": 3465,
-  "resolvedCards": 3346,
+  "totalCards": 3489,
+  "resolvedCards": 3370,
   "unresolvedCards": 119,
   "unresolvedReasons": {
     "POKEPEDIA_CARD_IMAGE_NOT_FOUND": 86,
@@ -21607,6 +21607,264 @@
               "pokepediaHdUrl": "https://www.pokepedia.fr/images/1/14/Carte_Collection_McDonald's_2018_(France)_40.png",
               "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/1/14/Carte_Collection_McDonald%27s_2018_%28France%29_40.png/490px-Carte_Collection_McDonald%27s_2018_%28France%29_40.png",
               "pokepediaCardUrl": "https://www.pokepedia.fr/Nounourson_(Collection_McDonald%27s_2018_(France)_40)"
+            }
+          ]
+        },
+        {
+          "setId": "2018sm",
+          "name": "McDonald's Collection 2018",
+          "releaseDate": "2018-10-19",
+          "cardCountTotal": 12,
+          "pokepediaSetUrl": "https://www.pokepedia.fr/Collection_McDonald%27s_2018_(International)",
+          "cards": [
+            {
+              "cardId": "2018sm-1",
+              "localId": "1",
+              "localNumberSort": 1,
+              "name": "Growlithe",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/c/c8/Carte_Collection_McDonald's_2018_(International)_1.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/c/c8/Carte_Collection_McDonald%27s_2018_%28International%29_1.png/490px-Carte_Collection_McDonald%27s_2018_%28International%29_1.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Caninos_(Collection_McDonald's_2018_(International)_1)"
+            },
+            {
+              "cardId": "2018sm-2",
+              "localId": "2",
+              "localNumberSort": 2,
+              "name": "Psyduck",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/0/0c/Carte_Collection_McDonald's_2018_(International)_2.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/0/0c/Carte_Collection_McDonald%27s_2018_%28International%29_2.png/490px-Carte_Collection_McDonald%27s_2018_%28International%29_2.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Psykokwak_(Collection_McDonald's_2018_(International)_2)"
+            },
+            {
+              "cardId": "2018sm-3",
+              "localId": "3",
+              "localNumberSort": 3,
+              "name": "Horsea",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/e/ec/Carte_Collection_McDonald's_2018_(International)_3.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/e/ec/Carte_Collection_McDonald%27s_2018_%28International%29_3.png/490px-Carte_Collection_McDonald%27s_2018_%28International%29_3.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Hypotrempe_(Collection_McDonald's_2018_(International)_3)"
+            },
+            {
+              "cardId": "2018sm-4",
+              "localId": "4",
+              "localNumberSort": 4,
+              "name": "Pikachu",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/e/e9/Carte_Collection_McDonald's_2018_(International)_4.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/e/e9/Carte_Collection_McDonald%27s_2018_%28International%29_4.png/490px-Carte_Collection_McDonald%27s_2018_%28International%29_4.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Pikachu_(Collection_McDonald's_2018_(International)_4)"
+            },
+            {
+              "cardId": "2018sm-5",
+              "localId": "5",
+              "localNumberSort": 5,
+              "name": "Slowpoke",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/6/68/Carte_Collection_McDonald's_2018_(International)_5.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/6/68/Carte_Collection_McDonald%27s_2018_%28International%29_5.png/490px-Carte_Collection_McDonald%27s_2018_%28International%29_5.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Ramoloss_(Collection_McDonald's_2018_(International)_5)"
+            },
+            {
+              "cardId": "2018sm-6",
+              "localId": "6",
+              "localNumberSort": 6,
+              "name": "Machop",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/4/4a/Carte_Collection_McDonald's_2018_(International)_6.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/4/4a/Carte_Collection_McDonald%27s_2018_%28International%29_6.png/490px-Carte_Collection_McDonald%27s_2018_%28International%29_6.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Machoc_(Collection_McDonald's_2018_(International)_6)"
+            },
+            {
+              "cardId": "2018sm-7",
+              "localId": "7",
+              "localNumberSort": 7,
+              "name": "Cubone",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/0/02/Carte_Collection_McDonald's_2018_(International)_7.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/0/02/Carte_Collection_McDonald%27s_2018_%28International%29_7.png/490px-Carte_Collection_McDonald%27s_2018_%28International%29_7.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Osselait_(Collection_McDonald's_2018_(International)_7)"
+            },
+            {
+              "cardId": "2018sm-8",
+              "localId": "8",
+              "localNumberSort": 8,
+              "name": "Magnemite",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/4/4f/Carte_Collection_McDonald's_2018_(International)_8.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/4/4f/Carte_Collection_McDonald%27s_2018_%28International%29_8.png/490px-Carte_Collection_McDonald%27s_2018_%28International%29_8.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Magn%C3%A9ti_(Collection_McDonald's_2018_(International)_8)"
+            },
+            {
+              "cardId": "2018sm-9",
+              "localId": "9",
+              "localNumberSort": 9,
+              "name": "Dratini",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/b/b9/Carte_Collection_McDonald%27s_2018_%28International%29_9.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/b/b9/Carte_Collection_McDonald%27s_2018_%28International%29_9.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Minidraco_(Collection_McDonald's_2018_(International)_9)"
+            },
+            {
+              "cardId": "2018sm-10",
+              "localId": "10",
+              "localNumberSort": 10,
+              "name": "Chansey",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/8/8f/Carte_Collection_McDonald's_2018_(International)_10.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/8/8f/Carte_Collection_McDonald%27s_2018_%28International%29_10.png/490px-Carte_Collection_McDonald%27s_2018_%28International%29_10.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Leveinard_(Collection_McDonald's_2018_(International)_10)"
+            },
+            {
+              "cardId": "2018sm-11",
+              "localId": "11",
+              "localNumberSort": 11,
+              "name": "Eevee",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/b/b0/Carte_Collection_McDonald's_2018_(International)_11.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/b/b0/Carte_Collection_McDonald%27s_2018_%28International%29_11.png/490px-Carte_Collection_McDonald%27s_2018_%28International%29_11.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89voli_(Collection_McDonald's_2018_(International)_11)"
+            },
+            {
+              "cardId": "2018sm-12",
+              "localId": "12",
+              "localNumberSort": 12,
+              "name": "Porygon",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/6/6c/Carte_Collection_McDonald's_2018_(International)_12.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/6/6c/Carte_Collection_McDonald%27s_2018_%28International%29_12.png/490px-Carte_Collection_McDonald%27s_2018_%28International%29_12.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Porygon_(Collection_McDonald's_2018_(International)_12)"
+            }
+          ]
+        },
+        {
+          "setId": "2019sm",
+          "name": "McDonald's Collection 2019",
+          "releaseDate": "2019-10-15",
+          "cardCountTotal": 12,
+          "pokepediaSetUrl": "https://www.pokepedia.fr/Collection_McDonald%27s_2019_(International)",
+          "cards": [
+            {
+              "cardId": "2019sm-1",
+              "localId": "1",
+              "localNumberSort": 1,
+              "name": "Caterpie",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/9/9d/Carte_Collection_McDonald's_2019_(International)_1.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/9/9d/Carte_Collection_McDonald%27s_2019_%28International%29_1.png/490px-Carte_Collection_McDonald%27s_2019_%28International%29_1.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Chenipan_(Collection_McDonald's_2019_(International)_1)"
+            },
+            {
+              "cardId": "2019sm-2",
+              "localId": "2",
+              "localNumberSort": 2,
+              "name": "Alolan Exeggutor",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/a/a9/Carte_Collection_McDonald's_2019_(International)_2.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/a/a9/Carte_Collection_McDonald%27s_2019_%28International%29_2.png/490px-Carte_Collection_McDonald%27s_2019_%28International%29_2.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Noadkoko_d'Alola_(Collection_McDonald's_2019_(International)_2)"
+            },
+            {
+              "cardId": "2019sm-3",
+              "localId": "3",
+              "localNumberSort": 3,
+              "name": "Magmar",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/2/2d/Carte_Collection_McDonald's_2019_(International)_3.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/2/2d/Carte_Collection_McDonald%27s_2019_%28International%29_3.png/490px-Carte_Collection_McDonald%27s_2019_%28International%29_3.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Magmar_(Collection_McDonald's_2019_(International)_3)"
+            },
+            {
+              "cardId": "2019sm-4",
+              "localId": "4",
+              "localNumberSort": 4,
+              "name": "Alolan Sandshrew",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/6/6a/Carte_Collection_McDonald's_2019_(International)_4.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/6/6a/Carte_Collection_McDonald%27s_2019_%28International%29_4.png/490px-Carte_Collection_McDonald%27s_2019_%28International%29_4.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Sabelette_d'Alola_(Collection_McDonald's_2019_(International)_4)"
+            },
+            {
+              "cardId": "2019sm-5",
+              "localId": "5",
+              "localNumberSort": 5,
+              "name": "Lapras",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/8/82/Carte_Collection_McDonald's_2019_(International)_5.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/8/82/Carte_Collection_McDonald%27s_2019_%28International%29_5.png/490px-Carte_Collection_McDonald%27s_2019_%28International%29_5.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Lokhlass_(Collection_McDonald's_2019_(International)_5)"
+            },
+            {
+              "cardId": "2019sm-6",
+              "localId": "6",
+              "localNumberSort": 6,
+              "name": "Pikachu",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/4/42/Carte_Collection_McDonald%27s_2019_%28International%29_6.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/4/42/Carte_Collection_McDonald%27s_2019_%28International%29_6.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Pikachu_(Collection_McDonald's_2019_(International)_6)"
+            },
+            {
+              "cardId": "2019sm-7",
+              "localId": "7",
+              "localNumberSort": 7,
+              "name": "Gastly",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/8/8f/Carte_Collection_McDonald's_2019_(International)_7.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/8/8f/Carte_Collection_McDonald%27s_2019_%28International%29_7.png/490px-Carte_Collection_McDonald%27s_2019_%28International%29_7.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Fantominus_(Collection_McDonald's_2019_(International)_7)"
+            },
+            {
+              "cardId": "2019sm-8",
+              "localId": "8",
+              "localNumberSort": 8,
+              "name": "Mankey",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/1/1f/Carte_Collection_McDonald's_2019_(International)_8.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/1/1f/Carte_Collection_McDonald%27s_2019_%28International%29_8.png/490px-Carte_Collection_McDonald%27s_2019_%28International%29_8.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/F%C3%A9rosinge_(Collection_McDonald's_2019_(International)_8)"
+            },
+            {
+              "cardId": "2019sm-9",
+              "localId": "9",
+              "localNumberSort": 9,
+              "name": "Onix",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/5/51/Carte_Collection_McDonald's_2019_(International)_9.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/5/51/Carte_Collection_McDonald%27s_2019_%28International%29_9.png/490px-Carte_Collection_McDonald%27s_2019_%28International%29_9.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Onix_(Collection_McDonald's_2019_(International)_9)"
+            },
+            {
+              "cardId": "2019sm-10",
+              "localId": "10",
+              "localNumberSort": 10,
+              "name": "Alolan Meowth",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/a/a5/Carte_Collection_McDonald's_2019_(International)_10.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/a/a5/Carte_Collection_McDonald%27s_2019_%28International%29_10.png/490px-Carte_Collection_McDonald%27s_2019_%28International%29_10.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Miaouss_d'Alola_(Collection_McDonald's_2019_(International)_10)"
+            },
+            {
+              "cardId": "2019sm-11",
+              "localId": "11",
+              "localNumberSort": 11,
+              "name": "Alolan Dugtrio",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/7/74/Carte_Collection_McDonald's_2019_(International)_11.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/7/74/Carte_Collection_McDonald%27s_2019_%28International%29_11.png/490px-Carte_Collection_McDonald%27s_2019_%28International%29_11.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Triopikeur_d'Alola_(Collection_McDonald's_2019_(International)_11)"
+            },
+            {
+              "cardId": "2019sm-12",
+              "localId": "12",
+              "localNumberSort": 12,
+              "name": "Eevee",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/9/9b/Carte_Collection_McDonald's_2019_(International)_12.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/9/9b/Carte_Collection_McDonald%27s_2019_%28International%29_12.png/490px-Carte_Collection_McDonald%27s_2019_%28International%29_12.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89voli_(Collection_McDonald's_2019_(International)_12)"
             }
           ]
         },
