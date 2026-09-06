@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-06T22:18:19.236Z",
+  "generatedAt": "2026-09-06T22:40:30.195Z",
   "databasePath": "/Users/admin/workspace/cardium/iosApp/iosApp/Resources/tcgdex.db",
   "language": "fr",
-  "totalCards": 3489,
-  "resolvedCards": 3370,
+  "totalCards": 3498,
+  "resolvedCards": 3379,
   "unresolvedCards": 119,
   "unresolvedReasons": {
     "POKEPEDIA_CARD_IMAGE_NOT_FOUND": 86,
@@ -522,6 +522,105 @@
       "name": "e-cards",
       "position": 3,
       "sets": [
+        {
+          "setId": "bog",
+          "name": "Best of game",
+          "releaseDate": "2002-12-01",
+          "cardCountTotal": 9,
+          "pokepediaSetUrl": "https://www.pokepedia.fr/Best_of_Game",
+          "cards": [
+            {
+              "cardId": "bog-1",
+              "localId": "1",
+              "localNumberSort": 1,
+              "name": "Electabuzz",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/9/9d/Carte_Best_of_Game_1.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/9/9d/Carte_Best_of_Game_1.png/490px-Carte_Best_of_Game_1.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Electabuzz_(Best_of_Game_1)"
+            },
+            {
+              "cardId": "bog-2",
+              "localId": "2",
+              "localNumberSort": 2,
+              "name": "Hitmonchan",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/c/c8/Carte_Best_of_Game_2.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/c/c8/Carte_Best_of_Game_2.png/490px-Carte_Best_of_Game_2.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Hitmonchan_(Best_of_Game_2)"
+            },
+            {
+              "cardId": "bog-3",
+              "localId": "3",
+              "localNumberSort": 3,
+              "name": "Professor Elm",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/e/ec/Carte_Best_of_Game_3.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/e/ec/Carte_Best_of_Game_3.png/490px-Carte_Best_of_Game_3.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Professor_Elm_(Best_of_Game_3)"
+            },
+            {
+              "cardId": "bog-4",
+              "localId": "4",
+              "localNumberSort": 4,
+              "name": "Rocket’s Scizor",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/7/70/Carte_Best_of_Game_4.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/7/70/Carte_Best_of_Game_4.png/490px-Carte_Best_of_Game_4.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Rocket%27s_Scizor_(Best_of_Game_4)"
+            },
+            {
+              "cardId": "bog-5",
+              "localId": "5",
+              "localNumberSort": 5,
+              "name": "Rocket’s Sneasel",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/0/0f/Carte_Best_of_Game_5.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/0/0f/Carte_Best_of_Game_5.png/490px-Carte_Best_of_Game_5.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Rocket%27s_Sneasel_(Best_of_Game_5)"
+            },
+            {
+              "cardId": "bog-6",
+              "localId": "6",
+              "localNumberSort": 6,
+              "name": "Dark Ivysaur",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/f/f9/Carte_Best_of_Game_6.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/f/f9/Carte_Best_of_Game_6.png/490px-Carte_Best_of_Game_6.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Dark_Ivysaur_(Best_of_Game_6)"
+            },
+            {
+              "cardId": "bog-7",
+              "localId": "7",
+              "localNumberSort": 7,
+              "name": "Dark Venusaur",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/d/d8/Carte_Best_of_Game_7.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/d/d8/Carte_Best_of_Game_7.png/490px-Carte_Best_of_Game_7.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Dark_Venusaur_(Best_of_Game_7)"
+            },
+            {
+              "cardId": "bog-8",
+              "localId": "8",
+              "localNumberSort": 8,
+              "name": "Rocket’s Mewtwo",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/4/41/Carte_Best_of_Game_8.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/4/41/Carte_Best_of_Game_8.png/490px-Carte_Best_of_Game_8.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Rocket%27s_Mewtwo_(Best_of_Game_8)"
+            },
+            {
+              "cardId": "bog-9",
+              "localId": "9",
+              "localNumberSort": 9,
+              "name": "Rocket’s Hitmonchan",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/6/6a/Carte_Best_of_Game_9.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/6/6a/Carte_Best_of_Game_9.png/490px-Carte_Best_of_Game_9.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Rocket%27s_Hitmonchan_(Best_of_Game_9)"
+            }
+          ]
+        },
         {
           "setId": "ecard2",
           "name": "Aquapolis",
