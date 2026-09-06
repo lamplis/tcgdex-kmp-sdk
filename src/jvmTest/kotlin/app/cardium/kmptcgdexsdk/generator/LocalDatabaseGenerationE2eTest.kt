@@ -566,6 +566,78 @@ class LocalDatabaseGenerationE2eTest {
         }
     }
 
+    @Test
+    fun `Given local generator inputs, When generating database, Then smp-SM226 uses Pokepedia Charizard promo not collection chest`() {
+        val projectRoot = resolveProjectRoot()
+        val datasetDir = projectRoot.resolve("libs/cards-database/server/generated")
+        val cardmarketExportDir = projectRoot.resolve("libs/tcgdex-kmp-sdk/generator-inputs/cardmarket")
+        val pokepediaTreeFile = projectRoot.resolve(
+            "libs/tcgdex-kmp-sdk/generator-inputs/pokepedia/missing-fr-card-images-tree.json",
+        )
+        val recognitionVectorsFile = projectRoot.resolve(
+            "libs/tcgdex-kmp-sdk/generator-inputs/recognition/card-vectors-fr.json",
+        )
+
+        assertTrue(datasetDir.isDirectory, "[x] Missing dataset directory: ${datasetDir.absolutePath}.")
+        assertTrue(pokepediaTreeFile.isFile, "[x] Missing Pokepedia tree file: ${pokepediaTreeFile.absolutePath}.")
+
+        val tempDir = createTempDirectory("tcgdex-e2e-smp-sm226-").toFile()
+        val outputDb = tempDir.resolve("tcgdex.db")
+        val sm226FileName = "Carte_Promo_SM_SM226.png"
+        val sm225FileName = "Carte_Promo_SM_SM225.png"
+
+        try {
+            main(
+                arrayOf(
+                    "--dataset=${datasetDir.absolutePath}",
+                    "--languages=en,fr",
+                    "--output=${outputDb.absolutePath}",
+                    "--force=true",
+                    "--cardmarket-export=${cardmarketExportDir.absolutePath}",
+                    "--pokepedia-missing=${pokepediaTreeFile.absolutePath}",
+                    "--recognition-vectors=${recognitionVectorsFile.absolutePath}",
+                ),
+            )
+
+            assertTrue(outputDb.isFile, "[x] Database generation did not create ${outputDb.absolutePath}.")
+
+            Class.forName("org.sqlite.JDBC")
+            DriverManager.getConnection("jdbc:sqlite:${outputDb.absolutePath}").use { connection ->
+                listOf(targetLanguage, englishLanguage).forEach { language ->
+                    assertPokepediaInternationalFallback(
+                        connection = connection,
+                        dbPath = outputDb,
+                        datasetDir = datasetDir,
+                        cardmarketExportDir = cardmarketExportDir,
+                        pokepediaTreeFile = pokepediaTreeFile,
+                        cardId = "smp-SM226",
+                        language = language,
+                        filename = sm226FileName,
+                    )
+                    val sm226Row = queryCardFallbackRow(connection, "smp-SM226", language)
+                    assertNotNull(sm226Row)
+                    assertTrue(
+                        sm226Row.fallbackImageUrl?.contains("Coffre") != true,
+                        "[x] Expected smp-SM226/$language fallback not to contain Coffre. " +
+                            "got '${sm226Row.fallbackImageUrl}'.",
+                    )
+                    assertPokepediaInternationalFallback(
+                        connection = connection,
+                        dbPath = outputDb,
+                        datasetDir = datasetDir,
+                        cardmarketExportDir = cardmarketExportDir,
+                        pokepediaTreeFile = pokepediaTreeFile,
+                        cardId = "smp-SM225",
+                        language = language,
+                        filename = sm225FileName,
+                    )
+                }
+            }
+        } finally {
+            tempDir.deleteRecursively()
+        }
+    }
+
     private fun assertPokepediaInternationalFallback(
         connection: Connection,
         dbPath: File,
