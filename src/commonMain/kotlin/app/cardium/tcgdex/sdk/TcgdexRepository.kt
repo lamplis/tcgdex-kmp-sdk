@@ -7,6 +7,7 @@ import app.cardium.tcgdex.sdk.model.CardSet
 import app.cardium.tcgdex.sdk.model.Illustrator
 import app.cardium.tcgdex.sdk.model.IllustratorCardIdEntry
 import app.cardium.tcgdex.sdk.model.IllustratorWithCount
+import app.cardium.tcgdex.sdk.model.PokemonCatalogCardId
 import app.cardium.tcgdex.sdk.model.PokemonDexEntry
 import app.cardium.tcgdex.sdk.model.PokemonSetCardCount
 import app.cardium.tcgdex.sdk.model.Rarity
@@ -392,6 +393,14 @@ interface TcgdexRepository {
      * @return Map from dex ID to set of card IDs
      */
     suspend fun getAllCardIdsByPokemon(language: String): Map<Int, Set<String>>
+
+    /**
+     * Returns catalog slots (card id + origin language) grouped by Pokémon dex ID.
+     *
+     * Used for Pokédex list ownership so EN hole-fills count the same as the gallery.
+     * Excludes TCGP (TCG Pocket) cards.
+     */
+    suspend fun getAllPokemonCatalogCards(language: String): Map<Int, List<PokemonCatalogCardId>>
 
     /**
      * Returns card counts per set for a specific Pokémon.

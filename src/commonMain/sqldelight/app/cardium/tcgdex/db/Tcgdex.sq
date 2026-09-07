@@ -1028,7 +1028,8 @@ ORDER BY cwp.pokemon_dex_id ASC;
 getAllCardIdsByPokemon:
 SELECT
     pokemon_dex_id AS dex_id,
-    id AS card_id
+    id AS card_id,
+    origin_language
 FROM card_with_pokemon
 WHERE pokemon_dex_id IS NOT NULL
     AND language = :language

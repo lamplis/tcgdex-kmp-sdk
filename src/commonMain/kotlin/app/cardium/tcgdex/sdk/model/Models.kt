@@ -254,6 +254,14 @@ data class PokemonDexEntry(
 )
 
 /**
+ * One Pokédex catalog slot: card id plus the record's origin language (hole-fill marker).
+ */
+data class PokemonCatalogCardId(
+    val cardId: String,
+    val originLanguage: String? = null,
+)
+
+/**
  * Per-set card count for a specific Pokémon.
  *
  * Used for grouping cards by set in the Pokémon gallery view.

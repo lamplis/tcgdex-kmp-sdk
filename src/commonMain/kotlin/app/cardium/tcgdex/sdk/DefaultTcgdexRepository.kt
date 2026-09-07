@@ -18,6 +18,7 @@ import app.cardium.tcgdex.sdk.model.CardSet
 import app.cardium.tcgdex.sdk.model.Illustrator
 import app.cardium.tcgdex.sdk.model.IllustratorCardIdEntry
 import app.cardium.tcgdex.sdk.model.IllustratorWithCount
+import app.cardium.tcgdex.sdk.model.PokemonCatalogCardId
 import app.cardium.tcgdex.sdk.model.PokemonDexEntry
 import app.cardium.tcgdex.sdk.model.PokemonSetCardCount
 import app.cardium.tcgdex.sdk.model.Rarity
@@ -347,14 +348,23 @@ class DefaultTcgdexRepository(
         }
 
     override suspend fun getAllCardIdsByPokemon(language: String): Map<Int, Set<String>> =
+        getAllPokemonCatalogCards(language).mapValues { (_, cards) ->
+            cards.map { it.cardId }.toSet()
+        }
+
+    override suspend fun getAllPokemonCatalogCards(language: String): Map<Int, List<PokemonCatalogCardId>> =
         withContext(dispatcher) {
-            val result = mutableMapOf<Int, MutableSet<String>>()
+            val result = mutableMapOf<Int, MutableList<PokemonCatalogCardId>>()
             queries.getAllCardIdsByPokemon(language).awaitAsList().forEach { row ->
                 val dexId = row.dex_id.toInt()
-                val cardId = row.card_id
-                result.getOrPut(dexId) { mutableSetOf() }.add(cardId)
+                result.getOrPut(dexId) { mutableListOf() }.add(
+                    PokemonCatalogCardId(
+                        cardId = row.card_id,
+                        originLanguage = row.origin_language,
+                    ),
+                )
             }
-            result.mapValues { it.value.toSet() }
+            result.mapValues { it.value.toList() }
         }
 
     override suspend fun getCardCountsPerSetForPokemon(dexId: Int, language: String): List<PokemonSetCardCount> =
