@@ -728,6 +728,110 @@ class LocalDatabaseGenerationE2eTest {
     }
 
     @Test
+    fun `Given local generator inputs, When generating database, Then XY dual kits bind their own Pokepedia deck art`() {
+        val projectRoot = resolveProjectRoot()
+        val datasetDir = projectRoot.resolve("libs/cards-database/server/generated")
+        val cardmarketExportDir = projectRoot.resolve("libs/tcgdex-kmp-sdk/generator-inputs/cardmarket")
+        val pokepediaTreeFile = projectRoot.resolve(
+            "libs/tcgdex-kmp-sdk/generator-inputs/pokepedia/missing-fr-card-images-tree.json",
+        )
+        val recognitionVectorsFile = projectRoot.resolve(
+            "libs/tcgdex-kmp-sdk/generator-inputs/recognition/card-vectors-fr.json",
+        )
+
+        assertTrue(datasetDir.isDirectory, "[x] Missing dataset directory: ${datasetDir.absolutePath}.")
+        assertTrue(pokepediaTreeFile.isFile, "[x] Missing Pokepedia tree file: ${pokepediaTreeFile.absolutePath}.")
+
+        val tempDir = createTempDirectory("tcgdex-e2e-tk-xy-dual-").toFile()
+        val outputDb = tempDir.resolve("tcgdex.db")
+
+        try {
+            main(
+                arrayOf(
+                    "--dataset=${datasetDir.absolutePath}",
+                    "--languages=en,fr",
+                    "--output=${outputDb.absolutePath}",
+                    "--force=true",
+                    "--cardmarket-export=${cardmarketExportDir.absolutePath}",
+                    "--pokepedia-missing=${pokepediaTreeFile.absolutePath}",
+                    "--recognition-vectors=${recognitionVectorsFile.absolutePath}",
+                ),
+            )
+
+            assertTrue(outputDb.isFile, "[x] Database generation did not create ${outputDb.absolutePath}.")
+
+            Class.forName("org.sqlite.JDBC")
+            DriverManager.getConnection("jdbc:sqlite:${outputDb.absolutePath}").use { connection ->
+                listOf(targetLanguage, englishLanguage).forEach { language ->
+                    assertTrainerKitFallback(
+                        connection = connection,
+                        cardId = "tk-xy-su-4",
+                        language = language,
+                        expectedToken = "Suicune_4",
+                        forbiddenToken = "Pikachu_Catcheur",
+                    )
+                    assertTrainerKitFallback(
+                        connection = connection,
+                        cardId = "tk-xy-p-4",
+                        language = language,
+                        expectedToken = "Pikachu_Catcheur_4",
+                        forbiddenToken = "Suicune",
+                    )
+                    assertTrainerKitFallback(
+                        connection = connection,
+                        cardId = "tk-xy-n-1",
+                        language = language,
+                        expectedToken = "Bruyverne_1",
+                        forbiddenToken = "Nymphali",
+                    )
+                    assertTrainerKitFallback(
+                        connection = connection,
+                        cardId = "tk-xy-sy-1",
+                        language = language,
+                        expectedToken = "Nymphali_1",
+                        forbiddenToken = "Bruyverne",
+                    )
+                    assertTrainerKitFallback(
+                        connection = connection,
+                        cardId = "tk-xy-b-1",
+                        language = language,
+                        expectedToken = "Scalproie_1",
+                        forbiddenToken = "Grodoudou",
+                    )
+                    assertTrainerKitFallback(
+                        connection = connection,
+                        cardId = "tk-xy-w-1",
+                        language = language,
+                        expectedToken = "Grodoudou_1",
+                        forbiddenToken = "Scalproie",
+                    )
+                    assertTrainerKitFallback(
+                        connection = connection,
+                        cardId = "tk-xy-latia-1",
+                        language = language,
+                        expectedToken = "Latias_1",
+                        forbiddenToken = "Latios",
+                    )
+                    assertTrainerKitFallback(
+                        connection = connection,
+                        cardId = "tk-xy-latio-1",
+                        language = language,
+                        expectedToken = "Latios_1",
+                        forbiddenToken = "Latias",
+                    )
+                }
+
+                assertTrue(
+                    queryCameoRowCountForDex(connection, targetLanguage, dexId = 133) > 0,
+                    "[x] Expected FR Eevee (dex 133) to have is_cameo=1 rows.",
+                )
+            }
+        } finally {
+            tempDir.deleteRecursively()
+        }
+    }
+
+    @Test
     fun `Given local generator inputs, When generating database, Then bog-7 uses Best of Game Pokepedia art`() {
         val projectRoot = resolveProjectRoot()
         val datasetDir = projectRoot.resolve("libs/cards-database/server/generated")
@@ -896,6 +1000,35 @@ class LocalDatabaseGenerationE2eTest {
     private fun containsNegapiToken(url: String?, localId: String): Boolean {
         val value = url.orEmpty()
         return value.contains("Négapi_$localId") || value.contains("N%C3%A9gapi_$localId")
+    }
+
+    private fun assertTrainerKitFallback(
+        connection: Connection,
+        cardId: String,
+        language: String,
+        expectedToken: String,
+        forbiddenToken: String,
+    ) {
+        val row = queryCardFallbackRow(connection, cardId, language)
+        assertNotNull(row, "[x] Expected a generated card row for $cardId/$language.")
+        assertTrue(
+            row.imageUrl.isNullOrBlank(),
+            "[x] Expected $cardId/$language image_url to stay empty. got '${row.imageUrl}'.",
+        )
+        assertEquals("pokepedia", row.fallbackImageSource)
+        val fallbackUrl = checkNotNull(row.fallbackImageUrl) {
+            "[x] Expected $cardId/$language fallback URL. got null."
+        }
+        assertTrue(
+            fallbackUrl.contains(expectedToken),
+            "[x] Expected $cardId/$language fallback to contain $expectedToken. " +
+                "got '$fallbackUrl'.",
+        )
+        assertTrue(
+            !fallbackUrl.contains(forbiddenToken),
+            "[x] Expected $cardId/$language not to use $forbiddenToken art. " +
+                "got '$fallbackUrl'.",
+        )
     }
 
     private fun assertPokepediaInternationalFallback(
@@ -1121,6 +1254,24 @@ class LocalDatabaseGenerationE2eTest {
             """.trimIndent(),
         ).use { statement ->
             statement.setString(1, language)
+            statement.executeQuery().use { resultSet ->
+                return if (resultSet.next()) resultSet.getInt("row_count") else 0
+            }
+        }
+    }
+
+    private fun queryCameoRowCountForDex(connection: Connection, language: String, dexId: Int): Int {
+        connection.prepareStatement(
+            """
+            SELECT COUNT(*) AS row_count
+            FROM card_pokemon
+            WHERE is_cameo = 1
+              AND language = ?
+              AND pokemon_dex_id = ?
+            """.trimIndent(),
+        ).use { statement ->
+            statement.setString(1, language)
+            statement.setInt(2, dexId)
             statement.executeQuery().use { resultSet ->
                 return if (resultSet.next()) resultSet.getInt("row_count") else 0
             }

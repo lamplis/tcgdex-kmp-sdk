@@ -150,4 +150,107 @@ class PokepediaFallbackImportTest {
         assertEquals("pokepedia", fallback.source)
         assertNull(loaded["sma-SV1"])
     }
+
+    @Test
+    fun `Given tk-xy-su resolved with Pikachu Catcheur url, When loaded, Then mismatched kit fallback is rejected`() {
+        val tree = createTempFile("pokepedia-tree-", ".json").toFile()
+        tree.writeText(
+            """
+            {
+              "series":[
+                {
+                  "sets":[
+                    {
+                      "setId":"tk-xy-su",
+                      "cards":[
+                        {
+                          "cardId":"tk-xy-su-4",
+                          "resolutionStatus":"resolved",
+                          "pokepediaHdUrl":"https://www.pokepedia.fr/images/5/54/Carte_XY_Kit_du_Dresseur_Pikachu_Catcheur_4.png"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            """.trimIndent(),
+        )
+
+        val loaded = loadPokepediaFallbacks(tree.absolutePath, json)
+        assertNull(loaded["tk-xy-su-4"])
+    }
+
+    @Test
+    fun `Given tk-xy-su resolved with Suicune url, When loaded, Then pokepedia fallback is kept`() {
+        val tree = createTempFile("pokepedia-tree-", ".json").toFile()
+        tree.writeText(
+            """
+            {
+              "series":[
+                {
+                  "sets":[
+                    {
+                      "setId":"tk-xy-su",
+                      "cards":[
+                        {
+                          "cardId":"tk-xy-su-4",
+                          "resolutionStatus":"resolved",
+                          "pokepediaHdUrl":"https://www.pokepedia.fr/images/5/54/Carte_XY_Kit_du_Dresseur_Suicune_4.png"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            """.trimIndent(),
+        )
+
+        val loaded = loadPokepediaFallbacks(tree.absolutePath, json)
+        val fallback = loaded["tk-xy-su-4"]
+        assertNotNull(fallback)
+        assertEquals(
+            "https://www.pokepedia.fr/images/5/54/Carte_XY_Kit_du_Dresseur_Suicune_4.png",
+            fallback.url,
+        )
+        assertEquals("pokepedia", fallback.source)
+    }
+
+    @Test
+    fun `Given mismatched kit url with cardmarket url, When loaded, Then cardmarket fallback is used`() {
+        val tree = createTempFile("pokepedia-tree-", ".json").toFile()
+        tree.writeText(
+            """
+            {
+              "series":[
+                {
+                  "sets":[
+                    {
+                      "setId":"tk-xy-n",
+                      "cards":[
+                        {
+                          "cardId":"tk-xy-n-1",
+                          "resolutionStatus":"resolved",
+                          "pokepediaHdUrl":"https://www.pokepedia.fr/images/2/2f/Carte_XY_Kit_du_Dresseur_Nymphali_1.png",
+                          "cardmarketImageUrl":"https://product-images.s3.cardmarket.com/51/TK/1/1.jpg"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            """.trimIndent(),
+        )
+
+        val loaded = loadPokepediaFallbacks(tree.absolutePath, json)
+        val fallback = loaded["tk-xy-n-1"]
+        assertNotNull(fallback)
+        assertEquals(
+            "https://product-images.s3.cardmarket.com/51/TK/1/1.jpg",
+            fallback.url,
+        )
+        assertEquals("cardmarket", fallback.source)
+    }
 }

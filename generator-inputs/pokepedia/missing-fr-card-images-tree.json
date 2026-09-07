@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-06T22:58:28.044Z",
+  "generatedAt": "2026-09-07T06:16:44.094Z",
   "databasePath": "/Users/admin/workspace/cardium/iosApp/iosApp/Resources/tcgdex.db",
   "language": "fr",
   "totalCards": 3533,
-  "resolvedCards": 3414,
-  "unresolvedCards": 119,
+  "resolvedCards": 3415,
+  "unresolvedCards": 118,
   "unresolvedReasons": {
-    "POKEPEDIA_CARD_IMAGE_NOT_FOUND": 86,
+    "POKEPEDIA_CARD_IMAGE_NOT_FOUND": 85,
     "POKEPEDIA_CARD_PAGE_REDLINK": 23,
     "POKEPEDIA_CARD_NOT_FOUND": 10
   },
@@ -4097,7 +4097,7 @@
           "name": "XY Kit du dresseur (Bruyverne)",
           "releaseDate": "2014-03-12",
           "cardCountTotal": 30,
-          "pokepediaSetUrl": "https://www.pokepedia.fr/XY_Kit_du_Dresseur",
+          "pokepediaSetUrl": "https://www.pokepedia.fr/XY_Kit_du_Dresseur#deck=Bruyverne",
           "cards": [
             {
               "cardId": "tk-xy-n-1",
@@ -4105,9 +4105,9 @@
               "localNumberSort": 1,
               "name": "Spoink",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/2/2f/Carte_XY_Kit_du_Dresseur_Nymphali_1.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/2/2f/Carte_XY_Kit_du_Dresseur_Nymphali_1.png/490px-Carte_XY_Kit_du_Dresseur_Nymphali_1.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Passerouge_(XY_Kit_du_Dresseur_Nymphali_1)"
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/b/bc/Carte_XY_Kit_du_Dresseur_Bruyverne_1.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/b/bc/Carte_XY_Kit_du_Dresseur_Bruyverne_1.png/490px-Carte_XY_Kit_du_Dresseur_Bruyverne_1.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Spoink_(XY_Kit_du_Dresseur_Bruyverne_1)"
             },
             {
               "cardId": "tk-xy-n-2",
@@ -4115,18 +4115,19 @@
               "localNumberSort": 2,
               "name": "Banshitrouye",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/d/d8/Carte_XY_Kit_du_Dresseur_Nymphali_2.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/d/d8/Carte_XY_Kit_du_Dresseur_Nymphali_2.png/490px-Carte_XY_Kit_du_Dresseur_Nymphali_2.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_F%C3%A9e_(XY_Kit_du_Dresseur_Nymphali_2)"
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/1/18/Carte_XY_Kit_du_Dresseur_Bruyverne_2.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/1/18/Carte_XY_Kit_du_Dresseur_Bruyverne_2.png/490px-Carte_XY_Kit_du_Dresseur_Bruyverne_2.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Banshitrouye_(XY_Kit_du_Dresseur_Bruyverne_2)"
             },
             {
               "cardId": "tk-xy-n-3",
               "localId": "3",
               "localNumberSort": 3,
               "name": "Arbok",
-              "resolutionStatus": "unresolved",
-              "reason": "POKEPEDIA_CARD_IMAGE_NOT_FOUND",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_F%C3%A9e_(XY_Kit_du_Dresseur_Nymphali_3)"
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/b/bf/Carte_XY_Kit_du_Dresseur_Bruyverne_3.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/b/bf/Carte_XY_Kit_du_Dresseur_Bruyverne_3.png/490px-Carte_XY_Kit_du_Dresseur_Bruyverne_3.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Arbok_(XY_Kit_du_Dresseur_Bruyverne_3)"
             },
             {
               "cardId": "tk-xy-n-4",
@@ -4134,18 +4135,19 @@
               "localNumberSort": 4,
               "name": "Sapereau",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/2/2c/Carte_XY_Kit_du_Dresseur_Nymphali_4.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/2/2c/Carte_XY_Kit_du_Dresseur_Nymphali_4.png/490px-Carte_XY_Kit_du_Dresseur_Nymphali_4.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89change_(XY_Kit_du_Dresseur_Nymphali_4)"
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/4/4d/Carte_XY_Kit_du_Dresseur_Bruyverne_4.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/4/4d/Carte_XY_Kit_du_Dresseur_Bruyverne_4.png/490px-Carte_XY_Kit_du_Dresseur_Bruyverne_4.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Sapereau_(XY_Kit_du_Dresseur_Bruyverne_4)"
             },
             {
               "cardId": "tk-xy-n-5",
               "localId": "5",
               "localNumberSort": 5,
               "name": "Énergie Psy",
-              "resolutionStatus": "unresolved",
-              "reason": "POKEPEDIA_CARD_IMAGE_NOT_FOUND",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_F%C3%A9e_(XY_Kit_du_Dresseur_Nymphali_5)"
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/d/d3/Carte_XY_Kit_du_Dresseur_Bruyverne_5.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/d/d3/Carte_XY_Kit_du_Dresseur_Bruyverne_5.png/490px-Carte_XY_Kit_du_Dresseur_Bruyverne_5.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_Psy_(XY_Kit_du_Dresseur_Bruyverne_5)"
             },
             {
               "cardId": "tk-xy-n-6",
@@ -4154,7 +4156,7 @@
               "name": "Énergie Psy",
               "resolutionStatus": "unresolved",
               "reason": "POKEPEDIA_CARD_IMAGE_NOT_FOUND",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_F%C3%A9e_(XY_Kit_du_Dresseur_Nymphali_6)"
+              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_Psy_(XY_Kit_du_Dresseur_Bruyverne_6)"
             },
             {
               "cardId": "tk-xy-n-7",
@@ -4163,7 +4165,7 @@
               "name": "Énergie Psy",
               "resolutionStatus": "unresolved",
               "reason": "POKEPEDIA_CARD_IMAGE_NOT_FOUND",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_F%C3%A9e_(XY_Kit_du_Dresseur_Nymphali_7)"
+              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_Psy_(XY_Kit_du_Dresseur_Bruyverne_7)"
             },
             {
               "cardId": "tk-xy-n-8",
@@ -4172,7 +4174,7 @@
               "name": "Énergie Psy",
               "resolutionStatus": "unresolved",
               "reason": "POKEPEDIA_CARD_IMAGE_NOT_FOUND",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_F%C3%A9e_(XY_Kit_du_Dresseur_Nymphali_8)"
+              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_Psy_(XY_Kit_du_Dresseur_Bruyverne_8)"
             },
             {
               "cardId": "tk-xy-n-9",
@@ -4181,7 +4183,7 @@
               "name": "Énergie Psy",
               "resolutionStatus": "unresolved",
               "reason": "POKEPEDIA_CARD_IMAGE_NOT_FOUND",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_F%C3%A9e_(XY_Kit_du_Dresseur_Nymphali_9)"
+              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_Psy_(XY_Kit_du_Dresseur_Bruyverne_9)"
             },
             {
               "cardId": "tk-xy-n-10",
@@ -4190,7 +4192,7 @@
               "name": "Énergie Psy",
               "resolutionStatus": "unresolved",
               "reason": "POKEPEDIA_CARD_IMAGE_NOT_FOUND",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_F%C3%A9e_(XY_Kit_du_Dresseur_Nymphali_10)"
+              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_Psy_(XY_Kit_du_Dresseur_Bruyverne_10)"
             },
             {
               "cardId": "tk-xy-n-11",
@@ -4198,18 +4200,19 @@
               "localNumberSort": 11,
               "name": "Pitrouille",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/b/bb/Carte_XY_Kit_du_Dresseur_Nymphali_11.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/b/bb/Carte_XY_Kit_du_Dresseur_Nymphali_11.png/490px-Carte_XY_Kit_du_Dresseur_Nymphali_11.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Snubbull_(XY_Kit_du_Dresseur_Nymphali_11)"
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/2/2d/Carte_XY_Kit_du_Dresseur_Bruyverne_11.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/2/2d/Carte_XY_Kit_du_Dresseur_Bruyverne_11.png/490px-Carte_XY_Kit_du_Dresseur_Bruyverne_11.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Pitrouille_(XY_Kit_du_Dresseur_Bruyverne_11)"
             },
             {
               "cardId": "tk-xy-n-12",
               "localId": "12",
               "localNumberSort": 12,
               "name": "Sonistrelle",
-              "resolutionStatus": "unresolved",
-              "reason": "POKEPEDIA_CARD_IMAGE_NOT_FOUND",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_F%C3%A9e_(XY_Kit_du_Dresseur_Nymphali_12)"
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/4/43/Carte_XY_Kit_du_Dresseur_Bruyverne_12.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/4/43/Carte_XY_Kit_du_Dresseur_Bruyverne_12.png/490px-Carte_XY_Kit_du_Dresseur_Bruyverne_12.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Sonistrelle_(XY_Kit_du_Dresseur_Bruyverne_12)"
             },
             {
               "cardId": "tk-xy-n-13",
@@ -4217,9 +4220,9 @@
               "localNumberSort": 13,
               "name": "Bruyverne",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/d/de/Carte_XY_Kit_du_Dresseur_Nymphali_13.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/d/de/Carte_XY_Kit_du_Dresseur_Nymphali_13.png/490px-Carte_XY_Kit_du_Dresseur_Nymphali_13.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89voli_(XY_Kit_du_Dresseur_Nymphali_13)"
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/2/27/Carte_XY_Kit_du_Dresseur_Bruyverne_13.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/2/27/Carte_XY_Kit_du_Dresseur_Bruyverne_13.png/490px-Carte_XY_Kit_du_Dresseur_Bruyverne_13.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Bruyverne_(XY_Kit_du_Dresseur_Bruyverne_13)"
             },
             {
               "cardId": "tk-xy-n-14",
@@ -4227,9 +4230,9 @@
               "localNumberSort": 14,
               "name": "Attrape-Pokémon",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/f/f9/Carte_XY_Kit_du_Dresseur_Nymphali_14.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/f/f9/Carte_XY_Kit_du_Dresseur_Nymphali_14.png/490px-Carte_XY_Kit_du_Dresseur_Nymphali_14.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Granbull_(XY_Kit_du_Dresseur_Nymphali_14)"
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/9/9c/Carte_XY_Kit_du_Dresseur_Bruyverne_14.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/9/9c/Carte_XY_Kit_du_Dresseur_Bruyverne_14.png/490px-Carte_XY_Kit_du_Dresseur_Bruyverne_14.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Attrape-Pok%C3%A9mon_(XY_Kit_du_Dresseur_Bruyverne_14)"
             },
             {
               "cardId": "tk-xy-n-15",
@@ -4237,9 +4240,9 @@
               "localNumberSort": 15,
               "name": "Potion",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/7/7a/Carte_XY_Kit_du_Dresseur_Nymphali_15.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/7/7a/Carte_XY_Kit_du_Dresseur_Nymphali_15.png/490px-Carte_XY_Kit_du_Dresseur_Nymphali_15.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Nymphali_(XY_Kit_du_Dresseur_Nymphali_15)"
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/6/63/Carte_XY_Kit_du_Dresseur_Bruyverne_15.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/6/63/Carte_XY_Kit_du_Dresseur_Bruyverne_15.png/490px-Carte_XY_Kit_du_Dresseur_Bruyverne_15.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Potion_(XY_Kit_du_Dresseur_Bruyverne_15)"
             },
             {
               "cardId": "tk-xy-n-16",
@@ -4247,9 +4250,9 @@
               "localNumberSort": 16,
               "name": "Abo",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/b/b2/Carte_XY_Kit_du_Dresseur_Nymphali_16.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/b/b2/Carte_XY_Kit_du_Dresseur_Nymphali_16.png/490px-Carte_XY_Kit_du_Dresseur_Nymphali_16.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Couafarel_(XY_Kit_du_Dresseur_Nymphali_16)"
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/d/df/Carte_XY_Kit_du_Dresseur_Bruyverne_16.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/d/df/Carte_XY_Kit_du_Dresseur_Bruyverne_16.png/490px-Carte_XY_Kit_du_Dresseur_Bruyverne_16.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Abo_(XY_Kit_du_Dresseur_Bruyverne_16)"
             },
             {
               "cardId": "tk-xy-n-17",
@@ -4258,16 +4261,17 @@
               "name": "Énergie Psy",
               "resolutionStatus": "unresolved",
               "reason": "POKEPEDIA_CARD_IMAGE_NOT_FOUND",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_F%C3%A9e_(XY_Kit_du_Dresseur_Nymphali_17)"
+              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_Psy_(XY_Kit_du_Dresseur_Bruyverne_17)"
             },
             {
               "cardId": "tk-xy-n-18",
               "localId": "18",
               "localNumberSort": 18,
               "name": "Pitrouille",
-              "resolutionStatus": "unresolved",
-              "reason": "POKEPEDIA_CARD_IMAGE_NOT_FOUND",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_F%C3%A9e_(XY_Kit_du_Dresseur_Nymphali_18)"
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/2/2a/Carte_XY_Kit_du_Dresseur_Bruyverne_18.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/2/2a/Carte_XY_Kit_du_Dresseur_Bruyverne_18.png/490px-Carte_XY_Kit_du_Dresseur_Bruyverne_18.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Pitrouille_(XY_Kit_du_Dresseur_Bruyverne_18)"
             },
             {
               "cardId": "tk-xy-n-19",
@@ -4275,9 +4279,9 @@
               "localNumberSort": 19,
               "name": "Énergie Obscurité",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/c/c9/Carte_XY_Kit_du_Dresseur_Nymphali_19.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/c/c9/Carte_XY_Kit_du_Dresseur_Nymphali_19.png/490px-Carte_XY_Kit_du_Dresseur_Nymphali_19.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Passerouge_(XY_Kit_du_Dresseur_Nymphali_19)"
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/a/a6/Carte_XY_Kit_du_Dresseur_Bruyverne_19.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/a/a6/Carte_XY_Kit_du_Dresseur_Bruyverne_19.png/490px-Carte_XY_Kit_du_Dresseur_Bruyverne_19.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_Obscurit%C3%A9_(XY_Kit_du_Dresseur_Bruyverne_19)"
             },
             {
               "cardId": "tk-xy-n-20",
@@ -4285,9 +4289,9 @@
               "localNumberSort": 20,
               "name": "Couafarel",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/f/fd/Carte_XY_Kit_du_Dresseur_Nymphali_20.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/f/fd/Carte_XY_Kit_du_Dresseur_Nymphali_20.png/490px-Carte_XY_Kit_du_Dresseur_Nymphali_20.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Potion_(XY_Kit_du_Dresseur_Nymphali_20)"
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/6/66/Carte_XY_Kit_du_Dresseur_Bruyverne_20.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/6/66/Carte_XY_Kit_du_Dresseur_Bruyverne_20.png/490px-Carte_XY_Kit_du_Dresseur_Bruyverne_20.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Couafarel_(XY_Kit_du_Dresseur_Bruyverne_20)"
             },
             {
               "cardId": "tk-xy-n-21",
@@ -4295,19 +4299,18 @@
               "localNumberSort": 21,
               "name": "Poké Ball",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/7/71/Carte_XY_Kit_du_Dresseur_Nymphali_21.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/7/71/Carte_XY_Kit_du_Dresseur_Nymphali_21.png/490px-Carte_XY_Kit_du_Dresseur_Nymphali_21.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89voli_(XY_Kit_du_Dresseur_Nymphali_21)"
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/3/3e/Carte_XY_Kit_du_Dresseur_Bruyverne_21.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/3/3e/Carte_XY_Kit_du_Dresseur_Bruyverne_21.png/490px-Carte_XY_Kit_du_Dresseur_Bruyverne_21.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Pok%C3%A9_Ball_(XY_Kit_du_Dresseur_Bruyverne_21)"
             },
             {
               "cardId": "tk-xy-n-22",
               "localId": "22",
               "localNumberSort": 22,
               "name": "Énergie Obscurité",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/c/c0/Carte_XY_Kit_du_Dresseur_Nymphali_22.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/c/c0/Carte_XY_Kit_du_Dresseur_Nymphali_22.png/490px-Carte_XY_Kit_du_Dresseur_Nymphali_22.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Couafarel_(XY_Kit_du_Dresseur_Nymphali_22)"
+              "resolutionStatus": "unresolved",
+              "reason": "POKEPEDIA_CARD_IMAGE_NOT_FOUND",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_Obscurit%C3%A9_(XY_Kit_du_Dresseur_Bruyverne_22)"
             },
             {
               "cardId": "tk-xy-n-23",
@@ -4315,9 +4318,9 @@
               "localNumberSort": 23,
               "name": "Sonistrelle",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/9/9a/Carte_XY_Kit_du_Dresseur_Nymphali_23.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/9/9a/Carte_XY_Kit_du_Dresseur_Nymphali_23.png/490px-Carte_XY_Kit_du_Dresseur_Nymphali_23.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Attrape-Pok%C3%A9mon_(XY_Kit_du_Dresseur_Nymphali_23)"
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/b/ba/Carte_XY_Kit_du_Dresseur_Bruyverne_23.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/b/ba/Carte_XY_Kit_du_Dresseur_Bruyverne_23.png/490px-Carte_XY_Kit_du_Dresseur_Bruyverne_23.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Sonistrelle_(XY_Kit_du_Dresseur_Bruyverne_23)"
             },
             {
               "cardId": "tk-xy-n-24",
@@ -4325,9 +4328,9 @@
               "localNumberSort": 24,
               "name": "Lettre du Professeur",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/d/dd/Carte_XY_Kit_du_Dresseur_Nymphali_24.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/d/dd/Carte_XY_Kit_du_Dresseur_Nymphali_24.png/490px-Carte_XY_Kit_du_Dresseur_Nymphali_24.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Potion_(XY_Kit_du_Dresseur_Nymphali_24)"
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/e/e3/Carte_XY_Kit_du_Dresseur_Bruyverne_24.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/e/e3/Carte_XY_Kit_du_Dresseur_Bruyverne_24.png/490px-Carte_XY_Kit_du_Dresseur_Bruyverne_24.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Lettre_du_Professeur_(XY_Kit_du_Dresseur_Bruyverne_24)"
             },
             {
               "cardId": "tk-xy-n-25",
@@ -4336,17 +4339,16 @@
               "name": "Énergie Psy",
               "resolutionStatus": "unresolved",
               "reason": "POKEPEDIA_CARD_IMAGE_NOT_FOUND",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_F%C3%A9e_(XY_Kit_du_Dresseur_Nymphali_25)"
+              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_Psy_(XY_Kit_du_Dresseur_Bruyverne_25)"
             },
             {
               "cardId": "tk-xy-n-26",
               "localId": "26",
               "localNumberSort": 26,
               "name": "Énergie Obscurité",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/f/fa/Carte_XY_Kit_du_Dresseur_Nymphali_26.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/f/fa/Carte_XY_Kit_du_Dresseur_Nymphali_26.png/490px-Carte_XY_Kit_du_Dresseur_Nymphali_26.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Pok%C3%A9_Ball_(XY_Kit_du_Dresseur_Nymphali_26)"
+              "resolutionStatus": "unresolved",
+              "reason": "POKEPEDIA_CARD_IMAGE_NOT_FOUND",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_Obscurit%C3%A9_(XY_Kit_du_Dresseur_Bruyverne_26)"
             },
             {
               "cardId": "tk-xy-n-27",
@@ -4354,19 +4356,18 @@
               "localNumberSort": 27,
               "name": "Potion",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/c/c2/Carte_XY_Kit_du_Dresseur_Nymphali_27.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/c/c2/Carte_XY_Kit_du_Dresseur_Nymphali_27.png/490px-Carte_XY_Kit_du_Dresseur_Nymphali_27.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Snubbull_(XY_Kit_du_Dresseur_Nymphali_27)"
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/d/dc/Carte_XY_Kit_du_Dresseur_Bruyverne_27.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/d/dc/Carte_XY_Kit_du_Dresseur_Bruyverne_27.png/490px-Carte_XY_Kit_du_Dresseur_Bruyverne_27.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Potion_(XY_Kit_du_Dresseur_Bruyverne_27)"
             },
             {
               "cardId": "tk-xy-n-28",
               "localId": "28",
               "localNumberSort": 28,
               "name": "Énergie Obscurité",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/4/4d/Carte_XY_Kit_du_Dresseur_Nymphali_28.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/4/4d/Carte_XY_Kit_du_Dresseur_Nymphali_28.png/490px-Carte_XY_Kit_du_Dresseur_Nymphali_28.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Lettre_du_Professeur_(XY_Kit_du_Dresseur_Nymphali_28)"
+              "resolutionStatus": "unresolved",
+              "reason": "POKEPEDIA_CARD_IMAGE_NOT_FOUND",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_Obscurit%C3%A9_(XY_Kit_du_Dresseur_Bruyverne_28)"
             },
             {
               "cardId": "tk-xy-n-29",
@@ -4374,9 +4375,9 @@
               "localNumberSort": 29,
               "name": "Échange",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/1/1e/Carte_XY_Kit_du_Dresseur_Nymphali_29.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/1/1e/Carte_XY_Kit_du_Dresseur_Nymphali_29.png/490px-Carte_XY_Kit_du_Dresseur_Nymphali_29.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Granbull_(XY_Kit_du_Dresseur_Nymphali_29)"
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/f/f7/Carte_XY_Kit_du_Dresseur_Bruyverne_29.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/f/f7/Carte_XY_Kit_du_Dresseur_Bruyverne_29.png/490px-Carte_XY_Kit_du_Dresseur_Bruyverne_29.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89change_(XY_Kit_du_Dresseur_Bruyverne_29)"
             },
             {
               "cardId": "tk-xy-n-30",
@@ -4384,9 +4385,9 @@
               "localNumberSort": 30,
               "name": "Bruyverne",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/a/ad/Carte_XY_Kit_du_Dresseur_Nymphali_30.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/a/ad/Carte_XY_Kit_du_Dresseur_Nymphali_30.png/490px-Carte_XY_Kit_du_Dresseur_Nymphali_30.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Nymphali_(XY_Kit_du_Dresseur_Nymphali_30)"
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/a/ab/Carte_XY_Kit_du_Dresseur_Bruyverne_30.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/a/ab/Carte_XY_Kit_du_Dresseur_Bruyverne_30.png/490px-Carte_XY_Kit_du_Dresseur_Bruyverne_30.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Bruyverne_(XY_Kit_du_Dresseur_Bruyverne_30)"
             }
           ]
         },
@@ -4395,7 +4396,7 @@
           "name": "XY Kit du dresseur (Nymphali)",
           "releaseDate": "2014-03-12",
           "cardCountTotal": 30,
-          "pokepediaSetUrl": "https://www.pokepedia.fr/XY_Kit_du_Dresseur",
+          "pokepediaSetUrl": "https://www.pokepedia.fr/XY_Kit_du_Dresseur#deck=Nymphali",
           "cards": [
             {
               "cardId": "tk-xy-sy-1",
@@ -4693,7 +4694,7 @@
           "name": "XY Kit du dresseur (Scalproie)",
           "releaseDate": "2014-11-01",
           "cardCountTotal": 30,
-          "pokepediaSetUrl": "https://www.pokepedia.fr/XY_Kit_du_Dresseur:_Scalproie_et_Grodoudou",
+          "pokepediaSetUrl": "https://www.pokepedia.fr/XY_Kit_du_Dresseur:_Scalproie_et_Grodoudou#deck=Scalproie",
           "cards": [
             {
               "cardId": "tk-xy-b-1",
@@ -4992,7 +4993,7 @@
           "name": "XY Kit du dresseur (Grodoudou)",
           "releaseDate": "2014-11-01",
           "cardCountTotal": 30,
-          "pokepediaSetUrl": "https://www.pokepedia.fr/XY_Kit_du_Dresseur:_Scalproie_et_Grodoudou",
+          "pokepediaSetUrl": "https://www.pokepedia.fr/XY_Kit_du_Dresseur:_Scalproie_et_Grodoudou#deck=Grodoudou",
           "cards": [
             {
               "cardId": "tk-xy-w-1",
@@ -5000,9 +5001,9 @@
               "localNumberSort": 1,
               "name": "Sucroquin",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/8/87/Carte_XY_Kit_du_Dresseur_Scalproie_1.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/8/87/Carte_XY_Kit_du_Dresseur_Scalproie_1.png/490px-Carte_XY_Kit_du_Dresseur_Scalproie_1.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Passerouge_(XY_Kit_du_Dresseur_Scalproie_1)"
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/6/61/Carte_XY_Kit_du_Dresseur_Grodoudou_1.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/6/61/Carte_XY_Kit_du_Dresseur_Grodoudou_1.png/490px-Carte_XY_Kit_du_Dresseur_Grodoudou_1.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Sucroquin_(XY_Kit_du_Dresseur_Grodoudou_1)"
             },
             {
               "cardId": "tk-xy-w-2",
@@ -5010,18 +5011,19 @@
               "localNumberSort": 2,
               "name": "Roucoups",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/1/11/Carte_XY_Kit_du_Dresseur_Scalproie_2.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/1/11/Carte_XY_Kit_du_Dresseur_Scalproie_2.png/490px-Carte_XY_Kit_du_Dresseur_Scalproie_2.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_M%C3%A9tal_(XY_Kit_du_Dresseur_Scalproie_2)"
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/4/47/Carte_XY_Kit_du_Dresseur_Grodoudou_2.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/4/47/Carte_XY_Kit_du_Dresseur_Grodoudou_2.png/490px-Carte_XY_Kit_du_Dresseur_Grodoudou_2.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Roucoups_(XY_Kit_du_Dresseur_Grodoudou_2)"
             },
             {
               "cardId": "tk-xy-w-3",
               "localId": "3",
               "localNumberSort": 3,
               "name": "Énergie Fée",
-              "resolutionStatus": "unresolved",
-              "reason": "POKEPEDIA_CARD_IMAGE_NOT_FOUND",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_M%C3%A9tal_(XY_Kit_du_Dresseur_Scalproie_3)"
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/0/03/Carte_XY_Kit_du_Dresseur_Grodoudou_3.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/0/03/Carte_XY_Kit_du_Dresseur_Grodoudou_3.png/490px-Carte_XY_Kit_du_Dresseur_Grodoudou_3.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_F%C3%A9e_(XY_Kit_du_Dresseur_Grodoudou_3)"
             },
             {
               "cardId": "tk-xy-w-4",
@@ -5029,9 +5031,9 @@
               "localNumberSort": 4,
               "name": "Fouinette",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/5/53/Carte_XY_Kit_du_Dresseur_Scalproie_4.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/5/53/Carte_XY_Kit_du_Dresseur_Scalproie_4.png/490px-Carte_XY_Kit_du_Dresseur_Scalproie_4.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Vigoroth_(XY_Kit_du_Dresseur_Scalproie_4)"
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/3/3a/Carte_XY_Kit_du_Dresseur_Grodoudou_4.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/3/3a/Carte_XY_Kit_du_Dresseur_Grodoudou_4.png/490px-Carte_XY_Kit_du_Dresseur_Grodoudou_4.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Fouinette_(XY_Kit_du_Dresseur_Grodoudou_4)"
             },
             {
               "cardId": "tk-xy-w-5",
@@ -5040,7 +5042,7 @@
               "name": "Énergie Fée",
               "resolutionStatus": "unresolved",
               "reason": "POKEPEDIA_CARD_IMAGE_NOT_FOUND",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_M%C3%A9tal_(XY_Kit_du_Dresseur_Scalproie_5)"
+              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_F%C3%A9e_(XY_Kit_du_Dresseur_Grodoudou_5)"
             },
             {
               "cardId": "tk-xy-w-6",
@@ -5049,7 +5051,7 @@
               "name": "Énergie Fée",
               "resolutionStatus": "unresolved",
               "reason": "POKEPEDIA_CARD_IMAGE_NOT_FOUND",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_M%C3%A9tal_(XY_Kit_du_Dresseur_Scalproie_6)"
+              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_F%C3%A9e_(XY_Kit_du_Dresseur_Grodoudou_6)"
             },
             {
               "cardId": "tk-xy-w-7",
@@ -5058,7 +5060,7 @@
               "name": "Énergie Fée",
               "resolutionStatus": "unresolved",
               "reason": "POKEPEDIA_CARD_IMAGE_NOT_FOUND",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_M%C3%A9tal_(XY_Kit_du_Dresseur_Scalproie_7)"
+              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_F%C3%A9e_(XY_Kit_du_Dresseur_Grodoudou_7)"
             },
             {
               "cardId": "tk-xy-w-8",
@@ -5067,7 +5069,7 @@
               "name": "Énergie Fée",
               "resolutionStatus": "unresolved",
               "reason": "POKEPEDIA_CARD_IMAGE_NOT_FOUND",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_M%C3%A9tal_(XY_Kit_du_Dresseur_Scalproie_8)"
+              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_F%C3%A9e_(XY_Kit_du_Dresseur_Grodoudou_8)"
             },
             {
               "cardId": "tk-xy-w-9",
@@ -5076,7 +5078,7 @@
               "name": "Énergie Fée",
               "resolutionStatus": "unresolved",
               "reason": "POKEPEDIA_CARD_IMAGE_NOT_FOUND",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_M%C3%A9tal_(XY_Kit_du_Dresseur_Scalproie_9)"
+              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_F%C3%A9e_(XY_Kit_du_Dresseur_Grodoudou_9)"
             },
             {
               "cardId": "tk-xy-w-10",
@@ -5085,7 +5087,7 @@
               "name": "Énergie Fée",
               "resolutionStatus": "unresolved",
               "reason": "POKEPEDIA_CARD_IMAGE_NOT_FOUND",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_M%C3%A9tal_(XY_Kit_du_Dresseur_Scalproie_10)"
+              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_F%C3%A9e_(XY_Kit_du_Dresseur_Grodoudou_10)"
             },
             {
               "cardId": "tk-xy-w-11",
@@ -5093,9 +5095,9 @@
               "localNumberSort": 11,
               "name": "Roucool",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/8/83/Carte_XY_Kit_du_Dresseur_Scalproie_11.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/8/83/Carte_XY_Kit_du_Dresseur_Scalproie_11.png/490px-Carte_XY_Kit_du_Dresseur_Scalproie_11.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Monorpale_(XY_Kit_du_Dresseur_Scalproie_11)"
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/a/a4/Carte_XY_Kit_du_Dresseur_Grodoudou_11.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/a/a4/Carte_XY_Kit_du_Dresseur_Grodoudou_11.png/490px-Carte_XY_Kit_du_Dresseur_Grodoudou_11.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Roucool_(XY_Kit_du_Dresseur_Grodoudou_11)"
             },
             {
               "cardId": "tk-xy-w-12",
@@ -5103,9 +5105,9 @@
               "localNumberSort": 12,
               "name": "Rondoudou",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/8/89/Carte_XY_Kit_du_Dresseur_Scalproie_12.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/8/89/Carte_XY_Kit_du_Dresseur_Scalproie_12.png/490px-Carte_XY_Kit_du_Dresseur_Scalproie_12.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Keunotor_(XY_Kit_du_Dresseur_Scalproie_12)"
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/1/12/Carte_XY_Kit_du_Dresseur_Grodoudou_12.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/1/12/Carte_XY_Kit_du_Dresseur_Grodoudou_12.png/490px-Carte_XY_Kit_du_Dresseur_Grodoudou_12.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Rondoudou_(XY_Kit_du_Dresseur_Grodoudou_12)"
             },
             {
               "cardId": "tk-xy-w-13",
@@ -5113,9 +5115,9 @@
               "localNumberSort": 13,
               "name": "Mélofée",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/6/6e/Carte_XY_Kit_du_Dresseur_Scalproie_13.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/6/6e/Carte_XY_Kit_du_Dresseur_Scalproie_13.png/490px-Carte_XY_Kit_du_Dresseur_Scalproie_13.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Scalpion_(XY_Kit_du_Dresseur_Scalproie_13)"
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/1/12/Carte_XY_Kit_du_Dresseur_Grodoudou_13.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/1/12/Carte_XY_Kit_du_Dresseur_Grodoudou_13.png/490px-Carte_XY_Kit_du_Dresseur_Grodoudou_13.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/M%C3%A9lof%C3%A9e_(XY_Kit_du_Dresseur_Grodoudou_13)"
             },
             {
               "cardId": "tk-xy-w-14",
@@ -5123,9 +5125,9 @@
               "localNumberSort": 14,
               "name": "Grodoudou",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/7/7e/Carte_XY_Kit_du_Dresseur_Scalproie_14.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/7/7e/Carte_XY_Kit_du_Dresseur_Scalproie_14.png/490px-Carte_XY_Kit_du_Dresseur_Scalproie_14.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Dimocl%C3%A8s_(XY_Kit_du_Dresseur_Scalproie_14)"
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/d/d0/Carte_XY_Kit_du_Dresseur_Grodoudou_14.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/d/d0/Carte_XY_Kit_du_Dresseur_Grodoudou_14.png/490px-Carte_XY_Kit_du_Dresseur_Grodoudou_14.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Grodoudou_(XY_Kit_du_Dresseur_Grodoudou_14)"
             },
             {
               "cardId": "tk-xy-w-15",
@@ -5133,9 +5135,9 @@
               "localNumberSort": 15,
               "name": "Potion",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/0/01/Carte_XY_Kit_du_Dresseur_Scalproie_15.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/0/01/Carte_XY_Kit_du_Dresseur_Scalproie_15.png/490px-Carte_XY_Kit_du_Dresseur_Scalproie_15.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Parecool_(XY_Kit_du_Dresseur_Scalproie_15)"
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/2/2e/Carte_XY_Kit_du_Dresseur_Grodoudou_15.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/2/2e/Carte_XY_Kit_du_Dresseur_Grodoudou_15.png/490px-Carte_XY_Kit_du_Dresseur_Grodoudou_15.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Potion_(XY_Kit_du_Dresseur_Grodoudou_15)"
             },
             {
               "cardId": "tk-xy-w-16",
@@ -5143,28 +5145,28 @@
               "localNumberSort": 16,
               "name": "Mélodelfe",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/0/0e/Carte_XY_Kit_du_Dresseur_Scalproie_16.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/0/0e/Carte_XY_Kit_du_Dresseur_Scalproie_16.png/490px-Carte_XY_Kit_du_Dresseur_Scalproie_16.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Scalproie_(XY_Kit_du_Dresseur_Scalproie_16)"
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/a/a9/Carte_XY_Kit_du_Dresseur_Grodoudou_16.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/a/a9/Carte_XY_Kit_du_Dresseur_Grodoudou_16.png/490px-Carte_XY_Kit_du_Dresseur_Grodoudou_16.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/M%C3%A9lodelfe_(XY_Kit_du_Dresseur_Grodoudou_16)"
             },
             {
               "cardId": "tk-xy-w-17",
               "localId": "17",
               "localNumberSort": 17,
               "name": "Énergie Fée",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/5/54/Carte_XY_Kit_du_Dresseur_Scalproie_17.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/5/54/Carte_XY_Kit_du_Dresseur_Scalproie_17.png/490px-Carte_XY_Kit_du_Dresseur_Scalproie_17.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Ratentif_(XY_Kit_du_Dresseur_Scalproie_17)"
+              "resolutionStatus": "unresolved",
+              "reason": "POKEPEDIA_CARD_IMAGE_NOT_FOUND",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_F%C3%A9e_(XY_Kit_du_Dresseur_Grodoudou_17)"
             },
             {
               "cardId": "tk-xy-w-18",
               "localId": "18",
               "localNumberSort": 18,
               "name": "Sucroquin",
-              "resolutionStatus": "unresolved",
-              "reason": "POKEPEDIA_CARD_IMAGE_NOT_FOUND",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_M%C3%A9tal_(XY_Kit_du_Dresseur_Scalproie_18)"
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/3/3c/Carte_XY_Kit_du_Dresseur_Grodoudou_18.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/3/3c/Carte_XY_Kit_du_Dresseur_Grodoudou_18.png/490px-Carte_XY_Kit_du_Dresseur_Grodoudou_18.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Sucroquin_(XY_Kit_du_Dresseur_Grodoudou_18)"
             },
             {
               "cardId": "tk-xy-w-19",
@@ -5172,9 +5174,9 @@
               "localNumberSort": 19,
               "name": "Mélofée",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/f/fd/Carte_XY_Kit_du_Dresseur_Scalproie_19.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/f/fd/Carte_XY_Kit_du_Dresseur_Scalproie_19.png/490px-Carte_XY_Kit_du_Dresseur_Scalproie_19.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Tierno_(XY_Kit_du_Dresseur_Scalproie_19)"
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/9/9f/Carte_XY_Kit_du_Dresseur_Grodoudou_19.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/9/9f/Carte_XY_Kit_du_Dresseur_Grodoudou_19.png/490px-Carte_XY_Kit_du_Dresseur_Grodoudou_19.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/M%C3%A9lof%C3%A9e_(XY_Kit_du_Dresseur_Grodoudou_19)"
             },
             {
               "cardId": "tk-xy-w-20",
@@ -5182,19 +5184,18 @@
               "localNumberSort": 20,
               "name": "Potion",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/a/a0/Carte_XY_Kit_du_Dresseur_Scalproie_20.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/a/a0/Carte_XY_Kit_du_Dresseur_Scalproie_20.png/490px-Carte_XY_Kit_du_Dresseur_Scalproie_20.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Trovato_(XY_Kit_du_Dresseur_Scalproie_20)"
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/f/fb/Carte_XY_Kit_du_Dresseur_Grodoudou_20.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/f/fb/Carte_XY_Kit_du_Dresseur_Grodoudou_20.png/490px-Carte_XY_Kit_du_Dresseur_Grodoudou_20.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Potion_(XY_Kit_du_Dresseur_Grodoudou_20)"
             },
             {
               "cardId": "tk-xy-w-21",
               "localId": "21",
               "localNumberSort": 21,
               "name": "Énergie Fée",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/c/c0/Carte_XY_Kit_du_Dresseur_Scalproie_21.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/c/c0/Carte_XY_Kit_du_Dresseur_Scalproie_21.png/490px-Carte_XY_Kit_du_Dresseur_Scalproie_21.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Scalpion_(XY_Kit_du_Dresseur_Scalproie_21)"
+              "resolutionStatus": "unresolved",
+              "reason": "POKEPEDIA_CARD_IMAGE_NOT_FOUND",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_F%C3%A9e_(XY_Kit_du_Dresseur_Grodoudou_21)"
             },
             {
               "cardId": "tk-xy-w-22",
@@ -5203,7 +5204,7 @@
               "name": "Énergie Fée",
               "resolutionStatus": "unresolved",
               "reason": "POKEPEDIA_CARD_IMAGE_NOT_FOUND",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_M%C3%A9tal_(XY_Kit_du_Dresseur_Scalproie_22)"
+              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_F%C3%A9e_(XY_Kit_du_Dresseur_Grodoudou_22)"
             },
             {
               "cardId": "tk-xy-w-23",
@@ -5211,18 +5212,19 @@
               "localNumberSort": 23,
               "name": "Roucoups",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/1/1b/Carte_XY_Kit_du_Dresseur_Scalproie_23.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/1/1b/Carte_XY_Kit_du_Dresseur_Scalproie_23.png/490px-Carte_XY_Kit_du_Dresseur_Scalproie_23.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Dimocl%C3%A8s_(XY_Kit_du_Dresseur_Scalproie_23)"
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/4/4b/Carte_XY_Kit_du_Dresseur_Grodoudou_23.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/4/4b/Carte_XY_Kit_du_Dresseur_Grodoudou_23.png/490px-Carte_XY_Kit_du_Dresseur_Grodoudou_23.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Roucoups_(XY_Kit_du_Dresseur_Grodoudou_23)"
             },
             {
               "cardId": "tk-xy-w-24",
               "localId": "24",
               "localNumberSort": 24,
               "name": "Trovato",
-              "resolutionStatus": "unresolved",
-              "reason": "POKEPEDIA_CARD_IMAGE_NOT_FOUND",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_M%C3%A9tal_(XY_Kit_du_Dresseur_Scalproie_24)"
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/0/0b/Carte_XY_Kit_du_Dresseur_Grodoudou_24.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/0/0b/Carte_XY_Kit_du_Dresseur_Grodoudou_24.png/490px-Carte_XY_Kit_du_Dresseur_Grodoudou_24.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Trovato_(XY_Kit_du_Dresseur_Grodoudou_24)"
             },
             {
               "cardId": "tk-xy-w-25",
@@ -5230,9 +5232,9 @@
               "localNumberSort": 25,
               "name": "Rondoudou",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/6/6c/Carte_XY_Kit_du_Dresseur_Scalproie_25.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/6/6c/Carte_XY_Kit_du_Dresseur_Scalproie_25.png/490px-Carte_XY_Kit_du_Dresseur_Scalproie_25.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Potion_(XY_Kit_du_Dresseur_Scalproie_25)"
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/4/43/Carte_XY_Kit_du_Dresseur_Grodoudou_25.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/4/43/Carte_XY_Kit_du_Dresseur_Grodoudou_25.png/490px-Carte_XY_Kit_du_Dresseur_Grodoudou_25.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Rondoudou_(XY_Kit_du_Dresseur_Grodoudou_25)"
             },
             {
               "cardId": "tk-xy-w-26",
@@ -5240,19 +5242,18 @@
               "localNumberSort": 26,
               "name": "Tierno",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/7/71/Carte_XY_Kit_du_Dresseur_Scalproie_26.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/7/71/Carte_XY_Kit_du_Dresseur_Scalproie_26.png/490px-Carte_XY_Kit_du_Dresseur_Scalproie_26.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Parecool_(XY_Kit_du_Dresseur_Scalproie_26)"
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/e/e7/Carte_XY_Kit_du_Dresseur_Grodoudou_26.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/e/e7/Carte_XY_Kit_du_Dresseur_Grodoudou_26.png/490px-Carte_XY_Kit_du_Dresseur_Grodoudou_26.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Tierno_(XY_Kit_du_Dresseur_Grodoudou_26)"
             },
             {
               "cardId": "tk-xy-w-27",
               "localId": "27",
               "localNumberSort": 27,
               "name": "Énergie Fée",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/e/e3/Carte_XY_Kit_du_Dresseur_Scalproie_27.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/e/e3/Carte_XY_Kit_du_Dresseur_Scalproie_27.png/490px-Carte_XY_Kit_du_Dresseur_Scalproie_27.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Monorpale_(XY_Kit_du_Dresseur_Scalproie_27)"
+              "resolutionStatus": "unresolved",
+              "reason": "POKEPEDIA_CARD_IMAGE_NOT_FOUND",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_F%C3%A9e_(XY_Kit_du_Dresseur_Grodoudou_27)"
             },
             {
               "cardId": "tk-xy-w-28",
@@ -5260,9 +5261,9 @@
               "localNumberSort": 28,
               "name": "Mélodelfe",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/6/63/Carte_XY_Kit_du_Dresseur_Scalproie_28.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/6/63/Carte_XY_Kit_du_Dresseur_Scalproie_28.png/490px-Carte_XY_Kit_du_Dresseur_Scalproie_28.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Vigoroth_(XY_Kit_du_Dresseur_Scalproie_28)"
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/d/de/Carte_XY_Kit_du_Dresseur_Grodoudou_28.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/d/de/Carte_XY_Kit_du_Dresseur_Grodoudou_28.png/490px-Carte_XY_Kit_du_Dresseur_Grodoudou_28.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/M%C3%A9lodelfe_(XY_Kit_du_Dresseur_Grodoudou_28)"
             },
             {
               "cardId": "tk-xy-w-29",
@@ -5270,9 +5271,9 @@
               "localNumberSort": 29,
               "name": "Roucool",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/e/eb/Carte_XY_Kit_du_Dresseur_Scalproie_29.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/e/eb/Carte_XY_Kit_du_Dresseur_Scalproie_29.png/490px-Carte_XY_Kit_du_Dresseur_Scalproie_29.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Potion_(XY_Kit_du_Dresseur_Scalproie_29)"
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/3/3c/Carte_XY_Kit_du_Dresseur_Grodoudou_29.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/3/3c/Carte_XY_Kit_du_Dresseur_Grodoudou_29.png/490px-Carte_XY_Kit_du_Dresseur_Grodoudou_29.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Roucool_(XY_Kit_du_Dresseur_Grodoudou_29)"
             },
             {
               "cardId": "tk-xy-w-30",
@@ -5280,9 +5281,9 @@
               "localNumberSort": 30,
               "name": "Grodoudou",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/e/e6/Carte_XY_Kit_du_Dresseur_Scalproie_30.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/e/e6/Carte_XY_Kit_du_Dresseur_Scalproie_30.png/490px-Carte_XY_Kit_du_Dresseur_Scalproie_30.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Scalproie_(XY_Kit_du_Dresseur_Scalproie_30)"
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/9/9b/Carte_XY_Kit_du_Dresseur_Grodoudou_30.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/9/9b/Carte_XY_Kit_du_Dresseur_Grodoudou_30.png/490px-Carte_XY_Kit_du_Dresseur_Grodoudou_30.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Grodoudou_(XY_Kit_du_Dresseur_Grodoudou_30)"
             }
           ]
         },
@@ -5291,7 +5292,7 @@
           "name": "XY Kit du dresseur (Latias)",
           "releaseDate": "2015-04-29",
           "cardCountTotal": 30,
-          "pokepediaSetUrl": "https://www.pokepedia.fr/XY_Kit_du_Dresseur:_Latias_%26_Latios",
+          "pokepediaSetUrl": "https://www.pokepedia.fr/XY_Kit_du_Dresseur:_Latias_%26_Latios#deck=Latias",
           "cards": [
             {
               "cardId": "tk-xy-latia-1",
@@ -5299,19 +5300,18 @@
               "localNumberSort": 1,
               "name": "Énergie Plante",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/d/d6/Carte_XY_Kit_du_Dresseur_Latios_1.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/d/d6/Carte_XY_Kit_du_Dresseur_Latios_1.png/490px-Carte_XY_Kit_du_Dresseur_Latios_1.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Skitty_(XY_Kit_du_Dresseur_Latios_1)"
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/d/d3/Carte_XY_Kit_du_Dresseur_Latias_1.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/d/d3/Carte_XY_Kit_du_Dresseur_Latias_1.png/490px-Carte_XY_Kit_du_Dresseur_Latias_1.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_Plante_(XY_Kit_du_Dresseur_Latias_1)"
             },
             {
               "cardId": "tk-xy-latia-2",
               "localId": "2",
               "localNumberSort": 2,
               "name": "Énergie Plante",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/a/ab/Carte_XY_Kit_du_Dresseur_Latios_2.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/a/ab/Carte_XY_Kit_du_Dresseur_Latios_2.png/490px-Carte_XY_Kit_du_Dresseur_Latios_2.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_Combat_(XY_Kit_du_Dresseur_Latios_2)"
+              "resolutionStatus": "unresolved",
+              "reason": "POKEPEDIA_CARD_IMAGE_NOT_FOUND",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_Plante_(XY_Kit_du_Dresseur_Latias_2)"
             },
             {
               "cardId": "tk-xy-latia-3",
@@ -5320,7 +5320,7 @@
               "name": "Énergie Plante",
               "resolutionStatus": "unresolved",
               "reason": "POKEPEDIA_CARD_IMAGE_NOT_FOUND",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_Combat_(XY_Kit_du_Dresseur_Latios_3)"
+              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_Plante_(XY_Kit_du_Dresseur_Latias_3)"
             },
             {
               "cardId": "tk-xy-latia-4",
@@ -5328,9 +5328,9 @@
               "localNumberSort": 4,
               "name": "Passerouge",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/8/85/Carte_XY_Kit_du_Dresseur_Latios_4.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/8/85/Carte_XY_Kit_du_Dresseur_Latios_4.png/490px-Carte_XY_Kit_du_Dresseur_Latios_4.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Rhinof%C3%A9ros_(XY_Kit_du_Dresseur_Latios_4)"
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/8/80/Carte_XY_Kit_du_Dresseur_Latias_4.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/8/80/Carte_XY_Kit_du_Dresseur_Latias_4.png/490px-Carte_XY_Kit_du_Dresseur_Latias_4.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Passerouge_(XY_Kit_du_Dresseur_Latias_4)"
             },
             {
               "cardId": "tk-xy-latia-5",
@@ -5339,34 +5339,37 @@
               "name": "Énergie Plante",
               "resolutionStatus": "unresolved",
               "reason": "POKEPEDIA_CARD_IMAGE_NOT_FOUND",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_Combat_(XY_Kit_du_Dresseur_Latios_5)"
+              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_Plante_(XY_Kit_du_Dresseur_Latias_5)"
             },
             {
               "cardId": "tk-xy-latia-6",
               "localId": "6",
               "localNumberSort": 6,
               "name": "Lombre",
-              "resolutionStatus": "unresolved",
-              "reason": "POKEPEDIA_CARD_IMAGE_NOT_FOUND",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_Combat_(XY_Kit_du_Dresseur_Latios_6)"
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/7/70/Carte_XY_Kit_du_Dresseur_Latias_6.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/7/70/Carte_XY_Kit_du_Dresseur_Latias_6.png/490px-Carte_XY_Kit_du_Dresseur_Latias_6.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Lombre_(XY_Kit_du_Dresseur_Latias_6)"
             },
             {
               "cardId": "tk-xy-latia-7",
               "localId": "7",
               "localNumberSort": 7,
               "name": "Arcko",
-              "resolutionStatus": "unresolved",
-              "reason": "POKEPEDIA_CARD_IMAGE_NOT_FOUND",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_Combat_(XY_Kit_du_Dresseur_Latios_7)"
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/e/ef/Carte_XY_Kit_du_Dresseur_Latias_7.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/e/ef/Carte_XY_Kit_du_Dresseur_Latias_7.png/490px-Carte_XY_Kit_du_Dresseur_Latias_7.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Arcko_(XY_Kit_du_Dresseur_Latias_7)"
             },
             {
               "cardId": "tk-xy-latia-8",
               "localId": "8",
               "localNumberSort": 8,
               "name": "Énergie Psy",
-              "resolutionStatus": "unresolved",
-              "reason": "POKEPEDIA_CARD_IMAGE_NOT_FOUND",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_Combat_(XY_Kit_du_Dresseur_Latios_8)"
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/1/18/Carte_XY_Kit_du_Dresseur_Latias_8.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/1/18/Carte_XY_Kit_du_Dresseur_Latias_8.png/490px-Carte_XY_Kit_du_Dresseur_Latias_8.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_Psy_(XY_Kit_du_Dresseur_Latias_8)"
             },
             {
               "cardId": "tk-xy-latia-9",
@@ -5375,7 +5378,7 @@
               "name": "Énergie Psy",
               "resolutionStatus": "unresolved",
               "reason": "POKEPEDIA_CARD_IMAGE_NOT_FOUND",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_Combat_(XY_Kit_du_Dresseur_Latios_9)"
+              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_Psy_(XY_Kit_du_Dresseur_Latias_9)"
             },
             {
               "cardId": "tk-xy-latia-10",
@@ -5384,7 +5387,7 @@
               "name": "Énergie Psy",
               "resolutionStatus": "unresolved",
               "reason": "POKEPEDIA_CARD_IMAGE_NOT_FOUND",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_Combat_(XY_Kit_du_Dresseur_Latios_10)"
+              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_Psy_(XY_Kit_du_Dresseur_Latias_10)"
             },
             {
               "cardId": "tk-xy-latia-11",
@@ -5392,9 +5395,9 @@
               "localNumberSort": 11,
               "name": "Nénupiot",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/8/81/Carte_XY_Kit_du_Dresseur_Latios_11.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/8/81/Carte_XY_Kit_du_Dresseur_Latios_11.png/490px-Carte_XY_Kit_du_Dresseur_Latios_11.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Machoc_(XY_Kit_du_Dresseur_Latios_11)"
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/0/04/Carte_XY_Kit_du_Dresseur_Latias_11.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/0/04/Carte_XY_Kit_du_Dresseur_Latias_11.png/490px-Carte_XY_Kit_du_Dresseur_Latias_11.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/N%C3%A9nupiot_(XY_Kit_du_Dresseur_Latias_11)"
             },
             {
               "cardId": "tk-xy-latia-12",
@@ -5402,9 +5405,9 @@
               "localNumberSort": 12,
               "name": "Bouldeneu",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/8/87/Carte_XY_Kit_du_Dresseur_Latios_12.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/8/87/Carte_XY_Kit_du_Dresseur_Latios_12.png/490px-Carte_XY_Kit_du_Dresseur_Latios_12.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Solaroc_(XY_Kit_du_Dresseur_Latios_12)"
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/d/d9/Carte_XY_Kit_du_Dresseur_Latias_12.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/d/d9/Carte_XY_Kit_du_Dresseur_Latias_12.png/490px-Carte_XY_Kit_du_Dresseur_Latias_12.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Bouldeneu_(XY_Kit_du_Dresseur_Latias_12)"
             },
             {
               "cardId": "tk-xy-latia-13",
@@ -5412,9 +5415,9 @@
               "localNumberSort": 13,
               "name": "Saquedeneu",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/6/62/Carte_XY_Kit_du_Dresseur_Latios_13.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/6/62/Carte_XY_Kit_du_Dresseur_Latios_13.png/490px-Carte_XY_Kit_du_Dresseur_Latios_13.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Latios_(XY_Kit_du_Dresseur_Latios_13)"
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/e/ea/Carte_XY_Kit_du_Dresseur_Latias_13.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/e/ea/Carte_XY_Kit_du_Dresseur_Latias_13.png/490px-Carte_XY_Kit_du_Dresseur_Latias_13.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Saquedeneu_(XY_Kit_du_Dresseur_Latias_13)"
             },
             {
               "cardId": "tk-xy-latia-14",
@@ -5422,9 +5425,9 @@
               "localNumberSort": 14,
               "name": "Latias",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/3/39/Carte_XY_Kit_du_Dresseur_Latios_14.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/3/39/Carte_XY_Kit_du_Dresseur_Latios_14.png/490px-Carte_XY_Kit_du_Dresseur_Latios_14.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Machopeur_(XY_Kit_du_Dresseur_Latios_14)"
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/f/fc/Carte_XY_Kit_du_Dresseur_Latias_14.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/f/fc/Carte_XY_Kit_du_Dresseur_Latias_14.png/490px-Carte_XY_Kit_du_Dresseur_Latias_14.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Latias_(XY_Kit_du_Dresseur_Latias_14)"
             },
             {
               "cardId": "tk-xy-latia-15",
@@ -5432,9 +5435,9 @@
               "localNumberSort": 15,
               "name": "Potion",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/5/57/Carte_XY_Kit_du_Dresseur_Latios_15.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/5/57/Carte_XY_Kit_du_Dresseur_Latios_15.png/490px-Carte_XY_Kit_du_Dresseur_Latios_15.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Rhinocorne_(XY_Kit_du_Dresseur_Latios_15)"
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/4/46/Carte_XY_Kit_du_Dresseur_Latias_15.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/4/46/Carte_XY_Kit_du_Dresseur_Latias_15.png/490px-Carte_XY_Kit_du_Dresseur_Latias_15.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Potion_(XY_Kit_du_Dresseur_Latias_15)"
             },
             {
               "cardId": "tk-xy-latia-16",
@@ -5442,9 +5445,9 @@
               "localNumberSort": 16,
               "name": "Arakdo",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/0/0b/Carte_XY_Kit_du_Dresseur_Latios_16.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/0/0b/Carte_XY_Kit_du_Dresseur_Latios_16.png/490px-Carte_XY_Kit_du_Dresseur_Latios_16.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_Psy_(XY_Kit_du_Dresseur_Latios_16)"
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/1/19/Carte_XY_Kit_du_Dresseur_Latias_16.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/1/19/Carte_XY_Kit_du_Dresseur_Latias_16.png/490px-Carte_XY_Kit_du_Dresseur_Latias_16.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Arakdo_(XY_Kit_du_Dresseur_Latias_16)"
             },
             {
               "cardId": "tk-xy-latia-17",
@@ -5453,26 +5456,26 @@
               "name": "Énergie Psy",
               "resolutionStatus": "unresolved",
               "reason": "POKEPEDIA_CARD_IMAGE_NOT_FOUND",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_Combat_(XY_Kit_du_Dresseur_Latios_17)"
+              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_Psy_(XY_Kit_du_Dresseur_Latias_17)"
             },
             {
               "cardId": "tk-xy-latia-18",
               "localId": "18",
               "localNumberSort": 18,
               "name": "Massko",
-              "resolutionStatus": "unresolved",
-              "reason": "POKEPEDIA_CARD_IMAGE_NOT_FOUND",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_Psy_(XY_Kit_du_Dresseur_Latios_18)"
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/e/e5/Carte_XY_Kit_du_Dresseur_Latias_18.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/e/e5/Carte_XY_Kit_du_Dresseur_Latias_18.png/490px-Carte_XY_Kit_du_Dresseur_Latias_18.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Massko_(XY_Kit_du_Dresseur_Latias_18)"
             },
             {
               "cardId": "tk-xy-latia-19",
               "localId": "19",
               "localNumberSort": 19,
               "name": "Énergie Plante",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/a/a0/Carte_XY_Kit_du_Dresseur_Latios_19.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/a/a0/Carte_XY_Kit_du_Dresseur_Latios_19.png/490px-Carte_XY_Kit_du_Dresseur_Latios_19.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Delcatty_(XY_Kit_du_Dresseur_Latios_19)"
+              "resolutionStatus": "unresolved",
+              "reason": "POKEPEDIA_CARD_IMAGE_NOT_FOUND",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_Plante_(XY_Kit_du_Dresseur_Latias_19)"
             },
             {
               "cardId": "tk-xy-latia-20",
@@ -5480,9 +5483,9 @@
               "localNumberSort": 20,
               "name": "Vélo Cross",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/e/e6/Carte_XY_Kit_du_Dresseur_Latios_20.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/e/e6/Carte_XY_Kit_du_Dresseur_Latios_20.png/490px-Carte_XY_Kit_du_Dresseur_Latios_20.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/V%C3%A9lo_Cross_(XY_Kit_du_Dresseur_Latios_20)"
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/8/81/Carte_XY_Kit_du_Dresseur_Latias_20.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/8/81/Carte_XY_Kit_du_Dresseur_Latias_20.png/490px-Carte_XY_Kit_du_Dresseur_Latias_20.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/V%C3%A9lo_Cross_(XY_Kit_du_Dresseur_Latias_20)"
             },
             {
               "cardId": "tk-xy-latia-21",
@@ -5490,19 +5493,18 @@
               "localNumberSort": 21,
               "name": "Lombre",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/d/d6/Carte_XY_Kit_du_Dresseur_Latios_21.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/d/d6/Carte_XY_Kit_du_Dresseur_Latios_21.png/490px-Carte_XY_Kit_du_Dresseur_Latios_21.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Potion_(XY_Kit_du_Dresseur_Latios_21)"
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/6/6b/Carte_XY_Kit_du_Dresseur_Latias_21.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/6/6b/Carte_XY_Kit_du_Dresseur_Latias_21.png/490px-Carte_XY_Kit_du_Dresseur_Latias_21.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Lombre_(XY_Kit_du_Dresseur_Latias_21)"
             },
             {
               "cardId": "tk-xy-latia-22",
               "localId": "22",
               "localNumberSort": 22,
               "name": "Énergie Psy",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/c/cf/Carte_XY_Kit_du_Dresseur_Latios_22.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/c/cf/Carte_XY_Kit_du_Dresseur_Latios_22.png/490px-Carte_XY_Kit_du_Dresseur_Latios_22.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Machopeur_(XY_Kit_du_Dresseur_Latios_22)"
+              "resolutionStatus": "unresolved",
+              "reason": "POKEPEDIA_CARD_IMAGE_NOT_FOUND",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_Psy_(XY_Kit_du_Dresseur_Latias_22)"
             },
             {
               "cardId": "tk-xy-latia-23",
@@ -5510,9 +5512,9 @@
               "localNumberSort": 23,
               "name": "Nénupiot",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/3/3d/Carte_XY_Kit_du_Dresseur_Latios_23.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/3/3d/Carte_XY_Kit_du_Dresseur_Latios_23.png/490px-Carte_XY_Kit_du_Dresseur_Latios_23.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Rhinocorne_(XY_Kit_du_Dresseur_Latios_23)"
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/c/c3/Carte_XY_Kit_du_Dresseur_Latias_23.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/c/c3/Carte_XY_Kit_du_Dresseur_Latias_23.png/490px-Carte_XY_Kit_du_Dresseur_Latias_23.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/N%C3%A9nupiot_(XY_Kit_du_Dresseur_Latias_23)"
             },
             {
               "cardId": "tk-xy-latia-24",
@@ -5520,9 +5522,9 @@
               "localNumberSort": 24,
               "name": "Arcko",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/3/3d/Carte_XY_Kit_du_Dresseur_Latios_24.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/3/3d/Carte_XY_Kit_du_Dresseur_Latios_24.png/490px-Carte_XY_Kit_du_Dresseur_Latios_24.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Delcatty_(XY_Kit_du_Dresseur_Latios_24)"
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/3/3a/Carte_XY_Kit_du_Dresseur_Latias_24.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/3/3a/Carte_XY_Kit_du_Dresseur_Latias_24.png/490px-Carte_XY_Kit_du_Dresseur_Latias_24.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Arcko_(XY_Kit_du_Dresseur_Latias_24)"
             },
             {
               "cardId": "tk-xy-latia-25",
@@ -5530,9 +5532,9 @@
               "localNumberSort": 25,
               "name": "Bouldeneu",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/d/d9/Carte_XY_Kit_du_Dresseur_Latios_25.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/d/d9/Carte_XY_Kit_du_Dresseur_Latios_25.png/490px-Carte_XY_Kit_du_Dresseur_Latios_25.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Rhinof%C3%A9ros_(XY_Kit_du_Dresseur_Latios_25)"
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/b/b2/Carte_XY_Kit_du_Dresseur_Latias_25.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/b/b2/Carte_XY_Kit_du_Dresseur_Latias_25.png/490px-Carte_XY_Kit_du_Dresseur_Latias_25.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Bouldeneu_(XY_Kit_du_Dresseur_Latias_25)"
             },
             {
               "cardId": "tk-xy-latia-26",
@@ -5540,9 +5542,9 @@
               "localNumberSort": 26,
               "name": "Saquedeneu",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/d/d0/Carte_XY_Kit_du_Dresseur_Latios_26.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/d/d0/Carte_XY_Kit_du_Dresseur_Latios_26.png/490px-Carte_XY_Kit_du_Dresseur_Latios_26.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Solaroc_(XY_Kit_du_Dresseur_Latios_26)"
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/8/89/Carte_XY_Kit_du_Dresseur_Latias_26.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/8/89/Carte_XY_Kit_du_Dresseur_Latias_26.png/490px-Carte_XY_Kit_du_Dresseur_Latias_26.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Saquedeneu_(XY_Kit_du_Dresseur_Latias_26)"
             },
             {
               "cardId": "tk-xy-latia-27",
@@ -5550,28 +5552,28 @@
               "localNumberSort": 27,
               "name": "Massko",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/7/74/Carte_XY_Kit_du_Dresseur_Latios_27.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/7/74/Carte_XY_Kit_du_Dresseur_Latios_27.png/490px-Carte_XY_Kit_du_Dresseur_Latios_27.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Skitty_(XY_Kit_du_Dresseur_Latios_27)"
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/c/ce/Carte_XY_Kit_du_Dresseur_Latias_27.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/c/ce/Carte_XY_Kit_du_Dresseur_Latias_27.png/490px-Carte_XY_Kit_du_Dresseur_Latias_27.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Massko_(XY_Kit_du_Dresseur_Latias_27)"
             },
             {
               "cardId": "tk-xy-latia-28",
               "localId": "28",
               "localNumberSort": 28,
               "name": "Énergie Psy",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/a/a1/Carte_XY_Kit_du_Dresseur_Latios_28.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/a/a1/Carte_XY_Kit_du_Dresseur_Latios_28.png/490px-Carte_XY_Kit_du_Dresseur_Latios_28.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Machoc_(XY_Kit_du_Dresseur_Latios_28)"
+              "resolutionStatus": "unresolved",
+              "reason": "POKEPEDIA_CARD_IMAGE_NOT_FOUND",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_Psy_(XY_Kit_du_Dresseur_Latias_28)"
             },
             {
               "cardId": "tk-xy-latia-29",
               "localId": "29",
               "localNumberSort": 29,
               "name": "Vélo Cross",
-              "resolutionStatus": "unresolved",
-              "reason": "POKEPEDIA_CARD_IMAGE_NOT_FOUND",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_Psy_(XY_Kit_du_Dresseur_Latios_29)"
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/6/6a/Carte_XY_Kit_du_Dresseur_Latias_29.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/6/6a/Carte_XY_Kit_du_Dresseur_Latias_29.png/490px-Carte_XY_Kit_du_Dresseur_Latias_29.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/V%C3%A9lo_Cross_(XY_Kit_du_Dresseur_Latias_29)"
             },
             {
               "cardId": "tk-xy-latia-30",
@@ -5579,9 +5581,9 @@
               "localNumberSort": 30,
               "name": "Latias",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/2/29/Carte_XY_Kit_du_Dresseur_Latios_30.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/2/29/Carte_XY_Kit_du_Dresseur_Latios_30.png/490px-Carte_XY_Kit_du_Dresseur_Latios_30.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Latios_(XY_Kit_du_Dresseur_Latios_30)"
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/c/cf/Carte_XY_Kit_du_Dresseur_Latias_30.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/c/cf/Carte_XY_Kit_du_Dresseur_Latias_30.png/490px-Carte_XY_Kit_du_Dresseur_Latias_30.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Latias_(XY_Kit_du_Dresseur_Latias_30)"
             }
           ]
         },
@@ -5590,7 +5592,7 @@
           "name": "XY Kit du dresseur (Latios)",
           "releaseDate": "2015-04-29",
           "cardCountTotal": 30,
-          "pokepediaSetUrl": "https://www.pokepedia.fr/XY_Kit_du_Dresseur:_Latias_%26_Latios",
+          "pokepediaSetUrl": "https://www.pokepedia.fr/XY_Kit_du_Dresseur:_Latias_%26_Latios#deck=Latios",
           "cards": [
             {
               "cardId": "tk-xy-latio-1",
@@ -5889,7 +5891,7 @@
           "name": "XY Kit du dresseur (Pikachu Libre)",
           "releaseDate": "2016-04-27",
           "cardCountTotal": 30,
-          "pokepediaSetUrl": "https://www.pokepedia.fr/XY_Kit_du_Dresseur:_Pikachu_Catcheur_et_Suicune",
+          "pokepediaSetUrl": "https://www.pokepedia.fr/XY_Kit_du_Dresseur:_Pikachu_Catcheur_et_Suicune#deck=Pikachu%20Libre%7CPikachu%20Catcheur",
           "cards": [
             {
               "cardId": "tk-xy-p-1",
@@ -6189,7 +6191,7 @@
           "name": "XY Kit du dresseur (Suicune)",
           "releaseDate": "2016-04-27",
           "cardCountTotal": 30,
-          "pokepediaSetUrl": "https://www.pokepedia.fr/XY_Kit_du_Dresseur:_Pikachu_Catcheur_et_Suicune",
+          "pokepediaSetUrl": "https://www.pokepedia.fr/XY_Kit_du_Dresseur:_Pikachu_Catcheur_et_Suicune#deck=Suicune",
           "cards": [
             {
               "cardId": "tk-xy-su-1",
@@ -6197,19 +6199,18 @@
               "localNumberSort": 1,
               "name": "Énergie Eau",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/d/df/Carte_XY_Kit_du_Dresseur_Pikachu_Catcheur_1.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/d/df/Carte_XY_Kit_du_Dresseur_Pikachu_Catcheur_1.png/490px-Carte_XY_Kit_du_Dresseur_Pikachu_Catcheur_1.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Chaglam_(XY_Kit_du_Dresseur_Pikachu_Catcheur_1)"
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/4/4b/Carte_XY_Kit_du_Dresseur_Suicune_1.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/4/4b/Carte_XY_Kit_du_Dresseur_Suicune_1.png/490px-Carte_XY_Kit_du_Dresseur_Suicune_1.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_Eau_(XY_Kit_du_Dresseur_Suicune_1)"
             },
             {
               "cardId": "tk-xy-su-2",
               "localId": "2",
               "localNumberSort": 2,
               "name": "Énergie Eau",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/b/bc/Carte_XY_Kit_du_Dresseur_Pikachu_Catcheur_2.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/b/bc/Carte_XY_Kit_du_Dresseur_Pikachu_Catcheur_2.png/490px-Carte_XY_Kit_du_Dresseur_Pikachu_Catcheur_2.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_%C3%89lectrique_(XY_Kit_du_Dresseur_Pikachu_Catcheur_2)"
+              "resolutionStatus": "unresolved",
+              "reason": "POKEPEDIA_CARD_IMAGE_NOT_FOUND",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_Eau_(XY_Kit_du_Dresseur_Suicune_2)"
             },
             {
               "cardId": "tk-xy-su-3",
@@ -6218,7 +6219,7 @@
               "name": "Énergie Eau",
               "resolutionStatus": "unresolved",
               "reason": "POKEPEDIA_CARD_IMAGE_NOT_FOUND",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_%C3%89lectrique_(XY_Kit_du_Dresseur_Pikachu_Catcheur_3)"
+              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_Eau_(XY_Kit_du_Dresseur_Suicune_3)"
             },
             {
               "cardId": "tk-xy-su-4",
@@ -6226,9 +6227,9 @@
               "localNumberSort": 4,
               "name": "Évoli",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/5/54/Carte_XY_Kit_du_Dresseur_Pikachu_Catcheur_4.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/5/54/Carte_XY_Kit_du_Dresseur_Pikachu_Catcheur_4.png/490px-Carte_XY_Kit_du_Dresseur_Pikachu_Catcheur_4.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89lekable_(XY_Kit_du_Dresseur_Pikachu_Catcheur_4)"
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/d/da/Carte_XY_Kit_du_Dresseur_Suicune_4.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/d/da/Carte_XY_Kit_du_Dresseur_Suicune_4.png/490px-Carte_XY_Kit_du_Dresseur_Suicune_4.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89voli_(XY_Kit_du_Dresseur_Suicune_4)"
             },
             {
               "cardId": "tk-xy-su-5",
@@ -6237,16 +6238,17 @@
               "name": "Énergie Eau",
               "resolutionStatus": "unresolved",
               "reason": "POKEPEDIA_CARD_IMAGE_NOT_FOUND",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_%C3%89lectrique_(XY_Kit_du_Dresseur_Pikachu_Catcheur_5)"
+              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_Eau_(XY_Kit_du_Dresseur_Suicune_5)"
             },
             {
               "cardId": "tk-xy-su-6",
               "localId": "6",
               "localNumberSort": 6,
               "name": "Croâporal",
-              "resolutionStatus": "unresolved",
-              "reason": "POKEPEDIA_CARD_IMAGE_NOT_FOUND",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_%C3%89lectrique_(XY_Kit_du_Dresseur_Pikachu_Catcheur_6)"
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/4/4e/Carte_XY_Kit_du_Dresseur_Suicune_6.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/4/4e/Carte_XY_Kit_du_Dresseur_Suicune_6.png/490px-Carte_XY_Kit_du_Dresseur_Suicune_6.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Cro%C3%A2poral_(XY_Kit_du_Dresseur_Suicune_6)"
             },
             {
               "cardId": "tk-xy-su-7",
@@ -6254,9 +6256,9 @@
               "localNumberSort": 7,
               "name": "Couaneton",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/f/f7/Carte_XY_Kit_du_Dresseur_Pikachu_Catcheur_7.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/f/f7/Carte_XY_Kit_du_Dresseur_Pikachu_Catcheur_7.png/490px-Carte_XY_Kit_du_Dresseur_Pikachu_Catcheur_7.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Nirondelle_(XY_Kit_du_Dresseur_Pikachu_Catcheur_7)"
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/c/cc/Carte_XY_Kit_du_Dresseur_Suicune_7.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/c/cc/Carte_XY_Kit_du_Dresseur_Suicune_7.png/490px-Carte_XY_Kit_du_Dresseur_Suicune_7.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Couaneton_(XY_Kit_du_Dresseur_Suicune_7)"
             },
             {
               "cardId": "tk-xy-su-8",
@@ -6265,7 +6267,7 @@
               "name": "Énergie Eau",
               "resolutionStatus": "unresolved",
               "reason": "POKEPEDIA_CARD_IMAGE_NOT_FOUND",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_%C3%89lectrique_(XY_Kit_du_Dresseur_Pikachu_Catcheur_8)"
+              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_Eau_(XY_Kit_du_Dresseur_Suicune_8)"
             },
             {
               "cardId": "tk-xy-su-9",
@@ -6274,7 +6276,7 @@
               "name": "Énergie Eau",
               "resolutionStatus": "unresolved",
               "reason": "POKEPEDIA_CARD_IMAGE_NOT_FOUND",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_%C3%89lectrique_(XY_Kit_du_Dresseur_Pikachu_Catcheur_9)"
+              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_Eau_(XY_Kit_du_Dresseur_Suicune_9)"
             },
             {
               "cardId": "tk-xy-su-10",
@@ -6283,7 +6285,7 @@
               "name": "Énergie Eau",
               "resolutionStatus": "unresolved",
               "reason": "POKEPEDIA_CARD_IMAGE_NOT_FOUND",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_%C3%89lectrique_(XY_Kit_du_Dresseur_Pikachu_Catcheur_10)"
+              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_Eau_(XY_Kit_du_Dresseur_Suicune_10)"
             },
             {
               "cardId": "tk-xy-su-11",
@@ -6291,9 +6293,9 @@
               "localNumberSort": 11,
               "name": "Grenousse",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/9/91/Carte_XY_Kit_du_Dresseur_Pikachu_Catcheur_11.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/9/91/Carte_XY_Kit_du_Dresseur_Pikachu_Catcheur_11.png/490px-Carte_XY_Kit_du_Dresseur_Pikachu_Catcheur_11.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Dynavolt_(XY_Kit_du_Dresseur_Pikachu_Catcheur_11)"
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/b/b8/Carte_XY_Kit_du_Dresseur_Suicune_11.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/b/b8/Carte_XY_Kit_du_Dresseur_Suicune_11.png/490px-Carte_XY_Kit_du_Dresseur_Suicune_11.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Grenousse_(XY_Kit_du_Dresseur_Suicune_11)"
             },
             {
               "cardId": "tk-xy-su-12",
@@ -6301,9 +6303,9 @@
               "localNumberSort": 12,
               "name": "Poissoroy",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/2/25/Carte_XY_Kit_du_Dresseur_Pikachu_Catcheur_12.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/2/25/Carte_XY_Kit_du_Dresseur_Pikachu_Catcheur_12.png/490px-Carte_XY_Kit_du_Dresseur_Pikachu_Catcheur_12.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Z%C3%A9bibron_(XY_Kit_du_Dresseur_Pikachu_Catcheur_12)"
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/0/0d/Carte_XY_Kit_du_Dresseur_Suicune_12.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/0/0d/Carte_XY_Kit_du_Dresseur_Suicune_12.png/490px-Carte_XY_Kit_du_Dresseur_Suicune_12.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Poissoroy_(XY_Kit_du_Dresseur_Suicune_12)"
             },
             {
               "cardId": "tk-xy-su-13",
@@ -6311,9 +6313,9 @@
               "localNumberSort": 13,
               "name": "Poissirène",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/6/69/Carte_XY_Kit_du_Dresseur_Pikachu_Catcheur_13.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/6/69/Carte_XY_Kit_du_Dresseur_Pikachu_Catcheur_13.png/490px-Carte_XY_Kit_du_Dresseur_Pikachu_Catcheur_13.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89lecsprint_(XY_Kit_du_Dresseur_Pikachu_Catcheur_13)"
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/2/25/Carte_XY_Kit_du_Dresseur_Suicune_13.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/2/25/Carte_XY_Kit_du_Dresseur_Suicune_13.png/490px-Carte_XY_Kit_du_Dresseur_Suicune_13.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Poissir%C3%A8ne_(XY_Kit_du_Dresseur_Suicune_13)"
             },
             {
               "cardId": "tk-xy-su-14",
@@ -6321,9 +6323,9 @@
               "localNumberSort": 14,
               "name": "Suicune",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/0/03/Carte_XY_Kit_du_Dresseur_Pikachu_Catcheur_14.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/0/03/Carte_XY_Kit_du_Dresseur_Pikachu_Catcheur_14.png/490px-Carte_XY_Kit_du_Dresseur_Pikachu_Catcheur_14.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Pikachu_Catcheur_(XY_Kit_du_Dresseur_Pikachu_Catcheur_14)"
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/9/96/Carte_XY_Kit_du_Dresseur_Suicune_14.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/9/96/Carte_XY_Kit_du_Dresseur_Suicune_14.png/490px-Carte_XY_Kit_du_Dresseur_Suicune_14.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Suicune_(XY_Kit_du_Dresseur_Suicune_14)"
             },
             {
               "cardId": "tk-xy-su-15",
@@ -6331,9 +6333,9 @@
               "localNumberSort": 15,
               "name": "Potion",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/4/47/Carte_XY_Kit_du_Dresseur_Pikachu_Catcheur_15.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/4/47/Carte_XY_Kit_du_Dresseur_Pikachu_Catcheur_15.png/490px-Carte_XY_Kit_du_Dresseur_Pikachu_Catcheur_15.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89lektek_(XY_Kit_du_Dresseur_Pikachu_Catcheur_15)"
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/1/15/Carte_XY_Kit_du_Dresseur_Suicune_15.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/1/15/Carte_XY_Kit_du_Dresseur_Suicune_15.png/490px-Carte_XY_Kit_du_Dresseur_Suicune_15.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Potion_(XY_Kit_du_Dresseur_Suicune_15)"
             },
             {
               "cardId": "tk-xy-su-16",
@@ -6341,9 +6343,9 @@
               "localNumberSort": 16,
               "name": "Tiplouf",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/2/29/Carte_XY_Kit_du_Dresseur_Pikachu_Catcheur_16.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/2/29/Carte_XY_Kit_du_Dresseur_Pikachu_Catcheur_16.png/490px-Carte_XY_Kit_du_Dresseur_Pikachu_Catcheur_16.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Passerouge_(XY_Kit_du_Dresseur_Pikachu_Catcheur_16)"
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/e/e1/Carte_XY_Kit_du_Dresseur_Suicune_16.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/e/e1/Carte_XY_Kit_du_Dresseur_Suicune_16.png/490px-Carte_XY_Kit_du_Dresseur_Suicune_16.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Tiplouf_(XY_Kit_du_Dresseur_Suicune_16)"
             },
             {
               "cardId": "tk-xy-su-17",
@@ -6352,26 +6354,26 @@
               "name": "Énergie Eau",
               "resolutionStatus": "unresolved",
               "reason": "POKEPEDIA_CARD_IMAGE_NOT_FOUND",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_%C3%89lectrique_(XY_Kit_du_Dresseur_Pikachu_Catcheur_17)"
+              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_Eau_(XY_Kit_du_Dresseur_Suicune_17)"
             },
             {
               "cardId": "tk-xy-su-18",
               "localId": "18",
               "localNumberSort": 18,
               "name": "Lakmécygne",
-              "resolutionStatus": "unresolved",
-              "reason": "POKEPEDIA_CARD_IMAGE_NOT_FOUND",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_%C3%89lectrique_(XY_Kit_du_Dresseur_Pikachu_Catcheur_18)"
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/7/7d/Carte_XY_Kit_du_Dresseur_Suicune_18.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/7/7d/Carte_XY_Kit_du_Dresseur_Suicune_18.png/490px-Carte_XY_Kit_du_Dresseur_Suicune_18.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Lakm%C3%A9cygne_(XY_Kit_du_Dresseur_Suicune_18)"
             },
             {
               "cardId": "tk-xy-su-19",
               "localId": "19",
               "localNumberSort": 19,
               "name": "Énergie Eau",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/b/bb/Carte_XY_Kit_du_Dresseur_Pikachu_Catcheur_19.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/b/bb/Carte_XY_Kit_du_Dresseur_Pikachu_Catcheur_19.png/490px-Carte_XY_Kit_du_Dresseur_Pikachu_Catcheur_19.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Chaffreux_(XY_Kit_du_Dresseur_Pikachu_Catcheur_19)"
+              "resolutionStatus": "unresolved",
+              "reason": "POKEPEDIA_CARD_IMAGE_NOT_FOUND",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_Eau_(XY_Kit_du_Dresseur_Suicune_19)"
             },
             {
               "cardId": "tk-xy-su-20",
@@ -6379,9 +6381,9 @@
               "localNumberSort": 20,
               "name": "Tierno",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/e/e0/Carte_XY_Kit_du_Dresseur_Pikachu_Catcheur_20.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/e/e0/Carte_XY_Kit_du_Dresseur_Pikachu_Catcheur_20.png/490px-Carte_XY_Kit_du_Dresseur_Pikachu_Catcheur_20.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Tierno_(XY_Kit_du_Dresseur_Pikachu_Catcheur_20)"
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/f/fe/Carte_XY_Kit_du_Dresseur_Suicune_20.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/f/fe/Carte_XY_Kit_du_Dresseur_Suicune_20.png/490px-Carte_XY_Kit_du_Dresseur_Suicune_20.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Tierno_(XY_Kit_du_Dresseur_Suicune_20)"
             },
             {
               "cardId": "tk-xy-su-21",
@@ -6389,19 +6391,18 @@
               "localNumberSort": 21,
               "name": "Croâporal",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/d/d7/Carte_XY_Kit_du_Dresseur_Pikachu_Catcheur_21.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/d/d7/Carte_XY_Kit_du_Dresseur_Pikachu_Catcheur_21.png/490px-Carte_XY_Kit_du_Dresseur_Pikachu_Catcheur_21.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Potion_(XY_Kit_du_Dresseur_Pikachu_Catcheur_21)"
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/c/ca/Carte_XY_Kit_du_Dresseur_Suicune_21.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/c/ca/Carte_XY_Kit_du_Dresseur_Suicune_21.png/490px-Carte_XY_Kit_du_Dresseur_Suicune_21.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Cro%C3%A2poral_(XY_Kit_du_Dresseur_Suicune_21)"
             },
             {
               "cardId": "tk-xy-su-22",
               "localId": "22",
               "localNumberSort": 22,
               "name": "Énergie Eau",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/6/60/Carte_XY_Kit_du_Dresseur_Pikachu_Catcheur_22.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/6/60/Carte_XY_Kit_du_Dresseur_Pikachu_Catcheur_22.png/490px-Carte_XY_Kit_du_Dresseur_Pikachu_Catcheur_22.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89lecsprint_(XY_Kit_du_Dresseur_Pikachu_Catcheur_22)"
+              "resolutionStatus": "unresolved",
+              "reason": "POKEPEDIA_CARD_IMAGE_NOT_FOUND",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_Eau_(XY_Kit_du_Dresseur_Suicune_22)"
             },
             {
               "cardId": "tk-xy-su-23",
@@ -6409,9 +6410,9 @@
               "localNumberSort": 23,
               "name": "Grenousse",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/b/b6/Carte_XY_Kit_du_Dresseur_Pikachu_Catcheur_23.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/b/b6/Carte_XY_Kit_du_Dresseur_Pikachu_Catcheur_23.png/490px-Carte_XY_Kit_du_Dresseur_Pikachu_Catcheur_23.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89lektek_(XY_Kit_du_Dresseur_Pikachu_Catcheur_23)"
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/5/50/Carte_XY_Kit_du_Dresseur_Suicune_23.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/5/50/Carte_XY_Kit_du_Dresseur_Suicune_23.png/490px-Carte_XY_Kit_du_Dresseur_Suicune_23.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Grenousse_(XY_Kit_du_Dresseur_Suicune_23)"
             },
             {
               "cardId": "tk-xy-su-24",
@@ -6419,9 +6420,9 @@
               "localNumberSort": 24,
               "name": "Couaneton",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/4/4a/Carte_XY_Kit_du_Dresseur_Pikachu_Catcheur_24.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/4/4a/Carte_XY_Kit_du_Dresseur_Pikachu_Catcheur_24.png/490px-Carte_XY_Kit_du_Dresseur_Pikachu_Catcheur_24.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Chaffreux_(XY_Kit_du_Dresseur_Pikachu_Catcheur_24)"
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/c/cf/Carte_XY_Kit_du_Dresseur_Suicune_24.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/c/cf/Carte_XY_Kit_du_Dresseur_Suicune_24.png/490px-Carte_XY_Kit_du_Dresseur_Suicune_24.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Couaneton_(XY_Kit_du_Dresseur_Suicune_24)"
             },
             {
               "cardId": "tk-xy-su-25",
@@ -6429,9 +6430,9 @@
               "localNumberSort": 25,
               "name": "Poissoroy",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/c/cd/Carte_XY_Kit_du_Dresseur_Pikachu_Catcheur_25.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/c/cd/Carte_XY_Kit_du_Dresseur_Pikachu_Catcheur_25.png/490px-Carte_XY_Kit_du_Dresseur_Pikachu_Catcheur_25.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89lekable_(XY_Kit_du_Dresseur_Pikachu_Catcheur_25)"
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/0/02/Carte_XY_Kit_du_Dresseur_Suicune_25.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/0/02/Carte_XY_Kit_du_Dresseur_Suicune_25.png/490px-Carte_XY_Kit_du_Dresseur_Suicune_25.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Poissoroy_(XY_Kit_du_Dresseur_Suicune_25)"
             },
             {
               "cardId": "tk-xy-su-26",
@@ -6439,9 +6440,9 @@
               "localNumberSort": 26,
               "name": "Poissirène",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/4/42/Carte_XY_Kit_du_Dresseur_Pikachu_Catcheur_26.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/4/42/Carte_XY_Kit_du_Dresseur_Pikachu_Catcheur_26.png/490px-Carte_XY_Kit_du_Dresseur_Pikachu_Catcheur_26.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Z%C3%A9bibron_(XY_Kit_du_Dresseur_Pikachu_Catcheur_26)"
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/1/15/Carte_XY_Kit_du_Dresseur_Suicune_26.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/1/15/Carte_XY_Kit_du_Dresseur_Suicune_26.png/490px-Carte_XY_Kit_du_Dresseur_Suicune_26.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Poissir%C3%A8ne_(XY_Kit_du_Dresseur_Suicune_26)"
             },
             {
               "cardId": "tk-xy-su-27",
@@ -6449,28 +6450,28 @@
               "localNumberSort": 27,
               "name": "Lakmécygne",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/c/c7/Carte_XY_Kit_du_Dresseur_Pikachu_Catcheur_27.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/c/c7/Carte_XY_Kit_du_Dresseur_Pikachu_Catcheur_27.png/490px-Carte_XY_Kit_du_Dresseur_Pikachu_Catcheur_27.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Chaglam_(XY_Kit_du_Dresseur_Pikachu_Catcheur_27)"
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/8/83/Carte_XY_Kit_du_Dresseur_Suicune_27.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/8/83/Carte_XY_Kit_du_Dresseur_Suicune_27.png/490px-Carte_XY_Kit_du_Dresseur_Suicune_27.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Lakm%C3%A9cygne_(XY_Kit_du_Dresseur_Suicune_27)"
             },
             {
               "cardId": "tk-xy-su-28",
               "localId": "28",
               "localNumberSort": 28,
               "name": "Énergie Eau",
-              "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/a/a8/Carte_XY_Kit_du_Dresseur_Pikachu_Catcheur_28.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/a/a8/Carte_XY_Kit_du_Dresseur_Pikachu_Catcheur_28.png/490px-Carte_XY_Kit_du_Dresseur_Pikachu_Catcheur_28.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Dynavolt_(XY_Kit_du_Dresseur_Pikachu_Catcheur_28)"
+              "resolutionStatus": "unresolved",
+              "reason": "POKEPEDIA_CARD_IMAGE_NOT_FOUND",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_Eau_(XY_Kit_du_Dresseur_Suicune_28)"
             },
             {
               "cardId": "tk-xy-su-29",
               "localId": "29",
               "localNumberSort": 29,
               "name": "Tierno",
-              "resolutionStatus": "unresolved",
-              "reason": "POKEPEDIA_CARD_IMAGE_NOT_FOUND",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/%C3%89nergie_%C3%89lectrique_(XY_Kit_du_Dresseur_Pikachu_Catcheur_29)"
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/1/1d/Carte_XY_Kit_du_Dresseur_Suicune_29.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/1/1d/Carte_XY_Kit_du_Dresseur_Suicune_29.png/490px-Carte_XY_Kit_du_Dresseur_Suicune_29.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Tierno_(XY_Kit_du_Dresseur_Suicune_29)"
             },
             {
               "cardId": "tk-xy-su-30",
@@ -6478,9 +6479,9 @@
               "localNumberSort": 30,
               "name": "Suicune",
               "resolutionStatus": "resolved",
-              "pokepediaHdUrl": "https://www.pokepedia.fr/images/2/2e/Carte_XY_Kit_du_Dresseur_Pikachu_Catcheur_30.png",
-              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/2/2e/Carte_XY_Kit_du_Dresseur_Pikachu_Catcheur_30.png/490px-Carte_XY_Kit_du_Dresseur_Pikachu_Catcheur_30.png",
-              "pokepediaCardUrl": "https://www.pokepedia.fr/Pikachu_Catcheur_(XY_Kit_du_Dresseur_Pikachu_Catcheur_30)"
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/c/c9/Carte_XY_Kit_du_Dresseur_Suicune_30.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/c/c9/Carte_XY_Kit_du_Dresseur_Suicune_30.png/490px-Carte_XY_Kit_du_Dresseur_Suicune_30.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Suicune_(XY_Kit_du_Dresseur_Suicune_30)"
             }
           ]
         },

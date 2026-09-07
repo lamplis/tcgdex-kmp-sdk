@@ -2313,8 +2313,29 @@ private data class MissingFrSet(
     val cards: List<JsonObject> = emptyList(),
 )
 
-private fun MissingFrRoot.flattenCards(): List<JsonObject> =
-    series.flatMap { serie -> serie.sets }.flatMap { it.cards }
+/**
+ * Sibling-deck tokens that must never appear in a Pokepedia fallback URL for that set.
+ * Combined wiki pages are matched by localId first, so Suicune-kit cards can bind
+ * Pikachu Catcheur files (and the other XY dual kits can swap the same way).
+ */
+internal val TRAINER_KIT_SIBLING_FALLBACK_TOKENS: Map<String, List<String>> = mapOf(
+    "tk-ex-m" to listOf("Posipi"),
+    "tk-ex-p" to listOf("Négapi", "N%C3%A9gapi"),
+    "tk-xy-n" to listOf("Nymphali"),
+    "tk-xy-sy" to listOf("Bruyverne"),
+    "tk-xy-b" to listOf("Grodoudou"),
+    "tk-xy-w" to listOf("Scalproie"),
+    "tk-xy-latia" to listOf("Latios"),
+    "tk-xy-latio" to listOf("Latias"),
+    "tk-xy-p" to listOf("Suicune"),
+    "tk-xy-su" to listOf("Pikachu_Catcheur"),
+)
+
+internal fun isMismatchedTrainerKitFallback(setId: String?, url: String): Boolean {
+    if (setId.isNullOrBlank()) return false
+    val tokens = TRAINER_KIT_SIBLING_FALLBACK_TOKENS[setId] ?: return false
+    return tokens.any { token -> url.contains(token, ignoreCase = true) }
+}
 
 internal fun loadPokepediaFallbacks(
     missingFilePath: String?,
@@ -2333,50 +2354,65 @@ internal fun loadPokepediaFallbacks(
 
     return runCatching {
         val root = json.decodeFromString<MissingFrRoot>(file.readText())
-        val cards = root.flattenCards()
+        val sets = root.series.flatMap { serie -> serie.sets }
 
-        if (cards.isEmpty()) {
+        if (sets.none { it.cards.isNotEmpty() }) {
             println("[Tcgdex][i] Pokepedia missing tree contained no cards")
             return emptyMap()
         }
 
         val resolved = mutableMapOf<String, FallbackImage>()
         var skipped = 0
+        var mismatched = 0
 
-        for (entry in cards) {
-            val rawCardId = entry["cardId"]?.jsonPrimitive?.contentOrNull?.trim()
-            if (rawCardId.isNullOrBlank()) continue
-            val cardId = rewriteHiddenFatesVaultCardId(rawCardId)
+        for (set in sets) {
+            for (entry in set.cards) {
+                val rawCardId = entry["cardId"]?.jsonPrimitive?.contentOrNull?.trim()
+                if (rawCardId.isNullOrBlank()) continue
+                val cardId = rewriteHiddenFatesVaultCardId(rawCardId)
 
-            val status = entry["resolutionStatus"]?.jsonPrimitive?.contentOrNull
-            val reason = entry["reason"]?.jsonPrimitive?.contentOrNull
-            if (reason.equals("POKEPEDIA_THUMBNAIL_MISSING", ignoreCase = true)) {
-                skipped++
-                continue
-            }
+                val status = entry["resolutionStatus"]?.jsonPrimitive?.contentOrNull
+                val reason = entry["reason"]?.jsonPrimitive?.contentOrNull
+                if (reason.equals("POKEPEDIA_THUMBNAIL_MISSING", ignoreCase = true)) {
+                    skipped++
+                    continue
+                }
 
-            val hdUrl = entry["pokepediaHdUrl"]?.jsonPrimitive?.contentOrNull?.takeIf { it.isNotBlank() }
-            val thumbUrl = entry["pokepediaThumbnailUrl"]?.jsonPrimitive?.contentOrNull?.takeIf { it.isNotBlank() }
-            val cardmarketUrl = entry["cardmarketImageUrl"]?.jsonPrimitive?.contentOrNull?.takeIf { it.isNotBlank() }
+                val hdUrl = entry["pokepediaHdUrl"]?.jsonPrimitive?.contentOrNull?.takeIf { it.isNotBlank() }
+                val thumbUrl = entry["pokepediaThumbnailUrl"]?.jsonPrimitive?.contentOrNull?.takeIf { it.isNotBlank() }
+                val cardmarketUrl = entry["cardmarketImageUrl"]?.jsonPrimitive?.contentOrNull?.takeIf { it.isNotBlank() }
 
-            val pokepediaUrl = when {
-                status.equals("resolved", ignoreCase = true) -> hdUrl ?: thumbUrl
-                reason.equals("POKEPEDIA_HD_UNAVAILABLE", ignoreCase = true) -> thumbUrl
-                else -> null
-            }
+                val pokepediaUrl = when {
+                    status.equals("resolved", ignoreCase = true) -> hdUrl ?: thumbUrl
+                    reason.equals("POKEPEDIA_HD_UNAVAILABLE", ignoreCase = true) -> thumbUrl
+                    else -> null
+                }
+                val matchedPokepediaUrl = pokepediaUrl?.takeUnless { url ->
+                    isMismatchedTrainerKitFallback(set.setId, url)
+                }
+                if (pokepediaUrl != null && matchedPokepediaUrl == null) {
+                    mismatched++
+                }
 
-            val fallback = when {
-                pokepediaUrl != null -> FallbackImage(url = pokepediaUrl, source = POKEPEDIA_SOURCE)
-                cardmarketUrl != null -> FallbackImage(url = cardmarketUrl, source = CARDMARKET_SOURCE)
-                else -> null
-            }
+                val fallback = when {
+                    matchedPokepediaUrl != null -> FallbackImage(
+                        url = matchedPokepediaUrl,
+                        source = POKEPEDIA_SOURCE,
+                    )
+                    cardmarketUrl != null -> FallbackImage(url = cardmarketUrl, source = CARDMARKET_SOURCE)
+                    else -> null
+                }
 
-            if (fallback != null) {
-                resolved[cardId] = fallback
+                if (fallback != null) {
+                    resolved[cardId] = fallback
+                }
             }
         }
 
-        println("[Tcgdex][i] Pokepedia fallbacks loaded: total=${resolved.size}, skipped=$skipped")
+        println(
+            "[Tcgdex][i] Pokepedia fallbacks loaded: total=${resolved.size}, " +
+                "skipped=$skipped, mismatchedKit=$mismatched",
+        )
         resolved
     }.onFailure {
         println("[Tcgdex][x] Failed to load Pokepedia fallback data: ${it.message}")
