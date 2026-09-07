@@ -1535,8 +1535,8 @@ private fun buildSetAliasIndexSource(
         |            addNameAliases(aliases, seed.enName, "en")
         |            addNameAliases(aliases, seed.frName, "fr")
         |
-        |            seed.enExtraAliases.forEach { addAlias(aliases, it, "en") }
-        |            seed.frExtraAliases.forEach { addAlias(aliases, it, "fr") }
+        |            seed.enExtraAliases.forEach { addOfficialAbbreviationAliases(aliases, it, "en") }
+        |            seed.frExtraAliases.forEach { addOfficialAbbreviationAliases(aliases, it, "fr") }
         |            seed.enSeriesAliases.forEach { addAlias(aliases, it, "en") }
         |            seed.frSeriesAliases.forEach { addAlias(aliases, it, "fr") }
         |
