@@ -800,6 +800,99 @@ class LocalDatabaseGenerationE2eTest {
         }
     }
 
+    @Test
+    fun `Given local generator inputs, When generating database, Then mfb uses Mon premier combat French names and Pokepedia art`() {
+        val projectRoot = resolveProjectRoot()
+        val datasetDir = projectRoot.resolve("libs/cards-database/server/generated")
+        val cardmarketExportDir = projectRoot.resolve("libs/tcgdex-kmp-sdk/generator-inputs/cardmarket")
+        val pokepediaTreeFile = projectRoot.resolve(
+            "libs/tcgdex-kmp-sdk/generator-inputs/pokepedia/missing-fr-card-images-tree.json",
+        )
+        val recognitionVectorsFile = projectRoot.resolve(
+            "libs/tcgdex-kmp-sdk/generator-inputs/recognition/card-vectors-fr.json",
+        )
+
+        assertTrue(datasetDir.isDirectory, "[x] Missing dataset directory: ${datasetDir.absolutePath}.")
+        assertTrue(pokepediaTreeFile.isFile, "[x] Missing Pokepedia tree file: ${pokepediaTreeFile.absolutePath}.")
+
+        val tempDir = createTempDirectory("tcgdex-e2e-mfb-").toFile()
+        val outputDb = tempDir.resolve("tcgdex.db")
+
+        try {
+            main(
+                arrayOf(
+                    "--dataset=${datasetDir.absolutePath}",
+                    "--languages=en,fr",
+                    "--output=${outputDb.absolutePath}",
+                    "--force=true",
+                    "--cardmarket-export=${cardmarketExportDir.absolutePath}",
+                    "--pokepedia-missing=${pokepediaTreeFile.absolutePath}",
+                    "--recognition-vectors=${recognitionVectorsFile.absolutePath}",
+                ),
+            )
+
+            assertTrue(outputDb.isFile, "[x] Database generation did not create ${outputDb.absolutePath}.")
+
+            Class.forName("org.sqlite.JDBC")
+            DriverManager.getConnection("jdbc:sqlite:${outputDb.absolutePath}").use { connection ->
+                val frenchSet = queryGeneratedSet(connection, "mfb", targetLanguage)
+                assertNotNull(frenchSet, "[x] Missing French mfb set row")
+                assertEquals("Mon premier combat", frenchSet.name)
+
+                val frenchBulbizarre = queryCardFallbackRow(connection, "mfb-1", targetLanguage)
+                assertNotNull(frenchBulbizarre, "[x] Missing FR mfb-1")
+                assertEquals("Bulbizarre", frenchBulbizarre.name)
+                assertEquals("fr", queryOriginLanguage(connection, "mfb-1", targetLanguage))
+                assertTrue(
+                    frenchBulbizarre.imageUrl.isNullOrBlank(),
+                    "[x] FR mfb-1 must keep empty image_url (no CDN).",
+                )
+                assertTrue(
+                    frenchBulbizarre.fallbackImageUrl?.contains(
+                        "Carte_Mon_premier_combat_Bulbizarre_Bulbizarre.png",
+                    ) == true,
+                    "[x] FR mfb-1 missing Bulbizarre Pokepedia scan: ${frenchBulbizarre.fallbackImageUrl}",
+                )
+
+                val frenchSalameche = queryCardFallbackRow(connection, "mfb-9", targetLanguage)
+                assertNotNull(frenchSalameche, "[x] Missing FR mfb-9")
+                val salamecheUrl = frenchSalameche.fallbackImageUrl.orEmpty()
+                assertTrue(
+                    salamecheUrl.contains("Salamèche_Salamèche") ||
+                        salamecheUrl.contains("Salam%C3%A8che_Salam%C3%A8che"),
+                    "[x] FR mfb-9 missing Salamèche Pokepedia scan: ${frenchSalameche.fallbackImageUrl}",
+                )
+
+                val englishBulbasaur = queryCardFallbackRow(connection, "mfb-1", englishLanguage)
+                assertNotNull(englishBulbasaur, "[x] Missing EN mfb-1")
+                assertEquals("Bulbasaur", englishBulbasaur.name)
+
+                assertPokepediaInternationalFallback(
+                    connection = connection,
+                    dbPath = outputDb,
+                    datasetDir = datasetDir,
+                    cardmarketExportDir = cardmarketExportDir,
+                    pokepediaTreeFile = pokepediaTreeFile,
+                    cardId = "bog-7",
+                    language = targetLanguage,
+                    filename = "Carte_Best_of_Game_7.png",
+                )
+                assertPokepediaInternationalFallback(
+                    connection = connection,
+                    dbPath = outputDb,
+                    datasetDir = datasetDir,
+                    cardmarketExportDir = cardmarketExportDir,
+                    pokepediaTreeFile = pokepediaTreeFile,
+                    cardId = "smp-SM226",
+                    language = targetLanguage,
+                    filename = "Carte_Promo_SM_SM226.png",
+                )
+            }
+        } finally {
+            tempDir.deleteRecursively()
+        }
+    }
+
     private fun containsNegapiToken(url: String?, localId: String): Boolean {
         val value = url.orEmpty()
         return value.contains("Négapi_$localId") || value.contains("N%C3%A9gapi_$localId")
@@ -868,6 +961,26 @@ class LocalDatabaseGenerationE2eTest {
             cursor = candidate.parentFile
         }
         error("[x] Could not resolve project root from ${System.getProperty("user.dir")}.")
+    }
+
+    private fun queryOriginLanguage(connection: Connection, cardId: String, language: String): String? {
+        connection.prepareStatement(
+            """
+            SELECT origin_language
+            FROM cards
+            WHERE id = ?
+              AND language = ?
+            """.trimIndent(),
+        ).use { statement ->
+            statement.setString(1, cardId)
+            statement.setString(2, language)
+            statement.executeQuery().use { resultSet ->
+                if (!resultSet.next()) {
+                    return null
+                }
+                return resultSet.getString("origin_language")
+            }
+        }
     }
 
     private fun queryCardFallbackRow(connection: Connection, cardId: String, language: String): GeneratedCardRow? {

@@ -236,6 +236,8 @@ fun main(args: Array<String>) = runBlocking {
     val frenchCardCache = mutableMapOf<String, JsonObject>()
     // language -> subSetId -> (serieId, parentSetId) for CDN parent-folder image fallback
     val subSetParentsByLanguage = mutableMapOf<String, Map<String, Pair<String, String>>>()
+    var englishMfbSet: EnglishMfbSetClone? = null
+    var frenchHasMfb = false
     
     // Valid dex IDs from pokemon-species.json (used for validation)
     val validDexIds = pokemonSpecies.keys
@@ -607,6 +609,20 @@ fun main(args: Array<String>) = runBlocking {
                 abbreviationOfficial = abbreviationOfficial,
                 parentSetId = parentBySubSetId[id],
             )
+            if (id == MFB_SET_ID && language == "en") {
+                englishMfbSet = EnglishMfbSetClone(
+                    serieId = serieId,
+                    logoUrl = logoUrl,
+                    symbolUrl = symbolUrl,
+                    cardCountTotal = cardCountTotal.toLong(),
+                    cardCountOfficial = cardCountOfficial.toLong(),
+                    releaseDate = releaseDate,
+                    abbreviationOfficial = abbreviationOfficial,
+                    parentSetId = parentBySubSetId[id],
+                )
+            } else if (id == MFB_SET_ID && language == "fr") {
+                frenchHasMfb = true
+            }
         }
         println("[Tcgdex]   Sets: ${setsJson.size}")
 
@@ -630,6 +646,24 @@ fun main(args: Array<String>) = runBlocking {
         println("[Tcgdex]   Cards: ${cardsJson.size}")
     }
 
+    val clonedEnglishMfbSet = englishMfbSet
+    if (clonedEnglishMfbSet != null && !frenchHasMfb && "fr" in datasetsByLanguage) {
+        println("[Tcgdex] Inserting French set row for $MFB_SET_ID ($MFB_FRENCH_SET_NAME)")
+        db.tcgdexQueries.insertSet(
+            id = MFB_SET_ID,
+            language = "fr",
+            serieId = clonedEnglishMfbSet.serieId,
+            name = MFB_FRENCH_SET_NAME,
+            logoUrl = clonedEnglishMfbSet.logoUrl,
+            symbolUrl = clonedEnglishMfbSet.symbolUrl,
+            cardCountTotal = clonedEnglishMfbSet.cardCountTotal,
+            cardCountOfficial = clonedEnglishMfbSet.cardCountOfficial,
+            releaseDate = clonedEnglishMfbSet.releaseDate,
+            abbreviationOfficial = clonedEnglishMfbSet.abbreviationOfficial,
+            parentSetId = clonedEnglishMfbSet.parentSetId,
+        )
+    }
+
     // Backfill missing French cards with English data when available
     val shouldBackfillFrenchFromEnglish = "fr" in datasetsByLanguage && "en" in datasetsByLanguage
     if (shouldBackfillFrenchFromEnglish) {
@@ -639,7 +673,15 @@ fun main(args: Array<String>) = runBlocking {
             println("[Tcgdex][!] Adding ${englishOnlyIds.size} English fallbacks to French dataset")
             englishOnlyIds.sorted().forEach { id ->
                 val card = englishCardCache[id] ?: return@forEach
-                insertCard(language = "fr", card = card, originLanguage = "en")
+                if (id.startsWith("$MFB_SET_ID-")) {
+                    insertCard(
+                        language = "fr",
+                        card = localizeMfbCardJson(card),
+                        originLanguage = "fr",
+                    )
+                } else {
+                    insertCard(language = "fr", card = card, originLanguage = "en")
+                }
             }
         }
 

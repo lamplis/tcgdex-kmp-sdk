@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-06T22:40:30.195Z",
+  "generatedAt": "2026-09-06T22:58:28.044Z",
   "databasePath": "/Users/admin/workspace/cardium/iosApp/iosApp/Resources/tcgdex.db",
   "language": "fr",
-  "totalCards": 3498,
-  "resolvedCards": 3379,
+  "totalCards": 3533,
+  "resolvedCards": 3414,
   "unresolvedCards": 119,
   "unresolvedReasons": {
     "POKEPEDIA_CARD_IMAGE_NOT_FOUND": 86,
@@ -34163,6 +34163,299 @@
               "pokepediaHdUrl": "https://www.pokepedia.fr/images/c/cf/Carte_Promo_SV_Terapagos_et_ses_Amis.png",
               "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/c/cf/Carte_Promo_SV_Terapagos_et_ses_Amis.png",
               "pokepediaCardUrl": "https://www.pokepedia.fr/Terapagos_et_ses_Amis_(Promo_SV)"
+            }
+          ]
+        },
+        {
+          "setId": "mfb",
+          "name": "My First Battle",
+          "releaseDate": "2023-09-29",
+          "cardCountTotal": 48,
+          "pokepediaSetUrl": "https://www.pokepedia.fr/Mon_premier_combat",
+          "cards": [
+            {
+              "cardId": "mfb-1",
+              "localId": "1",
+              "localNumberSort": 1,
+              "name": "Bulbasaur",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/d/d4/Carte_Mon_premier_combat_Bulbizarre_Bulbizarre.png"
+            },
+            {
+              "cardId": "mfb-2",
+              "localId": "2",
+              "localNumberSort": 2,
+              "name": "Ivysaur",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/9/94/Carte_Mon_premier_combat_Bulbizarre_Herbizarre.png"
+            },
+            {
+              "cardId": "mfb-3",
+              "localId": "3",
+              "localNumberSort": 3,
+              "name": "Oddish",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/a/aa/Carte_Mon_premier_combat_Bulbizarre_Mystherbe.png"
+            },
+            {
+              "cardId": "mfb-4",
+              "localId": "4",
+              "localNumberSort": 4,
+              "name": "Gloom",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/0/07/Carte_Mon_premier_combat_Bulbizarre_Ortide.png"
+            },
+            {
+              "cardId": "mfb-5",
+              "localId": "5",
+              "localNumberSort": 5,
+              "name": "Exeggcute",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/1/12/Carte_Mon_premier_combat_Bulbizarre_Noeunoeuf.png"
+            },
+            {
+              "cardId": "mfb-6",
+              "localId": "6",
+              "localNumberSort": 6,
+              "name": "Exeggutor",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/7/7e/Carte_Mon_premier_combat_Bulbizarre_Noadkoko.png"
+            },
+            {
+              "cardId": "mfb-7",
+              "localId": "7",
+              "localNumberSort": 7,
+              "name": "Scyther",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/3/3b/Carte_Mon_premier_combat_Bulbizarre_Ins%C3%A9ctateur.png"
+            },
+            {
+              "cardId": "mfb-8",
+              "localId": "8",
+              "localNumberSort": 8,
+              "name": "Grass Energy",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/b/b4/Carte_Mon_premier_combat_Bulbizarre_%C3%89nergie_Plante_de_base.png"
+            },
+            {
+              "cardId": "mfb-9",
+              "localId": "9",
+              "localNumberSort": 9,
+              "name": "Charmander",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/5/52/Carte_Mon_premier_combat_Salam%C3%A8che_Salam%C3%A8che.png"
+            },
+            {
+              "cardId": "mfb-10",
+              "localId": "10",
+              "localNumberSort": 10,
+              "name": "Charmeleon",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/9/9f/Carte_Mon_premier_combat_Salam%C3%A8che_Reptincel.png"
+            },
+            {
+              "cardId": "mfb-11",
+              "localId": "11",
+              "localNumberSort": 11,
+              "name": "Vulpix",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/9/97/Carte_Mon_premier_combat_Salam%C3%A8che_Goupix.png"
+            },
+            {
+              "cardId": "mfb-12",
+              "localId": "12",
+              "localNumberSort": 12,
+              "name": "Ninetales",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/4/4d/Carte_Mon_premier_combat_Salam%C3%A8che_Feunard.png"
+            },
+            {
+              "cardId": "mfb-13",
+              "localId": "13",
+              "localNumberSort": 13,
+              "name": "Growlithe",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/4/4a/Carte_Mon_premier_combat_Salam%C3%A8che_Caninos.png"
+            },
+            {
+              "cardId": "mfb-14",
+              "localId": "14",
+              "localNumberSort": 14,
+              "name": "Arcanine",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/0/0c/Carte_Mon_premier_combat_Salam%C3%A8che_Arcanin.png"
+            },
+            {
+              "cardId": "mfb-15",
+              "localId": "15",
+              "localNumberSort": 15,
+              "name": "Magmar",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/f/f2/Carte_Mon_premier_combat_Salam%C3%A8che_Magmar.png"
+            },
+            {
+              "cardId": "mfb-16",
+              "localId": "16",
+              "localNumberSort": 16,
+              "name": "Fire Energy",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/f/f9/Carte_Mon_premier_combat_Salam%C3%A8che_%C3%89nergie_Feu_de_base.png"
+            },
+            {
+              "cardId": "mfb-17",
+              "localId": "17",
+              "localNumberSort": 17,
+              "name": "Pikachu",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/2/2e/Carte_Mon_premier_combat_Pikachu_Pikachu.png"
+            },
+            {
+              "cardId": "mfb-18",
+              "localId": "18",
+              "localNumberSort": 18,
+              "name": "Raichu",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/0/07/Carte_Mon_premier_combat_Pikachu_Raichu.png"
+            },
+            {
+              "cardId": "mfb-19",
+              "localId": "19",
+              "localNumberSort": 19,
+              "name": "Magnemite",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/0/06/Carte_Mon_premier_combat_Pikachu_Magn%C3%A9ti.png"
+            },
+            {
+              "cardId": "mfb-20",
+              "localId": "20",
+              "localNumberSort": 20,
+              "name": "Magneton",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/9/92/Carte_Mon_premier_combat_Pikachu_Magn%C3%A9ton.png"
+            },
+            {
+              "cardId": "mfb-21",
+              "localId": "21",
+              "localNumberSort": 21,
+              "name": "Voltorb",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/5/55/Carte_Mon_premier_combat_Pikachu_Voltorbe.png"
+            },
+            {
+              "cardId": "mfb-22",
+              "localId": "22",
+              "localNumberSort": 22,
+              "name": "Electrode",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/c/cc/Carte_Mon_premier_combat_Pikachu_%C3%89lectrode.png"
+            },
+            {
+              "cardId": "mfb-23",
+              "localId": "23",
+              "localNumberSort": 23,
+              "name": "Electabuzz",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/3/3b/Carte_Mon_premier_combat_Pikachu_%C3%89lektek.png"
+            },
+            {
+              "cardId": "mfb-24",
+              "localId": "24",
+              "localNumberSort": 24,
+              "name": "Lightning Energy",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/3/3f/Carte_Mon_premier_combat_Pikachu_%C3%89nergie_%C3%89lectrique_de_base.png"
+            },
+            {
+              "cardId": "mfb-25",
+              "localId": "25",
+              "localNumberSort": 25,
+              "name": "Squirtle",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/9/98/Carte_Mon_premier_combat_Carapuce_Carapuce.png"
+            },
+            {
+              "cardId": "mfb-26",
+              "localId": "26",
+              "localNumberSort": 26,
+              "name": "Wartortle",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/9/96/Carte_Mon_premier_combat_Carapuce_Carabaffe.png"
+            },
+            {
+              "cardId": "mfb-27",
+              "localId": "27",
+              "localNumberSort": 27,
+              "name": "Poliwag",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/0/0b/Carte_Mon_premier_combat_Carapuce_Ptitard.png"
+            },
+            {
+              "cardId": "mfb-28",
+              "localId": "28",
+              "localNumberSort": 28,
+              "name": "Poliwhirl",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/0/0d/Carte_Mon_premier_combat_Carapuce_T%C3%AAtarte.png"
+            },
+            {
+              "cardId": "mfb-29",
+              "localId": "29",
+              "localNumberSort": 29,
+              "name": "Magikarp",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/8/89/Carte_Mon_premier_combat_Carapuce_Magicarpe.png"
+            },
+            {
+              "cardId": "mfb-30",
+              "localId": "30",
+              "localNumberSort": 30,
+              "name": "Gyarados",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/9/95/Carte_Mon_premier_combat_Carapuce_L%C3%A9viator.png"
+            },
+            {
+              "cardId": "mfb-31",
+              "localId": "31",
+              "localNumberSort": 31,
+              "name": "Lapras",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/4/46/Carte_Mon_premier_combat_Carapuce_Lokhlass.png"
+            },
+            {
+              "cardId": "mfb-32",
+              "localId": "32",
+              "localNumberSort": 32,
+              "name": "Water Energy",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/2/22/Carte_Mon_premier_combat_Carapuce_%C3%89nergie_Eau_de_base.png"
+            },
+            {
+              "cardId": "mfb-33",
+              "localId": "33",
+              "localNumberSort": 33,
+              "name": "Potion",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/a/af/Carte_Mon_premier_combat_Bulbizarre_Potion.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/a/af/Carte_Mon_premier_combat_Bulbizarre_Potion.png/490px-Carte_Mon_premier_combat_Bulbizarre_Potion.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Potion_(Mon_premier_combat_Bulbizarre)"
+            },
+            {
+              "cardId": "mfb-34",
+              "localId": "34",
+              "localNumberSort": 34,
+              "name": "Switch",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/3/3e/Carte_Mon_premier_combat_Bulbizarre_%C3%89change.png"
+            },
+            {
+              "cardId": "mfb-OBJET",
+              "localId": "OBJET",
+              "localNumberSort": 9007199254740991,
+              "name": "Potion",
+              "resolutionStatus": "resolved",
+              "pokepediaHdUrl": "https://www.pokepedia.fr/images/a/af/Carte_Mon_premier_combat_Bulbizarre_Potion.png",
+              "pokepediaThumbnailUrl": "https://www.pokepedia.fr/images/thumb/a/af/Carte_Mon_premier_combat_Bulbizarre_Potion.png/490px-Carte_Mon_premier_combat_Bulbizarre_Potion.png",
+              "pokepediaCardUrl": "https://www.pokepedia.fr/Potion_(Mon_premier_combat_Bulbizarre)"
             }
           ]
         }
