@@ -40,6 +40,7 @@ class LocalDatabaseGenerationE2eTest {
         val datasetDir = projectRoot.resolve("libs/cards-database/server/generated")
         val cardmarketExportDir = projectRoot.resolve("libs/tcgdex-kmp-sdk/generator-inputs/cardmarket")
         val pokepediaTreeFile = projectRoot.resolve("libs/tcgdex-kmp-sdk/generator-inputs/pokepedia/missing-fr-card-images-tree.json")
+        val setLogosFile = projectRoot.resolve("libs/tcgdex-kmp-sdk/generator-inputs/pokepedia/set-logos.json")
         val recognitionVectorsFile = projectRoot.resolve("libs/tcgdex-kmp-sdk/generator-inputs/recognition/card-vectors-fr.json")
 
         assertTrue(
@@ -53,6 +54,10 @@ class LocalDatabaseGenerationE2eTest {
         assertTrue(
             pokepediaTreeFile.isFile,
             "[x] Missing Pokepedia tree file: ${pokepediaTreeFile.absolutePath}.",
+        )
+        assertTrue(
+            setLogosFile.isFile,
+            "[x] Missing set logos overlay file: ${setLogosFile.absolutePath}.",
         )
         assertTrue(
             recognitionVectorsFile.isFile,
@@ -71,6 +76,7 @@ class LocalDatabaseGenerationE2eTest {
                     "--force=true",
                     "--cardmarket-export=${cardmarketExportDir.absolutePath}",
                     "--pokepedia-missing=${pokepediaTreeFile.absolutePath}",
+                    "--set-logos=${setLogosFile.absolutePath}",
                     "--recognition-vectors=${recognitionVectorsFile.absolutePath}",
                 ),
             )
@@ -148,6 +154,30 @@ class LocalDatabaseGenerationE2eTest {
                     !me03EnglishSetRow.symbolUrl.isNullOrBlank(),
                     "[x] Expected me03.symbol_url to be populated for $englishLanguage.\n${buildSetDebugMessage(outputDb, datasetDir, cardmarketExportDir, pokepediaTreeFile, "me03", englishLanguage, me03EnglishSetRow)}",
                 )
+                assertTrue(
+                    me03SetRow.logoUrl.orEmpty().contains("assets.tcgdex.net"),
+                    "[x] Expected me03.logo_url to keep the TCGdex CDN.\n${buildSetDebugMessage(outputDb, datasetDir, cardmarketExportDir, pokepediaTreeFile, "me03", targetLanguage, me03SetRow)}",
+                )
+                assertTrue(
+                    me03EnglishSetRow.logoUrl.orEmpty().contains("assets.tcgdex.net"),
+                    "[x] Expected me03.logo_url to keep the TCGdex CDN for $englishLanguage.\n${buildSetDebugMessage(outputDb, datasetDir, cardmarketExportDir, pokepediaTreeFile, "me03", englishLanguage, me03EnglishSetRow)}",
+                )
+
+                listOf(targetLanguage, englishLanguage).forEach { language ->
+                    val thirtieth = queryGeneratedSet(connection, "30th", language)
+                    assertNotNull(
+                        thirtieth,
+                        "[x] Expected a generated set row for 30th/$language.",
+                    )
+                    assertTrue(
+                        thirtieth.logoUrl.orEmpty().contains("pokepedia.fr"),
+                        "[x] Expected 30th.logo_url to come from Pokepedia overlay.\n${buildSetDebugMessage(outputDb, datasetDir, cardmarketExportDir, pokepediaTreeFile, "30th", language, thirtieth)}",
+                    )
+                    assertTrue(
+                        !thirtieth.symbolUrl.orEmpty().contains("pokecardex"),
+                        "[x] Expected 30th.symbol_url to omit Pokecardex.\n${buildSetDebugMessage(outputDb, datasetDir, cardmarketExportDir, pokepediaTreeFile, "30th", language, thirtieth)}",
+                    )
+                }
 
                 me03AssetTargetCards.forEach { target ->
                     val row = queryGeneratedCard(connection, target.id, targetLanguage)

@@ -140,13 +140,8 @@ fun main(args: Array<String>) = runBlocking {
 
     val outputFile = File(config.outputFile)
     if (outputFile.exists()) {
-        if (config.force) {
-            println("[Tcgdex] Deleting existing database (force=true)")
-            outputFile.delete()
-        } else {
-            println("[Tcgdex] Database already exists, skipping generation")
-            return@runBlocking
-        }
+        println("[Tcgdex] Deleting existing database before generation")
+        outputFile.delete()
     }
 
     outputFile.parentFile?.mkdirs()
@@ -168,6 +163,12 @@ fun main(args: Array<String>) = runBlocking {
         missingFilePath = defaultPokepediaFile,
         json = json,
     )
+    val defaultSetLogosFile = config.setLogosFile
+        ?: resolveSetLogosFile(config.datasetDir)?.absolutePath
+    if (defaultSetLogosFile != null) {
+        println("[Tcgdex] Set logo overlay source: $defaultSetLogosFile")
+    }
+    val setLogos = loadSetLogoSymbolOverlay(defaultSetLogosFile, json)
 
     // CDN assets manifest, used to confirm parent-folder image URLs for sub-sets
     // (same existence source as the compiler's getCardPictures).
@@ -321,8 +322,13 @@ fun main(args: Array<String>) = runBlocking {
                 }
 
             val slug = slugify(englishName)
-            rarities[slug] = englishName
-            slug
+            val storedId = VLineRaritySlug.canonicalize(slug, name)
+            if (storedId == slug) {
+                rarities[slug] = englishName
+            } else {
+                rarities.putIfAbsent(storedId, VLineRaritySlug.displayName(storedId) ?: englishName)
+            }
+            storedId
         } else {
             null
         }
@@ -589,8 +595,9 @@ fun main(args: Array<String>) = runBlocking {
             val id = set.getString("id") ?: continue
             val serieId = set.getNestedString("serie", "id") ?: continue
             val name = set.getString("name") ?: id
-            val logoUrl = set.getString("logo")
-            val symbolUrl = set.getString("symbol")
+            val overlay = setLogos[id]
+            val logoUrl = resolveSetAssetUrl(set.getString("logo"), overlay?.logoUrl)
+            val symbolUrl = resolveSetAssetUrl(set.getString("symbol"), overlay?.symbolUrl)
             val cardCountTotal = set.getNestedInt("cardCount", "total") ?: 0
             val cardCountOfficial = set.getNestedInt("cardCount", "official") ?: cardCountTotal
             val releaseDate = set.getString("releaseDate")
@@ -841,6 +848,7 @@ private data class Config(
     val setAliasesConfigFile: String?,
     val cardmarketExpansionsFile: String?,
     val assetsManifestFile: String?,
+    val setLogosFile: String?,
 )
 
 private data class LanguageDatasetFiles(
@@ -894,6 +902,7 @@ private fun parseArgs(args: Array<String>): Config {
     var setAliasesConfigFile: String? = null
     var cardmarketExpansionsFile: String? = null
     var assetsManifestFile: String? = null
+    var setLogosFile: String? = null
 
     for (arg in args) {
         when {
@@ -907,6 +916,7 @@ private fun parseArgs(args: Array<String>): Config {
             arg.startsWith("--set-aliases-config=") -> setAliasesConfigFile = arg.removePrefix("--set-aliases-config=")
             arg.startsWith("--cardmarket-expansions=") -> cardmarketExpansionsFile = arg.removePrefix("--cardmarket-expansions=")
             arg.startsWith("--assets-manifest=") -> assetsManifestFile = arg.removePrefix("--assets-manifest=")
+            arg.startsWith("--set-logos=") -> setLogosFile = arg.removePrefix("--set-logos=")
         }
     }
 
@@ -922,6 +932,7 @@ private fun parseArgs(args: Array<String>): Config {
         setAliasesConfigFile = setAliasesConfigFile,
         cardmarketExpansionsFile = cardmarketExpansionsFile,
         assetsManifestFile = assetsManifestFile,
+        setLogosFile = setLogosFile,
     )
 }
 
@@ -1567,7 +1578,7 @@ private fun buildSetAliasIndexSource(
         |        return ALIAS_TO_HITS[normalizedAlias] ?: emptyList()
         |    }
         |
-        |    fun getOfficialAbbreviation(setId: String): String? = SET_ID_TO_ABBREVIATION[setId]
+        |    fun getOfficialAbbreviation(setId: String): String? = SET_ID_TO_ABBREVIATION[normalizeCode(setId)]
         |
         |    private fun addAlias(
         |        target: MutableSet<Pair<String, String>>,
@@ -1980,6 +1991,13 @@ private fun resolvePokemonSpeciesFile(datasetDir: String): File? {
     return null
 }
 
+internal fun resolveSetLogosFile(datasetDir: String): File? {
+    val projectRoot = runCatching { resolveProjectRoot(datasetDir) }.getOrNull() ?: return null
+    val canonical = projectRoot
+        .resolve("libs/tcgdex-kmp-sdk/generator-inputs/pokepedia/set-logos.json")
+    return canonical.takeIf { it.exists() }
+}
+
 internal fun resolvePokepediaMissingTree(datasetDir: String): File? {
     val projectRoot = runCatching { resolveProjectRoot(datasetDir) }.getOrNull() ?: return null
     val canonical = projectRoot
@@ -2277,6 +2295,7 @@ private fun loadRecognitionVectors(
 
 private const val POKEPEDIA_SOURCE = "pokepedia"
 private const val CARDMARKET_SOURCE = "cardmarket"
+private const val POKECARDEX_SOURCE = "pokecardex"
 
 internal data class FallbackImage(
     val url: String,
@@ -2381,6 +2400,7 @@ internal fun loadPokepediaFallbacks(
                 val hdUrl = entry["pokepediaHdUrl"]?.jsonPrimitive?.contentOrNull?.takeIf { it.isNotBlank() }
                 val thumbUrl = entry["pokepediaThumbnailUrl"]?.jsonPrimitive?.contentOrNull?.takeIf { it.isNotBlank() }
                 val cardmarketUrl = entry["cardmarketImageUrl"]?.jsonPrimitive?.contentOrNull?.takeIf { it.isNotBlank() }
+                val pokecardexUrl = entry["pokecardexImageUrl"]?.jsonPrimitive?.contentOrNull?.takeIf { it.isNotBlank() }
 
                 val pokepediaUrl = when {
                     status.equals("resolved", ignoreCase = true) -> hdUrl ?: thumbUrl
@@ -2400,6 +2420,7 @@ internal fun loadPokepediaFallbacks(
                         source = POKEPEDIA_SOURCE,
                     )
                     cardmarketUrl != null -> FallbackImage(url = cardmarketUrl, source = CARDMARKET_SOURCE)
+                    pokecardexUrl != null -> FallbackImage(url = pokecardexUrl, source = POKECARDEX_SOURCE)
                     else -> null
                 }
 

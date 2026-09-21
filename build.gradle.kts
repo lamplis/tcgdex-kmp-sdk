@@ -57,6 +57,9 @@ val defaultCardmarketExport = generatorInputsDir
 val defaultPokepediaMissing = generatorInputsDir
     .file("pokepedia/missing-fr-card-images-tree.json")
     .asFile
+val defaultSetLogos = generatorInputsDir
+    .file("pokepedia/set-logos.json")
+    .asFile
 val defaultRecognitionVectors = generatorInputsDir
     .file("recognition/card-vectors-fr.json")
     .asFile
@@ -236,6 +239,9 @@ val generateTcgdexDatabase by tasks.registering(JavaExec::class) {
         } else {
             defaultPokepediaMissing
         }.takeIf { it.exists() }
+
+    val resolvedSetLogosFile = defaultSetLogos.takeIf { it.exists() }
+
     val resolvedRecognitionVectorsFile =
         if (!tcgdexRecognitionVectors.isNullOrBlank()) {
             file(tcgdexRecognitionVectors)
@@ -265,6 +271,9 @@ val generateTcgdexDatabase by tasks.registering(JavaExec::class) {
     if (resolvedPokepediaMissingFile != null) {
         inputs.file(resolvedPokepediaMissingFile)
     }
+    if (resolvedSetLogosFile != null) {
+        inputs.file(resolvedSetLogosFile)
+    }
     if (resolvedRecognitionVectorsFile != null) {
         inputs.file(resolvedRecognitionVectorsFile)
     }
@@ -292,6 +301,9 @@ val generateTcgdexDatabase by tasks.registering(JavaExec::class) {
     }
     if (resolvedPokepediaMissingFile != null) {
         args("--pokepedia-missing=${resolvedPokepediaMissingFile.absolutePath}")
+    }
+    if (resolvedSetLogosFile != null) {
+        args("--set-logos=${resolvedSetLogosFile.absolutePath}")
     }
     if (resolvedRecognitionVectorsFile != null) {
         args("--recognition-vectors=${resolvedRecognitionVectorsFile.absolutePath}")
