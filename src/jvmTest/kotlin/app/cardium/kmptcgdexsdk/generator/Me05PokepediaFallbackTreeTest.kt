@@ -2,8 +2,7 @@ package app.cardium.kmptcgdexsdk.generator
 
 import java.io.File
 import kotlin.test.Test
-import kotlin.test.assertEquals
-import kotlin.test.assertNotNull
+import kotlin.test.assertNull
 import kotlin.test.assertTrue
 import kotlinx.serialization.json.Json
 
@@ -11,7 +10,7 @@ class Me05PokepediaFallbackTreeTest {
     private val json = Json { ignoreUnknownKeys = true }
 
     @Test
-    fun `Given FR CDN gaps for me05 075-089, When Pokepedia tree is loaded, Then those cards resolve to Nuit Noire scans`() {
+    fun `Given me05 075-089 are no longer FR CDN gaps, When Pokepedia tree is loaded, Then those ids are absent`() {
         val projectRoot = resolveProjectRoot()
         val treeFile =
             projectRoot.resolve(
@@ -23,14 +22,7 @@ class Me05PokepediaFallbackTreeTest {
         val missingIds = (75..89).map { number -> "me05-%03d".format(number) }
 
         missingIds.forEach { cardId ->
-            val fallback = loaded[cardId]
-            assertNotNull(fallback, "[x] Expected Pokepedia fallback for $cardId")
-            assertEquals("pokepedia", fallback.source, "[x] Unexpected fallback source for $cardId")
-            assertTrue(
-                fallback.url.contains("Nuit_Noire_", ignoreCase = false) &&
-                    fallback.url.contains(cardId.substringAfter('-')),
-                "[x] Expected Nuit Noire HD scan for $cardId, got ${fallback.url}",
-            )
+            assertNull(loaded[cardId], "[x] Expected no Pokepedia fallback for $cardId")
         }
     }
 

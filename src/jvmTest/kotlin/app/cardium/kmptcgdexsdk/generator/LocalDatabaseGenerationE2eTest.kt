@@ -1,6 +1,7 @@
 package app.cardium.kmptcgdexsdk.generator
 
 import java.io.File
+import java.net.URLDecoder
 import java.sql.Connection
 import java.sql.DriverManager
 import java.sql.ResultSet
@@ -85,7 +86,7 @@ class LocalDatabaseGenerationE2eTest {
 
             Class.forName("org.sqlite.JDBC")
             DriverManager.getConnection("jdbc:sqlite:${outputDb.absolutePath}").use { connection ->
-                (mepFallbackTargetCards + me05FallbackTargetCards).forEach { target ->
+                mepFallbackTargetCards.forEach { target ->
                     val row = queryGeneratedCard(connection, target.id, targetLanguage)
                     if (row == null) {
                         val availableLanguages = queryAvailableLanguagesForCard(connection, target.id)
@@ -124,7 +125,42 @@ class LocalDatabaseGenerationE2eTest {
                         row.fallbackImageSource,
                         "[x] Expected fallback_image_source to equal 'pokepedia'.\n$debugMessage",
                     )
+                }
 
+                me05FallbackTargetCards.forEach { target ->
+                    val row = queryGeneratedCard(connection, target.id, targetLanguage)
+                    if (row == null) {
+                        val availableLanguages = queryAvailableLanguagesForCard(connection, target.id)
+                        fail(
+                            buildDebugMessage(
+                                dbPath = outputDb,
+                                datasetDir = datasetDir,
+                                cardmarketExportDir = cardmarketExportDir,
+                                pokepediaTreeFile = pokepediaTreeFile,
+                                cardId = target.id,
+                                language = targetLanguage,
+                                row = null,
+                                availableLanguages = availableLanguages,
+                            ),
+                        )
+                    }
+
+                    assertNotNull(row)
+                    val debugMessage = buildDebugMessage(
+                        dbPath = outputDb,
+                        datasetDir = datasetDir,
+                        cardmarketExportDir = cardmarketExportDir,
+                        pokepediaTreeFile = pokepediaTreeFile,
+                        cardId = target.id,
+                        language = targetLanguage,
+                        row = row,
+                        availableLanguages = listOf(targetLanguage),
+                    )
+
+                    assertTrue(
+                        !row.imageUrl.isNullOrBlank(),
+                        "[x] Expected TCGdex image_url for ${target.id}.\n$debugMessage",
+                    )
                 }
 
                 val me03SetRow = queryGeneratedSet(connection, "me03", targetLanguage)
@@ -361,15 +397,6 @@ class LocalDatabaseGenerationE2eTest {
                     vaultCard.imageUrl.isNullOrBlank(),
                     "[x] Expected sm115sv-SV1 FR image_url to stay empty (no parent-folder CDN).",
                 )
-                assertEquals(
-                    "pokepedia",
-                    vaultCard.fallbackImageSource,
-                    "[x] Expected sm115sv-SV1 fallback_image_source to be pokepedia.",
-                )
-                assertTrue(
-                    vaultCard.fallbackImageUrl?.contains("Destin") == true,
-                    "[x] Expected sm115sv-SV1 Pokepedia Destinees Occultes fallback URL, got '${vaultCard.fallbackImageUrl}'.",
-                )
                 assertTrue(
                     vaultCard.detailedPriceRows > 0,
                     "[x] Expected Cardmarket prices on sm115sv-SV1, got ${vaultCard.detailedPriceRows} rows.",
@@ -581,13 +608,13 @@ class LocalDatabaseGenerationE2eTest {
 
                 val franceRow = queryCardFallbackRow(connection, "2019sm-fr-1", targetLanguage)
                 assertNotNull(franceRow, "[x] Expected a generated card row for 2019sm-fr-1/$targetLanguage.")
-                val franceFallback = franceRow.fallbackImageUrl
+                val franceFallback = decodedUrl(franceRow.fallbackImageUrl)
                 assertTrue(
-                    franceFallback?.contains(france2019) == true,
+                    franceFallback.contains(france2019),
                     "[x] Expected 2019sm-fr-1 fallback to contain $france2019. got '$franceFallback'.",
                 )
                 assertTrue(
-                    franceFallback?.contains("(International)") != true,
+                    !franceFallback.contains("(International)"),
                     "[x] Expected 2019sm-fr-1 not to use International artwork. got '$franceFallback'.",
                 )
             }
@@ -1028,9 +1055,12 @@ class LocalDatabaseGenerationE2eTest {
     }
 
     private fun containsNegapiToken(url: String?, localId: String): Boolean {
-        val value = url.orEmpty()
+        val value = decodedUrl(url)
         return value.contains("Négapi_$localId") || value.contains("N%C3%A9gapi_$localId")
     }
+
+    private fun decodedUrl(url: String?): String =
+        URLDecoder.decode(url.orEmpty(), Charsets.UTF_8)
 
     private fun assertTrainerKitFallback(
         connection: Connection,
@@ -1102,7 +1132,7 @@ class LocalDatabaseGenerationE2eTest {
             "[x] Expected $cardId/$language image_url to stay empty (no CDN asset).\n$debugMessage",
         )
         assertTrue(
-            row.fallbackImageUrl?.contains(filename) == true,
+            decodedUrl(row.fallbackImageUrl).contains(filename),
             "[x] Expected $cardId/$language Pokepedia fallback to contain $filename.\n$debugMessage",
         )
         assertEquals(

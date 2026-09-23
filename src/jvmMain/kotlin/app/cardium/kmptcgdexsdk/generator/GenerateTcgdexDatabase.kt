@@ -243,6 +243,12 @@ fun main(args: Array<String>) = runBlocking {
     // Valid dex IDs from pokemon-species.json (used for validation)
     val validDexIds = pokemonSpecies.keys
 
+    val closedSetRarityCardIds = datasetsByLanguage["en"]?.let { englishDataset ->
+        collectClosedSetRarityCardIds(
+            json.parseToJsonElement(englishDataset.cardsFile.readText()).jsonArray,
+        )
+    } ?: ClosedSetRarityCardIds(breakCardIds = emptySet(), shiningCardIds = emptySet())
+
     suspend fun insertCard(
         language: String,
         card: JsonObject,
@@ -260,6 +266,7 @@ fun main(args: Array<String>) = runBlocking {
         // Fallback only: never overwrite an image provided by the TS scan. Known
         // sub-sets (e.g. swsh10tg) get a manifest-confirmed URL under the parent
         // set folder (e.g. https://assets.tcgdex.net/fr/swsh/swsh10/TG28).
+        // Reprints with no CDN folder of their own reuse the original scan.
         val imageUrl = card.getString("image")?.takeIf { it.isNotBlank() }
             ?: synthesizeSubSetImageUrl(
                 assetsManifest = assetsManifest,
@@ -267,6 +274,11 @@ fun main(args: Array<String>) = runBlocking {
                 language = language,
                 setId = setId,
                 localId = localId,
+            )
+            ?: synthesizeReprintOriginImageUrl(
+                assetsManifest = assetsManifest,
+                cardId = id,
+                language = language,
             )
         val fallbackImage =
             if (imageUrl.isNullOrBlank()) {
@@ -322,11 +334,17 @@ fun main(args: Array<String>) = runBlocking {
                 }
 
             val slug = slugify(englishName)
-            val storedId = VLineRaritySlug.canonicalize(slug, name)
+            val persistedId = VLineRaritySlug.persistRarityId(slug, name, setId)
+            val storedId = StoredRaritySlug.canonicalize(
+                slug = persistedId,
+                cardId = id,
+                breakCardIds = closedSetRarityCardIds.breakCardIds,
+                shiningCardIds = closedSetRarityCardIds.shiningCardIds,
+            )
             if (storedId == slug) {
                 rarities[slug] = englishName
             } else {
-                rarities.putIfAbsent(storedId, VLineRaritySlug.displayName(storedId) ?: englishName)
+                rarities.putIfAbsent(storedId, StoredRaritySlug.displayName(storedId) ?: englishName)
             }
             storedId
         } else {
@@ -1888,6 +1906,35 @@ private fun JsonObject.getStringArray(key: String): List<String>? {
     return element.mapNotNull { it.jsonPrimitive.contentOrNull }
 }
 
+private data class ClosedSetRarityCardIds(
+    val breakCardIds: Set<String>,
+    val shiningCardIds: Set<String>,
+)
+
+private val BREAK_NAME_SUFFIX = Regex("""(?:^|[\s-])BREAK\s*$""", RegexOption.IGNORE_CASE)
+
+private fun collectClosedSetRarityCardIds(englishCards: JsonArray): ClosedSetRarityCardIds {
+    val breakCardIds = mutableSetOf<String>()
+    val shiningCardIds = mutableSetOf<String>()
+    for (element in englishCards) {
+        val card = rewriteHiddenFatesVaultCardJson(element.jsonObject)
+        val id = card.getString("id") ?: continue
+        val name = card.getString("name") ?: continue
+        val setId = card.getNestedString("set", "id") ?: continue
+        val rarityName = card.getString("rarity") ?: continue
+        val raritySlug = slugify(rarityName)
+        if (raritySlug == "ultra-rare" && BREAK_NAME_SUFFIX.containsMatchIn(name)) {
+            breakCardIds.add(id)
+        }
+        val isNeoShiningSet = setId.equals("neo3", ignoreCase = true) ||
+            setId.equals("neo4", ignoreCase = true)
+        if (isNeoShiningSet && raritySlug == "rare" && name.startsWith("Shining ")) {
+            shiningCardIds.add(id)
+        }
+    }
+    return ClosedSetRarityCardIds(breakCardIds = breakCardIds, shiningCardIds = shiningCardIds)
+}
+
 private fun slugify(text: String): String {
     // Normalize diacritics to ASCII letters (e.g., "é" -> "e") before slugging.
     // This prevents broken slugs like "m-ga" for "méga".
@@ -2532,6 +2579,42 @@ internal fun deriveSubSetParents(sets: List<JsonObject>): Map<String, String> {
         parents[subSetId] = parentId
     }
     return parents
+}
+
+/**
+ * Classic Collection reprints that have no folder on the TCGdex CDN.
+ * 30th-c-006 is Dark Tyranitar from Team Rocket Returns #19 (illustrator Nakaoka).
+ * The Cardmarket product image for that reprint is blocked, so Master Set would
+ * show a missing picture unless the original scan is reused.
+ */
+internal data class ReprintOrigin(
+    val serieId: String,
+    val setId: String,
+    val localId: String,
+)
+
+internal val REPRINT_IMAGE_ORIGINS: Map<String, ReprintOrigin> = mapOf(
+    "30th-c-006" to ReprintOrigin(serieId = "ex", setId = "ex7", localId = "19"),
+)
+
+/**
+ * Returns a suffix-less CDN URL for a reprint when the assets manifest confirms
+ * the original printing's picture exists for [language]. Returns null otherwise,
+ * so a missing manifest entry never becomes a guessed URL.
+ */
+internal fun synthesizeReprintOriginImageUrl(
+    assetsManifest: JsonObject,
+    cardId: String,
+    language: String,
+): String? {
+    val origin = REPRINT_IMAGE_ORIGINS[cardId] ?: return null
+    val setEntry = (
+        (assetsManifest[language] as? JsonObject)
+            ?.get(origin.serieId) as? JsonObject
+        )
+        ?.get(origin.setId) as? JsonObject
+    if (setEntry?.containsKey(origin.localId) != true) return null
+    return "https://assets.tcgdex.net/$language/${origin.serieId}/${origin.setId}/${origin.localId}"
 }
 
 /**
