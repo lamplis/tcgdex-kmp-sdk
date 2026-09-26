@@ -253,4 +253,41 @@ class PokepediaFallbackImportTest {
         )
         assertEquals("cardmarket", fallback.source)
     }
+
+    @Test
+    fun `Given RGB redlink with pokecardex url, When loaded, Then pokecardex fallback is used`() {
+        val tree = createTempFile("pokepedia-tree-", ".json").toFile()
+        tree.writeText(
+            """
+            {
+              "series":[
+                {
+                  "sets":[
+                    {
+                      "setId":"30th",
+                      "cards":[
+                        {
+                          "cardId":"30th-R",
+                          "resolutionStatus":"unresolved",
+                          "reason":"POKEPEDIA_CARD_PAGE_REDLINK",
+                          "pokecardexImageUrl":"https://pokecardex-scans.b-cdn.net/sets/30C/FR/189.jpg?class=hd"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+            """.trimIndent(),
+        )
+
+        val loaded = loadPokepediaFallbacks(tree.absolutePath, json)
+        val fallback = loaded["30th-R"]
+        assertNotNull(fallback)
+        assertEquals(
+            "https://pokecardex-scans.b-cdn.net/sets/30C/FR/189.jpg?class=hd",
+            fallback.url,
+        )
+        assertEquals("pokecardex", fallback.source)
+    }
 }

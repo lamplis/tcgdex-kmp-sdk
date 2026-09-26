@@ -37,6 +37,22 @@ class ThirtiethPokepediaFallbackTreeTest {
             classicPokepediaCount >= 26,
             "[x] Expected at least 26 30th-c Pokepedia HD backups, got $classicPokepediaCount",
         )
+
+        val rgbScans =
+            mapOf(
+                "30th-R" to "189.jpg",
+                "30th-G" to "190.jpg",
+                "30th-B" to "191.jpg",
+            )
+        for ((cardId, scan) in rgbScans) {
+            val fallback = loaded[cardId]
+            assertNotNull(fallback, "[x] Expected Pokecardex fallback for $cardId")
+            assertEquals("pokecardex", fallback.source, "[x] Unexpected fallback source for $cardId")
+            assertTrue(
+                fallback.url.contains(scan),
+                "[x] Expected Pokecardex scan $scan for $cardId, got ${fallback.url}",
+            )
+        }
     }
 
     private fun resolveProjectRoot(): File {

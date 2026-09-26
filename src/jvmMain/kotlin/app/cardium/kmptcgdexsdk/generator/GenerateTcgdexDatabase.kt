@@ -263,11 +263,21 @@ fun main(args: Array<String>) = runBlocking {
         val localId = card.getString("localId") ?: id.substringAfterLast("-")
         val setId = card.getNestedString("set", "id") ?: return
         val name = card.getString("name") ?: id
+        val serieId = card.getNestedString("set", "serie", "id").orEmpty()
         // Fallback only: never overwrite an image provided by the TS scan. Known
         // sub-sets (e.g. swsh10tg) get a manifest-confirmed URL under the parent
         // set folder (e.g. https://assets.tcgdex.net/fr/swsh/swsh10/TG28).
+        // 30th / 30th-c compiled URLs that datas.json does not list are dropped
+        // so RGB Mews do not keep a 404 CDN path in front of the Pokecardex fallback.
         // Reprints with no CDN folder of their own reuse the original scan.
-        val imageUrl = card.getString("image")?.takeIf { it.isNotBlank() }
+        val imageUrl = compiledImageUrlForCard(
+            compiledImage = card.getString("image"),
+            assetsManifest = assetsManifest,
+            language = language,
+            serieId = serieId,
+            setId = setId,
+            localId = localId,
+        )
             ?: synthesizeSubSetImageUrl(
                 assetsManifest = assetsManifest,
                 subSetParents = subSetParentsByLanguage[language].orEmpty(),
@@ -2602,6 +2612,60 @@ internal val REPRINT_IMAGE_ORIGINS: Map<String, ReprintOrigin> = mapOf(
  * the original printing's picture exists for [language]. Returns null otherwise,
  * so a missing manifest entry never becomes a guessed URL.
  */
+private val MANIFEST_GUARDED_IMAGE_SET_IDS = setOf("30th", "30th-c")
+
+internal fun assetsManifestContainsLocalId(
+    assetsManifest: JsonObject,
+    language: String,
+    serieId: String,
+    setId: String,
+    localId: String,
+): Boolean {
+    val setEntry = (
+        (assetsManifest[language] as? JsonObject)
+            ?.get(serieId) as? JsonObject
+        )
+        ?.get(setId) as? JsonObject
+    return setEntry?.containsKey(localId) == true
+}
+
+/** Numbered 30th Celebration scans that exist on the CDN but not yet in datas.json. */
+internal fun isNumberedThirtiethCdnLocalId(localId: String): Boolean {
+    if (localId.isEmpty() || localId.any { !it.isDigit() }) return false
+    val number = localId.toIntOrNull() ?: return false
+    return number in 1..158
+}
+
+/**
+ * Keeps a compiled CDN URL. For 30th and 30th-c, drops it when datas.json does
+ * not list that localId, except numbered 30th scans 001-158 which are already
+ * on the CDN. RGB letter ids stay null so Pokecardex fallbacks are used.
+ */
+internal fun compiledImageUrlForCard(
+    compiledImage: String?,
+    assetsManifest: JsonObject,
+    language: String,
+    serieId: String,
+    setId: String,
+    localId: String,
+): String? {
+    val compiled = compiledImage?.trim()?.takeIf { it.isNotEmpty() } ?: return null
+    if (setId !in MANIFEST_GUARDED_IMAGE_SET_IDS) return compiled
+    if (
+        assetsManifestContainsLocalId(
+            assetsManifest = assetsManifest,
+            language = language,
+            serieId = serieId,
+            setId = setId,
+            localId = localId,
+        )
+    ) {
+        return compiled
+    }
+    if (setId == "30th" && isNumberedThirtiethCdnLocalId(localId)) return compiled
+    return null
+}
+
 internal fun synthesizeReprintOriginImageUrl(
     assetsManifest: JsonObject,
     cardId: String,
