@@ -46,6 +46,12 @@ object TcgdexDatabaseInstaller {
      * the file size stays the same.
      *
      * ## VERSION HISTORY
+     * - Version 19: Added Asian promo, subset, contest, and Simplified Chinese cards that have no English print.
+     * - Version 18: Added the remaining Fan Club and TPCi promo cards.
+     * - Version 17: Added the Summer 2001 Tropical Present jumbo promo.
+     * - Version 16: Mapped yellow-A cameo variants onto the unsuffixed card.
+     * - Version 15: Mapped gallery, promo, and zero-padded cameoDexIds.
+     * - Version 14: Refreshed cameoDexIds from RotomAmiti's workbook through 30th Celebration.
      * - Version 13: Added Pokepedia FR fallbacks for Pitch Black / Nuit Noire (me05) cards 075-089.
      * - Version 12: Hidden Fates Shiny Vault remapped from sma to sm115sv (HIF:SV parent sm115).
      * - Version 11: Added abbreviation_official and parent_set_id to sets (TCGdex sub-set concept, e.g. cel25cc -> cel25 "CEL:CC").
@@ -71,7 +77,7 @@ object TcgdexDatabaseInstaller {
      *
      * @see docs/POKEDEX_DATA_REMEDIATION.md for more details
      */
-    const val DATABASE_USER_VERSION = 13
+    const val DATABASE_USER_VERSION = 19
 
     private const val METADATA_SUFFIX = ".meta"
 

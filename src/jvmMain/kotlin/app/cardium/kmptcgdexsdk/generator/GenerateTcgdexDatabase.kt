@@ -87,6 +87,7 @@ private data class ParsedSetAliasSource(
     val frenchAbbreviation: String?,
     val tcgOnline: String?,
     val cardmarketExpansionId: Int?,
+    val searchAliases: List<String>,
 )
 
 private data class GeneratedSetAliasSeed(
@@ -101,6 +102,7 @@ private data class GeneratedSetAliasSeed(
     val frExtraAliases: List<String>,
     val enSeriesAliases: List<String>,
     val frSeriesAliases: List<String>,
+    val searchAliases: List<String>,
 )
 
 /**
@@ -1131,8 +1133,11 @@ private fun collectGeneratedSetAliasSeeds(
 
         val originalSetId = parsed.setId.trim()
         if (originalSetId.isBlank()) continue
-        // TCG Pocket set IDs are uppercase (A1, A2, B1, P-A). They are forbidden in Cardium.
-        if (originalSetId.any { it.isUpperCase() }) continue
+        // TCG Pocket ids start with a letter and contain uppercase (A1, A2, B1, P-A).
+        // A digit-leading id such as 30C is a physical set and must be indexed.
+        val isTcgpSetId =
+            originalSetId.first().isLetter() && originalSetId.any { it.isUpperCase() }
+        if (isTcgpSetId) continue
 
         val setId = rewriteHiddenFatesVaultSetId(originalSetId)
         val officialAbbreviation = rewriteHiddenFatesVaultOfficial(originalSetId, parsed.officialAbbreviation)
@@ -1185,6 +1190,7 @@ private fun collectGeneratedSetAliasSeeds(
                 frExtraAliases = frExtraAliases,
                 enSeriesAliases = enSeriesAliases,
                 frSeriesAliases = frSeriesAliases,
+                searchAliases = parsed.searchAliases,
             )
 
         val existing = mergedBySetId[setId]
@@ -1245,6 +1251,7 @@ private fun mergeGeneratedSetAliasSeed(
         frExtraAliases = (existing.frExtraAliases + candidate.frExtraAliases).distinct(),
         enSeriesAliases = (existing.enSeriesAliases + candidate.enSeriesAliases).distinct(),
         frSeriesAliases = (existing.frSeriesAliases + candidate.frSeriesAliases).distinct(),
+        searchAliases = (existing.searchAliases + candidate.searchAliases).distinct(),
     )
 }
 
@@ -1366,6 +1373,7 @@ private fun parseSetAliasSourceFile(content: String): ParsedSetAliasSource? {
         frenchAbbreviation = frenchAbbreviation,
         tcgOnline = tcgOnline,
         cardmarketExpansionId = cardmarketExpansionId,
+        searchAliases = extractStringArrayProperty(content, "searchAliases"),
     )
 }
 
@@ -1437,6 +1445,28 @@ private fun extractStringProperty(
     if (quotedLiteral.length < 2) return null
     val rawValue = quotedLiteral.substring(1, quotedLiteral.length - 1)
     return decodeTsStringLiteral(rawValue).trim().ifBlank { null }
+}
+
+private fun extractStringArrayProperty(
+    source: String,
+    key: String,
+): List<String> {
+    val propertyRegex = Regex("\\b${Regex.escape(key)}\\s*:\\s*\\[")
+    val match = propertyRegex.find(source) ?: return emptyList()
+    val open = source.indexOf('[', match.range.first)
+    if (open < 0) return emptyList()
+    val close = source.indexOf(']', open)
+    if (close < 0) return emptyList()
+    val body = source.substring(open + 1, close)
+    val literal = Regex("\"(?:[^\"\\\\]|\\\\.)*\"|'(?:[^'\\\\]|\\\\.)*'")
+    return literal
+        .findAll(body)
+        .map { quoted ->
+            val raw = quoted.value
+            decodeTsStringLiteral(raw.substring(1, raw.length - 1)).trim()
+        }.filter { it.isNotBlank() }
+        .distinct()
+        .toList()
 }
 
 private fun extractIntProperty(
@@ -1511,7 +1541,8 @@ private fun buildSetAliasIndexSource(
                     append("enExtraAliases = ${toKotlinListLiteral(seed.enExtraAliases)}, ")
                     append("frExtraAliases = ${toKotlinListLiteral(seed.frExtraAliases)}, ")
                     append("enSeriesAliases = ${toKotlinListLiteral(seed.enSeriesAliases)}, ")
-                    append("frSeriesAliases = ${toKotlinListLiteral(seed.frSeriesAliases)}")
+                    append("frSeriesAliases = ${toKotlinListLiteral(seed.frSeriesAliases)}, ")
+                    append("searchAliases = ${toKotlinListLiteral(seed.searchAliases)}")
                     append(")")
                 }
             }
@@ -1545,6 +1576,7 @@ private fun buildSetAliasIndexSource(
         |        val frExtraAliases: List<String>,
         |        val enSeriesAliases: List<String>,
         |        val frSeriesAliases: List<String>,
+        |        val searchAliases: List<String>,
         |    )
         |
         |    private const val MIN_TOKEN_LENGTH: Int = $minTokenLength
@@ -1556,10 +1588,16 @@ private fun buildSetAliasIndexSource(
         |    $seedLiteral
         |
         |    private val SET_ID_TO_ABBREVIATION: Map<String, String> by lazy {
-        |        SEEDS
-        |            .mapNotNull { seed ->
-        |                seed.officialAbbreviation?.let { seed.setId to it }
-        |            }.toMap()
+        |        buildMap {
+        |            for (seed in SEEDS) {
+        |                val abbreviation = seed.officialAbbreviation ?: continue
+        |                put(normalizeCode(seed.setId), abbreviation)
+        |                for (alias in seed.searchAliases) {
+        |                    val key = normalizeCode(alias)
+        |                    if (key.isNotBlank()) put(key, abbreviation)
+        |                }
+        |            }
+        |        }
         |    }
         |
         |    private val ALIAS_TO_HITS: Map<String, List<SetAliasHit>> by lazy {
@@ -1578,6 +1616,7 @@ private fun buildSetAliasIndexSource(
         |            seed.frExtraAliases.forEach { addOfficialAbbreviationAliases(aliases, it, "fr") }
         |            seed.enSeriesAliases.forEach { addAlias(aliases, it, "en") }
         |            seed.frSeriesAliases.forEach { addAlias(aliases, it, "fr") }
+        |            seed.searchAliases.forEach { addAlias(aliases, it, "en") }
         |
         |            for ((alias, language) in aliases) {
         |                val normalizedAlias = normalizeCode(alias)
