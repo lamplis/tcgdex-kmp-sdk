@@ -239,6 +239,8 @@ fun main(args: Array<String>) = runBlocking {
     val frenchCardCache = mutableMapOf<String, JsonObject>()
     // language -> subSetId -> (serieId, parentSetId) for CDN parent-folder image fallback
     val subSetParentsByLanguage = mutableMapOf<String, Map<String, Pair<String, String>>>()
+    // language -> official abbreviation -> (serieId, setId) for Prize Pack reprint art
+    val prizePackParentsByLanguage = mutableMapOf<String, Map<String, Pair<String, String>>>()
     var englishMfbSet: EnglishMfbSetClone? = null
     var frenchHasMfb = false
     
@@ -291,6 +293,13 @@ fun main(args: Array<String>) = runBlocking {
                 assetsManifest = assetsManifest,
                 cardId = id,
                 language = language,
+            )
+            ?: synthesizePrizePackImageUrl(
+                assetsManifest = assetsManifest,
+                abbreviationParents = prizePackParentsByLanguage[language].orEmpty(),
+                language = language,
+                setId = setId,
+                localId = localId,
             )
         val fallbackImage =
             if (imageUrl.isNullOrBlank()) {
@@ -616,6 +625,7 @@ fun main(args: Array<String>) = runBlocking {
             serieId to parentSetId
         }
         subSetParentsByLanguage[language] = subSetParents
+        prizePackParentsByLanguage[language] = prizePackAbbreviationParents(parsedSets)
         if (parentBySubSetId.isNotEmpty()) {
             val summary = parentBySubSetId.entries.sortedBy { it.key }.joinToString(", ") { "${it.key}->${it.value}" }
             println("[Tcgdex]   Sub-sets: $summary")
@@ -2703,6 +2713,53 @@ internal fun compiledImageUrlForCard(
     }
     if (setId == "30th" && isNumberedThirtiethCdnLocalId(localId)) return compiled
     return null
+}
+
+internal val PRIZE_PACK_LOCAL_ID = Regex("""^([A-Z]{2,4})(\d+[A-Za-z]?)$""")
+
+/**
+ * Maps a unique official abbreviation to (serieId, setId). Duplicate abbreviations
+ * are dropped so a Prize Pack local id is never pointed at the wrong parent set.
+ */
+internal fun prizePackAbbreviationParents(
+    sets: List<JsonObject>,
+): Map<String, Pair<String, String>> {
+    val grouped = linkedMapOf<String, MutableList<Pair<String, String>>>()
+    for (set in sets) {
+        val setId = set.getString("id")?.takeIf { it.isNotBlank() } ?: continue
+        val serieId = set.getNestedString("serie", "id")?.takeIf { it.isNotBlank() } ?: continue
+        val official = set.getNestedString("abbreviation", "official")?.takeIf { it.isNotBlank() } ?: continue
+        grouped.getOrPut(official) { mutableListOf() }.add(serieId to setId)
+    }
+    return grouped.mapNotNull { (abbreviation, candidates) ->
+        val distinct = candidates.distinct()
+        if (distinct.size == 1) abbreviation to distinct.single() else null
+    }.toMap()
+}
+
+/**
+ * Prize Pack reprints store the origin set in the local id (BST22 -> BST / 22).
+ * Returns a suffix-less CDN URL only when the assets manifest lists that parent scan.
+ */
+internal fun synthesizePrizePackImageUrl(
+    assetsManifest: JsonObject,
+    abbreviationParents: Map<String, Pair<String, String>>,
+    language: String,
+    setId: String,
+    localId: String,
+): String? {
+    if (!setId.startsWith("pps")) return null
+    val match = PRIZE_PACK_LOCAL_ID.matchEntire(localId) ?: return null
+    val abbreviation = match.groupValues[1]
+    val number = match.groupValues[2]
+    val (serieId, parentSetId) = abbreviationParents[abbreviation] ?: return null
+    val setEntry = (
+        (assetsManifest[language] as? JsonObject)
+            ?.get(serieId) as? JsonObject
+        )
+        ?.get(parentSetId) as? JsonObject
+    if (setEntry?.containsKey(number) != true) return null
+    return "https://assets.tcgdex.net/$language/$serieId/$parentSetId/$number"
 }
 
 internal fun synthesizeReprintOriginImageUrl(
