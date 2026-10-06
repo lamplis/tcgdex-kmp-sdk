@@ -9,6 +9,54 @@ import kotlinx.serialization.json.Json
 
 class PokepediaFallbackImportTest {
     private val json = Json { ignoreUnknownKeys = true }
+    private val wikiScan = FallbackImage(
+        url = "https://www.pokepedia.fr/images/e/ee/Carte_Set_de_Base_4.png",
+        source = "pokepedia",
+    )
+
+    @Test
+    fun `Given 30C reprint with a CDN image, When selecting fallback, Then every language keeps the wiki scan`() {
+        val selected = selectStoredFallbackImage(
+            imageUrl = "https://assets.tcgdex.net/en/base/base1/4",
+            language = "en",
+            setId = "30C",
+            fallback = wikiScan,
+        )
+        assertEquals(wikiScan, selected)
+    }
+
+    @Test
+    fun `Given a non-French card with a CDN image, When selecting fallback, Then wiki backup stays French-only`() {
+        val selected = selectStoredFallbackImage(
+            imageUrl = "https://assets.tcgdex.net/en/base/base1/4",
+            language = "en",
+            setId = "base1",
+            fallback = wikiScan,
+        )
+        assertNull(selected)
+    }
+
+    @Test
+    fun `Given a French card with a CDN image, When selecting fallback, Then wiki backup is kept`() {
+        val selected = selectStoredFallbackImage(
+            imageUrl = "https://assets.tcgdex.net/fr/base/base1/4",
+            language = "fr",
+            setId = "base1",
+            fallback = wikiScan,
+        )
+        assertEquals(wikiScan, selected)
+    }
+
+    @Test
+    fun `Given no CDN image, When selecting fallback, Then every language keeps the wiki scan`() {
+        val selected = selectStoredFallbackImage(
+            imageUrl = null,
+            language = "en",
+            setId = "ecard3",
+            fallback = wikiScan,
+        )
+        assertEquals(wikiScan, selected)
+    }
 
     @Test
     fun `Given resolved card with hd url, When loaded, Then pokepedia hd is preferred`() {

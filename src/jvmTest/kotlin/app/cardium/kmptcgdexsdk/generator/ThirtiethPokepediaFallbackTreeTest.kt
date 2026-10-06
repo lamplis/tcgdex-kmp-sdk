@@ -11,7 +11,7 @@ class ThirtiethPokepediaFallbackTreeTest {
     private val json = Json { ignoreUnknownKeys = true }
 
     @Test
-    fun `Given Classic Collection reprints, When Pokepedia tree is loaded, Then 30th-c uses wiki HD scans`() {
+    fun `Given Classic Collection reprints, When Pokepedia tree is loaded, Then 30C uses wiki HD scans`() {
         val projectRoot = resolveProjectRoot()
         val treeFile =
             projectRoot.resolve(
@@ -21,28 +21,28 @@ class ThirtiethPokepediaFallbackTreeTest {
 
         val loaded = loadPokepediaFallbacks(treeFile.absolutePath, json)
 
-        val classic001 = loaded["30th-c-001"]
-        assertNotNull(classic001, "[x] Expected Pokepedia fallback for 30th-c-001")
-        assertEquals("pokepedia", classic001.source, "[x] Unexpected fallback source for 30th-c-001")
+        val classic002 = loaded["30C-CC002"]
+        assertNotNull(classic002, "[x] Expected Pokepedia fallback for 30C-CC002")
+        assertEquals("pokepedia", classic002.source, "[x] Unexpected fallback source for 30C-CC002")
         assertTrue(
-            classic001.url.contains("Carte_Set_de_Base_4.png"),
-            "[x] Expected Set de Base HD scan for 30th-c-001, got ${classic001.url}",
+            classic002.url.contains("Carte_Set_de_Base_4.png"),
+            "[x] Expected Set de Base HD scan for 30C-CC002, got ${classic002.url}",
         )
 
         val classicPokepediaCount =
             loaded.count { (cardId, fallback) ->
-                cardId.startsWith("30th-c-") && fallback.source == "pokepedia"
+                cardId.startsWith("30C-CC") && fallback.source == "pokepedia"
             }
         assertTrue(
             classicPokepediaCount >= 26,
-            "[x] Expected at least 26 30th-c Pokepedia HD backups, got $classicPokepediaCount",
+            "[x] Expected at least 26 30C-CC Pokepedia HD backups, got $classicPokepediaCount",
         )
 
         val rgbScans =
             mapOf(
-                "30th-R" to "189.jpg",
-                "30th-G" to "190.jpg",
-                "30th-B" to "191.jpg",
+                "30C-R" to "189.jpg",
+                "30C-G" to "190.jpg",
+                "30C-B" to "191.jpg",
             )
         for ((cardId, scan) in rgbScans) {
             val fallback = loaded[cardId]

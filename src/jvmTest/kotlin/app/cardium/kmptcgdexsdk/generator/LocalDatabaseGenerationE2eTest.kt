@@ -200,18 +200,18 @@ class LocalDatabaseGenerationE2eTest {
                 )
 
                 listOf(targetLanguage, englishLanguage).forEach { language ->
-                    val thirtieth = queryGeneratedSet(connection, "30th", language)
+                    val thirtieth = queryGeneratedSet(connection, "30C", language)
                     assertNotNull(
                         thirtieth,
-                        "[x] Expected a generated set row for 30th/$language.",
+                        "[x] Expected a generated set row for 30C/$language.",
                     )
                     assertTrue(
                         thirtieth.logoUrl.orEmpty().contains("pokepedia.fr"),
-                        "[x] Expected 30th.logo_url to come from Pokepedia overlay.\n${buildSetDebugMessage(outputDb, datasetDir, cardmarketExportDir, pokepediaTreeFile, "30th", language, thirtieth)}",
+                        "[x] Expected 30C.logo_url to come from Pokepedia overlay.\n${buildSetDebugMessage(outputDb, datasetDir, cardmarketExportDir, pokepediaTreeFile, "30C", language, thirtieth)}",
                     )
                     assertTrue(
                         !thirtieth.symbolUrl.orEmpty().contains("pokecardex"),
-                        "[x] Expected 30th.symbol_url to omit Pokecardex.\n${buildSetDebugMessage(outputDb, datasetDir, cardmarketExportDir, pokepediaTreeFile, "30th", language, thirtieth)}",
+                        "[x] Expected 30C.symbol_url to omit Pokecardex.\n${buildSetDebugMessage(outputDb, datasetDir, cardmarketExportDir, pokepediaTreeFile, "30C", language, thirtieth)}",
                     )
                 }
 

@@ -301,18 +301,12 @@ fun main(args: Array<String>) = runBlocking {
                 setId = setId,
                 localId = localId,
             )
-        val fallbackImage =
-            if (imageUrl.isNullOrBlank()) {
-                // When there is no TCGdex CDN image at all, apply Pokepedia fallback for
-                // every language so non-French users don't see "Picture missing".
-                pokepediaFallbacks[id]
-            } else if (language.equals("fr", ignoreCase = true)) {
-                // When TCGdex images exist, Pokepedia is only needed as a backup for French
-                // (in case the French TCGdex image URL fails at runtime).
-                pokepediaFallbacks[id]
-            } else {
-                null
-            }
+        val fallbackImage = selectStoredFallbackImage(
+            imageUrl = imageUrl,
+            language = language,
+            setId = setId,
+            fallback = pokepediaFallbacks[id],
+        )
         val fallbackImageUrl = fallbackImage?.url
         val fallbackImageSource = fallbackImage?.source
 
@@ -2407,6 +2401,26 @@ internal data class FallbackImage(
     val url: String,
     val source: String,
 )
+
+/**
+ * Chooses the fallback stored beside a card row.
+ *
+ * A blank TCGdex image gets the fallback in every language. When a CDN image
+ * exists, French still keeps the wiki backup. 30th Classic Collection reprints
+ * keep the original CDN scan and also store that backup in every language.
+ */
+internal fun selectStoredFallbackImage(
+    imageUrl: String?,
+    language: String,
+    setId: String,
+    fallback: FallbackImage?,
+): FallbackImage? {
+    if (fallback == null) return null
+    if (imageUrl.isNullOrBlank()) return fallback
+    if (language.equals("fr", ignoreCase = true)) return fallback
+    if (setId.equals("30C", ignoreCase = true)) return fallback
+    return null
+}
 
 @Serializable
 private data class MissingFrRoot(
