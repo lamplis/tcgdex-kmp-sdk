@@ -487,6 +487,26 @@ fun main(args: Array<String>) = runBlocking {
                     }
                 }
             }
+            val priceGuideProductId = cardmarketId.takeIf { s3Pricing != null }
+            for (anchor in catalogProductAnchors(exportCard.variants, priceGuideProductId)) {
+                db.tcgdexQueries.insertCardPrice(
+                    cardId = id,
+                    cardLanguage = language,
+                    variant = anchor.variantKey,
+                    priceLanguage = "",
+                    sellerCountry = "GLOBAL",
+                    condition = "",
+                    currency = "EUR",
+                    minPrice = null,
+                    avgPrice = null,
+                    medianPrice = null,
+                    maxPrice = null,
+                    recommendedPrice = null,
+                    availableCount = null,
+                    productId = anchor.productId.toLong(),
+                    updatedIso = exportUpdatedIso.orEmpty(),
+                )
+            }
         }
 
         // Insert price guide as GLOBAL baseline. This row is condition-agnostic (the

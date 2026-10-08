@@ -195,6 +195,8 @@ internal fun parseCardmarketExportFile(
         val countries = mutableSetOf<String>()
         val conditionsSeen = mutableSetOf<String>()
         var cardCount = 0
+        var cardsWithPrices = 0
+        var cardsWithProductIdOnly = 0
         var variantCount = 0
         var pricedVariantCount = 0
         var priceEntryCount = 0
@@ -217,6 +219,19 @@ internal fun parseCardmarketExportFile(
                     if (variantsArray.isEmpty()) continue
 
                     val variants = buildList {
+                        fun addUnpricedProduct(version: String?, productId: Int?, label: String?) {
+                            if (productId == null) return
+                            variantCount++
+                            add(
+                                CardmarketExportVariant(
+                                    version = version,
+                                    productId = productId,
+                                    label = label,
+                                    prices = emptyMap(),
+                                ),
+                            )
+                        }
+
                         for (variantElement in variantsArray) {
                             val variantObj = variantElement as? JsonObject ?: continue
                             val version = variantObj.stringOrNull("version")?.trim()
@@ -224,7 +239,10 @@ internal fun parseCardmarketExportFile(
                             val label = variantObj.stringOrNull("label")?.trim()
 
                             val pricesObj = variantObj["prices"] as? JsonObject
-                            if (pricesObj == null || pricesObj.isEmpty()) continue
+                            if (pricesObj == null || pricesObj.isEmpty()) {
+                                addUnpricedProduct(version, productId, label)
+                                continue
+                            }
 
                             val capturedAtByLang = mutableMapOf<String, String>()
                             val lifecycleObj = variantObj["lifecycle"] as? JsonObject
@@ -298,7 +316,10 @@ internal fun parseCardmarketExportFile(
                                 }
                             }
 
-                            if (!hasAnyPrice) continue
+                            if (!hasAnyPrice) {
+                                addUnpricedProduct(version, productId, label)
+                                continue
+                            }
 
                             variantCount++
                             pricedVariantCount++
@@ -315,6 +336,12 @@ internal fun parseCardmarketExportFile(
 
                     if (variants.isEmpty()) continue
 
+                    if (variants.any { it.prices.isNotEmpty() }) {
+                        cardsWithPrices++
+                    } else {
+                        cardsWithProductIdOnly++
+                    }
+
                     cardsById[cardId] = CardmarketExportCard(
                         tcgdexCardId = cardId,
                         name = cardName,
@@ -326,7 +353,8 @@ internal fun parseCardmarketExportFile(
 
         println(
             "[Tcgdex] Parsed Cardmarket export file ${file.name}: cards=$cardCount " +
-                "cardsWithPrices=${cardsById.size} variants=$variantCount pricedVariants=$pricedVariantCount " +
+                "cardsWithPrices=$cardsWithPrices cardsWithProductIdOnly=$cardsWithProductIdOnly " +
+                "variants=$variantCount pricedVariants=$pricedVariantCount " +
                 "entries=$priceEntryCount languages=${languages.sorted()} countries=${countries.sorted()} " +
                 "conditions=${conditionsSeen.sorted()} updated=$exportDate",
         )
@@ -338,6 +366,37 @@ internal fun parseCardmarketExportFile(
     }.onFailure {
         println("[Tcgdex][!] Failed to parse Cardmarket export file ${file.absolutePath}: ${it.message}")
     }.getOrNull()
+}
+
+internal data class CatalogProductAnchor(
+    val variantKey: String,
+    val productId: Int,
+)
+
+/**
+ * Product ids from export variants that have no price quotes.
+ *
+ * The price-guide insert already stores [priceGuideProductId] on the GLOBAL
+ * `Normal` row, so those products are omitted. A `Normal` variant is also
+ * omitted whenever a guide row will be written, because that primary key
+ * belongs to the guide.
+ */
+internal fun catalogProductAnchors(
+    variants: List<CardmarketExportVariant>,
+    priceGuideProductId: Int?,
+): List<CatalogProductAnchor> {
+    val seen = mutableSetOf<String>()
+    return variants.mapNotNull { variant ->
+        if (variant.prices.isNotEmpty()) return@mapNotNull null
+        val productId = variant.productId ?: return@mapNotNull null
+        if (priceGuideProductId != null && productId == priceGuideProductId) return@mapNotNull null
+        val variantKey = variant.version?.takeIf { it.isNotBlank() }
+            ?: variant.label?.takeIf { it.isNotBlank() }
+            ?: ""
+        if (variantKey == "Normal" && priceGuideProductId != null) return@mapNotNull null
+        if (!seen.add(variantKey)) return@mapNotNull null
+        CatalogProductAnchor(variantKey = variantKey, productId = productId)
+    }
 }
 
 internal fun resolveDefaultCardmarketExportPath(projectRoot: File): File? {

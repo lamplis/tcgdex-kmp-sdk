@@ -139,6 +139,8 @@ END;
 --              conditions nor falls back between them; that is an app-layer concern.
 -- - updated_iso: poke-browser lifecycle.captured_at for export rows (fallback exportDate);
 --                price-guide createdAt for seller_country = GLOBAL.
+--                A GLOBAL row may be a catalog product-id anchor with null prices when the
+--                price guide has no quote; it is not an estimate.
 -- Note: cards table keeps legacy flat pricing columns for backward compatibility.
 -- -----------------------------------------------------------------------------
 CREATE TABLE card_prices (
