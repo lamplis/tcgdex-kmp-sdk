@@ -136,8 +136,14 @@ class CardmarketConditionSplitTest {
 
         val parsed = parseCardmarketExportFile(file, json)
         assertNotNull(parsed)
-        // availableCount alone is not a price signal -- the whole card should be absent.
-        assertTrue(parsed.cards.isEmpty(), "expected the empty variant to be dropped, got ${parsed.cards}")
+        // availableCount alone is not a price signal. The empty price row is dropped
+        // and the product id is kept as an unpriced catalog anchor.
+        val card = parsed.cards["empty-01"]
+        assertNotNull(card, "expected the product-id-only card to be kept, got ${parsed.cards}")
+        assertEquals(1, card.variants.size)
+        val variant = card.variants.single()
+        assertEquals(1, variant.productId)
+        assertTrue(variant.prices.isEmpty(), "expected the empty price row to be dropped, got ${variant.prices}")
     }
 
     private fun writeFixture(contents: String): File {
