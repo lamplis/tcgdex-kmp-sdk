@@ -301,12 +301,19 @@ fun main(args: Array<String>) = runBlocking {
                 setId = setId,
                 localId = localId,
             )
-        val fallbackImage = selectStoredFallbackImage(
-            imageUrl = imageUrl,
-            language = language,
-            setId = setId,
-            fallback = pokepediaFallbacks[id],
-        )
+        val pokebeachUrl = card.getString("fallbackImage")
+            ?.trim()
+            ?.takeIf { it.startsWith("https://") }
+        val fallbackImage = if (imageUrl.isNullOrBlank() && pokebeachUrl != null) {
+            FallbackImage(url = pokebeachUrl, source = POKEBEACH_SOURCE)
+        } else {
+            selectStoredFallbackImage(
+                imageUrl = imageUrl,
+                language = language,
+                setId = setId,
+                fallback = pokepediaFallbacks[id],
+            )
+        }
         val fallbackImageUrl = fallbackImage?.url
         val fallbackImageSource = fallbackImage?.source
 
@@ -2414,6 +2421,7 @@ private fun loadRecognitionVectors(
 // =============================================================================
 
 private const val POKEPEDIA_SOURCE = "pokepedia"
+private const val POKEBEACH_SOURCE = "pokebeach"
 private const val CARDMARKET_SOURCE = "cardmarket"
 private const val POKECARDEX_SOURCE = "pokecardex"
 
