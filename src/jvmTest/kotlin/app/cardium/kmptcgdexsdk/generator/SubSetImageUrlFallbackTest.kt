@@ -15,38 +15,41 @@ class SubSetImageUrlFallbackTest {
      * manifest[language][serieId][setId][localId] -> quality map.
      * Only parent set folders exist on the CDN (never the sub-set ids).
      */
-    private val manifest = json.parseToJsonElement(
-        """
-        {
-          "fr": {
-            "swsh": {
-              "swsh9": {"TG01": {"high": true}},
-              "swsh10": {"TG28": {"high": true}},
-              "swsh11": {"TG02": {"high": true}},
-              "swsh12": {"TG03": {"high": true}},
-              "swsh12.5": {"GG01": {"high": true}},
-              "swsh4.5": {"SV001": {"high": true}},
-              "cel25": {"8A": {"high": true}}
-            },
-            "sm": {}
-          },
-          "en": {
-            "sm": {"sma": {"SV1": {"high": true}}}
-          }
-        }
-        """.trimIndent(),
-    ).jsonObject
+    private val manifest =
+        json
+            .parseToJsonElement(
+                """
+                {
+                  "fr": {
+                    "swsh": {
+                      "swsh9": {"TG01": {"high": true}},
+                      "swsh10": {"TG28": {"high": true}},
+                      "swsh11": {"TG02": {"high": true}},
+                      "swsh12": {"TG03": {"high": true}},
+                      "swsh12.5": {"GG01": {"high": true}},
+                      "swsh4.5": {"SV001": {"high": true}},
+                      "cel25": {"8A": {"high": true}}
+                    },
+                    "sm": {}
+                  },
+                  "en": {
+                    "sm": {"sma": {"SV1": {"high": true}}}
+                  }
+                }
+                """.trimIndent(),
+            ).jsonObject
 
-    private val subSetParents: Map<String, Pair<String, String>> = mapOf(
-        "swsh9tg" to ("swsh" to "swsh9"),
-        "swsh10tg" to ("swsh" to "swsh10"),
-        "swsh11tg" to ("swsh" to "swsh11"),
-        "swsh12tg" to ("swsh" to "swsh12"),
-        "swsh12.5gg" to ("swsh" to "swsh12.5"),
-        "swsh4.5sv" to ("swsh" to "swsh4.5"),
-        "cel25cc" to ("swsh" to "cel25"),
-        "sm115sv" to ("sm" to "sm115"),
-    )
+    private val subSetParents: Map<String, Pair<String, String>> =
+        mapOf(
+            "swsh9tg" to ("swsh" to "swsh9"),
+            "swsh10tg" to ("swsh" to "swsh10"),
+            "swsh11tg" to ("swsh" to "swsh11"),
+            "swsh12tg" to ("swsh" to "swsh12"),
+            "swsh12.5gg" to ("swsh" to "swsh12.5"),
+            "swsh4.5sv" to ("swsh" to "swsh4.5"),
+            "cel25cc" to ("swsh" to "cel25"),
+            "sm115sv" to ("sm" to "sm115"),
+        )
 
     @Test
     fun `Given swsh10tg card in manifest, When synthesizing, Then parent-folder URL is returned`() {
@@ -122,11 +125,12 @@ class SubSetImageUrlFallbackTest {
         localId: String,
         manifestOverride: JsonObject = manifest,
         parents: Map<String, Pair<String, String>> = subSetParents,
-    ): String? = synthesizeSubSetImageUrl(
-        assetsManifest = manifestOverride,
-        subSetParents = parents,
-        language = language,
-        setId = setId,
-        localId = localId,
-    )
+    ): String? =
+        synthesizeSubSetImageUrl(
+            assetsManifest = manifestOverride,
+            subSetParents = parents,
+            language = language,
+            setId = setId,
+            localId = localId,
+        )
 }

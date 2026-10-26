@@ -15,12 +15,12 @@ private val cameoDexIdsInSource = Regex("""cameoDexIds\s*:\s*\[[^\]]*\d""")
 
 private val compiledCardsJson = Json { ignoreUnknownKeys = true }
 
-internal fun cardsDatabaseDataDir(datasetDir: File): File =
-    datasetDir.parentFile.parentFile.resolve("data")
+internal fun cardsDatabaseDataDir(datasetDir: File): File = datasetDir.parentFile.parentFile.resolve("data")
 
 internal fun countSourceCameoCards(dataDir: File): Int {
     if (!dataDir.isDirectory) return 0
-    return dataDir.walkTopDown()
+    return dataDir
+        .walkTopDown()
         .onEnter { dir -> dir.name != "node_modules" }
         .filter { it.isFile && it.extension == "ts" }
         .count { file -> cameoDexIdsInSource.containsMatchIn(file.readText()) }
@@ -87,18 +87,18 @@ internal suspend fun assertCameoRowsPersisted(
 internal suspend fun countCameoRows(
     driver: SqlDriver,
     language: String,
-): Long {
-    return driver.executeQuery(
-        identifier = null,
-        sql = "SELECT COUNT(*) FROM card_pokemon WHERE is_cameo = 1 AND language = ?",
-        mapper = { cursor ->
-            QueryResult.AsyncValue {
-                cursor.next().await()
-                cursor.getLong(0) ?: 0L
-            }
-        },
-        parameters = 1,
-    ) {
-        bindString(0, language)
-    }.await()
-}
+): Long =
+    driver
+        .executeQuery(
+            identifier = null,
+            sql = "SELECT COUNT(*) FROM card_pokemon WHERE is_cameo = 1 AND language = ?",
+            mapper = { cursor ->
+                QueryResult.AsyncValue {
+                    cursor.next().await()
+                    cursor.getLong(0) ?: 0L
+                }
+            },
+            parameters = 1,
+        ) {
+            bindString(0, language)
+        }.await()

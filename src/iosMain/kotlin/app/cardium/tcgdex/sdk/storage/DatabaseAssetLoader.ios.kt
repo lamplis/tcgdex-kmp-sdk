@@ -37,10 +37,11 @@ internal actual fun loadDatabaseAsset(): ByteArray {
         }
     }
 
-    val fallbackPaths = listOf(
-        NSBundle.mainBundle.bundlePath + "/tcgdex.db",
-        NSBundle.mainBundle.bundlePath + "/compose-resources/tcgdex.db",
-    )
+    val fallbackPaths =
+        listOf(
+            NSBundle.mainBundle.bundlePath + "/tcgdex.db",
+            NSBundle.mainBundle.bundlePath + "/compose-resources/tcgdex.db",
+        )
     fallbackPaths.forEach { path ->
         if (fileManager.fileExistsAtPath(path)) {
             println("[Tcgdex][i] Using fallback tcgdex.db at $path")
@@ -55,8 +56,9 @@ internal actual fun loadDatabaseAsset(): ByteArray {
 
 @OptIn(ExperimentalForeignApi::class)
 private fun String.readBytes(): ByteArray {
-    val data = NSData.dataWithContentsOfFile(this)
-        ?: error("Unable to read tcgdex.db from $this")
+    val data =
+        NSData.dataWithContentsOfFile(this)
+            ?: error("Unable to read tcgdex.db from $this")
     val length = data.length.toInt()
     val bytes = ByteArray(length)
     memScoped {
@@ -67,4 +69,3 @@ private fun String.readBytes(): ByteArray {
     println("[Tcgdex][i] Loaded tcgdex.db ($length bytes) from $this")
     return bytes
 }
-

@@ -12,19 +12,20 @@ class CompiledImageUrlTest {
     private val compiledR = "https://assets.tcgdex.net/fr/me/30th/R"
 
     private val manifest =
-        json.parseToJsonElement(
-            """
-            {
-              "fr": {
-                "me": {
-                  "30th": {
-                    "001": {}
+        json
+            .parseToJsonElement(
+                """
+                {
+                  "fr": {
+                    "me": {
+                      "30th": {
+                        "001": {}
+                      }
+                    }
                   }
                 }
-              }
-            }
-            """.trimIndent(),
-        ).jsonObject
+                """.trimIndent(),
+            ).jsonObject
 
     @Test
     fun `Given 30th R missing from manifest When compiled URL present Then image is dropped`() {

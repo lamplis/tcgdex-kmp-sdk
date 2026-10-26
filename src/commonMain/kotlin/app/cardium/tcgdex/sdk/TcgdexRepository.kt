@@ -1,6 +1,7 @@
 package app.cardium.tcgdex.sdk
 
 import app.cardium.tcgdex.sdk.model.Card
+import app.cardium.tcgdex.sdk.model.CardCatalogSlot
 import app.cardium.tcgdex.sdk.model.CardPrice
 import app.cardium.tcgdex.sdk.model.CardRecognitionHash
 import app.cardium.tcgdex.sdk.model.CardSet
@@ -32,7 +33,6 @@ import app.cardium.tcgdex.sdk.model.Serie
  * @see DefaultTcgdexRepository for the implementation
  */
 interface TcgdexRepository {
-
     // =========================================================================
     // Series Queries
     // =========================================================================
@@ -52,7 +52,10 @@ interface TcgdexRepository {
      * @param language ISO language code
      * @return The series if found, null otherwise
      */
-    suspend fun getSerieById(serieId: String, language: String): Serie?
+    suspend fun getSerieById(
+        serieId: String,
+        language: String,
+    ): Serie?
 
     // =========================================================================
     // Set Queries
@@ -73,7 +76,10 @@ interface TcgdexRepository {
      * @param language ISO language code
      * @return List of sets in the series, ordered by release date
      */
-    suspend fun getSetsForSerie(serieId: String, language: String): List<CardSet>
+    suspend fun getSetsForSerie(
+        serieId: String,
+        language: String,
+    ): List<CardSet>
 
     /**
      * Returns a specific set by ID and language.
@@ -82,7 +88,10 @@ interface TcgdexRepository {
      * @param language ISO language code
      * @return The set if found, null otherwise
      */
-    suspend fun getSetById(setId: String, language: String): CardSet?
+    suspend fun getSetById(
+        setId: String,
+        language: String,
+    ): CardSet?
 
     /**
      * Returns the IDs of all sets that contain at least one card in the given
@@ -108,7 +117,10 @@ interface TcgdexRepository {
      * @param language ISO language code
      * @return List of cards with full metadata including set and series info
      */
-    suspend fun getCardsForSet(setId: String, language: String): List<Card>
+    suspend fun getCardsForSet(
+        setId: String,
+        language: String,
+    ): List<Card>
 
     /**
      * Returns all cards by a specific illustrator across all sets.
@@ -117,7 +129,10 @@ interface TcgdexRepository {
      * @param language ISO language code
      * @return List of cards ordered by set release date (newest first)
      */
-    suspend fun getCardsForIllustrator(illustratorId: String, language: String): List<Card>
+    suspend fun getCardsForIllustrator(
+        illustratorId: String,
+        language: String,
+    ): List<Card>
 
     /**
      * Returns all cards with a specific rarity.
@@ -126,7 +141,10 @@ interface TcgdexRepository {
      * @param language ISO language code
      * @return List of cards ordered by set release date (newest first)
      */
-    suspend fun getCardsForRarity(rarityId: String, language: String): List<Card>
+    suspend fun getCardsForRarity(
+        rarityId: String,
+        language: String,
+    ): List<Card>
 
     /**
      * Returns all cards featuring a specific Pokémon by Pokédex ID.
@@ -135,7 +153,10 @@ interface TcgdexRepository {
      * @param language ISO language code
      * @return List of cards ordered by set release date (newest first)
      */
-    suspend fun getCardsForPokemonDexId(dexId: Int, language: String): List<Card>
+    suspend fun getCardsForPokemonDexId(
+        dexId: Int,
+        language: String,
+    ): List<Card>
 
     /**
      * Returns a specific card by ID and language.
@@ -144,7 +165,38 @@ interface TcgdexRepository {
      * @param language ISO language code
      * @return The card with full metadata if found, null otherwise
      */
-    suspend fun getCardById(cardId: String, language: String): Card?
+
+    /**
+     * Explicit physical prints for every card in [language]. One query for list hydration.
+     */
+    suspend fun getCatalogSlotsByLanguage(language: String): List<CardCatalogSlot> = emptyList()
+
+    /**
+     * Explicit physical prints for one set. Excludes nothing by itself; callers filter TCGP.
+     */
+    suspend fun getCatalogSlotsForSet(
+        setId: String,
+        language: String,
+    ): List<CardCatalogSlot> = emptyList()
+
+    suspend fun getCatalogSlotsForPokemon(
+        dexId: Int,
+        language: String,
+    ): List<CardCatalogSlot> = emptyList()
+
+    suspend fun getCatalogSlotsForIllustrator(
+        illustratorId: String,
+        language: String,
+    ): List<CardCatalogSlot> = emptyList()
+
+    suspend fun getCatalogSlotCountsByPokemon(language: String): Map<Int, Int> = emptyMap()
+
+    suspend fun getCatalogSlotCountsByIllustrator(language: String): Map<String, Int> = emptyMap()
+
+    suspend fun getCardById(
+        cardId: String,
+        language: String,
+    ): Card?
 
     /**
      * Returns recognition hashes for a specific card/language pair.
@@ -152,7 +204,10 @@ interface TcgdexRepository {
      * @param cardId The card identifier (e.g., "sv01-001")
      * @param language ISO language code
      */
-    suspend fun getRecognitionHashesForCard(cardId: String, language: String): List<CardRecognitionHash> = emptyList()
+    suspend fun getRecognitionHashesForCard(
+        cardId: String,
+        language: String,
+    ): List<CardRecognitionHash> = emptyList()
 
     /**
      * Returns the full recognition corpus for Pokémon cards in a language.
@@ -167,7 +222,10 @@ interface TcgdexRepository {
      * @param cardId The card identifier (e.g., "sv01-001")
      * @param language The language of the card record (same language used for getCardById)
      */
-    suspend fun getCardPrices(cardId: String, language: String): List<CardPrice>
+    suspend fun getCardPrices(
+        cardId: String,
+        language: String,
+    ): List<CardPrice>
 
     /**
      * Returns every raw [CardPrice] row for a card that matches the requested seller
@@ -233,7 +291,10 @@ interface TcgdexRepository {
      * @param language ISO language code
      * @return Map of cardId -> Card for all found cards (missing IDs are omitted)
      */
-    suspend fun getCardsByIds(cardIds: Collection<String>, language: String): Map<String, Card>
+    suspend fun getCardsByIds(
+        cardIds: Collection<String>,
+        language: String,
+    ): Map<String, Card>
 
     /**
      * Searches for cards by name (case-insensitive partial match).
@@ -244,7 +305,12 @@ interface TcgdexRepository {
      * @param offset Number of results to skip (for pagination)
      * @return List of matching cards ordered by name
      */
-    suspend fun searchCardsByName(query: String, language: String, limit: Int, offset: Int): List<Card>
+    suspend fun searchCardsByName(
+        query: String,
+        language: String,
+        limit: Int,
+        offset: Int,
+    ): List<Card>
 
     /**
      * Searches for cards by name using the FTS5 unicode61 tokenizer.
@@ -258,7 +324,12 @@ interface TcgdexRepository {
      * @param offset Number of results to skip (for pagination)
      * @return List of matching cards ordered by name
      */
-    suspend fun searchCardsByNameFts(query: String, language: String, limit: Int, offset: Int): List<Card>
+    suspend fun searchCardsByNameFts(
+        query: String,
+        language: String,
+        limit: Int,
+        offset: Int,
+    ): List<Card>
 
     /**
      * Counts the total number of cards matching a name search.
@@ -267,7 +338,10 @@ interface TcgdexRepository {
      * @param language ISO language code
      * @return Total count of matching cards
      */
-    suspend fun countCardsByName(query: String, language: String): Long
+    suspend fun countCardsByName(
+        query: String,
+        language: String,
+    ): Long
 
     // =========================================================================
     // Local ID / Reference Search Queries
@@ -282,7 +356,11 @@ interface TcgdexRepository {
      * @param limit Maximum number of results
      * @return List of cards matching the local ID, ordered by release date (newest first)
      */
-    suspend fun searchCardsByLocalId(localId: String, language: String, limit: Int): List<Card>
+    suspend fun searchCardsByLocalId(
+        localId: String,
+        language: String,
+        limit: Int,
+    ): List<Card>
 
     /**
      * Searches for a card by local ID within a specific set.
@@ -293,7 +371,11 @@ interface TcgdexRepository {
      * @param language ISO language code
      * @return List of cards (usually 0 or 1) matching the local ID in the set
      */
-    suspend fun searchCardsByLocalIdInSet(localId: String, setId: String, language: String): List<Card>
+    suspend fun searchCardsByLocalIdInSet(
+        localId: String,
+        setId: String,
+        language: String,
+    ): List<Card>
 
     /**
      * Searches for cards by local ID and official card count (for "X/Y" format).
@@ -305,7 +387,12 @@ interface TcgdexRepository {
      * @param limit Maximum number of results
      * @return List of cards matching the criteria
      */
-    suspend fun searchCardsByLocalIdAndCardCount(localId: String, cardCount: Int, language: String, limit: Int): List<Card>
+    suspend fun searchCardsByLocalIdAndCardCount(
+        localId: String,
+        cardCount: Int,
+        language: String,
+        limit: Int,
+    ): List<Card>
 
     /**
      * Searches for sets by name (partial match).
@@ -316,7 +403,11 @@ interface TcgdexRepository {
      * @param limit Maximum number of results
      * @return List of sets matching the name query
      */
-    suspend fun searchSetsByName(query: String, language: String, limit: Int): List<CardSet>
+    suspend fun searchSetsByName(
+        query: String,
+        language: String,
+        limit: Int,
+    ): List<CardSet>
 
     // =========================================================================
     // Illustrator & Rarity Queries (Language-Agnostic)
@@ -412,7 +503,10 @@ interface TcgdexRepository {
      * @param language ISO language code
      * @return List of set card counts ordered by release date (newest first)
      */
-    suspend fun getCardCountsPerSetForPokemon(dexId: Int, language: String): List<PokemonSetCardCount>
+    suspend fun getCardCountsPerSetForPokemon(
+        dexId: Int,
+        language: String,
+    ): List<PokemonSetCardCount>
 
     /**
      * Returns all cards for a Pokémon in a specific set.
@@ -425,7 +519,11 @@ interface TcgdexRepository {
      * @param language ISO language code
      * @return List of cards ordered by card number
      */
-    suspend fun getCardsForPokemonInSet(dexId: Int, setId: String, language: String): List<Card>
+    suspend fun getCardsForPokemonInSet(
+        dexId: Int,
+        setId: String,
+        language: String,
+    ): List<Card>
 
     /**
      * Returns the Pokémon dex ID for a specific card.
@@ -437,7 +535,10 @@ interface TcgdexRepository {
      * @param language ISO language code
      * @return Dex ID if the card has a Pokémon, null otherwise
      */
-    suspend fun getDexIdForCard(cardId: String, language: String): Int?
+    suspend fun getDexIdForCard(
+        cardId: String,
+        language: String,
+    ): Int?
 
     /**
      * Returns Pokémon dex IDs for many card IDs in a single query.
@@ -448,7 +549,10 @@ interface TcgdexRepository {
      * @param language ISO language code
      * @return Map of cardId -> dexId for cards that have a dex ID in that language
      */
-    suspend fun getDexIdsForCards(cardIds: List<String>, language: String): Map<String, Int>
+    suspend fun getDexIdsForCards(
+        cardIds: List<String>,
+        language: String,
+    ): Map<String, Int>
 
     /**
      * Returns computed Pokémon evolution depths for a batch of dex IDs.
@@ -465,7 +569,10 @@ interface TcgdexRepository {
      * @param language ISO language code used to resolve species rows
      * @return Map from dex ID to computed depth (missing rows default to omission)
      */
-    suspend fun getEvolutionDepthsForDexIds(dexIds: Collection<Int>, language: String): Map<Int, Int> = emptyMap()
+    suspend fun getEvolutionDepthsForDexIds(
+        dexIds: Collection<Int>,
+        language: String,
+    ): Map<Int, Int> = emptyMap()
 
     // =========================================================================
     // Utility Queries

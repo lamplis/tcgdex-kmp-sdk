@@ -15,7 +15,7 @@ data class Serie(
     val id: String,
     val name: String,
     val language: String,
-    val position: Int
+    val position: Int,
 )
 
 /**
@@ -148,6 +148,32 @@ data class Card(
  * @property updatedIso ISO 8601 capture date from poke-browser `lifecycle.captured_at`
  *   for export rows (fallback: file `exportDate`). Price-guide `createdAt` for GLOBAL rows.
  */
+
+/**
+ * One physical print of a catalog card, ingested from variants_detailed.
+ */
+data class CardCatalogSlot(
+    val cardId: String,
+    val language: String,
+    val variantId: String,
+    val isCanonical: Boolean,
+    val sortIndex: Int,
+    val displayRank: Int,
+    val typeSlug: String,
+    val subtypeSlug: String?,
+    val sizeSlug: String,
+    val foilSlug: String?,
+    val stampSlugs: List<String>,
+    val typeLabel: String,
+    val subtypeLabel: String?,
+    val sizeLabel: String,
+    val foilLabel: String?,
+    val stampLabels: List<String>,
+    val imageUrl: String?,
+    val cardmarketProductId: Long?,
+    val tcgplayerProductId: Long?,
+)
+
 data class CardPrice(
     val cardId: String,
     val cardLanguage: String,
@@ -193,7 +219,7 @@ data class CardRecognitionHash(
  */
 data class Illustrator(
     val id: String,
-    val name: String
+    val name: String,
 )
 
 /**
@@ -206,7 +232,7 @@ data class Illustrator(
 data class IllustratorWithCount(
     val id: String,
     val name: String,
-    val cardCount: Int
+    val cardCount: Int,
 )
 
 /**
@@ -235,7 +261,7 @@ data class IllustratorCardIdEntry(
  */
 data class Rarity(
     val id: String,
-    val name: String
+    val name: String,
 )
 
 /**
@@ -250,7 +276,7 @@ data class Rarity(
 data class PokemonDexEntry(
     val dexId: Int,
     val name: String,
-    val cardCount: Int
+    val cardCount: Int,
 )
 
 /**
@@ -282,7 +308,7 @@ data class PokemonSetCardCount(
     val serieName: String?,
     val logoUrl: String?,
     val symbolUrl: String?,
-    val cardCount: Int
+    val cardCount: Int,
 )
 
 /**

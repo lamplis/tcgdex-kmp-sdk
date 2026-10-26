@@ -11,24 +11,28 @@ import kotlin.test.assertNull
 class ResolveMarketplaceIdTest {
     private val json = Json { ignoreUnknownKeys = true }
 
-    private fun card(jsonString: String): JsonObject =
-        json.parseToJsonElement(jsonString.trimIndent()).jsonObject
+    private fun card(jsonString: String): JsonObject = json.parseToJsonElement(jsonString.trimIndent()).jsonObject
 
     @Test
     fun `Given root-only thirdParty cardmarket, When resolved, Then returns root ID`() {
-        val card = card("""
+        val card =
+            card(
+                """
             {
               "id": "sv01-001",
               "thirdParty": { "cardmarket": 100, "tcgplayer": 200 },
               "variants": { "normal": true, "reverse": true }
             }
-        """)
+        """,
+            )
         assertEquals(100, resolveMarketplaceId(card, "cardmarket"))
     }
 
     @Test
     fun `Given variant-normal thirdParty cardmarket only, When resolved, Then returns normal variant ID`() {
-        val card = card("""
+        val card =
+            card(
+                """
             {
               "id": "me01-001",
               "thirdParty": { "tcgplayer": 654340 },
@@ -38,13 +42,16 @@ class ResolveMarketplaceIdTest {
                 { "type": "reverse", "thirdParty": { "cardmarket": 851072 } }
               ]
             }
-        """)
+        """,
+            )
         assertEquals(851072, resolveMarketplaceId(card, "cardmarket"))
     }
 
     @Test
     fun `Given both root and variant cardmarket, When resolved, Then normal variant takes precedence`() {
-        val card = card("""
+        val card =
+            card(
+                """
             {
               "id": "dual-001",
               "thirdParty": { "cardmarket": 111, "tcgplayer": 222 },
@@ -53,13 +60,16 @@ class ResolveMarketplaceIdTest {
                 { "type": "reverse", "thirdParty": { "cardmarket": 999 } }
               ]
             }
-        """)
+        """,
+            )
         assertEquals(999, resolveMarketplaceId(card, "cardmarket"))
     }
 
     @Test
     fun `Given only non-normal variant cardmarket, When resolved, Then falls back to first variant`() {
-        val card = card("""
+        val card =
+            card(
+                """
             {
               "id": "special-001",
               "thirdParty": { "tcgplayer": 300 },
@@ -68,13 +78,16 @@ class ResolveMarketplaceIdTest {
                 { "type": "reverse", "thirdParty": { "cardmarket": 666 } }
               ]
             }
-        """)
+        """,
+            )
         assertEquals(555, resolveMarketplaceId(card, "cardmarket"))
     }
 
     @Test
     fun `Given no thirdParty cardmarket anywhere, When resolved, Then returns null`() {
-        val card = card("""
+        val card =
+            card(
+                """
             {
               "id": "nomarket-001",
               "thirdParty": { "tcgplayer": 400 },
@@ -82,24 +95,30 @@ class ResolveMarketplaceIdTest {
                 { "type": "normal", "thirdParty": { "tcgplayer": 500 } }
               ]
             }
-        """)
+        """,
+            )
         assertNull(resolveMarketplaceId(card, "cardmarket"))
     }
 
     @Test
     fun `Given no thirdParty at all, When resolved, Then returns null`() {
-        val card = card("""
+        val card =
+            card(
+                """
             {
               "id": "bare-001",
               "variants": { "normal": true }
             }
-        """)
+        """,
+            )
         assertNull(resolveMarketplaceId(card, "cardmarket"))
     }
 
     @Test
     fun `Given variant thirdParty with null cardmarket, When resolved, Then falls back to root`() {
-        val card = card("""
+        val card =
+            card(
+                """
             {
               "id": "nullvariant-001",
               "thirdParty": { "cardmarket": 777 },
@@ -107,13 +126,16 @@ class ResolveMarketplaceIdTest {
                 { "type": "normal", "thirdParty": { "cardmarket": null } }
               ]
             }
-        """)
+        """,
+            )
         assertEquals(777, resolveMarketplaceId(card, "cardmarket"))
     }
 
     @Test
     fun `Given tcgplayer marketplace, When resolved, Then returns tcgplayer ID from root`() {
-        val card = card("""
+        val card =
+            card(
+                """
             {
               "id": "tcgp-001",
               "thirdParty": { "tcgplayer": 654340 },
@@ -121,34 +143,42 @@ class ResolveMarketplaceIdTest {
                 { "type": "normal", "thirdParty": { "cardmarket": 851072 } }
               ]
             }
-        """)
+        """,
+            )
         assertEquals(654340, resolveMarketplaceId(card, "tcgplayer"))
     }
 
     @Test
     fun `Given variants_detailed is empty array, When resolved, Then falls back to root`() {
-        val card = card("""
+        val card =
+            card(
+                """
             {
               "id": "emptyvar-001",
               "thirdParty": { "cardmarket": 888 },
               "variants_detailed": []
             }
-        """)
+        """,
+            )
         assertEquals(888, resolveMarketplaceId(card, "cardmarket"))
     }
 
     @Test
     fun `Regression ME1 - variant-only cardmarket feeds S3 price guide lookup`() {
-        val priceGuide = mapOf(
-            851072 to CardmarketPrice(
-                trendPrice = 0.05,
-                averageSellPrice = 0.04,
-                lowPrice = 0.02,
-                updatedIso = "2026-04-19T00:00:00Z",
-            ),
-        )
+        val priceGuide =
+            mapOf(
+                851072 to
+                    CardmarketPrice(
+                        trendPrice = 0.05,
+                        averageSellPrice = 0.04,
+                        lowPrice = 0.02,
+                        updatedIso = "2026-04-19T00:00:00Z",
+                    ),
+            )
 
-        val card = card("""
+        val card =
+            card(
+                """
             {
               "id": "me01-001",
               "thirdParty": { "tcgplayer": 654340 },
@@ -158,7 +188,8 @@ class ResolveMarketplaceIdTest {
                 { "type": "reverse", "thirdParty": { "cardmarket": 851072 } }
               ]
             }
-        """)
+        """,
+            )
 
         val resolvedId = resolveMarketplaceId(card, "cardmarket")
         assertNotNull(resolvedId, "Variant-only cardmarket ID should be resolved")

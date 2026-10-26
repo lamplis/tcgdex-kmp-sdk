@@ -21,7 +21,10 @@ internal fun rewriteHiddenFatesVaultCardId(cardId: String): String {
     return "$HIDDEN_FATES_VAULT_SET_ID-${cardId.removePrefix(prefix)}"
 }
 
-internal fun rewriteHiddenFatesVaultOfficial(setId: String, official: String?): String? =
+internal fun rewriteHiddenFatesVaultOfficial(
+    setId: String,
+    official: String?,
+): String? =
     if (rewriteHiddenFatesVaultSetId(setId) == HIDDEN_FATES_VAULT_SET_ID) {
         HIDDEN_FATES_VAULT_OFFICIAL
     } else {

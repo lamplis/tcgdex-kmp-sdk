@@ -46,11 +46,13 @@ class HiddenFatesVaultRewriteTest {
 
     @Test
     fun `Given sma set JSON, When rewriting, Then id and official become the Hidden Fates vault sub-set`() {
-        val rewritten = rewriteHiddenFatesVaultSetJson(
-            json.parseToJsonElement(
-                """{"id":"sma","abbreviation":{"official":"SV"},"serie":{"id":"sm"}}""",
-            ).jsonObject,
-        )
+        val rewritten =
+            rewriteHiddenFatesVaultSetJson(
+                json
+                    .parseToJsonElement(
+                        """{"id":"sma","abbreviation":{"official":"SV"},"serie":{"id":"sm"}}""",
+                    ).jsonObject,
+            )
 
         assertEquals("sm115sv", rewritten.string("id"))
         assertEquals("HIF:SV", rewritten.nestedString("abbreviation", "official"))
@@ -59,18 +61,20 @@ class HiddenFatesVaultRewriteTest {
 
     @Test
     fun `Given sma card JSON, When rewriting, Then card id and nested set id are remapped`() {
-        val rewritten = rewriteHiddenFatesVaultCardJson(
-            json.parseToJsonElement(
-                """
-                {
-                  "id":"sma-SV1",
-                  "localId":"SV1",
-                  "image":"https://assets.tcgdex.net/en/sm/sma/SV1",
-                  "set":{"id":"sma","abbreviation":{"official":"SV"}}
-                }
-                """.trimIndent(),
-            ).jsonObject,
-        )
+        val rewritten =
+            rewriteHiddenFatesVaultCardJson(
+                json
+                    .parseToJsonElement(
+                        """
+                        {
+                          "id":"sma-SV1",
+                          "localId":"SV1",
+                          "image":"https://assets.tcgdex.net/en/sm/sma/SV1",
+                          "set":{"id":"sma","abbreviation":{"official":"SV"}}
+                        }
+                        """.trimIndent(),
+                    ).jsonObject,
+            )
 
         assertEquals("sm115sv-SV1", rewritten.string("id"))
         assertEquals("SV1", rewritten.string("localId"))
@@ -79,8 +83,7 @@ class HiddenFatesVaultRewriteTest {
         assertEquals("HIF:SV", rewritten.nestedString("set", "abbreviation", "official"))
     }
 
-    private fun JsonObject.string(key: String): String? =
-        (this[key] as? JsonPrimitive)?.contentOrNull
+    private fun JsonObject.string(key: String): String? = (this[key] as? JsonPrimitive)?.contentOrNull
 
     private fun JsonObject.nestedString(vararg keys: String): String? {
         var current: JsonObject = this

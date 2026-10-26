@@ -9,7 +9,11 @@ import kotlinx.serialization.json.jsonObject
 import kotlinx.serialization.json.jsonPrimitive
 
 class UnresolvedTreeRegenerationTest {
-    private val json = Json { prettyPrint = true; ignoreUnknownKeys = true }
+    private val json =
+        Json {
+            prettyPrint = true
+            ignoreUnknownKeys = true
+        }
 
     @Test
     fun `Given mixed resolved and unresolved cards, When regenerated, Then only unresolved remain`() {
@@ -45,9 +49,15 @@ class UnresolvedTreeRegenerationTest {
         assertEquals(2, root["unresolvedCards"]?.jsonPrimitive?.content?.toInt())
         assertEquals(0, root["resolvedCards"]?.jsonPrimitive?.content?.toInt())
 
-        val cards = root["series"]!!.jsonArray
-            .first().jsonObject["sets"]!!.jsonArray
-            .first().jsonObject["cards"]!!.jsonArray
+        val cards =
+            root["series"]!!
+                .jsonArray
+                .first()
+                .jsonObject["sets"]!!
+                .jsonArray
+                .first()
+                .jsonObject["cards"]!!
+                .jsonArray
         assertEquals(2, cards.size)
     }
 }

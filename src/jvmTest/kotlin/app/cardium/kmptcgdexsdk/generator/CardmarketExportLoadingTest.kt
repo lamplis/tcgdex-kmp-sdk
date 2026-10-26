@@ -156,36 +156,44 @@ class CardmarketExportLoadingTest {
 
     @Test
     fun `Given variant lifecycle captured_at, When parsed, Then each price carries that capturedAt`() {
-        val file = writeExportFile(
-            """
-            {
-              "exportDate": "2026-08-13T18:22:31Z",
-              "series": [{"sets":[{"cards":[{
-                "tcgdexCardId":"sv01-001",
-                "name":"Bulbasaur",
-                "variants":[{
-                  "version":"Normal",
-                  "productId":123,
-                  "label":"V1",
-                  "prices":{"fr":{"FR":{
-                    "recommendedPrice":{"NM":2.9},
-                    "avgPrice":{"NM":2.8},
-                    "minPrice":{"NM":1.9},
-                    "currency":"EUR"
-                  }}},
-                  "lifecycle":{"fr":{
-                    "captured_at":"2026-05-09T01:32:59Z",
-                    "extracted_at":"2026-05-09T01:32:59Z"
-                  }}
-                }]
-              }]}]}]
-            }
-            """.trimIndent(),
-        )
+        val file =
+            writeExportFile(
+                """
+                {
+                  "exportDate": "2026-08-13T18:22:31Z",
+                  "series": [{"sets":[{"cards":[{
+                    "tcgdexCardId":"sv01-001",
+                    "name":"Bulbasaur",
+                    "variants":[{
+                      "version":"Normal",
+                      "productId":123,
+                      "label":"V1",
+                      "prices":{"fr":{"FR":{
+                        "recommendedPrice":{"NM":2.9},
+                        "avgPrice":{"NM":2.8},
+                        "minPrice":{"NM":1.9},
+                        "currency":"EUR"
+                      }}},
+                      "lifecycle":{"fr":{
+                        "captured_at":"2026-05-09T01:32:59Z",
+                        "extracted_at":"2026-05-09T01:32:59Z"
+                      }}
+                    }]
+                  }]}]}]
+                }
+                """.trimIndent(),
+            )
 
         val parsed = parseCardmarketExportFile(file, json)
         assertNotNull(parsed)
-        val nmPrice = parsed.cards.getValue("sv01-001").variants.first().prices["fr"]?.get("FR")?.get("NM")
+        val nmPrice =
+            parsed.cards
+                .getValue("sv01-001")
+                .variants
+                .first()
+                .prices["fr"]
+                ?.get("FR")
+                ?.get("NM")
         assertNotNull(nmPrice)
         assertEquals("2026-05-09T01:32:59Z", nmPrice.capturedAt)
         assertEquals(
@@ -197,24 +205,32 @@ class CardmarketExportLoadingTest {
 
     @Test
     fun `Given no lifecycle, When parsed, Then capturedAt is null and fallback is exportDate`() {
-        val file = writeExportFile(
-            """
-            {
-              "exportDate": "2026-03-01T00:00:00Z",
-              "series": [{"sets":[{"cards":[{
-                "tcgdexCardId":"sv01-001",
-                "variants":[{"version":"Normal","prices":{"fr":{"FR":{
-                  "recommendedPrice":{"NM":2.9},
-                  "currency":"EUR"
-                }}}}]
-              }]}]}]
-            }
-            """.trimIndent(),
-        )
+        val file =
+            writeExportFile(
+                """
+                {
+                  "exportDate": "2026-03-01T00:00:00Z",
+                  "series": [{"sets":[{"cards":[{
+                    "tcgdexCardId":"sv01-001",
+                    "variants":[{"version":"Normal","prices":{"fr":{"FR":{
+                      "recommendedPrice":{"NM":2.9},
+                      "currency":"EUR"
+                    }}}}]
+                  }]}]}]
+                }
+                """.trimIndent(),
+            )
 
         val parsed = parseCardmarketExportFile(file, json)
         assertNotNull(parsed)
-        val nmPrice = parsed.cards.getValue("sv01-001").variants.first().prices["fr"]?.get("FR")?.get("NM")
+        val nmPrice =
+            parsed.cards
+                .getValue("sv01-001")
+                .variants
+                .first()
+                .prices["fr"]
+                ?.get("FR")
+                ?.get("NM")
         assertNotNull(nmPrice)
         assertNull(nmPrice.capturedAt)
         assertEquals(
@@ -262,34 +278,49 @@ class CardmarketExportLoadingTest {
 
         val loaded = loadCardmarketExportPrices(root, exportDir.absolutePath, json)
         assertNotNull(loaded)
-        val variant = loaded.cards.getValue("sv01-001").variants.single()
+        val variant =
+            loaded.cards
+                .getValue("sv01-001")
+                .variants
+                .single()
         assertEquals(
             "2026-05-09T01:32:59Z",
-            variant.prices["fr"]?.get("FR")?.get("NM")?.capturedAt,
+            variant.prices["fr"]
+                ?.get("FR")
+                ?.get("NM")
+                ?.capturedAt,
         )
         assertEquals(
             "2026-06-01T12:00:00Z",
-            variant.prices["en"]?.get("DE")?.get("NM")?.capturedAt,
+            variant.prices["en"]
+                ?.get("DE")
+                ?.get("NM")
+                ?.capturedAt,
         )
     }
 
     @Test
     fun `Given productId and empty prices, When parsed, Then the card is kept and prices are empty`() {
-        val file = writeExportFile(
-            """
-            {
-              "exportDate": "2026-10-06T00:00:00Z",
-              "series": [{"sets":[{"cards":[{
-                "tcgdexCardId":"pps1-BST22",
-                "variants":[{"version":"V1","productId":697079,"prices":{}}]
-              }]}]}]
-            }
-            """.trimIndent(),
-        )
+        val file =
+            writeExportFile(
+                """
+                {
+                  "exportDate": "2026-10-06T00:00:00Z",
+                  "series": [{"sets":[{"cards":[{
+                    "tcgdexCardId":"pps1-BST22",
+                    "variants":[{"version":"V1","productId":697079,"prices":{}}]
+                  }]}]}]
+                }
+                """.trimIndent(),
+            )
 
         val parsed = parseCardmarketExportFile(file, json)
         assertNotNull(parsed)
-        val variant = parsed.cards.getValue("pps1-BST22").variants.single()
+        val variant =
+            parsed.cards
+                .getValue("pps1-BST22")
+                .variants
+                .single()
         assertEquals(697079, variant.productId)
         assertEquals("V1", variant.version)
         assertTrue(variant.prices.isEmpty())
@@ -297,17 +328,18 @@ class CardmarketExportLoadingTest {
 
     @Test
     fun `Given no productId and empty prices, When parsed, Then the card is absent`() {
-        val file = writeExportFile(
-            """
-            {
-              "exportDate": "2026-10-06T00:00:00Z",
-              "series": [{"sets":[{"cards":[{
-                "tcgdexCardId":"sv01-001",
-                "variants":[{"version":"V1","prices":{}}]
-              }]}]}]
-            }
-            """.trimIndent(),
-        )
+        val file =
+            writeExportFile(
+                """
+                {
+                  "exportDate": "2026-10-06T00:00:00Z",
+                  "series": [{"sets":[{"cards":[{
+                    "tcgdexCardId":"sv01-001",
+                    "variants":[{"version":"V1","prices":{}}]
+                  }]}]}]
+                }
+                """.trimIndent(),
+            )
 
         val parsed = parseCardmarketExportFile(file, json)
         assertNotNull(parsed)
@@ -316,61 +348,76 @@ class CardmarketExportLoadingTest {
 
     @Test
     fun `Given productId and an NM price, When parsed, Then the priced variant is unchanged`() {
-        val file = writeExportFile(
-            """
-            {
-              "exportDate": "2026-10-06T00:00:00Z",
-              "series": [{"sets":[{"cards":[{
-                "tcgdexCardId":"sv01-001",
-                "variants":[{
-                  "version":"Normal",
-                  "productId":123,
-                  "prices":{"fr":{"FR":{
-                    "recommendedPrice":{"NM":2.9},
-                    "currency":"EUR"
-                  }}}
-                }]
-              }]}]}]
-            }
-            """.trimIndent(),
-        )
+        val file =
+            writeExportFile(
+                """
+                {
+                  "exportDate": "2026-10-06T00:00:00Z",
+                  "series": [{"sets":[{"cards":[{
+                    "tcgdexCardId":"sv01-001",
+                    "variants":[{
+                      "version":"Normal",
+                      "productId":123,
+                      "prices":{"fr":{"FR":{
+                        "recommendedPrice":{"NM":2.9},
+                        "currency":"EUR"
+                      }}}
+                    }]
+                  }]}]}]
+                }
+                """.trimIndent(),
+            )
 
         val parsed = parseCardmarketExportFile(file, json)
         assertNotNull(parsed)
-        val variant = parsed.cards.getValue("sv01-001").variants.single()
+        val variant =
+            parsed.cards
+                .getValue("sv01-001")
+                .variants
+                .single()
         assertEquals(123, variant.productId)
-        assertEquals(2.9, variant.prices["fr"]?.get("FR")?.get("NM")?.recommendedPrice)
+        assertEquals(
+            2.9,
+            variant.prices["fr"]
+                ?.get("FR")
+                ?.get("NM")
+                ?.recommendedPrice,
+        )
     }
 
     @Test
     fun `Given an empty-price variant whose productId matches the price guide, When anchors are built, Then the list is empty`() {
-        val anchors = catalogProductAnchors(
-            variants = listOf(
-                CardmarketExportVariant(
-                    version = "V1",
-                    productId = 697079,
-                    label = null,
-                    prices = emptyMap(),
-                ),
-            ),
-            priceGuideProductId = 697079,
-        )
+        val anchors =
+            catalogProductAnchors(
+                variants =
+                    listOf(
+                        CardmarketExportVariant(
+                            version = "V1",
+                            productId = 697079,
+                            label = null,
+                            prices = emptyMap(),
+                        ),
+                    ),
+                priceGuideProductId = 697079,
+            )
         assertEquals(emptyList(), anchors)
     }
 
     @Test
     fun `Given an empty-price variant and a null price guide id, When anchors are built, Then the anchor is V1 with that productId`() {
-        val anchors = catalogProductAnchors(
-            variants = listOf(
-                CardmarketExportVariant(
-                    version = "V1",
-                    productId = 697145,
-                    label = null,
-                    prices = emptyMap(),
-                ),
-            ),
-            priceGuideProductId = null,
-        )
+        val anchors =
+            catalogProductAnchors(
+                variants =
+                    listOf(
+                        CardmarketExportVariant(
+                            version = "V1",
+                            productId = 697145,
+                            label = null,
+                            prices = emptyMap(),
+                        ),
+                    ),
+                priceGuideProductId = null,
+            )
         assertEquals(
             listOf(CatalogProductAnchor(variantKey = "V1", productId = 697145)),
             anchors,
@@ -379,17 +426,19 @@ class CardmarketExportLoadingTest {
 
     @Test
     fun `Given variant Normal and a different price-guide id, When anchors are built, Then the Normal slot is not reused`() {
-        val anchors = catalogProductAnchors(
-            variants = listOf(
-                CardmarketExportVariant(
-                    version = "Normal",
-                    productId = 111,
-                    label = null,
-                    prices = emptyMap(),
-                ),
-            ),
-            priceGuideProductId = 222,
-        )
+        val anchors =
+            catalogProductAnchors(
+                variants =
+                    listOf(
+                        CardmarketExportVariant(
+                            version = "Normal",
+                            productId = 111,
+                            label = null,
+                            prices = emptyMap(),
+                        ),
+                    ),
+                priceGuideProductId = 222,
+            )
         assertEquals(emptyList(), anchors)
     }
 

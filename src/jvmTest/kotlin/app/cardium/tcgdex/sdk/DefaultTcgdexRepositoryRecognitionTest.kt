@@ -10,52 +10,55 @@ import kotlin.test.assertEquals
 import kotlin.test.assertFalse
 import kotlin.test.assertTrue
 
-private fun newRecognitionInMemoryDriver() = AndroidxSqliteDriver(
-    driver = BundledSQLiteDriver(),
-    databaseType = AndroidxSqliteDatabaseType.Memory,
-    schema = TcgdexDatabase.Schema,
-)
+private fun newRecognitionInMemoryDriver() =
+    AndroidxSqliteDriver(
+        driver = BundledSQLiteDriver(),
+        databaseType = AndroidxSqliteDatabaseType.Memory,
+        schema = TcgdexDatabase.Schema,
+    )
 
 class DefaultTcgdexRepositoryRecognitionTest {
     @Test
-    fun `Given card recognition rows, When querying one card, Then all hash columns are mapped`() = runBlocking {
-        val driver = newRecognitionInMemoryDriver()
-        val database = TcgdexDatabase(driver)
-        seedRecognitionFixtures(database)
+    fun `Given card recognition rows, When querying one card, Then all hash columns are mapped`() =
+        runBlocking {
+            val driver = newRecognitionInMemoryDriver()
+            val database = TcgdexDatabase(driver)
+            seedRecognitionFixtures(database)
 
-        val repository = DefaultTcgdexRepository(database)
-        val rows = repository.getRecognitionHashesForCard("sv01-001", "fr")
+            val repository = DefaultTcgdexRepository(database)
+            val rows = repository.getRecognitionHashesForCard("sv01-001", "fr")
 
-        assertEquals(1, rows.size)
-        val row = rows.single()
-        assertEquals("sv01-001", row.cardId)
-        assertEquals("fr", row.language)
-        assertEquals("tcgdex", row.imageSource)
-        assertEquals("original", row.lighting)
-        assertEquals(0, row.rotation)
-        assertEquals(64, row.dhash.length)
-        assertEquals(64, row.phash.length)
-        driver.close()
-    }
+            assertEquals(1, rows.size)
+            val row = rows.single()
+            assertEquals("sv01-001", row.cardId)
+            assertEquals("fr", row.language)
+            assertEquals("tcgdex", row.imageSource)
+            assertEquals("original", row.lighting)
+            assertEquals(0, row.rotation)
+            assertEquals(64, row.dhash.length)
+            assertEquals(64, row.phash.length)
+            driver.close()
+        }
 
     @Test
-    fun `Given mixed recognition rows, When querying the corpus, Then all categories are returned and tcgp is excluded`() = runBlocking {
-        val driver = newRecognitionInMemoryDriver()
-        val database = TcgdexDatabase(driver)
-        seedRecognitionFixtures(database)
+    fun `Given mixed recognition rows, When querying the corpus, Then all categories are returned and tcgp is excluded`() =
+        runBlocking {
+            val driver = newRecognitionInMemoryDriver()
+            val database = TcgdexDatabase(driver)
+            seedRecognitionFixtures(database)
 
-        val repository = DefaultTcgdexRepository(database)
-        val rows = repository.getRecognitionHashesForPokemon("fr")
+            val repository = DefaultTcgdexRepository(database)
+            val rows = repository.getRecognitionHashesForPokemon("fr")
 
-        // The corpus intentionally covers all card categories (Pokemon + Trainer/Energy);
-        // only TCG Pocket rows are excluded. See getCardRecognitionHashesForPokemon.
-        assertEquals(4, rows.size)
-        assertEquals(setOf("tcgdex", "pokepedia", "cardmarket"), rows.map { it.imageSource }.toSet())
-        assertTrue(rows.any { it.cardId == "sv01-100" }, "trainer cards are part of the corpus")
-        assertFalse(rows.any { it.cardId == "tcgp-001" }, "tcgp cards must be excluded")
-        assertTrue(rows.all { it.cardId in setOf("sv01-001", "sv01-002", "sv02-003", "sv01-100") })
-        driver.close()
-    }
+            // The corpus intentionally covers all card categories (Pokemon + Trainer/Energy);
+            // only TCG Pocket rows are excluded. See getCardRecognitionHashesForPokemon.
+            assertEquals(4, rows.size)
+            assertEquals(setOf("tcgdex", "pokepedia", "cardmarket"), rows.map { it.imageSource }.toSet())
+            assertTrue(rows.any { it.cardId == "sv01-100" }, "trainer cards are part of the corpus")
+            assertFalse(rows.any { it.cardId == "tcgp-001" }, "tcgp cards must be excluded")
+            assertTrue(rows.all { it.cardId in setOf("sv01-001", "sv01-002", "sv02-003", "sv01-100") })
+            driver.close()
+        }
 }
 
 private suspend fun seedRecognitionFixtures(database: TcgdexDatabase) {
@@ -103,7 +106,11 @@ private suspend fun seedRecognitionFixtures(database: TcgdexDatabase) {
         parentSetId = null,
     )
 
-    suspend fun insertCard(id: String, setId: String, category: String) {
+    suspend fun insertCard(
+        id: String,
+        setId: String,
+        category: String,
+    ) {
         queries.insertCard(
             id = id,
             language = "fr",
@@ -136,7 +143,10 @@ private suspend fun seedRecognitionFixtures(database: TcgdexDatabase) {
     insertCard("sv01-100", "sv01", "Trainer")
     insertCard("tcgp-001", "tcgp1", "Pokemon")
 
-    suspend fun insertHash(cardId: String, source: String) {
+    suspend fun insertHash(
+        cardId: String,
+        source: String,
+    ) {
         queries.insertCardRecognitionHash(
             cardId = cardId,
             language = "fr",

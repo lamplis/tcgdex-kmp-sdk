@@ -5,6 +5,7 @@ import app.cardium.tcgdex.db.Card_with_set
 import app.cardium.tcgdex.db.Card_prices
 import app.cardium.tcgdex.db.Card_recognition_hashes
 import app.cardium.tcgdex.db.CountCardsPerIllustrator
+import app.cardium.tcgdex.db.Card_catalog_slots
 import app.cardium.tcgdex.db.GetSetWithSerieName
 import app.cardium.tcgdex.db.Illustrators
 import app.cardium.tcgdex.db.Rarities
@@ -12,6 +13,7 @@ import app.cardium.tcgdex.db.Series
 import app.cardium.tcgdex.db.Sets
 import app.cardium.tcgdex.db.TcgdexDatabase
 import app.cardium.tcgdex.sdk.model.Card
+import app.cardium.tcgdex.sdk.model.CardCatalogSlot
 import app.cardium.tcgdex.sdk.model.CardPrice
 import app.cardium.tcgdex.sdk.model.CardRecognitionHash
 import app.cardium.tcgdex.sdk.model.CardSet
@@ -34,6 +36,8 @@ import app.cash.sqldelight.async.coroutines.awaitAsOneOrNull
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
+import kotlinx.serialization.decodeFromString
+import kotlinx.serialization.json.Json
 
 /**
  * Default implementation of [TcgdexRepository] backed by SQLDelight.
@@ -55,100 +59,185 @@ import kotlinx.coroutines.withContext
  */
 class DefaultTcgdexRepository(
     database: TcgdexDatabase,
-    private val dispatcher: CoroutineDispatcher = Dispatchers.Default
+    private val dispatcher: CoroutineDispatcher = Dispatchers.Default,
 ) : TcgdexRepository {
-
     private val queries = database.tcgdexQueries
 
     // =========================================================================
     // Series Queries
     // =========================================================================
 
-    override suspend fun getAllSeries(language: String): List<Serie> = withContext(dispatcher) {
-        val result = queries.getAllSeriesByLanguage(language).awaitAsList()
-        println("[Tcgdex][i] getAllSeries($language) returned ${result.size} rows")
-        result.map { it.toModel() }
-    }
+    override suspend fun getAllSeries(language: String): List<Serie> =
+        withContext(dispatcher) {
+            val result = queries.getAllSeriesByLanguage(language).awaitAsList()
+            println("[Tcgdex][i] getAllSeries($language) returned ${result.size} rows")
+            result.map { it.toModel() }
+        }
 
-    override suspend fun getSerieById(serieId: String, language: String): Serie? = withContext(dispatcher) {
-        queries.getSeriesById(serieId, language).awaitAsOneOrNull()?.toModel()
-    }
+    override suspend fun getSerieById(
+        serieId: String,
+        language: String,
+    ): Serie? =
+        withContext(dispatcher) {
+            queries.getSeriesById(serieId, language).awaitAsOneOrNull()?.toModel()
+        }
 
     // =========================================================================
     // Set Queries
     // =========================================================================
 
-    override suspend fun getAllSets(language: String): List<CardSet> = withContext(dispatcher) {
-        // Load series names once (localized rows first, EN fallback rows fill holes)
-        // instead of issuing one getSeriesById query per set row (N+1).
-        val serieNameById = queries.getAllSeriesByLanguage(language)
-            .awaitAsList()
-            .associate { it.id to it.name }
-        val result = queries.getAllSetsByLanguage(language).awaitAsList()
-        println("[Tcgdex][i] getAllSets($language) returned ${result.size} rows")
-        result.map { set ->
-            set.toModel(serieNameById[set.serie_id])
-        }
-    }
-
-    override suspend fun getSetIdsWithCards(language: String): Set<String> = withContext(dispatcher) {
-        queries.getSetIdsWithCards(language).awaitAsList().toSet()
-    }
-
-    override suspend fun getSetsForSerie(serieId: String, language: String): List<CardSet> =
+    override suspend fun getAllSets(language: String): List<CardSet> =
         withContext(dispatcher) {
-            val serieName = queries.getSeriesById(serieId, language)
-                .awaitAsOneOrNull()?.name
+            // Load series names once (localized rows first, EN fallback rows fill holes)
+            // instead of issuing one getSeriesById query per set row (N+1).
+            val serieNameById =
+                queries
+                    .getAllSeriesByLanguage(language)
+                    .awaitAsList()
+                    .associate { it.id to it.name }
+            val result = queries.getAllSetsByLanguage(language).awaitAsList()
+            println("[Tcgdex][i] getAllSets($language) returned ${result.size} rows")
+            result.map { set ->
+                set.toModel(serieNameById[set.serie_id])
+            }
+        }
+
+    override suspend fun getSetIdsWithCards(language: String): Set<String> =
+        withContext(dispatcher) {
+            queries.getSetIdsWithCards(language).awaitAsList().toSet()
+        }
+
+    override suspend fun getSetsForSerie(
+        serieId: String,
+        language: String,
+    ): List<CardSet> =
+        withContext(dispatcher) {
+            val serieName =
+                queries
+                    .getSeriesById(serieId, language)
+                    .awaitAsOneOrNull()
+                    ?.name
             queries.getSetsForSerie(serieId, language).awaitAsList().map { it.toModel(serieName) }
         }
 
-    override suspend fun getSetById(setId: String, language: String): CardSet? = withContext(dispatcher) {
-        queries.getSetWithSerieName(setId, language).awaitAsOneOrNull()?.toModel()
-    }
+    override suspend fun getSetById(
+        setId: String,
+        language: String,
+    ): CardSet? =
+        withContext(dispatcher) {
+            queries.getSetWithSerieName(setId, language).awaitAsOneOrNull()?.toModel()
+        }
 
     // =========================================================================
     // Card Queries
     // =========================================================================
 
-    override suspend fun getCardsForSet(setId: String, language: String): List<Card> =
+    override suspend fun getCardsForSet(
+        setId: String,
+        language: String,
+    ): List<Card> =
         withContext(dispatcher) {
             queries.getCardsForSet(setId, language).awaitAsList().map { it.toModel() }
         }
 
-    override suspend fun getCardsForIllustrator(illustratorId: String, language: String): List<Card> =
+    override suspend fun getCardsForIllustrator(
+        illustratorId: String,
+        language: String,
+    ): List<Card> =
         withContext(dispatcher) {
             queries.getCardsForIllustrator(illustratorId, language).awaitAsList().map { it.toModel() }
         }
 
-    override suspend fun getCardsForRarity(rarityId: String, language: String): List<Card> =
+    override suspend fun getCardsForRarity(
+        rarityId: String,
+        language: String,
+    ): List<Card> =
         withContext(dispatcher) {
             queries.getCardsForRarity(rarityId, language).awaitAsList().map { it.toModel() }
         }
 
-    override suspend fun getCardsForPokemonDexId(dexId: Int, language: String): List<Card> =
+    override suspend fun getCardsForPokemonDexId(
+        dexId: Int,
+        language: String,
+    ): List<Card> =
         withContext(dispatcher) {
             queries.getCardsForDexId(dexId.toLong(), language).awaitAsList().map { it.toModel() }
         }
 
-    override suspend fun getCardById(cardId: String, language: String): Card? = withContext(dispatcher) {
-        queries.getCardById(cardId, language).awaitAsOneOrNull()?.toModel()
-    }
-
-    override suspend fun getRecognitionHashesForCard(cardId: String, language: String): List<CardRecognitionHash> =
+    override suspend fun getCardById(
+        cardId: String,
+        language: String,
+    ): Card? =
         withContext(dispatcher) {
-            queries.getCardRecognitionHashesForCard(cardId, language)
+            queries.getCardById(cardId, language).awaitAsOneOrNull()?.toModel()
+        }
+
+    override suspend fun getCatalogSlotsByLanguage(language: String): List<CardCatalogSlot> =
+        withContext(dispatcher) {
+            queries.getCatalogSlotsByLanguage(language).awaitAsList().map { it.toModel() }
+        }
+
+    override suspend fun getCatalogSlotsForSet(
+        setId: String,
+        language: String,
+    ): List<CardCatalogSlot> =
+        withContext(dispatcher) {
+            queries.getCatalogSlotsForSet(language = language, setId = setId).awaitAsList().map { it.toModel() }
+        }
+
+    override suspend fun getCatalogSlotsForPokemon(
+        dexId: Int,
+        language: String,
+    ): List<CardCatalogSlot> =
+        withContext(dispatcher) {
+            queries.getCatalogSlotsForPokemon(language = language, dexId = dexId.toLong()).awaitAsList().map { it.toModel() }
+        }
+
+    override suspend fun getCatalogSlotsForIllustrator(
+        illustratorId: String,
+        language: String,
+    ): List<CardCatalogSlot> =
+        withContext(dispatcher) {
+            queries.getCatalogSlotsForIllustrator(language = language, illustratorId = illustratorId).awaitAsList().map { it.toModel() }
+        }
+
+    override suspend fun getCatalogSlotCountsByPokemon(language: String): Map<Int, Int> =
+        withContext(dispatcher) {
+            queries.getCatalogSlotCountsByPokemon(language = language).awaitAsList().associate { row ->
+                row.dexId.toInt() to row.slotCount.toInt()
+            }
+        }
+
+    override suspend fun getCatalogSlotCountsByIllustrator(language: String): Map<String, Int> =
+        withContext(dispatcher) {
+            queries.getCatalogSlotCountsByIllustrator(language = language).awaitAsList().associate { row ->
+                row.illustratorId to row.slotCount.toInt()
+            }
+        }
+
+    override suspend fun getRecognitionHashesForCard(
+        cardId: String,
+        language: String,
+    ): List<CardRecognitionHash> =
+        withContext(dispatcher) {
+            queries
+                .getCardRecognitionHashesForCard(cardId, language)
                 .awaitAsList()
                 .map { it.toModel() }
         }
 
     override suspend fun getRecognitionHashesForPokemon(language: String): List<CardRecognitionHash> =
         withContext(dispatcher) {
-            queries.getCardRecognitionHashesForPokemon(language)
+            queries
+                .getCardRecognitionHashesForPokemon(language)
                 .awaitAsList()
                 .map { it.toModel() }
         }
 
-    override suspend fun getCardPrices(cardId: String, language: String): List<CardPrice> =
+    override suspend fun getCardPrices(
+        cardId: String,
+        language: String,
+    ): List<CardPrice> =
         withContext(dispatcher) {
             queries.getCardPrices(cardId, language).awaitAsList().map { it.toModel() }
         }
@@ -157,32 +246,40 @@ class DefaultTcgdexRepository(
         cardId: String,
         language: String,
         sellerCountry: String,
-    ): List<CardPrice> = withContext(dispatcher) {
-        queries.getCardPriceRowsForCard(cardId, language, sellerCountry)
-            .awaitAsList()
-            .map { it.toModel() }
-    }
+    ): List<CardPrice> =
+        withContext(dispatcher) {
+            queries
+                .getCardPriceRowsForCard(cardId, language, sellerCountry)
+                .awaitAsList()
+                .map { it.toModel() }
+        }
 
     override suspend fun getCardPricesForCards(
         cardIds: Collection<String>,
         language: String,
         sellerCountry: String,
-    ): Map<String, List<CardPrice>> = withContext(dispatcher) {
-        if (cardIds.isEmpty()) return@withContext emptyMap()
-        val result = LinkedHashMap<String, MutableList<CardPrice>>()
-        cardIds.toList().chunked(500).forEach { chunk ->
-            queries.getCardPriceRowsByCountry(chunk, language, sellerCountry)
-                .awaitAsList()
-                .forEach { row ->
-                    result.getOrPut(row.card_id) { mutableListOf() }.add(row.toModel())
-                }
+    ): Map<String, List<CardPrice>> =
+        withContext(dispatcher) {
+            if (cardIds.isEmpty()) return@withContext emptyMap()
+            val result = LinkedHashMap<String, MutableList<CardPrice>>()
+            cardIds.toList().chunked(500).forEach { chunk ->
+                queries
+                    .getCardPriceRowsByCountry(chunk, language, sellerCountry)
+                    .awaitAsList()
+                    .forEach { row ->
+                        result.getOrPut(row.card_id) { mutableListOf() }.add(row.toModel())
+                    }
+            }
+            result.mapValues { it.value.toList() }
         }
-        result.mapValues { it.value.toList() }
-    }
 
     override suspend fun getAllSellerCountries(): List<String> =
         withContext(dispatcher) {
-            queries.getAllSellerCountries().awaitAsList().map { it.trim() }.distinct()
+            queries
+                .getAllSellerCountries()
+                .awaitAsList()
+                .map { it.trim() }
+                .distinct()
         }
 
     override suspend fun getLatestPriceUpdateIso(): String? =
@@ -195,14 +292,18 @@ class DefaultTcgdexRepository(
             queries.getLatestExportPriceUpdateIso().awaitAsOneOrNull()?.latest_export_update_iso
         }
 
-    override suspend fun getCardsByIds(cardIds: Collection<String>, language: String): Map<String, Card> =
+    override suspend fun getCardsByIds(
+        cardIds: Collection<String>,
+        language: String,
+    ): Map<String, Card> =
         withContext(dispatcher) {
             if (cardIds.isEmpty()) return@withContext emptyMap()
 
             // SQLite has a limit on the number of bound variables; chunk to stay safe.
             val result = LinkedHashMap<String, Card>(cardIds.size)
             cardIds.toList().chunked(500).forEach { chunk ->
-                queries.getCardsByIds(chunk, language)
+                queries
+                    .getCardsByIds(chunk, language)
                     .awaitAsList()
                     .forEach { row ->
                         val model = row.toModel()
@@ -216,42 +317,60 @@ class DefaultTcgdexRepository(
         query: String,
         language: String,
         limit: Int,
-        offset: Int
-    ): List<Card> = withContext(dispatcher) {
-        queries.searchCardsByName(language, query, limit.toLong(), offset.toLong())
-            .awaitAsList()
-            .map { it.toModel() }
-    }
+        offset: Int,
+    ): List<Card> =
+        withContext(dispatcher) {
+            queries
+                .searchCardsByName(language, query, limit.toLong(), offset.toLong())
+                .awaitAsList()
+                .map { it.toModel() }
+        }
 
     override suspend fun searchCardsByNameFts(
         query: String,
         language: String,
         limit: Int,
-        offset: Int
-    ): List<Card> = withContext(dispatcher) {
-        queries.searchCardsByNameFts(language, query, limit.toLong(), offset.toLong())
-            .awaitAsList()
-            .map { it.toModel() }
-    }
+        offset: Int,
+    ): List<Card> =
+        withContext(dispatcher) {
+            queries
+                .searchCardsByNameFts(language, query, limit.toLong(), offset.toLong())
+                .awaitAsList()
+                .map { it.toModel() }
+        }
 
-    override suspend fun countCardsByName(query: String, language: String): Long = withContext(dispatcher) {
-        queries.countCardsByName(language, query).awaitAsOne()
-    }
+    override suspend fun countCardsByName(
+        query: String,
+        language: String,
+    ): Long =
+        withContext(dispatcher) {
+            queries.countCardsByName(language, query).awaitAsOne()
+        }
 
     // =========================================================================
     // Local ID / Reference Search Queries
     // =========================================================================
 
-    override suspend fun searchCardsByLocalId(localId: String, language: String, limit: Int): List<Card> =
+    override suspend fun searchCardsByLocalId(
+        localId: String,
+        language: String,
+        limit: Int,
+    ): List<Card> =
         withContext(dispatcher) {
-            queries.searchCardsByLocalId(language, localId, limit.toLong())
+            queries
+                .searchCardsByLocalId(language, localId, limit.toLong())
                 .awaitAsList()
                 .map { it.toModel() }
         }
 
-    override suspend fun searchCardsByLocalIdInSet(localId: String, setId: String, language: String): List<Card> =
+    override suspend fun searchCardsByLocalIdInSet(
+        localId: String,
+        setId: String,
+        language: String,
+    ): List<Card> =
         withContext(dispatcher) {
-            queries.searchCardsByLocalIdInSet(language, setId, localId)
+            queries
+                .searchCardsByLocalIdInSet(language, setId, localId)
                 .awaitAsList()
                 .map { it.toModel() }
         }
@@ -260,16 +379,23 @@ class DefaultTcgdexRepository(
         localId: String,
         cardCount: Int,
         language: String,
-        limit: Int
-    ): List<Card> = withContext(dispatcher) {
-        queries.searchCardsByLocalIdAndCardCount(language, localId, cardCount.toLong(), limit.toLong())
-            .awaitAsList()
-            .map { it.toModel() }
-    }
-
-    override suspend fun searchSetsByName(query: String, language: String, limit: Int): List<CardSet> =
+        limit: Int,
+    ): List<Card> =
         withContext(dispatcher) {
-            queries.searchSetsByName(language, query, limit.toLong())
+            queries
+                .searchCardsByLocalIdAndCardCount(language, localId, cardCount.toLong(), limit.toLong())
+                .awaitAsList()
+                .map { it.toModel() }
+        }
+
+    override suspend fun searchSetsByName(
+        query: String,
+        language: String,
+        limit: Int,
+    ): List<CardSet> =
+        withContext(dispatcher) {
+            queries
+                .searchSetsByName(language, query, limit.toLong())
                 .awaitAsList()
                 .map { row ->
                     CardSet(
@@ -293,11 +419,12 @@ class DefaultTcgdexRepository(
     // Illustrator & Rarity Queries
     // =========================================================================
 
-    override suspend fun getAllIllustrators(): List<Illustrator> = withContext(dispatcher) {
-        val result = queries.getAllIllustrators().awaitAsList()
-        println("[Tcgdex][i] getAllIllustrators() returned ${result.size} rows")
-        result.map { it.toModel() }
-    }
+    override suspend fun getAllIllustrators(): List<Illustrator> =
+        withContext(dispatcher) {
+            val result = queries.getAllIllustrators().awaitAsList()
+            println("[Tcgdex][i] getAllIllustrators() returned ${result.size} rows")
+            result.map { it.toModel() }
+        }
 
     override suspend fun getIllustratorsWithCounts(language: String): List<IllustratorWithCount> =
         withContext(dispatcher) {
@@ -321,16 +448,18 @@ class DefaultTcgdexRepository(
 
     override suspend fun getIllustratorValueSums(language: String): Map<String, Double> =
         withContext(dispatcher) {
-            queries.getIllustratorValueSumByLanguage(language)
+            queries
+                .getIllustratorValueSumByLanguage(language)
                 .awaitAsList()
                 .mapNotNull { row ->
                     row.total_value?.let { totalValue -> row.illustrator_id to totalValue }
                 }.toMap()
         }
 
-    override suspend fun getAllRarities(): List<Rarity> = withContext(dispatcher) {
-        queries.getAllRarities().awaitAsList().map { it.toModel() }
-    }
+    override suspend fun getAllRarities(): List<Rarity> =
+        withContext(dispatcher) {
+            queries.getAllRarities().awaitAsList().map { it.toModel() }
+        }
 
     // =========================================================================
     // Pokémon Dex Queries
@@ -342,7 +471,7 @@ class DefaultTcgdexRepository(
                 PokemonDexEntry(
                     dexId = row.dex_id.toInt(),
                     name = row.pokemon_name ?: "Unknown",
-                    cardCount = row.card_count.toInt()
+                    cardCount = row.card_count.toInt(),
                 )
             }
         }
@@ -367,7 +496,10 @@ class DefaultTcgdexRepository(
             result.mapValues { it.value.toList() }
         }
 
-    override suspend fun getCardCountsPerSetForPokemon(dexId: Int, language: String): List<PokemonSetCardCount> =
+    override suspend fun getCardCountsPerSetForPokemon(
+        dexId: Int,
+        language: String,
+    ): List<PokemonSetCardCount> =
         withContext(dispatcher) {
             queries.getCardCountsPerSetForDexId(dexId.toLong(), language).awaitAsList().map { row ->
                 PokemonSetCardCount(
@@ -378,22 +510,32 @@ class DefaultTcgdexRepository(
                     serieName = row.serie_name,
                     logoUrl = row.logo_url,
                     symbolUrl = row.symbol_url,
-                    cardCount = row.card_count.toInt()
+                    cardCount = row.card_count.toInt(),
                 )
             }
         }
 
-    override suspend fun getCardsForPokemonInSet(dexId: Int, setId: String, language: String): List<Card> =
+    override suspend fun getCardsForPokemonInSet(
+        dexId: Int,
+        setId: String,
+        language: String,
+    ): List<Card> =
         withContext(dispatcher) {
             queries.getCardsForDexIdInSet(dexId.toLong(), setId, language).awaitAsList().map { it.toModel() }
         }
 
-    override suspend fun getDexIdForCard(cardId: String, language: String): Int? =
+    override suspend fun getDexIdForCard(
+        cardId: String,
+        language: String,
+    ): Int? =
         withContext(dispatcher) {
             queries.getDexIdForCard(cardId, language).awaitAsOneOrNull()?.toInt()
         }
 
-    override suspend fun getDexIdsForCards(cardIds: List<String>, language: String): Map<String, Int> =
+    override suspend fun getDexIdsForCards(
+        cardIds: List<String>,
+        language: String,
+    ): Map<String, Int> =
         withContext(dispatcher) {
             if (cardIds.isEmpty()) return@withContext emptyMap()
 
@@ -411,15 +553,22 @@ class DefaultTcgdexRepository(
             result
         }
 
-    override suspend fun getEvolutionDepthsForDexIds(dexIds: Collection<Int>, language: String): Map<Int, Int> =
+    override suspend fun getEvolutionDepthsForDexIds(
+        dexIds: Collection<Int>,
+        language: String,
+    ): Map<Int, Int> =
         withContext(dispatcher) {
             if (dexIds.isEmpty()) return@withContext emptyMap()
 
             val evolvesFromByDex = mutableMapOf<Int, Int?>()
 
-            suspend fun loadSpeciesRows(ids: Collection<Int>, lang: String) {
+            suspend fun loadSpeciesRows(
+                ids: Collection<Int>,
+                lang: String,
+            ) {
                 if (ids.isEmpty()) return
-                queries.getPokemonSpeciesByDexIds(ids.map(Int::toLong), lang)
+                queries
+                    .getPokemonSpeciesByDexIds(ids.map(Int::toLong), lang)
                     .awaitAsList()
                     .forEach { row ->
                         evolvesFromByDex[row.dex_id.toInt()] = row.evolves_from?.toInt()
@@ -471,9 +620,10 @@ class DefaultTcgdexRepository(
     // Utility Queries
     // =========================================================================
 
-    override suspend fun getAvailableLanguages(): List<String> = withContext(dispatcher) {
-        queries.getAvailableLanguages().awaitAsList()
-    }
+    override suspend fun getAvailableLanguages(): List<String> =
+        withContext(dispatcher) {
+            queries.getAvailableLanguages().awaitAsList()
+        }
 
     // =========================================================================
     // Rarity Aggregation Queries
@@ -525,51 +675,54 @@ class DefaultTcgdexRepository(
 /**
  * Maps a SQLDelight Series row to a domain Serie model.
  */
-private fun Series.toModel(): Serie = Serie(
-    id = id,
-    name = name,
-    language = language,
-    position = position.toInt()
-)
+private fun Series.toModel(): Serie =
+    Serie(
+        id = id,
+        name = name,
+        language = language,
+        position = position.toInt(),
+    )
 
 /**
  * Maps a SQLDelight Sets row to a domain CardSet model.
  *
  * @param serieName Optional series name to include (fetched separately)
  */
-private fun Sets.toModel(serieName: String? = null): CardSet = CardSet(
-    id = id,
-    serieId = serie_id,
-    serieName = serieName,
-    name = name,
-    language = language,
-    logoUrl = logo_url,
-    symbolUrl = symbol_url,
-    cardCountOfficial = card_count_official.toInt(),
-    cardCountTotal = card_count_total.toInt(),
-    releaseDate = release_date,
-    officialAbbreviation = abbreviation_official,
-    parentSetId = parent_set_id,
-)
+private fun Sets.toModel(serieName: String? = null): CardSet =
+    CardSet(
+        id = id,
+        serieId = serie_id,
+        serieName = serieName,
+        name = name,
+        language = language,
+        logoUrl = logo_url,
+        symbolUrl = symbol_url,
+        cardCountOfficial = card_count_official.toInt(),
+        cardCountTotal = card_count_total.toInt(),
+        releaseDate = release_date,
+        officialAbbreviation = abbreviation_official,
+        parentSetId = parent_set_id,
+    )
 
 /**
  * Maps a SQLDelight GetSetWithSerieName result to a domain CardSet model.
  * This query includes the serie_name from the join.
  */
-private fun GetSetWithSerieName.toModel(): CardSet = CardSet(
-    id = id,
-    serieId = serie_id,
-    serieName = serie_name,
-    name = name,
-    language = language,
-    logoUrl = logo_url,
-    symbolUrl = symbol_url,
-    cardCountOfficial = card_count_official.toInt(),
-    cardCountTotal = card_count_total.toInt(),
-    releaseDate = release_date,
-    officialAbbreviation = abbreviation_official,
-    parentSetId = parent_set_id,
-)
+private fun GetSetWithSerieName.toModel(): CardSet =
+    CardSet(
+        id = id,
+        serieId = serie_id,
+        serieName = serie_name,
+        name = name,
+        language = language,
+        logoUrl = logo_url,
+        symbolUrl = symbol_url,
+        cardCountOfficial = card_count_official.toInt(),
+        cardCountTotal = card_count_total.toInt(),
+        releaseDate = release_date,
+        officialAbbreviation = abbreviation_official,
+        parentSetId = parent_set_id,
+    )
 
 /**
  * Maps a SQLDelight Card_with_set view row to a domain Card model.
@@ -669,59 +822,92 @@ private fun Card_with_pokemon.toModel(): Card {
     )
 }
 
-private fun Card_prices.toModel(): CardPrice = CardPrice(
-    cardId = card_id,
-    cardLanguage = card_language,
-    variant = variant,
-    priceLanguage = price_language,
-    sellerCountry = seller_country,
-    condition = condition,
-    currency = currency,
-    minPrice = min_price,
-    avgPrice = avg_price,
-    medianPrice = median_price,
-    maxPrice = max_price,
-    recommendedPrice = recommended_price,
-    availableCount = available_count,
-    productId = product_id,
-    updatedIso = updated_iso,
-)
+private val catalogSlotJson = Json { ignoreUnknownKeys = true }
 
-private fun Card_recognition_hashes.toModel(): CardRecognitionHash = CardRecognitionHash(
-    cardId = card_id,
-    language = language,
-    imageSource = image_source,
-    imageUrl = image_url,
-    lighting = lighting,
-    rotation = rotation.toInt(),
-    dhash = dhash,
-    phash = phash,
-)
+private fun decodeCatalogLabels(raw: String): List<String> =
+    runCatching { catalogSlotJson.decodeFromString<List<String>>(raw) }.getOrDefault(emptyList())
+
+private fun Card_catalog_slots.toModel(): CardCatalogSlot =
+    CardCatalogSlot(
+        cardId = card_id,
+        language = card_language,
+        variantId = variant_id,
+        isCanonical = is_canonical != 0L,
+        sortIndex = sort_index.toInt(),
+        displayRank = display_rank.toInt(),
+        typeSlug = type_slug,
+        subtypeSlug = subtype_slug,
+        sizeSlug = size_slug,
+        foilSlug = foil_slug,
+        stampSlugs = decodeCatalogLabels(stamps_slug_json),
+        typeLabel = type_label,
+        subtypeLabel = subtype_label,
+        sizeLabel = size_label,
+        foilLabel = foil_label,
+        stampLabels = decodeCatalogLabels(stamps_label_json),
+        imageUrl = image_url,
+        cardmarketProductId = cardmarket_product_id,
+        tcgplayerProductId = tcgplayer_product_id,
+    )
+
+private fun Card_prices.toModel(): CardPrice =
+    CardPrice(
+        cardId = card_id,
+        cardLanguage = card_language,
+        variant = variant,
+        priceLanguage = price_language,
+        sellerCountry = seller_country,
+        condition = condition,
+        currency = currency,
+        minPrice = min_price,
+        avgPrice = avg_price,
+        medianPrice = median_price,
+        maxPrice = max_price,
+        recommendedPrice = recommended_price,
+        availableCount = available_count,
+        productId = product_id,
+        updatedIso = updated_iso,
+    )
+
+private fun Card_recognition_hashes.toModel(): CardRecognitionHash =
+    CardRecognitionHash(
+        cardId = card_id,
+        language = language,
+        imageSource = image_source,
+        imageUrl = image_url,
+        lighting = lighting,
+        rotation = rotation.toInt(),
+        dhash = dhash,
+        phash = phash,
+    )
 
 /**
  * Maps a SQLDelight Illustrators row to a domain Illustrator model.
  */
-private fun Illustrators.toModel(): Illustrator = Illustrator(
-    id = id,
-    name = name
-)
+private fun Illustrators.toModel(): Illustrator =
+    Illustrator(
+        id = id,
+        name = name,
+    )
 
 /**
  * Maps a SQLDelight CountCardsPerIllustrator result to a domain IllustratorWithCount model.
  */
-private fun CountCardsPerIllustrator.toModel(): IllustratorWithCount = IllustratorWithCount(
-    id = id,
-    name = name,
-    cardCount = card_count.toInt()
-)
+private fun CountCardsPerIllustrator.toModel(): IllustratorWithCount =
+    IllustratorWithCount(
+        id = id,
+        name = name,
+        cardCount = card_count.toInt(),
+    )
 
 /**
  * Maps a SQLDelight Rarities row to a domain Rarity model.
  */
-private fun Rarities.toModel(): Rarity = Rarity(
-    id = id,
-    name = name
-)
+private fun Rarities.toModel(): Rarity =
+    Rarity(
+        id = id,
+        name = name,
+    )
 
 // =============================================================================
 // Helper Functions
@@ -746,5 +932,7 @@ private fun parseTypes(raw: String?): List<String> =
  * @param localId The card's local ID within the set
  * @param officialCount The set's official card count
  */
-private fun buildReference(localId: String, officialCount: Int): String =
-    "$localId/$officialCount"
+private fun buildReference(
+    localId: String,
+    officialCount: Int,
+): String = "$localId/$officialCount"

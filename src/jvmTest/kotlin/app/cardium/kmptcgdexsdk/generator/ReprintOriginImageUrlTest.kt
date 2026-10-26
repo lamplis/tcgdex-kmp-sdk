@@ -9,14 +9,16 @@ import kotlinx.serialization.json.jsonObject
 class ReprintOriginImageUrlTest {
     private val json = Json { ignoreUnknownKeys = true }
 
-    private val manifest = json.parseToJsonElement(
-        """
-        {
-          "en": { "ex": { "ex7": { "19": { "high": true } } } },
-          "fr": { "ex": { "ex7": { "19": { "high": true } } } }
-        }
-        """.trimIndent(),
-    ).jsonObject
+    private val manifest =
+        json
+            .parseToJsonElement(
+                """
+                {
+                  "en": { "ex": { "ex7": { "19": { "high": true } } } },
+                  "fr": { "ex": { "ex7": { "19": { "high": true } } } }
+                }
+                """.trimIndent(),
+            ).jsonObject
 
     @Test
     fun `Given 30th-c-006 and a confirmed origin scan, When synthesizing, Then language-specific URL is returned`() {
@@ -32,9 +34,11 @@ class ReprintOriginImageUrlTest {
 
     @Test
     fun `Given origin localId missing from the manifest, When synthesizing, Then null`() {
-        val missing = json.parseToJsonElement(
-            """{ "en": { "ex": { "ex7": { "1": { "high": true } } } } }""",
-        ).jsonObject
+        val missing =
+            json
+                .parseToJsonElement(
+                    """{ "en": { "ex": { "ex7": { "1": { "high": true } } } } }""",
+                ).jsonObject
         assertNull(synthesizeReprintOriginImageUrl(missing, "30th-c-006", "en"))
     }
 

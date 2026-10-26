@@ -48,7 +48,6 @@ import app.cardium.tcgdex.sdk.storage.platformFileSystem
  * @see TcgdexDatabaseInstaller for database installation details
  */
 object TcgdexSdk {
-
     /**
      * Creates a [TcgdexRepository] instance backed by the provided SQLite driver.
      *
@@ -61,11 +60,12 @@ object TcgdexSdk {
      */
     fun createRepository(
         driver: SqlDriver,
-        dispatcher: CoroutineDispatcher = Dispatchers.Default
-    ): TcgdexRepository = DefaultTcgdexRepository(
-        database = TcgdexDatabase(driver),
-        dispatcher = dispatcher
-    )
+        dispatcher: CoroutineDispatcher = Dispatchers.Default,
+    ): TcgdexRepository =
+        DefaultTcgdexRepository(
+            database = TcgdexDatabase(driver),
+            dispatcher = dispatcher,
+        )
 
     /**
      * Installs the bundled TCGdex database to the specified destination.
@@ -85,12 +85,13 @@ object TcgdexSdk {
     fun installBundledDatabase(
         destination: Path,
         fileSystem: FileSystem = platformFileSystem(),
-        force: Boolean = false
-    ): Boolean = TcgdexDatabaseInstaller.installIfNeeded(
-        fileSystem = fileSystem,
-        destination = destination,
-        force = force
-    )
+        force: Boolean = false,
+    ): Boolean =
+        TcgdexDatabaseInstaller.installIfNeeded(
+            fileSystem = fileSystem,
+            destination = destination,
+            force = force,
+        )
 
     /**
      * Default supported languages included in the database.

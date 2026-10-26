@@ -23,8 +23,6 @@ import kotlinx.serialization.json.jsonArray
 import kotlinx.serialization.json.jsonObject
 import kotlinx.serialization.json.jsonPrimitive
 import kotlinx.serialization.json.JsonPrimitive
-import kotlinx.serialization.json.buildJsonObject
-import kotlinx.serialization.json.buildJsonArray
 import kotlinx.serialization.encodeToString
 import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.Serializable
@@ -114,572 +112,644 @@ private data class GeneratedSetAliasSeed(
  *
  * Usage: java -jar ... --dataset=/path/to/generated --languages=en,fr --output=/path/to/tcgdex.db
  */
-fun main(args: Array<String>) = runBlocking {
-    val config = parseArgs(args)
-    val projectRoot = resolveProjectRoot(config.datasetDir)
-    val setAliasesConfigFile = resolveSetAliasesConfigFile(projectRoot, config.setAliasesConfigFile)
-    val datasetsByLanguage = config.languages.associateWith { language ->
-        resolveLanguageDataset(config.datasetDir, language)
-    }
+fun main(args: Array<String>) =
+    runBlocking {
+        val config = parseArgs(args)
+        val projectRoot = resolveProjectRoot(config.datasetDir)
+        val setAliasesConfigFile = resolveSetAliasesConfigFile(projectRoot, config.setAliasesConfigFile)
+        val datasetsByLanguage =
+            config.languages.associateWith { language ->
+                resolveLanguageDataset(config.datasetDir, language)
+            }
 
-    println("[Tcgdex] Starting database generation...")
-    println("[Tcgdex] Dataset: ${config.datasetDir}")
-    println("[Tcgdex] Languages: ${config.languages}")
-    println("[Tcgdex] Output: ${config.outputFile}")
-    println("[Tcgdex] Force: ${config.force}")
-    println("[Tcgdex] Set aliases config: ${setAliasesConfigFile.absolutePath}")
-    println("[Tcgdex] Validated generated datasets for languages: ${datasetsByLanguage.keys.sorted()}")
-    assertCameoJsonMatchesSource(File(config.datasetDir), config.languages)
-    if (!config.cardmarketExpansionsFile.isNullOrBlank()) {
-        println("[Tcgdex] Cardmarket expansions source: ${config.cardmarketExpansionsFile}")
-    }
-
-    generateSetAliasIndex(
-        projectRoot = projectRoot,
-        configFile = setAliasesConfigFile,
-        cardmarketExpansionsFile = config.cardmarketExpansionsFile,
-    )
-
-    val outputFile = File(config.outputFile)
-    if (outputFile.exists()) {
-        println("[Tcgdex] Deleting existing database before generation")
-        outputFile.delete()
-    }
-
-    outputFile.parentFile?.mkdirs()
-
-    val driver = AndroidxSqliteDriver(
-        driver = BundledSQLiteDriver(),
-        databaseType = AndroidxSqliteDatabaseType.File(outputFile.absolutePath),
-        schema = TcgdexDatabase.Schema,
-    )
-    val db = TcgdexDatabase(driver)
-
-    val json = Json { ignoreUnknownKeys = true }
-    val defaultPokepediaFile = config.pokepediaMissingFile
-        ?: resolvePokepediaMissingTree(config.datasetDir)?.absolutePath
-    if (defaultPokepediaFile != null) {
-        println("[Tcgdex] Pokepedia missing tree source: $defaultPokepediaFile")
-    }
-    val pokepediaFallbacks = loadPokepediaFallbacks(
-        missingFilePath = defaultPokepediaFile,
-        json = json,
-    )
-    val defaultSetLogosFile = config.setLogosFile
-        ?: resolveSetLogosFile(config.datasetDir)?.absolutePath
-    if (defaultSetLogosFile != null) {
-        println("[Tcgdex] Set logo overlay source: $defaultSetLogosFile")
-    }
-    val setLogos = loadSetLogoSymbolOverlay(defaultSetLogosFile, json)
-
-    // CDN assets manifest, used to confirm parent-folder image URLs for sub-sets
-    // (same existence source as the compiler's getCardPictures).
-    val assetsManifest = loadAssetsManifest(
-        manifestFileOverride = config.assetsManifestFile,
-        json = json,
-    )
-    println("[Tcgdex] Loaded assets manifest: ${assetsManifest.size} languages")
-
-    // Track unique illustrators and rarities (language-agnostic)
-    val illustrators = mutableMapOf<String, String>() // id -> name
-    val rarities = mutableMapOf<String, String>() // id -> name
-
-    // Load Pokémon species data for canonical names
-    // Map: dexId -> Map<language, name>
-    val pokemonSpecies = loadPokemonSpecies(config.datasetDir, json)
-    println("[Tcgdex] Loaded ${pokemonSpecies.size} Pokémon species entries")
-    val pokemonNameIndex = buildPokemonNameIndex(pokemonSpecies)
-
-    // Map localized rarity names (e.g., FR "Méga Attaque Rare") back to the English rarity
-    // name (e.g., "Mega Attack Rare") so rarity IDs are always English slugs.
-    val rarityReverseTranslations = loadRarityReverseTranslations(
-        datasetDir = config.datasetDir,
-        languages = config.languages,
-        json = json,
-    )
-
-    // Load Cardmarket price guide for EUR pricing
-    // Map: idProduct (Int) -> CardmarketPrice
-    val cardmarketPrices = loadCardmarketPrices(json)
-    println("[Tcgdex] Loaded ${cardmarketPrices.size} Cardmarket price entries")
-
-    // Load internal Cardmarket export (language-specific)
-    val exportPricingData = loadCardmarketExportPrices(
-        projectRoot = projectRoot,
-        exportFilePath = config.cardmarketExportFile,
-        json = json,
-    )
-    val cardmarketExportCards = exportPricingData?.cards ?: emptyMap()
-    val exportUpdatedIso = exportPricingData?.updatedIso?.takeIf { it.isNotBlank() }
-    if (cardmarketExportCards.isNotEmpty()) {
-        println("[Tcgdex] Loaded ${cardmarketExportCards.size} Cardmarket export cards")
-    }
-
-    val recognitionVectors = loadRecognitionVectors(
-        projectRoot = projectRoot,
-        vectorsFilePath = config.recognitionVectorsFile,
-        json = json,
-    )
-    if (recognitionVectors != null) {
-        println(
-            "[Tcgdex] Loaded recognition vectors: cards=${recognitionVectors.rowsByCardLanguage.size} " +
-                "missing=${recognitionVectors.missingCardIds.size}",
-        )
-        require(recognitionVectors.missingCardIds.isEmpty()) {
-            "[Tcgdex][x] Recognition vectors contain missingCardIds: ${recognitionVectors.missingCardIds.joinToString(", ")}"
-        }
-    }
-
-    // Track missing images for Pokecardex fallback index
-    val missingImages = mutableListOf<MissingImagesIndexGenerator.MissingImageEntry>()
-    val importedRecognitionKeys = mutableSetOf<String>()
-    // Track all cards per language for cross-language comparison
-    val cardsByLanguage = mutableMapOf<String, MutableSet<String>>() // language -> set of card IDs
-    val englishCardCache = mutableMapOf<String, JsonObject>()
-    val frenchCardCache = mutableMapOf<String, JsonObject>()
-    // language -> subSetId -> (serieId, parentSetId) for CDN parent-folder image fallback
-    val subSetParentsByLanguage = mutableMapOf<String, Map<String, Pair<String, String>>>()
-    // language -> official abbreviation -> (serieId, setId) for Prize Pack reprint art
-    val prizePackParentsByLanguage = mutableMapOf<String, Map<String, Pair<String, String>>>()
-    var englishMfbSet: EnglishMfbSetClone? = null
-    var frenchHasMfb = false
-    
-    // Valid dex IDs from pokemon-species.json (used for validation)
-    val validDexIds = pokemonSpecies.keys
-
-    val closedSetRarityCardIds = datasetsByLanguage["en"]?.let { englishDataset ->
-        collectClosedSetRarityCardIds(
-            json.parseToJsonElement(englishDataset.cardsFile.readText()).jsonArray,
-        )
-    } ?: ClosedSetRarityCardIds(breakCardIds = emptySet(), shiningCardIds = emptySet())
-
-    suspend fun insertCard(
-        language: String,
-        card: JsonObject,
-        originLanguage: String = language,
-    ) {
-        val langCardIds = cardsByLanguage.getOrPut(language) { mutableSetOf() }
-        val id = card.getString("id") ?: return
-        if (!langCardIds.add(id)) {
-            return
+        println("[Tcgdex] Starting database generation...")
+        println("[Tcgdex] Dataset: ${config.datasetDir}")
+        println("[Tcgdex] Languages: ${config.languages}")
+        println("[Tcgdex] Output: ${config.outputFile}")
+        println("[Tcgdex] Force: ${config.force}")
+        println("[Tcgdex] Set aliases config: ${setAliasesConfigFile.absolutePath}")
+        println("[Tcgdex] Validated generated datasets for languages: ${datasetsByLanguage.keys.sorted()}")
+        assertCameoJsonMatchesSource(File(config.datasetDir), config.languages)
+        if (!config.cardmarketExpansionsFile.isNullOrBlank()) {
+            println("[Tcgdex] Cardmarket expansions source: ${config.cardmarketExpansionsFile}")
         }
 
-        val localId = card.getString("localId") ?: id.substringAfterLast("-")
-        val setId = card.getNestedString("set", "id") ?: return
-        val name = card.getString("name") ?: id
-        val serieId = card.getNestedString("set", "serie", "id").orEmpty()
-        // Fallback only: never overwrite an image provided by the TS scan. Known
-        // sub-sets (e.g. swsh10tg) get a manifest-confirmed URL under the parent
-        // set folder (e.g. https://assets.tcgdex.net/fr/swsh/swsh10/TG28).
-        // 30th / 30th-c compiled URLs that datas.json does not list are dropped
-        // so RGB Mews do not keep a 404 CDN path in front of the Pokecardex fallback.
-        // Reprints with no CDN folder of their own reuse the original scan.
-        val imageUrl = compiledImageUrlForCard(
-            compiledImage = card.getString("image"),
-            assetsManifest = assetsManifest,
-            language = language,
-            serieId = serieId,
-            setId = setId,
-            localId = localId,
+        generateSetAliasIndex(
+            projectRoot = projectRoot,
+            configFile = setAliasesConfigFile,
+            cardmarketExpansionsFile = config.cardmarketExpansionsFile,
         )
-            ?: synthesizeSubSetImageUrl(
-                assetsManifest = assetsManifest,
-                subSetParents = subSetParentsByLanguage[language].orEmpty(),
-                language = language,
-                setId = setId,
-                localId = localId,
-            )
-            ?: synthesizeReprintOriginImageUrl(
-                assetsManifest = assetsManifest,
-                cardId = id,
-                language = language,
-            )
-            ?: synthesizePrizePackImageUrl(
-                assetsManifest = assetsManifest,
-                abbreviationParents = prizePackParentsByLanguage[language].orEmpty(),
-                language = language,
-                setId = setId,
-                localId = localId,
-            )
-        val pokebeachUrl = card.getString("fallbackImage")
-            ?.trim()
-            ?.takeIf { it.startsWith("https://") }
-        val fallbackImage = if (imageUrl.isNullOrBlank() && pokebeachUrl != null) {
-            FallbackImage(url = pokebeachUrl, source = POKEBEACH_SOURCE)
-        } else {
-            selectStoredFallbackImage(
-                imageUrl = imageUrl,
-                language = language,
-                setId = setId,
-                fallback = pokepediaFallbacks[id],
-            )
-        }
-        val fallbackImageUrl = fallbackImage?.url
-        val fallbackImageSource = fallbackImage?.source
 
-        if (imageUrl.isNullOrBlank()) {
-            val pokecardexUrl = MissingImagesIndexGenerator.buildPokecardexUrl(
-                setId = setId,
-                localId = localId,
-                language = language,
-                hd = false,
+        val outputFile = File(config.outputFile)
+        if (outputFile.exists()) {
+            println("[Tcgdex] Deleting existing database before generation")
+            outputFile.delete()
+        }
+
+        outputFile.parentFile?.mkdirs()
+
+        val driver =
+            AndroidxSqliteDriver(
+                driver = BundledSQLiteDriver(),
+                databaseType = AndroidxSqliteDatabaseType.File(outputFile.absolutePath),
+                schema = TcgdexDatabase.Schema,
             )
-            missingImages.add(
-                MissingImagesIndexGenerator.MissingImageEntry(
+        val db = TcgdexDatabase(driver)
+
+        val json = Json { ignoreUnknownKeys = true }
+        val defaultPokepediaFile =
+            config.pokepediaMissingFile
+                ?: resolvePokepediaMissingTree(config.datasetDir)?.absolutePath
+        if (defaultPokepediaFile != null) {
+            println("[Tcgdex] Pokepedia missing tree source: $defaultPokepediaFile")
+        }
+        val pokepediaFallbacks =
+            loadPokepediaFallbacks(
+                missingFilePath = defaultPokepediaFile,
+                json = json,
+            )
+        val defaultSetLogosFile =
+            config.setLogosFile
+                ?: resolveSetLogosFile(config.datasetDir)?.absolutePath
+        if (defaultSetLogosFile != null) {
+            println("[Tcgdex] Set logo overlay source: $defaultSetLogosFile")
+        }
+        val setLogos = loadSetLogoSymbolOverlay(defaultSetLogosFile, json)
+
+        // CDN assets manifest, used to confirm parent-folder image URLs for sub-sets
+        // (same existence source as the compiler's getCardPictures).
+        val assetsManifest =
+            loadAssetsManifest(
+                manifestFileOverride = config.assetsManifestFile,
+                json = json,
+            )
+        println("[Tcgdex] Loaded assets manifest: ${assetsManifest.size} languages")
+
+        // Track unique illustrators and rarities (language-agnostic)
+        val illustrators = mutableMapOf<String, String>() // id -> name
+        val rarities = mutableMapOf<String, String>() // id -> name
+
+        // Load Pokémon species data for canonical names
+        // Map: dexId -> Map<language, name>
+        val pokemonSpecies = loadPokemonSpecies(config.datasetDir, json)
+        println("[Tcgdex] Loaded ${pokemonSpecies.size} Pokémon species entries")
+        val pokemonNameIndex = buildPokemonNameIndex(pokemonSpecies)
+
+        // Map localized rarity names (e.g., FR "Méga Attaque Rare") back to the English rarity
+        // name (e.g., "Mega Attack Rare") so rarity IDs are always English slugs.
+        val rarityReverseTranslations =
+            loadRarityReverseTranslations(
+                datasetDir = config.datasetDir,
+                languages = config.languages,
+                json = json,
+            )
+
+        // Load Cardmarket price guide for EUR pricing
+        // Map: idProduct (Int) -> CardmarketPrice
+        val cardmarketPrices = loadCardmarketPrices(json)
+        println("[Tcgdex] Loaded ${cardmarketPrices.size} Cardmarket price entries")
+
+        // Load internal Cardmarket export (language-specific)
+        val exportPricingData =
+            loadCardmarketExportPrices(
+                projectRoot = projectRoot,
+                exportFilePath = config.cardmarketExportFile,
+                json = json,
+            )
+        val cardmarketExportCards = exportPricingData?.cards ?: emptyMap()
+        val exportUpdatedIso = exportPricingData?.updatedIso?.takeIf { it.isNotBlank() }
+        if (cardmarketExportCards.isNotEmpty()) {
+            println("[Tcgdex] Loaded ${cardmarketExportCards.size} Cardmarket export cards")
+        }
+
+        val recognitionVectors =
+            loadRecognitionVectors(
+                projectRoot = projectRoot,
+                vectorsFilePath = config.recognitionVectorsFile,
+                json = json,
+            )
+        if (recognitionVectors != null) {
+            println(
+                "[Tcgdex] Loaded recognition vectors: cards=${recognitionVectors.rowsByCardLanguage.size} " +
+                    "missing=${recognitionVectors.missingCardIds.size}",
+            )
+            require(recognitionVectors.missingCardIds.isEmpty()) {
+                "[Tcgdex][x] Recognition vectors contain missingCardIds: ${recognitionVectors.missingCardIds.joinToString(", ")}"
+            }
+        }
+
+        // Track missing images for Pokecardex fallback index
+        val missingImages = mutableListOf<MissingImagesIndexGenerator.MissingImageEntry>()
+        val importedRecognitionKeys = mutableSetOf<String>()
+        // Track all cards per language for cross-language comparison
+        val cardsByLanguage = mutableMapOf<String, MutableSet<String>>() // language -> set of card IDs
+        val englishCardCache = mutableMapOf<String, JsonObject>()
+        val frenchCardCache = mutableMapOf<String, JsonObject>()
+        // language -> subSetId -> (serieId, parentSetId) for CDN parent-folder image fallback
+        val subSetParentsByLanguage = mutableMapOf<String, Map<String, Pair<String, String>>>()
+        // language -> official abbreviation -> (serieId, setId) for Prize Pack reprint art
+        val prizePackParentsByLanguage = mutableMapOf<String, Map<String, Pair<String, String>>>()
+        var englishMfbSet: EnglishMfbSetClone? = null
+        var frenchHasMfb = false
+
+        // Valid dex IDs from pokemon-species.json (used for validation)
+        val validDexIds = pokemonSpecies.keys
+
+        val englishVariantsByCardId: Map<String, List<JsonObject>> =
+            datasetsByLanguage["en"]
+                ?.let { englishDataset ->
+                    json
+                        .parseToJsonElement(englishDataset.cardsFile.readText())
+                        .jsonArray
+                        .mapNotNull { element ->
+                            val card = element as? JsonObject ?: return@mapNotNull null
+                            val id = card.getString("id") ?: return@mapNotNull null
+                            val variants = (card["variants_detailed"] as? JsonArray)?.mapNotNull { it as? JsonObject }.orEmpty()
+                            id to variants
+                        }.toMap()
+                }.orEmpty()
+        val catalogSupplements =
+            loadCatalogSlotSupplements(
+                projectRoot.resolve("libs/tcgdex-kmp-sdk/generator-inputs/ultra-print-supplements.json"),
+            )
+
+        val closedSetRarityCardIds =
+            datasetsByLanguage["en"]?.let { englishDataset ->
+                collectClosedSetRarityCardIds(
+                    json.parseToJsonElement(englishDataset.cardsFile.readText()).jsonArray,
+                )
+            } ?: ClosedSetRarityCardIds(breakCardIds = emptySet(), shiningCardIds = emptySet())
+
+        suspend fun insertCard(
+            language: String,
+            card: JsonObject,
+            originLanguage: String = language,
+        ) {
+            val langCardIds = cardsByLanguage.getOrPut(language) { mutableSetOf() }
+            val id = card.getString("id") ?: return
+            if (!langCardIds.add(id)) {
+                return
+            }
+
+            val localId = card.getString("localId") ?: id.substringAfterLast("-")
+            val setId = card.getNestedString("set", "id") ?: return
+            val name = card.getString("name") ?: id
+            val serieId = card.getNestedString("set", "serie", "id").orEmpty()
+            // Fallback only: never overwrite an image provided by the TS scan. Known
+            // sub-sets (e.g. swsh10tg) get a manifest-confirmed URL under the parent
+            // set folder (e.g. https://assets.tcgdex.net/fr/swsh/swsh10/TG28).
+            // 30th / 30th-c compiled URLs that datas.json does not list are dropped
+            // so RGB Mews do not keep a 404 CDN path in front of the Pokecardex fallback.
+            // Reprints with no CDN folder of their own reuse the original scan.
+            val imageUrl =
+                compiledImageUrlForCard(
+                    compiledImage = card.getString("image"),
+                    assetsManifest = assetsManifest,
                     language = language,
-                    cardId = id,
+                    serieId = serieId,
                     setId = setId,
                     localId = localId,
-                    tcgdexUrl = null,
-                    pokecardexUrl = pokecardexUrl,
-                ),
-            )
-        }
-
-        val illustratorName = card.getString("illustrator")
-        val illustratorId = if (illustratorName != null) {
-            val slug = slugify(illustratorName)
-            illustrators[slug] = illustratorName
-            slug
-        } else {
-            null
-        }
-
-        val rarityName = card.getString("rarity")
-        val rarityId = if (rarityName != null) {
-            val langKey = originLanguage.lowercase()
-            val englishName =
-                if (langKey == "en") {
-                    rarityName
+                )
+                    ?: synthesizeSubSetImageUrl(
+                        assetsManifest = assetsManifest,
+                        subSetParents = subSetParentsByLanguage[language].orEmpty(),
+                        language = language,
+                        setId = setId,
+                        localId = localId,
+                    )
+                    ?: synthesizeReprintOriginImageUrl(
+                        assetsManifest = assetsManifest,
+                        cardId = id,
+                        language = language,
+                    )
+                    ?: synthesizePrizePackImageUrl(
+                        assetsManifest = assetsManifest,
+                        abbreviationParents = prizePackParentsByLanguage[language].orEmpty(),
+                        language = language,
+                        setId = setId,
+                        localId = localId,
+                    )
+            val pokebeachUrl =
+                card.getString("fallbackImage")
+                    ?.trim()
+                    ?.takeIf { it.startsWith("https://") }
+            val fallbackImage =
+                if (imageUrl.isNullOrBlank() && pokebeachUrl != null) {
+                    FallbackImage(url = pokebeachUrl, source = POKEBEACH_SOURCE)
                 } else {
-                    rarityReverseTranslations[langKey]?.get(rarityName) ?: rarityName
+                    selectStoredFallbackImage(
+                        imageUrl = imageUrl,
+                        language = language,
+                        setId = setId,
+                        fallback = pokepediaFallbacks[id],
+                    )
                 }
+            val fallbackImageUrl = fallbackImage?.url
+            val fallbackImageSource = fallbackImage?.source
 
-            val slug = slugify(englishName)
-            val persistedId = VLineRaritySlug.persistRarityId(slug, name, setId)
-            val storedId = StoredRaritySlug.canonicalize(
-                slug = persistedId,
-                cardId = id,
-                breakCardIds = closedSetRarityCardIds.breakCardIds,
-                shiningCardIds = closedSetRarityCardIds.shiningCardIds,
-            )
-            if (storedId == slug) {
-                rarities[slug] = englishName
-            } else {
-                rarities.putIfAbsent(storedId, StoredRaritySlug.displayName(storedId) ?: englishName)
-            }
-            storedId
-        } else {
-            null
-        }
-
-        val dexIds = card.getIntArray("dexId")
-        val cameoDexIds = card.getIntArray("cameoDexIds")
-
-        val types = card.getStringArray("types")?.joinToString(",")
-        val category = card.getString("category")
-        val supertype = card.getString("supertype")
-        val regulationMark = card.getString("regulationMark")
-        val hp = card["hp"]?.let { element -> (element as? JsonPrimitive)?.intOrNull }
-        val localNumberSort = extractNumericPart(localId)
-
-        val resolvedDexIds = if (category == "Pokemon" && name.isNotBlank() && isMultiPokemonName(name)) {
-            val expectedSpecies = countDistinctSpeciesFromName(name)
-            val actualDexIds = dexIds?.toSet() ?: emptySet()
-            val inferredDexIds = inferDexIdsFromName(
-                name = name,
-                language = language,
-                pokemonNameIndex = pokemonNameIndex,
-            ).toSet()
-            val mergedDexIds = (actualDexIds + inferredDexIds).toList()
-            if (expectedSpecies > 1 && mergedDexIds.toSet().size < expectedSpecies) {
-                throw IllegalArgumentException(
-                    """
-                    [Tcgdex][x] INCOMPLETE MULTI-POKÉMON DEX IDS - BUILD FAILED
-                    Card: $id (set: $setId, language: $language)
-                    Name: $name
-                    Expected $expectedSpecies dexId entries, found ${actualDexIds.size} (current: ${dexIds?.joinToString(", ") ?: "none"})
-                    
-                    Update libs/cards-database data so every Pokémon listed in the card name appears in dexId.
-                    """.trimIndent(),
+            if (imageUrl.isNullOrBlank()) {
+                val pokecardexUrl =
+                    MissingImagesIndexGenerator.buildPokecardexUrl(
+                        setId = setId,
+                        localId = localId,
+                        language = language,
+                        hd = false,
+                    )
+                missingImages.add(
+                    MissingImagesIndexGenerator.MissingImageEntry(
+                        language = language,
+                        cardId = id,
+                        setId = setId,
+                        localId = localId,
+                        tcgdexUrl = null,
+                        pokecardexUrl = pokecardexUrl,
+                    ),
                 )
             }
-            if (mergedDexIds.isNotEmpty() && mergedDexIds.toSet().size > actualDexIds.size) {
-                println("[Tcgdex][!] Inferred missing dexId entries for $id: ${mergedDexIds.joinToString(", ")}")
-            }
-            if (mergedDexIds.isNotEmpty()) mergedDexIds else dexIds
-        } else {
-            dexIds
-        }
 
-        // Pricing: store exact data only; fallback is handled at runtime.
-        //
-        // Flat columns in the cards table store the price-guide (GLOBAL) baseline.
-        // The card_prices table stores:
-        //   - poke-browser export rows with real seller countries (exact per-country data)
-        //   - price-guide row with seller_country = 'GLOBAL' (language-agnostic baseline)
-        val exportCard = cardmarketExportCards[id]
-        val cardmarketId = resolveMarketplaceId(card, "cardmarket")
-        val s3Pricing = cardmarketId?.let { cardmarketPrices[it] }
+            val illustratorName = card.getString("illustrator")
+            val illustratorId =
+                if (illustratorName != null) {
+                    val slug = slugify(illustratorName)
+                    illustrators[slug] = illustratorName
+                    slug
+                } else {
+                    null
+                }
 
-        db.tcgdexQueries.insertCard(
-            id = id,
-            language = language,
-            localId = localId,
-            localNumberSort = localNumberSort.toLong(),
-            setId = setId,
-            rarityId = rarityId,
-            illustratorId = illustratorId,
-            name = name,
-            imageUrl = imageUrl,
-            fallbackImageUrl = fallbackImageUrl,
-            fallbackImageSource = fallbackImageSource,
-            originLanguage = originLanguage,
-            category = category,
-            types = types,
-            supertype = supertype,
-            regulationMark = regulationMark,
-            hp = hp?.toLong(),
-            priceCardmarketTrend = s3Pricing?.trendPrice,
-            priceCardmarketAvg = s3Pricing?.averageSellPrice,
-            priceCardmarketLow = s3Pricing?.lowPrice,
-            priceUpdatedIso = s3Pricing?.updatedIso,
-            priceUnit = s3Pricing?.unit,
-        )
+            val rarityName = card.getString("rarity")
+            val rarityId =
+                if (rarityName != null) {
+                    val langKey = originLanguage.lowercase()
+                    val englishName =
+                        if (langKey == "en") {
+                            rarityName
+                        } else {
+                            rarityReverseTranslations[langKey]?.get(rarityName) ?: rarityName
+                        }
 
-        val recognitionKey = "$id::$language"
-        val recognitionRows = recognitionVectors?.rowsByCardLanguage?.get(recognitionKey).orEmpty()
-        for (row in recognitionRows) {
-            db.tcgdexQueries.insertCardRecognitionHash(
-                cardId = id,
+                    val slug = slugify(englishName)
+                    val persistedId = VLineRaritySlug.persistRarityId(slug, name, setId)
+                    val storedId =
+                        StoredRaritySlug.canonicalize(
+                            slug = persistedId,
+                            cardId = id,
+                            breakCardIds = closedSetRarityCardIds.breakCardIds,
+                            shiningCardIds = closedSetRarityCardIds.shiningCardIds,
+                        )
+                    if (storedId == slug) {
+                        rarities[slug] = englishName
+                    } else {
+                        rarities.putIfAbsent(storedId, StoredRaritySlug.displayName(storedId) ?: englishName)
+                    }
+                    storedId
+                } else {
+                    null
+                }
+
+            val dexIds = card.getIntArray("dexId")
+            val cameoDexIds = card.getIntArray("cameoDexIds")
+
+            val types = card.getStringArray("types")?.joinToString(",")
+            val category = card.getString("category")
+            val supertype = card.getString("supertype")
+            val regulationMark = card.getString("regulationMark")
+            val hp = card["hp"]?.let { element -> (element as? JsonPrimitive)?.intOrNull }
+            val localNumberSort = extractNumericPart(localId)
+
+            val resolvedDexIds =
+                if (category == "Pokemon" && name.isNotBlank() && isMultiPokemonName(name)) {
+                    val expectedSpecies = countDistinctSpeciesFromName(name)
+                    val actualDexIds = dexIds?.toSet() ?: emptySet()
+                    val inferredDexIds =
+                        inferDexIdsFromName(
+                            name = name,
+                            language = language,
+                            pokemonNameIndex = pokemonNameIndex,
+                        ).toSet()
+                    val mergedDexIds = (actualDexIds + inferredDexIds).toList()
+                    if (expectedSpecies > 1 && mergedDexIds.toSet().size < expectedSpecies) {
+                        throw IllegalArgumentException(
+                            """
+                            [Tcgdex][x] INCOMPLETE MULTI-POKÉMON DEX IDS - BUILD FAILED
+                            Card: $id (set: $setId, language: $language)
+                            Name: $name
+                            Expected $expectedSpecies dexId entries, found ${actualDexIds.size} (current: ${dexIds?.joinToString(
+                                ", ",
+                            ) ?: "none"})
+                            
+                            Update libs/cards-database data so every Pokémon listed in the card name appears in dexId.
+                            """.trimIndent(),
+                        )
+                    }
+                    if (mergedDexIds.isNotEmpty() && mergedDexIds.toSet().size > actualDexIds.size) {
+                        println("[Tcgdex][!] Inferred missing dexId entries for $id: ${mergedDexIds.joinToString(", ")}")
+                    }
+                    if (mergedDexIds.isNotEmpty()) mergedDexIds else dexIds
+                } else {
+                    dexIds
+                }
+
+            // Pricing: store exact data only; fallback is handled at runtime.
+            //
+            // Flat columns in the cards table store the price-guide (GLOBAL) baseline.
+            // The card_prices table stores:
+            //   - poke-browser export rows with real seller countries (exact per-country data)
+            //   - price-guide row with seller_country = 'GLOBAL' (language-agnostic baseline)
+            val exportCard = cardmarketExportCards[id]
+            val cardmarketId = resolveMarketplaceId(card, "cardmarket")
+            val s3Pricing = cardmarketId?.let { cardmarketPrices[it] }
+
+            db.tcgdexQueries.insertCard(
+                id = id,
                 language = language,
-                imageSource = row.imageSource,
-                imageUrl = row.imageUrl,
-                lighting = row.lighting,
-                rotation = row.rotation.toLong(),
-                dhash = row.dhash,
-                phash = row.phash,
+                localId = localId,
+                localNumberSort = localNumberSort.toLong(),
+                setId = setId,
+                rarityId = rarityId,
+                illustratorId = illustratorId,
+                name = name,
+                imageUrl = imageUrl,
+                fallbackImageUrl = fallbackImageUrl,
+                fallbackImageSource = fallbackImageSource,
+                originLanguage = originLanguage,
+                category = category,
+                types = types,
+                supertype = supertype,
+                regulationMark = regulationMark,
+                hp = hp?.toLong(),
+                priceCardmarketTrend = s3Pricing?.trendPrice,
+                priceCardmarketAvg = s3Pricing?.averageSellPrice,
+                priceCardmarketLow = s3Pricing?.lowPrice,
+                priceUpdatedIso = s3Pricing?.updatedIso,
+                priceUnit = s3Pricing?.unit,
             )
-            importedRecognitionKeys.add(recognitionKey)
-        }
 
-        // Persist exact export prices, one row per (variant, price language, seller country, condition).
-        // The generator never reduces condition buckets -- the app decides which condition to display.
-        if (exportCard != null) {
-            for (variant in exportCard.variants) {
-                val variantKey = variant.version?.takeIf { it.isNotBlank() }
-                    ?: variant.label?.takeIf { it.isNotBlank() }
-                    ?: ""
-                for ((priceLang, byCountry) in variant.prices) {
-                    for ((sellerCountry, byCondition) in byCountry) {
-                        for ((condition, price) in byCondition) {
-                            db.tcgdexQueries.insertCardPrice(
-                                cardId = id,
-                                cardLanguage = language,
-                                variant = variantKey,
-                                priceLanguage = priceLang,
-                                sellerCountry = sellerCountry,
-                                condition = condition,
-                                currency = price.currency ?: "EUR",
-                                minPrice = price.minPrice,
-                                avgPrice = price.avgPrice,
-                                medianPrice = price.medianPrice,
-                                maxPrice = price.maxPrice,
-                                recommendedPrice = price.recommendedPrice,
-                                availableCount = price.availableCount?.toLong(),
-                                productId = variant.productId?.toLong(),
-                                updatedIso = resolveExportPriceUpdatedIso(price.capturedAt, exportUpdatedIso),
-                            )
+            val recognitionKey = "$id::$language"
+            val recognitionRows = recognitionVectors?.rowsByCardLanguage?.get(recognitionKey).orEmpty()
+            for (row in recognitionRows) {
+                db.tcgdexQueries.insertCardRecognitionHash(
+                    cardId = id,
+                    language = language,
+                    imageSource = row.imageSource,
+                    imageUrl = row.imageUrl,
+                    lighting = row.lighting,
+                    rotation = row.rotation.toLong(),
+                    dhash = row.dhash,
+                    phash = row.phash,
+                )
+                importedRecognitionKeys.add(recognitionKey)
+            }
+
+            // Persist exact export prices, one row per (variant, price language, seller country, condition).
+            // The generator never reduces condition buckets -- the app decides which condition to display.
+            if (exportCard != null) {
+                for (variant in exportCard.variants) {
+                    val variantKey =
+                        variant.version?.takeIf { it.isNotBlank() }
+                            ?: variant.label?.takeIf { it.isNotBlank() }
+                            ?: ""
+                    for ((priceLang, byCountry) in variant.prices) {
+                        for ((sellerCountry, byCondition) in byCountry) {
+                            for ((condition, price) in byCondition) {
+                                db.tcgdexQueries.insertCardPrice(
+                                    cardId = id,
+                                    cardLanguage = language,
+                                    variant = variantKey,
+                                    priceLanguage = priceLang,
+                                    sellerCountry = sellerCountry,
+                                    condition = condition,
+                                    currency = price.currency ?: "EUR",
+                                    minPrice = price.minPrice,
+                                    avgPrice = price.avgPrice,
+                                    medianPrice = price.medianPrice,
+                                    maxPrice = price.maxPrice,
+                                    recommendedPrice = price.recommendedPrice,
+                                    availableCount = price.availableCount?.toLong(),
+                                    productId = variant.productId?.toLong(),
+                                    updatedIso = resolveExportPriceUpdatedIso(price.capturedAt, exportUpdatedIso),
+                                )
+                            }
                         }
                     }
                 }
+                val priceGuideProductId = cardmarketId.takeIf { s3Pricing != null }
+                for (anchor in catalogProductAnchors(exportCard.variants, priceGuideProductId)) {
+                    db.tcgdexQueries.insertCardPrice(
+                        cardId = id,
+                        cardLanguage = language,
+                        variant = anchor.variantKey,
+                        priceLanguage = "",
+                        sellerCountry = "GLOBAL",
+                        condition = "",
+                        currency = "EUR",
+                        minPrice = null,
+                        avgPrice = null,
+                        medianPrice = null,
+                        maxPrice = null,
+                        recommendedPrice = null,
+                        availableCount = null,
+                        productId = anchor.productId.toLong(),
+                        updatedIso = exportUpdatedIso.orEmpty(),
+                    )
+                }
             }
-            val priceGuideProductId = cardmarketId.takeIf { s3Pricing != null }
-            for (anchor in catalogProductAnchors(exportCard.variants, priceGuideProductId)) {
+
+            // Insert price guide as GLOBAL baseline. This row is condition-agnostic (the
+            // Cardmarket price guide aggregates across conditions); it uses condition = ''
+            // as the sentinel to distinguish it from per-condition export rows.
+            if (s3Pricing != null) {
                 db.tcgdexQueries.insertCardPrice(
                     cardId = id,
                     cardLanguage = language,
-                    variant = anchor.variantKey,
+                    variant = "Normal",
                     priceLanguage = "",
                     sellerCountry = "GLOBAL",
                     condition = "",
-                    currency = "EUR",
-                    minPrice = null,
-                    avgPrice = null,
+                    currency = s3Pricing.unit,
+                    minPrice = s3Pricing.lowPrice,
+                    avgPrice = s3Pricing.averageSellPrice,
                     medianPrice = null,
                     maxPrice = null,
-                    recommendedPrice = null,
+                    recommendedPrice = s3Pricing.trendPrice,
                     availableCount = null,
-                    productId = anchor.productId.toLong(),
-                    updatedIso = exportUpdatedIso.orEmpty(),
+                    productId = cardmarketId.toLong(),
+                    updatedIso = s3Pricing.updatedIso,
                 )
             }
-        }
 
-        // Insert price guide as GLOBAL baseline. This row is condition-agnostic (the
-        // Cardmarket price guide aggregates across conditions); it uses condition = ''
-        // as the sentinel to distinguish it from per-condition export rows.
-        if (s3Pricing != null) {
-            db.tcgdexQueries.insertCardPrice(
-                cardId = id,
-                cardLanguage = language,
-                variant = "Normal",
-                priceLanguage = "",
-                sellerCountry = "GLOBAL",
-                condition = "",
-                currency = s3Pricing.unit,
-                minPrice = s3Pricing.lowPrice,
-                avgPrice = s3Pricing.averageSellPrice,
-                medianPrice = null,
-                maxPrice = null,
-                recommendedPrice = s3Pricing.trendPrice,
-                availableCount = null,
-                productId = cardmarketId.toLong(),
-                updatedIso = s3Pricing.updatedIso,
-            )
-        }
+            // Insert card-Pokémon relationships for ALL dex IDs (supports multi-Pokémon cards)
+            // VALIDATION: Ensure all dex IDs exist in pokemon-species.json to prevent phantom Pokédex entries
+            // Skip validation if pokemon-species.json was not loaded (validDexIds empty)
+            val normalizedDexIds =
+                resolvedDexIds?.mapNotNull { dexId ->
+                    normalizeDexId(dexId, validDexIds)
+                }
 
-        // Insert card-Pokémon relationships for ALL dex IDs (supports multi-Pokémon cards)
-        // VALIDATION: Ensure all dex IDs exist in pokemon-species.json to prevent phantom Pokédex entries
-        // Skip validation if pokemon-species.json was not loaded (validDexIds empty)
-        val normalizedDexIds = resolvedDexIds?.mapNotNull { dexId ->
-            normalizeDexId(dexId, validDexIds)
-        }
+            if (validDexIds.isNotEmpty()) {
+                val invalidDexIds =
+                    resolvedDexIds
+                        ?.filter { dexId ->
+                            normalizeDexId(dexId, validDexIds) == null
+                        }.orEmpty()
+                if (invalidDexIds.isNotEmpty()) {
+                    throw IllegalArgumentException(
+                        """
+                        [Tcgdex][x] INVALID DEX ID DETECTED - BUILD FAILED
+                        Card: $id (set: $setId, language: $language)
+                        Invalid dexId: ${invalidDexIds.joinToString(", ")}
+                        
+                        This dex ID does not exist in pokemon-species.json.
+                        Possible causes:
+                        1. Typo in the card data (e.g., 9012 instead of 912)
+                        2. Missing species in pokemon-species.json (run 'bun run download-pokedex' in workdir)
+                        
+                        Fix the card data in libs/cards-database/data/... and regenerate.
+                        """.trimIndent(),
+                    )
+                }
+            }
 
-        if (validDexIds.isNotEmpty()) {
-            val invalidDexIds = resolvedDexIds?.filter { dexId ->
-                normalizeDexId(dexId, validDexIds) == null
-            }.orEmpty()
-            if (invalidDexIds.isNotEmpty()) {
-                throw IllegalArgumentException(
-                    """
-                    [Tcgdex][x] INVALID DEX ID DETECTED - BUILD FAILED
-                    Card: $id (set: $setId, language: $language)
-                    Invalid dexId: ${invalidDexIds.joinToString(", ")}
-                    
-                    This dex ID does not exist in pokemon-species.json.
-                    Possible causes:
-                    1. Typo in the card data (e.g., 9012 instead of 912)
-                    2. Missing species in pokemon-species.json (run 'bun run download-pokedex' in workdir)
-                    
-                    Fix the card data in libs/cards-database/data/... and regenerate.
-                    """.trimIndent()
+            val normalizedCameoDexIds =
+                cameoDexIds?.mapNotNull { dexId ->
+                    normalizeDexId(dexId, validDexIds)
+                }
+
+            if (validDexIds.isNotEmpty()) {
+                val invalidCameoDexIds =
+                    cameoDexIds
+                        ?.filter { dexId ->
+                            normalizeDexId(dexId, validDexIds) == null
+                        }.orEmpty()
+                if (invalidCameoDexIds.isNotEmpty()) {
+                    throw IllegalArgumentException(
+                        """
+                        [Tcgdex][x] INVALID CAMEO DEX ID DETECTED - BUILD FAILED
+                        Card: $id (set: $setId, language: $language)
+                        Invalid cameoDexIds: ${invalidCameoDexIds.joinToString(", ")}
+                        
+                        This cameo dex ID does not exist in pokemon-species.json.
+                        Fix the card data in libs/cards-database/data/... and regenerate.
+                        """.trimIndent(),
+                    )
+                }
+            }
+
+            val catalogSlots =
+                ingestCatalogSlots(
+                    card = card,
+                    englishVariants = englishVariantsByCardId[id],
+                    supplements = catalogSupplements[id].orEmpty(),
+                    cardImageUrl = imageUrl,
+                )
+            verifyPrintCodeInvariants(cardId = id, slots = catalogSlots)
+            catalogSlots.forEach { slot ->
+                db.tcgdexQueries.insertCardCatalogSlot(
+                    cardId = id,
+                    cardLanguage = language,
+                    variantId = slot.variantId,
+                    isCanonical = if (slot.isCanonical) 1L else 0L,
+                    sortIndex = slot.sortIndex.toLong(),
+                    displayRank = slot.displayRank.toLong(),
+                    typeSlug = slot.typeSlug,
+                    subtypeSlug = slot.subtypeSlug,
+                    sizeSlug = slot.sizeSlug,
+                    foilSlug = slot.foilSlug,
+                    stampsSlugJson = slot.stampSlugs.toJsonArrayString(),
+                    typeLabel = slot.typeLabel,
+                    subtypeLabel = slot.subtypeLabel,
+                    sizeLabel = slot.sizeLabel,
+                    foilLabel = slot.foilLabel,
+                    stampsLabelJson = slot.stampLabels.toJsonArrayString(),
+                    imageUrl = slot.imageUrl,
+                    cardmarketProductId = slot.cardmarketProductId,
+                    tcgplayerProductId = slot.tcgplayerProductId,
                 )
             }
-        }
 
-        val normalizedCameoDexIds = cameoDexIds?.mapNotNull { dexId ->
-            normalizeDexId(dexId, validDexIds)
-        }
-
-        if (validDexIds.isNotEmpty()) {
-            val invalidCameoDexIds = cameoDexIds?.filter { dexId ->
-                normalizeDexId(dexId, validDexIds) == null
-            }.orEmpty()
-            if (invalidCameoDexIds.isNotEmpty()) {
-                throw IllegalArgumentException(
-                    """
-                    [Tcgdex][x] INVALID CAMEO DEX ID DETECTED - BUILD FAILED
-                    Card: $id (set: $setId, language: $language)
-                    Invalid cameoDexIds: ${invalidCameoDexIds.joinToString(", ")}
-                    
-                    This cameo dex ID does not exist in pokemon-species.json.
-                    Fix the card data in libs/cards-database/data/... and regenerate.
-                    """.trimIndent()
-                )
-            }
-        }
-
-        normalizedDexIds?.forEach { dexId ->
-            db.tcgdexQueries.insertCardPokemon(
-                cardId = id,
-                language = language,
-                pokemonDexId = dexId.toLong(),
-                isCameo = 0L,
-            )
-        }
-
-        val mainDexIdSet = normalizedDexIds?.toSet().orEmpty()
-        normalizedCameoDexIds
-            ?.asSequence()
-            ?.filterNot { it in mainDexIdSet }
-            ?.distinct()
-            ?.forEach { dexId ->
+            normalizedDexIds?.forEach { dexId ->
                 db.tcgdexQueries.insertCardPokemon(
                     cardId = id,
                     language = language,
                     pokemonDexId = dexId.toLong(),
-                    isCameo = 1L,
+                    isCameo = 0L,
                 )
             }
-    }
 
-    for (language in config.languages) {
-        val dataset = datasetsByLanguage.getValue(language)
-
-        println("[Tcgdex] Processing language: $language")
-
-        // Load series
-        val seriesJson = json.parseToJsonElement(dataset.seriesFile.readText()).jsonArray
-        var position = 0
-        for (serieElement in seriesJson) {
-            val serie = serieElement.jsonObject
-            val id = serie.getString("id") ?: continue
-            val name = serie.getString("name") ?: id
-            db.tcgdexQueries.insertSerie(id, language, name, position.toLong())
-            position++
-        }
-        println("[Tcgdex]   Series: ${seriesJson.size}")
-
-        // Load sets
-        val setsJson = json.parseToJsonElement(dataset.setsFile.readText()).jsonArray
-        val parsedSets = setsJson.map { rewriteHiddenFatesVaultSetJson(it.jsonObject) }
-        val parentBySubSetId = deriveSubSetParents(parsedSets)
-        val serieIdBySetId = parsedSets.mapNotNull { set ->
-            val setId = set.getString("id") ?: return@mapNotNull null
-            val serieId = set.getNestedString("serie", "id") ?: return@mapNotNull null
-            setId to serieId
-        }.toMap()
-        val subSetParents = parentBySubSetId.mapValues { (subSetId, parentSetId) ->
-            val serieId = serieIdBySetId[parentSetId]
-                ?: error("[Tcgdex][x] Sub-set $subSetId parent $parentSetId has no serie id")
-            serieId to parentSetId
-        }
-        subSetParentsByLanguage[language] = subSetParents
-        prizePackParentsByLanguage[language] = prizePackAbbreviationParents(parsedSets)
-        if (parentBySubSetId.isNotEmpty()) {
-            val summary = parentBySubSetId.entries.sortedBy { it.key }.joinToString(", ") { "${it.key}->${it.value}" }
-            println("[Tcgdex]   Sub-sets: $summary")
+            val mainDexIdSet = normalizedDexIds?.toSet().orEmpty()
+            normalizedCameoDexIds
+                ?.asSequence()
+                ?.filterNot { it in mainDexIdSet }
+                ?.distinct()
+                ?.forEach { dexId ->
+                    db.tcgdexQueries.insertCardPokemon(
+                        cardId = id,
+                        language = language,
+                        pokemonDexId = dexId.toLong(),
+                        isCameo = 1L,
+                    )
+                }
         }
 
-        for (set in parsedSets) {
-            val id = set.getString("id") ?: continue
-            val serieId = set.getNestedString("serie", "id") ?: continue
-            val name = set.getString("name") ?: id
-            val overlay = setLogos[id]
-            val logoUrl = resolveSetAssetUrl(set.getString("logo"), overlay?.logoUrl)
-            val symbolUrl = resolveSetAssetUrl(set.getString("symbol"), overlay?.symbolUrl)
-            val cardCountTotal = set.getNestedInt("cardCount", "total") ?: 0
-            val cardCountOfficial = set.getNestedInt("cardCount", "official") ?: cardCountTotal
-            val releaseDate = set.getString("releaseDate")
-            val abbreviationOfficial = set.getNestedString("abbreviation", "official")
+        for (language in config.languages) {
+            val dataset = datasetsByLanguage.getValue(language)
 
-            db.tcgdexQueries.insertSet(
-                id = id,
-                language = language,
-                serieId = serieId,
-                name = name,
-                logoUrl = logoUrl,
-                symbolUrl = symbolUrl,
-                cardCountTotal = cardCountTotal.toLong(),
-                cardCountOfficial = cardCountOfficial.toLong(),
-                releaseDate = releaseDate,
-                abbreviationOfficial = abbreviationOfficial,
-                parentSetId = parentBySubSetId[id],
-            )
-            if (id == MFB_SET_ID && language == "en") {
-                englishMfbSet = EnglishMfbSetClone(
+            println("[Tcgdex] Processing language: $language")
+
+            // Load series
+            val seriesJson = json.parseToJsonElement(dataset.seriesFile.readText()).jsonArray
+            var position = 0
+            for (serieElement in seriesJson) {
+                val serie = serieElement.jsonObject
+                val id = serie.getString("id") ?: continue
+                val name = serie.getString("name") ?: id
+                db.tcgdexQueries.insertSerie(id, language, name, position.toLong())
+                position++
+            }
+            println("[Tcgdex]   Series: ${seriesJson.size}")
+
+            // Load sets
+            val setsJson = json.parseToJsonElement(dataset.setsFile.readText()).jsonArray
+            val parsedSets = setsJson.map { rewriteHiddenFatesVaultSetJson(it.jsonObject) }
+            val parentBySubSetId = deriveSubSetParents(parsedSets)
+            val serieIdBySetId =
+                parsedSets
+                    .mapNotNull { set ->
+                        val setId = set.getString("id") ?: return@mapNotNull null
+                        val serieId = set.getNestedString("serie", "id") ?: return@mapNotNull null
+                        setId to serieId
+                    }.toMap()
+            val subSetParents =
+                parentBySubSetId.mapValues { (subSetId, parentSetId) ->
+                    val serieId =
+                        serieIdBySetId[parentSetId]
+                            ?: error("[Tcgdex][x] Sub-set $subSetId parent $parentSetId has no serie id")
+                    serieId to parentSetId
+                }
+            subSetParentsByLanguage[language] = subSetParents
+            prizePackParentsByLanguage[language] = prizePackAbbreviationParents(parsedSets)
+            if (parentBySubSetId.isNotEmpty()) {
+                val summary = parentBySubSetId.entries.sortedBy { it.key }.joinToString(", ") { "${it.key}->${it.value}" }
+                println("[Tcgdex]   Sub-sets: $summary")
+            }
+
+            for (set in parsedSets) {
+                val id = set.getString("id") ?: continue
+                val serieId = set.getNestedString("serie", "id") ?: continue
+                val name = set.getString("name") ?: id
+                val overlay = setLogos[id]
+                val logoUrl = resolveSetAssetUrl(set.getString("logo"), overlay?.logoUrl)
+                val symbolUrl = resolveSetAssetUrl(set.getString("symbol"), overlay?.symbolUrl)
+                val cardCountTotal = set.getNestedInt("cardCount", "total") ?: 0
+                val cardCountOfficial = set.getNestedInt("cardCount", "official") ?: cardCountTotal
+                val releaseDate = set.getString("releaseDate")
+                val abbreviationOfficial = set.getNestedString("abbreviation", "official")
+
+                db.tcgdexQueries.insertSet(
+                    id = id,
+                    language = language,
                     serieId = serieId,
+                    name = name,
                     logoUrl = logoUrl,
                     symbolUrl = symbolUrl,
                     cardCountTotal = cardCountTotal.toLong(),
@@ -688,215 +758,229 @@ fun main(args: Array<String>) = runBlocking {
                     abbreviationOfficial = abbreviationOfficial,
                     parentSetId = parentBySubSetId[id],
                 )
-            } else if (id == MFB_SET_ID && language == "fr") {
-                frenchHasMfb = true
-            }
-        }
-        println("[Tcgdex]   Sets: ${setsJson.size}")
-
-        // Load cards
-        val cardsJson = json.parseToJsonElement(dataset.cardsFile.readText()).jsonArray
-        for (cardElement in cardsJson) {
-            val card = rewriteHiddenFatesVaultCardJson(cardElement.jsonObject)
-            insertCard(language, card, originLanguage = language)
-            if (language == "en") {
-                val id = card.getString("id")
-                if (id != null) {
-                    englishCardCache[id] = card
-                }
-            } else if (language == "fr") {
-                val id = card.getString("id")
-                if (id != null) {
-                    frenchCardCache[id] = card
+                if (id == MFB_SET_ID && language == "en") {
+                    englishMfbSet =
+                        EnglishMfbSetClone(
+                            serieId = serieId,
+                            logoUrl = logoUrl,
+                            symbolUrl = symbolUrl,
+                            cardCountTotal = cardCountTotal.toLong(),
+                            cardCountOfficial = cardCountOfficial.toLong(),
+                            releaseDate = releaseDate,
+                            abbreviationOfficial = abbreviationOfficial,
+                            parentSetId = parentBySubSetId[id],
+                        )
+                } else if (id == MFB_SET_ID && language == "fr") {
+                    frenchHasMfb = true
                 }
             }
-        }
-        println("[Tcgdex]   Cards: ${cardsJson.size}")
-    }
+            println("[Tcgdex]   Sets: ${setsJson.size}")
 
-    val clonedEnglishMfbSet = englishMfbSet
-    if (clonedEnglishMfbSet != null && !frenchHasMfb && "fr" in datasetsByLanguage) {
-        println("[Tcgdex] Inserting French set row for $MFB_SET_ID ($MFB_FRENCH_SET_NAME)")
-        db.tcgdexQueries.insertSet(
-            id = MFB_SET_ID,
-            language = "fr",
-            serieId = clonedEnglishMfbSet.serieId,
-            name = MFB_FRENCH_SET_NAME,
-            logoUrl = clonedEnglishMfbSet.logoUrl,
-            symbolUrl = clonedEnglishMfbSet.symbolUrl,
-            cardCountTotal = clonedEnglishMfbSet.cardCountTotal,
-            cardCountOfficial = clonedEnglishMfbSet.cardCountOfficial,
-            releaseDate = clonedEnglishMfbSet.releaseDate,
-            abbreviationOfficial = clonedEnglishMfbSet.abbreviationOfficial,
-            parentSetId = clonedEnglishMfbSet.parentSetId,
-        )
-    }
-
-    // Backfill missing French cards with English data when available
-    val shouldBackfillFrenchFromEnglish = "fr" in datasetsByLanguage && "en" in datasetsByLanguage
-    if (shouldBackfillFrenchFromEnglish) {
-        val frenchIds = cardsByLanguage["fr"] ?: emptySet()
-        val englishOnlyIds = englishCardCache.keys - frenchIds
-        if (englishOnlyIds.isNotEmpty()) {
-            println("[Tcgdex][!] Adding ${englishOnlyIds.size} English fallbacks to French dataset")
-            englishOnlyIds.sorted().forEach { id ->
-                val card = englishCardCache[id] ?: return@forEach
-                if (id.startsWith("$MFB_SET_ID-")) {
-                    insertCard(
-                        language = "fr",
-                        card = localizeMfbCardJson(card),
-                        originLanguage = "fr",
-                    )
-                } else {
-                    insertCard(language = "fr", card = card, originLanguage = "en")
+            // Load cards
+            val cardsJson = json.parseToJsonElement(dataset.cardsFile.readText()).jsonArray
+            for (cardElement in cardsJson) {
+                val card = rewriteHiddenFatesVaultCardJson(cardElement.jsonObject)
+                insertCard(language, card, originLanguage = language)
+                if (language == "en") {
+                    val id = card.getString("id")
+                    if (id != null) {
+                        englishCardCache[id] = card
+                    }
+                } else if (language == "fr") {
+                    val id = card.getString("id")
+                    if (id != null) {
+                        frenchCardCache[id] = card
+                    }
                 }
             }
+            println("[Tcgdex]   Cards: ${cardsJson.size}")
         }
 
-        val englishIds = cardsByLanguage["en"] ?: emptySet()
-        val frenchOnlyIds = frenchCardCache.keys - englishIds
-        if (frenchOnlyIds.isNotEmpty()) {
-            println("[Tcgdex][!] Adding ${frenchOnlyIds.size} French fallbacks to English dataset")
-            frenchOnlyIds.sorted().forEach { id ->
-                val card = frenchCardCache[id] ?: return@forEach
-                insertCard(language = "en", card = card, originLanguage = "fr")
+        val clonedEnglishMfbSet = englishMfbSet
+        if (clonedEnglishMfbSet != null && !frenchHasMfb && "fr" in datasetsByLanguage) {
+            println("[Tcgdex] Inserting French set row for $MFB_SET_ID ($MFB_FRENCH_SET_NAME)")
+            db.tcgdexQueries.insertSet(
+                id = MFB_SET_ID,
+                language = "fr",
+                serieId = clonedEnglishMfbSet.serieId,
+                name = MFB_FRENCH_SET_NAME,
+                logoUrl = clonedEnglishMfbSet.logoUrl,
+                symbolUrl = clonedEnglishMfbSet.symbolUrl,
+                cardCountTotal = clonedEnglishMfbSet.cardCountTotal,
+                cardCountOfficial = clonedEnglishMfbSet.cardCountOfficial,
+                releaseDate = clonedEnglishMfbSet.releaseDate,
+                abbreviationOfficial = clonedEnglishMfbSet.abbreviationOfficial,
+                parentSetId = clonedEnglishMfbSet.parentSetId,
+            )
+        }
+
+        // Backfill missing French cards with English data when available
+        val shouldBackfillFrenchFromEnglish = "fr" in datasetsByLanguage && "en" in datasetsByLanguage
+        if (shouldBackfillFrenchFromEnglish) {
+            val frenchIds = cardsByLanguage["fr"] ?: emptySet()
+            val englishOnlyIds = englishCardCache.keys - frenchIds
+            if (englishOnlyIds.isNotEmpty()) {
+                println("[Tcgdex][!] Adding ${englishOnlyIds.size} English fallbacks to French dataset")
+                englishOnlyIds.sorted().forEach { id ->
+                    val card = englishCardCache[id] ?: return@forEach
+                    if (id.startsWith("$MFB_SET_ID-")) {
+                        insertCard(
+                            language = "fr",
+                            card = localizeMfbCardJson(card),
+                            originLanguage = "fr",
+                        )
+                    } else {
+                        insertCard(language = "fr", card = card, originLanguage = "en")
+                    }
+                }
+            }
+
+            val englishIds = cardsByLanguage["en"] ?: emptySet()
+            val frenchOnlyIds = frenchCardCache.keys - englishIds
+            if (frenchOnlyIds.isNotEmpty()) {
+                println("[Tcgdex][!] Adding ${frenchOnlyIds.size} French fallbacks to English dataset")
+                frenchOnlyIds.sorted().forEach { id ->
+                    val card = frenchCardCache[id] ?: return@forEach
+                    insertCard(language = "en", card = card, originLanguage = "fr")
+                }
+            }
+        } else {
+            println("[Tcgdex] Skipping French fallback because both en and fr were not requested")
+        }
+
+        // Insert Pokémon species canonical names for ALL available languages in pokemon-species.json
+        // This includes: en, fr, de, es, it, ja, ko, zh-cn, zh-tw, pt-br (and any others in the file)
+        // We insert for all languages, not just config.languages, so Pokédex works in any locale
+        println("[Tcgdex] Inserting Pokémon species names with evolution chains for all languages...")
+        val allSpeciesLanguages =
+            pokemonSpecies.values
+                .flatMap { it.names.keys }
+                .toSet()
+                .sorted()
+        println("[Tcgdex]   Available species languages: $allSpeciesLanguages")
+
+        for (language in allSpeciesLanguages) {
+            var speciesInserted = 0
+            for ((dexId, species) in pokemonSpecies) {
+                // Use localized name if available, otherwise fall back to English
+                val name = species.names[language] ?: species.names["en"] ?: continue
+                val evolvesToStr = species.evolvesTo.joinToString(",")
+                db.tcgdexQueries.insertPokemonSpecies(
+                    dexId = dexId.toLong(),
+                    language = language,
+                    name = name,
+                    evolvesFrom = species.evolvesFrom?.toLong(),
+                    evolvesTo = evolvesToStr.ifEmpty { null },
+                )
+                speciesInserted++
+            }
+            println("[Tcgdex]   $language: $speciesInserted species")
+        }
+
+        // Also insert for pt (Portuguese) mapped from pt-br if pt-br exists
+        // TCGdex uses "pt" but pokemon-species.json uses "pt-br"
+        if ("pt-br" in allSpeciesLanguages && "pt" !in allSpeciesLanguages) {
+            var speciesInserted = 0
+            for ((dexId, species) in pokemonSpecies) {
+                val name = species.names["pt-br"] ?: species.names["en"] ?: continue
+                val evolvesToStr = species.evolvesTo.joinToString(",")
+                db.tcgdexQueries.insertPokemonSpecies(
+                    dexId = dexId.toLong(),
+                    language = "pt",
+                    name = name,
+                    evolvesFrom = species.evolvesFrom?.toLong(),
+                    evolvesTo = evolvesToStr.ifEmpty { null },
+                )
+                speciesInserted++
+            }
+            println("[Tcgdex]   pt (from pt-br): $speciesInserted species")
+        }
+
+        // Insert illustrators and rarities (language-agnostic)
+        println("[Tcgdex] Inserting ${illustrators.size} illustrators...")
+        for ((id, name) in illustrators) {
+            db.tcgdexQueries.insertIllustrator(id, name)
+        }
+
+        println("[Tcgdex] Inserting ${rarities.size} rarities...")
+        for ((id, name) in rarities) {
+            db.tcgdexQueries.insertRarity(id, name)
+        }
+
+        if (recognitionVectors != null) {
+            val unresolvedRecognitionKeys = recognitionVectors.rowsByCardLanguage.keys - importedRecognitionKeys
+            if (unresolvedRecognitionKeys.isNotEmpty()) {
+                // The recognition manifest can lag behind dataset restructures (e.g. cel25
+                // Classic Collection split removed cel25-*A ids). Stale rows are skipped
+                // instead of failing the whole generation.
+                println(
+                    "[Tcgdex][!] Recognition vectors reference ${unresolvedRecognitionKeys.size} unknown cards/languages (skipped): " +
+                        unresolvedRecognitionKeys.sorted().take(10).joinToString(", ") +
+                        if (unresolvedRecognitionKeys.size > 10) " ... (+${unresolvedRecognitionKeys.size - 10} more)" else "",
+                )
+            }
+            println("[Tcgdex] Imported recognition vector rows for ${importedRecognitionKeys.size} cards")
+        }
+
+        // Rebuild FTS index from final cards snapshot.
+        // We do this explicitly at the end to avoid stale entries when cards are replaced.
+        driver.execute(null, "DELETE FROM cards_fts", 0).await()
+        driver
+            .execute(
+                null,
+                """
+                INSERT INTO cards_fts(card_id, language, name)
+                SELECT id, language, name
+                FROM cards
+                """.trimIndent(),
+                0,
+            ).await()
+        println("[Tcgdex] Rebuilt cards_fts index")
+
+        assertCameoRowsPersisted(config.languages) { language ->
+            countCameoRows(driver, language)
+        }
+
+        // Set the logical database version for runtime installation guards.
+        // This must stay in sync with TcgdexDatabaseInstaller.DATABASE_USER_VERSION.
+        driver.execute(null, "PRAGMA user_version = ${TcgdexDatabaseInstaller.DATABASE_USER_VERSION}", 0).await()
+        println("[Tcgdex] Set user_version = ${TcgdexDatabaseInstaller.DATABASE_USER_VERSION}")
+
+        // Ensure database is in a portable state for iOS compatibility:
+        // 1. Set journal_mode to DELETE (not WAL) for bundled databases
+        // 2. Run integrity check to verify database is valid
+        // 3. VACUUM to compact and ensure clean state
+        driver.execute(null, "PRAGMA journal_mode = DELETE", 0).await()
+        driver.execute(null, "VACUUM", 0).await()
+        println("[Tcgdex] Database vacuumed for iOS compatibility")
+
+        driver.close()
+        println("[Tcgdex] Database generation complete: ${outputFile.absolutePath}")
+        println("[Tcgdex] File size: ${outputFile.length() / 1024 / 1024} MB")
+
+        // Generate missing images CSV index
+        if (missingImages.isNotEmpty()) {
+            val outputDir = outputFile.parentFile ?: File(".")
+            MissingImagesIndexGenerator.generateCsv(missingImages, outputDir)
+
+            // Log summary by language
+            val byLanguage = missingImages.groupBy { it.language }
+            for ((lang, entries) in byLanguage.toSortedMap()) {
+                val withFallback = entries.count { it.pokecardexUrl != null }
+                println("[Tcgdex]   $lang: ${entries.size} missing ($withFallback with Pokecardex fallback)")
+            }
+        } else {
+            println("[Tcgdex] No missing images detected")
+        }
+
+        // Regenerate unresolved JSON file from tree file
+        if (defaultPokepediaFile != null) {
+            val treeFile = File(defaultPokepediaFile)
+            if (treeFile.exists()) {
+                regenerateUnresolvedFile(treeFile, json)
             }
         }
-    } else {
-        println("[Tcgdex] Skipping French fallback because both en and fr were not requested")
     }
-
-    // Insert Pokémon species canonical names for ALL available languages in pokemon-species.json
-    // This includes: en, fr, de, es, it, ja, ko, zh-cn, zh-tw, pt-br (and any others in the file)
-    // We insert for all languages, not just config.languages, so Pokédex works in any locale
-    println("[Tcgdex] Inserting Pokémon species names with evolution chains for all languages...")
-    val allSpeciesLanguages = pokemonSpecies.values
-        .flatMap { it.names.keys }
-        .toSet()
-        .sorted()
-    println("[Tcgdex]   Available species languages: $allSpeciesLanguages")
-    
-    for (language in allSpeciesLanguages) {
-        var speciesInserted = 0
-        for ((dexId, species) in pokemonSpecies) {
-            // Use localized name if available, otherwise fall back to English
-            val name = species.names[language] ?: species.names["en"] ?: continue
-            val evolvesToStr = species.evolvesTo.joinToString(",")
-            db.tcgdexQueries.insertPokemonSpecies(
-                dexId = dexId.toLong(),
-                language = language,
-                name = name,
-                evolvesFrom = species.evolvesFrom?.toLong(),
-                evolvesTo = evolvesToStr.ifEmpty { null },
-            )
-            speciesInserted++
-        }
-        println("[Tcgdex]   $language: $speciesInserted species")
-    }
-    
-    // Also insert for pt (Portuguese) mapped from pt-br if pt-br exists
-    // TCGdex uses "pt" but pokemon-species.json uses "pt-br"
-    if ("pt-br" in allSpeciesLanguages && "pt" !in allSpeciesLanguages) {
-        var speciesInserted = 0
-        for ((dexId, species) in pokemonSpecies) {
-            val name = species.names["pt-br"] ?: species.names["en"] ?: continue
-            val evolvesToStr = species.evolvesTo.joinToString(",")
-            db.tcgdexQueries.insertPokemonSpecies(
-                dexId = dexId.toLong(),
-                language = "pt",
-                name = name,
-                evolvesFrom = species.evolvesFrom?.toLong(),
-                evolvesTo = evolvesToStr.ifEmpty { null },
-            )
-            speciesInserted++
-        }
-        println("[Tcgdex]   pt (from pt-br): $speciesInserted species")
-    }
-
-    // Insert illustrators and rarities (language-agnostic)
-    println("[Tcgdex] Inserting ${illustrators.size} illustrators...")
-    for ((id, name) in illustrators) {
-        db.tcgdexQueries.insertIllustrator(id, name)
-    }
-
-    println("[Tcgdex] Inserting ${rarities.size} rarities...")
-    for ((id, name) in rarities) {
-        db.tcgdexQueries.insertRarity(id, name)
-    }
-
-    if (recognitionVectors != null) {
-        val unresolvedRecognitionKeys = recognitionVectors.rowsByCardLanguage.keys - importedRecognitionKeys
-        if (unresolvedRecognitionKeys.isNotEmpty()) {
-            // The recognition manifest can lag behind dataset restructures (e.g. cel25
-            // Classic Collection split removed cel25-*A ids). Stale rows are skipped
-            // instead of failing the whole generation.
-            println(
-                "[Tcgdex][!] Recognition vectors reference ${unresolvedRecognitionKeys.size} unknown cards/languages (skipped): " +
-                    unresolvedRecognitionKeys.sorted().take(10).joinToString(", ") +
-                    if (unresolvedRecognitionKeys.size > 10) " ... (+${unresolvedRecognitionKeys.size - 10} more)" else "",
-            )
-        }
-        println("[Tcgdex] Imported recognition vector rows for ${importedRecognitionKeys.size} cards")
-    }
-
-    // Rebuild FTS index from final cards snapshot.
-    // We do this explicitly at the end to avoid stale entries when cards are replaced.
-    driver.execute(null, "DELETE FROM cards_fts", 0).await()
-    driver.execute(
-        null,
-        """
-        INSERT INTO cards_fts(card_id, language, name)
-        SELECT id, language, name
-        FROM cards
-        """.trimIndent(),
-        0,
-    ).await()
-    println("[Tcgdex] Rebuilt cards_fts index")
-
-    assertCameoRowsPersisted(config.languages) { language ->
-        countCameoRows(driver, language)
-    }
-
-    // Set the logical database version for runtime installation guards.
-    // This must stay in sync with TcgdexDatabaseInstaller.DATABASE_USER_VERSION.
-    driver.execute(null, "PRAGMA user_version = ${TcgdexDatabaseInstaller.DATABASE_USER_VERSION}", 0).await()
-    println("[Tcgdex] Set user_version = ${TcgdexDatabaseInstaller.DATABASE_USER_VERSION}")
-
-    // Ensure database is in a portable state for iOS compatibility:
-    // 1. Set journal_mode to DELETE (not WAL) for bundled databases
-    // 2. Run integrity check to verify database is valid
-    // 3. VACUUM to compact and ensure clean state
-    driver.execute(null, "PRAGMA journal_mode = DELETE", 0).await()
-    driver.execute(null, "VACUUM", 0).await()
-    println("[Tcgdex] Database vacuumed for iOS compatibility")
-
-    driver.close()
-    println("[Tcgdex] Database generation complete: ${outputFile.absolutePath}")
-    println("[Tcgdex] File size: ${outputFile.length() / 1024 / 1024} MB")
-    
-    // Generate missing images CSV index
-    if (missingImages.isNotEmpty()) {
-        val outputDir = outputFile.parentFile ?: File(".")
-        MissingImagesIndexGenerator.generateCsv(missingImages, outputDir)
-        
-        // Log summary by language
-        val byLanguage = missingImages.groupBy { it.language }
-        for ((lang, entries) in byLanguage.toSortedMap()) {
-            val withFallback = entries.count { it.pokecardexUrl != null }
-            println("[Tcgdex]   $lang: ${entries.size} missing (${withFallback} with Pokecardex fallback)")
-        }
-    } else {
-        println("[Tcgdex] No missing images detected")
-    }
-    
-    // Regenerate unresolved JSON file from tree file
-    if (defaultPokepediaFile != null) {
-        val treeFile = File(defaultPokepediaFile)
-        if (treeFile.exists()) {
-            regenerateUnresolvedFile(treeFile, json)
-        }
-    }
-}
 
 private data class Config(
     val datasetDir: String,
@@ -920,7 +1004,10 @@ private data class LanguageDatasetFiles(
     val cardsFile: File,
 )
 
-private fun resolveLanguageDataset(datasetDir: String, language: String): LanguageDatasetFiles {
+private fun resolveLanguageDataset(
+    datasetDir: String,
+    language: String,
+): LanguageDatasetFiles {
     val langDir = File(datasetDir, language)
     require(langDir.exists() && langDir.isDirectory) {
         "[Tcgdex][x] Missing generated language directory for '$language': ${langDir.absolutePath}\n" +
@@ -930,8 +1017,9 @@ private fun resolveLanguageDataset(datasetDir: String, language: String): Langua
     val seriesFile = File(langDir, "series.json")
     val setsFile = File(langDir, "sets.json")
     val cardsFile = File(langDir, "cards.json")
-    val missingOrEmptyFiles = listOf(seriesFile, setsFile, cardsFile)
-        .filterNot { it.exists() && it.isFile && it.length() > 0L }
+    val missingOrEmptyFiles =
+        listOf(seriesFile, setsFile, cardsFile)
+            .filterNot { it.exists() && it.isFile && it.length() > 0L }
 
     require(missingOrEmptyFiles.isEmpty()) {
         buildString {
@@ -1010,7 +1098,10 @@ private fun resolveProjectRoot(datasetDir: String): File {
     error("Unable to resolve project root from dataset path: $datasetDir")
 }
 
-private fun resolveSetAliasesConfigFile(projectRoot: File, explicitPath: String?): File {
+private fun resolveSetAliasesConfigFile(
+    projectRoot: File,
+    explicitPath: String?,
+): File {
     val file =
         if (explicitPath.isNullOrBlank()) {
             File(projectRoot, "tools/set-aliases-config.json")
@@ -1034,10 +1125,11 @@ private fun loadCardmarketExpansionAbbreviations(
             "libs/cards-database/var/models/cardmarket/expansions.json",
             "https://apiv2.cardmarket.com/ws/v2.0/games/6/expansions",
         )
-    val sources = buildList {
-        explicitSource?.takeIf { it.isNotBlank() }?.let { add(it.trim()) }
-        addAll(defaultSources)
-    }.distinct()
+    val sources =
+        buildList {
+            explicitSource?.takeIf { it.isNotBlank() }?.let { add(it.trim()) }
+            addAll(defaultSources)
+        }.distinct()
 
     for (source in sources) {
         val raw = readTextSource(projectRoot, source) ?: continue
@@ -1051,7 +1143,10 @@ private fun loadCardmarketExpansionAbbreviations(
     return emptyMap()
 }
 
-private fun readTextSource(projectRoot: File, source: String): String? {
+private fun readTextSource(
+    projectRoot: File,
+    source: String,
+): String? {
     return runCatching {
         val trimmed = source.trim()
         if (trimmed.startsWith("http://") || trimmed.startsWith("https://")) {
@@ -1186,11 +1281,22 @@ private fun collectGeneratedSetAliasSeeds(
                 ?.value
                 ?: ""
         val seriesRule = aliasConfig.seriesPrefixAliases[seriesKey]
-        val enSeriesAliases = buildSeriesAliasesForSetId(setId = setId, prefixes = seriesRule?.en.orEmpty(), seriesRule?.allowTrailingFiveDecimal == true)
-        val frSeriesAliases = buildSeriesAliasesForSetId(setId = setId, prefixes = seriesRule?.fr.orEmpty(), seriesRule?.allowTrailingFiveDecimal == true)
+        val enSeriesAliases =
+            buildSeriesAliasesForSetId(
+                setId = setId,
+                prefixes = seriesRule?.en.orEmpty(),
+                seriesRule?.allowTrailingFiveDecimal == true,
+            )
+        val frSeriesAliases =
+            buildSeriesAliasesForSetId(
+                setId = setId,
+                prefixes = seriesRule?.fr.orEmpty(),
+                seriesRule?.allowTrailingFiveDecimal == true,
+            )
 
-        val override = overridesBySetId[normalizeAliasForLookup(setId)]
-            ?: overridesBySetId[normalizeAliasForLookup(originalSetId)]
+        val override =
+            overridesBySetId[normalizeAliasForLookup(setId)]
+                ?: overridesBySetId[normalizeAliasForLookup(originalSetId)]
         val cardmarketAliases =
             buildList {
                 parsed.cardmarketExpansionId?.let { add(it.toString()) }
@@ -1206,7 +1312,12 @@ private fun collectGeneratedSetAliasSeeds(
                 emptyList()
             }
         val enExtraAliases = (override?.extraAliases?.get("en").orEmpty() + cardmarketAliases + vaultAliases).distinct()
-        val frExtraAliases = override?.extraAliases?.get("fr").orEmpty().distinct()
+        val frExtraAliases =
+            override
+                ?.extraAliases
+                ?.get("fr")
+                .orEmpty()
+                .distinct()
 
         val candidate =
             GeneratedSetAliasSeed(
@@ -1235,9 +1346,7 @@ private fun collectGeneratedSetAliasSeeds(
         .sortedBy { it.setId }
 }
 
-private fun inheritParentCardmarketAliases(
-    seedsBySetId: MutableMap<String, GeneratedSetAliasSeed>,
-) {
+private fun inheritParentCardmarketAliases(seedsBySetId: MutableMap<String, GeneratedSetAliasSeed>) {
     val officialToSetIds = linkedMapOf<String, MutableList<String>>()
     for (seed in seedsBySetId.values) {
         val official = seed.officialAbbreviation?.takeIf { it.isNotBlank() } ?: continue
@@ -1257,9 +1366,10 @@ private fun inheritParentCardmarketAliases(
             )
         }
         val parent = seedsBySetId.getValue(candidates.single())
-        seedsBySetId[seed.setId] = seed.copy(
-            enExtraAliases = (seed.enExtraAliases + parent.enExtraAliases).distinct(),
-        )
+        seedsBySetId[seed.setId] =
+            seed.copy(
+                enExtraAliases = (seed.enExtraAliases + parent.enExtraAliases).distinct(),
+            )
     }
 }
 
@@ -1267,8 +1377,10 @@ private fun mergeGeneratedSetAliasSeed(
     existing: GeneratedSetAliasSeed,
     candidate: GeneratedSetAliasSeed,
 ): GeneratedSetAliasSeed {
-    fun pick(existingValue: String?, candidateValue: String?): String? =
-        if (!existingValue.isNullOrBlank()) existingValue else candidateValue
+    fun pick(
+        existingValue: String?,
+        candidateValue: String?,
+    ): String? = if (!existingValue.isNullOrBlank()) existingValue else candidateValue
 
     return GeneratedSetAliasSeed(
         setId = existing.setId,
@@ -1509,12 +1621,11 @@ private fun extractIntProperty(
     return match.groupValues[1].toIntOrNull()
 }
 
-private fun decodeTsStringLiteral(raw: String): String {
-    return raw
+private fun decodeTsStringLiteral(raw: String): String =
+    raw
         .replace("\\\"", "\"")
         .replace("\\'", "'")
         .replace("\\\\", "\\")
-}
 
 private fun normalizeAliasForLookup(value: String?): String {
     if (value.isNullOrBlank()) return ""
@@ -1723,7 +1834,7 @@ private fun buildSetAliasIndexSource(
         |    }
         |}
         |
-    """.trimMargin()
+        """.trimMargin()
 }
 
 private fun toKotlinStringLiteral(value: String): String = "\"${escapeKotlinString(value)}\""
@@ -1806,19 +1917,25 @@ private fun JsonObject.getNestedInt(vararg keys: String): Int? {
  *   2. Legacy root `thirdParty.<marketplace>`
  *   3. First non-normal variant in `variants_detailed` that defines the ID
  */
-internal fun resolveMarketplaceId(card: JsonObject, marketplace: String): Int? {
+internal fun resolveMarketplaceId(
+    card: JsonObject,
+    marketplace: String,
+): Int? {
     fun variantMarketplaceId(variant: JsonObject): Int? =
         (variant["thirdParty"] as? JsonObject)
             ?.get(marketplace)
             ?.takeIf { it !is JsonNull }
-            ?.jsonPrimitive?.intOrNull
+            ?.jsonPrimitive
+            ?.intOrNull
 
-    val detailedVariants = (card["variants_detailed"] as? JsonArray)
-        ?.mapNotNull { it as? JsonObject }
+    val detailedVariants =
+        (card["variants_detailed"] as? JsonArray)
+            ?.mapNotNull { it as? JsonObject }
 
-    val normalVariantId = detailedVariants
-        ?.firstOrNull { it["type"]?.jsonPrimitive?.contentOrNull?.equals("normal", ignoreCase = true) == true }
-        ?.let { variantMarketplaceId(it) }
+    val normalVariantId =
+        detailedVariants
+            ?.firstOrNull { it["type"]?.jsonPrimitive?.contentOrNull?.equals("normal", ignoreCase = true) == true }
+            ?.let { variantMarketplaceId(it) }
     if (normalVariantId != null) return normalVariantId
 
     val rootId = card.getNestedInt("thirdParty", marketplace)
@@ -1841,100 +1958,102 @@ private fun JsonObject.getIntArray(key: String): List<Int>? {
     return element.mapNotNull { it.jsonPrimitive.intOrNull }
 }
 
-private val CARD_SUFFIXES = listOf(
-    " EX",
-    " ex",
-    "-EX",
-    "-ex",
-    " GX",
-    "-GX",
-    " V",
-    "-V",
-    " VMAX",
-    " VSTAR",
-    " V-UNION",
-    " BREAK",
-    " LV.X",
-    " Prime",
-    " PRIME",
-    " SP",
-    " FB",
-    " GL",
-    " C",
-    " G",
-    " E4",
-    " δ",
-    " Star",
-    " ☆",
-    "★",
-    " LEGEND",
-    "-LEGEND",
-)
+private val CARD_SUFFIXES =
+    listOf(
+        " EX",
+        " ex",
+        "-EX",
+        "-ex",
+        " GX",
+        "-GX",
+        " V",
+        "-V",
+        " VMAX",
+        " VSTAR",
+        " V-UNION",
+        " BREAK",
+        " LV.X",
+        " Prime",
+        " PRIME",
+        " SP",
+        " FB",
+        " GL",
+        " C",
+        " G",
+        " E4",
+        " δ",
+        " Star",
+        " ☆",
+        "★",
+        " LEGEND",
+        "-LEGEND",
+    )
 
-private val REGIONAL_PATTERNS = listOf(
-    Regex("^Alolan ", RegexOption.IGNORE_CASE),
-    Regex("^Alola ", RegexOption.IGNORE_CASE),
-    Regex("^Galarian ", RegexOption.IGNORE_CASE),
-    Regex("^Galar ", RegexOption.IGNORE_CASE),
-    Regex("^Hisuian ", RegexOption.IGNORE_CASE),
-    Regex("^Hisui ", RegexOption.IGNORE_CASE),
-    Regex("^Paldean ", RegexOption.IGNORE_CASE),
-    Regex("^Paldea ", RegexOption.IGNORE_CASE),
-    Regex("d'Alola$", RegexOption.IGNORE_CASE),
-    Regex("de Galar$", RegexOption.IGNORE_CASE),
-    Regex("de Hisui$", RegexOption.IGNORE_CASE),
-    Regex("de Paldea$", RegexOption.IGNORE_CASE),
-    Regex("^Alola-", RegexOption.IGNORE_CASE),
-    Regex("^Galar-", RegexOption.IGNORE_CASE),
-    Regex("^Hisui-", RegexOption.IGNORE_CASE),
-    Regex("^Paldea-", RegexOption.IGNORE_CASE),
-)
+private val REGIONAL_PATTERNS =
+    listOf(
+        Regex("^Alolan ", RegexOption.IGNORE_CASE),
+        Regex("^Alola ", RegexOption.IGNORE_CASE),
+        Regex("^Galarian ", RegexOption.IGNORE_CASE),
+        Regex("^Galar ", RegexOption.IGNORE_CASE),
+        Regex("^Hisuian ", RegexOption.IGNORE_CASE),
+        Regex("^Hisui ", RegexOption.IGNORE_CASE),
+        Regex("^Paldean ", RegexOption.IGNORE_CASE),
+        Regex("^Paldea ", RegexOption.IGNORE_CASE),
+        Regex("d'Alola$", RegexOption.IGNORE_CASE),
+        Regex("de Galar$", RegexOption.IGNORE_CASE),
+        Regex("de Hisui$", RegexOption.IGNORE_CASE),
+        Regex("de Paldea$", RegexOption.IGNORE_CASE),
+        Regex("^Alola-", RegexOption.IGNORE_CASE),
+        Regex("^Galar-", RegexOption.IGNORE_CASE),
+        Regex("^Hisui-", RegexOption.IGNORE_CASE),
+        Regex("^Paldea-", RegexOption.IGNORE_CASE),
+    )
 
-private val MEGA_PATTERNS = listOf(
-    Regex("^Mega ", RegexOption.IGNORE_CASE),
-    Regex("^M ", RegexOption.IGNORE_CASE),
-    Regex("^Méga-", RegexOption.IGNORE_CASE),
-    Regex("^Méga ", RegexOption.IGNORE_CASE),
-    Regex("^M-", RegexOption.IGNORE_CASE),
-)
+private val MEGA_PATTERNS =
+    listOf(
+        Regex("^Mega ", RegexOption.IGNORE_CASE),
+        Regex("^M ", RegexOption.IGNORE_CASE),
+        Regex("^Méga-", RegexOption.IGNORE_CASE),
+        Regex("^Méga ", RegexOption.IGNORE_CASE),
+        Regex("^M-", RegexOption.IGNORE_CASE),
+    )
 
-private val SPECIAL_FORM_PATTERNS = listOf(
-    Regex("^Primal ", RegexOption.IGNORE_CASE),
-    Regex("^Primo-", RegexOption.IGNORE_CASE),
-    Regex("^Origin Forme ", RegexOption.IGNORE_CASE),
-    Regex("^Altered Forme ", RegexOption.IGNORE_CASE),
-    Regex("^Sky Forme ", RegexOption.IGNORE_CASE),
-    Regex("^Land Forme ", RegexOption.IGNORE_CASE),
-    Regex("^Therian Forme ", RegexOption.IGNORE_CASE),
-    Regex("^Incarnate Forme ", RegexOption.IGNORE_CASE),
-    Regex("^Black Kyurem", RegexOption.IGNORE_CASE),
-    Regex("^White Kyurem", RegexOption.IGNORE_CASE),
-    Regex("^Dusk Mane ", RegexOption.IGNORE_CASE),
-    Regex("^Dawn Wings ", RegexOption.IGNORE_CASE),
-    Regex("^Ultra ", RegexOption.IGNORE_CASE),
-    Regex("^Crowned ", RegexOption.IGNORE_CASE),
-    Regex("^Ice Rider ", RegexOption.IGNORE_CASE),
-    Regex("^Shadow Rider ", RegexOption.IGNORE_CASE),
-    Regex("^Single Strike ", RegexOption.IGNORE_CASE),
-    Regex("^Rapid Strike ", RegexOption.IGNORE_CASE),
-    Regex("^Bloodmoon ", RegexOption.IGNORE_CASE),
-    Regex("^Rocket's ", RegexOption.IGNORE_CASE),
-    Regex("^Dark ", RegexOption.IGNORE_CASE),
-    Regex("^Light ", RegexOption.IGNORE_CASE),
-    Regex("^Shining ", RegexOption.IGNORE_CASE),
-    Regex("^_____'s ", RegexOption.IGNORE_CASE),
-    Regex("^Radiant ", RegexOption.IGNORE_CASE),
-    Regex(" with .+$", RegexOption.IGNORE_CASE),
-    Regex("^Surfing ", RegexOption.IGNORE_CASE),
-    Regex("^Flying ", RegexOption.IGNORE_CASE),
-    Regex("^Detective ", RegexOption.IGNORE_CASE),
-)
+private val SPECIAL_FORM_PATTERNS =
+    listOf(
+        Regex("^Primal ", RegexOption.IGNORE_CASE),
+        Regex("^Primo-", RegexOption.IGNORE_CASE),
+        Regex("^Origin Forme ", RegexOption.IGNORE_CASE),
+        Regex("^Altered Forme ", RegexOption.IGNORE_CASE),
+        Regex("^Sky Forme ", RegexOption.IGNORE_CASE),
+        Regex("^Land Forme ", RegexOption.IGNORE_CASE),
+        Regex("^Therian Forme ", RegexOption.IGNORE_CASE),
+        Regex("^Incarnate Forme ", RegexOption.IGNORE_CASE),
+        Regex("^Black Kyurem", RegexOption.IGNORE_CASE),
+        Regex("^White Kyurem", RegexOption.IGNORE_CASE),
+        Regex("^Dusk Mane ", RegexOption.IGNORE_CASE),
+        Regex("^Dawn Wings ", RegexOption.IGNORE_CASE),
+        Regex("^Ultra ", RegexOption.IGNORE_CASE),
+        Regex("^Crowned ", RegexOption.IGNORE_CASE),
+        Regex("^Ice Rider ", RegexOption.IGNORE_CASE),
+        Regex("^Shadow Rider ", RegexOption.IGNORE_CASE),
+        Regex("^Single Strike ", RegexOption.IGNORE_CASE),
+        Regex("^Rapid Strike ", RegexOption.IGNORE_CASE),
+        Regex("^Bloodmoon ", RegexOption.IGNORE_CASE),
+        Regex("^Rocket's ", RegexOption.IGNORE_CASE),
+        Regex("^Dark ", RegexOption.IGNORE_CASE),
+        Regex("^Light ", RegexOption.IGNORE_CASE),
+        Regex("^Shining ", RegexOption.IGNORE_CASE),
+        Regex("^_____'s ", RegexOption.IGNORE_CASE),
+        Regex("^Radiant ", RegexOption.IGNORE_CASE),
+        Regex(" with .+$", RegexOption.IGNORE_CASE),
+        Regex("^Surfing ", RegexOption.IGNORE_CASE),
+        Regex("^Flying ", RegexOption.IGNORE_CASE),
+        Regex("^Detective ", RegexOption.IGNORE_CASE),
+    )
 
 private val TAG_TEAM_SEPARATORS = listOf(" & ", " et ", " und ", " e ", " y ")
 
-private fun isMultiPokemonName(name: String): Boolean {
-    return TAG_TEAM_SEPARATORS.any { name.contains(it) }
-}
+private fun isMultiPokemonName(name: String): Boolean = TAG_TEAM_SEPARATORS.any { name.contains(it) }
 
 private fun splitMultiPokemonName(name: String): List<String> {
     for (separator in TAG_TEAM_SEPARATORS) {
@@ -2006,8 +2125,9 @@ private fun collectClosedSetRarityCardIds(englishCards: JsonArray): ClosedSetRar
         if (raritySlug == "ultra-rare" && BREAK_NAME_SUFFIX.containsMatchIn(name)) {
             breakCardIds.add(id)
         }
-        val isNeoShiningSet = setId.equals("neo3", ignoreCase = true) ||
-            setId.equals("neo4", ignoreCase = true)
+        val isNeoShiningSet =
+            setId.equals("neo3", ignoreCase = true) ||
+                setId.equals("neo4", ignoreCase = true)
         if (isNeoShiningSet && raritySlug == "rare" && name.startsWith("Shining ")) {
             shiningCardIds.add(id)
         }
@@ -2018,16 +2138,15 @@ private fun collectClosedSetRarityCardIds(englishCards: JsonArray): ClosedSetRar
 private fun slugify(text: String): String {
     // Normalize diacritics to ASCII letters (e.g., "é" -> "e") before slugging.
     // This prevents broken slugs like "m-ga" for "méga".
-    return Normalizer.normalize(text, Normalizer.Form.NFD)
+    return Normalizer
+        .normalize(text, Normalizer.Form.NFD)
         .replace(Regex("\\p{InCombiningDiacriticalMarks}+"), "")
         .lowercase()
         .replace(Regex("[^a-z0-9]+"), "-")
         .trim('-')
 }
 
-private fun buildPokemonNameIndex(
-    pokemonSpecies: Map<Int, PokemonSpeciesData>,
-): Map<String, Map<String, Int>> {
+private fun buildPokemonNameIndex(pokemonSpecies: Map<Int, PokemonSpeciesData>): Map<String, Map<String, Int>> {
     val index = mutableMapOf<String, MutableMap<String, Int>>()
     for ((dexId, species) in pokemonSpecies) {
         for ((language, name) in species.names) {
@@ -2054,7 +2173,10 @@ private fun inferDexIdsFromName(
     }
 }
 
-private fun normalizeDexId(dexId: Int, validDexIds: Set<Int>): Int? {
+private fun normalizeDexId(
+    dexId: Int,
+    validDexIds: Set<Int>,
+): Int? {
     if (validDexIds.isEmpty()) {
         return dexId
     }
@@ -2105,10 +2227,11 @@ private fun extractNumericPart(localId: String): Int {
  */
 private fun resolvePokemonSpeciesFile(datasetDir: String): File? {
     val repositoryRoot = File(datasetDir).parentFile?.parentFile
-    val candidates = listOfNotNull(
-        repositoryRoot?.resolve("workdir")?.resolve("pokemon-species.json"),
-        repositoryRoot?.resolve("scripts")?.resolve("pokedexIdFixer")?.resolve("pokemon-species.json"),
-    )
+    val candidates =
+        listOfNotNull(
+            repositoryRoot?.resolve("workdir")?.resolve("pokemon-species.json"),
+            repositoryRoot?.resolve("scripts")?.resolve("pokedexIdFixer")?.resolve("pokemon-species.json"),
+        )
 
     for (candidate in candidates) {
         if (candidate.exists()) {
@@ -2120,21 +2243,24 @@ private fun resolvePokemonSpeciesFile(datasetDir: String): File? {
 
 internal fun resolveSetLogosFile(datasetDir: String): File? {
     val projectRoot = runCatching { resolveProjectRoot(datasetDir) }.getOrNull() ?: return null
-    val canonical = projectRoot
-        .resolve("libs/tcgdex-kmp-sdk/generator-inputs/pokepedia/set-logos.json")
+    val canonical =
+        projectRoot
+            .resolve("libs/tcgdex-kmp-sdk/generator-inputs/pokepedia/set-logos.json")
     return canonical.takeIf { it.exists() }
 }
 
 internal fun resolvePokepediaMissingTree(datasetDir: String): File? {
     val projectRoot = runCatching { resolveProjectRoot(datasetDir) }.getOrNull() ?: return null
-    val canonical = projectRoot
-        .resolve("libs/tcgdex-kmp-sdk/generator-inputs/pokepedia/missing-fr-card-images-tree.json")
+    val canonical =
+        projectRoot
+            .resolve("libs/tcgdex-kmp-sdk/generator-inputs/pokepedia/missing-fr-card-images-tree.json")
     if (canonical.exists()) {
         return canonical
     }
 
-    val legacy = projectRoot
-        .resolve("libs/tcgdex-kmp-sdk/resources/pokepedia/missing-fr-card-images-tree.json")
+    val legacy =
+        projectRoot
+            .resolve("libs/tcgdex-kmp-sdk/resources/pokepedia/missing-fr-card-images-tree.json")
     if (legacy.exists()) {
         println("[Tcgdex][!] DEPRECATED: Using legacy Pokepedia tree path: ${legacy.absolutePath}")
         println("[Tcgdex][i] Move it to: ${canonical.absolutePath}")
@@ -2180,7 +2306,10 @@ private fun loadRarityReverseTranslations(
     return result
 }
 
-private fun loadPokemonSpecies(datasetDir: String, json: Json): Map<Int, PokemonSpeciesData> {
+private fun loadPokemonSpecies(
+    datasetDir: String,
+    json: Json,
+): Map<Int, PokemonSpeciesData> {
     // pokemon-species.json is expected in libs/cards-database/workdir/, but we also
     // support the monorepo layout where the tools live under scripts/pokedexIdFixer.
     val speciesFile = resolvePokemonSpeciesFile(datasetDir)
@@ -2218,20 +2347,23 @@ private fun loadPokemonSpecies(datasetDir: String, json: Json): Map<Int, Pokemon
             }
 
             // Load evolution data
-            val evolvesFrom = obj["evolvesFrom"]?.let {
-                if (it is JsonNull) null else it.jsonPrimitive.intOrNull
-            }
-            val evolvesTo = obj["evolvesTo"]?.jsonArray?.mapNotNull {
-                it.jsonPrimitive.intOrNull
-            } ?: emptyList()
+            val evolvesFrom =
+                obj["evolvesFrom"]?.let {
+                    if (it is JsonNull) null else it.jsonPrimitive.intOrNull
+                }
+            val evolvesTo =
+                obj["evolvesTo"]?.jsonArray?.mapNotNull {
+                    it.jsonPrimitive.intOrNull
+                } ?: emptyList()
 
             if (names.isNotEmpty()) {
-                result[dexId] = PokemonSpeciesData(
-                    dexId = dexId,
-                    names = names,
-                    evolvesFrom = evolvesFrom,
-                    evolvesTo = evolvesTo,
-                )
+                result[dexId] =
+                    PokemonSpeciesData(
+                        dexId = dexId,
+                        names = names,
+                        evolvesFrom = evolvesFrom,
+                        evolvesTo = evolvesTo,
+                    )
             }
         }
     } catch (e: Exception) {
@@ -2302,13 +2434,14 @@ private fun loadCardmarketPrices(json: Json): Map<Int, CardmarketPrice> {
             // Skip entries with no pricing data
             if (trendPrice == null && avgPrice == null && lowPrice == null) continue
 
-            result[idProduct] = CardmarketPrice(
-                trendPrice = trendPrice,
-                averageSellPrice = avgPrice,
-                lowPrice = lowPrice,
-                updatedIso = createdAt,
-                unit = "EUR",
-            )
+            result[idProduct] =
+                CardmarketPrice(
+                    trendPrice = trendPrice,
+                    averageSellPrice = avgPrice,
+                    lowPrice = lowPrice,
+                    updatedIso = createdAt,
+                    unit = "EUR",
+                )
         }
 
         println("[Tcgdex] Price guide updated: $createdAt")
@@ -2371,11 +2504,12 @@ private fun loadRecognitionVectors(
 ): RecognitionVectorsData? {
     val source =
         if (!vectorsFilePath.isNullOrBlank()) {
-            File(vectorsFilePath).also { explicit ->
-                if (!explicit.exists()) {
-                    println("[Tcgdex][!] Recognition vectors path not found: ${explicit.absolutePath}")
-                }
-            }.takeIf { it.exists() }
+            File(vectorsFilePath)
+                .also { explicit ->
+                    if (!explicit.exists()) {
+                        println("[Tcgdex][!] Recognition vectors path not found: ${explicit.absolutePath}")
+                    }
+                }.takeIf { it.exists() }
         } else {
             resolveDefaultRecognitionVectorsPath(projectRoot)
         }
@@ -2485,20 +2619,24 @@ private data class MissingFrSet(
  * Combined wiki pages are matched by localId first, so Suicune-kit cards can bind
  * Pikachu Catcheur files (and the other XY dual kits can swap the same way).
  */
-internal val TRAINER_KIT_SIBLING_FALLBACK_TOKENS: Map<String, List<String>> = mapOf(
-    "tk-ex-m" to listOf("Posipi"),
-    "tk-ex-p" to listOf("Négapi", "N%C3%A9gapi"),
-    "tk-xy-n" to listOf("Nymphali"),
-    "tk-xy-sy" to listOf("Bruyverne"),
-    "tk-xy-b" to listOf("Grodoudou"),
-    "tk-xy-w" to listOf("Scalproie"),
-    "tk-xy-latia" to listOf("Latios"),
-    "tk-xy-latio" to listOf("Latias"),
-    "tk-xy-p" to listOf("Suicune"),
-    "tk-xy-su" to listOf("Pikachu_Catcheur"),
-)
+internal val TRAINER_KIT_SIBLING_FALLBACK_TOKENS: Map<String, List<String>> =
+    mapOf(
+        "tk-ex-m" to listOf("Posipi"),
+        "tk-ex-p" to listOf("Négapi", "N%C3%A9gapi"),
+        "tk-xy-n" to listOf("Nymphali"),
+        "tk-xy-sy" to listOf("Bruyverne"),
+        "tk-xy-b" to listOf("Grodoudou"),
+        "tk-xy-w" to listOf("Scalproie"),
+        "tk-xy-latia" to listOf("Latios"),
+        "tk-xy-latio" to listOf("Latias"),
+        "tk-xy-p" to listOf("Suicune"),
+        "tk-xy-su" to listOf("Pikachu_Catcheur"),
+    )
 
-internal fun isMismatchedTrainerKitFallback(setId: String?, url: String): Boolean {
+internal fun isMismatchedTrainerKitFallback(
+    setId: String?,
+    url: String,
+): Boolean {
     if (setId.isNullOrBlank()) return false
     val tokens = TRAINER_KIT_SIBLING_FALLBACK_TOKENS[setId] ?: return false
     return tokens.any { token -> url.contains(token, ignoreCase = true) }
@@ -2550,27 +2688,31 @@ internal fun loadPokepediaFallbacks(
                 val cardmarketUrl = entry["cardmarketImageUrl"]?.jsonPrimitive?.contentOrNull?.takeIf { it.isNotBlank() }
                 val pokecardexUrl = entry["pokecardexImageUrl"]?.jsonPrimitive?.contentOrNull?.takeIf { it.isNotBlank() }
 
-                val pokepediaUrl = when {
-                    status.equals("resolved", ignoreCase = true) -> hdUrl ?: thumbUrl
-                    reason.equals("POKEPEDIA_HD_UNAVAILABLE", ignoreCase = true) -> thumbUrl
-                    else -> null
-                }
-                val matchedPokepediaUrl = pokepediaUrl?.takeUnless { url ->
-                    isMismatchedTrainerKitFallback(set.setId, url)
-                }
+                val pokepediaUrl =
+                    when {
+                        status.equals("resolved", ignoreCase = true) -> hdUrl ?: thumbUrl
+                        reason.equals("POKEPEDIA_HD_UNAVAILABLE", ignoreCase = true) -> thumbUrl
+                        else -> null
+                    }
+                val matchedPokepediaUrl =
+                    pokepediaUrl?.takeUnless { url ->
+                        isMismatchedTrainerKitFallback(set.setId, url)
+                    }
                 if (pokepediaUrl != null && matchedPokepediaUrl == null) {
                     mismatched++
                 }
 
-                val fallback = when {
-                    matchedPokepediaUrl != null -> FallbackImage(
-                        url = matchedPokepediaUrl,
-                        source = POKEPEDIA_SOURCE,
-                    )
-                    cardmarketUrl != null -> FallbackImage(url = cardmarketUrl, source = CARDMARKET_SOURCE)
-                    pokecardexUrl != null -> FallbackImage(url = pokecardexUrl, source = POKECARDEX_SOURCE)
-                    else -> null
-                }
+                val fallback =
+                    when {
+                        matchedPokepediaUrl != null ->
+                            FallbackImage(
+                                url = matchedPokepediaUrl,
+                                source = POKEPEDIA_SOURCE,
+                            )
+                        cardmarketUrl != null -> FallbackImage(url = cardmarketUrl, source = CARDMARKET_SOURCE)
+                        pokecardexUrl != null -> FallbackImage(url = pokecardexUrl, source = POKECARDEX_SOURCE)
+                        else -> null
+                    }
 
                 if (fallback != null) {
                     resolved[cardId] = fallback
@@ -2607,35 +2749,45 @@ internal fun loadAssetsManifest(
     manifestFileOverride: String?,
     json: Json,
 ): JsonObject {
-    val text = if (!manifestFileOverride.isNullOrBlank()) {
-        val file = File(manifestFileOverride)
-        require(file.isFile && file.length() > 0L) {
-            "[Tcgdex][x] Assets manifest override not found or empty: ${file.absolutePath}"
-        }
-        file.readText()
-    } else {
-        try {
-            val client = java.net.http.HttpClient.newBuilder()
-                .connectTimeout(java.time.Duration.ofSeconds(30))
-                .followRedirects(java.net.http.HttpClient.Redirect.NORMAL)
-                .build()
-            val request = java.net.http.HttpRequest.newBuilder(URI.create(ASSETS_MANIFEST_URL))
-                .timeout(java.time.Duration.ofSeconds(60))
-                .GET()
-                .build()
-            val response = client.send(request, java.net.http.HttpResponse.BodyHandlers.ofString())
-            check(response.statusCode() == 200) {
-                "[Tcgdex][x] Assets manifest request returned HTTP ${response.statusCode()}"
+    val text =
+        if (!manifestFileOverride.isNullOrBlank()) {
+            val file = File(manifestFileOverride)
+            require(file.isFile && file.length() > 0L) {
+                "[Tcgdex][x] Assets manifest override not found or empty: ${file.absolutePath}"
             }
-            response.body()
-        } catch (e: Exception) {
-            throw IllegalStateException(
-                "[Tcgdex][x] Cannot fetch assets manifest from $ASSETS_MANIFEST_URL. " +
-                    "Pass --assets-manifest=/path/to/datas.json to run offline.",
-                e,
-            )
+            file.readText()
+        } else {
+            try {
+                val client =
+                    java.net.http.HttpClient
+                        .newBuilder()
+                        .connectTimeout(java.time.Duration.ofSeconds(30))
+                        .followRedirects(java.net.http.HttpClient.Redirect.NORMAL)
+                        .build()
+                val request =
+                    java.net.http.HttpRequest
+                        .newBuilder(URI.create(ASSETS_MANIFEST_URL))
+                        .timeout(java.time.Duration.ofSeconds(60))
+                        .GET()
+                        .build()
+                val response =
+                    client.send(
+                        request,
+                        java.net.http.HttpResponse.BodyHandlers
+                            .ofString(),
+                    )
+                check(response.statusCode() == 200) {
+                    "[Tcgdex][x] Assets manifest request returned HTTP ${response.statusCode()}"
+                }
+                response.body()
+            } catch (e: Exception) {
+                throw IllegalStateException(
+                    "[Tcgdex][x] Cannot fetch assets manifest from $ASSETS_MANIFEST_URL. " +
+                        "Pass --assets-manifest=/path/to/datas.json to run offline.",
+                    e,
+                )
+            }
         }
-    }
     return json.parseToJsonElement(text).jsonObject
 }
 
@@ -2694,9 +2846,10 @@ internal data class ReprintOrigin(
     val localId: String,
 )
 
-internal val REPRINT_IMAGE_ORIGINS: Map<String, ReprintOrigin> = mapOf(
-    "30th-c-006" to ReprintOrigin(serieId = "ex", setId = "ex7", localId = "19"),
-)
+internal val REPRINT_IMAGE_ORIGINS: Map<String, ReprintOrigin> =
+    mapOf(
+        "30th-c-006" to ReprintOrigin(serieId = "ex", setId = "ex7", localId = "19"),
+    )
 
 /**
  * Returns a suffix-less CDN URL for a reprint when the assets manifest confirms
@@ -2712,11 +2865,11 @@ internal fun assetsManifestContainsLocalId(
     setId: String,
     localId: String,
 ): Boolean {
-    val setEntry = (
-        (assetsManifest[language] as? JsonObject)
-            ?.get(serieId) as? JsonObject
-        )
-        ?.get(setId) as? JsonObject
+    val setEntry =
+        (
+            (assetsManifest[language] as? JsonObject)
+                ?.get(serieId) as? JsonObject
+        )?.get(setId) as? JsonObject
     return setEntry?.containsKey(localId) == true
 }
 
@@ -2763,9 +2916,7 @@ internal val PRIZE_PACK_LOCAL_ID = Regex("""^([A-Z]{2,4})(\d+[A-Za-z]?)$""")
  * Maps a unique official abbreviation to (serieId, setId). Duplicate abbreviations
  * are dropped so a Prize Pack local id is never pointed at the wrong parent set.
  */
-internal fun prizePackAbbreviationParents(
-    sets: List<JsonObject>,
-): Map<String, Pair<String, String>> {
+internal fun prizePackAbbreviationParents(sets: List<JsonObject>): Map<String, Pair<String, String>> {
     val grouped = linkedMapOf<String, MutableList<Pair<String, String>>>()
     for (set in sets) {
         val setId = set.getString("id")?.takeIf { it.isNotBlank() } ?: continue
@@ -2773,10 +2924,11 @@ internal fun prizePackAbbreviationParents(
         val official = set.getNestedString("abbreviation", "official")?.takeIf { it.isNotBlank() } ?: continue
         grouped.getOrPut(official) { mutableListOf() }.add(serieId to setId)
     }
-    return grouped.mapNotNull { (abbreviation, candidates) ->
-        val distinct = candidates.distinct()
-        if (distinct.size == 1) abbreviation to distinct.single() else null
-    }.toMap()
+    return grouped
+        .mapNotNull { (abbreviation, candidates) ->
+            val distinct = candidates.distinct()
+            if (distinct.size == 1) abbreviation to distinct.single() else null
+        }.toMap()
 }
 
 /**
@@ -2795,11 +2947,11 @@ internal fun synthesizePrizePackImageUrl(
     val abbreviation = match.groupValues[1]
     val number = match.groupValues[2]
     val (serieId, parentSetId) = abbreviationParents[abbreviation] ?: return null
-    val setEntry = (
-        (assetsManifest[language] as? JsonObject)
-            ?.get(serieId) as? JsonObject
-        )
-        ?.get(parentSetId) as? JsonObject
+    val setEntry =
+        (
+            (assetsManifest[language] as? JsonObject)
+                ?.get(serieId) as? JsonObject
+        )?.get(parentSetId) as? JsonObject
     if (setEntry?.containsKey(number) != true) return null
     return "https://assets.tcgdex.net/$language/$serieId/$parentSetId/$number"
 }
@@ -2810,11 +2962,11 @@ internal fun synthesizeReprintOriginImageUrl(
     language: String,
 ): String? {
     val origin = REPRINT_IMAGE_ORIGINS[cardId] ?: return null
-    val setEntry = (
-        (assetsManifest[language] as? JsonObject)
-            ?.get(origin.serieId) as? JsonObject
-        )
-        ?.get(origin.setId) as? JsonObject
+    val setEntry =
+        (
+            (assetsManifest[language] as? JsonObject)
+                ?.get(origin.serieId) as? JsonObject
+        )?.get(origin.setId) as? JsonObject
     if (setEntry?.containsKey(origin.localId) != true) return null
     return "https://assets.tcgdex.net/$language/${origin.serieId}/${origin.setId}/${origin.localId}"
 }
@@ -2838,11 +2990,11 @@ internal fun synthesizeSubSetImageUrl(
     localId: String,
 ): String? {
     val (serieId, parentSetId) = subSetParents[setId] ?: return null
-    val setEntry = (
-        (assetsManifest[language] as? JsonObject)
-            ?.get(serieId) as? JsonObject
-        )
-        ?.get(parentSetId) as? JsonObject
+    val setEntry =
+        (
+            (assetsManifest[language] as? JsonObject)
+                ?.get(serieId) as? JsonObject
+        )?.get(parentSetId) as? JsonObject
     if (setEntry?.containsKey(localId) != true) return null
     return "https://assets.tcgdex.net/$language/$serieId/$parentSetId/$localId"
 }
@@ -2851,47 +3003,57 @@ internal fun synthesizeSubSetImageUrl(
  * Regenerates the unresolved JSON file from the tree file by filtering only unresolved cards.
  * This ensures both files stay synchronized after database generation.
  */
-internal fun regenerateUnresolvedFile(treeFile: File, json: Json) {
+internal fun regenerateUnresolvedFile(
+    treeFile: File,
+    json: Json,
+) {
     runCatching {
         val root = json.decodeFromString<MissingFrRoot>(treeFile.readText())
 
-        val unresolvedSeries = root.series.mapNotNull { series ->
-            val unresolvedSets = series.sets.mapNotNull { set ->
-                val unresolvedCards = set.cards.filter { card ->
-                    val status = card["resolutionStatus"]?.jsonPrimitive?.contentOrNull
-                    status.equals("unresolved", ignoreCase = true)
-                }
+        val unresolvedSeries =
+            root.series.mapNotNull { series ->
+                val unresolvedSets =
+                    series.sets.mapNotNull { set ->
+                        val unresolvedCards =
+                            set.cards.filter { card ->
+                                val status = card["resolutionStatus"]?.jsonPrimitive?.contentOrNull
+                                status.equals("unresolved", ignoreCase = true)
+                            }
 
-                if (unresolvedCards.isNotEmpty()) {
-                    set.copy(
-                        cards = unresolvedCards,
-                        cardCountTotal = unresolvedCards.size,
-                    )
+                        if (unresolvedCards.isNotEmpty()) {
+                            set.copy(
+                                cards = unresolvedCards,
+                                cardCountTotal = unresolvedCards.size,
+                            )
+                        } else {
+                            null
+                        }
+                    }
+
+                if (unresolvedSets.isNotEmpty()) {
+                    series.copy(sets = unresolvedSets)
                 } else {
                     null
                 }
             }
 
-            if (unresolvedSets.isNotEmpty()) {
-                series.copy(sets = unresolvedSets)
-            } else {
-                null
-            }
-        }
-
         val unresolvedCards = unresolvedSeries.flatMap { it.sets }.flatMap { it.cards }
         val unresolvedCount = unresolvedCards.size
-        val unresolvedReasons = unresolvedCards.mapNotNull { card ->
-            card["reason"]?.jsonPrimitive?.contentOrNull
-        }.groupingBy { it }.eachCount()
+        val unresolvedReasons =
+            unresolvedCards
+                .mapNotNull { card ->
+                    card["reason"]?.jsonPrimitive?.contentOrNull
+                }.groupingBy { it }
+                .eachCount()
 
-        val unresolvedRoot = root.copy(
-            totalCards = unresolvedCount,
-            resolvedCards = 0,
-            unresolvedCards = unresolvedCount,
-            unresolvedReasons = unresolvedReasons,
-            series = unresolvedSeries,
-        )
+        val unresolvedRoot =
+            root.copy(
+                totalCards = unresolvedCount,
+                resolvedCards = 0,
+                unresolvedCards = unresolvedCount,
+                unresolvedReasons = unresolvedReasons,
+                series = unresolvedSeries,
+            )
 
         val outputFile = treeFile.resolveSibling("missing-fr-card-images-unresolved.json")
         outputFile.writeText(json.encodeToString(unresolvedRoot))
@@ -2900,4 +3062,3 @@ internal fun regenerateUnresolvedFile(treeFile: File, json: Json) {
         println("[Tcgdex][!] Failed to regenerate unresolved file: ${it.message}")
     }
 }
-

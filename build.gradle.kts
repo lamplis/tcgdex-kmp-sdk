@@ -49,36 +49,51 @@ val tcgdexPokepediaMissing = providers.gradleProperty("tcgdex.pokepediaMissing")
 val tcgdexPokepediaMissingEnv = providers.environmentVariable("TCGDEX_POKEPEDIA_MISSING").orNull
 val tcgdexRecognitionVectors = providers.gradleProperty("tcgdex.recognitionVectors").orNull
 val tcgdexRecognitionVectorsEnv = providers.environmentVariable("TCGDEX_RECOGNITION_VECTORS").orNull
-val generatorInputsDir = layout.projectDirectory
-    .dir("generator-inputs")
-val defaultCardmarketExport = generatorInputsDir
-    .dir("cardmarket")
-    .asFile
-val defaultPokepediaMissing = generatorInputsDir
-    .file("pokepedia/missing-fr-card-images-tree.json")
-    .asFile
-val defaultSetLogos = generatorInputsDir
-    .file("pokepedia/set-logos.json")
-    .asFile
-val defaultRecognitionVectors = generatorInputsDir
-    .file("recognition/card-vectors-fr.json")
-    .asFile
-val setAliasesConfigFile = rootProject.layout.projectDirectory.file("tools/set-aliases-config.json").asFile
+val generatorInputsDir =
+    layout.projectDirectory
+        .dir("generator-inputs")
+val defaultCardmarketExport =
+    generatorInputsDir
+        .dir("cardmarket")
+        .asFile
+val defaultPokepediaMissing =
+    generatorInputsDir
+        .file("pokepedia/missing-fr-card-images-tree.json")
+        .asFile
+val defaultSetLogos =
+    generatorInputsDir
+        .file("pokepedia/set-logos.json")
+        .asFile
+val defaultRecognitionVectors =
+    generatorInputsDir
+        .file("recognition/card-vectors-fr.json")
+        .asFile
+val setAliasesConfigFile =
+    rootProject.layout.projectDirectory
+        .file("tools/set-aliases-config.json")
+        .asFile
 
 // Resolve final languages list (prefer new property, fall back to legacy)
-val resolvedLanguages: String = if (tcgdexLanguageLegacy.get().isNotBlank()) {
-    tcgdexLanguageLegacy.get()
-} else {
-    tcgdexLanguages.get()
-}
+val resolvedLanguages: String =
+    if (tcgdexLanguageLegacy.get().isNotBlank()) {
+        tcgdexLanguageLegacy.get()
+    } else {
+        tcgdexLanguages.get()
+    }
 
 kotlin {
     applyDefaultHierarchyTemplate()
 
     android {
         namespace = "app.cardium.kmptcgdexsdk"
-        compileSdk = libs.versions.android.compileSdk.get().toInt()
-        minSdk = libs.versions.android.minSdk.get().toInt()
+        compileSdk =
+            libs.versions.android.compileSdk
+                .get()
+                .toInt()
+        minSdk =
+            libs.versions.android.minSdk
+                .get()
+                .toInt()
         compilerOptions {
             jvmTarget.set(JvmTarget.JVM_17)
         }
@@ -126,7 +141,6 @@ kotlin {
     }
 }
 
-
 sqldelight {
     databases {
         create("TcgdexDatabase") {
@@ -146,34 +160,39 @@ val jvmRuntimeConfig = configurations.named("jvmRuntimeClasspath")
 // Resolve the Bun executable deterministically so Gradle daemon / IDE / CI environments
 // that lack Bun on their minimal PATH can still run compileCardsDatabaseGenerated.
 // Precedence: property > env > BUN_INSTALL > ~/.bun > bare PATH fallback.
-val bunExecutable: String = run {
-    val isWindows = System.getProperty("os.name").startsWith("Windows", ignoreCase = true)
-    val bareName = if (isWindows) "bun.cmd" else "bun"
+val bunExecutable: String =
+    run {
+        val isWindows = System.getProperty("os.name").startsWith("Windows", ignoreCase = true)
+        val bareName = if (isWindows) "bun.cmd" else "bun"
 
-    // 1. Gradle property: -Ptcgdex.bun.executable=/absolute/path/to/bun
-    providers.gradleProperty("tcgdex.bun.executable").orNull
-        ?.let { return@run it }
+        // 1. Gradle property: -Ptcgdex.bun.executable=/absolute/path/to/bun
+        providers
+            .gradleProperty("tcgdex.bun.executable")
+            .orNull
+            ?.let { return@run it }
 
-    // 2. Environment variable: TCGDEX_BUN=/absolute/path/to/bun
-    System.getenv("TCGDEX_BUN")
-        ?.takeIf { it.isNotBlank() }
-        ?.let { return@run it }
+        // 2. Environment variable: TCGDEX_BUN=/absolute/path/to/bun
+        System
+            .getenv("TCGDEX_BUN")
+            ?.takeIf { it.isNotBlank() }
+            ?.let { return@run it }
 
-    // 3. BUN_INSTALL env (set by Bun's official installer)
-    System.getenv("BUN_INSTALL")
-        ?.takeIf { it.isNotBlank() }
-        ?.let { File(it, "bin/$bareName") }
-        ?.takeIf { it.isFile && it.canExecute() }
-        ?.let { return@run it.absolutePath }
+        // 3. BUN_INSTALL env (set by Bun's official installer)
+        System
+            .getenv("BUN_INSTALL")
+            ?.takeIf { it.isNotBlank() }
+            ?.let { File(it, "bin/$bareName") }
+            ?.takeIf { it.isFile && it.canExecute() }
+            ?.let { return@run it.absolutePath }
 
-    // 4. Default user-home install path (~/.bun/bin/bun)
-    File(System.getProperty("user.home"), ".bun/bin/$bareName")
-        .takeIf { it.isFile && it.canExecute() }
-        ?.let { return@run it.absolutePath }
+        // 4. Default user-home install path (~/.bun/bin/bun)
+        File(System.getProperty("user.home"), ".bun/bin/$bareName")
+            .takeIf { it.isFile && it.canExecute() }
+            ?.let { return@run it.absolutePath }
 
-    // 5. Bare name — works when the daemon PATH already includes bun
-    bareName
-}
+        // 5. Bare name — works when the daemon PATH already includes bun
+        bareName
+    }
 
 val compileCardsDatabaseGenerated by tasks.registering(Exec::class) {
     group = "tcgdex"
@@ -184,7 +203,13 @@ val compileCardsDatabaseGenerated by tasks.registering(Exec::class) {
     doFirst {
         if (!File(bunExecutable).let { it.isFile && it.canExecute() }) {
             // Bare name on PATH — verify it resolves before Exec runs
-            val onPath = Runtime.getRuntime().exec(arrayOf("which", bunExecutable)).inputStream.bufferedReader().readLine()
+            val onPath =
+                Runtime
+                    .getRuntime()
+                    .exec(arrayOf("which", bunExecutable))
+                    .inputStream
+                    .bufferedReader()
+                    .readLine()
             if (onPath.isNullOrBlank()) {
                 throw GradleException(
                     "Cannot find Bun executable ('$bunExecutable').\n" +
@@ -297,7 +322,7 @@ val generateTcgdexDatabase by tasks.registering(JavaExec::class) {
         args("--set-aliases-config=${setAliasesConfigFile.absolutePath}")
     }
     if (!tcgdexCardmarketExpansions.isNullOrBlank()) {
-        args("--cardmarket-expansions=${tcgdexCardmarketExpansions}")
+        args("--cardmarket-expansions=$tcgdexCardmarketExpansions")
     }
     if (resolvedPokepediaMissingFile != null) {
         args("--pokepedia-missing=${resolvedPokepediaMissingFile.absolutePath}")

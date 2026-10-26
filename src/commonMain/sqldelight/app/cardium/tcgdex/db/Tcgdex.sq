@@ -166,6 +166,33 @@ CREATE TABLE card_prices (
 CREATE INDEX card_prices_lookup_idx ON card_prices(card_id, card_language, seller_country, condition);
 CREATE INDEX card_prices_country_updated_idx ON card_prices(seller_country, updated_iso);
 
+-- One physical print per card and language. variant_id is stable across languages.
+CREATE TABLE card_catalog_slots (
+    card_id TEXT NOT NULL,
+    card_language TEXT NOT NULL,
+    variant_id TEXT NOT NULL,
+    is_canonical INTEGER NOT NULL DEFAULT 0,
+    sort_index INTEGER NOT NULL,
+    display_rank INTEGER NOT NULL,
+    type_slug TEXT NOT NULL,
+    subtype_slug TEXT,
+    size_slug TEXT NOT NULL,
+    foil_slug TEXT,
+    stamps_slug_json TEXT NOT NULL DEFAULT '[]',
+    type_label TEXT NOT NULL,
+    subtype_label TEXT,
+    size_label TEXT NOT NULL,
+    foil_label TEXT,
+    stamps_label_json TEXT NOT NULL DEFAULT '[]',
+    image_url TEXT,
+    cardmarket_product_id INTEGER,
+    tcgplayer_product_id INTEGER,
+    PRIMARY KEY (card_id, card_language, variant_id),
+    FOREIGN KEY (card_id, card_language) REFERENCES cards(id, language) ON DELETE CASCADE
+);
+
+CREATE INDEX card_catalog_slots_card_idx ON card_catalog_slots(card_id, card_language);
+
 -- -----------------------------------------------------------------------------
 -- Card recognition hashes table: per-card perceptual hashes for matcher pipeline
 -- -----------------------------------------------------------------------------
@@ -484,6 +511,187 @@ VALUES (
 insertCardPokemon:
 INSERT OR REPLACE INTO card_pokemon(card_id, language, pokemon_dex_id, is_cameo)
 VALUES (:cardId, :language, :pokemonDexId, :isCameo);
+
+insertCardCatalogSlot:
+INSERT OR REPLACE INTO card_catalog_slots(
+    card_id,
+    card_language,
+    variant_id,
+    is_canonical,
+    sort_index,
+    display_rank,
+    type_slug,
+    subtype_slug,
+    size_slug,
+    foil_slug,
+    stamps_slug_json,
+    type_label,
+    subtype_label,
+    size_label,
+    foil_label,
+    stamps_label_json,
+    image_url,
+    cardmarket_product_id,
+    tcgplayer_product_id
+)
+VALUES (
+    :cardId,
+    :cardLanguage,
+    :variantId,
+    :isCanonical,
+    :sortIndex,
+    :displayRank,
+    :typeSlug,
+    :subtypeSlug,
+    :sizeSlug,
+    :foilSlug,
+    :stampsSlugJson,
+    :typeLabel,
+    :subtypeLabel,
+    :sizeLabel,
+    :foilLabel,
+    :stampsLabelJson,
+    :imageUrl,
+    :cardmarketProductId,
+    :tcgplayerProductId
+);
+
+getCatalogSlotsByLanguage:
+SELECT
+    card_id,
+    card_language,
+    variant_id,
+    is_canonical,
+    sort_index,
+    display_rank,
+    type_slug,
+    subtype_slug,
+    size_slug,
+    foil_slug,
+    stamps_slug_json,
+    type_label,
+    subtype_label,
+    size_label,
+    foil_label,
+    stamps_label_json,
+    image_url,
+    cardmarket_product_id,
+    tcgplayer_product_id
+FROM card_catalog_slots
+WHERE card_language = :language
+ORDER BY card_id, display_rank, variant_id;
+
+getCatalogSlotsForSet:
+SELECT
+    card_catalog_slots.card_id,
+    card_catalog_slots.card_language,
+    card_catalog_slots.variant_id,
+    card_catalog_slots.is_canonical,
+    card_catalog_slots.sort_index,
+    card_catalog_slots.display_rank,
+    card_catalog_slots.type_slug,
+    card_catalog_slots.subtype_slug,
+    card_catalog_slots.size_slug,
+    card_catalog_slots.foil_slug,
+    card_catalog_slots.stamps_slug_json,
+    card_catalog_slots.type_label,
+    card_catalog_slots.subtype_label,
+    card_catalog_slots.size_label,
+    card_catalog_slots.foil_label,
+    card_catalog_slots.stamps_label_json,
+    card_catalog_slots.image_url,
+    card_catalog_slots.cardmarket_product_id,
+    card_catalog_slots.tcgplayer_product_id
+FROM card_catalog_slots
+JOIN cards ON cards.id = card_catalog_slots.card_id AND cards.language = card_catalog_slots.card_language
+WHERE card_catalog_slots.card_language = :language
+    AND cards.set_id = :setId
+ORDER BY card_catalog_slots.card_id, card_catalog_slots.display_rank, card_catalog_slots.variant_id;
+
+getCatalogSlotsForPokemon:
+SELECT
+    card_catalog_slots.card_id,
+    card_catalog_slots.card_language,
+    card_catalog_slots.variant_id,
+    card_catalog_slots.is_canonical,
+    card_catalog_slots.sort_index,
+    card_catalog_slots.display_rank,
+    card_catalog_slots.type_slug,
+    card_catalog_slots.subtype_slug,
+    card_catalog_slots.size_slug,
+    card_catalog_slots.foil_slug,
+    card_catalog_slots.stamps_slug_json,
+    card_catalog_slots.type_label,
+    card_catalog_slots.subtype_label,
+    card_catalog_slots.size_label,
+    card_catalog_slots.foil_label,
+    card_catalog_slots.stamps_label_json,
+    card_catalog_slots.image_url,
+    card_catalog_slots.cardmarket_product_id,
+    card_catalog_slots.tcgplayer_product_id
+FROM card_catalog_slots
+JOIN card_with_pokemon
+    ON card_with_pokemon.id = card_catalog_slots.card_id
+    AND card_with_pokemon.language = card_catalog_slots.card_language
+WHERE card_catalog_slots.card_language = :language
+    AND card_with_pokemon.pokemon_dex_id = :dexId
+    AND lower(card_with_pokemon.serie_id) != 'tcgp'
+ORDER BY card_catalog_slots.card_id, card_catalog_slots.display_rank, card_catalog_slots.variant_id;
+
+getCatalogSlotsForIllustrator:
+SELECT
+    card_catalog_slots.card_id,
+    card_catalog_slots.card_language,
+    card_catalog_slots.variant_id,
+    card_catalog_slots.is_canonical,
+    card_catalog_slots.sort_index,
+    card_catalog_slots.display_rank,
+    card_catalog_slots.type_slug,
+    card_catalog_slots.subtype_slug,
+    card_catalog_slots.size_slug,
+    card_catalog_slots.foil_slug,
+    card_catalog_slots.stamps_slug_json,
+    card_catalog_slots.type_label,
+    card_catalog_slots.subtype_label,
+    card_catalog_slots.size_label,
+    card_catalog_slots.foil_label,
+    card_catalog_slots.stamps_label_json,
+    card_catalog_slots.image_url,
+    card_catalog_slots.cardmarket_product_id,
+    card_catalog_slots.tcgplayer_product_id
+FROM card_catalog_slots
+JOIN card_with_set
+    ON card_with_set.id = card_catalog_slots.card_id
+    AND card_with_set.language = card_catalog_slots.card_language
+WHERE card_catalog_slots.card_language = :language
+    AND card_with_set.illustrator_id = :illustratorId
+    AND lower(card_with_set.serie_id) != 'tcgp'
+ORDER BY card_catalog_slots.card_id, card_catalog_slots.display_rank, card_catalog_slots.variant_id;
+
+getCatalogSlotCountsByPokemon:
+SELECT
+    card_with_pokemon.pokemon_dex_id AS dexId,
+    COUNT(card_catalog_slots.variant_id) AS slotCount
+FROM card_catalog_slots
+JOIN card_with_pokemon
+    ON card_with_pokemon.id = card_catalog_slots.card_id
+    AND card_with_pokemon.language = card_catalog_slots.card_language
+WHERE card_catalog_slots.card_language = :language
+    AND lower(card_with_pokemon.serie_id) != 'tcgp'
+GROUP BY card_with_pokemon.pokemon_dex_id;
+
+getCatalogSlotCountsByIllustrator:
+SELECT
+    card_with_set.illustrator_id AS illustratorId,
+    COUNT(card_catalog_slots.variant_id) AS slotCount
+FROM card_catalog_slots
+JOIN card_with_set
+    ON card_with_set.id = card_catalog_slots.card_id
+    AND card_with_set.language = card_catalog_slots.card_language
+WHERE card_catalog_slots.card_language = :language
+    AND card_with_set.illustrator_id IS NOT NULL
+    AND lower(card_with_set.serie_id) != 'tcgp'
+GROUP BY card_with_set.illustrator_id;
 
 -- Insert a Pokémon species canonical name with evolution chain
 insertPokemonSpecies:

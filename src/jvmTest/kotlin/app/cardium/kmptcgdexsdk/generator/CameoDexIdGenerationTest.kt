@@ -158,6 +158,7 @@ class CameoDexIdGenerationTest {
         requireMainDex: Boolean = true,
     ): CameoCard? {
         val cards = json.parseToJsonElement(cardsFile.readText()).jsonArray
+
         fun match(trainerOnly: Boolean): CameoCard? {
             cards.forEach { element ->
                 val card = element.jsonObject

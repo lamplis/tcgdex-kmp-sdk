@@ -105,16 +105,17 @@ class LocalDatabaseGenerationE2eTest {
                     }
 
                     assertNotNull(row)
-                    val debugMessage = buildDebugMessage(
-                        dbPath = outputDb,
-                        datasetDir = datasetDir,
-                        cardmarketExportDir = cardmarketExportDir,
-                        pokepediaTreeFile = pokepediaTreeFile,
-                        cardId = target.id,
-                        language = targetLanguage,
-                        row = row,
-                        availableLanguages = listOf(targetLanguage),
-                    )
+                    val debugMessage =
+                        buildDebugMessage(
+                            dbPath = outputDb,
+                            datasetDir = datasetDir,
+                            cardmarketExportDir = cardmarketExportDir,
+                            pokepediaTreeFile = pokepediaTreeFile,
+                            cardId = target.id,
+                            language = targetLanguage,
+                            row = row,
+                            availableLanguages = listOf(targetLanguage),
+                        )
 
                     assertTrue(
                         !row.fallbackImageUrl.isNullOrBlank(),
@@ -146,16 +147,17 @@ class LocalDatabaseGenerationE2eTest {
                     }
 
                     assertNotNull(row)
-                    val debugMessage = buildDebugMessage(
-                        dbPath = outputDb,
-                        datasetDir = datasetDir,
-                        cardmarketExportDir = cardmarketExportDir,
-                        pokepediaTreeFile = pokepediaTreeFile,
-                        cardId = target.id,
-                        language = targetLanguage,
-                        row = row,
-                        availableLanguages = listOf(targetLanguage),
-                    )
+                    val debugMessage =
+                        buildDebugMessage(
+                            dbPath = outputDb,
+                            datasetDir = datasetDir,
+                            cardmarketExportDir = cardmarketExportDir,
+                            pokepediaTreeFile = pokepediaTreeFile,
+                            cardId = target.id,
+                            language = targetLanguage,
+                            row = row,
+                            availableLanguages = listOf(targetLanguage),
+                        )
 
                     assertTrue(
                         !row.imageUrl.isNullOrBlank(),
@@ -170,11 +172,27 @@ class LocalDatabaseGenerationE2eTest {
                 )
                 assertTrue(
                     !me03SetRow.logoUrl.isNullOrBlank(),
-                    "[x] Expected me03.logo_url to be populated.\n${buildSetDebugMessage(outputDb, datasetDir, cardmarketExportDir, pokepediaTreeFile, "me03", targetLanguage, me03SetRow)}",
+                    "[x] Expected me03.logo_url to be populated.\n${buildSetDebugMessage(
+                        outputDb,
+                        datasetDir,
+                        cardmarketExportDir,
+                        pokepediaTreeFile,
+                        "me03",
+                        targetLanguage,
+                        me03SetRow,
+                    )}",
                 )
                 assertTrue(
                     !me03SetRow.symbolUrl.isNullOrBlank(),
-                    "[x] Expected me03.symbol_url to be populated.\n${buildSetDebugMessage(outputDb, datasetDir, cardmarketExportDir, pokepediaTreeFile, "me03", targetLanguage, me03SetRow)}",
+                    "[x] Expected me03.symbol_url to be populated.\n${buildSetDebugMessage(
+                        outputDb,
+                        datasetDir,
+                        cardmarketExportDir,
+                        pokepediaTreeFile,
+                        "me03",
+                        targetLanguage,
+                        me03SetRow,
+                    )}",
                 )
 
                 val me03EnglishSetRow = queryGeneratedSet(connection, "me03", englishLanguage)
@@ -184,19 +202,51 @@ class LocalDatabaseGenerationE2eTest {
                 )
                 assertTrue(
                     !me03EnglishSetRow.logoUrl.isNullOrBlank(),
-                    "[x] Expected me03.logo_url to be populated for $englishLanguage.\n${buildSetDebugMessage(outputDb, datasetDir, cardmarketExportDir, pokepediaTreeFile, "me03", englishLanguage, me03EnglishSetRow)}",
+                    "[x] Expected me03.logo_url to be populated for $englishLanguage.\n${buildSetDebugMessage(
+                        outputDb,
+                        datasetDir,
+                        cardmarketExportDir,
+                        pokepediaTreeFile,
+                        "me03",
+                        englishLanguage,
+                        me03EnglishSetRow,
+                    )}",
                 )
                 assertTrue(
                     !me03EnglishSetRow.symbolUrl.isNullOrBlank(),
-                    "[x] Expected me03.symbol_url to be populated for $englishLanguage.\n${buildSetDebugMessage(outputDb, datasetDir, cardmarketExportDir, pokepediaTreeFile, "me03", englishLanguage, me03EnglishSetRow)}",
+                    "[x] Expected me03.symbol_url to be populated for $englishLanguage.\n${buildSetDebugMessage(
+                        outputDb,
+                        datasetDir,
+                        cardmarketExportDir,
+                        pokepediaTreeFile,
+                        "me03",
+                        englishLanguage,
+                        me03EnglishSetRow,
+                    )}",
                 )
                 assertTrue(
                     me03SetRow.logoUrl.orEmpty().contains("assets.tcgdex.net"),
-                    "[x] Expected me03.logo_url to keep the TCGdex CDN.\n${buildSetDebugMessage(outputDb, datasetDir, cardmarketExportDir, pokepediaTreeFile, "me03", targetLanguage, me03SetRow)}",
+                    "[x] Expected me03.logo_url to keep the TCGdex CDN.\n${buildSetDebugMessage(
+                        outputDb,
+                        datasetDir,
+                        cardmarketExportDir,
+                        pokepediaTreeFile,
+                        "me03",
+                        targetLanguage,
+                        me03SetRow,
+                    )}",
                 )
                 assertTrue(
                     me03EnglishSetRow.logoUrl.orEmpty().contains("assets.tcgdex.net"),
-                    "[x] Expected me03.logo_url to keep the TCGdex CDN for $englishLanguage.\n${buildSetDebugMessage(outputDb, datasetDir, cardmarketExportDir, pokepediaTreeFile, "me03", englishLanguage, me03EnglishSetRow)}",
+                    "[x] Expected me03.logo_url to keep the TCGdex CDN for $englishLanguage.\n${buildSetDebugMessage(
+                        outputDb,
+                        datasetDir,
+                        cardmarketExportDir,
+                        pokepediaTreeFile,
+                        "me03",
+                        englishLanguage,
+                        me03EnglishSetRow,
+                    )}",
                 )
 
                 listOf(targetLanguage, englishLanguage).forEach { language ->
@@ -207,11 +257,27 @@ class LocalDatabaseGenerationE2eTest {
                     )
                     assertTrue(
                         thirtieth.logoUrl.orEmpty().contains("pokepedia.fr"),
-                        "[x] Expected 30C.logo_url to come from Pokepedia overlay.\n${buildSetDebugMessage(outputDb, datasetDir, cardmarketExportDir, pokepediaTreeFile, "30C", language, thirtieth)}",
+                        "[x] Expected 30C.logo_url to come from Pokepedia overlay.\n${buildSetDebugMessage(
+                            outputDb,
+                            datasetDir,
+                            cardmarketExportDir,
+                            pokepediaTreeFile,
+                            "30C",
+                            language,
+                            thirtieth,
+                        )}",
                     )
                     assertTrue(
                         !thirtieth.symbolUrl.orEmpty().contains("pokecardex"),
-                        "[x] Expected 30C.symbol_url to omit Pokecardex.\n${buildSetDebugMessage(outputDb, datasetDir, cardmarketExportDir, pokepediaTreeFile, "30C", language, thirtieth)}",
+                        "[x] Expected 30C.symbol_url to omit Pokecardex.\n${buildSetDebugMessage(
+                            outputDb,
+                            datasetDir,
+                            cardmarketExportDir,
+                            pokepediaTreeFile,
+                            "30C",
+                            language,
+                            thirtieth,
+                        )}",
                     )
                 }
 
@@ -234,16 +300,17 @@ class LocalDatabaseGenerationE2eTest {
                     }
 
                     assertNotNull(row)
-                    val debugMessage = buildDebugMessage(
-                        dbPath = outputDb,
-                        datasetDir = datasetDir,
-                        cardmarketExportDir = cardmarketExportDir,
-                        pokepediaTreeFile = pokepediaTreeFile,
-                        cardId = target.id,
-                        language = targetLanguage,
-                        row = row,
-                        availableLanguages = listOf(targetLanguage),
-                    )
+                    val debugMessage =
+                        buildDebugMessage(
+                            dbPath = outputDb,
+                            datasetDir = datasetDir,
+                            cardmarketExportDir = cardmarketExportDir,
+                            pokepediaTreeFile = pokepediaTreeFile,
+                            cardId = target.id,
+                            language = targetLanguage,
+                            row = row,
+                            availableLanguages = listOf(targetLanguage),
+                        )
 
                     assertTrue(
                         !row.rarityId.isNullOrBlank(),
@@ -272,16 +339,17 @@ class LocalDatabaseGenerationE2eTest {
                     }
 
                     assertNotNull(englishRow)
-                    val englishDebugMessage = buildDebugMessage(
-                        dbPath = outputDb,
-                        datasetDir = datasetDir,
-                        cardmarketExportDir = cardmarketExportDir,
-                        pokepediaTreeFile = pokepediaTreeFile,
-                        cardId = target.id,
-                        language = englishLanguage,
-                        row = englishRow,
-                        availableLanguages = listOf(englishLanguage, targetLanguage),
-                    )
+                    val englishDebugMessage =
+                        buildDebugMessage(
+                            dbPath = outputDb,
+                            datasetDir = datasetDir,
+                            cardmarketExportDir = cardmarketExportDir,
+                            pokepediaTreeFile = pokepediaTreeFile,
+                            cardId = target.id,
+                            language = englishLanguage,
+                            row = englishRow,
+                            availableLanguages = listOf(englishLanguage, targetLanguage),
+                        )
 
                     assertTrue(
                         !englishRow.rarityId.isNullOrBlank(),
@@ -401,11 +469,12 @@ class LocalDatabaseGenerationE2eTest {
                     vaultCard.detailedPriceRows > 0,
                     "[x] Expected Cardmarket prices on sm115sv-SV1, got ${vaultCard.detailedPriceRows} rows.",
                 )
-                val vaultRecognitionSources = queryRecognitionSourcesForCard(
-                    connection,
-                    "sm115sv-SV1",
-                    targetLanguage,
-                )
+                val vaultRecognitionSources =
+                    queryRecognitionSourcesForCard(
+                        connection,
+                        "sm115sv-SV1",
+                        targetLanguage,
+                    )
                 assertTrue(
                     "pokepedia" in vaultRecognitionSources,
                     "[x] Expected pokepedia recognition hash for sm115sv-SV1, got $vaultRecognitionSources.",
@@ -430,12 +499,14 @@ class LocalDatabaseGenerationE2eTest {
         val projectRoot = resolveProjectRoot()
         val datasetDir = projectRoot.resolve("libs/cards-database/server/generated")
         val cardmarketExportDir = projectRoot.resolve("libs/tcgdex-kmp-sdk/generator-inputs/cardmarket")
-        val pokepediaTreeFile = projectRoot.resolve(
-            "libs/tcgdex-kmp-sdk/generator-inputs/pokepedia/missing-fr-card-images-tree.json",
-        )
-        val recognitionVectorsFile = projectRoot.resolve(
-            "libs/tcgdex-kmp-sdk/generator-inputs/recognition/card-vectors-fr.json",
-        )
+        val pokepediaTreeFile =
+            projectRoot.resolve(
+                "libs/tcgdex-kmp-sdk/generator-inputs/pokepedia/missing-fr-card-images-tree.json",
+            )
+        val recognitionVectorsFile =
+            projectRoot.resolve(
+                "libs/tcgdex-kmp-sdk/generator-inputs/recognition/card-vectors-fr.json",
+            )
 
         assertTrue(
             datasetDir.isDirectory,
@@ -494,16 +565,17 @@ class LocalDatabaseGenerationE2eTest {
                     }
 
                     assertNotNull(row)
-                    val debugMessage = buildDebugMessage(
-                        dbPath = outputDb,
-                        datasetDir = datasetDir,
-                        cardmarketExportDir = cardmarketExportDir,
-                        pokepediaTreeFile = pokepediaTreeFile,
-                        cardId = "ecard3-H04",
-                        language = language,
-                        row = row,
-                        availableLanguages = listOf(englishLanguage, targetLanguage),
-                    )
+                    val debugMessage =
+                        buildDebugMessage(
+                            dbPath = outputDb,
+                            datasetDir = datasetDir,
+                            cardmarketExportDir = cardmarketExportDir,
+                            pokepediaTreeFile = pokepediaTreeFile,
+                            cardId = "ecard3-H04",
+                            language = language,
+                            row = row,
+                            availableLanguages = listOf(englishLanguage, targetLanguage),
+                        )
 
                     assertTrue(
                         row.imageUrl.isNullOrBlank(),
@@ -550,12 +622,14 @@ class LocalDatabaseGenerationE2eTest {
         val projectRoot = resolveProjectRoot()
         val datasetDir = projectRoot.resolve("libs/cards-database/server/generated")
         val cardmarketExportDir = projectRoot.resolve("libs/tcgdex-kmp-sdk/generator-inputs/cardmarket")
-        val pokepediaTreeFile = projectRoot.resolve(
-            "libs/tcgdex-kmp-sdk/generator-inputs/pokepedia/missing-fr-card-images-tree.json",
-        )
-        val recognitionVectorsFile = projectRoot.resolve(
-            "libs/tcgdex-kmp-sdk/generator-inputs/recognition/card-vectors-fr.json",
-        )
+        val pokepediaTreeFile =
+            projectRoot.resolve(
+                "libs/tcgdex-kmp-sdk/generator-inputs/pokepedia/missing-fr-card-images-tree.json",
+            )
+        val recognitionVectorsFile =
+            projectRoot.resolve(
+                "libs/tcgdex-kmp-sdk/generator-inputs/recognition/card-vectors-fr.json",
+            )
 
         assertTrue(datasetDir.isDirectory, "[x] Missing dataset directory: ${datasetDir.absolutePath}.")
         assertTrue(pokepediaTreeFile.isFile, "[x] Missing Pokepedia tree file: ${pokepediaTreeFile.absolutePath}.")
@@ -628,12 +702,14 @@ class LocalDatabaseGenerationE2eTest {
         val projectRoot = resolveProjectRoot()
         val datasetDir = projectRoot.resolve("libs/cards-database/server/generated")
         val cardmarketExportDir = projectRoot.resolve("libs/tcgdex-kmp-sdk/generator-inputs/cardmarket")
-        val pokepediaTreeFile = projectRoot.resolve(
-            "libs/tcgdex-kmp-sdk/generator-inputs/pokepedia/missing-fr-card-images-tree.json",
-        )
-        val recognitionVectorsFile = projectRoot.resolve(
-            "libs/tcgdex-kmp-sdk/generator-inputs/recognition/card-vectors-fr.json",
-        )
+        val pokepediaTreeFile =
+            projectRoot.resolve(
+                "libs/tcgdex-kmp-sdk/generator-inputs/pokepedia/missing-fr-card-images-tree.json",
+            )
+        val recognitionVectorsFile =
+            projectRoot.resolve(
+                "libs/tcgdex-kmp-sdk/generator-inputs/recognition/card-vectors-fr.json",
+            )
 
         assertTrue(datasetDir.isDirectory, "[x] Missing dataset directory: ${datasetDir.absolutePath}.")
         assertTrue(pokepediaTreeFile.isFile, "[x] Missing Pokepedia tree file: ${pokepediaTreeFile.absolutePath}.")
@@ -700,12 +776,14 @@ class LocalDatabaseGenerationE2eTest {
         val projectRoot = resolveProjectRoot()
         val datasetDir = projectRoot.resolve("libs/cards-database/server/generated")
         val cardmarketExportDir = projectRoot.resolve("libs/tcgdex-kmp-sdk/generator-inputs/cardmarket")
-        val pokepediaTreeFile = projectRoot.resolve(
-            "libs/tcgdex-kmp-sdk/generator-inputs/pokepedia/missing-fr-card-images-tree.json",
-        )
-        val recognitionVectorsFile = projectRoot.resolve(
-            "libs/tcgdex-kmp-sdk/generator-inputs/recognition/card-vectors-fr.json",
-        )
+        val pokepediaTreeFile =
+            projectRoot.resolve(
+                "libs/tcgdex-kmp-sdk/generator-inputs/pokepedia/missing-fr-card-images-tree.json",
+            )
+        val recognitionVectorsFile =
+            projectRoot.resolve(
+                "libs/tcgdex-kmp-sdk/generator-inputs/recognition/card-vectors-fr.json",
+            )
 
         assertTrue(datasetDir.isDirectory, "[x] Missing dataset directory: ${datasetDir.absolutePath}.")
         assertTrue(pokepediaTreeFile.isFile, "[x] Missing Pokepedia tree file: ${pokepediaTreeFile.absolutePath}.")
@@ -789,12 +867,14 @@ class LocalDatabaseGenerationE2eTest {
         val projectRoot = resolveProjectRoot()
         val datasetDir = projectRoot.resolve("libs/cards-database/server/generated")
         val cardmarketExportDir = projectRoot.resolve("libs/tcgdex-kmp-sdk/generator-inputs/cardmarket")
-        val pokepediaTreeFile = projectRoot.resolve(
-            "libs/tcgdex-kmp-sdk/generator-inputs/pokepedia/missing-fr-card-images-tree.json",
-        )
-        val recognitionVectorsFile = projectRoot.resolve(
-            "libs/tcgdex-kmp-sdk/generator-inputs/recognition/card-vectors-fr.json",
-        )
+        val pokepediaTreeFile =
+            projectRoot.resolve(
+                "libs/tcgdex-kmp-sdk/generator-inputs/pokepedia/missing-fr-card-images-tree.json",
+            )
+        val recognitionVectorsFile =
+            projectRoot.resolve(
+                "libs/tcgdex-kmp-sdk/generator-inputs/recognition/card-vectors-fr.json",
+            )
 
         assertTrue(datasetDir.isDirectory, "[x] Missing dataset directory: ${datasetDir.absolutePath}.")
         assertTrue(pokepediaTreeFile.isFile, "[x] Missing Pokepedia tree file: ${pokepediaTreeFile.absolutePath}.")
@@ -893,12 +973,14 @@ class LocalDatabaseGenerationE2eTest {
         val projectRoot = resolveProjectRoot()
         val datasetDir = projectRoot.resolve("libs/cards-database/server/generated")
         val cardmarketExportDir = projectRoot.resolve("libs/tcgdex-kmp-sdk/generator-inputs/cardmarket")
-        val pokepediaTreeFile = projectRoot.resolve(
-            "libs/tcgdex-kmp-sdk/generator-inputs/pokepedia/missing-fr-card-images-tree.json",
-        )
-        val recognitionVectorsFile = projectRoot.resolve(
-            "libs/tcgdex-kmp-sdk/generator-inputs/recognition/card-vectors-fr.json",
-        )
+        val pokepediaTreeFile =
+            projectRoot.resolve(
+                "libs/tcgdex-kmp-sdk/generator-inputs/pokepedia/missing-fr-card-images-tree.json",
+            )
+        val recognitionVectorsFile =
+            projectRoot.resolve(
+                "libs/tcgdex-kmp-sdk/generator-inputs/recognition/card-vectors-fr.json",
+            )
 
         assertTrue(datasetDir.isDirectory, "[x] Missing dataset directory: ${datasetDir.absolutePath}.")
         assertTrue(pokepediaTreeFile.isFile, "[x] Missing Pokepedia tree file: ${pokepediaTreeFile.absolutePath}.")
@@ -966,12 +1048,14 @@ class LocalDatabaseGenerationE2eTest {
         val projectRoot = resolveProjectRoot()
         val datasetDir = projectRoot.resolve("libs/cards-database/server/generated")
         val cardmarketExportDir = projectRoot.resolve("libs/tcgdex-kmp-sdk/generator-inputs/cardmarket")
-        val pokepediaTreeFile = projectRoot.resolve(
-            "libs/tcgdex-kmp-sdk/generator-inputs/pokepedia/missing-fr-card-images-tree.json",
-        )
-        val recognitionVectorsFile = projectRoot.resolve(
-            "libs/tcgdex-kmp-sdk/generator-inputs/recognition/card-vectors-fr.json",
-        )
+        val pokepediaTreeFile =
+            projectRoot.resolve(
+                "libs/tcgdex-kmp-sdk/generator-inputs/pokepedia/missing-fr-card-images-tree.json",
+            )
+        val recognitionVectorsFile =
+            projectRoot.resolve(
+                "libs/tcgdex-kmp-sdk/generator-inputs/recognition/card-vectors-fr.json",
+            )
 
         assertTrue(datasetDir.isDirectory, "[x] Missing dataset directory: ${datasetDir.absolutePath}.")
         assertTrue(pokepediaTreeFile.isFile, "[x] Missing Pokepedia tree file: ${pokepediaTreeFile.absolutePath}.")
@@ -1054,13 +1138,15 @@ class LocalDatabaseGenerationE2eTest {
         }
     }
 
-    private fun containsNegapiToken(url: String?, localId: String): Boolean {
+    private fun containsNegapiToken(
+        url: String?,
+        localId: String,
+    ): Boolean {
         val value = decodedUrl(url)
         return value.contains("Négapi_$localId") || value.contains("N%C3%A9gapi_$localId")
     }
 
-    private fun decodedUrl(url: String?): String =
-        URLDecoder.decode(url.orEmpty(), Charsets.UTF_8)
+    private fun decodedUrl(url: String?): String = URLDecoder.decode(url.orEmpty(), Charsets.UTF_8)
 
     private fun assertTrainerKitFallback(
         connection: Connection,
@@ -1076,9 +1162,10 @@ class LocalDatabaseGenerationE2eTest {
             "[x] Expected $cardId/$language image_url to stay empty. got '${row.imageUrl}'.",
         )
         assertEquals("pokepedia", row.fallbackImageSource)
-        val fallbackUrl = checkNotNull(row.fallbackImageUrl) {
-            "[x] Expected $cardId/$language fallback URL. got null."
-        }
+        val fallbackUrl =
+            checkNotNull(row.fallbackImageUrl) {
+                "[x] Expected $cardId/$language fallback URL. got null."
+            }
         assertTrue(
             fallbackUrl.contains(expectedToken),
             "[x] Expected $cardId/$language fallback to contain $expectedToken. " +
@@ -1117,16 +1204,17 @@ class LocalDatabaseGenerationE2eTest {
             )
         }
         assertNotNull(row)
-        val debugMessage = buildDebugMessage(
-            dbPath = dbPath,
-            datasetDir = datasetDir,
-            cardmarketExportDir = cardmarketExportDir,
-            pokepediaTreeFile = pokepediaTreeFile,
-            cardId = cardId,
-            language = language,
-            row = row,
-            availableLanguages = listOf(englishLanguage, targetLanguage),
-        )
+        val debugMessage =
+            buildDebugMessage(
+                dbPath = dbPath,
+                datasetDir = datasetDir,
+                cardmarketExportDir = cardmarketExportDir,
+                pokepediaTreeFile = pokepediaTreeFile,
+                cardId = cardId,
+                language = language,
+                row = row,
+                availableLanguages = listOf(englishLanguage, targetLanguage),
+            )
         assertTrue(
             row.imageUrl.isNullOrBlank(),
             "[x] Expected $cardId/$language image_url to stay empty (no CDN asset).\n$debugMessage",
@@ -1156,69 +1244,84 @@ class LocalDatabaseGenerationE2eTest {
         error("[x] Could not resolve project root from ${System.getProperty("user.dir")}.")
     }
 
-    private fun queryOriginLanguage(connection: Connection, cardId: String, language: String): String? {
-        connection.prepareStatement(
-            """
-            SELECT origin_language
-            FROM cards
-            WHERE id = ?
-              AND language = ?
-            """.trimIndent(),
-        ).use { statement ->
-            statement.setString(1, cardId)
-            statement.setString(2, language)
-            statement.executeQuery().use { resultSet ->
-                if (!resultSet.next()) {
-                    return null
+    private fun queryOriginLanguage(
+        connection: Connection,
+        cardId: String,
+        language: String,
+    ): String? {
+        connection
+            .prepareStatement(
+                """
+                SELECT origin_language
+                FROM cards
+                WHERE id = ?
+                  AND language = ?
+                """.trimIndent(),
+            ).use { statement ->
+                statement.setString(1, cardId)
+                statement.setString(2, language)
+                statement.executeQuery().use { resultSet ->
+                    if (!resultSet.next()) {
+                        return null
+                    }
+                    return resultSet.getString("origin_language")
                 }
-                return resultSet.getString("origin_language")
             }
-        }
     }
 
-    private fun queryCardFallbackRow(connection: Connection, cardId: String, language: String): GeneratedCardRow? {
-        connection.prepareStatement(
-            """
-            SELECT
-              id,
-              language,
-              name,
-              rarity_id,
-              image_url,
-              fallback_image_url,
-              fallback_image_source
-            FROM cards
-            WHERE id = ?
-              AND language = ?
-            """.trimIndent(),
-        ).use { statement ->
-            statement.setString(1, cardId)
-            statement.setString(2, language)
-            statement.executeQuery().use { resultSet ->
-                if (!resultSet.next()) {
-                    return null
+    private fun queryCardFallbackRow(
+        connection: Connection,
+        cardId: String,
+        language: String,
+    ): GeneratedCardRow? {
+        connection
+            .prepareStatement(
+                """
+                SELECT
+                  id,
+                  language,
+                  name,
+                  rarity_id,
+                  image_url,
+                  fallback_image_url,
+                  fallback_image_source
+                FROM cards
+                WHERE id = ?
+                  AND language = ?
+                """.trimIndent(),
+            ).use { statement ->
+                statement.setString(1, cardId)
+                statement.setString(2, language)
+                statement.executeQuery().use { resultSet ->
+                    if (!resultSet.next()) {
+                        return null
+                    }
+                    return GeneratedCardRow(
+                        id = resultSet.getString("id"),
+                        language = resultSet.getString("language"),
+                        name = resultSet.getString("name"),
+                        rarityId = resultSet.getString("rarity_id"),
+                        imageUrl = resultSet.getString("image_url"),
+                        fallbackImageUrl = resultSet.getString("fallback_image_url"),
+                        fallbackImageSource = resultSet.getString("fallback_image_source"),
+                        priceTrend = null,
+                        priceAvg = null,
+                        priceLow = null,
+                        setLogoUrl = null,
+                        setSymbolUrl = null,
+                        detailedPriceRows = 0,
+                    )
                 }
-                return GeneratedCardRow(
-                    id = resultSet.getString("id"),
-                    language = resultSet.getString("language"),
-                    name = resultSet.getString("name"),
-                    rarityId = resultSet.getString("rarity_id"),
-                    imageUrl = resultSet.getString("image_url"),
-                    fallbackImageUrl = resultSet.getString("fallback_image_url"),
-                    fallbackImageSource = resultSet.getString("fallback_image_source"),
-                    priceTrend = null,
-                    priceAvg = null,
-                    priceLow = null,
-                    setLogoUrl = null,
-                    setSymbolUrl = null,
-                    detailedPriceRows = 0,
-                )
             }
-        }
     }
 
-    private fun queryGeneratedCard(connection: Connection, cardId: String, language: String): GeneratedCardRow? {
-        val sql = """
+    private fun queryGeneratedCard(
+        connection: Connection,
+        cardId: String,
+        language: String,
+    ): GeneratedCardRow? {
+        val sql =
+            """
             SELECT
               c.id,
               c.language,
@@ -1255,7 +1358,7 @@ class LocalDatabaseGenerationE2eTest {
               c.price_cardmarket_low,
               s.logo_url,
               s.symbol_url
-        """.trimIndent()
+            """.trimIndent()
 
         connection.prepareStatement(sql).use { statement ->
             statement.setString(1, cardId)
@@ -1269,8 +1372,13 @@ class LocalDatabaseGenerationE2eTest {
         }
     }
 
-    private fun queryGeneratedSet(connection: Connection, setId: String, language: String): GeneratedSetRow? {
-        val sql = """
+    private fun queryGeneratedSet(
+        connection: Connection,
+        setId: String,
+        language: String,
+    ): GeneratedSetRow? {
+        val sql =
+            """
             SELECT
               id,
               language,
@@ -1282,7 +1390,7 @@ class LocalDatabaseGenerationE2eTest {
             FROM sets
             WHERE id = ?
               AND language = ?
-        """.trimIndent()
+            """.trimIndent()
 
         connection.prepareStatement(sql).use { statement ->
             statement.setString(1, setId)
@@ -1304,55 +1412,69 @@ class LocalDatabaseGenerationE2eTest {
         }
     }
 
-    private fun queryCameoRowCount(connection: Connection, language: String): Int {
-        connection.prepareStatement(
-            """
-            SELECT COUNT(*) AS row_count
-            FROM card_pokemon
-            WHERE is_cameo = 1
-              AND language = ?
-            """.trimIndent(),
-        ).use { statement ->
-            statement.setString(1, language)
-            statement.executeQuery().use { resultSet ->
-                return if (resultSet.next()) resultSet.getInt("row_count") else 0
+    private fun queryCameoRowCount(
+        connection: Connection,
+        language: String,
+    ): Int {
+        connection
+            .prepareStatement(
+                """
+                SELECT COUNT(*) AS row_count
+                FROM card_pokemon
+                WHERE is_cameo = 1
+                  AND language = ?
+                """.trimIndent(),
+            ).use { statement ->
+                statement.setString(1, language)
+                statement.executeQuery().use { resultSet ->
+                    return if (resultSet.next()) resultSet.getInt("row_count") else 0
+                }
             }
-        }
     }
 
-    private fun queryCameoRowCountForDex(connection: Connection, language: String, dexId: Int): Int {
-        connection.prepareStatement(
-            """
-            SELECT COUNT(*) AS row_count
-            FROM card_pokemon
-            WHERE is_cameo = 1
-              AND language = ?
-              AND pokemon_dex_id = ?
-            """.trimIndent(),
-        ).use { statement ->
-            statement.setString(1, language)
-            statement.setInt(2, dexId)
-            statement.executeQuery().use { resultSet ->
-                return if (resultSet.next()) resultSet.getInt("row_count") else 0
+    private fun queryCameoRowCountForDex(
+        connection: Connection,
+        language: String,
+        dexId: Int,
+    ): Int {
+        connection
+            .prepareStatement(
+                """
+                SELECT COUNT(*) AS row_count
+                FROM card_pokemon
+                WHERE is_cameo = 1
+                  AND language = ?
+                  AND pokemon_dex_id = ?
+                """.trimIndent(),
+            ).use { statement ->
+                statement.setString(1, language)
+                statement.setInt(2, dexId)
+                statement.executeQuery().use { resultSet ->
+                    return if (resultSet.next()) resultSet.getInt("row_count") else 0
+                }
             }
-        }
     }
 
-    private fun queryRecognitionRowsForCard(connection: Connection, cardId: String, language: String): Int {
-        connection.prepareStatement(
-            """
-            SELECT COUNT(*) AS row_count
-            FROM card_recognition_hashes
-            WHERE card_id = ?
-              AND language = ?
-            """.trimIndent(),
-        ).use { statement ->
-            statement.setString(1, cardId)
-            statement.setString(2, language)
-            statement.executeQuery().use { resultSet ->
-                return if (resultSet.next()) resultSet.getInt("row_count") else 0
+    private fun queryRecognitionRowsForCard(
+        connection: Connection,
+        cardId: String,
+        language: String,
+    ): Int {
+        connection
+            .prepareStatement(
+                """
+                SELECT COUNT(*) AS row_count
+                FROM card_recognition_hashes
+                WHERE card_id = ?
+                  AND language = ?
+                """.trimIndent(),
+            ).use { statement ->
+                statement.setString(1, cardId)
+                statement.setString(2, language)
+                statement.executeQuery().use { resultSet ->
+                    return if (resultSet.next()) resultSet.getInt("row_count") else 0
+                }
             }
-        }
     }
 
     private fun queryRecognitionSourcesForCard(
@@ -1360,33 +1482,38 @@ class LocalDatabaseGenerationE2eTest {
         cardId: String,
         language: String,
     ): Set<String> {
-        connection.prepareStatement(
-            """
-            SELECT DISTINCT image_source
-            FROM card_recognition_hashes
-            WHERE card_id = ?
-              AND language = ?
-            """.trimIndent(),
-        ).use { statement ->
-            statement.setString(1, cardId)
-            statement.setString(2, language)
-            statement.executeQuery().use { resultSet ->
-                val sources = mutableSetOf<String>()
-                while (resultSet.next()) {
-                    sources += resultSet.getString("image_source")
+        connection
+            .prepareStatement(
+                """
+                SELECT DISTINCT image_source
+                FROM card_recognition_hashes
+                WHERE card_id = ?
+                  AND language = ?
+                """.trimIndent(),
+            ).use { statement ->
+                statement.setString(1, cardId)
+                statement.setString(2, language)
+                statement.executeQuery().use { resultSet ->
+                    val sources = mutableSetOf<String>()
+                    while (resultSet.next()) {
+                        sources += resultSet.getString("image_source")
+                    }
+                    return sources
                 }
-                return sources
             }
-        }
     }
 
-    private fun queryAvailableLanguagesForCard(connection: Connection, cardId: String): List<String> {
-        val sql = """
+    private fun queryAvailableLanguagesForCard(
+        connection: Connection,
+        cardId: String,
+    ): List<String> {
+        val sql =
+            """
             SELECT language
             FROM cards
             WHERE id = ?
             ORDER BY language
-        """.trimIndent()
+            """.trimIndent()
         connection.prepareStatement(sql).use { statement ->
             statement.setString(1, cardId)
             statement.executeQuery().use { resultSet ->
@@ -1425,17 +1552,18 @@ class LocalDatabaseGenerationE2eTest {
         language: String,
         row: GeneratedCardRow?,
         availableLanguages: List<String>,
-    ): String = buildString {
-        appendLine("[i] SQL E2E debug context")
-        appendLine("  - cardId: $cardId")
-        appendLine("  - language: $language")
-        appendLine("  - dbPath: ${dbPath.absolutePath}")
-        appendLine("  - datasetDir: ${datasetDir.absolutePath}")
-        appendLine("  - cardmarketExportDir: ${cardmarketExportDir.absolutePath}")
-        appendLine("  - pokepediaTreeFile: ${pokepediaTreeFile.absolutePath}")
-        appendLine("  - availableLanguagesForCard: ${availableLanguages.joinToString(",").ifBlank { "<none>" }}")
-        appendLine("  - row: ${row ?: "<missing>"}")
-    }
+    ): String =
+        buildString {
+            appendLine("[i] SQL E2E debug context")
+            appendLine("  - cardId: $cardId")
+            appendLine("  - language: $language")
+            appendLine("  - dbPath: ${dbPath.absolutePath}")
+            appendLine("  - datasetDir: ${datasetDir.absolutePath}")
+            appendLine("  - cardmarketExportDir: ${cardmarketExportDir.absolutePath}")
+            appendLine("  - pokepediaTreeFile: ${pokepediaTreeFile.absolutePath}")
+            appendLine("  - availableLanguagesForCard: ${availableLanguages.joinToString(",").ifBlank { "<none>" }}")
+            appendLine("  - row: ${row ?: "<missing>"}")
+        }
 
     private fun buildSetDebugMessage(
         dbPath: File,
@@ -1445,16 +1573,17 @@ class LocalDatabaseGenerationE2eTest {
         setId: String,
         language: String,
         row: GeneratedSetRow?,
-    ): String = buildString {
-        appendLine("[i] SQL E2E set debug context")
-        appendLine("  - setId: $setId")
-        appendLine("  - language: $language")
-        appendLine("  - dbPath: ${dbPath.absolutePath}")
-        appendLine("  - datasetDir: ${datasetDir.absolutePath}")
-        appendLine("  - cardmarketExportDir: ${cardmarketExportDir.absolutePath}")
-        appendLine("  - pokepediaTreeFile: ${pokepediaTreeFile.absolutePath}")
-        appendLine("  - row: ${row ?: "<missing>"}")
-    }
+    ): String =
+        buildString {
+            appendLine("[i] SQL E2E set debug context")
+            appendLine("  - setId: $setId")
+            appendLine("  - language: $language")
+            appendLine("  - dbPath: ${dbPath.absolutePath}")
+            appendLine("  - datasetDir: ${datasetDir.absolutePath}")
+            appendLine("  - cardmarketExportDir: ${cardmarketExportDir.absolutePath}")
+            appendLine("  - pokepediaTreeFile: ${pokepediaTreeFile.absolutePath}")
+            appendLine("  - row: ${row ?: "<missing>"}")
+        }
 
     private data class GeneratedCardRow(
         val id: String,

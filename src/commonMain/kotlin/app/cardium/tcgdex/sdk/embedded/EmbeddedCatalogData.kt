@@ -7,9 +7,12 @@ package app.cardium.tcgdex.sdk.embedded
  */
 object EmbeddedCatalogData {
     fun seriesJson(language: String): String? = null
+
     fun setsJson(language: String): String? = null
+
     fun illustratorsIndexJson(): String? = null
+
     fun illustratorArtistFiles(): List<String> = emptyList()
+
     fun illustratorCollectionJson(fileName: String): String? = null
 }
-

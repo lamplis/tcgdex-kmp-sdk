@@ -59,8 +59,7 @@ private fun mergeCardmarketVariantPrices(
                 byCountry
                     .mapValues { (_, byCondition) -> byCondition.toMutableMap() }
                     .toMutableMap()
-            }
-            .toMutableMap()
+            }.toMutableMap()
 
     for ((priceLang, incomingByCountry) in incoming.prices) {
         val langBucket = mergedPrices.getOrPut(priceLang) { mutableMapOf() }
@@ -76,9 +75,10 @@ private fun mergeCardmarketVariantPrices(
         version = existing.version ?: incoming.version,
         productId = existing.productId ?: incoming.productId,
         label = existing.label ?: incoming.label,
-        prices = mergedPrices.mapValues { (_, byCountry) ->
-            byCountry.mapValues { (_, byCondition) -> byCondition.toMap() }
-        },
+        prices =
+            mergedPrices.mapValues { (_, byCountry) ->
+                byCountry.mapValues { (_, byCondition) -> byCondition.toMap() }
+            },
     )
 }
 
@@ -95,16 +95,18 @@ private fun mergeCardmarketExportCards(
 
         val mergedVariants = existingCard.variants.toMutableList()
         for (incomingVariant in incomingCard.variants) {
-            val existingIndex = mergedVariants.indexOfFirst {
-                it.version == incomingVariant.version &&
-                    it.productId == incomingVariant.productId &&
-                    it.label == incomingVariant.label
-            }
+            val existingIndex =
+                mergedVariants.indexOfFirst {
+                    it.version == incomingVariant.version &&
+                        it.productId == incomingVariant.productId &&
+                        it.label == incomingVariant.label
+                }
             if (existingIndex >= 0) {
-                mergedVariants[existingIndex] = mergeCardmarketVariantPrices(
-                    mergedVariants[existingIndex],
-                    incomingVariant,
-                )
+                mergedVariants[existingIndex] =
+                    mergeCardmarketVariantPrices(
+                        mergedVariants[existingIndex],
+                        incomingVariant,
+                    )
             } else {
                 mergedVariants.add(incomingVariant)
             }
@@ -118,11 +120,12 @@ private fun mergeCardmarketExportCards(
             ),
         )
 
-        target[cardId] = CardmarketExportCard(
-            tcgdexCardId = cardId,
-            name = existingCard.name ?: incomingCard.name,
-            variants = mergedVariants,
-        )
+        target[cardId] =
+            CardmarketExportCard(
+                tcgdexCardId = cardId,
+                name = existingCard.name ?: incomingCard.name,
+                variants = mergedVariants,
+            )
     }
 }
 
@@ -131,8 +134,7 @@ internal fun parseCardmarketExportFile(
     json: Json,
 ): CardmarketExportPrices? {
     return runCatching {
-        fun JsonObject.stringOrNull(key: String): String? =
-            (this[key] as? JsonPrimitive)?.contentOrNull
+        fun JsonObject.stringOrNull(key: String): String? = (this[key] as? JsonPrimitive)?.contentOrNull
 
         // Reads a scalar int from either a flat primitive OR the *first* numeric value
         // found inside a condition map. Used for the variant-level productId which has
@@ -141,10 +143,11 @@ internal fun parseCardmarketExportFile(
             val value = this[key] ?: return null
             return when (value) {
                 is JsonPrimitive -> value.intOrNull
-                is JsonObject -> value.values
-                    .mapNotNull { (it as? JsonPrimitive)?.doubleOrNull }
-                    .firstOrNull()
-                    ?.toInt()
+                is JsonObject ->
+                    value.values
+                        .mapNotNull { (it as? JsonPrimitive)?.doubleOrNull }
+                        .firstOrNull()
+                        ?.toInt()
                 else -> null
             }
         }
@@ -153,14 +156,15 @@ internal fun parseCardmarketExportFile(
         // (priceLang, country) block. Each resulting condition becomes its own
         // card_prices row -- no collapse, no fallback.
         fun collectConditions(priceObj: JsonObject): List<String> {
-            val metricKeys = listOf(
-                "recommendedPrice",
-                "avgPrice",
-                "minPrice",
-                "medianPrice",
-                "maxPrice",
-                "availableCount",
-            )
+            val metricKeys =
+                listOf(
+                    "recommendedPrice",
+                    "avgPrice",
+                    "minPrice",
+                    "medianPrice",
+                    "maxPrice",
+                    "availableCount",
+                )
             val conditions = linkedSetOf<String>()
             for (key in metricKeys) {
                 val nested = priceObj[key] as? JsonObject ?: continue
@@ -174,12 +178,18 @@ internal fun parseCardmarketExportFile(
         // Reads a single metric for a specific condition (e.g. recommendedPrice.NM).
         // Returns null if the metric object is absent OR if the condition key is missing.
         // Never flattens across conditions.
-        fun JsonObject.doubleForCondition(key: String, condition: String): Double? {
+        fun JsonObject.doubleForCondition(
+            key: String,
+            condition: String,
+        ): Double? {
             val nested = this[key] as? JsonObject ?: return null
             return (nested[condition] as? JsonPrimitive)?.doubleOrNull
         }
 
-        fun JsonObject.intForCondition(key: String, condition: String): Int? {
+        fun JsonObject.intForCondition(
+            key: String,
+            condition: String,
+        ): Int? {
             val nested = this[key] as? JsonObject ?: return null
             val primitive = nested[condition] as? JsonPrimitive ?: return null
             // Cardmarket exports availableCount as a Double (e.g. 22.0), so parse loosely.
@@ -218,121 +228,129 @@ internal fun parseCardmarketExportFile(
                     val variantsArray = (cardObj["variants"] as? JsonArray) ?: JsonArray(emptyList())
                     if (variantsArray.isEmpty()) continue
 
-                    val variants = buildList {
-                        fun addUnpricedProduct(version: String?, productId: Int?, label: String?) {
-                            if (productId == null) return
-                            variantCount++
-                            add(
-                                CardmarketExportVariant(
-                                    version = version,
-                                    productId = productId,
-                                    label = label,
-                                    prices = emptyMap(),
-                                ),
-                            )
-                        }
-
-                        for (variantElement in variantsArray) {
-                            val variantObj = variantElement as? JsonObject ?: continue
-                            val version = variantObj.stringOrNull("version")?.trim()
-                            val productId = variantObj.intOrNullSafe("productId")
-                            val label = variantObj.stringOrNull("label")?.trim()
-
-                            val pricesObj = variantObj["prices"] as? JsonObject
-                            if (pricesObj == null || pricesObj.isEmpty()) {
-                                addUnpricedProduct(version, productId, label)
-                                continue
+                    val variants =
+                        buildList {
+                            fun addUnpricedProduct(
+                                version: String?,
+                                productId: Int?,
+                                label: String?,
+                            ) {
+                                if (productId == null) return
+                                variantCount++
+                                add(
+                                    CardmarketExportVariant(
+                                        version = version,
+                                        productId = productId,
+                                        label = label,
+                                        prices = emptyMap(),
+                                    ),
+                                )
                             }
 
-                            val capturedAtByLang = mutableMapOf<String, String>()
-                            val lifecycleObj = variantObj["lifecycle"] as? JsonObject
-                            if (lifecycleObj != null) {
-                                for ((langRaw, entryEl) in lifecycleObj) {
-                                    val lang = langRaw.lowercase().trim()
-                                    val captured = (entryEl as? JsonObject)
-                                        ?.stringOrNull("captured_at")
-                                        ?.trim()
-                                        .orEmpty()
-                                    if (lang.isNotEmpty() && captured.isNotEmpty()) {
-                                        capturedAtByLang[lang] = captured
-                                    }
+                            for (variantElement in variantsArray) {
+                                val variantObj = variantElement as? JsonObject ?: continue
+                                val version = variantObj.stringOrNull("version")?.trim()
+                                val productId = variantObj.intOrNullSafe("productId")
+                                val label = variantObj.stringOrNull("label")?.trim()
+
+                                val pricesObj = variantObj["prices"] as? JsonObject
+                                if (pricesObj == null || pricesObj.isEmpty()) {
+                                    addUnpricedProduct(version, productId, label)
+                                    continue
                                 }
-                            }
 
-                            val prices:
-                                MutableMap<String, MutableMap<String, MutableMap<String, CardmarketExportPrice>>> =
-                                mutableMapOf()
-                            var hasAnyPrice = false
-
-                            for ((priceLangRaw, priceLangElement) in pricesObj) {
-                                val priceLang = priceLangRaw.lowercase().trim()
-                                val byCountryObj = priceLangElement as? JsonObject ?: continue
-
-                                for ((countryRaw, countryElement) in byCountryObj) {
-                                    val country = countryRaw.uppercase().trim()
-                                    val priceObj = countryElement as? JsonObject ?: continue
-                                    val currency = priceObj.stringOrNull("currency")
-                                    val conditions = collectConditions(priceObj)
-                                    if (conditions.isEmpty()) continue
-
-                                    for (condition in conditions) {
-                                        val exportPrice = CardmarketExportPrice(
-                                            condition = condition,
-                                            medianPrice = priceObj.doubleForCondition("medianPrice", condition),
-                                            avgPrice = priceObj.doubleForCondition("avgPrice", condition),
-                                            minPrice = priceObj.doubleForCondition("minPrice", condition),
-                                            maxPrice = priceObj.doubleForCondition("maxPrice", condition),
-                                            recommendedPrice = priceObj.doubleForCondition(
-                                                "recommendedPrice",
-                                                condition,
-                                            ),
-                                            availableCount = priceObj.intForCondition("availableCount", condition),
-                                            currency = currency,
-                                            capturedAt = capturedAtByLang[priceLang],
-                                        )
-
-                                        // Drop purely empty rows (all five price metrics null) but keep
-                                        // rows where Cardmarket reported a 0.0 -- that is real source
-                                        // data and the app decides how to interpret it.
-                                        if (
-                                            exportPrice.recommendedPrice == null &&
-                                            exportPrice.medianPrice == null &&
-                                            exportPrice.avgPrice == null &&
-                                            exportPrice.minPrice == null &&
-                                            exportPrice.maxPrice == null
-                                        ) {
-                                            continue
+                                val capturedAtByLang = mutableMapOf<String, String>()
+                                val lifecycleObj = variantObj["lifecycle"] as? JsonObject
+                                if (lifecycleObj != null) {
+                                    for ((langRaw, entryEl) in lifecycleObj) {
+                                        val lang = langRaw.lowercase().trim()
+                                        val captured =
+                                            (entryEl as? JsonObject)
+                                                ?.stringOrNull("captured_at")
+                                                ?.trim()
+                                                .orEmpty()
+                                        if (lang.isNotEmpty() && captured.isNotEmpty()) {
+                                            capturedAtByLang[lang] = captured
                                         }
-
-                                        val langMap = prices.getOrPut(priceLang) { mutableMapOf() }
-                                        val countryMap = langMap.getOrPut(country) { mutableMapOf() }
-                                        countryMap[condition] = exportPrice
-                                        languages.add(priceLang)
-                                        countries.add(country)
-                                        conditionsSeen.add(condition)
-                                        priceEntryCount++
-                                        hasAnyPrice = true
                                     }
                                 }
-                            }
 
-                            if (!hasAnyPrice) {
-                                addUnpricedProduct(version, productId, label)
-                                continue
-                            }
+                                val prices:
+                                    MutableMap<String, MutableMap<String, MutableMap<String, CardmarketExportPrice>>> =
+                                    mutableMapOf()
+                                var hasAnyPrice = false
 
-                            variantCount++
-                            pricedVariantCount++
-                            add(
-                                CardmarketExportVariant(
-                                    version = version,
-                                    productId = productId,
-                                    label = label,
-                                    prices = prices,
-                                ),
-                            )
+                                for ((priceLangRaw, priceLangElement) in pricesObj) {
+                                    val priceLang = priceLangRaw.lowercase().trim()
+                                    val byCountryObj = priceLangElement as? JsonObject ?: continue
+
+                                    for ((countryRaw, countryElement) in byCountryObj) {
+                                        val country = countryRaw.uppercase().trim()
+                                        val priceObj = countryElement as? JsonObject ?: continue
+                                        val currency = priceObj.stringOrNull("currency")
+                                        val conditions = collectConditions(priceObj)
+                                        if (conditions.isEmpty()) continue
+
+                                        for (condition in conditions) {
+                                            val exportPrice =
+                                                CardmarketExportPrice(
+                                                    condition = condition,
+                                                    medianPrice = priceObj.doubleForCondition("medianPrice", condition),
+                                                    avgPrice = priceObj.doubleForCondition("avgPrice", condition),
+                                                    minPrice = priceObj.doubleForCondition("minPrice", condition),
+                                                    maxPrice = priceObj.doubleForCondition("maxPrice", condition),
+                                                    recommendedPrice =
+                                                        priceObj.doubleForCondition(
+                                                            "recommendedPrice",
+                                                            condition,
+                                                        ),
+                                                    availableCount = priceObj.intForCondition("availableCount", condition),
+                                                    currency = currency,
+                                                    capturedAt = capturedAtByLang[priceLang],
+                                                )
+
+                                            // Drop purely empty rows (all five price metrics null) but keep
+                                            // rows where Cardmarket reported a 0.0 -- that is real source
+                                            // data and the app decides how to interpret it.
+                                            if (
+                                                exportPrice.recommendedPrice == null &&
+                                                exportPrice.medianPrice == null &&
+                                                exportPrice.avgPrice == null &&
+                                                exportPrice.minPrice == null &&
+                                                exportPrice.maxPrice == null
+                                            ) {
+                                                continue
+                                            }
+
+                                            val langMap = prices.getOrPut(priceLang) { mutableMapOf() }
+                                            val countryMap = langMap.getOrPut(country) { mutableMapOf() }
+                                            countryMap[condition] = exportPrice
+                                            languages.add(priceLang)
+                                            countries.add(country)
+                                            conditionsSeen.add(condition)
+                                            priceEntryCount++
+                                            hasAnyPrice = true
+                                        }
+                                    }
+                                }
+
+                                if (!hasAnyPrice) {
+                                    addUnpricedProduct(version, productId, label)
+                                    continue
+                                }
+
+                                variantCount++
+                                pricedVariantCount++
+                                add(
+                                    CardmarketExportVariant(
+                                        version = version,
+                                        productId = productId,
+                                        label = label,
+                                        prices = prices,
+                                    ),
+                                )
+                            }
                         }
-                    }
 
                     if (variants.isEmpty()) continue
 
@@ -342,11 +360,12 @@ internal fun parseCardmarketExportFile(
                         cardsWithProductIdOnly++
                     }
 
-                    cardsById[cardId] = CardmarketExportCard(
-                        tcgdexCardId = cardId,
-                        name = cardName,
-                        variants = variants,
-                    )
+                    cardsById[cardId] =
+                        CardmarketExportCard(
+                            tcgdexCardId = cardId,
+                            name = cardName,
+                            variants = variants,
+                        )
                 }
             }
         }
@@ -390,9 +409,10 @@ internal fun catalogProductAnchors(
         if (variant.prices.isNotEmpty()) return@mapNotNull null
         val productId = variant.productId ?: return@mapNotNull null
         if (priceGuideProductId != null && productId == priceGuideProductId) return@mapNotNull null
-        val variantKey = variant.version?.takeIf { it.isNotBlank() }
-            ?: variant.label?.takeIf { it.isNotBlank() }
-            ?: ""
+        val variantKey =
+            variant.version?.takeIf { it.isNotBlank() }
+                ?: variant.label?.takeIf { it.isNotBlank() }
+                ?: ""
         if (variantKey == "Normal" && priceGuideProductId != null) return@mapNotNull null
         if (!seen.add(variantKey)) return@mapNotNull null
         CatalogProductAnchor(variantKey = variantKey, productId = productId)
@@ -422,11 +442,12 @@ internal fun loadCardmarketExportPrices(
 ): CardmarketExportPrices? {
     val source =
         if (!exportFilePath.isNullOrBlank()) {
-            File(exportFilePath).also { explicit ->
-                if (!explicit.exists()) {
-                    println("[Tcgdex][!] Cardmarket export path not found: ${explicit.absolutePath}")
-                }
-            }.takeIf { it.exists() }
+            File(exportFilePath)
+                .also { explicit ->
+                    if (!explicit.exists()) {
+                        println("[Tcgdex][!] Cardmarket export path not found: ${explicit.absolutePath}")
+                    }
+                }.takeIf { it.exists() }
         } else {
             resolveDefaultCardmarketExportPath(projectRoot)
         }
@@ -440,13 +461,13 @@ internal fun loadCardmarketExportPrices(
 
     val exportFiles: List<File> =
         if (source.isDirectory) {
-            val perLanguageFiles = source
-                .listFiles()
-                ?.filter { file ->
-                    file.isFile && Regex("""cardmarket-prices-[a-z]{2}\.json""").matches(file.name)
-                }
-                ?.sortedBy { it.name }
-                .orEmpty()
+            val perLanguageFiles =
+                source
+                    .listFiles()
+                    ?.filter { file ->
+                        file.isFile && Regex("""cardmarket-prices-[a-z]{2}\.json""").matches(file.name)
+                    }?.sortedBy { it.name }
+                    .orEmpty()
             if (perLanguageFiles.isNotEmpty()) {
                 perLanguageFiles
             } else {

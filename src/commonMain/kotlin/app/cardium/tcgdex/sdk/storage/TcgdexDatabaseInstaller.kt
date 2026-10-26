@@ -97,7 +97,7 @@ object TcgdexDatabaseInstaller {
     fun installIfNeeded(
         fileSystem: FileSystem = platformFileSystem(),
         destination: Path,
-        force: Boolean = false
+        force: Boolean = false,
     ): Boolean {
         // Load the bundled database from platform-specific resources
         val bytes = loadDatabaseAsset()
@@ -105,19 +105,22 @@ object TcgdexDatabaseInstaller {
         // Check if installation is needed based on file size
         val existingSize = fileSystem.metadataOrNull(destination)?.size
         val metadataPath = destination.parent?.resolve("${destination.name}$METADATA_SUFFIX")
-        val metadataVersion = metadataPath?.let { path ->
-            runCatching {
-                fileSystem.metadataOrNull(path)?.let {
-                    fileSystem.read(path) { readUtf8().trim().toInt() }
-                }
-            }.getOrNull()
-        }
+        val metadataVersion =
+            metadataPath?.let { path ->
+                runCatching {
+                    fileSystem.metadataOrNull(path)?.let {
+                        fileSystem.read(path) { readUtf8().trim().toInt() }
+                    }
+                }.getOrNull()
+            }
         val needsCopy =
             force ||
                 existingSize != bytes.size.toLong() ||
                 metadataVersion != DATABASE_USER_VERSION
 
-        println("[Tcgdex][i] installIfNeeded dest=$destination force=$force existingSize=$existingSize targetSize=${bytes.size} metadata=$metadataVersion needsCopy=$needsCopy")
+        println(
+            "[Tcgdex][i] installIfNeeded dest=$destination force=$force existingSize=$existingSize targetSize=${bytes.size} metadata=$metadataVersion needsCopy=$needsCopy",
+        )
 
         if (!needsCopy) return false
 
@@ -165,4 +168,3 @@ object TcgdexDatabaseInstaller {
  * @throws IllegalStateException if the database cannot be found
  */
 internal expect fun loadDatabaseAsset(): ByteArray
-

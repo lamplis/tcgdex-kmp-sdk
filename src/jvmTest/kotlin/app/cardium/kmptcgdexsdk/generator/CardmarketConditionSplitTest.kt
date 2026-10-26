@@ -19,36 +19,39 @@ class CardmarketConditionSplitTest {
 
     @Test
     fun `Given NM zero and MT positive in the same price block, When parsed, Then both conditions land as separate entries`() {
-        val file = writeFixture(
-            """
-            {
-              "exportDate": "2026-04-22T21:40:21Z",
-              "series": [
+        val file =
+            writeFixture(
+                """
                 {
-                  "sets": [
+                  "exportDate": "2026-04-22T21:40:21Z",
+                  "series": [
                     {
-                      "cards": [
+                      "sets": [
                         {
-                          "tcgdexCardId": "me02.5-276",
-                          "name": "Pikachu ex",
-                          "variants": [
+                          "cards": [
                             {
-                              "version": "V1",
-                              "productId": 869888,
-                              "label": null,
-                              "prices": {
-                                "fr": {
-                                  "FR": {
-                                    "currency": "EUR",
-                                    "minPrice":         { "NM": 0.0,   "MT": 600.0 },
-                                    "avgPrice":         { "NM": 443.0, "MT": 700.0 },
-                                    "medianPrice":      { "NM": 524.0, "MT": 650.0 },
-                                    "maxPrice":         { "NM": 626.0, "MT": 850.0 },
-                                    "availableCount":   { "NM": 22.0,  "MT": 6.0 },
-                                    "recommendedPrice": { "NM": 0.0,   "MT": 650.0 }
+                              "tcgdexCardId": "me02.5-276",
+                              "name": "Pikachu ex",
+                              "variants": [
+                                {
+                                  "version": "V1",
+                                  "productId": 869888,
+                                  "label": null,
+                                  "prices": {
+                                    "fr": {
+                                      "FR": {
+                                        "currency": "EUR",
+                                        "minPrice":         { "NM": 0.0,   "MT": 600.0 },
+                                        "avgPrice":         { "NM": 443.0, "MT": 700.0 },
+                                        "medianPrice":      { "NM": 524.0, "MT": 650.0 },
+                                        "maxPrice":         { "NM": 626.0, "MT": 850.0 },
+                                        "availableCount":   { "NM": 22.0,  "MT": 6.0 },
+                                        "recommendedPrice": { "NM": 0.0,   "MT": 650.0 }
+                                      }
+                                    }
                                   }
                                 }
-                              }
+                              ]
                             }
                           ]
                         }
@@ -56,17 +59,19 @@ class CardmarketConditionSplitTest {
                     }
                   ]
                 }
-              ]
-            }
-            """.trimIndent(),
-        )
+                """.trimIndent(),
+            )
 
         val parsed = parseCardmarketExportFile(file, json)
         assertNotNull(parsed)
         val card = parsed.cards["me02.5-276"]
         assertNotNull(card)
         assertEquals(1, card.variants.size)
-        val frFrPrices = card.variants.first().prices["fr"]?.get("FR")
+        val frFrPrices =
+            card.variants
+                .first()
+                .prices["fr"]
+                ?.get("FR")
         assertNotNull(frFrPrices, "expected fr/FR block")
         assertEquals(setOf("NM", "MT"), frFrPrices.keys, "each Cardmarket condition should be its own entry")
 
@@ -86,31 +91,39 @@ class CardmarketConditionSplitTest {
 
     @Test
     fun `Given a condition map with only sparse metrics, When parsed, Then the condition row contains null for absent metrics`() {
-        val file = writeFixture(
-            """
-            {
-              "exportDate": "2026-04-22T21:40:21Z",
-              "series": [{"sets":[{"cards":[{
-                "tcgdexCardId":"lu-01","name":"Luxio",
-                "variants":[{"version":"V1","productId":1,"label":null,
-                  "prices":{"fr":{"LU":{
-                    "currency":"EUR",
-                    "minPrice":{"MT":750.0},
-                    "avgPrice":{"MT":750.0},
-                    "medianPrice":{"MT":750.0},
-                    "maxPrice":{"MT":750.0},
-                    "availableCount":{"MT":2.0},
-                    "recommendedPrice":{"MT":750.0}
-                  }}}
-                }]
-              }]}]}]
-            }
-            """.trimIndent(),
-        )
+        val file =
+            writeFixture(
+                """
+                {
+                  "exportDate": "2026-04-22T21:40:21Z",
+                  "series": [{"sets":[{"cards":[{
+                    "tcgdexCardId":"lu-01","name":"Luxio",
+                    "variants":[{"version":"V1","productId":1,"label":null,
+                      "prices":{"fr":{"LU":{
+                        "currency":"EUR",
+                        "minPrice":{"MT":750.0},
+                        "avgPrice":{"MT":750.0},
+                        "medianPrice":{"MT":750.0},
+                        "maxPrice":{"MT":750.0},
+                        "availableCount":{"MT":2.0},
+                        "recommendedPrice":{"MT":750.0}
+                      }}}
+                    }]
+                  }]}]}]
+                }
+                """.trimIndent(),
+            )
 
         val parsed = parseCardmarketExportFile(file, json)
         assertNotNull(parsed)
-        val byCondition = parsed.cards.getValue("lu-01").variants.first().prices.getValue("fr").getValue("LU")
+        val byCondition =
+            parsed.cards
+                .getValue("lu-01")
+                .variants
+                .first()
+                .prices
+                .getValue("fr")
+                .getValue("LU")
         assertEquals(setOf("MT"), byCondition.keys)
         val mt = byCondition.getValue("MT")
         assertEquals(750.0, mt.recommendedPrice)
@@ -120,19 +133,20 @@ class CardmarketConditionSplitTest {
 
     @Test
     fun `Given a block where all five price metrics are null or missing, When parsed, Then the empty row is dropped`() {
-        val file = writeFixture(
-            """
-            {
-              "exportDate": "2026-04-22T21:40:21Z",
-              "series": [{"sets":[{"cards":[{
-                "tcgdexCardId":"empty-01","name":"Empty",
-                "variants":[{"version":"V1","productId":1,"label":null,
-                  "prices":{"fr":{"XX":{"currency":"EUR","availableCount":{"NM":0.0}}}}
-                }]
-              }]}]}]
-            }
-            """.trimIndent(),
-        )
+        val file =
+            writeFixture(
+                """
+                {
+                  "exportDate": "2026-04-22T21:40:21Z",
+                  "series": [{"sets":[{"cards":[{
+                    "tcgdexCardId":"empty-01","name":"Empty",
+                    "variants":[{"version":"V1","productId":1,"label":null,
+                      "prices":{"fr":{"XX":{"currency":"EUR","availableCount":{"NM":0.0}}}}
+                    }]
+                  }]}]}]
+                }
+                """.trimIndent(),
+            )
 
         val parsed = parseCardmarketExportFile(file, json)
         assertNotNull(parsed)

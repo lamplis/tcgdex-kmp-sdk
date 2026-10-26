@@ -10,14 +10,16 @@ class PrizePackImageUrlTest {
     private val json = Json { ignoreUnknownKeys = true }
     private val parents = mapOf("BST" to ("swsh" to "swsh5"))
 
-    private val manifest = json.parseToJsonElement(
-        """
-        {
-          "fr": { "swsh": { "swsh5": { "22": { "high": true } } } },
-          "en": { "swsh": { "swsh5": { "22": { "high": true } } } }
-        }
-        """.trimIndent(),
-    ).jsonObject
+    private val manifest =
+        json
+            .parseToJsonElement(
+                """
+                {
+                  "fr": { "swsh": { "swsh5": { "22": { "high": true } } } },
+                  "en": { "swsh": { "swsh5": { "22": { "high": true } } } }
+                }
+                """.trimIndent(),
+            ).jsonObject
 
     @Test
     fun `Given pps1 BST22 and a confirmed parent scan, When synthesizing, Then language-specific URL is returned`() {
@@ -33,9 +35,11 @@ class PrizePackImageUrlTest {
 
     @Test
     fun `Given parent localId missing from the manifest, When synthesizing, Then null`() {
-        val missing = json.parseToJsonElement(
-            """{ "fr": { "swsh": { "swsh5": { "1": { "high": true } } } } }""",
-        ).jsonObject
+        val missing =
+            json
+                .parseToJsonElement(
+                    """{ "fr": { "swsh": { "swsh5": { "1": { "high": true } } } } }""",
+                ).jsonObject
         assertNull(synthesizePrizePackImageUrl(missing, parents, "fr", "pps1", "BST22"))
     }
 
