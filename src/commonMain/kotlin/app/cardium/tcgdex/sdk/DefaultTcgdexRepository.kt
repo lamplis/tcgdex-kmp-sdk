@@ -22,6 +22,7 @@ import app.cardium.tcgdex.sdk.model.IllustratorCardIdEntry
 import app.cardium.tcgdex.sdk.model.IllustratorWithCount
 import app.cardium.tcgdex.sdk.model.PokemonCatalogCardId
 import app.cardium.tcgdex.sdk.model.PokemonDexEntry
+import app.cardium.tcgdex.sdk.model.PokemonSpeciesLink
 import app.cardium.tcgdex.sdk.model.PokemonSetCardCount
 import app.cardium.tcgdex.sdk.model.Rarity
 import app.cardium.tcgdex.sdk.model.RarityAggregate
@@ -614,6 +615,28 @@ class DefaultTcgdexRepository(
             }
 
             dexIds.associateWith(::computeDepth)
+        }
+
+    override suspend fun getPokemonSpeciesLinks(
+        dexIds: Collection<Int>,
+        language: String,
+    ): List<PokemonSpeciesLink> =
+        withContext(dispatcher) {
+            if (dexIds.isEmpty()) return@withContext emptyList()
+            queries
+                .getPokemonSpeciesByDexIds(dexIds.map(Int::toLong), language)
+                .awaitAsList()
+                .map { row ->
+                    PokemonSpeciesLink(
+                        dexId = row.dex_id.toInt(),
+                        name = row.name,
+                        evolvesFrom = row.evolves_from?.toInt(),
+                        evolvesTo =
+                            (row.evolves_to ?: "")
+                                .split(',')
+                                .mapNotNull { token -> token.trim().toIntOrNull() },
+                    )
+                }
         }
 
     // =========================================================================

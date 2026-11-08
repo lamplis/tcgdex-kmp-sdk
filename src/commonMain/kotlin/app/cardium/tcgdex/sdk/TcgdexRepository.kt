@@ -11,6 +11,7 @@ import app.cardium.tcgdex.sdk.model.IllustratorWithCount
 import app.cardium.tcgdex.sdk.model.PokemonCatalogCardId
 import app.cardium.tcgdex.sdk.model.PokemonDexEntry
 import app.cardium.tcgdex.sdk.model.PokemonSetCardCount
+import app.cardium.tcgdex.sdk.model.PokemonSpeciesLink
 import app.cardium.tcgdex.sdk.model.Rarity
 import app.cardium.tcgdex.sdk.model.RarityAggregate
 import app.cardium.tcgdex.sdk.model.RarityAggregateBySet
@@ -573,6 +574,15 @@ interface TcgdexRepository {
         dexIds: Collection<Int>,
         language: String,
     ): Map<Int, Int> = emptyMap()
+
+    /**
+     * Species rows for the requested dex IDs in [language] only.
+     * Callers apply English fallback and family traversal themselves.
+     */
+    suspend fun getPokemonSpeciesLinks(
+        dexIds: Collection<Int>,
+        language: String,
+    ): List<PokemonSpeciesLink> = emptyList()
 
     // =========================================================================
     // Utility Queries

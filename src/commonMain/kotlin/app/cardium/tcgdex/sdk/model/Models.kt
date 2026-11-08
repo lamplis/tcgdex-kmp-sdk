@@ -280,6 +280,18 @@ data class PokemonDexEntry(
 )
 
 /**
+ * One species row used to walk an evolution family.
+ *
+ * [evolvesTo] is already split from the comma-separated database column.
+ */
+data class PokemonSpeciesLink(
+    val dexId: Int,
+    val name: String,
+    val evolvesFrom: Int?,
+    val evolvesTo: List<Int>,
+)
+
+/**
  * One Pokédex catalog slot: card id plus the record's origin language (hole-fill marker).
  */
 data class PokemonCatalogCardId(
