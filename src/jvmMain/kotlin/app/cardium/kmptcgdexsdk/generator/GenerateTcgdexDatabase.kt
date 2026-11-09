@@ -301,7 +301,7 @@ fun main(args: Array<String>) =
             // 30th / 30th-c compiled URLs that datas.json does not list are dropped
             // so RGB Mews do not keep a 404 CDN path in front of the Pokecardex fallback.
             // Reprints with no CDN folder of their own reuse the original scan.
-            val imageUrl =
+            val compiledImageUrl =
                 compiledImageUrlForCard(
                     compiledImage = card.getString("image"),
                     assetsManifest = assetsManifest,
@@ -329,21 +329,22 @@ fun main(args: Array<String>) =
                         setId = setId,
                         localId = localId,
                     )
-            val pokebeachUrl =
-                card.getString("fallbackImage")
-                    ?.trim()
-                    ?.takeIf { it.startsWith("https://") }
-            val fallbackImage =
-                if (imageUrl.isNullOrBlank() && pokebeachUrl != null) {
-                    FallbackImage(url = pokebeachUrl, source = POKEBEACH_SOURCE)
-                } else {
-                    selectStoredFallbackImage(
-                        imageUrl = imageUrl,
-                        language = language,
-                        setId = setId,
-                        fallback = pokepediaFallbacks[id],
-                    )
-                }
+            val (imageUrl, fallbackImage) =
+                resolveStoredCardImage(
+                    compiledImageUrl =
+                        cdnImageUrlOverPokebeachBackup(
+                            compiledImageUrl = compiledImageUrl,
+                            assetsManifest = assetsManifest,
+                            language = language,
+                            serieId = serieId,
+                            setId = setId,
+                            localId = localId,
+                        ),
+                    language = language,
+                    setId = setId,
+                    treeFallback = pokepediaFallbacks[id],
+                    explicitBackupUrl = card.getString("fallbackImage"),
+                )
             val fallbackImageUrl = fallbackImage?.url
             val fallbackImageSource = fallbackImage?.source
 
@@ -2571,6 +2572,70 @@ internal data class FallbackImage(
  * exists, French still keeps the wiki backup. 30th Classic Collection reprints
  * keep the original CDN scan and also store that backup in every language.
  */
+internal fun cdnImageUrlOverPokebeachBackup(
+    compiledImageUrl: String?,
+    assetsManifest: JsonObject,
+    language: String,
+    serieId: String,
+    setId: String,
+    localId: String,
+): String? {
+    if (!isPokebeachBackupUrl(compiledImageUrl)) return compiledImageUrl
+    if (
+        !assetsManifestContainsLocalId(
+            assetsManifest = assetsManifest,
+            language = language,
+            serieId = serieId,
+            setId = setId,
+            localId = localId,
+        )
+    ) {
+        return compiledImageUrl
+    }
+    return "https://assets.tcgdex.net/$language/$serieId/$setId/$localId"
+}
+
+internal fun isPokebeachBackupUrl(url: String?): Boolean {
+    val trimmed = url?.trim().orEmpty()
+    if (trimmed.isEmpty()) return false
+    return runCatching {
+        val host = URI(trimmed).host ?: return false
+        host.equals("pokebeach.com", ignoreCase = true) ||
+            host.endsWith(".pokebeach.com", ignoreCase = true)
+    }.getOrDefault(false)
+}
+
+/**
+ * PokeBeach URLs in the card file are temporary backups. A TCGdex CDN URL stays
+ * primary. Otherwise the stored fallback is Poképédia, then Cardmarket, then
+ * the PokeBeach backup.
+ */
+internal fun resolveStoredCardImage(
+    compiledImageUrl: String?,
+    language: String,
+    setId: String,
+    treeFallback: FallbackImage?,
+    explicitBackupUrl: String?,
+): Pair<String?, FallbackImage?> {
+    val primary = compiledImageUrl?.takeUnless { isPokebeachBackupUrl(it) }
+    val backupUrl =
+        explicitBackupUrl?.trim()?.takeIf { isPokebeachBackupUrl(it) }
+            ?: compiledImageUrl?.takeIf { isPokebeachBackupUrl(it) }
+    val tree =
+        selectStoredFallbackImage(
+            imageUrl = primary,
+            language = language,
+            setId = setId,
+            fallback = treeFallback,
+        )
+    val fallback =
+        tree
+            ?: backupUrl
+                ?.takeIf { primary.isNullOrBlank() }
+                ?.let { FallbackImage(url = it, source = POKEBEACH_SOURCE) }
+    return primary to fallback
+}
+
 internal fun selectStoredFallbackImage(
     imageUrl: String?,
     language: String,

@@ -46,6 +46,7 @@ object TcgdexDatabaseInstaller {
      * the file size stays the same.
      *
      * ## VERSION HISTORY
+     * - Version 20: Refreshed cameoDexIds from RotomAmiti's workbook through Delta Reign.
      * - Version 19: Added Asian promo, subset, contest, and Simplified Chinese cards that have no English print.
      * - Version 18: Added the remaining Fan Club and TPCi promo cards.
      * - Version 17: Added the Summer 2001 Tropical Present jumbo promo.
@@ -77,7 +78,7 @@ object TcgdexDatabaseInstaller {
      *
      * @see docs/POKEDEX_DATA_REMEDIATION.md for more details
      */
-    const val DATABASE_USER_VERSION = 19
+    const val DATABASE_USER_VERSION = 20
 
     private const val METADATA_SUFFIX = ".meta"
 

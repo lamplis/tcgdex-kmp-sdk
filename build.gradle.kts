@@ -344,7 +344,7 @@ tasks.withType<Copy>().matching { it.name.contains("ProcessResources") || it.nam
 }
 
 // Ensure processAndroidMainJavaRes (new androidLibrary plugin task) depends on database generation
-tasks.matching { it.name == "processAndroidMainJavaRes" }.configureEach {
+tasks.matching { it.name == "processAndroidMainJavaRes" || it.name == "compressAndroidMainJavaRes" }.configureEach {
     dependsOn(generateTcgdexDatabase)
 }
 
