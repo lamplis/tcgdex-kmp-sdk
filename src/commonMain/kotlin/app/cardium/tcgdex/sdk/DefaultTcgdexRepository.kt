@@ -1,5 +1,6 @@
 package app.cardium.tcgdex.sdk
 
+import app.cardium.tcgdex.db.Catalog_sets
 import app.cardium.tcgdex.db.Card_with_pokemon
 import app.cardium.tcgdex.db.Card_with_set
 import app.cardium.tcgdex.db.Card_prices
@@ -10,7 +11,6 @@ import app.cardium.tcgdex.db.GetSetWithSerieName
 import app.cardium.tcgdex.db.Illustrators
 import app.cardium.tcgdex.db.Rarities
 import app.cardium.tcgdex.db.Series
-import app.cardium.tcgdex.db.Sets
 import app.cardium.tcgdex.db.TcgdexDatabase
 import app.cardium.tcgdex.sdk.model.Card
 import app.cardium.tcgdex.sdk.model.CardCatalogSlot
@@ -681,7 +681,7 @@ class DefaultTcgdexRepository(
                     seriesName = row.series_name,
                     seriesPosition = row.series_position.toInt(),
                     setId = row.set_id,
-                    setName = row.set_name,
+                    setName = row.set_name ?: row.set_id,
                     setReleaseDate = row.set_release_date,
                     rarityId = row.rarity_id,
                     rarityName = row.rarity_name,
@@ -707,11 +707,11 @@ private fun Series.toModel(): Serie =
     )
 
 /**
- * Maps a SQLDelight Sets row to a domain CardSet model.
+ * Maps a catalog set row to a domain CardSet model.
  *
  * @param serieName Optional series name to include (fetched separately)
  */
-private fun Sets.toModel(serieName: String? = null): CardSet =
+private fun Catalog_sets.toModel(serieName: String? = null): CardSet =
     CardSet(
         id = id,
         serieId = serie_id,

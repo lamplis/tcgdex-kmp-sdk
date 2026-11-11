@@ -248,10 +248,38 @@ CREATE INDEX pokemon_species_dex_idx ON pokemon_species(dex_id);
 CREATE INDEX pokemon_species_evolves_from_idx ON pokemon_species(evolves_from);
 
 -- -----------------------------------------------------------------------------
+-- View: catalog_sets - Parent sets only.
+-- A row with parent_set_id is a subset: it is not listed, and its
+-- card_count_total is added to the parent. card_count_official stays the
+-- parent's own count. Inserts still write the sets table.
+-- -----------------------------------------------------------------------------
+CREATE VIEW catalog_sets AS
+SELECT
+    sets.id,
+    sets.language,
+    sets.serie_id,
+    sets.name,
+    sets.logo_url,
+    sets.symbol_url,
+    sets.card_count_total + COALESCE((
+        SELECT SUM(child.card_count_total)
+        FROM sets AS child
+        WHERE child.parent_set_id = sets.id
+          AND child.language = sets.language
+    ), 0) AS card_count_total,
+    sets.card_count_official,
+    sets.release_date,
+    sets.abbreviation_official,
+    sets.parent_set_id
+FROM sets
+WHERE sets.parent_set_id IS NULL;
+
+-- -----------------------------------------------------------------------------
 -- View: card_with_set - Denormalized view joining cards with their set and series
 -- Used by most card queries to avoid repeated joins.
 -- Note: Does NOT include pokemon_dex_id - use card_with_pokemon view for Pokédex queries
 -- Includes embedded Cardmarket EUR pricing snapshot columns.
+-- Cards stored on a subset are returned as the parent set. is_subset is 1 for those cards.
 -- -----------------------------------------------------------------------------
 CREATE VIEW card_with_set AS
 SELECT
@@ -259,7 +287,7 @@ SELECT
     cards.language,
     cards.local_id,
     cards.local_number_sort,
-    cards.set_id,
+    COALESCE(card_set_local.parent_set_id, card_set_en.parent_set_id, cards.set_id) AS set_id,
     cards.name,
     cards.image_url,
     cards.fallback_image_url,
@@ -286,10 +314,22 @@ SELECT
     COALESCE(localized_set.symbol_url, fallback_set.symbol_url) AS set_symbol_url,
     COALESCE(localized_set.serie_id, fallback_set.serie_id) AS serie_id,
     COALESCE(localized_series.name, fallback_series.name, COALESCE(localized_set.serie_id, fallback_set.serie_id)) AS serie_name,
-    COALESCE(localized_set.release_date, fallback_set.release_date) AS set_release_date
+    COALESCE(localized_set.release_date, fallback_set.release_date) AS set_release_date,
+    CASE
+        WHEN COALESCE(card_set_local.parent_set_id, card_set_en.parent_set_id) IS NOT NULL THEN 1
+        ELSE 0
+    END AS is_subset
 FROM cards
-LEFT JOIN sets AS localized_set ON localized_set.id = cards.set_id AND localized_set.language = cards.language
-LEFT JOIN sets AS fallback_set ON fallback_set.id = cards.set_id AND fallback_set.language = 'en'
+LEFT JOIN sets AS card_set_local
+    ON card_set_local.id = cards.set_id AND card_set_local.language = cards.language
+LEFT JOIN sets AS card_set_en
+    ON card_set_en.id = cards.set_id AND card_set_en.language = 'en'
+LEFT JOIN catalog_sets AS localized_set
+    ON localized_set.id = COALESCE(card_set_local.parent_set_id, card_set_en.parent_set_id, cards.set_id)
+    AND localized_set.language = cards.language
+LEFT JOIN catalog_sets AS fallback_set
+    ON fallback_set.id = COALESCE(card_set_local.parent_set_id, card_set_en.parent_set_id, cards.set_id)
+    AND fallback_set.language = 'en'
 LEFT JOIN series AS localized_series
     ON localized_series.id = COALESCE(localized_set.serie_id, fallback_set.serie_id)
     AND localized_series.language = cards.language
@@ -311,7 +351,7 @@ SELECT
     cards.language,
     cards.local_id,
     cards.local_number_sort,
-    cards.set_id,
+    COALESCE(card_set_local.parent_set_id, card_set_en.parent_set_id, cards.set_id) AS set_id,
     cards.name,
     cards.image_url,
     cards.fallback_image_url,
@@ -340,11 +380,23 @@ SELECT
     COALESCE(localized_set.symbol_url, fallback_set.symbol_url) AS set_symbol_url,
     COALESCE(localized_set.serie_id, fallback_set.serie_id) AS serie_id,
     COALESCE(localized_series.name, fallback_series.name, COALESCE(localized_set.serie_id, fallback_set.serie_id)) AS serie_name,
-    COALESCE(localized_set.release_date, fallback_set.release_date) AS set_release_date
+    COALESCE(localized_set.release_date, fallback_set.release_date) AS set_release_date,
+    CASE
+        WHEN COALESCE(card_set_local.parent_set_id, card_set_en.parent_set_id) IS NOT NULL THEN 1
+        ELSE 0
+    END AS is_subset
 FROM cards
 INNER JOIN card_pokemon ON card_pokemon.card_id = cards.id AND card_pokemon.language = cards.language
-LEFT JOIN sets AS localized_set ON localized_set.id = cards.set_id AND localized_set.language = cards.language
-LEFT JOIN sets AS fallback_set ON fallback_set.id = cards.set_id AND fallback_set.language = 'en'
+LEFT JOIN sets AS card_set_local
+    ON card_set_local.id = cards.set_id AND card_set_local.language = cards.language
+LEFT JOIN sets AS card_set_en
+    ON card_set_en.id = cards.set_id AND card_set_en.language = 'en'
+LEFT JOIN catalog_sets AS localized_set
+    ON localized_set.id = COALESCE(card_set_local.parent_set_id, card_set_en.parent_set_id, cards.set_id)
+    AND localized_set.language = cards.language
+LEFT JOIN catalog_sets AS fallback_set
+    ON fallback_set.id = COALESCE(card_set_local.parent_set_id, card_set_en.parent_set_id, cards.set_id)
+    AND fallback_set.language = 'en'
 LEFT JOIN series AS localized_series
     ON localized_series.id = COALESCE(localized_set.serie_id, fallback_set.serie_id)
     AND localized_series.language = cards.language
@@ -603,10 +655,51 @@ SELECT
     card_catalog_slots.cardmarket_product_id,
     card_catalog_slots.tcgplayer_product_id
 FROM card_catalog_slots
-JOIN cards ON cards.id = card_catalog_slots.card_id AND cards.language = card_catalog_slots.card_language
-WHERE card_catalog_slots.card_language = :language
-    AND cards.set_id = :setId
-ORDER BY card_catalog_slots.card_id, card_catalog_slots.display_rank, card_catalog_slots.variant_id;
+JOIN cards
+    ON cards.id = card_catalog_slots.card_id
+    AND cards.language = card_catalog_slots.card_language
+WHERE cards.set_id = :setId
+  AND card_catalog_slots.card_language = :language
+  AND NOT EXISTS (
+    SELECT 1
+    FROM sets AS self
+    WHERE self.id = :setId
+      AND self.language = :language
+      AND self.parent_set_id IS NOT NULL
+  )
+UNION ALL
+SELECT
+    card_catalog_slots.card_id,
+    card_catalog_slots.card_language,
+    card_catalog_slots.variant_id,
+    card_catalog_slots.is_canonical,
+    card_catalog_slots.sort_index,
+    card_catalog_slots.display_rank,
+    card_catalog_slots.type_slug,
+    card_catalog_slots.subtype_slug,
+    card_catalog_slots.size_slug,
+    card_catalog_slots.foil_slug,
+    card_catalog_slots.stamps_slug_json,
+    card_catalog_slots.type_label,
+    card_catalog_slots.subtype_label,
+    card_catalog_slots.size_label,
+    card_catalog_slots.foil_label,
+    card_catalog_slots.stamps_label_json,
+    card_catalog_slots.image_url,
+    card_catalog_slots.cardmarket_product_id,
+    card_catalog_slots.tcgplayer_product_id
+FROM card_catalog_slots
+JOIN cards
+    ON cards.id = card_catalog_slots.card_id
+    AND cards.language = card_catalog_slots.card_language
+WHERE cards.language = :language
+  AND cards.set_id IN (
+    SELECT child.id
+    FROM sets AS child
+    WHERE child.parent_set_id = :setId
+      AND child.language = :language
+  )
+ORDER BY card_id, display_rank, variant_id;
 
 getCatalogSlotsForPokemon:
 SELECT
@@ -758,11 +851,11 @@ SELECT DISTINCT language FROM series ORDER BY language;
 
 -- Count all sets in the database (for debugging)
 countAllSets:
-SELECT COUNT(*) FROM sets;
+SELECT COUNT(*) FROM catalog_sets;
 
 -- Count sets by language (for debugging)
 countSetsByLanguage:
-SELECT COUNT(*) FROM sets WHERE language = :language;
+SELECT COUNT(*) FROM catalog_sets WHERE language = :language;
 
 -- =============================================================================
 -- SET QUERIES
@@ -782,7 +875,7 @@ SELECT
     release_date,
     abbreviation_official,
     parent_set_id
-FROM sets
+FROM catalog_sets
 WHERE language = :language
 UNION ALL
 SELECT
@@ -797,11 +890,11 @@ SELECT
     release_date,
     abbreviation_official,
     parent_set_id
-FROM sets
+FROM catalog_sets
 WHERE language = 'en'
   AND id NOT IN (
     SELECT id
-    FROM sets
+    FROM catalog_sets
     WHERE language = :language
   )
 ORDER BY release_date DESC, id;
@@ -820,7 +913,7 @@ SELECT
     release_date,
     abbreviation_official,
     parent_set_id
-FROM sets
+FROM catalog_sets
 WHERE serie_id = :serieId AND language = :language
 UNION ALL
 SELECT
@@ -835,12 +928,12 @@ SELECT
     release_date,
     abbreviation_official,
     parent_set_id
-FROM sets
+FROM catalog_sets
 WHERE serie_id = :serieId
   AND language = 'en'
   AND id NOT IN (
     SELECT id
-    FROM sets
+    FROM catalog_sets
     WHERE serie_id = :serieId
       AND language = :language
   )
@@ -871,7 +964,7 @@ SELECT
     release_date,
     abbreviation_official,
     parent_set_id
-FROM sets
+FROM catalog_sets
 WHERE id = :id AND language = :language
 UNION ALL
 SELECT
@@ -886,12 +979,12 @@ SELECT
     release_date,
     abbreviation_official,
     parent_set_id
-FROM sets
+FROM catalog_sets
 WHERE id = :id
   AND language = 'en'
   AND NOT EXISTS (
     SELECT 1
-    FROM sets
+    FROM catalog_sets
     WHERE id = :id
       AND language = :language
   )
@@ -912,7 +1005,7 @@ WITH effective_set AS (
         release_date,
         abbreviation_official,
         parent_set_id
-    FROM sets
+    FROM catalog_sets
     WHERE id = :id
       AND language = :language
     UNION ALL
@@ -928,12 +1021,12 @@ WITH effective_set AS (
         release_date,
         abbreviation_official,
         parent_set_id
-    FROM sets
+    FROM catalog_sets
     WHERE id = :id
       AND language = 'en'
       AND NOT EXISTS (
         SELECT 1
-        FROM sets
+        FROM catalog_sets
         WHERE id = :id
           AND language = :language
       )
@@ -963,7 +1056,7 @@ LIMIT 1;
 -- Set IDs that have at least one card in the given language, excluding TCGP sets.
 -- Aggregate query used to decide set visibility without loading card lists per set.
 getSetIdsWithCards:
-SELECT DISTINCT cards.set_id
+SELECT DISTINCT COALESCE(sets.parent_set_id, cards.set_id)
 FROM cards
 JOIN sets ON sets.id = cards.set_id AND sets.language = cards.language
 WHERE cards.language = :language
@@ -973,33 +1066,93 @@ WHERE cards.language = :language
 -- CARD QUERIES
 -- =============================================================================
 
--- Get all cards for a set (with denormalized view)
+-- Get all cards for a set, including cards stored on a child set.
+-- Start from cards.set_id so the set index is used. Filtering the view's
+-- rewritten set_id scans every card in the language.
 getCardsForSet:
-SELECT *
-FROM card_with_set
-WHERE set_id = :setId AND language = :language
-ORDER BY local_number_sort, local_id;
+SELECT
+    merged.id,
+    merged.language,
+    merged.local_id,
+    merged.local_number_sort,
+    merged.set_id,
+    merged.name,
+    merged.image_url,
+    merged.fallback_image_url,
+    merged.fallback_image_source,
+    merged.origin_language,
+    merged.rarity_id,
+    merged.rarity_name,
+    merged.illustrator_id,
+    merged.illustrator_name,
+    merged.category,
+    merged.types,
+    merged.supertype,
+    merged.regulation_mark,
+    merged.hp,
+    merged.price_cardmarket_trend,
+    merged.price_cardmarket_avg,
+    merged.price_cardmarket_low,
+    merged.price_updated_iso,
+    merged.price_unit,
+    merged.set_card_count_official,
+    merged.set_card_count_total,
+    merged.set_name,
+    merged.set_logo_url,
+    merged.set_symbol_url,
+    merged.serie_id,
+    merged.serie_name,
+    merged.set_release_date,
+    merged.is_subset
+FROM (
+    SELECT cws.*
+    FROM cards AS source
+    INNER JOIN card_with_set cws
+        ON cws.id = source.id AND cws.language = source.language
+    WHERE source.set_id = :setId
+      AND source.language = :language
+      AND NOT EXISTS (
+        SELECT 1
+        FROM sets AS self
+        WHERE self.id = :setId
+          AND self.language = :language
+          AND self.parent_set_id IS NOT NULL
+      )
+    UNION ALL
+    SELECT cws.*
+    FROM cards AS source
+    INNER JOIN card_with_set cws
+        ON cws.id = source.id AND cws.language = source.language
+    WHERE source.language = :language
+      AND source.set_id IN (
+        SELECT child.id
+        FROM sets AS child
+        WHERE child.parent_set_id = :setId
+          AND child.language = :language
+      )
+) AS merged
+ORDER BY merged.is_subset, merged.local_number_sort, merged.local_id;
 
 -- Get cards by illustrator (across all sets in a language)
 getCardsForIllustrator:
 SELECT *
 FROM card_with_set
 WHERE illustrator_id = :illustratorId AND language = :language
-ORDER BY set_release_date DESC, set_id, local_number_sort, local_id;
+ORDER BY set_release_date DESC, set_id, is_subset, local_number_sort, local_id;
 
 -- Get cards by rarity
 getCardsForRarity:
 SELECT *
 FROM card_with_set
 WHERE rarity_id = :rarityId AND language = :language
-ORDER BY set_release_date DESC, set_id, local_number_sort, local_id;
+ORDER BY set_release_date DESC, set_id, is_subset, local_number_sort, local_id;
 
 -- Get cards by Pokédex ID (uses junction table for multi-Pokémon support)
 getCardsForDexId:
 SELECT *
 FROM card_with_pokemon
 WHERE pokemon_dex_id = :dexId AND language = :language
-ORDER BY set_release_date DESC, set_id, local_number_sort, local_id;
+ORDER BY set_release_date DESC, set_id, is_subset, local_number_sort, local_id;
 
 -- Get a specific card by ID and language
 getCardById:
@@ -1117,7 +1270,7 @@ searchCardsByName:
 SELECT *
 FROM card_with_set
 WHERE language = :language AND lower(name) LIKE '%' || lower(:query) || '%'
-ORDER BY name, set_release_date DESC, local_number_sort, local_id
+ORDER BY name, set_release_date DESC, is_subset, local_number_sort, local_id
 LIMIT :limit OFFSET :offset;
 
 -- Search cards by name using FTS5 unicode61 tokenizer (accent-insensitive)
@@ -1129,7 +1282,7 @@ INNER JOIN card_with_set cws
     AND cws.language = cards_fts.language
 WHERE cards_fts.language = :language
     AND cards_fts MATCH :query
-ORDER BY cws.name, cws.set_release_date DESC, cws.local_number_sort, cws.local_id
+ORDER BY cws.name, cws.set_release_date DESC, cws.is_subset, cws.local_number_sort, cws.local_id
 LIMIT :limit OFFSET :offset;
 
 -- Count cards matching a name search
@@ -1295,7 +1448,7 @@ WHERE pokemon_dex_id = :dexId
     AND set_id = :setId
     AND language = :language
     AND serie_id != 'tcgp'
-ORDER BY local_number_sort, local_id;
+ORDER BY is_subset, local_number_sort, local_id;
 
 -- Get Pokémon dex ID for a specific card (reverse lookup for species)
 -- Returns the first dex ID associated with the card (multi-Pokémon cards may have several)
@@ -1353,7 +1506,7 @@ WHERE cws.language = :language
             AND m.local_id_num = CAST(:localId AS INTEGER)
         )
     )
-ORDER BY cws.set_release_date DESC, cws.set_id, cws.local_number_sort
+ORDER BY cws.set_release_date DESC, cws.set_id, cws.is_subset, cws.local_number_sort
 LIMIT :limit;
 
 -- Search cards by local_id within a specific set
@@ -1373,13 +1526,13 @@ WHERE cws.language = :language
             AND m.local_id_num = CAST(:localId AS INTEGER)
         )
     )
-ORDER BY cws.local_number_sort;
+ORDER BY cws.is_subset, cws.local_number_sort;
 
 -- Find sets by official card count (for matching "X/Y" format where Y is the count)
 -- Excludes TCGP sets
 findSetsByCardCount:
 SELECT *
-FROM sets
+FROM catalog_sets AS sets
 INNER JOIN series ON series.id = sets.serie_id AND series.language = sets.language
 WHERE sets.language = :language
     AND sets.card_count_official = :cardCount
@@ -1392,7 +1545,7 @@ ORDER BY sets.release_date DESC;
 searchCardsByLocalIdAndCardCount:
 SELECT cws.*
 FROM card_with_set cws
-INNER JOIN sets s ON s.id = cws.set_id AND s.language = cws.language
+INNER JOIN catalog_sets s ON s.id = cws.set_id AND s.language = cws.language
 INNER JOIN card_local_id_match m ON m.id = cws.id AND m.language = cws.language
 WHERE cws.language = :language
     AND (
@@ -1405,7 +1558,7 @@ WHERE cws.language = :language
     )
     AND s.card_count_official = :cardCount
     AND cws.serie_id != 'tcgp'
-ORDER BY cws.set_release_date DESC, cws.set_id, cws.local_number_sort
+ORDER BY cws.set_release_date DESC, cws.set_id, cws.is_subset, cws.local_number_sort
 LIMIT :limit;
 
 -- Search sets by name (partial match, for "151" matching "Pokémon 151")
@@ -1414,7 +1567,7 @@ searchSetsByName:
 SELECT
     sets.*,
     series.name AS serie_name
-FROM sets
+FROM catalog_sets AS sets
 INNER JOIN series ON series.id = sets.serie_id AND series.language = sets.language
 WHERE sets.language = :language
     AND lower(sets.name) LIKE '%' || lower(:query) || '%'
@@ -1435,38 +1588,42 @@ SELECT
     series.id AS series_id,
     series.name AS series_name,
     series.position AS series_position,
-    cards.rarity_id,
-    rarities.name AS rarity_name,
+    card_with_set.rarity_id,
+    card_with_set.rarity_name,
     COUNT(*) AS card_count,
-    MIN(cards.id) AS sample_card_id
-FROM cards
-INNER JOIN sets ON sets.id = cards.set_id AND sets.language = cards.language
-INNER JOIN series ON series.id = sets.serie_id AND series.language = sets.language
-LEFT JOIN rarities ON rarities.id = cards.rarity_id
-WHERE cards.language = :language
+    MIN(card_with_set.id) AS sample_card_id
+FROM card_with_set
+INNER JOIN series ON series.id = card_with_set.serie_id AND series.language = card_with_set.language
+WHERE card_with_set.language = :language
     AND series.id != 'tcgp'
-GROUP BY series.id, series.name, series.position, cards.rarity_id, rarities.name
-ORDER BY series.position DESC, cards.rarity_id;
+GROUP BY series.id, series.name, series.position, card_with_set.rarity_id, card_with_set.rarity_name
+ORDER BY series.position DESC, card_with_set.rarity_id;
 
 -- Get rarities grouped by series AND set with card counts
 -- Returns hierarchical data: Series -> Set -> Rarity
--- Excludes TCGP (TCG Pocket) cards
+-- Excludes TCGP (TCG Pocket) cards. Subset cards are grouped on the parent set.
 getRaritiesGroupedBySeriesAndSet:
 SELECT
     series.id AS series_id,
     series.name AS series_name,
     series.position AS series_position,
-    sets.id AS set_id,
-    sets.name AS set_name,
-    sets.release_date AS set_release_date,
-    cards.rarity_id,
-    rarities.name AS rarity_name,
+    card_with_set.set_id AS set_id,
+    card_with_set.set_name AS set_name,
+    card_with_set.set_release_date AS set_release_date,
+    card_with_set.rarity_id,
+    card_with_set.rarity_name,
     COUNT(*) AS card_count
-FROM cards
-INNER JOIN sets ON sets.id = cards.set_id AND sets.language = cards.language
-INNER JOIN series ON series.id = sets.serie_id AND series.language = sets.language
-LEFT JOIN rarities ON rarities.id = cards.rarity_id
-WHERE cards.language = :language
+FROM card_with_set
+INNER JOIN series ON series.id = card_with_set.serie_id AND series.language = card_with_set.language
+WHERE card_with_set.language = :language
     AND series.id != 'tcgp'
-GROUP BY series.id, series.name, series.position, sets.id, sets.name, sets.release_date, cards.rarity_id, rarities.name
-ORDER BY series.position DESC, sets.release_date DESC, cards.rarity_id;
+GROUP BY
+    series.id,
+    series.name,
+    series.position,
+    card_with_set.set_id,
+    card_with_set.set_name,
+    card_with_set.set_release_date,
+    card_with_set.rarity_id,
+    card_with_set.rarity_name
+ORDER BY series.position DESC, card_with_set.set_release_date DESC, card_with_set.rarity_id;

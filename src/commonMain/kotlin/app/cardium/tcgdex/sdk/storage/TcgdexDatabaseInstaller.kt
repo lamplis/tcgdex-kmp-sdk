@@ -78,7 +78,7 @@ object TcgdexDatabaseInstaller {
      *
      * @see docs/POKEDEX_DATA_REMEDIATION.md for more details
      */
-    const val DATABASE_USER_VERSION = 20
+    const val DATABASE_USER_VERSION = 21
 
     private const val METADATA_SUFFIX = ".meta"
 
