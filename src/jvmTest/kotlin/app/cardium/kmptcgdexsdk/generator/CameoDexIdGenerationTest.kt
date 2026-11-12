@@ -87,6 +87,7 @@ class CameoDexIdGenerationTest {
             listOf(
                 "sv04-175" to 143,
                 "base1-70" to 35,
+                "sm9-152" to 25,
             )
         trainerCameos.forEach { (cardId, dexId) ->
             val cameoIds = readCameoDexIds(cardsFile, cardId)
