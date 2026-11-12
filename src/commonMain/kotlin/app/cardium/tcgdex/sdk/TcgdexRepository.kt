@@ -124,6 +124,24 @@ interface TcgdexRepository {
     ): List<Card>
 
     /**
+     * Set-gallery cards from the cards index, including child-set reprints.
+     *
+     * Skips the denormalized card view. Rarity and illustrator names are left
+     * null. Default is empty so test fakes compile without a grid query.
+     */
+    suspend fun getSetGridCards(
+        setId: String,
+        language: String,
+    ): List<Card> = emptyList()
+
+    /**
+     * Languages that have at least one card row for [setId].
+     *
+     * Default is empty so test fakes do not have to implement the probe.
+     */
+    suspend fun getLanguagesForSet(setId: String): List<String> = emptyList()
+
+    /**
      * Returns all cards by a specific illustrator across all sets.
      *
      * @param illustratorId The illustrator's slug ID

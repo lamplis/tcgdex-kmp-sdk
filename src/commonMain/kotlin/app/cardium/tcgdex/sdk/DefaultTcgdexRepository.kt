@@ -7,6 +7,7 @@ import app.cardium.tcgdex.db.Card_prices
 import app.cardium.tcgdex.db.Card_recognition_hashes
 import app.cardium.tcgdex.db.CountCardsPerIllustrator
 import app.cardium.tcgdex.db.Card_catalog_slots
+import app.cardium.tcgdex.db.GetSetGridCards
 import app.cardium.tcgdex.db.GetSetWithSerieName
 import app.cardium.tcgdex.db.Illustrators
 import app.cardium.tcgdex.db.Rarities
@@ -34,6 +35,8 @@ import app.cardium.tcgdex.sdk.util.toThumbnailUrl
 import app.cash.sqldelight.async.coroutines.awaitAsList
 import app.cash.sqldelight.async.coroutines.awaitAsOne
 import app.cash.sqldelight.async.coroutines.awaitAsOneOrNull
+import kotlin.concurrent.atomics.AtomicReference
+import kotlin.concurrent.atomics.ExperimentalAtomicApi
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
@@ -58,11 +61,13 @@ import kotlinx.serialization.json.Json
  * @param database The SQLDelight database instance
  * @param dispatcher Coroutine dispatcher for query execution
  */
+@OptIn(ExperimentalAtomicApi::class)
 class DefaultTcgdexRepository(
     database: TcgdexDatabase,
     private val dispatcher: CoroutineDispatcher = Dispatchers.Default,
 ) : TcgdexRepository {
     private val queries = database.tcgdexQueries
+    private val setGridCardsCache = AtomicReference(SetGridCache())
 
     // =========================================================================
     // Series Queries
@@ -139,6 +144,42 @@ class DefaultTcgdexRepository(
     ): List<Card> =
         withContext(dispatcher) {
             queries.getCardsForSet(setId, language).awaitAsList().map { it.toModel() }
+        }
+
+    override suspend fun getSetGridCards(
+        setId: String,
+        language: String,
+    ): List<Card> {
+        val key = setGridCacheKey(language, setId)
+        setGridCardsCache.load().rows[key]?.let { return it }
+        val mapped =
+            withContext(dispatcher) {
+                queries.getSetGridCards(setId, language).awaitAsList().map { it.toGridCard() }
+            }
+        rememberSetGrid(key, mapped)
+        return setGridCardsCache.load().rows[key] ?: mapped
+    }
+
+    private fun rememberSetGrid(
+        key: String,
+        mapped: List<Card>,
+    ) {
+        while (true) {
+            val current = setGridCardsCache.load()
+            val order = (current.order.filterNot { it == key } + key).takeLast(SET_GRID_CACHE_LIMIT)
+            val kept = order.toSet()
+            val next =
+                SetGridCache(
+                    order = order,
+                    rows = current.rows.filterKeys { it in kept } + (key to mapped),
+                )
+            if (setGridCardsCache.compareAndSet(current, next)) return
+        }
+    }
+
+    override suspend fun getLanguagesForSet(setId: String): List<String> =
+        withContext(dispatcher) {
+            queries.getLanguagesForSet(setId).awaitAsList()
         }
 
     override suspend fun getCardsForIllustrator(
@@ -797,6 +838,104 @@ private fun Card_with_set.toModel(): Card {
 }
 
 /**
+ * Maps a slim set-gallery row. Names for rarity and illustrator stay null;
+ * the gallery prefers rarity id and already knows the open set.
+ */
+private fun GetSetGridCards.toGridCard(): Card = toGridCardRow(
+    id = id,
+    localId = local_id,
+    setId = set_id,
+    setName = set_name,
+    language = language,
+    originLanguage = origin_language,
+    serieId = serie_id,
+    name = name,
+    imageUrl = image_url,
+    fallbackImageUrl = fallback_image_url,
+    fallbackImageSource = fallback_image_source,
+    rarityId = rarity_id,
+    illustratorId = illustrator_id,
+    hp = hp,
+    category = category,
+    types = types,
+    supertype = supertype,
+    regulationMark = regulation_mark,
+    officialCount = card_count_official,
+    releaseDate = set_release_date,
+    priceTrend = price_cardmarket_trend,
+    priceAvg = price_cardmarket_avg,
+    priceLow = price_cardmarket_low,
+    priceUpdatedIso = price_updated_iso,
+    priceUnit = price_unit,
+)
+
+private fun toGridCardRow(
+    id: String,
+    localId: String,
+    setId: String,
+    setName: String,
+    language: String,
+    originLanguage: String?,
+    serieId: String,
+    name: String,
+    imageUrl: String?,
+    fallbackImageUrl: String?,
+    fallbackImageSource: String?,
+    rarityId: String?,
+    illustratorId: String?,
+    hp: Long?,
+    category: String?,
+    types: String?,
+    supertype: String?,
+    regulationMark: String?,
+    officialCount: Long,
+    releaseDate: String?,
+    priceTrend: Double?,
+    priceAvg: Double?,
+    priceLow: Double?,
+    priceUpdatedIso: String?,
+    priceUnit: String?,
+): Card {
+    val baseImage = imageUrl?.let { selectBaseImageUrl(it) ?: it }
+    val resolvedSetOfficialCount = officialCount.toInt()
+    return Card(
+        id = id,
+        localId = localId,
+        setId = setId,
+        setName = setName,
+        setLanguage = language,
+        originLanguage = originLanguage,
+        serieId = serieId,
+        serieName = null,
+        name = name,
+        imageUrl = baseImage,
+        thumbnailUrl = baseImage?.let { toThumbnailUrl(it) ?: "$it/low.png" },
+        highQualityUrl = baseImage?.let { toHighQualityUrl(it) ?: "$it/high.png" },
+        fallbackImageUrl = fallbackImageUrl,
+        fallbackImageSource = fallbackImageSource,
+        rarityId = rarityId,
+        rarityName = null,
+        illustratorId = illustratorId,
+        illustratorName = null,
+        pokemonDexId = null,
+        regulationMark = regulationMark,
+        hp = hp?.toInt(),
+        category = category,
+        types = parseTypes(types),
+        supertype = supertype,
+        reference = buildReference(localId, resolvedSetOfficialCount),
+        setOfficialCardCount = resolvedSetOfficialCount,
+        setReleaseDate = releaseDate,
+        priceCardmarketTrend = priceTrend,
+        priceCardmarketAvg = priceAvg,
+        priceCardmarketLow = priceLow,
+        priceUpdatedIso = priceUpdatedIso,
+        priceUnit = priceUnit,
+        isCameo = false,
+    )
+}
+
+/**
  * Maps a SQLDelight Card_with_pokemon view row to a domain Card model.
  * The view joins cards with the card_pokemon junction table to support multi-Pokémon cards.
  * Used for Pokédex queries where a card may appear multiple times (once per dex ID).
@@ -872,6 +1011,18 @@ private fun Card_catalog_slots.toModel(): CardCatalogSlot =
         cardmarketProductId = cardmarket_product_id,
         tcgplayerProductId = tcgplayer_product_id,
     )
+
+private const val SET_GRID_CACHE_LIMIT = 8
+
+private fun setGridCacheKey(
+    language: String,
+    setId: String,
+): String = "$language\u0000$setId"
+
+private data class SetGridCache(
+    val order: List<String> = emptyList(),
+    val rows: Map<String, List<Card>> = emptyMap(),
+)
 
 private fun Card_prices.toModel(): CardPrice =
     CardPrice(

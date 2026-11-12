@@ -849,6 +849,12 @@ LIMIT 1;
 getAvailableLanguages:
 SELECT DISTINCT language FROM series ORDER BY language;
 
+-- Languages that have at least one card row for a set. One query, not one full card load per language.
+getLanguagesForSet:
+SELECT DISTINCT language
+FROM cards
+WHERE set_id = :setId;
+
 -- Count all sets in the database (for debugging)
 countAllSets:
 SELECT COUNT(*) FROM catalog_sets;
@@ -1132,6 +1138,91 @@ FROM (
       )
 ) AS merged
 ORDER BY merged.is_subset, merged.local_number_sort, merged.local_id;
+
+-- Gallery rows for one set. Reads the cards (set_id, language) index and one
+-- sets join. Subset cards stay included and sort after the main set.
+-- If :setId itself has a parent, only that set's cards are returned.
+getSetGridCards:
+SELECT
+    cards.id,
+    cards.language,
+    cards.local_id,
+    cards.local_number_sort,
+    cards.set_id,
+    cards.name,
+    cards.image_url,
+    cards.fallback_image_url,
+    cards.fallback_image_source,
+    cards.origin_language,
+    cards.rarity_id,
+    cards.category,
+    cards.illustrator_id,
+    cards.hp,
+    cards.types,
+    cards.supertype,
+    cards.regulation_mark,
+    cards.price_cardmarket_trend,
+    cards.price_cardmarket_avg,
+    cards.price_cardmarket_low,
+    cards.price_updated_iso,
+    cards.price_unit,
+    sets.name AS set_name,
+    sets.serie_id,
+    sets.card_count_official,
+    sets.release_date AS set_release_date,
+    sets.parent_set_id,
+    CASE WHEN sets.parent_set_id IS NULL THEN 0 ELSE 1 END AS is_subset
+FROM cards
+INNER JOIN sets ON sets.id = cards.set_id AND sets.language = cards.language
+WHERE cards.set_id = :setId
+  AND cards.language = :language
+  AND NOT EXISTS (
+    SELECT 1
+    FROM sets AS self
+    WHERE self.id = :setId
+      AND self.language = :language
+      AND self.parent_set_id IS NOT NULL
+  )
+UNION ALL
+SELECT
+    cards.id,
+    cards.language,
+    cards.local_id,
+    cards.local_number_sort,
+    cards.set_id,
+    cards.name,
+    cards.image_url,
+    cards.fallback_image_url,
+    cards.fallback_image_source,
+    cards.origin_language,
+    cards.rarity_id,
+    cards.category,
+    cards.illustrator_id,
+    cards.hp,
+    cards.types,
+    cards.supertype,
+    cards.regulation_mark,
+    cards.price_cardmarket_trend,
+    cards.price_cardmarket_avg,
+    cards.price_cardmarket_low,
+    cards.price_updated_iso,
+    cards.price_unit,
+    sets.name AS set_name,
+    sets.serie_id,
+    sets.card_count_official,
+    sets.release_date AS set_release_date,
+    sets.parent_set_id,
+    CASE WHEN sets.parent_set_id IS NULL THEN 0 ELSE 1 END AS is_subset
+FROM cards
+INNER JOIN sets ON sets.id = cards.set_id AND sets.language = cards.language
+WHERE cards.language = :language
+  AND cards.set_id IN (
+    SELECT child.id
+    FROM sets AS child
+    WHERE child.parent_set_id = :setId
+      AND child.language = :language
+  )
+ORDER BY is_subset, local_number_sort, local_id;
 
 -- Get cards by illustrator (across all sets in a language)
 getCardsForIllustrator:
